@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Liste des formules d&#39;alchimiste - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste des formules dalchimiste.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=liste+des+formules+dalchimiste&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkgaqcUGwdmzJIImuYfVmDim56g0M=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Liste des formules dalchimiste">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Liste des formules dalchimiste">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Liste des formules dalchimiste">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Liste des formules d&#39;alchimiste
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<h2 class="separator">Accès rapide aux sections sur la magie<a class="headeranchor" id="Accès_rapide_aux_sections_sur_la_magie_0" href="#Accès_rapide_aux_sections_sur_la_magie_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top; text-align: left"><td width="33%">
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Lancer%20des%20sorts.ashx" title="Lancer des sorts">Lancer des sorts</a></li>
+    <ul><li>Action « <a class="pagelink" href="Pathfinder-RPG.Actions%20simples.ashx#LANCERSORT" title="Actions simples">Lancer un sort</a> »</li>
+    </ul>
+    <li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx" title="Présentation des sorts">Présentation des sorts</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Magie%20profane.ashx" title="La magie profane">La magie profane</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Magie%20divine.ashx" title="La magie divine">La magie divine</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.La%20magie%20psychique.ashx" title="La magie psychique">La magie psychique</a></li>
+</td><td width="33%">
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20sp%c3%a9ciaux.ashx" title="Les pouvoirs spéciaux">Les pouvoirs spéciaux</a></li>
+</ul>
+<ul><li>Liste alphabétique des sorts (<a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts.ashx" title="Liste des sorts">de A à D</a>, <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx" title="Liste des sorts (suite)">de E à O</a>, <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx" title="Liste des sorts (fin)">de P à Z</a>)</li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonSORTS" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('SORTS');" onmouseout="outButton('SORTS');" onclick="expandMenu('SORTS');" />
+</div>Listes des sorts par classe
+    <ul ID="SORTS" CLASS="listecachée cadrebas" style="font-size:100%">
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">Alchimiste</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#1" title="Liste des formules d&#39;alchimiste">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#2" title="Liste des formules d&#39;alchimiste">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#3" title="Liste des formules d&#39;alchimiste">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#4" title="Liste des formules d&#39;alchimiste">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#5" title="Liste des formules d&#39;alchimiste">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx#6" title="Liste des formules d&#39;alchimiste">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx" title="Liste des sorts d&#39;antipaladin">Antipaladin</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx#1" title="Liste des sorts d&#39;antipaladin">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx#2" title="Liste des sorts d&#39;antipaladin">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx#3" title="Liste des sorts d&#39;antipaladin">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx#4" title="Liste des sorts d&#39;antipaladin">4</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">Arc/Ens/Mag</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#0" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#1" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#2" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#3" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#4" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#5" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#6" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#7" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#8" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx#9" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx" title="Liste des sorts de barde">Barde</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#0" title="Liste des sorts de barde">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#1" title="Liste des sorts de barde">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#2" title="Liste des sorts de barde">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#3" title="Liste des sorts de barde">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#4" title="Liste des sorts de barde">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#5" title="Liste des sorts de barde">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx#6" title="Liste des sorts de barde">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx" title="Liste des sorts de chaman">Chaman</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#0" title="Liste des sorts de chaman">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#1" title="Liste des sorts de chaman">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#2" title="Liste des sorts de chaman">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#3" title="Liste des sorts de chaman">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#4" title="Liste des sorts de chaman">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#5" title="Liste des sorts de chaman">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#6" title="Liste des sorts de chaman">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#7" title="Liste des sorts de chaman">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#8" title="Liste des sorts de chaman">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chaman.ashx#9" title="Liste des sorts de chaman">9</a>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx" title="Liste des sorts de chasseur">Chasseur (Dru+Rôd)</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#0" title="Liste des sorts de chasseur">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#1" title="Liste des sorts de chasseur">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#2" title="Liste des sorts de chasseur">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#3" title="Liste des sorts de chasseur">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#4" title="Liste des sorts de chasseur">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#5" title="Liste des sorts de chasseur">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20chasseur.ashx#6" title="Liste des sorts de chasseur">6</a>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx" title="Liste des sorts de conjurateur">Conjurateur</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#0" title="Liste des sorts de conjurateur">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#1" title="Liste des sorts de conjurateur">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#2" title="Liste des sorts de conjurateur">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#3" title="Liste des sorts de conjurateur">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#4" title="Liste des sorts de conjurateur">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#5" title="Liste des sorts de conjurateur">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx#6" title="Liste des sorts de conjurateur">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx" title="Liste des sorts de conjurateur unchained">Conjurateur unchained</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#0" title="Liste des sorts de conjurateur unchained">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#1" title="Liste des sorts de conjurateur unchained">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#2" title="Liste des sorts de conjurateur unchained">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#3" title="Liste des sorts de conjurateur unchained">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#4" title="Liste des sorts de conjurateur unchained">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#5" title="Liste des sorts de conjurateur unchained">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20du%20conjurateur%20unchained.ashx#6" title="Liste des sorts de conjurateur unchained">6</a>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx" title="Liste des sorts de druide">Druide</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#0" title="Liste des sorts de druide">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#1" title="Liste des sorts de druide">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#2" title="Liste des sorts de druide">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#3" title="Liste des sorts de druide">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#4" title="Liste des sorts de druide">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#5" title="Liste des sorts de druide">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#6" title="Liste des sorts de druide">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#7" title="Liste des sorts de druide">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#8" title="Liste des sorts de druide">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx#9" title="Liste des sorts de druide">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx" title="Liste des sorts d&#39;hypnotiseur">Hypnotiseur</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#0" title="Liste des sorts d&#39;hypnotiseur">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#1" title="Liste des sorts d&#39;hypnotiseur">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#2" title="Liste des sorts d&#39;hypnotiseur">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#3" title="Liste des sorts d&#39;hypnotiseur">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#4" title="Liste des sorts d&#39;hypnotiseur">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#5" title="Liste des sorts d&#39;hypnotiseur">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dhypnotiseur.ashx#6" title="Liste des sorts d&#39;hypnotiseur">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx" title="Liste des sorts d&#39;inquisiteur">Inquisiteur</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#0" title="Liste des sorts d&#39;inquisiteur">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#1" title="Liste des sorts d&#39;inquisiteur">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#2" title="Liste des sorts d&#39;inquisiteur">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#3" title="Liste des sorts d&#39;inquisiteur">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#4" title="Liste des sorts d&#39;inquisiteur">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#5" title="Liste des sorts d&#39;inquisiteur">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx#6" title="Liste des sorts d&#39;inquisiteur">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx" title="Liste des sorts de magicien élémentaliste">Magicien élémentaliste</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#0" title="Liste des sorts de magicien élémentaliste">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#1" title="Liste des sorts de magicien élémentaliste">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#2" title="Liste des sorts de magicien élémentaliste">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#3" title="Liste des sorts de magicien élémentaliste">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#4" title="Liste des sorts de magicien élémentaliste">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#5" title="Liste des sorts de magicien élémentaliste">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#6" title="Liste des sorts de magicien élémentaliste">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#7" title="Liste des sorts de magicien élémentaliste">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#8" title="Liste des sorts de magicien élémentaliste">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx#9" title="Liste des sorts de magicien élémentaliste">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx" title="Liste des sorts de magus">Magus</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#0" title="Liste des sorts de magus">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#1" title="Liste des sorts de magus">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#2" title="Liste des sorts de magus">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#3" title="Liste des sorts de magus">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#4" title="Liste des sorts de magus">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#5" title="Liste des sorts de magus">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx#6" title="Liste des sorts de magus">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx" title="Liste des sorts de médium">Médium</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx#0" title="Liste des sorts de médium">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx#1" title="Liste des sorts de médium">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx#2" title="Liste des sorts de médium">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx#3" title="Liste des sorts de médium">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx#4" title="Liste des sorts de médium">4</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx" title="Liste des sorts d&#39;occultiste">Occultiste</a> : <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#0" title="Liste des sorts d&#39;occultiste">0</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#1" title="Liste des sorts d&#39;occultiste">1</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#2" title="Liste des sorts d&#39;occultiste">2</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#3" title="Liste des sorts d&#39;occultiste">3</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#4" title="Liste des sorts d&#39;occultiste">4</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#5" title="Liste des sorts d&#39;occultiste">5</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20doccultiste.ashx#6" title="Liste des sorts d&#39;occultiste">6</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx" title="Liste des sorts de paladin">Paladin</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx#1" title="Liste des sorts de paladin">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx#2" title="Liste des sorts de paladin">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx#3" title="Liste des sorts de paladin">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx#4" title="Liste des sorts de paladin">4</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">Prêtre</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#0" title="Liste des sorts de prêtre/prêtre combattant/oracle">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#1" title="Liste des sorts de prêtre/prêtre combattant/oracle">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#2" title="Liste des sorts de prêtre/prêtre combattant/oracle">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#3" title="Liste des sorts de prêtre/prêtre combattant/oracle">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#4" title="Liste des sorts de prêtre/prêtre combattant/oracle">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#5" title="Liste des sorts de prêtre/prêtre combattant/oracle">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#6" title="Liste des sorts de prêtre/prêtre combattant/oracle">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#7" title="Liste des sorts de prêtre/prêtre combattant/oracle">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#8" title="Liste des sorts de prêtre/prêtre combattant/oracle">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx#9" title="Liste des sorts de prêtre/prêtre combattant/oracle">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx" title="Liste des sorts de psychiste">Psychiste</a> : <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#0" title="Liste des sorts de psychiste">0</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#1" title="Liste des sorts de psychiste">1</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#2" title="Liste des sorts de psychiste">2</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#3" title="Liste des sorts de psychiste">3</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#4" title="Liste des sorts de psychiste">4</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#5" title="Liste des sorts de psychiste">5</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#6" title="Liste des sorts de psychiste">6</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#7" title="Liste des sorts de psychiste">7</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#8" title="Liste des sorts de psychiste">8</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx#9" title="Liste des sorts de psychiste">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx" title="Liste des sorts de rôdeur">Rôdeur</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx#1" title="Liste des sorts de rôdeur">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx#2" title="Liste des sorts de rôdeur">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx#3" title="Liste des sorts de rôdeur">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx#4" title="Liste des sorts de rôdeur">4</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx" title="Liste des sorts de sanguin">Sanguin</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx#1" title="Liste des sorts de sanguin">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx#2" title="Liste des sorts de sanguin">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx#3" title="Liste des sorts de sanguin">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx#4" title="Liste des sorts de sanguin">4</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx" title="Liste des sorts de sorcière">Sorcière</a> : <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#0" title="Liste des sorts de sorcière">0</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#1" title="Liste des sorts de sorcière">1</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#2" title="Liste des sorts de sorcière">2</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#3" title="Liste des sorts de sorcière">3</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#4" title="Liste des sorts de sorcière">4</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#5" title="Liste des sorts de sorcière">5</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#6" title="Liste des sorts de sorcière">6</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#7" title="Liste des sorts de sorcière">7</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#8" title="Liste des sorts de sorcière">8</a> <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx#9" title="Liste des sorts de sorcière">9</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx" title="Liste des sorts de spirite">Spirite</a> : <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#0" title="Liste des sorts de spirite">0</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#1" title="Liste des sorts de spirite">1</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#2" title="Liste des sorts de spirite">2</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#3" title="Liste des sorts de spirite">3</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#4" title="Liste des sorts de spirite">4</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#5" title="Liste des sorts de spirite">5</a> <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20spirite.ashx#6" title="Liste des sorts de spirite">6</a></li>
+    </ul></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20par%20registre.ashx" title="Liste des sorts par registre">Liste des sorts par registre</a></li>
+</ul>
+</td><td width="33%">
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Duels%20de%20sorts.ashx" title="Les duels de sorts">Les duels de sorts</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Grimoires.ashx" title="Les grimoires">Les grimoires</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9atures%20artificielles.ashx" title="Créatures artificielles">Construire et modifier des créatures artificielles</a></li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Lier%20un%20ext%c3%a9rieur.ashx" title="Lier un extérieur">Lier un extérieur</a></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonMOTSDEPOUVOIRS" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('MOTSDEPOUVOIRS');" onmouseout="outButton('MOTSDEPOUVOIRS');" onclick="expandMenu('MOTSDEPOUVOIRS');" />
+</div><a class="pagelink" href="Pathfinder-RPG.Les%20mots%20de%20pouvoir.ashx" title="Les mots de pouvoir">Les mots de pouvoir</a>
+    <ul ID="MOTSDEPOUVOIRS" CLASS="listecachée cadrebas" style="font-size:100%">
+        <li><a class="pagelink" href="Pathfinder-RPG.Mots%20cibles.ashx" title="Les mots cibles">Les mots cibles</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Mots%20effets.ashx" title="Les mots effets">Les mots effets</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9ta%20mots.ashx" title="Les méta mots">Les méta mots</a></li>
+        <li><a class="pagelink" href="Pathfinder-RPG.Liste%20des%20mots%20de%20pouvoirs%20par%20classe.ashx" title="Liste des mots de pouvoirs par classe">Liste des mots de pouvoirs par classe</a></li>
+    </ul></li>
+</ul>
+</td></tr></table></div>
+Une formule suivie d’un (M) ou d’un (F) dénote la présence d’une <a class="pagelink" href="Pathfinder-RPG.composante%20mat%c3%a9rielle.ashx" title="composante matérielle">composante matérielle</a> ou d’un <a class="pagelink" href="Pathfinder-RPG.focalisateur.ashx" title="focalisateur">focalisateur</a> qui ne se trouve normalement pas dans une <a class="pagelink" href="Pathfinder-RPG.Sacoche%20%c3%a0%20composantes%20(objet).ashx" title="Sacoche à composantes">sacoche à composantes</a>.<br />
+Une formule suivie d'un (Y) possède une version mythique.<br /><br /><b>Ordre de présentation.</b> Dans la liste, les formules et leur courte description sont présentées par ordre alphabétique, hormis quand ils appartiennent à une chaîne de formules particulière.<br /><br /><b><a class="pagelink" href="Pathfinder-RPG.D%c3%a9s%20de%20vie.ashx" title="dés de vie">Dés de vie</a>.</b> Le terme « dés de vie » (ou DV) est synonyme de « niveau de personnage » pour les cibles affectées par les formules (en effet, nombre de créatures ne peuvent pas progresser dans une classe de personnage ; elles n’ont pas de niveau mais des dés de vie).<br /><br /><b><a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">Niveau de lanceur</a>.</b> La puissance d’une formule dépend souvent du niveau de celui qui la jette. Sauf indication contraire, les créatures sans classe ont un niveau de lanceur égal à leur nombre de DV. Dans la description des formules, le terme « niveau » désigne toujours le niveau de lanceur de celui qui les lance et non le niveau de la formule.<br /><br /><b>Créatures et personnages.</b> Les termes « créature » et « personnage » sont considérés comme synonymes dans la description des formules.<br /><br />Retour vers l'<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx" title="L&#39;alchimiste">alchimiste</a>.<br /><br /><div style="background-color: #fff; float: right; padding: 0 0 12px 12px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_B_0">Formules de niveau 1</a><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_C_1">Formules de niveau 2</a><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_D_2">Formules de niveau 3</a><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_E_3">Formules de niveau 4</a><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_F_4">Formules de niveau 5</a><br />&nbsp;&nbsp;&nbsp;<a href="#Formules_de_niveau_G_5">Formules de niveau 6</a><br /></p></div></div></td></tr></table></div>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="1" href="#1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 1<a class="headeranchor" id="Formules_de_niveau_B_0" href="#Formules_de_niveau_B_0" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Agrandissement.ashx" title="Agrandissement">Agrandissement</a> (Y)</i></b>. Double la taille d'un humanoïde.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Alarme%20dinvisibilit%c3%a9.ashx" title="Alarme d&#39;invisibilité">Alarme d'invisibilité</a></i></b> <i>(MCA)</i>. Comme <i>alarme</i>, mais réagissant uniquement aux créatures invisibles.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Alt%c3%a9ration%20vocale.ashx" title="Altération vocale">Altération vocale</a></i></b> <i>(AM)</i>. Déguise la voix.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Anticipation%20du%20danger.ashx" title="Anticipation du danger">Anticipation du danger</a> (Y)</i></b> <i>(AM)</i>. La cible gagne un bonus à un test d'initiative.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Avanc%c3%a9e%20assur%c3%a9e.ashx" title="Avancée assurée">Avancée assurée</a></i></b> <i>(AG)</i>. Le personnage peut avancer lentement et sûrement tout en lançant des sorts tant qu’il n’accélère pas, qu’il n’attaque pas et qu’il ne lance pas de sorts offensifs.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bouclier.ashx" title="Bouclier">Bouclier</a></i></b>. Disque invisible conférant +4 à la CA et protégeant des projectiles magiques.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20de%20foudre.ashx" title="Bouclier de foudre">Bouclier de foudre</a></i></b> <i>(AG)</i>. Un bouclier de force protège le personnage jusqu’à ce qu’il le renvoie dans une explosion de foudre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bras%20long.ashx" title="Bras long">Bras long</a></i></b> <i>(MCA)</i>. Les bras du personnage s’allongent, lui donnant une plus grande allonge.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Briser%20les%20lignes%20ennemies.ashx" title="Briser les lignes ennemies">Briser les lignes ennemies</a> (<a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a>)</i></b> <i>(MR)</i>. Bonus de distance de charge et lors des manoeuvres de bousculade et renversement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Calme%20illusoire.ashx" title="Calme illusoire">Calme illusoire</a></i></b> <i>(AG)</i>. On dirait que le personnage est immobile alors qu’il agit.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Cam%c3%a9l%c3%a9on.ashx" title="Caméléon">Caméléon</a> (<a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Elfe</a>)</i></b> <i>(MR)</i>. Le personnage gagne un bonus de +4 aux tests de Discrétion.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Capacitance%20corporelle.ashx" title="Capacitance corporelle">Capacitance corporelle</a></i></b> <i>(MCA)</i>. Le personnage stocke les attaques d’électricité portées contre lui et en libère l’énergie par une attaque de contact.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Caresse%20de%20la%20mer.ashx" title="Caresse de la mer">Caresse de la mer</a></i></b> <i>(MJRA)</i>. Vitesse de nage de 9 mètres (6 c).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Chance%20de%20lartisan.ashx" title="Chance de l&#39;artisan">Chance de l'artisan</a></i></b> <i>(MJRA)</i>. Le sujet gagne +5 au prochain test d’Artisanat.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Charge%20de%20fourmi.ashx" title="Charge de fourmi">Charge de fourmi</a></i></b> <i>(MJRA)</i>. Triple la capacité de charge d’une créature.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Compr%c3%a9hension%20des%20langages.ashx" title="Compréhension des langages">Compréhension des langages</a></i></b>. Le PJ comprend tous les langages écrits ou parlés.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Confirmation%20didentit%c3%a9%20selon%20P%c3%a9tulengro.ashx" title="Confirmation d&#39;identité">Confirmation d'identité</a></i></b> <i>(RSE)</i>. Détecte à quelle créature une portion manquante appartient.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Conscience%20accrue.ashx" title="Conscience accrue">Conscience accrue</a></i></b> <i>(MCA)</i>. La mémoire et la capacité du personnage à traiter les informations sont améliorées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Corps%20caoutchouteux.ashx" title="Corps caoutchouteux">Corps caoutchouteux</a> (<a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>)</i></b> <i>(CM)</i>. La chair de la cible devient flexible et caoutchouteuse.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Coup%20au%20but.ashx" title="Coup au but">Coup au but</a> (Y)</i></b>. Confère un bonus de +20 au prochain jet d'attaque.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Crachat%20adh%c3%a9sif.ashx" title="Crachat adhésif">Crachat adhésif</a></i></b> <i>(MCA)</i>. Crache une sacoche immobilisante sur une créature.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.sort%20D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a></i></b>. Modifie l'apparence du PJ.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tection%20des%20morts-vivants.ashx" title="Détection des morts-vivants">Détection des morts-vivants</a></i></b>. Révèle les morts-vivants à 18 m ou moins.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tection%20des%20passages%20secrets.ashx" title="Détection des passages secrets">Détection des passages secrets</a></i></b>. Révèle les passages secrets à 18 m ou moins.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Endurance%20aux%20%c3%a9nergies%20destructives.ashx" title="Endurance aux énergies destructives">Endurance aux énergies destructives</a> (Y)</i></b>. Protège des environnements chauds ou froids.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Fabrication%20de%20d%c3%a9guisement.ashx" title="Fabrication de déguisement">Fabrication de déguisement</a></i></b> <i>(UI)</i>. Crée un déguisement instantanément.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gr%c3%a2ce%20urbaine.ashx" title="Grâce urbaine">Grâce urbaine</a> (<a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>)</i></b> <i>(MR)</i>. Le personnage se meut plus facilement dans la foule et entre les bâtiments.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Identification.ashx" title="Identification">Identification</a></i></b>. Bonus de +10 pour identifier un objet magique.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Jeunesse%20apparente.ashx" title="Jeunesse apparente">Jeunesse apparente</a></i></b> <i>(AM)</i>. La cible semble plus jeune.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20cibl%c3%a9e.ashx" title="Mixture pour bombe ciblée">Mixture pour bombe ciblée</a></i></b> <i>(AG)</i>. Améliore une bombe qui inflige plus de dégâts à une unique créature.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mouvement%20flou.ashx" title="Mouvement flou">Mouvement flou</a></i></b> <i>(MCA)</i>. Comme <i>flou</i>, mais uniquement quand le personnage se déplace.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.N%c3%a9gation%20de%20lar%c3%b4me.ashx" title="Négation de l&#39;arôme">Négation de l'arôme</a></i></b> <i>(MJRA)</i>. Impossible de traquer le personnage à l’ôdeur.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c5%92il%20du%20mitrailleur.ashx" title="Œil du mitrailleur">Œil du mitrailleur</a></i></b> <i>(MJRA)</i>. Augmente la portée des armes de jet ; +1 attaque.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Panac%c3%a9e%20universelle.ashx" title="Panacée universelle">Panacée universelle</a></i></b> <i>(AM)</i>. Effet relaxant ou divertissant.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Panse%20bouillante.ashx" title="Panse bouillante">Panse bouillante</a> (<a class="pagelink" href="Pathfinder-RPG.Torag%20(technique).ashx" title="Torag">Torag</a>)</i></b> <i>(ISG)</i>. Le lanceur résiste au feu et peut souffler une vague de chaleur.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Poing%20de%20pierre.ashx" title="Poing de pierre">Poing de pierre</a></i></b> <i>(MJRA)</i>. Les dégâts à mains nues du personnage sont létaux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Poison%20masqu%c3%a9.ashx" title="Poison masqué">Poison masqué</a> (M)</i></b> <i>(UI)</i>. Rend plus difficile de détecter un poison ou une créature venimeuse.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Poisson-singe.ashx" title="Poisson-singe">Poisson-singe</a></i></b> <i>(MCA)</i>. Le personnage gagne une vitesse d’escalade et une vitesse de nage de 3 mètres pendant un certain temps.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Rapetissement.ashx" title="Rapetissement">Rapetissement</a> (Y)</i></b>. Réduit la taille d'un humanoïde de moitié.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Rechargement%20de%20la%20magie%20inn%c3%a9e.ashx" title="Rechargement de la magie innée">Rechargement de la magie innée</a> (<a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>)</i></b> <i>(MR)</i>. Récupère une utilisation quotidienne d'un pouvoir magique de niveau 0 ou de niveau 1.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Repli%20exp%c3%a9ditif.ashx" title="Repli expéditif">Repli expéditif</a> (Y)</i></b>. Augmente la vitesse de déplacement de 9 m.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sang%20fant%c3%b4me.ashx" title="Sang fantôme">Sang fantôme</a></i></b> <i>(MCA)</i>. Le personnage gagne des pv temporaires si une perte de Con devait le rendre inconscient ou le tuer.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Saut.ashx" title="Saut">Saut</a></i></b>. Confère un bonus aux tests d'Acrobaties.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sens%20surd%c3%a9velopp%c3%a9s.ashx" title="Sens surdéveloppés">Sens surdéveloppés</a></i></b> <i>(MJRA)</i>. Gagne +2 en Perception et la vision nocturne.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Soins%20l%c3%a9gers.ashx" title="Soins légers">Soins légers</a> (Y)</i></b>. Rend 1d8 pv au sujet, +1/niveau (max. +5).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Tir%20longue%20distance.ashx" title="Tir longue distance">Tir longue distance</a></i></b> <i>(AG)</i>. Bonus de +3 m au facteur de portée de toutes les armes à distance.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vieillesse%20apparente.ashx" title="Vieillesse apparente">Vieillesse apparente</a></i></b> <i>(UI)</i>. La cible semble plus vieille.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vigueur%20du%20pesh.ashx" title="Vigueur du pesh">Vigueur du pesh</a> (M)</i></b> <i>(CSU)</i>. Augmente la puissance de la cible par la consommation de pesh.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Voir%20lalignement.ashx" title="Voir l&#39;alignement">Voir l'alignement</a></i></b> <i>(AG)</i>. Le personnage choisit un alignement. Toutes les créatures et tous les objets de cet alignement présents dans son champ de vision émettent un halo fantomatique.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="2" href="#2"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 2<a class="headeranchor" id="Formules_de_niveau_C_1" href="#Formules_de_niveau_C_1" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Aide.ashx" title="Aide">Aide</a></i></b>. +1 aux jets d'attaque et de sauvegarde contre la terreur, 1d8 pv temporaires, +1/niveau (max. +10).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Alignement%20ind%c3%a9tectable.ashx" title="Alignement indétectable">Alignement indétectable</a></i></b>. Masque l'alignement pendant 24 heures.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Ami%20du%20feu.ashx" title="Ami du feu">Ami du feu</a> (Y) (<a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>)</i></b> <i>(ISR)</i>. Enveloppe le personnage de flammes qui blessent les ennemis proches.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Apparence%20charnue.ashx" title="Apparence charnue">Apparence charnue</a> (<a class="pagelink" href="Pathfinder-RPG.Goule.ashx" title="Goule">Goule</a>)</i></b> <i>(CM)</i>. Une créature mort-vivante tangible paraît vivante.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Apprentissage%20par%20le%20sang.ashx" title="Apprentissage par le sang">Apprentissage par le sang</a></i></b> <i>(AM)</i>. Apprend un sort grâce au sang de la cible.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Armure%20de%20sang.ashx" title="Armure de sang">Armure de sang</a></i></b> <i>(MCA)</i>. Quand le personnage est blessé, son sang se solidifie, augmentant sa CA.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Aspect%20animal.ashx" title="Aspect animal">Aspect animal</a> (Y)</i></b> <i>(AG)</i>. Le personnage bénéficie des avantages d’un animal.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Barri%c3%a8re%20protectrice.ashx" title="Barrière protectrice">Barrière protectrice</a> (Y)</i></b> <i>(AG)</i>. Entoure la cible de couches de force.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20de%20r%c3%aaves.ashx" title="Bouclier de rêves">Bouclier de rêves</a></i></b> <i>(OO)</i>. Protège l'esprit d'une créature lorsqu'elle est inconsciente.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20pare-balles.ashx" title="Bouclier pare-balles">Bouclier pare-balles</a></i></b> <i>(AG)</i>. Le personnage gagne un bonus de parade de +4 à la CA contre les armes à feu.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Caresse%20%c3%a9l%c3%a9mentaire.ashx" title="Caresse élémentaire">Caresse élémentaire</a></i></b> <i>(MJRA)</i>. Gagne une attaque de contact d’énergie.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Catatonie.ashx" title="Catatonie">Catatonie</a></i></b> <i>(AO)</i>. Une cible consentante semble morte.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Charge%20de%20fourmi%20(partag%c3%a9).ashx" title="Charge de fourmi (partagé)">Charge de fourmi (partagé)</a></i></b> <i>(AG)</i>. Comme <i>charge de fourmi</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Compression.ashx" title="Compression">Compression</a> (<a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Vishkanya</a>)</i></b> <i>(MR)</i>. Améliore la flexibilité de la cible, lui permettant de passer dans des espaces étroits plus facilement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Concentration%20dAram%20Zey.ashx" title="Concentration du dénicheur de pièges">Concentration du dénicheur de pièges</a> (F)</i></b> <i>(RSE)</i>. Confère la capacité recherche de pièges ou un bonus de compétence de +5 aux tests de Sabotage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9charge%20d%c3%a9fensive.ashx" title="Décharge défensive">Décharge défensive</a></i></b> <i>(AM)</i>. L'électricité blesse les adversaires.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement%20fantomatique.ashx" title="Déguisement fantomatique">Déguisement fantomatique</a></i></b> <i>(AM)</i>. La cible ressemble à son propre fantôme.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9marche%20d%c3%a9calibr%c3%a9e.ashx" title="Démarche décalibrée">Démarche décalibrée</a></i></b> <i>(UI)</i>. Les sons produits par la cible semblent venir d'un autre point de l'espace.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tection%20de%20linvisibilit%c3%a9.ashx" title="Détection de l&#39;invisibilité">Détection de l'invisibilité</a></i></b>. Révèle créatures et objets invisibles.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tection%20de%20pens%c3%a9es.ashx" title="Détection de pensées">Détection de pensées</a></i></b>. Permet d'écouter les pensées superficielles.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9termination%20in%c3%a9branlable.ashx" title="Détermination inébranlable">Détermination inébranlable</a></i></b> <i>(RSE)</i>. La cible ignore les affaiblissements temporaires imposés à une de ses caractéristique.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Eaux%20de%20Lamashtu.ashx" title="Eaux de Lamashtu">Eaux de folie</a> (M, Y)</i></b> <i>(CCMI)</i>. Créé un poison qui a l'apparence d'eau pure et propre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89cailles%20%c3%a9pineuses.ashx" title="Écailles épineuses">Écailles épineuses</a> (<a class="pagelink" href="Pathfinder-RPG.Homme-l%c3%a9zard.ashx" title="Homme-lézard">Homme-lézard</a>)</i></b> <i>(CM)</i>. Confère des piques acérés aux écailles de la cible.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Endurance%20de%20lours.ashx" title="Endurance de l&#39;ours">Endurance de l'ours</a></i></b>. Confère +4 en Con pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Enveloppement%20des%20pens%c3%a9es.ashx" title="Enveloppement des pensées">Enveloppement des pensées</a></i></b> <i>(AO)</i>. Protège contre la détection de pensées et la modification de mémoire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Esprit%20investigateur.ashx" title="Esprit investigateur">Esprit investigateur</a></i></b> <i>(MCA)</i>. Quand le personnage utilise certaines compétences mentales, fait deux jets et garde le meilleur résultat.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89ternuement%20de%20feu.ashx" title="Éternuement de feu">Éternuement de feu</a> (<a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>)</i></b> <i>(MR)</i>. Le personnage éternue des flammes pour mettre ses ennemis en feu et les faire tomber à terre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Examen%20approfondi.ashx" title="Examen approfondi">Examen approfondi</a></i></b> <i>(MCA)</i>. Le personnage gagne des bonus de compétence lorsqu’il interagit avec la cible.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Flamb%c3%a9e%20de%20sang.ashx" title="Flambée de sang">Flambée de sang</a> (<a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Orque</a>)</i></b> <i>(MR)</i>. Enflamme le sang de ceux qui s'approchent du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Flexibilit%c3%a9%20extr%c3%aame.ashx" title="Flexibilité extrême">Flexibilité extrême</a></i></b> <i>(MCA)</i>. Le personnage gagne un bonus à la CA, aux tests d’Évasion et quand il est en lutte.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Flou.ashx" title="Flou">Flou</a></i></b>. Chaque attaque a 20 % de chances de rater la cible.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Force%20de%20taureau.ashx" title="Force de taureau">Force de taureau</a></i></b>. Confère +4 en Force pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Frappes%20f%c3%a9briles.ashx" title="Frappes fébriles">Frappes fébriles</a> (<a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a>)</i></b> <i>(MR)</i>. Les attaques au corps à corps infligées au personnage rendent ses attaquants fiévreux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gr%c3%a2ce%20f%c3%a9line.ashx" title="Grâce féline">Grâce féline</a></i></b>. Confère +4 en Dex pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Injection.ashx" title="Injection">Injection</a> (Y)</i></b> <i>(AG)</i>. Le personnage peut administrer une infusion, un élixir, un poison ou une potion par une attaque de contact.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Invective%20cuisante.ashx" title="Invective cuisante">Invective cuisante</a> (Y)</i></b> <i>(AG)</i>. Le personnage fait un test d’Intimidation contre tous les adversaires situés dans les 9 m. Ceux qu’il démoralise subissent des dégâts de feu.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Invisibilit%c3%a9.ashx" title="Invisibilité">Invisibilité</a> (Y)</i></b>. Sujet invisible pendant 1 minute/niveau ou jusqu'à ce qu'il attaque.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.L%c3%a9vitation.ashx" title="Lévitation">Lévitation</a> (Y)</i></b>. La cible monte ou descend au gré du PJ.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Marionnette%20de%20peau.ashx" title="Marionnette de peau">Marionnette de peau</a></i></b> <i>(AM)</i>. Anime et possède la peau du personnage comme une créature séparée.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20dombre.ashx" title="Mixture pour bombe d&#39;ombre">Mixture pour bombe d'ombre</a></i></b> <i>(AG)</i>. La bombe du personnage recouvre sa cible d’une substance sombre qui lui donne un camouflage mais limite sa visibilité.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Modification%20dapparence.ashx" title="Modification d&#39;apparence">Modification d'apparence</a></i></b>. Permet d'adopter la forme d'une créature de taille P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Pattes%20daraign%c3%a9e.ashx" title="Pattes d&#39;araignée">Pattes d'araignée</a> (Y)</i></b>. Permet de grimper aux murs.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Peau%20d%c3%a9corce.ashx" title="Peau d&#39;écorce">Peau d'écorce</a> (Y)</i></b>. Confère un bonus d'armure naturelle de +2 (ou plus).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Peau%20en%20fer.ashx" title="Peau en fer">Peau en fer</a> (<a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Duergar</a>)</i></b> <i>(CM)</i>. La peau du personnage durcit et prend la couleur et la texture du fer.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Perception%20des%20indices.ashx" title="Perception des indices">Perception des indices</a></i></b> <i>(MJRA)</i>. +5 Perception et Psychologie 10 min/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Pied%20a%c3%a9rien.ashx" title="Pied aérien">Pied aérien</a></i></b> <i>(MCA)</i>. Le personnage marche sur l’air d’un pas mal assuré, dans certaines limites.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Poigne%20s%c3%bbre.ashx" title="Poigne sûre">Poigne sûre</a></i></b> <i>(AG)</i>. Le personnage gagne un bonus de compétence de +4 aux tests d’Acrobaties et d’Escalade et au DMD.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Potion%20de%20tatouage.ashx" title="Potion de tatouage">Potion de tatouage</a> (M)</i></b> <i>(MMI)</i>. Concocte une potion qui créée un tatouage magique sur la poitrine du buveur.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Protection%20contre%20les%20projectiles.ashx" title="Protection contre les projectiles">Protection contre les projectiles</a> (Y)</i></b>. La cible gagne RD 10/magie contre les attaques à distance.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Protection%20des%20organes%20vitaux.ashx" title="Protection des organes vitaux">Protection des organes vitaux</a></i></b> <i>(RSE)</i>. Tord les organes vitaux du personnage pour le rendre résistant aux coups critiques et aux attaques sournoises.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Ralentissement%20du%20poison.ashx" title="Ralentissement du poison">Ralentissement du poison</a></i></b>. Neutralise le poison pendant 1 heure/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9gression%20ancestrale.ashx" title="Régression ancestrale">Régression ancestrale</a> (<a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Drow</a>)</i></b> <i>(MR)</i>. Transforme un drow en elfe de la surface pour 24h.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">Résistance aux énergies destructives</a> (Y)</i></b>. Protège contre la forme d'énergie choisie à raison de 10 (ou plus) points de dégâts/attaque.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Restauration%20partielle.ashx" title="Restauration partielle">Restauration partielle</a></i></b>. Dissipe effets magiques affaiblissants ou rend 1d4 points de caractéristique perdus.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Retardement%20des%20maladies.ashx" title="Retardement des maladies">Retardement des maladies</a> (<a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a>)</i></b> <i>(MR)</i>. Le personnage obtient une immunité temporaire aux maladies.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9verb%c3%a9ration%20cin%c3%a9tique.ashx" title="Réverbération cinétique">Réverbération cinétique</a></i></b> <i>(AG)</i>. Renvoie la force de l’attaque ennemie dans son arme.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Ruse%20du%20renard.ashx" title="Ruse du renard">Ruse du renard</a></i></b>. Confère +4 en Int pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sagesse%20du%20hibou.ashx" title="Sagesse du hibou">Sagesse du hibou</a></i></b>. Confère +4 en Sag pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sang%20adh%c3%a9sif.ashx" title="Sang adhésif">Sang adhésif</a></i></b> <i>(MCA)</i>. Les armes des attaquants se collent au sang gluant du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Savoir%20manier%20une%20arme.ashx" title="Savoir manier une arme">Savoir manier une arme</a></i></b> <i>(AG)</i>. Accorde le maniement d’une arme pour une courte période.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sens%20aiguis%c3%a9s.ashx" title="Sens aiguisés">Sens aiguisés</a></i></b> <i>(AM)</i>. Bonus aux tests de Perception.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Simulacre%20de%20vie.ashx" title="Simulacre de vie">Simulacre de vie</a> (Y)</i></b>. Confère 1d10 pv temporaires, +1/niveau (max. +10).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Soins%20mod%c3%a9r%c3%a9s.ashx" title="Soins modérés">Soins modérés</a> (Y)</i></b>. Rend 2d8 pv au sujet, +1/niveau (max. +10).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Songe%20mineur.ashx" title="Songe mineur">Songe mineur</a> (<a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>)</i></b> <i>(MR)</i>. Comme <i>songe</i>, mais délivre un message plus court.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Souffle%20de%20feu.ashx" title="Souffle de feu">Souffle de feu</a></i></b> <i>(MJRA)</i>. Exhale à volonté un cône de flamme.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Splendeur%20de%20laigle.ashx" title="Splendeur de l&#39;aigle">Splendeur de l'aigle</a></i></b>. Confère +4 en Cha pendant 1 minute/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transmission%20alchimique.ashx" title="Transmission alchimique">Transmission alchimique</a></i></b> <i>(MJRA)</i>. Bénéficie des effets d'une potion sans la boire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transmutation%20de%20potion%20en%20poison.ashx" title="Transmutation de potion en poison">Transmutation de potion en poison</a></i></b> <i>(MJRA)</i>. Crache du poison sur une arme après avoir bu une potion.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Venin%20latent.ashx" title="Venin latent">Venin latent</a> (M)</i></b> <i>(UI)</i>. Retarde le temps d'incubation d'un poison et dissimule sa présence.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.sort%20Vision%20dans%20le%20noir.ashx" title="Vision dans le noir">Vision dans le noir</a></i></b>. Permet de voir à 18 m sans la moindre luminosité.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vomir%20une%20nu%c3%a9e.ashx" title="Vomir une nuée">Vomir une nuée</a></i></b> <i>(MJRA)</i>. Produit une nuée d'araignées qui se battent pour le personnage.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="3" href="#3"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 3<a class="headeranchor" id="Formules_de_niveau_D_2" href="#Formules_de_niveau_D_2" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Absorption%20de%20toxine.ashx" title="Absorption de toxine">Absorption de toxine</a></i></b> <i>(AG)</i>. Le personnage est temporairement immunisé contre les maladies et les toxines, il en absorbe une et la transmet à autrui.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Amplification%20d%c3%a9lixir.ashx" title="Amplification d&#39;élixir">Amplification d'élixir</a></i></b> <i>(MJRA)</i>. Augmente la puissance ou la durée des effets d'une potion ou d'un élixir.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Anatomie%20morte-vivante%20I.ashx" title="Anatomie morte-vivante I">Anatomie morte-vivante I</a></i></b> <i>(AM)</i>. Prend la forme et les pouvoirs de morts-vivants P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Antid%c3%a9tection.ashx" title="Antidétection">Antidétection</a> (M)</i></b>. Protège contre la scrutation et les divinations.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Aspect%20animal%20sup%c3%a9rieur.ashx" title="Aspect animal supérieur">Aspect animal supérieur</a></i></b> <i>(AG)</i>. Comme <i>aspect animal</i> mais donne droit à deux avantages animaux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Aura%20%c3%a9l%c3%a9mentaire.ashx" title="Aura élémentaire">Aura élémentaire</a></i></b> <i>(MJRA)</i>. Crée une aura d'énergie autour du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Canaliser%20la%20vigueur.ashx" title="Canaliser la vigueur">Canaliser la vigueur</a> (<a class="pagelink" href="Pathfinder-RPG.Irori%20(technique).ashx" title="Irori">Irori</a>)</i></b> <i>(D&M)</i>. Concentre l'énergie du personnage dans une partie de son corps, lui conférant divers bonus.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Chien%20de%20chasse.ashx" title="Chien de chasse">Chien de chasse</a></i></b> <i>(MJRA)</i>. Augmente l’odorat et donne au lanceur de sorts le pouvoir spécial odorat.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Contact%20absorbant.ashx" title="Contact absorbant">Contact absorbant</a></i></b> <i>(MJRA)</i>. Le lanceur absorbe un objet pendant 1 jour/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Corps%20%c3%a9pineux.ashx" title="Corps épineux">Corps épineux</a></i></b> <i>(MJRA)</i>. Ceux qui attaquent le personnage subissent 1d6+1 points de dégâts/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Creusement.ashx" title="Creusement">Creusement</a> (Y)</i></b> <i>(AM)</i>. La cible gagne une vitesse de creusement de 4,50 m.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement%20ajustable.ashx" title="Déguisement ajustable">Déguisement ajustable</a></i></b> <i>(MCA)</i>. Comme <i>déguisement</i>, mais le personnage peut changer de déguisement par une action rapide.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9livrance%20des%20mal%c3%a9dictions.ashx" title="Délivrance des malédictions">Délivrance des malédictions</a></i></b>. Libère des malédictions.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9placement.ashx" title="Déplacement">Déplacement</a></i></b>. Chaque attaque a 50 % de chances de rater la cible.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Don%20des%20langues.ashx" title="Don des langues">Don des langues</a></i></b>. Permet de parler toutes les langues.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89lan%20de%20rapidit%c3%a9.ashx" title="Élan de rapidité">Élan de rapidité</a></i></b> <i>(AG)</i>. La vitesse du personnage augmente. Quand il se déplace, il ignore les attaques d’opportunité et peut traverser l’espace occupé par des créatures plus grandes que lui.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Endurance%20aux%20%c3%a9nergies%20destructives%20(partag%c3%a9).ashx" title="Endurance aux énergies destructives (partagé)">Endurance aux énergies destructives (partagé)</a></i></b> <i>(AG)</i>. Comme <i>endurance aux énergies destructives</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89ruption%20de%20pustules.ashx" title="Éruption de pustules">Éruption de pustules</a></i></b> <i>(AM)</i>. Des bubons acides explosent quand le personnage est attaqué.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89tat%20gazeux.ashx" title="État gazeux">État gazeux</a> (Y)</i></b>. Le sujet devient intangible et peut voler lentement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20bestiale%20I.ashx" title="Forme bestiale I">Forme bestiale I</a> (Y)</i></b>. Le lanceur de sorts adopte la forme et les pouvoirs d'un animal de taille P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Goutte%20dorchid%c3%a9e.ashx" title="Goutte d&#39;orchidée">Goutte d'orchidée</a> (M)</i></b> <i>(MMI)</i>. Ajoute un puissant effet guérisseur aux mutagènes du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9rison%20de%20la%20c%c3%a9cit%c3%a9surdit%c3%a9.ashx" title="Guérison de la cécité/surdité">Guérison de la cécité/surdité</a></i></b>. Soigne la cécité ou la surdité.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9rison%20des%20maladies.ashx" title="Guérison des maladies">Guérison des maladies</a></i></b>. Guérit tous les maux du sujet.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.H%c3%a9ro%c3%afsme.ashx" title="Héroïsme">Héroïsme</a> (Y)</i></b>. Confère +2 aux jets d'attaque, aux jets de sauvegarde et aux tests de compétence.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Hypercognition.ashx" title="Hypercognition">Hypercognition</a></i></b> <i>(AO)</i>. Le mage se souvient rapidement de tout ce qu’il sait sur un sujet.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Innombrables%20yeux.ashx" title="Innombrables yeux">Innombrables yeux</a></i></b> <i>(AM)</i>. Des yeux supplémentaires donnent la vision à 360°.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Jumeau%20de%20vomi.ashx" title="Jumeau de vomi">Jumeau de vomi</a> (Y) (<a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>)</i></b> <i>(MR)</i>. Le lanceur crée un double de lui-même avec lequel il peut échanger sa place.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20%c3%a0%20d%c3%a9charge%20de%20foudre.ashx" title="Mixture pour bombe à décharge de foudre">Mixture pour bombe à décharge de foudre</a></i></b> <i>(AG)</i>. La bombe du personnage est agrémentée d’un sceau qui inflige des dégâts électriques à chaque fois que les cibles touchées se déplacent de 1,50 (M).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Parangon%20soudain.ashx" title="Parangon soudain">Parangon soudain</a> (<a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>)</i></b> <i>(MR)</i>. +2 à la Dextérité et à l'Intelligence, confère un don supplémentaire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Pattes%20daraign%c3%a9e%20(partag%c3%a9).ashx" title="Pattes d&#39;araignée (partagé)">Pattes d'araignée (partagé)</a></i></b> <i>(AG)</i>. Comme <i>pattes d’araignée</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Peau%20r%c3%a9sineuse.ashx" title="Peau résineuse">Peau résineuse</a></i></b> <i>(AG)</i>. Le personnage gagne une RD 5/perforant et un bonus de +4 au DMD contre les tentatives de désarmement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Perception%20du%20sang.ashx" title="Perception du sang">Perception du sang</a> (<a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Orque</a>)</i></b> <i>(MR)</i>. Améliore la capacité de la cible à sentir la présence de sang.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Physique%20monstrueux%20I.ashx" title="Physique monstrueux I">Physique monstrueux I</a> (Y)</i></b> <i>(AM)</i>. Prend la forme et les pouvoirs d'humanoïdes monstrueux P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Pied%20ancr%c3%a9.ashx" title="Pied ancré">Pied ancré</a></i></b> <i>(MCA)</i>. Les lierres situés sous les pieds du personnage le stabilisent mais le ralentissent.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Piste%20de%20feu.ashx" title="Piste de feu">Piste de feu</a> (<a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>)</i></b> <i>(MR)</i>. Laisse une traînée de flammes qui suit le personnage à chaque pas.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Possession%20de%20marionnette.ashx" title="Possession de marionnette">Possession de marionnette</a></i></b> <i>(AM)</i>. Comme <i>possession</i> mais limité à la ligne de mire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Protection%20contre%20les%20%c3%a9nergies%20destructives.ashx" title="Protection contre les énergies destructives">Protection contre les énergies destructives</a></i></b>. Absorbe 12 points de dégâts/niveau infligés par le type d'énergie choisi.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Protection%20contre%20les%20projectiles%20(partag%c3%a9).ashx" title="Protection contre les projectiles (partagé)">Protection contre les projectiles (partagé)</a></i></b> <i>(AG)</i>. Comme <i>protection contre les projectiles</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Rage.ashx" title="Rage">Rage</a></i></b>. Confère +2 en For et en Con, +1 aux jets de Vol, -2 à la CA.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Ralentissement%20du%20poison%20(partag%c3%a9).ashx" title="Ralentissement du poison (partagé)">Ralentissement du poison (partagé)</a></i></b> <i>(AG)</i>. Comme <i>ralentissement du poison</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Rapidit%c3%a9.ashx" title="Rapidité">Rapidité</a> (Y)</i></b>. Une créature/niveau se déplace plus rapidement, +1 aux jets d'attaque, à la CA et aux jets de Réflexes.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Recherche%20de%20pens%c3%a9es.ashx" title="Recherche de pensées">Recherche de pensées</a></i></b> <i>(MJRA)</i>. Détecte les pensées des créatures intelligentes.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9servoir%20draconique.ashx" title="Réservoir draconique">Réservoir draconique</a> (Y)</i></b> <i>(MJRA)</i>. Le personnage peut absorber les dégâts d'énergie et s'en servir pour améliorer une attaque de contact.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20l%c3%a2ge%20mineure.ashx" title="Résistance à l&#39;âge mineure">Résistance à l'âge mineure</a></i></b> <i>(AM)</i>. Ignore les malus de l'âge moyen.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20aux%20%c3%a9nergies%20destructives%20(partag%c3%a9).ashx" title="Résistance aux énergies destructives (partagé)">Résistance aux énergies destructives (partagé)</a></i></b> <i>(AG)</i>. Comme <i>résistance aux énergies destructives</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Respiration%20aquatique.ashx" title="Respiration aquatique">Respiration aquatique</a></i></b>. Permet de respirer sous l'eau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Respiration%20dair.ashx" title="Respiration d&#39;air">Respiration d'air</a> (<a class="pagelink" href="Pathfinder-RPG.Sahuagin.ashx" title="Sahuagin">Sahuagin</a>)</i></b> <i>(CM)</i>. Permet aux cibles de respirer l'air.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sabotage%20de%20cr%c3%a9ature%20artificielle.ashx" title="Sabotage de créature artificielle">Sabotage de créature artificielle</a></i></b> <i>(MCA)</i>. Les attaques de contact du personnage rendent une créature artificielle sans défense pendant 1 round/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sentinelle%20de%20sang.ashx" title="Sentinelle de sang">Sentinelle de sang</a> (M)</i></b> <i>(MCA)</i>. Anime une sculpture animale qui devient le familier temporaire du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sillage%20naus%c3%a9abond.ashx" title="Sillage nauséabond">Sillage nauséabond</a></i></b> <i>(MCA)</i>. La créature laisse derrière elle un sillage de cases emplies d’un nuage nauséabond.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Soins%20importants.ashx" title="Soins importants">Soins importants</a> (Y)</i></b>. Rend 3d8 pv au sujet, +1/niveau (max. +15).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transe%20guerri%c3%a8re.ashx" title="Transe guerrière">Transe guerrière</a> (Y) (<a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a>)</i></b> <i>(MR)</i>. Confère la capacité férocité, des points de vies supplémentaires, et un bonus de +4 contre les effets mentaux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(partag%c3%a9).ashx" title="Vision dans le noir (partagé)">Vision dans le noir (partagé)</a></i></b> <i>(AG)</i>. Comme <i>vision dans le noir</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vision%20des%20auras.ashx" title="Vision des auras">Vision des auras</a></i></b> <i>(MCA)</i>. Le personnage peut voir les auras d’alignement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vision%20magique.ashx" title="Vision magique">Vision magique</a></i></b>. Le PJ voit les auras magiques.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vocabulaire%20savant.ashx" title="Vocabulaire savant">Vocabulaire savant</a></i></b> <i>(UI)</i>. La cible peut parler, lire et écrire un ou plusieurs langages pendant 8 heures.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.sort%20Vol.ashx" title="Vol">Vol</a> (Y)</i></b>. Le sujet vole à la vitesse de 18 m/round.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Voleuse%20pr%c3%a9hensile.ashx" title="Voleuse préhensile">Voleuse préhensile</a> (<a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Vanara</a>)</i></b> <i>(MR)</i>. Permet à la queue de la cible d'effectuer des manoeuvres de sale coup et de subtilisation.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="4" href="#4"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 4<a class="headeranchor" id="Formules_de_niveau_E_3" href="#Formules_de_niveau_E_3" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20de%20feu.ashx" title="Bouclier de feu">Bouclier de feu</a> (Y)</i></b>. Brûle les créatures attaquant le PJ en protégeant ce dernier contre le feu ou le froid.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Brume%20de%20vitriol.ashx" title="Brume de vitriol">Brume de vitriol</a></i></b> <i>(AM)</i>. Comme <i>bouclier de feu</i> mais dégâts d'acide.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Caresse%20vaseuse.ashx" title="Caresse vaseuse">Caresse vaseuse</a></i></b> <i>(AM)</i>. Le contact infeste la cible de vase verte.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Chaleur%20curative.ashx" title="Chaleur curative">Chaleur curative</a> (<a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Ifrit</a>)</i></b> <i>(MR)</i>. Le personnage obtient une immunité temporaire aux dégâts de feu qu'il peut transformer en énergie curative.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Contact%20mutag%c3%a8ne.ashx" title="Contact mutagène">Contact mutagène</a></i></b> <i>(AG)</i>. Le personnage transmet une version affaiblie de son mutagène à autrui.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Corps%20%c3%a9l%c3%a9mentaire%20I.ashx" title="Corps élémentaire I">Corps élémentaire I</a> (Y)</i></b>. Le lanceur de sorts se transforme en élémentaire de taille P.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tection%20du%20mensonge.ashx" title="Détection du mensonge">Détection du mensonge</a></i></b>. Révèle les mensonges délibérés.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tonation.ashx" title="Détonation">Détonation</a> (M)</i></b> <i>(MJRA)</i>. Inflige 1d8 points de dégâts d’énergie/niveau à toutes les céatures qui se trouvent à moins de 4,50 m.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Don%20des%20langues%20(partag%c3%a9).ashx" title="Don des langues (partagé)">Don des langues (partagé)</a></i></b> <i>(AG)</i>. Comme <i>don des langues</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89cailles%20%c3%a9pineuses%20sup%c3%a9rieures.ashx" title="Écailles épineuses supérieures">Écailles épineuses supérieures</a> (<a class="pagelink" href="Pathfinder-RPG.Homme-l%c3%a9zard.ashx" title="Homme-lézard">Homme-lézard</a>)</i></b> <i>(CM)</i>. Comme <i>écailles épineuses</i>, mais avec un bonus d'altération plus élevé.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89cholocalisation.ashx" title="Écholocalisation">Écholocalisation</a></i></b> <i>(AM)</i>. Les sens radars du personnage lui donnent la vision aveugle à 12 mètres.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89clat%20intenable.ashx" title="Éclat intenable">Éclat intenable</a></i></b> <i>(MCA)</i>. Le corps lumineux du personnage éblouit ou aveugle les autres.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Ennemi%20des%20enchantements.ashx" title="Ennemi des enchantements">Ennemi des enchantements</a></i></b> <i>(MCA)</i>. Le personnage dupe les adversaires qui essayent de lancer des enchantements sur lui.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20bestiale%20II.ashx" title="Forme bestiale II">Forme bestiale II</a> (Y)</i></b>. Le lanceur de sorts adopte la forme et les pouvoirs d'un animal de taille TP, P, M ou G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20cendr%c3%a9e%20br%c3%bblante.ashx" title="Forme cendrée brûlante">Forme cendrée brûlante</a> (Y) (<a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Ifrit</a>)</i></b> <i>(MR)</i>. Le personnage se transforme en un tourbillon de cendres.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20vermine%20I.ashx" title="Forme de vermine I">Forme de vermine I</a> (Y)</i></b> <i>(AM, LD)</i>. Prend la forme et les pouvoirs d'une vermine P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20liquide.ashx" title="Forme liquide">Forme liquide</a></i></b> <i>(MJRA)</i>. Gagne RD 10/tranchant, augmente l’allonge de 3 m et peut respirer sous l’eau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20miasmatique.ashx" title="Forme miasmatique">Forme miasmatique</a> (<a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Sylphe</a>)</i></b> <i>(MR)</i>. Comme <i>état gazeux</i>, mais le corps vaporeux de la cible est dangereux pour les créatures qui le touchent.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Formule%20universelle.ashx" title="Formule universelle">Formule universelle</a> (M)</i></b> <i>(MJRA)</i>. Remplace tout extrait de niveau 3 ou moins.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Immortalit%c3%a9.ashx" title="Immortalité">Immortalité</a> (Y)</i></b> <i>(CMy)</i>. Empêche la mort par perte de points de vie tant que le sort persiste.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Immunit%c3%a9%20contre%20les%20sorts.ashx" title="Immunité contre les sorts">Immunité contre les sorts</a></i></b>. Immunise le sujet contre 1 sort/4 niveaux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Inhalation%20absorbante.ashx" title="Inhalation absorbante">Inhalation absorbante</a> (<a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Sylphe</a>)</i></b> <i>(MR)</i>. Absorbe un effet gazeux, le conservant sans danger dans le corps du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Invisibilit%c3%a9%20supr%c3%aame.ashx" title="Invisibilité suprême">Invisibilité suprême</a></i></b>. Comme <i>invisibilité</i>, mais continue quand le sujet attaque.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Libert%c3%a9%20de%20mouvement.ashx" title="Liberté de mouvement">Liberté de mouvement</a></i></b>. La cible bouge normalement malgré les entraves.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Marche%20dans%20les%20airs.ashx" title="Marche dans les airs">Marche dans les airs</a></i></b>. Le sujet marche dans les airs comme sur la terre ferme.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.M%c3%a9tamorphe%20ajustable.ashx" title="Métamorphe ajustable">Métamorphe ajustable</a></i></b> <i>(MCA)</i>. Comme <i>modification d’apparence</i>, mais le personnage peut changer de forme par une action rapide.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20de%20vip%c3%a8re.ashx" title="Mixture pour bombe de vipère">Mixture pour bombe de vipère</a></i></b> <i>(AG)</i>. La bombe du personnage invoque des vipères qui mordent les victimes touchées par la bombe ou son aspersion.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Nage%20dans%20la%20terre.ashx" title="Nage dans la terre">Nage dans la terre</a> (<a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Svirfneblin</a>)</i></b> <i>(MR)</i>. Permet à la cible de nager à travers la pierre, la terre, et d'autres terrains.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Neutralisation%20du%20poison.ashx" title="Neutralisation du poison">Neutralisation du poison</a></i></b>. Rend le poison inoffensif.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c5%92il%20du%20mage.ashx" title="Œil du mage">Œil du mage</a></i></b>. Œil invisible avançant de 9 m/round.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Peau%20de%20pierre.ashx" title="Peau de pierre">Peau de pierre</a> (M, Y)</i></b>. RD 10/adamantium.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Physique%20monstrueux%20II.ashx" title="Physique monstrueux II">Physique monstrueux II</a> (Y)</i></b> <i>(AM)</i>. Prend la forme et les pouvoirs d'humanoïdes monstrueux TP ou G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Protection%20contre%20la%20mort.ashx" title="Protection contre la mort">Protection contre la mort</a></i></b>. Confère une immunité contre les sorts de mort et les effets d'énergie négative.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Regard%20du%20vide.ashx" title="Regard du vide">Regard du vide</a></i></b> <i>(MCA)</i>. Le personnage voit à 18 mètres dans les ténèbres, y compris dans les ténèbres magiques.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20lAffadissement.ashx" title="Résistance à l&#39;Affadissement">Résistance à l'Affadissement</a> (<a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>)</i></b> <i>(ISR)</i>. Les diminutions de caractéristiques dues à l'Affadissement n'affecte plus les modificateurs du personnage.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20l%c3%a2ge.ashx" title="Résistance à l&#39;âge">Résistance à l'âge</a></i></b> <i>(AM)</i>. Ignore les malus de l'âge avancé.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Restauration.ashx" title="Restauration">Restauration</a> (M)</i></b>. Rend niveaux et points de caractéristique perdus.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Sang%20caustique.ashx" title="Sang caustique">Sang caustique</a></i></b> <i>(ISG)</i>. Imprègne le sang du lanceur d'un acide corrosif qui blesse ceux qui l'attaquent.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Simulacre%20de%20vie%20sup%c3%a9rieur.ashx" title="Simulacre de vie supérieur">Simulacre de vie supérieur</a></i></b> <i>(AM)</i>. Gagne 2d10 points de vie temporaire + 1/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Soins%20intensifs.ashx" title="Soins intensifs">Soins intensifs</a> (Y)</i></b>. Rend 4d8 pv au sujet, +1/niveau (max. +20).</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Souffle%20de%20dragon.ashx" title="Souffle de dragon">Souffle de dragon</a> (Y)</i></b> <i>(MJRA)</i>. Le personnage bénéficie du souffle d'un dragon.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vigueur%20persistante.ashx" title="Vigueur persistante">Vigueur persistante</a></i></b> <i>(MCA)</i>. Le personnage gagne guérison accélérée 2, immunité contre le saignement et récupération accélérée contre les maladies et les poisons.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20sup%c3%a9rieure.ashx" title="Vision dans le noir supérieure">Vision dans le noir supérieure</a></i></b> <i>(AM)</i>. Vision à 36 mètres dans les ténèbres absolues.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="5" href="#5"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 5<a class="headeranchor" id="Formules_de_niveau_F_4" href="#Formules_de_niveau_F_4" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Adaptation%20planaire.ashx" title="Adaptation planaire">Adaptation planaire</a></i></b> <i>(MJRA)</i>. Résiste aux effets néfastes d'un plan.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Anatomie%20morte-vivante%20II.ashx" title="Anatomie morte-vivante II">Anatomie morte-vivante II</a></i></b> <i>(AM)</i>. Prend la forme et les pouvoirs de morts-vivants TP ou G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Aper%c3%a7u%20lucide.ashx" title="Aperçu lucide">Aperçu lucide</a> (M)</i></b> <i>(UI)</i>. Comme <i>vision lucide</i> mais dure 1 round.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Assimilation%20retard%c3%a9e.ashx" title="Assimilation retardée">Assimilation retardée</a></i></b> <i>(MJRA)</i>. L'extrait ne fait pas effet tant que le personnage ne l'a pas décidé.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.sort%20Cauchemar.ashx" title="Cauchemar">Cauchemar</a> (Y)</i></b>. Envoie des visions causant fatigue et perte de 1d10 pv.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Communication%20%c3%a0%20distance.ashx" title="Communication à distance">Communication à distance</a> (Y)</i></b>. Transmet un court message n'importe où.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Contact%20avec%20les%20plans.ashx" title="Contact avec les plans">Contact avec les plans</a></i></b>. Permet d'interroger une entité extraplanaire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Corps%20%c3%a9l%c3%a9mentaire%20II.ashx" title="Corps élémentaire II">Corps élémentaire II</a> (Y)</i></b>. Le lanceur de sorts se transforme en élémentaire de taille M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.%c3%89chapper%20au%20temps.ashx" title="Échapper au temps">Échapper au temps</a> (M)</i></b> <i>(MJRA)</i>. Place temporairement le personnage en animation suspendue.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Extraction%20du%20demi-sang.ashx" title="Extraction du demi-sang">Extraction du demi-sang</a> (<a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a>)</i></b> <i>(MR)</i>. Transforme un demi-orque en orque pur sang.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20bestiale%20III.ashx" title="Forme bestiale III">Forme bestiale III</a> (Y)</i></b>. Le lanceur de sorts adopte la forme et les pouvoirs d'un animal de taille Min, TP, P, M, G ou TG ou d'une créature magique de taille P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20poussi%c3%a8re.ashx" title="Forme de poussière">Forme de poussière</a></i></b> <i>(AG)</i>. Le personnage devient temporairement une créature intangible faite de poussière.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20vase%20I.ashx" title="Forme de vase I">Forme de vase I</a></i></b> <i>(-)</i>. Le lanceur de sorts se transforme en vase de taille P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20vermine%20II.ashx" title="Forme de vermine II">Forme de vermine II</a> (Y)</i></b> <i>(AM, LD)</i>. Comme <i>forme de vermine I</i> mais TP ou G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20v%c3%a9g%c3%a9tale%20I.ashx" title="Forme végétale I">Forme végétale I</a></i></b>. Le lanceur de sorts se transforme en plante de taille P ou M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gorg%c3%a9e%20de%20poison.ashx" title="Gorgée de poison">Gorgée de poison</a></i></b> <i>(UI)</i>. Protège le personnage contre les poisons ingérés, puis permet de les recracher en cône.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gr%c3%a2ce%20d%c3%a9fensive.ashx" title="Grâce défensive">Grâce défensive</a> (<a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a> uniquement)</i></b> <i>(MCA)</i>. Le personnage peut lancer un dé d'inspiration sans en dépenser d'utilisation pour obtenir un bonus d'esquive à la CA à chaque round, et devient immunisé aux dégâts de précision.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Marche%20dans%20les%20airs%20(partag%c3%a9).ashx" title="Marche dans les airs (partagé)">Marche dans les airs (partagé)</a></i></b> <i>(AG)</i>. Comme <i>marche dans les airs</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.M%c3%a9moire%20ancestrale.ashx" title="Mémoire ancestrale">Mémoire ancestrale</a></i></b> <i>(CCMI)</i>. Le personnage implore l'aide de ses ancêtres, obtenant un bonus de +5 aux tests de compétences basés sur l'Intelligence.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.M%c3%a9tamorphose.ashx" title="Métamorphose">Métamorphose</a></i></b>. Change la forme du sujet.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20languide.ashx" title="Mixture pour bombe languide">Mixture pour bombe languide</a></i></b> <i>(AG)</i>. Les créatures touchées par la bombe ou ses aspersions sont fatiguées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Peau%20de%20pierre%20(partag%c3%a9).ashx" title="Peau de pierre (partagé)">Peau de pierre (partagé)</a> (M)</i></b> <i>(AG)</i>. Comme <i>peau de pierre</i> mais la durée d’effet se divise entre les créatures touchées.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Physique%20monstrueux%20III.ashx" title="Physique monstrueux III">Physique monstrueux III</a> (Y)</i></b> <i>(AM)</i>. Prend la forme et les pouvoirs d'humanoïdes monstrueux de taille Min ou TG.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Pistage%20infaillible.ashx" title="Pistage infaillible">Pistage infaillible</a></i></b> <i>(UI)</i>. Le personnage peut suivre une piste sans jamais la perdre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Possession.ashx" title="Possession">Possession</a> (F)</i></b>. Permet de s'emparer du corps d'un autre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20l%c3%a2ge%20sup%c3%a9rieure.ashx" title="Résistance à l&#39;âge supérieure">Résistance à l'âge supérieure</a></i></b> <i>(AM)</i>. Ignore les malus de l'âge vénérable.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.sort%20R%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">Résistance à la magie</a></i></b>. Le sujet gagne une RM de 12, +1/niveau.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Songe.ashx" title="Songe">Songe</a> (Y)</i></b>. Envoie un message à un dormeur.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transformation%20r%c3%a9surgente.ashx" title="Transformation résurgente">Transformation résurgente</a> (M)</i></b> <i>(MJRA)</i>. Quand le personnage frôle la mort, il bénéficie d'un regain d'énergie.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transplantation%20faciale.ashx" title="Transplantation faciale">Transplantation faciale</a></i></b> <i>(ISG)</i>. Extrait le visage et les yeux d'une créature, les fondant magiquement avec ceux du lanceur.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vol%20sup%c3%a9rieur.ashx" title="Vol supérieur">Vol supérieur</a></i></b>. Le PJ vole à 12 m/round et fait du footing sur de longues distances.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="6" href="#6"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Formules de niveau 6<a class="headeranchor" id="Formules_de_niveau_G_5" href="#Formules_de_niveau_G_5" title="Lien vers cette section">&#0182;</a></h2><ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Analyse%20denchantement.ashx" title="Analyse d&#39;enchantement">Analyse d'enchantement</a> (F)</i></b>. Révèle les propriétés magiques.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Anatomie%20morte-vivante%20III.ashx" title="Anatomie morte-vivante III">Anatomie morte-vivante III</a></i></b> <i>(AM)</i>. Prend la forme et les pouvoirs de morts-vivants de taille Min ou TG.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Corps%20%c3%a9l%c3%a9mentaire%20III.ashx" title="Corps élémentaire III">Corps élémentaire III</a> (Y)</i></b>. Le lanceur de sorts se transforme en élémentaire de taille G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Double%20illusoire.ashx" title="Double illusoire">Double illusoire</a> (Y)</i></b>. Rend le PJ invisible et crée son double illusoire.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Emprunt%20temporel.ashx" title="Emprunt temporel">Emprunt temporel</a> (Y)</i></b> <i>(CMy)</i>. Le personnage peut effectuer des actions rapides supplémentaires au prix d'affaiblissements temporaires en Constitution.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20bestiale%20IV.ashx" title="Forme bestiale IV">Forme bestiale IV</a> (Y)</i></b>. Le lanceur de sorts adopte la forme et les pouvoirs d'un animal de taille Min, TP, P, M, G ou TG ou d'une créature magique de taille TP, P, M ou G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20g%c3%a9ant%20I.ashx" title="Forme de géant I">Forme de géant I</a></i></b>. Le lanceur de sorts se transforme en géant de taille G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20de%20vase%20II.ashx" title="Forme de vase II">Forme de vase II</a></i></b> <i>(-)</i>. Le lanceur de sorts se transforme en vase de taille G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20draconique%20I.ashx" title="Forme draconique I">Forme draconique I</a> (Y)</i></b>. Transforme le lanceur de sorts en dragon de taille M.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20sonique.ashx" title="Forme sonique">Forme sonique</a></i></b> <i>(MCA)</i>. Le personnage se transforme en une créature de son semi-solide.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Forme%20v%c3%a9g%c3%a9tale%20II.ashx" title="Forme végétale II">Forme végétale II</a></i></b>. Le lanceur de sorts se transforme en plante de taille G.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9rison%20supr%c3%aame.ashx" title="Guérison suprême">Guérison suprême</a> (Y)</i></b>. Soigne 10 points de dégâts/niveau, les maladies et les troubles mentaux.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Jumeau.ashx" title="Jumeau">Jumeau</a></i></b> <i>(MJRA)</i>. Crée un double contrôlable du personnage .</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mauvais%20%c5%93il.ashx" title="Mauvais œil">Mauvais œil</a></i></b>. Cible paniquée, fiévreuse et comateuse.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Mixture%20pour%20bombe%20demprisonnement.ashx" title="Mixture pour bombe d&#39;emprisonnement">Mixture pour bombe d'emprisonnement</a></i></b> <i>(AG)</i>. La bombe du personnage crée une cage de force qui piège les créatures qui se trouvent dans le rayon d’aspersion.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Physique%20monstrueux%20IV.ashx" title="Physique monstrueux IV">Physique monstrueux IV</a> (Y)</i></b> <i>(AM)</i>. Comme <i>physique monstrueux III</i> avec plus de pouvoirs.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Porteur%20de%20peste.ashx" title="Porteur de peste">Porteur de peste</a> (<a class="pagelink" href="Pathfinder-RPG.Urgathoa%20(technique).ashx" title="Urgathoa">Urgathoa</a>)</i></b> <i>(ISG)</i>. Fait de la cible un porteur de nombreuses maladies contagieuses.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Statue.ashx" title="Statue">Statue</a></i></b>. Le sujet peut se statufier à volonté.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Transformation%20martiale.ashx" title="Transformation martiale">Transformation martiale</a> (Y)</i></b>. Le PJ gagne des bonus au combat.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Travers%c3%a9e%20des%20ombres.ashx" title="Traversée des ombres">Traversée des ombres</a></i></b>. Permet de voyager plus rapidement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Traverser%20lespace.ashx" title="Traverser l&#39;espace">Traverser l'espace</a> (Y)</i></b> <i>(AG)</i>. Le personnage peut dépenser une action de mouvement pour se téléporter à 9 m de sa position ou pour se relever sans provoquer d’attaque d’opportunité alors qu’il était à terre.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vent%20divin.ashx" title="Vent divin">Vent divin</a></i></b>. Transforme les cibles en vapeur et les emporte rapidement.</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Vision%20lucide.ashx" title="Vision lucide">Vision lucide</a> (M)</i></b>. Permet de voir les choses telles qu'elles sont.</li></ul>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
