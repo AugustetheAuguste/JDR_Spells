@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jdr-spells.local/schemas/liste_classe.schema.json",
+  "title": "Ligne JSONL d'une liste de sorts de classe",
+  "type": "object",
+  "required": ["id", "nom", "url", "niveau", "classe"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "niveau": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9
+    },
+    "classe": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ecole": {
+      "type": ["string", "null"]
+    },
+    "description_courte": {
+      "type": ["string", "null"]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ligne_html": {
+      "type": ["string", "null"]
+    }
+  }
+}
