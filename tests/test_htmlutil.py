@@ -119,3 +119,11 @@ def test_druide_h2_levels_and_nav_trap(druide_html: str) -> None:
     # Documents the trap: the first h2 is a navigation block, not a level.
     assert "Accès rapide aux sections sur la magie" in titres
     assert titres[0] == "Accès rapide aux sections sur la magie"
+
+
+def test_normalize_label_folds_all_apostrophe_variants():
+    """The Skill mandates U+2019, U+2018 and U+02BC all fold to U+0027."""
+    attendu = "temps d'incantation"
+    for apostrophe in ("'", "’", "‘", "ʼ"):
+        assert normalize_label(f"Temps d{apostrophe}incantation") == attendu
+    assert normalize_label("Zone d’effet :") == "zone d'effet"

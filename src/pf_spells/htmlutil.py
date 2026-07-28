@@ -75,7 +75,9 @@ def inner_html(node: Tag) -> str:
 
 def normalize_label(s: str) -> str:
     """Fold a stat-block label to an accent-free, apostrophe-stable key."""
-    texte = s.replace("\xa0", " ").replace("’", "'").replace("‘", "'")
+    texte = s.replace("\xa0", " ")
+    for apostrophe in ("’", "‘", "ʼ"):
+        texte = texte.replace(apostrophe, "'")
     decompose = unicodedata.normalize("NFKD", texte)
     texte = "".join(c for c in decompose if not unicodedata.combining(c))
     texte = re.sub(r"\s+", " ", texte).strip().lower()
