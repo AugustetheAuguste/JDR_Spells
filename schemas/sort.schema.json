@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jdr-spells.local/schemas/sort.schema.json",
+  "title": "Fichier JSON d'un sort",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "nom",
+    "url",
+    "ecole",
+    "descripteurs",
+    "niveaux",
+    "temps_incantation",
+    "composantes",
+    "portee",
+    "cible",
+    "duree",
+    "jet_de_sauvegarde",
+    "resistance_magie",
+    "description",
+    "description_html",
+    "mythique",
+    "variantes",
+    "sources",
+    "autres",
+    "classes",
+    "meta"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "ecole": {
+      "type": ["string", "null"]
+    },
+    "descripteurs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "niveaux": {
+      "$ref": "#/$defs/niveaux"
+    },
+    "temps_incantation": {
+      "type": ["string", "null"]
+    },
+    "composantes": {
+      "type": ["string", "null"]
+    },
+    "portee": {
+      "type": ["string", "null"]
+    },
+    "cible": {
+      "type": ["string", "null"]
+    },
+    "duree": {
+      "type": ["string", "null"]
+    },
+    "jet_de_sauvegarde": {
+      "type": ["string", "null"]
+    },
+    "resistance_magie": {
+      "type": ["string", "null"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "description_html": {
+      "type": "string"
+    },
+    "mythique": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": ["description", "description_html"],
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "description_html": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "variantes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nom", "id"],
+        "additionalProperties": false,
+        "properties": {
+          "nom": {
+            "type": "string",
+            "minLength": 1
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "ecole": {
+            "type": ["string", "null"]
+          },
+          "descripteurs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "niveaux": {
+            "$ref": "#/$defs/niveaux"
+          },
+          "temps_incantation": {
+            "type": ["string", "null"]
+          },
+          "composantes": {
+            "type": ["string", "null"]
+          },
+          "portee": {
+            "type": ["string", "null"]
+          },
+          "cible": {
+            "type": ["string", "null"]
+          },
+          "duree": {
+            "type": ["string", "null"]
+          },
+          "jet_de_sauvegarde": {
+            "type": ["string", "null"]
+          },
+          "resistance_magie": {
+            "type": ["string", "null"]
+          },
+          "description": {
+            "type": "string"
+          },
+          "description_html": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "autres": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "null"]
+      }
+    },
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["classe", "slug", "niveau"],
+        "additionalProperties": false,
+        "properties": {
+          "classe": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "niveau": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["url", "cache_fichier", "recupere_le", "parser_version"],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "cache_fichier": {
+          "type": ["string", "null"]
+        },
+        "recupere_le": {
+          "type": ["string", "null"]
+        },
+        "parser_version": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "niveaux": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    }
+  }
+}
