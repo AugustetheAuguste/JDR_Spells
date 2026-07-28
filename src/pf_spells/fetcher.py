@@ -55,7 +55,7 @@ def _throttle() -> None:
 def _append_index(result: FetchResult) -> None:
     CACHE_INDEX.parent.mkdir(parents=True, exist_ok=True)
     ligne = json.dumps(result, ensure_ascii=False)
-    with _index_lock, CACHE_INDEX.open("a", encoding="utf-8") as flux:
+    with _index_lock, CACHE_INDEX.open("a", encoding="utf-8", newline="\n") as flux:
         flux.write(ligne + "\n")
 
 
@@ -84,7 +84,11 @@ def fetch(url: str, *, force: bool = False) -> FetchResult:
             statut = reponse.status_code
             if statut < 400:
                 CACHE_DIR.mkdir(parents=True, exist_ok=True)
-                chemin.write_text(reponse.content.decode("utf-8"), encoding="utf-8")
+                # Decode explicitly as UTF-8 (pages carry no charset meta), then
+                # write back with newline="" so the body stays byte-faithful.
+                chemin.write_text(
+                    reponse.content.decode("utf-8"), encoding="utf-8", newline=""
+                )
                 erreur = None
                 break
             erreur = f"HTTP {statut}"
