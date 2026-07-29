@@ -1,0 +1,276 @@
+---
+name: pf-enrichment-conventions
+description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/, liste gelée des clés, politique des nulls, champ preuves anti-confabulation, verrou verifie_par_humain, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
+---
+
+# pf-enrichment-conventions
+
+## Quand charger ce Skill
+
+Charger ce Skill dans **toute** étape qui produit, valide, joint ou relit des
+données enrichies : assemblage des prompts (étage 08), génération LLM (étage 09),
+validation (étage 10), construction de la vue jointe, curation de la taxonomie,
+écriture du schéma ou des vocabulaires.
+
+Ce Skill est la référence **humaine**. L'autorité **machine** est ailleurs et ne
+doit jamais être recopiée ici :
+
+| Autorité machine | Détient |
+|---|---|
+| `schemas/enrichissement.schema.json` | types, cardinalités, `additionalProperties: false`, champs requis |
+| `conventions/vocabulaires/*.json` | l'énumération réelle de chaque valeur close |
+
+Si ce Skill et ces fichiers divergent, **les fichiers gagnent pour les valeurs**,
+et **ce Skill gagne pour les règles** (politique des nulls, règle des preuves,
+verrou humain). Toute divergence constatée est corrigée, pas contournée.
+
+Le Skill **`pf-corpus-conventions`** reste chargé en parallèle : il détient
+l'algorithme de slug, le vocabulaire des 21 clés de la Phase 1, les règles
+d'encodage et la politique des nulls d'origine. Ce Skill n'en recopie rien.
+
+## Règle d'or
+
+> **Cette track n'écrit JAMAIS dans `data/sorts/`.**
+
+La Phase 1 a posé que `data/sorts/<id>.json` est éditable à la main et que les
+éditions humaines font autorité. Aucun outil d'enrichissement ne l'ouvre en
+écriture, ne le réordonne, ne lui ajoute de clé, ni ne « corrige » un champ au
+passage. Les 21 clés existantes ne sont ni renommées ni étendues. Tout ce qui est
+produit par machine vit dans un arbre parallèle.
+
+Corollaire : **`data/vues/` est dérivé, jamais édité à la main.** Une correction
+se fait dans `data/sorts/` (par un humain) ou dans `data/enrichissements/` (par
+un humain, avec `verifie_par_humain: true`), puis la vue est **régénérée**. Une
+édition directe dans `data/vues/` est silencieusement perdue à la régénération
+suivante — donc interdite.
+
+## Arbre de sortie
+
+```
+data/sorts/<id>.json                     # Phase 1 — LECTURE SEULE pour cette track
+data/enrichissements/<id>.json           # étage 09 — la couche LLM
+data/vues/sorts_enrichis/<id>.json       # vue jointe, DÉRIVÉE, jamais éditée
+conventions/vocabulaires/*.json          # vocabulaires clos (autorité machine)
+schemas/enrichissement.schema.json       # contrat (autorité machine)
+build_artifacts/prompts/                 # prompts assemblés, committés (preuve + rejeu)
+reports/                                 # rapports et anomalies des étages 08/09/10
+```
+
+| Règle | Détail |
+|---|---|
+| Nom de fichier | `data/enrichissements/<id>.json` est exactement l'`id` + `.json` |
+| `id` | **identique** à celui de `data/sorts/<id>.json`, jamais recalculé localement |
+| `slug` | dérivé par l'algorithme de slug de `pf-corpus-conventions`, sans variante |
+| Jointure | uniquement sur `id`. Jamais sur `nom`, jamais sur l'URL, jamais sur l'ordre des fichiers |
+| Orphelin | un `id` d'enrichissement absent de `data/index/` est une **erreur**, pas un avertissement |
+
+## Vocabulaire des clés d'enrichissement — liste gelée
+
+Ensemble **clos**. Aucune clé n'est ajoutée, retirée ou renommée sans passer par
+le schéma. Ordre canonique = de haut en bas dans ce tableau. **Aucune clé n'est
+jamais omise** : un fichier d'enrichissement porte toujours les 17 clés.
+
+| Clé | Type | Cardinalité / contrainte | Source |
+|---|---|---|---|
+| `id` | string | doit exister dans `data/index/` | corpus |
+| `slug` | string | algorithme de `pf-corpus-conventions` | corpus |
+| `resume_court` | string | 1 phrase, longueur ≤ 160 | LLM |
+| `categorie_principale` | string (enum) | valeur **unique** ← `vocabulaires/categories.json` | LLM |
+| `tags` | array[string (enum)] | **2..6**, uniques ← `vocabulaires/tags.json` | LLM |
+| `roles_tactiques` | array[string (enum)] | **1..3** ← `combat` \| `exploration` \| `social` \| `utilitaire` | LLM |
+| `cible_typique` | string (enum) | `soi` \| `allie` \| `ennemi` \| `zone` \| `objet` | LLM |
+| `type_degats` | string (enum) **ou** `null` | ← `vocabulaires/types_degats.json` | LLM |
+| `condition_infligee` | array[string (enum)] | **0..4** ← `vocabulaires/conditions.json` | LLM |
+| `preuves` | object | `{type_degats: string\|null, condition_infligee: array[string], cible_typique: string}` | LLM |
+| `notes_ambiguite` | string **ou** `null` | prose libre, français accentué | LLM |
+| `verifie_par_humain` | boolean | défaut `false` | humain |
+| `version_prompt` | string | ex. `"p1.0"` | provenance |
+| `version_taxonomie` | string | ex. `"taxonomie_v1"` | provenance |
+| `modele` | string | identifiant **complet** du modèle (profil d'inférence inclus) | provenance |
+| `genere_le` | string | date-heure ISO 8601 **UTC** | provenance |
+| `hash_source` | string | sha256 **hex** du texte source canonique | provenance |
+
+`additionalProperties: false` dans le schéma est ce qui empêche le modèle
+d'inventer un champ que personne n'a demandé. Ne pas l'assouplir.
+
+## Politique des nulls
+
+Reprise **à l'identique** de `pf-corpus-conventions` — s'y référer pour la règle
+générale ; ce qui suit en est l'application à cette couche.
+
+| Écriture | Sens exact |
+|---|---|
+| `null` | **absent du source** : le texte canonique ne porte pas l'information |
+| `[]` | **vérifié, aucun** : le texte a été lu, il n'y a rien à lister |
+| clé omise | **interdit** — jamais |
+
+Trois valeurs à ne pas confondre, sous peine de polluer les statistiques de la
+curation de taxonomie :
+
+| Situation | Écriture correcte |
+|---|---|
+| Le sort ne fait pas de dégâts | `type_degats: null` + `preuves.type_degats: null` |
+| Le sort n'inflige aucune condition, c'est vérifié | `condition_infligee: []` |
+| Le modèle n'a pas su trancher | valeur au mieux **+** `notes_ambiguite` renseigné |
+
+`notes_ambiguite` n'est pas un substitut de `null` : il documente une hésitation,
+pas une absence.
+
+## Le champ `preuves` — le dispositif anti-confabulation
+
+C'est le mécanisme mécanique par lequel l'invention devient **détectable**, et
+non une simple annotation de confort.
+
+| Règle | Détail |
+|---|---|
+| Nature | une **sous-chaîne EXACTE** du texte source canonique |
+| Interdit | reformuler, paraphraser, résumer, traduire, recasser, normaliser les espaces, corriger une faute du wiki |
+| Accents | conservés **verbatim** — la citation est du français accentué, copié tel quel |
+| Vérification | l'étage 10 **revérifie** la sous-chaîne : `preuve in texte_source_canonique`, comparaison littérale |
+| Échec | une preuve introuvable = enregistrement **rejeté**, journalisé dans `reports/` |
+| Non nul sans preuve | `type_degats` non nul avec `preuves.type_degats: null` est un rejet |
+
+Les deux moitiés sont nécessaires : le schéma exige la **présence** du champ,
+l'étage 10 en vérifie la **véracité**. L'une sans l'autre ne protège de rien.
+
+## Le verrou `verifie_par_humain`
+
+| Acteur | Comportement face à `verifie_par_humain: true` |
+|---|---|
+| Générateur (étage 09) | **refuse d'écrire** le fichier ; il faut `--force` explicite |
+| Générateur, `--force` | écrase, et le journalise dans `reports/` — jamais silencieusement |
+| Validateur (étage 10) | **contrôle quand même** l'enregistrement, intégralement |
+| Vue (dérivée) | régénérée normalement, le verrou n'y change rien |
+
+Le verrou protège le travail humain de la machine ; il **n'exempte pas** le
+fichier du contrôle. Un enregistrement relu par un humain mais dont une preuve ne
+se retrouve plus dans le source est un vrai problème et doit remonter.
+
+## Provenance obligatoire
+
+Cinq champs, toujours renseignés, jamais `null` :
+`version_prompt`, `version_taxonomie`, `modele`, `genere_le`, `hash_source`.
+
+### `hash_source`
+
+`hash_source` = **sha256 hexadécimal du texte source canonique**, celui-là même
+qui a été assemblé à l'étage 08 et envoyé au modèle.
+
+| Règle | Détail |
+|---|---|
+| Assemblage | une fonction **unique**, `texte_source_canonique(sort)`, définie à l'étage 08 |
+| Partage | l'étage 10 appelle **la même** fonction, jamais une réimplémentation |
+| Pourquoi | la même chaîne des deux côtés, sinon **toutes** les preuves échouent — la vérification de sous-chaîne n'a de sens que sur une chaîne identique au bit près |
+| Encodage du hash | UTF-8 de la chaîne canonique, `hashlib.sha256(...).hexdigest()` |
+| Usage | clé de reprise : `hash_source` inchangé ⇒ inutile de régénérer ; changé ⇒ l'enrichissement est périmé |
+
+Toute évolution de `texte_source_canonique` change tous les hashes : c'est une
+décision explicite, elle se prend en connaissance de cause et se journalise.
+
+## Vocabulaires clos
+
+Ils vivent **uniquement** dans `conventions/vocabulaires/*.json` :
+`categories.json`, `tags.json`, `roles_tactiques.json`, `cibles.json`,
+`types_degats.json`, `conditions.json`.
+
+Aucune liste de valeurs closes n'est dupliquée en dur ailleurs — ni dans le
+schéma, ni dans le code, ni dans ce Skill. Une liste dupliquée divergera.
+
+Format d'un fichier de vocabulaire :
+
+```json
+{
+  "version": "v0",
+  "valeurs": [
+    {
+      "cle": "attaque_directe",
+      "definition_fr": "…",
+      "exemples_positifs": ["…", "…"],
+      "exemples_negatifs": ["…", "…"]
+    }
+  ]
+}
+```
+
+| Champ | Règle |
+|---|---|
+| `version` | obligatoire ; c'est ce que `version_taxonomie` référence |
+| `cle` | snake_case, **sans accent** — c'est un identifiant, pas du contenu |
+| `definition_fr` | français accentué verbatim ; sert de définition au prompt |
+| `exemples_positifs` | ≥ 2, tirés du corpus réel (ou de la fixture), **jamais de mémoire** |
+| `exemples_negatifs` | ≥ 2, cas voisins que la clé ne couvre **pas** — c'est ce qui trace la frontière |
+
+## `taxonomie_v1` — PLACEHOLDER
+
+> **Cette section est un emplacement réservé. Elle n'est PAS remplie ici.**
+>
+> `taxonomie_v1` est produite par l'**étape 04 (passe 0 sur échantillon
+> stratifié + curation à la main)**, qui écrit les 25–40 entrées définitives dans
+> `conventions/vocabulaires/tags.json` et met `version` à `taxonomie_v1`. Les
+> valeurs présentes avant cette étape sont des **v0 provisoires**.
+>
+> Tant que la taxonomie n'est pas gelée, **aucun run de génération complet** ne
+> doit partir : les tags produits ne seraient pas comparables entre eux.
+
+### La règle des 5 %
+
+| Mesure | Seuil | Conséquence |
+|---|---|---|
+| Part d'enregistrements avec `notes_ambiguite` non nul | **≤ 5 %** | la taxonomie est jugée suffisante |
+| Idem | **> 5 %** | la taxonomie est **insuffisante** : couper une `taxonomie_v2`, la geler, régénérer |
+
+Au-delà du seuil, on **corrige la taxonomie**, on ne relâche pas la contrainte.
+**Le modèle n'improvise jamais une valeur** : il choisit dans la liste close, ou
+il documente son hésitation dans `notes_ambiguite`. Une valeur hors vocabulaire
+est un rejet à l'étage 10, pas une suggestion.
+
+## Format et encodage
+
+Voir `pf-corpus-conventions` pour la règle générale. Application ici :
+
+| Aspect | Règle |
+|---|---|
+| Clés | français, `snake_case`, **sans accent** (`condition_infligee`) |
+| Valeurs de contenu | accentuées **verbatim** ; jamais de translittération |
+| Retrait d'accents | **uniquement** dans l'algorithme de slug `id` |
+| `.json` | `indent=2`, clés en ordre canonique, **newline final** |
+| `.jsonl` | un objet compact par ligne, `separators=(',', ':')`, terminé par `\n` |
+| Encodage | UTF-8 **sans BOM**, `json.dump(..., ensure_ascii=False)` |
+| Fins de ligne | **LF** partout, y compris sur win32 |
+| Décodage | UTF-8 **explicite**, jamais de détection automatique |
+| **U+FFFD** | présence n'importe où = **corruption décisive** : échouer bruyamment, immédiatement, ne rien écrire |
+
+## Les trois nouveaux étages du pipeline
+
+```
+08_prepare_prompts   →   09_enrich_llm   →   10_validate_enrichment
+   hors ligne              RÉSEAU              hors ligne
+```
+
+| Étage | Rôle | Réseau | Idempotent |
+|---|---|---|---|
+| `08_prepare_prompts` | assemble `texte_source_canonique`, calcule `hash_source`, écrit les prompts dans `build_artifacts/prompts/` | **non** | oui |
+| `09_enrich_llm` | appelle le modèle, écrit `data/enrichissements/<id>.json` | **OUI — seul étage réseau de la track** | oui (reprise par `hash_source`) |
+| `10_validate_enrichment` | schéma + vocabulaires + **revérification des sous-chaînes de `preuves`** ; sortie non nulle si FAIL | **non** | oui |
+
+Aucun autre module de cette track n'accède au réseau. Un étage 08 ou 10 qui
+ouvrirait une connexion est un bug de conception, pas une optimisation.
+
+## Anti-patterns
+
+**Ne reproduire aucun de ceux-ci.**
+
+| # | Anti-pattern | Pourquoi ça casse |
+|---|---|---|
+| 1 | Écrire, réordonner ou « corriger » `data/sorts/*.json` | viole la règle d'or ; détruit des éditions humaines autoritaires |
+| 2 | Éditer `data/vues/` à la main | dérivé : la correction est perdue à la régénération suivante |
+| 3 | Paraphraser une `preuve` (même « juste les espaces ») | la vérification de sous-chaîne de l'étage 10 échoue |
+| 4 | Réimplémenter `texte_source_canonique` côté 10 | deux chaînes divergentes ⇒ 100 % des preuves échouent |
+| 5 | Écraser un `verifie_par_humain: true` sans `--force` | perte de travail humain relu |
+| 6 | Dispenser un enregistrement vérifié par un humain de la validation | masque les vraies dérives du source |
+| 7 | Omettre une clé au lieu d'écrire `null` / `[]` | casse la forme uniforme auditable à l'œil |
+| 8 | Confondre `type_degats: null` et `notes_ambiguite` | « pas de dégâts » ≠ « je n'ai pas su » ; fausse la mesure des 5 % |
+| 9 | Recopier une liste de valeurs closes en dur (schéma, code, prompt figé) | elle divergera de `conventions/vocabulaires/` |
+| 10 | Laisser le modèle inventer un tag hors vocabulaire | rejet à l'étage 10 ; la taxonomie se corrige, la contrainte ne se relâche pas |
+| 11 | Recalculer l'`id` d'un enrichissement au lieu de reprendre celui du corpus | la jointure sur `id` casse silencieusement |
+| 12 | Tolérer un U+FFFD « isolé » | c'est une corruption d'encodage, jamais un caractère de contenu |
