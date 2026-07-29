@@ -1,0 +1,120 @@
+# CLAUDE.md — JDR_Spells
+
+## 1. Objet du dépôt et modèle de données à deux étages
+
+Corpus de sorts Pathfinder 1e en français extrait du wiki communautaire
+**pathfinder-fr.org** (`README.md` = entrée humaine). Phase 1 = *scraper et
+organiser* : pas de logique de jeu, pas d'UI, pas de recherche. Le wiki expose
+deux étages, d'où tout le pipeline :
+
+| Étage | Page | Ce qu'on en tire |
+|---|---|---|
+| 1 | **liste de classe** (une par classe) | quels sorts la classe reçoit, à quel niveau ; les URLs de l'étage 2 |
+| 2 | **page de sort** (une par sort) | le bloc technique complet + la description |
+
+Les deux étages donnent le même fait « qui lance quoi, à quel niveau » et sont
+recoupés à l'étape 08 (clé `classes`, champ `concordance`).
+
+## 2. Périmètre et autorité des artefacts
+
+Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_manifest`).
+
+| Chemin | Étape | Fait autorité pour |
+|---|---|---|
+| `elements_to_do.json` | — | la liste d'entrée (20 entrées brutes) — **jamais modifié** |
+| `data/classes.json` | 03 | libellé de classe ↔ slug ↔ URL de liste (19 classes) |
+| `data/listes_classes/<slug>.jsonl` | 04 | quels sorts une classe reçoit, à quel niveau (8927) |
+| `data/spell_pages.jsonl` | 06 | url de sort ↔ fichier HTML en cache, statut |
+| `data/index/sorts_uniques.jsonl` | 05 | l'ensemble des sorts uniques (2070) |
+| `data/index/carte_doublons.json` | 05 | le partage des sorts entre classes |
+| `data/index/sorts_exclusifs.json` | 05 | les sorts exclusifs à une classe |
+| `data/sorts/<id>.json` | 07+08 | **le sort lui-même** (2070 fichiers, 21 clés) |
+| `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération |
+| `schemas/*.json` | 02 | les deux contrats de sortie |
+| `reports/*.md` | 03–09 | le résultat et les anomalies de chaque étape (dont `09_validation.md`) |
+
+## 3. Règles dures — non négociables
+
+- Le HTML du wiki est **UTF-8**, à décoder **explicitement** : pas de
+  `<meta charset>`, toute détection automatique donne du mojibake.
+- Toute analyse commence par **découper sur `<div id="PageContentDiv">`** (jusqu'à
+  `<div id="PageAttachmentsDiv"`), sinon la navigation du site passe pour des sorts.
+- **Clés** JSON françaises, `snake_case`, **sans accent** (`portee`) ; **valeurs**
+  accentuées **verbatim** : jamais de translittération du contenu français. Le
+  retrait d'accents n'a lieu **que** dans l'algorithme de slug `id`.
+- **`unidecode` n'est pas installé** — `unicodedata.normalize('NFKD', …)`, stdlib.
+- Sorties UTF-8 sans BOM, **LF** (win32 inclus), `ensure_ascii=False` ; `.json` en
+  `indent=2` + newline final, `.jsonl` compact. Aucune clé n'est omise : scalaire
+  absent → `null`, liste absente → `[]`. Rien n'est écarté silencieusement :
+  lacunes, libellés et abréviations inconnus, collisions de slug → `reports/`.
+
+## 4. L'algorithme de slug `id` — la clé de jointure
+
+Un seul `id` relie `listes_classes/`, `index/` et `sorts/`. Calcul **unique** :
+(1) nom d'affichage exact du wiki ; (2) pré-mapper les ligatures `œ`/`Œ`→`oe`,
+`æ`/`Æ`→`ae` — NFKD ne les décompose pas, donc **avant** ; (3)
+`unicodedata.normalize('NFKD', nom)` puis retirer tout caractère où
+`unicodedata.combining(ch)` est vrai ; (4) minuscules ; (5) chaque suite hors
+`[a-z0-9]` → un seul `-` ; (6) élaguer les `-` de tête et de queue. Collision →
+suffixe `-2`, `-3`, … dans l'ordre de rencontre, journalisée dans `reports/`.
+**Un slug attribué est stable : jamais renuméroté.** Réf. `src/pf_spells/slugs.py`.
+
+## 5. L'autorité sur les conventions : la Skill
+
+`Skill(skill="pf-corpus-conventions")` — `.claude/skills/pf-corpus-conventions/SKILL.md`.
+**Charger cette Skill dans toute session qui lit ou écrit des données du corpus.**
+Elle détient le détail : vocabulaire complet des clés JSON, normalisation des
+libellés du bloc technique, table des 19 classes et de leurs abréviations, règles de
+format, anti-patterns de la source. Ce fichier n'en recopie rien, il y renvoie — des
+règles dupliquées divergent. **Code et Skill divergents : la Skill gagne.**
+
+## 6. Relancer le pipeline — les relances tapent le cache, elles ne re-crawlent pas
+
+```
+export PYTHONPATH=src
+python -m pf_spells.fetch_classes      # étape 03 - en cache, idempotent
+python -m pf_spells.parse_lists        # étape 04 - hors ligne
+python -m pf_spells.build_index        # étape 05 - hors ligne
+python -m pf_spells.fetch_spells       # étape 06 - en cache, idempotent, ~1 h à froid
+python -m pf_spells.parse_spells       # étape 07 - hors ligne ; --overwrite explicite
+python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
+python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
+python -m pf_spells.build_manifest     # étape 10 - hors ligne
+```
+
+`cache/html/` est **committé** : relancées, 03 et 06 lisent le cache et ne refont
+aucune requête — d'où la possibilité de corriger un parseur sans retoucher au wiki.
+Tests : `PYTHONPATH=src python -m pytest tests -q`.
+
+## 7. Politesse envers le wiki
+
+**Ne jamais monter le throttle du fetcher au-dessus de 1 requête/seconde, ni les
+workers au-dessus de 4.** pathfinder-fr.org est un wiki communautaire tenu par des
+bénévoles : ce n'est pas un réglage de performance. Aucun module hors
+`fetch_classes` / `fetch_spells` n'accède au réseau.
+
+## 8. `data/sorts/*.json` est corrigeable à la main — l'humain fait foi
+
+- Les éditions humaines y sont **autoritaires** ; `parse_spells` **n'écrase jamais**
+  un fichier existant sans `--overwrite`, et `enrich_spells` ne réécrit **que** la
+  clé `classes`, le reste étant conservé tel quel.
+- Provenance dans `meta` (`url`, `cache_fichier`, `recupere_le`, `parser_version`).
+
+## 9. Anomalies connues, permanentes
+
+| Sujet | État |
+|---|---|
+| `Alchimiste` en double dans `elements_to_do.json` (casse de l'URL) | dédoublonné par URL percent-décodée + minuscule, 20 → 19 ; toujours journalisé |
+| Blocs `Mythique` (`mythique` non nul, 287 sorts) | capturés, isolés dans leur clé ; **suppression prévue en phase ultérieure** |
+| Libellés multi-classes (`Arcaniste/Ensorceleur/Magicien`, `Prêtre/Prêtre combattant/Oracle`) | une page, un libellé combiné — **jamais scindés** |
+| Abréviations hors des 19 classes (`Réd`, …) | normales dans `niveaux`, listées dans `reports/08_enrich.md` |
+| Concordance liste ↔ page | 100 % des paires comparables ; divergences **constatées, jamais corrigées** |
+
+## 10. Interdictions de style
+
+- **Ne jamais peupler un `__init__.py`** et **ne jamais ajouter de déclaration
+  `__all__`**, où que ce soit, pour quelque raison que ce soit.
+- Pas de compatibilité ascendante à maintenir.
+- Python 3.11, `from __future__ import annotations`, types annotés partout ;
+  identifiants français pour le domaine, docstrings et commentaires en anglais,
+  expliquant **pourquoi**, pas quoi.
