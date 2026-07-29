@@ -1,0 +1,161 @@
+{
+  "version": "v0",
+  "valeurs": [
+    {
+      "cle": "feu",
+      "definition_fr": "Dégâts de feu, explicitement nommés comme tels dans la description.",
+      "exemples_positifs": [
+        "Lamentation des derniers jours d'été",
+        "Boule de feu"
+      ],
+      "exemples_negatifs": [
+        "Cône de froid",
+        "Destruction de mort-vivant"
+      ]
+    },
+    {
+      "cle": "froid",
+      "definition_fr": "Dégâts de froid.",
+      "exemples_positifs": [
+        "Cône de froid",
+        "Chute de température"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Arc électrique"
+      ]
+    },
+    {
+      "cle": "acide",
+      "definition_fr": "Dégâts d'acide.",
+      "exemples_positifs": [
+        "Aspersion acide",
+        "Contact corrosif"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Cône de froid"
+      ]
+    },
+    {
+      "cle": "electricite",
+      "definition_fr": "Dégâts d'électricité, y compris la foudre.",
+      "exemples_positifs": [
+        "Arc électrique",
+        "Appel de la foudre"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Cri perçant"
+      ]
+    },
+    {
+      "cle": "son",
+      "definition_fr": "Dégâts sonores.",
+      "exemples_positifs": [
+        "Cri perçant",
+        "Détonation discordante"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Arc électrique"
+      ]
+    },
+    {
+      "cle": "force",
+      "definition_fr": "Dégâts de force, sans type énergétique élémentaire.",
+      "exemples_positifs": [
+        "Projectile magique",
+        "Épée de force"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Aspersion acide"
+      ]
+    },
+    {
+      "cle": "negatif",
+      "definition_fr": "Dégâts d'énergie négative, qui blessent les vivants et soignent les morts-vivants.",
+      "exemples_positifs": [
+        "Absorption d'énergie",
+        "Blessure critique"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Voile d'énergie positive"
+      ]
+    },
+    {
+      "cle": "positif",
+      "definition_fr": "Dégâts d'énergie positive, qui blessent les morts-vivants.",
+      "exemples_positifs": [
+        "Destruction de mort-vivant",
+        "Voile d'énergie positive"
+      ],
+      "exemples_negatifs": [
+        "Absorption d'énergie",
+        "Animation des morts"
+      ]
+    },
+    {
+      "cle": "perforant",
+      "definition_fr": "Dégâts d'arme perforants.",
+      "exemples_positifs": [
+        "Armure épineuse",
+        "Croissance d'épines"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Projectile magique"
+      ]
+    },
+    {
+      "cle": "tranchant",
+      "definition_fr": "Dégâts d'arme tranchants.",
+      "exemples_positifs": [
+        "Bouclier d'éclats",
+        "Flot obsidien"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Projectile magique"
+      ]
+    },
+    {
+      "cle": "contondant",
+      "definition_fr": "Dégâts d'arme contondants.",
+      "exemples_positifs": [
+        "Appel des pierres",
+        "Disque de pierre"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Aspersion acide"
+      ]
+    },
+    {
+      "cle": "precision",
+      "definition_fr": "Dégâts de précision, qui ne se multiplient pas sur un coup critique.",
+      "exemples_positifs": [
+        "Coeur dévasté",
+        "Grâce défensive"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Projectile magique"
+      ]
+    },
+    {
+      "cle": "autre",
+      "definition_fr": "Le sort inflige des dégâts d'un type que la description ne range dans aucune des valeurs ci-dessus.",
+      "exemples_positifs": [
+        "Animation des morts",
+        "Arrêt du temps"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Destruction de mort-vivant"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "v0",
+  "note": "Liste fixée par le contrat du schéma ; elle vit ici pour qu'il n'existe qu'un seul foyer par liste close.",
+  "valeurs": [
+    {
+      "cle": "combat",
+      "definition_fr": "Le sort sert principalement pendant une rencontre, tour par tour.",
+      "exemples_positifs": [
+        "Destruction de mort-vivant",
+        "Absorption d'énergie"
+      ],
+      "exemples_negatifs": [
+        "Contrôle de l'eau",
+        "Alarme d'invisibilité"
+      ]
+    },
+    {
+      "cle": "exploration",
+      "definition_fr": "Le sort sert à progresser, surveiller ou franchir un obstacle hors du tour par tour.",
+      "exemples_positifs": [
+        "Alarme d'invisibilité",
+        "Contrôle de l'eau"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Absorption d'énergie"
+      ]
+    },
+    {
+      "cle": "social",
+      "definition_fr": "Le sort agit sur une interaction avec des personnages, la persuasion ou l'apparence.",
+      "exemples_positifs": [
+        "Invisibilité",
+        "Image miroir"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "utilitaire",
+      "definition_fr": "Le sort rend un service qui n'est ni un avantage de combat ni un moyen d'exploration.",
+      "exemples_positifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Lamentation des derniers jours d'été"
+      ]
+    }
+  ]
+}
