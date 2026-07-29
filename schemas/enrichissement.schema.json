@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jdr-spells.local/schemas/enrichissement.schema.json",
+  "title": "Fichier JSON d'enrichissement LLM d'un sort",
+  "description": "Contrat gelé de data/enrichissements/<id>.json. La politique des nulls (null = absent du source, [] = vérifié et vide, clé omise = interdit), la règle de la sous-chaîne exacte du champ preuves et la sémantique de verifie_par_humain sont définies par le Skill pf-enrichment-conventions (.claude/skills/pf-enrichment-conventions/SKILL.md), qui en est l'autorité humaine ; ce schéma en est l'autorité machine pour les types et les cardinalités. Les listes de valeurs closes ne sont PAS écrites ici : chaque $defs/vocabulaire_* ne porte que type: string et son enum est injectée au chargement depuis conventions/vocabulaires/<nom>.json par pf_spells.enrichissement_schema.charger_schema_resolu, afin que conventions/vocabulaires/ reste le foyer unique de chaque liste close.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "resume_court",
+    "categorie_principale",
+    "tags",
+    "roles_tactiques",
+    "cible_typique",
+    "type_degats",
+    "condition_infligee",
+    "preuves",
+    "notes_ambiguite",
+    "verifie_par_humain",
+    "version_prompt",
+    "version_taxonomie",
+    "modele",
+    "genere_le",
+    "hash_source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "resume_court": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "categorie_principale": {
+      "$ref": "#/$defs/vocabulaire_categories"
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/vocabulaire_tags"
+      }
+    },
+    "roles_tactiques": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/vocabulaire_roles_tactiques"
+      }
+    },
+    "cible_typique": {
+      "$ref": "#/$defs/vocabulaire_cibles"
+    },
+    "type_degats": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/vocabulaire_types_degats"
+        }
+      ]
+    },
+    "condition_infligee": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/vocabulaire_conditions"
+      }
+    },
+    "preuves": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type_degats",
+        "condition_infligee",
+        "cible_typique"
+      ],
+      "properties": {
+        "type_degats": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "condition_infligee": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cible_typique": {
+          "type": "string"
+        }
+      }
+    },
+    "notes_ambiguite": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verifie_par_humain": {
+      "type": "boolean",
+      "default": false
+    },
+    "version_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version_taxonomie": {
+      "type": "string",
+      "minLength": 1
+    },
+    "modele": {
+      "type": "string",
+      "minLength": 1
+    },
+    "genere_le": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hash_source": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "Anti-confabulation : type_degats non nul EXIGE sa preuve. Exprimé en JSON Schema pur pour que le rejet ait lieu au niveau du schéma, sans contrôle Python annexe.",
+      "if": {
+        "type": "object",
+        "required": [
+          "type_degats"
+        ],
+        "properties": {
+          "type_degats": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "preuves": {
+            "required": [
+              "type_degats"
+            ],
+            "properties": {
+              "type_degats": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "vocabulaire_categories": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/categories.json",
+      "type": "string"
+    },
+    "vocabulaire_tags": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/tags.json",
+      "type": "string"
+    },
+    "vocabulaire_roles_tactiques": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/roles_tactiques.json",
+      "type": "string"
+    },
+    "vocabulaire_cibles": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/cibles.json",
+      "type": "string"
+    },
+    "vocabulaire_types_degats": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/types_degats.json",
+      "type": "string"
+    },
+    "vocabulaire_conditions": {
+      "$comment": "enum injectée depuis conventions/vocabulaires/conditions.json",
+      "type": "string"
+    }
+  }
+}
