@@ -80,24 +80,7 @@
       "type": "string"
     },
     "mythique": {
-      "oneOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "object",
-          "required": ["description", "description_html"],
-          "additionalProperties": false,
-          "properties": {
-            "description": {
-              "type": "string"
-            },
-            "description_html": {
-              "type": "string"
-            }
-          }
-        }
-      ]
+      "$ref": "#/$defs/mythique"
     },
     "variantes": {
       "type": "array",
@@ -152,6 +135,9 @@
           },
           "description_html": {
             "type": "string"
+          },
+          "mythique": {
+            "$ref": "#/$defs/mythique"
           }
         }
       }
@@ -210,6 +196,26 @@
     }
   },
   "$defs": {
+    "mythique": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": ["description", "description_html"],
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "description_html": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
     "niveaux": {
       "type": "object",
       "additionalProperties": {
