@@ -1,0 +1,137 @@
+{
+  "genere_le": "2026-07-29T09:17:03.796582+00:00",
+  "parser_version": "1.0.0",
+  "source": {
+    "site": "https://www.pathfinder-fr.org/",
+    "note_licence": "Contenu extrait du wiki communautaire pathfinder-fr.org. Le matériel officiel Pathfinder appartient à Black Book Editions et Paizo Publishing, conformément à la mention portée en pied des pages du wiki. Ce corpus est constitué pour un usage personnel ; aucune licence n'est accordée ici."
+  },
+  "artefacts": [
+    {
+      "chemin": "elements_to_do.json",
+      "type": "json",
+      "nb_enregistrements": 20,
+      "schema": null,
+      "produit_par_etape": null,
+      "autorite": "la liste d'entrée des classes (20 entrées brutes, jamais modifiée)",
+      "description": "Source du périmètre : libellé de classe + URL de sa page de liste de sorts."
+    },
+    {
+      "chemin": "data/classes.json",
+      "type": "json",
+      "nb_enregistrements": 19,
+      "schema": null,
+      "produit_par_etape": "03",
+      "autorite": "la correspondance libellé de classe ↔ slug ↔ URL de page de liste",
+      "description": "Roster dédoublonné par URL normalisée : 20 entrées brutes → 19 classes."
+    },
+    {
+      "chemin": "data/listes_classes/",
+      "type": "repertoire_jsonl",
+      "motif": "<class-slug>.jsonl",
+      "nb_fichiers": 19,
+      "nb_enregistrements": 8927,
+      "schema": "schemas/liste_classe.schema.json",
+      "produit_par_etape": "04",
+      "autorite": "quels sorts une classe reçoit, et à quel niveau",
+      "description": "Une ligne par entrée de liste de classe, avec niveau, école, blurb, sources."
+    },
+    {
+      "chemin": "data/spell_pages.jsonl",
+      "type": "jsonl",
+      "nb_enregistrements": 2070,
+      "schema": null,
+      "produit_par_etape": "06",
+      "autorite": "url de sort ↔ fichier HTML en cache, et statut de récupération",
+      "description": "Manifeste de récupération des pages de sorts (reprise sur interruption)."
+    },
+    {
+      "chemin": "data/index/sorts_uniques.jsonl",
+      "type": "jsonl",
+      "nb_enregistrements": 2070,
+      "schema": null,
+      "produit_par_etape": "05",
+      "autorite": "l'ensemble des sorts uniques du corpus",
+      "description": "Une ligne par sort unique : classes et niveaux agrégés, écoles, sources."
+    },
+    {
+      "chemin": "data/index/carte_doublons.json",
+      "type": "json",
+      "nb_enregistrements": 1,
+      "schema": null,
+      "produit_par_etape": "05",
+      "autorite": "le partage des sorts entre classes",
+      "description": "Distribution du partage : combien de classes accordent chaque sort."
+    },
+    {
+      "chemin": "data/index/sorts_exclusifs.json",
+      "type": "json",
+      "nb_enregistrements": 19,
+      "schema": null,
+      "produit_par_etape": "05",
+      "autorite": "les sorts exclusifs à une seule classe",
+      "description": "Par classe, les sorts qu'aucune autre classe du périmètre n'accorde."
+    },
+    {
+      "chemin": "data/sorts/",
+      "type": "repertoire_json",
+      "motif": "<spell-id>.json",
+      "nb_fichiers": 2070,
+      "nb_enregistrements": 2070,
+      "schema": "schemas/sort.schema.json",
+      "produit_par_etape": "07 + 08",
+      "autorite": "le sort lui-même — bloc technique, description, classes",
+      "description": "Un fichier JSON par sort, 21 clés toujours présentes. Corrigeable à la main : les éditions humaines font foi."
+    },
+    {
+      "chemin": "cache/html/",
+      "type": "repertoire_html",
+      "motif": "<sha1>.html",
+      "nb_fichiers": 2089,
+      "nb_enregistrements": 2089,
+      "schema": null,
+      "produit_par_etape": "03, 06",
+      "autorite": "les octets source bruts (reproductibilité)",
+      "description": "HTML UTF-8 tel que servi par le wiki : permet de corriger un parseur sans re-crawler."
+    },
+    {
+      "chemin": "cache/index.jsonl",
+      "type": "jsonl",
+      "nb_enregistrements": 2107,
+      "schema": null,
+      "produit_par_etape": "03, 06",
+      "autorite": "le journal de récupération (url, fichier, statut, date)",
+      "description": "Journal append-only : peut compter plus de lignes que de fichiers en cache (une URL revisitée est réécrite)."
+    },
+    {
+      "chemin": "schemas/",
+      "type": "repertoire_json_schema",
+      "motif": "*.json",
+      "nb_fichiers": 2,
+      "nb_enregistrements": 2,
+      "schema": null,
+      "produit_par_etape": "02",
+      "autorite": "les deux contrats de sortie (sort, ligne de liste de classe)",
+      "description": "JSON Schema Draft 2020-12, validés à l'écriture par les étapes 04, 07, 08, 09."
+    },
+    {
+      "chemin": "reports/",
+      "type": "repertoire_markdown",
+      "motif": "*.md",
+      "nb_fichiers": 6,
+      "nb_enregistrements": 6,
+      "schema": null,
+      "produit_par_etape": "03–09",
+      "autorite": "le résultat et les anomalies de chaque étape",
+      "description": "Rien n'est jamais écarté silencieusement : lacunes, libellés inconnus, collisions de slug atterrissent ici."
+    }
+  ],
+  "totaux": {
+    "nb_classes": 19,
+    "nb_entrees_listes": 8927,
+    "nb_sorts_uniques": 2070,
+    "nb_fichiers_sorts": 2070,
+    "nb_pages_cache": 2089,
+    "nb_sorts_avec_mythique": 287,
+    "nb_sorts_avec_variantes": 196
+  }
+}
