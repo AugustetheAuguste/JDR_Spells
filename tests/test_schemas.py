@@ -92,6 +92,12 @@ def test_sort_schema_mythique_block_shape(repo_root: Path) -> None:
     validateur = Draft202012Validator(schema)
     bloc = {"description": "t", "description_html": "<p>t</p>"}
     assert validateur.is_valid({"mythique": bloc}) is False  # champs requis manquants
-    sous_schema = schema["properties"]["mythique"]
+    # `mythique` is a $def so that nested variants reuse the exact same shape.
+    sous_schema = {**schema["$defs"]["mythique"], "$defs": schema["$defs"]}
     Draft202012Validator(sous_schema).validate(bloc)
     Draft202012Validator(sous_schema).validate(None)
+    assert Draft202012Validator(sous_schema).is_valid({"description": "t"}) is False
+    assert schema["properties"]["mythique"] == {"$ref": "#/$defs/mythique"}
+    assert schema["properties"]["variantes"]["items"]["properties"]["mythique"] == {
+        "$ref": "#/$defs/mythique"
+    }
