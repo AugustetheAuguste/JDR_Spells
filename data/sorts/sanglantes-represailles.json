@@ -26,7 +26,29 @@
   "autres": {
     "restriction_divinite": "Option plus\ncommune chez\nles nains."
   },
-  "classes": [],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
   "meta": {
     "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanglantes%20repr%c3%a9sailles.ashx",
     "cache_fichier": "cache/html/8910641de4f654dba36116ec8afbdd287ca7a711.html",

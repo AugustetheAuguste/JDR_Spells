@@ -26,7 +26,29 @@
   "autres": {
     "restriction_divinite": "Option plus\ncommune chez\nles nains."
   },
-  "classes": [],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
   "meta": {
     "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Formation%20tactique.ashx",
     "cache_fichier": "cache/html/e9cbc3bb07d830fe039c28a4ecec45ac95f820d7.html",

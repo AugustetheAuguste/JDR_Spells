@@ -26,7 +26,15 @@
   "autres": {
     "section:Poisons transmutés": "On peut créer les poisons suivants à l’aide du sort transmutation des potions en poison. La puissance du poison dépend du niveau du sort contenu dans la potion transmutée.\nPOISON DE POTION DE NIVEAU 0\nType poison, blessure ; Jet de sauvegarde Vigueur DD 10\nFréquence 1/round pendant 2 rounds\nEffet 1 point d’affaiblissement temporaire de Dex ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 1\nType poison, blessure ; Jet de sauvegarde Vigueur DD 11\nFréquence 1/round pendant 4 rounds\nEffet 1d2 points d’affaiblissement temporaire de Dex ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 2\nType poison, blessure ; Jet de sauvegarde Vigueur DD 13\nFréquence 1/round pendant 6 rounds\nEffet 1d4 points d’affaiblissement temporaire de For ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 3\nType poison, blessure ; Jet de sauvegarde Vigueur DD 14\nFréquence 1/round pendant 6 rounds\nEffet 1d4 points d’affaiblissement temporaire de Con ; Guérison 2 réussites consécutives"
   },
-  "classes": [],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
   "meta": {
     "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmutation%20de%20potion%20en%20poison.ashx",
     "cache_fichier": "cache/html/0df7b5782261331a87dbc4ea6df2a94e39f28549.html",
