@@ -1,0 +1,64 @@
+{
+  "id": "eclair-multiple",
+  "nom": "Éclair multiple",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clair%20multiple.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Occ": 6,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un morceau de fourrure ; un morceau d’ambre, de verre ou de cristal ; une épingle en argent par niveau de lanceur de sorts)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "1 cible principale + 1 cible secondaire/niveau (dans un rayon de 9 m (6 cases) autour de la principale)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort crée une violente décharge d’électricité qui part du bout des doigts du personnage. Contrairement à un éclair normal, l’éclair multiple se divise dès qu’il frappe sa première cible.\nLa cible principale subit 1d6 points de dégâts d’électricité par niveau de lanceur de sorts (avec un maximum de 20d6). L’éclair se divise ensuite de manière à pouvoir atteindre un nombre de cibles secondaires égal au niveau de lanceur de sorts du personnage (20 maximum). Les éclairs secondaires frappent chacun une cible et infligent autant de dégâts que le premier.\nChacune des créatures touchées a droit à un jet de Réflexes pour diminuer les dégâts de moitié. Le DD du jet de Réflexes des éclairs secondaires est réduit de 2 points par rapport à celui de l’éclair originel. C’est le lanceur de sorts qui choisit les cibles secondaires selon son gré mais il doit respecter les conditions suivantes : toutes les cibles secondaires doivent se trouver à au plus 9 m (6 cases) de la cible principale et aucune cible ne peut être frappée plus d’une fois. Le nombre de cibles secondaires indiqué ci-dessus est un maximum : le lanceur du sort peut en choisir moins s’il le désire.",
+  "description_html": "<hr/>\nCe sort crée une violente décharge d’électricité qui part du bout des doigts du personnage. Contrairement à un éclair normal, l’éclair multiple se divise dès qu’il frappe sa première cible.<br/><br/>La cible principale subit 1d6 points de dégâts d’électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (avec un maximum de 20d6). L’éclair se divise ensuite de manière à pouvoir atteindre un nombre de cibles secondaires égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> du personnage (20 maximum). Les éclairs secondaires frappent chacun une cible et infligent autant de dégâts que le premier.<br/><br/>Chacune des créatures touchées a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour diminuer les dégâts de moitié. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> des éclairs secondaires est réduit de 2 points par rapport à celui de l’éclair originel. C’est le lanceur de sorts qui choisit les cibles secondaires selon son gré mais il doit respecter les conditions suivantes : toutes les cibles secondaires doivent se trouver à au plus 9 m (6 cases) de la cible principale et aucune cible ne peut être frappée plus d’une fois. Le nombre de cibles secondaires indiqué ci-dessus est un maximum : le lanceur du sort peut en choisir moins s’il le désire.<br/><br/>",
+  "mythique": {
+    "description": "Ce sort inflige 1d10 points de dégâts par niveau de lanceur de sorts (20d10 maximum) et le DD du jet de sauvegarde des cibles secondaires n’est pas réduit. Les cibles secondaires doivent se situer à 9 mètres ou moins d’une quelconque autre cible et pas nécessairement de la cible principale.",
+    "description_html": "Ce sort inflige 1d10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (20d10 maximum) et le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du jet de sauvegarde des cibles secondaires n’est pas réduit. Les cibles secondaires doivent se situer à 9 mètres ou moins d’une quelconque autre cible et pas nécessairement de la cible principale.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Chaînes de feu",
+      "id": "chaines-de-feu",
+      "ecole": "Évocation",
+      "descripteurs": [
+        "feu"
+      ],
+      "niveaux": {
+        "Ens/Mag": 6,
+        "Magus": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F (une goutte d’huile et un petit éclat de silex)",
+      "portee": "moyenne (30 m + 3 m/niveau)",
+      "cible": "1 cible principale + 1 cible secondaire/niveau (dans un rayon de 9 m (6 cases) autour de la principale)",
+      "duree": "instantanée",
+      "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme éclair multiple, à l’exception des précisions indiquées ci-dessus, et inflige des dégâts de feu plutôt que des dégâts d’électricité.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9clair%20multiple.ashx\" title=\"Éclair multiple\">éclair multiple</a></i>, à l’exception des précisions indiquées ci-dessus, et inflige des dégâts de feu plutôt que des dégâts d’électricité.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clair%20multiple.ashx",
+    "cache_fichier": "cache/html/7e1b88ce2d9f528f1a6e315be7a2010e802a2e4f.html",
+    "recupere_le": "2026-07-28T22:38:48.370427+00:00",
+    "parser_version": "1.0.0"
+  }
+}

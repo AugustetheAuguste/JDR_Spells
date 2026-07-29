@@ -1,0 +1,66 @@
+{
+  "id": "action-interdite",
+  "nom": "Action interdite",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Action%20interdite.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental",
+    "langage"
+  ],
+  "niveaux": {
+    "Hyp": 1,
+    "Inq": 1,
+    "Occ": 1,
+    "Prê": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage interdit à sa cible d’entreprendre une action particulière et elle fait de son mieux pour obéir. Il peut lui interdire les actions qui correspondent à l’une des options suivantes.\nAttaque. La cible ne peut pas faire la moindre action qui implique un jet d’attaque ni utiliser un sort ou un pouvoir qui vise un ennemi ou une zone qui comprend un ennemi.\nCommuniquer. La cible ne peut pas entreprendre la moindre action qui lui permette de communiquer avec qui que ce soit, ce qui comprend des actes comme parler, faire un test de Bluff pour transmettre un message secret, écrire et utiliser la télépathie. Ceci n’empêche pas les actions verbales qui n’ont pas la communication comme objectif, comme de prononcer un mot de commande ou de lancer un sort à composante verbale.\nDégainer. La cible ne peut pas préparer ni dégainer un objet, une arme, une composante ou une pièce d’équipement.\nIncanter. La cible ne peut pas lancer de sort ni utiliser de pouvoir magique.\nSe déplacer. La cible ne peut pas entreprendre la moindre action qui la ferait arriver dans une autre zone. Elle ne résiste pas si quelqu’un d’autre essaye de la déplacer (on peut donc la porter ou la tirer ou la faire flotter sur un radeau) mais elle ne peut pas tenter de se déplacer volontairement (et ne peut pas indiquer à sa monture de bouger).\nLa cible peut entreprendre librement toute action qui n’a pas été interdite par le lanceur de sorts. Par exemple, une cible qui a interdiction de bouger peut lancer des sorts, attaquer ou crier à l’aide.",
+  "description_html": "<hr/>\nLe personnage interdit à sa cible d’entreprendre une action particulière et elle fait de son mieux pour obéir. Il peut lui interdire les actions qui correspondent à l’une des options suivantes.\n<ul><li><i>Attaque.</i> La cible ne peut pas faire la moindre action qui implique un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jet d’attaque</a> ni utiliser un sort ou un pouvoir qui vise un ennemi ou une zone qui comprend un ennemi.</li><li><i>Communiquer.</i> La cible ne peut pas entreprendre la moindre action qui lui permette de communiquer avec qui que ce soit, ce qui comprend des actes comme parler, faire un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> pour transmettre un message secret, écrire et utiliser la <a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9pathie.ashx\" title=\"Télépathie\">télépathie</a>. Ceci n’empêche pas les actions verbales qui n’ont pas la communication comme objectif, comme de prononcer un <a class=\"pagelink\" href=\"Pathfinder-RPG.mot%20de%20commande.ashx\" title=\"mot de commande\">mot de commande</a> ou de lancer un sort à <a class=\"pagelink\" href=\"Pathfinder-RPG.composante%20verbale.ashx\" title=\"composante verbale\">composante verbale</a>.</li><li><i>Dégainer.</i> La cible ne peut pas préparer ni dégainer un objet, une arme, une composante ou une pièce d’équipement.</li><li><i>Incanter.</i> La cible ne peut pas lancer de sort ni utiliser de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20magique.ashx\" title=\"pouvoir magique\">pouvoir magique</a>.</li><li><i>Se déplacer.</i> La cible ne peut pas entreprendre la moindre action qui la ferait arriver dans une autre zone. Elle ne résiste pas si quelqu’un d’autre essaye de la déplacer (on peut donc la porter ou la tirer ou la faire flotter sur un radeau) mais elle ne peut pas tenter de se déplacer volontairement (et ne peut pas indiquer à sa monture de bouger).</li></ul>\nLa cible peut entreprendre librement toute action qui n’a pas été interdite par le lanceur de sorts. Par exemple, une cible qui a interdiction de bouger peut lancer des sorts, attaquer ou crier à l’aide.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Action interdite supérieure",
+      "id": "action-interdite-superieure",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "dépendant du langage",
+        "effet mental"
+      ],
+      "niveaux": {
+        "Hyp": 4,
+        "Inq": 5,
+        "Occ": 5,
+        "Prê": 5,
+        "Psy": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "une créature/niveau qui ne doivent pas être distantes de plus de 9 m (6 c) les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme action interdite mais affecte jusqu’à une créature par niveau. Toutes les créatures affectées sont soumises à la même interdiction.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.action%20interdite.ashx\" title=\"Action interdite\">action interdite</a></i> mais affecte jusqu’à une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Toutes les créatures affectées sont soumises à la même interdiction.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Action%20interdite.ashx",
+    "cache_fichier": "cache/html/e0c4839eae0da9f071e77ea286696d00ceaee312.html",
+    "recupere_le": "2026-07-28T22:40:00.363070+00:00",
+    "parser_version": "1.0.0"
+  }
+}

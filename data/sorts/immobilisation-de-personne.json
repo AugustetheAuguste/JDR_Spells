@@ -1,0 +1,121 @@
+{
+  "id": "immobilisation-de-personne",
+  "nom": "Immobilisation de personne",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20personne.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Bard": 2,
+    "Cham": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Ens/Mag": 3,
+    "Méd": 2,
+    "Occ": 3,
+    "Prê": 2,
+    "Psy": 2,
+    "San": 3,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (un petit bout de fer bien droit)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 humanoïde",
+  "duree": "1 round/niveau (T) (voir texte)",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La cible du sort se fige et se retrouve paralysée. Elle reste consciente de ce qui se passe autour d’elle et peut respirer normalement mais ne peut entreprendre aucune action, pas même parler. Chaque round, lors de son tour, elle peut effectuer un nouveau jet de sauvegarde pour tenter de mettre fin à l’effet. Il s’agit d’une action complexe qui ne provoque pas d’attaques d’opportunité. Si une créature ailée se retrouve paralysée, elle ne peut plus battre des ailes et tombe. Un nageur paralysé ne peut plus bouger et risque de se noyer.",
+  "description_html": "<hr/>\nLa cible du sort se fige et se retrouve <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysée</a>. Elle reste consciente de ce qui se passe autour d’elle et peut respirer normalement mais ne peut entreprendre aucune action, pas même parler. Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, lors de son tour, elle peut effectuer un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a> pour tenter de mettre fin à l’effet. Il s’agit d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a> qui ne provoque pas d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a>. Si une créature ailée se retrouve <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysée</a>, elle ne peut plus battre des ailes et tombe. Un nageur <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysé</a> ne peut plus bouger et risque de se noyer.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Immobilisation d'animal",
+      "id": "immobilisation-d-animal",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "mental"
+      ],
+      "niveaux": {
+        "Dru": 2,
+        "Hyp": 2,
+        "Psy": 2,
+        "Rôd": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 animal",
+      "duree": "1 round/niveau (T) (voir texte)",
+      "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme immobilisation de personne, si ce n’est qu’il affecte un animal.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immobilisation%20de%20personne.ashx\" title=\"Immobilisation de personne\">immobilisation de personne</a></i>, si ce n’est qu’il affecte un animal.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Immobilisation de monstre",
+      "id": "immobilisation-de-monstre",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "mental"
+      ],
+      "niveaux": {
+        "Bard": 4,
+        "Con": 4,
+        "ConU": 5,
+        "Hyp": 4,
+        "Inq": 4,
+        "Ens/Mag": 5,
+        "Méd": 4,
+        "Occ": 4,
+        "Psy": 5,
+        "Sor": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (un bâtonnet ou une barre de métal résistant, à peine aussi long qu’un clou)",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 créature vivante",
+      "duree": "1 round/niveau (T) (voir texte)",
+      "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme immobilisation de personne, si ce n’est qu’il affecte n’importe quelle créature vivante ratant son jet de Volonté.",
+      "description_html": "<hr/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immobilisation%20de%20personne.ashx\" title=\"Immobilisation de personne\">immobilisation de personne</a></i>, si ce n’est qu’il affecte n’importe quelle créature vivante ratant son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Immobilisation de monstre de groupe",
+      "id": "immobilisation-de-monstre-de-groupe",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "mental"
+      ],
+      "niveaux": {
+        "Ens/Mag": 9,
+        "Psy": 9,
+        "Sor": 9
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (un bâtonnet ou une barre de métal résistant, à peine aussi long qu’un clou)",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 ou plusieurs créatures, distantes de moins de 9 m/6 c les unes des autres",
+      "duree": "1 round/niveau (T) (voir texte)",
+      "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme immobilisation de monstre, si ce n’est qu’il affecte un groupe de créatures vivantes et immobilise toutes celles qui ratent leur jet de Volonté.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immobilisation%20de%20monstre.ashx\" title=\"Immobilisation de monstre\">immobilisation de monstre</a></i>, si ce n’est qu’il affecte un groupe de créatures vivantes et immobilise toutes celles qui ratent leur jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>.",
+      "mythique": null
+    }
+  ],
+  "sources": [],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20personne.ashx",
+    "cache_fichier": "cache/html/9a60be46b6144d551dc464cf7b503633e22bf01f.html",
+    "recupere_le": "2026-07-28T22:56:42.523356+00:00",
+    "parser_version": "1.0.0"
+  }
+}

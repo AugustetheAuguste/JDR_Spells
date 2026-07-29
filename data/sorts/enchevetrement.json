@@ -1,0 +1,84 @@
+{
+  "id": "enchevetrement",
+  "nom": "Enchevêtrement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enchev%c3%aatrement.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "toute la végétation sur une étendue de 12 m (8 c) de rayon",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Réflexes, partiel (voir description)",
+  "resistance_magie": "non",
+  "description": "Les herbes, les plantes, les buissons et les arbres se déforment et s’entortillent autour des créatures qui se trouvent dans la zone d’effet ou qui y pénètrent. Les créatures qui ratent leur jet de sauvegarde sont enchevêtrées. Celles qui réussissent se déplacent normalement mais doivent faire un nouveau jet à la fin de leur tour. Les créatures qui pénètrent dans la zone doivent faire ce jet immédiatement. En cas d’échec, la créature ne peut plus se déplacer et reste enchevêtrée. Elle peut se libérer si elle réussit un test de Force ou d’Évasion, par une action de mouvement. Le DD du test est égal au DD du sort. Tant que le sort fait effet, la zone qu’il affecte est considérée comme un terrain difficile.\nSi les plantes locales sont couvertes d’épines, les créatures présentes dans la zone d’effet du sort reçoivent 1 point de dégâts à chaque fois qu’elles ratent leur jet de sauvegarde contre le sort ou ratent un test pour se libérer. On peut appliquer d’autres effets liés à la flore locale, à la discrétion du MJ.",
+  "description_html": "<hr/>\nLes herbes, les plantes, les buissons et les arbres se déforment et s’entortillent autour des créatures qui se trouvent dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> ou qui y pénètrent. Les créatures qui ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> sont <a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx\" title=\"Enchevêtré\">enchevêtrées</a>. Celles qui réussissent se déplacent normalement mais doivent faire un nouveau jet à la fin de leur tour. Les créatures qui pénètrent dans la zone doivent faire ce jet immédiatement. En cas d’échec, la créature ne peut plus se déplacer et reste <a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx\" title=\"Enchevêtré\">enchevêtrée</a>. Elle peut se libérer si elle réussit un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> ou d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89vasion.ashx\" title=\"Évasion\">Évasion</a>, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du test est égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort. Tant que le sort fait effet, la zone qu’il affecte est considérée comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.terrain%20difficile.ashx\" title=\"terrain difficile\">terrain difficile</a>.<br/><br/>Si les plantes locales sont couvertes d’épines, les créatures présentes dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> du sort reçoivent 1 point de dégâts à chaque fois qu’elles ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> contre le sort ou ratent un test pour se libérer. On peut appliquer d’autres effets liés à la flore locale, à la discrétion du <a class=\"pagelink\" href=\"Pathfinder-RPG.MJ.ashx\" title=\"MJ\">MJ</a>.<br/><br/>",
+  "mythique": {
+    "description": "Le sort fonctionne dans les zones dénuées de végétation et provoque la poussée soudaine de plantes. Celles-ci peuvent atteindre des créatures situées à 3 mètres au-dessus du sol. Les plantes affectées ou créées par ce sort sont garnies d’épines infligeant 1d6 points de dégâts chaque round aux créatures situées dans la zone d’effet.",
+    "description_html": "Le sort fonctionne dans les zones dénuées de végétation et provoque la poussée soudaine de plantes. Celles-ci peuvent atteindre des créatures situées à 3 mètres au-dessus du sol. Les plantes affectées ou créées par ce sort sont garnies d’épines infligeant 1d6 points de dégâts chaque round aux créatures situées dans la zone d’effet.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Enchevêtrement répugnant",
+      "id": "enchevetrement-repugnant",
+      "ecole": "Transmutation",
+      "descripteurs": [
+        "poison"
+      ],
+      "niveaux": {
+        "Cham": 2,
+        "Dru": 2,
+        "Rôd": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+      "cible": "toute la végétation sur une étendue de 12 m (8 c) de rayon",
+      "duree": "1 minute/niveau (T)",
+      "jet_de_sauvegarde": "Réflexes, partiel et Vigueur, annule (voir description)",
+      "resistance_magie": "non",
+      "description": "Ce sort fonctionne comme enchevêtrement, à la seule différence que les plantes sont enduites d’une sève irritante qui provoque des éruptions cutanées douloureuses qui démangent les créatures touchées. Toute créature qui entre ou termine son tour dans la zone doit réussir un jet de Vigueur pour ne pas être fiévreuse tant qu’elle y reste et pendant 1d4 rounds après l’avoir quittée. Il s’agit d’un effet de poison.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatrement.ashx\" title=\"Enchevêtrement\">enchevêtrement</a></i>, à la seule différence que les plantes sont enduites d’une sève irritante qui provoque des éruptions cutanées douloureuses qui démangent les créatures touchées. Toute créature qui entre ou termine son tour dans la zone doit réussir un jet de Vigueur pour ne pas être fiévreuse tant qu’elle y reste et pendant 1d4 rounds après l’avoir quittée. Il s’agit d’un effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">poison</a>.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Enchevêtrement épineux",
+      "id": "enchevetrement-epineux",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Cham": 3,
+        "Dru": 3,
+        "Rôd": 3,
+        "Sor": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+      "cible": "toute la végétation sur une étendue de 12 m (8 c) de rayon",
+      "duree": "1 minute/niveau (T)",
+      "jet_de_sauvegarde": "Réflexes, partiel (voir description)",
+      "resistance_magie": "non",
+      "description": "Ce sort fonctionne comme enchevêtrement, à la seule différence que les plantes sont également pourvues d’épines qu’elles peuvent projeter jusqu’à 4,5 mètres. Toute créature située à moins de 4,5 mètres de la zone d’effet du sort se fait attaquer, à son tour, par les plantes animées. Ces plantes utilisent le niveau de lanceur du personnage comme bonus de base à l’attaque et ajoutent le modificateur de sa valeur de caractéristique de lancement de sorts (Intelligence pour les sorcières ; Sagesse pour les chamans, les druides et les rôdeurs) au jet d’attaque. Une volée d’épines compte comme une arme de jet infligeant 2d6 points de dégâts perforants sur une attaque réussie. Une créature qui entre ou termine son tour dans la zone du sort reçoit automatiquement 2d6 points de dégâts perforants.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatrement.ashx\" title=\"Enchevêtrement\">enchevêtrement</a></i>, à la seule différence que les plantes sont également pourvues d’épines qu’elles peuvent projeter jusqu’à 4,5 mètres. Toute créature située à moins de 4,5 mètres de la zone d’effet du sort se fait attaquer, à son tour, par les plantes animées. Ces plantes utilisent le niveau de lanceur du personnage comme bonus de base à l’attaque et ajoutent le modificateur de sa valeur de caractéristique de lancement de sorts (<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> pour les sorcières ; <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> pour les chamans, les druides et les rôdeurs) au jet d’attaque. Une volée d’épines compte comme une arme de jet infligeant 2d6 points de dégâts perforants sur une attaque réussie. Une créature qui entre ou termine son tour dans la zone du sort reçoit  automatiquement 2d6 points de dégâts perforants.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enchev%c3%aatrement.ashx",
+    "cache_fichier": "cache/html/7a3266865f1eb161b99a45a6c9117014a0524c44.html",
+    "recupere_le": "2026-07-28T22:52:09.209369+00:00",
+    "parser_version": "1.0.0"
+  }
+}

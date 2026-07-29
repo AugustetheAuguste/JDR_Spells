@@ -1,0 +1,91 @@
+{
+  "id": "force-de-taureau",
+  "nom": "Force de taureau",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Apal": 2,
+    "Cham": 2,
+    "Con": 2,
+    "ConU": 2,
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Méd": 2,
+    "Pal": 2,
+    "Prê": 2,
+    "Psy": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (quelques poils de taureau ou une pincée de bouse séchée)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le sujet devient plus fort. Ce sort lui confère un bonus d’altération de +4 points en Force, ce qui induit un effet positif sur ses jets d’attaque, ses jets de dégâts au corps à corps et sur tous les autres éléments dépendant du modificateur de Force.",
+  "description_html": "<hr/>\nLe sujet devient plus fort. Ce sort lui confère un <a class=\"pagelink\" href=\"Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx\" title=\"bonus d'altération\">bonus d’altération</a> de +4 points en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>, ce qui induit un effet positif sur ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a>, ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2ts.ashx\" title=\"jet de dégâts\">jets de dégâts</a> au corps à corps et sur tous les autres éléments dépendant du modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Force décuplée",
+      "id": "force-decuplee",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Pal": 4,
+        "Prê": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "personnelle",
+      "cible": "le lanceur de sorts",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": null,
+      "resistance_magie": null,
+      "description": "Identique au sort force de taureau, excepté qu’il octroie un bonus d’altération de +8 à la Force.",
+      "description_html": "<hr/>\nIdentique au sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, excepté qu’il octroie un bonus d’altération de +8 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Force de taureau de groupe",
+      "id": "force-de-taureau-de-groupe",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Cham": 6,
+        "Con": 4,
+        "ConU": 6,
+        "Dru": 6,
+        "Ens/Mag": 6,
+        "Magus": 6,
+        "Prê": 6,
+        "Psy": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (quelques poils de taureau ou une pincée de bouse séchée)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort est semblable à force de taureau, si ce n’est qu’il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, si ce n’est qu’il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau.ashx",
+    "cache_fichier": "cache/html/8d9669d1127703f5d8194b4cec28938cb7a9022c.html",
+    "recupere_le": "2026-07-28T22:53:54.321659+00:00",
+    "parser_version": "1.0.0"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "venin-latent",
+  "nom": "Venin latent",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20latent.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Cham": 2,
+    "Ens/Mag": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (herbes utilisées dans l'antitoxine d'une valeur de 25 po)",
+  "portee": "contact",
+  "cible": "une dose de poison ou une créature venimeuse",
+  "duree": "permanente jusqu'à déchargement (T)",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage étend la période nécessaire pour que le poison touché s'active, lui ajoutant un temps d'incubation d'un maximum de 1 heure par niveau (il touche le contenant du poison plutôt que la substance en elle même, il ne risque donc pas de s'exposer à un poison de contact). La cible n'effectue pas de jet de sauvegarde lorsqu'elle est exposée au venin latent, mais le fait normalement après son temps d'incubation. Si le poison est neutralisé ou autrement soigné avant la fin de son temps d'incubation, il est rendu inoffensif. Rater des jets de sauvegardes contre plusieurs doses de venin latent a le même effet cumulatif que pour les autres poisons.\nVenin latent est difficile à détecter et identifier. Détection du poison et les effets similaires ne détectent venin latent que si le lanceur réussit un test de niveau de lanceur de sorts contre un DD égal à 11 + le niveau de lanceur de sorts du personnage (lancé secrètement par le MJ). Même si le poison est détecté, le DD d'Artisanat (alchimie) ou de Sagesse pour l'identifier est augmenté de 10. Si un poison est soumis à un autre effet qui nécessite un test de niveau de lanceur de sorts pour être détecté ou qui augmente le DD pour l'identifier (comme poison masqué), ces effets ne se cumulent pas. On conserve alors le test de niveau de lanceur de sorts avec le plus haut DD et la plus grande augmentation du DD d'identification.\nS'il est lancé sur une créature venimeuse, venin latent ne retarde le temps d'incubation du poison de cette créature que la prochaine fois qu'elle l'administrera.",
+  "description_html": "<hr/>\nLe personnage étend la période nécessaire pour que le poison touché s'active, lui ajoutant un temps d'incubation d'un maximum de 1 heure par niveau (il touche le contenant du poison plutôt que la substance en elle même, il ne risque donc pas de s'exposer à un poison de contact). La cible n'effectue pas de jet de sauvegarde lorsqu'elle est exposée au <i>venin latent</i>, mais le fait normalement après son temps d'incubation. Si le poison est neutralisé ou autrement soigné avant la fin de son temps d'incubation, il est rendu inoffensif. Rater des jets de sauvegardes contre plusieurs doses de <i>venin latent</i> a le même effet cumulatif que pour les autres <a class=\"pagelink\" href=\"Pathfinder-RPG.Poisons.ashx\" title=\"Les poisons  \">poisons</a>.<br/><br/><i>Venin latent</i> est difficile à détecter et identifier. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9tection%20du%20poison.ashx\" title=\"Détection du poison\">Détection du poison</a></i> et les effets similaires ne détectent <i>venin latent</i> que si le lanceur réussit un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> contre un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> égal à 11 + le niveau de lanceur de sorts du personnage (lancé secrètement par le <a class=\"pagelink\" href=\"Pathfinder-RPG.MJ.ashx\" title=\"MJ\">MJ</a>). Même si le poison est détecté, le DD d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> (alchimie) ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> pour l'identifier est augmenté de 10. Si un poison est soumis à un autre effet qui nécessite un test de niveau de lanceur de sorts pour être détecté ou qui augmente le DD pour l'identifier (comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.poison%20masqu%c3%a9.ashx\" title=\"Poison masqué\">poison masqué</a></i>), ces effets ne se cumulent pas. On conserve alors le test de niveau de lanceur de sorts avec le plus haut DD et la plus grande augmentation du DD d'identification.<br/><br/>S'il est lancé sur une créature venimeuse, <i>venin latent</i> ne retarde le temps d'incubation du poison de cette créature que la prochaine fois qu'elle l'administrera.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Venin conditionné",
+      "id": "venin-conditionne",
+      "ecole": "Nécromancie",
+      "descripteurs": [
+        "poison"
+      ],
+      "niveaux": {
+        "Cham": 4,
+        "Ens/Mag": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M (herbes utilisées dans l'antitoxine d'une valeur de 100 po)",
+      "portee": "contact",
+      "cible": "une dose de poison ou une créature venimeuse",
+      "duree": "permanente jusqu'à déchargement (T)",
+      "jet_de_sauvegarde": "Vigueur, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme venin latent, mais le personnage peut énoncer une condition ou des circonstances spécifiques sous lesquelles le temps d'incubation du poison se termine immédiatement, déclenchant ses effets. La condition de déclenchement peut être aussi vague ou aussi détaillée que le personnage le souhaite, mais le déclencheur doit être visuel ou auditif (comme avec bouche magique) ou autrement basé sur un contact physique ou la consommation d'un objet, d'une substance ou d'une créature spécifique. Cette condition de déclenchement peut soit mener à l'incubation immédiate du poison, soit à l'incubation du poison après une période choisie jusqu'à un maximum de 1 round par niveau de lanceur de sorts. Le personnage doit prendre toutes les décisions relatives au déclenchement lorsqu'il lance venin conditionné, et il ne peut pas les modifier par la suite.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.venin%20latent.ashx\" title=\"Venin latent\">venin latent</a></i>, mais le personnage peut énoncer une condition ou des circonstances spécifiques sous lesquelles le temps d'incubation du poison se termine immédiatement, déclenchant ses effets. La condition de déclenchement peut être aussi vague ou aussi détaillée que le personnage le souhaite, mais le déclencheur doit être visuel ou auditif (comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouche%20magique.ashx\" title=\"Bouche magique\">bouche magique</a></i>) ou autrement basé sur un contact physique ou la consommation d'un objet, d'une substance ou d'une créature spécifique. Cette condition de déclenchement peut soit mener à l'incubation immédiate du poison, soit à l'incubation du poison après une période choisie jusqu'à un maximum de 1 round par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Le personnage doit prendre toutes les décisions relatives au déclenchement lorsqu'il lance <i>venin conditionné</i>, et il ne peut pas les modifier par la suite.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20latent.ashx",
+    "cache_fichier": "cache/html/584dc033207a9fcf2ce1e299bf1b331e21b717cb.html",
+    "recupere_le": "2026-07-29T07:43:53.318015+00:00",
+    "parser_version": "1.0.0"
+  }
+}

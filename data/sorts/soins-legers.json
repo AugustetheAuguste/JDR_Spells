@@ -1,0 +1,140 @@
+{
+  "id": "soins-legers",
+  "nom": "Soins légers",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20l%c3%a9gers.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Bard": 1,
+    "Cham": 1,
+    "Dru": 1,
+    "Inq": 1,
+    "Occ": 1,
+    "Pal": 1,
+    "Prê": 1,
+    "Rôd": 2,
+    "Sor": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+  "resistance_magie": "oui (inoffensif) (voir description)",
+  "description": "En posant les mains sur une créature vivante, le personnage lui transmet de l’énergie positive et lui rend 1d8 points de vie +1 par niveau de lanceur de sorts (jusqu’à un maximum de +5).\nComme les morts-vivants sont animés d’énergie négative, ce sort leur inflige des dégâts au lieu de les soigner. Un jet de Volonté réussi leur permet toutefois de ne subir que la moitié des dégâts et ils peuvent appliquer leur résistance à la magie.",
+  "description_html": "<hr/>\nEn posant les mains sur une créature vivante, le personnage lui transmet de l’énergie positive et lui rend 1d8 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +5).<br/><br/>Comme les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> sont animés d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a>, ce sort leur inflige des dégâts au lieu de les soigner. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> réussi leur permet toutefois de ne subir que la moitié des dégâts et ils peuvent appliquer leur <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a>.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts soignés s’élèvent à 2d8 points de dégâts + 2 points par niveau de lanceur de sorts (+10 maximum). Le sort soigne 1 point de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit le point de caractéristique soigné par le sort.",
+    "description_html": "Les dégâts soignés s’élèvent à 2d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+10 maximum). Le sort soigne 1 point de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit le point de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soigné par le sort.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Soins modérés",
+      "id": "soins-moderes",
+      "ecole": "Invocation (guérison)",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 2,
+        "Bard": 2,
+        "Cham": 2,
+        "Dru": 3,
+        "Inq": 2,
+        "Occ": 2,
+        "Pal": 3,
+        "Prê": 2,
+        "Rôd": 3,
+        "Sor": 2,
+        "Spi": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "contact",
+      "cible": "créature touchée",
+      "duree": "instantanée",
+      "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+      "resistance_magie": "oui (inoffensif) (voir description)",
+      "description": "Ce sort est semblable à soins légers, si ce n’est qu’il rend 2d8 points de dégâts +1 par niveau de lanceur de sorts (jusqu’à un maximum de +10).",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers.ashx\" title=\"Soins légers\">soins légers</a></i>, si ce n’est qu’il rend 2d8 points de dégâts +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +10).<br/><br/>",
+      "mythique": {
+        "description": "Les dégâts soignés s’élèvent à 4d8 points de dégâts + 2 points par niveau de lanceur de sorts (+20 maximum). Le sort soigne jusqu’à 2 points de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de caractéristique soignés par le sort.",
+        "description_html": "Les dégâts soignés s’élèvent à 4d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+20 maximum). Le sort soigne jusqu’à 2 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soignés par le sort.<br/><br/>"
+      }
+    },
+    {
+      "nom": "Soins importants",
+      "id": "soins-importants",
+      "ecole": "Invocation (guérison)",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 3,
+        "Bard": 3,
+        "Cham": 3,
+        "Dru": 4,
+        "Inq": 3,
+        "Occ": 3,
+        "Pal": 4,
+        "Prê": 3,
+        "Rôd": 4,
+        "Sor": 4,
+        "Spi": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "contact",
+      "cible": "créature touchée",
+      "duree": "instantanée",
+      "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+      "resistance_magie": "oui (inoffensif) (voir description)",
+      "description": "Ce sort est semblable à soins légers, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +15).",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers.ashx\" title=\"Soins légers\">soins légers</a></i>, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +15).<br/><br/>",
+      "mythique": {
+        "description": "Les dégâts soignés s’élèvent à 6d8 points de dégâts + 2 points par niveau de lanceur de sorts (+30 maximum). Le sort soigne jusqu’à 3 points de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de caractéristique soignés par le sort.",
+        "description_html": "Les dégâts soignés s’élèvent à 6d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+30 maximum). Le sort soigne jusqu’à 3 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soignés par le sort.<br/><br/>"
+      }
+    },
+    {
+      "nom": "Soins intensifs",
+      "id": "soins-intensifs",
+      "ecole": "Invocation (guérison)",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 4,
+        "Bard": 4,
+        "Cham": 4,
+        "Dru": 5,
+        "Inq": 4,
+        "Occ": 4,
+        "Prê": 4,
+        "Sor": 5,
+        "Spi": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "contact",
+      "cible": "créature touchée",
+      "duree": "instantanée",
+      "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+      "resistance_magie": "oui (inoffensif) (voir description)",
+      "description": "Ce sort est semblable à soins légers, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +20).",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers.ashx\" title=\"Soins légers\">soins légers</a></i>, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +20).<br/><br/>",
+      "mythique": {
+        "description": "Les dégâts soignés s’élèvent à 8d8 points de dégâts + 2 points par niveau de lanceur de sorts (+40 maximum). Le sort soigne jusqu’à 4 points de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de caractéristique soignés par le sort.",
+        "description_html": "Les dégâts soignés s’élèvent à 8d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+40 maximum). Le sort soigne jusqu’à 4 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soignés par le sort."
+      }
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20l%c3%a9gers.ashx",
+    "cache_fichier": "cache/html/bb34e17f0e0dc68275c5058922dd426755d893e7.html",
+    "recupere_le": "2026-07-29T07:40:46.498907+00:00",
+    "parser_version": "1.0.0"
+  }
+}

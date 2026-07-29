@@ -1,0 +1,68 @@
+{
+  "id": "illumination",
+  "nom": "Illumination",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Illumination.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 0,
+    "Dru": 0,
+    "Hyp": 0,
+    "Ens/Mag": 0,
+    "Magus": 0,
+    "Méd": 0,
+    "Occ": 0,
+    "Psy": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayonnement de lumière",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort élémentaire crée une petite explosion de lumière. Si celle-ci se produit devant une seule créature, cette dernière doit réussir un jet de Vigueur pour éviter de se retrouver éblouie pendant une minute. Les créatures aveugles, ainsi que celles qui sont déjà éblouies, ne sont pas affectées par illumination.",
+  "description_html": "<hr/>\nCe sort élémentaire crée une petite explosion de lumière. Si celle-ci se produit devant une seule créature, cette dernière doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour éviter de se retrouver <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouie</a> pendant une minute. Les créatures  <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveugles</a>, ainsi que celles qui sont déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouies</a>, ne sont pas affectées par <i>illumination</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Grandes illuminations",
+      "id": "grandes-illuminations",
+      "ecole": "Évocation",
+      "descripteurs": [
+        "lumière"
+      ],
+      "niveaux": {
+        "Bard": 1,
+        "Dru": 1,
+        "Ens/Mag": 1,
+        "Magus": 1,
+        "Psy": 1,
+        "San": 1
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V",
+      "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "rayonnement de lumière de 3 m (2 c) de rayon",
+      "duree": "instantanée",
+      "jet_de_sauvegarde": "Vigueur, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme illumination mais il affecte toutes les créatures qui se trouvent dans un rayon de 3 mètres (2 c) à partir du point d'impact.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.illumination.ashx\" title=\"Illumination\">illumination</a></i> mais il affecte toutes les créatures qui se trouvent dans un rayon de 3 mètres (2 <abbr title=\"cases\">c</abbr>) à partir du point d'impact.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Illumination.ashx",
+    "cache_fichier": "cache/html/04f89140aec65428eac17109c5c2faad2f5f8f69.html",
+    "recupere_le": "2026-07-28T22:56:26.549056+00:00",
+    "parser_version": "1.0.0"
+  }
+}
