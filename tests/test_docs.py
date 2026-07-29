@@ -15,11 +15,6 @@ from pathlib import Path
 
 import pytest
 
-# `pf_spells.validate_corpus` is step 09's deliverable and is documented here on
-# purpose; it is the one module the docs may name that this test does not require
-# on disk, because step 09 lands in a separate branch.
-MODULE_TOLERE = "validate_corpus"
-
 BLOC_COMMANDES = re.compile(r"python -m pf_spells\.(\w+)")
 BLOC_PIPELINE = re.compile(
     r"```\nexport PYTHONPATH=src\npython -m pf_spells\.fetch_classes(.*?)```",
@@ -168,15 +163,9 @@ class TestBlocDeCommandes:
         manquants = [
             module
             for module in set(BLOC_COMMANDES.findall(texte))
-            if module != MODULE_TOLERE
-            and not (repo_root / "src" / "pf_spells" / f"{module}.py").is_file()
+            if not (repo_root / "src" / "pf_spells" / f"{module}.py").is_file()
         ]
         assert manquants == []
-
-    def test_le_module_tolere_est_bien_documente(self, repo_root: Path) -> None:
-        # Guard the exemption: if validate_corpus ever lands, drop MODULE_TOLERE.
-        for nom in ("CLAUDE.md", "README.md"):
-            assert MODULE_TOLERE in (repo_root / nom).read_text(encoding="utf-8")
 
     def test_les_deux_blocs_sont_identiques(
         self, claude_texte: str, readme_texte: str
