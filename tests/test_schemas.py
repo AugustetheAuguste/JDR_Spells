@@ -73,7 +73,15 @@ def test_sort_schema_accepts_a_realistic_spell(repo_root: Path) -> None:
         ],
         "sources": ["RSE"],
         "autres": {"note": None},
-        "classes": [{"classe": "Barde", "slug": "barde", "niveau": 2}],
+        "classes": [
+            {
+                "classe": "Barde",
+                "slug": "barde",
+                "niveau": 2,
+                "niveau_page": 2,
+                "concordance": True,
+            }
+        ],
         "meta": {
             "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Requiem.ashx",
             "cache_fichier": "cache/html/abc.html",

@@ -107,6 +107,23 @@ class TestHelpers:
         assert niveaux == {"Rôd": 1}
         assert rejets == []
 
+    def test_parse_niveaux_splits_a_missing_comma(self):
+        # `Toucher de combustion` reads `magus 1 Ens/Mag 1`: the wiki author
+        # dropped a comma. Both classes must be recovered, not merged into one
+        # bogus abbreviation.
+        niveaux, rejets = parse_spells.parse_niveaux(
+            "Dru 1, Inq 1, magus 1 Ens/Mag 1, Sor 1, Psy 1"
+        )
+        assert niveaux == {
+            "Dru": 1,
+            "Inq": 1,
+            "magus": 1,
+            "Ens/Mag": 1,
+            "Sor": 1,
+            "Psy": 1,
+        }
+        assert rejets == []
+
     def test_parse_niveaux_reports_unparsable(self):
         niveaux, rejets = parse_spells.parse_niveaux("Bard 1, n'importe quoi")
         assert niveaux == {"Bard": 1}
@@ -373,3 +390,10 @@ class TestCorpus:
         for doc in corpus:
             for entree in doc["classes"]:
                 assert {"classe", "slug", "niveau"} <= set(entree)
+
+    def test_niveaux_abbrevs_never_contain_a_level(self, corpus):
+        # A digit in an abbreviation means two `abbrev level` pairs were merged
+        # by a missing comma on the wiki and not split apart.
+        for doc in corpus:
+            for abbrev in doc["niveaux"]:
+                assert not any(c.isdigit() for c in abbrev), (doc["id"], abbrev)

@@ -143,6 +143,11 @@ _FIN_DESCRIPTION = ("h1", "h2", "h3", "h4", "h5", "h6")
 
 _DESCRIPTEURS = re.compile(r"\[([^\]]*)\]")
 _NIVEAU_PAIRE = re.compile(r"^(.+?)\s+(\d+)(?:\s*\(.*\))?$")
+# `Toucher de combustion` reads `magus 1 Ens/Mag 1` — the wiki author dropped a
+# comma. A run of `abbrev level` pairs inside one comma-chunk is split on this,
+# which requires the abbreviation part to be digit-free so it can't swallow the
+# level of the pair before it.
+_NIVEAUX_COLLES = re.compile(r"([^\d,()]+?)\s+(\d+)")
 _SOURCE_PREFIXE = re.compile(r"^\s*Source\s*:\s*", re.IGNORECASE)
 _FONCTIONNENT_COMME = re.compile(r"sorts qui .*fonctionnent comme")
 _PILCROW = "¶"
@@ -339,6 +344,13 @@ def parse_niveaux(valeur: str | None) -> tuple[dict[str, int], list[str]]:
             rejets.append(morceau)
             continue
         abbrev = paire.group(1).strip()
+        if any(c.isdigit() for c in abbrev):
+            # Two pairs share one chunk: a missing comma on the wiki side.
+            collees = _NIVEAUX_COLLES.findall(morceau)
+            if len(collees) > 1:
+                for nom, niveau in collees:
+                    niveaux.setdefault(nom.strip(), int(niveau))
+                continue
         niveaux.setdefault(abbrev, int(paire.group(2)))
     return niveaux, rejets
 
