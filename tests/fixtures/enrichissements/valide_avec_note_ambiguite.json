@@ -1,0 +1,34 @@
+{
+  "id": "lamentation-des-derniers-jours-d-ete",
+  "slug": "lamentation-des-derniers-jours-d-ete",
+  "resume_court": "Un manteau d'air estival brûle les créatures du froid et étouffe les sorts de froid.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_energie",
+    "terrain",
+    "peur"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts de feu",
+    "condition_infligee": [
+      "être secoué pendant 1 round"
+    ],
+    "cible_typique": "étendue de 9 mètres de rayon centrée sur une créature"
+  },
+  "notes_ambiguite": "Le sort est à la fois une zone de dégâts et une abjuration contre les sorts de froid ; controle_de_zone a été retenu faute de catégorie mixte.",
+  "verifie_par_humain": false,
+  "version_prompt": "p1.0",
+  "version_taxonomie": "taxonomie_v0",
+  "modele": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "genere_le": "2026-07-29T12:00:00+00:00",
+  "hash_source": "f89198a5ae576b924b2c1a4086d82a37cd467dd9ec1c1d0a82f7c380a7b9b841"
+}
