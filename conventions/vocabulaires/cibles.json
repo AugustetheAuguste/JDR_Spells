@@ -1,0 +1,66 @@
+{
+  "version": "v0",
+  "note": "Liste fixée par le contrat du schéma ; elle vit ici pour qu'il n'existe qu'un seul foyer par liste close.",
+  "valeurs": [
+    {
+      "cle": "soi",
+      "definition_fr": "Le sort n'affecte que le lanceur.",
+      "exemples_positifs": [
+        "Arrêt du temps",
+        "Résistance à l'âge"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Animation des morts"
+      ]
+    },
+    {
+      "cle": "allie",
+      "definition_fr": "Le sort affecte une créature volontaire autre que le lanceur.",
+      "exemples_positifs": [
+        "Soins légers",
+        "Bénédiction"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Absorption d'énergie"
+      ]
+    },
+    {
+      "cle": "ennemi",
+      "definition_fr": "Le sort désigne une créature hostile.",
+      "exemples_positifs": [
+        "Destruction de mort-vivant",
+        "Absorption d'énergie"
+      ],
+      "exemples_negatifs": [
+        "Arrêt du temps",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "zone",
+      "definition_fr": "Le sort s'applique à un volume, une émanation ou une étendue, sans désigner de créature.",
+      "exemples_positifs": [
+        "Lamentation des derniers jours d'été",
+        "Contrôle de l'eau"
+      ],
+      "exemples_negatifs": [
+        "Arrêt du temps",
+        "Résistance à l'âge mineure"
+      ]
+    },
+    {
+      "cle": "objet",
+      "definition_fr": "Le sort s'applique à un objet ou à un cadavre, pas à une créature vivante.",
+      "exemples_positifs": [
+        "Arc-bâton",
+        "Animation des morts"
+      ],
+      "exemples_negatifs": [
+        "Arrêt du temps",
+        "Destruction de mort-vivant"
+      ]
+    }
+  ]
+}

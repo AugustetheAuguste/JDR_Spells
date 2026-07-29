@@ -1,0 +1,222 @@
+{
+  "version": "v0",
+  "note": "v0 PROVISOIRE et volontairement modeste. L'étape 04 (passe 0 sur échantillon stratifié + curation humaine) REMPLACE intégralement cette liste par taxonomie_v1 ; aucun run de génération complet ne part avant ce remplacement.",
+  "valeurs": [
+    {
+      "cle": "degats_energie",
+      "definition_fr": "Le sort inflige des dégâts d'un type énergétique nommé.",
+      "exemples_positifs": [
+        "Lamentation des derniers jours d'été",
+        "Absorption d'énergie"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "rayon",
+      "definition_fr": "Le sort se résout par un rayon exigeant une attaque de contact à distance.",
+      "exemples_positifs": [
+        "Destruction de mort-vivant",
+        "Absorption d'énergie"
+      ],
+      "exemples_negatifs": [
+        "Contrôle de l'eau",
+        "Arc-bâton"
+      ]
+    },
+    {
+      "cle": "morts_vivants",
+      "definition_fr": "Le sort traite spécifiquement des morts-vivants, qu'il les crée, les blesse ou s'en protège.",
+      "exemples_positifs": [
+        "Animation des morts",
+        "Destruction de mort-vivant"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "energie_negative",
+      "definition_fr": "Le sort met en jeu l'énergie négative.",
+      "exemples_positifs": [
+        "Absorption d'énergie",
+        "Animation des morts"
+      ],
+      "exemples_negatifs": [
+        "Voile d'énergie positive",
+        "Arc-bâton"
+      ]
+    },
+    {
+      "cle": "energie_positive",
+      "definition_fr": "Le sort met en jeu l'énergie positive.",
+      "exemples_positifs": [
+        "Voile d'énergie positive",
+        "Destruction de mort-vivant"
+      ],
+      "exemples_negatifs": [
+        "Absorption d'énergie",
+        "Arc-bâton"
+      ]
+    },
+    {
+      "cle": "emanation",
+      "definition_fr": "L'effet prend la forme d'une émanation centrée sur un point ou sur le lanceur.",
+      "exemples_positifs": [
+        "Alarme d'invisibilité",
+        "Aura d'avidité"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Destruction de mort-vivant"
+      ]
+    },
+    {
+      "cle": "terrain",
+      "definition_fr": "Le sort modifie le terrain, l'eau ou l'environnement plutôt que des créatures.",
+      "exemples_positifs": [
+        "Contrôle de l'eau",
+        "Lamentation des derniers jours d'été"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "detection",
+      "definition_fr": "Le sort signale ou révèle une présence, un effet ou une propriété.",
+      "exemples_positifs": [
+        "Alarme d'invisibilité",
+        "Détection de la magie"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Absorption d'énergie"
+      ]
+    },
+    {
+      "cle": "anti_invisibilite",
+      "definition_fr": "Le sort porte sur les créatures invisibles en particulier.",
+      "exemples_positifs": [
+        "Alarme d'invisibilité",
+        "Invisibilité"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "arme",
+      "definition_fr": "Le sort porte sur une arme et modifie son usage.",
+      "exemples_positifs": [
+        "Arc-bâton",
+        "Affûtage"
+      ],
+      "exemples_negatifs": [
+        "Contrôle de l'eau",
+        "Absorption d'énergie"
+      ]
+    },
+    {
+      "cle": "objet_touche",
+      "definition_fr": "Le sort s'applique par contact à un objet ou à un cadavre.",
+      "exemples_positifs": [
+        "Arc-bâton",
+        "Animation des morts"
+      ],
+      "exemples_negatifs": [
+        "Arrêt du temps",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "personnelle",
+      "definition_fr": "Le sort a une portée personnelle et ne quitte pas le lanceur.",
+      "exemples_positifs": [
+        "Arrêt du temps",
+        "Résistance à l'âge"
+      ],
+      "exemples_negatifs": [
+        "Destruction de mort-vivant",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "vieillissement",
+      "definition_fr": "Le sort agit sur les effets de l'âge du sujet.",
+      "exemples_positifs": [
+        "Résistance à l'âge",
+        "Résistance à l'âge mineure"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "bonus_defensif",
+      "definition_fr": "Le sort accorde un bonus à la CA ou aux jets de sauvegarde.",
+      "exemples_positifs": [
+        "Voile d'énergie positive",
+        "Armure de mage"
+      ],
+      "exemples_negatifs": [
+        "Absorption d'énergie",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "temps",
+      "definition_fr": "Le sort manipule l'écoulement du temps ou le nombre d'actions disponibles.",
+      "exemples_positifs": [
+        "Arrêt du temps",
+        "Lenteur"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "niveaux_negatifs",
+      "definition_fr": "Le sort confère des niveaux négatifs.",
+      "exemples_positifs": [
+        "Absorption d'énergie",
+        "Blessure critique"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "peur",
+      "definition_fr": "Le sort produit un effet de peur.",
+      "exemples_positifs": [
+        "Lamentation des derniers jours d'été",
+        "Frayeur"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Contrôle de l'eau"
+      ]
+    },
+    {
+      "cle": "creation_de_serviteurs",
+      "definition_fr": "Le sort met des créatures sous le contrôle du lanceur.",
+      "exemples_positifs": [
+        "Animation des morts",
+        "Convocation de monstres I"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Arrêt du temps"
+      ]
+    }
+  ]
+}
