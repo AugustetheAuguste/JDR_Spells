@@ -8,3 +8,9 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Sorties de fumée de l'étage 08 sous la fixture : régénérables, et régénérées
+# dans tmp_path par les tests. Committer un lot figerait une copie périmée à côté
+# du module qui la produit. Le `build_artifacts/` de la racine, lui, EST committé :
+# c'est la trace d'appels payants, donc une pièce d'audit, pas un artefact jetable.
+tests/fixtures/mini_corpus/build_artifacts/
