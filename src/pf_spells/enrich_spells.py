@@ -300,8 +300,9 @@ def build_report(stats: dict) -> str:
         "La classe possède bien une abréviation ailleurs dans le corpus, mais "
         "aucune de ses abréviations n'apparaît sur cette page-ci : la liste de "
         "classe revendique le sort, la page ne le confirme pas. Ce n'est ni une "
-        "concordance ni une divergence — `concordance: null` — et cela relève "
-        "d'une relecture humaine, pas d'une correction automatique.",
+        "concordance ni une divergence — `concordance: null` — et le pipeline "
+        "s'arrête là : les deux sources sont conservées côte à côte, sans qu'un "
+        "arbitrage soit rendu ni attendu.",
         "",
     ]
     if stats["absents_de_la_page"]:

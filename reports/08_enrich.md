@@ -64,7 +64,7 @@ Une classe du périmètre dont aucune abréviation n'apparaît sur les pages ne 
 
 ## Classes revendiquées par la liste mais absentes de la page
 
-La classe possède bien une abréviation ailleurs dans le corpus, mais aucune de ses abréviations n'apparaît sur cette page-ci : la liste de classe revendique le sort, la page ne le confirme pas. Ce n'est ni une concordance ni une divergence — `concordance: null` — et cela relève d'une relecture humaine, pas d'une correction automatique.
+La classe possède bien une abréviation ailleurs dans le corpus, mais aucune de ses abréviations n'apparaît sur cette page-ci : la liste de classe revendique le sort, la page ne le confirme pas. Ce n'est ni une concordance ni une divergence — `concordance: null` — et le pipeline s'arrête là : les deux sources sont conservées côte à côte, sans qu'un arbitrage soit rendu ni attendu.
 
 | id | nom | classe | niveau liste | abréviations de la page |
 |---|---|---|---:|---|
