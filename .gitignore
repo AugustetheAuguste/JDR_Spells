@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+
+# Secrets. `.env` porte un jeton Bedrock en clair : jamais committé, jamais lu
+# par un module du pipeline (le jeton passe par l'environnement).
+.env
+.env.*
+!.env.example
