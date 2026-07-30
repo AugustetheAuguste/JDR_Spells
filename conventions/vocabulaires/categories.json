@@ -1,5 +1,5 @@
 {
-  "version": "v0",
+  "version": "v2",
   "valeurs": [
     {
       "cle": "attaque_directe",
@@ -134,6 +134,45 @@
       ]
     },
     {
+      "cle": "coercition",
+      "definition_fr": "Le sort soumet la volonté d'une créature : il la charme, la domine, ou lui impose une conduite qu'elle n'aurait pas choisie.",
+      "exemples_positifs": [
+        "Charme-animal",
+        "Suggestion",
+        "Domination d'animal"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Dissipation de la magie"
+      ]
+    },
+    {
+      "cle": "metamorphose",
+      "definition_fr": "Le sort change la forme, la substance ou l'anatomie de son sujet.",
+      "exemples_positifs": [
+        "État gazeux",
+        "Bois de fer",
+        "Corps d'ombre"
+      ],
+      "exemples_negatifs": [
+        "Charme-animal",
+        "Arc-bâton"
+      ]
+    },
+    {
+      "cle": "dissipation",
+      "definition_fr": "Le sort supprime, suspend ou contre un effet magique existant.",
+      "exemples_positifs": [
+        "Dissipation de la magie",
+        "Disjonction",
+        "Dissipation suprême"
+      ],
+      "exemples_negatifs": [
+        "Charme-animal",
+        "Arc-bâton"
+      ]
+    },
+    {
       "cle": "utilitaire",
       "definition_fr": "Le sort rend un service pratique hors combat et n'entre dans aucune des autres catégories.",
       "exemples_positifs": [
@@ -145,5 +184,7 @@
         "Immobilisation de personne"
       ]
     }
-  ]
+  ],
+  "gele_le": "2026-07-30",
+  "note": "v2 (taxonomie_v2) : la v0 laissait sans case les sorts de charme, de métamorphose et de dissipation, si bien que la passe d'enrichissement du 2026-07-30 rangeait 67 sorts sous un TAG faute de catégorie d'accueil et les faisait rejeter. Les trois clés ajoutées viennent des réponses du modèle sur ces 67 sorts, pas d'un choix a priori. Elles sont volontairement nommées autrement que les tags voisins (`coercition` vs `charme_ou_coercition`) : des clés identiques entre deux listes closes sont ce qui a produit la confusion."
 }

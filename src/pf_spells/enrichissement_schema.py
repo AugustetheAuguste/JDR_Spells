@@ -13,6 +13,7 @@ callers still get one flat dict usable directly with `Draft202012Validator`.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -54,6 +55,30 @@ def charger_vocabulaire(racine: Path, nom_fichier: str) -> list[str]:
     if doublons:
         raise ValueError(f"clés dupliquées dans {nom_fichier} : {sorted(doublons)}")
     return cles
+
+
+def etiquette_taxonomie(racine: Path) -> str:
+    """Return the provenance label for the closed lists as they stand on disk.
+
+    The highest version across all six, not `tags.json` alone: widening any list
+    changes what an answer may legally contain. Stage 08 stamps this into the
+    prompt manifest and stage 09 re-reads it to refuse paying for prompts that
+    predate the current lists, so both MUST derive it here — two copies of this
+    rule would drift and the guard would compare a label against itself.
+    """
+    rangs: list[int] = []
+    for nom_fichier in sorted(VOCABULAIRES.values()):
+        chemin = racine / CHEMIN_VOCABULAIRES / nom_fichier
+        if not chemin.is_file():
+            raise ValueError(
+                f"liste close absente : {chemin} — les six vocabulaires sont "
+                "requis pour dater la taxonomie"
+            )
+        version = _lire_json(chemin).get("version")
+        if not isinstance(version, str) or not re.fullmatch(r"v\d+", version):
+            raise ValueError(f"{nom_fichier} : version {version!r} hors du format vN")
+        rangs.append(int(version[1:]))
+    return f"taxonomie_v{max(rangs)}"
 
 
 def charger_schema_brut(racine: Path) -> dict[str, Any]:

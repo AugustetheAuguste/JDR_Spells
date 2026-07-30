@@ -42,7 +42,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from pf_spells.enrichissement_schema import VOCABULAIRES, charger_vocabulaire
+from pf_spells.enrichissement_schema import (
+    VOCABULAIRES,
+    charger_vocabulaire,
+    etiquette_taxonomie,
+)
 from pf_spells.texte_source import hash_source, texte_source_canonique
 
 prepare_prompts_version = "1.0.0"
@@ -53,7 +57,7 @@ DEFAULT_SORTIE = "build_artifacts/prompts"
 # Bumped whenever the assembled text changes in a way that would change answers.
 # It is part of the output PATH, not just the content: `p1.0` and `p1.1` must be
 # able to sit side by side and be diffed, because tuning means several re-runs.
-VERSION_PROMPT = "p1.4"
+VERSION_PROMPT = "p1.5"
 
 # Ceiling for one enrichment record. The answer is a small fixed-shape JSON
 # object; this leaves room for a verbose `notes_ambiguite` without inviting prose.
@@ -121,19 +125,20 @@ REGLES: tuple[str, ...] = (
     "champ qu'elle remplit. Les clés sont sans accent et en snake_case : un mot "
     "français juste mais absent de la liste (`fievreuse`, `degats`) invalide tout "
     "l'enregistrement. Ne forge jamais de clé nouvelle.",
-    "Chaque liste n'appartient qu'à SON champ, dans LES DEUX SENS. Les six listes "
-    "ne sont pas un vocabulaire commun : `allie` est une cible et n'est pas un tag ; "
-    "`social` est un rôle et n'est pas un tag ; inversement `transformation_du_sujet`, "
-    "`charme_ou_coercition` et `dissipation_ou_contresort` sont des TAGS et ne sont "
-    "pas des `categorie_principale` — la catégorie n'a que 12 valeurs, les rôles que "
-    "4. Avant d'écrire une valeur, retrouve-la dans la liste de CE champ précis.",
+    "Chaque liste n'appartient qu'à SON champ, dans LES DEUX SENS. Les six listes ne "
+    "sont pas un vocabulaire commun : `allie` est une cible et n'est pas un tag ; "
+    "`social` est un rôle et n'est pas un tag. Avant d'écrire une valeur, retrouve-la "
+    "dans la liste de CE champ précis, et nulle part ailleurs.",
+    "Certaines listes contiennent des clés PROCHES sans être identiques : une clé de "
+    "tag et une clé de catégorie peuvent désigner la même idée sous deux noms. Ce "
+    "n'est pas une invitation à les échanger — la valeur écrite doit figurer, "
+    "littéralement, dans la liste du champ qu'elle remplit.",
     "Respecte les cardinalités : `tags` de 2 à 6 valeurs — 7 est un rejet, coupe aux "
     "6 plus pertinentes ; `roles_tactiques` de 1 à 3 ; `condition_infligee` de 0 à 4.",
-    "Aucune catégorie ne dit « transformation », « charme » ni « dissipation » : "
-    "c'est voulu, ce sont des tags. Un sort qui métamorphose son sujet, le charme ou "
-    "dissipe un effet se classe donc par son EFFET dans la liste "
-    "`categorie_principale` — le sujet y gagne-t-il, y perd-il, est-il gêné, ou "
-    "s'agit-il d'un simple outil ? — et porte le tag correspondant.",
+    "Si aucune clé de `categorie_principale` ne nomme le procédé du sort, classe-le "
+    "par son EFFET sur le sujet — y gagne-t-il, y perd-il, est-il gêné, ou est-ce un "
+    "simple outil ? — et porte le procédé dans les tags. N'invente jamais de "
+    "catégorie, et ne rends jamais l'enregistrement incomplet pour autant.",
     "Réponds UNIQUEMENT par un objet JSON valide, sans texte avant ni après, "
     "sans bloc de code.",
 )
@@ -264,6 +269,12 @@ def verifier_taxonomie_gelee(racine: Path) -> str:
     built on the provisional list would look perfectly valid, cost a full paid run,
     and produce tags the frozen schema then rejects wholesale — a failure that is
     cheap to prevent here and expensive to diagnose at stage 10.
+
+    The returned label is the *highest* version across all six closed lists, not
+    `tags.json` alone: widening `categories.json` to v2 changes what an answer may
+    legally contain, so two passes run against different lists must not both claim
+    the same `version_taxonomie` — that provenance is the only thing that tells a
+    v1 record from a v2 one once they sit side by side in `data/enrichissements/`.
     """
     doc = _lire_json(racine / "conventions" / "vocabulaires" / "tags.json")
     version = doc.get("version")
@@ -275,7 +286,10 @@ def verifier_taxonomie_gelee(racine: Path) -> str:
         )
     if not version:
         raise PreparePromptsError("tags.json sans clé `version`")
-    return f"taxonomie_{version}"
+    try:
+        return etiquette_taxonomie(racine)
+    except ValueError as exc:
+        raise PreparePromptsError(str(exc)) from exc
 
 
 def charger_ids(racine: Path) -> list[str]:

@@ -1,6 +1,6 @@
 {
-  "version": "v0",
-  "note": "v0 provisoire : seules les conditions dont le libellé est attesté dans le texte de data/sorts/ sont retenues.",
+  "version": "v2",
+  "note": "v2 (taxonomie_v2) : la v0 n'admettait que les conditions attestées dans data/sorts/, et ces quatre-là l'étaient sans avoir été relevées — fatigué (41 sorts), nauséeux (39), épuisé (35), fiévreux (13). Le modèle les a proposées de lui-même sur 15 sorts de la passe du 2026-07-30, qui ont été rejetés faute de clé : c'était la liste qui était incomplète, pas la réponse qui était fausse. La règle d'admission de la v0 est inchangée, elle est simplement appliquée jusqu'au bout.",
   "valeurs": [
     {
       "cle": "aveugle",
@@ -145,6 +145,55 @@
         "Arc-bâton",
         "Contrôle de l'eau"
       ]
+    },
+    {
+      "cle": "nauseeux",
+      "definition_fr": "La créature est prise de nausées et ne peut plus qu'agir a minima.",
+      "exemples_positifs": [
+        "Appel cacophonique",
+        "Analyse d'aura"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "fatigue",
+      "definition_fr": "La créature est fatiguée : elle subit un malus à la Force et à la Dextérité et ne peut ni courir ni charger.",
+      "exemples_positifs": [
+        "Affliction imaginaire",
+        "Aura élémentaire"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "epuise",
+      "definition_fr": "La créature est épuisée : malus aggravé à la Force et à la Dextérité, et vitesse réduite.",
+      "exemples_positifs": [
+        "Bris d'os",
+        "Barrière protectrice"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
+    },
+    {
+      "cle": "fievreux",
+      "definition_fr": "La créature est fiévreuse, sous l'effet d'une maladie qui la diminue.",
+      "exemples_positifs": [
+        "Contagion",
+        "Confession"
+      ],
+      "exemples_negatifs": [
+        "Arc-bâton",
+        "Résistance à l'âge"
+      ]
     }
-  ]
+  ],
+  "gele_le": "2026-07-30"
 }

@@ -217,10 +217,13 @@ class TestVocabulaires:
         doc = json.loads(
             (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
-        # `tags.json` a été recoupée en v1 par l'étape 04 ; les cinq autres
-        # listes n'ont pas de passe de dérivation et restent en v0.
-        attendue = "v1" if nom == "tags.json" else "v0"
-        assert doc["version"] == attendue
+        # `tags.json` a été recoupée en v1 par l'étape 04. `categories.json` et
+        # `conditions.json` sont passées en v2 le 2026-07-30 : la passe complète a
+        # mis 120 sorts (5,8 %) en quarantaine, au-delà du seuil de 5 % au-delà
+        # duquel la Skill prescrit de couper une taxonomie plus large. Les trois
+        # listes restantes n'ont bloqué aucun sort et restent en v0.
+        attendues = {"tags.json": "v1", "categories.json": "v2", "conditions.json": "v2"}
+        assert doc["version"] == attendues.get(nom, "v0")
         assert isinstance(doc["valeurs"], list) and doc["valeurs"]
 
     @pytest.mark.parametrize("nom", FICHIERS_VOCABULAIRE)
@@ -273,6 +276,32 @@ class TestVocabulaires:
             if exemple not in noms
         ]
         assert inconnus == []
+
+    def test_les_ajouts_de_la_v2_sont_presents_et_utilitaire_reste_dernier(
+        self, repo_root: Path
+    ) -> None:
+        """L'ordre porte du sens : `utilitaire` est le fourre-tout de repli.
+
+        Une catégorie insérée après lui se lirait comme plus spécifique que le
+        fourre-tout, ce qui inverse la règle de choix donnée au modèle.
+        """
+        categories = charger_vocabulaire(repo_root, "categories.json")
+        assert {"coercition", "metamorphose", "dissipation"} <= set(categories)
+        assert categories[-1] == "utilitaire"
+        conditions = charger_vocabulaire(repo_root, "conditions.json")
+        assert {"nauseeux", "fatigue", "epuise", "fievreux"} <= set(conditions)
+
+    def test_aucune_cle_de_categorie_ne_collide_avec_une_cle_de_tag(
+        self, repo_root: Path
+    ) -> None:
+        """Deux listes closes partageant une clé sont la cause du défaut d'origine.
+
+        Le modèle voyait `charme_ou_coercition` dans les tags, en déduisait qu'une
+        catégorie homonyme existait, et inventait une valeur hors énumération.
+        """
+        categories = set(charger_vocabulaire(repo_root, "categories.json"))
+        tags = set(charger_vocabulaire(repo_root, "tags.json"))
+        assert categories & tags == set()
 
     def test_tags_v1_se_declare_gelee_et_nomme_sa_regle_de_coupe(
         self, repo_root: Path
