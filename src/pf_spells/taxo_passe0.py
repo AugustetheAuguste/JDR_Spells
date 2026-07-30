@@ -7,12 +7,14 @@ measure obedience, not discover the corpus's real vocabulary.
 
 Three design points, each with a silent failure mode it avoids:
 
-**On-demand, not batch.** RELEVÉ 2026-07-29 (Skill `pf-bedrock-batch`): this
-account authenticates with the bearer token `AWS_BEARER_TOKEN_BEDROCK`, which
-opens the `bedrock-runtime` data plane and nothing else. Batch job APIs need
-SigV4 and answer `AccessDeniedException`. So this pass calls `converse` directly,
-on an **inference profile** id (`eu.…`) — the bare model id supports only
-`INFERENCE_PROFILE` and fails validation, which is a coding error, not an outage.
+**On-demand, not batch.** RELEVÉ 2026-07-30, revu contre le compte réel : le
+jeton porteur `AWS_BEARER_TOKEN_BEDROCK` ouvre `bedrock-runtime` **et** le plan de
+contrôle (`list_model_invocation_jobs` répond). Ce n'est donc pas le plan de
+contrôle qui bloque le batch — c'est **S3** : un job batch lit son lot d'entrée et
+écrit sa sortie dans un bucket, et `s3` comme `sts` répondent
+`NoCredentialsError` avec ce jeton. D'où l'appel direct à `converse`, sur un id de
+**profil d'inférence** (`eu.…`) — l'id de modèle nu n'accepte que
+`INFERENCE_PROFILE` et échoue à la validation : erreur de code, pas panne.
 
 **Auditability over brevity.** Each output file records the exact text that was
 sent, not just its hash. The cut that follows is made by a deterministic rule
