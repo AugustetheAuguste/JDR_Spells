@@ -63,10 +63,29 @@ class TestSchema:
     def test_le_schema_resolu_est_aussi_un_draft_2020_12_valide(self, schema_resolu: dict) -> None:
         Draft202012Validator.check_schema(schema_resolu)
 
-    def test_le_schema_ferme_l_objet_et_exige_les_dix_sept_cles(self, schema_resolu: dict) -> None:
+    def test_le_schema_ferme_l_objet_et_exige_les_seize_cles(self, schema_resolu: dict) -> None:
         assert schema_resolu["additionalProperties"] is False
-        assert len(schema_resolu["required"]) == 17
+        assert len(schema_resolu["required"]) == 16
         assert sorted(schema_resolu["required"]) == sorted(schema_resolu["properties"])
+
+    def test_aucune_cle_de_relecture_humaine_ne_subsiste(
+        self, validateur: Draft202012Validator, schema_resolu: dict, repo_root: Path
+    ) -> None:
+        """Le contrat n'a plus de verrou de relecture, et le rejette activement.
+
+        `additionalProperties: false` fait que la clé n'est pas seulement
+        facultative : un enregistrement qui la porterait est refusé. Le test le
+        vérifie sur un cas concret, sinon « la clé a disparu du schéma » ne dit
+        rien de ce que le validateur accepte.
+        """
+        assert "verifie_par_humain" not in schema_resolu["properties"]
+        assert "verifie_par_humain" not in schema_resolu["required"]
+        doc = _fixture(repo_root, "valide_sans_degats.json")
+        assert list(validateur.iter_errors(doc)) == []
+        doc["verifie_par_humain"] = True
+        erreurs = list(validateur.iter_errors(doc))
+        assert len(erreurs) == 1
+        assert "verifie_par_humain" in str(erreurs[0].message)
 
     def test_le_schema_cite_le_skill_comme_source_de_la_politique_des_nulls(
         self, repo_root: Path

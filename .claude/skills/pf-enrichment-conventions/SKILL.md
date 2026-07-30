@@ -1,6 +1,6 @@
 ---
 name: pf-enrichment-conventions
-description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/, liste gelée des clés, politique des nulls, champ preuves anti-confabulation, verrou verifie_par_humain, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
+description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/ entièrement régénérable, liste gelée des 16 clés, politique des nulls, champ preuves anti-confabulation, taxonomie_v1 et sa règle de coupe, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
 ---
 
 # pf-enrichment-conventions
@@ -22,7 +22,8 @@ doit jamais être recopiée ici :
 
 Si ce Skill et ces fichiers divergent, **les fichiers gagnent pour les valeurs**,
 et **ce Skill gagne pour les règles** (politique des nulls, règle des preuves,
-verrou humain). Toute divergence constatée est corrigée, pas contournée.
+régénérabilité de l'arbre). Toute divergence constatée est corrigée, pas
+contournée.
 
 Le Skill **`pf-corpus-conventions`** reste chargé en parallèle : il détient
 l'algorithme de slug, le vocabulaire des 21 clés de la Phase 1, les règles
@@ -32,17 +33,18 @@ d'encodage et la politique des nulls d'origine. Ce Skill n'en recopie rien.
 
 > **Cette track n'écrit JAMAIS dans `data/sorts/`.**
 
-La Phase 1 a posé que `data/sorts/<id>.json` est éditable à la main et que les
-éditions humaines font autorité. Aucun outil d'enrichissement ne l'ouvre en
-écriture, ne le réordonne, ne lui ajoute de clé, ni ne « corrige » un champ au
-passage. Les 21 clés existantes ne sont ni renommées ni étendues. Tout ce qui est
-produit par machine vit dans un arbre parallèle.
+`data/sorts/<id>.json` est la sortie de la Phase 1 et l'**entrée en lecture
+seule** de cette track : aucun outil d'enrichissement ne l'ouvre en écriture, ne
+le réordonne, ne lui ajoute de clé, ni ne « corrige » un champ au passage. Les 21
+clés existantes ne sont ni renommées ni étendues. La raison n'est pas qu'un humain
+y ferait autorité, c'est la séparation des étages : un enrichissement qui
+retoucherait sa propre source rendrait `hash_source` incohérent et toute preuve
+invérifiable. Ce qui est produit par cette track vit dans un arbre parallèle.
 
-Corollaire : **`data/vues/` est dérivé, jamais édité à la main.** Une correction
-se fait dans `data/sorts/` (par un humain) ou dans `data/enrichissements/` (par
-un humain, avec `verifie_par_humain: true`), puis la vue est **régénérée**. Une
-édition directe dans `data/vues/` est silencieusement perdue à la régénération
-suivante — donc interdite.
+Corollaire : **`data/vues/` et `data/enrichissements/` sont dérivés.** Une
+correction se fait en amont — texte source, prompt, taxonomie — puis on
+**régénère**. Une édition directe dans l'un ou l'autre est perdue à la
+régénération suivante, donc inutile.
 
 ## Arbre de sortie
 
@@ -83,7 +85,6 @@ jamais omise** : un fichier d'enrichissement porte toujours les 17 clés.
 | `condition_infligee` | array[string (enum)] | **0..4** ← `vocabulaires/conditions.json` | LLM |
 | `preuves` | object | `{type_degats: string\|null, condition_infligee: array[string], cible_typique: string}` | LLM |
 | `notes_ambiguite` | string **ou** `null` | prose libre, français accentué | LLM |
-| `verifie_par_humain` | boolean | défaut `false` | humain |
 | `version_prompt` | string | ex. `"p1.0"` | provenance |
 | `version_taxonomie` | string | ex. `"taxonomie_v1"` | provenance |
 | `modele` | string | identifiant **complet** du modèle (profil d'inférence inclus) | provenance |
@@ -133,18 +134,27 @@ non une simple annotation de confort.
 Les deux moitiés sont nécessaires : le schéma exige la **présence** du champ,
 l'étage 10 en vérifie la **véracité**. L'une sans l'autre ne protège de rien.
 
-## Le verrou `verifie_par_humain`
+## Pas de verrou de relecture — `data/enrichissements/` est régénérable
 
-| Acteur | Comportement face à `verifie_par_humain: true` |
+**Il n'existe aucune clé de relecture et aucun verrou d'écrasement.** Les 16 clés
+du contrat sont toutes produites par la machine, et l'étage 09 **remplace** un
+enregistrement existant sans condition ni `--force`.
+
+| Acteur | Comportement |
 |---|---|
-| Générateur (étage 09) | **refuse d'écrire** le fichier ; il faut `--force` explicite |
-| Générateur, `--force` | écrase, et le journalise dans `reports/` — jamais silencieusement |
-| Validateur (étage 10) | **contrôle quand même** l'enregistrement, intégralement |
-| Vue (dérivée) | régénérée normalement, le verrou n'y change rien |
+| Générateur (étage 09) | régénère et remplace, sans consulter l'état précédent |
+| Validateur (étage 10) | contrôle **tous** les enregistrements, intégralement, sans exemption |
+| Vue (dérivée) | régénérée à partir de l'état courant |
 
-Le verrou protège le travail humain de la machine ; il **n'exempte pas** le
-fichier du contrôle. Un enregistrement relu par un humain mais dont une preuve ne
-se retrouve plus dans le source est un vrai problème et doit remonter.
+Conséquence à avoir en tête, elle n'est pas atténuée ailleurs : **une correction
+apportée à la main dans `data/enrichissements/` est perdue à la régénération
+suivante.** Ce n'est pas un accident du code, c'est le contrat. Un enregistrement
+qui sort faux se corrige en amont — prompt, taxonomie, ou texte source — puis on
+régénère ; on ne le rattrape pas dans le fichier de sortie.
+
+L'arbre est donc entièrement dérivable de `data/sorts/` plus les conventions
+gelées : `hash_source` et la provenance suffisent à savoir si un enregistrement
+est à jour.
 
 ## Provenance obligatoire
 
@@ -291,8 +301,8 @@ ouvrirait une connexion est un bug de conception, pas une optimisation.
 | 2 | Éditer `data/vues/` à la main | dérivé : la correction est perdue à la régénération suivante |
 | 3 | Paraphraser une `preuve` (même « juste les espaces ») | la vérification de sous-chaîne de l'étage 10 échoue |
 | 4 | Réimplémenter `texte_source_canonique` côté 10 | deux chaînes divergentes ⇒ 100 % des preuves échouent |
-| 5 | Écraser un `verifie_par_humain: true` sans `--force` | perte de travail humain relu |
-| 6 | Dispenser un enregistrement vérifié par un humain de la validation | masque les vraies dérives du source |
+| 5 | Corriger à la main un fichier de `data/enrichissements/` | l'arbre est régénérable : la correction est perdue au run suivant ; corriger le prompt ou la taxonomie |
+| 6 | Réintroduire une clé de relecture ou un verrou d'écrasement | le contrat est à 16 clés, toutes machine ; `additionalProperties: false` rejette la 17ᵉ |
 | 7 | Omettre une clé au lieu d'écrire `null` / `[]` | casse la forme uniforme auditable à l'œil |
 | 8 | Confondre `type_degats: null` et `notes_ambiguite` | « pas de dégâts » ≠ « je n'ai pas su » ; fausse la mesure des 5 % |
 | 9 | Recopier une liste de valeurs closes en dur (schéma, code, prompt figé) | elle divergera de `conventions/vocabulaires/` |

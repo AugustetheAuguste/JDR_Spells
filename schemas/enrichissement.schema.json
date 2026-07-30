@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://jdr-spells.local/schemas/enrichissement.schema.json",
   "title": "Fichier JSON d'enrichissement LLM d'un sort",
-  "description": "Contrat gelé de data/enrichissements/<id>.json. La politique des nulls (null = absent du source, [] = vérifié et vide, clé omise = interdit), la règle de la sous-chaîne exacte du champ preuves et la sémantique de verifie_par_humain sont définies par le Skill pf-enrichment-conventions (.claude/skills/pf-enrichment-conventions/SKILL.md), qui en est l'autorité humaine ; ce schéma en est l'autorité machine pour les types et les cardinalités. Les listes de valeurs closes ne sont PAS écrites ici : chaque $defs/vocabulaire_* ne porte que type: string et son enum est injectée au chargement depuis conventions/vocabulaires/<nom>.json par pf_spells.enrichissement_schema.charger_schema_resolu, afin que conventions/vocabulaires/ reste le foyer unique de chaque liste close.",
+  "description": "Contrat gelé de data/enrichissements/<id>.json. La politique des nulls (null = absent du source, [] = vérifié et vide, clé omise = interdit) et la règle de la sous-chaîne exacte du champ preuves sont définies par le Skill pf-enrichment-conventions (.claude/skills/pf-enrichment-conventions/SKILL.md), qui en est la référence rédigée ; ce schéma en est l'autorité machine pour les types et les cardinalités. Les 16 clés sont toutes produites par la machine : il n'existe pas de clé de relecture, et un enregistrement régénéré remplace le précédent sans condition. Les listes de valeurs closes ne sont PAS écrites ici : chaque $defs/vocabulaire_* ne porte que type: string et son enum est injectée au chargement depuis conventions/vocabulaires/<nom>.json par pf_spells.enrichissement_schema.charger_schema_resolu, afin que conventions/vocabulaires/ reste le foyer unique de chaque liste close.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,7 +17,6 @@
     "condition_infligee",
     "preuves",
     "notes_ambiguite",
-    "verifie_par_humain",
     "version_prompt",
     "version_taxonomie",
     "modele",
@@ -112,10 +111,6 @@
         "string",
         "null"
       ]
-    },
-    "verifie_par_humain": {
-      "type": "boolean",
-      "default": false
     },
     "version_prompt": {
       "type": "string",
