@@ -1,0 +1,35 @@
+{
+  "id": "dechainement-de-debris",
+  "resume_court": "Le lanceur anime une zone de débris qui blesse et distrait les créatures qu'elle contient.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": "blessant (1d6 points de vie)",
+    "condition_infligee": [
+      "distrayant (DD 12)"
+    ],
+    "cible_typique": "une zone dangereuse de débris déferlant"
+  },
+  "notes_ambiguite": "La distraction est interprétée comme confusion légère (fascination ou désorientation) faute de condition nommée explicitement. Le texte ne précise pas le type de dégâts (contondant retenu par défaut pour des débris/cailloux).",
+  "slug": "dechainement-de-debris",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:18+00:00",
+  "hash_source": "83c7aef4eacd6253372bc9fe62f9b6929423a4d41a38265694c2fa0e476c2b94"
+}

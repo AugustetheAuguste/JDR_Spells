@@ -1,0 +1,31 @@
+{
+  "id": "croissance-animale",
+  "resume_court": "L'animal cible double de taille, gagnant en Force et Constitution mais perdant en Dextérité.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "bonus_chiffre",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 animal (Gig ou moins)"
+  },
+  "notes_ambiguite": "Le sort améliore les capacités de l'animal (Force, Constitution, armure naturelle) mais lui inflige aussi un malus (Dextérité -2). La catégorie « amelioration » s'applique car l'effet global renforce l'animal en combat. Le tag « malus_chiffre » n'est pas retenu car le malus de Dextérité est secondaire par rapport aux bonus majeurs. Le sort peut servir en exploration (franchir des obstacles) et en combat (augmenter la puissance).",
+  "slug": "croissance-animale",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:12+00:00",
+  "hash_source": "184a1c3eea58f57c7de78aba4b519b244e08846ba0cc2c0b1550ac258b0c04b2"
+}

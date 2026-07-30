@@ -1,0 +1,35 @@
+{
+  "id": "fouet-affaiblissant",
+  "resume_court": "Un fouet de nécromancie paralyse l'ennemi et réduit ses caractéristiques chaque round.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "attaque_de_contact",
+    "affaiblissement_de_capacite",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Une fois que l'une de ces caractéristiques est réduite à 1, la cible s'effondre et son corps, excepté sa tête, est paralysé"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige une pénalité de caractéristiques (affaiblissement) mais pas des dégâts directs. La paralysie est la condition principale, bien que le texte décrive aussi un affaiblissement progressif. Le fouet est une invocation/création d'objet magique, d'où le tag correspondant.",
+  "slug": "fouet-affaiblissant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:31+00:00",
+  "hash_source": "7c7ce22b6aaf645fd221b9ba893e4dad7ba4db925ee13b78df30715b23649ac3"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frappe-percutante",
+  "resume_court": "Une frappe au corps à corps qui inflige des dégâts de force supplémentaires et peut repousser la cible.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "bonus_chiffre",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "un montant supplémentaire de dégâts de force égal à 1d4 points par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort produit un effet de bousculade (repousse) mais ne l'inflige pas comme une condition persistante au sens des conditions listées ; c'est un effet mécanique résolu au moment de l'incantation. Les dégâts de force sont le cœur du sort.",
+  "slug": "frappe-percutante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:39+00:00",
+  "hash_source": "d628bb6e49cefa6dd50494a7e8b6e7546214f9f09885b37fe15578aed47d8a63"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "singes-fous",
+  "resume_court": "Invoque une nuée de singes malicieux qui obéissent au lanceur et harcelent les ennemis.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "plusieurs_cibles",
+    "duree_prolongee",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "assourdi",
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "sont sourdes pendant 1 minute",
+      "nauséeuses"
+    ],
+    "cible_typique": "une nuée de singes"
+  },
+  "notes_ambiguite": "« Nauséeuses » ne figure pas dans la liste des conditions fermées. Le texte ne précise pas si c'est une condition de jeu ou un effet descriptif. J'ai retenu « etourdi » comme la condition la plus proche, mais cette interprétation reste incertaine. Le sort inflige aussi des dégâts de nuée aux objets, mais pas aux créatures vivantes directement.",
+  "slug": "singes-fous",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:42+00:00",
+  "hash_source": "2c3670149c7383e1ef1179089d8d19b9b2798fc2ab5392fb04c8df3689953f36"
+}

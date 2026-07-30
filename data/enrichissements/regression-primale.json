@@ -1,0 +1,35 @@
+{
+  "id": "regression-primale",
+  "resume_court": "Bloque le raisonnement supérieur d'une créature, la rendant sauvage et violente pendant 1 minute par niveau.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "charme_ou_coercition",
+    "jet_de_sauvegarde",
+    "malus_chiffre",
+    "plusieurs_cibles",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La cible devient un monstre affamé, sauvage, sanguinaire et violent"
+    ],
+    "cible_typique": "1 créature/2 niveaux"
+  },
+  "notes_ambiguite": "La condition « confus » est la plus proche de l'effet décrit (pulsions sombres, comportement sauvage et violent), bien que le texte ne nomme pas explicitement cette condition. Le sort inflige aussi des malus permanents d'Intelligence et de Charisme à la fin, mais ces dégâts de caractéristique ne correspondent à aucune condition listée.",
+  "slug": "regression-primale",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:41+00:00",
+  "hash_source": "dbee7c413a94f6e2046c25951ab3852146ebe0fd4a56150f911d3f3d9da5fa8e"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fou-rire",
+  "resume_court": "La cible est prise d'un fou rire incontrôlable qui l'immobilise pendant toute la durée.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Elle se met à rire si fort qu'elle en tombe par terre. La victime ne peut entreprendre aucune action pendant toute la durée du sort"
+    ],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "La condition retenue est « confus » car la créature agit sous l'emprise du fou rire et ne peut entreprendre aucune action volontaire, ce qui s'apparente à une perte de contrôle. Le texte ne nomme pas explicitement une condition standard, mais l'incapacité à agir et le rire incontrôlable correspondent au mécanisme de confusion.",
+  "slug": "fou-rire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:30+00:00",
+  "hash_source": "c2acfca5af883fe3061cc0cf579f27ac12f66aa0cd91fb332a4ed7341f365380"
+}

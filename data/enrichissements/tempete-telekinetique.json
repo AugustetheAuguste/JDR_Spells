@@ -1,0 +1,33 @@
+{
+  "id": "tempete-telekinetique",
+  "resume_court": "Une tempête d'énergie télékinétique émane du lanceur, blessant et étourdissant toutes les créatures dans la zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "force",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégât par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "est etourdi pendant 1 round"
+    ],
+    "cible_typique": "rayon d'action centré sur vous"
+  },
+  "notes_ambiguite": null,
+  "slug": "tempete-telekinetique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:22+00:00",
+  "hash_source": "75b4951896af1ac8db196693d8c5ffdb919d13d3b8b7e75ecd2a89a2ad3e00cc"
+}

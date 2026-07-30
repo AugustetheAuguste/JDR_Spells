@@ -1,0 +1,30 @@
+{
+  "id": "symbole-de-dissipation",
+  "resume_court": "Un symbole qui dissipe tous les sorts affectant les créatures et objets dans un rayon de 12 mètres.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "dissipation_ou_contresort",
+    "duree_instantanee",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "toutes les créatures situées à moins de 12 mètres du symbole de dissipation sont affectées"
+  },
+  "notes_ambiguite": "Le sort crée un symbole (invocation_ou_creation) qui agit comme une zone de contrôle (controle_de_zone). La catégorie principale reflète l'effet spatial et durable du symbole plutôt que sa nature de création.",
+  "slug": "symbole-de-dissipation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:06+00:00",
+  "hash_source": "11eeb181e941a12b09502d02dc7c3fa93a955a43105e312fb5c47956360f71f8"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "inversion-de-la-gravite",
+  "resume_court": "Inverse la gravité dans une zone, projetant créatures et objets vers le haut pendant 1 round/niveau.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "jusqu'à 1 cube de 3 m/2 c d'arête par 2 niveaux"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'impact si les créatures heurtent un obstacle, mais ces dégâts ne sont pas quantifiés dans le texte fourni (« déterminés comme s'ils étaient tombés dans le sens normal »), donc type_degats reste null. Les créatures peuvent effectuer un jet de Réflexes pour se retenir, ce qui justifie le tag jet_de_sauvegarde bien que le champ officiel indique « aucun » — le texte décrit explicitement cette possibilité.",
+  "slug": "inversion-de-la-gravite",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:42+00:00",
+  "hash_source": "ae4746da42cc56fea20f48fd4d12ae69f5a45192f76369858bdea36e4df40396"
+}

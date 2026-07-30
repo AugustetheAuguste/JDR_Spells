@@ -1,0 +1,8 @@
+{
+  "id": "possession",
+  "raison": "schéma : categorie_principale — 'transformation_du_sujet' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "5d82947ed6f871460cbe0de809e3e3d7120b9ee23b301c27c6d2dde7fc8733f6",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"possession\",\n  \"resume_court\": \"L'âme du lanceur quitte son corps pour habiter une gemme, puis possède une créature à proximité.\",\n  \"categorie_principale\": \"transformation_du_sujet\",\n  \"tags\": [\n    \"transformation_du_sujet\",\n    \"jet_de_sauvegarde\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\",\n    \"charme_ou_coercition\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature\"\n  },\n  \"notes_ambiguite\": \"Le sort affecte d'abord le lanceur lui-même (transformation de son âme), puis une créature hostile. La cible typique est l'ennemi possédé, bien que le mécanisme soit complexe et implique aussi le lanceur. La catégorie principale est transformation_du_sujet car l'effet central est le changement de forme/nature du sujet (l'âme du lanceur change de réceptacle et de corps). Les tags incluent charme_ou_coercition car le sort contraint l'âme de la victime.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:47+00:00"
+}

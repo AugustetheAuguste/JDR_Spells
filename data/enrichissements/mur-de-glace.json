@@ -1,0 +1,32 @@
+{
+  "id": "mur-de-glace",
+  "resume_court": "Crée un mur ou un dôme de glace qui bloque le passage et inflige du froid à qui le perce.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "protection_defensive",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "froid",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de froid, +1 par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "plan de glace constitué d'un carré de 3 m (2 c) de côté/niveau, ou hémisphère de glace d'un rayon de 90 cm + 30 cm/niveau"
+  },
+  "notes_ambiguite": null,
+  "slug": "mur-de-glace",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:12+00:00",
+  "hash_source": "704f0785d1f67ffb2b7e97d17c6d3bef601fe1d540e7a5d30f3cbed0dafc6079"
+}

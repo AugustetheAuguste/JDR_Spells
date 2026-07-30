@@ -1,0 +1,29 @@
+{
+  "id": "confession-ecarlate",
+  "resume_court": "Le lanceur marque un objet ou une zone ; toute créature autre que lui qui la touche rougit pendant 1 heure par niveau.",
+  "categorie_principale": "protection",
+  "tags": [
+    "jet_de_sauvegarde",
+    "objet_ou_equipement",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "l'objet touché ou une zone maximale de 30 cm de côté"
+  },
+  "notes_ambiguite": "Le sort inflige une condition cosmétique (rougeur) plutôt qu'une condition mécanique de la liste fournie. La rougeur n'est pas énumérée dans `condition_infligee` (aveugle, étourdi, etc.), qui ne couvre que les conditions mécaniques. Le sort fonctionne comme un piège ou un marqueur plutôt que comme une attaque directe, d'où la catégorie `protection` (défense d'un objet) et non `attaque_directe`.",
+  "slug": "confession-ecarlate",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:14+00:00",
+  "hash_source": "d785568a673ead9fe686590258df38433d8175e1855567b0a35b3d4f1b4f1634"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "choc-mental",
+  "resume_court": "Le lanceur charge ses attaques d'énergie psychique qui infligent des dégâts supplémentaires et confondent sur coup critique.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "amelioration_de_capacite",
+    "effet_mental",
+    "duree_prolongee",
+    "arme_ou_munition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la cible est confuse pendant 1 round à cause de la douleur"
+    ],
+    "cible_typique": "le personnage"
+  },
+  "notes_ambiguite": "Le sort améliore les attaques du lanceur plutôt que d'infliger directement des dégâts : il relève donc d'amelioration, non d'attaque_directe. Les dégâts supplémentaires sont un effet secondaire de l'amélioration des armes du lanceur. Le type_degats reste null car le sort lui-même n'inflige pas de dégâts directs — il modifie les attaques existantes.",
+  "slug": "choc-mental",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:57+00:00",
+  "hash_source": "26245226460ec4c6cfce2cbd93d2ab4963df0b627dc3cb5ac8093eaf91b206da"
+}

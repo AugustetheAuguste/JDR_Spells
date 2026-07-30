@@ -1,0 +1,33 @@
+{
+  "id": "deja-vu",
+  "resume_court": "La cible est forcée de répéter ses actions du tour précédent, ou devient confuse si c'est impossible.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "charme_ou_coercition",
+    "confusion_ou_desorientation",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la cible est confuse jusqu'à la fin de la durée du sort de déjà vu"
+    ],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le sort entrave principalement par la répétition forcée des actions, mais n'inflige la condition « confus » que si les circonstances l'empêchent. La durée est de 2 rounds (instantanée dans sa résolution), d'où le tag duree_instantanee plutôt que duree_prolongee.",
+  "slug": "deja-vu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:27+00:00",
+  "hash_source": "bb8b09cd2665647a01c52982ded9f780640601ed131686ac376ea0037040efa5"
+}

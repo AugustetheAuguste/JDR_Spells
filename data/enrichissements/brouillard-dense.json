@@ -1,0 +1,35 @@
+{
+  "id": "brouillard-dense",
+  "resume_court": "Un banc de brouillard dense qui limite la vision et ralentit les déplacements dans une zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "leur vitesse de déplacement réduite de moitié"
+    ],
+    "cible_typique": "brouillard s'étendant sur 9 m (6 c) de rayon et 6 m (4 c) de haut"
+  },
+  "notes_ambiguite": "Le sort crée une zone de terrain modifié plutôt qu'une invocation de créature. La condition « ralenti » s'applique aux créatures qui traversent la zone. Les effets de camouflage et les malus d'attaque sont des conséquences tactiques de la zone, non des conditions infligées au sens strict.",
+  "slug": "brouillard-dense",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:18+00:00",
+  "hash_source": "1b7e8ab68ed331eb4d5481064998a671102ff59186b872e9f99463aa76b29e09"
+}

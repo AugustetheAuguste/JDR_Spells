@@ -1,0 +1,34 @@
+{
+  "id": "frissonnement-du-temps",
+  "resume_court": "Une onde temporelle affecte toutes les créatures dans une émanation de 9 m, les rendant rapides ou lentes au hasard.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "resistance_a_la_magie",
+    "transformation_du_sujet",
+    "duree_instantanee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elles sont soumises à un effet de lenteur"
+    ],
+    "cible_typique": "émanation de 9 m de rayon centrée sur le lanceur"
+  },
+  "notes_ambiguite": "Le sort inflige soit rapidité soit lenteur au hasard. Seule la lenteur figure dans la liste `condition_infligee` ; la rapidité relève de l'amélioration et n'est pas une condition restrictive. La durée est instantanée (1 round) mais l'effet persiste pendant ce round, d'où le tag `duree_instantanee` qui reflète la résolution immédiate du sort.",
+  "slug": "frissonnement-du-temps",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:42+00:00",
+  "hash_source": "91ba655d5ece18e048d76ac511b153e01abcff2ba59214b69a3599728b5b46d1"
+}

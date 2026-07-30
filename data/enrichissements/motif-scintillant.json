@@ -1,0 +1,37 @@
+{
+  "id": "motif-scintillant",
+  "resume_court": "Des lueurs scintillantes confondent les créatures d'une zone selon leurs dés de vie.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "effet_mental",
+    "illusion_visuelle_ou_sonore",
+    "confusion_ou_desorientation",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi",
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Étourdissement pendant 1d4 rounds",
+      "confusion pendant 1d4 rounds"
+    ],
+    "cible_typique": "lueurs colorées dans une étendue de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige aussi l'inconscience pour les créatures de 6 DV ou moins, mais cette condition n'apparaît pas dans la liste fermée ; seuls l'étourdissement et la confusion y figurent et sont retenus. La durée est « concentration + 2 rounds », ce qui justifie le tag duree_prolongee.",
+  "slug": "motif-scintillant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:12+00:00",
+  "hash_source": "8951974c53839063364139f075fb5e45d21173b50a47c7d311eb2f30c27139f2"
+}

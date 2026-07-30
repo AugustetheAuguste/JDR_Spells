@@ -1,0 +1,29 @@
+{
+  "id": "potion-de-tatouage",
+  "resume_court": "Transforme une potion en tatouage de sort permanent sur la poitrine du buveur.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "transformation_du_sujet",
+    "invocation_ou_creation",
+    "duree_instantanee",
+    "objet_ou_equipement"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: un tatouage de sort"
+  },
+  "notes_ambiguite": "Le sort cible techniquement un tatouage de sort, mais agit sur une potion (objet) pour la transformer. La cible_typique « objet » reflète que le sort porte sur une potion, matière première du processus.",
+  "slug": "potion-de-tatouage",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:26+00:00",
+  "hash_source": "9f3605df1d43b285170fa13fec3544166cef7cd9bd218520b3cae695414406f3"
+}

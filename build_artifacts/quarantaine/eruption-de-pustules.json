@@ -1,0 +1,8 @@
+{
+  "id": "eruption-de-pustules",
+  "raison": "schéma : condition_infligee/1 — 'nauseeux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "4f28708fec54c50bd93ad136919ba7c1962b1a3004c1133958db862556c6f3df",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"eruption-de-pustules\",\n  \"resume_court\": \"La peau du lanceur se couvre de pustules qui infligent des dégâts d'acide à qui le frappe.\",\n  \"categorie_principale\": \"protection\",\n  \"tags\": [\n    \"protection_defensive\",\n    \"transformation_du_sujet\",\n    \"jet_de_sauvegarde\",\n    \"degats_directs\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"soi\",\n  \"type_degats\": \"acide\",\n  \"condition_infligee\": [\n    \"secoue\",\n    \"nauseeux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"1d6 points de dégâts d'acide\",\n    \"condition_infligee\": [\n      \"être fiévreux pendant 1 round\",\n      \"l'attaquant est nauséeux\"\n    ],\n    \"cible_typique\": \"lanceur de sorts\"\n  },\n  \"notes_ambiguite\": \"Le texte mentionne « fiévreux » et « nauséeux » comme conditions infligées à l'attaquant. « Fiévreux » n'existe pas dans la liste des conditions ; la condition la plus proche est « secoue » (malus de moral léger). « Nauséeux » n'existe pas non plus ; aucune condition de la liste ne correspond exactement. J'ai retenu « secoue » pour « fiévreux » comme premier degré d'affaiblissement, mais cette correspondance est approximative. Le texte ne justifie pas une condition nommée dans la liste fermée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:26+00:00"
+}

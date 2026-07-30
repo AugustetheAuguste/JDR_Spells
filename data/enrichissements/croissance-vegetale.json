@@ -1,0 +1,34 @@
+{
+  "id": "croissance-vegetale",
+  "resume_court": "Le sort fait croître exacerbément la flore d'une zone, ralentissant les déplacements, ou enrichit les plantes sur un large rayon.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "terrain_ou_environnement",
+    "zone_d_effet",
+    "duree_instantanee",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Leur vitesse de déplacement se réduit à 1,50 m, ou à 3 m pour les créatures de taille G ou plus"
+    ],
+    "cible_typique": "la zone d'effet"
+  },
+  "notes_ambiguite": "Le sort propose deux versions distinctes (Jungle et Engrais) avec des effets très différents. La version Jungle inflige un ralentissement ; la version Engrais est purement utilitaire et n'affecte pas le combat. L'annotation retient la version Jungle comme principale car elle produit un effet tactique mesurable (réduction de vitesse). La condition « ralenti » est justifiée par la réduction de déplacement à 1,50 m ou 3 m, qui correspond à une action réduite par round.",
+  "slug": "croissance-vegetale",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:14+00:00",
+  "hash_source": "0c637d2338fdf708df3dde5b9d03bd915eb9c86718a61c6b1c36813bfdb3e4c9"
+}

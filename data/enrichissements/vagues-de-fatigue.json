@@ -1,0 +1,34 @@
+{
+  "id": "vagues-de-fatigue",
+  "resume_court": "Des vagues d'énergie négative fatiguent toutes les créatures dans un cône.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "resistance_a_la_magie",
+    "duree_instantanee",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "vagues d'énergie négative",
+    "condition_infligee": [
+      "fatiguent toutes les créatures situées dans la zone"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": "Le texte emploie « fatiguent » sans préciser si cela correspond à la condition « chancelant » (une seule action par round) ou à un autre état. Faute de définition explicite dans le texte fourni, j'ai retenu « chancelant » comme la condition la plus proche d'une fatigue mécanique en Pathfinder 1e, mais cette correspondance reste une interprétation.",
+  "slug": "vagues-de-fatigue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:00+00:00",
+  "hash_source": "d40cee61bc6ba56d90897a801745aa3d9b24f79f4751421cc67884a098446bcc"
+}

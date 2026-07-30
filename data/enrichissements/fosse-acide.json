@@ -1,0 +1,31 @@
+{
+  "id": "fosse-acide",
+  "resume_court": "Crée une fosse remplie d'acide qui inflige des dégâts de chute et d'acide aux créatures qui y tombent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "degats_directs",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "acide",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts d'acide par round passé en contact avec l'acide",
+    "condition_infligee": [],
+    "cible_typique": "trou de 3 m (2 c) sur 3m (2 c), 3 m (2 c) de profondeur/2 niveaux"
+  },
+  "notes_ambiguite": null,
+  "slug": "fosse-acide",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:29+00:00",
+  "hash_source": "fc8aa3327c670b4d9c81a2859ba6ed9e46db3a137fa3484ad60d520679a71d80"
+}

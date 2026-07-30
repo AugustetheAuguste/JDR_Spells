@@ -1,0 +1,30 @@
+{
+  "id": "dedale",
+  "resume_court": "Emprisonne une créature dans un labyrinthe extradimensionnel pendant 10 minutes ou jusqu'à sa fuite.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "invocation_ou_creation",
+    "deplacement_ou_teleportation",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le sort n'inflige pas de dégâts directs ni de condition au sens strict, mais emprisonne la cible. Le jet de sauvegarde n'est pas explicitement mentionné dans la description, mais un test d'Intelligence est requis chaque round pour s'échapper ; j'ai inclus le tag car le sort impose une épreuve de résistance. La durée est conditionnelle (10 minutes ou fuite), ce qui justifie le tag duree_prolongee.",
+  "slug": "dedale",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:22+00:00",
+  "hash_source": "c88c8eb9abeeb0c5951f54948166195692abd16bd5bbe8442dfb622ce7a429e6"
+}

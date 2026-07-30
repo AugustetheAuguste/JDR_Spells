@@ -1,0 +1,30 @@
+{
+  "id": "tempete-de-grele",
+  "resume_court": "Une tempête de grêle dans un cylindre qui inflige des dégâts et crée un terrain difficile avec mauvaise visibilité.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts contondants",
+    "condition_infligee": [],
+    "cible_typique": "cylindre (6 m de rayon, 12 m de haut)"
+  },
+  "notes_ambiguite": "Le sort inflige deux types de dégâts (contondant et froid). Seul le type contondant est retenu comme type_degats principal car il est cité en premier et le tag degats_directs couvre l'ensemble. Le froid est implicite dans le descripteur et l'effet, mais le texte ne le nomme pas explicitement dans la formule de dégâts.",
+  "slug": "tempete-de-grele",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:22+00:00",
+  "hash_source": "6c10d48f922ea9f7badb8ffce355e50a4d4674450817236fd7a8f95ad3e77248"
+}

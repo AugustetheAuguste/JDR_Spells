@@ -1,0 +1,34 @@
+{
+  "id": "explosion-de-lumiere",
+  "resume_court": "Une explosion de lumière éblouissante qui blesse et aveugle les créatures dans une zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "dissipation_ou_contresort",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "une explosion silencieuse de chaleur éblouissante",
+    "condition_infligee": [
+      "Toutes les créatures prises dans la zone d'effet sont aveuglées"
+    ],
+    "cible_typique": "rayonnement de 24 m (16 c) de rayon"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme « feu » en raison de la « chaleur éblouissante » mentionnée explicitement. Bien que le sort implique aussi de la lumière, la chaleur est le vecteur énergétique principal des dégâts infligés aux créatures ordinaires.",
+  "slug": "explosion-de-lumiere",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:51+00:00",
+  "hash_source": "cad95d2abd65c440425ff4c2a2efe74b14486054e5910eb196f8a33cccc46002"
+}

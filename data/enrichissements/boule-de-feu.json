@@ -1,0 +1,30 @@
+{
+  "id": "boule-de-feu",
+  "resume_court": "Une boule de feu explose dans une zone de 6 m de rayon, infligeant des dégâts de feu à toutes les créatures.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de feu par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "boule-de-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:09+00:00",
+  "hash_source": "3da6acbf9574e413a7a45097426e037db5cf57e1f6117b3a998dd7460f6f4ce7"
+}

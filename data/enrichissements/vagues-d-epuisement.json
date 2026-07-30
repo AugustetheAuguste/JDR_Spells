@@ -1,0 +1,30 @@
+{
+  "id": "vagues-d-epuisement",
+  "resume_court": "Des vagues d'énergie négative épuisent toutes les créatures dans un cône.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "negatif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "énergie négative",
+    "condition_infligee": [],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": "Le texte ne nomme pas explicitement une condition infligée (comme « épuisé »), mais décrit un effet d'épuisement. Cet effet ne figure pas dans la liste `condition_infligee` fermée. Aucune condition n'a donc été retenue.",
+  "slug": "vagues-d-epuisement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:58+00:00",
+  "hash_source": "f53080bb1279a18479cdf671f674bc3626bbe83b98e0359edf04710040edfd21"
+}

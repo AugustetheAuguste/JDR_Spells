@@ -1,0 +1,34 @@
+{
+  "id": "champ-de-force",
+  "resume_court": "Un champ de force invisible empêche les créatures d'approcher le lanceur dans une émanation.",
+  "categorie_principale": "protection",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "protection_defensive",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elles se retrouvent dans l'incapacité d'avancer en direction du personnage"
+    ],
+    "cible_typique": "émanation de 3 m (2 c) de rayon/niveau maximum, centrée sur le jeteur de sorts"
+  },
+  "notes_ambiguite": "La condition « enchevetre » est la plus proche de l'incapacité à avancer décrite, bien que le texte ne mentionne pas explicitement d'entraves matérielles. L'effet restreint la mobilité vers le lanceur sans immobiliser complètement la créature.",
+  "slug": "champ-de-force",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:42+00:00",
+  "hash_source": "e3ab4c7ea4f18cf3ad4122d6e420f2eece3fa9090a283d51cca3b9da1bb139d2"
+}

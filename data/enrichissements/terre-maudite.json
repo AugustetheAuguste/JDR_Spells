@@ -1,0 +1,31 @@
+{
+  "id": "terre-maudite",
+  "resume_court": "Une malédiction permanente sur un rayon de 1,5 km qui inflige épidémie, famine ou animation de morts.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "duree_prolongee",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "rayon de 1,5 km à partir du point touché"
+  },
+  "notes_ambiguite": "Le sort offre trois effets distincts (épidémie avec jet de sauvegarde, famine sans jet, non-vie sans jet). Aucun dégât direct n'est infligé : les maladies relèvent du système de maladie, la famine réduit la production, la non-vie transforme les cadavres. Les conditions ne sont pas énumérées dans le texte comme des états instantanés du sujet, mais comme des effets persistants de la malédiction. Pas de condition_infligee retenue.",
+  "slug": "terre-maudite",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:28+00:00",
+  "hash_source": "90ecb5b2b5186e27a499cf37cd38ba4efa54f9c1362e315eaee2870bee4137dd"
+}

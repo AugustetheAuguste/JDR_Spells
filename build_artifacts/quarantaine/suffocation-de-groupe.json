@@ -1,0 +1,8 @@
+{
+  "id": "suffocation-de-groupe",
+  "raison": "schéma : preuves/type_degats — None is not of type 'string'",
+  "hash_source": "7dcfff61176eba5805d90319478b3492516ec986ab1d1cc7cd58b10cd41f3957",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"suffocation-de-groupe\",\n  \"resume_court\": \"Le sort extrait l'air des poumons de plusieurs créatures qui suffoquent progressivement.\",\n  \"categorie_principale\": \"affaiblissement\",\n  \"tags\": [\n    \"degats_directs\",\n    \"jet_de_sauvegarde\",\n    \"plusieurs_cibles\",\n    \"zone_d_effet\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"negatif\",\n  \"condition_infligee\": [\n    \"chancelant\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est juste chancelante pendant 1 round\"\n    ],\n    \"cible_typique\": \"une créature vivante/2 niveaux\"\n  },\n  \"notes_ambiguite\": \"Le sort inflige des dégâts progressifs (réduction à 0 PV, puis -1, puis mort) mais le texte ne nomme pas explicitement un type de dégâts. L'effet est une asphyxie progressive sans type énergétique nommé. Aucun type de dégâts de la liste ne s'applique directement ; type_degats est donc null. La condition retenue est celle explicitement nommée et infligée au premier jet échoué : chancelant. Les autres effets (inconscience, agonie, mort) sont des conséquences progressives, non des conditions au sens du jeu.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:25:03+00:00"
+}

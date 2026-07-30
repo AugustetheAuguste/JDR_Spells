@@ -1,0 +1,36 @@
+{
+  "id": "flot-obsidien",
+  "resume_court": "Transforme le sol en verre fondu qui blesse et enchevêtre les créatures, créant un terrain difficile et tranchant.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "transformation_du_sujet",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de feu par tranche de deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "sont enchevêtrées"
+    ],
+    "cible_typique": "rayon de 6 m (4 c)"
+  },
+  "notes_ambiguite": "Le sort inflige aussi 1d6 points de dégâts tranchants aux créatures qui tombent dans la zone, mais ce dégât secondaire n'est pas le type principal. Le type_degats retenu est feu car c'est l'effet primaire et immédiat du sort.",
+  "slug": "flot-obsidien",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:12+00:00",
+  "hash_source": "a72830d7089193b27cd3670761c7f3c919a2a390e7e0451ea2f6a8685e5011f5"
+}

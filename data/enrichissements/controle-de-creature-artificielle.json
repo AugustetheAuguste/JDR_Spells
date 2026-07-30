@@ -1,0 +1,29 @@
+{
+  "id": "controle-de-creature-artificielle",
+  "resume_court": "Le lanceur prend le contrôle d'une créature artificielle en se concentrant et en réussissant des tests d'Art de la magie.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "charme_ou_coercition",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature artificielle"
+  },
+  "notes_ambiguite": "Le sort affecte une créature unique (la créature artificielle), mais son effet est de la contrôler comme un serviteur, ce qui le rapproche davantage de l'invocation que du contrôle de zone strict. Cependant, aucune créature n'est invoquée : le sort détourne une créature existante. La catégorie « controle_de_zone » a été retenue car elle couvre les effets qui modifient ce qui s'y trouve, mais « charme_ou_coercition » en tag reflète mieux la nature du sort. L'absence de jet de sauvegarde initial (seuls des tests d'Art de la magie s'appliquent) et la durée liée à la concentration justifient « duree_prolongee ». Le tag « plusieurs_cibles » est discutable : une seule créature est ciblée, mais le sort peut impliquer des tests opposés avec le maître/constructeur.",
+  "slug": "controle-de-creature-artificielle",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:25+00:00",
+  "hash_source": "af5d2152871ec5d86d1450ef8ae3c340838ce3cad07dae88c7dd697ecdc5c892"
+}

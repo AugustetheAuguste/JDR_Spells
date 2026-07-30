@@ -1,0 +1,35 @@
+{
+  "id": "trebucher-dans-un-trou",
+  "resume_court": "Crée un trou extradimensionnel qui fait tomber les créatures et les blesse ou les ralentit.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "subir 1d6 points de dégâts",
+    "condition_infligee": [
+      "subit donc un malus de -1 à tous ses jets et tests pendant 1 round"
+    ],
+    "cible_typique": "Ce trou occupe une unique case de 1,50 mètre (1 c)"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. J'ai choisi « contondant » car la chute dans un trou suggère un impact au sol, mais « autre » aurait pu convenir. Le malus de -1 correspond à la condition « chancelant » (perte d'actions et dégradation de défense), bien que le texte ne nomme pas explicitement cette condition.",
+  "slug": "trebucher-dans-un-trou",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:55+00:00",
+  "hash_source": "da6299b4bbeeaa89e5604daddb26753a38965cf9f3e7d37ee041595706819f10"
+}

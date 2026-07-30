@@ -1,0 +1,33 @@
+{
+  "id": "main-interposee",
+  "resume_court": "Une main magique flottante s'interpose entre le lanceur et un adversaire, lui accordant un abri et ralentissant les créatures légères.",
+  "categorie_principale": "protection",
+  "tags": [
+    "invocation_ou_creation",
+    "protection_defensive",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures qui pèsent moins d'une tonne et tentent de repousser la main voient leur vitesse de déplacement réduite de moitié"
+    ],
+    "cible_typique": "entre le personnage et l'un de ses adversaires"
+  },
+  "notes_ambiguite": "Le sort crée une créature invoquée (main magique) qui sert principalement à la défense. La condition « ralenti » s'applique uniquement aux créatures de moins d'une tonne qui tentent de contourner la main ; elle n'est pas systématique mais résulte de l'interaction mécanique du sort.",
+  "slug": "main-interposee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:24+00:00",
+  "hash_source": "0a9b9263d132e62fe60e74b5053a7d53e754029ce5e29a8ec216b9b29a8b6380"
+}

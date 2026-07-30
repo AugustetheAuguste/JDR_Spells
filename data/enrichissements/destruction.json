@@ -1,0 +1,29 @@
+{
+  "id": "destruction",
+  "resume_court": "Un sort de nécromancie qui inflige 10 points de dégâts par niveau et consume le corps si la cible meurt.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_instantanee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "10 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie négative (nécromancie, descripteur « mort », flamme sacrée ou maudite). Bien que le texte ne nomme pas explicitement « dégâts négatifs », la nature du sort et ses effets (consomption du corps, impossibilité de résurrection standard) relèvent clairement de l'énergie négative.",
+  "slug": "destruction",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:33+00:00",
+  "hash_source": "c1c2b59a5ce0b30203fc26852ec6dec8789c16d76e4bc64902cdd5edad44d458"
+}

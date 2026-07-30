@@ -1,0 +1,35 @@
+{
+  "id": "tsunami",
+  "resume_court": "Une énorme vague aqueuse qui avance en ligne droite, infligeant des dégâts et emportant les créatures.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts contondants",
+    "condition_infligee": [
+      "cette dernière tombe et la vague l'emporte"
+    ],
+    "cible_typique": "vague de 3 m (2 c) de profondeur, de 3 m (2 c) de large/niveau et de 60 cm de haut/niveau"
+  },
+  "notes_ambiguite": "La condition « emportée » se rapproche d'enchevetre (entravée par des liens matériels et se déplace mal) plutôt que d'autres conditions, bien que le texte décrive un mécanisme de BMO et de chute. Le sort crée une zone mobile qui inflige des dégâts et peut immobiliser les créatures en les emportant.",
+  "slug": "tsunami",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:58+00:00",
+  "hash_source": "4bca3e5271ee9ff3bcdb96dfed4ad5c8dd700e99019c4db75a31006df3d94c93"
+}

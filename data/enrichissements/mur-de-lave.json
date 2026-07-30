@@ -1,0 +1,31 @@
+{
+  "id": "mur-de-lave",
+  "resume_court": "Crée un mur de lave vertical qui inflige des dégâts de feu au contact et peut être utilisé pour attaquer.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "degats_directs",
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "mur de lave qui occupe une zone de 1,50 m (1 c)/niveau au maximum (S)"
+  },
+  "notes_ambiguite": null,
+  "slug": "mur-de-lave",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:13+00:00",
+  "hash_source": "3fe8a12dd8b2a2dbc08b542c77cfb68aa2d49c24f19356a8914ae0705aefcc6d"
+}

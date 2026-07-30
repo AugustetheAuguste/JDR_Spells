@@ -1,0 +1,37 @@
+{
+  "id": "nuit-polaire",
+  "resume_court": "Une zone glaciale inflige des dégâts de froid, affaiblit la Dextérité et immobilise les créatures immobiles.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "enchevetre",
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": "5d6 points de dégâts de froid",
+    "condition_infligee": [
+      "Toute créature qui ne se déplace pas à son tour est enchâssée dans une couche de glace équivalente à un mur de glace. Elle est sans défense et ne peut plus respirer.",
+      "Toute créature qui ne se déplace pas à son tour est enchâssée dans une couche de glace équivalente à un mur de glace. Elle est sans défense et ne peut plus respirer."
+    ],
+    "cible_typique": "rayon de 9 m (6 c)"
+  },
+  "notes_ambiguite": "L'enchâssement dans la glace produit deux effets : l'immobilisation (enchevetre) et l'incapacité à agir (paralyse). Les deux conditions sont justifiées par la même phrase, qui décrit un état composite. L'affaiblissement de Dextérité n'est pas retenu comme condition car il s'agit d'une pénalité numérique (tag affaiblissement_de_capacite), non d'une condition d'état du sujet.",
+  "slug": "nuit-polaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:32+00:00",
+  "hash_source": "2d71df580773c8bf99cf831f7e4de8dacf5b13f3bd0ba77d1ea3d0d580c218bc"
+}

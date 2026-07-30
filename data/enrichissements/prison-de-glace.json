@@ -1,0 +1,37 @@
+{
+  "id": "prison-de-glace",
+  "resume_court": "Emprisonne une créature dans une carapace de glace qui l'immobilise et l'inflige des dégâts de froid chaque round.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "zone_d_effet",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "paralyse",
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1 point de dégâts de froid par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "elle est sans défense",
+      "elle est enchevêtrée"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige deux états distincts selon le résultat du jet de sauvegarde : « sans défense » (échec) et « enchevêtrée » (succès). J'ai retenu « paralyse » pour l'état « sans défense » car la créature ne peut pas agir, et « enchevetre » pour l'état explicitement nommé. Les dégâts de froid s'appliquent dans les deux cas.",
+  "slug": "prison-de-glace",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:22:54+00:00",
+  "hash_source": "ad9853d99eb25723035d6d50e3b9351b2f7c5dc85861a51203b1e72f2c20c074"
+}

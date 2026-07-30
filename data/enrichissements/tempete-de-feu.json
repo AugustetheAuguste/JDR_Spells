@@ -1,0 +1,31 @@
+{
+  "id": "tempete-de-feu",
+  "resume_court": "Une zone s'embrase, infligeant des dégâts de feu immédiats et des brûlures prolongées.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de feu par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "2 cubes de 3 m d'arête/niveau"
+  },
+  "notes_ambiguite": "Les créatures qui ratent leur jet subissent des dégâts de feu supplémentaires par round (4d6), mais cet effet prolongé n'est pas une condition au sens des états altérés listés. Le sort inflige des dégâts directs dans une zone, d'où la catégorie controle_de_zone plutôt que attaque_directe.",
+  "slug": "tempete-de-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:21+00:00",
+  "hash_source": "4d769523cd8864f0f8e83e7a3d4ec6f4de10983fb1cc94af28b0ef4c86aeb521"
+}

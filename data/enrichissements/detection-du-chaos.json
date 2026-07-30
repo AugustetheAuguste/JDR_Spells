@@ -1,0 +1,34 @@
+{
+  "id": "detection-du-chaos",
+  "resume_court": "Le lanceur détecte les auras chaotiques dans un cône et en apprend progressivement la présence, le nombre et l'intensité.",
+  "categorie_principale": "divination",
+  "tags": [
+    "divination_information",
+    "zone_d_effet",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est étourdi pendant 1 round"
+    ],
+    "cible_typique": "cible: émanation en forme de cône"
+  },
+  "notes_ambiguite": "La condition d'étourdissement ne s'applique que si le lanceur est Loyal et rencontre une aura surpuissante d'une créature très puissante ; elle n'est pas systématique. Cependant, elle figure dans le texte comme un effet possible du sort, d'où son inclusion.",
+  "slug": "detection-du-chaos",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:42+00:00",
+  "hash_source": "6037fadb18bb84762b3cd64b11e60284dd6342e5bd32e8b7b1f09604992c4c05"
+}

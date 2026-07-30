@@ -1,0 +1,36 @@
+{
+  "id": "corps-enflamme",
+  "resume_court": "Le lanceur se transforme en flamme vivante, gagnant immunités, vol et attaques renforcées.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "amelioration_de_capacite",
+    "immunite_ou_resistance_element",
+    "bonus_chiffre",
+    "deplacement_ou_teleportation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "les créatures qui ne détournent pas leur regard sont éblouies"
+    ],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort inflige une condition (éblouissement) mais ne relève pas d'une catégorie d'entrave ou d'attaque directe : c'est un effet secondaire d'une amélioration. La catégorie reste `amelioration` car l'objectif principal est de renforcer le lanceur. Les dégâts de feu subis deviennent des soins, et les dégâts d'eau sont un handicap lié à la transformation, non une attaque du sort lui-même.",
+  "slug": "corps-enflamme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:53+00:00",
+  "hash_source": "13df8eb310c185f981ff25562a338198e578b29fe8b97fc577c7cc598c119aca"
+}

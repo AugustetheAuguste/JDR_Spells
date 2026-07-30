@@ -1,0 +1,28 @@
+{
+  "id": "resurrection-temporaire",
+  "resume_court": "Ramène temporairement à la vie une créature morte depuis moins de 48 heures pour 24 heures.",
+  "categorie_principale": "soin",
+  "tags": [
+    "duree_prolongee",
+    "objet_ou_equipement",
+    "soin_ou_guerison"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature morte touchée"
+  },
+  "notes_ambiguite": "La cible est un cadavre, classé comme objet plutôt qu'ennemi ou allié. Le sort inflige un niveau négatif mais ce n'est pas une condition de combat standard (aveugle, étourdi, etc.), donc condition_infligee reste vide. La durée de 24 heures justifie duree_prolongee.",
+  "slug": "resurrection-temporaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:03+00:00",
+  "hash_source": "28979cf0875da8da8413d887c29abeec8d66a0afc63ce182c8378143a9140289"
+}

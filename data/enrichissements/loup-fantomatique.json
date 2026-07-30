@@ -1,0 +1,34 @@
+{
+  "id": "loup-fantomatique",
+  "resume_court": "Convoque un loup spectral de fumée noire qui peut être chevauché ou combattre, émettant une aura de peur.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "effet_mental",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "doit réussir un jet de sauvegarde de Volonté pour ne pas être secouée pendant 1d4 rounds"
+    ],
+    "cible_typique": "Ce sort convoque une créature quasi réelle qui ressemble à un loup sanguinaire"
+  },
+  "notes_ambiguite": "Le sort invoque une créature qui peut combattre (infligeant 1d8+6 dégâts), mais ces dégâts sont infligés par la créature invoquée, non par le sort lui-même ; le sort ne liste pas de type de dégâts. L'aura de peur affecte plusieurs créatures dans une zone, justifiant le tag `plusieurs_cibles` et la cible `zone`. La durée varie selon l'usage (1 heure/niveau ou 1 round/niveau après attaque), d'où `duree_prolongee`.",
+  "slug": "loup-fantomatique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:16+00:00",
+  "hash_source": "a4c33be49ed944c8b8bec2bbe91ba1394baefafe21d9bea683f99fe810745680"
+}

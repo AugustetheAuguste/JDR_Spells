@@ -1,0 +1,34 @@
+{
+  "id": "rayon-de-soleil",
+  "resume_court": "Le lanceur émet des rayons de lumière éblouissante qui aveuglent et blessent les créatures, avec dégâts accrus contre les morts-vivants.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "4d6 points de dégâts",
+    "condition_infligee": [
+      "Toutes les créatures touchées par le rayon de soleil sont aveuglées"
+    ],
+    "cible_typique": "ligne partant du jeteur de sorts"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme « force » car le texte ne nomme pas explicitement un type énergétique élémentaire (feu, froid, électricité, etc.), bien que la source soit lumineuse. Les dégâts sont décrits comme issus d'un « rayon de lumière éblouissante » sans précision de type énergétique standard. Le sort affecte plusieurs créatures sur une ligne, justifiant les tags « zone_d_effet » et « plusieurs_cibles ».",
+  "slug": "rayon-de-soleil",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:30+00:00",
+  "hash_source": "682eff418dd066c81b76d6c5c86e808c6fcc0e31335f1a0dd6c4fd13a923d2fd"
+}

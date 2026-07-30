@@ -1,0 +1,34 @@
+{
+  "id": "reservoir-de-resilience",
+  "resume_court": "Le lanceur accumule les dégâts subis pour les rediriger en bonus ou les libérer en explosion.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "bonus_chiffre",
+    "protection_defensive",
+    "zone_d_effet",
+    "duree_prolongee",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "force",
+  "condition_infligee": [
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de force",
+    "condition_infligee": [
+      "une explosion de force assourdissante"
+    ],
+    "cible_typique": "le lanceur de sort"
+  },
+  "notes_ambiguite": "Le sort a une double nature : amélioration défensive en usage normal, mais attaque de zone si le lanceur tombe à 0 PV. La catégorie « amelioration » reflète l'usage principal (accumulation et bonus), tandis que « degats_directs » et « zone_d_effet » couvrent l'effet d'explosion. La condition « assourdi » provient de « explosion de force assourdissante ».",
+  "slug": "reservoir-de-resilience",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:55+00:00",
+  "hash_source": "75f75748880e6d1c3d73eb99e047d1e8e046f30bd31125fb4a6ea09702c21d78"
+}

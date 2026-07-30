@@ -1,0 +1,30 @@
+{
+  "id": "glace-benie",
+  "resume_court": "Crée des javelots de glace bénie ou un mur de glace infligeant des dégâts de froid et d'eau bénie.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "froid",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1 point de dégâts de froid",
+    "condition_infligee": [],
+    "cible_typique": "une ou plusieurs cibles"
+  },
+  "notes_ambiguite": "Le sort offre deux modes d'utilisation distincts (javelots ou mur). Les javelots infligent aussi des dégâts d'eau bénie, mais seul le froid figure dans la liste type_degats. Le mur produit une zone d'effet persistante avec dégâts au contact et à la traversée. La catégorie attaque_directe couvre le mode javelots ; le mode mur relève aussi de controle_de_zone, mais attaque_directe domine car les deux modes infligent des dégâts directs.",
+  "slug": "glace-benie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:48+00:00",
+  "hash_source": "280e62dc3dfb857c479aa2a90e5782466017049ca7a9a253bb391f4bcc1683cd"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "symbole-de-lutte",
+  "resume_court": "Un symbole qui force les créatures affectées à attaquer la créature consciente la plus proche pendant plusieurs rounds.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "charme_ou_coercition",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "obligées d'attaquer l'être conscient le plus proche pendant 1 round par niveau de lanceur de sorts (comme le résultat « attaquer la créature la plus proche » du sort confusion)"
+    ],
+    "cible_typique": "toutes les créatures situées dans la zone d'effet"
+  },
+  "notes_ambiguite": "Le sort provoque un comportement similaire à confusion (attaque forcée de la créature la plus proche) plutôt qu'une confusion totale ; la condition retenue est confus car c'est l'effet mental le plus proche disponible dans la liste, bien que le texte précise que l'action est dirigée et non aléatoire.",
+  "slug": "symbole-de-lutte",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:09+00:00",
+  "hash_source": "635c0d2570d71de6b0d799262a491fa5812c010f990f991bd3cd06699b7d222f"
+}

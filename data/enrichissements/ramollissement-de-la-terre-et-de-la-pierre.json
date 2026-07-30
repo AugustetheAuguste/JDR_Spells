@@ -1,0 +1,36 @@
+{
+  "id": "ramollissement-de-la-terre-et-de-la-pierre",
+  "resume_court": "Transforme la terre et la roche brutes en boue, sable ou argile sur une zone, entravant les déplacements.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "transformation_du_sujet",
+    "terrain_ou_environnement",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "ils sont incapables de se déplacer, de combattre ou de lancer des sorts pendant 1d2 rounds"
+    ],
+    "cible_typique": "une zone de 3 m de côté"
+  },
+  "notes_ambiguite": "La condition infligée est interprétée comme « chancelant » (une seule action par round) car le texte indique que les créatures « sont incapables de se déplacer, de combattre ou de lancer des sorts », ce qui correspond à une perte d'actions. Bien que le texte ne nomme pas explicitement cette condition, elle est la plus proche de l'effet décrit dans la liste fournie.",
+  "slug": "ramollissement-de-la-terre-et-de-la-pierre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:21+00:00",
+  "hash_source": "4080699ef8b6cedb492cd76aefb01f37e6afae4326241fb9b785cbb6ee183ccd"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "coup-tonitruant",
+  "resume_court": "Une arme à feu tire avec un vacarme assourdissant, rendant sourdes les créatures proches.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "arme_ou_munition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "vacarme tonitruant",
+    "condition_infligee": [
+      "devenir sourdes pendant 1 minute"
+    ],
+    "cible_typique": "Toutes les créatures qui se trouvent dans un rayon de 4,50 m (3 c) autour de la créature qui porte l'arme à feu"
+  },
+  "notes_ambiguite": null,
+  "slug": "coup-tonitruant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:57+00:00",
+  "hash_source": "4089221ba6c6a9f540b7f1fc782db6cd01d30eb841101f3f0096e6c55ac804ea"
+}

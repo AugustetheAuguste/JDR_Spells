@@ -1,0 +1,35 @@
+{
+  "id": "brume-hantee",
+  "resume_court": "Une brume illusoire qui bloque la visibilité et secoue les créatures qui la traversent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "illusion_visuelle_ou_sonore",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "être secouées"
+    ],
+    "cible_typique": "nuage de 6 m (4 c) de rayon et de 6 m de haut"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement de Sagesse (1d2 points), mais cet affaiblissement n'est pas une condition listée dans les conditions_infligee disponibles. Seule la condition « secoue » a été retenue, car elle est explicitement nommée dans le texte et figure dans la liste des conditions admissibles.",
+  "slug": "brume-hantee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:24+00:00",
+  "hash_source": "767c77b4713e8228712eec102d9d3cf195f446aabfee9d96c073d32be3d79168"
+}

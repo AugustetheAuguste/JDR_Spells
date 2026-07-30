@@ -1,0 +1,29 @@
+{
+  "id": "appel-de-creature-artificielle",
+  "resume_court": "Convoque une créature artificielle sous contrôle du lanceur, de manière permanente jusqu'à déchargement.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature artificielle touchée"
+  },
+  "notes_ambiguite": "La cible est une créature artificielle, classée comme objet plutôt qu'ennemi car elle est inanimée et placée sous contrôle du lanceur. Le sort fonctionne comme invocation instantanée mais convoque une créature existante plutôt que d'en créer une nouvelle, d'où l'absence de tag invocation_ou_creation strict ; cependant, l'effet de convocation justifie ce tag. La détection des restes en cas d'échec justifie detection_ou_revelation.",
+  "slug": "appel-de-creature-artificielle",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:41+00:00",
+  "hash_source": "3f1ec4ed2c91a52f1fbaef016a62eca2c887611ae5f27d9dbe4e3197ff5c70e8"
+}

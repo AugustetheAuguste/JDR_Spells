@@ -1,0 +1,31 @@
+{
+  "id": "fleche-du-borgne",
+  "resume_court": "Crée une flèche d'électricité pour frapper une cible ou illuminer une zone avec un éclair et un tonnerre.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "zone_d_effet",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "electricite",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts d'électricité",
+    "condition_infligee": [],
+    "cible_typique": "Il peut lancer la flèche jusqu'à la limite de portée du sort"
+  },
+  "notes_ambiguite": "Le sort offre deux effets distincts : l'attaque inflige des dégâts d'électricité, tandis que le phare produit un effet de zone sans dégâts. La catégorie « attaque_directe » reflète l'effet principal offensif ; le tag « zone_d_effet » couvre le mode phare. Les rôles incluent « exploration » pour l'utilisation du phare comme source de lumière.",
+  "slug": "fleche-du-borgne",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:09+00:00",
+  "hash_source": "21957c597293f0f8f41f8530d1151877dea23cb23a552ca7acdf5abdea177feb"
+}

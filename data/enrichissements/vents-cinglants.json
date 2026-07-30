@@ -1,0 +1,35 @@
+{
+  "id": "vents-cinglants",
+  "resume_court": "Une tempête de sable qui inflige des dégâts perforants et bloque la visibilité dans une zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "perforant",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts perforants par round",
+    "condition_infligee": [
+      "Ce sort invoque une tempête de sable qui bloque toute visibilité"
+    ],
+    "cible_typique": "tempête de sable de 6 m (4 c) de rayon sur 6 m (4 c) de haut"
+  },
+  "notes_ambiguite": null,
+  "slug": "vents-cinglants",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:04+00:00",
+  "hash_source": "6e935560e9844b484688e076ebaa2ba7688ae4b6a5c9a4f5daaa8d872d5940fa"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "fractionnement-des-soins-et-des-blessures",
+  "resume_court": "Le lanceur réduit les dégâts de zone de son prochain sort et se soigne du montant réduit.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "metamagie_ou_sort_cible",
+    "soin_ou_guerison",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: le lanceur de sorts"
+  },
+  "notes_ambiguite": "Ce sort est une métamagie qui modifie un sort de dégâts de zone à venir plutôt qu'un sort autonome. Il n'inflige pas lui-même de dégâts mais réduit ceux du sort affecté et convertit une partie en soin. Classé en `amelioration` car l'effet net pour le lanceur est bénéfique (réduction de dégâts subis + soin), avec le tag `metamagie_ou_sort_cible` pour refléter sa nature de modificateur de sort.",
+  "slug": "fractionnement-des-soins-et-des-blessures",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:38+00:00",
+  "hash_source": "ccad6ed502566b386629b4617453186ff18df46d8414594d16cd5c9caf306f8c"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "caresse-elementaire",
+  "resume_court": "Le lanceur imprègne ses mains d'énergie élémentaire pour infliger des dégâts de contact avec un effet spécial.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "amelioration_de_capacite",
+    "attaque_de_contact",
+    "duree_prolongee",
+    "jet_de_sauvegarde",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort améliore les capacités offensives du lanceur plutôt que d'infliger directement des dégâts : il confère une attaque de contact améliorée. Les dégâts sont conditionnels au choix d'élément et à l'utilisation de l'attaque. Les conditions (fiévreuse, chancelante, fatiguée) dépendent du type d'énergie choisi et ne sont pas garanties, d'où leur omission de condition_infligee. type_degats reste null car le sort lui-même n'inflige pas de dégâts : il en confère la capacité.",
+  "slug": "caresse-elementaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:32+00:00",
+  "hash_source": "c4320f12cc934d424eefd4eeabddffda60580538df0e5d1ab1d68b5dda964efb"
+}

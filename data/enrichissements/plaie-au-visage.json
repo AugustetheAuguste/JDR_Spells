@@ -1,0 +1,33 @@
+{
+  "id": "plaie-au-visage",
+  "resume_court": "Une arme tranchante inflige une plaie saignante qui impose des malus croissants et peut aveugler.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "arme_ou_munition",
+    "duree_prolongee",
+    "malus_chiffre",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "dégâts de saignement",
+    "condition_infligee": [
+      "la cible est aveugle"
+    ],
+    "cible_typique": "une arme de corps à corps tranchante touchée"
+  },
+  "notes_ambiguite": "Le sort améliore une arme plutôt que de l'attaquer directement. Les dégâts de saignement ne correspondent à aucun type énergétique élémentaire de la liste, d'où le classement en « autre ». L'aveuglement est une conséquence progressive du malus cumulatif, atteint au seuil de -5.",
+  "slug": "plaie-au-visage",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:12+00:00",
+  "hash_source": "9c7fffe61cdfbf453f6abb760cc40e19d5b84cf4df49dbde6d6748caa6893713"
+}

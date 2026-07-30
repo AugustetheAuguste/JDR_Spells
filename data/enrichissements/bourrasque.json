@@ -1,0 +1,32 @@
+{
+  "id": "bourrasque",
+  "resume_court": "Une violente rafale de vent en ligne qui repousse les créatures, inflige des dégâts et impose des malus.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "terrain_ou_environnement",
+    "malus_chiffre",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "subir 2d6 points de dégâts",
+    "condition_infligee": [],
+    "cible_typique": "violente rafale de vent en forme de ligne émanant de la main tendue du personnage et atteignant la limite de portée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts contondants (chute, impact du vent) plutôt que des dégâts élémentaires d'air. Les dégâts non-létaux subis par les créatures au sol (1d4 points de dégâts non-létaux par tranche de 3 mètres) sont du même type. La durée est 1 round mais le sort peut être rendu permanent via permanence, d'où le tag duree_prolongee.",
+  "slug": "bourrasque",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:12+00:00",
+  "hash_source": "87f029cbe25f515e8bfb87e40ea18b3fab97d2907f3d7eea4547b75224d98776"
+}

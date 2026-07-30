@@ -1,0 +1,30 @@
+{
+  "id": "eau-rouge",
+  "resume_court": "Un nuage de sang qui renforce les requins et créatures frénétiques à proximité pendant 1 round/niveau.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "bonus_chiffre",
+    "malus_chiffre",
+    "effet_mental",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "nuage de 6 mètres de rayon centré sur le sahuagin"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts au lanceur (sahuagin) pour activer l'effet, mais ces dégâts sont auto-infligés et non une condition imposée aux cibles. L'effet principal est une amélioration de zone pour les créatures alliées (requins, poissons, créatures frénétiques), d'où la classification en controle_de_zone plutôt qu'attaque_directe. Le descripteur « émotion » et l'effet de frénésie justifient le tag effet_mental.",
+  "slug": "eau-rouge",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:02+00:00",
+  "hash_source": "221eac102c6f495643bd434c6253cf28e7a3c9e62c5fccc000e5b4a4a07f6a31"
+}

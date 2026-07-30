@@ -1,0 +1,33 @@
+{
+  "id": "mixture-pour-bombe-d-emprisonnement",
+  "resume_court": "Une mixture qui transforme les bombes en prisons cubiques de murs de force emprisonnant les créatures.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "piège toutes les créatures qui s'y trouvent en entier"
+    ],
+    "cible_typique": "La prison englobe toute la zone d'aspersion de la bombe lancée"
+  },
+  "notes_ambiguite": "Le sort est une mixture alchimique qui modifie les bombes plutôt qu'un sort traditionnel. La condition d'emprisonnement s'apparente à enchevetre (entrave matérielle) bien que le texte décrive une prison de force plutôt que des liens. Aucune condition de la liste ne correspond parfaitement à l'immobilisation dans une cage, mais enchevetre est la plus proche.",
+  "slug": "mixture-pour-bombe-d-emprisonnement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:00+00:00",
+  "hash_source": "90a689aed5e7bdc84423ab952faed6320c53d5173333a7c34e6a41b57b477cde"
+}

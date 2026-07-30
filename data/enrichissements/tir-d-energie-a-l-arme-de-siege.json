@@ -1,0 +1,37 @@
+{
+  "id": "tir-d-energie-a-l-arme-de-siege",
+  "resume_court": "Transforme les munitions d'une arme de siège en projectiles d'énergie pure avec effets supplémentaires.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "arme_ou_munition",
+    "duree_prolongee",
+    "zone_d_effet"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant",
+    "enchevetre",
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "sont chancelantes pour 1 round",
+      "Les créatures prises dans la couche de glace sont enchevêtrées",
+      "ou être sourdes pendant 1 heure"
+    ],
+    "cible_typique": "un engin de siège G"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie (acide, électricité, feu, force, froid ou son) mais le type varie selon le choix du lanceur au moment de l'incantation. Aucun type n'est fixe, donc type_degats est null. Les conditions retenues sont celles qui résultent des effets supplémentaires selon le type d'énergie choisi.",
+  "slug": "tir-d-energie-a-l-arme-de-siege",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:32+00:00",
+  "hash_source": "0e6e1e5f4950e81f6ce3d0d7b0b2cc6ba006efcf9ea0bdc4ebeda30ac8384460"
+}

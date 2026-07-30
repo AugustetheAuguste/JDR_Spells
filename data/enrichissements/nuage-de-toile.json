@@ -1,0 +1,36 @@
+{
+  "id": "nuage-de-toile",
+  "resume_court": "Un nuage de toile d'araignée qui avance et piège les créatures qu'il rencontre.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Une créature située dans le nuage au début de son tour doit réussir un jet de sauvegarde ou être affectée"
+    ],
+    "cible_typique": "le nuage s'étend sur un espace de 6 m de rayon et de 6 m de haut"
+  },
+  "notes_ambiguite": "Le texte renvoie au sort « toile d'araignée » pour les effets précis de l'enchevêtrement, mais ne les détaille pas ici. La condition retenue est « enchevetre » car le sort fonctionne comme toile d'araignée et piège les créatures. Le jet de sauvegarde est partiel selon le texte, mais aucune condition alternative n'est décrite dans ce texte seul.",
+  "slug": "nuage-de-toile",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:26+00:00",
+  "hash_source": "5340db3c003c541c618729be966aa5f969f13d9b76b05d9a720d417be23cb965"
+}

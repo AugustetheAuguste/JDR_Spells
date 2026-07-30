@@ -1,0 +1,31 @@
+{
+  "id": "tenebres-voraces",
+  "resume_court": "Une zone de ténèbres qui mord les créatures à l'intérieur et les blesse après leur départ.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "terrain_ou_environnement",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "force",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts de force",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 18 m de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement temporaire de Constitution (mécanique de dégâts de caractéristique) plutôt qu'une condition nommée de la liste. L'affaiblissement est capturé par le tag `affaiblissement_de_capacite`. Les dégâts de saignement ultérieurs sont du type `force` selon la description des crocs de force.",
+  "slug": "tenebres-voraces",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:25+00:00",
+  "hash_source": "5176f74efd7aacb176e32556043c6735b2a31a88f383cd2b82295edb77ec162e"
+}

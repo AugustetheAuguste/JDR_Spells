@@ -1,0 +1,30 @@
+{
+  "id": "rayon-de-feu-infernal",
+  "resume_court": "Des rayons de feu infernal qui blessent et damnent l'âme des créatures tuées.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "plusieurs_cibles",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "La moitié des dégâts sont des dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "un ou plusieurs rayons"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts d'énergie impie (moitié des dégâts totaux), mais seul le feu figure dans la liste `type_degats`. L'effet de damnation de l'âme n'est pas une condition au sens des conditions listées (aveugle, étourdi, etc.) : c'est un effet narratif qui survient après la mort et ne modifie pas l'état de la créature vivante. Les rayons multiples et la portée commune justifient `plusieurs_cibles`.",
+  "slug": "rayon-de-feu-infernal",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:29+00:00",
+  "hash_source": "47cb1a03b0ca851a5510634f91516548d0f9f58c1e7b708b34d4e509ba91a677"
+}

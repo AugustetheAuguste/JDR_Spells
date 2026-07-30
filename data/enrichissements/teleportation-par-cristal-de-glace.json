@@ -1,0 +1,35 @@
+{
+  "id": "teleportation-par-cristal-de-glace",
+  "resume_court": "La cible est piégée dans la glace pendant 1d4 rounds, puis téléportée vers une destination familière.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "entrave_ou_immobilisation",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle est paralysée, consciente mais incapable d'entreprendre la moindre action physique"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "La cible peut être un allié ou le lanceur lui-même. Le sort fonctionne comme téléportation mais le texte ne précise pas si la cible peut être hostile ; la mention « endroit sûr de son choix » et « la cible peut emporter des objets » suggère une coopération. Classé en cible_typique « allie » par défaut, mais pourrait inclure le lanceur (« soi »). La paralysie est une conséquence du piégeage dans la glace, pas un effet indépendant.",
+  "slug": "teleportation-par-cristal-de-glace",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:19+00:00",
+  "hash_source": "29fb0fcac524ccc8c1b8c20d22f34e4f45f58ecc81afd840d823ee9ab989d6f9"
+}

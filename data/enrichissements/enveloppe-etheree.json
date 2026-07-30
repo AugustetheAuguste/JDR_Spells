@@ -1,0 +1,34 @@
+{
+  "id": "enveloppe-etheree",
+  "resume_court": "Le lanceur entre en catalepsie sur le plan Éthéré, protégé dans un cocon inviolable pendant 1 heure par niveau.",
+  "categorie_principale": "protection",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "duree_prolongee",
+    "protection_defensive",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "utilitaire"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est chancelant pendant 1 round"
+    ],
+    "cible_typique": "cible: le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort inflige 1d10 dégâts en cas de collision au retour, mais ce dégât est conditionnel et non l'effet principal du sort. La catégorie « protection » s'impose car l'effet primaire est l'abri total offert par l'enveloppe. Le tag « invocation_ou_creation » s'applique car l'enveloppe est créée comme objet distinct.",
+  "slug": "enveloppe-etheree",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:29+00:00",
+  "hash_source": "65d78e373ce69dd5950dd33fc50264c1076821de1ed75705b9632e3b50243a56"
+}

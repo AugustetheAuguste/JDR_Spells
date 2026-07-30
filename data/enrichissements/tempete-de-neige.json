@@ -1,0 +1,34 @@
+{
+  "id": "tempete-de-neige",
+  "resume_court": "Une zone de neige fondue qui aveugle les créatures et rend le sol glissant, réduisant leurs déplacements.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "degats_directs",
+    "immunite_ou_resistance_element"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "descripteurs: froid",
+    "condition_infligee": [
+      "elle bloque le champ de vision de toutes les créatures qui se trouvent dans la zone d'effet"
+    ],
+    "cible_typique": "cylindre (12 m de rayon sur 6 m de haut)"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de froid (descripteur) mais le texte ne précise pas de dégâts numériques directs ; il agit principalement par contrôle de zone et aveuglement. Les créatures qui chutent subissent des dégâts de chute, non du sort lui-même. Le tag degats_directs est retenu car le froid est le descripteur explicite du sort.",
+  "slug": "tempete-de-neige",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:22+00:00",
+  "hash_source": "19135c4d5d4df3eca801377fe4b73632349778be6f1f9f026b6c6fdc1f8f71a4"
+}

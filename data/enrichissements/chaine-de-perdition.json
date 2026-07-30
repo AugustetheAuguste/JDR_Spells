@@ -1,0 +1,35 @@
+{
+  "id": "chaine-de-perdition",
+  "resume_court": "Une chaîne flottante de force apparaît et exécute des manœuvres offensives contre les ennemis à portée.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "resistance_a_la_magie",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle",
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "aveuglement ou enchevêtrement",
+      "aveuglement ou enchevêtrement"
+    ],
+    "cible_typique": "Une chaîne de force flottante munie de crochets aux deux extrémités apparaît dans une case inoccupée à portée"
+  },
+  "notes_ambiguite": "La chaîne peut infliger aveuglement ou enchevêtrement via manœuvre de sale coup, mais le texte ne précise pas si ces conditions sont systématiques ou optionnelles. Les deux conditions sont retenues car elles figurent explicitement parmi les manœuvres possibles. La cible_typique est « zone » car le sort crée un objet dans une case, bien qu'il agisse ensuite contre des créatures ; le texte ne désigne pas une créature unique mais un emplacement.",
+  "slug": "chaine-de-perdition",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:41+00:00",
+  "hash_source": "80f0d6f04b8106101c6351f100c5380670e5bbb8642d166dc2d58b756e6fd086"
+}

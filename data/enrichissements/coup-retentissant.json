@@ -1,0 +1,37 @@
+{
+  "id": "coup-retentissant",
+  "resume_court": "Une arme inflige des dégâts sonores et peut étourdir ou rendre sourde sa cible en cas de coup critique.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "arme_ou_munition",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "son",
+  "condition_infligee": [
+    "chancelant",
+    "etourdi",
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts sonores",
+    "condition_infligee": [
+      "cette dernière est chancelante pendant 1 round en cas d'attaque réussie",
+      "la cible est étourdie pendant 1 round",
+      "sourde pendant 1d6 rounds"
+    ],
+    "cible_typique": "cette arme frappe avec un fracas retentissant. La cible reçoit"
+  },
+  "notes_ambiguite": null,
+  "slug": "coup-retentissant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:56+00:00",
+  "hash_source": "71e581ac508eaf6649f62df39b2b6392b8bf0af6cc9031d8442a99e7e4887695"
+}

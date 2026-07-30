@@ -1,0 +1,32 @@
+{
+  "id": "zone-de-flammes-instables",
+  "resume_court": "Une zone où les effets de feu magique se retournent contre leur lanceur.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "elle subit les dégâts de feu infligés par l'effet",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 6 m de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de feu, mais seulement à celui qui lance l'effet de feu à l'intérieur de la zone — c'est un effet réactif, pas une attaque directe du sort lui-même. La catégorie « controle_de_zone » s'impose car le sort modifie un volume de terrain et ce qui s'y passe, plutôt que d'attaquer directement.",
+  "slug": "zone-de-flammes-instables",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:29+00:00",
+  "hash_source": "184686e0eacf6f4ae9d4df686e7ddf9d8da5b869a2ea73f5e7600f697f00c92c"
+}

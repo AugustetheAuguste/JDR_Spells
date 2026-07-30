@@ -1,0 +1,34 @@
+{
+  "id": "tornade-de-sable",
+  "resume_court": "Une tornade de sable aveugle la cible et l'empêche de parler pendant plusieurs rounds.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "communication_ou_langage"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "ce qui l'aveugle"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige aussi l'incapacité à parler, mais cette dernière n'est pas une condition nommée de la liste fournie. La cécité est la seule condition annulable par le jet de sauvegarde et figure dans la liste. L'empêchement de parler est un effet mécanique distinct mais sans condition correspondante.",
+  "slug": "tornade-de-sable",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:34+00:00",
+  "hash_source": "f522b111c35fc75f3ad6396b0818e86dbfcebf02e0790d3e81295697eb9d5be8"
+}

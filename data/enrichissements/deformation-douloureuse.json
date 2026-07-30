@@ -1,0 +1,34 @@
+{
+  "id": "deformation-douloureuse",
+  "resume_court": "Une attaque de contact qui déforme la cible et lui inflige douleur, affaiblissements et ralentissement.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "transformation_du_sujet",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts non-létaux",
+    "condition_infligee": [
+      "Sa vitesse de base est réduite de 3 mètres"
+    ],
+    "cible_typique": "une créature touchée"
+  },
+  "notes_ambiguite": "Les dégâts sont non-létaux et ne correspondent à aucun type énergétique élémentaire de la liste, d'où le classement en « autre ». L'affaiblissement de Dextérité et Constitution est capturé par le tag « affaiblissement_de_capacite » plutôt que par une condition spécifique, car aucune condition de la liste ne représente directement une réduction de caractéristique.",
+  "slug": "deformation-douloureuse",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:24+00:00",
+  "hash_source": "3d4017a5a7f1621eaa646001b32e160613f39bd015ca4a394490befd8ee34e47"
+}

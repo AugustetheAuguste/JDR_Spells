@@ -1,0 +1,8 @@
+{
+  "id": "pur-degout",
+  "raison": "schéma : condition_infligee/0 — 'nauseeux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "e1da5674ec3ee1cfdd495260427ea5a48cc9e9e83a4bdb7b2ff68e1c8ba2da30",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"pur-degout\",\n  \"resume_court\": \"La cible ressent une aversion irrépressible envers une créature désignée et doit s'en tenir éloignée.\",\n  \"categorie_principale\": \"entrave\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"duree_prolongee\",\n    \"entrave_ou_immobilisation\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"nauseeux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est nauséeuse jusqu'à ce qu'elle s'en éloigne à nouveau\"\n    ],\n    \"cible_typique\": \"une créature\"\n  },\n  \"notes_ambiguite\": \"La condition « nauséeuse » n'existe pas dans la liste fermée ; la plus proche est « chancelant » (une seule action par round), mais le texte décrit plutôt une répulsion comportementale. J'ai retenu « nauseeux » comme le terme le plus fidèle au texte, bien qu'absent de la liste. Le sort impose surtout une entrave de mouvement (rester à distance) plutôt qu'une condition mécanique stricte.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:23:13+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "tenebres-maudites",
+  "raison": "schéma : condition_infligee/0 — 'fiévreuse' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "0e7cf32dc3c966773a1a9f8d5af72bd24e18a52f54c6c4a8935f20a4306725a6",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"tenebres-maudites\",\n  \"resume_court\": \"Un nuage de ténèbres qui blesse et rend fiévreuses les créatures Bonnes ou Neutres.\",\n  \"categorie_principale\": \"attaque_directe\",\n  \"tags\": [\n    \"degats_directs\",\n    \"zone_d_effet\",\n    \"jet_de_sauvegarde\",\n    \"alignement_ou_divin\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": \"autre\",\n  \"condition_infligee\": [\n    \"fiévreuse\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"1d8 points de dégâts tous les deux niveaux de lanceur de sorts\",\n    \"condition_infligee\": [\n      \"Le sort rend les créatures Bonnes fiévreuses pendant 1d4 round\"\n    ],\n    \"cible_typique\": \"étendue de 6 m de rayon\"\n  },\n  \"notes_ambiguite\": null\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:25:23+00:00"
+}

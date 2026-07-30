@@ -1,0 +1,36 @@
+{
+  "id": "defense-magique",
+  "resume_court": "Protège une demeure avec brouillard, verrous, toiles, confusion et portes cachées, plus un effet optionnel.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "protection_defensive",
+    "duree_prolongee",
+    "terrain_ou_environnement",
+    "effet_mental",
+    "illusion_visuelle_ou_sonore"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est soumis à un effet magique mineur semblable à confusion"
+    ],
+    "cible_typique": "La zone affectée peut faire jusqu'à six mètres de haut"
+  },
+  "notes_ambiguite": "Le sort produit plusieurs effets distincts (brouillard, verrous, toiles, confusion, portes cachées, plus un optionnel). La condition « confus » provient de l'effet Confusion décrit. Les tags incluent protection_defensive (camouflage, verrous, portes cachées), terrain_ou_environnement (brouillard, toiles, bourrasque), effet_mental (confusion, suggestion) et illusion_visuelle_ou_sonore (brouillard, lumières dansantes, portes cachées). La catégorie controle_de_zone reflète que le sort agit sur un volume et modifie ce qui s'y trouve.",
+  "slug": "defense-magique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:23+00:00",
+  "hash_source": "9744faed141b3da5df5a1af001b3ca0f25b9ebb23f46bfbc8165874317883d64"
+}

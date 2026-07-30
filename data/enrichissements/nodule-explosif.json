@@ -1,0 +1,34 @@
+{
+  "id": "nodule-explosif",
+  "resume_court": "Un objet piégé qui explose mentalement au contact, infligeant des dégâts et rendant chancelant.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "objet_ou_equipement",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "force",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "6d6 points de dégâts",
+    "condition_infligee": [
+      "la rendant chancelante pendant 1 minute"
+    ],
+    "cible_typique": "1 objet touché pesant moins de 5 kg"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Le descripteur « effet mental » et la mention « explosion mentale » suggèrent une énergie psychique, classée ici comme force faute de type spécifique dans la liste.",
+  "slug": "nodule-explosif",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:24+00:00",
+  "hash_source": "1d214e79d7f136c381446d6c259952f6120b7dd723c76ebe48776698ab00a159"
+}

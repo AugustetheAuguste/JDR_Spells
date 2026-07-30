@@ -1,0 +1,34 @@
+{
+  "id": "lumiere-du-jugement",
+  "resume_court": "Un rayon de lumière multicolore qui produit divers effets bénéfiques ou offensifs selon les jugements actifs de l'inquisiteur.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "bonus_chiffre",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": "un malus de 4d8 points de dégâts",
+    "condition_infligee": [
+      "sont secoués pendant 1d4 rounds"
+    ],
+    "cible_typique": "rayon de 9 m (6 c)"
+  },
+  "notes_ambiguite": "Le sort produit plusieurs effets distincts selon les jugements actifs : certains infligent des dégâts (Destruction), d'autres soignent (Guérison) ou renforcent les alliés (Châtiment, Protection, Résilience, Résistance). La catégorie « controle_de_zone » reflète que le sort affecte un volume défini. Le type_degats est « autre » car les dégâts de Destruction ne correspondent à aucun type élémentaire nommé dans la description.",
+  "slug": "lumiere-du-jugement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:20+00:00",
+  "hash_source": "79bead72fccb8f51824907a8a100f780e0b44499a9dd79579cbed95c8552c363"
+}

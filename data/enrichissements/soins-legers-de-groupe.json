@@ -1,0 +1,30 @@
+{
+  "id": "soins-legers-de-groupe",
+  "resume_court": "Le lanceur transmet de l'énergie positive pour soigner plusieurs créatures à portée courte.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "plusieurs_cibles",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "positif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "énergie positive",
+    "condition_infligee": [],
+    "cible_typique": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie positive aux morts-vivants (effet secondaire hostile), mais sa catégorie principale reste « soin » car son effet primaire est la guérison. Les tags incluent « zone_d_effet » car les cibles doivent être distantes de moins de 9 m les unes des autres, formant un groupe spatial.",
+  "slug": "soins-legers-de-groupe",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:46+00:00",
+  "hash_source": "28d65515f3fbbdd77e315ccfc23930bfeee5158dbfaa357765845150c925fe13"
+}

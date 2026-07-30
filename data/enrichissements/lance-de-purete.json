@@ -1,0 +1,34 @@
+{
+  "id": "lance-de-purete",
+  "resume_court": "Une lance d'énergie sacrée qui blesse les créatures mauvaises et peut les aveugler.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "positif",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts par tranche de deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "est aveugle pendant 1 round"
+    ],
+    "cible_typique": "vers une cible à portée"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme « positif » car le texte décrit une « énergie Bonne » et l'effet cible spécifiquement les créatures mauvaises et les extérieurs mauvais, ce qui correspond au profil de l'énergie positive. La condition d'aveuglement s'applique principalement aux extérieurs mauvais, mais le sort peut l'infliger selon le jet de sauvegarde.",
+  "slug": "lance-de-purete",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:56+00:00",
+  "hash_source": "b31715c1745562cb975128d7243793fea5ae9fd3d4c9d52fe1e296aee9cb0de8"
+}

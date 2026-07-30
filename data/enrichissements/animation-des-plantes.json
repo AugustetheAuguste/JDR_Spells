@@ -1,0 +1,35 @@
+{
+  "id": "animation-des-plantes",
+  "resume_court": "Le lanceur anime des plantes pour les faire attaquer ses ennemis ou enchevêtrer des créatures.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "transformation_du_sujet",
+    "plusieurs_cibles",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevêtrer les créatures situées dans la zone d'effet"
+    ],
+    "cible_typique": "toutes les plantes situées à portée"
+  },
+  "notes_ambiguite": "Le sort peut servir à attaquer (via les plantes animées) ou à enchevêtrer. La condition retenue est celle de l'option alternative explicite. Les dégâts des plantes animées ne sont pas détaillés dans le texte fourni, donc type_degats reste null.",
+  "slug": "animation-des-plantes",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:31+00:00",
+  "hash_source": "bb0fefcbb0eee5c448041aabb784c3a0b3b50f2008d349c6507874ffa34e6d8e"
+}

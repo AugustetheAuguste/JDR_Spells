@@ -1,0 +1,29 @@
+{
+  "id": "fletrissement-vegetal",
+  "resume_court": "Flétrit une plante ou inflige des dégâts de nécromancie à une créature végétale.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "negatif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau",
+    "condition_infligee": [],
+    "cible_typique": "plante touchée"
+  },
+  "notes_ambiguite": "Le sort affecte deux types de cibles : les créatures végétales (qui subissent des dégâts) et les plantes normales (qui meurent). La cible_typique « objet » reflète que les plantes normales ne sont pas des créatures vivantes au sens des règles. Les dégâts infligés aux créatures végétales relèvent de la nécromancie (énergie négative), d'où le type_degats « negatif ».",
+  "slug": "fletrissement-vegetal",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:12+00:00",
+  "hash_source": "1d23d977c9fc4de958346fa1565cc4011ec2a7dd2cbd9e0ddf19de7814570bd8"
+}

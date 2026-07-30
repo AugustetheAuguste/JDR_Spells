@@ -1,0 +1,36 @@
+{
+  "id": "sceau-du-serpent",
+  "resume_court": "Un symbole magique piégé dans un texte qui invoque un serpent ambre immobilisant le lecteur.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "entrave_ou_immobilisation",
+    "detection_ou_revelation",
+    "objet_ou_equipement"
+  ],
+  "roles_tactiques": [
+    "utilitaire",
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle se retrouve prisonnière d'une bulle scintillante de couleur ambrée qui l'immobilise pendant 1d4 jours, +1 jour par niveau du lanceur de sorts"
+    ],
+    "cible_typique": "livre ou texte touché"
+  },
+  "notes_ambiguite": "Le sort immobilise la cible dans une bulle de stase plutôt que de la paralyser au sens strict, mais l'effet s'en rapproche : la victime ne peut pas agir. Le tag `paralyse` est le plus proche de l'immobilisation prolongée décrite, bien que le texte ne nomme pas explicitement cette condition. L'invocation crée un serpent qui frappe, mais l'effet principal est l'emprisonnement dans le champ de force.",
+  "slug": "sceau-du-serpent",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:28+00:00",
+  "hash_source": "6bb590fc9d2853debbd4f97f6edd0815cda845d00dfe59125e5c6d2b090856d7"
+}

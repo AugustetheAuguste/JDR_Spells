@@ -1,0 +1,30 @@
+{
+  "id": "arme-desesperee",
+  "resume_court": "Le lanceur crée une arme improvisée à une main qui inflige 1d6 dégâts et disparaît s'il la lâche.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "arme_ou_munition",
+    "duree_prolongee",
+    "objet_ou_equipement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "L'objet inflige des dégâts du type choisi (contondant, perforant ou tranchant)",
+    "condition_infligee": [],
+    "cible_typique": "une arme improvisée à une main"
+  },
+  "notes_ambiguite": "Le type de dégâts est variable (contondant, perforant ou tranchant au choix du lanceur), ce qui ne correspond à aucune valeur unique de la liste type_degats. La valeur « autre » est retenue car le sort ne produit pas un type énergétique élémentaire unique, mais plutôt un type d'arme mécanique choisi.",
+  "slug": "arme-desesperee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:05+00:00",
+  "hash_source": "df76a5966c0ad695633705a9d25890ca9670a693044f3c108cbd4b362a7c9e3a"
+}

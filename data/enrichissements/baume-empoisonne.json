@@ -1,0 +1,35 @@
+{
+  "id": "baume-empoisonne",
+  "resume_court": "Le lanceur soigne une créature mais y insinue un poison qu'il peut activer pour l'affaiblir.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "charme_ou_coercition",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la victime subit 1d3 points d'affaiblissement temporaire de Force par round pendant 6 rounds"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort soigne d'abord (catégorie soin), mais son effet principal est une coercition déguisée : le lanceur contrôle l'activation du poison. L'affaiblissement de Force n'est pas une condition stricte (aveugle, étourdi, etc.) mais un malus de capacité ; j'ai retenu « ralenti » comme la condition la plus proche, bien que le texte ne nomme pas explicitement une condition standard. Le sort pourrait aussi être classé en affaiblissement, mais le soin prime dans la structure du sort.",
+  "slug": "baume-empoisonne",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:46+00:00",
+  "hash_source": "d999b7e996cd3155381b47ac9a5035b3fd6914de01dac8d894bd6ed8a1c06a4f"
+}

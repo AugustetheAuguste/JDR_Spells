@@ -1,0 +1,36 @@
+{
+  "id": "arc-en-ciel-embrase",
+  "resume_court": "Crée un arc de lumière traçant des flèches éblouissantes ou un pont lumineux tactique.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "bonus_chiffre",
+    "malus_chiffre",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "éblouie pendant 1 minute",
+      "Les créatures situées sur le pont sont éblouies"
+    ],
+    "cible_typique": "un arc ou un pont de lumière"
+  },
+  "notes_ambiguite": "Le sort offre deux modes distincts (arc ou pont) avec des effets différents. L'arc génère des flèches traçantes infligeant l'éblouissement ; le pont crée une zone de contrôle avec bonus/malus tactiques et éblouissement. Classé en invocation car le sort crée une structure de lumière solide multicolore. Les deux modes infligent l'éblouissement, d'où une seule condition retenue avec deux preuves distinctes.",
+  "slug": "arc-en-ciel-embrase",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:01+00:00",
+  "hash_source": "d73e2aefa798363c24c4e197d9df8656bc9f45c9098d53d101600099d1bc7927"
+}

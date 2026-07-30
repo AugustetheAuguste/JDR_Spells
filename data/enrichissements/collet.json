@@ -1,0 +1,34 @@
+{
+  "id": "collet",
+  "resume_court": "Crée un piège magique qui capture une créature et peut l'élever ou l'immobiliser.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "duree_prolongee",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts",
+    "condition_infligee": [
+      "le nœud coulant se referme juste sur sa proie, qu'il immobilise"
+    ],
+    "cible_typique": "cercle de corde, liane ou ficelle non-magique de 60 cm de diamètre + 60 cm/niveau"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts contondants uniquement si un arbre est attaché au collet ; sinon, il n'y a que l'immobilisation. J'ai retenu les dégâts car le texte les mentionne explicitement comme effet possible du sort, bien que conditionnel.",
+  "slug": "collet",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:05+00:00",
+  "hash_source": "953cc550a682ad02c92739a47168ae04066c42ef077c3b0e9e0d2f676e8650de"
+}

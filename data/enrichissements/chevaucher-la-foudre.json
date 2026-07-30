@@ -1,0 +1,36 @@
+{
+  "id": "chevaucher-la-foudre",
+  "resume_court": "Le lanceur se transforme en éclair et se déplace en ligne droite, blessant les créatures sur son passage.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "degats_directs",
+    "transformation_du_sujet",
+    "deplacement_ou_teleportation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "immunite_ou_resistance_element"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "electricite",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "10d6 points de dégâts électriques",
+    "condition_infligee": [
+      "sont chancelantes pendant 1 round"
+    ],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": null,
+  "slug": "chevaucher-la-foudre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:53+00:00",
+  "hash_source": "3ead3c15b4d2b2f9dd974c64ce06be69864c21f420b4f9cb607c914f123863a1"
+}

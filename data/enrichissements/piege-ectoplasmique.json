@@ -1,0 +1,35 @@
+{
+  "id": "piege-ectoplasmique",
+  "resume_court": "Un tentacule ectoplasmique agrippe une créature à distance et l'enchevêtre ou l'immobilise.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "attaque_de_contact",
+    "entrave_ou_immobilisation",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1d6+4 points de dégâts contondants",
+    "condition_infligee": [
+      "elle est enchevêtrée pour toute la durée du sort"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts contondants uniquement si la cible échoue son jet de sauvegarde ; en cas de réussite, elle est enchevêtrée sans dégâts. Les dégâts sont secondaires à l'effet principal d'entrave, mais présents dans le texte.",
+  "slug": "piege-ectoplasmique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:05+00:00",
+  "hash_source": "aae3818523d86df45e0b8ee7709158c9d934b9464f9fe86866dc26c2997c0bc7"
+}

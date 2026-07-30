@@ -1,0 +1,8 @@
+{
+  "id": "instrument-d-agonie",
+  "raison": "schéma : condition_infligee/0 — 'nauseeux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "2b2cecbb2dfdea10b8f5b3595267835a64738f1e645a094aa9fb7da81b9ecf0b",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"instrument-d-agonie\",\n  \"resume_court\": \"Une arme imbue d'une aura divine qui renforce l'intimidation et peut rendre la cible nauséeuse ou fiévreuse.\",\n  \"categorie_principale\": \"amelioration\",\n  \"tags\": [\n    \"arme_ou_munition\",\n    \"bonus_chiffre\",\n    \"duree_prolongee\",\n    \"jet_de_sauvegarde\",\n    \"effet_mental\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"social\"\n  ],\n  \"cible_typique\": \"objet\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"nauseeux\",\n    \"fievereux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est nauséeuse pendant 1d4+1 round\",\n      \"elle est juste fiévreuse pour 1 round\"\n    ],\n    \"cible_typique\": \"arme touchée\"\n  },\n  \"notes_ambiguite\": \"Le texte mentionne « fiévreuse » mais la liste des conditions n'offre que « fievereux » (sans accent). J'ai retenu cette dernière comme la plus proche. Le sort affecte une arme (objet) mais ses effets bénéfiques s'appliquent au manieur (créature) ; la cible typique reste l'objet car c'est ce que le sort imprègne directement.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:35+00:00"
+}

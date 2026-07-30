@@ -1,0 +1,34 @@
+{
+  "id": "symbole-de-terreur",
+  "resume_court": "Une rune magique qui panique les créatures dans un rayon de 18 m pendant plusieurs rounds.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "effraye"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "les créatures situées dans un rayon de 18 m de la rune sont paniquées pendant 1 round par niveau de lanceur de sorts"
+    ],
+    "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+  },
+  "notes_ambiguite": "Le texte emploie « paniquées » plutôt que « effrayées » ; j'ai retenu « effraye » comme la condition la plus proche dans la liste, car la panique est un degré supérieur de peur en Pathfinder.",
+  "slug": "symbole-de-terreur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:12+00:00",
+  "hash_source": "363bf8cc546c31d72c3b03f5f855d42359ee5153dd26cc68841b7abf086e7075"
+}

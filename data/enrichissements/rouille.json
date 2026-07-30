@@ -1,0 +1,31 @@
+{
+  "id": "rouille",
+  "resume_court": "Le lanceur rouille le métal ferreux au contact, détruisant objets et armures ou blessant les créatures ferreuses.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "transformation_du_sujet",
+    "degats_directs",
+    "duree_prolongee",
+    "objet_ou_equipement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts, +1 par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "1 objet ferreux non-magique (ou une partie seulement, jusqu'à 90 cm du point de contact) ou 1 créature ferreuse"
+  },
+  "notes_ambiguite": "Le sort affecte principalement des objets (armures, armes, structures métalliques) mais peut aussi cibler des créatures ferreuses. La cible_typique « objet » reflète l'usage principal, bien que le sort puisse viser des créatures. Les dégâts sont classés « autre » car ils résultent de l'oxydation du métal, sans correspondre à un type énergétique élémentaire standard.",
+  "slug": "rouille",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:09+00:00",
+  "hash_source": "aadc5bacc6dd6e91cf9a8e8b6a6151de141d5b0cbae73f51ec8af4ac43ff49f5"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "symbole-fatal",
+  "resume_court": "Un symbole magique qui se manifeste en créature d'ombre armée et attaque les intrus pendant 10 minutes.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "resistance_a_la_magie",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "il gagne un bonus aux dégâts égal au modificateur de la valeur de caractéristique utilisée pour déterminer le BBA",
+    "condition_infligee": [],
+    "cible_typique": "il dessine le symbole fatal dans une case de 1,50 m de côté"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de dégâts d'arme infligés par une créature d'ombre. Classé en 'autre' faute de précision. La cible est une zone (le symbole menace sa case et la zone qui l'entoure), bien que le sort affecte les créatures qui y entrent.",
+  "slug": "symbole-fatal",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:14+00:00",
+  "hash_source": "70b834b8171cde6f794fe779809c25c7b60b8169320d310fa9bafef33f8f9982"
+}

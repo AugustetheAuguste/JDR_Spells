@@ -1,0 +1,34 @@
+{
+  "id": "appel-du-neant",
+  "resume_court": "Le lanceur crée une zone de vide autour de lui qui blesse et fatigue les créatures adjacentes.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts",
+    "condition_infligee": [
+      "elles sont fatiguées"
+    ],
+    "cible_typique": "Les créatures adjacentes au moment du lancer du sort et au début de chaque tour"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts sans type énergétique nommé (feu, froid, etc.), classés comme « autre ». La fatigue correspond à la condition « chancelant » (une seule action par round). Les restrictions respiratoires et verbales sont des effets d'entrave mais ne correspondent pas à une condition listée distincte.",
+  "slug": "appel-du-neant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:10:56+00:00",
+  "hash_source": "c4810da9915c5b58d8cc66de9deddd34ba8dd2fdbb7e57ef6d8fbbdee8a2d932"
+}

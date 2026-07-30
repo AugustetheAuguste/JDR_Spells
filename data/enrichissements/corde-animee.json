@@ -1,0 +1,34 @@
+{
+  "id": "corde-animee",
+  "resume_court": "Anime une corde pour l'enrouler, la nouer ou entraver une créature à proximité.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "entrave_ou_immobilisation",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est possible de s'en servir pour faire tomber une créature ou d'entortiller la corde autour de ses jambes"
+    ],
+    "cible_typique": "1 corde (ou objet assimilé)"
+  },
+  "notes_ambiguite": "Le sort anime un objet (corde) plutôt que d'invoquer une créature au sens strict, mais l'effet relève de l'invocation par sa nature. La condition « enchevêtré » est justifiée par l'entortillement possible autour des jambes, bien que le texte ne nomme pas explicitement cette condition ; elle est la plus proche de l'effet décrit.",
+  "slug": "corde-animee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:48+00:00",
+  "hash_source": "27bbe84ffa26ad1302ffb94df57eb96e5b0ab993295d72b4eeeb5b5da412de4b"
+}

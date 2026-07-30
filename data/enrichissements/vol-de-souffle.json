@@ -1,0 +1,34 @@
+{
+  "id": "vol-de-souffle",
+  "resume_court": "Le lanceur extrait l'air des poumons d'une créature, lui infligeant des dégâts et l'empêchant de parler ou de respirer.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "entrave_ou_immobilisation",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts",
+    "condition_infligee": [
+      "ne peut plus parler, utiliser ses armes de souffle ou faire quoi que ce soit nécessitant qu'elle respire"
+    ],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Les dégâts ne correspondent à aucun type énergétique nommé (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision) : ils résultent de l'asphyxie. Le type est donc « autre ». La condition infligée est complexe (incapacité à parler, à utiliser les armes de souffle, à respirer) : elle s'apparente à une entrave fonctionnelle plutôt qu'à une condition nommée unique de la liste. « Assourdi » est le plus proche car il représente une perte sensorielle/fonctionnelle, bien que le texte ne mentionne pas explicitement la surdité. Alternativement, aucune condition nommée ne s'applique parfaitement, mais l'effet est clairement une restriction majeure.",
+  "slug": "vol-de-souffle",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:25+00:00",
+  "hash_source": "2c28d2487537f2ca7fbc60fa8378616439f29bf5d42fd466d64a673b114f8b73"
+}

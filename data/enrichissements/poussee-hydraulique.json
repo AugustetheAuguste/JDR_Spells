@@ -1,0 +1,29 @@
+{
+  "id": "poussee-hydraulique",
+  "resume_court": "Un jet d'eau qui bousculer une créature ou un objet et éteint les feux ordinaires.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "zone_d_effet",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "Le BMO de cette bousculade",
+    "condition_infligee": [],
+    "cible_typique": "une créature ou un objet"
+  },
+  "notes_ambiguite": "Le sort inflige une bousculade (manœuvre de combat) plutôt que des dégâts directs, mais la mécanique du BMO s'apparente à un jet d'attaque avec effet de force. La catégorie « attaque_directe » est retenue car le sort produit un effet physique direct (jet d'eau) qui affecte une cible désignée. Le type de dégâts est classé comme « force » car la bousculade relève de la force brute sans type énergétique élémentaire, bien que le descripteur soit « eau ».",
+  "slug": "poussee-hydraulique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:22:47+00:00",
+  "hash_source": "2e857694ebe211ae0070f8bea37744377ffcbde76ea83aa9073a85ffbcb57e87"
+}

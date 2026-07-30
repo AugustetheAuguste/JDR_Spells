@@ -1,0 +1,36 @@
+{
+  "id": "sables-changeants",
+  "resume_court": "Une zone de sable mouvant qui entrave les créatures et les déplace à volonté du lanceur.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "se retrouver enchevêtrées jusqu'au début du tour suivant"
+    ],
+    "cible_typique": "étendue de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "sables-changeants",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:16+00:00",
+  "hash_source": "fe7558bf0b3d35d07c0db028cc7124b3447cdeec80468b3163c8bd484bfb2f27"
+}

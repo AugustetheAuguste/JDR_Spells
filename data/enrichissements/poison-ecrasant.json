@@ -1,0 +1,28 @@
+{
+  "id": "poison-ecrasant",
+  "resume_court": "Augmente la virulence d'un poison, rendant plus difficile sa neutralisation et augmentant son DD.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "affaiblissement_de_capacite",
+    "duree_prolongee",
+    "objet_ou_equipement"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature ou une dose de poison"
+  },
+  "notes_ambiguite": "Le sort cible techniquement une dose de poison (objet) ou une créature affectée par un poison. La cible typique est classée comme « objet » car l'effet principal porte sur la dose de poison elle-même, bien que le sort puisse être lancé sur une créature. Le sort n'inflige pas directement de dégâts ou de conditions : il modifie les propriétés d'un poison existant.",
+  "slug": "poison-ecrasant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:18+00:00",
+  "hash_source": "0974a1e78b563cb16116004d869cdcd97a7d39445e93828dfb97d2bd0286de38"
+}

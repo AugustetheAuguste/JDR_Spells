@@ -1,0 +1,34 @@
+{
+  "id": "courroux-de-l-ordre",
+  "resume_court": "Une grille d'énergie qui châtie les créatures Chaotiques et Neutres dans une zone, les hébétant et les blessant.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "force",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts tous les deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "Le sort hébète les créatures Chaotiques pendant 1 round"
+    ],
+    "cible_typique": "toutes les créatures non-Loyales qui se trouvent dans un cube de 9 m (6 c) de côté"
+  },
+  "notes_ambiguite": "Le texte nomme « hébétement » l'effet infligé aux créatures Chaotiques. En Pathfinder, « hébété » correspond à la condition « étourdi » (perte d'actions et défense dégradée). Les créatures Neutres ne subissent que des dégâts réduits, sans condition. Le type de dégâts n'est pas explicitement nommé ; « grille d'énergie » et le contexte d'Évocation suggèrent la force.",
+  "slug": "courroux-de-l-ordre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:59+00:00",
+  "hash_source": "4261b2e74b3f0e8caca1ec7cbcd7bddc9e380da1c7675f7d366edbe755eac2c8"
+}

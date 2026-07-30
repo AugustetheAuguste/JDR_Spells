@@ -1,0 +1,33 @@
+{
+  "id": "dragon-d-artifice",
+  "resume_court": "Des feux d'artifice en forme de dragons qui explosent à distance, infligeant des dégâts de feu et éblouissant.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": "1d4 points de dégâts de feu",
+    "condition_infligee": [
+      "sont éblouies pendant 1 round"
+    ],
+    "cible_typique": "une case de 1,50 mètre situé à portée"
+  },
+  "notes_ambiguite": null,
+  "slug": "dragon-d-artifice",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:00+00:00",
+  "hash_source": "a78fb4c31609d6ea1368766f3e7cd911a52fae73fa56becae0414f0c72eb2085"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "estoc-sonore",
+  "resume_court": "Une vague sonore repousse créatures et objets loin du lanceur, ou les projette vers une cible.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "invocation_ou_creation",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "elle reçoit les mêmes dégâts que si elle était tombée de 3 mètres (1d6)",
+    "condition_infligee": [],
+    "cible_typique": "Le personnage produit une vague sonore qui emporte les créatures et les objets loin de lui"
+  },
+  "notes_ambiguite": "Le sort peut fonctionner en repousse de zone ou en projectile ciblé. Les dégâts de chute (contondant) ne s'appliquent que si la créature heurte une surface solide. Le type de dégâts des objets projetés varie (1 à 1d6 par 10 kg), mais le texte ne précise pas le type énergétique : j'ai retenu contondant comme le plus probable pour des objets lancés.",
+  "slug": "estoc-sonore",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:42+00:00",
+  "hash_source": "f2f634b3fa7b1a6050010f4471ef04c6ac123597f74f0e87b8592893b1749244"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "mur-de-nausees",
+  "resume_court": "Un mur transparent qui nausée les créatures le traversant et les rend chancelantes.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "illusion_visuelle_ou_sonore",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "se retrouve nauséeuse pendant 1 round à moins de réussir un jet de Vigueur. Si elle est nauséeuse, la créature doit également réussir un test d'Acrobaties DD 12 pour ne pas tomber à terre"
+    ],
+    "cible_typique": "mur transparent couvrant une zone maximale d'une case de 3 m de côté /niveau"
+  },
+  "notes_ambiguite": "La nausée n'est pas une condition listée ; j'ai retenu « chancelant » car le texte indique que la créature nauséeuse doit réussir un test pour ne pas tomber, ce qui correspond à une perte d'actions et de mobilité. L'effet mental est présent mais le sort relève d'une illusion visuelle (mirage) qui produit un effet comportemental.",
+  "slug": "mur-de-nausees",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:15+00:00",
+  "hash_source": "450c1062e5042fb38b62b3c8317294040ed01e0aab68eff4d20780d853d539d1"
+}

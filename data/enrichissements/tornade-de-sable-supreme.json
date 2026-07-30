@@ -1,0 +1,35 @@
+{
+  "id": "tornade-de-sable-supreme",
+  "resume_court": "Une tornade de sable couvre une zone de 3 m de rayon et aveugle les créatures qui s'y trouvent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "invocation_ou_creation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "jet_de_sauvegarde: Volonté, annule (cécité uniquement)"
+    ],
+    "cible_typique": "cible: étendue de 3 m de rayon"
+  },
+  "notes_ambiguite": "Le texte renvoie au sort « tornade de sable » pour les détails d'effet. La cécité est déduite du jet de sauvegarde qui l'annule. Aucun dégât direct n'est mentionné dans ce texte.",
+  "slug": "tornade-de-sable-supreme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:33+00:00",
+  "hash_source": "64c04aa1d6c9ba1a58eb83d68cf4e34febbd1a496fe4f244fabf63a4c031a07a"
+}

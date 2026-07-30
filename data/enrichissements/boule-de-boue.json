@@ -1,0 +1,33 @@
+{
+  "id": "boule-de-boue",
+  "resume_court": "Le lanceur projette une boule de boue gluante qui aveugle l'ennemi touché.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "invocation_ou_creation",
+    "attaque_de_contact",
+    "degats_directs",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "une unique boule de boue gluante",
+    "condition_infligee": [
+      "la cible est aveuglée"
+    ],
+    "cible_typique": "la lance au visage d'un ennemi"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme « autre » car la boue elle-même n'inflige pas de dégâts numériques : l'effet principal est l'aveuglement. La boule est une création matérielle (terre) lancée comme projectile.",
+  "slug": "boule-de-boue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:07+00:00",
+  "hash_source": "27d6b800b432e9b06c6640889915dcadf6c31dba5b5d2435a4bffea3c86d38d8"
+}

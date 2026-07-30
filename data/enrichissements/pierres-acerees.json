@@ -1,0 +1,36 @@
+{
+  "id": "pierres-acerees",
+  "resume_court": "Le terrain se hérisse de pointes invisibles qui blessent et ralentissent les créatures qui le traversent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts",
+    "condition_infligee": [
+      "réduit sa vitesse de déplacement de moitié pendant vingt-quatre heures"
+    ],
+    "cible_typique": "1 carré de 6 m de côté/niveau"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de blessures physiques causées par des pointes, classées comme « autre ». La condition « ralenti » s'applique en cas d'échec au jet de Réflexes ; le ralentissement immédiat lors de la traversée (vitesse réduite de moitié) est un effet mécanique du terrain plutôt qu'une condition au sens strict.",
+  "slug": "pierres-acerees",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:08+00:00",
+  "hash_source": "95f6d6b99008ec7e444bf2263ea8d6d3f9825648bfa4a6c71cd1d99d7e6a8662"
+}

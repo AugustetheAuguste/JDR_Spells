@@ -1,0 +1,35 @@
+{
+  "id": "infestation-de-vers",
+  "resume_court": "Un contact qui infeste la victime de vers affamés, infligeant dégâts et affaiblissement de Dextérité chaque round.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "invocation_ou_creation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts",
+    "condition_infligee": [
+      "Elle est chancelante pendant 1 round"
+    ],
+    "cible_typique": "une créature touchée"
+  },
+  "notes_ambiguite": "Le texte mentionne « fiévreuse » en cas de sauvegarde réussie, mais cette condition n'existe pas dans la liste fermée. Les dégâts proviennent de vers (invocation), non d'un type énergétique élémentaire, d'où « autre ». L'affaiblissement de Dextérité est capturé par le tag « affaiblissement_de_capacite » plutôt que par une condition infligée.",
+  "slug": "infestation-de-vers",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:29+00:00",
+  "hash_source": "e73a90605e9eb40e10490d061bf8692cb7a3bd91f140326b3a48b11277209d17"
+}

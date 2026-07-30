@@ -1,0 +1,29 @@
+{
+  "id": "arme-de-glace-maudite",
+  "resume_court": "Crée une arme de maître de glace qui inflige des dégâts de froid et d'eau maudite.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "arme_ou_munition",
+    "degats_directs",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "froid",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1 point de dégâts de froid par niveau de lanceur",
+    "condition_infligee": [],
+    "cible_typique": "une arme de glace"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts d'eau maudite (1d4), mais ce type n'est pas dans la liste fermée ; seul le froid y figure explicitement. L'arme crée est l'objet principal du sort, justifiant la cible_typique « objet ».",
+  "slug": "arme-de-glace-maudite",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:04+00:00",
+  "hash_source": "2ff1f2e801f5781ddd4ec9b8566cb054bfd4c7ba5671649f0870866af1cfa12f"
+}

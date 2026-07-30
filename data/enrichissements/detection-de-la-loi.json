@@ -1,0 +1,34 @@
+{
+  "id": "detection-de-la-loi",
+  "resume_court": "Le lanceur détecte les auras loyales dans un cône et en apprend progressivement la présence, le nombre et l'intensité.",
+  "categorie_principale": "divination",
+  "tags": [
+    "divination_information",
+    "zone_d_effet",
+    "detection_ou_revelation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est étourdi pendant 1 round"
+    ],
+    "cible_typique": "cible: émanation en forme de cône"
+  },
+  "notes_ambiguite": "La condition d'étourdissement ne s'applique que dans un cas très spécifique (lanceur chaotique face à une aura surpuissante d'une créature avec DV ≥ 2× niveau du personnage), mais elle est explicitement mentionnée dans le texte comme un effet possible du sort.",
+  "slug": "detection-de-la-loi",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:36+00:00",
+  "hash_source": "9cf0d2fd3942d483ea9b4844919970a855c4fb0f35b5f550907328210a2ef7ae"
+}

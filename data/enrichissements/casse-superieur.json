@@ -1,0 +1,31 @@
+{
+  "id": "casse-superieur",
+  "resume_court": "Une explosion d'énergie destructrice brise ou détruit les objets de taille M ou inférieure dans un rayon de 9 m.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "objet_ou_equipement",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "tous les objets de taille M ou inférieure dans un rayonnement de 9 m autour du lanceur"
+  },
+  "notes_ambiguite": "Le sort n'inflige pas de dégâts directs au sens classique, mais détruit des objets. La catégorie « controle_de_zone » s'applique car l'effet couvre une étendue et modifie ce qui s'y trouve (les objets). Les objets brisés ou détruits ne constituent pas une « condition » au sens des états de créature (aveugle, paralysé, etc.), donc condition_infligee reste vide.",
+  "slug": "casse-superieur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:34+00:00",
+  "hash_source": "3cc5578d494cb33a914544f7362a30f57ab201fa44bfcbab98337873e1930175"
+}

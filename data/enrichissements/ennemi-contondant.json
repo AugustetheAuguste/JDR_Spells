@@ -1,0 +1,34 @@
+{
+  "id": "ennemi-contondant",
+  "resume_court": "Le lanceur saisit une créature par télékinésie et la projette contre d'autres cibles pour les blesser.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "des dégâts basés sur la taille de la créature",
+    "condition_infligee": [
+      "elle perd toutes ses actions du round et finit son tour par terre"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme contondant car la créature est utilisée pour « marteler » les adversaires. La condition infligée correspond à « chancelant » (perte d'actions) plutôt qu'à « étourdi » car le texte ne mentionne pas une dégradation de défense, seulement la perte d'actions et la chute au sol.",
+  "slug": "ennemi-contondant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:24+00:00",
+  "hash_source": "b2fd2a38fc2539df7033253cafd662f906215d8565f0cc0c6c3edb21b7c636f3"
+}

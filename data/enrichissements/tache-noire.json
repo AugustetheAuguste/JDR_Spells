@@ -1,0 +1,33 @@
+{
+  "id": "tache-noire",
+  "resume_court": "Le lanceur marque une créature d'une tache noire qui la rend secouée sur l'eau et hostile aux créatures aquatiques.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "malus_chiffre",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la victime est secouée dès qu'elle se trouve sur l'eau ou dans l'eau"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige une malédiction permanente avec plusieurs effets : la condition « secouée » est explicitement nommée, mais le sort produit aussi un effet d'hostilité des créatures aquatiques (« exilé par la nature »). Seule la condition « secouée » figure dans la liste fermée des conditions infligeables. L'effet d'hostilité relève plutôt d'une modification comportementale sans condition standard applicable.",
+  "slug": "tache-noire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:14+00:00",
+  "hash_source": "f62dbbedc8ff5529ebb0d12800d495bcc58e8194de26cc7bd90b93112c74dca9"
+}

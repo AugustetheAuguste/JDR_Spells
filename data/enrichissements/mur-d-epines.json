@@ -1,0 +1,32 @@
+{
+  "id": "mur-d-epines",
+  "resume_court": "Crée une barrière de buissons épineux qui blesse ceux qui la traversent et entrave leur progression.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "degats_directs",
+    "entrave_ou_immobilisation",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "perd 25 points de vie par round de déplacement",
+    "condition_infligee": [],
+    "cible_typique": "mur de buissons épineux constitué de 1 cube de 3 m (2 c) d'arête/niveau (F)"
+  },
+  "notes_ambiguite": "Les dégâts ne correspondent à aucun type énergétique élémentaire nommé (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision) : ils résultent de blessures par épines, d'où le type « autre ». La condition « chancelant » aurait pu s'appliquer (« la progression est très lente »), mais le texte ne la nomme pas explicitement et décrit plutôt une mécanique de déplacement ralenti sans réduire les actions à une seule par round.",
+  "slug": "mur-d-epines",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:12+00:00",
+  "hash_source": "30939dac4c3bd15bb5f485a7bf9b78266ea4748b439b7e3947d92355283d332b"
+}

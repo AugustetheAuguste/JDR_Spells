@@ -1,0 +1,33 @@
+{
+  "id": "grandes-illuminations",
+  "resume_court": "Un éclair de lumière éblouit toutes les créatures dans un rayon de 3 mètres.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Ce sort fonctionne comme illumination mais il affecte toutes les créatures"
+    ],
+    "cible_typique": "rayonnement de lumière de 3 m (2 c) de rayon"
+  },
+  "notes_ambiguite": "Le texte renvoie à « illumination » sans en donner les détails. L'éblouissement est déduit du nom et du descripteur « lumière », et du fonctionnement du sort de base. Aucun dégât chiffré n'est mentionné, donc type_degats est null.",
+  "slug": "grandes-illuminations",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:58+00:00",
+  "hash_source": "96fc1883a273e78177c436173cc0c46ebc13273759a5853d238806d51ea5e7ab"
+}

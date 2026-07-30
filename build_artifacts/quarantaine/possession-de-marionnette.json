@@ -1,0 +1,8 @@
+{
+  "id": "possession-de-marionnette",
+  "raison": "schéma : categorie_principale — 'transformation_du_sujet' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "3fd385931820a25f493a54086ef26a2567aac7d2a1690b81e1618428b41a5254",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"possession-de-marionnette\",\n  \"resume_court\": \"Le lanceur projette son âme dans le corps consentant d'une créature pour le contrôler.\",\n  \"categorie_principale\": \"transformation_du_sujet\",\n  \"tags\": [\n    \"transformation_du_sujet\",\n    \"duree_prolongee\",\n    \"jet_de_sauvegarde\",\n    \"resistance_a_la_magie\",\n    \"effet_mental\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"allie\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"une créature consentante\"\n  },\n  \"notes_ambiguite\": \"La cible est consentante, donc classée comme allie. Le sort transforme le sujet en le possédant, ce qui justifie la catégorie transformation_du_sujet plutôt que controle_de_zone ou entrave. Aucune condition infligée au sens strict (aveugle, étourdi, etc.) n'est mentionnée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:43+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "message-suggestif-de-groupe",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "2cc5900eca2516b81f8b06e02a34c2503bcb0c1a58d8f45ea938436cc8159262",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"message-suggestif-de-groupe\",\n  \"resume_court\": \"Le lanceur émet une suggestion à plusieurs créatures, une par action simple, chacune pouvant être différente.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"plusieurs_cibles\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"social\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature/niveau\"\n  },\n  \"notes_ambiguite\": \"Le texte ne précise pas la nature exacte de la suggestion ni ses effets mécaniques (elle n'est pas nommée comme une condition infligée au sens strict). La catégorie principale est `charme_ou_coercition` car le sort contraint le comportement des cibles par suggestion, bien que techniquement ce soit un tag ; cependant, aucune autre catégorie ne convient mieux, et le sort n'inflige pas de dégâts directs ni ne relève d'une autre catégorie fermée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:38+00:00"
+}

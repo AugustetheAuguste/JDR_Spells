@@ -1,0 +1,35 @@
+{
+  "id": "cri-supreme",
+  "resume_court": "Un cône de son dévastateur qui blesse, étourdit et assourdit les créatures dans sa zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "etourdi",
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts de son",
+    "condition_infligee": [
+      "il étourdit les créatures pendant 1 round",
+      "les assourdit pendant 4d6 rounds"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": null,
+  "slug": "cri-supreme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:09+00:00",
+  "hash_source": "6f3e4491aeb2960e26bc90ef6e24a65129ed786bacbfaeecb024585ad0035a79"
+}

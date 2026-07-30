@@ -1,0 +1,29 @@
+{
+  "id": "implosion",
+  "resume_court": "Le lanceur inflige des dégâts de force à une créature par round en la faisant imploser.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "10 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "1 créature tangible/round"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. « Implosion » et « s'effondrer sur elles-mêmes » suggèrent des dégâts de force (énergie cinétique destructrice) plutôt qu'un type énergétique élémentaire. Aucune autre valeur de type_degats ne convient mieux.",
+  "slug": "implosion",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:26+00:00",
+  "hash_source": "da5f05fab2d54617792636fa195ad605167cbaa6253641e21520b71db00f67af"
+}

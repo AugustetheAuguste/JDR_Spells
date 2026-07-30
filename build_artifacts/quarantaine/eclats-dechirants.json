@@ -1,0 +1,8 @@
+{
+  "id": "eclats-dechirants",
+  "raison": "schéma : categorie_principale — 'arme_ou_munition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "587ed5f69de61bdc05fbdb99dffc8a3fdc5d4360311c584164906f54bd2154f7",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"eclats-dechirants\",\n  \"resume_court\": \"Une arme de corps à corps explose les objets détruits en éclats acérés qui blessent les créatures proches.\",\n  \"categorie_principale\": \"arme_ou_munition\",\n  \"tags\": [\n    \"degats_directs\",\n    \"arme_ou_munition\",\n    \"jet_de_sauvegarde\",\n    \"zone_d_effet\",\n    \"transformation_du_sujet\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"objet\",\n  \"type_degats\": \"perforant\",\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": \"points de dégâts perforants et tranchants\",\n    \"condition_infligee\": [],\n    \"cible_typique\": \"l'arme de corps à corps touchée\"\n  },\n  \"notes_ambiguite\": \"Le sort affecte une arme (objet), mais ses dégâts se manifestent sur des créatures adjacentes lors de la destruction d'un objet. Le type_degats retenu est 'perforant' car c'est le premier énuméré dans la description des dégâts, bien que le texte mentionne aussi 'tranchants'. La liste ne propose pas de type combiné, et 'perforant' est le plus pertinent pour des éclats acérés.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:23+00:00"
+}

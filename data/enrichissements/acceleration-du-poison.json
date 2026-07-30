@@ -1,0 +1,29 @@
+{
+  "id": "acceleration-du-poison",
+  "resume_court": "Accélère l'effet d'un poison existant ou double sa fréquence et ses dégâts.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "transformation_du_sujet",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts via le poison accéléré (« inflige le double de dégâts par round ou minute »), mais le type de dégâts dépend du poison affecté, qui n'est pas spécifié dans le texte du sort lui-même. type_degats reste null car le texte ne nomme aucun type de dégâts intrinsèque au sort.",
+  "slug": "acceleration-du-poison",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:07+00:00",
+  "hash_source": "307651c51c1b80d49bee69528c5b8c351b66ba651c7d29055cd9853d6d1ced20"
+}

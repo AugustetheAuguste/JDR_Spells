@@ -1,0 +1,8 @@
+{
+  "id": "accoutrement-honteux",
+  "raison": "schéma : condition_infligee/0 — 'fiévreuse' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "76eb598613fad7dc1d2b6a3d43f065b716746cae04eb806e625d2137c4d66db2",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"accoutrement-honteux\",\n  \"resume_court\": \"La cible est forcée de retirer ses vêtements et objets, un par round, et devient fiévreuse si elle les touche.\",\n  \"categorie_principale\": \"entrave\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"entrave_ou_immobilisation\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"fiévreuse\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"la cible est fiévreuse pendant 1d3 rounds\"\n    ],\n    \"cible_typique\": \"créature touchée\"\n  },\n  \"notes_ambiguite\": \"Le sort inflige une condition (fiévreuse) seulement si la cible est forcée à toucher les objets abandonnés, ce qui n'est pas garanti. Cependant, l'effet principal est l'entrave : la cible dépense une action de mouvement chaque round pour retirer un objet, ce qui restreint ses actions.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:09+00:00"
+}

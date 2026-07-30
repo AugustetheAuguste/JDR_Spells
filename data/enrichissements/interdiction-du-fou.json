@@ -1,0 +1,35 @@
+{
+  "id": "interdiction-du-fou",
+  "resume_court": "Une zone protégée qui confond les ennemis qui y entrent ou les rend chancelants.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus",
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est confus tant qu'il se trouve dans la zone d'effet et pendant 1 round après l'avoir quittée",
+      "il est chancelant tant qu'il reste dans la zone et pendant 1 round après l'avoir quittée"
+    ],
+    "cible_typique": "émanation sphérique de 3 m (2 c) de rayon centrée sur le lanceur de sorts"
+  },
+  "notes_ambiguite": null,
+  "slug": "interdiction-du-fou",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:37+00:00",
+  "hash_source": "bfa1c35bcfa71d9ca58b41354225c91b4b696bc8a57070e2edbfb4b4a6a5e5ff"
+}

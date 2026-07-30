@@ -1,0 +1,33 @@
+{
+  "id": "anneau-scinde",
+  "resume_court": "Un serpent décapité surgit du sol et agrippe une créature désignée par le lanceur.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "agrippe une créature"
+    ],
+    "cible_typique": "une case de 1,5 m de côté"
+  },
+  "notes_ambiguite": "Le texte dit « agrippe » plutôt qu'« enchevêtre » explicitement, mais l'agrippement correspond à la condition d'enchevêtrement dans Pathfinder. Le sort crée une zone (case) mais l'effet principal cible une créature désignée dans un rayon du serpent.",
+  "slug": "anneau-scinde",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:32+00:00",
+  "hash_source": "d3e5eee92a828731db1b362c4526988b7694379b9fcaef4a1784deeb2f93a528"
+}

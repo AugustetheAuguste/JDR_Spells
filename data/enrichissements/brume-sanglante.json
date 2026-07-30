@@ -1,0 +1,35 @@
+{
+  "id": "brume-sanglante",
+  "resume_court": "Une nappe de brume toxique qui camoufle les créatures et les rend enragées.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "confusion_ou_desorientation",
+    "affaiblissement_de_capacite",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "comme si elles étaient confuses et avaient tiré le résultat « attaque la créature la plus proche »"
+    ],
+    "cible_typique": "18 m (12 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement de Sagesse (1d4 points) mais cet affaiblissement n'est pas une condition listée ; seul l'effet comportemental (enragées, confuses) justifie la condition « confus ». L'affaiblissement est capturé par le tag « affaiblissement_de_capacite ».",
+  "slug": "brume-sanglante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:24+00:00",
+  "hash_source": "63ec092c7199df9ed5fad255fd03236a46ceb6471cb128b80930ff0ac620cb6b"
+}

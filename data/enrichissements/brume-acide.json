@@ -1,0 +1,35 @@
+{
+  "id": "brume-acide",
+  "resume_court": "Une nappe de brume acide qui ralentit les créatures et leur inflige des dégâts chaque round.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "acide",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts d'acide",
+    "condition_infligee": [
+      "Elle ralentit les créatures qui s'y trouvent"
+    ],
+    "cible_typique": "brouillard s'étendant sur 6 m (4 c) de rayon et 6 m de haut"
+  },
+  "notes_ambiguite": null,
+  "slug": "brume-acide",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:21+00:00",
+  "hash_source": "eb682c596959e69c07b40e0ae5764ef26ee02005aedea41e0aa4f21bd2d61453"
+}

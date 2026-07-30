@@ -1,0 +1,31 @@
+{
+  "id": "boule-de-foudre",
+  "resume_court": "Le lanceur crée deux boules de foudre (ou plus selon son niveau) qui volent à sa direction et frappent les créatures.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "plusieurs_cibles",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "electricite",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "inflige 3d6 points de dégâts d'électricité",
+    "condition_infligee": [],
+    "cible_typique": "Si la boule entre dans une case occupée par une créature"
+  },
+  "notes_ambiguite": null,
+  "slug": "boule-de-foudre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:09+00:00",
+  "hash_source": "0759e6993396d823cc47e02345287246c44cf02524b2cab3e3405c32d084a49d"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fleche-de-loi",
+  "resume_court": "Une flèche d'énergie loyale qui blesse les créatures chaotiques et peut les hébéter.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts par tranche de deux niveaux de lanceurs de sorts",
+    "condition_infligee": [
+      "il est hébété pendant 1 round"
+    ],
+    "cible_typique": "vers une cible à portée"
+  },
+  "notes_ambiguite": "Le texte emploie « hébété » qui correspond à la condition « etourdi » (perte d'actions et défense dégradée). Les dégâts sont d'énergie loyale, classés comme « force » faute de type énergétique élémentaire nommé.",
+  "slug": "fleche-de-loi",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:09+00:00",
+  "hash_source": "129286ddcb95cf0b20460c2e44bda82226c93d13ca8cc4bd7afb4d5f93486f8e"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "bouche-cousue",
+  "resume_court": "Coud les lèvres d'une créature, l'empêchant de parler et de lancer des sorts verbaux.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "degats_directs",
+    "resistance_a_la_magie",
+    "duree_instantanee",
+    "communication_ou_langage"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts infligés par les points de suture",
+    "condition_infligee": [],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts initiaux et peut en causer d'autres lors du retrait du fil, mais l'effet principal est l'entrave (impossibilité de parler, de mordre, de lancer des sorts verbaux). Les dégâts ne sont pas d'un type élémentaire nommé, d'où le classement en 'autre'. Aucune condition de la liste ne capture précisément l'effet (muet, incapacité à lancer des sorts verbaux) ; les conditions listées sont des états mécaniques distincts.",
+  "slug": "bouche-cousue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:58+00:00",
+  "hash_source": "216b60bd4aacdeacdf59c59c3e7f223548980f3faf542e9b6c42584cfdf32af0"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "epreuve-de-l-acide-et-du-feu",
+  "resume_court": "La cible est couverte d'acide brûlant qui lui inflige des dégâts chaque round pendant la durée.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "acide",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts d'acide et 1d6 points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "la créature touchée"
+  },
+  "notes_ambiguite": "Le sort inflige à la fois de l'acide et du feu, mais type_degats n'accepte qu'une valeur unique. L'acide est listé en premier dans les descripteurs et dans la description des dégâts, d'où le choix de « acide ». Le tag « degats_directs » couvre les deux types d'énergie infligés.",
+  "slug": "epreuve-de-l-acide-et-du-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:33+00:00",
+  "hash_source": "8af2fef0d37ea23c3f09ee0e05219434d2fa64d6359f240738baf8d47c9fa474"
+}

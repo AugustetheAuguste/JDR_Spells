@@ -1,0 +1,30 @@
+{
+  "id": "contagion",
+  "resume_court": "Le lanceur inflige une maladie grave à une créature touchée, qui prend effet immédiatement.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_instantanee",
+    "resistance_a_la_magie",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature vivante touchée"
+  },
+  "notes_ambiguite": "Le sort inflige une maladie sans dégâts directs ni condition instantanée nommée dans la liste fermée. Les maladies produisent des effets durables mais ne correspondent pas aux conditions énumérées (aveugle, étourdi, etc.). Le tag 'effet_mental' est discutable : les maladies relèvent plutôt de l'affaiblissement physique, mais aucun tag ne couvre explicitement les maladies. J'ai retenu 'effet_mental' faute de mieux, bien que le texte ne le justifie pas directement.",
+  "slug": "contagion",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:22+00:00",
+  "hash_source": "e8a9495ff0d5cda2b133e7c1938632bd230a145eddb412cc090eb78599cba4c3"
+}

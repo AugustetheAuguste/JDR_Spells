@@ -1,0 +1,29 @@
+{
+  "id": "marque",
+  "resume_court": "Appose une rune indélébile sur une créature et lui inflige 1 point de dégâts.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "lui infligeant 1 point de dégâts",
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts mineurs (1 point) et appose une marque permanente tant qu'elle n'est pas retirée. Le type de dégâts n'est pas spécifié (ni feu, ni froid, ni autre type énergétique), d'où la valeur « autre ». La marque elle-même n'est pas une condition mécanique au sens des conditions listées, mais un effet cosmétique/social.",
+  "slug": "marque",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:43+00:00",
+  "hash_source": "7bb1977fbbb87ae1d9f5c1488fc891138327fa7f1830979f420fa82c4e2fe05c"
+}

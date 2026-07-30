@@ -1,0 +1,34 @@
+{
+  "id": "contact-calcificateur",
+  "resume_court": "Une attaque de contact qui réduit la Dextérité et ralentit la cible, la pétrifiant si elle atteint 0.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "ralentit la cible (comme par un sort de lenteur) pendant 1 round"
+    ],
+    "cible_typique": "créature(s) touchée(s)"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement de Dextérité (tag affaiblissement_de_capacite) plutôt que des dégâts directs. La pétrification permanente est un effet de transformation du sujet, non une condition instantanée. Le type_degats est null car l'affaiblissement de caractéristique n'est pas un type de dégâts énergétique ou physique.",
+  "slug": "contact-calcificateur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:18+00:00",
+  "hash_source": "5337cf9b522032fae64178645866ccba8004798367b6ef949bb68accf731a363"
+}

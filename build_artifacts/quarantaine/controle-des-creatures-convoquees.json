@@ -1,0 +1,8 @@
+{
+  "id": "controle-des-creatures-convoquees",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "919c9d2d10a55c76476060616164b45443bfc6a4f7e1e84065c017a1b38c4558",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"controle-des-creatures-convoquees\",\n  \"resume_court\": \"Le lanceur prend le contrôle d'une créature invoquée en détruisant son lien avec son invocateur.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"jet_de_sauvegarde\",\n    \"effet_mental\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"une créature convoquée\"\n  },\n  \"notes_ambiguite\": \"La catégorie principale est `charme_ou_coercition` car le sort contraint le comportement de la créature par coercition magique, bien que le texte ne le classe pas explicitement dans une catégorie. Le sort ne figure pas dans `categorie_principale` (qui ne compte que 12 valeurs) mais dans `tags` où il appartient légitimement.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:17+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "symbole-de-sommeil",
+  "resume_court": "Une rune qui plonge les créatures proches en catatonie magique pendant 3d6x10 minutes.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "charme_ou_coercition",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+  },
+  "notes_ambiguite": "Le texte ne nomme pas explicitement une condition de jeu standard (aveugle, étourdi, etc.). Les créatures tombent en « catatonie » et ne peuvent être réveillées que par magie, mais ce terme ne figure pas dans la liste des conditions admissibles. La catatonie s'apparente à un sommeil magique forcé, mais sans correspondance directe dans les conditions listées, d'où condition_infligee vide.",
+  "slug": "symbole-de-sommeil",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:12+00:00",
+  "hash_source": "927af0faaace5d68492a6a3f94b6fc0c90e7b558226556b0fcf6a491abe8f631"
+}

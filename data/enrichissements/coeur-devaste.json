@@ -1,0 +1,33 @@
+{
+  "id": "coeur-devaste",
+  "resume_court": "Une attaque de contact qui inflige des dégâts d'énergie négative et rend la cible chancelante.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts d'énergie négative",
+    "condition_infligee": [
+      "qui fait chanceler la cible pendant 1 round"
+    ],
+    "cible_typique": "la créature touchée"
+  },
+  "notes_ambiguite": null,
+  "slug": "coeur-devaste",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:01+00:00",
+  "hash_source": "f462ee9168278dde7d7984f13fdbdc7ea41cb260e3b0470fa9f6ccfd352a4b0a"
+}

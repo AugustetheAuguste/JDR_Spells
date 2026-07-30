@@ -1,0 +1,32 @@
+{
+  "id": "rapetissement",
+  "resume_court": "Réduit une créature humanoïde d'une catégorie de taille, lui donnant des bonus en Dextérité et CA mais un malus en Force.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "bonus_chiffre",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "malus_chiffre",
+    "dissipation_ou_contresort"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature humanoïde"
+  },
+  "notes_ambiguite": "Le sort améliore certaines capacités (Dextérité, CA) tout en en dégradant d'autres (Force). Classé en `amelioration` car l'effet global est bénéfique au lanceur (bonus tactiques), mais pourrait être perçu comme `affaiblissement` si appliqué à un ennemi. La catégorie reflète l'usage offensif typique.",
+  "slug": "rapetissement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:23+00:00",
+  "hash_source": "1e1e271924920f9a78b03f229fb71777939c3497c6842fa413d503908e5962b1"
+}

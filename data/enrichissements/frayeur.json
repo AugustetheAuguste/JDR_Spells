@@ -1,0 +1,34 @@
+{
+  "id": "frayeur",
+  "resume_court": "La cible est effrayée ou secouée selon son jet de sauvegarde, si elle a 5 DV ou moins.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "effraye",
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La cible de ce sort est effrayée",
+      "elle est seulement secouée pendant 1 round"
+    ],
+    "cible_typique": "1 créature vivante ayant 5 DV ou moins"
+  },
+  "notes_ambiguite": null,
+  "slug": "frayeur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:39+00:00",
+  "hash_source": "cd5fd3ef11404a72d48da488ea9dfea001528553693fce95abd469b599c50083"
+}

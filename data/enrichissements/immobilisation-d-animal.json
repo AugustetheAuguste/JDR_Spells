@@ -1,0 +1,34 @@
+{
+  "id": "immobilisation-d-animal",
+  "resume_court": "Paralyse un animal pendant 1 round par niveau via un jet de Volonté.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "charme_ou_coercition",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Ce sort fonctionne comme immobilisation de personne"
+    ],
+    "cible_typique": "cible: 1 animal"
+  },
+  "notes_ambiguite": "Le texte renvoie à « immobilisation de personne » sans reproduire ses effets exacts. La condition « paralyse » est déduite de ce renvoi et du contexte d'enchantement coercitif, mais le texte fourni ne détaille pas l'effet précis. La durée est « 1 round/niveau » avec mention « (T) » (probablement « Transmutation » ou une note de jeu), ce qui justifie le tag « duree_prolongee ».",
+  "slug": "immobilisation-d-animal",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:19+00:00",
+  "hash_source": "181b22e31f66f20efe68105b22f89cfbd229c95f6b5f408d2fa519066ffbd116"
+}

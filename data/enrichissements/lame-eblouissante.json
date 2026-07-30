@@ -1,0 +1,36 @@
+{
+  "id": "lame-eblouissante",
+  "resume_court": "Une arme gagne une brillance hypnotique qui améliore les feintes et désarmements, et peut créer une explosion éblouissante.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "bonus_chiffre",
+    "objet_ou_equipement",
+    "illusion_visuelle_ou_sonore",
+    "duree_prolongee",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle",
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "cette créature doit réussir un jet de Volonté pour ne pas être aveuglée pendant 1 round",
+      "sur un jet réussi, la créature est simplement éblouie pendant 1 round"
+    ],
+    "cible_typique": "une arme en métal"
+  },
+  "notes_ambiguite": "Le sort affecte principalement une arme (objet) et améliore ses capacités tactiques. Les conditions d'éblouissement ne surviennent que si le porteur active l'explosion volontairement, ce qui reste un effet optionnel du sort.",
+  "slug": "lame-eblouissante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:53+00:00",
+  "hash_source": "4e96e11fe676caf11ea9f85115d6737e70567696ea69a0ede70fbb01a92b56ac"
+}

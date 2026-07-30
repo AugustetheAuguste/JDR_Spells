@@ -1,0 +1,32 @@
+{
+  "id": "morsure-du-froid",
+  "resume_court": "Une attaque de contact infligeant des dégâts de froid non létaux et fatiguant la cible.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts de froid",
+    "condition_infligee": [
+      "la cible est fatiguée"
+    ],
+    "cible_typique": "une créature touchée"
+  },
+  "notes_ambiguite": "La condition « fatiguée » du texte correspond à « chancelant » dans la liste fournie, qui décrit une créature ne pouvant effectuer qu'une seule action par round — l'effet de fatigue en Pathfinder 1e produit cet effet.",
+  "slug": "morsure-du-froid",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:06+00:00",
+  "hash_source": "93f84c9264aeffdc64fdddcbd07f7a9f99fe6d8e829cf604d87fe53093671391"
+}

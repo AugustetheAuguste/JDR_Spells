@@ -1,0 +1,30 @@
+{
+  "id": "sommeil-profond",
+  "resume_court": "Endort jusqu'à 10 DV de créatures vivantes dans un rayon de 3 m pour 1 minute par niveau.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "charme_ou_coercition",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 ou plusieurs créatures vivantes dans un rayonnement de 3 m (2 c) de rayon"
+  },
+  "notes_ambiguite": "Le texte ne nomme pas explicitement la condition « sommeil » ou « endormi » dans la liste fermée des conditions. Le sort endort les créatures, mais cette condition n'apparaît pas dans la liste `condition_infligee` fournie. La catégorie « entrave » est retenue car le sort restreint les actions des créatures affectées.",
+  "slug": "sommeil-profond",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:48+00:00",
+  "hash_source": "f3684bc59064fd33401f9d59d7184e1093a1e7c43a2d0adc82c515d83c17422b"
+}

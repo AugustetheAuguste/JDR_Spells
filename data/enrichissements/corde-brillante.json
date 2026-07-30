@@ -1,0 +1,34 @@
+{
+  "id": "corde-brillante",
+  "resume_court": "Une corde d'argent relie le lanceur à une créature, lui accordant des bonus tactiques et infligeant des dégâts si elle s'éloigne.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "bonus_chiffre",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "force",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts par tranche de deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "étourdit pendant 1 round la créature qui s'est déplacée hors de portée"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": null,
+  "slug": "corde-brillante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:47+00:00",
+  "hash_source": "9ae829daf7770039f4d4892f39335f93726db724928f4c1911f928a5ca992efa"
+}

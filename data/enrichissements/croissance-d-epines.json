@@ -1,0 +1,36 @@
+{
+  "id": "croissance-d-epines",
+  "resume_court": "La flore d'une zone se hérisse d'épines invisibles, blessant les créatures qui la traversent et ralentissant les plus touchées.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "perforant",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "1d4 points de dégâts perforants",
+    "condition_infligee": [
+      "ce qui diminue sa vitesse de déplacement terrestre de moitié"
+    ],
+    "cible_typique": "un carré de 6 m (4 c) de côté/niveau"
+  },
+  "notes_ambiguite": null,
+  "slug": "croissance-d-epines",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:12+00:00",
+  "hash_source": "974aef08565acf22c9bfea8d71077d172d6ad6bb1e5015bb46a8d93de4fed11d"
+}

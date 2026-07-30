@@ -1,0 +1,31 @@
+{
+  "id": "arme-d-ombre",
+  "resume_court": "Le lanceur crée une arme d'ombre quasi-réelle qui inflige des dégâts réduits si la cible dévoile l'illusion.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "illusion_visuelle_ou_sonore",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "arme_ou_munition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "Elle inflige les dégâts habituels pour une arme de son type",
+    "condition_infligee": [],
+    "cible_typique": "une arme d'ombre"
+  },
+  "notes_ambiguite": "Le sort crée une arme illusoire que le lanceur tient et utilise lui-même, ce qui justifie la cible_typique « soi ». Les dégâts sont « habituels » pour une arme, sans type énergétique spécifié, d'où type_degats: « autre ». Le sort relève à la fois de l'invocation (création d'une arme) et de l'illusion (ombre), mais l'effet principal est la création d'un objet utilisable, classé en invocation.",
+  "slug": "arme-d-ombre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:03+00:00",
+  "hash_source": "2772d43563a8b79d6593db892f8b45d420a23847e30b79985ec525b788437007"
+}

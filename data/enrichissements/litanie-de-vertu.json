@@ -1,0 +1,34 @@
+{
+  "id": "litanie-de-vertu",
+  "resume_court": "Jette l'anathème sur une créature Mauvaise, doublant les dégâts des attaques des créatures Bonnes contre elle.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "duree_instantanee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "les attaques des créatures douées d'une aura Bonne les éblouissent pendant 1d4 rounds"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort affecte techniquement plusieurs créatures (celles avec une aura Bonne qui attaquent), mais la cible désignée est unique. L'effet principal est un affaiblissement (vulnérabilité aux dégâts) plutôt qu'une attaque directe. La condition d'éblouissement ne s'applique que si la cible est de sous-type Mauvais, ce qui rend son application conditionnelle.",
+  "slug": "litanie-de-vertu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:14+00:00",
+  "hash_source": "73c3ca006350fbbbfc9d00f0314afef59d0a623a2d991077c470a9a3dad60bc6"
+}

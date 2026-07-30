@@ -1,0 +1,35 @@
+{
+  "id": "sphere-glaciale",
+  "resume_court": "Un globe de froid qui explose en zone, infligeant des dégâts et glaçant l'eau, ou peut être retenu pour un lancer ultérieur.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de froid par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "sont ralenties pendant 1d4 rounds"
+    ],
+    "cible_typique": "explose dans un rayonnement de 12 m (8 c)de diamètre"
+  },
+  "notes_ambiguite": null,
+  "slug": "sphere-glaciale",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:58+00:00",
+  "hash_source": "3e17e4758805615e850093526df3ec3979a8f08cc0136dc812957d87504e1804"
+}

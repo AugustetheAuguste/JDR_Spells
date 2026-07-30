@@ -1,0 +1,30 @@
+{
+  "id": "agrandissement",
+  "resume_court": "La créature humanoïde double de taille, gagne de la Force mais perd de la Dextérité et de la précision.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "bonus_chiffre",
+    "malus_chiffre",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature humanoïde"
+  },
+  "notes_ambiguite": "Le sort améliore la Force mais impose aussi des malus (Dextérité, jets d'attaque, CA). Il s'agit d'une amélioration nette au combat malgré les pénalités, d'où la catégorie `amelioration` plutôt que `affaiblissement`. La cible est typiquement un allié puisque le sort est bénéfique, bien qu'il soit techniquement castable sur un ennemi (d'où le jet de sauvegarde).",
+  "slug": "agrandissement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:14+00:00",
+  "hash_source": "c1c54a6d8d410d7b8596a7854d85c91eaaf8d7807e025d8c0e31de3b96fbee6a"
+}

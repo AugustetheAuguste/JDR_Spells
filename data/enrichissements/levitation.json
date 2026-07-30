@@ -1,0 +1,30 @@
+{
+  "id": "levitation",
+  "resume_court": "Permet de déplacer verticalement le lanceur, une créature consentante ou un objet jusqu'à 6 m par round.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "duree_prolongee",
+    "amelioration_de_capacite",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "le jeteur de sorts, 1 créature consentante ou 1 objet"
+  },
+  "notes_ambiguite": "Le sort affecte le lanceur lui-même (soi) ou une créature consentante (allie) ou un objet. La cible_typique « allie » couvre le cas principal d'une créature consentante autre que le lanceur, mais le sort peut aussi cibler le lanceur seul. Cependant, puisque la cible peut être « le jeteur de sorts » OU « 1 créature consentante », et que le texte ne précise pas de priorité, « allie » est retenu comme cible typique car c'est le cas le plus courant d'utilisation tactique.",
+  "slug": "levitation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:05+00:00",
+  "hash_source": "21dbfacfd7e71451d576b8f19bf26c9c9d283024b744868eb2b1d10457e51998"
+}

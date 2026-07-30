@@ -1,0 +1,31 @@
+{
+  "id": "symbole-de-faiblesse",
+  "resume_court": "Une rune qui affaiblit temporairement la Force de toute créature dans un rayon de 18 m.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "duree_prolongee",
+    "detection_ou_revelation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement temporaire de Force (3d6 points) plutôt qu'une condition nommée de la liste. L'affaiblissement est un effet de dégradation de capacité, classé en tag mais pas en condition_infligee, car aucune condition de la liste ne le couvre précisément.",
+  "slug": "symbole-de-faiblesse",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:06+00:00",
+  "hash_source": "f6dfc9b4d3d7a7f18517121ea7242f14447e4c41b2ecb8c2afdb198342e648cf"
+}

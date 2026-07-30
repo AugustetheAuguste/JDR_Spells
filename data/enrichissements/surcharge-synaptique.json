@@ -1,0 +1,34 @@
+{
+  "id": "surcharge-synaptique",
+  "resume_court": "Un contact qui inflige des dégâts électriques et rend la cible chancelante pendant 1 minute.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "electricite",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts électriques",
+    "condition_infligee": [
+      "se trouve chancelante pendant 1 minute"
+    ],
+    "cible_typique": "créature vivante touchée"
+  },
+  "notes_ambiguite": null,
+  "slug": "surcharge-synaptique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:03+00:00",
+  "hash_source": "6f778f6394fc786a977cab9c0508c53c13d74f5265831fa78b90e902eb389c83"
+}

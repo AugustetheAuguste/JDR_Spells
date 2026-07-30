@@ -1,0 +1,30 @@
+{
+  "id": "souffle-de-dragon",
+  "resume_court": "Le lanceur souffle une bouffée d'énergie (acide, froid, électricité ou feu) en cône ou ligne, infligeant des dégâts à toutes les créatures de la zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "Le type d'énergie dépend du type d'écaille de dragon utilisé",
+    "condition_infligee": [],
+    "cible_typique": "rayonnement en forme de cône ou ligne"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'un type variable (acide, froid, électricité ou feu selon l'écaille utilisée). Aucun type unique ne s'impose, d'où la valeur « autre » pour type_degats. Les descripteurs énumèrent les quatre types possibles, mais le texte ne désigne pas un seul type de dégâts : c'est le choix de l'écaille qui le détermine à l'incantation.",
+  "slug": "souffle-de-dragon",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:52+00:00",
+  "hash_source": "97b890b80a47a6f4ba4c34c953b00ccecfcc971dd7d1773a6dce8637f9ae1c3e"
+}

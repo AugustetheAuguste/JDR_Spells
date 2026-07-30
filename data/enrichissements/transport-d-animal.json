@@ -1,0 +1,30 @@
+{
+  "id": "transport-d-animal",
+  "resume_court": "Téléporte un animal de taille TP ou inférieure vers un lieu connu du lanceur.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "deplacement_ou_teleportation",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un animal touché de taille TP ou inférieure"
+  },
+  "notes_ambiguite": "Le texte renvoie à « transport d'objet » sans le reproduire ; la cible est un animal non magique, classé comme objet au sens des cibles typiques car le sort le traite comme un bien transportable plutôt que comme une créature alliée ou ennemie.",
+  "slug": "transport-d-animal",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:50+00:00",
+  "hash_source": "394f54b3b151c4f11738d1e7a8fa003fdb09c1328f903da23d67b5d328b280c0"
+}

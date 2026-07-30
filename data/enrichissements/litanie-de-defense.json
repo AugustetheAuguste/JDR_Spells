@@ -1,0 +1,29 @@
+{
+  "id": "litanie-de-defense",
+  "resume_court": "Le lanceur double les bonus d'altération de son armure et devient immunisé à la peur pendant 1 round.",
+  "categorie_principale": "protection",
+  "tags": [
+    "bonus_chiffre",
+    "protection_defensive",
+    "duree_instantanee",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": "La durée est 1 round (instantanée en pratique tactique), mais le sort confère des bonus et une immunité qui persistent pendant ce round. Le tag `duree_instantanee` reflète que l'effet se résout en un round de combat, bien que techniquement la durée soit nommée. L'immunité à la peur n'est pas une condition infligée au sens de la liste (qui concerne les états négatifs imposés), mais une protection.",
+  "slug": "litanie-de-defense",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:09+00:00",
+  "hash_source": "d2173bcf2079a1f3454ce0d887731e5ce13cdedd653721b91b1de1dea3601e33"
+}

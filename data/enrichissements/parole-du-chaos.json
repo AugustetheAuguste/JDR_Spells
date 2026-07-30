@@ -1,0 +1,38 @@
+{
+  "id": "parole-du-chaos",
+  "resume_court": "Une onde sonore chaotique assourdit, étourdit ou confond les créatures non-Chaotiques dans une zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "assourdi",
+    "etourdi",
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": "descripteurs: chaos, son",
+    "condition_infligee": [
+      "la créature est assourdie pendant 1d4 rounds",
+      "la créature est étourdie pendant 1 round",
+      "la créature est plongée dans la plus totale confusion pendant 1d10 minutes"
+    ],
+    "cible_typique": "créatures non-Chaotiques situées dans une étendue de 12 m de rayon centrée sur le prêtre"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts (3d6 +1 par niveau) en cas de sauvegarde contre l'effet Mort, mais cet effet n'est pas garanti et dépend des DV de la cible. Les dégâts sont secondaires à la mécanique principale (conditions multiples). La condition « mort » n'existe pas dans la liste fermée ; seules les trois conditions infligées de manière certaine sont retenues.",
+  "slug": "parole-du-chaos",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:47+00:00",
+  "hash_source": "333609bcc6f6fd77b9e260c5e252c4c0034c85bd18067325240072baeff8caa4"
+}

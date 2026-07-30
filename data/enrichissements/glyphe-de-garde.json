@@ -1,0 +1,31 @@
+{
+  "id": "glyphe-de-garde",
+  "resume_court": "Une inscription magique permanente qui déclenche une explosion ou un sort stocké contre les intrus.",
+  "categorie_principale": "protection",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "detection_ou_revelation",
+    "duree_prolongee",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "Le lanceur de sorts choisit le type de dégâts au moment de l'incantation ; il peut s'agir d'acide, d'électricité, de feu, de froid ou de son.",
+    "condition_infligee": [],
+    "cible_typique": "affecte toute personne qui pénètre dans la zone ou tente d'ouvrir l'objet qu'elle protège"
+  },
+  "notes_ambiguite": "Le sort offre deux versions (explosif ou à sort) avec des effets différents. La version explosif inflige des dégâts énergétiques (acide, électricité, feu, froid, son), mais le texte ne précise pas un type unique : j'ai classé en 'autre' car le type dépend du choix du lanceur. La catégorie 'protection' s'applique car le sort défend une zone ou un objet contre les intrus, bien qu'il soit offensif une fois déclenché.",
+  "slug": "glyphe-de-garde",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:52+00:00",
+  "hash_source": "7c2c0a1f2096a84ff274d69a8d64ac66a9346a3ca1c2f000ad63c32934d91175"
+}

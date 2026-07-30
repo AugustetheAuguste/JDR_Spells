@@ -1,0 +1,29 @@
+{
+  "id": "main-vagabonde",
+  "resume_court": "Une force télékinétique invisible qui désarme un adversaire ou manipule un objet à distance.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "invocation_ou_creation",
+    "plusieurs_cibles",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: un objet"
+  },
+  "notes_ambiguite": "Le sort affecte un objet mais peut être utilisé contre une créature (pour désarmer ou subtiliser). La cible_typique « objet » reflète la cible formelle du sort. Le tag « plusieurs_cibles » est rejeté car le sort ne vise qu'un objet à la fois ; seul « invocation_ou_creation » et « jet_de_sauvegarde » sont retenus, mais le texte dit « aucun » jet de sauvegarde — cette contradiction rend l'annotation ambiguë. Le sort crée une force (invocation_ou_creation) mais n'inflige pas de dégâts directs ni de condition au sens strict : il effectue une manœuvre offensive. Catégorie « entrave » car il restreint l'accès à un objet ou son contrôle.",
+  "slug": "main-vagabonde",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:26+00:00",
+  "hash_source": "710be31e9f439e096a7d5b356c322c92522daee0bcb1bb4b5b2c13115ecf8be8"
+}

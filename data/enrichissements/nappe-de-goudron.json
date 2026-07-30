@@ -1,0 +1,35 @@
+{
+  "id": "nappe-de-goudron",
+  "resume_court": "Une zone de goudron brûlant qui inflige des dégâts de feu et enchevêtre les créatures.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de feu par tranche de deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "elles sont enchevêtrées"
+    ],
+    "cible_typique": "6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "nappe-de-goudron",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:21+00:00",
+  "hash_source": "206a643e7f72ee3ccb01170fd097f7150f17edddc27c4c21e643a9a8b7b418cb"
+}
