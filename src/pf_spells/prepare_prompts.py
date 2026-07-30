@@ -18,9 +18,9 @@ Do not put the spell there.
 shorter than 4 096 tokens: below it, `cachePoint` is accepted, ignored, and the run
 simply costs double with no error anywhere. Measured on `bedrock-runtime`
 2026-07-30: `p1.0` sat at ~3 216 tokens and reported `cacheWriteInputTokens: 0` on
-every call; `p1.1` measures 4 249 and writes, then reads, the whole block. The
-margin is ~150 tokens, so shortening this block is a *cost* decision, not an
-editorial one — `test_le_bloc_systeme_reste_cacheable` guards the floor.
+every call; from `p1.1` on the block writes, then reads, in full. Shortening this
+block is therefore a *cost* decision, not an editorial one —
+`test_le_bloc_systeme_reste_cacheable` guards the floor.
 
 **The vocabularies are read, never retyped.** Tags, categories, damage types and
 conditions come from `conventions/vocabulaires/*.json` at assembly time, with
@@ -53,7 +53,7 @@ DEFAULT_SORTIE = "build_artifacts/prompts"
 # Bumped whenever the assembled text changes in a way that would change answers.
 # It is part of the output PATH, not just the content: `p1.0` and `p1.1` must be
 # able to sit side by side and be diffed, because tuning means several re-runs.
-VERSION_PROMPT = "p1.1"
+VERSION_PROMPT = "p1.4"
 
 # Ceiling for one enrichment record. The answer is a small fixed-shape JSON
 # object; this leaves room for a verbose `notes_ambiguite` without inviting prose.
@@ -79,9 +79,15 @@ VOCABULAIRES_DU_PROMPT: tuple[tuple[str, str], ...] = (
 CHAMPS_DEMANDES: tuple[tuple[str, str], ...] = (
     ("id", "l'identifiant fourni, recopié tel quel"),
     ("resume_court", "une seule phrase, 160 caractères maximum"),
-    ("categorie_principale", "une seule valeur de la liste `categorie_principale`"),
-    ("tags", "de 2 à 6 valeurs distinctes de la liste `tags`"),
-    ("roles_tactiques", "de 1 à 3 valeurs de la liste `roles_tactiques`"),
+    (
+        "categorie_principale",
+        "une seule valeur de la liste `categorie_principale` — jamais un tag",
+    ),
+    ("tags", "de 2 à 6 valeurs distinctes de la liste `tags`, 6 au maximum"),
+    (
+        "roles_tactiques",
+        "de 1 à 3 valeurs de la liste `roles_tactiques`, qui n'en compte que 4",
+    ),
     ("cible_typique", "une seule valeur de la liste `cible_typique`"),
     ("type_degats", "une valeur de la liste `type_degats`, ou null"),
     ("condition_infligee", "de 0 à 4 valeurs de la liste `condition_infligee`"),
@@ -115,10 +121,19 @@ REGLES: tuple[str, ...] = (
     "champ qu'elle remplit. Les clés sont sans accent et en snake_case : un mot "
     "français juste mais absent de la liste (`fievreuse`, `degats`) invalide tout "
     "l'enregistrement. Ne forge jamais de clé nouvelle.",
-    "Chaque liste n'appartient qu'à SON champ. Les six listes ne sont pas un "
-    "vocabulaire commun : `allie` est une valeur de `cible_typique` et n'est pas un "
-    "tag ; `social` est un rôle tactique et n'est pas un tag. Avant d'écrire une "
-    "valeur, vérifie qu'elle figure dans la liste de CE champ précis.",
+    "Chaque liste n'appartient qu'à SON champ, dans LES DEUX SENS. Les six listes "
+    "ne sont pas un vocabulaire commun : `allie` est une cible et n'est pas un tag ; "
+    "`social` est un rôle et n'est pas un tag ; inversement `transformation_du_sujet`, "
+    "`charme_ou_coercition` et `dissipation_ou_contresort` sont des TAGS et ne sont "
+    "pas des `categorie_principale` — la catégorie n'a que 12 valeurs, les rôles que "
+    "4. Avant d'écrire une valeur, retrouve-la dans la liste de CE champ précis.",
+    "Respecte les cardinalités : `tags` de 2 à 6 valeurs — 7 est un rejet, coupe aux "
+    "6 plus pertinentes ; `roles_tactiques` de 1 à 3 ; `condition_infligee` de 0 à 4.",
+    "Aucune catégorie ne dit « transformation », « charme » ni « dissipation » : "
+    "c'est voulu, ce sont des tags. Un sort qui métamorphose son sujet, le charme ou "
+    "dissipe un effet se classe donc par son EFFET dans la liste "
+    "`categorie_principale` — le sujet y gagne-t-il, y perd-il, est-il gêné, ou "
+    "s'agit-il d'un simple outil ? — et porte le tag correspondant.",
     "Réponds UNIQUEMENT par un objet JSON valide, sans texte avant ni après, "
     "sans bloc de code.",
 )
@@ -207,16 +222,29 @@ ERREURS_A_EVITER = """Erreurs constatées, à ne pas reproduire :
    JUSTE : "preuves": {"condition_infligee": ["la cible est aveuglée"]}
    JUSTE, si aucune condition : "preuves": {"condition_infligee": []}
 
-2. Une valeur prise dans la liste d'un AUTRE champ.
+2. Une valeur prise dans la liste d'un AUTRE champ. C'est l'erreur la plus
+   fréquente, et elle va dans les deux sens.
    FAUX : "tags": ["allie"] — `allie` est une valeur de `cible_typique`.
    FAUX : "tags": ["social"] — `social` est un rôle tactique.
-   JUSTE : chaque valeur vient de la liste close du champ qu'elle remplit.
+   FAUX : "categorie_principale": "transformation_du_sujet" — c'est un TAG.
+   FAUX : "categorie_principale": "charme_ou_coercition" — c'est un TAG.
+   FAUX : "categorie_principale": "dissipation_ou_contresort" — c'est un TAG.
+   FAUX : "roles_tactiques": ["deplacement"] — `deplacement` est une catégorie.
+   FAUX : "roles_tactiques": ["controle"] — n'existe dans aucune liste.
+   JUSTE : la catégorie vient de la liste `categorie_principale`, et
+   `transformation_du_sujet` reste dans `tags`.
+   `categorie_principale` ne peut valoir que l'une des 12 clés de SA liste, et
+   `roles_tactiques` que l'une des 4 clés de la sienne.
 
-3. Un mot français inventé, hors liste.
+3. Trop de valeurs.
+   FAUX : 7 tags — la borne est 6, et le dépassement rejette tout
+   l'enregistrement. Garde les 6 plus pertinentes.
+
+4. Un mot français inventé, hors liste.
    FAUX : "condition_infligee": ["fievreuse"] — absent de la liste.
    JUSTE : la clé la plus proche de la liste, avec une note dans notes_ambiguite.
 
-4. Une preuve reformulée.
+5. Une preuve reformulée.
    FAUX : preuve "dégâts de feu" quand le texte porte « dégats de feu ».
    JUSTE : la sous-chaîne copiée telle quelle, fautes et accents de la source
    compris — la preuve est vérifiée par recherche littérale dans le texte."""
