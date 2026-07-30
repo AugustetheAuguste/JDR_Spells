@@ -14,3 +14,10 @@ __pycache__/
 # du module qui la produit. Le `build_artifacts/` de la racine, lui, EST committé :
 # c'est la trace d'appels payants, donc une pièce d'audit, pas un artefact jetable.
 tests/fixtures/mini_corpus/build_artifacts/
+
+# Prompts assemblés : 22 Mo dont 88 % le même bloc système répété 2 070 fois,
+# régénérables hors ligne en quelques secondes par
+# `python -m pf_spells.prepare_prompts`. Contrairement à
+# `build_artifacts/taxo_passe0/`, aucun appel payant n'y est engagé : il n'y a
+# donc pas de trace d'audit à conserver, seulement du poids.
+build_artifacts/prompts/
