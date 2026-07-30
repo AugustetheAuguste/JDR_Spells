@@ -200,17 +200,42 @@ Format d'un fichier de vocabulaire :
 | `exemples_positifs` | ≥ 2, tirés du corpus réel (ou de la fixture), **jamais de mémoire** |
 | `exemples_negatifs` | ≥ 2, cas voisins que la clé ne couvre **pas** — c'est ce qui trace la frontière |
 
-## `taxonomie_v1` — PLACEHOLDER
+## `taxonomie_v1` — GELÉE le 2026-07-29
 
-> **Cette section est un emplacement réservé. Elle n'est PAS remplie ici.**
->
-> `taxonomie_v1` est produite par l'**étape 04 (passe 0 sur échantillon
-> stratifié + curation à la main)**, qui écrit les 25–40 entrées définitives dans
-> `conventions/vocabulaires/tags.json` et met `version` à `taxonomie_v1`. Les
-> valeurs présentes avant cette étape sont des **v0 provisoires**.
->
-> Tant que la taxonomie n'est pas gelée, **aucun run de génération complet** ne
-> doit partir : les tags produits ne seraient pas comparables entre eux.
+**35 tags**, liste close, dans `conventions/vocabulaires/tags.json`
+(`version: "v1"`). C'est la seule autorité sur les tags admissibles : un tag hors
+de cette liste est un **rejet** à l'étage 10, jamais une suggestion.
+
+Elle est **dérivée par machine, sans curation humaine**. Sa légitimité vient
+d'une règle de coupe déterministe et rejouable, pas d'une signature :
+
+| Étage | Artefact | Rôle |
+|---|---|---|
+| Échantillon | `build_artifacts/echantillon_taxo.json` | 200 sorts stratifiés, 85 strates, 9 écoles, niveaux 0–9 |
+| Passe 0 | `build_artifacts/taxo_passe0/<id>.json` | proposition **libre** (aucune liste imposée), température 0, un fichier par sort, texte envoyé conservé |
+| Agrégat | `build_artifacts/taxo_passe0_agrege.csv` | 1 278 usages → 1 121 étiquettes brutes distinctes, triées par occurrences |
+| Regroupement | `conventions/taxo_groupes.json` | 54 groupes candidats (regex sur l'étiquette pliée) |
+| Coupe | `conventions/vocabulaires/tags.json` | les **35** groupes couvrant **≥ 10 sorts** de l'échantillon — exactement, ni choisis ni écartés à la main |
+
+Chaque entrée porte `definition_fr`, 2+ `exemples_positifs` et 2+
+`exemples_negatifs`. **Les exemples sont des noms de sorts réels du corpus**,
+tirés mécaniquement, jamais composés par le modèle.
+
+`tests/test_taxo_passe0.py` rejoue la coupe et échoue si la liste cesse d'être
+exactement l'ensemble des groupes au-dessus du seuil — donc un tag ajouté à la
+main casse la suite. **Faire évoluer la taxonomie = éditer `taxo_groupes.json` ou
+le seuil, puis recouper une v2.** Jamais retoucher `tags.json` directement.
+
+Ordre de rejeu, hors ligne sauf la passe 0 :
+
+```
+python -m pf_spells.taxo_passe0    # RÉSEAU, ~200 appels payants, reprise par présence
+python -m pf_spells.taxo_agregat   # hors ligne, rejouable, CSV byte-identique
+```
+
+La passe 0 refuse de partir si l'empreinte de corpus de l'échantillon ne
+correspond plus à `data/sorts/` : un tirage périmé ferait payer 200 appels pour
+décrire un corpus qui a bougé.
 
 ### La règle des 5 %
 

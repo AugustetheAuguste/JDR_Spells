@@ -198,7 +198,10 @@ class TestVocabulaires:
         doc = json.loads(
             (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
-        assert doc["version"] == "v0"
+        # `tags.json` a été recoupée en v1 par l'étape 04 ; les cinq autres
+        # listes n'ont pas de passe de dérivation et restent en v0.
+        attendue = "v1" if nom == "tags.json" else "v0"
+        assert doc["version"] == attendue
         assert isinstance(doc["valeurs"], list) and doc["valeurs"]
 
     @pytest.mark.parametrize("nom", FICHIERS_VOCABULAIRE)
@@ -252,12 +255,34 @@ class TestVocabulaires:
         ]
         assert inconnus == []
 
-    def test_tags_v0_se_declare_provisoire_et_renvoie_a_l_etape_04(self, repo_root: Path) -> None:
+    def test_tags_v1_se_declare_gelee_et_nomme_sa_regle_de_coupe(
+        self, repo_root: Path
+    ) -> None:
+        """La v0 se disait provisoire ; la v1 doit dire d'où elle vient.
+
+        Une liste close dérivée par machine n'a d'autorité que si son mode de
+        dérivation est écrit à côté d'elle — sinon rien ne distingue une coupe
+        réglée d'une liste improvisée.
+        """
         doc = json.loads(
             (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
         )
-        assert "04" in doc["note"]
+        assert doc["version"] == "v1"
+        assert doc["gele_le"]
         assert "taxonomie_v1" in doc["note"]
+        regle = doc["regle_de_coupe"]
+        assert regle["seuil_sorts_echantillon"] == 10
+        assert regle["source"] == "build_artifacts/taxo_passe0_agrege.csv"
+        assert regle["groupes"] == "conventions/taxo_groupes.json"
+        # Le plafond de 5 % de notes_ambiguite est une règle de la passe 1, mais
+        # elle doit être écrite dès le gel (exigence de l'étape 04).
+        assert "5 %" in doc["notes_ambiguite_plafond"]
+
+    def test_tags_v1_compte_entre_25_et_40_entrees(self, repo_root: Path) -> None:
+        doc = json.loads(
+            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
+        )
+        assert 25 <= len(doc["valeurs"]) <= 40
 
     def test_roles_tactiques_et_cibles_valent_exactement_le_contrat(
         self, repo_root: Path
