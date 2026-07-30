@@ -1017,9 +1017,9 @@ def check_e2(corpus: Corpus, resultat: Resultat) -> None:
         resultat.ajouter(
             Anomalie(
                 "E2", "avertissement", label,
-                "0 sort exclusif : à vérifier à la main — soit la classe "
-                "n'emprunte que des sorts partagés, soit sa liste a été mal "
-                "rattachée",
+                "0 sort exclusif — soit la classe n'emprunte que des sorts "
+                "partagés, soit son URL de liste est mal rattachée dans "
+                "`data/classes.json`",
             )
         )
     resultat.stats["e2_totaux"] = totaux
@@ -1084,7 +1084,7 @@ def check_conventions_annexes(corpus: Corpus, resultat: Resultat) -> None:
             Anomalie(
                 "B4", "avertissement", abbrev,
                 f"abréviation de classe inconnue dans `niveaux` — "
-                f"{nombre} sort(s) : à cartographier à la main",
+                f"{nombre} sort(s) : à ajouter au référentiel des abréviations",
             )
         )
 
@@ -1312,7 +1312,7 @@ def build_report(resultat: Resultat, chemins: Chemins) -> str:
     ]
     totaux = stats.get("e2_totaux", {})
     for label, nombre in sorted(totaux.items()):
-        marque = " **← à vérifier**" if nombre == 0 else ""
+        marque = " **← 0**" if nombre == 0 else ""
         lignes.append(f"| {_echapper(label)} | {nombre}{marque} |")
     zeros = sorted(k for k, v in totaux.items() if v == 0)
     lignes += [
@@ -1321,7 +1321,8 @@ def build_report(resultat: Resultat, chemins: Chemins) -> str:
             f"Classes à **0 sort exclusif** : {', '.join(zeros)}. C'est un "
             "résultat notable et possiblement suspect : soit ces classes "
             "n'accèdent qu'à des sorts également ouverts à d'autres, soit leur "
-            "liste a été mal rattachée à l'étape 04. À trancher à la main."
+            "liste a été mal rattachée à l'étape 04. Le départage se fait sur "
+            "`data/classes.json`, en amont, puis on régénère."
             if zeros
             else "Toutes les classes possèdent au moins un sort exclusif."
         ),
@@ -1418,30 +1419,37 @@ def build_report(resultat: Resultat, chemins: Chemins) -> str:
 
     zeros_txt = ", ".join(zeros) if zeros else "aucune"
     lignes += [
-        "## File de relecture humaine recommandée",
+        "## Incertitudes résiduelles",
         "",
-        "Par ordre de valeur décroissante pour une relecture manuelle :",
+        "Ce que les contrôles mesurent sans pouvoir le résoudre. Aucune de ces "
+        "lignes n'est une tâche de relecture : chacune se traite en amont, dans "
+        "le parseur ou dans le référentiel, puis se régénère.",
         "",
         f"1. **Divergences de niveau liste ↔ page** — "
         f"{stats.get('niveaux_divergents', 0)} sorts. Table complète dans "
-        "`reports/08_enrich.md`. Chaque ligne est soit une coquille du wiki, "
-        "soit une vraie différence de classe ; seul un humain peut trancher.",
-        f"2. **Classes à 0 sort exclusif** — {zeros_txt}. Vérifier que la page "
-        "de liste a bien été rattachée à la bonne classe.",
+        "`reports/08_enrich.md`. Les deux sources sont conservées côte à côte "
+        "(`niveau`, `niveau_page`) et `concordance` porte le constat : le "
+        "pipeline n'arbitre pas, il expose.",
+        f"2. **Classes à 0 sort exclusif** — {zeros_txt}. Recoupable "
+        "mécaniquement : l'URL de liste de `data/classes.json` doit être celle "
+        "de la classe annoncée.",
         f"3. **Champs à faible couverture** — `jet_de_sauvegarde` "
         f"{_pct(couverture.get('jet_de_sauvegarde', (0, 0.0))[1])} et "
         f"`resistance_magie` "
-        f"{_pct(couverture.get('resistance_magie', (0, 0.0))[1])}. Vérifier sur "
-        "un échantillon que l'absence vient bien de la page et non de l'analyse.",
+        f"{_pct(couverture.get('resistance_magie', (0, 0.0))[1])}. Une lacune de "
+        "parseur se distingue d'une lacune de source en relançant `parse_spells` "
+        "sur le HTML en cache : la source, elle, ne bouge plus.",
         f"4. **`portee` / `cible` manquants** — "
         f"{len(stats.get('d1_manques', {}).get('portee', []))} et "
-        f"{len(stats.get('d1_manques', {}).get('cible', []))} sorts, listés dans "
-        "le JSONL d'anomalies. Assez peu nombreux pour être ouverts un par un.",
+        f"{len(stats.get('d1_manques', {}).get('cible', []))} sorts, énumérés "
+        "dans le JSONL d'anomalies avec leur `meta.cache_fichier`.",
         f"5. **Suffixes de collision de slug** — "
         f"{len(stats.get('c1_collisions', []))} `id` portent un suffixe "
-        "`-2`/`-3`. Confirmer qu'il s'agit bien de sorts distincts homonymes.",
+        "`-2`/`-3`. Homonymes distincts par construction : les URLs sources "
+        "diffèrent, sinon la page aurait été dédoublonnée à l'étape 06.",
         f"6. **Abréviations de classe inconnues** — "
-        f"{len(inconnues)} à cartographier, s'il en reste.",
+        f"{len(inconnues)} restantes, à ajouter au référentiel des "
+        "abréviations, pas au fichier de sort.",
         "",
         "## Notes de conformité",
         "",

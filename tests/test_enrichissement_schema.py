@@ -63,10 +63,29 @@ class TestSchema:
     def test_le_schema_resolu_est_aussi_un_draft_2020_12_valide(self, schema_resolu: dict) -> None:
         Draft202012Validator.check_schema(schema_resolu)
 
-    def test_le_schema_ferme_l_objet_et_exige_les_dix_sept_cles(self, schema_resolu: dict) -> None:
+    def test_le_schema_ferme_l_objet_et_exige_les_seize_cles(self, schema_resolu: dict) -> None:
         assert schema_resolu["additionalProperties"] is False
-        assert len(schema_resolu["required"]) == 17
+        assert len(schema_resolu["required"]) == 16
         assert sorted(schema_resolu["required"]) == sorted(schema_resolu["properties"])
+
+    def test_aucune_cle_de_relecture_humaine_ne_subsiste(
+        self, validateur: Draft202012Validator, schema_resolu: dict, repo_root: Path
+    ) -> None:
+        """Le contrat n'a plus de verrou de relecture, et le rejette activement.
+
+        `additionalProperties: false` fait que la clé n'est pas seulement
+        facultative : un enregistrement qui la porterait est refusé. Le test le
+        vérifie sur un cas concret, sinon « la clé a disparu du schéma » ne dit
+        rien de ce que le validateur accepte.
+        """
+        assert "verifie_par_humain" not in schema_resolu["properties"]
+        assert "verifie_par_humain" not in schema_resolu["required"]
+        doc = _fixture(repo_root, "valide_sans_degats.json")
+        assert list(validateur.iter_errors(doc)) == []
+        doc["verifie_par_humain"] = True
+        erreurs = list(validateur.iter_errors(doc))
+        assert len(erreurs) == 1
+        assert "verifie_par_humain" in str(erreurs[0].message)
 
     def test_le_schema_cite_le_skill_comme_source_de_la_politique_des_nulls(
         self, repo_root: Path
@@ -198,7 +217,10 @@ class TestVocabulaires:
         doc = json.loads(
             (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
-        assert doc["version"] == "v0"
+        # `tags.json` a été recoupée en v1 par l'étape 04 ; les cinq autres
+        # listes n'ont pas de passe de dérivation et restent en v0.
+        attendue = "v1" if nom == "tags.json" else "v0"
+        assert doc["version"] == attendue
         assert isinstance(doc["valeurs"], list) and doc["valeurs"]
 
     @pytest.mark.parametrize("nom", FICHIERS_VOCABULAIRE)
@@ -252,12 +274,34 @@ class TestVocabulaires:
         ]
         assert inconnus == []
 
-    def test_tags_v0_se_declare_provisoire_et_renvoie_a_l_etape_04(self, repo_root: Path) -> None:
+    def test_tags_v1_se_declare_gelee_et_nomme_sa_regle_de_coupe(
+        self, repo_root: Path
+    ) -> None:
+        """La v0 se disait provisoire ; la v1 doit dire d'où elle vient.
+
+        Une liste close dérivée par machine n'a d'autorité que si son mode de
+        dérivation est écrit à côté d'elle — sinon rien ne distingue une coupe
+        réglée d'une liste improvisée.
+        """
         doc = json.loads(
             (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
         )
-        assert "04" in doc["note"]
+        assert doc["version"] == "v1"
+        assert doc["gele_le"]
         assert "taxonomie_v1" in doc["note"]
+        regle = doc["regle_de_coupe"]
+        assert regle["seuil_sorts_echantillon"] == 10
+        assert regle["source"] == "build_artifacts/taxo_passe0_agrege.csv"
+        assert regle["groupes"] == "conventions/taxo_groupes.json"
+        # Le plafond de 5 % de notes_ambiguite est une règle de la passe 1, mais
+        # elle doit être écrite dès le gel (exigence de l'étape 04).
+        assert "5 %" in doc["notes_ambiguite_plafond"]
+
+    def test_tags_v1_compte_entre_25_et_40_entrees(self, repo_root: Path) -> None:
+        doc = json.loads(
+            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
+        )
+        assert 25 <= len(doc["valeurs"]) <= 40
 
     def test_roles_tactiques_et_cibles_valent_exactement_le_contrat(
         self, repo_root: Path

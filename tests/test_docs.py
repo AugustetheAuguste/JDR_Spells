@@ -98,11 +98,21 @@ class TestCLAUDEmdContenu:
         assert "1 requête/seconde" in claude_texte
         assert "workers au-dessus de 4" in claude_texte
 
-    def test_garantie_de_correction_humaine(self, claude_texte: str) -> None:
-        assert "**autoritaires**" in claude_texte
-        assert "n'écrase jamais" in claude_texte
+    def test_autorite_du_pipeline_sur_les_donnees(self, claude_texte: str) -> None:
+        """`data/sorts/` est un artefact de machine, et le dit.
+
+        L'ancienne version garantissait l'inverse (« l'humain fait foi »). Le
+        garde-fou est conservé mais retourné : ce qui doit être écrit noir sur
+        blanc, c'est qu'une édition manuelle sera écrasée, sinon quelqu'un
+        corrigera un fichier en croyant que ça tient.
+        """
+        assert "artefact de machine" in claude_texte
+        assert "sera écrasée" in claude_texte
         assert "--overwrite" in claude_texte
-        assert "que** la\n  clé `classes`" in claude_texte
+        assert "clé `classes`" in claude_texte
+        # Et surtout : plus aucune promesse d'autorité humaine.
+        assert "l'humain fait foi" not in claude_texte
+        assert "éditions humaines" not in claude_texte
 
     def test_regles_dures(self, claude_texte: str) -> None:
         assert "UTF-8" in claude_texte
@@ -245,10 +255,13 @@ class TestREADMEContenu:
         ):
             assert f"| `{fichier}` |" in readme_texte, fichier
 
-    def test_garantie_de_non_ecrasement(self, readme_texte: str) -> None:
-        assert "Les éditions humaines font foi." in readme_texte
-        assert "n'écrase jamais" in readme_texte
+    def test_dit_que_le_pipeline_fait_foi_et_non_l_editeur(
+        self, readme_texte: str
+    ) -> None:
+        assert "aucun statut particulier" in readme_texte
         assert "--overwrite" in readme_texte
+        assert "garde-fou" in readme_texte
+        assert "Les éditions humaines font foi." not in readme_texte
 
     def test_regle_de_politesse(self, readme_texte: str) -> None:
         assert "1 requête/seconde" in readme_texte
@@ -280,7 +293,7 @@ class TestREADMEContenu:
             "data/index/sorts_exclusifs.json",
             "data/MANIFEST.json",
             "reports/",
-            "build/pf_spell_corpus/",
+            "build/",
         ]
         for chemin in concrets:
             assert chemin in readme_texte, f"{chemin} absent du README"

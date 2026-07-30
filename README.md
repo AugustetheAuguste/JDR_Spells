@@ -4,8 +4,8 @@
 
 2070 fichiers JSON, un par sort, plus les index et les listes de classes qui
 permettent de répondre à « quels sorts un Paladin de niveau 2 peut-il lancer ? »
-sans jamais retourner sur le web. Tout est en clair, lisible, et **corrigeable à
-la main**.
+sans jamais retourner sur le web. Tout est en clair, lisible, et **entièrement
+régénérable depuis le cache HTML committé**.
 
 | Mesure | Valeur |
 |---|---:|
@@ -53,7 +53,7 @@ data/index/sorts_exclusifs.json     par classe, ses sorts exclusifs
 data/sorts/<id>.json                LE corpus : un fichier par sort
 data/MANIFEST.json                  inventaire recompté de tout ce qui précède
 reports/                            un rapport markdown par étape
-build/pf_spell_corpus/              le plan d'implémentation
+build/                              les plans d'implémentation, un fichier par étape
 ```
 
 L'`id` (le slug du nom du sort) est la **clé de jointure** entre
@@ -221,20 +221,25 @@ Sur un dépôt cloné tel quel, **aucune de ces commandes ne touche au réseau**
 pas des re-crawls. Le crawl à froid (~1 h) n'a lieu que si le cache est vidé.
 Suite de tests : `PYTHONPATH=src python -m pytest tests -q`.
 
-## Corriger les données à la main
+## Corriger les données
 
-`data/sorts/*.json` est fait pour être édité. La garantie :
+`data/sorts/*.json` est **régénéré par le pipeline**, et c'est le pipeline qui
+fait foi :
 
-- **Les éditions humaines font foi.**
-- `parse_spells` **n'écrase jamais** un fichier de sort existant : il faut le
-  demander explicitement avec `--overwrite`. Une relance normale du pipeline ne
-  peut donc pas effacer une correction.
-- `enrich_spells` ne réécrit **que** la clé `classes` ; tout le reste du fichier
-  est conservé tel qu'il a été lu.
+- **Une édition manuelle n'a aucun statut particulier** et sera écrasée à la
+  première régénération. Corriger une valeur fausse se fait dans `parse_spells`,
+  puis on régénère : la correction vaut alors pour les 2 070 sorts, pas pour un
+  seul. `cache/html/` étant committé, régénérer ne recrawle rien.
+- `parse_spells` exige quand même `--overwrite` pour réécrire un fichier
+  existant. C'est un garde-fou contre l'accident — une relance distraite ne doit
+  pas réécrire 2 070 fichiers committés — pas une garantie d'autorité sur le
+  contenu.
+- `enrich_spells` ne réécrit **que** la clé `classes`, parce que c'est la seule
+  qu'il calcule ; le reste du fichier est conservé tel qu'il a été lu.
 
-Procédure : ouvrir le fichier, corriger la valeur (accents compris — ils restent
-en clair), conserver l'`indent=2`, les retours à la ligne LF, l'UTF-8 sans BOM et
-le retour à la ligne final. Puis vérifier :
+Si une retouche ponctuelle est malgré tout nécessaire, conserver l'`indent=2`,
+les retours à la ligne LF, l'UTF-8 sans BOM et le retour à la ligne final — les
+accents restent en clair. Puis vérifier :
 
 ```
 export PYTHONPATH=src

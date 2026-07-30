@@ -1,0 +1,25 @@
+{
+  "id": "blessure-critique-de-groupe",
+  "etiquettes": [
+    "dégâts_énergie_négative",
+    "zone_effet_multiple",
+    "soigne_morts_vivants",
+    "jet_sauvegarde_volonté",
+    "dégâts_instantanés",
+    "groupe_créatures"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:22+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "1b055c2850335f91534b636ca8de7b521deb0eab4724581b0072b747aefeed9d",
+  "texte_envoye_hash": "1b055c2850335f91534b636ca8de7b521deb0eab4724581b0072b747aefeed9d",
+  "texte_envoye": "nom: Blessure critique de groupe\necole: Nécromancie\nniveaux: Cham 8, Prê 8, Sor 9\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: 1 créature/niveau, distantes de moins de 9 m les unes des autres\nduree: instantanée\njet_de_sauvegarde: Volonté, 1/2 dégâts\nresistance_magie: oui\n\nDe l’énergie négative part dans toutes les directions depuis le point d’origine, infligeant 4d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +40), à toutes les créatures vivantes situées alentour.\nDe la même manière que les autres sorts de blessure, blessure critique de groupe soigne les morts-vivants situés dans la zone. Un prêtre capable de lancer les sorts de blessure de façon spontanée peut en faire de même à l’égard des sorts de blessure de groupe.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "dégâts_énergie_négative\nzone_effet_multiple\nsoigne_morts_vivants\njet_sauvegarde_volonté\ndégâts_instantanés\ngroupe_créatures",
+  "usage": {
+    "inputTokens": 435,
+    "outputTokens": 54
+  },
+  "arret": "end_turn"
+}

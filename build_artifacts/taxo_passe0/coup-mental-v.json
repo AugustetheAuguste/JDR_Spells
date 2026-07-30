@@ -1,0 +1,26 @@
+{
+  "id": "coup-mental-v",
+  "etiquettes": [
+    "degats_mentaux",
+    "affaiblissement_temporaire",
+    "jet_de_sauvegarde_volonte",
+    "epuisement_sur_echec",
+    "fatigue_sur_succes",
+    "portee_courte",
+    "effet_mental"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:32+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "bf85ffacc564a82bc6657d2ae073ee8f9596707ece66d9832bbf69dadae84857",
+  "texte_envoye_hash": "bf85ffacc564a82bc6657d2ae073ee8f9596707ece66d9832bbf69dadae84857",
+  "texte_envoye": "nom: Coup mental V\necole: Divination\ndescripteurs: effet mental\nniveaux: Psy 5\ntemps_incantation: 1 action simple\ncomposantes: G\nportee: courte (7,50 m + 1,50 m/2 niveaux)\ncible: 1 créature\nduree: instantanée\njet_de_sauvegarde: Volonté, 1/2 dégâts\nresistance_magie: oui\n\nCe sort fonctionne comme coup mental IV mais la cible est aussi épuisée pendant 1 round si elle rate son jet de sauvegarde et fatiguée pendant 1 round si elle le réussit. On peut lancer ce sort dans une version réduite.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "degats_mentaux\naffaiblissement_temporaire\njet_de_sauvegarde_volonte\nepuisement_sur_echec\nfatigue_sur_succes\nportee_courte\neffet_mental",
+  "usage": {
+    "inputTokens": 308,
+    "outputTokens": 56
+  },
+  "arret": "end_turn"
+}

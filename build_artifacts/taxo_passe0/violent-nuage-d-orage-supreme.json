@@ -1,0 +1,26 @@
+{
+  "id": "violent-nuage-d-orage-supreme",
+  "etiquettes": [
+    "dégâts_électricité",
+    "zone_effet_mobile",
+    "étourdissement",
+    "effet_sonore",
+    "sauvegarde_réflexes",
+    "sauvegarde_vigueur",
+    "résistance_magie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:28+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "b5ce3fec2d33b42fa326da288fb1d0ad7a8a2ff56c57e2272aa5887c45ee385e",
+  "texte_envoye_hash": "b5ce3fec2d33b42fa326da288fb1d0ad7a8a2ff56c57e2272aa5887c45ee385e",
+  "texte_envoye": "nom: Violent nuage d'orage suprême\necole: Évocation\ndescripteurs: électricité, son\nniveaux: Dru 4, Ens/Mag 4, Magus 4, Sor 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, M/FD (un morceau d’arbre frappé par la foudre)\nportee: moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)\ncible: sphère de 1,5 m de diamètre\nduree: 1 round/niveau\njet_de_sauvegarde: Réflexes pour annuler et Vigueur pour annuler (cf. texte)\nresistance_magie: oui\n\nCe sort fonctionne comme violent nuage d’orage, à la seule différence qu’il inflige 6d6 points de dégâts d’électricité à toutes les créatures qu’il touche. La première créature blessée par le nuage est également étourdie pendant 1 round (Vigueur annule). Il s’agit d’un effet de son.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "dégâts_électricité\nzone_effet_mobile\nétourdissement\neffet_sonore\nsauvegarde_réflexes\nsauvegarde_vigueur\nrésistance_magie",
+  "usage": {
+    "inputTokens": 420,
+    "outputTokens": 53
+  },
+  "arret": "end_turn"
+}

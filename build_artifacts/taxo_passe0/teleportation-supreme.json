@@ -1,0 +1,26 @@
+{
+  "id": "teleportation-supreme",
+  "etiquettes": [
+    "teleportation_sans_limite_distance",
+    "arrivee_garantie_destination",
+    "deplacement_sans_connaissance_prealable",
+    "description_fiable_requise",
+    "retour_automatique_si_tromperie",
+    "contact_avec_creatures_consentantes",
+    "invocation_teleportation"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:24+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "ff35ea8ca649724b50867bca3c629b3f71bc04fbde711ee5d89d5662630aa6b9",
+  "texte_envoye_hash": "ff35ea8ca649724b50867bca3c629b3f71bc04fbde711ee5d89d5662630aa6b9",
+  "texte_envoye": "nom: Téléportation suprême\necole: Invocation (téléportation)\nniveaux: Con 5, ConU 6, Ens/Mag 7, Psy 7, Sor 7\ntemps_incantation: 1 action simple\ncomposantes: V\nportee: personnelle et contact\ncible: le jeteur de sorts et les créatures consentantes ou objets qu’il touche\nduree: instantanée\njet_de_sauvegarde: aucun ou Volonté, annule (objet)\nresistance_magie: non ou oui (objet)\n\nCe sort ressemble à téléportation, si ce n’est qu’il n’a pas de limite de portée et que le personnage arrive toujours sur l’objectif. De plus, il n’a pas besoin de connaître sa destination, même s’il doit tout de même disposer d’une description fiable de l’endroit. Dans le cas contraire (ou si on l’a trompé), il disparaît et réapparaît aussitôt à son lieu de départ. Téléportation suprême ne permet pas de se déplacer entre les plans.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "teleportation_sans_limite_distance\narrivee_garantie_destination\ndeplacement_sans_connaissance_prealable\ndescription_fiable_requise\nretour_automatique_si_tromperie\ncontact_avec_creatures_consentantes\ninvocation_teleportation",
+  "usage": {
+    "inputTokens": 415,
+    "outputTokens": 70
+  },
+  "arret": "end_turn"
+}

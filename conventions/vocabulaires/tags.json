@@ -1,222 +1,504 @@
 {
-  "version": "v0",
-  "note": "v0 PROVISOIRE et volontairement modeste. L'étape 04 (passe 0 sur échantillon stratifié + curation humaine) REMPLACE intégralement cette liste par taxonomie_v1 ; aucun run de génération complet ne part avant ce remplacement.",
+  "version": "v1",
+  "note": "taxonomie_v1, gelée le 2026-07-29 et AUTORITAIRE : c'est la liste close des tags admissibles, aucun run de génération n'en sort. Elle est DÉRIVÉE PAR MACHINE du corpus réel, sans curation humaine et sans en attendre aucune. Sa légitimité ne vient pas d'une signature mais d'une règle de coupe déterministe et rejouable : la passe 0 (build_artifacts/taxo_passe0/, 200 sorts de build_artifacts/echantillon_taxo.json, proposition libre, température 0) a produit 1278 usages d'étiquette, agrégés en 1121 étiquettes brutes distinctes (build_artifacts/taxo_passe0_agrege.csv) ; les 54 groupes candidats de conventions/taxo_groupes.json en sont le regroupement ; les 35 retenus ici sont EXACTEMENT ceux qui couvrent >= 10 sorts de l'échantillon, ni choisis ni écartés à la main. Les définitions sont rédigées ; les exemples sont tirés mécaniquement du corpus (positifs = sorts de l'échantillon couverts par le groupe, négatifs = sorts de groupes voisins qu'il ne couvre pas), jamais inventés. tests/test_taxo_passe0.py rejoue la coupe et échoue si cette liste cesse d'être exactement l'ensemble des groupes au-dessus du seuil. Pour la faire évoluer, on modifie taxo_groupes.json ou le seuil et on recoupe une v2 — on n'ajoute pas un tag à la main.",
+  "gele_le": "2026-07-29",
   "valeurs": [
     {
-      "cle": "degats_energie",
-      "definition_fr": "Le sort inflige des dégâts d'un type énergétique nommé.",
+      "cle": "degats_directs",
+      "definition_fr": "Le sort inflige des points de dégâts, quel qu'en soit le type ou le vecteur.",
       "exemples_positifs": [
-        "Lamentation des derniers jours d'été",
-        "Absorption d'énergie"
+        "Animation suspendue",
+        "Boule de feu",
+        "Caresse vaseuse"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Résistance à l'âge"
+        "Annihilation de mort-vivant",
+        "Permanence",
+        "Contact défigurant"
       ]
     },
     {
-      "cle": "rayon",
-      "definition_fr": "Le sort se résout par un rayon exigeant une attaque de contact à distance.",
+      "cle": "bonus_chiffre",
+      "definition_fr": "Le sort accorde un bonus numérique nommé à un jet, à une valeur ou à la CA.",
       "exemples_positifs": [
-        "Destruction de mort-vivant",
-        "Absorption d'énergie"
+        "Souhait",
+        "Armure instantanée",
+        "Assistance divine"
       ],
       "exemples_negatifs": [
-        "Contrôle de l'eau",
-        "Arc-bâton"
+        "Chaîne cloutée des ombres",
+        "Convocation d'ombres suprême",
+        "Animation suspendue"
       ]
     },
     {
-      "cle": "morts_vivants",
-      "definition_fr": "Le sort traite spécifiquement des morts-vivants, qu'il les crée, les blesse ou s'en protège.",
+      "cle": "zone_d_effet",
+      "definition_fr": "L'effet couvre un volume ou une étendue (zone, émanation, cône, sphère, nuage) plutôt qu'une cible désignée.",
       "exemples_positifs": [
-        "Animation des morts",
-        "Destruction de mort-vivant"
+        "Permanence",
+        "Annihilation de mort-vivant",
+        "Boule de feu"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Animation suspendue",
+        "Broussaille distrayante",
+        "Assistance divine"
       ]
     },
     {
-      "cle": "energie_negative",
-      "definition_fr": "Le sort met en jeu l'énergie négative.",
+      "cle": "protection_defensive",
+      "definition_fr": "Le sort réduit les dégâts ou les atteintes subies par le sujet, ou lui oppose une barrière.",
       "exemples_positifs": [
-        "Absorption d'énergie",
-        "Animation des morts"
+        "Armure instantanée",
+        "Atavisme de groupe",
+        "Chaîne cloutée des ombres"
       ],
       "exemples_negatifs": [
-        "Voile d'énergie positive",
-        "Arc-bâton"
+        "Souhait",
+        "Animation suspendue",
+        "Annihilation de mort-vivant"
       ]
     },
     {
-      "cle": "energie_positive",
-      "definition_fr": "Le sort met en jeu l'énergie positive.",
+      "cle": "jet_de_sauvegarde",
+      "definition_fr": "Le sort autorise un jet de sauvegarde qui en annule ou en réduit l'effet.",
       "exemples_positifs": [
-        "Voile d'énergie positive",
-        "Destruction de mort-vivant"
+        "Annihilation de mort-vivant",
+        "Assistance divine",
+        "Boule de feu"
       ],
       "exemples_negatifs": [
-        "Absorption d'énergie",
-        "Arc-bâton"
+        "Animation suspendue",
+        "Âme parasite",
+        "Souhait"
       ]
     },
     {
-      "cle": "emanation",
-      "definition_fr": "L'effet prend la forme d'une émanation centrée sur un point ou sur le lanceur.",
+      "cle": "effet_mental",
+      "definition_fr": "L'effet agit sur l'esprit du sujet et relève des effets mentaux.",
       "exemples_positifs": [
-        "Alarme d'invisibilité",
-        "Aura d'avidité"
+        "Appel d'un esprit",
+        "Coup mental V",
+        "Création de paysage mental suprême"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Destruction de mort-vivant"
+        "Héroïsme insipide suprême",
+        "Détection du Chaos",
+        "Annihilation de mort-vivant"
       ]
     },
     {
-      "cle": "terrain",
-      "definition_fr": "Le sort modifie le terrain, l'eau ou l'environnement plutôt que des créatures.",
+      "cle": "invocation_ou_creation",
+      "definition_fr": "Le sort fait apparaître une créature, un objet ou une matière qui n'existait pas.",
       "exemples_positifs": [
-        "Contrôle de l'eau",
-        "Lamentation des derniers jours d'été"
+        "Anneau de repli féérique",
+        "Armure instantanée",
+        "Broussaille distrayante"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Résistance à l'âge"
+        "Animation suspendue",
+        "Appel d'un esprit",
+        "Contact défigurant"
       ]
     },
     {
-      "cle": "detection",
-      "definition_fr": "Le sort signale ou révèle une présence, un effet ou une propriété.",
+      "cle": "terrain_ou_environnement",
+      "definition_fr": "Le sort modifie le terrain, l'eau, la végétation, le climat ou l'environnement plutôt que des créatures.",
       "exemples_positifs": [
-        "Alarme d'invisibilité",
-        "Détection de la magie"
+        "Appel d'un esprit",
+        "Broussaille distrayante",
+        "Convocation d'alliés naturels IV"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Absorption d'énergie"
+        "Animation suspendue",
+        "Permanence",
+        "Souhait"
       ]
     },
     {
-      "cle": "anti_invisibilite",
-      "definition_fr": "Le sort porte sur les créatures invisibles en particulier.",
+      "cle": "attaque_de_contact",
+      "definition_fr": "La résolution passe par une attaque de contact, au corps à corps ou à distance.",
       "exemples_positifs": [
-        "Alarme d'invisibilité",
-        "Invisibilité"
+        "Animation suspendue",
+        "Caresse vaseuse",
+        "Contact défigurant"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Boule de feu",
+        "Coup mental V",
+        "Annihilation de mort-vivant"
       ]
     },
     {
-      "cle": "arme",
-      "definition_fr": "Le sort porte sur une arme et modifie son usage.",
+      "cle": "divination_information",
+      "definition_fr": "Le sort livre au lanceur une information qu'il n'aurait pas obtenue autrement.",
       "exemples_positifs": [
-        "Arc-bâton",
-        "Affûtage"
+        "Assistance divine",
+        "Corps élémentaire IV",
+        "Détection du Chaos"
       ],
       "exemples_negatifs": [
-        "Contrôle de l'eau",
-        "Absorption d'énergie"
+        "Épée impie",
+        "Création de paysage mental suprême",
+        "Souhait"
       ]
     },
     {
-      "cle": "objet_touche",
-      "definition_fr": "Le sort s'applique par contact à un objet ou à un cadavre.",
+      "cle": "transformation_du_sujet",
+      "definition_fr": "Le sort change la forme, la nature ou la substance de son sujet.",
       "exemples_positifs": [
-        "Arc-bâton",
-        "Animation des morts"
+        "Atavisme de groupe",
+        "Bâton à sort",
+        "Broussaille distrayante"
       ],
       "exemples_negatifs": [
-        "Arrêt du temps",
-        "Contrôle de l'eau"
+        "Souhait",
+        "Animation suspendue",
+        "Armure instantanée"
       ]
     },
     {
-      "cle": "personnelle",
-      "definition_fr": "Le sort a une portée personnelle et ne quitte pas le lanceur.",
+      "cle": "deplacement_ou_teleportation",
+      "definition_fr": "Le sort transporte le sujet ou modifie la façon dont il se déplace.",
       "exemples_positifs": [
-        "Arrêt du temps",
-        "Résistance à l'âge"
+        "Souhait",
+        "Cage de force",
+        "Cercle de téléportation"
       ],
       "exemples_negatifs": [
-        "Destruction de mort-vivant",
-        "Contrôle de l'eau"
+        "Animation suspendue",
+        "Armure instantanée",
+        "Ascension"
       ]
     },
     {
-      "cle": "vieillissement",
-      "definition_fr": "Le sort agit sur les effets de l'âge du sujet.",
+      "cle": "rayon_ou_projectile",
+      "definition_fr": "L'effet se matérialise en un rayon, un trait ou un projectile lancé vers sa cible.",
       "exemples_positifs": [
-        "Résistance à l'âge",
-        "Résistance à l'âge mineure"
+        "Annihilation de mort-vivant",
+        "Boule de feu",
+        "Broussaille distrayante"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Animation suspendue",
+        "Permanence",
+        "Assistance divine"
       ]
     },
     {
-      "cle": "bonus_defensif",
-      "definition_fr": "Le sort accorde un bonus à la CA ou aux jets de sauvegarde.",
+      "cle": "resistance_a_la_magie",
+      "definition_fr": "La résistance à la magie s'applique au sort.",
       "exemples_positifs": [
-        "Voile d'énergie positive",
-        "Armure de mage"
+        "Âme parasite",
+        "Annihilation de mort-vivant",
+        "Cercle de téléportation"
       ],
       "exemples_negatifs": [
-        "Absorption d'énergie",
-        "Contrôle de l'eau"
+        "Assistance divine",
+        "Animation suspendue",
+        "Permanence"
       ]
     },
     {
-      "cle": "temps",
-      "definition_fr": "Le sort manipule l'écoulement du temps ou le nombre d'actions disponibles.",
+      "cle": "duree_prolongee",
+      "definition_fr": "La durée se compte en minutes, heures ou jours, ou peut être rendue permanente.",
       "exemples_positifs": [
-        "Arrêt du temps",
-        "Lenteur"
+        "Permanence",
+        "Âme parasite",
+        "Animation suspendue"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Annihilation de mort-vivant",
+        "Cage de force",
+        "Appel d'un esprit"
       ]
     },
     {
-      "cle": "niveaux_negatifs",
-      "definition_fr": "Le sort confère des niveaux négatifs.",
+      "cle": "perception_amelioree",
+      "definition_fr": "Le sort étend ou modifie les sens du sujet.",
       "exemples_positifs": [
-        "Absorption d'énergie",
-        "Blessure critique"
+        "Corps élémentaire IV",
+        "Création de paysage mental suprême",
+        "Forme éthérée"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Assistance divine",
+        "Souhait",
+        "Détection du Chaos"
       ]
     },
     {
-      "cle": "peur",
-      "definition_fr": "Le sort produit un effet de peur.",
+      "cle": "amelioration_de_capacite",
+      "definition_fr": "Le sort augmente une capacité du sujet sans viser de menace en particulier.",
       "exemples_positifs": [
-        "Lamentation des derniers jours d'été",
-        "Frayeur"
+        "Armure instantanée",
+        "Atavisme de groupe",
+        "Convocation d'ombres suprême"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Contrôle de l'eau"
+        "Souhait",
+        "Bâton à sort",
+        "Animation suspendue"
       ]
     },
     {
-      "cle": "creation_de_serviteurs",
-      "definition_fr": "Le sort met des créatures sous le contrôle du lanceur.",
+      "cle": "illusion_visuelle_ou_sonore",
+      "definition_fr": "Le sort produit une image, un son ou une ombre sans substance réelle.",
       "exemples_positifs": [
-        "Animation des morts",
-        "Convocation de monstres I"
+        "Chaîne cloutée des ombres",
+        "Communication sécurisée suprême",
+        "Convocation d'ombres suprême"
       ],
       "exemples_negatifs": [
-        "Arc-bâton",
-        "Arrêt du temps"
+        "Anneau de repli féérique",
+        "Appel d'un esprit",
+        "Souhait"
+      ]
+    },
+    {
+      "cle": "immunite_ou_resistance_element",
+      "definition_fr": "Le sort confère une immunité ou une résistance à un type d'énergie ou d'atteinte nommé.",
+      "exemples_positifs": [
+        "Animation suspendue",
+        "Annihilation de mort-vivant",
+        "Corps élémentaire IV"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Armure instantanée",
+        "Souhait"
+      ]
+    },
+    {
+      "cle": "objet_ou_equipement",
+      "definition_fr": "Le sort porte sur un objet, une pièce d'équipement ou un matériau, non sur une créature.",
+      "exemples_positifs": [
+        "Permanence",
+        "Annihilation de mort-vivant",
+        "Bâton à sort"
+      ],
+      "exemples_negatifs": [
+        "Boule de feu",
+        "Animation suspendue",
+        "Souhait"
+      ]
+    },
+    {
+      "cle": "alignement_ou_divin",
+      "definition_fr": "L'effet dépend de l'alignement ou relève explicitement du sacré, du profane ou du divin.",
+      "exemples_positifs": [
+        "Assistance divine",
+        "Détection du Chaos",
+        "Épée impie"
+      ],
+      "exemples_negatifs": [
+        "Corps élémentaire IV",
+        "Souhait",
+        "Cercle de téléportation"
+      ]
+    },
+    {
+      "cle": "detection_ou_revelation",
+      "definition_fr": "Le sort signale, localise ou révèle une présence, un effet ou une propriété.",
+      "exemples_positifs": [
+        "Cercle de téléportation",
+        "Détection du Chaos",
+        "Héroïsme insipide suprême"
+      ],
+      "exemples_negatifs": [
+        "Assistance divine",
+        "Épée impie",
+        "Armure instantanée"
+      ]
+    },
+    {
+      "cle": "charme_ou_coercition",
+      "definition_fr": "Le sort contraint ou infléchit le comportement du sujet (charme, coercition, compulsion, suggestion).",
+      "exemples_positifs": [
+        "Fouet d'ego V",
+        "Héroïsme insipide suprême",
+        "Insinuation du ça IV"
+      ],
+      "exemples_negatifs": [
+        "Appel d'un esprit",
+        "Annihilation de mort-vivant",
+        "Permanence"
+      ]
+    },
+    {
+      "cle": "malus_chiffre",
+      "definition_fr": "Le sort impose un malus ou une pénalité numérique nommée.",
+      "exemples_positifs": [
+        "Contact défigurant",
+        "Corps enflammé",
+        "Fouet d'ego V"
+      ],
+      "exemples_negatifs": [
+        "Annihilation de mort-vivant",
+        "Animation suspendue",
+        "Caresse vaseuse"
+      ]
+    },
+    {
+      "cle": "plusieurs_cibles",
+      "definition_fr": "Le sort affecte plusieurs créatures ou objets désignés, non une cible unique.",
+      "exemples_positifs": [
+        "Atavisme de groupe",
+        "Cercle de téléportation",
+        "Communication sécurisée suprême"
+      ],
+      "exemples_negatifs": [
+        "Souhait",
+        "Chaîne cloutée des ombres",
+        "Armure instantanée"
+      ]
+    },
+    {
+      "cle": "confusion_ou_desorientation",
+      "definition_fr": "Le sort désorganise la perception ou la conduite du sujet sans le contraindre à un ordre précis.",
+      "exemples_positifs": [
+        "Déjà vu",
+        "Détection du Chaos",
+        "Flèche de loi"
+      ],
+      "exemples_negatifs": [
+        "Appel d'un esprit",
+        "Permanence",
+        "Fouet d'ego V"
+      ]
+    },
+    {
+      "cle": "entrave_ou_immobilisation",
+      "definition_fr": "Le sort restreint ou supprime la capacité du sujet à se déplacer ou à agir librement.",
+      "exemples_positifs": [
+        "Ascension",
+        "Contact défigurant",
+        "Enchevêtrement"
+      ],
+      "exemples_negatifs": [
+        "Animation suspendue",
+        "Souhait",
+        "Corps enflammé"
+      ]
+    },
+    {
+      "cle": "metamagie_ou_sort_cible",
+      "definition_fr": "Le sort prend pour objet l'incantation ou un autre sort, non une créature ni un lieu.",
+      "exemples_positifs": [
+        "Permanence",
+        "Souhait",
+        "Bâton à sort"
+      ],
+      "exemples_negatifs": [
+        "Armure instantanée",
+        "Animation suspendue",
+        "Annihilation de mort-vivant"
+      ]
+    },
+    {
+      "cle": "duree_instantanee",
+      "definition_fr": "L'effet est instantané : il se résout à l'incantation et ne persiste pas.",
+      "exemples_positifs": [
+        "Annihilation de mort-vivant",
+        "Coup mental III",
+        "Destruction"
+      ],
+      "exemples_negatifs": [
+        "Animation suspendue",
+        "Assistance divine",
+        "Âme parasite"
+      ]
+    },
+    {
+      "cle": "arme_ou_munition",
+      "definition_fr": "Le sort porte sur une arme ou une munition et en modifie l'usage.",
+      "exemples_positifs": [
+        "Chaîne cloutée des ombres",
+        "Coeur du métal",
+        "Épée impie"
+      ],
+      "exemples_negatifs": [
+        "Animation suspendue",
+        "Armure instantanée",
+        "Souhait"
+      ]
+    },
+    {
+      "cle": "affaiblissement_de_capacite",
+      "definition_fr": "Le sort dégrade une valeur de caractéristique ou une capacité du sujet.",
+      "exemples_positifs": [
+        "Caresse vaseuse",
+        "Contact défigurant",
+        "Coup mental V"
+      ],
+      "exemples_negatifs": [
+        "Animation suspendue",
+        "Boule de feu",
+        "Annihilation de mort-vivant"
+      ]
+    },
+    {
+      "cle": "communication_ou_langage",
+      "definition_fr": "Le sort porte sur la parole, la langue, le message ou la communication.",
+      "exemples_positifs": [
+        "Appel d'un esprit",
+        "Communication sécurisée suprême",
+        "Messager verrouillé"
+      ],
+      "exemples_negatifs": [
+        "Coup mental V",
+        "Fouet d'ego V",
+        "Corps élémentaire IV"
+      ]
+    },
+    {
+      "cle": "soin_ou_guerison",
+      "definition_fr": "Le sort rend des points de vie ou lève une affection.",
+      "exemples_positifs": [
+        "Souhait",
+        "Corps enflammé",
+        "Orbe du néant"
+      ],
+      "exemples_negatifs": [
+        "Animation suspendue",
+        "Contact défigurant",
+        "Armure instantanée"
+      ]
+    },
+    {
+      "cle": "dissipation_ou_contresort",
+      "definition_fr": "Le sort supprime, suspend ou contre un effet magique en place.",
+      "exemples_positifs": [
+        "Permanence",
+        "Animation suspendue",
+        "Cage de force"
+      ],
+      "exemples_negatifs": [
+        "Âme parasite",
+        "Boule de feu",
+        "Annihilation de mort-vivant"
+      ]
+    },
+    {
+      "cle": "invisibilite_ou_dissimulation",
+      "definition_fr": "Le sort soustrait le sujet ou une chose à la vue ou à la détection.",
+      "exemples_positifs": [
+        "Broussaille distrayante",
+        "Cage de force",
+        "Forme éthérée"
+      ],
+      "exemples_negatifs": [
+        "Armure instantanée",
+        "Souhait",
+        "Cercle de téléportation"
       ]
     }
-  ]
+  ],
+  "regle_de_coupe": {
+    "seuil_sorts_echantillon": 10,
+    "source": "build_artifacts/taxo_passe0_agrege.csv",
+    "groupes": "conventions/taxo_groupes.json",
+    "rejouee_par": "tests/test_taxo_passe0.py"
+  },
+  "notes_ambiguite_plafond": "5 % des enregistrements générés : au-delà, la taxonomie est jugée mal découpée et on recoupe une v2 ; on ne laisse pas le modèle improviser un tag."
 }

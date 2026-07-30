@@ -1,0 +1,26 @@
+{
+  "id": "detection-du-chaos",
+  "etiquettes": [
+    "detection_aura_chaotique",
+    "identification_intensite_aura",
+    "localisation_source_chaos",
+    "divination_alignement",
+    "etude_progressive_zone",
+    "persistance_aura_residuelle",
+    "etourdissement_aura_surpuissante"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:37+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "6037fadb18bb84762b3cd64b11e60284dd6342e5bd32e8b7b1f09604992c4c05",
+  "texte_envoye_hash": "6037fadb18bb84762b3cd64b11e60284dd6342e5bd32e8b7b1f09604992c4c05",
+  "texte_envoye": "nom: Détection du Chaos\necole: Divination\nniveaux: Cham 1, Inq 1, Prê 1, Spi 1\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: 18 m (12 c)\ncible: émanation en forme de cône\nduree: concentration, jusqu’à 10 minutes/niveau (T)\njet_de_sauvegarde: aucun\nresistance_magie: non\n\nGrâce à détection du Chaos, le lanceur de sorts peut détecter la présence du Chaos. Les informations qu’il reçoit dépendent du temps passé à étudier la zone ou le sujet choisi.\nPremier round : présence ou absence d’auras chaotiques.\nDeuxième round : nombre d’auras chaotiques (émanant de créatures, de sorts ou d’objets) dans la zone sondée et intensité de la plus puissante.\nSi le jeteur de sorts est d’alignement Loyal, si l’aura détectée est surpuissante (voir ci-dessous) et correspond à une créature possédant un nombre de dés de vie supérieur ou égal au double du niveau du personnage, il est étourdi pendant 1 round et le sort prend fin immédiatement.\nDétection de la Loi/du Bien/du Chaos/du Mal\nCréature/objetIntensité de l'aura\nAucuneFaibleModéréeForteSurpuissante\nCréature alignée (sauf mort-vivant/Extérieur, selon les DV)4 ou moins5–1011–2526–5051 ou plus\nMort-vivant aligné (selon les DV)—2 ou moins3–89–2021 ou plus\nExtérieur aligné (selon les DV)–1 ou moins2–45–1011 ou plus\nPrêtre ou paladin d'un dieu aligné* (selon le niveau de classe)—12–45–1011 ou plus\nObjet magique ou sort aligné (selon le NLS)5 ou moins6–1011–1516–2021 ou plus\n(*) Certains personnages qui ne sont pas des prêtres possèdent une aura de puissance équivalente (voir les descriptions de classe).\nTroisième round : intensité et emplacement de chacune des auras. Si une aura se trouve en dehors du champ de vision du lanceur de sort, il sait la direction dans laquelle elle se situe mais pas son emplacement exact.\nIntensité de l’aura. La puissance de l’aura dépend du type de créature (ou d’objet) dont elle émane et de son nombre de DV, de son niveau de lanceur de sorts ou de son niveau de classe (pour un prêtre). Si une aura correspond à plusieurs catégories, le sort indique la plus puissante d’entre elles.\nAura persistante. Une aura chaotique ne disparaît pas immédiatement lorsque sa source est dissipée (dans le cas d’un sort) ou détruite (dans le cas d’une créature ou d’un objet magique). Si le lanceur de sorts oriente détection du Chaos vers une telle zone, le sort indique une aura ténue (moins puissante qu’une aura faible). Le temps pendant lequel l’aura ténue persiste dépend de son intensité originale.\nIntensité de l’auraDurée de l’aura persistante\nFaible1d6 rounds\nModérée1d6 minutes\nPuissante1d6x10 minutes\nSurpuissante1d6 jours\nN’oubliez pas qu’animaux, pièges, substances toxiques et autres menaces potentielles similaires ne sont pas intrinsèquement chaotiques ; le sort ne les détecte donc pas. En revanche, il repère les créatures animées d’intentions foncièrement chaotiques.\nLe personnage peut pivoter sur lui-même pour étudier une nouvelle zone chaque round. Le sort fonctionne à travers les barrières si celles-ci ne sont pas trop épaisses : il est bloqué par 30 cm de pierre, 2,5 cm de métal, une mince feuille de plomb ou 90 cm de bois ou de terre.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "detection_aura_chaotique\nidentification_intensite_aura\nlocalisation_source_chaos\ndivination_alignement\netude_progressive_zone\npersistance_aura_residuelle\netourdissement_aura_surpuissante",
+  "usage": {
+    "inputTokens": 1222,
+    "outputTokens": 62
+  },
+  "arret": "end_turn"
+}

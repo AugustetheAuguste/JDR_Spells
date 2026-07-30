@@ -93,12 +93,12 @@ workers au-dessus de 4.** pathfinder-fr.org est un wiki communautaire tenu par d
 bénévoles : ce n'est pas un réglage de performance. Aucun module hors
 `fetch_classes` / `fetch_spells` n'accède au réseau.
 
-## 8. `data/sorts/*.json` est corrigeable à la main — l'humain fait foi
+## 8. `data/sorts/*.json` est un artefact de machine — le pipeline fait foi
 
-- Les éditions humaines y sont **autoritaires** ; `parse_spells` **n'écrase jamais**
-  un fichier existant sans `--overwrite`, et `enrich_spells` ne réécrit **que** la
-  clé `classes`, le reste étant conservé tel quel.
-- Provenance dans `meta` (`url`, `cache_fichier`, `recupere_le`, `parser_version`).
+- L'autorité est celle du parseur sur le HTML en cache : une retouche manuelle
+  **sera écrasée** à la régénération. Corriger `parse_spells`, puis régénérer.
+- Garde-fous contre l'accident, pas garanties d'autorité : `--overwrite` exigé pour
+  réécrire, `enrich_spells` limité à la clé `classes`. Provenance dans `meta`.
 
 ## 9. Anomalies connues, permanentes
 

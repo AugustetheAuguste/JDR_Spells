@@ -20,7 +20,7 @@ Aucune anomalie bloquante : `feat/spell-corpus` est en état d'être fusionnée 
 |---|---|---|
 | A1 | Chaque `data/sorts/*.json` valide `sort.schema.json` | OK — 2070 fichiers valides |
 | A2 | Chaque ligne des listes de classe valide `liste_classe.schema.json` | OK — 8927 lignes valides sur 19 fichiers |
-| A3 | Tous les fichiers JSON/JSONL décodent en UTF-8 strict, sans BOM | OK — 2096 fichiers UTF-8 stricts, sans BOM, analysables |
+| A3 | Tous les fichiers JSON/JSONL décodent en UTF-8 strict, sans BOM | OK — 2097 fichiers UTF-8 stricts, sans BOM, analysables |
 | B1 | Chaque `id` de l'index possède son fichier de sort | OK — 2070 entrées d'index, toutes couvertes (ensemble d'exceptions : 0) |
 | B2 | Chaque fichier de sort possède son entrée d'index | OK — 2070 fichiers, 100 % indexés |
 | B3 | Chaque `id` des listes de classe est dans l'index | OK — chaque `id` de liste est indexé |
@@ -128,10 +128,10 @@ Le plan annonçait 2 500–3 500 sorts uniques et 4 000–5 000 entrées de list
 | Chasseur | 12 |
 | Conjurateur | 15 |
 | Druide | 11 |
-| Hypnotiseur | 0 **← à vérifier** |
+| Hypnotiseur | 0 **← 0** |
 | Inquisiteur | 15 |
 | Magus | 1 |
-| Médium | 0 **← à vérifier** |
+| Médium | 0 **← 0** |
 | Occultiste | 1 |
 | Paladin | 30 |
 | Prêtre/Prêtre combattant/Oracle | 31 |
@@ -140,7 +140,7 @@ Le plan annonçait 2 500–3 500 sorts uniques et 4 000–5 000 entrées de list
 | Sorcière | 4 |
 | Spirite | 1 |
 
-Classes à **0 sort exclusif** : Hypnotiseur, Médium. C'est un résultat notable et possiblement suspect : soit ces classes n'accèdent qu'à des sorts également ouverts à d'autres, soit leur liste a été mal rattachée à l'étape 04. À trancher à la main.
+Classes à **0 sort exclusif** : Hypnotiseur, Médium. C'est un résultat notable et possiblement suspect : soit ces classes n'accèdent qu'à des sorts également ouverts à d'autres, soit leur liste a été mal rattachée à l'étape 04. Le départage se fait sur `data/classes.json`, en amont, puis on régénère.
 
 ## Anomalies bloquantes
 
@@ -164,8 +164,8 @@ _Aucune._ Les contrôles bloquants passent tous.
 
 | id | Détail |
 |---|---|
-| `Hypnotiseur` | 0 sort exclusif : à vérifier à la main — soit la classe n'emprunte que des sorts partagés, soit sa liste a été mal rattachée |
-| `Médium` | 0 sort exclusif : à vérifier à la main — soit la classe n'emprunte que des sorts partagés, soit sa liste a été mal rattachée |
+| `Hypnotiseur` | 0 sort exclusif — soit la classe n'emprunte que des sorts partagés, soit son URL de liste est mal rattachée dans `data/classes.json` |
+| `Médium` | 0 sort exclusif — soit la classe n'emprunte que des sorts partagés, soit son URL de liste est mal rattachée dans `data/classes.json` |
 
 ## Constats connus et acceptés
 
@@ -179,16 +179,16 @@ Les cinq exceptions convenues dans `build/pf_spell_corpus/09_VALIDATE_CORPUS.md`
 | 4 | `ecoles` vide dans l'index pour les classes dont la page ne groupe pas par école (Druide, Paladin, Alchimiste) | **Observé** : 59 entrées d'index sans école dont toutes les classes sont dans {Alchimiste, Druide, Paladin}. Attendu. |
 | 5 | `mythique` renseigné sur certains sorts | **Observé** : 287 sorts. Capture volontaire, suppression prévue dans une phase ultérieure. |
 
-## File de relecture humaine recommandée
+## Incertitudes résiduelles
 
-Par ordre de valeur décroissante pour une relecture manuelle :
+Ce que les contrôles mesurent sans pouvoir le résoudre. Aucune de ces lignes n'est une tâche de relecture : chacune se traite en amont, dans le parseur ou dans le référentiel, puis se régénère.
 
-1. **Divergences de niveau liste ↔ page** — 678 sorts. Table complète dans `reports/08_enrich.md`. Chaque ligne est soit une coquille du wiki, soit une vraie différence de classe ; seul un humain peut trancher.
-2. **Classes à 0 sort exclusif** — Hypnotiseur, Médium. Vérifier que la page de liste a bien été rattachée à la bonne classe.
-3. **Champs à faible couverture** — `jet_de_sauvegarde` 85.65 % et `resistance_magie` 85.17 %. Vérifier sur un échantillon que l'absence vient bien de la page et non de l'analyse.
-4. **`portee` / `cible` manquants** — 2 et 9 sorts, listés dans le JSONL d'anomalies. Assez peu nombreux pour être ouverts un par un.
-5. **Suffixes de collision de slug** — 0 `id` portent un suffixe `-2`/`-3`. Confirmer qu'il s'agit bien de sorts distincts homonymes.
-6. **Abréviations de classe inconnues** — 0 à cartographier, s'il en reste.
+1. **Divergences de niveau liste ↔ page** — 678 sorts. Table complète dans `reports/08_enrich.md`. Les deux sources sont conservées côte à côte (`niveau`, `niveau_page`) et `concordance` porte le constat : le pipeline n'arbitre pas, il expose.
+2. **Classes à 0 sort exclusif** — Hypnotiseur, Médium. Recoupable mécaniquement : l'URL de liste de `data/classes.json` doit être celle de la classe annoncée.
+3. **Champs à faible couverture** — `jet_de_sauvegarde` 85.65 % et `resistance_magie` 85.17 %. Une lacune de parseur se distingue d'une lacune de source en relançant `parse_spells` sur le HTML en cache : la source, elle, ne bouge plus.
+4. **`portee` / `cible` manquants** — 2 et 9 sorts, énumérés dans le JSONL d'anomalies avec leur `meta.cache_fichier`.
+5. **Suffixes de collision de slug** — 0 `id` portent un suffixe `-2`/`-3`. Homonymes distincts par construction : les URLs sources diffèrent, sinon la page aurait été dédoublonnée à l'étape 06.
+6. **Abréviations de classe inconnues** — 0 restantes, à ajouter au référentiel des abréviations, pas au fichier de sort.
 
 ## Notes de conformité
 

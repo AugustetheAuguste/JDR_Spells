@@ -1,0 +1,26 @@
+{
+  "id": "eternuement-de-feu",
+  "etiquettes": [
+    "cône_de_feu",
+    "dégâts_feu",
+    "renversement_possible",
+    "action_simple_requise",
+    "limitation_actions",
+    "durée_prolongée",
+    "projectile_enflammé"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:43+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "12728b410ec7b6fbc54e0ce09799c21711def83dd44ed9bc2e8e546ac61924fc",
+  "texte_envoye_hash": "12728b410ec7b6fbc54e0ce09799c21711def83dd44ed9bc2e8e546ac61924fc",
+  "texte_envoye": "nom: Éternuement de feu\necole: Évocation\ndescripteurs: air, feu\nniveaux: Alch 2, Dru 2, Ens/Mag 2\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (piment trempé dans l'huile)\nportee: personnelle\ncible: le lanceur de sort\nduree: 1 round + 1 round/2 niveaux\njet_de_sauvegarde: Réflexes, 1/2 dégâts\nresistance_magie: oui\n\nCe sort provoque chez le personnage des crises d’éternuements puissants qui projettent de la morve enflammée susceptible de mettre le feu aux créatures, mais également de les renverser. Une fois ce sort lancé, le personnage doit éternuer chaque round par une action simple – il ne peut effectuer aucune autre action simple, ni aucune action complexe, tant que dure ce sort. À chaque fois qu’il éternue, il produit un cône de feu et de vent long de 3 mètres. Toutes les créatures à l’intérieur de ce cône subissent 2d6 points de dégâts de feu ; un jet de sauvegarde de Réflexes diminue de moitié ces dégâts. Les créatures qui ratent leur jet de sauvegarde doivent immédiatement effectuer un jet de sauvegarde de Vigueur pour ne pas être renversées par la rafale de vent produite par l’éternuement.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "cône_de_feu\ndégâts_feu\nrenversement_possible\naction_simple_requise\nlimitation_actions\ndurée_prolongée\nprojectile_enflammé",
+  "usage": {
+    "inputTokens": 527,
+    "outputTokens": 49
+  },
+  "arret": "end_turn"
+}
