@@ -1,0 +1,34 @@
+{
+  "id": "forme-miasmatique",
+  "resume_court": "La cible se transforme en vapeur dangereuse, empoisonnée ou nauséabonde, pendant 1 minute par niveau.",
+  "categorie_principale": "metamorphose",
+  "tags": [
+    "transformation_du_sujet",
+    "duree_prolongee",
+    "jet_de_sauvegarde",
+    "zone_d_effet"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [
+    "nauseeux"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "rend nauséeuses les créatures qui ratent leur jet de sauvegarde"
+    ],
+    "cible_typique": "créature tangible et consentante touchée"
+  },
+  "notes_ambiguite": "Le sort offre deux variantes : l'une inflige un affaiblissement temporaire de Constitution (dégâts non énergétiques, type « autre »), l'autre rend nauséeux. Seule la seconde variante produit une condition infligée nommée dans la liste ; la première cause des dégâts sans condition listée. J'ai retenu la variante nauséabonde comme plus pertinente pour la condition, mais le sort est polyvalent.",
+  "slug": "forme-miasmatique",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:22+00:00",
+  "hash_source": "582437ec72a535b7854336c8f0b85e0187beee68322538da0eaa434091b63250"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "dissipation-de-la-magie",
+  "resume_court": "Supprime un sort actif, désactive temporairement un objet magique ou contrecarre un sort en cours de lancement.",
+  "categorie_principale": "dissipation",
+  "tags": [
+    "dissipation_ou_contresort",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "metamagie_ou_sort_cible"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 jeteur de sorts, 1 créature ou 1 objet"
+  },
+  "notes_ambiguite": "Le sort peut cibler une créature, un objet ou un jeteur de sorts. La cible_typique « objet » couvre l'usage principal (dissipation ciblée sur objets magiques et créatures invoquées), mais le sort s'applique aussi à des créatures et à des lanceurs de sorts. Aucune valeur de cible_typique ne capture cette polyvalence ; « objet » est retenu car c'est l'usage le plus spécifique et le plus distinct des autres sorts.",
+  "slug": "dissipation-de-la-magie",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:13+00:00",
+  "hash_source": "d29060ac39d6aaf1136cd62d37f797727bd2685fc08958a04dd3fa012283aeda"
+}

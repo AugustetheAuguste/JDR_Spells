@@ -1,8 +1,0 @@
-{
-  "id": "dissipation-supreme",
-  "raison": "schéma : categorie_principale — 'dissipation_ou_contresort' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "aa34bb7489cccec4d7de90a8cb881759b3cd9a1066caff49badb56dbecd3ca90",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"dissipation-supreme\",\n  \"resume_court\": \"Supprime les sorts affectant une cible, une zone ou contrecarre un sort lancé par un adversaire.\",\n  \"categorie_principale\": \"dissipation_ou_contresort\",\n  \"tags\": [\n    \"dissipation_ou_contresort\",\n    \"zone_d_effet\",\n    \"plusieurs_cibles\",\n    \"metamagie_ou_sort_cible\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"rayonnement de 6 m (4 c) de rayon\"\n  },\n  \"notes_ambiguite\": \"Le sort peut cibler une créature, un objet ou une zone selon son mode d'utilisation (dissipation ciblée, dissipation de zone ou contresort). La cible_typique « zone » reflète le mode dissipation de zone qui affecte tout ce qui s'y trouve. Les autres modes (ciblée et contresort) visent respectivement une créature/objet ou un jeteur de sorts, mais la zone est le mode le plus caractéristique du sort dans sa globalité.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:21+00:00"
-}

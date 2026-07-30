@@ -1,8 +1,0 @@
-{
-  "id": "pilier-de-vie",
-  "raison": "schéma : roles_tactiques/1 — 'soin' is not one of ['combat', 'exploration', 'social', 'utilitaire']",
-  "hash_source": "1dbc81af7276ab9aecc2c330a0f027eef79d90bb8d66b4d90c19535a2a166f9f",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"pilier-de-vie\",\n  \"resume_court\": \"Une colonne d'énergie positive soigne les vivants et blesse les morts-vivants adjacents.\",\n  \"categorie_principale\": \"invocation\",\n  \"tags\": [\n    \"invocation_ou_creation\",\n    \"zone_d_effet\",\n    \"soin_ou_guerison\",\n    \"degats_directs\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"soin\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": \"positif\",\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": \"1d6 points de dégâts par niveau de lanceur de sorts\",\n    \"condition_infligee\": [],\n    \"cible_typique\": \"pilier d'énergie positive de 1,50 m (1 c) de côté et 6 m de haut\"\n  },\n  \"notes_ambiguite\": \"Le sort inflige des dégâts d'énergie positive aux morts-vivants (« 1d6 points de dégâts par niveau ») et soigne les vivants (« 2d8 points de vie »). Le type_degats retenu est « positif » car c'est l'énergie invoquée ; les dégâts aux morts-vivants en sont la conséquence directe. Aucune condition n'est infligée au sens des conditions de jeu listées.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:42+00:00"
-}

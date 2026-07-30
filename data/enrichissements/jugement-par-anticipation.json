@@ -1,0 +1,38 @@
+{
+  "id": "jugement-par-anticipation",
+  "resume_court": "Le lanceur montre à une créature une vision de son jugement divin, la fascinant, confondant ou secouant selon son alignement.",
+  "categorie_principale": "coercition",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "charme_ou_coercition",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "fascine",
+    "confus",
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle devra faire un jet de sauvegarde pour ne pas être fascinée pendant 1d4 rounds",
+      "elle devra faire un jet de sauvegarde pour ne pas être en proie à la confusion pendant 1d4 rounds",
+      "elle devra faire un jet de sauvegarde pour ne pas être secouée pendant 1d4 rounds"
+    ],
+    "cible_typique": "une créature humanoïde"
+  },
+  "notes_ambiguite": "Le sort inflige trois conditions différentes selon l'alignement de la cible, mutuellement exclusives. Les trois sont listées car le texte les énumère toutes, mais une seule s'applique à la résolution. Les trois conditions retenues reflètent les trois effets possibles du sort.",
+  "slug": "jugement-par-anticipation",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:27+00:00",
+  "hash_source": "3c868829298cff2a6df11717db2b9a4eb7bd624afb002b0cba86b7eabeb997c3"
+}

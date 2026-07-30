@@ -1,0 +1,30 @@
+{
+  "id": "casse",
+  "resume_court": "Endommage ou casse un objet de taille M ou moins à portée courte.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "objet_ou_equipement",
+    "jet_de_sauvegarde",
+    "duree_instantanee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un objet de taille M ou plus petit"
+  },
+  "notes_ambiguite": "Le sort inflige une condition nommée « cassée » à l'objet, mais cette condition n'existe pas dans la liste fermée de condition_infligee. Le texte ne décrit pas les effets mécaniques de cette condition, donc elle ne peut pas être retenue. Le sort est classé en affaiblissement car il dégrade l'état d'un objet sans infliger de dégâts directs.",
+  "slug": "casse",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:05+00:00",
+  "hash_source": "dcb5a0146c8bca81e4d2233360bc339a5fe2a8c94500030274b370fc6c8cdd43"
+}

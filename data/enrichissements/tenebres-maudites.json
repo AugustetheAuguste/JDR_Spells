@@ -1,0 +1,34 @@
+{
+  "id": "tenebres-maudites",
+  "resume_court": "Un nuage de ténèbres qui blesse et rend fiévreuses les créatures Bonnes ou Neutres.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts tous les deux niveaux de lanceur de sorts",
+    "condition_infligee": [
+      "Le sort rend les créatures Bonnes fiévreuses pendant 1d4 round"
+    ],
+    "cible_typique": "étendue de 6 m de rayon"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, force, etc.) : le texte parle de « ténèbres denses et glacées » mais ne classe pas les dégâts dans une catégorie énergétique standard. Classé en « autre ».",
+  "slug": "tenebres-maudites",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:53+00:00",
+  "hash_source": "0e7cf32dc3c966773a1a9f8d5af72bd24e18a52f54c6c4a8935f20a4306725a6"
+}

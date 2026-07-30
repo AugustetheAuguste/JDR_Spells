@@ -213,7 +213,29 @@ class TestGardeTaxonomie:
             pp.verifier_taxonomie_gelee(tmp_path)
 
     def test_la_taxonomie_committee_est_gelee(self, repo_root: Path) -> None:
-        assert pp.verifier_taxonomie_gelee(repo_root) == "taxonomie_v1"
+        """L'étiquette suit la plus haute des six listes, pas `tags.json` seule.
+
+        `categories.json` et `conditions.json` sont en v2 : une passe menée contre
+        elles doit se distinguer dans la provenance d'une passe menée contre la v1,
+        sinon rien ne permet de dire laquelle des deux a produit un enregistrement.
+        """
+        assert pp.verifier_taxonomie_gelee(repo_root) == "taxonomie_v2"
+
+    def test_une_version_hors_format_est_refusee(self, tmp_path: Path) -> None:
+        """Une version libre ferait passer un ordre arbitraire pour un rang."""
+        voc = tmp_path / "conventions" / "vocabulaires"
+        voc.mkdir(parents=True)
+        for nom in ("tags.json", "categories.json"):
+            (voc / nom).write_text(
+                json.dumps(
+                    {"version": "v1" if nom == "tags.json" else "provisoire", "valeurs": []},
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+                newline="\n",
+            )
+        with pytest.raises(pp.PreparePromptsError, match="hors du format"):
+            pp.verifier_taxonomie_gelee(tmp_path)
 
 
 class TestSystemeCacheable:
@@ -454,7 +476,7 @@ class TestRunSurLaFixture:
             )
         )
         assert manifeste["n"] == 12
-        assert manifeste["version_taxonomie"] == "taxonomie_v1"
+        assert manifeste["version_taxonomie"] == "taxonomie_v2"
         assert len(manifeste["hashs"]) == 12
         assert manifeste["hash_systeme"]
         # Sorted keys: the manifest must diff cleanly between runs.

@@ -1,8 +1,0 @@
-{
-  "id": "broyage-psychique-i",
-  "raison": "schéma : condition_infligee/0 — 'fiévreuse' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
-  "hash_source": "b74e2bd34836005f14b3dd323a107c84d8cdd4a9c20777479178ed679031f135",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"broyage-psychique-i\",\n  \"resume_court\": \"Une attaque psychique qui blesse gravement l'esprit et le corps, pouvant réduire la cible à l'agonie.\",\n  \"categorie_principale\": \"attaque_directe\",\n  \"tags\": [\n    \"degats_directs\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"malus_chiffre\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"autre\",\n  \"condition_infligee\": [\n    \"fiévreuse\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"dégâts internes à son corps et son esprit\",\n    \"condition_infligee\": [\n      \"elle est fiévreuse pendant 1 round\"\n    ],\n    \"cible_typique\": \"1 créature\"\n  },\n  \"notes_ambiguite\": \"Le type de dégâts n'est pas nommé explicitement (feu, froid, etc.) : il s'agit de dégâts psychiques/mentaux causant des « dégâts internes », classés comme « autre ». La condition « fiévreuse » n'existe pas dans la liste fermée ; la plus proche est « secoue » (malus de moral), mais le texte emploie explicitement « fiévreuse », qui suggère une fièvre physique. Aucune valeur de condition_infligee ne correspond exactement ; j'ai conservé le terme du texte en attendant clarification, mais cet enregistrement pourrait être rejeté pour cette raison.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:14+00:00"
-}

@@ -1,0 +1,34 @@
+{
+  "id": "confession",
+  "resume_court": "Force une créature à répondre honnêtement à une question ou subit des dégâts et la fièvre.",
+  "categorie_principale": "coercition",
+  "tags": [
+    "charme_ou_coercition",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par tranche de deux niveaux de lanceur de sorts (maximum 5d6)",
+    "condition_infligee": [
+      "être fiévreuse pendant 2d4 rounds"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts en cas d'échec ou d'incapacité à répondre, mais le type de dégâts n'est pas nommé explicitement (ni feu, ni froid, ni acide, etc.) ; classé comme « autre ». La durée est instantanée pour l'effet de coercition (1 round), mais la fièvre persiste 2d4 rounds.",
+  "slug": "confession",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:09+00:00",
+  "hash_source": "5c23f989b1be01ce17261aa3190579e9512e106063da3dc0048fcdbf5b24ccdf"
+}

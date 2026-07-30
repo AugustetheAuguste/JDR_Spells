@@ -1,8 +1,0 @@
-{
-  "id": "dard-vengeur",
-  "raison": "schéma : categorie_principale — 'transformation_du_sujet' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "7ef331852e3bd0fac97b560931baef480c862ec2df2d76d4a881681b3a395381",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"dard-vengeur\",\n  \"resume_court\": \"Le lanceur se pousse une queue de guêpe qui contre-attaque les adversaires au contact.\",\n  \"categorie_principale\": \"transformation_du_sujet\",\n  \"tags\": [\n    \"transformation_du_sujet\",\n    \"attaque_de_contact\",\n    \"jet_de_sauvegarde\",\n    \"duree_prolongee\",\n    \"bonus_chiffre\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"soi\",\n  \"type_degats\": \"autre\",\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": \"1d8 points de dégâts plus le modificateur de Force\",\n    \"condition_infligee\": [],\n    \"cible_typique\": \"le lanceur de sorts\"\n  },\n  \"notes_ambiguite\": \"Le sort inflige des dégâts de poison (descripteur) mais le texte ne nomme pas explicitement « dégâts de poison » comme type ; il décrit plutôt un dégât physique (1d8 + Force) suivi d'un effet de poison (affaiblissement de Dextérité). L'affaiblissement temporaire de Dextérité n'est pas une condition listée (c'est un effet de caractéristique), donc condition_infligee reste vide. Le type_degats est classé « autre » faute de correspondance exacte.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:19+00:00"
-}

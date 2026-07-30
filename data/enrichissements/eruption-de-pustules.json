@@ -1,0 +1,35 @@
+{
+  "id": "eruption-de-pustules",
+  "resume_court": "La peau se couvre de pustules qui infligent des dégâts d'acide à qui frappe le lanceur.",
+  "categorie_principale": "protection",
+  "tags": [
+    "protection_defensive",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "acide",
+  "condition_infligee": [
+    "fievreux",
+    "nauseeux"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts d'acide",
+    "condition_infligee": [
+      "être fiévreux pendant 1 round",
+      "l'attaquant est nauséeux"
+    ],
+    "cible_typique": "lanceur de sorts"
+  },
+  "notes_ambiguite": null,
+  "slug": "eruption-de-pustules",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:17+00:00",
+  "hash_source": "4f28708fec54c50bd93ad136919ba7c1962b1a3004c1133958db862556c6f3df"
+}

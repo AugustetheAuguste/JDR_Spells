@@ -174,7 +174,7 @@ class TestCheminNominal:
         )
         assert enrichi["hash_source"] == prompt["hash_source"]
         assert enrichi["version_prompt"] == prompt["version_prompt"]
-        assert enrichi["version_taxonomie"] == "taxonomie_v1"
+        assert enrichi["version_taxonomie"] == "taxonomie_v2"
         assert enrichi["modele"] == el.MODELE
         assert enrichi["slug"] == prompt["slug"]
         assert enrichi["genere_le"].endswith("+00:00")

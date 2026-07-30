@@ -1,8 +1,0 @@
-{
-  "id": "charme-animal",
-  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "c70c6bc0d18218b2f2a5f14cea42876bfe5ff8c905c83409071b7300567963cb",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"charme-animal\",\n  \"resume_court\": \"L'animal affecté considère le lanceur comme son meilleur ami et perçoit ses actes favorablement.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"charme_ou_coercition\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"social\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 animal\"\n  },\n  \"notes_ambiguite\": \"La cible est un animal, donc techniquement hostile ou neutre au départ, mais le sort vise à le rendre allié. J'ai retenu « ennemi » car c'est la seule valeur de cible_typique qui s'applique à une créature non volontaire au départ. « allie » supposerait une volonté préalable du sujet.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:14+00:00"
-}

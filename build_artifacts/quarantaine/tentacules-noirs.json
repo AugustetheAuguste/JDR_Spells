@@ -1,8 +1,0 @@
-{
-  "id": "tentacules-noirs",
-  "raison": "schéma : roles_tactiques/1 — 'controle' is not one of ['combat', 'exploration', 'social', 'utilitaire']",
-  "hash_source": "b6bc54d6b86c41ff4c944801cd423e97391186e4488227cd134cbcd4fa50e6b9",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"tentacules-noirs\",\n  \"resume_court\": \"Des tentacules surgissent du sol pour agripper et écraser les créatures dans une zone.\",\n  \"categorie_principale\": \"invocation\",\n  \"tags\": [\n    \"invocation_ou_creation\",\n    \"zone_d_effet\",\n    \"entrave_ou_immobilisation\",\n    \"terrain_ou_environnement\",\n    \"degats_directs\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"controle\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": \"contondant\",\n  \"condition_infligee\": [\n    \"enchevetre\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"1d6+4 points de dégâts\",\n    \"condition_infligee\": [\n      \"leur victime est agrippée et ne peut se déplacer tant qu'elle ne s'est pas libérée\"\n    ],\n    \"cible_typique\": \"étendue de 6 m de rayon\"\n  },\n  \"notes_ambiguite\": \"Le type de dégâts n'est pas explicitement nommé dans le texte ; « contondant » est inféré du contexte (écrasement par tentacules). Le rôle tactique « controle » n'existe pas dans la liste fournie ; j'ai retenu « combat » seul, qui est le rôle pertinent pour ce sort offensif de zone.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:25:26+00:00"
-}

@@ -1,0 +1,37 @@
+{
+  "id": "instrument-d-agonie",
+  "resume_court": "Une arme imprègne son utilisateur d'une aura de fureur et peut rendre la cible nauséeuse ou fiévreuse.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "bonus_chiffre",
+    "arme_ou_munition",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "nauseeux",
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle est nauséeuse pendant 1d4+1 round",
+      "elle est juste fiévreuse pour 1 round"
+    ],
+    "cible_typique": "arme touchée"
+  },
+  "notes_ambiguite": "Le sort affecte techniquement l'arme (objet), mais son effet tactique principal bénéficie au combattant qui la manie. La cible typique reste l'arme selon le texte, mais les conditions s'infligent à la créature frappée. Le bonus d'Intimidation justifie le rôle social.",
+  "slug": "instrument-d-agonie",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:26+00:00",
+  "hash_source": "2b2cecbb2dfdea10b8f5b3595267835a64738f1e645a094aa9fb7da81b9ecf0b"
+}

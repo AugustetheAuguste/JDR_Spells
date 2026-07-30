@@ -1,8 +1,0 @@
-{
-  "id": "enchevetrement-repugnant",
-  "raison": "schéma : condition_infligee/0 — 'fiévreux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
-  "hash_source": "cccd5fda33340e3c355d04c47179002d5031ae14f7c79ca33d4b78b4efb06e72",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"enchevetrement-repugnant\",\n  \"resume_court\": \"Les plantes d'une zone s'enchevêtrent et sécrètent une sève toxique qui rend fiévreux.\",\n  \"categorie_principale\": \"controle_de_zone\",\n  \"tags\": [\n    \"zone_d_effet\",\n    \"terrain_ou_environnement\",\n    \"jet_de_sauvegarde\",\n    \"entrave_ou_immobilisation\",\n    \"transformation_du_sujet\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"fiévreux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est fiévreuse tant qu'elle y reste et pendant 1d4 rounds après l'avoir quittée\"\n    ],\n    \"cible_typique\": \"toute la végétation sur une étendue de 12 m (8 c) de rayon\"\n  },\n  \"notes_ambiguite\": \"Le texte mentionne « fiévreuse » mais la liste des conditions n'offre que « fiévreux » (sans accent). J'ai retenu cette dernière comme la plus proche correspondance.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:23+00:00"
-}

@@ -1,8 +1,0 @@
-{
-  "id": "bannir-les-faux-semblants",
-  "raison": "schéma : categorie_principale — 'dissipation' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "acfc2055cc4b8ff6b844f461c689c1eb5bfc93ca97b20bf966f823b846851c1a",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"bannir-les-faux-semblants\",\n  \"resume_court\": \"Dissipe les illusions et rend sa forme naturelle à une créature touchée au corps à corps.\",\n  \"categorie_principale\": \"dissipation\",\n  \"tags\": [\n    \"dissipation_ou_contresort\",\n    \"attaque_de_contact\",\n    \"transformation_du_sujet\",\n    \"duree_instantanee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"une créature ou un objet\"\n  },\n  \"notes_ambiguite\": \"Le sort est classé en dissipation bien que la catégorie principale n'ait pas de valeur explicite pour ce concept ; il s'agit d'une dissipation de magie dirigée. La cible peut être un ennemi ou un allié selon le contexte, mais ennemi est retenu comme cas typique d'usage offensif.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:09+00:00"
-}
