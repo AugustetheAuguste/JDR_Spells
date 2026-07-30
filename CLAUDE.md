@@ -4,16 +4,11 @@
 
 Corpus de sorts Pathfinder 1e en français extrait du wiki communautaire
 **pathfinder-fr.org** (`README.md` = entrée humaine). Phase 1 = *scraper et
-organiser* : pas de logique de jeu, pas d'UI, pas de recherche. Le wiki expose
-deux étages, d'où tout le pipeline :
-
-| Étage | Page | Ce qu'on en tire |
-|---|---|---|
-| 1 | **liste de classe** (une par classe) | quels sorts la classe reçoit, à quel niveau ; les URLs de l'étage 2 |
-| 2 | **page de sort** (une par sort) | le bloc technique complet + la description |
-
-Les deux étages donnent le même fait « qui lance quoi, à quel niveau » et sont
-recoupés à l'étape 08 (clé `classes`, champ `concordance`).
+organiser* : pas de logique de jeu, pas d'UI, pas de recherche. Le wiki expose deux
+étages, d'où tout le pipeline : la **liste de classe** (une par classe) donne quels
+sorts la classe reçoit, à quel niveau, et les URLs de l'étage 2 ; la **page de sort**
+donne le bloc technique et la description. Les deux portent le même fait « qui lance
+quoi, à quel niveau » et sont recoupés à l'étape 08 (`classes`.`concordance`).
 
 ## 2. Périmètre et autorité des artefacts
 
@@ -40,13 +35,12 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 - Toute analyse commence par **découper sur `<div id="PageContentDiv">`** (jusqu'à
   `<div id="PageAttachmentsDiv"`), sinon la navigation du site passe pour des sorts.
 - **Clés** JSON françaises, `snake_case`, **sans accent** (`portee`) ; **valeurs**
-  accentuées **verbatim** : jamais de translittération du contenu français. Le
-  retrait d'accents n'a lieu **que** dans l'algorithme de slug `id`.
+  accentuées **verbatim**. Le retrait d'accents n'a lieu **que** dans le slug `id`.
 - **`unidecode` n'est pas installé** — `unicodedata.normalize('NFKD', …)`, stdlib.
 - Sorties UTF-8 sans BOM, **LF** (win32 inclus), `ensure_ascii=False` ; `.json` en
   `indent=2` + newline final, `.jsonl` compact. Aucune clé n'est omise : scalaire
-  absent → `null`, liste absente → `[]`. Rien n'est écarté silencieusement :
-  lacunes, libellés et abréviations inconnus, collisions de slug → `reports/`.
+  absent → `null`, liste absente → `[]`. Rien n'est écarté silencieusement — lacunes,
+  libellés inconnus, collisions de slug → `reports/`.
 
 ## 4. L'algorithme de slug `id` — la clé de jointure
 
@@ -56,17 +50,17 @@ Un seul `id` relie `listes_classes/`, `index/` et `sorts/`. Calcul **unique** :
 `unicodedata.normalize('NFKD', nom)` puis retirer tout caractère où
 `unicodedata.combining(ch)` est vrai ; (4) minuscules ; (5) chaque suite hors
 `[a-z0-9]` → un seul `-` ; (6) élaguer les `-` de tête et de queue. Collision →
-suffixe `-2`, `-3`, … dans l'ordre de rencontre, journalisée dans `reports/`.
-**Un slug attribué est stable : jamais renuméroté.** Réf. `src/pf_spells/slugs.py`.
+suffixe `-2`, `-3`, … dans l'ordre de rencontre, journalisée dans `reports/`. **Un
+slug attribué est stable : jamais renuméroté.** Réf. `src/pf_spells/slugs.py`.
 
 ## 5. L'autorité sur les conventions : la Skill
 
 `Skill(skill="pf-corpus-conventions")` — `.claude/skills/pf-corpus-conventions/SKILL.md`.
 **Charger cette Skill dans toute session qui lit ou écrit des données du corpus.**
-Elle détient le détail : vocabulaire complet des clés JSON, normalisation des
-libellés du bloc technique, table des 19 classes et de leurs abréviations, règles de
-format, anti-patterns de la source. Ce fichier n'en recopie rien, il y renvoie — des
-règles dupliquées divergent. **Code et Skill divergents : la Skill gagne.**
+Elle détient le détail : clés JSON, normalisation des libellés du bloc technique,
+table des 19 classes et abréviations, formats, anti-patterns de la source. Ce
+fichier n'en recopie rien — des règles dupliquées divergent. **Code et Skill
+divergents : la Skill gagne.**
 
 ## 6. Relancer le pipeline — les relances tapent le cache, elles ne re-crawlent pas
 
@@ -80,18 +74,25 @@ python -m pf_spells.parse_spells       # étape 07 - hors ligne ; --overwrite ex
 python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
 python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
 python -m pf_spells.build_manifest     # étape 10 - hors ligne
+python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
+python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (cf. § 7)
 ```
 
 `cache/html/` est **committé** : relancées, 03 et 06 lisent le cache et ne refont
-aucune requête — d'où la possibilité de corriger un parseur sans retoucher au wiki.
-Tests : `PYTHONPATH=src python -m pytest tests -q`.
+aucune requête — d'où la correction d'un parseur sans retoucher au wiki. Tests :
+`PYTHONPATH=src python -m pytest tests -q`.
 
-## 7. Politesse envers le wiki
+## 7. Les quatre modules qui sortent sur le réseau
 
-**Ne jamais monter le throttle du fetcher au-dessus de 1 requête/seconde, ni les
-workers au-dessus de 4.** pathfinder-fr.org est un wiki communautaire tenu par des
-bénévoles : ce n'est pas un réglage de performance. Aucun module hors
-`fetch_classes` / `fetch_spells` n'accède au réseau.
+**Wiki** (`fetch_classes`, `fetch_spells`) : ne jamais monter le throttle au-dessus
+de 1 requête/seconde, ni les workers au-dessus de 4 — pathfinder-fr.org est tenu
+par des bénévoles, ce n'est pas un réglage de performance. **Bedrock, facturé**
+(`taxo_passe0`, `enrich_llm`) : on-demand seulement, le jeton porteur n'ouvrant pas
+S3. Dépense bornée *par construction* : plafond d'appels, reprise sur `hash_source`
+vérifiée avant l'appel, confirmation au-delà de 100 enregistrements (`--oui` hors
+terminal), coupe-circuit, `--estimer-seulement`. Le bloc système, identique pour les
+2070 sorts, est ce que le prompt caching amortit (88 % de l'entrée) ; zéro lecture de
+cache = coût doublé. Tout le reste est hors ligne.
 
 ## 8. `data/sorts/*.json` est un artefact de machine — le pipeline fait foi
 
@@ -112,9 +113,8 @@ bénévoles : ce n'est pas un réglage de performance. Aucun module hors
 
 ## 10. Interdictions de style
 
-- **Ne jamais peupler un `__init__.py`** et **ne jamais ajouter de déclaration
-  `__all__`**, où que ce soit, pour quelque raison que ce soit.
+- **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.
 - Python 3.11, `from __future__ import annotations`, types annotés partout ;
-  identifiants français pour le domaine, docstrings et commentaires en anglais,
+  identifiants français pour le domaine, docstrings et commentaires en anglais
   expliquant **pourquoi**, pas quoi.
