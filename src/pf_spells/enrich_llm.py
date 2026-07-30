@@ -54,7 +54,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Protocol
 
-from pf_spells.enrichissement_schema import charger_schema_resolu
+from pf_spells.enrichissement_schema import charger_schema_resolu, etiquette_taxonomie
 
 enrich_llm_version = "1.0.0"
 
@@ -172,8 +172,12 @@ def verifier_taxonomie(racine: Path, manifeste: dict[str, Any]) -> None:
     against lists the model was never shown — a full paid pass invalidated by a
     mismatch that costs nothing to detect here.
     """
-    doc = _lire_json(racine / "conventions" / "vocabulaires" / "tags.json")
-    courante = f"taxonomie_{doc.get('version')}"
+    try:
+        courante = etiquette_taxonomie(racine)
+    except ValueError as exc:
+        # An unreadable list is a refusal, not a traceback: this runs before the
+        # first paid call and must say plainly why nothing was sent.
+        raise EnrichLLMError(f"taxonomie illisible : {exc}") from exc
     attendue = manifeste.get("version_taxonomie")
     if courante != attendue:
         raise EnrichLLMError(
