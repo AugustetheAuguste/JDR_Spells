@@ -214,11 +214,16 @@ python -m pf_spells.parse_spells       # étape 07 - hors ligne ; --overwrite ex
 python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
 python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
 python -m pf_spells.build_manifest     # étape 10 - hors ligne
+python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
+python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (cf. § 7)
 ```
 
-Sur un dépôt cloné tel quel, **aucune de ces commandes ne touche au réseau** :
+Sur un dépôt cloné tel quel, **seule la dernière commande touche au réseau** :
 `cache/html/` est committé, donc les étapes 03 et 06 sont des lectures de cache,
 pas des re-crawls. Le crawl à froid (~1 h) n'a lieu que si le cache est vidé.
+`enrich_llm` est l'étage de génération et il **facture des appels** : il refuse de
+démarrer sans confirmation au-delà de 100 enregistrements, et
+`--estimer-seulement` répond « combien ça coûte » sans rien dépenser.
 Suite de tests : `PYTHONPATH=src python -m pytest tests -q`.
 
 ## Corriger les données
