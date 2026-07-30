@@ -1,0 +1,34 @@
+{
+  "id": "souffle-de-la-banshie",
+  "resume_court": "Un cône d'énergie spectrale inflige des dégâts sonores et peut paniquer les créatures.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "effraye"
+  ],
+  "preuves": {
+    "type_degats": "1d4 points de dégâts par niveau de lanceur",
+    "condition_infligee": [
+      "doit réussir un jet de Volonté pour ne pas être paniquée pendant 1 round/niveau"
+    ],
+    "cible_typique": "rayonnement en cône"
+  },
+  "notes_ambiguite": "Le texte mentionne « paniquée » ; la condition la plus proche dans la liste est « effraye » (peur). Le descripteur « son » justifie le type de dégâts, bien que le texte parle d'« énergie spectrale ».",
+  "slug": "souffle-de-la-banshie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:53+00:00",
+  "hash_source": "b26bea90ab8bfa9268a0b6ebebbd502ad4c789c813a27903e8e2f289ee931456"
+}

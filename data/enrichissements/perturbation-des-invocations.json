@@ -1,0 +1,32 @@
+{
+  "id": "perturbation-des-invocations",
+  "resume_court": "Une zone qui renforce la résistance à la téléportation et blesse les créatures qui tentent d'y entrer ou d'en sortir par magie.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "bonus_chiffre",
+    "deplacement_ou_teleportation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau de sort de l'effet déclencheur",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 6 m de rayon"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de dégâts génériques liés à la perturbation magique, classés comme « autre ».",
+  "slug": "perturbation-des-invocations",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:59+00:00",
+  "hash_source": "9347e2a463f25e75cb98fca04062b4ebf1e6ac58fdbe742cf73c8d0c4461b2a9"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "poison-illusoire",
+  "resume_court": "Une illusion de poison sur une arme qui inflige des dégâts psychosomatiques si la cible y croit.",
+  "categorie_principale": "illusion",
+  "tags": [
+    "illusion_visuelle_ou_sonore",
+    "arme_ou_munition",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "arme touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts (1d3 Force) mais uniquement si la cible croit à l'illusion et échoue son jet de Vigueur. Ces dégâts sont psychosomatiques, résultant de la conviction du sujet plutôt que d'une substance réelle. Aucun type de dégâts élémentaire n'est nommé ; le texte parle de « dégâts du poison illusoire » sans préciser leur nature énergétique. type_degats reste null car le texte ne range ces dégâts dans aucune catégorie énergétique standard.",
+  "slug": "poison-illusoire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:20+00:00",
+  "hash_source": "d403964c8d907b4c65c8428de549831f669427b05a5f363d6d8cd762e519a6bf"
+}

@@ -20,10 +20,12 @@ import socket
 from pathlib import Path
 from typing import Any
 
+import jsonschema
 import pytest
 
 from pf_spells import prepare_prompts as pp
 from pf_spells import texte_source as ts
+from pf_spells.enrichissement_schema import charger_schema_resolu
 
 MINI = Path("tests") / "fixtures" / "mini_corpus"
 
@@ -219,12 +221,36 @@ class TestSystemeCacheable:
     def systeme(self, repo_root: Path) -> str:
         return pp.construire_systeme(repo_root)
 
+    # Haiku's minimum cacheable prefix. Below it `cachePoint` is accepted and
+    # silently ignored: nothing errors, and the pass just costs twice as much.
+    PLANCHER_CACHE_TOKENS = 4096
+    # Conservative chars-per-token for accented French. The real block measured 4249
+    # tokens for 12356 chars (2.91) on 2026-07-30; 3.10 under-counts on purpose, so
+    # this test fires *before* Bedrock stops caching rather than after.
+    CARACTERES_PAR_TOKEN = 3.10
+
+    def test_le_bloc_systeme_reste_cacheable(self, systeme: str) -> None:
+        """Below 4096 tokens the cost lever disappears without any error.
+
+        This is the failure that cost a real run double: `p1.0` sat at ~3216 tokens,
+        reported `cacheWriteInputTokens: 0`, and nothing anywhere complained. The
+        margin above the floor is thin (~150 tokens), so trimming this block — a
+        vocabulary entry, an example, a rule — is a cost decision. If this test
+        fails, either restore the length or accept ~2x on the next pass knowingly.
+        """
+        estime = len(systeme) / self.CARACTERES_PAR_TOKEN
+        assert estime >= self.PLANCHER_CACHE_TOKENS, (
+            f"bloc système ~{estime:.0f} tokens < plancher "
+            f"{self.PLANCHER_CACHE_TOKENS} : le prompt caching ne mordra plus et "
+            f"la passe coûtera le double, sans erreur pour le signaler"
+        )
+
     def test_il_est_identique_pour_tous_les_sorts(self, repo_root: Path) -> None:
         """The whole point: one shared block, so prompt caching can amortise it.
 
-        Measured 2026-07-30 on bedrock-runtime: a ~9 200-token system block is
-        cache-written once then cache-read per call. Any spell-specific content
-        here would break the cache on every single record.
+        Measured 2026-07-30 on bedrock-runtime: the system block is cache-written
+        once then cache-read per call. Any spell-specific content here would break
+        the cache on every single record.
         """
         systeme = pp.construire_systeme(repo_root)
         ids = ["absorption-d-energie", "arret-du-temps", "aura-d-avidite"]
@@ -233,6 +259,65 @@ class TestSystemeCacheable:
             pp.assembler(racine, sid, systeme, "taxonomie_v1")["systeme"] for sid in ids
         }
         assert len(blocs) == 1
+
+    def test_il_impose_le_tableau_pour_preuves_condition_infligee(
+        self, systeme: str, repo_root: Path
+    ) -> None:
+        """The exact defect that quarantined 3 of 20 records on the p1.0 trial run.
+
+        The schema types `preuves.condition_infligee` as an array; p1.0 asked for
+        "la sous-chaîne EXACTE" and the model quite reasonably answered with a bare
+        string. Prose alone had not sufficed, so the worked examples must show the
+        array — including the empty case, which is where a model reaches for null.
+        """
+        assert "TABLEAU" in systeme
+        assert '"condition_infligee": []' in systeme
+        assert '"condition_infligee": [' in systeme
+
+    def test_les_exemples_respectent_le_schema(self, repo_root: Path) -> None:
+        """An example that violates the contract teaches the violation.
+
+        The examples are the most literally imitated part of the block, so a wrong
+        one is worse than none: it would produce 2070 confidently invalid records.
+        """
+        schema = charger_schema_resolu(repo_root)
+        bouchon = {
+            "slug": "exemple",
+            "version_prompt": pp.VERSION_PROMPT,
+            "version_taxonomie": "taxonomie_v1",
+            "modele": "modele-de-test",
+            "genere_le": "2026-07-30T00:00:00+00:00",
+            "hash_source": "a" * 64,
+        }
+        for _, _, reponse in pp.EXEMPLES:
+            enregistrement = dict(reponse)
+            # Stage 09 adds provenance; an example only shows the model's own part.
+            for cle in schema.get("required", []):
+                enregistrement.setdefault(cle, bouchon.get(cle))
+            erreurs = list(
+                jsonschema.Draft202012Validator(schema).iter_errors(enregistrement)
+            )
+            assert not erreurs, [e.message for e in erreurs]
+
+    def test_les_exemples_n_utilisent_aucun_sort_reel(self, repo_root: Path) -> None:
+        """Invented spells only — an example naming a real spell contaminates it.
+
+        If an example annotated a corpus spell, that spell's own record would be
+        graded against a pre-supplied answer instead of its text.
+        """
+        noms = set()
+        chemin = repo_root / "data" / "index" / "sorts_uniques.jsonl"
+        for ligne in chemin.read_text(encoding="utf-8").splitlines():
+            if ligne.strip():
+                noms.add(json.loads(ligne)["nom"])
+        for titre, texte, _ in pp.EXEMPLES:
+            nom_exemple = texte.split(" :")[0]
+            assert nom_exemple not in noms, (titre, nom_exemple)
+
+    def test_il_separe_les_listes_par_champ(self, systeme: str) -> None:
+        # The other p1.0 quarantine cause: `allie` and `social` are real keys, but
+        # of other fields. The model treated the six lists as one vocabulary.
+        assert "n'appartient qu'à SON champ" in systeme
 
     def test_il_ne_contient_aucun_nom_de_sort_du_corpus(self, systeme: str) -> None:
         # Negative examples are spell names; naming spells in the shared block

@@ -1,0 +1,36 @@
+{
+  "id": "pyrotechnie",
+  "resume_court": "Transforme un feu en feu d'artifice aveuglant ou en nuage de fumée qui affaiblit les créatures.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "transformation_du_sujet",
+    "affaiblissement_de_capacite",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle",
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Il aveugle les créatures situées dans un rayon de trente-six mètres pendant 1d4+1 rounds",
+      "Seuls les individus qui ont une ligne de vue sur le feu d'artifice sont affectés et un test de résistance à la magie leur permet d'éviter cette cécité temporaire"
+    ],
+    "cible_typique": "forment un nuage opaque dans un rayon de six mètres"
+  },
+  "notes_ambiguite": "Le sort propose deux versions distinctes (feu d'artifice et nuage de fumée) avec des effets différents. La version feu d'artifice inflige la condition aveugle/ébloui ; la version nuage impose un malus de -4 à Force et Dextérité sans condition nommée dans la liste. J'ai retenu les deux conditions de la première version comme les plus pertinentes pour le combat. Le sort affecte une zone plutôt qu'une créature désignée, d'où la catégorie controle_de_zone.",
+  "slug": "pyrotechnie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:16+00:00",
+  "hash_source": "9fe74fcc203c5b1b631028608c9ed4cb892c578d0dac7e5eab711ff5bdd7262d"
+}

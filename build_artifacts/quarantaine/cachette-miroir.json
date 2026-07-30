@@ -1,0 +1,8 @@
+{
+  "id": "cachette-miroir",
+  "raison": "schéma : condition_infligee/0 — 'nauseeux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "d51e8adf7ba0850807df6bd384c0927bf81da3af1a5c47c77852753b1894e8e3",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"cachette-miroir\",\n  \"resume_court\": \"Transforme un miroir en portail vers un espace extradimensionnel cachant jusqu'à huit créatures.\",\n  \"categorie_principale\": \"utilitaire\",\n  \"tags\": [\n    \"transformation_du_sujet\",\n    \"invisibilite_ou_dissimulation\",\n    \"duree_prolongee\",\n    \"objet_ou_equipement\"\n  ],\n  \"roles_tactiques\": [\n    \"exploration\",\n    \"combat\"\n  ],\n  \"cible_typique\": \"objet\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"nauseeux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"sont nauséeuses pendant 1d6 rounds\"\n    ],\n    \"cible_typique\": \"un miroir\"\n  },\n  \"notes_ambiguite\": \"La condition « nauséeuses » n'existe pas dans la liste fermée ; la plus proche est « nauseeux » mais le texte porte « nauséeuses ». Cependant, aucune valeur de condition_infligee ne correspond exactement. Le sort inflige une nausée lors de l'expulsion, mais cette condition n'est pas dans la liste. J'ai retenu la condition la plus proche disponible, bien que le texte ne la justifie pas parfaitement. Alternativement, condition_infligee pourrait être vide si on considère que la nausée n'est pas une condition listée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:13+00:00"
+}

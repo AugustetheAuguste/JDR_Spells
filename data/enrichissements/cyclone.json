@@ -1,0 +1,31 @@
+{
+  "id": "cyclone",
+  "resume_court": "Un cyclone contrôlable qui se déplace et inflige des dégâts aux créatures qu'il touche.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 de dégâts",
+    "condition_infligee": [],
+    "cible_typique": "cyclone haut de 9 m et large de 3 m à sa base, contre 9 m à son extrémité"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) mais relève de l'air et du vent ; classé en « autre ». Les créatures peuvent être « élevées dans les airs et ballottées » mais cela n'est pas une condition au sens des listes (pas d'état de jeu nommé), c'est un effet de mécanique du sort.",
+  "slug": "cyclone",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:13+00:00",
+  "hash_source": "497bac95bd356b6492ab0a8ff9e9fa4401b8f55f01ce334eb716f8bced8ec818"
+}

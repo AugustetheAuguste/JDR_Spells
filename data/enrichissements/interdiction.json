@@ -1,0 +1,32 @@
+{
+  "id": "interdiction",
+  "resume_court": "Crée une zone permanente qui blesse les créatures d'alignement différent et bloque tout voyage planaire.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "alignement_ou_divin",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "l'intrus subit 6d6 points de dégâts",
+    "condition_infligee": [],
+    "cible_typique": "1 cube de 18 m/12 c d'arête par niveau"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts mais sans type énergétique élémentaire nommé (ni feu, froid, acide, électricité, son, force, négatif, positif, ni type d'arme) : classé en 'autre'. Les dégâts dépendent de l'alignement, pas d'un élément. La catégorie est 'controle_de_zone' car l'effet principal est de modifier une zone et ce qui y pénètre, plutôt que d'infliger des dégâts directs à une cible désignée.",
+  "slug": "interdiction",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:39+00:00",
+  "hash_source": "e2b31bc7cad796d6496eafb58471ea77b6ec56a19347f3749c054f8859a7dfe6"
+}

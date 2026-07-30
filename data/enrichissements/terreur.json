@@ -1,0 +1,36 @@
+{
+  "id": "terreur",
+  "resume_court": "Un cône invisible qui provoque la panique chez les créatures vivantes, les paralysant ou les secouant.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue",
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elles sont secouées pendant 1 round",
+      "elles se recroquevillent sur elles-mêmes"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": "La condition « paralyse » est inférée de « se recroquevillent sur elles-mêmes » (immobilisation), bien que le texte ne nomme pas explicitement cette condition. L'effet dépend de la réussite du jet de Volonté : échec = panique/recroquevillement, succès = secoué.",
+  "slug": "terreur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:28+00:00",
+  "hash_source": "66b7b1ed8feb2e6178096b4e3b0460fe322df8b2858f515a9d27d9ee0004c567"
+}

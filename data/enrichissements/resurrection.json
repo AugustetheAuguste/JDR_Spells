@@ -1,0 +1,29 @@
+{
+  "id": "resurrection",
+  "resume_court": "Ramène à la vie une créature morte depuis au maximum dix ans par niveau, au prix d'un niveau négatif permanent.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "invocation_ou_creation",
+    "duree_instantanee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature morte touchée"
+  },
+  "notes_ambiguite": "La cible est techniquement un cadavre (objet inanimé) plutôt qu'une créature vivante, d'où le classement en « objet ». Le sort inflige un niveau négatif permanent, mais ce n'est pas une « condition » au sens des états énumérés (aveugle, étourdi, etc.) : c'est une pénalité mécanique durable qui ne figure pas dans la liste fermée des conditions.",
+  "slug": "resurrection",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:04+00:00",
+  "hash_source": "e70d022a19086b0a783d65fdc6ae5692cfe5ce20249a48a0e2c525d9ee81f86c"
+}

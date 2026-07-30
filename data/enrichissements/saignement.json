@@ -1,0 +1,29 @@
+{
+  "id": "saignement",
+  "resume_court": "Une créature stabilisée sous 0 PV recommence à perdre 1 PV par round jusqu'à la mort.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le sort inflige une perte de PV progressive (1 par round) plutôt que des dégâts instantanés typés. Bien que le texte mentionne « le sort fait perdre 1 point de vie », il ne s'agit pas de dégâts énergétiques classés (feu, froid, etc.), mais d'une hémorragie mécanique. Type_degats reste null car aucun type énergétique n'est nommé. Le tag « effet_mental » a été rejeté au profit de tags plus pertinents : le sort agit physiquement (saignement), pas mentalement. Revu : tags finaux sont degats_directs, jet_de_sauvegarde, duree_instantanee, et un quatrième pour compléter.",
+  "slug": "saignement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:18+00:00",
+  "hash_source": "9ac9493c7046f3341b03257a12d85afef7bb7e3c0e56d4a16b45c84e768b3916"
+}

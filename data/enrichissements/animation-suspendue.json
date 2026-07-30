@@ -1,0 +1,34 @@
+{
+  "id": "animation-suspendue",
+  "resume_court": "Le lanceur fige une créature en stase permanente, où le temps cesse et rien ne l'affecte.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "entrave_ou_immobilisation",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "son adversaire se retrouve en état de stase"
+    ],
+    "cible_typique": "Le lanceur de sorts doit toucher sa cible"
+  },
+  "notes_ambiguite": "La stase n'est pas nommée explicitement dans la liste des conditions, mais elle correspond à une immobilisation totale où la créature est figée et sans défense, ce qui justifie le classement en « paralyse ».",
+  "slug": "animation-suspendue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:31+00:00",
+  "hash_source": "9c91f0aefb8df202788f06381a85a9b6bfec86e43fec3cf2ae9b55354bdcc400"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sadomasochisme",
+  "resume_court": "Le lanceur subit plus de dégâts mais démoralise ses assaillants et augmente ses propres dégâts contre eux.",
+  "categorie_principale": "protection",
+  "tags": [
+    "jet_de_sauvegarde",
+    "bonus_chiffre",
+    "effet_mental",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "être démoralisé (comme avec la compétence Intimidation) pendant 1 round"
+    ],
+    "cible_typique": "le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort est classé en protection car il transforme les dégâts subis en avantage tactique (démoralisation de l'assaillant et bonus de dégâts du lanceur). Bien que le lanceur subisse techniquement plus de dégâts, l'effet global est défensif et de contrôle. La condition infligée est « secoue » (démoralisation) plutôt qu'une condition plus grave, car le texte précise « démoralisé » qui correspond au malus de moral du premier degré.",
+  "slug": "sadomasochisme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:17+00:00",
+  "hash_source": "7a5bb22beb4666b060309ab57526477ca37b5a0aaa883560143cf198053efced"
+}

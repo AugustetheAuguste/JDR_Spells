@@ -1,0 +1,35 @@
+{
+  "id": "toile-d-araignee",
+  "resume_court": "Des fils épais et gluants emprisonnent les créatures dans une zone et les entravent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la créature est prise dans les fils"
+    ],
+    "cible_typique": "toiles d'araignée dans une étendue de 6 m de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de feu (2d4) uniquement si la toile brûle, ce qui n'est pas l'effet principal du sort mais une conséquence secondaire de sa destruction. La condition principale est l'enchevêtrement (agrippement dans les fils).",
+  "slug": "toile-d-araignee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:34+00:00",
+  "hash_source": "cb3c891d766d24a71a1f40bddda3fecaa64a4298a5d3c1200f623db7403aa547"
+}

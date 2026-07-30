@@ -1,0 +1,34 @@
+{
+  "id": "dysfonctionnement",
+  "resume_court": "Une créature artificielle perd ses actions pendant 1 round par niveau, mais conserve ses attaques d'opportunité.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "confusion_ou_desorientation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Ceci fonctionne comme un sort de confusion"
+    ],
+    "cible_typique": "une créature artificielle"
+  },
+  "notes_ambiguite": "Le sort est décrit comme fonctionnant « comme un sort de confusion » mais avec un effet différent (pas d'action au lieu de babiller). La condition « confus » est retenue car le texte établit explicitement le parallèle avec confusion, bien que le mécanisme soit modifié pour les créatures artificielles.",
+  "slug": "dysfonctionnement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:02+00:00",
+  "hash_source": "4bd5bca37fe8143c206c50dc72f5596346276027712beab319f6499c9a373b90"
+}

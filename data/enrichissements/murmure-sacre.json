@@ -1,0 +1,34 @@
+{
+  "id": "murmure-sacre",
+  "resume_court": "Un murmure sacré qui affaiblit les créatures mauvaises et renforce les créatures bonnes dans un cône.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "bonus_chiffre",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "positif",
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": "2d8 points de dégâts",
+    "condition_infligee": [
+      "être fiévreuses pendant 1 round/niveau"
+    ],
+    "cible_typique": "émanation en forme de cône"
+  },
+  "notes_ambiguite": "Le texte emploie « fiévreuses » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral), mais le texte décrit plutôt un affaiblissement temporaire. Cependant, aucune condition de la liste ne correspond exactement à « fiévreuse ». J'ai retenu « secoue » comme la meilleure approximation d'un malus de moral léger, bien que le texte soit ambigu sur la nature exacte de l'effet.",
+  "slug": "murmure-sacre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:19+00:00",
+  "hash_source": "fa717b1dbbaf6acf15c35164d14c77075a3d76cbd5b88710471a3befe4b9feff"
+}

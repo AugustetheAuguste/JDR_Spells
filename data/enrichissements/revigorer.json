@@ -1,0 +1,30 @@
+{
+  "id": "revigorer",
+  "resume_court": "Une illusion qui supprime les malus de fatigue pendant 10 min/niveau, puis inflige 1d6 dégâts non létaux.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "illusion_visuelle_ou_sonore",
+    "duree_prolongee",
+    "jet_de_sauvegarde",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts non létaux",
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort est classé en Illusion mais produit un effet mécanique réel (suppression de malus). La catégorie principale est amelioration car l'effet principal est d'augmenter les capacités du sujet en supprimant un handicap. Les dégâts non létaux à la fin sont un effet secondaire, pas l'objectif du sort. Le type de dégâts est 'autre' car 'non létal' ne figure pas dans la liste des types énergétiques ou d'arme.",
+  "slug": "revigorer",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:07+00:00",
+  "hash_source": "55e66c240931ea51e6185c382ff3a22f7a4fa705c31c597f41e84fa8bdbb9134"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "eternuement-de-feu",
+  "resume_court": "Le lanceur éternue chaque round, projetant un cône de feu qui blesse et peut renverser les créatures.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "il produit un cône de feu et de vent long de 3 mètres. Toutes les créatures à l'intérieur de ce cône"
+  },
+  "notes_ambiguite": "Le sort affecte le lanceur lui-même (cible : le lanceur de sort) mais produit un effet de zone qui blesse les ennemis. La cible_typique est classée comme « zone » car l'effet principal est le cône d'attaque, bien que le lanceur soit techniquement affecté par les restrictions d'action. Les créatures renversées ne sont pas retenues comme condition_infligee car le texte ne nomme pas explicitement « renversé » comme une condition persistante du jeu — c'est un effet du jet de sauvegarde de Vigueur sans durée spécifiée.",
+  "slug": "eternuement-de-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:43+00:00",
+  "hash_source": "12728b410ec7b6fbc54e0ce09799c21711def83dd44ed9bc2e8e546ac61924fc"
+}

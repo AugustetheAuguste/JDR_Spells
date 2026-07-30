@@ -1,0 +1,30 @@
+{
+  "id": "sirocco",
+  "resume_court": "Une rafale de vent brûlant inflige des dégâts de feu et renverse les créatures dans une zone cylindrique.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "cylindre (6 m (4 c) de rayon, 18 m (12 c) de haut)"
+  },
+  "notes_ambiguite": "Le sort renverse les créatures et les fatigue, mais « renverse » n'est pas une condition nommée dans la liste fournie, et « fatiguée » n'y figure pas non plus. La fatigue est mentionnée mais ne correspond à aucune condition de la liste close. J'ai donc laissé condition_infligee vide.",
+  "slug": "sirocco",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:42+00:00",
+  "hash_source": "201028eb3937568252f9b6f909d0310f08463a002483fc7b6195aa07b8940aa5"
+}

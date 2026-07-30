@@ -1,0 +1,30 @@
+{
+  "id": "agonie",
+  "resume_court": "Le lanceur inflige de terribles souffrances à une créature invoquée pour la soumettre.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "malus_chiffre",
+    "effet_mental",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature convoquée par allié majeur d'outreplan ou un sort similaire"
+  },
+  "notes_ambiguite": "Le sort inflige des souffrances et un malus de sauvegarde mais ne produit pas de dégâts directs nommés : les dégâts sont implicites dans la torture, mais le texte ne les quantifie pas en points. Le malus est numérique et nommé (-1 par tranche de deux niveaux), justifiant le tag malus_chiffre. L'effet mental (soumission, torture) justifie effet_mental. Aucune condition de la liste condition_infligee ne s'applique : le malus de sauvegarde n'est pas une condition au sens du jeu.",
+  "slug": "agonie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:14+00:00",
+  "hash_source": "4a73478fbea618b83ff11e81fdb022c7059eb2e9b23e56d3623496fe4c4ca831"
+}

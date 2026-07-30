@@ -1,0 +1,33 @@
+{
+  "id": "eveiller-les-devores",
+  "resume_court": "Le sort inflige des dégâts et rend confus les daémons ciblés en réveillant les âmes qu'ils ont consommées.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts par niveau de lanceur de sorts (maximum 15d8)",
+    "condition_infligee": [
+      "rendant les daémons confus pendant 1 round par niveau"
+    ],
+    "cible_typique": "un daémon/4 niveaux"
+  },
+  "notes_ambiguite": null,
+  "slug": "eveiller-les-devores",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:44+00:00",
+  "hash_source": "b14bac9f7ffba51cd5670281b5399d3f64ae636a28eb244f8c5c97ab95f63987"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "piege-a-arme",
+  "resume_court": "Un champ magique qui immobilise les armes ou membres des assaillants au contact du lanceur.",
+  "categorie_principale": "protection",
+  "tags": [
+    "protection_defensive",
+    "entrave_ou_immobilisation",
+    "duree_prolongee",
+    "attaque_de_contact"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il devient agrippé"
+    ],
+    "cible_typique": "le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort protège le lanceur en entravant les attaquants, mais la condition « agrippé » n'est pas nommée dans la liste fermée. « Enchevetre » est la condition la plus proche, bien que le texte utilise « agrippé ». Le sort fonctionne aussi comme une entrave réactive aux attaques de contact.",
+  "slug": "piege-a-arme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:03+00:00",
+  "hash_source": "a5f38d2aab31fa00410c07282d66a04eebde61214befdb7d79a4217c053ed6dc"
+}

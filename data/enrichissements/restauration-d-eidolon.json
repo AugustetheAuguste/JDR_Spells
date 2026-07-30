@@ -1,0 +1,30 @@
+{
+  "id": "restauration-d-eidolon",
+  "resume_court": "Restaure un eidolon en levant les malédictions, maladies ou affaiblissements qui l'affligent.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "eidolon touché"
+  },
+  "notes_ambiguite": "Le texte renvoie à un sort « restauration » non fourni. L'annotation repose sur le contexte : école Invocation (guérison), jet de sauvegarde inoffensif, durée instantanée, et la mention de levée de malédictions/maladies/affaiblissements implicite dans le nom et la structure. La cible est un eidolon (créature alliée du lanceur), d'où cible_typique = allie.",
+  "slug": "restauration-d-eidolon",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:01+00:00",
+  "hash_source": "1e2e90b267771375d0ffa24101186a163f90ff8508e4e0b1600c0004a14327ae"
+}

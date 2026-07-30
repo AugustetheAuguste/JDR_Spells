@@ -1,0 +1,30 @@
+{
+  "id": "charme-monstre",
+  "resume_court": "Le lanceur charme une créature vivante, qui le considère comme un allié pendant 1 jour par niveau.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "charme_ou_coercition",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature vivante"
+  },
+  "notes_ambiguite": "Le sort ne décrit pas explicitement une condition d'état (aveugle, paralysé, etc.) mais produit un effet de charme qui modifie le comportement. Aucune condition de la liste `condition_infligee` ne s'applique strictement : le charme relève du tag `charme_ou_coercition` plutôt que d'une condition mécanique nommée. La catégorie `amelioration` reflète que la créature charmée devient un allié du lanceur, ce qui est un gain pour ce dernier.",
+  "slug": "charme-monstre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:50+00:00",
+  "hash_source": "bda8ce0b0670ef166898ff09ca43afce823713c91d6a88b21c803cd08aba7167"
+}

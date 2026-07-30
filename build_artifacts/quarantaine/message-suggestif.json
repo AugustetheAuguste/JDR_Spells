@@ -1,0 +1,8 @@
+{
+  "id": "message-suggestif",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "53911b2351b41c8513cb2d7f1a6c3998e47505f31bf1d87466b82c16b83b5e56",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"message-suggestif\",\n  \"resume_court\": \"Envoie un message à plusieurs créatures, puis suggère une action à l'une d'elles.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"communication_ou_langage\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"charme_ou_coercition\",\n    \"plusieurs_cibles\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"social\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature/niveau\"\n  },\n  \"notes_ambiguite\": \"Le sort fonctionne en deux phases : d'abord un message sans sauvegarde, puis une suggestion avec sauvegarde. La catégorie principale reflète l'effet coercitif de la suggestion, qui est l'aspect magique clé du sort. Les rôles incluent combat (pour la suggestion tactique) et social (pour le message et la suggestion de nature sociale).\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:38+00:00"
+}

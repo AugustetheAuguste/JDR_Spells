@@ -1,0 +1,35 @@
+{
+  "id": "symbole-de-debauche",
+  "resume_court": "Un symbole magique qui remplit les créatures proches de désir irrépressible pour la plus proche d'entre elles.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "charme_ou_coercition",
+    "duree_prolongee",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "fascine"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures affectées sont obligées de se précipiter vers la créature la plus proche pour la caresser et l'embrasser, et ne peuvent entreprendre aucune autre action."
+    ],
+    "cible_typique": "toutes les créatures situées à moins de 18 mètres du symbole de débauche"
+  },
+  "notes_ambiguite": "La condition retenue est « fascine » car elle capture l'immobilisation comportementale et l'incapacité à agir autrement, bien que le texte décrive un désir compulsif plutôt qu'une fascination au sens strict. Aucune autre condition de la liste ne s'ajuste mieux.",
+  "slug": "symbole-de-debauche",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:07+00:00",
+  "hash_source": "60b4cc97a5dbd188261df5a2ea1e554d4fa7d557f57634956bd2fc59c54dc398"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frappe-de-la-corneille-sanglante",
+  "resume_court": "Les attaques à mains nues du lanceur créent des traits de feu et de corneilles qui frappent une cible à distance moyenne.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "resistance_a_la_magie",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige aussi de l'énergie négative pour moitié, mais type_degats n'accepte qu'une valeur unique. Le feu est retenu comme type principal car nommé en premier et dans les descripteurs. Les dégâts d'énergie négative sont mentionnés mais ne peuvent pas être représentés dans le champ type_degats limité à une seule valeur.",
+  "slug": "frappe-de-la-corneille-sanglante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:38+00:00",
+  "hash_source": "8c0043e5e3ba28086e236f6456445a790d9e7591da650ff319373c952e5f8b37"
+}

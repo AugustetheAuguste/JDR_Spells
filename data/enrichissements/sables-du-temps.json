@@ -1,0 +1,30 @@
+{
+  "id": "sables-du-temps",
+  "resume_court": "Le sort vieillit une créature vivante ou use un objet, infligeant des malus ou des dégâts.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "affaiblissement_de_capacite",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts +1 par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "créature touchée ou objet touché"
+  },
+  "notes_ambiguite": "Le sort a deux modes : sur une créature vivante, il inflige des malus de caractéristiques sans dégâts directs (durée prolongée) ; sur un objet ou mort-vivant, il inflige des dégâts (durée instantanée). Les dégâts sont classés en « autre » car le texte parle d'usure et de corrosion sans préciser un type énergétique. Le tag « jet_de_sauvegarde » est omis car le texte indique « non » pour la créature vivante, bien que la résistance à la magie s'applique.",
+  "slug": "sables-du-temps",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:13+00:00",
+  "hash_source": "58ab6a04a94171eb1e3d7a1ae2e7252a50efd3aa73154012380ca4a7f42a0df6"
+}

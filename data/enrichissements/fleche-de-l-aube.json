@@ -1,0 +1,33 @@
+{
+  "id": "fleche-de-l-aube",
+  "resume_court": "Enchante jusqu'à 50 munitions pour qu'elles émettent de la lumière et infligent des dégâts supplémentaires aux morts-vivants.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "arme_ou_munition",
+    "duree_prolongee",
+    "bonus_chiffre",
+    "perception_amelioree"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures qui subissent des malus quand elles sont exposées à une vive lumière subissent ces malus pendant 1 round après avoir été touchées par ces munitions"
+    ],
+    "cible_typique": "50 munitions au maximum"
+  },
+  "notes_ambiguite": "Le sort améliore les munitions plutôt que de les attaquer directement. Les dégâts supplémentaires (1d6 contre morts-vivants) sont un effet secondaire de l'enchantement, pas du sort lui-même. La condition ébloui est indirecte : elle résulte de l'exposition à la lumière vive émise, non d'une application directe du sort.",
+  "slug": "fleche-de-l-aube",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:09+00:00",
+  "hash_source": "c29f42435ecb1becbbccbeaf6df43d454341d10e27aea6b34f38f155d3acb3a8"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "mur-de-cecite-surdite",
+  "resume_court": "Un mur translucide qui aveugle ou assourdit définitivement les créatures qui le traversent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle",
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "définitivement aveuglée",
+      "assourdie (comme cécité/surdité)"
+    ],
+    "cible_typique": "mur translucide de 6 m (4 c) de long/niveau ou anneau translucide de 1,5 m (1 c) de rayon/2 niveaux"
+  },
+  "notes_ambiguite": "Le sort inflige deux conditions mutuellement exclusives selon le choix du lanceur (aveugle OU assourdi), mais le texte les énumère toutes deux comme possibles. Les deux sont retenues car le sort peut produire l'une ou l'autre.",
+  "slug": "mur-de-cecite-surdite",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:10+00:00",
+  "hash_source": "973b8ffa5753439b3c53d81e4783b2ffac2275e9492021197571884aaf4a2a63"
+}

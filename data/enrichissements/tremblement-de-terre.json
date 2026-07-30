@@ -1,0 +1,35 @@
+{
+  "id": "tremblement-de-terre",
+  "resume_court": "Une secousse violente qui renverse les créatures, effondre les structures et ouvre des failles selon le terrain.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "8d6 points de dégâts contondants",
+    "condition_infligee": [
+      "sont immobilisées sous les gravats"
+    ],
+    "cible_typique": "étendue de 24 m de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige plusieurs types de dégâts selon le contexte (contondant pour les bâtiments, mais aussi des dégâts génériques pour les cavernes et falaises). J'ai retenu « contondant » comme le type explicitement nommé dans la section Bâtiment. La condition « enchevetre » couvre l'immobilisation sous les gravats et les décombres. Le sort a aussi des effets de contrôle de zone (fissures, perte d'équilibre) qui justifient la catégorie principale.",
+  "slug": "tremblement-de-terre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:55+00:00",
+  "hash_source": "a29ba1dac38409b50ea6020df1b60b09e03d7319b2166e74bfdbf0b9aa1ee207"
+}

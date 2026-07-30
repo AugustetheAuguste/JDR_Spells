@@ -1,0 +1,30 @@
+{
+  "id": "glace-maudite",
+  "resume_court": "Crée des javelots de glace maudite ou un mur gelé qui infligent des dégâts de froid et d'eau maudite.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "transformation_du_sujet",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "froid",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1 point de dégâts de froid",
+    "condition_infligee": [],
+    "cible_typique": "sur une ou plusieurs cibles"
+  },
+  "notes_ambiguite": "Le sort propose deux modes d'utilisation distincts (javelots ou mur). Les dégâts incluent aussi de l'eau maudite, mais seul le froid figure dans la liste type_degats. La catégorie attaque_directe couvre les deux modes : les javelots sont des projectiles directs, le mur inflige des dégâts au contact. Le tag zone_d_effet s'applique au mur ; plusieurs_cibles aux javelots multiples.",
+  "slug": "glace-maudite",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:49+00:00",
+  "hash_source": "24e27a1801389c9fcdc5f5c945bc1cfadcebac8ea1bfc6220545f5508d953337"
+}

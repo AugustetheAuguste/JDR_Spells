@@ -1,0 +1,34 @@
+{
+  "id": "oubliette-alienante",
+  "resume_court": "Transporte une créature dans un demi-plan horrifique d'où elle peut s'échapper chaque round, mais revient confuse ou aliénée.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle est confuse pendant un nombre de rounds égal au nombre de rounds qu'elle y a passée"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige aussi une aliénation mentale si l'enfermement dure 10 rounds ou plus, mais « aliénation mentale » n'est pas une condition nommée dans la liste close ; seule « confus » y figure et s'applique au cas général.",
+  "slug": "oubliette-alienante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:39+00:00",
+  "hash_source": "77282a46bc886d43df82aace8218a6846b073b393345b7533b527edd89f6f4fa"
+}

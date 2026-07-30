@@ -1,0 +1,32 @@
+{
+  "id": "interrogatoire",
+  "resume_court": "Le lanceur interroge une créature en la menaçant de douleurs magiques, infligeant des dégâts si elle refuse.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "charme_ou_coercition",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "social",
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d4 points de dégâts plus bonus de Sagesse du personnage",
+    "condition_infligee": [],
+    "cible_typique": "une créature vivante touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de douleur magique sans type énergétique élémentaire nommé, classé en 'autre'. La catégorie 'affaiblissement' reflète l'intention coercitive du sort plutôt qu'une dégradation de capacité permanente, mais 'entrave' aurait pu convenir si la menace était plus directement restrictive. Le malus de Bluff est un effet secondaire, non une condition infligée au sens des conditions listées.",
+  "slug": "interrogatoire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:39+00:00",
+  "hash_source": "d65916dcc10e33bc7bbd580c3651afe9d17a293796f588101403eac35865d42c"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "vieillesse-apparente",
+  "raison": "schéma : categorie_principale — 'transformation_du_sujet' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "96e90937b23eb9f5f3db956bc0e195b3f8e66d5e575f9d07b3781baf0a91ab9c",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"vieillesse-apparente\",\n  \"resume_court\": \"Le lanceur vieillit l'apparence d'une créature touchée pendant 1 heure par niveau.\",\n  \"categorie_principale\": \"transformation_du_sujet\",\n  \"tags\": [\n    \"transformation_du_sujet\",\n    \"jet_de_sauvegarde\",\n    \"attaque_de_contact\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"social\",\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"créature touchée\"\n  },\n  \"notes_ambiguite\": \"Le sort ne cause pas de dégâts directs ni n'inflige de condition mécanique au sens strict. Il modifie l'apparence et peut affecter la taille, mais le texte précise qu'un changement de taille ne modifie pas les valeurs de caractéristique. La cible_typique est marquée comme « ennemi » car le sort peut être utilisé offensivement (vieillir un adversaire), mais il pourrait aussi affecter un allié. Le rôle « social » reflète l'usage potentiel pour modifier l'apparence dans un contexte social.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:26:09+00:00"
+}

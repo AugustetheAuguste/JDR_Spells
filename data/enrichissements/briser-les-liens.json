@@ -1,0 +1,30 @@
+{
+  "id": "briser-les-liens",
+  "resume_court": "Un sort d'évocation qui libère le lanceur de ses entraves en infligeant des dégâts ou en accordant des bonus de libération.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "bonus_chiffre",
+    "objet_ou_equipement",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "un objet ou une créature qui entrave le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort cible principalement des objets (avec dégâts) mais peut aussi viser des créatures (sans dégâts directs, mais avec bonus de libération). La catégorie « entrave » reflète l'objectif principal : se libérer. Le type de dégâts est « autre » car le texte ne précise pas la nature énergétique des dégâts (« explosion » de liens).",
+  "slug": "briser-les-liens",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:17+00:00",
+  "hash_source": "1c412ed783fe36889cc43b512511515e6b02f1c01449471abe91e59555c60887"
+}

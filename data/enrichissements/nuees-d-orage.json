@@ -1,0 +1,34 @@
+{
+  "id": "nuees-d-orage",
+  "resume_court": "Des éclairs jaillissent du lanceur en toutes directions, blessant et étourdissant les créatures de la zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "electricite",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts d'électricité par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "sont étourdies pendant 1 round"
+    ],
+    "cible_typique": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts"
+  },
+  "notes_ambiguite": null,
+  "slug": "nuees-d-orage",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:29+00:00",
+  "hash_source": "6f22b6cc64db6d4b7327a9fb73a62218dae8ac9ffcab2dd75131414da67f232f"
+}

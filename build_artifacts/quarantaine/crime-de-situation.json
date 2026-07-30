@@ -1,0 +1,8 @@
+{
+  "id": "crime-de-situation",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "06edebc8818534a4104b2eeb70484ae6ef0193d0bc5141440eddd4a98126f15a",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"crime-de-situation\",\n  \"resume_court\": \"Le lanceur éveille une pulsion criminelle chez une créature pour qu'elle commette un acte criminel.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"charme_ou_coercition\",\n    \"duree_instantanee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"une créature\"\n  },\n  \"notes_ambiguite\": \"La catégorie principale est `charme_ou_coercition` car le sort contraint le comportement de la cible, bien que ce soit un tag. Le texte ne décrit pas une catégorie classique (attaque, protection, etc.) mais un effet de coercition pur. La durée est 1 round, ce qui pourrait sembler prolongée, mais l'effet est instantané dans sa résolution (la pulsion est éveillée et agit immédiatement), d'où le tag `duree_instantanee`.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:18+00:00"
+}

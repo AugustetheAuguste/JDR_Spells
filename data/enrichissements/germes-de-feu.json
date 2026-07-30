@@ -1,0 +1,30 @@
+{
+  "id": "germes-de-feu",
+  "resume_court": "Transforme des glands ou baies de houx en projectiles ou bombes explosives infligeant des dégâts de feu.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "toutes les créatures situées dans une case adjacente à l'explosion"
+  },
+  "notes_ambiguite": "Le sort offre deux variantes (glands et baies) avec des mécaniques différentes. La cible_typique est classée comme zone car l'effet principal concerne des créatures dans une zone d'effet autour de l'explosion, bien que les glands nécessitent une attaque de contact à distance. Les baies bénéficient explicitement d'un jet de Réflexes, tandis que les glands n'en mentionnent pas.",
+  "slug": "germes-de-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:46+00:00",
+  "hash_source": "bac31459eec6ba710909193e31e0425a627c4afb9b894237d9137f81f404e5bb"
+}

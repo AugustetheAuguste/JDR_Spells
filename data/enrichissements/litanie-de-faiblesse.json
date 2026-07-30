@@ -1,0 +1,34 @@
+{
+  "id": "litanie-de-faiblesse",
+  "resume_court": "Une litanie qui rend la cible fatiguée pendant 1 round et l'empêche de bénéficier d'autres litanies.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "communication_ou_langage",
+    "resistance_a_la_magie",
+    "duree_instantanee",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La cible est fatiguée pour 1 round"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "La condition « fatiguée » du texte n'existe pas dans la liste fermée ; « ralenti » est la condition la plus proche, car la fatigue réduit les capacités d'action. Le sort a une durée instantanée (1 round) bien que l'effet persiste pendant ce round.",
+  "slug": "litanie-de-faiblesse",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:10+00:00",
+  "hash_source": "e3e0cd86dcc83900c1afd199d0c52a31d0514045ee1954c859fa4c6f2d1b6619"
+}

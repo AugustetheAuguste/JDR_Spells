@@ -1,0 +1,35 @@
+{
+  "id": "lenteur",
+  "resume_court": "Les créatures affectées ne peuvent faire qu'une action par round, subissent des malus et voient leur vitesse réduite de moitié.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "malus_chiffre",
+    "entrave_ou_immobilisation",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Leur tour de jeu est limité à une action de mouvement ou à une action simple, mais pas les deux"
+    ],
+    "cible_typique": "1 créature/niveau"
+  },
+  "notes_ambiguite": null,
+  "slug": "lenteur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:01+00:00",
+  "hash_source": "be0234b9221f7654542d036641ed065af368a5fbefef906ee70ab9cbf2f30b70"
+}

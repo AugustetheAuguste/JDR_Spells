@@ -1,0 +1,29 @@
+{
+  "id": "sequestration-des-souvenirs",
+  "resume_court": "Efface les souvenirs d'une créature consentante et les stocke dans une gemme jusqu'à destruction.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "charme_ou_coercition",
+    "objet_ou_equipement",
+    "duree_prolongee",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "social"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature consentante"
+  },
+  "notes_ambiguite": "Le sort affecte une créature consentante, ce qui le classe en cible_typique « allie » plutôt qu'« ennemi ». Bien que l'effet soit coercitif (modification de mémoire), il ne produit pas de condition infligée au sens des états mécaniques (aveugle, paralysé, etc.) : c'est une altération permanente de la mémoire, pas une condition temporaire. Le tag « charme_ou_coercition » capture la nature contraignante du sort.",
+  "slug": "sequestration-des-souvenirs",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:34+00:00",
+  "hash_source": "9a5e76d6a4740e276193619f419bc296033792f8b4cbed29e551139928828149"
+}

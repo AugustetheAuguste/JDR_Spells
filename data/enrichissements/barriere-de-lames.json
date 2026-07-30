@@ -1,0 +1,31 @@
+{
+  "id": "barriere-de-lames",
+  "resume_court": "Un mur ou anneau de lames tourbillonnantes inflige des dégâts de force à qui le franchit.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "protection_defensive",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "force",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "mur de lames tourbillonnantes de 6 m (4 c) de long/niveau, ou anneau de lames tourbillonnantes de 1,50 m (1 c) de rayon/2 niveaux"
+  },
+  "notes_ambiguite": "Le descripteur « force » justifie le type_degats « force ». Le sort crée une barrière immobile qui contrôle une zone et inflige des dégâts à qui la franchit, tout en offrant un abri à qui se tient derrière : classé en controle_de_zone plutôt qu'attaque_directe car l'effet principal est la création d'une zone d'effet persistante, non une attaque ciblée unique.",
+  "slug": "barriere-de-lames",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:40+00:00",
+  "hash_source": "caf8583146a0c22afb59c41a4dab72c320d71d7593c5c0bedd5fd6611cfdaaf4"
+}

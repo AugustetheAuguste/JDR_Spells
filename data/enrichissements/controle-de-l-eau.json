@@ -1,0 +1,34 @@
+{
+  "id": "controle-de-l-eau",
+  "resume_court": "Modifie le niveau de l'eau dans une zone pour l'abaisser ou l'élever, créant des tourbillons ou des inondations.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "duree_prolongee",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "abaissement des eaux fonctionne comme un sort de lenteur"
+    ],
+    "cible_typique": "toute l'eau comprise dans une zone de 3 m (2 c)/niveau x 3 m (2 c)/niveau x 60 cm/niveau"
+  },
+  "notes_ambiguite": "Le sort affecte principalement le terrain et l'environnement (eau), mais peut infliger la condition ralenti à un élémentaire de l'Eau ou une créature à base d'eau. La catégorie controle_de_zone s'applique car le sort modifie un volume d'eau plutôt que de cibler des créatures directement.",
+  "slug": "controle-de-l-eau",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:26+00:00",
+  "hash_source": "d8bb73406d13e7a78cf3b95db5176401ae78542d1893e40eb9878508894e41d2"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "denonciation",
+  "resume_court": "Le lanceur dénonce une créature, dégradant l'attitude des témoins envers elle de deux niveaux.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "effet_mental",
+    "malus_chiffre",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "rayonnement de 9 m (6 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort affecte une zone plutôt qu'une créature unique, bien qu'une créature soit désignée comme cible de la dénonciation. Les créatures dans la zone subissent l'effet (dégradation d'attitude), d'où la classification en controle_de_zone avec cible_typique zone. Aucune condition infligée au sens strict (aveugle, étourdi, etc.) n'est nommée : la dégradation d'attitude est un effet social, pas une condition mécanique du jeu.",
+  "slug": "denonciation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:31+00:00",
+  "hash_source": "22a57c4a5f45c0dc077534fbd64767c07c566a79166950da000aab0bd5d2a4a7"
+}

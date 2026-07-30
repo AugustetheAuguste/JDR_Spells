@@ -1,0 +1,36 @@
+{
+  "id": "sceau-de-colle",
+  "resume_court": "Recouvre une surface ou un objet de colle gluante, entravant les créatures et rendant le terrain difficile.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "terrain_ou_environnement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Celles qui échouent sont enchevêtrées"
+    ],
+    "cible_typique": "1 objet ou 1 carré de 1,5 m (1 c) de côté"
+  },
+  "notes_ambiguite": null,
+  "slug": "sceau-de-colle",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:27+00:00",
+  "hash_source": "081bd68c25209c77d7f94b84d1a6d164ab11469bbc12a1caddbfa92ce64eb714"
+}

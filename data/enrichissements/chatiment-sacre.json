@@ -1,0 +1,33 @@
+{
+  "id": "chatiment-sacre",
+  "resume_court": "Un rayonnement de puissance divine qui aveugle et blesse les créatures mauvaises, épargne les bonnes.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts tous les deux niveaux de lanceur de sorts, jusqu'à un maximum de 5d8 (ou 1d6 points de dégâts par niveau de lanceur de sorts aux extérieurs Mauvais, jusqu'à un maximum de 10d6)",
+    "condition_infligee": [
+      "Le sort aveugle les cibles Mauvaises pendant 1 round"
+    ],
+    "cible_typique": "rayonnement de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) ; il s'agit de dégâts d'énergie divine, classés comme « autre ». La cécité n'affecte que les créatures mauvaises, mais le sort inflige des dégâts aux créatures neutres aussi ; seule la condition d'aveuglement est retenue car elle est la seule condition infligée au sens strict.",
+  "slug": "chatiment-sacre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:54+00:00",
+  "hash_source": "9513f1f2329290d78acf08b2ba90c6aa272e1abb5353664223813d279cc8a24d"
+}

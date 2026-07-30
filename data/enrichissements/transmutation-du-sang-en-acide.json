@@ -1,0 +1,34 @@
+{
+  "id": "transmutation-du-sang-en-acide",
+  "resume_court": "Le sang de la cible se transmute en acide, lui infligeant des dégâts chaque round et la rendant chancelante.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "acide",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts d'acide/2 niveaux",
+    "condition_infligee": [
+      "rend la cible chancelante et fiévreuse pendant 1 round"
+    ],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le texte mentionne « fiévreuse » mais cette condition n'existe pas dans la liste fermée. Seule « chancelant » est retenue, car explicitement nommée et présente dans la liste.",
+  "slug": "transmutation-du-sang-en-acide",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:50+00:00",
+  "hash_source": "e54107b683104a7090bd9b84587a3b51a6759d5b485050ea02d24383fd392881"
+}

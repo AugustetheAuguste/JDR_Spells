@@ -1,0 +1,36 @@
+{
+  "id": "traversee-onirique",
+  "resume_court": "Le lanceur et ses alliés sont transportés dans la Dimension du Rêve pour atteindre le paysage onirique d'une créature désignée.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "plusieurs_cibles",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "utilitaire"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": "1d10 points de dégâts",
+    "condition_infligee": [
+      "elle est secouée pour le reste du sort puis pour un nombre d'heures égal au temps passé"
+    ],
+    "cible_typique": "Le personnage et les autres cibles du sort"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts uniquement en cas d'accident lors de la traversée (1d10 points), ce qui n'est pas l'effet principal. La condition « secoue » s'applique lors d'un voyage vers un autre plan en cas d'échec au jet de Volonté. D'autres conditions peuvent survenir (fièvre, malédiction, possession, débilité, aliénation) mais elles dépendent d'un tirage aléatoire du MJ et ne sont pas garanties, donc non retenues comme conditions infligées du sort lui-même.",
+  "slug": "traversee-onirique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:55+00:00",
+  "hash_source": "a93e27752388f0226ee66a06a1e86a78223e98389deec0b68a051716964cb501"
+}

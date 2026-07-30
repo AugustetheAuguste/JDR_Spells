@@ -1,0 +1,38 @@
+{
+  "id": "mur-ectoplasmique",
+  "resume_court": "Un voile d'ectoplasme qui crée une barrière infranchissable et dégage une aura terrifiante.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "duree_prolongee",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue",
+    "effraye"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "se trouver secouées",
+      "paniquées si elles ont 4 DV ou moins"
+    ],
+    "cible_typique": "une feuille d'ectoplasme opaque de maximum 90 cm²/niveau ou une sphère ou un hémisphère d'un rayon d'au maximum 3 m/niveau"
+  },
+  "notes_ambiguite": "La condition « paniquées » correspond à « effraye » dans la liste fournie. Le texte distingue « secouées » et « paniquées » selon les DV, mais la liste n'offre que « secoue » et « effraye » ; j'ai retenu les deux comme conditions distinctes infligées selon les circonstances.",
+  "slug": "mur-ectoplasmique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:17+00:00",
+  "hash_source": "e51af6bd21cab2f33c5068de35cf96ddd68925615653d07ad8d387788bc60f18"
+}

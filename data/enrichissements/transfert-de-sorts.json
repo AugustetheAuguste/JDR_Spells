@@ -1,0 +1,28 @@
+{
+  "id": "transfert-de-sorts",
+  "resume_court": "Le lanceur transfère à une créature des sorts préparés qu'elle peut ensuite lancer à sa place.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "metamagie_ou_sort_cible",
+    "duree_prolongee",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort affecte techniquement un allié volontaire (jet de sauvegarde inoffensif), bien que le texte ne précise pas explicitement le consentement. La cible est une créature autre que le lanceur, d'où `allie`. La durée est permanente jusqu'à utilisation, ce qui justifie `duree_prolongee`.",
+  "slug": "transfert-de-sorts",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:44+00:00",
+  "hash_source": "ff50456284c51eee6ef0a25786d019c6d84bbe4b48d29078fd9ac48840e6b242"
+}

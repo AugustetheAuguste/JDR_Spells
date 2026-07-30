@@ -1,0 +1,8 @@
+{
+  "id": "bris-d-os",
+  "raison": "schéma : condition_infligee/0 — 'epuise' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "ea5cc7b27df7550342b1fe28e26f57d50ba226864d043f68a2ed1eeab9e73075",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"bris-d-os\",\n  \"resume_court\": \"Les os de la cible se fissurent, lui infligeant des dégâts et l'épuisant durablement.\",\n  \"categorie_principale\": \"attaque_directe\",\n  \"tags\": [\n    \"degats_directs\",\n    \"jet_de_sauvegarde\",\n    \"affaiblissement_de_capacite\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"autre\",\n  \"condition_infligee\": [\n    \"epuise\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"Les os ou l'exosquelette de la cible se fissurent, ce qui lui inflige 1d6 points de dégâts par niveau de lanceur de sorts\",\n    \"condition_infligee\": [\n      \"Elle est également épuisée pendant 1 minute par niveau de lanceur de sorts\"\n    ],\n    \"cible_typique\": \"une créature tangible ou un objet\"\n  },\n  \"notes_ambiguite\": \"Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de dégâts structurels dus à la fissuration osseuse, classés comme « autre ». La condition « épuisée » n'apparaît pas dans la liste fermée ; la plus proche est « etourdi », mais le texte décrit clairement l'épuisement comme une fatigue prolongée distincte. Aucune valeur de condition_infligee ne correspond exactement ; l'enregistrement est rejeté si « epuise » n'est pas admis.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:13+00:00"
+}

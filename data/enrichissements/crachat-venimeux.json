@@ -1,0 +1,33 @@
+{
+  "id": "crachat-venimeux",
+  "resume_court": "Le lanceur crache du venin qui aveugle et empoisonne sa cible à courte portée.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "un jet de venin",
+    "condition_infligee": [
+      "la cible est aveugle pendant 1 round"
+    ],
+    "cible_typique": "une cible grâce à une attaque de contact à distance"
+  },
+  "notes_ambiguite": "Le poison infligé (venin de vipère noire) n'est pas une condition instantanée mais un effet continu sur plusieurs rounds ; seule la cécité instantanée de 1 round figure dans condition_infligee. Le type de dégâts est classé en « autre » car le texte ne précise pas les points de dégâts directs du venin, seulement son effet de poison.",
+  "slug": "crachat-venimeux",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:00+00:00",
+  "hash_source": "a6b2426bf4e4d169ab5d7deebeecb96d8dec85f34bb68ffec9501b270fcdd367"
+}

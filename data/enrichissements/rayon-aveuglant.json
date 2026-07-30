@@ -1,0 +1,34 @@
+{
+  "id": "rayon-aveuglant",
+  "resume_court": "Des rayons de lumière solaire qui aveuglent les ennemis et infligent des dégâts aux créatures sensibles à la lumière.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "puissantes particules de lumière",
+    "condition_infligee": [
+      "la cible doit réussir un jet de sauvegarde ou être aveuglée pendant 1 round"
+    ],
+    "cible_typique": "Il peut lancer un rayon + un par tranche de 4 niveaux au-delà du 3e"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts (1d4 par tranche de 2 niveaux) uniquement aux créatures vulnérables à la lumière vive, pas à toutes les cibles. Type de dégâts classé en « autre » car il s'agit de « particules de lumière » sans correspondance directe dans la liste énergétique standard.",
+  "slug": "rayon-aveuglant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:27+00:00",
+  "hash_source": "580891fd094a51418961b26dcc8db6b3f1ebc9a3a19605e59041b47fd8c87c88"
+}

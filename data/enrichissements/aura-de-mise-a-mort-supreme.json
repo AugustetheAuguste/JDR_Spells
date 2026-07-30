@@ -1,0 +1,30 @@
+{
+  "id": "aura-de-mise-a-mort-supreme",
+  "resume_court": "Une aura de 6 m qui empêche les créatures mourantes de se stabiliser et blesse les morts-vivants intangibles.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "negatif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1 point de dégât de saignement",
+    "condition_infligee": [],
+    "cible_typique": "émanation de 6 m (4 c) de rayon centrée sur le personnage"
+  },
+  "notes_ambiguite": "Le texte mentionne des dégâts de saignement et des dégâts d'énergie négative (1d8 pour les morts-vivants intangibles). Le type_degats retenu est « negatif » car le sort relève de la nécromancie et affecte spécifiquement les morts-vivants et les esprits, bien que le saignement soit aussi mentionné. Les dégâts de saignement pourraient être classés « autre », mais le contexte de nécromancie et l'effet sur les morts-vivants justifient « negatif ».",
+  "slug": "aura-de-mise-a-mort-supreme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:28+00:00",
+  "hash_source": "b38371620ebd22408b89aedbc5da42a2810e82823a5dc426eede31b3ab739b94"
+}

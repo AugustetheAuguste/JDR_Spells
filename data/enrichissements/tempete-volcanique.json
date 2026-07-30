@@ -1,0 +1,32 @@
+{
+  "id": "tempete-volcanique",
+  "resume_court": "Une pluie de roche brûlante et de cendres inflige des dégâts et crée un terrain difficile.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "malus_chiffre",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts contondants",
+    "condition_infligee": [],
+    "cible_typique": "cylindre (6 m (4 c) de rayon, 12 m (8 c) de haut)"
+  },
+  "notes_ambiguite": "Le sort inflige deux types de dégâts (contondants et feu). J'ai retenu contondant comme type_degats principal car il est mentionné en premier et le tag degats_directs couvre l'ensemble. Le malus de -4 aux tests de Perception justifie le tag malus_chiffre sans créer une condition infligee distincte.",
+  "slug": "tempete-volcanique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:24+00:00",
+  "hash_source": "0945e60d9f6ac3e9fc88c20a1a19191eac599fedbdef27ffec383a0bc5fda647"
+}

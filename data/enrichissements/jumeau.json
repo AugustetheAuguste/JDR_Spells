@@ -1,0 +1,34 @@
+{
+  "id": "jumeau",
+  "resume_court": "Le lanceur crée un double parfait de lui-même et peut échanger son esprit entre les deux corps chaque round.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "le personnage est étourdi jusqu'au début de son prochain tour"
+    ],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort crée une entité distincte (le jumeau) mais affecte principalement le lanceur en lui permettant de se dédoubler. La catégorie `amelioration` reflète que le lanceur gagne une capacité tactique majeure. `invocation_ou_creation` et `transformation_du_sujet` sont des tags car le sort crée un double et modifie la nature du lanceur en le rendant capable de se scinder. `plusieurs_cibles` s'applique car le sort affecte deux entités distinctes après le dédoublement.",
+  "slug": "jumeau",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:49+00:00",
+  "hash_source": "17a5722f6d3c07e3345245033d3b58d74a89fbb72028ce02012ff8a6a96b52b6"
+}

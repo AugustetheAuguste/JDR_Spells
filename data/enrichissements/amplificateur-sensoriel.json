@@ -1,0 +1,32 @@
+{
+  "id": "amplificateur-sensoriel",
+  "resume_court": "Les créatures proches gagnent +5 en Perception et vision nocturne, mais subissent 2d6 dégâts supplémentaires au premier coup reçu chaque round.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "perception_amelioree",
+    "bonus_chiffre",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts supplémentaires du même type",
+    "condition_infligee": [],
+    "cible_typique": "rayon de 3 m centré sur le personnage"
+  },
+  "notes_ambiguite": "Le type de dégâts est « du même type » que celui infligé à la créature, donc variable et non un type élémentaire nommé : classé comme « autre ». Le sort améliore les alliés mais inflige aussi des dégâts supplémentaires aux ennemis frappés, ce qui en fait un sort de contrôle de zone hybride offensif-défensif.",
+  "slug": "amplificateur-sensoriel",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:25+00:00",
+  "hash_source": "32e2eb322ee0ae0bd9c7c15e7b9197f94c0a56929c02837fba5f86a279140571"
+}

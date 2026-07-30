@@ -1,0 +1,34 @@
+{
+  "id": "rayons-prismatiques",
+  "resume_court": "Sept rayons de lumière tourbillonnante infligent divers dégâts et effets aléatoires à toutes les créatures d'un cône.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "20 points de dégâts de feu",
+    "condition_infligee": [
+      "automatiquement aveuglées pendant 2d4 rounds"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": "Le sort inflige plusieurs types de dégâts (feu, acide, électricité) et plusieurs conditions (aveuglement, pétrification, démence, déplacement planar, poison) selon les rayons touchant aléatoirement. Type_degats vaut « autre » car aucun type unique ne domine ; les conditions retenues se limitent à l'aveuglement automatique, seule condition garantie à toutes les créatures de moins de 8 DV.",
+  "slug": "rayons-prismatiques",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:32+00:00",
+  "hash_source": "32c5a5a5c3d6ff3e80e9a78040c0de72a87f1c503df3ebc536823ece7e170ae0"
+}

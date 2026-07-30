@@ -1,0 +1,34 @@
+{
+  "id": "terrible-remords",
+  "resume_court": "La cible est rongée par le remords et se blesse elle-même chaque round, ou devient paralysée de chagrin.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "malus_chiffre",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts",
+    "condition_infligee": [
+      "elle ne peut pas agir et subit un malus de -2 à la CA"
+    ],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts contondants (auto-infliction à mains nues ou avec objet tenu). La condition retenue est « chancelant » car la cible ne peut effectuer qu'une seule action (elle ne peut pas agir du tout si elle réussit son jet). Le type de dégâts n'est pas explicitement nommé mais découle de la mécanique (attaques à mains nues ou objet tenu).",
+  "slug": "terrible-remords",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:29+00:00",
+  "hash_source": "fa9577a8ea30da3a621e9b56c08038a0b23ebd9f10f480d4d915b3e1ff8ad5d8"
+}

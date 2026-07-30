@@ -1,0 +1,35 @@
+{
+  "id": "etreinte-du-monde-feerique",
+  "resume_court": "Un contact qui confère énergie vitale et bonus aux créatures vivantes, ou affaiblit les morts-vivants.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "amelioration_de_capacite",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "attaque_de_contact"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "celui-ci est chancelant pendant toute la durée du sort"
+    ],
+    "cible_typique": "une créature vivante ou un mort-vivant touché"
+  },
+  "notes_ambiguite": "Le sort affecte deux types de cibles avec des effets opposés : amélioration pour les vivants, affaiblissement pour les morts-vivants. La cible_typique « allie » reflète l'usage principal (créature vivante bénéficiaire), mais le sort peut aussi cibler des ennemis morts-vivants pour les affaiblir. La catégorie « amelioration » couvre l'effet dominant sur créature vivante ; le tag « transformation_du_sujet » capture le changement de nature conféré par l'énergie féerique.",
+  "slug": "etreinte-du-monde-feerique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:44+00:00",
+  "hash_source": "58ae834b661fccdcccbf8b92b8f4be31fa954d6057657495117fdd339b839f10"
+}

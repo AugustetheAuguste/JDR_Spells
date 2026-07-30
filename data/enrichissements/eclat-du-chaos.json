@@ -1,0 +1,34 @@
+{
+  "id": "eclat-du-chaos",
+  "resume_court": "Un projectile d'énergie chaotique qui blesse les créatures loyales et peut les ralentir.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "projectile fait de chaos coagulé",
+    "condition_infligee": [
+      "est ralenti (comme avec lenteur) pendant 1 round"
+    ],
+    "cible_typique": "vers une cible à portée"
+  },
+  "notes_ambiguite": "Le type de dégâts est « chaos coagulé », qui ne correspond à aucune valeur énumérée (feu, froid, acide, électricité, son, force, négatif, positif, perforant, tranchant, contondant, précision) ; classé comme « autre ». La durée « instantanée (1d6 rounds) » est contradictoire : l'effet principal est instantané, mais la lenteur persiste 1 round ; seule la lenteur est retenue comme condition infligée.",
+  "slug": "eclat-du-chaos",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:08+00:00",
+  "hash_source": "630348a7294f0cce9ae79a83b658ca24d2fe3160378ebb269c6900dbcae4c9f7"
+}

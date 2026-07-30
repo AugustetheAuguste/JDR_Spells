@@ -1,0 +1,34 @@
+{
+  "id": "poing-serre",
+  "resume_court": "Une main flottante qui frappe, pousse ou interpose une créature désignée chaque round.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "degats_directs",
+    "invocation_ou_creation",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d8+11 points de dégâts",
+    "condition_infligee": [
+      "toute créature touchée doit réussir un jet de Vigueur (contre le DD du sort) pour ne pas être étourdie pendant 1 round"
+    ],
+    "cible_typique": "pousser ou de frapper un adversaire désigné par le personnage"
+  },
+  "notes_ambiguite": null,
+  "slug": "poing-serre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:20:17+00:00",
+  "hash_source": "c416fe739fc58bc7155d2329c998cd3554c3f721dd93140e7860bd494ab4549f"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "geyser",
+  "resume_court": "Une colonne d'eau bouillante qui propulse les créatures et inflige des dégâts de feu en émanation.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "une colonne d'eau bouillante de n'importe quelle surface horizontale"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts de chute, mais le type_degats principal est le feu. L'émanation hémisphérique d'eau bouillante inflige 1d6 points de dégâts de feu par round à toutes les créatures dans la zone, y compris le lanceur.",
+  "slug": "geyser",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:46+00:00",
+  "hash_source": "12e99bdbbc6e98feb705382bbf05cdca72e5d07bbca1a10797577bc647c47131"
+}

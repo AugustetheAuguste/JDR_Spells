@@ -1,0 +1,31 @@
+{
+  "id": "crevasse-devastatrice",
+  "resume_court": "Crée une faille extradimensionnelle abyssale qui blesse les créatures qui y tombent et peut invoquer des démons.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "6d6 points de dégâts de chute. Toute créature dans la faille (à partir du round où elle y entre) subit 6d6 points de dégâts supplémentaires dus à l'environnement au sein de la faille",
+    "condition_infligee": [],
+    "cible_typique": "trou extradimensionnel de 1,5 m de large et 18 m de profondeur"
+  },
+  "notes_ambiguite": "Le type de dégâts est mixte (acide, contondant, froid, électricité, feu, perforant, tranchant, sonore, chute) et aléatoire ; classé comme « autre » car aucun type unique ne domine. Les créatures tombent dans la zone mais ne sont pas paralysées ou immobilisées au sens strict : elles peuvent grimper ou voler, d'où l'absence de condition_infligee.",
+  "slug": "crevasse-devastatrice",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:10+00:00",
+  "hash_source": "eb3e1e2466a85b2e1233c15a6a0d098af8a476e9d2db41720493210a34ea9578"
+}

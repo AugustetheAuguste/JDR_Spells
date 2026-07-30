@@ -1,0 +1,8 @@
+{
+  "id": "siphon-magique",
+  "raison": "schéma : categorie_principale — 'dissipation_ou_contresort' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "2bd14d10ed6f27d74220abfa954d35a59545fc35afdf4a3c3d023657451f78e1",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"siphon-magique\",\n  \"resume_court\": \"Transfère un effet magique d'une créature touchée au lanceur, comme une dissipation de la magie.\",\n  \"categorie_principale\": \"dissipation_ou_contresort\",\n  \"tags\": [\n    \"dissipation_ou_contresort\",\n    \"attaque_de_contact\",\n    \"duree_instantanee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"créature touchée\"\n  },\n  \"notes_ambiguite\": \"Le sort est classé en dissipation_ou_contresort plutôt qu'en amélioration, bien qu'il transfère l'effet au lanceur : son effet principal est de supprimer un sort en place sur la cible. La catégorie reflète l'action de dissipation, non le bénéfice secondaire du transfert.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:24:42+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "chagrin-ecrasant",
+  "resume_court": "Un sort qui plonge une créature dans le chagrin, l'immobilisant et dégradant sa défense.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "entrave_ou_immobilisation",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La victime ne peut pas entreprendre la moindre action, reçoit un malus de -2 à la CA"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "La victime ne peut pas agir et perd sa défense, ce qui correspond à l'état étourdi. Le texte ne nomme pas explicitement cet état, mais les effets (perte d'actions, malus à la CA) le justifient.",
+  "slug": "chagrin-ecrasant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:40+00:00",
+  "hash_source": "63778340a65f86a7ce5e6411d3e1b860762da4ae82eb0ade3b841f1ba2ee26dc"
+}

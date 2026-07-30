@@ -1,0 +1,34 @@
+{
+  "id": "presage-traumatisant",
+  "resume_court": "Une créature s'entoure d'un halo qui la blesse d'électricité chaque fois qu'elle attaque ou lance un sort.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "electricite",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts d'électricité",
+    "condition_infligee": [
+      "la dissipation hébète la cible pour 1 round"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts conditionnels (à chaque attaque/sort de la cible) plutôt que directs, ce qui le classe en affaiblissement plutôt qu'attaque directe. L'hébétement ne s'applique que si un coup critique survient et que le lanceur dissipe le sort, ce qui en fait une condition rare et secondaire, mais elle figure dans le texte.",
+  "slug": "presage-traumatisant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:22:51+00:00",
+  "hash_source": "1cba0e8f848ed98ec6cb4f02175ab4044dcc9d617a8921127bee40fcf330d90d"
+}

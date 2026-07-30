@@ -1,0 +1,30 @@
+{
+  "id": "feuille-morte",
+  "resume_court": "Ralentit la chute des créatures ou objets en chute libre, éliminant les dégâts d'atterrissage.",
+  "categorie_principale": "protection",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un objet ou créature de taille M ou inférieure/niveau, distantes de 6 m (4 c) ou moins les uns des autres, et en état de chute libre"
+  },
+  "notes_ambiguite": "Le sort affecte plusieurs créatures ou objets désignés mais dans un contexte de chute libre (zone de condition plutôt que zone géographique stricte). La cible_typique pourrait aussi être « allie » si on considère que le sort s'applique à des créatures volontaires, mais le texte indique « Volonté, annule (inoffensif) » suggérant une application sans consentement préalable nécessaire.",
+  "slug": "feuille-morte",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:02+00:00",
+  "hash_source": "32abb2a2c62f1e8d68fa15777d7f0a3b4498fa4e9460c311bc75680824de0b73"
+}

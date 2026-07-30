@@ -1,0 +1,29 @@
+{
+  "id": "injonction",
+  "resume_court": "Le lanceur ordonne à une créature d'obéir à un commandement simple pendant 1 round.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "charme_ou_coercition",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature vivante"
+  },
+  "notes_ambiguite": "Le sort impose une contrainte comportementale sans infliger de dégâts ni de condition mécanique nommée. La durée est de 1 round, ce qui justifie `duree_instantanee` au sens où l'effet se résout en un seul tour de combat, bien que techniquement il persiste pendant ce round.",
+  "slug": "injonction",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:31+00:00",
+  "hash_source": "a1f55f3bb20c5e866232cfe0767eb9dd7badbc082d1f0d66958b6e01b269c85b"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "parole-sacree",
+  "resume_court": "Une parole sacrée inflige assourdissement, cécité, paralysie ou mort aux créatures non-Bonnes selon leurs DV.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "assourdi",
+    "aveugle",
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": "descripteurs: bien, son",
+    "condition_infligee": [
+      "la créature est assourdie pendant 1d4 rounds",
+      "la créature est aveuglée pendant 2d4 rounds",
+      "la créature est paralysée et sans défense pendant 1d10 minutes"
+    ],
+    "cible_typique": "créatures non-Bonnes situées dans une étendue de 12 m de rayon centrée sur le prêtre"
+  },
+  "notes_ambiguite": "Le sort inflige aussi la mort selon les DV, mais celle-ci n'est pas une condition listée. Les dégâts de 3d6 +1 par niveau (en cas d'échec au jet contre la mort) sont secondaires et conditionnels. Le type de dégâts est classé comme « son » d'après les descripteurs explicites.",
+  "slug": "parole-sacree",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:48+00:00",
+  "hash_source": "2b35e62da1512bdae7c063341bd6eaaf59724c43d8a7809659cddb4a30f06c45"
+}

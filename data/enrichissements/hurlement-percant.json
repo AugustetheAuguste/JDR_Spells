@@ -1,0 +1,33 @@
+{
+  "id": "hurlement-percant",
+  "resume_court": "Un hurlement silencieux qui inflige des souffrances et rend la cible chancelante.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "son",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "descripteurs: douleur, son",
+    "condition_infligee": [
+      "devientchancelante"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le texte mentionne « d'intolérables souffrances » sans préciser de dégâts numériques explicites, mais le type de dégâts est justifié par le descripteur « son » et la nature du sort. La condition « chancelant » est déduite de « devientchancelante » malgré la faute de frappe.",
+  "slug": "hurlement-percant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:12+00:00",
+  "hash_source": "7a92fe8bb22bd6d77da478e9f14c79abb78db8c6ef7b09f18eb47aaa714bd463"
+}

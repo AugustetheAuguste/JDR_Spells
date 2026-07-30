@@ -1,0 +1,33 @@
+{
+  "id": "coup-mental-iv",
+  "resume_court": "Un coup mental infligeant 1d8 dégâts par niveau et fatiguant la cible si elle échoue.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d8 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "se trouve fatiguée pendant 1 round si elle rate son jet de sauvegarde"
+    ],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le texte mentionne « fatiguée » mais la liste des conditions n'inclut que « chancelant » qui s'en rapproche le plus (« ne peut plus effectuer qu'une seule action par round »). Le texte ne précise pas le type de dégâts (énergie mentale, force, etc.), classé comme « autre ».",
+  "slug": "coup-mental-iv",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:55+00:00",
+  "hash_source": "a3dfb8674dfae4fad29b8ac67da560d5dc93095d5ba8450efa67fb56177b2084"
+}

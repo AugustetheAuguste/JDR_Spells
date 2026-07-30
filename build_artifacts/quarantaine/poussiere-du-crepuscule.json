@@ -1,0 +1,8 @@
+{
+  "id": "poussiere-du-crepuscule",
+  "raison": "schéma : condition_infligee/0 — 'fatigue' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "cdebf035d7b12585617325ce68a56771aeab814ee2c9ec52876fa9cf0aa82319",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"poussiere-du-crepuscule\",\n  \"resume_court\": \"Une pluie de particules noires éteint les sources de lumière, dissipe les sorts de lumière et fatigue les créatures.\",\n  \"categorie_principale\": \"controle_de_zone\",\n  \"tags\": [\n    \"zone_d_effet\",\n    \"jet_de_sauvegarde\",\n    \"dissipation_ou_contresort\",\n    \"terrain_ou_environnement\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"exploration\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"fatigue\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"Les créatures qui se trouvent dans la zone doivent faire un test de Vigueur ou être fatiguées\"\n    ],\n    \"cible_typique\": \"créatures et objets dans une étendue de 3 mètres\"\n  },\n  \"notes_ambiguite\": \"Le texte mentionne « fatiguées » mais la liste des conditions n'offre pas « fatigue » exactement. J'ai retenu « fatigue » comme la condition la plus proche, bien que le texte utilise l'adjectif « fatiguées ». La condition n'apparaît pas dans la liste fermée fournie ; j'ai cherché la valeur admissible la plus proche, mais aucune ne correspond précisément. Cet enregistrement pourrait être rejeté si « fatigue » n'est pas acceptée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:47+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bouclier-d-eclats",
+  "resume_court": "Transforme un bouclier en éclats orbitants qui attaquent les ennemis adjacents au prix du bonus de CA.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "arme_ou_munition",
+    "duree_prolongee",
+    "bonus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "tranchant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "un nombre de points de dégâts tranchants et perforants",
+    "condition_infligee": [],
+    "cible_typique": "un bouclier que le personnage manie"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts tranchants ET perforants selon le texte, mais seul un type peut être retenu. Le type_degats « tranchant » a été choisi car il apparaît en premier dans l'énumération. Le sort affecte techniquement un objet (le bouclier), mais son effet tactique principal est offensif via les éclats. La catégorie « amelioration » a été retenue car le sort augmente les capacités offensives du personnage sans viser une menace en particulier au moment de l'incantation.",
+  "slug": "bouclier-d-eclats",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:59+00:00",
+  "hash_source": "94afc9034d8802c1528c8d6a93164ab7dfff29401a9d1ac62216a6f3a93b77a3"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "tete-explosive",
+  "resume_court": "Un sort qui crée une pression mortelle dans la tête d'une créature, la tuant ou l'explosant.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts causés par les débris volants",
+    "condition_infligee": [],
+    "cible_typique": "Une créature corporelle vivante"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de débris volants (type « autre »), mais tue aussi instantanément les créatures faibles. La zone d'effet secondaire (débris) affecte plusieurs créatures, d'où les tags zone_d_effet et plusieurs_cibles.",
+  "slug": "tete-explosive",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:30+00:00",
+  "hash_source": "4dba8be97661b6a77dfaf2542bcd599fac156c163012609c491b58520373dc1e"
+}

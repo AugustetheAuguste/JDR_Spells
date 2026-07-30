@@ -1,0 +1,32 @@
+{
+  "id": "emprunt-temporel",
+  "resume_court": "Le lanceur gagne une action rapide supplémentaire par round, mais subit un affaiblissement de Constitution à chaque usage et devient chancelant à la fin.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "amelioration_de_capacite",
+    "duree_prolongee",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "il est chancelant pendant 1d4+1 rounds à cause du contrecoup temporel"
+    ],
+    "cible_typique": "le personnage"
+  },
+  "notes_ambiguite": "Le sort améliore les capacités du lanceur (action rapide supplémentaire) mais inflige un coût (affaiblissement de Constitution ou dégâts, puis condition chancelant). La catégorie principale est « amelioration » car l'effet principal est l'augmentation de capacité ; les pénalités sont des conséquences secondaires. Le tag « transformation_du_sujet » reflète la projection temporelle qui modifie l'état du personnage.",
+  "slug": "emprunt-temporel",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:18+00:00",
+  "hash_source": "3daabbe91f93cd4c4c46ff1d5db9dc71b892e638993c8b85ec263b1330f6100e"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "terreur-miasmatique",
+  "resume_court": "Un nuage de brume verte démoralise les créatures dans un cône via un test d'Intimidation.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "effet_mental",
+    "charme_ou_coercition",
+    "plusieurs_cibles",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Il démoralise tous les adversaires dont il atteint ou dépasse le DD"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": "Le texte ne nomme pas explicitement la condition « secoue », mais « démoraliser » en Pathfinder 1e inflige cette condition. Le sort affecte une zone (cône) plutôt que des créatures désignées individuellement, d'où la catégorie « controle_de_zone ».",
+  "slug": "terreur-miasmatique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:28+00:00",
+  "hash_source": "06cb5f1af44be906bdbcef30337d9867934d401012ab8585ddb55ae232115ce5"
+}

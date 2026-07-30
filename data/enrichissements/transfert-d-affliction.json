@@ -1,0 +1,28 @@
+{
+  "id": "transfert-d-affliction",
+  "resume_court": "Le lanceur extrait une affliction d'une créature et peut la transmettre à une autre par contact.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "attaque_de_contact",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature affectée"
+  },
+  "notes_ambiguite": "Le sort soigne d'abord la cible initiale (rôle de soin), mais peut ensuite transmettre l'affliction à un ennemi via une attaque de contact. La cible typique est l'allié guéri, bien que le sort permette secondairement de cibler un ennemi pour transmettre l'affliction.",
+  "slug": "transfert-d-affliction",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:41+00:00",
+  "hash_source": "8f480316f1be79602947a56bb0b2879a072ab5c1b457c361ae76e132a98af084"
+}

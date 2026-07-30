@@ -1,0 +1,30 @@
+{
+  "id": "empoisonnement",
+  "resume_court": "Un poison infligé au contact qui réduit la Constitution de la cible pendant 6 rounds.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d3 points d'affaiblissement temporaire de Constitution",
+    "condition_infligee": [],
+    "cible_typique": "créature vivante touchée"
+  },
+  "notes_ambiguite": "Le sort inflige un affaiblissement de caractéristique (Constitution) plutôt que des dégâts énergétiques classés. Type_degats vaut « autre » car l'affaiblissement temporaire ne correspond à aucun type énergétique de la liste.",
+  "slug": "empoisonnement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:15+00:00",
+  "hash_source": "394602362244a21498b8212f5789d48fc0dd9e148f96108d3188aad2ec2d3e1f"
+}

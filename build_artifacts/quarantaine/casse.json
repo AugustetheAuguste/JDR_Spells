@@ -1,0 +1,8 @@
+{
+  "id": "casse",
+  "raison": "schéma : categorie_principale — 'objet_ou_equipement' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "dcb5a0146c8bca81e4d2233360bc339a5fe2a8c94500030274b370fc6c8cdd43",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"casse\",\n  \"resume_court\": \"Endommage ou détruit un objet de taille M ou moins à portée courte.\",\n  \"categorie_principale\": \"objet_ou_equipement\",\n  \"tags\": [\n    \"objet_ou_equipement\",\n    \"jet_de_sauvegarde\",\n    \"duree_instantanee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"objet\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"un objet de taille M ou plus petit\"\n  },\n  \"notes_ambiguite\": \"Le texte mentionne une condition « cassée » mais celle-ci n'existe pas dans la liste des conditions infligées admissibles. Le sort affecte des objets, pas des créatures vivantes, donc aucune condition de créature ne s'applique.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:12+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "symbole-de-lenteur",
+  "resume_court": "Un symbole magique qui ralentit toutes les créatures proches pendant plusieurs rounds.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "sont ralenties (comme avec un sort de lenteur)"
+    ],
+    "cible_typique": "toutes les créatures situées dans les 18 mètres"
+  },
+  "notes_ambiguite": null,
+  "slug": "symbole-de-lenteur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:08+00:00",
+  "hash_source": "ef75ae4af61a7a33c8b97ffdba996e4df20b825aef8245622a97565ea7ea5cc3"
+}

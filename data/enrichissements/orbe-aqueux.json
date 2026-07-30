@@ -1,0 +1,35 @@
+{
+  "id": "orbe-aqueux",
+  "resume_court": "Une sphère d'eau tourbillonnante qui roule, blesse et engloutit les créatures sur son passage.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts non létaux",
+    "condition_infligee": [
+      "elles sont considérées comme enchevêtrées dans les courants bouillonnants"
+    ],
+    "cible_typique": "sphère de 3 m (2 c) de diamètre"
+  },
+  "notes_ambiguite": "Les dégâts sont qualifiés de « non létaux » mais le texte ne précise pas le type énergétique ; j'ai retenu « contondant » comme le plus probable pour une sphère roulante d'eau. Le sort crée une zone mobile plutôt qu'une créature invoquée au sens strict, d'où la catégorie « invocation » justifiée par l'école déclarée.",
+  "slug": "orbe-aqueux",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:37+00:00",
+  "hash_source": "f7e1bca8b8a087da268d18c4ebd2d3932b3efc30dab4f08e452c19478e689e87"
+}

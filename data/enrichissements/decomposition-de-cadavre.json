@@ -1,0 +1,31 @@
+{
+  "id": "decomposition-de-cadavre",
+  "resume_court": "Décompose un cadavre en squelette ou affaiblit un mort-vivant tangible pendant 1 minute.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "malus_chiffre",
+    "jet_de_sauvegarde",
+    "objet_ou_equipement",
+    "duree_instantanee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un cadavre ou un mort-vivant tangible"
+  },
+  "notes_ambiguite": "Le sort a deux effets distincts : décomposition instantanée d'un cadavre (utilitaire) et affaiblissement d'un mort-vivant (combat). La cible typique « objet » reflète que les cadavres ne sont pas des créatures vivantes, bien que les morts-vivants le soient techniquement. Le malus s'applique aux jets, à la CA et au DMD, justifiant le tag malus_chiffre.",
+  "slug": "decomposition-de-cadavre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:20+00:00",
+  "hash_source": "ec81568f6cb62f1cf92bf680a0995c645f2c108c6c02ae61fde219d96df61e20"
+}

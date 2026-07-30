@@ -1,0 +1,35 @@
+{
+  "id": "heurt-de-pierres",
+  "resume_court": "Deux masses rocheuses se heurtent sur une créature, infligeant des dégâts contondants massifs et l'ensevelissant.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "zone_d_effet",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts contondants",
+    "condition_infligee": [
+      "elle est également ensevelie sous les décombres"
+    ],
+    "cible_typique": "une unique créature se trouve entre elles"
+  },
+  "notes_ambiguite": "La condition « ensevelie » s'apparente à une paralysie fonctionnelle (immobilisation complète) ; c'est la condition la plus proche de la liste. Le sort affecte aussi les créatures adjacentes à la trajectoire, d'où le tag « plusieurs_cibles ».",
+  "slug": "heurt-de-pierres",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:11+00:00",
+  "hash_source": "5f0e7d5270a36a8a79412d37fbc1418dd3765d1bec9afb192888225996cfa849"
+}

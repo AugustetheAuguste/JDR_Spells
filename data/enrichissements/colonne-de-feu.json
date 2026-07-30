@@ -1,0 +1,30 @@
+{
+  "id": "colonne-de-feu",
+  "resume_court": "Une colonne de flammes inflige des dégâts de feu et d'énergie divine dans une zone cylindrique.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "La moitié est causée par le feu",
+    "condition_infligee": [],
+    "cible_typique": "cylindre de 12 m de haut sur 3 m (2 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige aussi de l'énergie divine (moitié des dégâts), mais seul le feu figure dans la liste type_degats. L'énergie divine n'étant pas énumérée (ni positif ni négatif, mais explicitement divine), type_degats retient feu comme type principal nommé.",
+  "slug": "colonne-de-feu",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:04+00:00",
+  "hash_source": "fa85d56b5c46bd07e88f1ea18148c6df2e08647753c13e0a73ae93b90da4e360"
+}

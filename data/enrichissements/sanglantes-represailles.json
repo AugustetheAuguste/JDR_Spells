@@ -1,0 +1,29 @@
+{
+  "id": "sanglantes-represailles",
+  "resume_court": "Le lanceur se blesse volontairement et gagne un bonus de moral sur les actions liées à son serment de vengeance.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "bonus_chiffre",
+    "duree_prolongee",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts au lanceur lui-même (auto-dommage volontaire), mais ce n'est pas un effet offensif : c'est le mécanisme d'activation d'une amélioration. La catégorie est donc `amelioration` plutôt que `attaque_directe`. Le bonus de moral est numérique et nommé, justifiant le tag `bonus_chiffre`. La durée est spéciale et liée à l'accomplissement d'un objectif, ce qui relève de `duree_prolongee`.",
+  "slug": "sanglantes-represailles",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:23+00:00",
+  "hash_source": "204b509c4492fa532ded3df7076a7ea391300ac4573efb356d69f094ace62a99"
+}

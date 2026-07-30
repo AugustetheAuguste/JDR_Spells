@@ -1,0 +1,33 @@
+{
+  "id": "transfert-de-tatouage",
+  "resume_court": "Transfère un tatouage magique d'une créature à une autre par contact.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "le contrecoup d'énergie magique rend chancelant le lanceur de ce sort"
+    ],
+    "cible_typique": "un tatouage magique"
+  },
+  "notes_ambiguite": "Le sort affecte techniquement un tatouage (objet magique), bien qu'il implique deux créatures. La cible typique est classée comme « objet » car le sort porte explicitement sur « un tatouage magique », non sur les créatures elles-mêmes. La condition « chancelant » n'affecte que le lanceur en cas d'échec du jet de sauvegarde adverse, ce qui est un effet secondaire du sort plutôt que son effet principal.",
+  "slug": "transfert-de-tatouage",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:44+00:00",
+  "hash_source": "43000c74b31c2a8554fa00987ed777b8bf154ef163dc0431e3551fbdf08d2a35"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "interrogatoire-superieur",
+  "resume_court": "Le lanceur pose plusieurs questions à une créature touchée et inflige des dégâts si elle refuse de répondre.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "attaque_de_contact",
+    "duree_prolongee",
+    "charme_ou_coercition"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "les dégâts infligés sont de 1d8 + bonus de Sagesse",
+    "condition_infligee": [],
+    "cible_typique": "une créature vivante touchée"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) ; il s'agit de dégâts infligés par coercition magique, classés comme « autre ». La condition infligée n'est pas une condition de jeu mécanique standard, mais plutôt un effet de contrainte comportementale.",
+  "slug": "interrogatoire-superieur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:38+00:00",
+  "hash_source": "1bcf619b572b3515db753bcc6094f15154a2b8ce62064809c3fb93c7939eb05a"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ascension",
+  "resume_court": "Confère temporairement le premier grade mythique à plusieurs créatures dans un rayon de 30 mètres.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "amelioration_de_capacite",
+    "duree_prolongee",
+    "plusieurs_cibles",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature non-mythique"
+  },
+  "notes_ambiguite": "Le sort affecte plusieurs créatures (« un certain nombre de créatures »), ce qui justifie le tag `plusieurs_cibles`. La cible est classée comme `allie` car le sort est inoffensif et confère des avantages. La durée est prolongée (« 2 heures/niveau »). Bien que le sort puisse infliger des niveaux négatifs si le focaliseur est détruit, cet effet est une conséquence secondaire et non l'effet principal du sort, donc aucune condition n'est retenue.",
+  "slug": "ascension",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:16+00:00",
+  "hash_source": "04e5ee129164da505018f860b0c8d31069c90332ee8e242fccb5acda8efcfaf1"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "manteau-de-doutes",
+  "resume_court": "Une illusion de doutes qui affecte les créatures adjacentes qui attaquent le lanceur, les rendant secouées et vulnérables.",
+  "categorie_principale": "protection",
+  "tags": [
+    "protection_defensive",
+    "illusion_visuelle_ou_sonore",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "durant lesquels elle est secouée"
+    ],
+    "cible_typique": "le personnage"
+  },
+  "notes_ambiguite": "Le sort inflige aussi un affaiblissement temporaire de Sagesse et de Charisme (1d4 points) si la créature est déjà secouée, mais cet affaiblissement n'est pas une condition listée dans les conditions_infligee disponibles. Seul l'état « secouée » a été retenu comme condition explicitement nommée et correspondant à la liste.",
+  "slug": "manteau-de-doutes",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:35+00:00",
+  "hash_source": "c3429565b005da43c5929218ce68622813ae525a2e30163671824c36c59b40c8"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "represailles-enchantees",
+  "resume_court": "Après un contresort réussi, le lanceur gagne des PV temporaires et inflige des dégâts à l'adversaire.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "bonus_chiffre",
+    "resistance_a_la_magie",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "L'adversaire contré reçoit des dégâts égal à ce nombre",
+    "condition_infligee": [],
+    "cible_typique": "une créature dont le personnage a contré le sort depuis son dernier tour"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) ; il s'agit d'énergie résiduelle de sorts contrés, donc classé en « autre ». Le sort confère aussi des PV temporaires (bonus_chiffre) au lanceur lui-même.",
+  "slug": "represailles-enchantees",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:51+00:00",
+  "hash_source": "55f23e0464f75fa10dfbc19e908c7a4c83624ec35c4c1e40617586645f1fe976"
+}

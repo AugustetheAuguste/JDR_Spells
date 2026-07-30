@@ -1,0 +1,33 @@
+{
+  "id": "chasser-les-esprits",
+  "resume_court": "Déchire la substance spirituelle d'une créature, lui infligeant des dégâts et la rendant chancelante.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "se trouve chancelante pendant 1 round"
+    ],
+    "cible_typique": "1 créature ou apparition"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Le sort affecte spécifiquement les esprits, les apparitions et les créatures intangibles, et la description mentionne « la substance spirituelle » et « l'ectoplasme », ce qui suggère une nature d'énergie négative ou spirituelle. Faute de précision, j'ai retenu « negatif » comme le type d'énergie le plus cohérent avec la nécromancie et les esprits.",
+  "slug": "chasser-les-esprits",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:51+00:00",
+  "hash_source": "f71406a0c643c8c8f263fa065a5bbc7fb44aa9379e780ba63f4c8a3902ff551d"
+}

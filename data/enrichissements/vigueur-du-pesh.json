@@ -1,0 +1,30 @@
+{
+  "id": "vigueur-du-pesh",
+  "resume_court": "La cible gagne +2 en Force et peut augmenter ce bonus au prix de dégâts non-létaux et de durée.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "bonus_chiffre",
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts non-létaux",
+    "condition_infligee": [],
+    "cible_typique": "créature vivante touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts non-létaux, qui ne correspondent à aucun type énergétique élémentaire de la liste (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision). Le type « autre » est retenu. La cible devient fatiguée à la fin du sort, mais cette fatigue n'est pas une condition infligée par le sort lui-même au sens des conditions listées : c'est une conséquence de la fin de l'effet, non un état imposé pendant sa durée.",
+  "slug": "vigueur-du-pesh",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:10+00:00",
+  "hash_source": "8e143ba503062bdbcad4df25f617ed745be6881072e3d620b331a6ee9be7cfd4"
+}

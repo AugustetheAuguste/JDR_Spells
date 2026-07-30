@@ -1,0 +1,30 @@
+{
+  "id": "boule-de-goudron",
+  "resume_court": "Lance une boule de goudron brûlant qui inflige des dégâts initiaux et continus de feu, réduisant la Dextérité.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d4 points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "attaque à distance"
+  },
+  "notes_ambiguite": "Le malus de -2 à la Dextérité n'est pas une condition listée mais une pénalité numérique couverte par le tag malus_chiffre. Les dégâts continus sont infligés par le goudron pendant plusieurs rounds, ce qui justifie duree_prolongee.",
+  "slug": "boule-de-goudron",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:10+00:00",
+  "hash_source": "c346ee1d5294a05604fc4b2923d02b6581251967f87881428932f8726110ea4f"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "mur-de-fer",
+  "resume_court": "Le lanceur crée un mur de fer vertical qui peut bloquer un accès ou écraser des créatures.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "subissent 10d6 points de dégâts",
+    "condition_infligee": [],
+    "cible_typique": "un mur de fer constitué d'un carré de 1,50 m (1 c) de côté/niveau"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte, mais un mur de fer tombant sur des créatures inflige des dégâts contondants par écrasement. Le sort peut aussi servir à bloquer sans infliger de dégâts, d'où l'inclusion de rôles tactiques multiples.",
+  "slug": "mur-de-fer",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:12+00:00",
+  "hash_source": "35f420173af3cc544f479602dd5951206bdf8b88e31fba62a05dd9274957ea60"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "attraction-feerique",
+  "resume_court": "Attire une fée de 6 DV maximum pour négocier son aide en échange de divertissement.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration",
+    "social"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 fée de 6 DV maximum appelée"
+  },
+  "notes_ambiguite": "Le sort invoque une créature alliée plutôt qu'hostile, mais la cible_typique « ennemi » est la plus proche disponible pour une invocation ; « allie » désigne une créature volontaire autre que le lanceur, ce qui ne s'applique pas ici puisque la fée est appelée et négociée, non volontaire au départ. Le jet de sauvegarde n'est pas un jet de sauvegarde au sens mécanique (pas de Vigueur, Réflexes, Volonté), mais un test de compétence (Connaissances ou Représentation) ; il est inclus car le sort dépend d'un test de réussite qui en annule l'effet.",
+  "slug": "attraction-feerique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:25+00:00",
+  "hash_source": "6732b0a8db799807196fb840be79df9de54c909ad6eb8657d0ac0d5dfd687c3e"
+}

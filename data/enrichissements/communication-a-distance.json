@@ -1,0 +1,29 @@
+{
+  "id": "communication-a-distance",
+  "resume_court": "Le lanceur envoie un message de 25 mots à une créature connue, à n'importe quelle distance.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "communication_ou_langage",
+    "duree_instantanee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "social",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "entrer en contact avec une créature qu'il connait"
+  },
+  "notes_ambiguite": "Le sort affecte techniquement une créature (« cible: 1 créature »), mais le texte décrit une interaction de communication bidirectionnelle où le sujet peut répondre. J'ai classé la cible comme « allie » car le sort suppose une créature connue et volontaire de communiquer, plutôt qu'une créature hostile. Le tag « plusieurs_cibles » pourrait sembler erroné (une seule cible désignée), mais le texte mentionne explicitement que le sujet « peut répondre immédiatement », ce qui implique une interaction réciproque ; cependant, strictement parlant, une seule créature est ciblée. J'ai retiré ce tag pour respecter la logique : une seule cible désignée n'active pas « plusieurs_cibles ».",
+  "slug": "communication-a-distance",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:06+00:00",
+  "hash_source": "cf30ac8c8a4257893064f1f041d18431f6053ed6086a913f97b74c76b6901144"
+}

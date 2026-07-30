@@ -1,0 +1,34 @@
+{
+  "id": "contact-mutagene",
+  "resume_court": "Transmet les effets affaiblis du mutagène du lanceur à une créature touchée par contact.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "transformation_du_sujet",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "amelioration_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la cible est confuse pendant toute la durée d'effet du mutagène"
+    ],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort peut affecter des alliés ou des ennemis selon le contexte tactique, mais le texte indique que la cible bénéficie d'un effet (bonus aux caractéristiques physiques), ce qui suggère une utilisation sur alliés. La condition confuse ne survient que si une caractéristique mentale tombe sous 3, ce qui est conditionnel.",
+  "slug": "contact-mutagene",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:20+00:00",
+  "hash_source": "a372760ff7da6e634756cfe911c0c3bfd95f94fdc2f1657462f760bf63c0597d"
+}

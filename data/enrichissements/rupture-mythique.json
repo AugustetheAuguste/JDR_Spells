@@ -1,0 +1,33 @@
+{
+  "id": "rupture-mythique",
+  "resume_court": "Entrave l'accès de la cible à son pouvoir mythique en annulant ses tentatives d'utilisation.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "malus_chiffre",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "la créature perd son action"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "La condition « chancelant » est justifiée par la perte d'action à chaque tentative d'utilisation de pouvoir mythique. Le sort n'inflige pas de dégâts directs mais restreint les capacités de la cible. La durée est permanente mais l'effet se déclenche à chaque tentative d'utilisation, d'où le tag duree_instantanee pour chaque résolution.",
+  "slug": "rupture-mythique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:10+00:00",
+  "hash_source": "22edb17e77eca98d690eb162bc75aa309f41450fedfd448d555d3bfabe682d4f"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "final-purificateur",
+  "resume_court": "Termine une représentation bardique pour éliminer une condition négative sur une créature affectée.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "duree_instantanee",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le sort lève une condition plutôt que d'en infliger une. Les conditions listées (recroquevillé, ébloui, épuisé, paralysé, secoué, étourdi) sont celles qu'il SUPPRIME, non qu'il impose. Aucune condition n'est donc retenue dans condition_infligee.",
+  "slug": "final-purificateur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:03+00:00",
+  "hash_source": "cf4097a21fbe6729e8b8aeacea9e7d3f7f1e394c7d5c9b8e07f478233a1b613c"
+}

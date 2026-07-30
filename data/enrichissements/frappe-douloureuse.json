@@ -1,0 +1,30 @@
+{
+  "id": "frappe-douloureuse",
+  "resume_court": "Inflige une souffrance insoutenable causant des dégâts non létaux et rendant la cible fiévreuse.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts non létaux",
+    "condition_infligee": [],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le texte mentionne « fiévreuse » mais cette condition n'existe pas dans la liste fermée des conditions infligées (aveugle, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchevetré, ralenti, assourdi). Le sort cause une souffrance et un malaise, mais sans correspondance directe à une condition nommée du système. Les dégâts sont « non létaux », ce qui ne correspond à aucun type_degats spécifique (feu, froid, acide, électricité, son, force, négatif, positif, perforant, tranchant, contondant, précision), d'où « autre ».",
+  "slug": "frappe-douloureuse",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:16:40+00:00",
+  "hash_source": "f1b740a243598808ad6cc60d59f5123af020c465c921c51ca5ad3ede7c1f61d3"
+}

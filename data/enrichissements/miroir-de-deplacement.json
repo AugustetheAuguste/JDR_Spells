@@ -1,0 +1,30 @@
+{
+  "id": "miroir-de-deplacement",
+  "resume_court": "Les créatures dans un miroir peuvent se téléporter vers un autre miroir à 1 500 m de distance.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "objet_ou_equipement",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: un miroir"
+  },
+  "notes_ambiguite": "Le sort affecte un objet (miroir) mais bénéficie aux créatures qui l'utilisent. La cible typique reste l'objet selon les règles fournies. Le sort fonctionne comme cachette-miroir mais le texte ne détaille pas cet effet de base, donc seul l'effet de déplacement est annoté.",
+  "slug": "miroir-de-deplacement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:57+00:00",
+  "hash_source": "ee77e33bad7fa8df105d6bb6813b824786e6185908bfb5c3ef15f26a6c295835"
+}

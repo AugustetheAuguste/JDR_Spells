@@ -1,0 +1,30 @@
+{
+  "id": "teleportation",
+  "resume_court": "Le lanceur se téléporte instantanément à une destination connue, seul ou avec des créatures consentantes.",
+  "categorie_principale": "deplacement",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "duree_instantanee",
+    "plusieurs_cibles",
+    "invocation_ou_creation"
+  ],
+  "roles_tactiques": [
+    "exploration",
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "le jeteur de sorts et les créatures consentantes ou objets qu'il touche"
+  },
+  "notes_ambiguite": "Le sort peut infliger des dégâts (1d10 en cas d'incident), mais cet effet est aléatoire et secondaire, non garanti. La catégorie reste `deplacement` car l'effet principal est le transport. Les rôles incluent `combat` car le sort peut servir tactiquement pour se repositionner ou fuir, bien que l'exploration soit son usage principal.",
+  "slug": "teleportation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:20+00:00",
+  "hash_source": "d1112ea8427d2ece9476af0c3ada6bf5eb3d4b8d0f254d7606b01002d940332b"
+}

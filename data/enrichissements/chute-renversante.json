@@ -1,0 +1,34 @@
+{
+  "id": "chute-renversante",
+  "resume_court": "Augmente les dégâts de chute et rend la cible chancelante pendant plusieurs rounds.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_prolongee",
+    "transformation_du_sujet"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de chute supplémentaires",
+    "condition_infligee": [
+      "elle est chancelante pendant toute la durée du sort"
+    ],
+    "cible_typique": "une créature qui tombe"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé en « autre » car il s'agit de dégâts de chute, qui ne correspondent à aucun type énergétique élémentaire de la liste (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision). Le sort relève de la transmutation et modifie la nature de la chute, justifiant le tag « transformation_du_sujet ».",
+  "slug": "chute-renversante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:59+00:00",
+  "hash_source": "918d0e4eaa710229241f00a924c471b45de284116ab6ecbdc26c8c372709dc1a"
+}

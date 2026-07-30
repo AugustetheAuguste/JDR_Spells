@@ -1,0 +1,34 @@
+{
+  "id": "ether-condense",
+  "resume_court": "Condense l'éther dans une zone, ralentissant les déplacements et dégradant les défenses.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "malus_chiffre",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "bougent à la moitié de leur vitesse de base"
+    ],
+    "cible_typique": "étendue 6 m de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "ether-condense",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:42+00:00",
+  "hash_source": "fdb805da33627c289d60755b7acf841a5338bfb03764fb758e4625fc9c9c6eca"
+}

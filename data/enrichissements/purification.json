@@ -1,0 +1,30 @@
+{
+  "id": "purification",
+  "resume_court": "Le lanceur se purifie avec de l'énergie positive, se soigne et lève les conditions néfastes.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "dissipation_ou_contresort",
+    "duree_instantanee",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "soi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "cible: lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort lève plusieurs conditions (aveugle, confus, hébété, sourd, malade, fatigué, épuisé, nauséeux, empoisonné, fiévreux) mais aucune n'est infligée par le sort lui-même : elles sont levées. La liste condition_infligee reste donc vide. Le sort inclut aussi une dissipation (annulation d'enchantement), ce qui justifie le tag dissipation_ou_contresort. L'effet mental est présent via la levée de conditions mentales comme confus.",
+  "slug": "purification",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:14+00:00",
+  "hash_source": "a2f777c44658719cc8c7125c9c6f055c7d3858ad68de748647657eca55e73a51"
+}

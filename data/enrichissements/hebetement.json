@@ -1,0 +1,33 @@
+{
+  "id": "hebetement",
+  "resume_court": "Paralyse l'esprit d'un humanoïde faible, l'empêchant d'agir pendant 1 round.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "charme_ou_coercition",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "ce qui l'empêche d'entreprendre la moindre action"
+    ],
+    "cible_typique": "1 humanoïde de 4 DV ou moins"
+  },
+  "notes_ambiguite": "Le texte dit « hébétée mais pas étourdie » : hébétement n'est pas une condition nommée dans la liste, mais l'effet décrit (impossibilité d'agir) correspond à paralyse. La résistance à la magie s'applique selon le champ « resistance_magie: oui ».",
+  "slug": "hebetement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:07+00:00",
+  "hash_source": "0451c72f8b1f98f9cf888f21a55ab299fb4a5722670977a82f6637df00a15143"
+}

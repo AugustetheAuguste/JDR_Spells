@@ -1,0 +1,29 @@
+{
+  "id": "detonation",
+  "resume_court": "Une explosion d'énergie élémentaire qui blesse toutes les créatures proches du lanceur.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "acide, froid, électricité ou feu",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le type de dégâts est variable (acide, froid, électricité ou feu selon le choix du lanceur), ce qui ne correspond à aucune valeur unique de la liste type_degats ; j'ai donc retenu « autre ». La catégorie est controle_de_zone car l'effet couvre une étendue plutôt qu'une cible désignée, bien que le sort inflige aussi des dégâts directs.",
+  "slug": "detonation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:45+00:00",
+  "hash_source": "a58914cad31a4acc4ade8a1e2833cfed35d947176aea2d45cb6caf07afe45680"
+}

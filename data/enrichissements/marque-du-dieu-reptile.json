@@ -1,0 +1,31 @@
+{
+  "id": "marque-du-dieu-reptile",
+  "resume_court": "Une marque maudite qui inflige des dégâts d'acide, affaiblit le Charisme et transforme progressivement la cible en lézard.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "transformation_du_sujet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "acide",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts d'acide",
+    "condition_infligee": [],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'acide initialement, mais son effet principal est l'affaiblissement progressif du Charisme et la transformation en lézard. Aucune condition instantanée (aveugle, paralysé, etc.) n'est infligée : l'affaiblissement de Charisme est un effet d'affaiblissement de capacité, pas une condition au sens des listes fermées. La transformation finale relève de la transmutation, classée ici comme tag plutôt que comme catégorie, car l'effet global est un affaiblissement durable.",
+  "slug": "marque-du-dieu-reptile",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:42+00:00",
+  "hash_source": "b3e2915f2b56bd62c1a726cef584ecf43ed5348b1b9858bc0cf311d5761ce229"
+}

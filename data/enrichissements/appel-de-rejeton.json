@@ -1,0 +1,29 @@
+{
+  "id": "appel-de-rejeton",
+  "resume_court": "Invoque un rejeton de Rovagug incontrôlable qui dévaste tout sur son passage.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "duree_instantanee",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "le sol gronde dans un rayon de 30 mètres centré sur le personnage"
+  },
+  "notes_ambiguite": "Le sort inflige indirectement des dégâts via la créature invoquée et les effets de zone (chute à terre), mais le texte ne spécifie pas de dégâts directs du sort lui-même. La condition « tomber à terre » n'est pas dans la liste fermée des conditions infligées (elle relève plutôt d'un effet mécanique temporaire). Le sort est classé en invocation car son effet principal est l'apparition d'une créature, bien que ses effets secondaires (grondement, fissure) relèvent du contrôle de zone.",
+  "slug": "appel-de-rejeton",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:43+00:00",
+  "hash_source": "eace33f47b552eceb0cfe22e3f7bbdcc4784e142bfa48204555a134b57180ff5"
+}

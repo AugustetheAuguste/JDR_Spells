@@ -1,0 +1,30 @@
+{
+  "id": "venin-latent",
+  "resume_court": "Retarde l'activation d'un poison de jusqu'à 1 heure par niveau et le rend difficile à détecter.",
+  "categorie_principale": "utilitaire",
+  "tags": [
+    "objet_ou_equipement",
+    "duree_prolongee",
+    "detection_ou_revelation",
+    "jet_de_sauvegarde"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "une dose de poison ou une créature venimeuse"
+  },
+  "notes_ambiguite": "Le sort affecte un poison (objet) ou une créature venimeuse. La cible_typique « objet » couvre le poison ; l'application sur créature venimeuse est secondaire et ne change pas la classification. Le sort ne cause pas de dégâts directs ni n'inflige de condition immédiate : il retarde l'activation d'un poison existant et le masque à la détection. Classé en utilitaire car il s'agit d'un outil de préparation ou de dissimulation hors du tour par tour, avec un rôle tactique de combat (préparation d'une arme empoisonnée) et social (dissimulation).",
+  "slug": "venin-latent",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:03+00:00",
+  "hash_source": "98ad78d5639c1de23212bc3378134007ad173179f8d3c67a4ceede76aba50005"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "voile-repugnant",
+  "raison": "schéma : condition_infligee/0 — 'nauseeux' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "92d76462191a4625817d6c018c4551b034a77b3b162960dea3237a84e3ff6683",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"voile-repugnant\",\n  \"resume_court\": \"Un voile illusoire aux formes impossibles qui rend nauséeuses et fiévreuses les créatures qui le voient.\",\n  \"categorie_principale\": \"illusion\",\n  \"tags\": [\n    \"illusion_visuelle_ou_sonore\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"zone_d_effet\",\n    \"plusieurs_cibles\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"zone\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"nauseeux\",\n    \"fievereux\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"La créature est nauséeuse tant qu'elle voit le voile\",\n      \"elle est fiévreuse pendant 2d4 rounds après l'avoir vu pour la dernière fois\"\n    ],\n    \"cible_typique\": \"voile transparent de 12 m (8 c) de long et 6 m (4 c) de haut\"\n  },\n  \"notes_ambiguite\": \"Les conditions « nauséeuse » et « fiévreuse » ne figurent pas dans la liste fermée des conditions. Les plus proches sont « secoue » (malus de moral) et « ebloui » (malus à la perception), mais aucune ne correspond exactement. J'ai retenu les termes du texte en attendant une clarification sur le vocabulaire des conditions en français pour Pathfinder 1e.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:26:21+00:00"
+}

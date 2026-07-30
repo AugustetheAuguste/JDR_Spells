@@ -1,0 +1,33 @@
+{
+  "id": "illumination",
+  "resume_court": "Une explosion de lumière qui éblouit une créature si elle échoue son jet de Vigueur.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": "une petite explosion de lumière",
+    "condition_infligee": [
+      "éblouie pendant une minute"
+    ],
+    "cible_typique": "devant une seule créature"
+  },
+  "notes_ambiguite": "Le sort inflige une condition (éblouissement) plutôt que des dégâts numériques directs. Le type de dégâts est classé comme « autre » car l'effet est une explosion de lumière sans points de dégâts explicites. La cible est désignée (« une seule créature »), mais l'effet se matérialise en une explosion, d'où le tag « zone_d_effet ».",
+  "slug": "illumination",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:15+00:00",
+  "hash_source": "8172ae200ec88f3b14d224fec818b299cf4877d2d6647a79849e15e31da25b50"
+}

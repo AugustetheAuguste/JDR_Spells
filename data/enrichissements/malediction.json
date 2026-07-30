@@ -1,0 +1,34 @@
+{
+  "id": "malediction",
+  "resume_court": "Maudit une créature touchée avec un effet durable : réduction de caractéristique, malus généralisé ou paralysie partielle.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "malus_chiffre",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Chaque fois que son tour de jeu arrive, la victime a 50% de chances de pouvoir agir normalement. Sinon, elle ne fait rien."
+    ],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort propose trois effets au choix : réduction de caractéristique, malus généralisé, ou paralysie partielle (50% de chances de ne rien faire). Seul le troisième inflige une condition reconnue (chancelant, qui restreint les actions). Les deux premiers sont des malus numériques sans condition spécifique dans la liste fournie.",
+  "slug": "malediction",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:32+00:00",
+  "hash_source": "fc980bf5c008e40ba20cb80a3ae493fa6d243bbbcb2fa921c218ccb3614448a0"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "vents-de-la-vengeance",
+  "resume_court": "Le lanceur s'entoure de vents surnaturels lui accordant le vol, la protection et une contre-attaque foudroyante.",
+  "categorie_principale": "amelioration",
+  "tags": [
+    "deplacement_ou_teleportation",
+    "protection_defensive",
+    "duree_prolongee",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "5d8 points de dégâts contondants",
+    "condition_infligee": [
+      "tomber à terre"
+    ],
+    "cible_typique": "cible: lanceur de sort"
+  },
+  "notes_ambiguite": "La condition « tomber à terre » s'apparente à « chancelant » (perte d'actions et défense dégradée) plutôt qu'à une immobilisation stricte. Le sort offre aussi une protection contre les projectiles et les gaz, mais ces effets ne créent pas de conditions listées. Les créatures en vol peuvent être « stoppées » ou « emportées », mais ces états ne correspondent pas aux conditions fermées disponibles.",
+  "slug": "vents-de-la-vengeance",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:26:06+00:00",
+  "hash_source": "176e31369ac14ae194f4daf37c7e1157bb3c37ebd83d3a4252d38654878601bf"
+}

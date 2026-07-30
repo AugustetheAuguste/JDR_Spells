@@ -1,0 +1,29 @@
+{
+  "id": "animation-des-morts",
+  "resume_court": "Transforme les cadavres en zombis ou squelettes obéissant au lanceur, qui peut en contrôler jusqu'à 4 DV par niveau.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "le ou les cadavres touchés"
+  },
+  "notes_ambiguite": "Le sort crée des morts-vivants qui peuvent infliger des dégâts au combat, mais le sort lui-même n'inflige pas de dégâts directs : il anime des cadavres. Les dégâts proviendraient des créatures animées, non du sort. La durée est marquée « instantanée » pour l'incantation, mais les morts-vivants « restent animés tant qu'ils ne sont pas détruits » et « restent indéfiniment sous le contrôle », ce qui justifie le tag duree_prolongee. La cible est un objet (cadavre) plutôt qu'une créature vivante.",
+  "slug": "animation-des-morts",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:31+00:00",
+  "hash_source": "8890fd58277bf61673649977d3542b9ccf2b7139eaa15e9b437c69afa11ce7c4"
+}

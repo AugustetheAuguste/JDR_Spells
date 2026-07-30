@@ -1,0 +1,34 @@
+{
+  "id": "aura-elementaire",
+  "resume_court": "Une aura d'énergie autour du lanceur blesse les créatures adjacentes et leur inflige un effet supplémentaire selon le type choisi.",
+  "categorie_principale": "protection",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "immunite_ou_resistance_element"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "soi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts d'énergie du type sélectionné",
+    "condition_infligee": [
+      "Les créatures affectées par l'aura du personnage sont chancelantes pendant 1 round"
+    ],
+    "cible_typique": "personnage"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'acide, froid, électricité ou feu selon le choix du lanceur, mais le type n'est pas fixe à l'incantation. Type_degats vaut 'autre' car le texte ne désigne pas un seul type énergétique. Les conditions supplémentaires (fiévreux pour acide, fatigué pour froid, enflammé pour feu) ne figurent pas dans la liste fermée de condition_infligee ; seul 'chancelant' (électricité) y correspond. Le sort fonctionne aussi comme protection offensive : il blesse les agresseurs adjacents.",
+  "slug": "aura-elementaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:29+00:00",
+  "hash_source": "46e8742f663ff1c71a7f4482b753f73ae85b9f48987f558a71630ebd3d844b9b"
+}

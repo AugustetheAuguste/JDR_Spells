@@ -1,0 +1,30 @@
+{
+  "id": "riviere-de-vent",
+  "resume_court": "Un couloir de vent violent qui repousse les créatures et leur inflige des dégâts non létaux.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "4d6 points de dégâts non létaux",
+    "condition_infligee": [],
+    "cible_typique": "ligne de 36 m (24 c)"
+  },
+  "notes_ambiguite": "Les dégâts sont qualifiés de « non létaux » sans type énergétique élémentaire nommé, d'où le classement en « autre ». Le sort repousse et renverse les créatures (« tombent à terre », « se faire pousser »), ce qui justifie le tag « entrave_ou_immobilisation » bien que la condition « chancelant » ou « enchevetre » ne soit pas explicitement infligée : l'effet est mécanique (chute, déplacement forcé) plutôt qu'une condition persistante.",
+  "slug": "riviere-de-vent",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:09+00:00",
+  "hash_source": "d1ba605f29c76bff13860558d8993d3058864b33d8ae1bb94716634c24bc5716"
+}

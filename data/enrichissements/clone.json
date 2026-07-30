@@ -1,0 +1,28 @@
+{
+  "id": "clone",
+  "resume_court": "Crée une copie inerte du sujet qui peut le ramener à la vie si son âme le souhaite.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "duree_prolongee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 clone"
+  },
+  "notes_ambiguite": "Le sort crée une créature (le clone), mais la cible technique est désignée comme « 1 clone » (un objet inerte avant animation). La catégorie invocation s'applique car le sort fait apparaître une créature animée par l'âme du sujet. Le tag resistance_a_la_magie est inclus car le texte indique explicitement « resistance_magie: non », ce qui confirme que la résistance à la magie ne s'applique pas — cependant, ce tag décrit les sorts AUXQUELS la résistance s'applique. Correction : ce tag doit être omis puisque la résistance ne s'applique pas. Les tags retenus sont invocation_ou_creation (le sort crée une copie corporelle), duree_prolongee (incubation de 2d4 mois), et aucun autre ne s'applique strictement. Révision : seuls invocation_ou_creation et duree_prolongee sont justifiés.",
+  "slug": "clone",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:02+00:00",
+  "hash_source": "fc4ff653be85e35e457ce6ccd003ceb7018e7eb9aa1e840093466321e4e9108c"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "apaisement-des-emotions",
+  "resume_court": "Le lanceur calme les créatures agitées dans une zone et les empêche de combattre ou d'agir avec violence.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "charme_ou_coercition",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Il réprime les effets de terreur et délivre les cibles de toute confusion"
+    ],
+    "cible_typique": "créatures situées dans une étendue de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort ne crée pas la confusion mais la lève. La condition retenue reflète l'effet de suppression de la confusion existante. Le sort restreint aussi les actions (violence interdite sauf défense), ce qui relève de l'entrave plutôt que d'une condition spécifique listée.",
+  "slug": "apaisement-des-emotions",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:06:37+00:00",
+  "hash_source": "5d228cc2488e95785bf5e2a7ae414318dcc5ac89bbaf16496961265b3417337c"
+}

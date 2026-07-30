@@ -1,0 +1,35 @@
+{
+  "id": "linceul-de-foudre",
+  "resume_court": "Un éclair électrique qui blesse toutes les créatures d'une zone et les étourdit ou les éblouit.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "electricite",
+  "condition_infligee": [
+    "etourdi",
+    "ebloui"
+  ],
+  "preuves": {
+    "type_degats": "1 point de dégâts d'électricité",
+    "condition_infligee": [
+      "hébètent les créatures vivantes pendant 1 round si elles échouent leur jet de sauvegarde",
+      "éblouies pendant 1 round"
+    ],
+    "cible_typique": "étendue de 6 m (4 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "linceul-de-foudre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:08+00:00",
+  "hash_source": "956479a97cc08431226911d09e8c6f157595077062e9dd9730cd15de10725eb8"
+}

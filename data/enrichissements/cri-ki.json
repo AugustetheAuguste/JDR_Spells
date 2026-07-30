@@ -1,0 +1,32 @@
+{
+  "id": "cri-ki",
+  "resume_court": "Une décharge sonore qui blesse une créature et l'étourdit pendant 1 round.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "son",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de son par niveau",
+    "condition_infligee": [
+      "se retrouve étourdi pendant 1 round"
+    ],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": null,
+  "slug": "cri-ki",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:08+00:00",
+  "hash_source": "3abfcdd90ade11ae3a0e8c30d2b8662e1a278f459e5536700d82b35ede0e6bc1"
+}

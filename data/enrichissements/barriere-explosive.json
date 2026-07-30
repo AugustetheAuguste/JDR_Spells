@@ -1,0 +1,32 @@
+{
+  "id": "barriere-explosive",
+  "resume_court": "Crée un mur de terre qui explose en projections tranchantes et en onde sonore quand il est détruit.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "invocation_ou_creation",
+    "terrain_ou_environnement",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "tranchant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "points de dégâts tranchants",
+    "condition_infligee": [],
+    "cible_typique": "dans une zone désignée à portée du sort"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts de son (1d6 par tranche de 3 niveaux), mais type_degats n'accepte qu'une valeur unique. Le type_degats principal est tranchant car il est cité en premier et constitue l'effet primaire de l'explosion. Les dégâts de son sont secondaires et liés à l'énergie magique de l'explosion.",
+  "slug": "barriere-explosive",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:41+00:00",
+  "hash_source": "66f097371518834745fedcf7508ec1c8edaff0e8d9ad6a2b641327451b5e2d8e"
+}

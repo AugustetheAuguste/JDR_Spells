@@ -1,0 +1,36 @@
+{
+  "id": "joueur-de-flute",
+  "resume_court": "Une mélodie séduisante attire irrésistiblement les créatures d'un type physique choisi vers le lanceur.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "charme_ou_coercition",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "effet_mental",
+    "duree_prolongee",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "fascine"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures affectées ne peuvent pas entreprendre d'action autre que d'écouter la musique et de suivre le personnage"
+    ],
+    "cible_typique": "émanation de 30 m (20 c) de rayon centrée sur le lanceur de sorts"
+  },
+  "notes_ambiguite": "Le sort produit un effet de fascination (captivation, incapacité à agir) plutôt qu'une entrave physique. La condition « fascine » de la liste est la plus appropriée, bien que le texte ne nomme pas explicitement cette condition : elle est déduite du comportement décrit (immobilité, incapacité à agir sauf suivre et écouter).",
+  "slug": "joueur-de-flute",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:48+00:00",
+  "hash_source": "0a26cce87a3fa1b2a3fd33f05a6e0b0406764439b1645195ba71308ae228f0a2"
+}

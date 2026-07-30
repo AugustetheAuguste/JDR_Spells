@@ -1,0 +1,36 @@
+{
+  "id": "tranquillite-euphorique",
+  "resume_court": "La cible entre en euphorie, voit tous comme des amis, ne peut pas attaquer et se déplace à moitié vitesse.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "effet_mental",
+    "charme_ou_coercition",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "social"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La vitesse de déplacement de la créature est réduite de moitié"
+    ],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort impose aussi une incapacité à attaquer ou lancer des sorts, mais cette restriction ne correspond à aucune condition de la liste fermée. La condition « ralenti » capture l'effet de réduction de vitesse. L'euphorie et la coercition mentale relèvent du tag « charme_ou_coercition » plutôt que d'une condition infligée au sens des états de jeu.",
+  "slug": "tranquillite-euphorique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:42+00:00",
+  "hash_source": "32910ef9968ea66a64af8b4202223ef3e884106add2efe291a2806402e1e1de9"
+}

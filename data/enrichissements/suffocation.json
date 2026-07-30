@@ -1,0 +1,33 @@
+{
+  "id": "suffocation",
+  "resume_court": "Le sort extrait l'air des poumons de la cible, la faisant suffoquer progressivement sur 3 rounds.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle est juste chancelante pendant 1 round"
+    ],
+    "cible_typique": "une créature vivante"
+  },
+  "notes_ambiguite": "Le sort inflige une mort progressive plutôt que des dégâts directs : la cible passe à 0 PV, puis -1, puis meurt. Classé en affaiblissement car l'effet principal est la dégradation progressive de l'état de la créature. Seule la condition immédiate (chancelant) figure dans condition_infligee, car les états ultérieurs (inconscience, agonie, mort) résultent de la mécanique du sort plutôt que d'une condition appliquée au sens des règles.",
+  "slug": "suffocation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:03+00:00",
+  "hash_source": "264614a1553b4c079f37f72c3d6468c6fdc4758f9427e34cdef2cff7705ad769"
+}

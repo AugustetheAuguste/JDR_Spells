@@ -1,0 +1,8 @@
+{
+  "id": "allie-involontaire",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "f604258c5cb73aafcfc70c0675ec79cc6ce066e772cadf9fe4d8404e888c4d45",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"allie-involontaire\",\n  \"resume_court\": \"La cible confond amis et ennemis pendant 1 round et compte comme alliée du lanceur.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"charme_ou_coercition\",\n    \"confusion_ou_desorientation\",\n    \"duree_instantanee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"une créature vivante\"\n  },\n  \"notes_ambiguite\": \"Le sort ne produit pas de condition mécanique nommée dans la liste, mais plutôt un effet de confusion tactique (la cible est traitée comme alliée pour les tenailles). La catégorie est charme_ou_coercition car le sort contraint la perception de la cible. La durée est instantanée au sens où l'effet se résout en 1 round sans persister après.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:09+00:00"
+}

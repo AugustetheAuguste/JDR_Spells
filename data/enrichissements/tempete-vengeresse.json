@@ -1,0 +1,35 @@
+{
+  "id": "tempete-vengeresse",
+  "resume_court": "Un énorme nuage noir qui frappe la zone d'effet avec des éclairs, de la pluie acide, de la grêle et des vents violents sur 10 rounds.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "invocation_ou_creation",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "inflige 1d6 points de dégâts d'acide, 10d6 points de dégâts d'électricité, 5d6 points de dégâts contondants",
+    "condition_infligee": [
+      "être assourdies pendant 1d4x10 minutes"
+    ],
+    "cible_typique": "nuage de 108 m de rayon"
+  },
+  "notes_ambiguite": "Le sort inflige plusieurs types de dégâts (acide, électricité, contondant) sur des rounds différents. Aucun type unique ne domine, d'où le choix de 'autre'. Les dégâts sont multiples et hétérogènes.",
+  "slug": "tempete-vengeresse",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:24+00:00",
+  "hash_source": "24cfa609f7ca8b518fc1e0c2a4162d4d54829367c85fb2f6fc8b0fce32f3eff0"
+}

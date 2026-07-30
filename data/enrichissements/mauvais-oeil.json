@@ -1,0 +1,38 @@
+{
+  "id": "mauvais-oeil",
+  "resume_court": "Le lanceur projette des vagues de puissance maléfique infligeant fièvre, terreur ou sommeil selon les DV de la cible.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "resistance_a_la_magie",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue",
+    "effraye",
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle reste secouée` pendant dix minutes",
+      "La cible est paniquée pendant 1d4 rounds",
+      "Le sujet tombe en catatonie pendant dix minutes"
+    ],
+    "cible_typique": "1 créature vivante"
+  },
+  "notes_ambiguite": "Le sort inflige trois effets distincts selon les DV : fièvre (douleur prolongée, assimilée à un affaiblissement), terreur (panique puis secouement), sommeil (catatonie, assimilée à étourdi car le sujet ne peut agir). La fièvre n'est pas une condition de jeu standard mais un effet de dégradation ; terreur se manifeste par panique (effraye) puis secouement (secoue) ; la catatonie du sommeil correspond à étourdi (incapacité d'agir). Les trois conditions retenues reflètent les trois états de jeu distincts produits.",
+  "slug": "mauvais-oeil",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:47+00:00",
+  "hash_source": "aaf96b83de97de461dd2d5a175b694d1c4f0a31453e0bb77a42abdc5aecd0344"
+}

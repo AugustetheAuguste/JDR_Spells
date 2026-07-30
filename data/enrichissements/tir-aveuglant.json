@@ -1,0 +1,33 @@
+{
+  "id": "tir-aveuglant",
+  "resume_court": "Une arme à feu tire dans un éclair aveuglant qui rend aveugles les créatures proches.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "arme_ou_munition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "éclair aveuglant",
+    "condition_infligee": [
+      "elles sont aveuglées pendant 1d4 rounds"
+    ],
+    "cible_typique": "Toutes les créatures qui se trouvent à moins de 4,50 m (3 c) de la créature"
+  },
+  "notes_ambiguite": "Le sort inflige un effet d'éblouissement (éclair) mais la condition retenue est « aveugle » car le texte emploie explicitement le verbe « aveuglées ». Le type de dégâts est classé « autre » car l'effet lumineux n'entre dans aucune catégorie énergétique standard (feu, froid, électricité, etc.).",
+  "slug": "tir-aveuglant",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:30+00:00",
+  "hash_source": "6f2e8c17f8e0cd548c1287e2eb37147071bc39e43832fe3d2dc9eae24a31e9a8"
+}

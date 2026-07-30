@@ -1,0 +1,34 @@
+{
+  "id": "detection-des-morts-vivants",
+  "resume_court": "Le lanceur détecte les auras des morts-vivants dans un cône et apprend leur nombre, intensité et position.",
+  "categorie_principale": "divination",
+  "tags": [
+    "divination_information",
+    "zone_d_effet",
+    "detection_ou_revelation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "celui-ci est étourdi pendant 1 round"
+    ],
+    "cible_typique": "émanation en forme de cône"
+  },
+  "notes_ambiguite": "La condition d'étourdissement ne s'applique que si trois conditions précises sont réunies (alignement Bon du lanceur, aura surpuissante, DV du mort-vivant ≥ 2× niveau du lanceur). Elle reste néanmoins une conséquence possible du sort et justifie son inclusion.",
+  "slug": "detection-des-morts-vivants",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:40+00:00",
+  "hash_source": "b1b22e1e2e054b25a6bb295f2b4b04f47759a6b876471393dd89ac72e11a8b18"
+}

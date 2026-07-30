@@ -1,0 +1,40 @@
+{
+  "id": "mur-prismatique",
+  "resume_court": "Un mur vertical aux sept couleurs qui protège le lanceur et inflige divers effets aux créatures qui le traversent.",
+  "categorie_principale": "protection",
+  "tags": [
+    "protection_defensive",
+    "zone_d_effet",
+    "resistance_a_la_magie",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "aveugle",
+    "paralyse",
+    "confus"
+  ],
+  "preuves": {
+    "type_degats": "Inflige 20 points de dégâts de feu (Réflexes, 1/2 dégâts)",
+    "condition_infligee": [
+      "toute autre créature de moins de 8 DV est automatiquement aveuglée pendant 2d4 rounds",
+      "Pétrification (Vigueur, annule)",
+      "Démence (voir aliénation mentale ; Volonté, annule)"
+    ],
+    "cible_typique": "un plan opaque et vertical"
+  },
+  "notes_ambiguite": "Le sort inflige plusieurs types de dégâts (feu, acide, électricité) et plusieurs conditions (aveuglement, pétrification, démence, poison). Type_degats marqué comme 'autre' car le texte ne désigne pas un type unique dominant. Condition_infligee limitée à 3 sur 4 possibles (aveuglement, pétrification, démence) ; le poison n'est pas listé comme condition_infligee dans la liste close fournie.",
+  "slug": "mur-prismatique",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:19+00:00",
+  "hash_source": "1f046ba869a8de7ef5436677fd1a716a2b4dde63da348a2ce56cc46dd74dff92"
+}

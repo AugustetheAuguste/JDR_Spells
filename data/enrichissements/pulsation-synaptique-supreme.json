@@ -1,0 +1,35 @@
+{
+  "id": "pulsation-synaptique-supreme",
+  "resume_court": "Une pulsation mentale étourdit les créatures à portée ou les rend fiévreuses si elles réussissent leur sauvegarde.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "etourdi",
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "étourdit toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds",
+      "la cible est seulement fiévreuse pendant 1 round"
+    ],
+    "cible_typique": "étendue de 9 m de rayon centrée sur le lanceur"
+  },
+  "notes_ambiguite": "Le texte emploie « fiévreuse » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral léger, premier degré des effets de peur), mais le texte ne justifie pas explicitement cette interprétation. Cependant, aucune autre condition de la liste ne convient mieux à un effet mental de coercition réduit.",
+  "slug": "pulsation-synaptique-supreme",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:11+00:00",
+  "hash_source": "4ef159834a346a9e0c874b19671d8f6b8d6c2112f19bec7c7356cd10a7805480"
+}

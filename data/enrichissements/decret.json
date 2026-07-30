@@ -1,0 +1,38 @@
+{
+  "id": "decret",
+  "resume_court": "Un décret sonore qui assourdit, ralentit, paralyse ou tue les créatures non-Loyales dans une zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "assourdi",
+    "chancelant",
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": "3d6 points de dégâts +1 par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "La créature est assourdie pendant 1d4 rounds",
+      "La créature est chancelante pendant 2d4 rounds",
+      "La créature est paralysée et sans défense pendant 1d10 minutes"
+    ],
+    "cible_typique": "créatures non-Loyales situées dans une étendue de 12 m (8 c) de rayon centrée sur le prêtre"
+  },
+  "notes_ambiguite": "Le sort inflige potentiellement la mort (« La créature meurt immédiatement »), mais cette condition n'existe pas dans la liste fermée ; elle est remplacée par les trois conditions infligées les plus pertinentes. Les dégâts ne s'appliquent que si le jet de sauvegarde réussit partiellement (effet « Mort »), ce qui justifie le type_degats « autre ».",
+  "slug": "decret",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:22+00:00",
+  "hash_source": "7d3e704bddd8535f5845517e486b2b5cc5c81f3d4ea5bdf03e15845c598ced66"
+}

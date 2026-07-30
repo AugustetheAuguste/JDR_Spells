@@ -1,0 +1,36 @@
+{
+  "id": "lumiere-argentee",
+  "resume_court": "Une lumière argentée qui éblouit et affaiblit les créatures sensibles à l'argent dans un rayon de 6 mètres.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "ebloui",
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "est automatiquement éblouie",
+      "devient fiévreuse"
+    ],
+    "cible_typique": "dans un rayon de 6 mètres"
+  },
+  "notes_ambiguite": "Le texte emploie « fiévreuse » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral), mais le texte suggère plutôt un affaiblissement. Faute de condition exacte, j'ai retenu « secoue » comme approximation du malaise décrit, avec cette réserve.",
+  "slug": "lumiere-argentee",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:18:18+00:00",
+  "hash_source": "6a6f657859f45fd611b0fb21bf00482e1b622d926797bdab7eb87f0e0ac2dbce"
+}

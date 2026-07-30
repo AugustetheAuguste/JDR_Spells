@@ -1,0 +1,34 @@
+{
+  "id": "baiser-de-la-goule",
+  "resume_court": "Un sort de contact qui paralyse un humanoïde et émet une puanteur empoisonnée autour de lui.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "entrave_ou_immobilisation",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "paralyse"
+  ],
+  "preuves": {
+    "type_degats": "flot d'énergie négative",
+    "condition_infligee": [
+      "paralyser pendant la durée du sort"
+    ],
+    "cible_typique": "le premier humanoïde qu'il touche avec une attaque de contact au corps à corps"
+  },
+  "notes_ambiguite": "Le texte mentionne une condition « fiévreuse » infligée par la puanteur secondaire, mais cette condition n'existe pas dans la liste fermée des conditions. La paralysie est l'effet principal et certain du sort, donc elle seule est retenue. La puanteur est un effet de zone secondaire qui ne change pas la catégorie principale (entrave, car l'effet primaire est la paralysie).",
+  "slug": "baiser-de-la-goule",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:36+00:00",
+  "hash_source": "dfa4f6496ba6e36aa9e9a6cd38e84d3f64b2c7e316a1ca3f52ec92acef511af1"
+}

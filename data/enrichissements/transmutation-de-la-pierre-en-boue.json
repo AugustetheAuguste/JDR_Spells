@@ -1,0 +1,36 @@
+{
+  "id": "transmutation-de-la-pierre-en-boue",
+  "resume_court": "Transforme la pierre brute en boue, ralentissant les créatures et causant des dégâts si elle s'effondre.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "transformation_du_sujet",
+    "terrain_ou_environnement",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": "8d6 points de dégâts contondants",
+    "condition_infligee": [
+      "ce qui réduit leur vitesse de déplacement à 1,50 m"
+    ],
+    "cible_typique": "jusqu'à 2 cubes de 3 m d'arête/niveau"
+  },
+  "notes_ambiguite": "Le sort affecte principalement une zone de terrain, mais peut infliger des dégâts directs si la boue s'effondre du plafond. La condition « ralenti » est justifiée par la réduction de vitesse de déplacement à 1,50 m et le malus à la CA et aux jets d'attaque.",
+  "slug": "transmutation-de-la-pierre-en-boue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:49+00:00",
+  "hash_source": "d049271e41be08f2a1c188ce6e5e8ae32ba52601aac9c1765d855b7adcfbd4b3"
+}

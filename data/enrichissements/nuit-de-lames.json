@@ -1,0 +1,32 @@
+{
+  "id": "nuit-de-lames",
+  "resume_court": "Un mur invisible de lames noires qui blesse les créatures qui le traversent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "tranchant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "déchirent",
+    "condition_infligee": [],
+    "cible_typique": "un mur de lames long de 3 mètres/niveau et haut de 3 m"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé mais le texte décrit des « lames noires » qui « déchirent », ce qui correspond à des dégâts tranchants. Le sort affecte une zone plutôt qu'une créature désignée, d'où la catégorie « controle_de_zone ».",
+  "slug": "nuit-de-lames",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:29+00:00",
+  "hash_source": "b9acf640e340e0ef7b02e3e0194c3598dda62a80dc8bc6c1e9cddc75d4a4c57f"
+}

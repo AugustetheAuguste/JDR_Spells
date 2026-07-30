@@ -1,0 +1,36 @@
+{
+  "id": "enveloppement-ethere",
+  "resume_court": "Envoie une créature non consentante dans le plan Éthéré, cataleptique et immobilisée dans un cocon.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "jet_de_sauvegarde",
+    "deplacement_ou_teleportation",
+    "entrave_ou_immobilisation",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "paralyse",
+    "chancelant"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "elle plonge dans un état de catalepsie méditative, comme si elle était inconsciente",
+      "elle est considérée comme immobilisée"
+    ],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "La catalepsie méditative s'apparente à une paralysie fonctionnelle (inconscience) ; l'immobilisation dans le cocon justifie le tag entrave_ou_immobilisation. La condition « chancelant » s'applique potentiellement au retour sur le plan Matériel (« ne passe pas un round endormie ou chancelante » si consciente), mais le texte reste ambigu sur son application systématique. J'ai retenu paralyse pour l'état cataleptique et chancelant pour la possibilité de ralentissement au réveil.",
+  "slug": "enveloppement-ethere",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:31+00:00",
+  "hash_source": "ef68c7b02e158b7059bbcd025a450d2763109e02bf117b938b2cab0d379af5fb"
+}

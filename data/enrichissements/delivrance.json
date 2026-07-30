@@ -1,0 +1,28 @@
+{
+  "id": "delivrance",
+  "resume_court": "Suspend immédiatement tous les sorts et effets qui limitent les mouvements de la cible.",
+  "categorie_principale": "soin",
+  "tags": [
+    "dissipation_ou_contresort",
+    "jet_de_sauvegarde",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le sort lève des conditions d'entrave plutôt que d'en infliger. Classé en `soin` car il restaure la liberté de mouvement, bien que `dissipation_ou_contresort` soit aussi pertinent. La cible est inoffensive (jet annule), donc `allie` s'impose.",
+  "slug": "delivrance",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:28+00:00",
+  "hash_source": "4b51aa15906bc047b21c65c2a1fab459b370e4abcb0dde32a006d7e56164a89b"
+}

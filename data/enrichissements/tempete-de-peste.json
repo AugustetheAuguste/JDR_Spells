@@ -1,0 +1,31 @@
+{
+  "id": "tempete-de-peste",
+  "resume_court": "Un nuage de brouillard maladif qui se propage et inflige une maladie à ceux qui le respirent.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "duree_prolongee",
+    "effet_mental"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un nuage de 6 m (4 c) de rayon et 6 m (4 c) de haut"
+  },
+  "notes_ambiguite": "Le sort inflige des maladies plutôt que des dégâts directs ou des conditions instantanées listées. Les maladies sont des effets persistants qui se déclarent immédiatement mais relèvent d'une mécanique distincte (fréquence, progression). Aucune condition de la liste fermée ne s'applique directement : aveugle, étourdi, etc. ne sont pas mentionnés. Le tag effet_mental est rejeté car le texte ne justifie pas un effet mental — il s'agit de maladies physiques. Correction : tags réduits à zone_d_effet, jet_de_sauvegarde, terrain_ou_environnement, duree_prolongee.",
+  "slug": "tempete-de-peste",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:25:24+00:00",
+  "hash_source": "7e20db15fe2b0dec3e3df9c650a0482cf95289d136e18bbb374fa7e681404ba9"
+}

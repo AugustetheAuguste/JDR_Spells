@@ -1,0 +1,31 @@
+{
+  "id": "disque-de-pierre",
+  "resume_court": "Le lanceur crée un ou plusieurs disques de pierre volants qui attaquent des ennemis à distance.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "invocation_ou_creation",
+    "attaque_de_contact",
+    "plusieurs_cibles",
+    "duree_instantanee",
+    "arme_ou_munition"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "dégâts contondants ou tranchants selon la configuration du disque",
+    "condition_infligee": [],
+    "cible_typique": "en direction d'un ennemi"
+  },
+  "notes_ambiguite": "Le type de dégâts varie selon le choix du lanceur (émoussé = contondant, acéré = tranchant), ce qui ne correspond à aucune valeur unique de la liste `type_degats`. La valeur « autre » est retenue car le texte ne nomme pas un type énergétique élémentaire unique, mais plutôt deux types d'arme distincts au choix.",
+  "slug": "disque-de-pierre",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:49+00:00",
+  "hash_source": "ddf13892379937c0c999cac72f191e9396dcb78cb1fa1e8f166590f3532ae75b"
+}

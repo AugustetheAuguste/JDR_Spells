@@ -1,0 +1,30 @@
+{
+  "id": "reapprovisionnement-en-ki",
+  "resume_court": "Le lanceur restaure sa réserve de ki ou celle d'une créature touchée.",
+  "categorie_principale": "soin",
+  "tags": [
+    "amelioration_de_capacite",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort peut aussi cibler le lanceur lui-même (« Si le personnage se cible »), ce qui justifierait aussi `soi` comme cible_typique. Cependant, la description générale et la portée « contact » suggèrent que la cible typique est une créature autre que le lanceur, d'où le choix de `allie`. Le sort n'inflige pas de dégâts et ne pose aucune condition hostile : c'est un soin pur.",
+  "slug": "reapprovisionnement-en-ki",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:32+00:00",
+  "hash_source": "ea0da4133d2a9c1bdb1978b660ec6a4c8f1d84541c5d7cee1f39dfca94b9e5bf"
+}

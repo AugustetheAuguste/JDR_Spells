@@ -9,12 +9,18 @@ Three things this module gets deliberately right:
 
 **The system prompt is identical for every spell.** It carries the schema summary,
 the closed vocabularies and the rules; the per-spell text goes in the user
-message. That is not tidiness — it is what makes prompt caching work. Measured
-2026-07-30 on `bedrock-runtime`: a cached system block of ~9 200 tokens is written
-once and then read for every subsequent call, and cache reads bill at a fraction
-of input. Over ~2 070 spells this is the single largest cost lever available on the
-on-demand path, and it evaporates the moment anything spell-specific is injected
-into the system block. Do not put the spell there.
+message. That is not tidiness — it is what makes prompt caching work. Over ~2 070
+spells it is the single largest cost lever available on the on-demand path, and it
+evaporates the moment anything spell-specific is injected into the system block.
+Do not put the spell there.
+
+**Caching has a floor, and it fails silently.** Haiku will not cache a prefix
+shorter than 4 096 tokens: below it, `cachePoint` is accepted, ignored, and the run
+simply costs double with no error anywhere. Measured on `bedrock-runtime`
+2026-07-30: `p1.0` sat at ~3 216 tokens and reported `cacheWriteInputTokens: 0` on
+every call; from `p1.1` on the block writes, then reads, in full. Shortening this
+block is therefore a *cost* decision, not an editorial one —
+`test_le_bloc_systeme_reste_cacheable` guards the floor.
 
 **The vocabularies are read, never retyped.** Tags, categories, damage types and
 conditions come from `conventions/vocabulaires/*.json` at assembly time, with
@@ -47,7 +53,7 @@ DEFAULT_SORTIE = "build_artifacts/prompts"
 # Bumped whenever the assembled text changes in a way that would change answers.
 # It is part of the output PATH, not just the content: `p1.0` and `p1.1` must be
 # able to sit side by side and be diffed, because tuning means several re-runs.
-VERSION_PROMPT = "p1.0"
+VERSION_PROMPT = "p1.4"
 
 # Ceiling for one enrichment record. The answer is a small fixed-shape JSON
 # object; this leaves room for a verbose `notes_ambiguite` without inviting prose.
@@ -73,16 +79,27 @@ VOCABULAIRES_DU_PROMPT: tuple[tuple[str, str], ...] = (
 CHAMPS_DEMANDES: tuple[tuple[str, str], ...] = (
     ("id", "l'identifiant fourni, recopié tel quel"),
     ("resume_court", "une seule phrase, 160 caractères maximum"),
-    ("categorie_principale", "une seule valeur de la liste `categorie_principale`"),
-    ("tags", "de 2 à 6 valeurs distinctes de la liste `tags`"),
-    ("roles_tactiques", "de 1 à 3 valeurs de la liste `roles_tactiques`"),
+    (
+        "categorie_principale",
+        "une seule valeur de la liste `categorie_principale` — jamais un tag",
+    ),
+    ("tags", "de 2 à 6 valeurs distinctes de la liste `tags`, 6 au maximum"),
+    (
+        "roles_tactiques",
+        "de 1 à 3 valeurs de la liste `roles_tactiques`, qui n'en compte que 4",
+    ),
     ("cible_typique", "une seule valeur de la liste `cible_typique`"),
     ("type_degats", "une valeur de la liste `type_degats`, ou null"),
     ("condition_infligee", "de 0 à 4 valeurs de la liste `condition_infligee`"),
     (
         "preuves",
-        "un objet {type_degats, condition_infligee, cible_typique} : pour chacun, "
-        "la sous-chaîne EXACTE du texte qui justifie ta valeur",
+        "un objet {type_degats, condition_infligee, cible_typique}. "
+        "`preuves.type_degats` : une chaîne, ou null si type_degats est null. "
+        "`preuves.condition_infligee` : un TABLEAU de chaînes, une par condition "
+        "retenue, dans le même ordre — tableau vide `[]` si condition_infligee est "
+        "vide. Jamais une chaîne, jamais null. "
+        "`preuves.cible_typique` : une chaîne, toujours présente. "
+        "Chaque chaîne est la sous-chaîne EXACTE du texte qui justifie ta valeur",
     ),
     ("notes_ambiguite", "une phrase si tu as hésité, sinon null"),
 )
@@ -97,10 +114,94 @@ REGLES: tuple[str, ...] = (
     "reformuler, sans paraphraser, sans corriger les accents ni les espaces.",
     "Si le texte ne justifie pas type_degats, écris null et mets null dans "
     "`preuves.type_degats`. Une valeur sans preuve est un rejet.",
-    "N'invente jamais une valeur hors des listes fournies. Si aucune ne "
-    "convient, choisis la plus proche et explique-toi dans notes_ambiguite.",
+    "`condition_infligee` et `preuves.condition_infligee` sont deux TABLEAUX de "
+    "même longueur : la n-ième preuve justifie la n-ième condition. Aucune "
+    "condition retenue ⇒ les deux valent `[]`.",
+    "Chaque valeur est recopiée CARACTÈRE POUR CARACTÈRE depuis la liste close du "
+    "champ qu'elle remplit. Les clés sont sans accent et en snake_case : un mot "
+    "français juste mais absent de la liste (`fievreuse`, `degats`) invalide tout "
+    "l'enregistrement. Ne forge jamais de clé nouvelle.",
+    "Chaque liste n'appartient qu'à SON champ, dans LES DEUX SENS. Les six listes "
+    "ne sont pas un vocabulaire commun : `allie` est une cible et n'est pas un tag ; "
+    "`social` est un rôle et n'est pas un tag ; inversement `transformation_du_sujet`, "
+    "`charme_ou_coercition` et `dissipation_ou_contresort` sont des TAGS et ne sont "
+    "pas des `categorie_principale` — la catégorie n'a que 12 valeurs, les rôles que "
+    "4. Avant d'écrire une valeur, retrouve-la dans la liste de CE champ précis.",
+    "Respecte les cardinalités : `tags` de 2 à 6 valeurs — 7 est un rejet, coupe aux "
+    "6 plus pertinentes ; `roles_tactiques` de 1 à 3 ; `condition_infligee` de 0 à 4.",
+    "Aucune catégorie ne dit « transformation », « charme » ni « dissipation » : "
+    "c'est voulu, ce sont des tags. Un sort qui métamorphose son sujet, le charme ou "
+    "dissipe un effet se classe donc par son EFFET dans la liste "
+    "`categorie_principale` — le sujet y gagne-t-il, y perd-il, est-il gêné, ou "
+    "s'agit-il d'un simple outil ? — et porte le tag correspondant.",
     "Réponds UNIQUEMENT par un objet JSON valide, sans texte avant ni après, "
     "sans bloc de code.",
+)
+
+# Two worked examples, on spells that DO NOT EXIST. The names are invented on
+# purpose: the system block must not contain a corpus spell name, or the model may
+# carry an annotation from the example over to the record actually being judged.
+#
+# They earn their tokens twice. First, the shape: the 20-record trial run of
+# 2026-07-30 quarantined 6 records, and half of those wrote a bare string into
+# `preuves.condition_infligee` where the schema demands an array — prose describing
+# the shape had not sufficed, an example showing it is unambiguous. Second, the
+# threshold: Haiku only caches a prefix of 4096 tokens or more, and the block sat at
+# ~3216, so `cachePoint` was silently a no-op and the pass cost double. Padding for
+# the sole purpose of crossing that line would be indefensible; two examples that
+# fix the observed failures and happen to cross it are not.
+EXEMPLES: tuple[tuple[str, str, dict[str, Any]], ...] = (
+    (
+        "Exemple 1 — un sort offensif, avec dégâts et une condition",
+        "Flamme du sourcier : un trait de feu jaillit de la main du personnage vers "
+        "une créature située à portée courte. La cible subit 1d6 points de dégâts "
+        "de feu par niveau de lanceur de sorts (maximum 10d6) et doit réussir un "
+        "jet de Réflexes, sans quoi elle est éblouie pendant 1 round.",
+        {
+            "id": "exemple-un",
+            "resume_court": (
+                "Un trait de feu qui blesse une créature à portée courte et peut "
+                "l'éblouir."
+            ),
+            "categorie_principale": "attaque_directe",
+            "tags": ["degats_directs", "rayon_ou_projectile", "jet_de_sauvegarde"],
+            "roles_tactiques": ["combat"],
+            "cible_typique": "ennemi",
+            "type_degats": "feu",
+            "condition_infligee": ["ebloui"],
+            "preuves": {
+                "type_degats": "points de dégâts de feu",
+                "condition_infligee": ["elle est éblouie pendant 1 round"],
+                "cible_typique": "vers une créature située à portée courte",
+            },
+            "notes_ambiguite": None,
+        },
+    ),
+    (
+        "Exemple 2 — un sort utilitaire : ni dégâts, ni condition",
+        "Lueur du cartographe : pendant 10 minutes par niveau, le personnage "
+        "perçoit l'orientation exacte des galeries qu'il a déjà parcourues et ne "
+        "peut pas se perdre sous terre.",
+        {
+            "id": "exemple-deux",
+            "resume_court": (
+                "Le lanceur retient l'orientation des galeries parcourues et ne se "
+                "perd plus sous terre."
+            ),
+            "categorie_principale": "utilitaire",
+            "tags": ["perception_amelioree", "duree_prolongee"],
+            "roles_tactiques": ["exploration"],
+            "cible_typique": "soi",
+            "type_degats": None,
+            "condition_infligee": [],
+            "preuves": {
+                "type_degats": None,
+                "condition_infligee": [],
+                "cible_typique": "le personnage perçoit",
+            },
+            "notes_ambiguite": None,
+        },
+    ),
 )
 
 _REMPLACEMENT = chr(0xFFFD)
@@ -108,6 +209,45 @@ _REMPLACEMENT = chr(0xFFFD)
 
 class PreparePromptsError(RuntimeError):
     """A blocking condition: the prompts would be wrong, so none are written."""
+
+
+# The four rejections actually observed on the p1.0 trial run of 2026-07-30, shown
+# wrong-then-right. Named failures are what the model can check its own draft
+# against; an abstract rule it has already read once is not.
+ERREURS_A_EVITER = """Erreurs constatées, à ne pas reproduire :
+
+1. `preuves.condition_infligee` en chaîne ou en null.
+   FAUX : "preuves": {"condition_infligee": "la cible est aveuglée"}
+   FAUX : "preuves": {"condition_infligee": null}
+   JUSTE : "preuves": {"condition_infligee": ["la cible est aveuglée"]}
+   JUSTE, si aucune condition : "preuves": {"condition_infligee": []}
+
+2. Une valeur prise dans la liste d'un AUTRE champ. C'est l'erreur la plus
+   fréquente, et elle va dans les deux sens.
+   FAUX : "tags": ["allie"] — `allie` est une valeur de `cible_typique`.
+   FAUX : "tags": ["social"] — `social` est un rôle tactique.
+   FAUX : "categorie_principale": "transformation_du_sujet" — c'est un TAG.
+   FAUX : "categorie_principale": "charme_ou_coercition" — c'est un TAG.
+   FAUX : "categorie_principale": "dissipation_ou_contresort" — c'est un TAG.
+   FAUX : "roles_tactiques": ["deplacement"] — `deplacement` est une catégorie.
+   FAUX : "roles_tactiques": ["controle"] — n'existe dans aucune liste.
+   JUSTE : la catégorie vient de la liste `categorie_principale`, et
+   `transformation_du_sujet` reste dans `tags`.
+   `categorie_principale` ne peut valoir que l'une des 12 clés de SA liste, et
+   `roles_tactiques` que l'une des 4 clés de la sienne.
+
+3. Trop de valeurs.
+   FAUX : 7 tags — la borne est 6, et le dépassement rejette tout
+   l'enregistrement. Garde les 6 plus pertinentes.
+
+4. Un mot français inventé, hors liste.
+   FAUX : "condition_infligee": ["fievreuse"] — absent de la liste.
+   JUSTE : la clé la plus proche de la liste, avec une note dans notes_ambiguite.
+
+5. Une preuve reformulée.
+   FAUX : preuve "dégâts de feu" quand le texte porte « dégats de feu ».
+   JUSTE : la sous-chaîne copiée telle quelle, fautes et accents de la source
+   compris — la preuve est vérifiée par recherche littérale dans le texte."""
 
 
 def _lire_json(chemin: Path) -> Any:
@@ -195,6 +335,22 @@ def construire_systeme(racine: Path) -> str:
     for nom_champ, nom_fichier in VOCABULAIRES_DU_PROMPT:
         parties.append("")
         parties.append(_bloc_vocabulaire(racine, nom_champ, nom_fichier))
+    # Examples come last, after the lists: they are read as a shape to imitate, and
+    # imitating a shape whose vocabulary has not yet been read produces guesses.
+    parties.append("")
+    parties.append(
+        "Exemples de réponses attendues. Ces deux sorts sont inventés et "
+        "n'appartiennent pas au corpus : n'en réutilise ni le nom, ni les valeurs — "
+        "seule la FORME est à imiter."
+    )
+    for titre, texte, reponse in EXEMPLES:
+        parties.append("")
+        parties.append(titre)
+        parties.append(f"Texte fourni : {texte}")
+        parties.append("Réponse :")
+        parties.append(json.dumps(reponse, ensure_ascii=False, indent=2))
+    parties.append("")
+    parties.append(ERREURS_A_EVITER)
     return "\n".join(parties)
 
 

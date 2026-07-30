@@ -1,0 +1,37 @@
+{
+  "id": "embourbement",
+  "resume_court": "Le lanceur enduit les cibles de boue collante qui les ralentit et les aveugle.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "plusieurs_cibles",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "aveugle",
+    "ralenti"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "aveugle les cibles",
+      "agit comme un sort de lenteur"
+    ],
+    "cible_typique": "une créature/niveau"
+  },
+  "notes_ambiguite": null,
+  "slug": "embourbement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:15+00:00",
+  "hash_source": "b4a690937aa15b72c42443f4c87ed5f5901747f6c783834faffafc64588d8584"
+}

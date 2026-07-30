@@ -1,0 +1,31 @@
+{
+  "id": "modification-d-aura",
+  "resume_court": "Masque et manipule l'aura d'une créature ou d'un objet pour tromper la détection magique et les lectures d'aura.",
+  "categorie_principale": "illusion",
+  "tags": [
+    "illusion_visuelle_ou_sonore",
+    "duree_prolongee",
+    "jet_de_sauvegarde",
+    "detection_ou_revelation",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "social",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "un objet ou une créature consentante"
+  },
+  "notes_ambiguite": "Le sort affecte aussi les objets (« un objet ou une créature consentante »), ce qui pourrait justifier le tag `objet_ou_equipement`, mais la cible typique reste `allie` car le sort s'applique à une créature consentante ou à un objet désigné volontairement. Le tag `plusieurs_cibles` reflète que quatre auras peuvent être modifiées en une seule incantation, bien qu'elles appartiennent à un seul sujet.",
+  "slug": "modification-d-aura",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:02+00:00",
+  "hash_source": "92a16cd528835e0917b5e501d1eeeabff8f5cff07be7d626f0451f6954ae960b"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "compensation-retributive",
+  "raison": "schéma : condition_infligee/0 — 'fatigue' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
+  "hash_source": "9d2168fe0a7c740d505e59c6c7f5218f1ad547f3c093b2a79f809db9637abd63",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"compensation-retributive\",\n  \"resume_court\": \"Une malédiction qui fatigue puis épuise quiconque s'empare d'un objet du lanceur.\",\n  \"categorie_principale\": \"affaiblissement\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"jet_de_sauvegarde\",\n    \"duree_prolongee\",\n    \"objet_ou_equipement\",\n    \"malus_chiffre\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"utilitaire\"\n  ],\n  \"cible_typique\": \"objet\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"fatigue\",\n    \"epuisement\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle devient fatiguée\",\n      \"Rater un second jet rend la créature épuisée\"\n    ],\n    \"cible_typique\": \"un objet\"\n  },\n  \"notes_ambiguite\": \"Les conditions « fatigue » et « épuisement » ne figurent pas dans la liste fermée des conditions infligées (aveugle, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchavetré, ralenti, assourdi). Le texte emploie explicitement les termes « fatiguée » et « épuisée », mais ils ne correspondent à aucune clé de la liste. Aucune condition retenue ne peut donc être justifiée.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:17+00:00"
+}

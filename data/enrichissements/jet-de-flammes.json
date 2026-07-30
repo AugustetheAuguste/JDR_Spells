@@ -1,0 +1,33 @@
+{
+  "id": "jet-de-flammes",
+  "resume_court": "Une explosion de feu liquide qui remplit une zone hémisphérique, infligeant des dégâts et aveuglant les créatures.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "5d6 points de dégâts de feu",
+    "condition_infligee": [
+      "Les créatures qui se trouvent à 36 mètres (24 c) de la source de feu originelle sont aveuglées pendant 1d4+1 rounds"
+    ],
+    "cible_typique": "La pluie de feu lumineuse remplit un rayonnement hémisphérique de 18 mètres (12 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "jet-de-flammes",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:45+00:00",
+  "hash_source": "358c01b76f2d513583e0a36449312fcf2b81f7e84eaa6672b72a0835e81f4130"
+}

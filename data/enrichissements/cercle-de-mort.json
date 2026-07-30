@@ -1,0 +1,30 @@
+{
+  "id": "cercle-de-mort",
+  "resume_court": "Un rayonnement de 12 m tue instantanément les créatures les plus faibles dans la zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "plusieurs_cibles",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "negatif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "éteint l'étincelle de vie des créatures",
+    "condition_infligee": [],
+    "cible_typique": "plusieurs créatures vivantes dans un rayonnement de 12 m (8 c) de rayon"
+  },
+  "notes_ambiguite": "Le sort tue instantanément plutôt que d'infliger des dégâts au sens strict ; classé en attaque_directe car il inflige une mort (dégâts d'énergie négative) à plusieurs cibles désignées dans une zone. Les dégâts sont de type negatif car le sort relève de la nécromancie et « éteint l'étincelle de vie ».",
+  "slug": "cercle-de-mort",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:37+00:00",
+  "hash_source": "0bdf94c6f797f22a659cb07d77de40909aa1884e2f6b149baec8c0d65bf215f7"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rune-de-protection",
+  "resume_court": "Des runes visibles inscrites sur une porte qui explosent comme un glyphe de garde quand on les franchit.",
+  "categorie_principale": "protection",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "objet_ou_equipement",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "objet",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "glyphe explosif",
+    "condition_infligee": [],
+    "cible_typique": "porte ou portail touché"
+  },
+  "notes_ambiguite": "Le texte ne précise pas le type de dégâts exact (feu, force, etc.), seulement que les runes fonctionnent comme un glyphe de garde explosif. Type_degats vaut donc 'autre'. La catégorie est 'protection' car le sort sert à défendre une entrée, bien qu'il inflige des dégâts : c'est un piège défensif, pas une attaque directe.",
+  "slug": "rune-de-protection",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:10+00:00",
+  "hash_source": "55bc58378b10c2d38780b209dfbaf9d3a7328db1cce47d03c81a70f5dc0c07cd"
+}

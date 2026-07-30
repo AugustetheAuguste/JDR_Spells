@@ -1,0 +1,36 @@
+{
+  "id": "parole-resonnante",
+  "resume_court": "Un mot de pouvoir inflige des dégâts sonores croissants et des conditions d'incapacité sur 3 rounds.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "duree_prolongee",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "son",
+  "condition_infligee": [
+    "chancelant",
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts sonores",
+    "condition_infligee": [
+      "elle est chancelante pendant 1 round",
+      "elle est étourdie pour 1 round"
+    ],
+    "cible_typique": "une créature choisie"
+  },
+  "notes_ambiguite": null,
+  "slug": "parole-resonnante",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:46+00:00",
+  "hash_source": "033a985923e7417937cfd88d9cccaeb1f85c31f39a347a2ebfbe48c8da20550d"
+}

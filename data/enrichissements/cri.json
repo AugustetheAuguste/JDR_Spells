@@ -1,0 +1,33 @@
+{
+  "id": "cri",
+  "resume_court": "Un cri terrible qui assourdit et blesse les créatures dans un cône de 9 m.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "son",
+  "condition_infligee": [
+    "assourdi"
+  ],
+  "preuves": {
+    "type_degats": "5d6 points de dégâts de son",
+    "condition_infligee": [
+      "perd l'ouïe pendant 2d6 rounds"
+    ],
+    "cible_typique": "rayonnement en forme de cône"
+  },
+  "notes_ambiguite": null,
+  "slug": "cri",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:09+00:00",
+  "hash_source": "4079b402050bfbb3e0ca305d6ffa532cd503755003c61481748d704c880f760a"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "assassin-imaginaire",
+  "resume_court": "Une illusion terrifiante qui tue de peur ou inflige 3d6 dégâts, ou peut se retourner contre le lanceur.",
+  "categorie_principale": "illusion",
+  "tags": [
+    "illusion_visuelle_ou_sonore",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "effraye"
+  ],
+  "preuves": {
+    "type_degats": "elle perd 3d6 points de vie",
+    "condition_infligee": [
+      "elle est touchée par l'illusion"
+    ],
+    "cible_typique": "1 créature vivante"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts (3d6) mais le type n'est pas énergétique : c'est une mort de peur, classée en « autre ». La condition « effraye » est justifiée par le contexte de peur extrême et la possibilité de mourir de peur, bien que le texte ne nomme pas explicitement cette condition ; cependant, l'effet mental et l'intention du sort la soutiennent fortement.",
+  "slug": "assassin-imaginaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:20+00:00",
+  "hash_source": "1095f166b0d1bce44686b78cef7677dc5d10940c3446d8aed032b37a64c9bbef"
+}

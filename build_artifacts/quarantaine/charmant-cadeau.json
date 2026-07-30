@@ -1,0 +1,8 @@
+{
+  "id": "charmant-cadeau",
+  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
+  "hash_source": "480c90992821d2132bc590fb5f8009baa28049db3ff8b7b87a8b87909a6b9d01",
+  "version_prompt": "p1.4",
+  "reponse_brute": "```json\n{\n  \"id\": \"charmant-cadeau\",\n  \"resume_court\": \"Force une créature adjacente à accepter et utiliser un objet pendant 1 round.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"objet_ou_equipement\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature\"\n  },\n  \"notes_ambiguite\": \"Le sort relève de l'enchantement (coercition) et produit un effet mental, mais n'inflige pas de dégâts ni de condition au sens strict. La catégorie `charme_ou_coercition` est un tag, non une catégorie principale. Cependant, le sort contraint le comportement du sujet sans entrer dans les 12 catégories principales : il s'agit d'une coercition pure. Faute de catégorie dédiée, j'ai choisi `charme_ou_coercition` comme catégorie principale car c'est l'essence du sort, bien que ce soit techniquement un tag. Une révision du modèle serait nécessaire pour classer correctement les sorts de coercition pure.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T13:22:13+00:00"
+}

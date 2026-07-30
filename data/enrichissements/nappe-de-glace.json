@@ -1,0 +1,36 @@
+{
+  "id": "nappe-de-glace",
+  "resume_court": "Une bouffée de froid recouvre la zone de glace, blesse les créatures et les fait tomber.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "froid",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts de froid",
+    "condition_infligee": [
+      "tombe à terre"
+    ],
+    "cible_typique": "rayonnement de 1,50 m de rayon"
+  },
+  "notes_ambiguite": "La condition « tombe à terre » correspond à « etourdi » dans la liste fournie, qui décrit une perte d'actions et une défense dégradée. Le texte ne mentionne pas explicitement une perte d'actions, mais la chute est un effet de contrôle similaire. Aucune autre condition de la liste ne s'applique mieux.",
+  "slug": "nappe-de-glace",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:19:21+00:00",
+  "hash_source": "4704cb87aec2a1c0cd496452cb298fbf24419d27929bcddbae1cb029490f7e32"
+}

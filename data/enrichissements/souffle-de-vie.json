@@ -1,0 +1,30 @@
+{
+  "id": "souffle-de-vie",
+  "resume_court": "Soigne une créature ou la ramène à la vie si elle est morte depuis peu, mais blesse les morts-vivants.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "invocation_ou_creation",
+    "jet_de_sauvegarde",
+    "duree_instantanee",
+    "attaque_de_contact"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "positif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "blesse les morts-vivants",
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie positive aux morts-vivants (« blesse les morts-vivants »), bien que sa fonction principale soit la guérison. La cible typique est « allie » car le sort est inoffensif pour les créatures vivantes, mais il peut aussi être lancé sur des morts-vivants hostiles pour les blesser.",
+  "slug": "souffle-de-vie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:24:53+00:00",
+  "hash_source": "00a4deee4d5191c261a1c2d71ee22c2abf70cf08477b0b36b55c64b0d10e79b1"
+}

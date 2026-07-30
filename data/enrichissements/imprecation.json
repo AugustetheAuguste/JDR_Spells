@@ -1,0 +1,35 @@
+{
+  "id": "imprecation",
+  "resume_court": "Le lanceur instille le doute et la peur chez ses adversaires, qui subissent un malus de moral.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "effet_mental",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "malus_chiffre",
+    "plusieurs_cibles",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Imprécation instille le doute et la peur chez les adversaires du lanceur de sorts"
+    ],
+    "cible_typique": "tous les adversaires se trouvant à 15 m (10 c) ou moins"
+  },
+  "notes_ambiguite": "Le malus de moral de -1 justifie la condition « secoue » (malus de moral léger, premier degré des effets de peur). Le sort affecte plusieurs créatures dans une zone, d'où les tags « zone_d_effet » et « plusieurs_cibles ».",
+  "slug": "imprecation",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:17:26+00:00",
+  "hash_source": "708fb4e464f7cde7ef73b4f95ce8e8a94a149665e33ac12619ff64fd210c7ce3"
+}

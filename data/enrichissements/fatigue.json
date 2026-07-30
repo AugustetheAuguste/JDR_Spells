@@ -1,0 +1,29 @@
+{
+  "id": "fatigue",
+  "resume_court": "Par un toucher, le lanceur fatigue une créature pendant 1 round par niveau.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature touchée"
+  },
+  "notes_ambiguite": "Le texte décrit une décharge d'énergie négative mais ne produit pas de dégâts directs : l'effet est l'état fatigué, classé comme affaiblissement de capacité plutôt que comme dégâts. Aucune condition de la liste `condition_infligee` ne correspond à « fatigué » (la liste ne propose que aveugle, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchavetré, ralenti, assourdi).",
+  "slug": "fatigue",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:56+00:00",
+  "hash_source": "aa9e02c6b5dcdd19917bb644aacfc98e72a7db6132b15679dd76f5e42e97cd31"
+}

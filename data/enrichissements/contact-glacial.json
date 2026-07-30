@@ -1,0 +1,34 @@
+{
+  "id": "contact-glacial",
+  "resume_court": "Une attaque de contact qui blesse les vivants et terrifie les morts-vivants.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "plusieurs_cibles"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "effraye"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de vie",
+    "condition_infligee": [
+      "s'enfuir, paniqués, pendant 1d4 rounds +1 par niveau de lanceur de sorts"
+    ],
+    "cible_typique": "créature ou créatures touchées (jusqu'à 1/niveau)"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie négative (contexte de Nécromancie, affecte la force vitale), classés comme type_degats « negatif ». La condition « effraye » s'applique aux morts-vivants qui échouent leur jet de Volonté. Les vivants subissent un affaiblissement de Force (tag « affaiblissement_de_capacite ») mais pas une condition listée.",
+  "slug": "contact-glacial",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:13:25+00:00",
+  "hash_source": "15bb4b356041da6d3d01e163c79afaa0091d2c6f9c88212c267507c6aa25f7b7"
+}

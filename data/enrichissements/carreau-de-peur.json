@@ -1,0 +1,34 @@
+{
+  "id": "carreau-de-peur",
+  "resume_court": "Un projectile de ténèbres qui blesse les créatures Bonnes et rend les extérieurs Bons fiévreux.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "rayon_ou_projectile",
+    "attaque_de_contact",
+    "jet_de_sauvegarde",
+    "alignement_ou_divin"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "secoue"
+  ],
+  "preuves": {
+    "type_degats": "projectile fait de ténèbres crépitantes",
+    "condition_infligee": [
+      "se retrouve fiévreux pendant 1 round"
+    ],
+    "cible_typique": "vers une cible à portée"
+  },
+  "notes_ambiguite": "Le texte mentionne « fiévreux » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral léger). Le sort inflige des dégâts d'énergie négative (ténèbres maléfiques), classé comme « negatif ».",
+  "slug": "carreau-de-peur",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:12:33+00:00",
+  "hash_source": "1b73aa89fb572e753455db98e35f6090455322bc6eac664de3aacbbd426b3a23"
+}

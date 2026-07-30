@@ -1,0 +1,30 @@
+{
+  "id": "bombardement-elementaire",
+  "resume_court": "Convoque des élémentaires qui attaquent les ennemis avec des dégâts variables selon leur type.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "plusieurs_cibles",
+    "degats_directs",
+    "zone_d_effet",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "Le type et le nombre de dégâts infligés varient en fonction de la taille et du type de l'élémentaire",
+    "condition_infligee": [],
+    "cible_typique": "des cibles situées à moins de 18 mètres les unes des autres"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts de types multiples (tranchant, électricité, contondant, feu, froid) selon l'élémentaire choisi. Aucun type unique ne domine ; `autre` reflète cette variabilité. La résistance à la magie est explicitement « non », mais le sort relève de l'invocation de créatures élémentaires, d'où l'inclusion du tag `resistance_a_la_magie` pour signaler que la mécanique s'applique (même si elle ne fonctionne pas ici).",
+  "slug": "bombardement-elementaire",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:11:57+00:00",
+  "hash_source": "3b06b4f7c097858ce1165feac2c96b19481c0273b4b0a90ed74c562e06919c0e"
+}

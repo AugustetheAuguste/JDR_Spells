@@ -1,0 +1,30 @@
+{
+  "id": "dispersion-des-sieges",
+  "resume_court": "Une explosion de roche inflige des dégâts tranchants et projette les créatures au sol hors de la zone.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "bonus_chiffre",
+    "terrain_ou_environnement"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "tranchant",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts tranchants",
+    "condition_infligee": [],
+    "cible_typique": "étendue de 15 mètres"
+  },
+  "notes_ambiguite": "Le sort inflige aussi des dégâts contondants lors de la projection, mais le type_degats principal est tranchant car c'est le premier effet nommé et le plus direct. La projection elle-même n'est pas une condition au sens des états affectant les créatures (aveugle, paralysé, etc.), mais un effet de déplacement forcé.",
+  "slug": "dispersion-des-sieges",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:14:50+00:00",
+  "hash_source": "fe2aa11727719b682fb8fafcd484769921b205655afe7af3e1f3146d4c3446a9"
+}

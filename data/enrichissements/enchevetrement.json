@@ -1,0 +1,35 @@
+{
+  "id": "enchevetrement",
+  "resume_court": "La végétation s'entortille autour des créatures dans une zone, les entravant et ralentissant leurs déplacements.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "terrain_ou_environnement",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures qui ratent leur jet de sauvegarde sont enchevêtrées"
+    ],
+    "cible_typique": "toute la végétation sur une étendue de 12 m (8 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "enchevetrement",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:15:18+00:00",
+  "hash_source": "535806d89afe8df1c11a22c86239837b713d4221e4e2702c1cc22da33eacf41f"
+}

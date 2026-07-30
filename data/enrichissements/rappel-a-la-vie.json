@@ -1,0 +1,29 @@
+{
+  "id": "rappel-a-la-vie",
+  "resume_court": "Ramène une créature morte à la vie, au prix de deux niveaux perdus et d'un traumatisme.",
+  "categorie_principale": "soin",
+  "tags": [
+    "soin_ou_guerison",
+    "invocation_ou_creation",
+    "duree_instantanee",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "utilitaire"
+  ],
+  "cible_typique": "objet",
+  "type_degats": null,
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [],
+    "cible_typique": "créature morte touchée"
+  },
+  "notes_ambiguite": "La cible est un cadavre (objet), non une créature vivante. Le sort inflige des effets négatifs (perte de niveaux) mais sa catégorie reste « soin » car son objectif principal est la guérison et la restauration de vie. Les tags « invocation_ou_creation » et « soin_ou_guerison » reflètent la nature du sort : il crée/ramène une créature et la guérit.",
+  "slug": "rappel-a-la-vie",
+  "version_prompt": "p1.4",
+  "version_taxonomie": "taxonomie_v1",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T13:23:25+00:00",
+  "hash_source": "d00189f71b62d0bd9c868c03914e617abd4775ee9b75b51275e1c5d48ff74efd"
+}
