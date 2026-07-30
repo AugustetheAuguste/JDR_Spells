@@ -1,0 +1,26 @@
+{
+  "id": "terre-maudite",
+  "etiquettes": [
+    "malédiction_permanente",
+    "zone_affectee_large",
+    "choix_effet_unique",
+    "epidemie_quotidienne",
+    "famine_vegetale",
+    "reanimation_zombis",
+    "mal_necromantique"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:25+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "90ecb5b2b5186e27a499cf37cd38ba4efa54f9c1362e315eaee2870bee4137dd",
+  "texte_envoye_hash": "90ecb5b2b5186e27a499cf37cd38ba4efa54f9c1362e315eaee2870bee4137dd",
+  "texte_envoye": "nom: Terre maudite\necole: Nécromancie\ndescripteurs: mal, malédiction\nniveaux: Ens/Mag 9, Prê 9, Sor 9\ntemps_incantation: 10 minutes\ncomposantes: V, G, M (onyx en poudre pour une valeur de 10 000 po), FD\nportee: contact\ncible: rayon de 1,5 km à partir du point touché\nduree: permanente\njet_de_sauvegarde: non, voir texte\nresistance_magie: non\n\nLe personnage lance une terrible malédiction sur les terres et afflige ceux qui y vivent comme ceux qui y meurent. Le personnage choisit l’un des effets suivants.\nÉpidémie. Chaque matin, au lever du soleil, toutes les créatures de la zone doivent réussir un jet de Vigueur ou attraper l’une des maladies suivantes (que le personnage choisit au moment où il lance le sort) : la bouille-crâne, la fièvre des marais, la fièvre gloussante, la lèpre, le mal aveuglant, la mort vaseuse, la peste bubonique ou la tremblante. La maladie se déclare immédiatement, sans période d’incubation. Le personnage utilise la fréquence et le DD du jet de sauvegarde de la maladie pour déterminer ses effets. C’est un effet de maladie.\nFamine. Toutes les plantes ordinaires de la zone voient leur croissance et leur production de nourriture réduites de moitié, comme si elles étaient affectées par la croissance réduite du rabougrissement des plantes.\nNon-vie. Toutes les créatures P ou plus grandes qui se font tuer dans la région se relèvent 24 heures plus tard sous forme de zombis, tout comme les cadavres enterrés dans la zone. Il faut brûler ou démembrer les cadavres pour les empêcher de se transformer en zombis.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "malédiction_permanente\nzone_affectee_large\nchoix_effet_unique\nepidemie_quotidienne\nfamine_vegetale\nreanimation_zombis\nmal_necromantique",
+  "usage": {
+    "inputTokens": 640,
+    "outputTokens": 52
+  },
+  "arret": "end_turn"
+}

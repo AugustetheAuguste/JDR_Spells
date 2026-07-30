@@ -1,0 +1,26 @@
+{
+  "id": "mur-de-saumure",
+  "etiquettes": [
+    "creation_de_mur",
+    "obstacle_aquatique",
+    "courant_directionnel",
+    "ejection_de_creatures",
+    "abri_contre_attaques",
+    "blocage_gaz_et_liquides",
+    "malus_combat_subaquatique"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:00+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "52ee408d59d7e91287cb28533c17a604c1cfac5206490a29604feb888c3cb091",
+  "texte_envoye_hash": "52ee408d59d7e91287cb28533c17a604c1cfac5206490a29604feb888c3cb091",
+  "texte_envoye": "nom: Mur de saumure\necole: Invocation (création)\ndescripteurs: eau\nniveaux: Cham 4, Dru 4, Ens/Mag 4, Magus 4, Rôd 3\ntemps_incantation: 1 action simple\ncomposantes: V, G, M/FD (un morceau de corail)\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: mur long de 3 mètres/niveau et haut de 1.5 mètre/niveau au maximum (F)\nduree: concentration + 1 round/niveau\njet_de_sauvegarde: aucun (voir texte)\nresistance_magie: oui\n\nLe personnage crée un mur de 1.5 mètre d'épaisseur avec un puissant courant dirigé vers un côté du mur, choisi à l'incantation. Une créature qui tente de nager contre ce courant doit dépenser 4 cases de déplacement pour entrer dans une case du mur. Une créature qui commence son tour dans le mur est éjectée dans la direction du courant juste avant d'agir. Le mur confère un abri contre les attaques portées depuis l'extérieur de l'eau, comme c'est le cas avec toute étendue d'eau. L'eau et le courant dévient les attaques à distance physiques dans et à travers le mur, à moins que l'arme utilisée soit particulièrement massive (comme un engin de siège). Une créature submergée dans l'eau subit les malus habituels liés au combat sous-marin. Le mur bloque les gaz et les liquides, et empêche l'eau de se mélanger à ses extrémités.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "creation_de_mur\nobstacle_aquatique\ncourant_directionnel\nejection_de_creatures\nabri_contre_attaques\nblocage_gaz_et_liquides\nmalus_combat_subaquatique",
+  "usage": {
+    "inputTokens": 586,
+    "outputTokens": 59
+  },
+  "arret": "end_turn"
+}

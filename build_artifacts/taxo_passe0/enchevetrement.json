@@ -1,0 +1,26 @@
+{
+  "id": "enchevetrement",
+  "etiquettes": [
+    "entrave_mouvement",
+    "terrain_difficile",
+    "vegetation_hostile",
+    "immobilisation_partielle",
+    "liberation_possible",
+    "degats_epines_optionnel",
+    "zone_effet_rayon"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:41+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "535806d89afe8df1c11a22c86239837b713d4221e4e2702c1cc22da33eacf41f",
+  "texte_envoye_hash": "535806d89afe8df1c11a22c86239837b713d4221e4e2702c1cc22da33eacf41f",
+  "texte_envoye": "nom: Enchevêtrement\necole: Transmutation\nniveaux: Cham 1, Dru 1, Rôd 1\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)\ncible: toute la végétation sur une étendue de 12 m (8 c) de rayon\nduree: 1 minute/niveau (T)\njet_de_sauvegarde: Réflexes, partiel (voir description)\nresistance_magie: non\n\nLes herbes, les plantes, les buissons et les arbres se déforment et s’entortillent autour des créatures qui se trouvent dans la zone d’effet ou qui y pénètrent. Les créatures qui ratent leur jet de sauvegarde sont enchevêtrées. Celles qui réussissent se déplacent normalement mais doivent faire un nouveau jet à la fin de leur tour. Les créatures qui pénètrent dans la zone doivent faire ce jet immédiatement. En cas d’échec, la créature ne peut plus se déplacer et reste enchevêtrée. Elle peut se libérer si elle réussit un test de Force ou d’Évasion, par une action de mouvement. Le DD du test est égal au DD du sort. Tant que le sort fait effet, la zone qu’il affecte est considérée comme un terrain difficile.\nSi les plantes locales sont couvertes d’épines, les créatures présentes dans la zone d’effet du sort reçoivent 1 point de dégâts à chaque fois qu’elles ratent leur jet de sauvegarde contre le sort ou ratent un test pour se libérer. On peut appliquer d’autres effets liés à la flore locale, à la discrétion du MJ.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "entrave_mouvement\nterrain_difficile\nvegetation_hostile\nimmobilisation_partielle\nliberation_possible\ndegats_epines_optionnel\nzone_effet_rayon",
+  "usage": {
+    "inputTokens": 599,
+    "outputTokens": 45
+  },
+  "arret": "end_turn"
+}

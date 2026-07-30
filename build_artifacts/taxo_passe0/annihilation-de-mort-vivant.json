@@ -1,0 +1,26 @@
+{
+  "id": "annihilation-de-mort-vivant",
+  "etiquettes": [
+    "mort_vivant_tue_instantanement",
+    "elimination_par_des_de_vie",
+    "immunite_neuf_des_de_vie",
+    "zone_effet_rayon_12m",
+    "jet_sauvegarde_volonte",
+    "resistance_magie_possible",
+    "composante_materielle_chere"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:17+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "3db6d0baab4d3d734f88c78d97100336efb55231d59668e5319adc08ee9f2b58",
+  "texte_envoye_hash": "3db6d0baab4d3d734f88c78d97100336efb55231d59668e5319adc08ee9f2b58",
+  "texte_envoye": "nom: Annihilation de mort-vivant\necole: Nécromancie\nniveaux: Inq 6, Ens/Mag 6, Prê 6, Spi 6\ntemps_incantation: 1 action simple\ncomposantes: V, G, M/FD (poudre de diamant (500 po))\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: plusieurs morts-vivants situés dans un rayonnement de 12 m de rayon\nduree: instantanée\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nCercle de mort éteint l’étincelle de vie des morts-vivants présents dans la zone d’effet, qui meurent instantanément. Le sort tue 1d4 DV de créatures par niveau de lanceur de sorts (allant jusqu’à un maximum de 20d4). Les plus faibles créatures sont les premières à être affectées. En cas de DV identiques, ce sont les cibles les plus proches du point d’origine du rayonnement qui sont touchées en priorité. Toute créature disposant d’un minimum de 9 DV est immunisée contre ce sort. Si les DV restants sont insuffisant pour toucher la cible suivante, ils sont perdus.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "mort_vivant_tue_instantanement\nelimination_par_des_de_vie\nimmunite_neuf_des_de_vie\nzone_effet_rayon_12m\njet_sauvegarde_volonte\nresistance_magie_possible\ncomposante_materielle_chere",
+  "usage": {
+    "inputTokens": 467,
+    "outputTokens": 71
+  },
+  "arret": "end_turn"
+}

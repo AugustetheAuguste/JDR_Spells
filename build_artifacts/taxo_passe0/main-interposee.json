@@ -1,0 +1,26 @@
+{
+  "id": "main-interposee",
+  "etiquettes": [
+    "abri_contre_adversaire",
+    "bonus_ca_plus_quatre",
+    "main_magique_interposee",
+    "protection_passive",
+    "ralentissement_deplacement",
+    "redirection_possible",
+    "resistance_aux_degats"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:55+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "0a9b9263d132e62fe60e74b5053a7d53e754029ce5e29a8ec216b9b29a8b6380",
+  "texte_envoye_hash": "0a9b9263d132e62fe60e74b5053a7d53e754029ce5e29a8ec216b9b29a8b6380",
+  "texte_envoye": "nom: Main interposée\necole: Évocation\ndescripteurs: force\nniveaux: Ens/Mag 5, Magus 5, Occ 5, Psy 5\ntemps_incantation: 1 action simple\ncomposantes: V, G, F (un gant souple)\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: main de 3 m/2 c de long\nduree: 1 round/niveau (T)\njet_de_sauvegarde: aucun\nresistance_magie: oui\n\nCe sort fait apparaître une main magique de taille G qui prend forme entre le personnage et l’un de ses adversaires. La main flottante et désincarnée se déplace de sorte qu’elle se trouve toujours entre les deux protagonistes, quels que soient les efforts déployés par l’adversaire pour la contourner. Elle procure un abri au mage, ce qui se traduit par un bonus de +4 à la CA (contre cet adversaire uniquement). Rien ne peut tromper la main. Elle continue de s’interposer même en cas d’obscurité soudaine, si l’adversaire devient invisible, se transforme, se cache, etc. S’il s’enfuit, elle ne le poursuit pas.\nUne main interposée mesure trois mètres de long et presque autant de large, doigts écartés. Elle possède le profil suivant : CA 20 (-1 taille, +11 armure naturelle) et autant de points de vie que le nombre de points de vie maximum du mage. Elle est affectée par les attaques physiques, mais la plupart des sorts qui n’infligent pas de dégâts ne l’affectent pas.\nLa main ne provoque jamais d’attaques d’opportunité. Elle est incapable de franchir un mur de force ou d’entrer dans une zone d’antimagie. Si elle traverse un mur prismatique ou une sphère prismatique, elle en subit les effets normaux. Elle effectue ses jets de sauvegarde comme son créateur.\nDésintégration détruit la main, tout comme dissipation de la magie.\nLes créatures qui pèsent moins d’une tonne et tentent de repousser la main voient leur vitesse de déplacement réduite de moitié. Si un adversaire pèse plus d’une tonne, la main ne le ralentit pas, mais elle s’interpose tout de même entre le mage et son assaillant.\nLe mage peut diriger le sort vers une autre cible par une action de mouvement.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "abri_contre_adversaire\nbonus_ca_plus_quatre\nmain_magique_interposee\nprotection_passive\nralentissement_deplacement\nredirection_possible\nresistance_aux_degats",
+  "usage": {
+    "inputTokens": 787,
+    "outputTokens": 50
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "guerison-de-destrier",
+  "etiquettes": [
+    "restauration_points_de_vie",
+    "soin_monture",
+    "effet_instantane",
+    "sort_inoffensif",
+    "invocation_guerison"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:46+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "412afc11b6a47830a10cb0952da43b19ec4bfbfd40f411a8f1b23ebd1c15d995",
+  "texte_envoye_hash": "412afc11b6a47830a10cb0952da43b19ec4bfbfd40f411a8f1b23ebd1c15d995",
+  "texte_envoye": "nom: Guérison de destrier\necole: Invocation (guérison)\nniveaux: Pal 3\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: contact\ncible: la monture touchée\nduree: instantanée\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui (inoffensif)\n\nCe sort fonctionne comme guérison suprême, mais il n’affecte que le destrier du paladin (il s’agit généralement d’un cheval).",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "restauration_points_de_vie\nsoin_monture\neffet_instantane\nsort_inoffensif\ninvocation_guerison",
+  "usage": {
+    "inputTokens": 274,
+    "outputTokens": 35
+  },
+  "arret": "end_turn"
+}

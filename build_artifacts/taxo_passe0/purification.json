@@ -1,0 +1,25 @@
+{
+  "id": "purification",
+  "etiquettes": [
+    "soin_points_de_degats",
+    "suppression_conditions_nefastes",
+    "annulation_enchantement",
+    "energie_positive",
+    "effet_instantane",
+    "adaptation_morts_vivants"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:11+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "a2f777c44658719cc8c7125c9c6f055c7d3858ad68de748647657eca55e73a51",
+  "texte_envoye_hash": "a2f777c44658719cc8c7125c9c6f055c7d3858ad68de748647657eca55e73a51",
+  "texte_envoye": "nom: Purification\necole: Évocation\nniveaux: Inq 6, Prê 5\ntemps_incantation: 1 action simple\ncomposantes: G, FD\nportee: personnelle\ncible: lanceur de sorts\nduree: instantanée\n\nLe corps du personnage est imprégné d'énergie positive qui le purifie. Ce sort soigne 4d8 points de dégâts +1 point par niveau de lanceur de sorts (maximum +25) et met un terme à toute condition néfaste qui l'affectait : affaiblissement temporaire de caractéristiques, aveugle, confus, hébété, sourd, malade, fatigué, épuisé, nauséeux, empoisonné ou fiévreux. De plus, purification fonctionne comme annulation d'enchantement sur un unique effet supplémentaire choisi par le personnage et qui peut légalement être affecté par l'annulation.\nSi le personnage qui utilise ce sort est un mort-vivant ou toute autre créature habituellement soignée par l'énergie négative, le sort le purifie en utilisant de l'énergie négative et non positive.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "soin_points_de_degats\nsuppression_conditions_nefastes\nannulation_enchantement\nenergie_positive\neffet_instantane\nadaptation_morts_vivants",
+  "usage": {
+    "inputTokens": 420,
+    "outputTokens": 46
+  },
+  "arret": "end_turn"
+}

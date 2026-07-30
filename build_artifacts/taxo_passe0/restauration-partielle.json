@@ -1,0 +1,24 @@
+{
+  "id": "restauration-partielle",
+  "etiquettes": [
+    "restauration_caracteristique",
+    "dissipation_effet_magique",
+    "recuperation_points_caracteristique",
+    "elimination_fatigue",
+    "reduction_epuisement"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:16+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "084912583229bcfa29edfb32635602d19b5f50ab4bc4bacf53d7a0bbce5ba0bb",
+  "texte_envoye_hash": "084912583229bcfa29edfb32635602d19b5f50ab4bc4bacf53d7a0bbce5ba0bb",
+  "texte_envoye": "nom: Restauration partielle\necole: Invocation (guérison)\nniveaux: Alch 2, Cham 2, Dru 2, Hyp 2, Inq 2, Pal 1, Prê 2, Spi 2\ntemps_incantation: 3 rounds\ncomposantes: V, G\nportee: contact\ncible: créature touchée\nduree: instantanée\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui (inoffensif)\n\nCe sort dissipe les effets magiques réduisant l’une des caractéristiques de la cible ou permet de récupérer 1d4 points d’une caractéristique temporairement affaiblie. Restauration partielle élimine toute fatigue dont est victime le sujet. Si le personnage est épuisé, il devient simplement fatigué. Le sort ne peut rien contre les diminutions permanentes de caractéristique.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "restauration_caracteristique\ndissipation_effet_magique\nrecuperation_points_caracteristique\nelimination_fatigue\nreduction_epuisement",
+  "usage": {
+    "inputTokens": 378,
+    "outputTokens": 39
+  },
+  "arret": "end_turn"
+}

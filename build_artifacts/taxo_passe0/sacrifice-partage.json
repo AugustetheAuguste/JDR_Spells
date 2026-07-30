@@ -1,0 +1,25 @@
+{
+  "id": "sacrifice-partage",
+  "etiquettes": [
+    "partage_de_degats",
+    "reduction_degats_lanceur",
+    "transfert_degats_vers_cible",
+    "lien_magique_temporaire",
+    "protection_au_detriment_de_la_cible",
+    "necromancien_et_victime_lies"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:17+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "02f0f11c336c95cb06807adaeb9807d6fd23579772a9f9fe3ec88edf6e2128d2",
+  "texte_envoye_hash": "02f0f11c336c95cb06807adaeb9807d6fd23579772a9f9fe3ec88edf6e2128d2",
+  "texte_envoye": "nom: Sacrifice partagé\necole: Nécromancie\ndescripteurs: mal\nniveaux: Antipal 3, Cham 2, Con 3, ConU 3, Prê 2, Sor 2\ntemps_incantation: 1 round\ncomposantes: V, G\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: une créature\nduree: 1 heure/niveau (T)\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nGrâce à ce sort, le personnage crée un lien entre sa cible et lui, et à travers ce lien, il peut rediriger vers elle la douleur et les dégâts. Le personnage ne subit que la moitié des dégâts infligés par des blessures et des attaques affectant les points de vie. Les dégâts qu’il ne subit pas sont transférés à la cible de ce sort. Les formes de dégâts qui n’impliquent pas des points de vie, comme les effets de charme, les affaiblissements temporaires de caractéristiques, les drains de niveau et les effets de mort, ne peuvent être partagées par ce biais. Si le personnage subit une réduction de ses points de vie à cause d’une baisse de son score de Constitution, cette réduction n’est pas partagée avec la cible du sort car ce ne sont pas des dégâts aux points de vie. Lorsque le sort se termine, les dégâts subséquents ne sont plus partagés entre la cible et lui, mais ceux déjà répartis ne lui reviennent pas.\nSi le personnage et sa cible se déplacent hors de portée l’un de l’autre, le sort prend fin.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "partage_de_degats\nreduction_degats_lanceur\ntransfert_degats_vers_cible\nlien_magique_temporaire\nprotection_au_detriment_de_la_cible\nnecromancien_et_victime_lies",
+  "usage": {
+    "inputTokens": 600,
+    "outputTokens": 65
+  },
+  "arret": "end_turn"
+}
