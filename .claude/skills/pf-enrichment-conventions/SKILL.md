@@ -1,6 +1,6 @@
 ---
 name: pf-enrichment-conventions
-description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/ entièrement régénérable, liste gelée des 16 clés, politique des nulls, champ preuves anti-confabulation, taxonomie_v1 et sa règle de coupe, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
+description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/ entièrement régénérable, liste gelée des 16 clés, politique des nulls, champ preuves anti-confabulation, taxonomie et sa règle de coupe, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
 ---
 
 # pf-enrichment-conventions
@@ -70,7 +70,7 @@ reports/                                 # rapports et anomalies des étages 08/
 
 Ensemble **clos**. Aucune clé n'est ajoutée, retirée ou renommée sans passer par
 le schéma. Ordre canonique = de haut en bas dans ce tableau. **Aucune clé n'est
-jamais omise** : un fichier d'enrichissement porte toujours les 17 clés.
+jamais omise** : un fichier d'enrichissement porte toujours les 16 clés.
 
 | Clé | Type | Cardinalité / contrainte | Source |
 |---|---|---|---|
@@ -86,7 +86,7 @@ jamais omise** : un fichier d'enrichissement porte toujours les 17 clés.
 | `preuves` | object | `{type_degats: string\|null, condition_infligee: array[string], cible_typique: string}` | LLM |
 | `notes_ambiguite` | string **ou** `null` | prose libre, français accentué | LLM |
 | `version_prompt` | string | ex. `"p1.0"` | provenance |
-| `version_taxonomie` | string | ex. `"taxonomie_v1"` | provenance |
+| `version_taxonomie` | string | ex. `"taxonomie_v2"` | provenance |
 | `modele` | string | identifiant **complet** du modèle (profil d'inférence inclus) | provenance |
 | `genere_le` | string | date-heure ISO 8601 **UTC** | provenance |
 | `hash_source` | string | sha256 **hex** du texte source canonique | provenance |
@@ -204,13 +204,13 @@ Format d'un fichier de vocabulaire :
 
 | Champ | Règle |
 |---|---|
-| `version` | obligatoire ; c'est ce que `version_taxonomie` référence |
+| `version` | obligatoire, au format `vN` ; `version_taxonomie` vaut `taxonomie_v<max>` sur **les six** listes, jamais sur `tags.json` seule — c'est ce qui distingue deux passes menées contre des listes différentes. Une seule source : `etiquette_taxonomie()` |
 | `cle` | snake_case, **sans accent** — c'est un identifiant, pas du contenu |
 | `definition_fr` | français accentué verbatim ; sert de définition au prompt |
 | `exemples_positifs` | ≥ 2, tirés du corpus réel (ou de la fixture), **jamais de mémoire** |
 | `exemples_negatifs` | ≥ 2, cas voisins que la clé ne couvre **pas** — c'est ce qui trace la frontière |
 
-## `taxonomie_v1` — GELÉE le 2026-07-29
+## Les tags — GELÉS en `v1` le 2026-07-29
 
 **35 tags**, liste close, dans `conventions/vocabulaires/tags.json`
 (`version: "v1"`). C'est la seule autorité sur les tags admissibles : un tag hors
@@ -253,6 +253,32 @@ décrire un corpus qui a bougé.
 |---|---|---|
 | Part d'enregistrements avec `notes_ambiguite` non nul | **≤ 5 %** | la taxonomie est jugée suffisante |
 | Idem | **> 5 %** | la taxonomie est **insuffisante** : couper une `taxonomie_v2`, la geler, régénérer |
+
+**Cette règle a joué le 2026-07-30.** La passe complète a mis 120 sorts sur 2070
+(5,8 %) en quarantaine ; les listes ont donc été élargies, pas la contrainte
+relâchée. `categories.json` et `conditions.json` sont passées en **v2** —
+`coercition`, `metamorphose`, `dissipation` d'un côté, `nauseeux`, `fatigue`,
+`epuise`, `fievreux` de l'autre — et les 120 seuls ont été ré-interrogés
+(~0,35 $) : **+98, soit 2048/2070 = 98,9 %**. `tags.json` n'a pas bougé.
+
+Ce que cette passe a établi, et qui vaut pour la prochaine :
+
+- **Un taux de rejet qui ne bouge pas quand on durcit l'instruction accuse les
+  listes, pas le prompt.** Ici 12 → 10 sur 100 : reformuler ne crée pas la case
+  manquante, et chaque tentative est une passe payée. Compter les rejets **par
+  clé manquante** d'abord.
+- **N'ajouter que les manques à masse réelle** (32, 28, 9 sorts), et laisser la
+  queue de 1–5 occurrences en quarantaine — le reliquat de 1,1 % ne partage
+  aucun manque commun, c'est le point d'arrêt.
+- **Ne jamais remapper une réponse du modèle vers une clé valide** : c'est un
+  jugement de jeu déguisé en sortie de modèle.
+- **Deux listes closes ne partagent jamais une clé** : le modèle voyait
+  `charme_ou_coercition` dans les tags et en déduisait une catégorie homonyme.
+  D'où `coercition`, délibérément distinct.
+- **Le fourre-tout reste en dernier** (`utilitaire`) : l'ordre est lu comme une
+  précédence.
+- **Élargir une énumération ne périme rien** : les 1950 enregistrements v1
+  valident contre le schéma v2. Seule la provenance doit les distinguer.
 
 Au-delà du seuil, on **corrige la taxonomie**, on ne relâche pas la contrainte.
 **Le modèle n'improvise jamais une valeur** : il choisit dans la liste close, ou
