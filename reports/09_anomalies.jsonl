@@ -620,5 +620,5 @@
 {"check":"D3","gravite":"avertissement","id":"volumetrie","detail":"2070 sorts uniques (fourchette annoncée par le plan : 2 500–3 500) et 8927 entrées de listes (fourchette annoncée : 4 000–5 000). Les deux fourchettes du plan étaient des extrapolations faites avant tout parsing ; les valeurs mesurées sont cohérentes entre elles (ratio de partage 4.31 entrées par sort) et recoupent les étapes 04/05/06. Le plan est périmé, pas le corpus."}
 {"check":"D4","gravite":"avertissement","id":"Antipaladin","detail":"plage observée 1–6, plage attendue par le plan 1–4"}
 {"check":"D5","gravite":"info","id":"mythique","detail":"287 sorts portent un bloc `mythique` — capture volontaire, suppression prévue dans une phase ultérieure"}
-{"check":"E2","gravite":"avertissement","id":"Hypnotiseur","detail":"0 sort exclusif : à vérifier à la main — soit la classe n'emprunte que des sorts partagés, soit sa liste a été mal rattachée"}
-{"check":"E2","gravite":"avertissement","id":"Médium","detail":"0 sort exclusif : à vérifier à la main — soit la classe n'emprunte que des sorts partagés, soit sa liste a été mal rattachée"}
+{"check":"E2","gravite":"avertissement","id":"Hypnotiseur","detail":"0 sort exclusif — soit la classe n'emprunte que des sorts partagés, soit son URL de liste est mal rattachée dans `data/classes.json`"}
+{"check":"E2","gravite":"avertissement","id":"Médium","detail":"0 sort exclusif — soit la classe n'emprunte que des sorts partagés, soit son URL de liste est mal rattachée dans `data/classes.json`"}
