@@ -1,8 +1,0 @@
-{
-  "id": "cinglement-magique",
-  "raison": "schéma : categorie_principale — 'dissipation_ou_contresort' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "6f7303ebef139d0d9d88da814f4cbf9fc2d2b2ac23e2a6a9748b5baadd189d09",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"cinglement-magique\",\n  \"resume_court\": \"Un fouet d'énergie dissipe les sorts bénéfiques d'une créature ou la rend confuse.\",\n  \"categorie_principale\": \"dissipation_ou_contresort\",\n  \"tags\": [\n    \"dissipation_ou_contresort\",\n    \"jet_de_sauvegarde\",\n    \"rayon_ou_projectile\",\n    \"effet_mental\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [\n    \"confus\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est à la place confuse pendant 1d4 rounds\"\n    ],\n    \"cible_typique\": \"à une unique créature\"\n  },\n  \"notes_ambiguite\": \"Le sort a deux effets alternatifs selon l'état de la cible : dissipation des sorts bénéfiques (si présents) ou confusion (sinon). La condition retenue est celle qui s'applique quand aucun sort bénéfique n'est actif.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:15+00:00"
-}

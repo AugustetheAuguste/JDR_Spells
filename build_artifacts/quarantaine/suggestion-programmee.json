@@ -1,8 +1,0 @@
-{
-  "id": "suggestion-programmee",
-  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "078b65fa0c39c4beafa53415de8583844493681f419182b4213f3f2bee66bc6f",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"suggestion-programmee\",\n  \"resume_court\": \"Le lanceur implante une suggestion cachée déclenchée par une condition, que la cible oublie jusqu'à l'activation.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"resistance_a_la_magie\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"social\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature vivante\"\n  },\n  \"notes_ambiguite\": \"Le sort est classé en `charme_ou_coercition` plutôt qu'en `amelioration` ou `affaiblissement` car il contraint le comportement de la cible par une suggestion coercitive. Bien que la catégorie principale soit un tag, c'est le seul qui décrit précisément l'effet du sort : il n'entre dans aucune des 12 catégories principales (attaque, contrôle, entrave, protection, amélioration, affaiblissement, soin, divination, déplacement, invocation, illusion, utilitaire). Le sort est donc classé par son tag principal.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:25:03+00:00"
-}

@@ -1,0 +1,34 @@
+{
+  "id": "toucher-hemorragique",
+  "resume_court": "Un contact qui provoque un saignement abondant et l'épuisement si la cible est blessée.",
+  "categorie_principale": "affaiblissement",
+  "tags": [
+    "attaque_de_contact",
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "affaiblissement_de_capacite"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "negatif",
+  "condition_infligee": [
+    "epuise"
+  ],
+  "preuves": {
+    "type_degats": "1 point de dégâts de saignement",
+    "condition_infligee": [
+      "elle est épuisée pour toute la durée du sort"
+    ],
+    "cible_typique": "une créature vivante touchée"
+  },
+  "notes_ambiguite": "Le type de dégâts est classé comme « negatif » car il s'agit d'une nécromancie provoquant un saignement magique, bien que le texte ne nomme pas explicitement le type énergétique. Le saignement est un effet de dégâts continu lié à la nécromancie.",
+  "slug": "toucher-hemorragique",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:54+00:00",
+  "hash_source": "c14bf0fe1a6e568c3ef38c4e894d2bbcd538a0b9bab1e66d48fe0a1cb37425d1"
+}

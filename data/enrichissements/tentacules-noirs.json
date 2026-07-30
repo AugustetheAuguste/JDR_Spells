@@ -1,0 +1,34 @@
+{
+  "id": "tentacules-noirs",
+  "resume_court": "Des tentacules surgissent du sol pour agripper et écraser les créatures dans une zone de 6 m de rayon.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "entrave_ou_immobilisation",
+    "terrain_ou_environnement",
+    "degats_directs"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "contondant",
+  "condition_infligee": [
+    "enchevetre"
+  ],
+  "preuves": {
+    "type_degats": "1d6+4 points de dégâts",
+    "condition_infligee": [
+      "leur victime est agrippée et ne peut se déplacer tant qu'elle ne s'est pas libérée"
+    ],
+    "cible_typique": "étendue de 6 m de rayon"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte ; « contondant » est inféré du contexte (écrasement par tentacules). L'école est « Invocation (création) » selon le texte fourni.",
+  "slug": "tentacules-noirs",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:54+00:00",
+  "hash_source": "b6bc54d6b86c41ff4c944801cd423e97391186e4488227cd134cbcd4fa50e6b9"
+}

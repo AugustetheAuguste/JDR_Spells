@@ -1,0 +1,33 @@
+{
+  "id": "broyage-psychique-i",
+  "resume_court": "Une attaque psychique qui blesse gravement l'esprit et le corps, causant des dégâts ou la fièvre.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "malus_chiffre"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": "causant d'importants dégâts internes à son corps et son esprit",
+    "condition_infligee": [
+      "elle est fiévreuse pendant 1 round"
+    ],
+    "cible_typique": "1 créature"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts internes sans type énergétique élémentaire nommé explicitement ; classé en « autre ». La condition « fievreux » est retenue car elle apparaît dans les deux branches du jet de sauvegarde (réussite du premier jet ou réussite du second jet après échec du premier).",
+  "slug": "broyage-psychique-i",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:05+00:00",
+  "hash_source": "b74e2bd34836005f14b3dd323a107c84d8cdd4a9c20777479178ed679031f135"
+}

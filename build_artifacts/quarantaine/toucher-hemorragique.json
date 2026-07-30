@@ -1,8 +1,0 @@
-{
-  "id": "toucher-hemorragique",
-  "raison": "schéma : condition_infligee/0 — 'epuise' is not one of ['aveugle', 'ebloui', 'etourdi', 'chancelant', 'secoue', 'effraye', 'paralyse', 'confus', 'fascine', 'enchevetre', 'ralenti', 'assourdi']",
-  "hash_source": "c14bf0fe1a6e568c3ef38c4e894d2bbcd538a0b9bab1e66d48fe0a1cb37425d1",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"toucher-hemorragique\",\n  \"resume_court\": \"Un contact qui provoque un saignement abondant et épuise la cible si elle est blessée.\",\n  \"categorie_principale\": \"affaiblissement\",\n  \"tags\": [\n    \"degats_directs\",\n    \"attaque_de_contact\",\n    \"jet_de_sauvegarde\",\n    \"duree_prolongee\",\n    \"affaiblissement_de_capacite\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"negatif\",\n  \"condition_infligee\": [\n    \"epuise\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"1 point de dégâts de saignement\",\n    \"condition_infligee\": [\n      \"elle est épuisée pour toute la durée du sort\"\n    ],\n    \"cible_typique\": \"une créature vivante touchée\"\n  },\n  \"notes_ambiguite\": \"Le type de dégâts « saignement » n'apparaît pas explicitement dans la liste fermée ; « negatif » est retenu comme le type d'énergie le plus proche d'une blessure nécromantique. La condition « épuisée » n'existe pas dans la liste fermée ; « epuise » (sans accent) est la clé la plus proche, bien que le texte emploie « épuisée ». Aucune autre condition de la liste ne s'applique.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:25:36+00:00"
-}

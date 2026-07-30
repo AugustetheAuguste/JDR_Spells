@@ -1,0 +1,35 @@
+{
+  "id": "poussiere-du-crepuscule",
+  "resume_court": "Une pluie de particules noires éteint les sources de lumière et fatigue les créatures de la zone.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "dissipation_ou_contresort",
+    "terrain_ou_environnement",
+    "duree_instantanee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "fatigue"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "Les créatures qui se trouvent dans la zone doivent faire un test de Vigueur ou être fatiguées"
+    ],
+    "cible_typique": "créatures et objets dans une étendue de 3 mètres"
+  },
+  "notes_ambiguite": null,
+  "slug": "poussiere-du-crepuscule",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:37+00:00",
+  "hash_source": "cdebf035d7b12585617325ce68a56771aeab814ee2c9ec52876fa9cf0aa82319"
+}

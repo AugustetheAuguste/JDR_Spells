@@ -1,0 +1,38 @@
+{
+  "id": "voile-repugnant",
+  "resume_court": "Un voile illusoire aux formes impossibles qui rend nauséeuses et fiévreuses les créatures qui le voient.",
+  "categorie_principale": "illusion",
+  "tags": [
+    "illusion_visuelle_ou_sonore",
+    "effet_mental",
+    "jet_de_sauvegarde",
+    "zone_d_effet",
+    "resistance_a_la_magie",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "nauseeux",
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "La créature est nauséeuse tant qu'elle voit le voile",
+      "elle est fiévreuse pendant 2d4 rounds après l'avoir vu pour la dernière fois"
+    ],
+    "cible_typique": "voile transparent de 12 m (8 c) de long et 6 m (4 c) de haut"
+  },
+  "notes_ambiguite": "Le sort affecte plusieurs créatures dans une zone selon leurs DV, mais les conditions infligées varient selon le nombre de DV. Les deux conditions principales retenues sont nauséeuse et fiévreuse, qui apparaissent dans tous les cas d'effet.",
+  "slug": "voile-repugnant",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:58+00:00",
+  "hash_source": "92d76462191a4625817d6c018c4551b034a77b3b162960dea3237a84e3ff6683"
+}

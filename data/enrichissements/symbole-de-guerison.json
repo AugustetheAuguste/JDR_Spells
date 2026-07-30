@@ -1,0 +1,31 @@
+{
+  "id": "symbole-de-guerison",
+  "resume_court": "Un symbole qui guérit les créatures vivantes et blesse les morts-vivants dans un rayon de 18 mètres.",
+  "categorie_principale": "invocation",
+  "tags": [
+    "invocation_ou_creation",
+    "zone_d_effet",
+    "soin_ou_guerison",
+    "jet_de_sauvegarde",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "utilitaire"
+  ],
+  "cible_typique": "zone",
+  "type_degats": "positif",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d8 points de dégâts + 1 par niveau de lanceur de sorts",
+    "condition_infligee": [],
+    "cible_typique": "toutes les créatures situées à moins de 18 mètres (12 c) du symbole de guérison"
+  },
+  "notes_ambiguite": "Le sort inflige des dégâts d'énergie positive aux morts-vivants et autres créatures blessées par l'énergie positive, tout en guérissant les créatures vivantes. La catégorie principale est `invocation` car le sort crée un symbole magique persistant, bien que son effet principal soit la guérison. Les dégâts sont classés comme `positif` car le texte mentionne explicitement « l'énergie positive ».",
+  "slug": "symbole-de-guerison",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:54+00:00",
+  "hash_source": "650b24bd8cd3b63dd06e40d306d289b177d67b8059025b22ff55ce24e64d5e57"
+}

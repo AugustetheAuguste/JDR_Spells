@@ -1,8 +1,0 @@
-{
-  "id": "echange-d-esprits-majeur",
-  "raison": "schéma : categorie_principale — 'transformation_du_sujet' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "68576d7e80d7b2f61d5ec45dfe85df78ca53d1abba956a2392ff256154b1e15f",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"echange-d-esprits-majeur\",\n  \"resume_court\": \"Échange permanent des esprits entre deux créatures de même race, réversible uniquement par miracle ou souhait.\",\n  \"categorie_principale\": \"transformation_du_sujet\",\n  \"tags\": [\n    \"charme_ou_coercition\",\n    \"effet_mental\",\n    \"duree_prolongee\",\n    \"jet_de_sauvegarde\"\n  ],\n  \"roles_tactiques\": [\n    \"social\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"1 créature de la même race que le lanceur\"\n  },\n  \"notes_ambiguite\": \"Le texte renvoie à « échange d'esprits » sans le reproduire ; on suppose que ce sort de base autorise un jet de sauvegarde (tag appliqué par inférence du contexte d'enchantement coercitif). La durée est marquée « instantanée » mais l'effet persiste indéfiniment (« au bout de 24 heures »), ce qui justifie le tag `duree_prolongee`. La catégorie `transformation_du_sujet` s'impose car le sort échange les esprits entre deux corps, modifiant la nature et la substance du sujet.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:23+00:00"
-}

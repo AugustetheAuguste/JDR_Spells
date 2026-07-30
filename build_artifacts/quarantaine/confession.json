@@ -1,8 +1,0 @@
-{
-  "id": "confession",
-  "raison": "schéma : categorie_principale — 'charme_ou_coercition' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'utilitaire']",
-  "hash_source": "5c23f989b1be01ce17261aa3190579e9512e106063da3dc0048fcdbf5b24ccdf",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"confession\",\n  \"resume_court\": \"Force une créature à répondre honnêtement à une question ou subit des dégâts et la fièvre.\",\n  \"categorie_principale\": \"charme_ou_coercition\",\n  \"tags\": [\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"charme_ou_coercition\",\n    \"degats_directs\",\n    \"duree_instantanee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\",\n    \"social\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"autre\",\n  \"condition_infligee\": [\n    \"fiévreuse\"\n  ],\n  \"preuves\": {\n    \"type_degats\": \"1d6 points de dégâts par tranche de deux niveaux de lanceur de sorts\",\n    \"condition_infligee\": [\n      \"être fiévreuse pendant 2d4 rounds\"\n    ],\n    \"cible_typique\": \"une créature\"\n  },\n  \"notes_ambiguite\": \"La catégorie principale est `charme_ou_coercition` (tag) plutôt que `entrave` ou `affaiblissement` car l'effet principal est de contraindre le comportement (forcer une réponse honnête), non de restreindre les déplacements ni de dégrader durablement les capacités. Les dégâts sont secondaires et punitifs. Le type de dégâts est `autre` car le texte ne précise pas la nature énergétique des dégâts infligés en cas de refus ou d'incapacité à répondre.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:17+00:00"
-}

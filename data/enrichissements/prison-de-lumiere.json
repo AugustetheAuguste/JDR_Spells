@@ -1,0 +1,34 @@
+{
+  "id": "prison-de-lumiere",
+  "resume_court": "Des rayons de lumière enferment des créatures dans une cage qui les blesse si elles tentent de s'échapper.",
+  "categorie_principale": "entrave",
+  "tags": [
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "degats_directs",
+    "rayon_ou_projectile",
+    "entrave_ou_immobilisation"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "feu",
+  "condition_infligee": [
+    "aveugle"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts",
+    "condition_infligee": [
+      "elle subit 1d6 points de dégâts et est aveuglée pendant 1 round"
+    ],
+    "cible_typique": "une créature/2 niveaux"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Bien que le sort soit de l'école Évocation avec le descripteur « lumière », les dégâts infligés lors de la traversée des murs ne sont pas qualifiés de « dégâts de feu » ou d'un autre type énergétique spécifique. J'ai retenu « feu » par inférence du descripteur lumière, mais cette valeur n'est pas directement justifiée par le texte fourni. Une annotation plus prudente aurait pu laisser type_degats à null.",
+  "slug": "prison-de-lumiere",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:37+00:00",
+  "hash_source": "042ef63f7edc73d5c87bbf5236de1c48af3aadf7bfbdd904fe50d00777180103"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "bris-d-os",
+  "resume_court": "Les os de la cible se fissurent, lui infligeant des dégâts et l'épuisant gravement.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "affaiblissement_de_capacite",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "autre",
+  "condition_infligee": [
+    "epuise",
+    "fatigue"
+  ],
+  "preuves": {
+    "type_degats": "1d6 points de dégâts par niveau de lanceur de sorts",
+    "condition_infligee": [
+      "Elle est également épuisée pendant 1 minute par niveau de lanceur de sorts",
+      "elle est fatiguée au lieu d'être épuisée"
+    ],
+    "cible_typique": "une créature tangible ou un objet"
+  },
+  "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de dégâts structurels dus à la fissuration osseuse, classé comme « autre ». Les deux conditions sont liées au jet de sauvegarde : épuisée en cas d'échec, fatiguée en cas de succès.",
+  "slug": "bris-d-os",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:05+00:00",
+  "hash_source": "ea5cc7b27df7550342b1fe28e26f57d50ba226864d043f68a2ed1eeab9e73075"
+}

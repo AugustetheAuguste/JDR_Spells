@@ -1,8 +1,0 @@
-{
-  "id": "prison-de-lumiere",
-  "raison": "schéma : preuves/type_degats — None is not of type 'string'",
-  "hash_source": "042ef63f7edc73d5c87bbf5236de1c48af3aadf7bfbdd904fe50d00777180103",
-  "version_prompt": "p1.4",
-  "reponse_brute": "```json\n{\n  \"id\": \"prison-de-lumiere\",\n  \"resume_court\": \"Des rayons de lumière enferment des créatures dans une cage qui les blesse si elles tentent de s'échapper.\",\n  \"categorie_principale\": \"entrave\",\n  \"tags\": [\n    \"zone_d_effet\",\n    \"jet_de_sauvegarde\",\n    \"degats_directs\",\n    \"rayon_ou_projectile\",\n    \"entrave_ou_immobilisation\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"feu\",\n  \"condition_infligee\": [\n    \"aveugle\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle subit 1d6 points de dégâts et est aveuglée pendant 1 round\"\n    ],\n    \"cible_typique\": \"une créature/2 niveaux\"\n  },\n  \"notes_ambiguite\": \"Le type de dégâts n'est pas explicitement nommé dans le texte (« lumière » est un descripteur, pas un type de dégâts). Les dégâts sont infligés lors de la traversée des murs, pas à l'incantation. La condition d'aveuglement accompagne ces dégâts mais n'est pas infligée à l'incantation. type_degats est donc null car aucun type énergétique n'est nommé pour les 1d6 points de dégâts.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T13:22:57+00:00"
-}

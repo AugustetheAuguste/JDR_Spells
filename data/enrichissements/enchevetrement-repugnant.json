@@ -1,0 +1,35 @@
+{
+  "id": "enchevetrement-repugnant",
+  "resume_court": "Les plantes d'une zone s'enchevêtrent et sécrètent une sève toxique qui rend fiévreux.",
+  "categorie_principale": "controle_de_zone",
+  "tags": [
+    "zone_d_effet",
+    "terrain_ou_environnement",
+    "jet_de_sauvegarde",
+    "entrave_ou_immobilisation",
+    "duree_prolongee"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "zone",
+  "type_degats": null,
+  "condition_infligee": [
+    "fievreux"
+  ],
+  "preuves": {
+    "type_degats": null,
+    "condition_infligee": [
+      "être fiévreuse tant qu'elle y reste et pendant 1d4 rounds après l'avoir quittée"
+    ],
+    "cible_typique": "toute la végétation sur une étendue de 12 m (8 c) de rayon"
+  },
+  "notes_ambiguite": null,
+  "slug": "enchevetrement-repugnant",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:16+00:00",
+  "hash_source": "cccd5fda33340e3c355d04c47179002d5031ae14f7c79ca33d4b78b4efb06e72"
+}

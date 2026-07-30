@@ -1,0 +1,33 @@
+{
+  "id": "cri-percant",
+  "resume_court": "Un cri retentissant hébète une créature et lui inflige des dégâts sonores.",
+  "categorie_principale": "attaque_directe",
+  "tags": [
+    "degats_directs",
+    "jet_de_sauvegarde",
+    "rayon_ou_projectile",
+    "resistance_a_la_magie"
+  ],
+  "roles_tactiques": [
+    "combat"
+  ],
+  "cible_typique": "ennemi",
+  "type_degats": "son",
+  "condition_infligee": [
+    "etourdi"
+  ],
+  "preuves": {
+    "type_degats": "points de dégâts sonores",
+    "condition_infligee": [
+      "Elle est hébétée pendant 1 round"
+    ],
+    "cible_typique": "une créature"
+  },
+  "notes_ambiguite": "« Hébétée » n'est pas dans la liste des conditions ; la plus proche est « etourdi » qui décrit un état de confusion et de perte d'efficacité similaire.",
+  "slug": "cri-percant",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:09+00:00",
+  "hash_source": "aca5abe365ed50d6910417b83b9baf1902d1b7a076e4ef6f721e91f47f005cf6"
+}

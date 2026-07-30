@@ -1,0 +1,32 @@
+{
+  "id": "forme-cendree-brulante",
+  "resume_court": "La cible se transforme en tourbillon de cendres brûlantes qui inflige des dégâts de feu.",
+  "categorie_principale": "metamorphose",
+  "tags": [
+    "transformation_du_sujet",
+    "degats_directs",
+    "zone_d_effet",
+    "jet_de_sauvegarde",
+    "duree_prolongee",
+    "immunite_ou_resistance_element"
+  ],
+  "roles_tactiques": [
+    "combat",
+    "exploration"
+  ],
+  "cible_typique": "allie",
+  "type_degats": "feu",
+  "condition_infligee": [],
+  "preuves": {
+    "type_degats": "2d6 points de dégâts de feu",
+    "condition_infligee": [],
+    "cible_typique": "créature tangible et consentante touchée"
+  },
+  "notes_ambiguite": "Le texte mentionne « les effets de l'inhalation de fumée » sans les détailler ; aucune condition spécifique n'est nommée, donc condition_infligee reste vide. La cible gagne le sous-type feu, ce qui justifie le tag immunite_ou_resistance_element.",
+  "slug": "forme-cendree-brulante",
+  "version_prompt": "p1.5",
+  "version_taxonomie": "taxonomie_v2",
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-30T14:58:20+00:00",
+  "hash_source": "48819784516062be6122e64a74906bcea577557cdc1ceb9b04005fb888c525b7"
+}
