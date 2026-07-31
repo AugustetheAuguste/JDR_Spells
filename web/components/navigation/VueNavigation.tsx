@@ -21,7 +21,9 @@ import {
 } from '@/lib/navigation/etat-url'
 import { trierParNiveauPuisNom } from '@/lib/navigation/niveaux'
 import { appliquerFiltres } from '@/lib/recherche/filtres'
-import { construireMoteur, type Moteur, type TableAlias } from '@/lib/recherche/moteur'
+// Type-only: the engine module pulls MiniSearch in, and a value import here would
+// put it in the entry chunk. `import type` is erased, so this costs nothing.
+import type { Moteur, TableAlias } from '@/lib/recherche/moteur'
 
 /**
  * The navigation view.
@@ -35,7 +37,22 @@ import { construireMoteur, type Moteur, type TableAlias } from '@/lib/recherche/
  * The index is fetched rather than passed as props. Inlining 2070 spells into the
  * exported HTML would put the same ~800 kB into every page of the site; fetching
  * `/data/index.json` once lets it be cached like the static asset it is.
+ *
+ * The search engine is imported dynamically for the same reason, one level down:
+ * MiniSearch is ~11 kB gzipped and cannot do anything until the index has arrived,
+ * so shipping it in the entry chunk buys nothing and this route is the one closest
+ * to the 200 kB budget. It loads in parallel with the fetch it depends on, so no
+ * user-visible wait is added — and it introduces no new « not ready » state,
+ * because a null engine already meant « the index has not landed ».
  */
+
+/** The dynamically imported factory. Held in state as a value, hence the
+ * `setConstruire(() => fn)` at the call site: a bare `setConstruire(fn)` would be
+ * read as an updater and React would call it with the previous state. */
+type TypeConstruireMoteur = (
+  index: IndexWeb,
+  table?: TableAlias | null,
+) => Moteur
 
 const DELAI_FRAPPE = 80
 const LIGNES_PAR_PAGE = 200
@@ -48,15 +65,17 @@ export function VueNavigation() {
   const [alias, setAlias] = useState<TableAlias | null>(null)
   const [erreur, setErreur] = useState<string | null>(null)
   const [visibles, setVisibles] = useState(LIGNES_PAR_PAGE)
+  const [construire, setConstruire] = useState<TypeConstruireMoteur | null>(null)
 
   useEffect(() => {
     let vivant = true
     async function charger(): Promise<void> {
       // The alias table is optional: without it search still works in French,
       // so a failure there must not take the whole view down with it.
-      const [reponseIndex, reponseAlias] = await Promise.all([
+      const [reponseIndex, reponseAlias, module] = await Promise.all([
         fetch('/data/index.json'),
         fetch('/data/alias.json').catch(() => null),
+        import('@/lib/recherche/moteur'),
       ])
       if (!reponseIndex.ok) throw new Error(`index.json : ${reponseIndex.status}`)
       const chargeIndex = (await reponseIndex.json()) as IndexWeb
@@ -65,6 +84,7 @@ export function VueNavigation() {
       if (!vivant) return
       setIndex(chargeIndex)
       setAlias(chargeAlias)
+      setConstruire(() => module.construireMoteur)
     }
     charger().catch((cause: unknown) => {
       if (vivant) setErreur(cause instanceof Error ? cause.message : 'chargement impossible')
@@ -93,8 +113,8 @@ export function VueNavigation() {
   }
 
   const moteur: Moteur | null = useMemo(
-    () => (index === null ? null : construireMoteur(index, alias)),
-    [index, alias],
+    () => (index === null || construire === null ? null : construire(index, alias)),
+    [construire, index, alias],
   )
 
   function ecrire(suivant: EtatUrl, historique: 'replace' | 'push' = 'replace'): void {

@@ -265,6 +265,16 @@ describe('la recherche dans la vue', () => {
     const ligne = screen.getByRole('link', { name: 'Dégoût' }).closest('tr') as HTMLElement
     expect(within(ligne).getByText('alias')).toBeTruthy()
   })
+
+  it('rend la liste avant que le moteur ne soit chargé, sans attendre', async () => {
+    // The engine is imported dynamically (~11 kB gzipped, and useless before the
+    // index lands), so there is a moment where the index is there and the engine is
+    // not. Browsing must work in that moment: only a query needs the engine. The
+    // two tests above cover the other half — once loaded, it really searches, alias
+    // path included, which is impossible unless the dynamic import resolved.
+    await monterVue('classe=barde')
+    expect(screen.getAllByRole('row').length).toBeGreaterThan(1)
+  })
 })
 
 describe('le désaccord de niveau', () => {
