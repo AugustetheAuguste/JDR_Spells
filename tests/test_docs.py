@@ -367,7 +367,6 @@ class TestREADMEContenu:
             "data/index/sorts_exclusifs.json",
             "data/MANIFEST.json",
             "reports/",
-            "build/",
         ]
         for chemin in concrets:
             assert chemin in readme_texte, f"{chemin} absent du README"

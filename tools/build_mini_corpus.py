@@ -12,9 +12,16 @@
 
 Why a script at all, rather than a hand-written list: the selection must be
 explicable. The 12 ids are the output of a deterministic greedy set-cover over
-the criteria of `build/01_SKILLS_AND_TOOLS.md`, iterated over ids in sorted
-order with no rng, so the choice is reproducible and arguable rather than
-arbitrary.
+the criteria below, iterated over ids in sorted order with no rng, so the choice
+is reproducible and arguable rather than arbitrary.
+
+The criteria, recorded here because the implementation plan that first stated
+them has been removed now that the pipeline is finished — 12 spell files chosen
+to cover: level 0 and level 9, a school from each extreme, a spell with damage,
+a spell without, an area spell, a personal spell, a long spell (summoning
+table), a spell with a known list/page disagreement, and names containing an
+apostrophe, an accent, and a hyphen. Plus `data/index/` and `classes.json`
+reduced to stay consistent with those 12.
 
 Usage (historical record only):
     PYTHONPATH=src python tools/build_mini_corpus.py --confirmer-degel
