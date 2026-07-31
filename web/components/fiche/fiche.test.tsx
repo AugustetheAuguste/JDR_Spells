@@ -329,31 +329,39 @@ describe('sur les 2070 sorts réellement exportés', () => {
     readFileSync(join(process.cwd(), 'public', 'data', 'index.json'), 'utf8'),
   ) as { readonly sorts: readonly { readonly s: string }[] }
 
+  /**
+   * Read the 2070 files ONCE for the whole block.
+   *
+   * Four tests each re-reading the export took long enough to trip the 5 s
+   * default under a full-suite run — where a dozen workers contend for the same
+   * disk — while passing in isolation. Reading once is both faster and honest:
+   * the claims are about one snapshot of the export, not four.
+   */
+  const props = index.sorts.map((sort) => ({ s: sort.s, p: lirePropsSort(sort.s) }))
+
   it('chaque slug de l’index a un fichier de props lisible', () => {
     // The failure this catches is a slug that would 404 in production. A 404 is
     // indistinguishable from a bad hand-typed URL, so it has to fail here.
-    const manquants = index.sorts.filter((sort) => lirePropsSort(sort.s) === null)
-    expect(manquants.map((sort) => sort.s)).toEqual([])
+    expect(props.filter((e) => e.p === null).map((e) => e.s)).toEqual([])
   })
 
   it('chaque url_source est absolue et sur pathfinder-fr.org', () => {
-    const fautifs = index.sorts
-      .map((sort) => lirePropsSort(sort.s) as PropsSort)
+    const fautifs = props
+      .map((e) => e.p as PropsSort)
       .filter((sort) => !sort.url_source.startsWith('https://www.pathfinder-fr.org/'))
     expect(fautifs.map((sort) => sort.slug)).toEqual([])
   })
 
   it('le slug du fichier est exactement le slug de l’index : le slug EST l’URL', () => {
-    const fautifs = index.sorts.filter((sort) => lirePropsSort(sort.s)?.slug !== sort.s)
-    expect(fautifs.map((sort) => sort.s)).toEqual([])
+    expect(props.filter((e) => e.p?.slug !== e.s).map((e) => e.s)).toEqual([])
   })
 
   it('aucun sort ne porte de désaccord — 100 % de concordance, constaté', () => {
     // Pinning the state of the corpus, not asserting it must stay so. The day a
     // divergence appears this test names it, and the block that renders it is
     // already proven against the fixture.
-    const avecDesaccord = index.sorts
-      .map((sort) => lirePropsSort(sort.s) as PropsSort)
+    const avecDesaccord = props
+      .map((e) => e.p as PropsSort)
       .filter((sort) => sort.desaccords.length > 0)
     expect(avecDesaccord.map((sort) => sort.slug)).toEqual([])
   })
