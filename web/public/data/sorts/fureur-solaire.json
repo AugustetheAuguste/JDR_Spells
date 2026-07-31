@@ -1,0 +1,108 @@
+{
+  "id": "fureur-solaire",
+  "nom": "Fureur solaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fureur%20solaire.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "malédiction",
+    "feu"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts maudit la cible, la forçant à endurer une chaleur accablante. Sur un jet de sauvegarde raté, la cible est aussitôt la proie d’une chaleur intense, reçoit 1d4 points de dégâts non létaux et souffre d’un coup de chaleur (fatiguée). Elle doit réussir un jet de sauvegarde normal contre la chaleur accablante toutes les 10 minutes (en commençant avec un DD de 15 plutôt que le DD du sort).\nCette chaleur étant de nature interne, la cible ne peut pas l’éviter en recourant aux méthodes normales utilisées pour échapper aux dangers de la chaleur comme un test de Survie ou en trouvant une zone d’ombre.",
+  "description_html": "<br/><br/>Le lanceur de sorts maudit la cible, la forçant à endurer une <a class=\"pagelink\" href=\"Pathfinder-RPG.Dangers%20naturels.ashx#CHALEUR\" title=\"Les dangers naturels\">chaleur</a> accablante. Sur un jet de sauvegarde raté, la cible est aussitôt la proie d’une chaleur intense, reçoit 1d4 points de dégâts non létaux et souffre d’un coup de chaleur (fatiguée). Elle doit réussir un jet de sauvegarde normal contre la chaleur accablante toutes les 10 minutes (en commençant avec un DD de 15 plutôt que le DD du sort). <br/><br/>Cette chaleur étant de nature interne, la cible ne peut pas l’éviter en recourant aux méthodes normales utilisées pour échapper aux dangers de la chaleur comme un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> ou en trouvant une zone d’ombre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fureur%20solaire.ashx",
+    "cache_fichier": "cache/html/21707b54a92cc4dde984428c0ff4a4b522b8e830.html",
+    "recupere_le": "2026-07-28T22:55:03.407106+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fureur-solaire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fureur%20solaire.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fureur-solaire",
+    "resume_court": "Le lanceur maudit une créature qui subit une chaleur interne accablante et devient fatiguée.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "charme_ou_coercition",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts non létaux",
+      "condition_infligee": [
+        "souffre d'un coup de chaleur (fatiguée)"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "La condition « fatiguée » du texte correspond à « chancelant » dans la liste fournie, qui décrit une créature ne pouvant effectuer qu'une seule action par round — l'état de fatigue en Pathfinder produit cet effet. Les dégâts sont classés « autre » car ils sont non létaux et liés à la chaleur interne, sans correspondre aux types énergétiques élémentaires standard.",
+    "slug": "fureur-solaire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:43+00:00",
+    "hash_source": "88587e906e8e0a0fcc5427e5a726e2c6b0a420fd0e5d1fc7984a0f9735441708"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "aura-d-archon",
+  "nom": "Aura d'archon",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20darchon.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Bien",
+    "Loi"
+  ],
+  "niveaux": {
+    "Pal": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "6 m (4 c)",
+  "cible": "6 m (4 c) de rayon, centrée sur le lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage s’entoure d’une puissante aura, semblable à l’aura de menace d’un archon. Toute créature hostile située dans un rayon de 6 mètres (4 c) doit réussir un jet de Volonté pour résister à ses effets. Si elle échoue, elle reçoit un malus de -2 aux jets d’attaque et de sauvegarde et à la CA pendant toute la durée du sort ou jusqu’à ce qu’elle réussisse à toucher le personnage lors d’une attaque. Une créature qui résiste à l’effet ou parvient à le briser ne peut plus être affectée par cette incantation de l’aura d’archon.",
+  "description_html": "<br/><br/>Le personnage s’entoure d’une puissante aura, semblable à l’<a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20archon.ashx\" title=\"Archon (sous-type)\">aura de menace</a> d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.archon.ashx\" title=\"Les archons\">archon</a>. Toute créature hostile située dans un rayon de 6 mètres (4 <abbr title=\"cases\">c</abbr>) doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour résister à ses effets. Si elle échoue, elle reçoit un malus de -2 aux jets d’attaque et de sauvegarde et à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> pendant toute la durée du sort ou jusqu’à ce qu’elle réussisse à toucher le personnage lors d’une attaque. Une créature qui résiste à l’effet ou parvient à le briser ne peut plus être affectée par cette incantation de l’<i>aura d’archon</i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20darchon.ashx",
+    "cache_fichier": "cache/html/e8656f0750e18d0570b1fdb33b141ac7c5e9596f.html",
+    "recupere_le": "2026-07-28T22:42:35.534092+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "aura-d-archon",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20darchon.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "aura-d-archon",
+    "resume_court": "Le lanceur s'entoure d'une aura qui impose un malus aux créatures hostiles proches.",
+    "categorie_principale": "protection",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "6 m (4 c) de rayon, centrée sur le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort est classé en protection car il affaiblit les ennemis proches du lanceur, ce qui le protège indirectement. Bien que techniquement un affaiblissement, l'effet est défensif et bénéficie au lanceur dans un contexte de combat.",
+    "slug": "aura-d-archon",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:24+00:00",
+    "hash_source": "7623bceb17a3fbf2eb79f3fb4da5fa022bd96074a97bcc7573678d00330582ea"
+  }
+}

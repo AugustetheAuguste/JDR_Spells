@@ -1,0 +1,91 @@
+{
+  "id": "bouclier-de-la-foi",
+  "nom": "Bouclier de la foi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20de%20la%20foi.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (texte saint rédigé sur un parchemin)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fait apparaître autour du bénéficiaire une aura scintillante repoussant les attaques. Bouclier de la foi confère un bonus de parade de +2 à la CA, +1 tous les six niveaux de lanceur de sorts (jusqu’à un bonus maximum de +5 au niveau 18).",
+  "description_html": "<br/><br/>Ce sort fait apparaître autour du bénéficiaire une aura scintillante repoussant les attaques. <i>Bouclier de la foi</i> confère un bonus de parade de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>, +1 tous les six <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (jusqu’à un bonus maximum de +5 au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 18).<br/><br/>",
+  "mythique": {
+    "description": "Ajoutez la moitié du grade du personnage au bonus de parade conféré par le sort.",
+    "description_html": "Ajoutez la moitié du <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage au bonus de parade conféré par le sort."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20de%20la%20foi.ashx",
+    "cache_fichier": "cache/html/8ccbbf2975075587ec106242690d630445de547a.html",
+    "recupere_le": "2026-07-28T22:44:17.658072+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bouclier-de-la-foi",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20de%20la%20foi.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bouclier-de-la-foi",
+    "resume_court": "Une aura scintillante confère un bonus de parade à la CA du bénéficiaire.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "bouclier-de-la-foi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:01+00:00",
+    "hash_source": "4171c8f2e0fdce7503946f6f15261902877ea86099cadbc32e4b43e42318cbfb"
+  }
+}

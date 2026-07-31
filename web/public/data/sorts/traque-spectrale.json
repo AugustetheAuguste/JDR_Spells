@@ -1,0 +1,91 @@
+{
+  "id": "traque-spectrale",
+  "nom": "Traque spectrale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traque%20spectrale.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 4,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle (voir description)",
+  "cible": "le personnage et un compagnon animal situé à 9 mètres ou moins",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort affecte le personnage et un compagnon animal situé à 9 mètres ou moins. Grâce à lui, le personnage et le compagnon animal gagnent la vision dans le noir jusqu’à 30 mètres, la perception des vibrations jusqu’à 6 mètres et un bonus d’altération de 12 mètres à la vitesse de déplacement. De plus, le personnage peut suivre une piste en se déplaçant à sa vitesse de déplacement normale sans subir de malus. S’il est déjà capable de le faire à sa vitesse de déplacement normale, il gagne à la place un bonus de +4 aux tests de Survie pour suivre une piste.\nLa durée de ce sort prend fin immédiatement si le personnage ou le compagnon animal attaquent ou sont attaqués.",
+  "description_html": "<br/><br/>Ce sort affecte le personnage et un <a class=\"pagelink\" href=\"Pathfinder-RPG.druide.ashx#PACTEAVECLANATURE\" title=\"Le druide\">compagnon animal</a> situé à 9 mètres ou moins. Grâce à lui, le personnage et le compagnon animal gagnent la <a class=\"pagelink\" href=\"Pathfinder-RPG.capacit%c3%a9s%20sp%c3%a9ciales.ashx#VISIONDANSLENOIR\" title=\"Les capacités spéciales\">vision dans le noir</a> jusqu’à 30 mètres, la <a class=\"pagelink\" href=\"Pathfinder-RPG.perception%20des%20vibrations%20(capacit%c3%a9).ashx\" title=\"Perception des vibrations (Ext)\">perception des vibrations</a> jusqu’à 6 mètres et un bonus d’altération de 12 mètres à la vitesse de déplacement. De plus, le personnage peut suivre une piste en se déplaçant à sa vitesse de déplacement normale sans subir de malus. S’il est déjà capable de le faire à sa vitesse de déplacement normale, il gagne à la place un bonus de +4 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> pour suivre une piste.<br/><br/>La durée de ce sort prend fin immédiatement si le personnage ou le compagnon animal attaquent ou sont attaqués.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traque%20spectrale.ashx",
+    "cache_fichier": "cache/html/25ab450481bb751772890ff83c11bdc51877c9db.html",
+    "recupere_le": "2026-07-29T07:43:27.319395+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "traque-spectrale",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traque%20spectrale.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "traque-spectrale",
+    "resume_court": "Le lanceur et son compagnon animal gagnent vision nocturne, perception des vibrations et bonus de vitesse pour traquer.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "perception_amelioree",
+      "bonus_chiffre",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le personnage et un compagnon animal situé à 9 mètres ou moins"
+    },
+    "notes_ambiguite": "Le sort affecte à la fois le lanceur et un compagnon animal ; cible_typique vaut « allie » car le compagnon animal est la cible secondaire principale. Les bonus incluent vision dans le noir, perception des vibrations et bonus de vitesse (12 mètres), ainsi qu'un bonus de +4 aux tests de Survie.",
+    "slug": "traque-spectrale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:52+00:00",
+    "hash_source": "6b76376e0372579a92c6b989968d7f1dc8ec10c49b8123806ec4fd9c49cd84da"
+  }
+}

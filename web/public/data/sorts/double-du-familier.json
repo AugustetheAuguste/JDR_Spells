@@ -1,0 +1,77 @@
+{
+  "id": "double-du-familier",
+  "nom": "Double du familier",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Double%20du%20familier.ashx",
+  "ecole": "Illusion (ombre)",
+  "descripteurs": [],
+  "niveaux": {
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une petite réplique du personnage (5 po))",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 sosie d’ombre",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, dévoile (en cas d’interaction)",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme projection d'image, à la seule différence que l’image apparaît dans la case du familier du personnage et se déplace en même temps que ce familier.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.projection%20dimage.ashx\" title=\"Projection d'image\">projection d'image</a></i>, à la seule différence que l’image apparaît dans la case du <a class=\"pagelink\" href=\"Pathfinder-RPG.familier.ashx\" title=\"familier\">familier</a> du personnage et se déplace en même temps que ce familier.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Double%20du%20familier.ashx",
+    "cache_fichier": "cache/html/f3576158fe0c4f82a174974e4273f19deb018841.html",
+    "recupere_le": "2026-07-28T22:51:42.176006+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "double-du-familier",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Double%20du%20familier.ashx",
+  "niveaux_par_classe": {
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "double-du-familier",
+    "resume_court": "Une illusion d'ombre du familier qui se déplace avec lui et peut être dévoilée par interaction.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "l'image apparaît dans la case du familier du personnage"
+    },
+    "notes_ambiguite": "Le texte indique que le sort fonctionne « comme projection d'image » mais ne détaille pas les mécaniques complètes. La cible est interprétée comme le familier allié du lanceur, puisque l'illusion se manifeste dans sa case et le suit.",
+    "slug": "double-du-familier",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:59+00:00",
+    "hash_source": "0c246053550f87d6ec7f0c459ce000fce98dd7601a49629ee86dd7ba4bc75abc"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "menottes-scellees",
+  "nom": "Menottes scellées",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Menottes%20scell%c3%a9es.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Inq": 4,
+    "Ens/Mag": 6,
+    "Psy": 6,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Réflexes pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée des menottes de force qui entravent les membres d'une créature. Il désigne un objet ou une zone dans les 9 mètres et les menottes viennent s'y fixer. Il doit s'agir d'un sol, d'un mur ou d'une structure solide pour qu'elles puissent se fixer. La cible est Enchevêtrée et ne peut pas s'éloigner de plus de 9 mètres du point d'ancrage du sort. Il est impossible d'attaquer les menottes mais on peut les dissiper, en revanche, si l'on détruit l'objet ou la zone où elles sont fixées. La cible est alors libre de s'éloigner, même si elle est toujours enchevêtrée.",
+  "description_html": "<br/><br/>Le personnage crée des menottes de force qui entravent les membres d'une créature. Il désigne un objet ou une zone dans les 9 mètres et les menottes viennent s'y fixer. Il doit s'agir d'un sol, d'un mur ou d'une structure solide pour qu'elles puissent se fixer. La cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.Enchev%c3%aatr%c3%a9.ashx\" title=\"Enchevêtré\">Enchevêtrée</a> et ne peut pas s'éloigner de plus de 9 mètres du point d'ancrage du sort. Il est impossible d'attaquer les menottes mais on peut les dissiper, en revanche, si l'on détruit l'objet ou la zone où elles sont fixées. La cible est alors libre de s'éloigner, même si elle est toujours enchevêtrée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Menottes%20scell%c3%a9es.ashx",
+    "cache_fichier": "cache/html/4b0005c1299c823306dfe427692aad49d574cbf2.html",
+    "recupere_le": "2026-07-28T23:00:30.774497+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "menottes-scellees",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Menottes%20scell%c3%a9es.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "menottes-scellees",
+    "resume_court": "Des menottes de force entravent une créature et la lient à un point d'ancrage.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "entrave_ou_immobilisation",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevetre"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La cible est Enchevêtrée"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "menottes-scellees",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:48+00:00",
+    "hash_source": "f135b6cb3a55f4b410db14e34c0c64f9b155ac206afb778059bcaa288947b3f5"
+  }
+}

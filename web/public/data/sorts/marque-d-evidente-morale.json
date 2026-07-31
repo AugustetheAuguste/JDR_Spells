@@ -1,0 +1,81 @@
+{
+  "id": "marque-d-evidente-morale",
+  "nom": "Marque d'évidente morale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20d%c3%a9vidente%20morale.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "la créature touchée",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage marque une créature d’un sceau brillant. L’alignement de la cible doit être à l’opposé de celui du personnage sur au moins un axe (si le personnage est Neutre sans autre composante d’alignement, la cible doit avoir un alignement sans composante Neutre). Toute créature qui voit la cible peut tenter de faire un test de Connaissances (religion) pour discerner son alignement, même si la marque est couverte.\nLe personnage est conscient de la direction où se trouve la cible et de la distance qui les sépare à partir du moment où la cible reste dans un rayon de 160 kilomètres autour lui et sur le même plan.",
+  "description_html": "<br/><br/>Le personnage marque une créature d’un sceau brillant. L’alignement de la cible doit être à l’opposé de celui du personnage sur au moins un axe (si le personnage est Neutre sans autre composante d’alignement, la cible doit avoir un alignement sans composante Neutre). Toute créature qui voit la cible peut tenter de faire un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> (religion) pour discerner son alignement, même si la marque est couverte.<br/><br/>Le personnage est conscient de la direction où se trouve la cible et de la distance qui les sépare à partir du moment où la cible reste dans un rayon de 160 kilomètres autour lui et sur le même plan.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20d%c3%a9vidente%20morale.ashx",
+    "cache_fichier": "cache/html/cc625cd0133342bbb3a6419bca8304498cb29bbd.html",
+    "recupere_le": "2026-07-28T23:00:14.735336+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "marque-d-evidente-morale",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20d%c3%a9vidente%20morale.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "marque-d-evidente-morale",
+    "resume_court": "Marque une créature d'alignement opposé, révélant son alignement et permettant au lanceur de la localiser.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "detection_ou_revelation",
+      "duree_prolongee",
+      "alignement_ou_divin",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "la créature touchée"
+    },
+    "notes_ambiguite": "Le sort est classé en divination car son effet principal est informatif (révéler l'alignement et localiser la cible), bien qu'il porte le descripteur malédiction. La cible typique est « ennemi » car le sort exige une opposition d'alignement, ce qui implique une hostilité.",
+    "slug": "marque-d-evidente-morale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:40+00:00",
+    "hash_source": "9dd2f65e1f59c406f1dbf9b32e20a05645874dc7b745db9451156317168d4160"
+  }
+}

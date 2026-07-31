@@ -1,0 +1,113 @@
+{
+  "id": "fleche-de-ki",
+  "nom": "Flèche de ki",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20ki.ashx",
+  "ecole": "Invocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "contact",
+  "cible": "1 flèche touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur(objet)",
+  "resistance_magie": "oui(objet)",
+  "description": "Le personnage imprègne une flèche de son pouvoir et la lance sur une cible distante de 30 mètres (20 c) au maximum. Il fait un jet d'attaque à distance. S'il touche, la cible reçoit les mêmes dégâts que si le personnage l'avait touchée avec une attaque à mains nues(ce qui inclus le bonus de force).",
+  "description_html": "<br/><br/>Le personnage imprègne une flèche de son pouvoir et la lance sur une cible distante de 30 mètres (20 <abbr title=\"cases\">c</abbr>) au maximum. Il fait un jet d'<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20%c3%a0%20distance.ashx\" title=\"Attaque à distance\">attaque à distance</a>. S'il touche, la cible reçoit les mêmes dégâts que si le personnage l'avait touchée avec une attaque à mains nues(ce qui inclus le bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.force.ashx\" title=\"La Force\">force</a>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20ki.ashx",
+    "cache_fichier": "cache/html/c5f0a318c66527cfeadbdb6ab02a3605fe35fb29.html",
+    "recupere_le": "2026-07-28T22:53:29.311412+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fleche-de-ki",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20ki.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fleche-de-ki",
+    "resume_court": "Le lanceur imprègne une flèche de ki et la projette sur une cible à portée moyenne.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "arme_ou_munition",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "les mêmes dégâts que si le personnage l'avait touchée avec une attaque à mains nues",
+      "condition_infligee": [],
+      "cible_typique": "la lance sur une cible distante de 30 mètres (20 c) au maximum"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Une attaque à mains nues inflige typiquement des dégâts contondants, mais le texte ne le précise pas. J'ai retenu « contondant » comme le type le plus probable pour une attaque à mains nues, bien que le texte ne le confirme pas directement.",
+    "slug": "fleche-de-ki",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:09+00:00",
+    "hash_source": "9a548dc2f7a49918aeee1e40c92d02102bbcfe6b43572ec5ce83d21aa26d2c8c"
+  }
+}

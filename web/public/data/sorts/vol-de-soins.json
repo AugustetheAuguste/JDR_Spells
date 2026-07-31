@@ -1,0 +1,129 @@
+{
+  "id": "vol-de-soins",
+  "nom": "Vol de soins",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20soins.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 1,
+    "Ens/Mag": 3,
+    "Occ": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un morceau d'éponge imbibé de larmes)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau ou jusqu'à épuisement",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Le personnage utilise ce sort pour voler les soins d’une autre créature. Il doit réussir une attaque de contact au corps à corps contre sa cible. Jusqu’à la fin du sort, dès que la cible est sujette à un sort ou un effet surnaturel qui rend des points de vie, elle reçoit seulement la moitié des soins (arrondi à l’inférieur) et le personnage reçoit l’autre moitié (aussi arrondie à l’inférieur). Pour bénéficier des soins, le personnage doit rester dans un rayon de 7,50 m (5 c) (plus 1,50 m (1 c) tous les 2 niveaux) autour de sa cible. S’il sort de cette zone, le sort expire. Il expire également une fois que le personnage a absorbé 5 points de vie par niveau de lanceur de sort (avec un maximum de 50 pv).",
+  "description_html": "<br/><br/>Le personnage utilise ce sort pour voler les soins d’une autre créature. Il doit réussir une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a> contre sa cible. Jusqu’à la fin du sort, dès que la cible est sujette à un sort ou un effet surnaturel qui rend des points de vie, elle reçoit seulement la moitié des soins (arrondi à l’inférieur) et le personnage reçoit l’autre moitié (aussi arrondie à l’inférieur). Pour bénéficier des soins, le personnage doit rester dans un rayon de 7,50 m (5 <abbr title=\"cases\">c</abbr>) (plus 1,50 m (1 <abbr title=\"cases\">c</abbr>) tous les 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux</a>) autour de sa cible. S’il sort de cette zone, le sort expire. Il expire également une fois que le personnage a absorbé 5 points de vie par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sort</a> (avec un maximum de 50 pv).<br/><br/>",
+  "mythique": {
+    "description": "Au lieu de voler la moitié des soins reçus par la cible, le personnage vole la totalité. Le montant de points de vie absorbés avant que le sort expire s’élève à 10 points par niveau de lanceur de sorts (100 points maximum).\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique, la portée du sort change et devient courte (7,50 mètres + 1,50 mètre/2 niveaux). Si la cible possède le pouvoir de guérison accélérée ou de régénération, le personnage absorbe la moitié de sa guérison accélérée ou de sa régénération. Les points de vie soignés grâce à ces pouvoirs sont défalqués du montant maximum de soins que le personnage peut absorber avant que le sort expire.",
+    "description_html": "Au lieu de voler la moitié des soins reçus par la cible, le personnage vole la totalité. Le montant de points de vie absorbés avant que le sort expire s’élève à 10 points par niveau de lanceur de sorts (100 points maximum).<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, la portée du sort change et devient courte (7,50 mètres + 1,50 mètre/2 niveaux). Si la cible possède le pouvoir de <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e.ashx\" title=\"guérison accélérée\">guérison accélérée</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9g%c3%a9n%c3%a9ration.ashx\" title=\"Régénération\">régénération</a>, le personnage absorbe la moitié de sa <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e.ashx\" title=\"guérison accélérée\">guérison accélérée</a> ou de sa <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9g%c3%a9n%c3%a9ration.ashx\" title=\"Régénération\">régénération</a>. Les points de vie soignés grâce à ces pouvoirs sont défalqués du montant maximum de soins que le personnage peut absorber avant que le sort expire."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20soins.ashx",
+    "cache_fichier": "cache/html/eb7c8b2b5bee9ad6fafc0b55181be7ac3de1d5b7.html",
+    "recupere_le": "2026-07-29T07:44:40.425489+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vol-de-soins",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20soins.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vol-de-soins",
+    "resume_court": "Le lanceur vole la moitié des soins que reçoit sa cible et les absorbe.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "vol-de-soins",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:21+00:00",
+    "hash_source": "ae9363a453c51c0a83d16e2e79675056c3cc0934cbbf7ec5b057a7fe02c01aed"
+  }
+}

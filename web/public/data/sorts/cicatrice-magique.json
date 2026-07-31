@@ -1,0 +1,91 @@
+{
+  "id": "cicatrice-magique",
+  "nom": "Cicatrice magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cicatrice%20magique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 8,
+    "Prê": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de sable du désert de la Cicatrice magique)",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "deux cubes de 3 m de côté par niveau (F)",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort puissant invoque le même type de dévastation magique à l’origine de la Désolation de mana il y a fort longtemps. Celle-ci est toutefois beaucoup plus localisée et heureusement temporaire.\nÀ l’intérieur de la zone d’effet de la cicatrice magique déterminée par le personnage, les couleurs de l’environnement pâlissent, comme si le sort les atténuait, et des ondes de couleurs chatoyantes la traversent régulièrement. À l’intérieur de cette zone, les sorts, les pouvoirs magiques et les objets magiques activés déclenchent automatiquement un évènement de magie primordiale. Un lanceur de sorts peut éviter le déclenchement d’un tel évènement en réussissant un test de concentration (DD = 15 + deux fois le niveau du sort), mais les créatures qui ne savent pas lancer des sorts et qui activent des objets magiques ne disposent pas de cette possibilité.\nLe personnage gagne un bonus d’intuition de +4 aux tests de concentration effectués pour empêcher le déclenchement d’évènements de magie primordiale quand il se trouve au sein d’une cicatrice magique qu’il a lui-même créée. Toutefois, s’il déclenche un tel évènement, il peut lancer deux fois le d100 et choisir le résultat qu’il souhaite appliquer pour déterminer l’évènement.",
+  "description_html": "<br/><br/><i>Ce sort puissant invoque le même type de dévastation magique à l’origine de la Désolation de mana il y a fort longtemps. Celle-ci est toutefois beaucoup plus localisée et heureusement temporaire.</i><br/><br/>À l’intérieur de la zone d’effet de la <i>cicatrice magique</i> déterminée par le personnage, les couleurs de l’environnement pâlissent, comme si le sort les atténuait, et des ondes de couleurs chatoyantes la traversent régulièrement. À l’intérieur de cette zone, les sorts, les pouvoirs magiques et les objets magiques activés déclenchent automatiquement un évènement de <a class=\"pagelink\" href=\"Pathfinder-RPG.magie%20primordiale.ashx\" title=\"La magie primordiale\">magie primordiale</a>. Un lanceur de sorts peut éviter le déclenchement d’un tel évènement en réussissant un <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20concentration.ashx\" title=\"test de concentration\">test de concentration</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 15 + deux fois le niveau du sort), mais les créatures qui ne savent pas lancer des sorts et qui activent des objets magiques ne disposent pas de cette possibilité.<br/><br/>Le personnage gagne un bonus d’intuition de +4 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20concentration.ashx\" title=\"test de concentration\">tests de concentration</a> effectués pour empêcher le déclenchement d’évènements de <a class=\"pagelink\" href=\"Pathfinder-RPG.magie%20primordiale.ashx\" title=\"La magie primordiale\">magie primordiale</a> quand il se trouve au sein d’une <i>cicatrice magique</i> qu’il a lui-même créée. Toutefois, s’il déclenche un tel évènement, il peut lancer deux fois le d100 et choisir le résultat qu’il souhaite appliquer pour déterminer l’évènement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cicatrice%20magique.ashx",
+    "cache_fichier": "cache/html/3ad59d190a7e2ad8c226df45403c871e4827f0cb.html",
+    "recupere_le": "2026-07-28T22:46:40.483175+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "cicatrice-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cicatrice%20magique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "cicatrice-magique",
+    "resume_court": "Crée une zone où la magie déclenche des événements de magie primordiale imprévisibles.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "metamagie_ou_sort_cible"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "deux cubes de 3 m de côté par niveau (F)"
+    },
+    "notes_ambiguite": "Le sort ne cause pas directement de dégâts nommés : il déclenche des événements de magie primordiale dont les effets ne sont pas détaillés dans le texte fourni. La catégorie « controle_de_zone » s'applique car le sort modifie une étendue et affecte ce qui s'y trouve (sorts, pouvoirs magiques, objets magiques activés). Les tags incluent « metamagie_ou_sort_cible » car le sort cible l'incantation et les objets magiques activés, non des créatures directement.",
+    "slug": "cicatrice-magique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:59+00:00",
+    "hash_source": "9904ab291316577d8387f527028d71623569e23bcbdf1a6ad3204c8813afec4f"
+  }
+}

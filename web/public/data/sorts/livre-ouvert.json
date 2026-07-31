@@ -1,0 +1,153 @@
+{
+  "id": "livre-ouvert",
+  "nom": "Livre ouvert",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Livre%20ouvert.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Antipal": 2,
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Hyp": 2,
+    "Inq": 2,
+    "Psy": 2,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une page arrachée d'un livre)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage met à nu non seulement l'esprit de la cible, mais aussi son histoire. La cible subit un malus de -2 aux jets de sauvegarde contre les divinations, et les tests de Diplomatie visant à recueillir des informations sur elle bénéficient d'un bonus égal à la moitié du niveau de lanceur de sorts du personnage (maximum +10).",
+  "description_html": "<br/><br/>Le personnage met à nu non seulement l'esprit de la cible, mais aussi son histoire. La cible subit un malus de -2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jets de sauvegarde</a> contre les <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9cole%20Divination.ashx\" title=\"Divination\">divinations</a>, et les tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Diplomatie.ashx\" title=\"Diplomatie\">Diplomatie</a> visant à recueillir des informations sur elle bénéficient d'un bonus égal à la moitié du <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> du personnage (maximum +10).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Livre%20ouvert.ashx",
+    "cache_fichier": "cache/html/67941fa190154593cd996af9b22997d46ab600ac.html",
+    "recupere_le": "2026-07-28T22:58:56.647890+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "livre-ouvert",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Livre%20ouvert.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "livre-ouvert",
+    "resume_court": "La cible subit un malus aux sauvegardes contre les divinations et devient plus facile à interroger.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "livre-ouvert",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:12+00:00",
+    "hash_source": "9bfbe30b4c8699eb24bdc054616fef5cbb4990ffba9fc64ac15eb718528919b5"
+  }
+}

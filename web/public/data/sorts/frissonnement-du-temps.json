@@ -1,0 +1,119 @@
+{
+  "id": "frissonnement-du-temps",
+  "nom": "Frissonnement du temps",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frissonnement%20du%20temps.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 2,
+    "ConU": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un tout petit sablier)",
+  "portee": "9 m (6 c)",
+  "cible": "émanation de 9 m de rayon centrée sur le lanceur",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage génère une onde temporelle qui affecte toutes les créatures dans la zone. Au début du tour de chaque créature, il y a 50% de chances qu’elles soient soumises à un effet de rapidité. Sinon, elles sont soumises à un effet de lenteur.",
+  "description_html": "<br/><br/>Le personnage génère une onde temporelle qui affecte toutes les créatures dans la zone. Au début du tour de chaque créature, il y a 50% de chances qu’elles soient soumises à un effet de rapidité. Sinon, elles sont soumises à un effet de lenteur.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frissonnement%20du%20temps.ashx",
+    "cache_fichier": "cache/html/d5e7d445bb850df752eabe892296069eeb76ca8c.html",
+    "recupere_le": "2026-07-28T22:54:57.375776+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "frissonnement-du-temps",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frissonnement%20du%20temps.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "frissonnement-du-temps",
+    "resume_court": "Une onde temporelle affecte toutes les créatures dans une émanation de 9 m, les rendant rapides ou lentes au hasard.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "resistance_a_la_magie",
+      "transformation_du_sujet",
+      "duree_instantanee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elles sont soumises à un effet de lenteur"
+      ],
+      "cible_typique": "émanation de 9 m de rayon centrée sur le lanceur"
+    },
+    "notes_ambiguite": "Le sort inflige soit rapidité soit lenteur au hasard. Seule la lenteur figure dans la liste `condition_infligee` ; la rapidité relève de l'amélioration et n'est pas une condition restrictive. La durée est instantanée (1 round) mais l'effet persiste pendant ce round, d'où le tag `duree_instantanee` qui reflète la résolution immédiate du sort.",
+    "slug": "frissonnement-du-temps",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:42+00:00",
+    "hash_source": "91ba655d5ece18e048d76ac511b153e01abcff2ba59214b69a3599728b5b46d1"
+  }
+}

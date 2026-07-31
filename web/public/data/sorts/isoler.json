@@ -1,0 +1,150 @@
+{
+  "id": "isoler",
+  "nom": "Isoler",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Isoler.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 3,
+    "Bard": 3,
+    "Hyp": 3,
+    "Inq": 3,
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "La cible devient invisible et silencieuse mais seulement vis-à-vis de ses alliés. Les créatures ayant une attitude indifférente ou pire à son égard la voient normalement, tout comme toutes celles qui lui veulent du mal. La cible se voit et s’entend normalement, elle peut utiliser des sorts à composante verbale et des mots de commande mais tous les effets exigeant que ses alliés la voient ou l’entendent cessent de fonctionner. Un allié capable de voir les créatures invisibles voit et entend la cible d’isoler normalement. Si la cible réussit son jet de sauvegarde, la durée du sort est réduite à 1 round.",
+  "description_html": "<br/><br/>La cible devient <a class=\"pagelink\" href=\"Pathfinder-RPG.invisible.ashx\" title=\"Invisible\">invisible</a> et silencieuse mais seulement vis-à-vis de ses alliés. Les créatures ayant une attitude indifférente ou pire à son égard la voient normalement, tout comme toutes celles qui lui veulent du mal. La cible se voit et s’entend normalement, elle peut utiliser des sorts à composante verbale et des mots de commande mais tous les effets exigeant que ses alliés la voient ou l’entendent cessent de fonctionner. Un allié capable de voir les créatures invisibles voit et entend la cible d’isoler normalement. Si la cible réussit son <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>, la durée du sort est réduite à 1 round.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Isoler.ashx",
+    "cache_fichier": "cache/html/2505c40b0c5cbd60fdc237a977df7cadfc7f1784.html",
+    "recupere_le": "2026-07-28T22:57:38.575795+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "isoler",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Isoler.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 3
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "isoler",
+    "resume_court": "La cible devient invisible et silencieuse uniquement pour ses alliés pendant 1 round par niveau.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "invisibilite_ou_dissimulation",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort affecte un allié volontaire (cible au contact), bien que techniquement il puisse aussi être lancé sur une créature hostile pour la rendre invisible à ses propres alliés. La cible_typique « allie » reflète l'usage principal décrit.",
+    "slug": "isoler",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:44+00:00",
+    "hash_source": "ac36d837736130dd72ce4039862ec50513e949caad06a298e45c42a83a562e0c"
+  }
+}

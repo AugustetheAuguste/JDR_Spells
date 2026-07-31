@@ -1,0 +1,85 @@
+{
+  "id": "fouet-d-ego-v",
+  "nom": "Fouet d'ego V",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20V.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme fouet d’ego I mais la cible subit un malus de –10 dans la valeur de caractéristique choisie et se trouve chancelante pendant 1d10 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.fouet%20dego%20I.ashx\" title=\"Fouet d'ego I\">fouet d’ego I</a></i> mais la cible subit un malus de –10 dans la valeur de caractéristique choisie et se trouve <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant\" title=\"Les états préjudiciables\">chancelante</a> pendant 1d10 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20V.ashx",
+    "cache_fichier": "cache/html/570c558c588b5d42c02cedae6b028dba69416351.html",
+    "recupere_le": "2026-07-28T22:54:44.366999+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fouet-d-ego-v",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20V.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fouet-d-ego-v",
+    "resume_court": "La cible subit un malus de –10 à une caractéristique et devient chancelante si elle échoue son jet de Volonté.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "se trouve chancelante pendant 1d10 rounds si elle rate son jet de sauvegarde"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "fouet-d-ego-v",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:32+00:00",
+    "hash_source": "63e0a0d3b95db45335a0aa3f8f7f65c92e62b77bf2937611563d26cb7b211be0"
+  }
+}

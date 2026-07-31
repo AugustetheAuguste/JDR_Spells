@@ -1,0 +1,102 @@
+{
+  "id": "puanteur-de-la-proie",
+  "nom": "Puanteur de la proie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Puanteur%20de%20la%20proie.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 3,
+    "Dru": 3,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)",
+  "cible": "une créature (cf. texte)",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La cible dégage une forte odeur que la plupart des prédateurs reconnaissent comme celle d’une proie sans défense. Les 1d4+1 créatures prédatrices les plus proches dans un rayon de 9 mètres doivent réussir un jet de Volonté pour ne pas attaquer la cible (les animaux possédant le pouvoir odorat sont affectés dans un rayon de 18 mètres). Si le prédateur est un animal, il peut être éloigné de la cible par un dresseur qui utilise le tour « arrête ! » ou tout autre effet mettant en suspend ou dissipant les effets de rage ou d’émotion.\nCe sort n’a aucun effet sur les créatures artificielles, les morts-vivants ou les créatures possédant le pouvoir aura surnaturelle ou disposant d’effets repoussant les animaux.",
+  "description_html": "<br/><br/>La cible dégage une forte odeur que la plupart des prédateurs reconnaissent comme celle d’une proie sans défense. Les 1d4+1 créatures prédatrices les plus proches dans un rayon de 9 mètres doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour ne pas attaquer la cible (les animaux possédant le pouvoir odorat sont affectés dans un rayon de 18 mètres). Si le prédateur est un animal, il peut être éloigné de la cible par un dresseur qui utilise le tour « arrête ! » ou tout autre effet mettant en suspend ou dissipant les effets de rage ou d’émotion.<br/><br/>Ce sort n’a aucun effet sur les créatures artificielles, les morts-vivants ou les créatures possédant le pouvoir aura surnaturelle ou disposant d’effets repoussant les animaux.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Puanteur%20de%20la%20proie.ashx",
+    "cache_fichier": "cache/html/597ae73ab70cfb50505ef5b770b8697540c697cf.html",
+    "recupere_le": "2026-07-29T07:45:14.484464+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "puanteur-de-la-proie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Puanteur%20de%20la%20proie.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "puanteur-de-la-proie",
+    "resume_court": "La cible dégage une odeur de proie qui attire les prédateurs proches et les pousse à l'attaquer.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort affecte techniquement la cible (qui dégage l'odeur), mais l'effet principal est de rendre les prédateurs proches hostiles à celle-ci. Classé en affaiblissement car la cible subit un désavantage tactique majeur. Les prédateurs subissent un jet de Volonté (charme_ou_coercition), mais la cible elle-même subit un jet de Vigueur selon l'en-tête ; le texte ne précise pas l'effet de ce dernier, d'où l'absence de condition infligée.",
+    "slug": "puanteur-de-la-proie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:11+00:00",
+    "hash_source": "9097e6eac1531a88e51922c4681fe4ad31a087fb55b1bda08fc680ebea3b3baf"
+  }
+}

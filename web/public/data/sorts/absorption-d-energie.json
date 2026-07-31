@@ -1,0 +1,100 @@
+{
+  "id": "absorption-d-energie",
+  "nom": "Absorption d'énergie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Absorption%20d%c3%a9nergie.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 9,
+    "Ens/Mag": 9,
+    "Prê": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayon d’énergie négative",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, partiel (voir la description d’énergie négative)",
+  "resistance_magie": null,
+  "description": "Le lanceur de sorts tend un doigt et un rayon d’énergie négative en jaillit, annihilant la force vitale de toute créature vivante touchée. Il doit effectuer une attaque de contact à distance. En cas de succès, la cible acquiert 2d4 niveaux négatifs temporaires (voir la section \"Capacités Spéciales\"). Les niveaux négatifs se cumulent.\nVingt-quatre heures après avoir été affecté par le sort, le sujet doit effectuer un jet de Vigueur (contre le DD du sort) par niveau négatif acquis. A chaque jet de sauvegarde réussi, un niveau négatif disparaît sans plus de conséquences. En cas d’échec, le niveau négatif devient permanent.\nSi le rayon touche un mort-vivant, ce dernier gagne 2d4x5 points de vie temporaires pendant une heure.",
+  "description_html": "<br/><br/>Le lanceur de sorts tend un doigt et un rayon d’énergie négative en jaillit, annihilant la force vitale de toute créature vivante touchée. Il doit effectuer une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a>. En cas de succès, la cible acquiert 2d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveaux négatifs</a> temporaires (voir la section \"<a class=\"pagelink\" href=\"Pathfinder-RPG.Capacit%c3%a9s%20Sp%c3%a9ciales.ashx\" title=\"Les capacités spéciales\">Capacités Spéciales</a>\"). Les <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveaux négatifs</a> se cumulent.<br/><br/>Vingt-quatre heures après avoir été affecté par le sort, le sujet doit effectuer un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> (contre le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort) par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> acquis. A chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> réussi, un <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> disparaît sans plus de conséquences. En cas d’échec, le <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> devient permanent.<br/><br/>Si le rayon touche un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a>, ce dernier gagne 2d4x5 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie%20temporaires.ashx\" title=\"points de vie temporaires\">points de vie temporaires</a> pendant une heure.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Absorption%20d%c3%a9nergie.ashx",
+    "cache_fichier": "cache/html/77151cce72df03c6547bafef2093c976b20bcbe0.html",
+    "recupere_le": "2026-07-29T07:44:58.420469+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "absorption-d-energie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Absorption%20d%c3%a9nergie.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 9
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "absorption-d-energie",
+    "resume_court": "Un rayon d'énergie négative qui inflige des niveaux négatifs aux vivants ou soigne les morts-vivants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "d'énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "rayon d'énergie négative"
+    },
+    "notes_ambiguite": "Le sort inflige des niveaux négatifs temporaires plutôt que des dégâts directs, mais la mécanique relève d'une attaque directe avec un rayon. Les niveaux négatifs ne correspondent à aucune condition listée (aveugle, étourdi, etc.) : ce sont des effets de capacités spéciales. Aucune condition n'est donc retenue.",
+    "slug": "absorption-d-energie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:05+00:00",
+    "hash_source": "8ff66f32b589dd1962b5fa1edcf1912727ac29b9137b82a3f6cf239aab5f8bea"
+  }
+}

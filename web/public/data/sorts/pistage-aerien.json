@@ -1,0 +1,117 @@
+{
+  "id": "pistage-aerien",
+  "nom": "Pistage aérien",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20a%c3%a9rien.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "air"
+  ],
+  "niveaux": {
+    "Cham": 4,
+    "Dru": 4,
+    "Inq": 4,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "cercle centré autour du lanceur, avec un rayon de 30 m + 3 m par niveau",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "L'air dans la zone d'effet se met à frémir aux endroits où des créatures volantes sont passées dans une période de 1 jour par niveau de lanceur de sorts. Ces frémissements aériens sont mis en évidence par des volutes luisantes qui produisent suffisamment de lumière pour permettre à quiconque de suivre les traces sans malus dû à une luminosité insuffisante. La zone se déplace avec le personnage, ce qui lui permet de suivre les traces sur de longues distances si tant est qu'il soit capable de voler ou de suivre une route assez proche de la piste pour continuer à la révéler. Les autres créatures peuvent suivre les traces aussi bien que le personnage. Le DD de base des tests de Survie pour traquer des créatures dans les airs grâce à ce sort est le même que celui pour traquer des créatures sur un sol mou.",
+  "description_html": "<br/><br/>L'air dans la zone d'effet se met à frémir aux endroits où des créatures volantes sont passées dans une période de 1 jour par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Ces frémissements aériens sont mis en évidence par des volutes luisantes qui produisent suffisamment de lumière pour permettre à quiconque de suivre les traces sans malus dû à une luminosité insuffisante. La zone se déplace avec le personnage, ce qui lui permet de suivre les traces sur de longues distances si tant est qu'il soit capable de voler ou de suivre une route assez proche de la piste pour continuer à la révéler. Les autres créatures peuvent suivre les traces aussi bien que le personnage. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de base des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> pour traquer des créatures dans les airs grâce à ce sort est le même que celui pour traquer des créatures sur un sol mou.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20a%c3%a9rien.ashx",
+    "cache_fichier": "cache/html/71006a09dddba98b2afd80e64b7b421753a51b72.html",
+    "recupere_le": "2026-07-28T23:03:33.953416+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pistage-aerien",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20a%c3%a9rien.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pistage-aerien",
+    "resume_court": "L'air révèle les traces des créatures volantes passées dans la zone, visibles par des volutes luisantes.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "zone_d_effet",
+      "perception_amelioree",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cercle centré autour du lanceur, avec un rayon de 30 m + 3 m par niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "pistage-aerien",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:07+00:00",
+    "hash_source": "f1cf7580ca13cece129c487c86ba122e0333585e45d265bfe17207bd494bf0e9"
+  }
+}

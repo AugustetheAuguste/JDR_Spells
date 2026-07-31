@@ -1,0 +1,119 @@
+{
+  "id": "projectile-magique",
+  "nom": "Projectile magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20magique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Psy": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "jusqu’à 5 créatures se trouvant à 4,50 m ou moins les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Un projectile d’énergie magique jaillit du doigt tendu du mage et va frapper sa cible, ce qui lui inflige 1d4+1 points de dégâts.\nLe projectile touche automatiquement, même si la créature visée se trouve au corps à corps ou bénéficie d’un camouflage ou d’un abri autre que total. En revanche, le personnage ne peut pas viser un point précis de sa cible. Projectile magique ne permet pas d’endommager des objets.\nLe mage gagne un projectile supplémentaire tous les deux niveaux au-dessus du niveau 1. Il tire donc deux projectiles au niveau 3, trois au niveau 5, quatre au niveau 7 et avec un maximum de cinq au niveau 9. Il peut répartir ses différents projectiles entre plusieurs cibles, mais chacun ne peut atteindre qu’un seul adversaire. Il doit indiquer toutes ses cibles avant d’effectuer d’éventuels tests de résistance à la magie ou de faire ses jets de dégâts.",
+  "description_html": "<br/><br/>Un projectile d’énergie magique jaillit du doigt tendu du mage et va frapper sa cible, ce qui lui inflige 1d4+1 points de dégâts.<br/><br/>Le projectile touche automatiquement, même si la créature visée se trouve au corps à corps ou bénéficie d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> ou d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.abri.ashx\" title=\"abri\">abri</a> autre que total. En revanche, le personnage ne peut pas viser un point précis de sa cible. <i>Projectile magique</i> ne permet pas d’endommager des objets.<br/><br/>Le mage gagne un <i>projectile</i> supplémentaire tous les deux <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> au-dessus du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 1. Il tire donc deux <i>projectiles</i> au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 3, trois au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 5, quatre au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 7 et avec un maximum de cinq au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 9. Il peut répartir ses différents <i>projectiles</i> entre plusieurs cibles, mais chacun ne peut atteindre qu’un seul adversaire. Il doit indiquer toutes ses cibles avant d’effectuer d’éventuels tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> ou de faire ses jets de dégâts.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés par chaque projectile s’élèvent à 2d4+1. Les projectiles ignorent le sort de bouclier et les effets similaires qui bloquent la version non-mythique de ce sort.\nAmplifié (4ème). Si le personnage dépense deux utilisations de pouvoir mythique, le sort crée le double du nombre de projectiles normalement crées (qui peuvent affecter jusqu’à dix créatures), sa portée s’étend à « ligne de mire » et il ignore la résistance à la magie et l’immunité contre les sorts des cibles.",
+    "description_html": "Les dégâts infligés par chaque projectile s’élèvent à 2d4+1. Les projectiles ignorent le sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.bouclier.ashx\" title=\"Bouclier\">bouclier</a> et les effets similaires qui bloquent la version <a class=\"pagelink\" href=\"Pathfinder-RPG.non-mythique.ashx\" title=\"non-mythique\">non-mythique</a> de ce sort.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (4ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, le sort crée le double du nombre de projectiles normalement crées (qui peuvent affecter jusqu’à dix créatures), sa portée s’étend à « ligne de mire » et il ignore la résistance à la magie et l’immunité contre les sorts des cibles."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20magique.ashx",
+    "cache_fichier": "cache/html/43d7d69fc1cce845eea0f836857a2543745c73b0.html",
+    "recupere_le": "2026-07-28T23:04:48.052117+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "projectile-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20magique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "projectile-magique",
+    "resume_court": "Des projectiles d'énergie magique frappent automatiquement jusqu'à 5 créatures proches, infligeant 1d4+1 dégâts chacun.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à 5 créatures se trouvant à 4,50 m ou moins les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "projectile-magique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:55+00:00",
+    "hash_source": "0ffd5c279e68a3f2dfaf7ff29ba0e93d7f6df44337cb05ab75eaf0f0e0d1061d"
+  }
+}

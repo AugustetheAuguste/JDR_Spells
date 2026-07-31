@@ -1,0 +1,152 @@
+{
+  "id": "malediction-de-negation-magique",
+  "nom": "Malédiction de négation magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20n%c3%a9gation%20magique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Inq": 4,
+    "Ens/Mag": 4,
+    "Occ": 4,
+    "Prê": 5,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (plomb et platine en poudre pour une valeur de 250 po)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage perturbe la capacité de la cible à puiser dans les énergies magiques. Pendant toute la durée du sort, la cible est affectée par la plaie magique de négation. Les tests de dissipation pour se débarrasser de la plaie subissent un malus de -5 à cause des interférences entre le sort et les énergies magiques.",
+  "description_html": "<br/><br/>Le personnage perturbe la capacité de la cible à puiser dans les énergies magiques. Pendant toute la durée du sort, la cible est affectée par la <a class=\"pagelink\" href=\"Pathfinder-RPG.Plaies.ashx\" title=\"Les plaies magiques\">plaie magique</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.Description%20des%20plaies%20magiques.ashx\" title=\"Description des plaies magiques\">négation</a>. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.test.ashx\" title=\"test\">tests</a> de dissipation pour se débarrasser de la plaie subissent un malus de -5 à cause des interférences entre le sort et les énergies magiques.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20n%c3%a9gation%20magique.ashx",
+    "cache_fichier": "cache/html/3209f3c7102f6938f701da1a7b7a5170cf6849c0.html",
+    "recupere_le": "2026-07-28T22:59:45.740084+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "malediction-de-negation-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20n%c3%a9gation%20magique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "malediction-de-negation-magique",
+    "resume_court": "La cible subit une plaie magique de négation qui entrave sa capacité à utiliser la magie.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "malus_chiffre",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte ne nomme pas explicitement une condition de la liste fermée (aveugle, étourdi, etc.). La « plaie magique de négation » est un effet mécanique qui dégrade la capacité magique de la cible, classé comme affaiblissement plutôt que comme une condition infligée au sens strict. Le malus de -5 aux tests de dissipation justifie le tag malus_chiffre.",
+    "slug": "malediction-de-negation-magique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:28+00:00",
+    "hash_source": "f2a4941cd8ed41aa549949ac0c6c2bb999af86ef73c7cd4e0c1c31bdff1a558a"
+  }
+}

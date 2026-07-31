@@ -1,0 +1,101 @@
+{
+  "id": "marque",
+  "nom": "Marque",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Inq": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Marque appose une rune ou une marque indélébile de 6 caractères au maximum sur une créature, lui infligeant 1 point de dégâts. La marque se place sur toute zone exposée de la créature, typiquement sur le visage ou l'avant-bras. On peut cacher la marque à l'aide de vêtements ou l'ôter en la raclant (ce qui inflige 1d6 points de dégâts), bien que la marque revienne si l'on soigne ces dégâts.",
+  "description_html": "<hr/>\n<i>Marque</i> appose une rune ou une marque indélébile de 6 caractères au maximum sur une créature, lui infligeant 1 point de dégâts. La marque se place sur toute zone exposée de la créature, typiquement sur le visage ou l'avant-bras. On peut cacher la <i>marque</i> à l'aide de vêtements ou l'ôter en la raclant (ce qui inflige 1d6 points de dégâts), bien que la <i>marque</i> revienne si l'on soigne ces dégâts.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Marque supérieure",
+      "id": "marque-superieure",
+      "ecole": "Transmutation",
+      "descripteurs": [
+        "malédiction"
+      ],
+      "niveaux": {
+        "Inq": 4
+      },
+      "temps_incantation": "1 round",
+      "composantes": "V, G, FD",
+      "portee": "contact",
+      "cible": "créature touchée",
+      "duree": "permanente",
+      "jet_de_sauvegarde": "Vigueur, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme la marque mais il inflige 1d6 points de dégâts lors de l'application de la marque et il est impossible de la retirer, même temporairement. De plus, la marque supérieure brille comme une torche quand elle se trouve à moins de 9 mètres (6 c) d'un symbole visible de la religion du personnage. La victime marquée est fiévreuse tant que sa marque brille. Comme les malédictions, les marques supérieures ne se dissipent pas mais on peut les faire disparaître par les mêmes méthodes qu'une marque de la justice.",
+      "description_html": "<hr/>\nCe sort fonctionne comme la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marque.ashx\" title=\"Marque\">marque</a></i> mais il inflige 1d6 points de dégâts lors de l'application de la marque et il est impossible de la retirer, même temporairement. De plus, la <i>marque supérieure</i> brille comme une torche quand elle se trouve à moins de 9 mètres (6 <abbr title=\"cases\">c</abbr>) d'un symbole visible de la religion du personnage. La victime marquée est <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> tant que sa marque brille. Comme les <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mal%c3%a9dictions.ashx\" title=\"Les malédictions\">malédictions</a></i>, les <i>marques supérieures</i> ne se dissipent pas mais on peut les faire disparaître par les mêmes méthodes qu'une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marque%20de%20la%20justice.ashx\" title=\"Marque de la justice\">marque de la justice</a></i>.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque.ashx",
+    "cache_fichier": "cache/html/070b8d374cd4ffb7dd55de75688804f9241e2722.html",
+    "recupere_le": "2026-07-28T23:00:21.815352+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "marque",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "marque",
+    "resume_court": "Appose une rune indélébile sur une créature et lui inflige 1 point de dégâts.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "lui infligeant 1 point de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts mineurs (1 point) et appose une marque permanente tant qu'elle n'est pas retirée. Le type de dégâts n'est pas spécifié (ni feu, ni froid, ni autre type énergétique), d'où la valeur « autre ». La marque elle-même n'est pas une condition mécanique au sens des conditions listées, mais un effet cosmétique/social.",
+    "slug": "marque",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:43+00:00",
+    "hash_source": "7bb1977fbbb87ae1d9f5c1488fc891138327fa7f1830979f420fa82c4e2fe05c"
+  }
+}

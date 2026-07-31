@@ -1,0 +1,81 @@
+{
+  "id": "microcosme",
+  "nom": "Microcosme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Microcosme.ashx",
+  "ecole": "Illusion (fantasme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature ou plus",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage plonge l’esprit de ses cibles dans un paysage mental voilé de sa conception. Il peut affecter autant de créatures qu’il le désire, sans dépasser une limite de 30 DV de créatures au total. Une créature dotée de 10 DV ou moins n’a pas droit au moindre jet de sauvegarde, une créature dotée de 11 à 15 DV s’échappe de l’environnement après 10 minutes par niveau du personnage si elle réussit son jet de sauvegarde et une créature possédant 16 DV ou plus annule l’effet sur un jet de sauvegarde réussi. Si personne ne prend soin du corps des créatures à l’esprit prisonnier du microcosme, il finira par mourir de faim et de soif. Une créature ne peut ni entrer ni sortir du microcosme, pas même avec porte sur un paysage mental. Il faut un miracle ou un souhait pour dissiper le sort.\nLes créatures piégées dans le microcosme sont sensibles aux effets mentaux visant leur corps physique, cependant, elles les perçoivent comme des événements naturels au sein de leur paysage mental. Si plusieurs créatures sont prisonnières du même microcosme, elles peuvent interagir entre elles au sein de ce paysage mental.",
+  "description_html": "<br/><br/>Le personnage plonge l’esprit de ses cibles dans un <a class=\"pagelink\" href=\"Pathfinder-RPG.paysages%20mentaux.ashx\" title=\"Les paysages mentaux\">paysage mental</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.paysages%20mentaux.ashx#TRANSPARENCE\" title=\"Les paysages mentaux\">voilé</a> de sa conception. Il peut affecter autant de créatures qu’il le désire, sans dépasser une limite de 30 DV de créatures au total. Une créature dotée de 10 DV ou moins n’a pas droit au moindre jet de sauvegarde, une créature dotée de 11 à 15 DV s’échappe de l’environnement après 10 minutes par niveau du personnage si elle réussit son jet de sauvegarde et une créature possédant 16 DV ou plus annule l’effet sur un jet de sauvegarde réussi. Si personne ne prend soin du corps des créatures à l’esprit prisonnier du microcosme, il finira par mourir de faim et de soif. Une créature ne peut ni entrer ni sortir du microcosme, pas même avec porte sur un paysage mental. Il faut un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i> ou un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> pour dissiper le sort.<br/><br/>Les créatures piégées dans le microcosme sont sensibles aux effets mentaux visant leur corps physique, cependant, elles les perçoivent comme des événements naturels au sein de leur paysage mental. Si plusieurs créatures sont prisonnières du même microcosme, elles peuvent interagir entre elles au sein de ce <a class=\"pagelink\" href=\"Pathfinder-RPG.paysages%20mentaux.ashx\" title=\"Les paysages mentaux\">paysage mental</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Microcosme.ashx",
+    "cache_fichier": "cache/html/288d2d09bd0fd5d5823acc15a2fd3af252b32914.html",
+    "recupere_le": "2026-07-28T23:00:37.751744+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "microcosme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Microcosme.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "microcosme",
+    "resume_court": "Le lanceur emprisonne l'esprit de créatures dans un paysage mental de sa création, permanent et inévitable.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "effet_mental",
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Il peut affecter autant de créatures qu'il le désire"
+    },
+    "notes_ambiguite": "Le sort ne produit pas de dégâts directs ni de condition au sens mécanique strict (aveugle, paralysé, etc.), mais emprisonne l'esprit dans une illusion permanente. La catégorie « illusion » s'impose car le texte nomme explicitement l'école « Illusion (fantasme) » et décrit un « paysage mental voilé de sa conception ». Les créatures ne subissent pas une condition listée mais une entrave existentielle : elles sont piégées mentalement. Aucune condition_infligee ne s'applique strictement.",
+    "slug": "microcosme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:56+00:00",
+    "hash_source": "bb831353182cbd5808bdbf1f044c4d2485ae4e5651bcc50c4d6ca054637c4bc4"
+  }
+}

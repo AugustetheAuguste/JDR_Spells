@@ -1,0 +1,105 @@
+{
+  "id": "transfert-de-tatouage",
+  "nom": "Transfert de tatouage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20de%20tatouage.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une aiguille de tatouage)",
+  "portee": "contact",
+  "cible": "un tatouage magique",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Avec ce sort, le personnage peut transférer un tatouage magique d’une créature à une autre. Une cible qui ne souhaite pas transférer son tatouage ou recevoir un tatouage transféré peut résister à ce sort en réussissant un jet de Vigueur. En cas de réussite, le transfert échoue et le contrecoup d’énergie magique rend chancelant le lanceur de ce sort. Il est possible de transférer un tatouage magique de cette façon depuis une créature morte vers un bénéficiaire vivant, à condition que la mort de la créature ne remonte pas à plus d’une heure par niveau de lanceur de sorts.",
+  "description_html": "<br/><br/>Avec ce sort, le personnage peut transférer un <a class=\"pagelink\" href=\"Pathfinder-RPG.Tatouages%20magiques.ashx\" title=\"Tatouages magiques\">tatouage magique</a> d’une créature à une autre. Une cible qui ne souhaite pas transférer son tatouage ou recevoir un tatouage transféré peut résister à ce sort en réussissant un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>. En cas de réussite, le transfert échoue et le contrecoup d’énergie magique rend <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelant</a> le lanceur de ce sort. Il est possible de transférer un tatouage magique de cette façon depuis une créature morte vers un bénéficiaire vivant, à condition que la mort de la créature ne remonte pas à plus d’une heure par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20de%20tatouage.ashx",
+    "cache_fichier": "cache/html/cd0c45e4e572e42bd6e1efbe9502c6e98c438fef.html",
+    "recupere_le": "2026-07-29T07:43:08.306538+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "transfert-de-tatouage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20de%20tatouage.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "transfert-de-tatouage",
+    "resume_court": "Transfère un tatouage magique d'une créature à une autre par contact.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "le contrecoup d'énergie magique rend chancelant le lanceur de ce sort"
+      ],
+      "cible_typique": "un tatouage magique"
+    },
+    "notes_ambiguite": "Le sort affecte techniquement un tatouage (objet magique), bien qu'il implique deux créatures. La cible typique est classée comme « objet » car le sort porte explicitement sur « un tatouage magique », non sur les créatures elles-mêmes. La condition « chancelant » n'affecte que le lanceur en cas d'échec du jet de sauvegarde adverse, ce qui est un effet secondaire du sort plutôt que son effet principal.",
+    "slug": "transfert-de-tatouage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:44+00:00",
+    "hash_source": "43000c74b31c2a8554fa00987ed777b8bf154ef163dc0431e3551fbdf08d2a35"
+  }
+}

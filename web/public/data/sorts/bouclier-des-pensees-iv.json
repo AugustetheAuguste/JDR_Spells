@@ -1,0 +1,100 @@
+{
+  "id": "bouclier-des-pensees-iv",
+  "nom": "Bouclier des pensées IV",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20des%20pens%c3%a9es%20IV.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Psy": 5
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme bouclier des pensées III mais une créature qui tente de lire les pensées du personnage alors qu’il est sous l’effet de ce sort doit réussir un jet de Volonté ou être étourdie pendant 1d4 rounds. De plus, si le personnage réussit son jet de sauvegarde contre un broyage psychique, il ne subit aucun dégât. On peut lancer ce sort sous sa version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouclier%20des%20pens%c3%a9es%20III.ashx\" title=\"Bouclier des pensées III\">bouclier des pensées III</a></i> mais une créature qui tente de lire les pensées du personnage alors qu’il est sous l’effet de ce sort doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdie</a> pendant 1d4 rounds. De plus, si le personnage réussit son jet de sauvegarde contre un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.broyage%20psychique%20I.ashx\" title=\"Broyage psychique I\">broyage psychique</a></i>, il ne subit aucun dégât. On peut lancer ce sort sous sa version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Bouclier des pensées V",
+      "id": "bouclier-des-pensees-v",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Psy": 6
+      },
+      "temps_incantation": "1 action immédiate",
+      "composantes": "V",
+      "portee": "personnelle",
+      "cible": "lanceur de sorts",
+      "duree": "1 round/niveau ; voir texte",
+      "jet_de_sauvegarde": null,
+      "resistance_magie": null,
+      "description": "Ce sort fonctionne comme bouclier des pensées IV en dehors des modifications ci-dessus. Il se termine immédiatement si le personnage rate un jet de sauvegarde contre un effet mental. On peut lancer ce sort sous sa version réduite.",
+      "description_html": "<br/>\n<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouclier%20des%20pens%c3%a9es%20IV.ashx\" title=\"Bouclier des pensées IV\">bouclier des pensées IV</a></i> en dehors des modifications ci-dessus. Il se termine immédiatement si le personnage rate un jet de sauvegarde contre un effet mental. On peut lancer ce sort sous sa version réduite.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20des%20pens%c3%a9es%20IV.ashx",
+    "cache_fichier": "cache/html/224bcd9512c8e2d1a667ae4b707f44a6a8e44d03.html",
+    "recupere_le": "2026-07-28T22:44:21.428118+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bouclier-des-pensees-iv",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20des%20pens%c3%a9es%20IV.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bouclier-des-pensees-iv",
+    "resume_court": "Le lanceur se protège des attaques mentales et étourdit qui tente de lire ses pensées.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "effet_mental",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être étourdie pendant 1d4 rounds"
+      ],
+      "cible_typique": "lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "bouclier-des-pensees-iv",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:03+00:00",
+    "hash_source": "ceb979698cbc9a62caba0760061cd2292316255ef7a81c77cc23e57bb50251c2"
+  }
+}

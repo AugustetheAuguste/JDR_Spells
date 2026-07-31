@@ -1,0 +1,150 @@
+{
+  "id": "echolocalisation",
+  "nom": "Écholocalisation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cholocalisation.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "sonore"
+  ],
+  "niveaux": {
+    "Alch": 4,
+    "Bard": 4,
+    "Dru": 4,
+    "Ens/Mag": 5,
+    "Occ": 4,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage perçoit le monde en émettant des sons très aigus et en écoutant leur écho. Il dispose alors de la vision aveugle dans un rayon de 12 mètres. Les bruits qui produisent des échos sont trop aigus pour que la plupart des créatures les entendent. Seuls les dragons et les créatures dotées de ce pouvoir (comme les chauves-souris) et les créatures dont la vision ou la perception aveugle se base sur l’ouïe peuvent le détecter. Le personnage ne peut pas utiliser ce pouvoir s'il est sourd et il ne détecte rien dans une zone de silence.",
+  "description_html": "<br/><br/><br/>Le personnage perçoit le monde en émettant des sons très aigus et en écoutant leur écho. Il dispose alors de la <a class=\"pagelink\" href=\"Pathfinder-RPG.vision%20aveugle.ashx\" title=\"vision aveugle\">vision aveugle</a> dans un rayon de 12 mètres. Les bruits qui produisent des échos sont trop aigus pour que la plupart des créatures les entendent. Seuls les <a class=\"pagelink\" href=\"Pathfinder-RPG.dragon.ashx\" title=\"Les dragons véritables\">dragons</a> et les créatures dotées de ce pouvoir (comme les <a class=\"pagelink\" href=\"Pathfinder-RPG.chauve-souris.ashx\" title=\"Chauve-souris\">chauves-souris</a>) et les créatures dont la vision ou la <a class=\"pagelink\" href=\"Pathfinder-RPG.perception%20aveugle.ashx\" title=\"perception aveugle\">perception aveugle</a> se base sur l’ouïe peuvent le détecter. Le personnage ne peut pas utiliser ce pouvoir s'il est sourd et il ne détecte rien dans une zone de <a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cholocalisation.ashx",
+    "cache_fichier": "cache/html/5992e8d1ed613b37a0f4797985734763ad40fcad.html",
+    "recupere_le": "2026-07-28T22:38:47.359342+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "echolocalisation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cholocalisation.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 4
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "echolocalisation",
+    "resume_court": "Le lanceur perçoit le monde par écholocalisation et gagne la vision aveugle dans un rayon de 12 mètres.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "perception_amelioree",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "echolocalisation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:05+00:00",
+    "hash_source": "47813343eb8a1ec2923ddf789dc513c85a75cd5e3232813505fe114bb0431f0f"
+  }
+}

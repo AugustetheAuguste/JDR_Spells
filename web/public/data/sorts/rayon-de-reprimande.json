@@ -1,0 +1,92 @@
+{
+  "id": "rayon-de-reprimande",
+  "nom": "Rayon de réprimande",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20de%20r%c3%a9primande.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un ou plusieurs rayons",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage frappe ses ennemis à l’aide de rayons de force non-létaux. Il peut créer un rayon, plus un supplémentaire tous les 4 niveaux au-delà du 3ème (jusqu’à un maximum de 3 rayons au niveau 11). Le personnage doit effectuer une attaque de contact à distance par rayon. Ces rayons sont des effets de force qui infligent 4d6 points de dégâts non-létaux. Les rayons peuvent viser une même cible ou des cibles différentes mais ils doivent tous être tirés en même temps et sur des cibles situées à 9 mètres ou moins les unes des autres. Les rayons frappent leur cible avec une force équivalente à celle d’un coup de poing donné par un humain adulte et fort. Ils peuvent briser les objets abandonnés de 5 kilos ou moins s’ils infligent assez de dégâts.",
+  "description_html": "<br/><br/>Le personnage frappe ses ennemis à l’aide de rayons de force non-létaux. Il peut créer un rayon, plus un supplémentaire tous les 4 niveaux au-delà du 3ème (jusqu’à un maximum de 3 rayons au niveau 11). Le personnage doit effectuer une <a class=\"pagelink\" href=\"Pathfinder-RPG.contact.ashx\" title=\"contact\">attaque de contact</a> à distance par rayon. Ces rayons sont des effets de force qui infligent 4d6 points de dégâts <a class=\"pagelink\" href=\"Pathfinder-RPG.Blessures%20et%20mort.ashx#NONLETAL\" title=\"Blessures et mort\">non-létaux</a>. Les rayons peuvent viser une même cible ou des cibles différentes mais ils doivent tous être tirés en même temps et sur des cibles situées à 9 mètres ou moins les unes des autres. Les rayons frappent leur cible avec une force équivalente à celle d’un coup de poing donné par un humain adulte et fort. Ils peuvent briser les objets abandonnés de 5 kilos ou moins s’ils infligent assez de dégâts.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20de%20r%c3%a9primande.ashx",
+    "cache_fichier": "cache/html/c5b1bab4fc73f7535704ce08b6513152799636a8.html",
+    "recupere_le": "2026-07-29T07:37:35.228490+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rayon-de-reprimande",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20de%20r%c3%a9primande.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rayon-de-reprimande",
+    "resume_court": "Des rayons de force non-létaux frappent une ou plusieurs cibles à portée courte.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "Ces rayons sont des effets de force qui infligent 4d6 points de dégâts non-létaux",
+      "condition_infligee": [],
+      "cible_typique": "un ou plusieurs rayons"
+    },
+    "notes_ambiguite": null,
+    "slug": "rayon-de-reprimande",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:28+00:00",
+    "hash_source": "f69f44d99e6b531f052325959719fb14b02f242601d52a75398639625997e40a"
+  }
+}

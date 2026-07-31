@@ -1,0 +1,85 @@
+{
+  "id": "arc-electrique",
+  "nom": "Arc électrique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc%20%c3%a9lectrique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Électricité"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (fourrure et deux figurines de verre)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "deux créatures ou objets distants de moins de 18 m (12 c)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes pour 1/2 dégâts",
+  "resistance_magie": "oui (voir texte)",
+  "description": "Le personnage génère un arc électrique entre deux cibles. Cet arc inflige 1d6 points de dégâts d’électricité par niveau de lanceur de sorts (15d6 au maximum) aux deux cibles et à toute créature qui se trouve entre. Le sort échoue s’il n’y a pas de ligne d’effet entre les deux cibles. L’arc électrique enflamme les combustibles et abîme les objets qui se trouvent sur son chemin. Il peut faire fondre les métaux avec un point de fusion très bas comme le plomb, l’or, le cuivre, l’argent ou le bronze.",
+  "description_html": "<br/><br/>Le personnage génère un arc électrique entre deux cibles. Cet arc inflige 1d6 points de dégâts d’électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d6 au maximum) aux deux cibles et à toute créature qui se trouve entre. Le sort échoue s’il n’y a pas de ligne d’effet entre les deux cibles. L’<i>arc électrique</i> enflamme les combustibles et abîme les objets qui se trouvent sur son chemin. Il peut faire fondre les métaux avec un point de fusion très bas comme le plomb, l’or, le cuivre, l’argent ou le bronze.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 1d8 points de dégâts d’électricité par niveau de lanceur de sorts (15d8 maximum). Une cible qui rate son jet de sauvegarde est aveuglée pendant un round par l’éclat soudain produit par le sort et assourdie par le fracas du tonnerre pendant 1d4 rounds.\nAmplifié (6ème). Si le personnage dépense deux utilisations de pouvoir mythique, la distance entre les deux cibles peut être égale ou inférieure à 36 mètres, l’éclair peut effectuer un unique virage de 90 degrés pour relier les cibles et les dégâts électriques ignorent les résistances et les immunités à l’électricité.",
+    "description_html": "Les dégâts infligés s’élèvent à 1d8 points de dégâts d’électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d8 maximum). Une cible qui rate son jet de sauvegarde est aveuglée pendant un round par l’éclat soudain produit par le sort et assourdie par le fracas du tonnerre pendant 1d4 rounds.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (6ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, la distance entre les deux cibles peut être égale ou inférieure à 36 mètres, l’éclair peut effectuer un unique virage de 90 degrés pour relier les cibles et les dégâts électriques ignorent les résistances et les immunités à l’électricité."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc%20%c3%a9lectrique.ashx",
+    "cache_fichier": "cache/html/84aeea9d6ebdc44267b8026b6a8b9c22810600eb.html",
+    "recupere_le": "2026-07-28T22:41:29.457313+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "arc-electrique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc%20%c3%a9lectrique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "arc-electrique",
+    "resume_court": "Un arc électrique entre deux cibles inflige des dégâts d'électricité à toute créature sur son chemin.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "electricite",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'électricité",
+      "condition_infligee": [],
+      "cible_typique": "deux créatures ou objets"
+    },
+    "notes_ambiguite": null,
+    "slug": "arc-electrique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:58+00:00",
+    "hash_source": "e12a8f4af374a7b3e5af17421346cb6fa18238e71d2baeef6f5a07127ccd0f55"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "appel-cacophonique",
+  "nom": "Appel cacophonique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20cacophonique.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de partition)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage emplit l'esprit de sa cible d'un vacarme retentissant de sons discordants, ce qui la gêne pour se concentrer et agir. La créature est nauséeuse pendant toute la durée du sort si elle rate son jet de sauvegarde.",
+  "description_html": "<br/><br/>Le personnage emplit l'esprit de sa cible d'un vacarme retentissant de sons discordants, ce qui la gêne pour se concentrer et agir. La créature est <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeuse</a> pendant toute la durée du sort si elle rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20cacophonique.ashx",
+    "cache_fichier": "cache/html/df5bdb70d86fe4b2ece9af0bcc1f22c958c80c72.html",
+    "recupere_le": "2026-07-28T22:41:10.440292+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "appel-cacophonique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20cacophonique.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "appel-cacophonique",
+    "resume_court": "Le lanceur remplit l'esprit de sa cible de sons discordants, la rendant nauséeuse.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne que la créature est « nauséeuse » mais ce terme ne figure pas dans la liste des conditions admissibles. Les conditions listées ne couvrent pas l'état nauséeux. La gêne à se concentrer et agir relève de l'entrave sans correspondre à une condition nommée de la liste.",
+    "slug": "appel-cacophonique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:40+00:00",
+    "hash_source": "6cb1d7817909edc79ac81c8c5c7c26ed784bd834747b7fb4b28473b99ed043fa"
+  }
+}

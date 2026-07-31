@@ -1,0 +1,172 @@
+{
+  "id": "confusion",
+  "nom": "Confusion",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confusion.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Ens/Mag": 4,
+    "Occ": 4,
+    "Psy": 4,
+    "San": 4,
+    "Sor": 4,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (trois noix)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "toutes les créatures comprises dans un rayonnement de 9 m (6 c) de diamètre",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Les victimes de cet enchantement deviennent confuses, ce qui les empêche de prendre la moindre décision. Pour déterminer ce que chacun fera pendant le round à venir, lancer 1d100 au début du tour de chaque sujet.\n1d100Comportement\n01–25Agit normalement.\n26-50Ne fait rien et babille de manière incohérente.\n51–75S’inflige 1d8 points de dégâts + modificateur de Force avec un objet en main.\n76–100Attaque la créature la plus proche (dans ce cas, un familier fait partie du sujet).\nUn personnage confus dans l’incapacité de mener à bien l’action indiquée ne fait rien d’autre que babiller de manière incohérente. Les attaquants n’ont aucun d’avantage particulier face à un personnage confus. En revanche, ce dernier riposte automatiquement lors de son tour de jeu suivant, du moins s’il est toujours confus. Il est bon de prendre en note qu’un personnage confus ne porte pas d’attaque d’opportunité contre une créature sauf s’il est déjà en train de l’attaquer (soit à cause de sa dernière action, soit parce qu’il vient d’être attaqué).",
+  "description_html": "<br/><br/>Les victimes de cet <a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a> deviennent <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuses</a>, ce qui les empêche de prendre la moindre décision. Pour déterminer ce que chacun fera pendant le <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> à venir, lancer 1d100 au début du tour de chaque sujet.<br/><br/><center>\n<table class=\"tablo\"><tr class=\"titre\"><td>1d100</td><td class=\"gauche\">Comportement</td></tr><tr class=\"premier\"><td>01–25</td><td class=\"gauche\">Agit normalement.</td></tr><tr class=\"alt\"><td>26-50</td><td class=\"gauche\">Ne fait rien et babille de manière incohérente.</td></tr><tr><td>51–75</td><td class=\"gauche\">S’inflige 1d8 points de dégâts + modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> avec un objet en main.</td></tr><tr class=\"alt\"><td>76–100</td><td class=\"gauche\">Attaque la créature la plus proche (dans ce cas, un <a class=\"pagelink\" href=\"Pathfinder-RPG.familier.ashx\" title=\"familier\">familier</a> fait partie du sujet).</td></tr></table>\n</center><br/><br/>Un personnage <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confus</a> dans l’incapacité de mener à bien l’action indiquée ne fait rien d’autre que babiller de manière incohérente. Les attaquants n’ont aucun d’avantage particulier face à un personnage <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confus</a>. En revanche, ce dernier riposte automatiquement lors de son tour de jeu suivant, du moins s’il est toujours <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confus</a>. Il est bon de prendre en note qu’un personnage <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confus</a> ne porte pas d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d’opportunité</a> contre une créature sauf s’il est déjà en train de l’attaquer (soit à cause de sa dernière action, soit parce qu’il vient d’être attaqué).<br/><br/>",
+  "mythique": {
+    "description": "Effectuez un jet sur la table ci-dessous à la place de celle de la version non-mythique au début du tour de chaque cible pour déterminer l’effet produit pendant le round en cours.\nTable des effets mythiques\nd100Comportement\n01-25La cible agit normalement, mais subit un malus de -2 aux jets d’attaque, aux tests de compétence et de caractéristique jusqu’à son prochain tour.\n26-50La cible ne fait rien d’autre que de bafouiller des choses incompréhensibles et subit un malus de -4 à la CA jusqu’à son prochain tour.\n51-75La cible s’inflige 2d8 points de dégâts + son modificateur de Force avec l’objet qu’elle tient en main.\n76-100La cible attaque l’allié le plus proche (un familier est considéré comme un allié dans le cadre de ce sort).\nAmplifié. S’il dépense deux utilisations de pouvoir mythique lorsqu’il lance le sort, le personnage oblige une créature affectée par round à effectuer deux jets sur la table et à conserver le résultat le plus élevé.",
+    "description_html": "Effectuez un jet sur la table ci-dessous à la place de celle de la version <a class=\"pagelink\" href=\"Pathfinder-RPG.non-mythique.ashx\" title=\"non-mythique\">non-mythique</a> au début du tour de chaque cible pour déterminer l’effet produit pendant le round en cours.<br/><br/><center>\n<table class=\"tablo autoalt toutgauche\"><caption>Table des effets mythiques</caption><tr class=\"titre\"><td>d100</td><td>Comportement</td></tr><tr class=\"premier\"><td>01-25</td><td>La cible agit normalement, mais subit un malus de -2 aux jets d’attaque, aux tests de compétence et de caractéristique jusqu’à son prochain tour.</td></tr><tr><td>26-50</td><td>La cible ne fait rien d’autre que de bafouiller des choses incompréhensibles et subit un malus de -4 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> jusqu’à son prochain tour.</td></tr><tr><td>51-75</td><td>La cible s’inflige 2d8 points de dégâts + son modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> avec l’objet qu’elle tient en main.</td></tr><tr><td>76-100</td><td>La cible attaque l’allié le plus proche (un familier est considéré comme un allié dans le cadre de ce sort).</td></tr></table>\n</center><br/><br/>\n<b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a>.</b> S’il dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a> lorsqu’il lance le sort, le personnage oblige une créature affectée par round à effectuer deux jets sur la table et à conserver le résultat le plus élevé."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confusion.ashx",
+    "cache_fichier": "cache/html/832ca63c6e69144f44f528a889327a0b26fd706a.html",
+    "recupere_le": "2026-07-28T22:47:21.152205+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "confusion",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confusion.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "confusion",
+    "resume_court": "Les créatures d'une zone deviennent confuses et agissent au hasard chaque round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "confusion_ou_desorientation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les victimes de cet enchantement deviennent confuses"
+      ],
+      "cible_typique": "toutes les créatures comprises dans un rayonnement de 9 m (6 c) de diamètre"
+    },
+    "notes_ambiguite": null,
+    "slug": "confusion",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:15+00:00",
+    "hash_source": "9dd0579b72fbbfbec5940145db3152137eb32158759b475b91d0b374f825fbd6"
+  }
+}

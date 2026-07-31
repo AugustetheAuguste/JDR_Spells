@@ -1,0 +1,216 @@
+{
+  "id": "pattes-d-araignee",
+  "nom": "Pattes d'araignée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pattes%20daraign%c3%a9e.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Con": 2,
+    "ConU": 2,
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Méd": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une araignée vivante)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le sujet peut se déplacer sur une surface verticale, voire au plafond, avec l’agilité d’une araignée. Pour ce faire, il doit avoir les mains libres. Sa vitesse de déplacement est égale à 6 m et il gagne un bonus racial aux tests d’Escalade de +8. De plus, il n’a pas besoin de faire de test d’Escalade pour franchir les surfaces verticales ou horizontales (même s’il a la tête en bas). Une créature qui bénéficie des effets de ce sort conserve son bonus de Dextérité à la CA (le cas échéant) lorsqu’elle grimpe et ses adversaires ne bénéficient d’aucun bonus spécial pour l’attaquer. Par contre, elle ne peut pas entreprendre d’action de course tant qu’elle escalade quelque chose.",
+  "description_html": "<hr/>\nLe sujet peut se déplacer sur une surface verticale, voire au plafond, avec l’agilité d’une araignée. Pour ce faire, il doit avoir les mains libres. Sa <a class=\"pagelink\" href=\"Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx\" title=\"vitesse de déplacement\">vitesse de déplacement</a> est égale à 6 m et il gagne un bonus racial aux tests d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Escalade.ashx\" title=\"Escalade\">Escalade</a> de +8. De plus, il n’a pas besoin de faire de test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Escalade.ashx\" title=\"Escalade\">Escalade</a> pour franchir les surfaces verticales ou horizontales (même s’il a la tête en bas). Une créature qui bénéficie des effets de ce sort conserve son bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> (le cas échéant) lorsqu’elle grimpe et ses adversaires ne bénéficient d’aucun bonus spécial pour l’attaquer. Par contre, elle ne peut pas entreprendre d’<a class=\"pagelink\" href=\"Pathfinder-RPG.actions%20complexes.ashx#COURIR\" title=\"Actions complexes\">action de course</a> tant qu’elle escalade quelque chose.<br/><br/>",
+  "mythique": {
+    "description": "La cible obtient une vitesse d’escalade égale à sa vitesse de déplacement de base au sol ou de 9 mètres, la plus élevée des deux. Elle peut courir en escaladant et peut se servir d’une seule main pour escalader. La cible peut se déplacer librement au travers de toiles d’araignée (y compris les toiles d’araignée géante), les sorts de toile d’araignée et les substances adhésives similaires d’un niveau inférieur ou égal à 2 (y compris les sacoches immobilisantes) comme si elle bénéficiait des effets d’une liberté de mouvement.",
+    "description_html": "La cible obtient une vitesse d’escalade égale à sa vitesse de déplacement de base au sol ou de 9 mètres, la plus élevée des deux. Elle peut courir en escaladant et peut se servir d’une seule main pour escalader. La cible peut se déplacer librement au travers de toiles d’araignée (y compris les toiles d’araignée géante), les sorts de <a class=\"pagelink\" href=\"Pathfinder-RPG.toile%20daraign%c3%a9e.ashx\" title=\"Toile d'araignée\">toile d’araignée</a> et les substances adhésives similaires d’un niveau inférieur ou égal à 2 (y compris les sacoches immobilisantes) comme si elle bénéficiait des effets d’une liberté de mouvement.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Pattes d'araignée (partagé)",
+      "id": "pattes-d-araignee-partage",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 3,
+        "Con": 3,
+        "ConU": 3,
+        "Dru": 3,
+        "Ens/Mag": 3,
+        "Occ": 3,
+        "Psy": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M (une araignée vivante)",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "10 minutes/niveau",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme pattes d’araignée mais la durée se divise entre les créatures touchées, par portions de 10 minutes.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pattes%20daraign%c3%a9e.ashx\" title=\"Pattes d'araignée\">pattes d’araignée</a></i> mais la durée se divise entre les créatures touchées, par portions de 10 minutes.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pattes%20daraign%c3%a9e.ashx",
+    "cache_fichier": "cache/html/0ccc4e39ab643b51e22c9064672eefedbdf2705d.html",
+    "recupere_le": "2026-07-28T23:02:51.951088+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pattes-d-araignee",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pattes%20daraign%c3%a9e.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pattes-d-araignee",
+    "resume_court": "Le sujet grimpe sur les surfaces verticales et au plafond avec l'agilité d'une araignée.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "deplacement_ou_teleportation"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "pattes-d-araignee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:50+00:00",
+    "hash_source": "9f2d85e6abef0000ec469d1ff1bdaeab52924420ee0783796bb6a3f185d7858b"
+  }
+}

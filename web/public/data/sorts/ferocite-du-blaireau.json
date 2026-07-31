@@ -1,0 +1,125 @@
+{
+  "id": "ferocite-du-blaireau",
+  "nom": "Férocité du blaireau",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.F%c3%a9rocit%c3%a9%20du%20blaireau.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 3,
+    "Ens/Mag": 2,
+    "Occ": 2,
+    "Prê": 3,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une arme/3 niveaux",
+  "duree": "concentration",
+  "jet_de_sauvegarde": "Volonté (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Fonctionne comme affûtage mais affecte plusieurs armes et demande de la concentration. Le personnage choisit les armes qu'il veut affecter et ne peut en améliorer qu'une par créature. Si une arme sort de la zone d'effet du sort, ce dernier se termine pour elle.",
+  "description_html": "<br/><br/>Fonctionne comme <a class=\"pagelink\" href=\"Pathfinder-RPG.aff%c3%bbtage.ashx\" title=\"Affûtage\">affûtage</a> mais affecte plusieurs <a class=\"pagelink\" href=\"Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx\" title=\"Tableau récapitulatif des armes\">armes</a> et demande de la <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DUREE\" title=\"Présentation des sorts\">concentration</a>. Le personnage choisit les <a class=\"pagelink\" href=\"Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx\" title=\"Tableau récapitulatif des armes\">armes</a> qu'il veut affecter et ne peut en améliorer qu'une par créature. Si une <a class=\"pagelink\" href=\"Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx\" title=\"Tableau récapitulatif des armes\">arme</a> sort de la zone d'effet du sort, ce dernier se termine pour elle.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.F%c3%a9rocit%c3%a9%20du%20blaireau.ashx",
+    "cache_fichier": "cache/html/4047be5ea1acf8bd5d0914e188aae1721fd6fb11.html",
+    "recupere_le": "2026-07-28T22:52:57.231033+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "ferocite-du-blaireau",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.F%c3%a9rocit%c3%a9%20du%20blaireau.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "ferocite-du-blaireau",
+    "resume_court": "Améliore jusqu'à une arme par créature dans la portée, demandant concentration.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme/3 niveaux"
+    },
+    "notes_ambiguite": "Le texte renvoie à « affûtage » sans le détailler ; on en déduit que le sort améliore les armes. La durée « concentration » est prolongée tant qu'elle persiste. Le sort affecte plusieurs armes (« une arme/3 niveaux »), d'où le tag « plusieurs_cibles ».",
+    "slug": "ferocite-du-blaireau",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:58+00:00",
+    "hash_source": "62454b1d5245ebd5b7dbe160b80c31d98e8a47b5e697b06be433e86e2b30a6f6"
+  }
+}

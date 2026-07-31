@@ -1,0 +1,84 @@
+{
+  "id": "presage-traumatisant",
+  "nom": "Présage traumatisant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20traumatisant.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Prê": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) / (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 round/niveau (T) voir texte",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Le personnage désigne une créature qui s’entoure d’un halo de lumière rougeâtre, présage d’un violent destin. Une fois par round, quand la cible attaque ou lance un sort, elle doit faire un jet de Vigueur DD = 10 + 1/2 niveau de lanceur de sorts + Charisme (pour un oracle) ou Sagesse (pour un prêtre). En cas d’échec, la cible subit 4d6 + Charisme (pour un oracle) ou Sagesse (pour un prêtre) points de dégâts d’électricité. Si elle réussit son jet de sauvegarde, elle ne subit pas de dégâts. Le personnage peut dissiper ce sort par une action immédiate si la cible réussit un coup critique : la dissipation hébète la cible pour 1 round et transforme le critique en coup normal. L’hébétement s’applique après l’attaque.",
+  "description_html": "<br/><br/>Le personnage désigne une créature qui s’entoure d’un halo de lumière rougeâtre, présage d’un violent destin. Une fois par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, quand la cible attaque ou lance un sort, elle doit faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 10 + 1/2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> + <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> (pour un <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx\" title=\"L'oracle\">oracle</a>) ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> (pour un <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a>). En cas d’échec, la cible subit 4d6 + <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> (pour un <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx\" title=\"L'oracle\">oracle</a>) ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> (pour un <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a>) points de dégâts d’électricité. Si elle réussit son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle ne subit pas de dégâts. Le personnage peut dissiper ce sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> si la cible réussit un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> : la dissipation <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébète</a> la cible pour 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et transforme le critique en coup normal. L’<a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébétement</a> s’applique après l’attaque.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20traumatisant.ashx",
+    "cache_fichier": "cache/html/319f263fd64607f3fc894cab27a5bbccb2e0aed0.html",
+    "recupere_le": "2026-07-28T23:04:35.027845+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "presage-traumatisant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20traumatisant.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "presage-traumatisant",
+    "resume_court": "Une créature s'entoure d'un halo qui la blesse d'électricité chaque fois qu'elle attaque ou lance un sort.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "electricite",
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts d'électricité",
+      "condition_infligee": [
+        "la dissipation hébète la cible pour 1 round"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts conditionnels (à chaque attaque/sort de la cible) plutôt que directs, ce qui le classe en affaiblissement plutôt qu'attaque directe. L'hébétement ne s'applique que si un coup critique survient et que le lanceur dissipe le sort, ce qui en fait une condition rare et secondaire, mais elle figure dans le texte.",
+    "slug": "presage-traumatisant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:51+00:00",
+    "hash_source": "1cba0e8f848ed98ec6cb4f02175ab4044dcc9d617a8921127bee40fcf330d90d"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "appel-de-la-tempete",
+  "nom": "Appel de la tempête",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20de%20la%20temp%c3%aate.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Cham": 5,
+    "Dru": 5,
+    "Occ": 5
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "1 ou plusieurs traits de foudre verticaux de 9 m (6 c) de long",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne de la même façon qu’appel de la foudre, sauf que chaque éclair inflige 5d6 points de dégâts d’électricité (ou 5d10 s’il est lancé au beau milieu d’un orage) et que le druide peut en évoquer 15.",
+  "description_html": "<hr/>\nCe sort fonctionne de la même façon qu’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.appel%20de%20la%20foudre.ashx\" title=\"Appel de la foudre\">appel de la foudre</a></i>, sauf que chaque éclair inflige 5d6 points de dégâts d’électricité (ou 5d10 s’il est lancé au beau milieu d’un orage) et que le <a class=\"pagelink\" href=\"Pathfinder-RPG.druide.ashx\" title=\"Le druide\">druide</a> peut en évoquer 15.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20de%20la%20temp%c3%aate.ashx",
+    "cache_fichier": "cache/html/699d84e8fa6b0aaa46684f761f66b3cffe93b526.html",
+    "recupere_le": "2026-07-28T22:41:14.470255+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "appel-de-la-tempete",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20de%20la%20temp%c3%aate.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 5
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 5
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 5
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "appel-de-la-tempete",
+    "resume_court": "Le lanceur invoque jusqu'à 15 éclairs verticaux infligeant des dégâts d'électricité, plus puissants en orage.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "electricite",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'électricité",
+      "condition_infligee": [],
+      "cible_typique": "1 ou plusieurs traits de foudre verticaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "appel-de-la-tempete",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:41+00:00",
+    "hash_source": "f1e0b095afe856f725f8f5f56a647ae89f2ea900ab505eb29eef425d673578ba"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "prevoyance",
+  "nom": "Prévoyance",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9voyance.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Occ": 6,
+    "Psy": 6
+  },
+  "temps_incantation": "au moins 10 minutes (voir description)",
+  "composantes": "V, G, M (vif-argent et un cil venant d’une créature capable de lancer des sorts), F (statuette d’ivoire représentant le lanceur de sorts (1 500 po))",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "1 jour/niveau (T) ou jusqu’à utilisation",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort permet d’en lancer un autre, qui prend effet au moment où la condition déterminée lors de l’incantation de prévoyance se réalise. Les deux sorts sont jetés à la suite l’un de l’autre et le temps d’incantation indiqué (dix minutes) représente un minimum : si le sort associé prend plus longtemps, on utilise son temps d’incantation.\nLe sort déclenché à retardement par prévoyance doit affecter le personnage et il ne peut pas dépasser un tiers du niveau de lanceur de sorts du personnage (arrondi à l’entier inférieur, 6e niveau maximum).\nLes conditions de déclenchement du sort doivent être explicites, même si elles peuvent rester d’ordre général. Dans tous les cas, le second sort prend effet à la seconde même où la condition est remplie. Si cette dernière est par trop complexe, le sort échoue. Le sort associé ne se déclenche que lorsque la condition est remplie, même si le personnage souhaite en bénéficier à un autre moment.\nUn personnage ne peut avoir qu’une prévoyance active à la fois. S’il en lance une seconde, la première se dissipe instantanément.",
+  "description_html": "<hr/>\nCe sort permet d’en lancer un autre, qui prend effet au moment où la condition déterminée lors de l’incantation de <i>prévoyance</i> se réalise. Les deux sorts sont jetés à la suite l’un de l’autre et le temps d’incantation indiqué (dix minutes) représente un minimum : si le sort associé prend plus longtemps, on utilise son temps d’incantation.<br/><br/>Le sort déclenché à retardement par <i>prévoyance</i> doit affecter le personnage et il ne peut pas dépasser un tiers du <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> du personnage (arrondi à l’entier inférieur, 6e niveau maximum).<br/><br/>Les conditions de déclenchement du sort doivent être explicites, même si elles peuvent rester d’ordre général. Dans tous les cas, le second sort prend effet à la seconde même où la condition est remplie. Si cette dernière est par trop complexe, le sort échoue. Le sort associé ne se déclenche que lorsque la condition est remplie, même si le personnage souhaite en bénéficier à un autre moment.<br/><br/>Un personnage ne peut avoir qu’une <i>prévoyance</i> active à la fois. S’il en lance une seconde, la première se dissipe instantanément.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut lancer ce sort sur lui-même ou sur une créature consentante comme s’il avait une portée de contact. Le sort associé placé sur cette créature doit être lancé par le personnage, non par elle. Il affecte cette créature lorsqu’il se déclenche. Une créature ne peut bénéficier que d’un seul sort de prévoyance à la fois, à moins qu’elle connaisse également le sort de prévoyance mythique. Le nombre de sorts associés que le personnage peut placer sur lui-même est égal à 1 + la moitié de son grade.\nAmplifié (5ème). Si le personnage dépense deux utilisations de pouvoir mythique, le temps d’incantation change et s’étend sur un round complet plus le temps d’incantation du sort associé, mais la durée de la prévoyance mythique diminue pour devenir une heure par niveau ou jusqu’au déclenchement.",
+    "description_html": "Le personnage peut lancer ce sort sur lui-même ou sur une créature consentante comme s’il avait une portée de contact. Le sort associé placé sur cette créature doit être lancé par le personnage, non par elle. Il affecte cette créature lorsqu’il se déclenche. Une créature ne peut bénéficier que d’un seul sort de prévoyance à la fois, à moins qu’elle connaisse également le sort de prévoyance mythique. Le nombre de sorts associés que le personnage peut placer sur lui-même est égal à 1 + la moitié de son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a>.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (5ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, le temps d’incantation change et s’étend sur un round complet plus le temps d’incantation du sort associé, mais la durée de la prévoyance mythique diminue pour devenir une heure par niveau ou jusqu’au déclenchement.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Prévoyance du mort",
+      "id": "prevoyance-du-mort",
+      "ecole": "Évocation",
+      "descripteurs": [],
+      "niveaux": {
+        "Bard": 4,
+        "Ens/Mag": 4,
+        "Prê": 4,
+        "Psy": 4,
+        "Sor": 4
+      },
+      "temps_incantation": "10 minutes ou plus, voir description",
+      "composantes": "V, G, M (une queue de scorpion), F (une statuette d'ivoire d'une valeur de 1,500 po représentant le personnage)",
+      "portee": "personnelle",
+      "cible": "le lanceur de sort",
+      "duree": "jusqu'à 1 heure/niveau plus 1d6 rounds (T) ; voir description",
+      "jet_de_sauvegarde": null,
+      "resistance_magie": null,
+      "description": "Ce sort fonctionne comme prévoyance, excepté les indications ci-dessus. Le sort ne peut affecter le personnage qu'après sa mort et ne fonctionne qu'avec certains sorts. Le sort associé se déclenche 1d6 rounds après la mort du personnage. Toutes les décisions concernant le sort associé doivent être prises lorsque prévoyance du mort est lancé (y compris les messages et les destinataires des sorts tels que bouche magique ou communication à distance). Si le sort cible un objet ou apparaît à un endroit précis, il doit cibler ou être centré sur le cadavre du personnage.\nLes sorts suivants peuvent être associés à prévoyance du mort : animation des morts (anime le cadavre du personnage comme un squelette ou un zombi incontrôlé), bouche magique, boule de feu, communication à distance, désintégration, image accomplie (avec une durée de 3 rounds), image permanente, nuage nauséabond, préservation des morts et téléportation d'objet.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%a9voyance.ashx\" title=\"Prévoyance\">prévoyance</a></i>, excepté les indications ci-dessus. Le sort ne peut affecter le personnage qu'après sa mort et ne fonctionne qu'avec certains sorts. Le sort associé se déclenche 1d6 rounds après la mort du personnage. Toutes les décisions concernant le sort associé doivent être prises lorsque <i>prévoyance du mort</i> est lancé (y compris les messages et les destinataires des sorts tels que <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouche%20magique.ashx\" title=\"Bouche magique\">bouche magique</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20%c3%a0%20distance.ashx\" title=\"Communication à distance\">communication à distance</a></i>). Si le sort cible un objet ou apparaît à un endroit précis, il doit cibler ou être centré sur le cadavre du personnage.<br/><br/>Les sorts suivants peuvent être associés à <i>prévoyance du mort</i> : <i><a class=\"pagelink\" href=\"Pathfinder-RPG.animation%20des%20morts.ashx\" title=\"Animation des morts\">animation des morts</a></i> (anime le cadavre du personnage comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.Squelette%20humain.ashx\" title=\"Squelette, Squelette humain\">squelette</a> ou un <a class=\"pagelink\" href=\"Pathfinder-RPG.Zombi%20humain.ashx\" title=\"Zombi, Zombi humain\">zombi</a> incontrôlé), <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouche%20magique.ashx\" title=\"Bouche magique\">bouche magique</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.boule%20de%20feu.ashx\" title=\"Boule de feu\">boule de feu</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20%c3%a0%20distance.ashx\" title=\"Communication à distance\">communication à distance</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9sint%c3%a9gration.ashx\" title=\"Désintégration\">désintégration</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.image%20accomplie.ashx\" title=\"Image accomplie\">image accomplie</a></i> (avec une durée de 3 rounds), <i><a class=\"pagelink\" href=\"Pathfinder-RPG.image%20permanente.ashx\" title=\"Image permanente\">image permanente</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.nuage%20naus%c3%a9abond.ashx\" title=\"Nuage nauséabond\">nuage nauséabond</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%a9servation%20des%20morts.ashx\" title=\"Préservation des morts\">préservation des morts</a></i> et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation%20dobjet.ashx\" title=\"Téléportation d'objet\">téléportation d'objet</a></i>.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Talisman instrumental",
+      "id": "talisman-instrumental",
+      "ecole": "Évocation",
+      "descripteurs": [],
+      "niveaux": {
+        "Occ": 3
+      },
+      "temps_incantation": "10 minutes",
+      "composantes": "V",
+      "portee": "personnelle",
+      "cible": "le lanceur de sorts",
+      "duree": "1 h/niveau (T) ou jusqu’à déchargement",
+      "jet_de_sauvegarde": null,
+      "resistance_magie": null,
+      "description": "Ce sort fonctionne comme prévoyance mais le personnage intègre un sort dont le niveau ne dépasse pas un quart du sien (arrondi à l’inférieur, sort de niveau 3 au maximum) dans un instrument comportant au moins 2 points de focalisation mentale. L’école du sort doit correspondre à celle de l’instrument et le sort doit affecter uniquement le personnage. Le talisman instrumental réduit de points 2 la focalisation mentale investie dans l’instrument choisi, y compris quand il s’agit de déterminer ses pouvoirs de résonance. Quand le personnage rafraîchit ses points de focalisation mentale, ce sort se dissipe automatiquement, même si sa durée n’a pas expiré. Contrairement à prévoyance, le personnage peut avoir plusieurs talismans instrumentaux actifs à la fois mais un même instrument ne peut contenir qu’un seul sort de ce type. De plus, si le personnage a un talisman instrumental actif ou plus, il ne peut pas utiliser un effet de contingence.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%a9voyance.ashx\" title=\"Prévoyance\">prévoyance</a></i> mais le personnage intègre un sort dont le niveau ne dépasse pas un quart du sien (arrondi à l’inférieur, sort de niveau 3 au maximum) dans un instrument comportant au moins 2 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.occultiste.ashx#FOCALISATIONMENTALE\" title=\"L'occultiste\">focalisation mentale</a>. L’école du sort doit correspondre à celle de l’instrument et le sort doit affecter uniquement le personnage. Le talisman instrumental réduit de points 2 la focalisation mentale investie dans l’instrument choisi, y compris quand il s’agit de déterminer ses pouvoirs de résonance. Quand le personnage rafraîchit ses points de <a class=\"pagelink\" href=\"Pathfinder-RPG.occultiste.ashx#FOCALISATIONMENTALE\" title=\"L'occultiste\">focalisation mentale</a>, ce sort se dissipe automatiquement, même si sa durée n’a pas expiré. Contrairement à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%a9voyance.ashx\" title=\"Prévoyance\">prévoyance</a></i>, le personnage peut avoir plusieurs talismans instrumentaux actifs à la fois mais un même instrument ne peut contenir qu’un seul sort de ce type. De plus, si le personnage a un talisman instrumental actif ou plus, il ne peut pas utiliser un effet de contingence.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Ultimate Intrigue/Art de l'intrigue",
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9voyance.ashx",
+    "cache_fichier": "cache/html/ead9b8438d4bf934787db64f7af23bd8e86410ae.html",
+    "recupere_le": "2026-07-28T23:04:39.031106+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "prevoyance",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9voyance.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "prevoyance",
+    "resume_court": "Prépare un sort qui se déclenche automatiquement quand une condition explicite est remplie.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "metamagie_ou_sort_cible",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le jeteur de sorts"
+    },
+    "notes_ambiguite": "Ce sort est une métamagie qui prépare un autre sort à se déclencher sur condition. Il n'inflige pas lui-même de dégâts ni de conditions, mais prépare un effet futur. La catégorie utilitaire reflète son rôle de préparation tactique plutôt que d'action directe. Les rôles tactiques incluent combat et exploration car le sort peut servir dans les deux contextes selon le sort préparé.",
+    "slug": "prevoyance",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:53+00:00",
+    "hash_source": "18b35fee528b1a2d08bc1ae399094e69ddb1fd0edb5d9acd2b7e50cdada7b24e"
+  }
+}

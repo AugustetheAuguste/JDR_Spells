@@ -1,0 +1,120 @@
+{
+  "id": "jitterbug",
+  "nom": "Jitterbug",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jitterbug.ashx",
+  "ecole": "Illusion (chimère)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau) (5 c + 1 c/2 niveau)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La cible du sort a l’impression d’être couverte d’insectes grouillants qui la piquent. Elle est incapable de rester tranquille et se trémousse sans cesse. Elle subit un malus de -4 à tous les tests de Dextérité et tous les tests de compétence basés dessus. Elle est incapable de retarder une action, de préparer une action ou de se mettre en défense totale.",
+  "description_html": "<br/><br/>La cible du sort a l’impression d’être couverte d’insectes grouillants qui la piquent. Elle est incapable de rester tranquille et se trémousse sans cesse. Elle subit un malus de -4 à tous les tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> et tous les tests de compétence basés dessus. Elle est incapable de retarder une action, de préparer une action ou de se mettre en <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9fense%20totale.ashx\" title=\"défense totale\">défense totale</a>.<br/><br/>",
+  "mythique": {
+    "description": "Une fois le sort lancé, à partir du 2ème round, la cible affectée doit réussir un jet de Vigueur lors de son tour pour ne pas être nauséeuse pendant un round, comme si elle était distraite par une véritable nuée.",
+    "description_html": "Une fois le sort lancé, à partir du 2ème round, la cible affectée doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> lors de son tour pour ne pas être nauséeuse pendant un round, comme si elle était distraite par une véritable nuée."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jitterbug.ashx",
+    "cache_fichier": "cache/html/74ef6550f0d81d3e1d65df5513ad41a3fa88ff31.html",
+    "recupere_le": "2026-07-28T22:57:44.576802+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "jitterbug",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jitterbug.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "jitterbug",
+    "resume_court": "La cible se croit couverte d'insectes et subit un malus de -4 à la Dextérité et ses tests.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "effet_mental",
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "jitterbug",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:45+00:00",
+    "hash_source": "3ebe104d6990fae5612f071ad558dd4957ae87dd906fc7e108bc870ae56f3488"
+  }
+}

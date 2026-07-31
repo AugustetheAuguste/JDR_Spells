@@ -1,0 +1,82 @@
+{
+  "id": "poursuite-divine",
+  "nom": "Poursuite divine",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poursuite%20divine.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 minute/niveau, voir texte",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage choisit une créature qu’il a blessée et qui se trouve dans les 18 mètres. Si elle a une vitesse de creusement, d’escalade, de nage ou de vol, il en bénéficie pendant la durée du sort, à la même vitesse et avec la même manœuvrabilité que la créature choisie. Si le personnage acquiert ainsi une vitesse de creusement ou de nage, il peut respirer sous terre ou sous l’eau. Si la créature s’éloigne de plus de 300 mètres du personnage, le sort se termine. Si celle-ci possède plusieurs types de mouvement, le personnage en choisit un.",
+  "description_html": "<br/><br/>Le personnage choisit une créature qu’il a blessée et qui se trouve dans les 18 mètres. Si elle a une vitesse de creusement, d’escalade, de nage ou de vol, il en bénéficie pendant la durée du sort, à la même vitesse et avec la même manœuvrabilité que la créature choisie. Si le personnage acquiert ainsi une vitesse de creusement ou de nage, il peut respirer sous terre ou sous l’eau. Si la créature s’éloigne de plus de 300 mètres du personnage, le sort se termine. Si celle-ci possède plusieurs types de mouvement, le personnage en choisit un.<br/><br/>",
+  "mythique": {
+    "description": "La vitesse de déplacement du type conféré par le sort s’élève à 9 mètres. Cet ajustement est considéré comme un bonus d’altération. Le personnage gagne un bonus aux tests de Perception et de Survie effectués envers la créature sélectionnée. C’est un bonus de sainteté si le personnage est Bon et un bonus de malfaisance si le personnage est Mauvais ; s’il est Neutre, choisissez l’un ou l’autre.",
+    "description_html": "La vitesse de déplacement du type conféré par le sort s’élève à 9 mètres. Cet ajustement est considéré comme un bonus d’altération. Le personnage gagne un bonus aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> effectués envers la créature sélectionnée. C’est un bonus de sainteté si le personnage est Bon et un bonus de malfaisance si le personnage est Mauvais ; s’il est Neutre, choisissez l’un ou l’autre."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poursuite%20divine.ashx",
+    "cache_fichier": "cache/html/7ac3d39d526097bf5ab347d5bbbcd621f8123e67.html",
+    "recupere_le": "2026-07-28T23:04:28.036130+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "poursuite-divine",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poursuite%20divine.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "poursuite-divine",
+    "resume_court": "Le lanceur acquiert la vitesse de déplacement spécial d'une créature blessée qu'il a choisie.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "poursuite-divine",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:45+00:00",
+    "hash_source": "323a5f5df6906605117cb55bd4a9d200057e5289f8bbacbd4453125650a3daaa"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "brise-magie-supreme",
+  "nom": "Brise-magie suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-magie%20supr%c3%aame.ashx",
+  "ecole": "abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "ensorceleur/magicien": 8,
+    "prêtre": 8,
+    "sorcière": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un souffle d’énergie discordant qui perturbe la magie disponible de la cible.\nSi la cible prépare ses sorts, elle doit choisir l’un de ses sorts préparés de niveau 7, qui est immédiatement perdu.\nSi la cible n’a pas de sort préparé de niveau 7, elle doit perdre un sort préparé de niveau inférieur.\nSi la cible est un lanceur de sorts spontanés, elle perd l’un de ses emplacements de sorts de niveau 7. Si la cible n’a pas d’emplacements de sorts de niveau 7, elle perd un emplacement de sort de niveau inférieur.\nSi la cible possède plus d’une classe de lanceur de sorts, le personnage choisit au hasard laquelle il affecte. Ce sort n’a aucun effet sur les pouvoirs magiques. Pour tout sort ou emplacement de sort perdu à cause de ce sort, on considère que le lanceur a raté un test de concentration alors qu’il essayait de lancer son sort : le sort ou l’emplacement de sort est perdu et n’a aucun effet, mais le lanceur le récupère normalement la prochaine fois qu’il prépare ses sorts ou regagne ses emplacements de sorts.",
+  "description_html": "<br/><br/><br/>Le personnage crée un souffle d’énergie discordant qui perturbe la magie disponible de la cible.<br/><br/>Si la cible prépare ses sorts, elle doit choisir l’un de ses sorts préparés de niveau 7, qui est immédiatement perdu.<br/><br/>Si la cible n’a pas de sort préparé de niveau 7, elle doit perdre un sort préparé de niveau inférieur.<br/><br/>Si la cible est un lanceur de sorts spontanés, elle perd l’un de ses emplacements de sorts de niveau 7. Si la cible n’a pas d’emplacements de sorts de niveau 7, elle perd un emplacement de sort de niveau inférieur.<br/><br/>Si la cible possède plus d’une classe de lanceur de sorts, le personnage choisit au hasard laquelle il affecte. Ce sort n’a aucun effet sur les pouvoirs magiques. Pour tout sort ou emplacement de sort perdu à cause de ce sort, on considère que le lanceur a raté un test de concentration alors qu’il essayait de lancer son sort : le sort ou l’emplacement de sort est perdu et n’a aucun effet, mais le lanceur le récupère normalement la prochaine fois qu’il prépare ses sorts ou regagne ses emplacements de sorts.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-magie%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/8593b2e32083f49f6b67732857f7a8da3d9b8f53.html",
+    "recupere_le": "2026-07-28T22:44:50.197121+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "brise-magie-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-magie%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "brise-magie-supreme",
+    "resume_court": "Un souffle d'énergie qui force la cible à perdre l'un de ses sorts ou emplacements de sorts préparés.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "metamagie_ou_sort_cible",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "brise-magie-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:14+00:00",
+    "hash_source": "a4efb59a23f206e80f650026430ff3454af34e2a0832af9ce935b4db4352db0d"
+  }
+}

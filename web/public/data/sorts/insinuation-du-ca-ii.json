@@ -1,0 +1,85 @@
+{
+  "id": "insinuation-du-ca-ii",
+  "nom": "Insinuation du ça II",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Insinuation%20du%20%c3%a7a%20II.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "2 créatures",
+  "duree": "concentration + 1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme insinuation du ça I en dehors des modifications notées ci-dessus. De plus, lors du premier round d’effet, la cible du sort doit lancer le dé deux fois pour déterminer la nature de l’effet de confusion. C’est le personnage qui choisit entre les deux. Il peut lancer la version réduite de ce sort.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.insinuation%20du%20%c3%a7a%20I.ashx\" title=\"Insinuation du ça I\">insinuation du ça I</a></i> en dehors des modifications notées ci-dessus. De plus, lors du premier <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> d’effet, la cible du sort doit lancer le dé deux fois pour déterminer la nature de l’effet de confusion. C’est le personnage qui choisit entre les deux. Il peut lancer la version réduite de ce sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Insinuation%20du%20%c3%a7a%20II.ashx",
+    "cache_fichier": "cache/html/8ab381b9d831a8bc5778f4fa6e82e1139620e712.html",
+    "recupere_le": "2026-07-28T22:57:11.550694+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "insinuation-du-ca-ii",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Insinuation%20du%20%c3%a7a%20II.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "insinuation-du-ca-ii",
+    "resume_court": "Deux créatures subissent la confusion mentale ; le lanceur choisit entre deux effets possibles.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "confusion_ou_desorientation",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la cible du sort doit lancer le dé deux fois pour déterminer la nature de l'effet de confusion"
+      ],
+      "cible_typique": "2 créatures"
+    },
+    "notes_ambiguite": "Le texte renvoie à « insinuation du ça I » pour les détails complets de l'effet. La condition « confus » est déduite du contexte (« effet de confusion »), mais le texte fourni ne décrit pas explicitement les mécaniques de confusion. La durée est notée « concentration + 1 round », ce qui justifie le tag « duree_prolongee ».",
+    "slug": "insinuation-du-ca-ii",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:33+00:00",
+    "hash_source": "50fc5bc312b3fdab7436b1ae5044c893485e838c9e274d2aadab98ff592452db"
+  }
+}

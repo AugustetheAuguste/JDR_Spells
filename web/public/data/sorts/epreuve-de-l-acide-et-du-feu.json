@@ -1,0 +1,140 @@
+{
+  "id": "epreuve-de-l-acide-et-du-feu",
+  "nom": "Épreuve de l'acide et du feu",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89preuve%20de%20lacide%20et%20du%20feu.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "acide",
+    "feu"
+  ],
+  "niveaux": {
+    "Cham": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Prê": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "la créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, 1/2 dégâts (voir texte)",
+  "resistance_magie": "non",
+  "description": "La créature ciblée est couverte d’acide brûlant lui infligeant 1d6 points de dégâts d’acide et 1d6 points de dégâts de feu tous les rounds. Elle peut tenter un jet de Vigueur tous les rounds pour réduire les dégâts de moitié. Si la cible est plongée dans l’eau, l’effet prend fin (celui d’acide et celui de feu) mais la rouler au sol n’éteint pas les flammes ni ne met fin à l’effet d’acide.",
+  "description_html": "<br/><br/>La créature ciblée est couverte d’acide brûlant lui infligeant 1d6 points de dégâts d’acide et 1d6 points de dégâts de feu tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Elle peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> tous les rounds pour réduire les dégâts de moitié. Si la cible est plongée dans l’eau, l’effet prend fin (celui d’acide et celui de feu) mais la rouler au sol n’éteint pas les flammes ni ne met fin à l’effet d’acide.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89preuve%20de%20lacide%20et%20du%20feu.ashx",
+    "cache_fichier": "cache/html/a00616191c50dfd3e797cbe367745e9f89c13f1f.html",
+    "recupere_le": "2026-07-28T22:39:18.311319+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "epreuve-de-l-acide-et-du-feu",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89preuve%20de%20lacide%20et%20du%20feu.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "epreuve-de-l-acide-et-du-feu",
+    "resume_court": "La cible est couverte d'acide brûlant qui lui inflige des dégâts chaque round pendant la durée.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts d'acide et 1d6 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "la créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige à la fois de l'acide et du feu, mais type_degats n'accepte qu'une valeur unique. L'acide est listé en premier dans les descripteurs et dans la description des dégâts, d'où le choix de « acide ». Le tag « degats_directs » couvre les deux types d'énergie infligés.",
+    "slug": "epreuve-de-l-acide-et-du-feu",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:33+00:00",
+    "hash_source": "8af2fef0d37ea23c3f09ee0e05219434d2fa64d6359f240738baf8d47c9fa474"
+  }
+}

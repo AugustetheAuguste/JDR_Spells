@@ -1,0 +1,101 @@
+{
+  "id": "revelation",
+  "nom": "Révélation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20R%c3%a9v%c3%a9lation.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 round/niveau ; voir texte",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Vous acquérez la faculté d’assimiler brièvement le fonctionnement d’un mécanisme, d’un puzzle ou d’un piège unique, qui vous donne un bonus d’intuition égal à votre niveau de lanceur de sort (maximum +10) sur les jets visant à désactiver, manipuler ou comprendre l’objet en question. Votre intuition est ineffable : vous n’êtes pas en mesure de communiquer votre compréhension à d’autres personnes.\nÀ la discrétion du MJ, ce sort peut à la place vous donner un indice ou un autre élément d’information utile. Dans ce cas, vous pouvez communiquer aux autres l’indice et en conserver la connaissance après expiration de la durée du sort.",
+  "description_html": "<br/><br/>Vous acquérez la faculté d’assimiler brièvement le fonctionnement d’un mécanisme, d’un puzzle ou d’un piège unique, qui vous donne un bonus d’intuition égal à votre <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sort</a> (maximum +10) sur les jets visant à désactiver, manipuler ou comprendre l’objet en question. Votre intuition est ineffable : vous n’êtes pas en mesure de communiquer votre compréhension à d’autres personnes. <br/><br/>À la discrétion du <a class=\"pagelink\" href=\"Pathfinder-RPG.MJ.ashx\" title=\"MJ\">MJ</a>, ce sort peut à la place vous donner un indice ou un autre élément d’information utile. Dans ce cas, vous pouvez communiquer aux autres l’indice et en conserver la connaissance après expiration de la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20R%c3%a9v%c3%a9lation.ashx",
+    "cache_fichier": "cache/html/f89ce43067e59ceb0cd971053d0f1857292a8b9f.html",
+    "recupere_le": "2026-07-29T07:45:08.450114+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "revelation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20R%c3%a9v%c3%a9lation.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "revelation",
+    "resume_court": "Le lanceur gagne un bonus d'intuition pour désactiver, manipuler ou comprendre un mécanisme, puzzle ou piège.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "divination_information",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "revelation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:06+00:00",
+    "hash_source": "1a51a52e2bffa1d42cc114d002fc0ed5340113cbf217c38b0ab0b746dfd55236"
+  }
+}

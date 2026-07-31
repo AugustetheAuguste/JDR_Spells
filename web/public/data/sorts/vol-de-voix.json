@@ -1,0 +1,138 @@
+{
+  "id": "vol-de-voix",
+  "nom": "Vol de voix",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20voix.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "permanente (T)",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "La gorge de la cible se contracte et lui donne la plaie de coassement du mage.",
+  "description_html": "<br/><br/>La gorge de la cible se contracte et lui donne la <a class=\"pagelink\" href=\"Pathfinder-RPG.Description%20des%20plaies%20magiques.ashx#Coassement_du_mage_1\" title=\"Description des plaies magiques\">plaie de coassement du mage</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20voix.ashx",
+    "cache_fichier": "cache/html/bf2aaca2cfe5aa021c6d9cab5d8408d8a5441621.html",
+    "recupere_le": "2026-07-29T07:44:43.542735+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vol-de-voix",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20voix.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vol-de-voix",
+    "resume_court": "La gorge de la cible se contracte, lui infligeant une plaie de coassement permanent.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "affaiblissement_de_capacite",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "communication_ou_langage"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne une « plaie de coassement du mage » sans préciser si elle inflige une condition mécanique nommée (comme assourdi ou confus) ou si elle représente simplement une altération de la voix. Aucune condition de la liste n'est explicitement nommée, donc condition_infligee reste vide. La durée est marquée « permanente (T) » : interprétée comme permanente, d'où le tag duree_prolongee.",
+    "slug": "vol-de-voix",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:28+00:00",
+    "hash_source": "85d66d47fc456290414e263b95e55c5a3fdae802192caa74b913e23f4f6f80b0"
+  }
+}

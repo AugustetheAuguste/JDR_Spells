@@ -1,0 +1,161 @@
+{
+  "id": "retardement-des-maladies",
+  "nom": "Retardement des maladies",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Retardement%20des%20maladies.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Dru": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Pal": 2,
+    "Prê": 2,
+    "Rôd": 2,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V,G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "24h",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible devient temporairement immunisée aux maladies. Aucune des maladies auxquelles elle a été exposée pendant la durée du sort ne l’affecte tant qu’il dure. Si la cible est déjà affectée par une maladie, le lanceur doit réussir un test de lanceur de sorts contre le DD de la maladie pour la suspendre le temps que dure le sort ; sinon, cette maladie affecte la cible normalement. Retardement des maladies ne soigne pas les dégâts qu’une maladie a déjà causés.",
+  "description_html": "<br/><br/>La cible devient temporairement immunisée aux <a class=\"pagelink\" href=\"Pathfinder-RPG.maladies.ashx\" title=\"Les maladies\">maladies</a>. Aucune des maladies auxquelles elle a été exposée pendant la <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DUREE\" title=\"Présentation des sorts\">durée</a> du sort ne l’affecte tant qu’il dure. Si la cible est déjà affectée par une maladie, le lanceur doit réussir un test de lanceur de sorts contre le DD de la maladie pour la suspendre le temps que dure le sort ; sinon, cette maladie affecte la cible normalement. Retardement des maladies ne soigne pas les dégâts qu’une maladie a déjà causés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Retardement%20des%20maladies.ashx",
+    "cache_fichier": "cache/html/87b4488e001a8b141b476b08b6efe42773ab35af.html",
+    "recupere_le": "2026-07-29T07:39:09.469323+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "retardement-des-maladies",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Retardement%20des%20maladies.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "retardement-des-maladies",
+    "resume_court": "La cible devient immunisée aux maladies pendant 24 heures, ou suspend une maladie existante.",
+    "categorie_principale": "protection",
+    "tags": [
+      "immunite_ou_resistance_element",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "retardement-des-maladies",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:04+00:00",
+    "hash_source": "92d6d38eb9601aedc72b433ef098cbfc1f915d8aff16c3a2cacf5e6d399aaa9b"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "malchance-de-l-artisan",
+  "nom": "Malchance de l'artisan",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Malchance%20de%20lartisan.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Occ": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un outil cassé)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 jour/niveau (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "La cible reçoit un malus de -5 aux tests d'Artisanat pendant toute la durée du sort.",
+  "description_html": "<br/><br/>La cible reçoit un malus de -5 aux tests d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> pendant toute la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Malchance%20de%20lartisan.ashx",
+    "cache_fichier": "cache/html/6bb46879741c7fb0688e31d06b31b294aef0d0e5.html",
+    "recupere_le": "2026-07-28T22:59:52.737804+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "malchance-de-l-artisan",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Malchance%20de%20lartisan.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "malchance-de-l-artisan",
+    "resume_court": "La cible subit un malus de -5 aux tests d'Artisanat pendant 1 jour par niveau.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "malchance-de-l-artisan",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:26+00:00",
+    "hash_source": "fe46206f12e01af4555d5efe736e36f5ea39e087175bdaf030c15aab1b423240"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "appel-du-chevalier",
+  "nom": "Appel du chevalier",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20chevalier.ashx",
+  "ecole": "enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Pal": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage oblige un ennemi à venir l'affronter. À son tour, la cible doit se déplacer à sa vitesse en direction du personnage en évitant tout autre danger situé sur son chemin (y compris tout déplacement qui provoquerait une attaque d'opportunité). À son tour, la cible ne peut rien faire d'autre que se déplacer. Si elle termine son déplacement à côté du personnage, ce dernier peut faire une attaque d'opportunité contre elle.",
+  "description_html": "<br/><br/>Le personnage oblige un ennemi à venir l'affronter. À son tour, la cible doit se déplacer à sa vitesse en direction du personnage en évitant tout autre danger situé sur son chemin (y compris tout déplacement qui provoquerait une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d'opportunité</a>). À son tour, la cible ne peut rien faire d'autre que se déplacer. Si elle termine son déplacement à côté du personnage, ce dernier peut faire une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d'opportunité</a> contre elle.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20chevalier.ashx",
+    "cache_fichier": "cache/html/09393f09b1bbf7110a4cbf4efe967d1e8cf541ff.html",
+    "recupere_le": "2026-07-28T22:41:19.459541+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "appel-du-chevalier",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20chevalier.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "appel-du-chevalier",
+    "resume_court": "Force un ennemi à se déplacer vers le lanceur et à ne rien faire d'autre ce round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "appel-du-chevalier",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:43+00:00",
+    "hash_source": "23c6eeda711a714ffe857174f18759591e6e364d139aae5d86ab82429cc90a85"
+  }
+}

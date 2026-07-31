@@ -1,0 +1,151 @@
+{
+  "id": "portail-fragile",
+  "nom": "Portail fragile",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20fragile.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Antipal": 2,
+    "Dru": 2,
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "étendue de 1,50 m de rayon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui",
+  "description": "Ce sort affaiblit les liens de l’existence et réduit de 2 par niveau de lanceur la solidité de n’importe quelle surface non-magique se trouvant dans sa zone d’effet. Le sort est centré sur une surface plane choisie par le lanceur et l’effet de réduction de la solidité persiste pour la durée du sort.",
+  "description_html": "<br/><br/>Ce sort affaiblit les liens de l’existence et réduit de 2 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur</a> la <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> de n’importe quelle surface non-magique se trouvant dans sa zone d’effet. Le sort est centré sur une surface plane choisie par le lanceur et l’effet de réduction de la solidité persiste pour la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20fragile.ashx",
+    "cache_fichier": "cache/html/ff465316f0cf8c1c246e90005a16711a08750186.html",
+    "recupere_le": "2026-07-28T23:04:04.003856+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "portail-fragile",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20fragile.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "portail-fragile",
+    "resume_court": "Affaiblit les surfaces non-magiques dans une zone, réduisant leur solidité de 2 par niveau.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "étendue de 1,50 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "portail-fragile",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:18+00:00",
+    "hash_source": "eacf4bec8f9bfb17ab7c3ef5a072b753d6e759d6e9cec74ff5a1d1f5f94d872f"
+  }
+}

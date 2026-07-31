@@ -1,0 +1,107 @@
+{
+  "id": "rayon-ardent",
+  "nom": "Rayon ardent",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20ardent.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un ou plusieurs rayons",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le mage frappe ses ennemis de rayons brûlants. Il peut en tirer un, plus un tous les quatre niveaux au-delà du niveau 3 (pour un maximum de trois rayons au niveau 11). Il faut effectuer une attaque de contact à distance pour chaque rayon. Chacun inflige 4d6 points de dégâts de feu. On les tire simultanément sur une ou plusieurs cibles, mais tous doivent viser des sujets situés à 9 m ou moins les uns des autres.",
+  "description_html": "<br/><br/>Le mage frappe ses ennemis de rayons brûlants. Il peut en tirer un, plus un tous les quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> au-delà du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 3 (pour un maximum de trois rayons au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 11). Il faut effectuer une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> pour chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.rayon.ashx\" title=\"rayon\">rayon</a>. Chacun inflige 4d6 points de dégâts de feu. On les tire simultanément sur une ou plusieurs cibles, mais tous doivent viser des sujets situés à 9 m ou moins les uns des autres.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés par chaque rayon s’élèvent à 6d6 points de dégâts de feu. Le premier rayon ignore les immunités et les résistances au feu.",
+    "description_html": "Les dégâts infligés par chaque rayon s’élèvent à 6d6 points de dégâts de feu. Le premier rayon ignore les immunités et les résistances au feu."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20ardent.ashx",
+    "cache_fichier": "cache/html/00965a156fcb3f59c2422f8069f898cc654607b5.html",
+    "recupere_le": "2026-07-29T07:37:29.209511+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rayon-ardent",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20ardent.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rayon-ardent",
+    "resume_court": "Le lanceur tire un à trois rayons de feu qui frappent ses ennemis à distance.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "4d6 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "Il peut en tirer un, plus un tous les quatre niveaux au-delà du niveau 3"
+    },
+    "notes_ambiguite": null,
+    "slug": "rayon-ardent",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:26+00:00",
+    "hash_source": "e9e4534786286cfaa21c5d5d66fc828eeaa7ab4f9a996d2032041e09434c46e6"
+  }
+}

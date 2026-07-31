@@ -1,0 +1,121 @@
+{
+  "id": "eruption-de-pustules",
+  "nom": "Éruption de pustules",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ruption%20de%20pustules.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Alch": 3,
+    "Ens/Mag": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Vigueur partielle (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La peau du personnage se couvre de bubons boursouflés gonflés de pus qui éclatent si on le frappe. Toute créature qui frappe le personnage avec son corps ou une arme tenue en main inflige des dégâts normaux mais subit 1d6 points de dégâts d'acide et doit réussir un jet de sauvegarde ou être fiévreux pendant 1 round. Si l'attaque portée contre le personnage est un coup critique, l'attaquant est nauséeux et non fiévreux s'il rate son jet de sauvegarde. Ces dégâts peuvent blesser les nuées.",
+  "description_html": "<br/><br/>La peau du personnage se couvre de bubons boursouflés gonflés de pus qui éclatent si on le frappe. Toute créature qui frappe le personnage avec son corps ou une arme tenue en main inflige des dégâts normaux mais subit 1d6 points de dégâts d'acide et doit réussir un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreux</a> pendant 1 round. Si l'attaque portée contre le personnage est un coup critique, l'attaquant est <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeux</a> et non <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreux</a> s'il rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>. Ces dégâts peuvent blesser les nuées.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ruption%20de%20pustules.ashx",
+    "cache_fichier": "cache/html/156d1dfd9a6432c162afb6f714472ee1628250f3.html",
+    "recupere_le": "2026-07-28T22:39:24.347011+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "eruption-de-pustules",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ruption%20de%20pustules.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 3
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "eruption-de-pustules",
+    "resume_court": "La peau se couvre de pustules qui infligent des dégâts d'acide à qui frappe le lanceur.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "degats_directs"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": "acide",
+    "condition_infligee": [
+      "fievreux",
+      "nauseeux"
+    ],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts d'acide",
+      "condition_infligee": [
+        "être fiévreux pendant 1 round",
+        "l'attaquant est nauséeux"
+      ],
+      "cible_typique": "lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "eruption-de-pustules",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:17+00:00",
+    "hash_source": "4f28708fec54c50bd93ad136919ba7c1962b1a3004c1133958db862556c6f3df"
+  }
+}

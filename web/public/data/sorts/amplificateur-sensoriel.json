@@ -1,0 +1,141 @@
+{
+  "id": "amplificateur-sensoriel",
+  "nom": "Amplificateur sensoriel",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Amplificateur%20sensoriel.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Dru": 4,
+    "Hyp": 3,
+    "Méd": 2,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "personnelle",
+  "cible": "rayon de 3 m centré sur le personnage",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage ouvre l'esprit de toutes les créatures proches de lui et stimule leurs récepteurs sensoriels. Toutes les créatures vivantes excepté le personnage dans la zone d'effet bénéficient d’un bonus de +5 à leurs tests de Perception. Les créatures capables de voir gagnent la vision nocturne, et les créatures capables de sentir gagnent l'odorat. De plus, la première fois qu'une créature subit des dégâts dans la zone d'effet à chaque round, elle subit 2d6 points de dégâts supplémentaires du même type. Même s'il est dans la zone d'effet, le lanceur ne subit pas ces dégâts supplémentaires.",
+  "description_html": "<br/><br/>Le personnage ouvre l'esprit de toutes les créatures proches de lui et stimule leurs récepteurs sensoriels. Toutes les créatures vivantes excepté le personnage dans la zone d'effet bénéficient d’un bonus de +5 à leurs tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a>. Les créatures capables de voir gagnent la <a class=\"pagelink\" href=\"Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx\" title=\"Vision nocturne (Ext)\">vision nocturne</a>, et les créatures capables de sentir gagnent l'<a class=\"pagelink\" href=\"Pathfinder-RPG.Odorat%20(capacit%c3%a9).ashx\" title=\"Odorat (Ext)\">odorat</a>. De plus, la première fois qu'une créature subit des dégâts dans la zone d'effet à chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, elle subit 2d6 points de dégâts supplémentaires du même type. Même s'il est dans la zone d'effet, le lanceur ne subit pas ces dégâts supplémentaires.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Origins/Origines occultes ; /!\\ Traduit par la communauté /!\\"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Amplificateur%20sensoriel.ashx",
+    "cache_fichier": "cache/html/c271068e24e0bf31cc8499cb74ed13e00df60a01.html",
+    "recupere_le": "2026-07-28T22:40:36.415065+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "amplificateur-sensoriel",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Amplificateur%20sensoriel.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "amplificateur-sensoriel",
+    "resume_court": "Les créatures proches gagnent +5 en Perception et vision nocturne, mais subissent 2d6 dégâts supplémentaires au premier coup reçu chaque round.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "perception_amelioree",
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "degats_directs"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts supplémentaires du même type",
+      "condition_infligee": [],
+      "cible_typique": "rayon de 3 m centré sur le personnage"
+    },
+    "notes_ambiguite": "Le type de dégâts est « du même type » que celui infligé à la créature, donc variable et non un type élémentaire nommé : classé comme « autre ». Le sort améliore les alliés mais inflige aussi des dégâts supplémentaires aux ennemis frappés, ce qui en fait un sort de contrôle de zone hybride offensif-défensif.",
+    "slug": "amplificateur-sensoriel",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:25+00:00",
+    "hash_source": "32e2eb322ee0ae0bd9c7c15e7b9197f94c0a56929c02837fba5f86a279140571"
+  }
+}

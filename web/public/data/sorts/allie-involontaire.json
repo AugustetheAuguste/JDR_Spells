@@ -1,0 +1,108 @@
+{
+  "id": "allie-involontaire",
+  "nom": "Allié involontaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alli%c3%a9%20involontaire.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 0,
+    "Hyp": 0,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage embrouille l'esprit de la cible qui a alors bien du mal à différencier ses amis de ses ennemis pendant une courte période. Quand il s'agit de déterminer si une créature est prise en tenailles, la cible du sort est considérée comme l'alliée du personnage et non comme son ennemie. La cible n'entreprend pas d'autres actions hostiles contre les ennemis du personnage à cause du sort.",
+  "description_html": "<br/><br/>Le personnage embrouille l'esprit de la cible qui a alors bien du mal à différencier ses amis de ses ennemis pendant une courte période. Quand il s'agit de déterminer si une créature est <a class=\"pagelink\" href=\"Pathfinder-RPG.pris%20en%20tenaille.ashx\" title=\"Pris en tenaille\">prise en tenailles</a>, la cible du sort est considérée comme l'alliée du personnage et non comme son ennemie. La cible n'entreprend pas d'autres actions hostiles contre les ennemis du personnage à cause du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alli%c3%a9%20involontaire.ashx",
+    "cache_fichier": "cache/html/2db16ec2b613085fa036766a372354ce4957ce6f.html",
+    "recupere_le": "2026-07-28T22:40:26.396834+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "allie-involontaire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alli%c3%a9%20involontaire.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 0
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 0
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "allie-involontaire",
+    "resume_court": "La cible confond amis et ennemis pendant 1 round et est traitée comme alliée du lanceur.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "embrouille l'esprit de la cible qui a alors bien du mal à différencier ses amis de ses ennemis"
+      ],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "La condition « confus » est la plus proche de l'effet décrit (embrouillement mental, difficulté à différencier amis et ennemis), bien que le texte ne nomme pas explicitement une condition standard. L'effet tactique principal est que la cible est traitée comme alliée pour les tenailles, ce qui relève de la coercition plutôt que de la confusion pure.",
+    "slug": "allie-involontaire",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:01+00:00",
+    "hash_source": "f604258c5cb73aafcfc70c0675ec79cc6ce066e772cadf9fe4d8404e888c4d45"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "mordre-la-main-de-son-maitre-de-groupe",
+  "nom": "Mordre la main de son maître de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mordre%20la%20main%20de%20son%20ma%c3%aetre%20de%20groupe.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 6,
+    "ConU": 6,
+    "Dru": 6,
+    "Inq": 6,
+    "Ens/Mag": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature invoquée par un sort ou un pouvoir magique/niveau, toutes doivent être situées à 9 m les unes des autres.",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort est identique à mordre la main de son maître, à l’exception des différences notées ci-dessus. Le sort affecte toutes les créatures ciblées, même si elles ont été invoquées par des entités différentes.",
+  "description_html": "<hr/>\nCe sort est identique à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mordre%20la%20main%20de%20son%20ma%c3%aetre.ashx\" title=\"Mordre la main de son maître\">mordre la main de son maître</a></i>, à l’exception des différences notées ci-dessus. Le sort affecte toutes les créatures ciblées, même si elles ont été invoquées par des entités différentes.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mordre%20la%20main%20de%20son%20ma%c3%aetre%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/e63650e8a53de954c8ee718f0b2687df05100709.html",
+    "recupere_le": "2026-07-28T23:01:01.908667+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "mordre-la-main-de-son-maitre-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mordre%20la%20main%20de%20son%20ma%c3%aetre%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 6
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 6
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 6
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 6
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "mordre-la-main-de-son-maitre-de-groupe",
+    "resume_court": "Contrôle plusieurs créatures invoquées pour qu'elles attaquent leurs invocateurs pendant 1 round par niveau.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature invoquée par un sort ou un pouvoir magique"
+    },
+    "notes_ambiguite": "Le texte ne décrit pas précisément l'effet du sort, renvoyant à « mordre la main de son maître » sans en reproduire la mécanique. La catégorie « coercition » est déduite du descripteur d'école (coercition) et du contexte (contrôle de créatures invoquées). Aucune condition spécifique n'est énumérée dans ce texte.",
+    "slug": "mordre-la-main-de-son-maitre-de-groupe",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:31+00:00",
+    "hash_source": "810a62eeb5733ab540438116fa6798cbb6495dbe180917f6e9fc4a9c36716439"
+  }
+}

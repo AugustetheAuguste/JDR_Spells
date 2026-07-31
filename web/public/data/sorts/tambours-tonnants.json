@@ -1,0 +1,83 @@
+{
+  "id": "tambours-tonnants",
+  "nom": "Tambours tonnants",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tambours%20tonnants.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "sonore"
+  ],
+  "niveaux": {
+    "Bard": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "4,50 m (3 c)",
+  "cible": "rayonnement en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "Le personnage frappe le sol devant lui, emplissant la zone du fracas de tambours retentissants. Toute créature située dans la zone reçoit 1d8 points de dégâts sonores par niveau de lanceur de sorts (maximum 5d8) et tombe à terre. Un jet de Vigueur réussi permet de réduire les dégâts de moitié et de rester debout.",
+  "description_html": "<br/><br/>Le personnage frappe le sol devant lui, emplissant la zone du fracas de tambours retentissants. Toute créature située dans la zone reçoit 1d8 points de dégâts sonores par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum 5d8) et tombe <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a>. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> réussi permet de réduire les dégâts de moitié et de rester debout.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tambours%20tonnants.ashx",
+    "cache_fichier": "cache/html/b2ea834d4e085cf4f61b06ab255037aaf7157d14.html",
+    "recupere_le": "2026-07-29T07:42:14.545174+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "tambours-tonnants",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tambours%20tonnants.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "tambours-tonnants",
+    "resume_court": "Un cône de fracas retentissant qui blesse et renverse les créatures dans la zone.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "son",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts sonores",
+      "condition_infligee": [
+        "tombe à terre"
+      ],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": "« Tombe à terre » correspond à la condition « chancelant » (perte d'actions et défense dégradée) plutôt qu'à une immobilisation complète, bien que le texte ne détaille pas précisément la durée ou les effets mécaniques exacts.",
+    "slug": "tambours-tonnants",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:15+00:00",
+    "hash_source": "09bf063d7def651f68d435c37b30be4347796390f0639cb41c69fd836f37c84f"
+  }
+}

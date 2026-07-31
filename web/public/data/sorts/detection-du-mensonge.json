@@ -1,0 +1,148 @@
+{
+  "id": "detection-du-mensonge",
+  "nom": "Détection du mensonge",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20du%20mensonge.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 4,
+    "Inq": 4,
+    "Méd": 3,
+    "Pal": 3,
+    "Prê": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "concentration, jusqu’à 1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "non",
+  "description": "Chaque round, le lanceur de sorts se concentre sur une créature située à portée. Grâce aux subtiles perturbations que le sort lui permet de voir dans l’aura de la cible, il sait si celle-ci prononce intentionnellement un mensonge. Détection du mensonge n’indique pas la vérité ni les erreurs commises en toute bonne foi, et il ne détecte pas toujours les semi-vérités.\nChaque round, le personnage peut se concentrer sur un sujet différent.",
+  "description_html": "<br/><br/>Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, le lanceur de sorts se <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentre</a> sur une créature située à <a class=\"pagelink\" href=\"Pathfinder-RPG.port%c3%a9e.ashx\" title=\"portée\">portée</a>. Grâce aux subtiles perturbations que le sort lui permet de voir dans l’aura de la cible, il sait si celle-ci prononce intentionnellement un mensonge. <i>Détection du mensonge</i> n’indique pas la vérité ni les erreurs commises en toute bonne foi, et il ne détecte pas toujours les semi-vérités.<br/><br/>Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, le personnage peut se <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentrer</a> sur un sujet différent.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20du%20mensonge.ashx",
+    "cache_fichier": "cache/html/965913bebb3fd1f274216ab8d263fe817a5ab6f2.html",
+    "recupere_le": "2026-07-28T22:50:53.734024+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "detection-du-mensonge",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20du%20mensonge.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "detection-du-mensonge",
+    "resume_court": "Le lanceur perçoit les mensonges intentionnels prononcés par une créature à portée.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": "La cible_typique pourrait aussi être « allie » puisque le sort fonctionne sur toute créature à portée, mais « ennemi » est retenu car le sort sert typiquement à vérifier les déclarations d'interlocuteurs potentiellement hostiles ou suspects.",
+    "slug": "detection-du-mensonge",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:42+00:00",
+    "hash_source": "6fcb57a442ca93b99bf1615c69a3c6d352050137a59e6144932f0e9bfc9f561a"
+  }
+}

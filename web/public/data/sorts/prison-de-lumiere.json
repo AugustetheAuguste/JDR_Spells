@@ -1,0 +1,132 @@
+{
+  "id": "prison-de-lumiere",
+  "nom": "Prison de lumière",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prison%20de%20lumi%c3%a8re.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Inq": 2,
+    "Magus": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/2 niveaux",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Réflexes, annule",
+  "resistance_magie": "oui",
+  "description": "Des rayons de lumière jaillissent de la main tendue du personnage, encerclant l'espace de chaque cible d'une cage de lumière. Si une cible rate son jet de sauvegarde de Réflexes, elle est enfermée dans la prison de lumière. Une créature enfermée dans une prison de lumière peut attaquer, lancer des sorts et agir normalement tant qu'elle reste dans la prison de lumière. Cependant, si une créature traverse les murs d'une prison de lumière qui l'enferme, elle subit 1d6 points de dégâts et est aveuglée pendant 1 round. Les créatures n'ont pas droit à un jet de sauvegarde pour annuler ces effets. Une fois qu'une créature a franchi les murs d'une prison de lumière qui l'entoure, l'effet prend fin pour cette créature.",
+  "description_html": "<br/><br/>Des rayons de lumière jaillissent de la main tendue du personnage, encerclant l'espace de chaque cible d'une cage de lumière. Si une cible rate son jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a>, elle est enfermée dans la <i>prison de lumière</i>. Une créature enfermée dans une <i>prison de lumière</i> peut attaquer, lancer des sorts et agir normalement tant qu'elle reste dans la <i>prison de lumière</i>. Cependant, si une créature traverse les murs d'une <i>prison de lumière</i> qui l'enferme, elle subit 1d6 points de dégâts et est <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveuglée</a> pendant 1 round. Les créatures n'ont pas droit à un jet de sauvegarde pour annuler ces effets. Une fois qu'une créature a franchi les murs d'une <i>prison de lumière</i> qui l'entoure, l'effet prend fin pour cette créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prison%20de%20lumi%c3%a8re.ashx",
+    "cache_fichier": "cache/html/7e5efde843207dba721334cca449a9184a84d496.html",
+    "recupere_le": "2026-07-28T23:04:44.052320+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "prison-de-lumiere",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prison%20de%20lumi%c3%a8re.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "prison-de-lumiere",
+    "resume_court": "Des rayons de lumière enferment des créatures dans une cage qui les blesse si elles tentent de s'échapper.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "degats_directs",
+      "rayon_ou_projectile",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts",
+      "condition_infligee": [
+        "elle subit 1d6 points de dégâts et est aveuglée pendant 1 round"
+      ],
+      "cible_typique": "une créature/2 niveaux"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Bien que le sort soit de l'école Évocation avec le descripteur « lumière », les dégâts infligés lors de la traversée des murs ne sont pas qualifiés de « dégâts de feu » ou d'un autre type énergétique spécifique. J'ai retenu « feu » par inférence du descripteur lumière, mais cette valeur n'est pas directement justifiée par le texte fourni. Une annotation plus prudente aurait pu laisser type_degats à null.",
+    "slug": "prison-de-lumiere",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:37+00:00",
+    "hash_source": "042ef63f7edc73d5c87bbf5236de1c48af3aadf7bfbdd904fe50d00777180103"
+  }
+}

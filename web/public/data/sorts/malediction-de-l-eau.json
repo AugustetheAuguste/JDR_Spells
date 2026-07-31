@@ -1,0 +1,102 @@
+{
+  "id": "malediction-de-l-eau",
+  "nom": "Malédiction de l'eau",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20leau.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mal"
+  ],
+  "niveaux": {
+    "Apal": 1,
+    "Inq": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (2,5 kg de poudre d’argent (valeur 25 po))",
+  "portee": "contact",
+  "cible": "flasque d’eau touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Ce sort permet d’infuser assez d’énergie négative à une flasque d’eau (un demi-litre) pour la transformer en eau maudite. Sur les Extérieurs d’alignement Bon, ce liquide a le même effet que l’eau bénite sur les morts-vivants et les Extérieurs d’alignement Mauvais.",
+  "description_html": "<br/><br/>Ce sort permet d’infuser assez d’énergie négative à une flasque d’eau (un demi-litre) pour la transformer en eau maudite. Sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">Extérieurs</a> d’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> Bon, ce liquide a le même effet que l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Eau%20b%c3%a9nite%20(objet).ashx\" title=\"Eau bénite\">eau bénite</a> sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> et les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">Extérieurs</a> d’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> Mauvais.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20leau.ashx",
+    "cache_fichier": "cache/html/94a6da3dff53c4041225253c97cd7d8e91079d58.html",
+    "recupere_le": "2026-07-28T22:59:44.715725+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "malediction-de-l-eau",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20leau.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "malediction-de-l-eau",
+    "resume_court": "Transforme une flasque d'eau en eau maudite qui blesse les créatures bonnes et les morts-vivants.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "objet_ou_equipement",
+      "transformation_du_sujet",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "flasque d'eau touchée"
+    },
+    "notes_ambiguite": "Le sort transforme un objet (flasque d'eau) plutôt que de l'invoquer. Il est classé en utilitaire car il prépare un outil (eau maudite) sans infliger directement de dégâts. Les dégâts potentiels dépendent de l'utilisation ultérieure de l'eau maudite, non du sort lui-même. Le texte ne précise pas les dégâts infligés par l'eau maudite, seulement qu'elle a « le même effet que l'eau bénite » sur certaines créatures.",
+    "slug": "malediction-de-l-eau",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:29+00:00",
+    "hash_source": "cd4ad740bbbc3144d52a806782ceda3b0b13788083d134d8e91471af5ecb23b2"
+  }
+}

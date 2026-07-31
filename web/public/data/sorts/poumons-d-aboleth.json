@@ -1,0 +1,126 @@
+{
+  "id": "poumons-d-aboleth",
+  "nom": "Poumons d'Aboleth",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poumons%20dAboleth.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (algues)",
+  "portee": "contact",
+  "cible": "créatures vivantes touchées",
+  "duree": "1 heure/niveau ; voir description",
+  "jet_de_sauvegarde": "Volonté annule",
+  "resistance_magie": "oui",
+  "description": "Les cibles peuvent respirer librement sous l’eau. Néanmoins, elles ne peuvent plus respirer d’air. Divisez la durée de manière égale entre toutes les créatures que vous touchez. Ce sort n’a aucun effet sur les créatures qui peuvent déjà respirer sous l’eau.",
+  "description_html": "<br/><br/>Les cibles peuvent respirer librement sous l’eau. Néanmoins, elles ne peuvent plus respirer d’air. Divisez la durée de manière égale entre toutes les créatures que vous touchez. Ce sort n’a aucun effet sur les créatures qui peuvent déjà respirer sous l’eau.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poumons%20dAboleth.ashx",
+    "cache_fichier": "cache/html/a003db360dcb465e6d8b63114a44ba5c4de022b5.html",
+    "recupere_le": "2026-07-28T23:04:26.025347+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "poumons-d-aboleth",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poumons%20dAboleth.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "poumons-d-aboleth",
+    "resume_court": "Les cibles respirent sous l'eau mais perdent la capacité à respirer l'air pendant 1 heure par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures vivantes touchées"
+    },
+    "notes_ambiguite": "Le sort améliore la respiration aquatique mais dégrade la respiration aérienne. Classé en `amelioration` car l'effet principal est une capacité nouvelle (respirer sous l'eau), bien que le coût soit une perte. La cible est `allie` car le sort requiert le contact volontaire et s'applique à des créatures que le lanceur choisit de toucher.",
+    "slug": "poumons-d-aboleth",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:46+00:00",
+    "hash_source": "8463a76078ebfa316a43eb481d9cc5f477644a7d72d96dc6f859ce597bc20131"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "aiguillon-persuasif",
+  "nom": "Aiguillon persuasif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aiguillon%20persuasif.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "douleur"
+  ],
+  "niveaux": {
+    "Inq": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée et 1 minute",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Les yeux du personnage flamboient et la cible reçoit 1d6 points de dégâts non létaux. Pendant la minute qui suit, le personnage gagne un bonus de circonstance de +4 aux tests d’Intimidation contre la cible.",
+  "description_html": "<br/><br/>Les yeux du personnage flamboient et la cible reçoit 1d6 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non%20l%c3%a9taux.ashx\" title=\"Dégâts non létaux\">dégâts non létaux</a>. Pendant la minute qui suit, le personnage gagne un bonus de circonstance de +4 aux tests d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> contre la cible.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aiguillon%20persuasif.ashx",
+    "cache_fichier": "cache/html/05cb5954185004d77b950e3b21c678378dfe7bd9.html",
+    "recupere_le": "2026-07-28T22:40:12.394035+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "aiguillon-persuasif",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aiguillon%20persuasif.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "aiguillon-persuasif",
+    "resume_court": "Inflige des dégâts non létaux et accorde un bonus aux tests d'Intimidation pendant 1 minute.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts non létaux",
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Les dégâts non létaux sont classés comme contondant par défaut en l'absence de précision du type énergétique. Le sort combine un effet de combat (dégâts) et un effet social (bonus d'Intimidation), d'où les deux rôles tactiques.",
+    "slug": "aiguillon-persuasif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:14+00:00",
+    "hash_source": "0075585ca56668b2237ea10a66e7e6c9cc082698e79f5a31dd1302aeb8c07c8c"
+  }
+}

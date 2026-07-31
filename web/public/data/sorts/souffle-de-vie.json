@@ -1,0 +1,105 @@
+{
+  "id": "souffle-de-vie",
+  "nom": "Souffle de vie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20vie.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 5,
+    "Prê": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif) ou réduit de moitié (voir description)",
+  "resistance_magie": "oui (inoffensif) ou oui (voir description)",
+  "description": "Ce sort soigne 5d8 points de vie + 1 par niveau de lanceur de sorts (maximum +25). Contrairement aux autres sorts de soin, souffle de vie peut ramener une créature récemment décédée à la vie. Si le personnage lance ce sort sur une créature morte il y a 1 round, les soins sont pris en compte. Si les points de vie de la créature atteignent alors une valeur négative supérieure à son total de Constitution, elle revient à la vie et se stabilise au niveau de ses nouveaux points de vie. En revanche, si ses points de vie négatifs sont d’une valeur inférieure à son total de Constitution, la créature reste morte. Les créatures qui reviennent à la vie grâce à ce sort gagnent un niveau négatif qui se dissipe au bout d’une journée.\nSouffle de vie ne permet pas de sauver des créatures tuées par un effet de mort.\nComme les sorts de soins, souffle de vie blesse les morts-vivants ; il ne permet par ailleurs pas de les ramener à la vie.",
+  "description_html": "<br/><br/>Ce sort soigne 5d8 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> + 1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum +25). Contrairement aux autres sorts de soin, <i>souffle de vie</i> peut ramener une créature récemment décédée à la vie. Si le personnage lance ce sort sur une créature morte il y a 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, les soins sont pris en compte. Si les <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> de la créature atteignent alors une valeur négative supérieure à son total de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>, elle revient à la vie et se <a class=\"pagelink\" href=\"Pathfinder-RPG.stable.ashx\" title=\"Stable\">stabilise</a> au niveau de ses nouveaux <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a>. En revanche, si ses <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> négatifs sont d’une valeur inférieure à son total de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>, la créature reste morte. Les créatures qui reviennent à la vie grâce à ce sort gagnent un <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> qui se dissipe au bout d’une journée.<br/><br/><i>Souffle de vie</i> ne permet pas de sauver des créatures tuées par un effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">mort</a>.<br/><br/>Comme les sorts de soins, souffle de vie blesse les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> ; il ne permet par ailleurs pas de les ramener à la vie.<br/><br/>",
+  "mythique": {
+    "description": "Le sort soigne 5d12 points de dégâts + 1 point par niveau de lanceur de sorts (+25 maximum). Il peut ramener à la vie une créature morte à cause d’une perte de pv depuis 2 rounds au maximum. Si la cible a été tuée par un effet de mort qui autorise un jet de sauvegarde, ce sort lui permet d’effectuer un autre jet de sauvegarde contre cet effet. Si cette sauvegarde réussit, la créature revient à la vie avec -10 pv plus le montant de points soignés grâce à ce sort.\nAmplifié (9ème). Si le personnage dépense deux utilisations de pouvoir mythique, il peut cibler jusqu’à une créature par niveau de lanceur de sorts situé à 9 mètres ou moins. Par ailleurs, il peut cibler une créature morte depuis un nombre de rounds maximum égal à son niveau de lanceur de sorts.",
+    "description_html": "Le sort soigne 5d12 points de dégâts + 1 point par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (+25 maximum). Il peut ramener à la vie une créature morte à cause d’une perte de pv depuis 2 rounds au maximum. Si la cible a été tuée par un effet de mort qui autorise un jet de sauvegarde, ce sort lui permet d’effectuer un autre jet de sauvegarde contre cet effet. Si cette sauvegarde réussit, la créature revient à la vie avec -10 pv plus le montant de points soignés grâce à ce sort.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (9ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il peut cibler jusqu’à une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> situé à 9 mètres ou moins. Par ailleurs, il peut cibler une créature morte depuis un nombre de rounds maximum égal à son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20vie.ashx",
+    "cache_fichier": "cache/html/5eaeb5790a901d6b9a5bb6d0727a83392f6bc13d.html",
+    "recupere_le": "2026-07-29T07:41:05.561912+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "souffle-de-vie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20vie.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 5
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "souffle-de-vie",
+    "resume_court": "Soigne une créature ou la ramène à la vie si elle est morte depuis peu, mais blesse les morts-vivants.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "attaque_de_contact"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": "positif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "blesse les morts-vivants",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts d'énergie positive aux morts-vivants (« blesse les morts-vivants »), bien que sa fonction principale soit la guérison. La cible typique est « allie » car le sort est inoffensif pour les créatures vivantes, mais il peut aussi être lancé sur des morts-vivants hostiles pour les blesser.",
+    "slug": "souffle-de-vie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:53+00:00",
+    "hash_source": "00a4deee4d5191c261a1c2d71ee22c2abf70cf08477b0b36b55c64b0d10e79b1"
+  }
+}

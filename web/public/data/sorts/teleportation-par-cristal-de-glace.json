@@ -1,0 +1,110 @@
+{
+  "id": "teleportation-par-cristal-de-glace",
+  "nom": "Téléportation par cristal de glace",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20par%20cristal%20de%20glace.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [
+    "froid"
+  ],
+  "niveaux": {
+    "Con": 5,
+    "ConU": 6,
+    "Ens/Mag": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "une créature",
+  "duree": "1d4 rounds ou instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme téléportation mais sert à emmener le personnage ou une autre créature dans un endroit sûr de son choix (la cible peut emporter des objets avec elle tant que leur poids ne dépasse pas sa charge lourde). Le personnage envoie la cible vers une destination très familière uniquement. La cible est tout d’abord piégée dans la glace (solidité 0, 3 points de vie par tranche de 2,5 centimètres d’épaisseur, 1 centimètre d’épaisseur par niveau de lanceur de sorts) pendant 1d4 rounds. Pendant cette période, elle est paralysée, consciente mais incapable d’entreprendre la moindre action physique et commence à s’estomper alors que la téléportation fait effet. Au bout de ces 1d4 rounds, la cible est téléportée à un endroit spécifique. Les points de vie de la glace tombent à 0 et elle fond rapidement. Si quelqu’un détruit la glace avant que la cible ne soit téléportée, le sort se termine et la téléportation n’a pas lieu.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> mais sert à emmener le personnage ou une autre créature dans un endroit sûr de son choix (la cible peut emporter des objets avec elle tant que leur poids ne dépasse pas sa <a class=\"pagelink\" href=\"Pathfinder-RPG.Poids%20transportable.ashx\" title=\"Poids transportable\">charge lourde</a>). Le personnage envoie la cible vers une destination très familière uniquement. La cible est tout d’abord piégée dans la glace (<a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> 0, 3 <a class=\"pagelink\" href=\"Pathfinder-RPG.pv.ashx\" title=\"pv\">points de vie</a> par tranche de 2,5 centimètres d’épaisseur, 1 centimètre d’épaisseur par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>) pendant 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Pendant cette période, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysée</a>, consciente mais incapable d’entreprendre la moindre action physique et commence à s’estomper alors que la téléportation fait effet. Au bout de ces 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>, la cible est téléportée à un endroit spécifique. Les points de vie de la glace tombent à 0 et elle fond rapidement. Si quelqu’un détruit la glace avant que la cible ne soit téléportée, le sort se termine et la téléportation n’a pas lieu.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20par%20cristal%20de%20glace.ashx",
+    "cache_fichier": "cache/html/1eb30af629ca6788deaa87badeda2fcafb4bf738.html",
+    "recupere_le": "2026-07-29T07:42:02.615000+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "teleportation-par-cristal-de-glace",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20par%20cristal%20de%20glace.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 5
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "teleportation-par-cristal-de-glace",
+    "resume_court": "La cible est piégée dans la glace pendant 1d4 rounds, puis téléportée vers une destination familière.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "entrave_ou_immobilisation",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est paralysée, consciente mais incapable d'entreprendre la moindre action physique"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La cible peut être un allié ou le lanceur lui-même. Le sort fonctionne comme téléportation mais le texte ne précise pas si la cible peut être hostile ; la mention « endroit sûr de son choix » et « la cible peut emporter des objets » suggère une coopération. Classé en cible_typique « allie » par défaut, mais pourrait inclure le lanceur (« soi »). La paralysie est une conséquence du piégeage dans la glace, pas un effet indépendant.",
+    "slug": "teleportation-par-cristal-de-glace",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:19+00:00",
+    "hash_source": "29fb0fcac524ccc8c1b8c20d22f34e4f45f58ecc81afd840d823ee9ab989d6f9"
+  }
+}

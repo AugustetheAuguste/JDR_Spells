@@ -1,0 +1,139 @@
+{
+  "id": "disparition",
+  "nom": "Disparition",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disparition.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Occ": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau (jusqu'à 5 rounds) (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme un sort d’invisibilité sauf que les effets ne durent que 1 round par niveau de lanceur de sorts (5 rounds au maximum). Comme invisibilité, le sort se termine immédiatement quand le sujet attaque une créature.",
+  "description_html": "<hr/>\nCe sort fonctionne comme un sort d’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.invisibilit%c3%a9.ashx\" title=\"Invisibilité\">invisibilité</a></i> sauf que les effets ne durent que 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (5 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> au maximum). Comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.invisibilit%c3%a9.ashx\" title=\"Invisibilité\">invisibilité</a></i>, le sort se termine immédiatement quand le sujet attaque une créature.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disparition.ashx",
+    "cache_fichier": "cache/html/aebc7d784c61f4576ec334bc2160355aca225133.html",
+    "recupere_le": "2026-07-28T22:51:16.549074+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "disparition",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disparition.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "disparition",
+    "resume_court": "Le sujet devient invisible pendant 1 round par niveau (max 5), mais l'effet cesse s'il attaque.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "invisibilite_ou_dissimulation",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort est inoffensif et peut cibler un allié, mais fonctionne aussi en combat offensif pour le lanceur lui-même ou un allié. La cible_typique « allie » reflète le caractère inoffensif du sort et sa nature de bénéfice.",
+    "slug": "disparition",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:47+00:00",
+    "hash_source": "1064447e1bac717574d54fd5be9ba93592e318e55efb3367c1a50f5cdac33832"
+  }
+}

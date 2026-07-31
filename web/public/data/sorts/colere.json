@@ -1,0 +1,104 @@
+{
+  "id": "colere",
+  "nom": "Colère",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Inq": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une ronce)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 minute",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage concentre sa colère sur un seul ennemi. Il en choisit un situé dans son champ de vision et gagne un bonus de moral de +1 aux jets d'attaque et de dégâts contre cette créature pour chaque tranche de trois niveaux de lanceur de sorts (+1 au minimum, +3 au maximum). Il bénéficie également de ce bonus pour les tests de niveau de lanceur de sorts destinés à vaincre la résistance à la magie de la créature, si elle en a une. Au niveau 12, le personnage bénéficie des avantages du don Science du critique sur les jets d'attaque contre cette créature. Cet effet ne se cumule pas avec tout autre effet qui augmente la plage de critique d'une arme.",
+  "description_html": "<hr/>\nLe personnage concentre sa colère sur un seul ennemi. Il en choisit un situé dans son champ de vision et gagne un bonus de moral de +1 aux jets d'attaque et de dégâts contre cette créature pour chaque tranche de trois <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (+1 au minimum, +3 au maximum). Il bénéficie également de ce bonus pour les tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> destinés à vaincre la <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> de la créature, si elle en a une. Au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 12, le personnage bénéficie des avantages du don <a class=\"pagelink\" href=\"Pathfinder-RPG.Science%20du%20critique.ashx\" title=\"Science du critique\">Science du critique</a> sur les jets d'attaque contre cette créature. Cet effet ne se cumule pas avec tout autre effet qui augmente la plage de critique d'une arme.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Colère partagée",
+      "id": "colere-partagee",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "émotion",
+        "mental"
+      ],
+      "niveaux": {
+        "Inq": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M (une ronce)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "jusqu'à une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+      "duree": "1 minute",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme colère mais permet à plusieurs créatures de bénéficier du bonus dont le personnage dispose contre un adversaire désigné. Tous les sujets de la colère partagée reçoivent des bonus contre la même créature.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.col%c3%a8re.ashx\" title=\"Colère\">colère</a></i> mais permet à plusieurs créatures de bénéficier du bonus dont le personnage dispose contre un adversaire désigné. Tous les sujets de la <i>colère partagée</i> reçoivent des bonus contre la même créature.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re.ashx",
+    "cache_fichier": "cache/html/842c75411b429c320d1b133b3d2eba877d6f6018.html",
+    "recupere_le": "2026-07-28T22:46:50.470073+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "colere",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "colere",
+    "resume_court": "Le lanceur concentre sa colère sur un ennemi et gagne un bonus aux attaques et dégâts contre lui.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "charme_ou_coercition",
+      "amelioration_de_capacite",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "colere",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:03+00:00",
+    "hash_source": "b2047c2de3d48caff9300401b4d030ebf830249c7ff707c3b0b899bebbb252e7"
+  }
+}

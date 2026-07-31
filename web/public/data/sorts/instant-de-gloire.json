@@ -1,0 +1,117 @@
+{
+  "id": "instant-de-gloire",
+  "nom": "Instant de gloire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Instant%20de%20gloire.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Prê": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (de la fourrure de lapin)",
+  "portee": "15 m (10 c)",
+  "cible": "lanceur de sorts et les alliés situés dans un rayon de 15 m (10 c) autour du lanceur de sorts",
+  "duree": "1 minute/niveau ou jusqu’à déchargement",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Toutes les créatures affectées par le sort sont susceptibles de rencontrer d’immenses succès et de se couvrir de gloire. Si la créature affectée bénéficie d’un bonus de moral de n’importe quel type, il peut le doubler pour un jet de dé ou un test, avant de lancer le dé. Une fois que la créature a utilisé le sort, il ne l’affecte plus.",
+  "description_html": "<br/><br/>Toutes les créatures affectées par le sort sont susceptibles de rencontrer d’immenses succès et de se couvrir de gloire. Si la créature affectée bénéficie d’un bonus de moral de n’importe quel type, il peut le doubler pour un jet de dé ou un test, avant de lancer le dé. Une fois que la créature a utilisé le sort, il ne l’affecte plus.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Instant%20de%20gloire.ashx",
+    "cache_fichier": "cache/html/01a7d25b7e957b0ecfd434866112f6947195348c.html",
+    "recupere_le": "2026-07-28T22:57:18.539894+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "instant-de-gloire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Instant%20de%20gloire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "instant-de-gloire",
+    "resume_court": "Le lanceur et ses alliés peuvent doubler un bonus de moral une fois pour un jet ou un test.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "charme_ou_coercition",
+      "effet_mental",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "lanceur de sorts et les alliés situés dans un rayon de 15 m (10 c) autour du lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort affecte le lanceur lui-même et ses alliés, ce qui justifie la cible « allie » au sens large (incluant le lanceur dans le groupe bénéficiaire). La mécanique de doublement du bonus de moral est classée comme bonus_chiffre car elle augmente numériquement l'effet d'un bonus existant.",
+    "slug": "instant-de-gloire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:36+00:00",
+    "hash_source": "e01a7da4d25678a806c65ccb329523c97caed78f3e17f503b6fc115d3a1801d7"
+  }
+}

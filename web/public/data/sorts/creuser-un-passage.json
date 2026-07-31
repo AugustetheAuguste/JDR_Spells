@@ -1,0 +1,102 @@
+{
+  "id": "creuser-un-passage",
+  "nom": "Creuser un passage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Creuser%20un%20passage.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 5,
+    "Ens/Mag": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une pioche miniature en diamant valant 500 po)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "terre ou roche meuble dans jusqu'à un cube de 1.5 mètres/niveau",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "voir texte",
+  "resistance_magie": "non",
+  "description": "Le personnage peut extraire et déplacer une quantité de neige, de terre, de poussière, de sable, de morceaux de glace ou de roche meuble ou compactée (chacun n'excédant pas 1.5 mètre de diamètre) dont le volume équivaut à un cube de 1.5 mètre d'arête par niveau. Si le personnage est enterré, il peut ouvrir un espace autour de lui et utiliser les cubes restants pour creuser un tunnel. Ce sort est autrement similaire à excavation expéditive. Creuser un passage n'a aucun effet sur les créatures de terre, la roche solide et la glace solide.",
+  "description_html": "<br/><br/>Le personnage peut extraire et déplacer une quantité de neige, de terre, de poussière, de sable, de morceaux de glace ou de roche meuble ou compactée (chacun n'excédant pas 1.5 mètre de diamètre) dont le volume équivaut à un cube de 1.5 mètre d'arête par niveau. Si le personnage est enterré, il peut ouvrir un espace autour de lui et utiliser les cubes restants pour creuser un tunnel. Ce sort est autrement similaire à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.excavation%20exp%c3%a9ditive.ashx\" title=\"Excavation expéditive\">excavation expéditive</a></i>. <i>Creuser un passage</i> n'a aucun effet sur les créatures de terre, la roche solide et la glace solide.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Creuser%20un%20passage.ashx",
+    "cache_fichier": "cache/html/e20dcadb6dca21a2dbe625beaa0a536957e7fd34.html",
+    "recupere_le": "2026-07-28T22:49:40.198534+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "creuser-un-passage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Creuser%20un%20passage.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 5
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "creuser-un-passage",
+    "resume_court": "Le lanceur extrait et déplace de la terre ou de la roche meuble dans un volume cubique.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "terrain_ou_environnement",
+      "transformation_du_sujet",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "terre ou roche meuble dans jusqu'à un cube de 1.5 mètres/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "creuser-un-passage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:07+00:00",
+    "hash_source": "d2896a905363d288de96306edd0ddb173f70200cdada9da86cddaf2895ab9ce9"
+  }
+}

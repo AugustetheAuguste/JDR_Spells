@@ -1,0 +1,89 @@
+{
+  "id": "brouillard-des-tertres",
+  "nom": "Brouillard des tertres",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brouillard%20des%20tertres.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)",
+  "cible": "étendue de brouillard sur une zone de 6 m de rayon et de 6 m de hauteur",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Brouillard des tertres crée un banc de brume semblable à celui que crée nappe de brouillard, à la seule différence que ses vapeurs sont noires et présentent un lien nécromantique avec le personnage. Ces vapeurs ne gênent pas la vision du personnage. En raison du lien que celui-ci entretient avec le brouillard, si la moindre partie de ce brouillard se trouve à moins de 9 mètres du personnage, toutes les créatures présentes dans le brouillard sont considérées comme à portée quand le personnage utilise n’importe lesquels de ses maléfices ayant une portée maximale de 9 mètres. Supposons, par exemple, que le personnage possède le maléfice sommeil, qu’il se trouve à 7,5 mètres de la lisière du brouillard et qu’un adversaire se trouve à 12 mètres à l’autre extrémité du brouillard. Le personnage peut utiliser son maléfice de sommeil sur cet adversaire, même si ce dernier se trouve en réalité à 19,5 mètres du personnage.",
+  "description_html": "<br/><br/>Brouillard des tertres crée un banc de brume semblable à celui que crée <i><a class=\"pagelink\" href=\"Pathfinder-RPG.nappe%20de%20brouillard.ashx\" title=\"Nappe de brouillard\">nappe de brouillard</a></i>, à la seule différence que ses vapeurs sont noires et présentent un lien nécromantique avec le personnage. Ces vapeurs ne gênent pas la vision du personnage. En raison du lien que celui-ci entretient avec le brouillard, si la moindre partie de ce brouillard se trouve à moins de 9 mètres du personnage, toutes les créatures présentes dans le brouillard sont considérées comme à portée quand le personnage utilise n’importe lesquels de ses maléfices ayant une portée maximale de 9 mètres.\nSupposons, par exemple, que le personnage possède le maléfice sommeil, qu’il se trouve à 7,5 mètres de la lisière du brouillard et qu’un adversaire se trouve à 12 mètres à l’autre extrémité du brouillard. Le personnage peut utiliser son maléfice de sommeil sur cet adversaire, même si ce dernier se trouve en réalité à 19,5 mètres du personnage.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brouillard%20des%20tertres.ashx",
+    "cache_fichier": "cache/html/139b223efee1ff35773f234e9d8c79eeea6a8762.html",
+    "recupere_le": "2026-07-28T22:44:58.249342+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "brouillard-des-tertres",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brouillard%20des%20tertres.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "brouillard-des-tertres",
+    "resume_court": "Crée un banc de brume noire qui étend la portée des maléfices du lanceur jusqu'à 9 mètres.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "étendue de brouillard sur une zone de 6 m de rayon et de 6 m de hauteur"
+    },
+    "notes_ambiguite": null,
+    "slug": "brouillard-des-tertres",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:17+00:00",
+    "hash_source": "99440f736f008f3371c0dec7d772f6d748bc3f9ed1cef97fb9b237d71660aa67"
+  }
+}

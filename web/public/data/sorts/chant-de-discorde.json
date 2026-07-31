@@ -1,0 +1,91 @@
+{
+  "id": "chant-de-discorde",
+  "nom": "Chant de discorde",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20discorde.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental",
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 5,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "créatures situées dans une étendue de 6 m (4 c) de rayon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort incite les créatures situées dans la zone à s’entre-tuer plutôt qu’à s’en prendre à leurs adversaires. Chaque round, toute créature affectée a 50 % de chances de se ruer sur la cible la plus proche (déterminez le comportement de chacune au début de son tour de jeu). Une créature qui n’attaque pas son voisin le plus proche est libre d’agir comme elle le désir pour le round en cours. Les créatures qui attaquent leurs compagnons emploient tous les moyens à leur disposition, usant de leurs sorts les plus meurtriers et de leurs techniques de combat les plus avantageuses. Néanmoins, elles ne s’en prennent pas aux cibles inconscientes.",
+  "description_html": "<br/><br/>Ce sort incite les créatures situées dans la zone à s’entre-tuer plutôt qu’à s’en prendre à leurs adversaires. Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, toute créature affectée a 50 % de chances de se ruer sur la cible la plus proche (déterminez le comportement de chacune au début de son tour de jeu). Une créature qui n’attaque pas son voisin le plus proche est libre d’agir comme elle le désir pour le <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> en cours. Les créatures qui attaquent leurs compagnons emploient tous les moyens à leur disposition, usant de leurs sorts les plus meurtriers et de leurs techniques de combat les plus avantageuses. Néanmoins, elles ne s’en prennent pas aux cibles <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconscientes</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20discorde.ashx",
+    "cache_fichier": "cache/html/c0b9dc0100eb49f7f3fe687a8be025bc291015e3.html",
+    "recupere_le": "2026-07-28T22:46:14.469876+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chant-de-discorde",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20discorde.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chant-de-discorde",
+    "resume_court": "Les créatures d'une zone s'entre-tuent aléatoirement au lieu de combattre leurs vrais adversaires.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures situées dans une étendue de 6 m (4 c) de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "chant-de-discorde",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:44+00:00",
+    "hash_source": "1d472da96870979b053981016b950112cc7dbe5b1a5b7433be6f49dbbd761add"
+  }
+}

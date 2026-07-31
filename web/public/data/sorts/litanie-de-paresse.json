@@ -1,0 +1,105 @@
+{
+  "id": "litanie-de-paresse",
+  "nom": "Litanie de paresse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20paresse.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 1,
+    "Inq": 1,
+    "Pal": 1
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage ralentit les réflexes défensifs de la cible avec un sermon contre les méfaits de la paresse. La cible ne peut pas faire d’attaque d’opportunité ni lancer de sorts sur la défensive.\nQuand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>Le personnage ralentit les réflexes défensifs de la cible avec un sermon contre les méfaits de la paresse. La cible ne peut pas faire d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d’opportunité</a> ni lancer de sorts sur la défensive.<br/><br/>Quand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20paresse.ashx",
+    "cache_fichier": "cache/html/f117d1d4d8235b62e7fd4fa00c27f9c4bc485198.html",
+    "recupere_le": "2026-07-28T22:58:49.666987+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "litanie-de-paresse",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20paresse.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "litanie-de-paresse",
+    "resume_court": "Un sermon qui empêche la cible de faire des attaques d'opportunité ou de lancer des sorts sur la défensive pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee",
+      "communication_ou_langage"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas une condition nommée de la liste standard (aveugle, étourdi, etc.), mais restreint les actions de la cible. La catégorie « entrave » s'applique car le sort restreint les actions sans infliger de dégâts. La durée est instantanée au sens où l'effet se résout en 1 round sans persister au-delà.",
+    "slug": "litanie-de-paresse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:11+00:00",
+    "hash_source": "3419ca51d4949d039f5cf12f848e2b57b8bab2b08b8aaffa92bf45e742f8fa24"
+  }
+}

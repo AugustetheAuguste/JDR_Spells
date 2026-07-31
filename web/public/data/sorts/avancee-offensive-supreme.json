@@ -1,0 +1,89 @@
+{
+  "id": "avancee-offensive-supreme",
+  "nom": "Avancée offensive suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avanc%c3%a9e%20offensive%20supr%c3%aame.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5,
+    "Magus": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "le personnage",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme avancée offensive, sauf que le personnage peut effectuer une unique attaque au corps à corps contre chaque créature auprès de laquelle il passe pendant son avancée de 9 mètres. Il ne peut pas attaquer une même créature plus d’une fois grâce à ce sort.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.avanc%c3%a9e%20offensive.ashx\" title=\"Avancée offensive\">avancée offensive</a></i>, sauf que le personnage peut effectuer une unique attaque au corps à corps contre chaque créature auprès de laquelle il passe pendant son avancée de 9 mètres. Il ne peut pas attaquer une même créature plus d’une fois grâce à ce sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avanc%c3%a9e%20offensive%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/92e38e2e4adafad75211bc3b6f27f4c4507ae136.html",
+    "recupere_le": "2026-07-28T22:42:50.977257+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "avancee-offensive-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avanc%c3%a9e%20offensive%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "avancee-offensive-supreme",
+    "resume_court": "Le lanceur avance de 9 mètres et effectue une attaque au corps à corps contre chaque créature rencontrée.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le personnage peut effectuer une unique attaque au corps à corps contre chaque créature auprès de laquelle il passe"
+    },
+    "notes_ambiguite": "Le texte ne précise pas le type de dégâts infligés par les attaques au corps à corps, qui dépend de l'arme du personnage. type_degats reste null car aucun type énergétique n'est nommé dans la description du sort lui-même.",
+    "slug": "avancee-offensive-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:31+00:00",
+    "hash_source": "b98ea8e35881601ea5a580067a4ed2ef2e135ab450c34f40a901ca8262dc86ca"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "appel-du-neant",
+  "nom": "Appel du néant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20n%c3%a9ant.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Les créatures adjacentes au moment du lancer du sort et au début de chaque tour subissent 2d6 points de dégâts. De plus, elles sont fatiguées, ne peuvent respirer, parler, ou lancer de sorts à composante verbale tant qu'ils restent adjacents. Un jet de Réflexes réussi annule la fatigue et réduit les dommages de moitié, mais n'annule pas les autres effets du sort.",
+  "description_html": "<br/><br/>Les créatures adjacentes au moment du lancer du sort et au début de chaque tour subissent 2d6 points de dégâts. De plus, elles sont <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguées</a>, ne peuvent respirer, parler, ou lancer de sorts à composante verbale tant qu'ils restent adjacents. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> réussi annule la fatigue et réduit les dommages de moitié, mais n'annule pas les autres effets du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20n%c3%a9ant.ashx",
+    "cache_fichier": "cache/html/0a7125c18333b0e9e19dc7803a7983bc4b40c671.html",
+    "recupere_le": "2026-07-28T22:41:20.470184+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "appel-du-neant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20n%c3%a9ant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "appel-du-neant",
+    "resume_court": "Le lanceur crée une zone de vide autour de lui qui blesse et fatigue les créatures adjacentes.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts",
+      "condition_infligee": [
+        "elles sont fatiguées"
+      ],
+      "cible_typique": "Les créatures adjacentes au moment du lancer du sort et au début de chaque tour"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts sans type énergétique nommé (feu, froid, etc.), classés comme « autre ». La fatigue correspond à la condition « chancelant » (une seule action par round). Les restrictions respiratoires et verbales sont des effets d'entrave mais ne correspondent pas à une condition listée distincte.",
+    "slug": "appel-du-neant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:56+00:00",
+    "hash_source": "c4810da9915c5b58d8cc66de9deddd34ba8dd2fdbb7e57ef6d8fbbdee8a2d932"
+  }
+}

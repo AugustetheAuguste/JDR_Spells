@@ -1,0 +1,277 @@
+{
+  "id": "hebetement",
+  "nom": "Hébétement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9b%c3%a9tement.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 0,
+    "Cham": 0,
+    "Con": 0,
+    "ConU": 0,
+    "Hyp": 0,
+    "Inq": 0,
+    "Ens/Mag": 0,
+    "Magus": 0,
+    "Méd": 0,
+    "Occ": 0,
+    "Psy": 0,
+    "Sor": 0,
+    "Spi": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un brin de laine ou une substance similaire)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 humanoïde de 4 DV ou moins",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort embue l’esprit d’un humanoïde possédant 4 DV ou moins, ce qui l’empêche d’entreprendre la moindre action. Les humanoïdes ayant au moins 5 DV sont immunisés aux effets d’hébétement. La victime est hébétée mais pas étourdie, de sorte que ses adversaires ne bénéficient d’aucun avantage lorsqu’ils s’en prennent à elle. Si une créature a été hébétée par ce sort, elle ne peut plus être affectée par celui-ci pendant une minute.",
+  "description_html": "<hr/>\nCe sort embue l’esprit d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20humano%c3%afde.ashx\" title=\"Humanoïde\">humanoïde</a> possédant 4 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ou moins, ce qui l’empêche d’entreprendre la moindre action. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20humano%c3%afde.ashx\" title=\"Humanoïde\">humanoïdes</a> ayant au moins 5 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> sont <a class=\"pagelink\" href=\"Pathfinder-RPG.immunis%c3%a9.ashx\" title=\"immunisé\">immunisés</a> aux effets d’<i>hébétement</i>. La victime est <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébétée</a> mais pas <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdie</a>, de sorte que ses adversaires ne bénéficient d’aucun avantage lorsqu’ils s’en prennent à elle. Si une créature a été <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébétée</a> par ce sort, elle ne peut plus être affectée par celui-ci pendant une minute.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Hébétement de monstre",
+      "id": "hebetement-de-monstre",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Bard": 2,
+        "Con": 1,
+        "ConU": 1,
+        "Hyp": 2,
+        "Ens/Mag": 2,
+        "Méd": 2,
+        "Occ": 2,
+        "Psy": 2,
+        "San": 2,
+        "Sor": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M (un brin de laine ou une substance similaire)",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 créature vivante de 6 DV ou moins",
+      "duree": "1 round",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme hébétement, si ce n’est qu’il peut affecter les créatures vivantes de tout type, pour autant qu’elles ne possèdent pas 7 DV ou plus.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9tement.ashx\" title=\"Hébétement\">hébétement</a></i>, si ce n’est qu’il peut affecter les créatures vivantes de tout type, pour autant qu’elles ne possèdent pas 7 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ou plus.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Hébétement de groupe",
+      "id": "hebetement-de-groupe",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "mental"
+      ],
+      "niveaux": {
+        "Bard": 4,
+        "Con": 4,
+        "ConU": 4,
+        "Hyp": 4,
+        "Inq": 4,
+        "Ens/Mag": 4,
+        "Méd": 3,
+        "Occ": 4,
+        "Psy": 3,
+        "Sor": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "une créature humanoïde ou plusieurs qui ne doivent pas être distantes de plus de 9 m (6 c) les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme hébétement, en dehors de ce qui est noté plus haut.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9tement.ashx\" title=\"Hébétement\">hébétement</a></i>, en dehors de ce qui est noté plus haut.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9b%c3%a9tement.ashx",
+    "cache_fichier": "cache/html/bf3d9b0660e22695999134af33eba12765947722.html",
+    "recupere_le": "2026-07-28T22:55:56.458058+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "hebetement",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9b%c3%a9tement.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 0
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 0
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 0
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 0
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 0
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 0
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 0
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 0
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 0
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 0
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 0
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "hebetement",
+    "resume_court": "Paralyse l'esprit d'un humanoïde faible, l'empêchant d'agir pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "ce qui l'empêche d'entreprendre la moindre action"
+      ],
+      "cible_typique": "1 humanoïde de 4 DV ou moins"
+    },
+    "notes_ambiguite": "Le texte dit « hébétée mais pas étourdie » : hébétement n'est pas une condition nommée dans la liste, mais l'effet décrit (impossibilité d'agir) correspond à paralyse. La résistance à la magie s'applique selon le champ « resistance_magie: oui ».",
+    "slug": "hebetement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:07+00:00",
+    "hash_source": "0451c72f8b1f98f9cf888f21a55ab299fb4a5722670977a82f6637df00a15143"
+  }
+}

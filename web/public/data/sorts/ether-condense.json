@@ -1,0 +1,106 @@
+{
+  "id": "ether-condense",
+  "nom": "Éther condensé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ther%20condens%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Psy": 4,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (ambre broyé)",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "étendue 6 m de rayon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage condense la substance du plan Éthéré quand elle pénètre sur le plan Matériel. Cet épaississement ralentit fortement les déplacements dans la zone affectée. Les créatures (même intangibles) qui se déplacent dans l’éther condensé bougent à la moitié de leur vitesse de base et ne peuvent pas faire de pas de 1,50 mètre. Ce ralentissement ne se cumule pas avec un brouillard dense ou un effet similaire. Les créatures situées dans la zone d’effet subissent un malus de –2 à la CA et aux jets de Réflexes et sont gênées dans leurs attaques à distance. Même les rayons magiques et attaques à distance similaires souffrent de 20 % de chances d’échec quand ils viennent de l’éther condensé ou le traversent. Ces chances de rater ne dépendent pas d’un camouflage : le Combat en aveugle, la vision lucide et autres effets similaires ne les réduisent donc pas.",
+  "description_html": "<br/><br/>Le personnage condense la substance du plan Éthéré quand elle pénètre sur le plan Matériel. Cet épaississement ralentit fortement les déplacements dans la zone affectée. Les créatures (même intangibles) qui se déplacent dans l’éther condensé bougent à la moitié de leur vitesse de base et ne peuvent pas faire de pas de 1,50 mètre. Ce ralentissement ne se cumule pas avec un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.brouillard%20dense.ashx\" title=\"Brouillard dense\">brouillard dense</a></i> ou un effet similaire. Les créatures situées dans la zone d’effet subissent un malus de –2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et aux jets de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> et sont gênées dans leurs attaques à distance. Même les rayons magiques et attaques à distance similaires souffrent de 20 % de chances d’échec quand ils viennent de l’éther condensé ou le traversent. Ces chances de rater ne dépendent pas d’un camouflage : le <a class=\"pagelink\" href=\"Pathfinder-RPG.Combat%20en%20aveugle.ashx\" title=\"Combat en aveugle\">Combat en aveugle</a>, la vision lucide et autres effets similaires ne les réduisent donc pas.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ther%20condens%c3%a9.ashx",
+    "cache_fichier": "cache/html/412059d28080b4b719cfcf1fa9d01d28df3a9529.html",
+    "recupere_le": "2026-07-28T22:39:28.353742+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "ether-condense",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ther%20condens%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "ether-condense",
+    "resume_court": "Condense l'éther dans une zone, ralentissant les déplacements et dégradant les défenses.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "terrain_ou_environnement",
+      "malus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "bougent à la moitié de leur vitesse de base"
+      ],
+      "cible_typique": "étendue 6 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "ether-condense",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:42+00:00",
+    "hash_source": "fdb805da33627c289d60755b7acf841a5338bfb03764fb758e4625fc9c9c6eca"
+  }
+}

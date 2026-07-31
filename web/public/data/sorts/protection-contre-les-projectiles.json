@@ -1,0 +1,165 @@
+{
+  "id": "protection-contre-les-projectiles",
+  "nom": "Protection contre les projectiles",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20contre%20les%20projectiles.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Con": 2,
+    "ConU": 2,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "San": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un morceau de carapace de tortue)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 heure/niveau ou jusqu’à épuisement",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le bénéficiaire du sort est protégé contre les armes à distance, il bénéficie donc d’une réduction de dégâts de 10/magie contre celles-ci. En revanche, le sort ne permet pas de blesser des créatures dotées d’une réduction des dégâts similaire. Dès que le sort a absorbé un total de 10 points de dégâts par niveau de lanceur de sorts (jusqu’à un total de 100 points), il cesse de faire effet.",
+  "description_html": "<hr/>\nLe bénéficiaire du sort est protégé contre les armes à distance, il bénéficie donc d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction de dégâts</a> de 10/magie contre celles-ci. En revanche, le sort ne permet pas de blesser des créatures dotées d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction des dégâts</a> similaire. Dès que le sort a absorbé un total de 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un total de 100 points), il cesse de faire effet.<br/><br/>",
+  "mythique": {
+    "description": "La réduction des dégâts s’élève à 15/magie. Le montant maximum de dégâts absorbés s’élève à 15 points par niveau de lanceur de sorts (150 points maximum). Si le sort absorbe tous les dégâts infligés par une attaque d’arme à distance, l’arme ou le projectile est renvoyé vers son expéditeur en appliquant le même résultat au jet d’attaque. Si l’expéditeur est également protégé par une protection contre les projectiles mythique et que son sort absorbe la totalité des dégâts infligés par l’attaque en retour, l’arme ou le projectile est détruit.",
+    "description_html": "La réduction des dégâts s’élève à 15/magie. Le montant maximum de dégâts absorbés s’élève à 15 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (150 points maximum). Si le sort absorbe tous les dégâts infligés par une attaque d’arme à distance, l’arme ou le projectile est renvoyé vers son expéditeur en appliquant le même résultat au jet d’attaque. Si l’expéditeur est également protégé par une <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20les%20projectiles.ashx\" title=\"Protection contre les projectiles\">protection contre les projectiles</a> mythique et que son sort absorbe la totalité des dégâts infligés par l’attaque en retour, l’arme ou le projectile est détruit.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Protection contre les projectiles (partagé)",
+      "id": "protection-contre-les-projectiles-partage",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 3,
+        "Con": 3,
+        "ConU": 3,
+        "Ens/Mag": 3,
+        "Psy": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F (un morceau de carapace de tortue)",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "1 heure/niveau ou jusqu’à épuisement",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme protection contre les projectiles mais la durée se divise entre les créatures touchées, par portions de 1 heure. Le sort se termine pour une cible spécifique quand il a absorbé 10 points de dégâts par niveau de lanceur de sorts (100 au maximum) pour elle.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20les%20projectiles.ashx\" title=\"Protection contre les projectiles\">protection contre les projectiles</a></i> mais la durée se divise entre les créatures touchées, par portions de 1 heure. Le sort se termine pour une cible spécifique quand il a absorbé 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (100 au maximum) pour elle.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20contre%20les%20projectiles.ashx",
+    "cache_fichier": "cache/html/44d92ee4fa3443471d4ecd2dca0a659e72971ed2.html",
+    "recupere_le": "2026-07-28T23:05:14.080963+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "protection-contre-les-projectiles",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20contre%20les%20projectiles.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "protection-contre-les-projectiles",
+    "resume_court": "Le bénéficiaire gagne une réduction de dégâts de 10/magie contre les armes à distance.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "protection-contre-les-projectiles",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:05+00:00",
+    "hash_source": "b2a9b054bdf8e8e92bade7f3acc2fbce3d0c0323834e67a815953862eb415cde"
+  }
+}

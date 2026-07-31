@@ -1,0 +1,132 @@
+{
+  "id": "desir-anormal",
+  "nom": "Désir anormal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9sir%20anormal.ashx",
+  "ecole": "enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage suscite chez sa cible un désir pour une créature ou un objet qu’il désigne au moment de l’incantation. Cette créature ou cet objet doit se trouver à portée du sort et être perçu par la cible. Cette dernière est alors envahie d’une irrésistible envie de se ruer sur l’objet de son désir et de l’embrasser ou de le caresser passionnément à son prochain tour, sans faire d’autre action. Si la créature ne devrait normalement pas éprouver de désir envers la créature ou l’objet désigné, elle reçoit un bonus de +4 au jet de sauvegarde.",
+  "description_html": "<br/><br/>Le personnage suscite chez sa cible un désir pour une créature ou un objet qu’il désigne au moment de l’incantation. Cette créature ou cet objet doit se trouver à portée du sort et être perçu par la cible. Cette dernière est alors envahie d’une irrésistible envie de se ruer sur l’objet de son désir et de l’embrasser ou de le caresser passionnément\nà son prochain tour, sans faire d’autre action. Si la créature ne devrait normalement pas éprouver de désir envers la créature ou l’objet désigné, elle reçoit un bonus de +4 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9sir%20anormal.ashx",
+    "cache_fichier": "cache/html/d35b853c72c77bd4b630b3d24faed2c4fcd65d02.html",
+    "recupere_le": "2026-07-28T22:50:30.622784+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "desir-anormal",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9sir%20anormal.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "desir-anormal",
+    "resume_court": "La cible éprouve un désir irrésistible pour une créature ou un objet et agit sans autre action au prochain tour.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "envahie d'une irrésistible envie de se ruer sur l'objet de son désir et de l'embrasser ou de le caresser passionnément à son prochain tour, sans faire d'autre action"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La condition retenue est « fascine » car la cible reste captivée par l'objet de son désir et n'agit plus selon sa volonté propre, bien que le texte ne nomme pas explicitement cette condition. L'effet dure 1 round et force une action spécifique au prochain tour.",
+    "slug": "desir-anormal",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:12+00:00",
+    "hash_source": "7a958bcfafd4ca7a52fd61d07ce56fc4a57fd87853dc14345223c842b6d9a847"
+  }
+}

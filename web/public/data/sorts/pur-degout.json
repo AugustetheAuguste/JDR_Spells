@@ -1,0 +1,146 @@
+{
+  "id": "pur-degout",
+  "nom": "Pur dégoût",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pur%20d%c3%a9go%c3%bbt.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Bard": 2,
+    "Hyp": 2,
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage fait naître chez la cible un terrible sentiment de dégoût vis-à-vis d’une créature spécifique. Il désigne cette créature au moment de l’incantation. Par la suite, la cible fait tout ce qu’elle peut pour rester à plus de 18 mètres de l’objet de son aversion. Dès qu’elle se retrouve plus proche, elle est nauséeuse jusqu’à ce qu’elle s’en éloigne à nouveau. Si la cible court, à l’évidence, un danger physique à s’éloigner de plus de 18 mètres de l’objet de son dégoût, elle a droit à un deuxième jet de sauvegarde pour briser l’effet.\nPur dégoût contre engouement téméraire.",
+  "description_html": "<br/><br/>Le personnage fait naître chez la cible un terrible sentiment de dégoût vis-à-vis d’une créature spécifique. Il désigne cette créature au moment de l’incantation. Par la suite, la cible fait tout ce qu’elle peut pour rester à plus de 18 mètres de l’objet de son aversion. Dès qu’elle se retrouve plus proche, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeuse</a> jusqu’à ce qu’elle s’en éloigne à nouveau. Si la cible court, à l’évidence, un danger physique à s’éloigner de plus de 18 mètres de l’objet de son dégoût, elle a droit à un deuxième <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour briser l’effet.<br/><br/>\n<i>Pur dégoût</i> contre <i><a class=\"pagelink\" href=\"Pathfinder-RPG.engouement%20t%c3%a9m%c3%a9raire.ashx\" title=\"Engouement téméraire\">engouement téméraire</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pur%20d%c3%a9go%c3%bbt.ashx",
+    "cache_fichier": "cache/html/adb493d0b77c4ec8f90319a38df7bc5d13ab0460.html",
+    "recupere_le": "2026-07-29T07:45:20.442151+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pur-degout",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pur%20d%c3%a9go%c3%bbt.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pur-degout",
+    "resume_court": "La cible ressent une aversion irrépressible envers une créature désignée et devient nauséeuse si elle s'en rapproche.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "nauseeux"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est nauséeuse jusqu'à ce qu'elle s'en éloigne à nouveau"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "pur-degout",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:38+00:00",
+    "hash_source": "e1da5674ec3ee1cfdd495260427ea5a48cc9e9e83a4bdb7b2ff68e1c8ba2da30"
+  }
+}

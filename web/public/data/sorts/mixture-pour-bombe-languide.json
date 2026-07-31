@@ -1,0 +1,84 @@
+{
+  "id": "mixture-pour-bombe-languide",
+  "nom": "Mixture pour bombe languide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture%20pour%20bombe%20languide.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Alch": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (spécial, voir texte)",
+  "resistance_magie": "oui",
+  "description": "Quand le personnage boit un extrait créé avec cette formule, il voit ses réserves magiques se modifier de façon significative et transformer toutes les bombes qu’il fabrique pendant que l’extrait fait effet. Cette modification n’a aucune conséquence sur les découvertes que le personnage utilise pour modifier ses bombes mais il ne peut activer qu’un effet de mixture (une formule avec les mots « mixture pour bombe » dans l’intitulé) à la fois. S’il boit une autre mixture pour bombe, les effets de la mixture absorbée précédemment se dissipent au profit de ceux de la nouvelle.\nQuand le personnage lance une bombe et touche une cible directe, elle affecte jusqu’à quatre créatures (celle que la bombe touche directement et un maximum de trois créatures dans la zone d’aspersion, au choix du lanceur de sorts). Ces créatures doivent réussir un jet de Volonté ou être fatiguées.",
+  "description_html": "<br/><br/>Quand le personnage boit un <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAITS\" title=\"L'alchimiste\">extrait</a> créé avec cette formule, il voit ses réserves magiques se modifier de façon significative et transformer toutes les <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombes</a> qu’il fabrique pendant que l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAITS\" title=\"L'alchimiste\">extrait</a> fait effet. Cette modification n’a aucune conséquence sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#DECOUVERTES\" title=\"L'alchimiste\">découvertes</a> que le personnage utilise pour modifier ses <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombes</a> mais il ne peut activer qu’un <i>effet de mixture</i> (une <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#FORMULES\" title=\"L'alchimiste\">formule</a> avec les mots « mixture pour bombe » dans l’intitulé) à la fois. S’il boit une autre <i>mixture pour bombe</i>, les effets de la mixture absorbée précédemment se dissipent au profit de ceux de la nouvelle.<br/><br/>Quand le personnage lance une <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombe</a> et touche une cible directe, elle affecte jusqu’à quatre créatures (celle que la <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombe</a> touche directement et un maximum de trois créatures dans la zone d’aspersion, au choix du lanceur de sorts). Ces créatures doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguées</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture%20pour%20bombe%20languide.ashx",
+    "cache_fichier": "cache/html/f6f1ff85977aeec92575c4a54d7c1a4f86862bc7.html",
+    "recupere_le": "2026-07-28T23:00:50.765385+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "mixture-pour-bombe-languide",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture%20pour%20bombe%20languide.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "mixture-pour-bombe-languide",
+    "resume_court": "Une mixture qui rend les bombes du lanceur capables de fatiguer jusqu'à quatre créatures.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être fatiguées"
+      ],
+      "cible_typique": "lanceur de sorts"
+    },
+    "notes_ambiguite": "La condition « fatigué » n'existe pas dans la liste fermée ; la plus proche est « chancelant » (une seule action par round), qui partage l'effet de réduction d'actions. Le texte ne précise pas si « fatigué » est une condition de jeu standard en Pathfinder 1e, mais l'annotation doit rester dans la liste fournie.",
+    "slug": "mixture-pour-bombe-languide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:01+00:00",
+    "hash_source": "e653cc1bccdaca1e7f0a88ea0b78e2653a5ca3fa98dac95320976890104fc49c"
+  }
+}

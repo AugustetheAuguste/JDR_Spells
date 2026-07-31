@@ -1,0 +1,115 @@
+{
+  "id": "juggernaut-mortel",
+  "nom": "Juggernaut mortel",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut%20mortel.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mort"
+  ],
+  "niveaux": {
+    "Apal": 3,
+    "Inq": 3,
+    "Pal": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage devient plus dangereux et plus difficile à arrêter à chaque fois qu’il prend une vie. Pendant toute la durée du sort, il gagne un bonus de chance cumulatif de +1 aux jets d’attaque et de dégâts des armes de corps à corps, aux tests de Force et aux tests de compétence basés sur la Force et une RD 2/– à chaque fois qu’il réduit un adversaire valable à 0 point de vie ou moins avec une attaque de corps à corps (avec un maximum de +5 en bonus et de RD 10/–). Pour être valable, l’adversaire doit avoir autant de DV ou plus que le nombre de DV du personnage -4.",
+  "description_html": "<br/><br/>Le personnage devient plus dangereux et plus difficile à arrêter à chaque fois qu’il prend une vie. Pendant toute la durée du sort, il gagne un bonus de chance cumulatif de +1 aux jets d’attaque et de dégâts des armes de corps à corps, aux tests de Force et aux tests de compétence basés sur la Force et une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> 2/– à chaque fois qu’il réduit un adversaire valable à 0 point de vie ou moins avec une attaque de corps à corps (avec un maximum de +5 en bonus et de RD 10/–). Pour être valable, l’adversaire doit avoir autant de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ou plus que le nombre de DV du personnage -4.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut%20mortel.ashx",
+    "cache_fichier": "cache/html/29e25c1aceac5b8e79323f40f5ae2f8b8c56ad56.html",
+    "recupere_le": "2026-07-28T22:57:48.585634+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "juggernaut-mortel",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut%20mortel.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "juggernaut-mortel",
+    "resume_court": "Le lanceur gagne des bonus cumulatifs à chaque ennemi vaincu au corps à corps, jusqu'à +5 et RD 10/–.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "immunite_ou_resistance_element"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort confère une réduction de dégâts (RD 2/– cumulatif) classée comme immunité/résistance bien qu'elle soit une mécanique défensive. Le bonus s'applique à plusieurs domaines (attaque, dégâts, Force, compétences) mais reste un seul bonus cumulatif.",
+    "slug": "juggernaut-mortel",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:47+00:00",
+    "hash_source": "e4aeb28efa033759039ce72d3a540d9028af59f2b4b4be1a42e46cb844ca9b36"
+  }
+}

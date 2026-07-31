@@ -1,0 +1,105 @@
+{
+  "id": "verrouillage",
+  "nom": "Verrouillage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Verrouillage.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Occ": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 porte dans la limite de 2 m²/niveau",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort verrouille une porte, une fenêtre, un portail, des volets ou une herse de bois, de métal ou de pierre. Verrouillage empêche d’ouvrir l’objet protégé comme si ce dernier était fermé par un véritable cadenas. Déblocage ou dissipation de la magie dissipe le verrouillage. Un personnage qui souhaite enfoncer une porte ou autre protégée par ce sort voit le DD de son test de Force augmenté de 5 points.",
+  "description_html": "<br/><br/>Ce sort verrouille une porte, une fenêtre, un portail, des volets ou une herse de bois, de métal ou de pierre. <i>Verrouillage</i> empêche d’ouvrir l’objet protégé comme si ce dernier était fermé par un véritable cadenas. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9blocage.ashx\" title=\"Déblocage\">Déblocage</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> dissipe le <i>verrouillage</i>. Un personnage qui souhaite enfoncer une porte ou autre protégée par ce sort voit le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de son test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> augmenté de 5 points.<br/><br/>",
+  "mythique": {
+    "description": "La porte ciblée peut être d’une taille maximale de 3 m² par niveau de lanceur de sorts. Une créature qui tente d’enfoncer la porte doit avant tout réussir un jet de Volonté contre le DD du sort. C’est un effet mental. Un échec signifie que la créature est incapable d’ouvrir la porte tant que dure le sort.",
+    "description_html": "La porte ciblée peut être d’une taille maximale de 3 m² par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Une créature qui tente d’enfoncer la porte doit avant tout réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> contre le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort. C’est un effet mental. Un échec signifie que la créature est incapable d’ouvrir la porte tant que dure le sort."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Verrouillage.ashx",
+    "cache_fichier": "cache/html/59f88a937eb5c5c08ce4cb6a118c92319270a4b2.html",
+    "recupere_le": "2026-07-29T07:44:03.424234+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "verrouillage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Verrouillage.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "verrouillage",
+    "resume_court": "Verrouille une porte ou une fenêtre comme un cadenas, augmentant le DD pour l'enfoncer.",
+    "categorie_principale": "protection",
+    "tags": [
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "malus_chiffre",
+      "dissipation_ou_contresort"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 porte dans la limite de 2 m²/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "verrouillage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:06+00:00",
+    "hash_source": "03071a67bdab2c525eb95dc612af8c3f37ca2cd9ef86f1907bf27e782c3593b6"
+  }
+}

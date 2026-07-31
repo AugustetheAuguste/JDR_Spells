@@ -1,0 +1,112 @@
+{
+  "id": "vagues-d-epuisement",
+  "nom": "Vagues d'épuisement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20d%c3%a9puisement.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 6,
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "18 m (12 c)",
+  "cible": "rayonnement en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Des vagues d’énergie négative épuisent toutes les créatures situées dans la zone. Ce sort n’a aucun effet sur les créatures déjà épuisées.",
+  "description_html": "<br/><br/>Des vagues d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9puis%c3%a9.ashx\" title=\"Épuisé\">épuisent</a> toutes les créatures situées dans la zone. Ce sort n’a aucun effet sur les créatures déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9puis%c3%a9.ashx\" title=\"Épuisé\">épuisées</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20d%c3%a9puisement.ashx",
+    "cache_fichier": "cache/html/262ca9ff7b415a47adf03fbe7c2e4abed372d6aa.html",
+    "recupere_le": "2026-07-29T07:43:46.486515+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vagues-d-epuisement",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20d%c3%a9puisement.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vagues-d-epuisement",
+    "resume_court": "Des vagues d'énergie négative épuisent toutes les créatures dans un cône.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": "Le texte ne nomme pas explicitement une condition infligée (comme « épuisé »), mais décrit un effet d'épuisement. Cet effet ne figure pas dans la liste `condition_infligee` fermée. Aucune condition n'a donc été retenue.",
+    "slug": "vagues-d-epuisement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:58+00:00",
+    "hash_source": "f53080bb1279a18479cdf671f674bc3626bbe83b98e0359edf04710040edfd21"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "interrogatoire-superieur",
+  "nom": "Interrogatoire supérieur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire%20sup%c3%a9rieur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "douleur",
+    "mal"
+  ],
+  "niveaux": {
+    "Inq": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature vivante touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme interrogatoire mais le personnage pose une question par niveaux de lanceur de sorts et les dégâts infligés sont de 1d8 + bonus de Sagesse si la cible refuse de répondre.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.interrogatoire.ashx\" title=\"Interrogatoire\">interrogatoire</a></i> mais le personnage pose une question par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> et les dégâts infligés sont de 1d8 + bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> si la cible refuse de répondre.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire%20sup%c3%a9rieur.ashx",
+    "cache_fichier": "cache/html/1eeb2e6b1984808a5ba7055a283eb2beefec4128.html",
+    "recupere_le": "2026-07-28T22:57:24.588875+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "interrogatoire-superieur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire%20sup%c3%a9rieur.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "interrogatoire-superieur",
+    "resume_court": "Le lanceur pose plusieurs questions à une créature touchée et inflige des dégâts si elle refuse de répondre.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "les dégâts infligés sont de 1d8 + bonus de Sagesse",
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante touchée"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) ; il s'agit de dégâts infligés par coercition magique, classés comme « autre ». La condition infligée n'est pas une condition de jeu mécanique standard, mais plutôt un effet de contrainte comportementale.",
+    "slug": "interrogatoire-superieur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:38+00:00",
+    "hash_source": "1bcf619b572b3515db753bcc6094f15154a2b8ce62064809c3fb93c7939eb05a"
+  }
+}

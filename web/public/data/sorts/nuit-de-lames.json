@@ -1,0 +1,130 @@
+{
+  "id": "nuit-de-lames",
+  "nom": "Nuit de lames",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuit%20de%20lames.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Antipal": 4,
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 3,
+    "Inq": 3,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un mur de lames long de 3 mètres/niveau et haut de 3 m",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Utile en premier lieu à ceux qui se faufilent dans les ténèbres, ce sort est un piège temporaire pour les imprudents. Il conjure un mur invisible de minuscules lames noires qui tourbillonnent et déchirent les créatures comme le ferait un cyclone. Quiconque entre dans cet espace subit 1d4 points de dégâts par niveau de lanceur (maximum 10d4), mais peut tenter un jet de Réflexes pour diminuer ces dégâts de moitié. Le sort ne peut être lancé sur un espace déjà occupé par des créatures de taille P ou plus.",
+  "description_html": "<br/><br/>Utile en premier lieu à ceux qui se faufilent dans les ténèbres, ce sort est un piège temporaire pour les imprudents. Il conjure un mur invisible de minuscules lames noires qui tourbillonnent et déchirent les créatures comme le ferait un cyclone. Quiconque entre dans cet espace subit 1d4 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur</a> (maximum 10d4), mais peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour diminuer ces dégâts de moitié. Le sort ne peut être lancé sur un espace déjà occupé par des créatures de taille P ou plus.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuit%20de%20lames.ashx",
+    "cache_fichier": "cache/html/cb61822dde4e192e35dcde54c59cb983383c4638.html",
+    "recupere_le": "2026-07-28T23:02:00.861203+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "nuit-de-lames",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuit%20de%20lames.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 4
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "nuit-de-lames",
+    "resume_court": "Un mur invisible de lames noires qui blesse les créatures qui le traversent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "tranchant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "déchirent",
+      "condition_infligee": [],
+      "cible_typique": "un mur de lames long de 3 mètres/niveau et haut de 3 m"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé mais le texte décrit des « lames noires » qui « déchirent », ce qui correspond à des dégâts tranchants. Le sort affecte une zone plutôt qu'une créature désignée, d'où la catégorie « controle_de_zone ».",
+    "slug": "nuit-de-lames",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:29+00:00",
+    "hash_source": "b9acf640e340e0ef7b02e3e0194c3598dda62a80dc8bc6c1e9cddc75d4a4c57f"
+  }
+}

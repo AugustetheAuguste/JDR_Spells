@@ -1,0 +1,78 @@
+{
+  "id": "detremper",
+  "nom": "Détremper",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tremper.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "eau"
+  ],
+  "niveaux": {
+    "Ens/Mag": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature ou un objet de taille G maximum",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Réflexes, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Une averse soudaine trempe la créature ou l’objet ciblé. La pluie suit la cible dans la limite de la portée du sort, en l’imbibant d’eau. Si la cible est en feu, les flammes s’éteignent automatiquement. Toute flamme plus petite qu’un feu de camp (comme les lanternes et les torches) est également automatiquement noyée.",
+  "description_html": "<br/><br/>Une averse soudaine trempe la créature ou l’objet ciblé. La pluie suit la cible dans la limite de la portée du sort, en l’imbibant d’eau. Si la cible est en feu, les flammes s’éteignent automatiquement. Toute flamme plus petite qu’un feu de camp (comme les lanternes et les torches) est également automatiquement noyée.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tremper.ashx",
+    "cache_fichier": "cache/html/028a2896a844d202d0154c374dd1487dd268f610.html",
+    "recupere_le": "2026-07-28T22:50:59.436544+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "detremper",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tremper.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "detremper",
+    "resume_court": "Une averse soudaine trempe la cible et éteint les petites flammes qu'elle porte.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature ou un objet de taille G maximum"
+    },
+    "notes_ambiguite": "Le sort peut cibler une créature ou un objet, ce qui justifie le choix de « ennemi » comme cible typique dans un contexte de combat, bien que le texte ne précise pas l'hostilité. L'effet principal est utilitaire (éteindre des flammes), mais le sort peut aussi servir tactiquement en combat pour neutraliser les sources de feu.",
+    "slug": "detremper",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:45+00:00",
+    "hash_source": "645b27e7780a835b394045ad54d48b5c7fbd3b192074d86fe6873ceeabf2925f"
+  }
+}

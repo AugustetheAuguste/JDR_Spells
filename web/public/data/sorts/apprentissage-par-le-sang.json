@@ -1,0 +1,114 @@
+{
+  "id": "apprentissage-par-le-sang",
+  "nom": "Apprentissage par le sang",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apprentissage%20par%20le%20sang.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "un lanceur de sorts mort",
+  "duree": "24 heures",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Le personnage peut tenter d’apprendre un sort connu d’un lanceur de sorts mort depuis moins de 24 heures en buvant 1/2 litre de son sang. Il choisit un sort auquel le défunt avait accès (qui doit figurer sur sa liste de sorts de classe) et le connaît pendant 24 heures. Pendant cette période, il peut l’écrire (ou l’enseigner à son familier si le personnage est une sorcière) en utilisant les règles habituelles pour copier un sort à partir d’une autre source. Une fois que le personnage a appris le sort, il peut le préparer normalement.",
+  "description_html": "<br/><br/>Le personnage peut tenter d’apprendre un sort connu d’un lanceur de sorts mort depuis moins de 24 heures en buvant 1/2 litre de son sang. Il choisit un sort auquel le défunt avait accès (qui doit figurer sur sa liste de sorts de classe) et le connaît pendant 24 heures. Pendant cette période, il peut l’écrire (ou l’enseigner à son <a class=\"pagelink\" href=\"Pathfinder-RPG.familier.ashx\" title=\"familier\">familier</a> si le personnage est une <a class=\"pagelink\" href=\"Pathfinder-RPG.sorci%c3%a8re.ashx\" title=\"La sorcière\">sorcière</a>) en utilisant les règles habituelles pour copier un sort à partir d’une autre source. Une fois que le personnage a appris le sort, il peut le préparer normalement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apprentissage%20par%20le%20sang.ashx",
+    "cache_fichier": "cache/html/2867cff2d10a3afe0f3fdccced9ab20b97923ff8.html",
+    "recupere_le": "2026-07-28T22:41:26.451702+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "apprentissage-par-le-sang",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apprentissage%20par%20le%20sang.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "apprentissage-par-le-sang",
+    "resume_court": "Le lanceur boit le sang d'un mort pour connaître temporairement l'un de ses sorts pendant 24 heures.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "divination_information",
+      "duree_prolongee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un lanceur de sorts mort"
+    },
+    "notes_ambiguite": "Le sort cible techniquement un cadavre (objet inanimé) plutôt qu'une créature vivante. La catégorie « utilitaire » s'impose car le sort sert à acquérir une connaissance magique hors combat, sans viser une menace. Le tag « objet_ou_equipement » s'applique au cadavre comme matériau consommable. « divination_information » capture l'apprentissage d'un sort par divination du savoir du défunt.",
+    "slug": "apprentissage-par-le-sang",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:58+00:00",
+    "hash_source": "f82b5acd750265a6df2c4d7f7939228442ff6e3dd38d99b53b8459409445a9f4"
+  }
+}

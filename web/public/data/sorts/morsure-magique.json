@@ -1,0 +1,118 @@
+{
+  "id": "morsure-magique",
+  "nom": "Morsure magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20magique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 1,
+    "ConU": 1,
+    "Dru": 1,
+    "Rôd": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Morsure magique donne à l’une des armes naturelles de la cible un bonus d’altération de +1 aux jets d’attaque et de dégâts. Le sort peut affecter une morsure, un coup de poing, ou toute autre attaque portée par une arme naturelle. Ce sort ne transforme pas les dégâts non-létaux des attaques à mains nues en dégâts létaux.\nIl est possible d’user de permanence sur un sort de morsure magique.",
+  "description_html": "<br/><br/><i>Morsure magique</i> donne à l’une des <a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20naturelle.ashx\" title=\"arme naturelle\">armes naturelles</a> de la cible un <a class=\"pagelink\" href=\"Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx\" title=\"bonus d'altération\">bonus d’altération</a> de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a> et de dégâts. Le sort peut affecter une morsure, un coup de poing, ou toute autre attaque portée par une <a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20naturelle.ashx\" title=\"arme naturelle\">arme naturelle</a>. Ce sort ne transforme pas les <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non-l%c3%a9taux.ashx\" title=\"Dégâts non-létaux\">dégâts non-létaux</a> des <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20%c3%a0%20mains%20nues.ashx\" title=\"attaque à mains nues\">attaques à mains nues</a> en <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts%20l%c3%a9taux.ashx\" title=\"Dégâts létaux\">dégâts létaux</a>.<br/><br/>Il est possible d’user de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> sur un sort de <i>morsure magique</i>.<br/><br/>",
+  "mythique": {
+    "description": "Le sort affecte un nombre supplémentaire d’armes naturelles possédées par la cible égal au grade du personnage. Par exemple, si le personnage est de grade 3, le sort peut affecter deux griffes et une morsure.",
+    "description_html": "Le sort affecte un nombre supplémentaire d’armes naturelles possédées par la cible égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage. Par exemple, si le personnage est de <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> 3, le sort peut affecter deux griffes et une morsure."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20magique.ashx",
+    "cache_fichier": "cache/html/5ecc8bf69635304346e08867eec703918cbaca0d.html",
+    "recupere_le": "2026-07-28T23:01:05.793351+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "morsure-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20magique.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "morsure-magique",
+    "resume_court": "Accorde un bonus de +1 à une arme naturelle de la cible pour 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "morsure-magique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:05+00:00",
+    "hash_source": "9220f088c72491b56d6d479e710f4718ace2ebd483d03ffd873f7ad31561e27a"
+  }
+}

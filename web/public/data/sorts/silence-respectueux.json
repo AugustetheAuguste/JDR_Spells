@@ -1,0 +1,103 @@
+{
+  "id": "silence-respectueux",
+  "nom": "Silence respectueux",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Silence%20respectueux.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Inq": 3,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "n'importe quel nombre de créature dans un rayonnement de 9 mètres de rayon",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Toutes les cibles deviennent silencieuses, comme avec silence. Le silence affecte chaque créature entièrement mais ne s'étend pas au-delà. Cependant, ce silence est à sens unique : les sons extérieurs à l'espace des créatures peuvent toujours y entrer. Les créatures affectées obtiennent un bonus de circonstances de +10 aux tests de Discrétion.",
+  "description_html": "<br/><br/>Toutes les cibles deviennent silencieuses, comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>. Le silence affecte chaque créature entièrement mais ne s'étend pas au-delà. Cependant, ce silence est à sens unique : les sons extérieurs à l'espace des créatures peuvent toujours y entrer. Les créatures affectées obtiennent un bonus de circonstances de +10 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Discr%c3%a9tion.ashx\" title=\"Discrétion\">Discrétion</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Silence%20respectueux.ashx",
+    "cache_fichier": "cache/html/27cf1bcd9007c7ee58c11c8a51770ac024ee72be.html",
+    "recupere_le": "2026-07-29T07:40:30.522910+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "silence-respectueux",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Silence%20respectueux.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "silence-respectueux",
+    "resume_court": "Les créatures dans une zone deviennent silencieuses et gagnent +10 aux tests de Discrétion.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "zone_d_effet",
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "illusion_visuelle_ou_sonore",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "n'importe quel nombre de créature dans un rayonnement de 9 mètres de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "silence-respectueux",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:38+00:00",
+    "hash_source": "c2df248dca5e725d36b34d565c1e37cf50fd3cdf0a7237703d8c435e18cd3043"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "grace-defensive",
+  "nom": "Grâce défensive",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20d%c3%a9fensive.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une mouche vivante)",
+  "portee": "personnelle",
+  "cible": "le personnage",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Chaque round, le personnage peut lancer un dé d’inspiration sans dépenser d’utilisation d’inspiration pour gagner un bonus d’esquive à la CA égal au résultat obtenu pour le round. Le personnage est immunisé aux dégâts de précision (y compris les dégâts supplémentaires infligés par l’exploit d’attaque précise, l’attaque sournoise, le combat étudié et la frappe étudiée).\nSi un coup critique est confirmé contre le personnage, ce dernier peut mettre fin à ce sort par une action immédiate pour annuler le coup critique. L’attaque subie inflige alors des dégâts normaux.",
+  "description_html": "<br/><br/>Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, le personnage peut lancer un dé d’inspiration sans dépenser d’utilisation d’<a class=\"pagelink\" href=\"Pathfinder-RPG.enqu%c3%aateur.ashx#INSPIRATION\" title=\"L'enquêteur\">inspiration</a> pour gagner un bonus d’esquive à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> égal au résultat obtenu pour le round. Le personnage est immunisé aux dégâts de précision (y compris les dégâts supplémentaires infligés par l’exploit d’<a class=\"pagelink\" href=\"Pathfinder-RPG.exploits%20(bretteur).ashx#ATTAQUEPRECISE\" title=\"Les exploits du bretteur\">attaque précise</a>, l’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20sournoise.ashx\" title=\"attaque sournoise\">attaque sournoise</a>, le <a class=\"pagelink\" href=\"Pathfinder-RPG.enqu%c3%aateur.ashx#COMBATETUDIE\" title=\"L'enquêteur\">combat étudié</a> et la <a class=\"pagelink\" href=\"Pathfinder-RPG.enqu%c3%aateur.ashx#FRAPPEETUDIEE\" title=\"L'enquêteur\">frappe étudiée</a>).<br/><br/>Si un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> est confirmé contre le personnage, ce dernier peut mettre fin à ce sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> pour annuler le coup critique. L’attaque subie inflige alors des dégâts normaux.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20d%c3%a9fensive.ashx",
+    "cache_fichier": "cache/html/036cbb3cc6f0794503f261d6030b85c2dcd7aac0.html",
+    "recupere_le": "2026-07-28T22:55:29.392332+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "grace-defensive",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20d%c3%a9fensive.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "grace-defensive",
+    "resume_court": "Le lanceur gagne un bonus d'esquive à la CA et devient immunisé aux dégâts de précision pendant 1 round par niveau.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le personnage"
+    },
+    "notes_ambiguite": null,
+    "slug": "grace-defensive",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:52+00:00",
+    "hash_source": "c9d57707d08dc40270e40f38865b1a2b6e176fdd762c0e7cbf485eeedd207b84"
+  }
+}

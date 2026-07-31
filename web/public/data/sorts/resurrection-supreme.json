@@ -1,0 +1,75 @@
+{
+  "id": "resurrection-supreme",
+  "nom": "Résurrection suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9surrection%20supr%c3%aame.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 9
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (diamant 25 000 po), FD",
+  "portee": "contact",
+  "cible": "créature morte touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun (voir texte)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort ressemble à rappel à la vie mais il permet de ressusciter une créature morte depuis dix ans par niveau de lanceur de sorts. Il peut même redonner la vie à quelqu’un dont le corps a été entièrement détruit, à condition d’identifier clairement le sujet (le plus souvent, en le nommant et en ajoutant son lieu de naissance ou son lieu de décès).\nAu terme de l’incantation, le sujet se réveille en pleine forme (avec son maximum de points de vie et la totalité de ses sorts préparés en mémoire). Il ne perd pas de niveau ni de points de Constitution.\nOn peut ressusciter quelqu’un tué par un sort de mort ou transformé en mort-vivant puis détruit. Ce sort permet également de ressusciter les élémentaires et les Extérieurs, mais pas les créatures artificielles ni les morts-vivants.\nMême résurrection suprême ne peut rendre la vie à un individu mort de vieillesse.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i> mais il permet de ressusciter une créature morte depuis dix ans par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Il peut même redonner la vie à quelqu’un dont le corps a été entièrement détruit, à condition d’identifier clairement le sujet (le plus souvent, en le nommant et en ajoutant son lieu de naissance ou son lieu de décès).<br/><br/>Au terme de l’incantation, le sujet se réveille en pleine forme (avec son maximum de <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> et la totalité de ses sorts préparés en mémoire). Il ne perd pas de <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> ni de points de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>.<br/><br/>On peut ressusciter quelqu’un tué par un sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">mort</a> ou transformé en <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> puis détruit. Ce sort permet également de ressusciter les <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20%c3%a9l%c3%a9mentaire.ashx\" title=\"Élémentaire (sous-type)\">élémentaires</a> et les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">Extérieurs</a>, mais pas les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20cr%c3%a9ature%20artificielle.ashx\" title=\"Créature artificielle\">créatures artificielles</a> ni les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>.<br/><br/>Même <i>résurrection suprême</i> ne peut rendre la vie à un individu mort de vieillesse.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9surrection%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/9cc8e6f95595a748e8d71db9a54f325eeafaa83d.html",
+    "recupere_le": "2026-07-29T07:36:14.975101+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "resurrection-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9surrection%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "resurrection-supreme",
+    "resume_court": "Ressuscite une créature morte depuis jusqu'à dix ans par niveau, même sans corps.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature morte touchée"
+    },
+    "notes_ambiguite": "La cible est techniquement un cadavre ou une créature morte, classée comme objet selon la liste fournie, bien que le résultat soit une créature vivante. Le sort relève de l'invocation (guérison) et de la résurrection, mais sa catégorie principale est soin puisqu'il restaure la vie.",
+    "slug": "resurrection-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:03+00:00",
+    "hash_source": "943b440c7495c8cfbc75e7a30f186e093a3b7f95d242a902266d9aa37491a885"
+  }
+}

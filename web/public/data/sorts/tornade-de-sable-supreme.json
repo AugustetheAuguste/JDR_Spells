@@ -1,0 +1,83 @@
+{
+  "id": "tornade-de-sable-supreme",
+  "nom": "Tornade de sable suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tornade%20de%20sable%20supr%c3%aame.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une poignée de sable, de poussière ou de poudre fine)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "étendue de 3 m de rayon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (cécité uniquement)",
+  "resistance_magie": "non",
+  "description": "À l’exception de sa zone d’effet, ce sort fonctionne comme le sort tornade de sable.",
+  "description_html": "<hr/>\nÀ l’exception de sa zone d’effet, ce sort fonctionne comme le sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.tornade%20de%20sable.ashx\" title=\"Tornade de sable\">tornade de sable</a></i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tornade%20de%20sable%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/2285c43c49411c2b68baa2c3958f76082b8f8162.html",
+    "recupere_le": "2026-07-29T07:42:42.702146+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "tornade-de-sable-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tornade%20de%20sable%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "tornade-de-sable-supreme",
+    "resume_court": "Une tornade de sable couvre une zone de 3 m de rayon et aveugle les créatures qui s'y trouvent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "terrain_ou_environnement",
+      "invocation_ou_creation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "jet_de_sauvegarde: Volonté, annule (cécité uniquement)"
+      ],
+      "cible_typique": "cible: étendue de 3 m de rayon"
+    },
+    "notes_ambiguite": "Le texte renvoie au sort « tornade de sable » pour les détails d'effet. La cécité est déduite du jet de sauvegarde qui l'annule. Aucun dégât direct n'est mentionné dans ce texte.",
+    "slug": "tornade-de-sable-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:33+00:00",
+    "hash_source": "64c04aa1d6c9ba1a58eb83d68cf4e34febbd1a496fe4f244fabf63a4c031a07a"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "coeur-du-metal",
+  "nom": "Coeur du métal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20du%20m%c3%a9tal.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Occ": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau d’adamantium d’une valeur de 100 po ou un morceau de fer froid ou d’argent d’une valeur de 20 po)",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une arme par niveau",
+  "duree": "1 minute/niveau (cf. texte)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage dote les armes ciblées des propriétés de l’adamantium, du fer froid ou de l’argent, selon la composante matérielle utilisée, avec les effets suivants.\nAdamantium. Les armes passent la RD/adamantium et ignorent les solidités inférieures à 20.\nArgent. Les armes passent la RD/argent.\nFer froid. Les armes passent la RD/fer froid.\nAucun des autres avantages ou inconvénients de ces types de métaux ne s’applique. Par exemple, une arme qui se voit octroyer les propriétés de l’adamantium ne sera pas automatiquement de maître. Ce sort est capable d’affecter les armes qui ne sont pas en métal. Si le personnage accorde aux armes ciblées la propriété de fer froid, le sort dure moitié moins longtemps que la normale.",
+  "description_html": "<br/><br/>Le personnage dote les armes ciblées des propriétés de l’adamantium, du fer froid ou de l’argent, selon la composante matérielle utilisée, avec les effets suivants.\n<ul><li><i>Adamantium.</i> Les armes passent la RD/adamantium et ignorent les solidités inférieures à 20.</li><li><i>Argent.</i> Les armes passent la RD/argent.</li><li><i>Fer froid.</i> Les armes passent la RD/fer froid.</li></ul>\nAucun des autres avantages ou inconvénients de ces types de métaux ne s’applique. Par exemple, une arme qui se voit octroyer les propriétés de l’adamantium ne sera pas automatiquement de maître. Ce sort est capable d’affecter les armes qui ne sont pas en métal. Si le personnage accorde aux armes ciblées la propriété de <i>fer froid</i>, le sort dure moitié moins longtemps que la normale.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20du%20m%c3%a9tal.ashx",
+    "cache_fichier": "cache/html/a9cdb699308aec2087c432e8bb9634d3d6fbfe4a.html",
+    "recupere_le": "2026-07-28T22:46:50.012816+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "coeur-du-metal",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20du%20m%c3%a9tal.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "coeur-du-metal",
+    "resume_court": "Dote jusqu'à une arme par niveau des propriétés de l'adamantium, du fer froid ou de l'argent.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme par niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "coeur-du-metal",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:01+00:00",
+    "hash_source": "cd706cc71fe1715dd99c7ca430887cfd4a2b629346f99d16c0dc48142322f65b"
+  }
+}

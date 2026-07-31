@@ -1,0 +1,117 @@
+{
+  "id": "sonder-l-histoire",
+  "nom": "Sonder l'histoire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonder%20lhistoire.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Inq": 4,
+    "Ens/Mag": 4,
+    "Méd": 2,
+    "Occ": 3,
+    "Prê": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage a un aperçu d'une réalité potentielle similaire à celle-ci mais qui n'a jamais existé. Si la cible rate son jet de Volonté, il peut poser une question à propos d'un sujet et effectuer un test de Connaissances approprié avec un bonus de compétence de +5 (les tests de Connaissances effectués avec ce sort sont retenus séparément dans le cadre des nouvelles tentatives aux tests de Connaissances). Le personnage apprend une information à ce sujet qui provient d'une réalité où il côtoyait la cible, bien que les différences de cette réalité pourraient rendre la réponse légèrement différente dans la sienne. Une fois qu'il a sondé l'histoire d'une cible, avec succès ou non, le personnage ne peut plus cibler l'histoire de la même créature ou chercher la même information dans l'histoire d'une autre créature.",
+  "description_html": "<br/><br/>Le personnage a un aperçu d'une réalité potentielle similaire à celle-ci mais qui n'a jamais existé. Si la cible rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, il peut poser une question à propos d'un sujet et effectuer un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> approprié avec un bonus de compétence de +5 (les tests de Connaissances effectués avec ce sort sont retenus séparément dans le cadre des nouvelles tentatives aux tests de Connaissances). Le personnage apprend une information à ce sujet qui provient d'une réalité où il côtoyait la cible, bien que les différences de cette réalité pourraient rendre la réponse légèrement différente dans la sienne. Une fois qu'il a sondé l'histoire d'une cible, avec succès ou non, le personnage ne peut plus cibler l'histoire de la même créature ou chercher la même information dans l'histoire d'une autre créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonder%20lhistoire.ashx",
+    "cache_fichier": "cache/html/9ab1e9d64f7126c75a91634177765a9cb286bebf.html",
+    "recupere_le": "2026-07-29T07:40:59.534100+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sonder-l-histoire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonder%20lhistoire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sonder-l-histoire",
+    "resume_court": "Le lanceur obtient une information sur un sujet en sondant une réalité alternative où il connaissait la cible.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La cible est désignée mais le sort ne l'affecte pas directement : il utilise son histoire alternative pour que le lanceur obtienne une information. Le rôle « social » s'ajoute à « exploration » car le sort porte sur l'acquisition d'information via une interaction avec une créature, bien que l'effet soit informatif plutôt que coercitif.",
+    "slug": "sonder-l-histoire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:51+00:00",
+    "hash_source": "2dbf6d75fe3fb94f6fab9f8ca3c165cec2a938d3278cc3c12cc17ad5909b7133"
+  }
+}

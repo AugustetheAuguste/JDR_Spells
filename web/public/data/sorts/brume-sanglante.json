@@ -1,0 +1,97 @@
+{
+  "id": "brume-sanglante",
+  "nom": "Brume sanglante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20sanglante.ashx",
+  "ecole": "invocation (création)",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Cham": 8,
+    "Dru": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée d’algue rouge séchée)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "18 m (12 c) de rayon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort invoque une nappe de brume faite d’algues toxiques couleur rouille. Les créatures qui se trouvent à l’intérieur sont enduites d’algues et prennent la même couleur rougeâtre. Toutes les cibles situées dans la brume gagnent un camouflage et doivent réussir un jet de sauvegarde ou subir 1d4 points d’affaiblissement de Sagesse et devenir enragées. Elles attaquent alors les créatures qu’elles sentent proches (comme si elles étaient confuses et avaient tiré le résultat « attaque la créature la plus proche »). Les créatures enragées le restent jusqu’à ce que le sort se dissipe. Une créature fait un seul jet de sauvegarde pour tout le temps qu’elle passe dans la brume mais, si elle sort et y rentre à nouveau, elle doit en refaire un.",
+  "description_html": "<br/><br/>Ce sort invoque une nappe de brume faite d’algues toxiques couleur rouille. Les créatures qui se trouvent à l’intérieur sont enduites d’algues et prennent la même couleur rougeâtre. Toutes les cibles situées dans la brume gagnent un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> et doivent réussir un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ou subir 1d4 points d’affaiblissement de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> et devenir enragées. Elles attaquent alors les créatures qu’elles sentent proches (comme si elles étaient <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuses</a> et avaient tiré le résultat « attaque la créature la plus proche »). Les créatures enragées le restent jusqu’à ce que le sort se dissipe. Une créature fait un seul <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour tout le temps qu’elle passe dans la brume mais, si elle sort et y rentre à nouveau, elle doit en refaire un.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20sanglante.ashx",
+    "cache_fichier": "cache/html/27e6bd83c1100086288e4ee256ab08379d930648.html",
+    "recupere_le": "2026-07-28T22:45:14.442588+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "brume-sanglante",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20sanglante.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 8
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "brume-sanglante",
+    "resume_court": "Une nappe de brume toxique qui camoufle les créatures et les rend enragées.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "confusion_ou_desorientation",
+      "affaiblissement_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "comme si elles étaient confuses et avaient tiré le résultat « attaque la créature la plus proche »"
+      ],
+      "cible_typique": "18 m (12 c) de rayon"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement de Sagesse (1d4 points) mais cet affaiblissement n'est pas une condition listée ; seul l'effet comportemental (enragées, confuses) justifie la condition « confus ». L'affaiblissement est capturé par le tag « affaiblissement_de_capacite ».",
+    "slug": "brume-sanglante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:24+00:00",
+    "hash_source": "63ec092c7199df9ed5fad255fd03236a46ceb6471cb128b80930ff0ac620cb6b"
+  }
+}

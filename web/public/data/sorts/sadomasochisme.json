@@ -1,0 +1,156 @@
+{
+  "id": "sadomasochisme",
+  "nom": "Sadomasochisme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sadomasochisme.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "douleur"
+  ],
+  "niveaux": {
+    "Antipal": 3,
+    "Ens/Mag": 4,
+    "Inq": 3,
+    "Magus": 4,
+    "Prê": 3,
+    "San": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Lorsqu'il est affecté par ce sort, à chaque fois que le personnage subit des dégâts, son assaillant doit lancer les dégâts de l'attaque deux fois et conserver le résultat le plus élevé, mais il doit également réussir un jet de sauvegarde de Volonté ou être démoralisé (comme avec la compétence Intimidation) pendant 1 round. Chaque fois que le personnage inflige des dégâts à une créature démoralisée par ce sort, il lance les dégâts de l'attaque deux fois et conserve le résultat le plus élevé.",
+  "description_html": "<br/><br/>Lorsqu'il est affecté par ce sort, à chaque fois que le personnage subit des dégâts, son assaillant doit lancer les dégâts de l'attaque deux fois et conserver le résultat le plus élevé, mais il doit également réussir un jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être démoralisé (comme avec la compétence <a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a>) pendant 1 round. Chaque fois que le personnage inflige des dégâts à une créature démoralisée par ce sort, il lance les dégâts de l'attaque deux fois et conserve le résultat le plus élevé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sadomasochisme.ashx",
+    "cache_fichier": "cache/html/d41e53c9291634f8b58f85c85e6ac79498a55773.html",
+    "recupere_le": "2026-07-29T07:39:36.468732+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sadomasochisme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sadomasochisme.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 3
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sadomasochisme",
+    "resume_court": "Le lanceur subit plus de dégâts mais démoralise ses assaillants et augmente ses propres dégâts contre eux.",
+    "categorie_principale": "protection",
+    "tags": [
+      "jet_de_sauvegarde",
+      "bonus_chiffre",
+      "effet_mental",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être démoralisé (comme avec la compétence Intimidation) pendant 1 round"
+      ],
+      "cible_typique": "le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort est classé en protection car il transforme les dégâts subis en avantage tactique (démoralisation de l'assaillant et bonus de dégâts du lanceur). Bien que le lanceur subisse techniquement plus de dégâts, l'effet global est défensif et de contrôle. La condition infligée est « secoue » (démoralisation) plutôt qu'une condition plus grave, car le texte précise « démoralisé » qui correspond au malus de moral du premier degré.",
+    "slug": "sadomasochisme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:17+00:00",
+    "hash_source": "7a5bb22beb4666b060309ab57526477ca37b5a0aaa883560143cf198053efced"
+  }
+}

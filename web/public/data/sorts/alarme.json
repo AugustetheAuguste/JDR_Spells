@@ -1,0 +1,215 @@
+{
+  "id": "alarme",
+  "nom": "Alarme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alarme.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Con": 1,
+    "ConU": 1,
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Occ": 1,
+    "Psy": 1,
+    "Rôd": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (une clochette et un peu de fil d’argent extrêmement fin)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "émanation de 6 m (4 c) de rayon autour du point choisi",
+  "duree": "2 heures/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Alarme fait résonner une sonnerie d’alerte audible ou mentale chaque fois qu’une créature au minimum de taille TP pénètre dans la zone protégée ou la touche. Quiconque donne le mot de passe (choisi par le personnage au moment de l’incantation) peut entrer sans déclencher l’alarme. La sonnerie est audible ou mentale suivant la décision du jeteur de sorts.\nAlarme mentale. Le personnage est le seul à se rendre compte de l’intrusion, mais il doit se trouver à moins de 1,5 km de l’endroit protégé. Il entend une brève sonnerie qui le réveille s’il dormait mais ne dérange pas sa concentration. Il perçoit l’alarme même s’il est sous le coup d’un sort de silence.\nAlarme audible. Un son de cloche retentit en cas d’intrusion, toutes les créatures distantes de 18 m ou moins l’entendent (distance réduite de 3 m par porte close et de 6 m par mur épais). Si l’environnement est suffisamment silencieux, on entend faiblement la sonnerie jusqu’à 54 m à la ronde. Celle-ci dure 1 round. Les créatures situées dans la zone d’un sort de silence ne peuvent la percevoir.\nLes créatures astrales ou éthérées ne déclenchent pas l’alarme.\nIl est possible d’user de permanence sur un sort d’alarme.",
+  "description_html": "<hr/>\n<i>Alarme</i> fait résonner une sonnerie d’alerte audible ou mentale chaque fois qu’une créature au minimum de <a class=\"pagelink\" href=\"Pathfinder-RPG.taille%20TP.ashx\" title=\"taille TP\">taille TP</a> pénètre dans la zone protégée ou la touche. Quiconque donne le mot de passe (choisi par le personnage au moment de l’incantation) peut entrer sans déclencher l’<i>alarme</i>. La sonnerie est audible ou mentale suivant la décision du jeteur de sorts.<br/><br/><b>Alarme mentale.</b> Le personnage est le seul à se rendre compte de l’intrusion, mais il doit se trouver à moins de 1,5 km de l’endroit protégé. Il entend une brève sonnerie qui le réveille s’il dormait mais ne dérange pas sa <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentration</a>. Il perçoit l’<i>alarme</i> même s’il est sous le coup d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>.<br/><br/><b>Alarme audible.</b> Un son de cloche retentit en cas d’intrusion, toutes les créatures distantes de 18 m ou moins l’entendent (distance réduite de 3 m par porte close et de 6 m par mur épais). Si l’environnement est suffisamment silencieux, on entend faiblement la sonnerie jusqu’à 54 m à la ronde. Celle-ci dure 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Les créatures situées dans la zone d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i> ne peuvent la percevoir.<br/><br/>Les créatures astrales ou <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9th%c3%a9r%c3%a9.ashx\" title=\"Éthéré\">éthérées</a> ne déclenchent pas l’alarme.<br/><br/>Il est possible d’user de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> sur un sort d’<i>alarme</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Alarme d'invisibilité",
+      "id": "alarme-d-invisibilite",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 1,
+        "Bard": 1,
+        "Inq": 1,
+        "Ens/Mag": 1,
+        "Psy": 1,
+        "Rôd": 1
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F/FD (une clochette et un peu de fil d’argent extrêmement fin)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "émanation de 6 m (4 c) de rayon autour du point choisi",
+      "duree": "10 minutes/niveau",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "non",
+      "description": "Ce sort fonctionne comme alarme, à la seule différence qu’il n’est déclenché que par les créatures invisibles qui pénètrent dans la zone protégée ou la quittent. Le sort provoque une alarme mentale différente si la créature invisible entre dans la zone ou la quitte. Ce sort n’aide pas le personnage à percevoir ou à déterminer la position d’une créature invisible au sein de la zone du sort.\nAlarme d’invisibilité peut être rendue permanente avec un sort de permanence par un lanceur de niveau 9 ou plus pour un coût de 2 500 po.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.alarme.ashx\" title=\"Alarme\">alarme</a></i>, à la seule différence qu’il n’est déclenché que par les créatures invisibles qui pénètrent dans la zone protégée ou la quittent. Le sort provoque une alarme mentale différente si la créature invisible entre dans la zone ou la quitte. Ce sort n’aide pas le personnage à percevoir ou à déterminer la position d’une créature invisible au sein de la zone du sort.<br/><br/><i>Alarme d’invisibilité</i> peut être rendue permanente avec un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> par un lanceur de niveau 9 ou plus pour un coût de 2 500 po.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Alarme sélective",
+      "id": "alarme-selective",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Bard": 3,
+        "Con": 3,
+        "ConU": 3,
+        "Ens/Mag": 3,
+        "Inq": 3,
+        "Occ": 3,
+        "Psy": 3,
+        "Rôd": 2,
+        "Spi": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F/DF (une fine tige en fer de 30 centimètres de long)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "émanation d'un rayon de 6 m au maximum centrée sur un point dans l'espace",
+      "duree": "2 heures/niveau (T)",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "non",
+      "description": "Ce sort fonctionne comme alarme, excepté que le personnage peut affiner le sort afin qu'il discerne le type de créatures ou d'objets qui déclenche l'alarme. Plutôt que d'être déclenchée quand n'importe quelle créature de taille TP ou plus grande entre la zone protégée, le personnage peut choisir une condition de déclenchement, tant qu'elle se base sur un phénomène observable. Par exemple, il pourrait faire en sorte que l’alarme sélective se déclenche lorsqu'une créature d'une certaine race (comme orques, gobelours ou kobolds) entre dans la zone, lorsqu'un groupe de quatre créatures ou plus entre ensembles, ou lorsqu'un objet en métal arrive dans la zone. Il ne peut pas choisir une condition de déclenchement basée sur un phénomène non-observable, comme l'arrivée d'une “chose d'une valeur de 5 000 po” dans la zone, ou même l'entrée d'une “arme”, puisque la valeur et la classification d'un objet est subjective et peut varier d'une personne à l'autre.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.alarme.ashx\" title=\"Alarme\">alarme</a></i>, excepté que le personnage peut affiner le sort afin qu'il discerne le type de créatures ou d'objets qui déclenche l'alarme. Plutôt que d'être déclenchée quand n'importe quelle créature de taille TP ou plus grande entre la zone protégée, le personnage peut choisir une condition de déclenchement, tant qu'elle se base sur un phénomène observable. Par exemple, il pourrait faire en sorte que l’<i>alarme sélective</i> se déclenche lorsqu'une créature d'une certaine race (comme <a class=\"pagelink\" href=\"Pathfinder-RPG.Orque.ashx\" title=\"Orque\">orques</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.gobelours.ashx\" title=\"Gobelours\">gobelours</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Kobold.ashx\" title=\"Kobold\">kobolds</a>) entre dans la zone, lorsqu'un groupe de quatre créatures ou plus entre ensembles, ou lorsqu'un objet en métal arrive dans la zone. Il ne peut pas choisir une condition de déclenchement basée sur un phénomène non-observable, comme l'arrivée d'une “chose d'une valeur de 5 000 po” dans la zone, ou même l'entrée d'une “arme”, puisque la valeur et la classification d'un objet est subjective et peut varier d'une personne à l'autre.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées",
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alarme.ashx",
+    "cache_fichier": "cache/html/0e878566c5abbb84bcc9f0009c5b25224f3a263c.html",
+    "recupere_le": "2026-07-28T22:40:18.445061+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "alarme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alarme.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "alarme",
+    "resume_court": "Une sonnerie d'alerte audible ou mentale se déclenche quand une créature pénètre une zone protégée.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "zone_d_effet",
+      "detection_ou_revelation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation de 6 m (4 c) de rayon autour du point choisi"
+    },
+    "notes_ambiguite": null,
+    "slug": "alarme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:16+00:00",
+    "hash_source": "bb3da31f41aacdcb7d6d882639f0951bdf0fc3e0ce7e176857c21616ae1185ab"
+  }
+}

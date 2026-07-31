@@ -1,0 +1,111 @@
+{
+  "id": "jugement-par-anticipation",
+  "nom": "Jugement par anticipation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jugement%20par%20anticipation.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 2,
+    "Prê": 2,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature humanoïde",
+  "duree": "1d4 rounds",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage montre à une créature les effets que sa vie a eus jusque là et ce à quoi elle peut s’attendre quand elle sera soumise au regard impartial de la déesse qui juge les défunts, à la fin de sa vie. Selon l’alignement de la créature et son degré d’adhésion à cette éthique, le personnage peut lui donner un bref aperçu de la récompense ou de la punition qui l’attend lorsqu’elle mourra, en lui montrant une image mentale du plan auquel elle est destinée dans le Grand Au-delà. Si la cible est d’alignement Bon, elle devra faire un jet de sauvegarde pour ne pas être fascinée pendant 1d4 rounds. Si elle est d’alignement Neutre, elle devra faire un jet de sauvegarde pour ne pas être en proie à la confusion pendant 1d4 rounds. Si elle est d’alignement Mauvais, elle devra faire un jet de sauvegarde pour ne pas être secouée pendant 1d4 rounds.",
+  "description_html": "<br/><br/>Le personnage montre à une créature les effets que sa vie a eus jusque là et ce à quoi elle peut s’attendre quand elle sera soumise au regard impartial de la déesse qui juge les défunts, à la fin de sa vie. Selon l’alignement de la créature et son degré d’adhésion à cette éthique, le personnage peut lui donner un bref aperçu de la récompense ou de la punition qui l’attend lorsqu’elle mourra, en lui montrant une image mentale du plan auquel elle est destinée dans le Grand Au-delà. Si la cible est d’alignement Bon, elle devra faire un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour ne pas être <a class=\"pagelink\" href=\"Pathfinder-RPG.fascin%c3%a9.ashx\" title=\"Fasciné\">fascinée</a> pendant 1d4 rounds. Si elle est d’alignement Neutre, elle devra faire un jet de sauvegarde pour ne pas être en proie à la <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confusion</a> pendant 1d4 rounds. Si elle est d’alignement Mauvais, elle devra faire un jet de sauvegarde pour ne pas être <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouée</a> pendant 1d4 rounds.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jugement%20par%20anticipation.ashx",
+    "cache_fichier": "cache/html/b9abe3d7d6e2e135e6a900ad0ee27f5909f0d59b.html",
+    "recupere_le": "2026-07-28T22:57:47.590557+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "jugement-par-anticipation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jugement%20par%20anticipation.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "jugement-par-anticipation",
+    "resume_court": "Le lanceur montre à une créature une vision de son jugement divin, la fascinant, confondant ou secouant selon son alignement.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "alignement_ou_divin",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine",
+      "confus",
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle devra faire un jet de sauvegarde pour ne pas être fascinée pendant 1d4 rounds",
+        "elle devra faire un jet de sauvegarde pour ne pas être en proie à la confusion pendant 1d4 rounds",
+        "elle devra faire un jet de sauvegarde pour ne pas être secouée pendant 1d4 rounds"
+      ],
+      "cible_typique": "une créature humanoïde"
+    },
+    "notes_ambiguite": "Le sort inflige trois conditions différentes selon l'alignement de la cible, mutuellement exclusives. Les trois sont listées car le texte les énumère toutes, mais une seule s'applique à la résolution. Les trois conditions retenues reflètent les trois effets possibles du sort.",
+    "slug": "jugement-par-anticipation",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:27+00:00",
+    "hash_source": "3c868829298cff2a6df11717db2b9a4eb7bd624afb002b0cba86b7eabeb997c3"
+  }
+}

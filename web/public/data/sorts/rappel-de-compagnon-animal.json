@@ -1,0 +1,101 @@
+{
+  "id": "rappel-de-compagnon-animal",
+  "nom": "Rappel de compagnon animal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rappel%20de%20compagnon%20animal.ashx",
+  "ecole": "invocation(guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 5,
+    "Pal": 4,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (un diamant d’une valeur de 1000 po)",
+  "portee": "contac",
+  "cible": "un compagnon animal ou une monture lié mort",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non (voir texte)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme un rappel à la vie mais affecte uniquement les compagnons animaux, les familiers et les montures des paladins.",
+  "description_html": "<hr/>\nCe sort fonctionne comme un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i> mais affecte uniquement les compagnons animaux, les familiers et les montures des paladins.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rappel%20de%20compagnon%20animal.ashx",
+    "cache_fichier": "cache/html/24cb4c506e4201e19824e9406021bb80897893b8.html",
+    "recupere_le": "2026-07-29T07:37:24.176270+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rappel-de-compagnon-animal",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rappel%20de%20compagnon%20animal.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 5
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rappel-de-compagnon-animal",
+    "resume_court": "Ramène à la vie un compagnon animal, un familier ou une monture de paladin décédé.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un compagnon animal ou une monture lié mort"
+    },
+    "notes_ambiguite": "Le texte dit « fonctionne comme un rappel à la vie » sans détailler l'effet exact. La cible est un cadavre (compagnon animal mort), classé comme « objet » selon la liste. Le sort relève de l'invocation par son école et du soin par son effet (résurrection).",
+    "slug": "rappel-de-compagnon-animal",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:24+00:00",
+    "hash_source": "61aaae1200183dbfacba2e38f1b936d2165ea4339be714632f50b48b16d7b2e1"
+  }
+}

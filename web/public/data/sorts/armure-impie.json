@@ -1,0 +1,96 @@
+{
+  "id": "armure-impie",
+  "nom": "Armure impie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20impie.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Apal": 3,
+    "Inq": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "armure touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Comme armure sainte mais le personnage gagne une RD 5/Bien quand il utilise ses pouvoirs de jugement ou de châtiment.",
+  "description_html": "<hr/>\nComme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.armure%20sainte.ashx\" title=\"Armure sainte\">armure sainte</a></i> mais le personnage gagne une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> 5/<a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">Bien</a> quand il utilise ses pouvoirs de <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx#JUGEMENT\" title=\"L'inquisiteur\">jugement</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.antipaladin.ashx#CHATIMENTDUBIEN\" title=\"L'antipaladin\">châtiment</a>.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage gagne une RD 5/Bien tant qu’elle porte l’armure ciblée. Lorsqu’il utilise son aptitude de jugement ou de châtiment, la réduction s’améliore et passe à RD 10/Bien.\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique lorsqu’il utilise son aptitude de jugement ou de châtiment, ajoutez la moitié de son grade à sa CA en tant que bonus de malfaisance.",
+    "description_html": "Le personnage gagne une RD 5/Bien tant qu’elle porte l’armure ciblée. Lorsqu’il utilise son aptitude de jugement ou de châtiment, la réduction s’améliore et passe à RD 10/Bien.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a> lorsqu’il utilise son aptitude de jugement ou de châtiment, ajoutez la moitié de son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> à sa <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> en tant que bonus de malfaisance.<br/><br/><br/><br/>"
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20impie.ashx",
+    "cache_fichier": "cache/html/fa67ba74abca9c2597748b9282f87c4c85599b6e.html",
+    "recupere_le": "2026-07-28T22:42:02.466366+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "armure-impie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20impie.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "armure-impie",
+    "resume_court": "L'armure touchée confère une réduction de dégâts 5/Bien lors de jugements ou châtiments.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "objet_ou_equipement",
+      "alignement_ou_divin",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "armure touchée"
+    },
+    "notes_ambiguite": "Le sort s'applique à une armure (objet), non à une créature. La réduction de dégâts est un bénéfice défensif accordé au porteur lors de l'activation de pouvoirs spécifiques (jugement ou châtiment), ce qui justifie la catégorie protection et le tag protection_defensive.",
+    "slug": "armure-impie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:12+00:00",
+    "hash_source": "bcf1f795f46ccfb14f7565ed0289b2214a679346e240555e0a3d543dae3c3201"
+  }
+}

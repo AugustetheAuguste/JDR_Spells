@@ -1,0 +1,103 @@
+{
+  "id": "cadeau-empoisonne",
+  "nom": "Cadeau empoisonné",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cadeau%20empoisonn%c3%a9.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Ens/Mag": 3,
+    "Occ": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature vivante touchée",
+  "duree": "instantanée, voir texte",
+  "jet_de_sauvegarde": "Vigueur, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage peut lancer ce sort quand il est empoisonné uniquement. Il extrait le poison de son corps et reproduit son effet sur sa cible qui est alors affectée par le même poison que lui mais avec le DD du sort et non du poison ordinaire. Si le personnage est affecté par plusieurs poisons, il choisit celui qu’il applique à la cible.",
+  "description_html": "<br/><br/>Le personnage peut lancer ce sort quand il est empoisonné uniquement. Il extrait le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> de son corps et reproduit son effet sur sa cible qui est alors affectée par le même <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> que lui mais avec le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort et non du <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> ordinaire. Si le personnage est affecté par plusieurs <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poisons</a>, il choisit celui qu’il applique à la cible.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cadeau%20empoisonn%c3%a9.ashx",
+    "cache_fichier": "cache/html/99bc579c05ff81a1609cd635ac5abc083dcaf3fa.html",
+    "recupere_le": "2026-07-28T22:45:30.240745+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "cadeau-empoisonne",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cadeau%20empoisonn%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "cadeau-empoisonne",
+    "resume_court": "Transfère le poison du lanceur à une créature touchée, qui subit ses effets avec le DD du sort.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort ne décrit pas explicitement les dégâts ou conditions infligés par le poison transféré, seulement qu'il reproduit l'effet du poison avec le DD du sort. Aucune condition spécifique n'est nommée dans le texte fourni.",
+    "slug": "cadeau-empoisonne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:28+00:00",
+    "hash_source": "8040840067ef4acccc574c20354a996ae2730df33aba74c5a66689dce553af2b"
+  }
+}

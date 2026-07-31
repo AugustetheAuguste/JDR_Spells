@@ -1,0 +1,269 @@
+{
+  "id": "force-de-taureau",
+  "nom": "Force de taureau",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Apal": 2,
+    "Cham": 2,
+    "Con": 2,
+    "ConU": 2,
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Méd": 2,
+    "Pal": 2,
+    "Prê": 2,
+    "Psy": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (quelques poils de taureau ou une pincée de bouse séchée)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le sujet devient plus fort. Ce sort lui confère un bonus d’altération de +4 points en Force, ce qui induit un effet positif sur ses jets d’attaque, ses jets de dégâts au corps à corps et sur tous les autres éléments dépendant du modificateur de Force.",
+  "description_html": "<hr/>\nLe sujet devient plus fort. Ce sort lui confère un <a class=\"pagelink\" href=\"Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx\" title=\"bonus d'altération\">bonus d’altération</a> de +4 points en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>, ce qui induit un effet positif sur ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a>, ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2ts.ashx\" title=\"jet de dégâts\">jets de dégâts</a> au corps à corps et sur tous les autres éléments dépendant du modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Force décuplée",
+      "id": "force-decuplee",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Pal": 4,
+        "Prê": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "personnelle",
+      "cible": "le lanceur de sorts",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": null,
+      "resistance_magie": null,
+      "description": "Identique au sort force de taureau, excepté qu’il octroie un bonus d’altération de +8 à la Force.",
+      "description_html": "<hr/>\nIdentique au sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, excepté qu’il octroie un bonus d’altération de +8 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Force de taureau de groupe",
+      "id": "force-de-taureau-de-groupe",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Cham": 6,
+        "Con": 4,
+        "ConU": 6,
+        "Dru": 6,
+        "Ens/Mag": 6,
+        "Magus": 6,
+        "Prê": 6,
+        "Psy": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (quelques poils de taureau ou une pincée de bouse séchée)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort est semblable à force de taureau, si ce n’est qu’il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, si ce n’est qu’il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau.ashx",
+    "cache_fichier": "cache/html/8d9669d1127703f5d8194b4cec28938cb7a9022c.html",
+    "recupere_le": "2026-07-28T22:53:54.321659+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "force-de-taureau",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "force-de-taureau",
+    "resume_court": "Le sujet gagne un bonus de +4 en Force pendant 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "force-de-taureau",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:14+00:00",
+    "hash_source": "15cd112c9c0fcd0515765c83d9a625c07a034a0da6d66963955f29861743e476"
+  }
+}

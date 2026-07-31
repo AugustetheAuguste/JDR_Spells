@@ -1,0 +1,77 @@
+{
+  "id": "barriere-mentale-ii",
+  "nom": "Barrière mentale II",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barri%c3%a8re%20mentale%20II.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Psy": 3
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 round",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme barrière mentale I mais le bonus de bouclier à la CA passe à +6. De plus, le personnage subit seulement la moitié des dégâts de coup mental I, II et III (réduits à 1/4 en cas de réussite au jet de sauvegarde). On peut lancer une version réduite de ce sort.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.barri%c3%a8re%20mentale%20I.ashx\" title=\"Barrière mentale I\">barrière mentale I</a></i> mais le bonus de bouclier à la CA passe à +6. De plus, le personnage subit seulement la moitié des dégâts de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20mental%20I.ashx\" title=\"Coup mental I\">coup mental I</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20mental%20II.ashx\" title=\"Coup mental II\">II</a></i> et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20mental%20III.ashx\" title=\"Coup mental III\">III</a></i> (réduits à 1/4 en cas de réussite au jet de sauvegarde). On peut lancer une version réduite de ce sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barri%c3%a8re%20mentale%20II.ashx",
+    "cache_fichier": "cache/html/d0c995cd53d732dd7a89f4ab07ec6a7da31e1734.html",
+    "recupere_le": "2026-07-28T22:43:36.986803+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "barriere-mentale-ii",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barri%c3%a8re%20mentale%20II.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "barriere-mentale-ii",
+    "resume_court": "Le lanceur gagne un bonus de +6 à la CA et réduit les dégâts mentaux de moitié.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le texte renvoie à « barrière mentale I » sans la décrire ; on ne peut donc pas vérifier si d'autres effets s'ajoutent. La durée d'1 round et l'action immédiate suggèrent une protection réactive de combat. Les dégâts mentaux mentionnés (coup mental I, II, III) ne sont pas définis dans le texte fourni, donc pas de type_degats spécifique.",
+    "slug": "barriere-mentale-ii",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:41+00:00",
+    "hash_source": "3b1c54e54538a9566ac432ec9a4a4ec498217ac0cb9ed4e29cb9ae293850f9a3"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "elevation-du-sol",
+  "nom": "Élévation du sol",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89l%c3%a9vation%20du%20sol.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "Terre"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Magus": 2,
+    "Prê": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort permet à la cible de faire monter le sol sous ses pieds. Par une action libre, elle peut provoquer une élévation de 1,50 mètre. Toutes les cases adjacentes sont alors traitées comme une pente raide . L’élévation du sol empêche les ennemis placés en contrebas de prendre la cible du sort en tenaille. Si la cible se déplace après activation du sort, le sol reprend son altitude normale à la fin de son tour, sinon, il reste surélevé jusqu’à ce que la cible bouge ou utilise une action rapide pour le faire revenir à la normale. L’élévation du sol ne permet pas de surélever le sol de plus de 1,50 mètre.",
+  "description_html": "<br/><br/>Ce sort permet à la cible de faire monter le sol sous ses pieds. Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>, elle peut provoquer une élévation de 1,50 mètre. Toutes les cases adjacentes sont alors traitées comme une <a class=\"pagelink\" href=\"Pathfinder-RPG.Aventures%20en%20ext%c3%a9rieur.ashx#Collines_7\" title=\"Aventures en extérieur\">pente raide</a> . L’élévation du sol empêche les ennemis placés en contrebas de prendre la cible du sort en tenaille. Si la cible se déplace après activation du sort, le sol reprend son altitude normale à la fin de son tour, sinon, il reste surélevé jusqu’à ce que la cible bouge ou utilise une action rapide pour le faire revenir à la normale. L’élévation du sol ne permet pas de surélever le sol de plus de 1,50 mètre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89l%c3%a9vation%20du%20sol.ashx",
+    "cache_fichier": "cache/html/a5f7c1028365659e7e9a590289da3dec5623ef0a.html",
+    "recupere_le": "2026-07-28T22:38:57.562640+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "elevation-du-sol",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89l%c3%a9vation%20du%20sol.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "elevation-du-sol",
+    "resume_court": "La cible élève le sol sous ses pieds de 1,50 m pour se protéger des attaques en tenaille.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "terrain_ou_environnement",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "elevation-du-sol",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:12+00:00",
+    "hash_source": "f48329976714ba8d83d5a834486386fdd6a89ba254ae9f79a8f4c8a5c8dc560b"
+  }
+}

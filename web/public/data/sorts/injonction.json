@@ -1,0 +1,195 @@
+{
+  "id": "injonction",
+  "nom": "Injonction",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injonction.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 1,
+    "Hyp": 1,
+    "Inq": 1,
+    "Méd": 1,
+    "Occ": 1,
+    "Prê": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts donne un ordre à la cible et celle-ci y obéit fidèlement et aussi tôt que possible. Il peut choisir l’une des options suivantes.\nApproche. À son tour, le sujet se déplace vers le personnage pendant un round, aussi vite que possible et en empruntant le chemin le plus direct. Il ne fait rien d’autre que se déplacer, et, le cas échéant, ce mouvement peut provoquer des attaques d’opportunité.\nFuis. À son tour, le sujet s’éloigne du personnage pendant un round, aussi vite que possible. Il ne fait rien d’autre que se déplacer et, le cas échéant, ce mouvement peut provoquer des attaques d’opportunité.\nHalte. Le sujet ne bouge plus pendant 1 round. Il n’entreprend aucune action mais n’est pas sans défense pour autant.\nLâche. À son tour, le sujet lâche tout ce qu’il tient. Il ne peut ramasser aucun de ces objets avant son prochain tour.\nTombe. À son tour, le sujet tombe au sol et reste à terre pendant 1 round. Il peut agir selon ses désirs pendant qu’il est sur le sol mais subit alors les malus habituels.\nSi le sujet est incapable d’obéir à l’ordre lorsque son tour arrive, le sort échoue.",
+  "description_html": "<hr/>\nLe lanceur de sorts donne un ordre à la cible et celle-ci y obéit fidèlement et aussi tôt que possible. Il peut choisir l’une des options suivantes.<br/><br/><b>Approche.</b> À son tour, le sujet se déplace vers le personnage pendant un <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, aussi vite que possible et en empruntant le chemin le plus direct. Il ne fait rien d’autre que se déplacer, et, le cas échéant, ce mouvement peut provoquer des <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a>.<br/><br/><b>Fuis.</b> À son tour, le sujet s’éloigne du personnage pendant un <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, aussi vite que possible. Il ne fait rien d’autre que se déplacer et, le cas échéant, ce mouvement peut provoquer des <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a>.<br/><br/><b>Halte.</b> Le sujet ne bouge plus pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Il n’entreprend aucune action mais n’est pas <a class=\"pagelink\" href=\"Pathfinder-RPG.sans%20d%c3%a9fense.ashx\" title=\"Sans défense\">sans défense</a> pour autant.<br/><br/><b>Lâche.</b> À son tour, le sujet lâche tout ce qu’il tient. Il ne peut ramasser aucun de ces objets avant son prochain tour.<br/><br/><b>Tombe.</b> À son tour, le sujet tombe au sol et reste <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Il peut agir selon ses désirs pendant qu’il est sur le sol mais subit alors les malus habituels.<br/><br/>Si le sujet est incapable d’obéir à l’ordre lorsque son tour arrive, le sort échoue.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut cibler jusqu’à une créature par niveau, et chacune d’entre elles reçoit le même ordre. Les créatures qui réussissent leur jet de sauvegarde sont chancelantes pendant un round (c’est un effet mental).",
+    "description_html": "Le personnage peut cibler jusqu’à une créature par niveau, et chacune d’entre elles reçoit le même ordre. Les créatures qui réussissent leur jet de sauvegarde sont chancelantes pendant un round (c’est un effet mental).<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Injonction suprême",
+      "id": "injonction-supreme",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "langage",
+        "mental"
+      ],
+      "niveaux": {
+        "Hyp": 4,
+        "Inq": 5,
+        "Méd": 4,
+        "Occ": 5,
+        "Prê": 5,
+        "Psy": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "1 créature/niveau, distantes de moins de 9 m/6 c les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme injonction, si ce n’est qu’il permet d’affecter jusqu’à une créature par niveau et que son effet persiste sur plusieurs rounds. Le personnage ne peut donner qu’un seul ordre, qui vaut pour toutes les cibles. Celles qui ratent leur jet de sauvegarde initial y obéissent dès que vient leur tour. Puis après, au début de chacun de leurs tours (à partir du second tour suivant l’incantation d’injonction suprême donc), les créatures affectées peuvent effectuer un nouveau jet de Volonté pour tenter de se libérer de l’enchantement.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.injonction.ashx\" title=\"Injonction\">injonction</a></i>, si ce n’est qu’il permet d’affecter jusqu’à une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> et que son effet persiste sur plusieurs <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Le personnage ne peut donner qu’un seul ordre, qui vaut pour toutes les cibles. Celles qui ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a> initial y obéissent dès que vient leur tour. Puis après, au début de chacun de leurs tours (à partir du second tour suivant l’incantation d’<i>injonction suprême</i> donc), les créatures affectées peuvent effectuer un nouveau jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour tenter de se libérer de l’<a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a>.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injonction.ashx",
+    "cache_fichier": "cache/html/ad9372158dd977db5358b338094ac47d73db7726.html",
+    "recupere_le": "2026-07-28T22:57:05.544136+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "injonction",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injonction.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "injonction",
+    "resume_court": "Le lanceur ordonne à une créature d'obéir à un commandement simple pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": "Le sort impose une contrainte comportementale sans infliger de dégâts ni de condition mécanique nommée. La durée est de 1 round, ce qui justifie `duree_instantanee` au sens où l'effet se résout en un seul tour de combat, bien que techniquement il persiste pendant ce round.",
+    "slug": "injonction",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:31+00:00",
+    "hash_source": "a1f55f3bb20c5e866232cfe0767eb9dd7badbc082d1f0d66958b6e01b269c85b"
+  }
+}

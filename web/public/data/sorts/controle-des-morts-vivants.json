@@ -1,0 +1,76 @@
+{
+  "id": "controle-des-morts-vivants",
+  "nom": "Contrôle des morts-vivants",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Contr%c3%b4le%20des%20morts-vivants.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de viande crue et un éclat d’os)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu’à 2 DV de morts-vivants/niveau, distants de moins de 9 m (6 c) les uns des autres",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Grâce à ce sort, le personnage peut prendre le contrôle de morts-vivants pour un temps limité. Il leur donne ses ordres vocalement. Le personnage ne peut pas communiquer par télépathie mais quelle que soit la langue qu’il utilise, il se fait comprendre des morts-vivants. S’il se trouve dans l’incapacité de pouvoir s’exprimer (par exemple, à cause d’un sort de silence), les créatures affectées ne l’attaquent pas. Lorsque le sort cesse de faire effet, les morts-vivants recommencent à agir normalement.\nCeux qui sont intelligents se souviennent que le personnage les a momentanément contrôlés et risquent de chercher à se venger.",
+  "description_html": "<br/><br/>Grâce à ce sort, le personnage peut prendre le contrôle de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> pour un temps limité. Il leur donne ses ordres vocalement. Le personnage ne peut pas communiquer par télépathie mais quelle que soit la langue qu’il utilise, il se fait comprendre des <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>. S’il se trouve dans l’incapacité de pouvoir s’exprimer (par exemple, à cause d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>), les créatures affectées ne l’attaquent pas. Lorsque le sort cesse de faire effet, les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> recommencent à agir normalement.<br/><br/>Ceux qui sont intelligents se souviennent que le personnage les a momentanément contrôlés et risquent de chercher à se venger.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Contr%c3%b4le%20des%20morts-vivants.ashx",
+    "cache_fichier": "cache/html/62d4862c58614d9ba872f637319ce2138c6b5613.html",
+    "recupere_le": "2026-07-29T07:45:01.432007+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "controle-des-morts-vivants",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Contr%c3%b4le%20des%20morts-vivants.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "controle-des-morts-vivants",
+    "resume_court": "Le lanceur prend le contrôle de morts-vivants et leur donne des ordres vocalement pendant 1 minute par niveau.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à 2 DV de morts-vivants/niveau"
+    },
+    "notes_ambiguite": "Le sort contrôle des créatures existantes plutôt que d'en invoquer de nouvelles, mais la catégorie « invocation » est la plus proche car elle couvre les sorts qui font agir des créatures pour le lanceur. Alternativement, « entrave » aurait pu convenir pour le contrôle du comportement, mais « invocation » reflète mieux l'usage tactique : les morts-vivants deviennent des serviteurs du lanceur.",
+    "slug": "controle-des-morts-vivants",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:25+00:00",
+    "hash_source": "d626ac4ff46d31404fd0fb7a9ed8a5edb62cb37cc0b04b5af879ffd5af7853b3"
+  }
+}

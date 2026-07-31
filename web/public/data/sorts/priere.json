@@ -1,0 +1,107 @@
+{
+  "id": "priere",
+  "nom": "Prière",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pri%c3%a8re.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Inq": 3,
+    "Pal": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "12 m",
+  "cible": "tous les alliés et ennemis dans un rayonnement de 12 m de rayon, centré sur le personnage",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Ce sort permet au personnage de demander à son dieu de l’aider, lui et ses alliés et d’handicaper ses ennemis. Le lanceur de sorts et ses compagnons bénéficient d’un bonus de chance de +1 aux jets d’attaque, aux jets de dégâts, aux jets de sauvegarde et aux tests de compétence, tandis que leurs adversaires subissent un malus de -1 à ces mêmes jets.",
+  "description_html": "<br/><br/>Ce sort permet au personnage de demander à son dieu de l’aider, lui et ses alliés et d’handicaper ses ennemis. Le lanceur de sorts et ses compagnons bénéficient d’un bonus de chance de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a>, aux jets de dégâts, aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx\" title=\"test de compétence\">tests de compétence</a>, tandis que leurs adversaires subissent un malus de -1 à ces mêmes jets.<br/><br/>",
+  "mythique": {
+    "description": "Le bonus de chance conféré par le sort s’élève à +2 et le malus infligé aux ennemis à -2. Lorsque le personnage lance ce sort, les alliés affectés récupèrent un nombre de points de vie égal au double du grade du personnage et les ennemis affectés subissent un nombre équivalent de points de dégâts.",
+    "description_html": "Le bonus de chance conféré par le sort s’élève à +2 et le malus infligé aux ennemis à -2. Lorsque le personnage lance ce sort, les alliés affectés récupèrent un nombre de points de vie égal au double du <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage et les ennemis affectés subissent un nombre équivalent de points de dégâts."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pri%c3%a8re.ashx",
+    "cache_fichier": "cache/html/3ba04871d0bc99e0caa288984de52624079a47e8.html",
+    "recupere_le": "2026-07-28T23:04:41.063487+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "priere",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pri%c3%a8re.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "priere",
+    "resume_court": "Le lanceur et ses alliés gagnent +1 à leurs jets, tandis que les ennemis subissent -1.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "malus_chiffre",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "tous les alliés et ennemis dans un rayonnement de 12 m de rayon, centré sur le personnage"
+    },
+    "notes_ambiguite": null,
+    "slug": "priere",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:52+00:00",
+    "hash_source": "ec4a3756468619804a493173d56bf4a394beeb565a58842d8d07a61350db9b98"
+  }
+}

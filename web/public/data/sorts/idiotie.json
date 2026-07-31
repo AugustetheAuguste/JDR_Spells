@@ -1,0 +1,151 @@
+{
+  "id": "idiotie",
+  "nom": "Idiotie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Idiotie.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Psy": 2,
+    "San": 2,
+    "Sor": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Le lanceur du sort peut réduire les facultés mentales de la cible d’un simple toucher. S’il réussit une attaque de contact au corps à corps, il inflige un malus de -1d6 aux valeurs d’Intelligence, de Sagesse et de Charisme de la victime, sans toutefois les amener en-dessous de 1.\nÀ cause des malus imposés par ce sort, il se peut que la cible ne puisse plus lancer certains de ses sorts ; c’est le cas si la valeur de la caractéristique associée à ces sorts chute sous le minimum nécessaire pour pouvoir les lancer.",
+  "description_html": "<br/><br/>Le lanceur du sort peut réduire les facultés mentales de la cible d’un simple toucher. S’il réussit une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a>, il inflige un malus de -1d6 aux valeurs d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> de la victime, sans toutefois les amener en-dessous de 1.<br/><br/>À cause des malus imposés par ce sort, il se peut que la cible ne puisse plus lancer certains de ses sorts ; c’est le cas si la valeur de la caractéristique associée à ces sorts chute sous le minimum nécessaire pour pouvoir les lancer.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Idiotie.ashx",
+    "cache_fichier": "cache/html/c61472533059235ac40073dcfa04def01d0fca9b.html",
+    "recupere_le": "2026-07-28T22:56:25.513414+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "idiotie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Idiotie.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "idiotie",
+    "resume_court": "Un toucher qui réduit temporairement l'Intelligence, la Sagesse et le Charisme de la cible.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "malus_chiffre",
+      "effet_mental",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "idiotie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:14+00:00",
+    "hash_source": "64c3f4e4bbe25ff3770149ec9c4c90689db23f1ebc712660db10f6e06168f415"
+  }
+}

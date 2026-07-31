@@ -1,0 +1,155 @@
+{
+  "id": "nuage-euphorisant",
+  "nom": "Nuage euphorisant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20euphorisant.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (des champignons rares d’une valeur de 5 po)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)",
+  "cible": "brume dans une étendue de 6 m de rayon et de 6 m de hauteur",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "non",
+  "description": "Le personnage crée un banc de brume similaire à ce que ferait une brume de dissimulation, à la seule différence que ses vapeurs sont enivrantes. Les créatures vivantes présentes dans le nuage sont fascinées. Cet état dure tant que les créatures sont dans le nuage et pendant 1d4+1 rounds après qu’elles en sont sorties. Toute créature qui réussit son jet de sauvegarde mais reste dans le nuage doit continuer de faire un jet de sauvegarde à chaque round lors du tour du personnage.",
+  "description_html": "<br/><br/>Le personnage crée un banc de brume similaire à ce que ferait une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.brume%20de%20dissimulation.ashx\" title=\"Brume de dissimulation\">brume de dissimulation</a></i>, à la seule différence que ses vapeurs sont enivrantes. Les créatures vivantes présentes dans le nuage sont <a class=\"pagelink\" href=\"Pathfinder-RPG.Fascin%c3%a9.ashx\" title=\"Fasciné\">fascinées</a>.\nCet état dure tant que les créatures sont dans le nuage et pendant 1d4+1 rounds après qu’elles en sont sorties. Toute créature qui réussit son jet de sauvegarde mais reste dans le nuage doit continuer de faire un jet de sauvegarde à chaque round lors du tour du personnage.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20euphorisant.ashx",
+    "cache_fichier": "cache/html/7247d5995659b3fd24fb7ec9b5b288a1607d3545.html",
+    "recupere_le": "2026-07-28T23:01:57.862029+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "nuage-euphorisant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20euphorisant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "nuage-euphorisant",
+    "resume_court": "Un nuage de brume enivrante qui fascine les créatures vivantes qui s'y trouvent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les créatures vivantes présentes dans le nuage sont fascinées"
+      ],
+      "cible_typique": "brume dans une étendue de 6 m de rayon et de 6 m de hauteur"
+    },
+    "notes_ambiguite": null,
+    "slug": "nuage-euphorisant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:25+00:00",
+    "hash_source": "3599512c7ee0f7641838ca048ec33abc7bfef73b96564206a9655ca54998a73b"
+  }
+}

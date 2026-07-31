@@ -1,0 +1,108 @@
+{
+  "id": "vie-scellee",
+  "nom": "Vie scellée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vie%20scell%c3%a9e.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Méd": 2,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage scelle la force vitale de la cible en son sein, l’empêchant de la partager avec autrui. Les créatures affectées ne peuvent plus transférer des dégâts d’elles vers autrui ou inversement, comme le permettrait un sort de protection d’autrui, les vies liées du spirite ou le lien vital du conjurateur. Les effets comme baiser du vampire, conçus pour voler la vitalité des autres, infligent les dégâts normaux mais n’apportent aucun bénéfice.",
+  "description_html": "<hr/>\nLe personnage scelle la force vitale de la cible en son sein, l’empêchant de la partager avec autrui. Les créatures affectées ne peuvent plus transférer des dégâts d’elles vers autrui ou inversement, comme le permettrait un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20dautrui.ashx\" title=\"Protection d'autrui\">protection d’autrui</a></i>, les vies liées du <a class=\"pagelink\" href=\"Pathfinder-RPG.spirite.ashx\" title=\"Le spirite\">spirite</a> ou le lien vital du <a class=\"pagelink\" href=\"Pathfinder-RPG.conjurateur.ashx\" title=\"Le conjurateur (aussi appelé invocateur)\">conjurateur</a>. Les effets comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.baiser%20du%20vampire.ashx\" title=\"Baiser du vampire\">baiser du vampire</a></i>, conçus pour voler la vitalité des autres, infligent les dégâts normaux mais n’apportent aucun bénéfice.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Vie scellée suprême",
+      "id": "vie-scellee-supreme",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Spi": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "G",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+      "cible": "1 créature",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme vie scellée mais apporte en plus les avantages d’une protection contre la mort et immunise la cible contre tous les effets visant à extraire son âme ou la transférer, comme les sorts de possession spirituelle ou de séquestration. Si l’âme a déjà quitté son corps, ce sort l’empêche d’y retourner tant qu’il ne s’est pas dissipé.",
+      "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.vie%20scell%c3%a9e.ashx\" title=\"Vie scellée\">vie scellée</a></i> mais apporte en plus les avantages d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20la%20mort.ashx\" title=\"Protection contre la mort\">protection contre la mort</a></i> et immunise la cible contre tous les effets visant à extraire son âme ou la transférer, comme les sorts de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle%20(sort).ashx\" title=\"Possession spirituelle\">possession spirituelle</a></i> ou de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.s%c3%a9questration.ashx\" title=\"Séquestration\">séquestration</a></i>. Si l’âme a déjà quitté son corps, ce sort l’empêche d’y retourner tant qu’il ne s’est pas dissipé.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vie%20scell%c3%a9e.ashx",
+    "cache_fichier": "cache/html/17937cf12c8aea69feb5ca31e37a226cf41d81a1.html",
+    "recupere_le": "2026-07-29T07:44:06.149431+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vie-scellee",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vie%20scell%c3%a9e.ashx",
+  "niveaux_par_classe": {
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vie-scellee",
+    "resume_court": "Scelle la force vitale d'une créature, l'empêchant de transférer des dégâts ou de la vitalité.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas de dégâts directs mais restreint les capacités de la cible en matière de transfert de vitalité. Classé en entrave car il restreint une action/capacité sans infliger de dégâts. Pas de condition infligée au sens strict (aveugle, étourdi, etc.) : l'effet est une restriction de capacité.",
+    "slug": "vie-scellee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:09+00:00",
+    "hash_source": "2bd19929c2882c6a45b9e37fcf165f3ac4c36343c5d763b88cab9e4fe92297ea"
+  }
+}

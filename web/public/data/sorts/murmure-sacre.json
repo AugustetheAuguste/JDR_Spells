@@ -1,0 +1,84 @@
+{
+  "id": "murmure-sacre",
+  "nom": "Murmure sacré",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Murmure%20sacr%c3%a9.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "bien"
+  ],
+  "niveaux": {
+    "Pal": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 m (6 c)",
+  "cible": "émanation en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler ; voir texte",
+  "resistance_magie": "oui",
+  "description": "Le personnage murmure une unique parole dans le langage primitif du bien. Elle est anathème pour tous les serviteurs du mal et renforce la résolution des créatures bonnes. Les créatures Mauvaises qui se trouvent dans le cône doivent réussir un jet de Vigueur ou être fiévreuses pendant 1 round/niveau. Les extérieurs Mauvais de sous-type Mauvais, les dragons Mauvais et les morts-vivants qui se trouvent dans le cône subissent également 2d8 points de dégâts s'ils ratent leur jet de sauvegarde. Les créatures d'alignement Bon situées dans la zone d'effet gagnent un bonus sacré de +2 aux jets d'attaque et de dégâts pendant 1 round.",
+  "description_html": "<br/><br/>Le personnage murmure une unique parole dans le langage primitif du bien. Elle est anathème pour tous les serviteurs du mal et renforce la résolution des créatures bonnes. Les créatures Mauvaises qui se trouvent dans le cône doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuses</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">extérieurs</a> Mauvais de <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Mal.ashx\" title=\"Mal (sous-type)\">sous-type Mauvais</a>, les dragons Mauvais et les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> qui se trouvent dans le cône subissent également 2d8 points de dégâts s'ils ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>. Les créatures d'alignement Bon situées dans la zone d'effet gagnent un bonus sacré de +2 aux jets d'attaque et de dégâts pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Murmure%20sacr%c3%a9.ashx",
+    "cache_fichier": "cache/html/fe15bcc3de87bced8b71b7595db97189b2967146.html",
+    "recupere_le": "2026-07-28T23:01:30.834209+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "murmure-sacre",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Murmure%20sacr%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "murmure-sacre",
+    "resume_court": "Un murmure sacré qui affaiblit les créatures mauvaises et renforce les créatures bonnes dans un cône.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "bonus_chiffre",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "positif",
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": "2d8 points de dégâts",
+      "condition_infligee": [
+        "être fiévreuses pendant 1 round/niveau"
+      ],
+      "cible_typique": "émanation en forme de cône"
+    },
+    "notes_ambiguite": "Le texte emploie « fiévreuses » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral), mais le texte décrit plutôt un affaiblissement temporaire. Cependant, aucune condition de la liste ne correspond exactement à « fiévreuse ». J'ai retenu « secoue » comme la meilleure approximation d'un malus de moral léger, bien que le texte soit ambigu sur la nature exacte de l'effet.",
+    "slug": "murmure-sacre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:19+00:00",
+    "hash_source": "fa717b1dbbaf6acf15c35164d14c77075a3d76cbd5b88710471a3befe4b9feff"
+  }
+}

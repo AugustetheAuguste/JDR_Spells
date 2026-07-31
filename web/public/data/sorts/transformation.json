@@ -1,0 +1,76 @@
+{
+  "id": "transformation",
+  "nom": "Transformation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transformation.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 4,
+    "ConU": 4
+  },
+  "temps_incantation": "1 heure",
+  "composantes": "V, G, M (une fiole de vif-argent d'une valeur de 1 000 po)",
+  "portee": "contact",
+  "cible": "eidolon du lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "non",
+  "description": "L'eidolon change et se transforme. Ce sort permet au personnage de modifier l'une des évolutions précédentes de son eidolon et d'allouer ses points à une autre. Si le personnage possède également le pouvoir d'aspect` ou d'aspect supérieur, il peut utiliser le sort pour changer les points utilisés pour ses propres modifications, y compris pour retrancher ou rajouter des points selon ce que ces aptitudes permettent.\nL'eidolon ne peut pas bénéficier de ce sort plus d'une fois par jour. Il ne permet pas non plus de changer la forme de base de l'eidolon.",
+  "description_html": "<br/><br/>L'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> change et se transforme. Ce sort permet au personnage de modifier l'une des <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx#EVOLUTIONS\" title=\"L'eidolon du conjurateur\">évolutions</a> précédentes de son <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> et d'allouer ses points à une autre. Si le personnage possède également le pouvoir d'<a class=\"pagelink\" href=\"Pathfinder-RPG.conjurateur.ashx#ASPECT\" title=\"Le conjurateur (aussi appelé invocateur)\">aspect`</a> ou d'<a class=\"pagelink\" href=\"Pathfinder-RPG.conjurateur.ashx#ASPECTSUPERIEUR\" title=\"Le conjurateur (aussi appelé invocateur)\">aspect supérieur</a>, il peut utiliser le sort pour changer les points utilisés pour ses propres modifications, y compris pour retrancher ou rajouter des points selon ce que ces aptitudes permettent.<br/><br/>L'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> ne peut pas bénéficier de ce sort plus d'une fois par jour. Il ne permet pas non plus de changer la forme de base de l'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transformation.ashx",
+    "cache_fichier": "cache/html/5b2da02c12daac336b54957e9dd5450dbcfa3dff.html",
+    "recupere_le": "2026-07-29T07:43:15.271949+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "transformation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transformation.ashx",
+  "niveaux_par_classe": {
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "transformation",
+    "resume_court": "Permet de réallouer les évolutions d'un eidolon ou les modifications du lanceur.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "eidolon du lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort affecte l'eidolon du lanceur, qui est une créature alliée. Bien que le texte mentionne une possible application aux modifications du lanceur lui-même via les pouvoirs d'aspect, la cible principale reste l'eidolon.",
+    "slug": "transformation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:47+00:00",
+    "hash_source": "ae343801ee36f9a5718df2cbe903f79f3c2d2b75c914cd46b4e733476ae96928"
+  }
+}

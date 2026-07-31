@@ -1,0 +1,114 @@
+{
+  "id": "chien-de-chasse",
+  "nom": "Chien de chasse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien%20de%20chasse.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 3,
+    "Inq": 2,
+    "Occ": 3,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte de sang et une pincée de cannelle)",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage gagne l'aptitude odorat et peut donc traquer une créature à l'odeur. Il reçoit un bonus de compétence de +8 aux tests de Perception qui recourent à l'odorat et un bonus de compétence de +4 aux tests de Survie pour suivre une piste à l'odeur. Il subit un malus de -4 aux jets de sauvegarde contre les effets liés à l'odeur comme le pouvoir spécial de puanteur et les nuages nauséabonds. Une créature sous l'effet de chien de chasse peut détecter le poison à l'odeur si elle réussit un test de Perception DD 20.",
+  "description_html": "<br/><br/>Le personnage gagne l'aptitude <a class=\"pagelink\" href=\"Pathfinder-RPG.odorat.ashx\" title=\"odorat\">odorat</a> et peut donc traquer une créature à l'odeur. Il reçoit un bonus de compétence de +8 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> qui recourent à l'odorat et un bonus de compétence de +4 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> pour suivre une piste à l'odeur. Il subit un malus de -4 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> contre les effets liés à l'odeur comme le pouvoir spécial de <a class=\"pagelink\" href=\"Pathfinder-RPG.puanteur.ashx\" title=\"Puanteur\">puanteur</a> et les <i><a class=\"pagelink\" href=\"Pathfinder-RPG.nuage%20naus%c3%a9abond.ashx\" title=\"Nuage nauséabond\">nuages nauséabonds</a></i>. Une créature sous l'effet de <i>chien de chasse</i> peut détecter le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> à l'odeur si elle réussit un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 20.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien%20de%20chasse.ashx",
+    "cache_fichier": "cache/html/ed19d11a2253a88da783ba3a5834e7633135357a.html",
+    "recupere_le": "2026-07-28T22:46:33.726118+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chien-de-chasse",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien%20de%20chasse.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chien-de-chasse",
+    "resume_court": "Le lanceur gagne l'odorat et des bonus à la Perception et la Survie pour traquer à l'odeur.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "perception_amelioree",
+      "bonus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort confère aussi un malus de -4 aux jets de sauvegarde contre les effets liés à l'odeur, mais ce malus n'est pas une condition infligée au sens des conditions listées ; c'est un effet secondaire du gain de capacité. Les bonus numériques (+8 et +4) justifient le tag bonus_chiffre.",
+    "slug": "chien-de-chasse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:55+00:00",
+    "hash_source": "fe347d0ff005a379c8ab07c2a2c5ac824b08ca18e3899ef8435ee7fc59160606"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "arme-de-glace-maudite",
+  "nom": "Arme de glace maudite",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20glace%20maudite.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "Mal",
+    "eau",
+    "froid"
+  ],
+  "niveaux": {
+    "Inq": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une fiole d’eau maudite ou 2,5 kg de poudre d’argent d’une valeur de 25 po)",
+  "portee": "0 m",
+  "cible": "une arme de glace",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage crée une arme de maître qui a les particularités de la glace et de l’eau maudite. Cette arme doit être une arme simple ou l’arme de prédilection de la divinité du personnage. Elle inflige les dégâts normaux d’une arme de ce type plus 1 point de dégâts de froid par niveau de lanceur (10 au maximum). En outre, toute créature touchée par l’arme est également touchée par l’eau maudite, qui inflige 1d4 points de dégâts si la créature est sensible à l’eau maudite. Si l’arme quitte les mains du personnage plus d’un round, elle fond et le sort se termine. À partir d’un niveau de lanceur de sorts de 6, l’arme gagne la propriété spéciale d’arme boomerang quand on la lance, fondant après une attaque et se reformant dans les mains du personnage juste avant son tour suivant.",
+  "description_html": "<br/><br/>Le personnage crée une arme de maître qui a les particularités de la glace et de l’eau maudite. Cette arme doit être une arme simple ou l’arme de prédilection de la divinité du personnage. Elle inflige les dégâts normaux d’une arme de ce type plus 1 point de dégâts de froid par niveau de lanceur (10 au maximum). En outre, toute créature touchée par l’arme est également touchée par l’eau maudite, qui inflige 1d4 points de dégâts si la créature est sensible à l’eau maudite. Si l’arme quitte les mains du personnage plus d’un round, elle fond et le sort se termine.\nÀ partir d’un niveau de lanceur de sorts de 6, l’arme gagne la propriété spéciale d’arme boomerang quand on la lance, fondant après une attaque et se reformant dans les mains du personnage juste avant son tour suivant.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20glace%20maudite.ashx",
+    "cache_fichier": "cache/html/161cda3dfe9171e0dab0c5cd99412bc2c29bfb89.html",
+    "recupere_le": "2026-07-28T22:41:43.483627+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "arme-de-glace-maudite",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20glace%20maudite.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "arme-de-glace-maudite",
+    "resume_court": "Crée une arme de maître de glace qui inflige des dégâts de froid et d'eau maudite.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "arme_ou_munition",
+      "degats_directs",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "froid",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1 point de dégâts de froid par niveau de lanceur",
+      "condition_infligee": [],
+      "cible_typique": "une arme de glace"
+    },
+    "notes_ambiguite": "Le sort inflige aussi des dégâts d'eau maudite (1d4), mais ce type n'est pas dans la liste fermée ; seul le froid y figure explicitement. L'arme crée est l'objet principal du sort, justifiant la cible_typique « objet ».",
+    "slug": "arme-de-glace-maudite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:04+00:00",
+    "hash_source": "2ff1f2e801f5781ddd4ec9b8566cb054bfd4c7ba5671649f0870866af1cfa12f"
+  }
+}

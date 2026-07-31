@@ -1,0 +1,141 @@
+{
+  "id": "morsure-du-froid",
+  "nom": "Morsure du froid",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20du%20froid.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "froid"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Magus": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "L’attaque de contact du personnage inflige 1d6 points de dégâts de froid non létaux +1 par niveau et la cible est fatiguée. Cette condition se dissipe quand la cible a guéri les points de dégâts. Ce sort ne peut pas épuiser une créature, même si elle est déjà fatiguée. Le personnage peut utiliser cette attaque de contact une fois par niveau.",
+  "description_html": "<br/><br/>L’<a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#ATTAQUESDECONTACT\" title=\"Valeurs de combat\">attaque de contact</a> du personnage inflige 1d6 points de dégâts de froid <a class=\"pagelink\" href=\"Pathfinder-RPG.Blessures%20et%20mort.ashx#NONLETAL\" title=\"Blessures et mort\">non létaux</a> +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> et la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguée</a>. Cette condition se dissipe quand la cible a guéri les points de dégâts. Ce sort ne peut pas <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9puis%c3%a9.ashx\" title=\"Épuisé\">épuiser</a> une créature, même si elle est déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguée</a>. Le personnage peut utiliser cette <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#ATTAQUESDECONTACT\" title=\"Valeurs de combat\">attaque de contact</a> une fois par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20du%20froid.ashx",
+    "cache_fichier": "cache/html/1c30fa035340ce75495fc8cd8fb1fc367eacce48.html",
+    "recupere_le": "2026-07-28T23:01:03.819057+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "morsure-du-froid",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20du%20froid.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "morsure-du-froid",
+    "resume_court": "Une attaque de contact infligeant des dégâts de froid non létaux et fatiguant la cible.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "froid",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts de froid",
+      "condition_infligee": [
+        "la cible est fatiguée"
+      ],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": "La condition « fatiguée » du texte correspond à « chancelant » dans la liste fournie, qui décrit une créature ne pouvant effectuer qu'une seule action par round — l'effet de fatigue en Pathfinder 1e produit cet effet.",
+    "slug": "morsure-du-froid",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:06+00:00",
+    "hash_source": "93f84c9264aeffdc64fdddcbd07f7a9f99fe6d8e829cf604d87fe53093671391"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "piste-olfactive",
+  "nom": "Piste olfactive",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Piste%20olfactive.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une reine des fourmis)",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage ou une créature consentante qu'il touche laisse une piste olfactive que seules les créatures désignées au moment de l'incantation peuvent suivre. Elles y parviennent avec une grande facilité : elles bénéficient d'un bonus de compétence de +20 aux tests de Survie destinés à suivre la créature qui a laissé cette piste. Les créatures sujettes qui disposent du pouvoir spécial odorat gagnent un bonus de compétence de +10 aux tests de Sagesse ou de Survie pour suivre la piste.\nDe plus, le personnage peut laisser des messages olfactifs. Pour laisser un mot ou une émotion, il doit rester sur place pendant une action de mouvement. Les sujets qui tentent de déchiffrer ce message doivent faire un nouveau test de Survie DD 20 avec un malus de -1 par mot ou émotion compris dans le message. Les créatures ne peuvent pas bénéficier des avantages de ce sort si elles n'ont aucun odorat ou ne peuvent pas s'en servir. Les créatures peuvent se servir de ce sort pour retourner sur leurs pas dans un donjon, un labyrinthe ou des zones similaires, même si celle qui laisse la piste est passée à plusieurs reprises au même endroit.",
+  "description_html": "<br/><br/>Le personnage ou une créature consentante qu'il touche laisse une piste olfactive que seules les créatures désignées au moment de l'incantation peuvent suivre. Elles y parviennent avec une grande facilité : elles bénéficient d'un bonus de compétence de +20 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> destinés à suivre la créature qui a laissé cette piste. Les créatures sujettes qui disposent du pouvoir spécial <a class=\"pagelink\" href=\"Pathfinder-RPG.odorat.ashx\" title=\"odorat\">odorat</a> gagnent un bonus de compétence de +10 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> pour suivre la piste.<br/><br/>De plus, le personnage peut laisser des messages olfactifs. Pour laisser un mot ou une émotion, il doit rester sur place pendant une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>. Les sujets qui tentent de déchiffrer ce message doivent faire un nouveau test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 20 avec un malus de -1 par mot ou émotion compris dans le message. Les créatures ne peuvent pas bénéficier des avantages de ce sort si elles n'ont aucun odorat ou ne peuvent pas s'en servir. Les créatures peuvent se servir de ce sort pour retourner sur leurs pas dans un donjon, un labyrinthe ou des zones similaires, même si celle qui laisse la piste est passée à plusieurs reprises au même endroit.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Piste%20olfactive.ashx",
+    "cache_fichier": "cache/html/782189a19182986c3adb952b162d25ca175d9b50.html",
+    "recupere_le": "2026-07-28T23:03:39.973236+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "piste-olfactive",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Piste%20olfactive.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "piste-olfactive",
+    "resume_court": "Le lanceur laisse une piste olfactive que seules les créatures désignées peuvent suivre facilement.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "perception_amelioree",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Le personnage ou une créature consentante qu'il touche"
+    },
+    "notes_ambiguite": null,
+    "slug": "piste-olfactive",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:10+00:00",
+    "hash_source": "6a9d1658a158171aa567641fb7087c1fdd9a82ef9a813493241a0d46f90fa7dd"
+  }
+}

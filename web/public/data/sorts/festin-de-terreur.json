@@ -1,0 +1,160 @@
+{
+  "id": "festin-de-terreur",
+  "nom": "Festin de terreur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Festin%20de%20terreur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental",
+    "émotion",
+    "terreur"
+  ],
+  "niveaux": {
+    "Bard": 4,
+    "Cham": 5,
+    "Hyp": 4,
+    "Ens/Mag": 5,
+    "Psy": 5,
+    "Sor": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une ou plusieurs créature(s) vivante(s) (cf. texte)",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "À chaque round et par une action simple, le personnage peut cibler une seule créature vivante ou un nombre de créatures vivantes totalisant un maximum de 9 DV et les frapper d’ondes de puissance terrifiantes. Si la cible rate son jet de sauvegarde, elle est paniquée pendant 1d4 rounds et le personnage gagne 5 points de vie temporaires (qui disparaissent au bout d’une heure). Quand la créature n’est plus paniquée, elle reste secouée pendant 10 minutes par niveau de lanceur et elle redevient automatiquement paniquée si elle voit à nouveau le personnage pendant cette durée.\nCes points de vie temporaires se cumulent s’ils proviennent de différentes créatures.",
+  "description_html": "<br/><br/>À chaque round et par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, le personnage peut cibler une seule créature vivante ou un nombre de créatures vivantes totalisant un maximum de 9 DV et les frapper d’ondes de puissance terrifiantes. Si la cible rate son jet de sauvegarde, elle est paniquée pendant 1d4 rounds et le personnage gagne 5 points de vie temporaires (qui disparaissent au bout d’une heure). Quand la créature n’est plus paniquée, elle reste secouée pendant 10 minutes par niveau de lanceur et elle redevient automatiquement paniquée si elle voit à nouveau le personnage pendant cette durée.<br/>\nCes points de vie temporaires se cumulent s’ils proviennent de différentes créatures.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Festin%20de%20terreur.ashx",
+    "cache_fichier": "cache/html/d755b51ba1fd52f0a1c5ef50cd647005836b9154.html",
+    "recupere_le": "2026-07-28T22:53:16.269679+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "festin-de-terreur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Festin%20de%20terreur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 4
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 5
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 5
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "festin-de-terreur",
+    "resume_court": "Le lanceur terrifie une ou plusieurs créatures, les panique et se soigne de leurs peurs.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "effraye",
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est paniquée pendant 1d4 rounds",
+        "elle reste secouée pendant 10 minutes par niveau de lanceur"
+      ],
+      "cible_typique": "une ou plusieurs créature(s) vivante(s)"
+    },
+    "notes_ambiguite": "Le sort inflige deux conditions distinctes : la panique (effraye) et l'état secoué. La panique est l'effet principal et immédiat ; l'état secoué persiste après. Les deux sont retenues car elles figurent explicitement dans le texte et correspondent à des conditions de la liste.",
+    "slug": "festin-de-terreur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:01+00:00",
+    "hash_source": "477bee682c73b799a0f6d47a721d5fdddeb52d8d3859c8b289d702f46e697201"
+  }
+}

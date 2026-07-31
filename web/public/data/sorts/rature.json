@@ -1,0 +1,104 @@
+{
+  "id": "rature",
+  "nom": "Rature",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rature.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Ens/Mag": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de tissu humidifié par de la salive)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayonnement de 3 m de rayon",
+  "duree": "24 heures",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Ce sort transforme tous les symboles et les écritures reconnaissables inscrits sur tout type de surface à portée du sort en ratures illisibles. Il affecte tout aussi bien les livres que les gravures sur pierre et même les tatouages. Les écrits qui ne sont pas rédigés sur un support, comme les illusions, les projections, les réflexions et tout autre effet similaire, ne sont pas affectés. Les livres de sorts et les objets magiques qui contiennent des écrits (tels que les parchemins) peuvent effectuer un jet de sauvegarde pour résister aux effets de ce sort. Lorsqu’il est lancé pour raturer des écrits magiques créés par magie (comme les glyphes de garde ou les symboles), le sort fonctionne comme un sort de dissipation de la magie efficace uniquement sur les écrits magiques situés dans la zone d’effet. Ce sort n’a aucun effet sur les écritures inscrites sur les artefacts ou les supports exceptionnels du même type.",
+  "description_html": "<br/><br/>Ce sort transforme tous les symboles et les écritures reconnaissables inscrits sur tout type de surface à portée du sort en ratures illisibles. Il affecte tout aussi bien les livres que les gravures sur pierre et même les tatouages. Les écrits qui ne sont pas rédigés sur un support, comme les illusions, les projections, les réflexions et tout autre effet similaire, ne sont pas affectés. Les livres de sorts et les objets magiques qui contiennent des écrits (tels que les <a class=\"pagelink\" href=\"Pathfinder-RPG.parchemins%20magiques.ashx\" title=\"Les parchemins magiques\">parchemins</a>) peuvent effectuer un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> pour résister aux effets de ce sort. Lorsqu’il est lancé pour raturer des écrits magiques créés par magie (comme les <i><a class=\"pagelink\" href=\"Pathfinder-RPG.glyphe%20de%20garde.ashx\" title=\"Glyphe de garde\">glyphes de garde</a></i> ou les <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole.ashx\" title=\"symbole\">symboles</a></i>), le sort fonctionne comme un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> efficace uniquement sur les écrits magiques situés dans la zone d’effet. Ce sort n’a aucun effet sur les écritures inscrites sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.artefacts.ashx\" title=\"Les artefacts\">artefacts</a> ou les supports exceptionnels du même type.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rature.ashx",
+    "cache_fichier": "cache/html/b5949fe1c8788c4b5e4d3f9cc71398d02b89014f.html",
+    "recupere_le": "2026-07-29T07:37:28.889469+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rature",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rature.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rature",
+    "resume_court": "Transforme tous les symboles et écritures d'une zone en ratures illisibles pendant 24 heures.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "transformation_du_sujet",
+      "dissipation_ou_contresort",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "rayonnement de 3 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "rature",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:29+00:00",
+    "hash_source": "e36c16e7aadfba09b9cb6c7bf75e2ea0b0616db775cf6e064f24bbe75cbb27dd"
+  }
+}

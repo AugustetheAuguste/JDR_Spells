@@ -1,0 +1,105 @@
+{
+  "id": "torche-revelatrice",
+  "nom": "Torche révélatrice",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Torche%20r%c3%a9v%c3%a9latrice.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Inq": 2,
+    "Prê": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "objet touché",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "L’objet touché émet une vive lumière dans un rayon de 6 mètres (4 c). Cet effet se présente sous forme de flamme stable qui n’émet pas de chaleur et ne consomme pas d’oxygène. Les alliés qui se trouvent dans la zone éclairée gagnent un bonus d’altération de +2 aux tests de Perception et de Psychologie, ainsi qu’aux tests de Connaissances pour identifier les monstres qui se trouvent dans la zone et pour connaître leurs pouvoirs spéciaux et leurs faiblesses.\nQuand un inquisiteur lance ce sort, le rayon d’effet de la lumière double (il passe à 12 m (8 c)) tant que le personnage a un jugement actif.\nLes sorts de lumière contrent et dissipent les sorts d’obscurité de niveau égal ou inférieur.",
+  "description_html": "<br/><br/>L’objet touché émet une vive lumière dans un rayon de 6 mètres (4 <abbr title=\"cases\">c</abbr>). Cet effet se présente sous forme de flamme stable qui n’émet pas de chaleur et ne consomme pas d’oxygène. Les alliés qui se trouvent dans la zone éclairée gagnent un bonus d’altération de +2 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.Psychologie.ashx\" title=\"Psychologie\">Psychologie</a>, ainsi qu’aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> pour identifier les monstres qui se trouvent dans la zone et pour connaître leurs pouvoirs spéciaux et leurs faiblesses.<br/><br/>Quand un <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx\" title=\"L'inquisiteur\">inquisiteur</a> lance ce sort, le rayon d’effet de la lumière double (il passe à 12 m (8 <abbr title=\"cases\">c</abbr>)) tant que le personnage a un <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx#JUGEMENT\" title=\"L'inquisiteur\">jugement</a> actif.<br/><br/>Les sorts de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">lumière</a> contrent et dissipent les sorts d’<a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">obscurité</a> de niveau égal ou inférieur.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Torche%20r%c3%a9v%c3%a9latrice.ashx",
+    "cache_fichier": "cache/html/48638bd21e87f3a6b39ea6ad178bd218e530a392.html",
+    "recupere_le": "2026-07-29T07:42:41.895972+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "torche-revelatrice",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Torche%20r%c3%a9v%c3%a9latrice.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "torche-revelatrice",
+    "resume_court": "Un objet émet une lumière stable qui améliore la perception et l'identification des créatures pour les alliés.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "dissipation_ou_contresort"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "objet touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "torche-revelatrice",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:32+00:00",
+    "hash_source": "2dc2426e7d849d70203a5292a8e6277e2cf5ecd83b07d655667d4de18509a8c1"
+  }
+}

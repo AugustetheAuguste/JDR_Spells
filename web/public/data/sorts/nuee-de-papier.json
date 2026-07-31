@@ -1,0 +1,102 @@
+{
+  "id": "nuee-de-papier",
+  "nom": "Nuée de papier",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20papier.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Magus": 5,
+    "Occ": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G, M (un parchemin vierge ou magique ; voir texte)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes 1/2 dégâts ; voir texte",
+  "resistance_magie": "oui",
+  "description": "Quand le personnage lance ce sort, il réduit rapidement un parchemin en lambeaux et envoie les morceaux virevolter autour de sa cible, lui infligeant un millier de petites coupures. Si le personnage utilise un parchemin ordinaire, le sort inflige 1d6 points de dégâts tranchants magiques par niveau de lanceur de sorts (15d6 au maximum).\nS’il utilise un parchemin magique comme composante matérielle, il choisit l’un des sorts stockés dedans. Si c’est un sort de niveau 1, il peut appliquer son effet à la cible de la nuée de papiers si elle rate son jet de Réflexes (si le sort du parchemin possède son propre jet de sauvegarde, la cible le tente ensuite normalement). Si le parchemin contient un sort de niveau 2 ou supérieur, le personnage peut choisir d’affecter une étendue de 6 mètres de rayon au lieu d’une cible unique avec la nuée de papiers.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il réduit rapidement un parchemin en lambeaux et envoie les morceaux virevolter autour de sa cible, lui infligeant un millier de petites coupures. Si le personnage utilise un parchemin ordinaire, le sort inflige 1d6 points de dégâts tranchants magiques par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d6 au maximum).<br/><br/>S’il utilise un parchemin magique comme <a class=\"pagelink\" href=\"Pathfinder-RPG.composantes.ashx\" title=\"composantes\">composante matérielle</a>, il choisit l’un des sorts stockés dedans. Si c’est un sort de niveau 1, il peut appliquer son effet à la cible de la nuée de papiers si elle rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> (si le sort du parchemin possède son propre jet de sauvegarde, la cible le tente ensuite normalement). Si le parchemin contient un sort de niveau 2 ou supérieur, le personnage peut choisir d’affecter une étendue de 6 mètres de rayon au lieu d’une cible unique avec la nuée de papiers.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20papier.ashx",
+    "cache_fichier": "cache/html/c60a83caafbcfb762a2da5e45ea4a6cb1c4f5fe9.html",
+    "recupere_le": "2026-07-28T23:01:52.840353+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "nuee-de-papier",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20papier.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 5
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "nuee-de-papier",
+    "resume_court": "Des lambeaux de parchemin virevolent autour d'une cible, lui infligeant des coupures tranchantes.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "zone_d_effet",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "tranchant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts tranchants magiques",
+      "condition_infligee": [],
+      "cible_typique": "autour de sa cible"
+    },
+    "notes_ambiguite": "Le sort peut affecter une zone de 6 mètres de rayon si un parchemin magique de niveau 2+ est utilisé, ce qui le rend hybride entre attaque directe et contrôle de zone. La catégorie attaque_directe a été retenue car l'effet principal est l'infligement de dégâts directs à une cible ou une zone, et le tag zone_d_effet capture l'aspect zone.",
+    "slug": "nuee-de-papier",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:29+00:00",
+    "hash_source": "0f4a2b60dcb175f5441fabcc60894eeb4f9179067599e84ee870fb79d2f1e47d"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "lecture-rapide",
+  "nom": "Lecture rapide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lecture%20rapide%20de%20Kreighton.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "livre touché",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté annuler (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Le personnage retire une compréhension globale mais incomplète du contenu du livre, comme s’il l’avait parcouru en diagonale pendant une heure. Cet aperçu ne permet pas de traduire des langues inconnues, de déchiffrer des codes ni de mémoriser un texte mais renseigne le lecteur sur les sujets abordés, informations capitales pour les explorateurs qui doivent prendre une décision sur-le-champ au cours d’une session de recherches ou qui doivent décider s’ils subtilisent ou non un ouvrage.\nDe plus, le personnage bénéficie aussitôt des éventuels avantages que le livre n’accorderait normalement qu’après une heure de lecture. (comme les bonus issus de la lecture d’un volume des Chroniques des Explorateurs).",
+  "description_html": "<br/><br/>Le personnage retire une compréhension globale mais incomplète du contenu du livre, comme s’il l’avait parcouru en diagonale pendant une heure. Cet aperçu ne permet pas de traduire des langues inconnues, de déchiffrer des codes ni de mémoriser un texte mais renseigne le lecteur sur les sujets abordés, informations capitales pour les explorateurs qui doivent prendre une décision sur-le-champ au cours d’une session de recherches ou qui doivent décider s’ils subtilisent ou non un ouvrage. <br/><br/>De plus, le personnage bénéficie aussitôt des éventuels avantages que le livre n’accorderait normalement qu’après une heure de lecture. (comme les bonus issus de la lecture d’un volume des <a class=\"pagelink\" href=\"Pathfinder-RPG.Chroniques%20des%20%c3%89claireurs.ashx\" title=\"Chroniques des Explorateurs\">Chroniques des Explorateurs</a>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lecture%20rapide%20de%20Kreighton.ashx",
+    "cache_fichier": "cache/html/96b174c4fb3740c64dbf7d11083a2b376235fd13.html",
+    "recupere_le": "2026-07-28T22:58:25.616281+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "lecture-rapide",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lecture%20rapide%20de%20Kreighton.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "lecture-rapide",
+    "resume_court": "Le lanceur comprend le contenu global d'un livre en un instant et en reçoit les avantages immédiats.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "divination_information",
+      "objet_ou_equipement",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "livre touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "lecture-rapide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:00+00:00",
+    "hash_source": "7bb49615da61184f8f73f77da79faec140d6d55c7b8c215d01f4c4fd0ddd3534"
+  }
+}

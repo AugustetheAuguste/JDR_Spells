@@ -1,0 +1,88 @@
+{
+  "id": "rapetissement-d-animal",
+  "nom": "Rapetissement d'animal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rapetissement%20danimal.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "1 animal consentant de taille P, M, G ou TG",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort est semblable à rapetissement, si ce n’est qu’il affecte un animal consentant. Réduisez les dégâts infligés par les attaques naturelles de l’animal conformément à sa nouvelle taille (voir la table \"Dégâts des armes de taille TP ou G\" dans le chapitre \"Taille de l'arme\").",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rapetissement.ashx\" title=\"Rapetissement\">rapetissement</a></i>, si ce n’est qu’il affecte un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20animal.ashx\" title=\"Animal\">animal</a> consentant. Réduisez les dégâts infligés par les <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20naturelle.ashx\" title=\"attaque naturelle\">attaques naturelles</a> de l’<a class=\"pagelink\" href=\"Pathfinder-RPG.type%20animal.ashx\" title=\"Animal\">animal</a> conformément à sa nouvelle taille (voir la table \"Dégâts des armes de taille TP ou G\" dans le chapitre \"<a class=\"pagelink\" href=\"Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#TAILLEARME\" title=\"Caractéristiques des armes\">Taille de l'arme</a>\").<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rapetissement%20danimal.ashx",
+    "cache_fichier": "cache/html/784c12d7bd731a40b89e574f0e1ead068c7c7d45.html",
+    "recupere_le": "2026-07-29T07:37:08.467613+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rapetissement-d-animal",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rapetissement%20danimal.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rapetissement-d-animal",
+    "resume_court": "Réduit la taille d'un animal consentant et diminue ses dégâts d'attaque naturelle.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 animal consentant"
+    },
+    "notes_ambiguite": "Le sort réduit la taille et les dégâts d'attaque naturelle de l'animal. Bien que la transformation soit l'effet principal, la catégorie « amelioration » s'applique car le sort est présenté comme une variante du sort « rapetissement » et affecte un allié consentant dans un contexte d'amélioration tactique ou utilitaire plutôt que d'affaiblissement hostile.",
+    "slug": "rapetissement-d-animal",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:22+00:00",
+    "hash_source": "c608635f4cfd90b2c0ca18486a1a13c79b9964f7b7a2120f3ed0378ebc045d55"
+  }
+}

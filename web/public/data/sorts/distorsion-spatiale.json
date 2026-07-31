@@ -1,0 +1,115 @@
+{
+  "id": "distorsion-spatiale",
+  "nom": "Distorsion spatiale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Distorsion%20spatiale.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 2,
+    "ConU": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (du barbelé replié en cercle)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage déforme l’espace qui entoure une créature et modifie la trajectoire de ses attaques au corps à corps de façon imprévisible, mais toujours en direction d’une créature que celle-ci menace. Les attaques de la victime du sort affectent une cible aléatoire au lieu de la cible prévue, jusqu’au début du prochain tour du personnage.",
+  "description_html": "<br/><br/>Le personnage déforme l’espace qui entoure une créature et modifie la trajectoire de ses attaques au corps à corps de façon imprévisible, mais toujours en direction d’une créature que celle-ci menace. Les attaques de la victime du sort affectent une cible aléatoire au lieu de la cible prévue, jusqu’au début du prochain tour du personnage.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Distorsion%20spatiale.ashx",
+    "cache_fichier": "cache/html/b8deeaea0ebee73280bcfc62512cf8e1fcbfe9ed.html",
+    "recupere_le": "2026-07-28T22:51:30.151833+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "distorsion-spatiale",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Distorsion%20spatiale.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "distorsion-spatiale",
+    "resume_court": "Déforme l'espace autour d'une créature pour rediriger ses attaques vers une cible aléatoire.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "jet_de_sauvegarde",
+      "transformation_du_sujet",
+      "resistance_a_la_magie",
+      "duree_instantanee",
+      "confusion_ou_desorientation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort ne paralyse ni n'immobilise strictement, mais entrave l'efficacité des attaques de la cible en les redirigeant aléatoirement. La catégorie « entrave » couvre cette restriction d'action efficace. La durée est de 1 round (instantanée dans sa résolution), d'où le tag « duree_instantanee ».",
+    "slug": "distorsion-spatiale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:54+00:00",
+    "hash_source": "9365d6cb1768826dae6fc5236a699038d779221c8eec466829fe793b1f71692b"
+  }
+}

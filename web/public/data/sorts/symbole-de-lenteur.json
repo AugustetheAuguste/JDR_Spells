@@ -1,0 +1,118 @@
+{
+  "id": "symbole-de-lenteur",
+  "nom": "Symbole de lenteur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lenteur.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 4,
+    "Occ": 3,
+    "Prê": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore plus poudre de diamant et d'opale pour une valeur de 1 000 po)",
+  "portee": "0 m (voir texte)",
+  "cible": "1 symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme symbole de mort mais toutes les créatures situées dans les 18 mètres (12 c) sont ralenties (comme avec un sort de lenteur) pendant 1 round par niveau de lanceur de sorts.\nOn peut rendre le symbole de lenteur permanent à l’aide d’un sort de permanence si le lanceur de sorts est de niveau 11 ou plus et s’il paie 10 000 po.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i> mais toutes les créatures situées dans les 18 mètres (12 <abbr title=\"cases\">c</abbr>) sont ralenties (comme avec un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a></i>) pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.<br/><br/>On peut rendre le <i>symbole de lenteur</i> permanent à l’aide d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> si le lanceur de sorts est de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau</a> 11 ou plus et s’il paie 10 000 po.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lenteur.ashx",
+    "cache_fichier": "cache/html/cf20b785a9f65d693acafa18764b8fc30dfea523.html",
+    "recupere_le": "2026-07-29T07:41:41.670486+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "symbole-de-lenteur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lenteur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "symbole-de-lenteur",
+    "resume_court": "Un symbole magique qui ralentit toutes les créatures proches pendant plusieurs rounds.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "sont ralenties (comme avec un sort de lenteur)"
+      ],
+      "cible_typique": "toutes les créatures situées dans les 18 mètres"
+    },
+    "notes_ambiguite": null,
+    "slug": "symbole-de-lenteur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:08+00:00",
+    "hash_source": "ef75ae4af61a7a33c8b97ffdba996e4df20b825aef8245622a97565ea7ea5cc3"
+  }
+}

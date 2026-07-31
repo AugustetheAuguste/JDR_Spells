@@ -1,0 +1,104 @@
+{
+  "id": "brise-destructeur",
+  "nom": "Brise-destructeur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-destructeur.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "la créature touchée",
+  "duree": "1 minute/niveau (T) ou jusqu’à déchargement",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif) et voir texte",
+  "resistance_magie": "oui (inoffensif) et voir texte",
+  "description": "Le personnage place un sceau invisible sur la cible. La prochaine fois qu’une créature réussira une manoeuvre offensive de destruction contre la cible, l’arme de l’attaquant recevra 1d6 points de dégâts par niveau de lanceur (10d6 au maximum). Si l’attaquant utilise une arme naturelle pour la destruction, il reçoit la moitié de ces dégâts. La résistance à la magie s’applique à ces dégâts. L’attaquant doit réussir un jet de Vigueur pour réduire ces dégâts de moitié. La protection placée sur la cible compte comme un piège magique et peut être détectée et désamorcée comme tel.",
+  "description_html": "<br/><br/>Le personnage place un sceau invisible sur la cible. La prochaine fois qu’une créature réussira une manoeuvre offensive de destruction contre la cible, l’arme de l’attaquant recevra 1d6 points de dégâts par niveau de lanceur (10d6 au maximum). Si l’attaquant utilise une arme naturelle pour la destruction, il reçoit la moitié de ces dégâts. La résistance à la magie s’applique à ces dégâts. L’attaquant doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour réduire ces dégâts de moitié.\nLa protection placée sur la cible compte comme un piège magique et peut être détectée et désamorcée comme tel.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-destructeur.ashx",
+    "cache_fichier": "cache/html/74b13247af17f2c60351a8827a5c50792316e41c.html",
+    "recupere_le": "2026-07-28T22:44:47.809862+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "brise-destructeur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-destructeur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "brise-destructeur",
+    "resume_court": "Un sceau invisible qui inflige des dégâts de force à l'arme du prochain attaquant qui détruit la cible.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts par niveau de lanceur",
+      "condition_infligee": [],
+      "cible_typique": "la créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "brise-destructeur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:13+00:00",
+    "hash_source": "d798e6c0bca346bba346000eb023c67e4b1eb9a6db8f8affee23dc48148b1b6f"
+  }
+}

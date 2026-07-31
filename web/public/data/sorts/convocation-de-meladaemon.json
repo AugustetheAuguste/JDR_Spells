@@ -1,0 +1,114 @@
+{
+  "id": "convocation-de-meladaemon",
+  "nom": "Convocation de méladaémon",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocation%20de%20m%c3%a9lada%c3%a9mon.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Con": 6,
+    "ConU": 6,
+    "Ens/Mag": 8,
+    "Prê": 8,
+    "Sor": 8
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, F (un bol en bois vide)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature convoquée",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme convocation de monstres, excepté qu'il ne convoque qu'un seul méladaémon.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20de%20monstres.ashx\" title=\"Convocation de monstres\">convocation de monstres</a></i>, excepté qu'il ne convoque qu'un seul <a class=\"pagelink\" href=\"Pathfinder-RPG.m%c3%a9lada%c3%a9mon.ashx\" title=\"Daémon, Méladaémon\">méladaémon</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocation%20de%20m%c3%a9lada%c3%a9mon.ashx",
+    "cache_fichier": "cache/html/b57537ab4056ae286b690977658f72340939a444.html",
+    "recupere_le": "2026-07-28T22:48:17.731364+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "convocation-de-meladaemon",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocation%20de%20m%c3%a9lada%c3%a9mon.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 6
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "convocation-de-meladaemon",
+    "resume_court": "Convoque un unique méladaémon pour combattre aux côtés du lanceur pendant plusieurs rounds.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature convoquée"
+    },
+    "notes_ambiguite": "Le texte renvoie à « convocation de monstres » sans en reproduire les détails. La cible est une créature convoquée (pas un ennemi désigné, pas un allié volontaire, pas le lanceur), d'où « zone » comme cible typique par défaut pour les invocations.",
+    "slug": "convocation-de-meladaemon",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:39+00:00",
+    "hash_source": "522c70c4719572886d3ff6e1981adc7d1c3258b12df844a6e2cdf128c62a0d28"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "fardeau-de-l-oracle",
+  "nom": "Fardeau de l'oracle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fardeau%20de%20loracle.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage fait appel aux forces du destin pour maudire une créature. La cible souffre de tous les inconvénients du pouvoir de classe de malédiction d'oracle et d'aucun de ses avantages. En revanche, le personnage subit toujours tous les effets de sa malédiction. Si le personnage ne dispose pas du pouvoir de classe de malédiction d'oracle, ce sort reste sans effet.",
+  "description_html": "<br/><br/>Le personnage fait appel aux forces du destin pour maudire une créature. La cible souffre de tous les inconvénients du pouvoir de classe de <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx#MALEDICTIONDELORACLE\" title=\"L'oracle\">malédiction d'oracle</a> et d'aucun de ses avantages. En revanche, le personnage subit toujours tous les effets de sa <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx#MALEDICTIONDELORACLE\" title=\"L'oracle\">malédiction</a>. Si le personnage ne dispose pas du pouvoir de classe de <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx#MALEDICTIONDELORACLE\" title=\"L'oracle\">malédiction d'oracle</a>, ce sort reste sans effet.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fardeau%20de%20loracle.ashx",
+    "cache_fichier": "cache/html/0a036125c59d322a49458f93e96038530b0ce180.html",
+    "recupere_le": "2026-07-28T22:53:07.294068+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fardeau-de-l-oracle",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fardeau%20de%20loracle.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fardeau-de-l-oracle",
+    "resume_court": "Maudit une créature avec les inconvénients de la malédiction d'oracle du lanceur.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige des inconvénients liés à la malédiction d'oracle, mais le texte ne précise pas leur nature exacte (pas de condition nommée). Les tags reflètent l'effet de malédiction et la durée prolongée, sans présumer des dégâts ou conditions spécifiques.",
+    "slug": "fardeau-de-l-oracle",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:55+00:00",
+    "hash_source": "8b6f1cddae35688fad63dbad523f860e1f432f999ee6903d81f54b6e8e49b6bf"
+  }
+}

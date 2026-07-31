@@ -1,0 +1,106 @@
+{
+  "id": "verite-d-abadar",
+  "nom": "Vérité d'Abadar",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9rit%c3%a9%20dAbadar.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Inq": 1,
+    "Pal": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, DF",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme le sort zone de vérité, à l’exception de ce qui est indiqué plus haut. La cible prend temporairement l'apparence d'un être personnifiant l'ordre, comme un archon ou un inévitable, afin que tous ceux qui la voient sachent qu'elle est affectée par ce sort. Ce déguisement divin vacille sur la cible pendant quelques instants et ne lui permet pas de passer pour un membre d'une race différente.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme le sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20de%20v%c3%a9rit%c3%a9.ashx\" title=\"Zone de vérité\">zone de vérité</a></i>, à l’exception de ce qui est indiqué plus haut. La cible prend temporairement l'apparence d'un être personnifiant l'ordre, comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.archon.ashx\" title=\"Les archons\">archon</a> ou un <a class=\"pagelink\" href=\"Pathfinder-RPG.in%c3%a9vitable.ashx\" title=\"Les inévitables\">inévitable</a>, afin que tous ceux qui la voient sachent qu'elle est affectée par ce sort. Ce déguisement divin vacille sur la cible pendant quelques instants et ne lui permet pas de passer pour un membre d'une race différente.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9rit%c3%a9%20dAbadar.ashx",
+    "cache_fichier": "cache/html/636fd09462875522112cc79f041446c53e0f3b88.html",
+    "recupere_le": "2026-07-29T07:43:40.372014+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "verite-d-abadar",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9rit%c3%a9%20dAbadar.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "verite-d-abadar",
+    "resume_court": "La cible prend l'apparence d'un être d'ordre et ne peut mentir pendant 1 minute par niveau.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "charme_ou_coercition",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le texte renvoie à « zone de vérité » pour l'effet principal (impossibilité de mentir) sans le détailler. La cible peut être un allié volontaire ou un ennemi contraint par le sort ; j'ai choisi « allie » car le sort s'incante par contact et s'annule sur un jet de sauvegarde réussi, suggérant une utilisation consentie ou du moins non hostile au moment de l'incantation.",
+    "slug": "verite-d-abadar",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:58+00:00",
+    "hash_source": "541381a3673e2c1013fb46d8e7aea6ada5036dc1aecf897fc24e7bc1bbffc438"
+  }
+}

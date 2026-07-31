@@ -1,0 +1,91 @@
+{
+  "id": "benediction-karmique",
+  "nom": "Bénédiction karmique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20karmique.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "Bien"
+  ],
+  "niveaux": {
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible traite l’une des compétences de son choix comme une compétence de classe.",
+  "description_html": "<br/><br/>La cible traite l’une des <a class=\"pagelink\" href=\"Pathfinder-RPG.Comp%c3%a9tences.ashx\" title=\"Les compétences\">compétences</a> de son choix comme une compétence de classe.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20karmique.ashx",
+    "cache_fichier": "cache/html/4355928bbbf952844c38cd5ac69535b075140a42.html",
+    "recupere_le": "2026-07-28T22:43:09.244406+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "benediction-karmique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20karmique.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "benediction-karmique",
+    "resume_court": "La cible traite l'une de ses compétences comme une compétence de classe pendant 1 heure par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "benediction-karmique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:47+00:00",
+    "hash_source": "95ca61cf020a88d412a9e3fb99a55d96fd15f41f98545b1594abd122dbb683aa"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "hurlement-percant",
+  "nom": "Hurlement perçant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20per%c3%a7ant.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "douleur",
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage pousse un hurlement à vriller les tympans que la cible du sort est seul à entendre, tous les autres observateurs voient seulement le personnage pousser un cri silencieux. Le hurlement provoque d'intolérables souffrances chez la cible qui devientchancelante. Ce sort n'a aucun effet sur les créatures sourdes et ne pénètre pas les zones de silence.",
+  "description_html": "<br/><br/>Le personnage pousse un hurlement à vriller les tympans que la cible du sort est seul à entendre, tous les autres observateurs voient seulement le personnage pousser un cri silencieux. Le hurlement provoque d'intolérables souffrances chez la cible qui devient<a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a>. Ce sort n'a aucun effet sur les créatures sourdes et ne pénètre pas les zones de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20per%c3%a7ant.ashx",
+    "cache_fichier": "cache/html/f1557d451c7d613836894b6be0098ce07dcc943d.html",
+    "recupere_le": "2026-07-28T22:56:19.492480+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "hurlement-percant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20per%c3%a7ant.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "hurlement-percant",
+    "resume_court": "Un hurlement silencieux qui inflige des souffrances et rend la cible chancelante.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "descripteurs: douleur, son",
+      "condition_infligee": [
+        "devientchancelante"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne « d'intolérables souffrances » sans préciser de dégâts numériques explicites, mais le type de dégâts est justifié par le descripteur « son » et la nature du sort. La condition « chancelant » est déduite de « devientchancelante » malgré la faute de frappe.",
+    "slug": "hurlement-percant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:12+00:00",
+    "hash_source": "7a92fe8bb22bd6d77da478e9f14c79abb78db8c6ef7b09f18eb47aaa714bd463"
+  }
+}

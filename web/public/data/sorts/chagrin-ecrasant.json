@@ -1,0 +1,121 @@
+{
+  "id": "chagrin-ecrasant",
+  "nom": "Chagrin écrasant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chagrin%20%c3%a9crasant.ashx",
+  "ecole": "enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Ens/Mag": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage frappe un unique adversaire d’un profond chagrin. La victime ne peut pas entreprendre la moindre action, reçoit un malus de -2 à la CA et perd son bonus de Dextérité (le cas échéant). Elle peut tenter un nouveau jet de sauvegarde par round pour briser l’effet.",
+  "description_html": "<br/><br/>Le personnage frappe un unique adversaire d’un profond chagrin. La victime ne peut pas entreprendre la moindre <a class=\"pagelink\" href=\"Pathfinder-RPG.action.ashx\" title=\"action\">action</a>, reçoit un malus de -2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et perd son bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> (le cas échéant). Elle peut tenter un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> pour briser l’effet.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chagrin%20%c3%a9crasant.ashx",
+    "cache_fichier": "cache/html/5c91ff39155b352240a8b08bbd52b0a1838471c8.html",
+    "recupere_le": "2026-07-28T22:46:05.631229+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chagrin-ecrasant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chagrin%20%c3%a9crasant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chagrin-ecrasant",
+    "resume_court": "Un sort qui plonge une créature dans le chagrin, l'immobilisant et dégradant sa défense.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "entrave_ou_immobilisation",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La victime ne peut pas entreprendre la moindre action, reçoit un malus de -2 à la CA"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La victime ne peut pas agir et perd sa défense, ce qui correspond à l'état étourdi. Le texte ne nomme pas explicitement cet état, mais les effets (perte d'actions, malus à la CA) le justifient.",
+    "slug": "chagrin-ecrasant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:40+00:00",
+    "hash_source": "63778340a65f86a7ce5e6411d3e1b860762da4ae82eb0ade3b841f1ba2ee26dc"
+  }
+}

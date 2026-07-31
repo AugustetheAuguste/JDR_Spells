@@ -1,0 +1,76 @@
+{
+  "id": "sacrifice-du-paladin",
+  "nom": "Sacrifice du paladin",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacrifice%20du%20paladin.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 2
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage ouvre brièvement un puissant conduit entre sa personne et une autre créature. Il subit alors tous les dégâts et autres effets négatifs que la cible aurait dû recevoir. Quand une créature qui se trouve à portée est touchée par une attaque ou rate un jet de sauvegarde, le personnage peut lancer ce sort pour que les blessures et/ou les effets qui auraient dû affecter la cible lui soient transmis par magie. Le personnage subit alors les dégâts et les effets négatifs de l'attaque, comme si c'était lui qui avait été touché ou avait raté son jet de sauvegarde. Les résistances et immunités du paladin s'appliquent normalement mais en dehors de cela, il ne peut ni réduire ni annuler les dégâts ou les effets.\nSi le personnage utilise ce sort contre un effet qui le vise également ou l'inclut dans sa zone d'effet, il souffre des effets destinés à sa personne et de ceux qu'il évite à sa cible, il subit donc potentiellement deux fois les conséquences ou les dégâts de l'attaque.",
+  "description_html": "<br/><br/>Le personnage ouvre brièvement un puissant conduit entre sa personne et une autre créature. Il subit alors tous les dégâts et autres effets négatifs que la cible aurait dû recevoir. Quand une créature qui se trouve à portée est touchée par une attaque ou rate un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, le personnage peut lancer ce sort pour que les blessures et/ou les effets qui auraient dû affecter la cible lui soient transmis par magie. Le personnage subit alors les dégâts et les effets négatifs de l'attaque, comme si c'était lui qui avait été touché ou avait raté son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>. Les résistances et immunités du <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx\" title=\"Le paladin\">paladin</a> s'appliquent normalement mais en dehors de cela, il ne peut ni réduire ni annuler les dégâts ou les effets.<br/><br/>Si le personnage utilise ce sort contre un effet qui le vise également ou l'inclut dans sa zone d'effet, il souffre des effets destinés à sa personne et de ceux qu'il évite à sa cible, il subit donc potentiellement deux fois les conséquences ou les dégâts de l'attaque.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacrifice%20du%20paladin.ashx",
+    "cache_fichier": "cache/html/e3d6af451dba135b97104ee083dcf2f2b7d35c09.html",
+    "recupere_le": "2026-07-29T07:39:33.403258+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sacrifice-du-paladin",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacrifice%20du%20paladin.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sacrifice-du-paladin",
+    "resume_court": "Le lanceur absorbe les dégâts et effets négatifs destinés à une créature alliée à portée.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une autre créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "sacrifice-du-paladin",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:13+00:00",
+    "hash_source": "0ae1ac354d390991a8c7960376d52c47fc7f3a81c6ff7c0aecb2e7894c57d504"
+  }
+}

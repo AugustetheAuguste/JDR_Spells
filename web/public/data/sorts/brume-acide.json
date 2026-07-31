@@ -1,0 +1,96 @@
+{
+  "id": "brume-acide",
+  "nom": "Brume acide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20acide.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "ConU": 6,
+    "Ens/Mag": 6,
+    "Magus": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de pois concassés et séchés mêlée à de la poudre de sabot d’animal)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "brouillard s’étendant sur 6 m (4 c) de rayon et 6 m de haut",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort fait apparaître une nappe de brume similaire à celle générée par brouillard dense. Elle ralentit les créatures qui s’y trouvent et limite leur champ de vision. Étant acide, elle inflige également 2d6 points de dégâts d’acide par round aux créatures et objets présents dans sa zone d’effet.",
+  "description_html": "<br/><br/>Ce sort fait apparaître une nappe de brume similaire à celle générée par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.brouillard%20dense.ashx\" title=\"Brouillard dense\">brouillard dense</a></i>. Elle ralentit les créatures qui s’y trouvent et limite leur champ de vision. Étant acide, elle inflige également 2d6 points de dégâts d’acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> aux créatures et objets présents dans sa <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20acide.ashx",
+    "cache_fichier": "cache/html/c0865545e6f116f2755962260fcb2e838d55de8d.html",
+    "recupere_le": "2026-07-28T22:45:06.801169+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "brume-acide",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20acide.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "brume-acide",
+    "resume_court": "Une nappe de brume acide qui ralentit les créatures et leur inflige des dégâts chaque round.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "invocation_ou_creation",
+      "terrain_ou_environnement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts d'acide",
+      "condition_infligee": [
+        "Elle ralentit les créatures qui s'y trouvent"
+      ],
+      "cible_typique": "brouillard s'étendant sur 6 m (4 c) de rayon et 6 m de haut"
+    },
+    "notes_ambiguite": null,
+    "slug": "brume-acide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:21+00:00",
+    "hash_source": "eb682c596959e69c07b40e0ae5764ef26ee02005aedea41e0aa4f21bd2d61453"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "briser-le-silence",
+  "nom": "Briser le silence",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briser%20le%20silence.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Inq": 3,
+    "Prê": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "S, M (un petit carillon, cloche ou gong en argent)",
+  "portee": "contact",
+  "cible": "émanation de 3 m de rayon centrée sur une créature, un objet ou un point dans l'espace",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage réprime les effets qui bloquent les sons dans la zone. Briser le silence annule temporairement le silence magique dans sa zone d'effet, afin que les sons soient entendus normalement là où les deux sorts se superposent. De plus, briser le silence peut automatiquement contrer ou dissiper tout effet de silence magique d'un niveau égal ou inférieur lancé sur la même cible, comme silence. Si le personnage lance briser le silence sur la cible d'un effet d'un niveau supérieur, il se comporte comme dissipation de la magie au lieu de son effet habituel.",
+  "description_html": "<br/><br/>Le personnage réprime les effets qui bloquent les sons dans la zone. <i>Briser le silence</i> annule temporairement le silence magique dans sa zone d'effet, afin que les sons soient entendus normalement là où les deux sorts se superposent. De plus, <i>briser le silence</i> peut automatiquement <a class=\"pagelink\" href=\"Pathfinder-RPG.contresort.ashx\" title=\"contresort\">contrer</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissiper</a> tout effet de silence magique d'un niveau égal ou inférieur lancé sur la même cible, comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>. Si le personnage lance <i>briser le silence</i> sur la cible d'un effet d'un niveau supérieur, il se comporte comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> au lieu de son effet habituel.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briser%20le%20silence.ashx",
+    "cache_fichier": "cache/html/10e9f6c508842af5c328b8eb6a26da121ee64c38.html",
+    "recupere_le": "2026-07-28T22:44:53.176405+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "briser-le-silence",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briser%20le%20silence.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "briser-le-silence",
+    "resume_court": "Annule temporairement le silence magique dans une émanation de 3 m et peut dissiper les effets de silence.",
+    "categorie_principale": "dissipation",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "dissipation_ou_contresort",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation de 3 m de rayon centrée sur une créature, un objet ou un point dans l'espace"
+    },
+    "notes_ambiguite": null,
+    "slug": "briser-le-silence",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:04+00:00",
+    "hash_source": "f3c8f4b5a8a373bdcff5e010bbfd917e27d1ea2a721d0f9255e20af5b5ddeada"
+  }
+}

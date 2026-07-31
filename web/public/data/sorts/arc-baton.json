@@ -1,0 +1,113 @@
+{
+  "id": "arc-baton",
+  "nom": "Arc-bâton",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc-b%c3%a2ton.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 1,
+    "Occ": 2,
+    "Pal": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "une arme (arc)",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "L’arc touché prend la rigidité et la robustesse de l’acier trempé. Il peut donc servir d’arme de corps à corps. Un arc court peut alors servir de gourdin et un arc long de bâton, même s’ils gardent leur nombre de points de vie et leur solidité habituels. Si l’arc a un bonus d’altération, il s’applique aux jets d’attaque et de dégâts. Les propriétés spéciales supplémentaires de l’arc s’appliquent aussi aux attaques de corps à corps, à condition que l’on puisse les appliquer à une arme de corps à corps.",
+  "description_html": "<br/><br/>L’arc touché prend la rigidité et la robustesse de l’acier trempé. Il peut donc servir d’arme de corps à corps. Un arc court peut alors servir de gourdin et un arc long de bâton, même s’ils gardent leur nombre de points de vie et leur solidité habituels. Si l’arc a un bonus d’altération, il s’applique aux jets d’attaque et de dégâts. Les propriétés spéciales supplémentaires de l’arc s’appliquent aussi aux attaques de corps à corps, à condition que l’on puisse les appliquer à une arme de corps à corps.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc-b%c3%a2ton.ashx",
+    "cache_fichier": "cache/html/22787439530b95358f7802d1fbc15985c66f55d2.html",
+    "recupere_le": "2026-07-28T22:41:32.465731+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "arc-baton",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc-b%c3%a2ton.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "arc-baton",
+    "resume_court": "L'arc devient une arme de corps à corps rigide et robuste, conservant ses bonus et propriétés.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "objet_ou_equipement",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme (arc)"
+    },
+    "notes_ambiguite": null,
+    "slug": "arc-baton",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:58+00:00",
+    "hash_source": "58e6d72bdd1f2c0f6840545b36f0df096625f54d77efd506ad2c8bab761c8ff8"
+  }
+}

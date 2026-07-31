@@ -1,0 +1,78 @@
+{
+  "id": "feu-du-jugement",
+  "nom": "Feu du jugement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feu%20du%20jugement.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 3
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G",
+  "portee": "spéciale (voir description)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté partiel",
+  "resistance_magie": "oui",
+  "description": "Après avoir lancé ce sort, la prochaine cible que le personnage attaque à l'aide de son pouvoir de classe châtiment du mal est engloutie dans des flammes d'énergie positive. Au début de son tour, la cible subit 1d6 points de dégâts et 1d6 points supplémentaires à chaque fois qu'elle attaque une créature autre que le personnage. Si la créature est un extérieur de sous-type Mauvais, un dragon Mauvais ou un mort-vivant, ces dégâts passent à 1d10. En cas de jet de sauvegarde réussi, ce sort n'affecte la créature que pendant 1 round. Ces dégâts sont de nature divine et ignorent toute RD de la créature.",
+  "description_html": "<br/><br/>Après avoir lancé ce sort, la prochaine cible que le personnage attaque à l'aide de son pouvoir de classe <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL\" title=\"Le paladin\">châtiment du mal</a> est engloutie dans des flammes d'énergie positive. Au début de son tour, la cible subit 1d6 points de dégâts et 1d6 points supplémentaires à chaque fois qu'elle attaque une créature autre que le personnage. Si la créature est un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">extérieur</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Mal.ashx\" title=\"Mal (sous-type)\">sous-type Mauvais</a>, un <a class=\"pagelink\" href=\"Pathfinder-RPG.dragon.ashx\" title=\"Les dragons véritables\">dragon</a> Mauvais ou un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a>, ces dégâts passent à 1d10. En cas de <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> réussi, ce sort n'affecte la créature que pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Ces dégâts sont de nature divine et ignorent toute <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> de la créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feu%20du%20jugement.ashx",
+    "cache_fichier": "cache/html/1e114607bcefec05f84aa0cf376b8f2fa92e86d3.html",
+    "recupere_le": "2026-07-28T22:53:20.274818+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "feu-du-jugement",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feu%20du%20jugement.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "feu-du-jugement",
+    "resume_court": "La prochaine cible du châtiment du mal subit des dégâts d'énergie positive chaque round et à chaque attaque.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "positif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts et 1d6 points supplémentaires",
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts d'énergie positive (« flammes d'énergie positive », « Ces dégâts sont de nature divine »), classés comme type_degats « positif ». La cible est désignée par le pouvoir de classe châtiment du mal du paladin, ce qui en fait un ennemi. Aucune condition spécifique de la liste n'est infligée : la créature subit des dégâts mais conserve ses actions.",
+    "slug": "feu-du-jugement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:02+00:00",
+    "hash_source": "14918eaa4c02cef154c41c8813c471eac9dd3fe58058a3e4e7243943a21806da"
+  }
+}
