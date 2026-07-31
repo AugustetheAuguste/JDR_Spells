@@ -550,6 +550,7 @@ def run(
     *,
     enrichissements: str | Path = DEFAULT_ENRICHISSEMENTS,
     sorts: str | Path = DEFAULT_SORTS,
+    racine_conventions: str | Path | None = None,
     only: Iterable[str] | None = None,
 ) -> tuple[dict[str, Any], list[Verdict]]:
     """Validate every present record and return the summary plus the verdicts.
@@ -557,16 +558,25 @@ def run(
     The absence of an enrichment is NOT an error of this stage — a spell with no
     record is the joined view's concern (its `sans_enrichissement` status), not a
     validation failure. This stage judges what exists.
+
+    `racine` is the corpus root and may be a fixture; `racine_conventions` holds
+    the schema and the frozen vocabularies, which are shared by every root. Same
+    split, and the same default (`.`), as stages 08 and 09 and the view builder:
+    a fixture must never need its own copy of the closed lists, because a second
+    copy is a second answer to "what may this field contain".
     """
 
     def _resoudre(valeur: str | Path) -> Path:
         chemin = Path(valeur)
         return chemin if chemin.is_absolute() else racine / chemin
 
+    conventions = (
+        Path(racine_conventions) if racine_conventions is not None else Path(".")
+    )
     repertoire = _resoudre(enrichissements)
     repertoire_sorts = _resoudre(sorts)
-    schema = charger_schema_resolu(racine)
-    taxonomie = etiquette_taxonomie(racine)
+    schema = charger_schema_resolu(conventions)
+    taxonomie = etiquette_taxonomie(conventions)
     index = charger_index(racine)
 
     from jsonschema import Draft202012Validator
@@ -613,6 +623,15 @@ def main(argv: list[str] | None = None) -> int:
     parseur.add_argument("--sorts", default=DEFAULT_SORTS)
     parseur.add_argument("--rapports", default=DEFAULT_RAPPORTS)
     parseur.add_argument(
+        "--racine-conventions",
+        default=None,
+        help=(
+            "racine du schéma et des vocabulaires clos (défaut : le dépôt "
+            "courant). À laisser tel quel : ces artefacts sont gelés et partagés, "
+            "y compris quand --racine pointe sur une fixture"
+        ),
+    )
+    parseur.add_argument(
         "--only", nargs="+", metavar="ID", help="ne valider que ces ids"
     )
     parseur.add_argument(
@@ -629,6 +648,7 @@ def main(argv: list[str] | None = None) -> int:
             racine,
             enrichissements=args.enrichissements,
             sorts=args.sorts,
+            racine_conventions=args.racine_conventions,
             only=args.only,
         )
     except (ValidateEnrichmentError, ValueError, KeyError) as exc:
