@@ -19,12 +19,8 @@ import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 
-import {
-  CHEMIN_INDEX_FIXTURE,
-  CHEMIN_INDEX_REEL,
-  type EntreeSort,
-  type IndexWeb,
-} from '@/lib/donnees/index-web'
+import { type EntreeSort, type IndexWeb } from '@/lib/donnees/index-web'
+import { CHEMIN_INDEX_FIXTURE, CHEMIN_INDEX_REEL } from '@/lib/donnees/lire-index'
 
 import { construireMoteur, LIMITE_DEFAUT, type Resultat, type TableAlias } from './moteur'
 import { plier } from './pliage'

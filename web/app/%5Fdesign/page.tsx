@@ -2,12 +2,8 @@ import type { Metadata } from 'next'
 
 import { DemoPrimitives, type LigneDemo } from '@/app/%5Fdesign/DemoPrimitives'
 import { MarqueurDesaccord } from '@/components/primitives/MarqueurDesaccord'
-import {
-  CHEMIN_INDEX_FIXTURE,
-  chargerIndex,
-  ecoleDe,
-  niveauxOrdonnes,
-} from '@/lib/donnees/index-web'
+import { ecoleDe, niveauxOrdonnes } from '@/lib/donnees/index-web'
+import { CHEMIN_INDEX_FIXTURE, chargerIndex } from '@/lib/donnees/lire-index'
 import { COULEURS, COULEURS_ECOLES, ECHELLE, POLICES } from '@/lib/design/tokens'
 
 export const metadata: Metadata = {

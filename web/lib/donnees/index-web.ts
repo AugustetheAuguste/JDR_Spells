@@ -6,13 +6,12 @@
  * downloaded by every visitor and the integer coding is what holds the size
  * budget; `EntreeSort` documents each so nobody has to guess.
  *
- * Reading is synchronous and happens at build time: the index is a committed
- * artefact, not a fetch. `chargerIndex` therefore belongs to server components
- * and to tests, never to the browser.
+ * This module carries the types and the pure code-resolution helpers ONLY, so
+ * that a client component can import it. Reading the file lives in
+ * `lire-index.ts`: `node:fs` in this module put `node:fs` in the browser bundle
+ * and the build failed outright — which is the good outcome, but the split is
+ * what makes the boundary explicit rather than incidental.
  */
-
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
 
 import { ECOLES, type Ecole } from '@/lib/design/tokens'
 
@@ -63,16 +62,6 @@ export interface IndexWeb {
    * tag filter rather than showing an empty one. */
   readonly tags: readonly string[]
   readonly sorts: readonly EntreeSort[]
-}
-
-/** The real export. Committed, so this is a file read and not a network call. */
-export const CHEMIN_INDEX_REEL = join(process.cwd(), 'public', 'data', 'index.json')
-
-/** The frozen 24-spell fixture, used by tests and by the `/_design` route. */
-export const CHEMIN_INDEX_FIXTURE = join(process.cwd(), 'fixtures', 'index.json')
-
-export function chargerIndex(chemin: string = CHEMIN_INDEX_REEL): IndexWeb {
-  return JSON.parse(readFileSync(chemin, 'utf8')) as IndexWeb
 }
 
 /**
