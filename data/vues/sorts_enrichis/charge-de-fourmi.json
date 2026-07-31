@@ -1,0 +1,167 @@
+{
+  "id": "charge-de-fourmi",
+  "nom": "Charge de fourmi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20de%20fourmi.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Con": 1,
+    "ConU": 1,
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Méd": 1,
+    "Occ": 1,
+    "Prê": 1,
+    "Psy": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (petite poulie)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "2 heures/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Triple la capacité de charge de la créature (voir table : \"Capacité de charge\"). Ceci n'affecte pas la Force de la créature, uniquement la quantité de matériel qu'elle peut transporter quand elle bénéficie des effets de ce sort. Le sort n'affecte pas non plus l'encombrement dû à l'armure. Si la créature porte une armure, elle subit toujours les malus appropriés, quel que soit le poids que le sort lui permet de transporter.",
+  "description_html": "<hr/>\nTriple la capacité de charge de la créature (voir table : \"<a class=\"pagelink\" href=\"Pathfinder-RPG.Poids%20transportable.ashx\" title=\"Poids transportable\">Capacité de charge</a>\"). Ceci n'affecte pas la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> de la créature, uniquement la quantité de matériel qu'elle peut transporter quand elle bénéficie des effets de ce sort. Le sort n'affecte pas non plus l'encombrement dû à l'armure. Si la créature porte une armure, elle subit toujours les malus appropriés, quel que soit le poids que le sort lui permet de transporter.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Charge de fourmi (partagé)",
+      "id": "charge-de-fourmi-partage",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 2,
+        "Con": 2,
+        "ConU": 2,
+        "Dru": 2,
+        "Ens/Mag": 2,
+        "Occ": 2,
+        "Prê": 2,
+        "Psy": 2,
+        "Rôd": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (petite poulie)",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "2 heures/niveau",
+      "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme charge de fourmi, mais la durée se divise entre les créatures touchées, par portions de 2 heures.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.charge%20de%20fourmi.ashx\" title=\"Charge de fourmi\">charge de fourmi</a></i>, mais la durée se divise entre les créatures touchées, par portions de 2 heures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20de%20fourmi.ashx",
+    "cache_fichier": "cache/html/791ac92123add30c0d9912fe30ccde7538866b24.html",
+    "recupere_le": "2026-07-28T22:46:19.185571+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "charge-de-fourmi",
+    "resume_court": "Triple la capacité de charge de la créature touchée pendant 2 heures par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "utilitaire",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "charge-de-fourmi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:46+00:00",
+    "hash_source": "7511ad45aaddd1c396d94bf6ea7622589f88f386ccb1f8e82cb995758be405e2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "19caa0d6b130c94bdf5a72793705fd015901561d8512cec6230d00df3498dc3a",
+  "hash_vue": "bbf4b70c7baf0c755d633932ae9f89a2534317b19daebc5ee877d1cf9c5d767b"
+}

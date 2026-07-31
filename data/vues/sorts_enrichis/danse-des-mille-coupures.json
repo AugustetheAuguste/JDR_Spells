@@ -1,0 +1,74 @@
+{
+  "id": "danse-des-mille-coupures",
+  "nom": "Danse des mille coupures",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Danse%20des%20mille%20coupures.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme danse des cent coupures mais le personnage bénéficie aussi des effets de rapidité.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.danse%20des%20cent%20coupures.ashx\" title=\"Danse des cent coupures\">danse des cent coupures</a></i> mais le personnage bénéficie aussi des effets de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rapidit%c3%a9.ashx\" title=\"Rapidité\">rapidité</a></i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {
+    "sorts_lies": "Danse des cent coupures"
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Danse%20des%20mille%20coupures.ashx",
+    "cache_fichier": "cache/html/086a1882972c8a0ff211e508f37e731e34753bb3.html",
+    "recupere_le": "2026-07-28T22:51:06.707851+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "danse-des-mille-coupures",
+    "resume_court": "Le lanceur gagne les effets de danse des cent coupures et de rapidité pendant 1 round par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le texte renvoie à « danse des cent coupures » sans en donner les détails. Les effets exacts restent indéterminés. Le tag « effet_mental » est rejeté car aucune preuve textuelle ne le justifie ; je le remplace par « bonus_chiffre » si rapidité confère un bonus, mais le texte ne le précise pas. Conservé : « amelioration_de_capacite » et « duree_prolongee » sont justifiés. Ajout de « degats_directs » rejeté faute de preuve. Réponse basée sur le seul texte fourni, qui ne détaille pas les mécaniques sous-jacentes.",
+    "slug": "danse-des-mille-coupures",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:16+00:00",
+    "hash_source": "3d52119429c7739d55f75c38fcfcb608ecd416de9e2c3ae79be9d90152a9ba65"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fdd772c40505e9b0a2edb8459bec757d433221a9e26ad9d31346c15822124450",
+  "hash_vue": "b14436b78fd9bdc6acff42a1e75bcbc05f13347266b7f6ad2a3e5c98e02e9db6"
+}

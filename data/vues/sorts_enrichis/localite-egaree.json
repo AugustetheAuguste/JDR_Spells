@@ -1,0 +1,82 @@
+{
+  "id": "localite-egaree",
+  "nom": "Localité égarée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Localit%c3%a9%20%c3%a9gar%c3%a9e.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 9
+  },
+  "temps_incantation": "24 heures",
+  "composantes": "V, G",
+  "portee": "0,75 km/niveau",
+  "cible": "jusqu'à un cube de 0,75 km d'arête/niveau",
+  "duree": "2 heures/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme impasse égarée, excepté qu'il affecte une zone plus grande. Localité égarée peut être rendu permanent grâce à un sort de permanence et 90.000 po de composantes matérielles.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.impasse%20%c3%a9gar%c3%a9e.ashx\" title=\"Impasse égarée\">impasse égarée</a></i>, excepté qu'il affecte une zone plus grande. <i>Localité égarée</i> peut être rendu permanent grâce à un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> et 90.000 po de composantes matérielles.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles samsarans.",
+    "sorts_lies": "Impasse égarée"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Localit%c3%a9%20%c3%a9gar%c3%a9e.ashx",
+    "cache_fichier": "cache/html/5090e20757e24987705869d64e58e27749c638ec.html",
+    "recupere_le": "2026-07-28T22:59:00.676345+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "localite-egaree",
+    "resume_court": "Un sort d'enchantement qui égare les créatures dans une vaste zone pendant plusieurs heures.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à un cube de 0,75 km d'arête/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « impasse égarée » pour les détails mécaniques (conditions infligées, effets précis) sans les reproduire. Seules les informations explicites du texte fourni ont été utilisées. La nature exacte de l'égarement (confusion, désorientation, etc.) n'est pas spécifiée ici.",
+    "slug": "localite-egaree",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:14+00:00",
+    "hash_source": "eff7771d2e3274af8713a07deac5520ad1da8280f6fc516a92ed4ef432923b23"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a200f6a6345f7f4d0f7c40f8e3a1098a6833409deb575e80ca8fd9938bce3b5c",
+  "hash_vue": "25e167a3ec5259dd7c5ed1f3da097ccbc3ff2fd284aed1f1704f3480a52c39f1"
+}

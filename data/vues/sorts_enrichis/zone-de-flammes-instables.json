@@ -1,0 +1,83 @@
+{
+  "id": "zone-de-flammes-instables",
+  "nom": "Zone de flammes instables",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Zone%20de%20flammes%20instables.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau d’écorce prélevé sur un arbre brûlé de la forêt mystérieuse de l'État serviteur de l'Ombre)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "étendue de 6 m de rayon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Les druides corrompus de la forêt mystérieuse de l'État serviteur de l'Ombre ont abandonné depuis des lustres l’utilisation du feu pour la gloire du dieu de la torture. Malgré cette aversion, les serviteurs de l'Ombre connaissent la morsure des flammes et ont appris à la retourner contre ceux qui s’en servent.\nCe sort crée une zone dans laquelle les effets de feu magique se distendent pour se déchaîner sur ceux à l’origine des effets. Une zone de flammes instables ne peut être repérée par un observateur de passage, mais la réussite d’un test de Perception (DD = 20 + le niveau de lanceur de sorts) révèle la faible présence d’ondes dans la zone, semblable aux distorsions que produit la chaleur dans l’air.\nQuand une créature lance un sort du registre du feu ou active un effet de feu magique (avec un objet magique ou une attaque spéciale) alors qu’elle se tient à l’intérieur d’une zone de flammes instables, elle subit les dégâts de feu infligés par l’effet. Si l’effet autorise un jet de sauvegarde pour réduire les dégâts, la victime peut l’effectuer pour les réduire. Toutes les créatures dans la zone de flammes instables gagnent un bonus de circonstances de +4 aux jets de sauvegarde contre les effets de feu, mais une créature qui tente un jet de sauvegarde contre les dégâts de feu infligés par ses propres effets magiques ne bénéficie pas de ce bonus. Les feux non magiques dans la zone de flammes instables ne sont pas affectés, mais produisent néanmoins deux fois moins de lumière.",
+  "description_html": "<br/><br/><i>Les druides corrompus de la forêt mystérieuse de l'État serviteur de l'Ombre ont abandonné depuis des lustres l’utilisation du feu pour la gloire du dieu de la torture. Malgré cette aversion, les serviteurs de l'Ombre connaissent la morsure des flammes et ont appris à la retourner contre ceux qui s’en servent.</i><br/><br/>Ce sort crée une zone dans laquelle les effets de feu magique se distendent pour se déchaîner sur ceux à l’origine des effets. Une <i>zone de flammes instables</i> ne peut être repérée par un observateur de passage, mais la réussite d’un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 20 + le <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>) révèle la faible présence d’ondes dans la zone, semblable aux distorsions que produit la chaleur dans l’air.<br/><br/>Quand une créature lance un sort du registre du <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">feu</a> ou active un effet de feu magique (avec un objet magique ou une attaque spéciale) alors qu’elle se tient à l’intérieur d’une <i>zone de flammes instables</i>, elle subit les dégâts de feu infligés par l’effet. Si l’effet autorise un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> pour réduire les dégâts, la victime peut l’effectuer pour les réduire. Toutes les créatures dans la <i>zone de flammes instables</i> gagnent un bonus de circonstances de +4 aux jets de sauvegarde contre les effets de feu, mais une créature qui tente un jet de sauvegarde contre les dégâts de feu infligés par ses propres effets magiques ne bénéficie pas de ce bonus. Les feux non magiques dans la zone de flammes instables ne sont pas affectés, mais produisent néanmoins deux fois moins de lumière.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Zone%20de%20flammes%20instables.ashx",
+    "cache_fichier": "cache/html/66bbbaa09173c0ea9a4e9f61d615151e8b022131.html",
+    "recupere_le": "2026-07-29T07:44:54.436818+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "zone-de-flammes-instables",
+    "resume_court": "Une zone où les effets de feu magique se retournent contre leur lanceur.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "terrain_ou_environnement",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "elle subit les dégâts de feu infligés par l'effet",
+      "condition_infligee": [],
+      "cible_typique": "étendue de 6 m de rayon"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts de feu, mais seulement à celui qui lance l'effet de feu à l'intérieur de la zone — c'est un effet réactif, pas une attaque directe du sort lui-même. La catégorie « controle_de_zone » s'impose car le sort modifie un volume de terrain et ce qui s'y passe, plutôt que d'attaquer directement.",
+    "slug": "zone-de-flammes-instables",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:29+00:00",
+    "hash_source": "184686e0eacf6f4ae9d4df686e7ddf9d8da5b869a2ea73f5e7600f697f00c92c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "14a6a763f749046f5d49f7d2bad13a684a4d22aa69ad6e6e60742a1e0975d8bc",
+  "hash_vue": "960742a968293892edd9f00027649d794fffe248b6a31a70770e72906efd18eb"
+}

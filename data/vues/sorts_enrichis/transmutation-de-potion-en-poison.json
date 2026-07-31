@@ -1,0 +1,78 @@
+{
+  "id": "transmutation-de-potion-en-poison",
+  "nom": "Transmutation de potion en poison",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmutation%20de%20potion%20en%20poison.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Alch": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round puis 1 minute/niveau ; voir texte",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Cet extrait donne une pâleur maladive au personnage pendant 1 round. Pendant ce laps de temps, toute potion consommée n'a aucun effet. En revanche, elle emplit sa bouche d'un vil poison qu'il peut cracher sur une arme par une action libre. S'il ne le fait pas en 1 round, il s'empoisonne. L'effet du poison dépend du niveau de sort contenu dans la potion consommée (voir ci-dessous). Si le poison n'est pas utilisé en moins de 1 minute par niveau de lanceur de sorts, il devient inerte. Le personnage ne peut créer qu'une dose de poison par incantation de ce sort.",
+  "description_html": "<br/><br/>Cet <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAIT\" title=\"L'alchimiste\">extrait</a> donne une pâleur maladive au personnage pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Pendant ce laps de temps, toute <a class=\"pagelink\" href=\"Pathfinder-RPG.potions%20magiques.ashx\" title=\"Les potions magiques\">potion</a> consommée n'a aucun effet. En revanche, elle emplit sa bouche d'un vil <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> qu'il peut cracher sur une arme par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>. S'il ne le fait pas en 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, il s'empoisonne. L'effet du <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> dépend du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20sort.ashx\" title=\"Niveau de sort\">niveau de sort</a> contenu dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.potions%20magiques.ashx\" title=\"Les potions magiques\">potion</a> consommée (voir ci-dessous). Si le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> n'est pas utilisé en moins de 1 minute par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>, il devient inerte. Le personnage ne peut créer qu'une dose de <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> par incantation de ce sort.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {
+    "section:Poisons transmutés": "On peut créer les poisons suivants à l’aide du sort transmutation des potions en poison. La puissance du poison dépend du niveau du sort contenu dans la potion transmutée.\nPOISON DE POTION DE NIVEAU 0\nType poison, blessure ; Jet de sauvegarde Vigueur DD 10\nFréquence 1/round pendant 2 rounds\nEffet 1 point d’affaiblissement temporaire de Dex ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 1\nType poison, blessure ; Jet de sauvegarde Vigueur DD 11\nFréquence 1/round pendant 4 rounds\nEffet 1d2 points d’affaiblissement temporaire de Dex ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 2\nType poison, blessure ; Jet de sauvegarde Vigueur DD 13\nFréquence 1/round pendant 6 rounds\nEffet 1d4 points d’affaiblissement temporaire de For ; Guérison 1 réussite\nPOISON DE POTION DE NIVEAU 3\nType poison, blessure ; Jet de sauvegarde Vigueur DD 14\nFréquence 1/round pendant 6 rounds\nEffet 1d4 points d’affaiblissement temporaire de Con ; Guérison 2 réussites consécutives"
+  },
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmutation%20de%20potion%20en%20poison.ashx",
+    "cache_fichier": "cache/html/0df7b5782261331a87dbc4ea6df2a94e39f28549.html",
+    "recupere_le": "2026-07-29T07:43:21.335591+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "transmutation-de-potion-en-poison",
+    "resume_court": "Convertit une potion consommée en poison à cracher sur une arme pendant 1 round.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "arme_ou_munition",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort transforme une potion en poison sans infliger directement de dégâts : il prépare une arme. La condition « pâleur maladive » n'est pas une condition de jeu listée. Le texte ne précise pas les dégâts du poison résultant, qui dépendent de la potion consommée.",
+    "slug": "transmutation-de-potion-en-poison",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:51+00:00",
+    "hash_source": "cb54b332b4ee16c2abcbb5f56bde13586d222aa88a03771a807529e8c8f6410a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "684cb4cefcfc37a3efbcbac9a8a19606b328d67c66215909f477ebe84e1caf43",
+  "hash_vue": "c7ed96d22073781f5b4be5fdf1dcdd89aaf0c476d4f0fe1cd9444d68d6082104"
+}

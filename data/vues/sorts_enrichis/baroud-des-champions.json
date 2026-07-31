@@ -1,0 +1,91 @@
+{
+  "id": "baroud-des-champions",
+  "nom": "Baroud des champions",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Baroud%20des%20champions.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "deux créatures",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui (voir texte)",
+  "description": "Le personnage permet à deux champions désignés de se battre sans interruption. Les deux créatures doivent être consentantes afin que le sort fonctionne. Après l'incantation, toute créature qui tente d'aider ou de gêner l'une des deux cibles de quelque manière que ce soit doit réussir un jet de Volonté ou perdre son action à la place (la résistance à la magie s'applique). Une créature qui rate son jet de Volonté contre baroud des champions ne peut pas essayer d'intervenir à nouveau. Si une créature réussit à intervenir dans le baroud, le sort se termine immédiatement.",
+  "description_html": "<br/><br/>Le personnage permet à deux champions désignés de se battre sans interruption. Les deux créatures doivent être consentantes afin que le sort fonctionne. Après l'incantation, toute créature qui tente d'aider ou de gêner l'une des deux cibles de quelque manière que ce soit doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou perdre son action à la place (la <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> s'applique). Une créature qui rate son jet de Volonté contre <i>baroud des champions</i> ne peut pas essayer d'intervenir à nouveau. Si une créature réussit à intervenir dans le baroud, le sort se termine immédiatement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles shoantis."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Baroud%20des%20champions.ashx",
+    "cache_fichier": "cache/html/730b57cc23aa78c58656d1c8a46666c847190550.html",
+    "recupere_le": "2026-07-28T22:43:25.054470+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "baroud-des-champions",
+    "resume_court": "Deux champions consentants se battent sans interruption ; les tiers qui tentent d'intervenir perdent leur action.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "perdre son action à la place"
+      ],
+      "cible_typique": "deux créatures"
+    },
+    "notes_ambiguite": "Le sort affecte principalement les tiers qui tentent d'intervenir, pas les deux champions eux-mêmes. La condition « chancelant » (une seule action par round) reflète la perte d'action imposée aux intervenants qui ratent leur jet. Les deux champions sont consentants et ne subissent pas d'effet négatif direct.",
+    "slug": "baroud-des-champions",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:38+00:00",
+    "hash_source": "99cc04096bd7329b09b4202af05f772d710c7583abeddb44671dee8640f2db6e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e85243f59575f18e1ab038aae5676a495f973cbb290fb1dd385c96bc359ade34",
+  "hash_vue": "5d52627df8ca55f83e816e10e3a01e484bf732464a99484f99d9ecbbddc92fd3"
+}

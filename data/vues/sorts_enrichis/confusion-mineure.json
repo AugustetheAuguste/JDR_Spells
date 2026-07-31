@@ -1,0 +1,102 @@
+{
+  "id": "confusion-mineure",
+  "nom": "Confusion mineure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confusion%20mineure.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Méd": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Cet enchantement rend une cible confuse pendant 1 round.",
+  "description_html": "<br/><br/>Cet <a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a> rend une cible <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confusion%20mineure.ashx",
+    "cache_fichier": "cache/html/bd194ad63e2d5272b361c26c5f91cb23241821ec.html",
+    "recupere_le": "2026-07-28T22:47:21.215413+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "confusion-mineure",
+    "resume_court": "Un enchantement qui rend une créature confuse pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "confusion_ou_desorientation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "rend une cible confuse pendant 1 round"
+      ],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "confusion-mineure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:13+00:00",
+    "hash_source": "c913b9597d3aee3fcc947d9bf4e5ef35c408d294f1e3fb4d06302257fa2632e6"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "df165b72fbc72da65d2e6abede759b8d398df7b738a140315521c01a006da485",
+  "hash_vue": "331061fe082226cda5a660fc969013cde44a930ba6d90eef273d105eecc03290"
+}

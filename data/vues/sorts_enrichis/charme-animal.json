@@ -1,0 +1,100 @@
+{
+  "id": "charme-animal",
+  "nom": "Charme-animal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charme-animal.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Psy": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 animal",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Charme-animal ne s’utilise que sur les animaux. La créature affectée considère le lanceur de sorts comme son meilleur ami. Néanmoins si elle est menacée par le personnage ou ses compagnons, elle bénéficie d’un bonus de +5 au jet de sauvegarde.\nL’enchantement ne permet pas de diriger l’animal charmé comme une marionnette, mais celui-ci perçoit toutefois tout ce que dit et fait le personnage de la manière la plus favorable qui soit. Le personnage peut essayer de lui donner des instructions, mais il lui faut réussir un test de Charisme opposé pour convaincre le sujet de faire quelque chose qui lui déplaît (une seule chance). Un animal charmé n’obéit jamais à un ordre suicidaire, mais on peut le convaincre que le risque vaut le coup. Tout acte du personnage ou de ses alliés menaçant le sujet met immédiatement un terme au sort. Notez qu’il faut parler la langue de l'animal charmé (ou être fort en mime) pour se faire comprendre.",
+  "description_html": "<br/><br/><i>Charme-animal</i> ne s’utilise que sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20animal.ashx\" title=\"Animal\">animaux</a>. La créature affectée considère le lanceur de sorts comme son meilleur ami. Néanmoins si elle est menacée par le personnage ou ses compagnons, elle bénéficie d’un bonus de +5 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/>L’<a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a> ne permet pas de diriger l’animal <a class=\"pagelink\" href=\"Pathfinder-RPG.charme.ashx\" title=\"charme\">charmé</a> comme une marionnette, mais celui-ci perçoit toutefois tout ce que dit et fait le personnage de la manière la plus favorable qui soit. Le personnage peut essayer de lui donner des instructions, mais il lui faut réussir un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> opposé pour convaincre le sujet de faire quelque chose qui lui déplaît (une seule chance). Un animal <a class=\"pagelink\" href=\"Pathfinder-RPG.charme.ashx\" title=\"charme\">charmé</a> n’obéit jamais à un ordre suicidaire, mais on peut le convaincre que le risque vaut le coup. Tout acte du personnage ou de ses alliés menaçant le sujet met immédiatement un terme au sort. Notez qu’il faut parler la langue de l'animal <a class=\"pagelink\" href=\"Pathfinder-RPG.charme.ashx\" title=\"charme\">charmé</a> (ou être fort en <a class=\"pagelink\" href=\"Pathfinder-RPG.repr%c3%a9sentation.ashx\" title=\"Représentation\">mime</a>) pour se faire comprendre.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charme-animal.ashx",
+    "cache_fichier": "cache/html/655e33f1b024b54e81b1823062cb5073a6c74023.html",
+    "recupere_le": "2026-07-28T22:46:26.369119+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "charme-animal",
+    "resume_court": "L'animal affecté considère le lanceur comme son meilleur ami et perçoit ses actes favorablement.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: 1 animal"
+    },
+    "notes_ambiguite": "Le sort affecte un animal hostile (ennemi) mais le transforme en allié temporaire. La cible_typique « ennemi » reflète l'usage tactique : on le lance sur une créature hostile pour la charmer. Bien que le résultat soit une alliance, la cible initiale est ennemie.",
+    "slug": "charme-animal",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:05+00:00",
+    "hash_source": "c70c6bc0d18218b2f2a5f14cea42876bfe5ff8c905c83409071b7300567963cb"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "06647a84e5ea8d2fa5bac07776d023f72d2a38edf83c147befa4edb8c9511daa",
+  "hash_vue": "b32c0c51fedb35f63e1fb37cb1047d3e448426e68400507f3fbe44bec0a8a6b9"
+}

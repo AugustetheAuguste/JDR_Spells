@@ -1,0 +1,102 @@
+{
+  "id": "eau-rouge",
+  "nom": "Eau rouge",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Eau%20rouge.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "émotion"
+  ],
+  "niveaux": {
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Prê": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "6 m",
+  "cible": "nuage de 6 mètres de rayon centré sur le sahuagin",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Lorsqu’il lance ce sort, le sahuagin doit s’infliger un point de dégâts perforants ou tranchants pour faire couler son sang. Ce faisant, il reçoit un point de dégâts de saignement. Lorsque ce sort est actif, tous les requins, les poissons de fond et les créatures possédant le pouvoir de frénésie inspirée par le sang situés dans la zone gagnent un bonus de +2 en Force et en Constitution mais reçoivent un malus de -2 à la CA.\nTraitez cet effet comme une frénésie inspirée par le sang au regard des autres dons et effets : il ne se cumule pas avec les effets d’une véritable frénésie inspirée par le sang. À partir du moment où le sahuagin ne saigne plus, le sort se termine aussitôt.",
+  "description_html": "<br/><br/>Lorsqu’il lance ce sort, le sahuagin doit s’infliger un point de dégâts perforants ou tranchants pour faire couler son sang. Ce faisant, il reçoit un point de dégâts de saignement. Lorsque ce sort est actif, tous les requins, les poissons de fond et les créatures possédant le pouvoir de frénésie inspirée par le sang situés dans la zone gagnent un bonus de +2 en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> et en <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> mais reçoivent un malus de -2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>.<br/><br/>Traitez cet effet comme une frénésie inspirée par le sang au regard des autres dons et effets : il ne se cumule pas avec les effets d’une véritable frénésie inspirée par le sang. À partir du moment où le sahuagin ne saigne plus, le sort se termine aussitôt.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "autres": {
+    "Cette option est plus courante chez les sahuagins": null
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Eau%20rouge.ashx",
+    "cache_fichier": "cache/html/839b5ef1bbacef74ca516af18271542e64efdd9e.html",
+    "recupere_le": "2026-07-28T22:51:48.177338+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "eau-rouge",
+    "resume_court": "Un nuage de sang qui renforce les requins et créatures frénétiques à proximité pendant 1 round/niveau.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "bonus_chiffre",
+      "malus_chiffre",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "nuage de 6 mètres de rayon centré sur le sahuagin"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts au lanceur (sahuagin) pour activer l'effet, mais ces dégâts sont auto-infligés et non une condition imposée aux cibles. L'effet principal est une amélioration de zone pour les créatures alliées (requins, poissons, créatures frénétiques), d'où la classification en controle_de_zone plutôt qu'attaque_directe. Le descripteur « émotion » et l'effet de frénésie justifient le tag effet_mental.",
+    "slug": "eau-rouge",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:02+00:00",
+    "hash_source": "221eac102c6f495643bd434c6253cf28e7a3c9e62c5fccc000e5b4a4a07f6a31"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b6bb3ed5b92f0eb642adce1d9c25a3c9c64b111349e17c912d52c742ea81a9c5",
+  "hash_vue": "55f17e5000ed35248021b0c33991d6ee857681769b87a269456f43e4d3f10f70"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "injonction-supreme",
+  "nom": "Injonction suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injonction%20supr%c3%aame.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 4,
+    "Inq": 5,
+    "Méd": 4,
+    "Occ": 5,
+    "Prê": 5,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m/6 c les unes des autres",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme injonction, si ce n’est qu’il permet d’affecter jusqu’à une créature par niveau et que son effet persiste sur plusieurs rounds. Le personnage ne peut donner qu’un seul ordre, qui vaut pour toutes les cibles. Celles qui ratent leur jet de sauvegarde initial y obéissent dès que vient leur tour. Puis après, au début de chacun de leurs tours (à partir du second tour suivant l’incantation d’injonction suprême donc), les créatures affectées peuvent effectuer un nouveau jet de Volonté pour tenter de se libérer de l’enchantement.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.injonction.ashx\" title=\"Injonction\">injonction</a></i>, si ce n’est qu’il permet d’affecter jusqu’à une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> et que son effet persiste sur plusieurs <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Le personnage ne peut donner qu’un seul ordre, qui vaut pour toutes les cibles. Celles qui ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a> initial y obéissent dès que vient leur tour. Puis après, au début de chacun de leurs tours (à partir du second tour suivant l’incantation d’<i>injonction suprême</i> donc), les créatures affectées peuvent effectuer un nouveau jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour tenter de se libérer de l’<a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Injonction"
+  },
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injonction%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/9d2f35b419f00c40f4f2021997038dd3e6ebb796.html",
+    "recupere_le": "2026-07-28T22:57:04.524304+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "injonction-supreme",
+    "resume_court": "Le lanceur impose un ordre unique à plusieurs créatures, qui obéissent pendant plusieurs rounds.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "injonction-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:33+00:00",
+    "hash_source": "b3ca2e74785696c0e789b63475b01282a98570106b6ea5505c2b6252f0517eb5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7a1188b2be9cdd6d65d2cb30fa442da534ffd1fcb3073af72906e5b5ec1747a8",
+  "hash_vue": "bc47587c76f4b7ba2d45205f52265b5b9dc4caddfe29982b8c116d86f1d960ad"
+}

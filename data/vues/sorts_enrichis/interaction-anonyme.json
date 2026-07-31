@@ -1,0 +1,101 @@
+{
+  "id": "interaction-anonyme",
+  "nom": "Interaction anonyme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interaction%20anonyme.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau, chacune ne devant pas se trouver à plus de 9 mètres des autres",
+  "duree": "permanente (voir texte)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage fait oublier aux cibles toutes les informations qu’elles ont apprises sur lui en dehors des plus superficielles. Si celles-ci ont vu ou ont interagi avec le personnage, elles se souviennent de sa présence et de sa silhouette générale (si c’est un humanoïde, par exemple) ainsi que de l’idée générale de leurs interactions avec lui (comme, par exemple, « il posait des questions sur la reine »), mais elles ne se rappellent pas spécifiquement ce qu’il a dit, ni les détails de son apparence ou toute autre information qui leur permettrait de l’identifier. Ce sort cible tous les souvenirs concernant le personnage datant de la minute qui précède son lancement mais il est permanent.",
+  "description_html": "<br/><br/>Le personnage fait oublier aux cibles toutes les informations qu’elles ont apprises sur lui en dehors des plus superficielles. Si celles-ci ont vu ou ont interagi avec le personnage, elles se souviennent de sa présence et de sa silhouette générale (si c’est un humanoïde, par exemple) ainsi que de l’idée générale de leurs interactions avec lui (comme, par exemple, « il posait des questions sur la reine »), mais elles ne se rappellent pas spécifiquement ce qu’il a dit, ni les détails de son apparence ou toute autre information qui leur permettrait de l’identifier. Ce sort cible tous les souvenirs concernant le personnage datant de la minute qui précède son lancement mais il est permanent.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interaction%20anonyme.ashx",
+    "cache_fichier": "cache/html/304ace3d95ad20da20338f0af79825bc4b16ce5f.html",
+    "recupere_le": "2026-07-28T22:57:21.554804+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "interaction-anonyme",
+    "resume_court": "Les cibles oublient les détails sur le lanceur mais conservent un souvenir vague de sa présence.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": "Le sort ne cause pas de dégâts directs ni n'inflige une condition au sens tactique (aveugle, paralysé, etc.), mais dégrade durablement la capacité des cibles à identifier le lanceur. Classé en `affaiblissement` car il dégrade une capacité (la mémoire détaillée) de manière durable. Les rôles `social` et `exploration` reflètent son usage principal : dissimuler l'identité du lanceur dans les interactions sociales ou lors de missions d'infiltration.",
+    "slug": "interaction-anonyme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:38+00:00",
+    "hash_source": "397d62202599b14a336055296427d45bd6d6a2c9973bed92817643c78358ad81"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "87d1477a4a35dbcc2cda8626c92836a4617a6716a58829f1be9ebcdeba89bb45",
+  "hash_vue": "ff262cea1411a2b1e44c810223284e741d92ec534dd90b377c43fbbb25e099fc"
+}

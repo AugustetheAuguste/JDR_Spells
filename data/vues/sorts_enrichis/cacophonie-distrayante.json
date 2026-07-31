@@ -1,0 +1,91 @@
+{
+  "id": "cacophonie-distrayante",
+  "nom": "Cacophonie distrayante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cacophonie%20distrayante.ashx",
+  "ecole": "évocation",
+  "descripteurs": [
+    "sonore"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "rayon de 6 m (4 c)",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "L’air s’emplit de bruits discordants et complique la concentration. Pour lancer un sort dans la zone de cacophonie, il faut réussir un test de concentration (DD 15 + niveau du sort à lancer). Tout autre test de concentration voit son DD augmenter de 5. Le DD des tests de Perception basés sur l’ouïe augmente aussi de 5.",
+  "description_html": "<br/><br/>L’air s’emplit de bruits discordants et complique la concentration. Pour lancer un sort dans la zone de cacophonie, il faut réussir un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentration</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 15 + niveau du sort à lancer). Tout autre test de <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentration</a> voit son <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> augmenter de 5. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> basés sur l’ouïe augmente aussi de 5.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cacophonie%20distrayante.ashx",
+    "cache_fichier": "cache/html/0fe4c7bd01971a69d700e04745f36d526d38ae8a.html",
+    "recupere_le": "2026-07-28T22:45:25.930158+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "cacophonie-distrayante",
+    "resume_court": "Une zone de bruits discordants complique la concentration et les tests de Perception basés sur l'ouïe.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "malus_chiffre",
+      "resistance_a_la_magie",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "rayon de 6 m (4 c)"
+    },
+    "notes_ambiguite": null,
+    "slug": "cacophonie-distrayante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:26+00:00",
+    "hash_source": "b1f902007ba21c10236982aaef46f423827f0f7a2fc1cc0f644912504b888fca"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8455fea4c098ba72d5cb9dcaf1128c7bca4be01aa02fb48c5cba126138b7a4e2",
+  "hash_vue": "f6c6ff5e594fe05942b1a00d69d808cd7792b0f196cf5fe744258715c8c76cdb"
+}

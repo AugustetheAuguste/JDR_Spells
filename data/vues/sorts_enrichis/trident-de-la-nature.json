@@ -1,0 +1,110 @@
+{
+  "id": "trident-de-la-nature",
+  "nom": "Trident de la nature",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trident%20de%20Gozreh.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Prê": 2,
+    "San": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "0 m",
+  "cible": "rayon d'électricité en forme de trident",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Un éclair fourchu ardent long de 1m60 jaillit de la main du personnage, qui manie cette lance improvisée comme un trident (il est formé au maniement de cet éclair). Les attaques portées avec le trident de la nature sont des attaques de contact. L’éclair inflige 1d8 points de dégâts d’électricité + 1 point tous les deux niveaux de lanceur (maximum +10). Comme l’éclair est immatériel, le modificateur de Force ne s’applique pas aux dégâts. L'éclair peut enflammer des matériaux combustibles comme le parchemin, la paille, le bois sec et le tissu.",
+  "description_html": "<br/><br/>Un éclair fourchu ardent long de 1m60 jaillit de la main du personnage, qui manie cette lance improvisée comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.trident%20(arme).ashx\" title=\"Trident\">trident</a> (il est formé au maniement de cet éclair). Les attaques portées avec le <i>trident de la nature</i> sont des attaques de contact. L’éclair inflige 1d8 points de dégâts d’électricité + 1 point tous les deux niveaux de lanceur (maximum +10). Comme l’éclair est immatériel, le modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> ne s’applique pas aux dégâts. L'éclair peut enflammer des matériaux combustibles comme le parchemin, la paille, le bois sec et le tissu.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Gozreh."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trident%20de%20Gozreh.ashx",
+    "cache_fichier": "cache/html/651bd53e7adc2b76ba61d7129bae9878f688cdb8.html",
+    "recupere_le": "2026-07-29T07:43:33.345523+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "trident-de-la-nature",
+    "resume_court": "Un éclair en forme de trident infligeant des dégâts d'électricité, manié comme une arme de contact.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "arme_ou_munition",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "electricite",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'électricité",
+      "condition_infligee": [],
+      "cible_typique": "Les attaques portées avec le trident de la nature sont des attaques de contact"
+    },
+    "notes_ambiguite": null,
+    "slug": "trident-de-la-nature",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:54+00:00",
+    "hash_source": "865aa37409e23e8972e2965e1a47eb3d3ce09cc413a34d1d5d3286ffa9399c17"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "dadb788d6deee247a89d64054b310569ae018900038ecc5ca13dbe9e6e2ea239",
+  "hash_vue": "d7671fbc8ab4e0454b123e7317732881d656d4d3e3c4469fb2dceac0b8c1448c"
+}

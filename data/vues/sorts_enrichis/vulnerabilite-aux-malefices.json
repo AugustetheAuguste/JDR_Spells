@@ -1,0 +1,84 @@
+{
+  "id": "vulnerabilite-aux-malefices",
+  "nom": "Vulnérabilité aux maléfices",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vuln%c3%a9rabilit%c3%a9%20aux%20mal%c3%a9fices.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M une goutte de sang du lanceur",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La créature ciblée devient sensible à l’utilisation répétée des maléfices nuisibles du personnage, même si celui-ci ne devrait pas pouvoir viser la créature avec un maléfice donné pendant un certain temps. Par exemple, après avoir pris une créature pour cible d’un maléfice de charme, le personnage ne peut normalement pas la reprendre pour cible pendant une journée. Mais une fois qu’il a lancé ce sort sur la créature, le personnage peut lancer le même maléfice de charme de manière répétée tant que vulnérabilité aux maléfices persiste. Lorsque ce sort se termine, cela n’a aucun effet sur les maléfices actifs ou en cours sur une créature. Par exemple, si la créature rate son jet de sauvegarde contre une seconde utilisation du maléfice de charme du personnage, la victime reste charmée pendant la durée normale, même si le sort de vulnérabilité aux maléfices se termine avant le maléfice.\nUne fois que le personnage a lancé ce sort sur une cible, pendant les 24 heures suivantes, tous les lancements ultérieurs du sort donnent à la victime un bonus de +4 au jet de sauvegarde contre le sort et impose un malus de -4 au test de lanceur du personnage pour passer la résistance magique de la cible avec ce sort.",
+  "description_html": "<br/><br/>La créature ciblée devient sensible à l’utilisation répétée des maléfices nuisibles du personnage, même si celui-ci ne devrait pas pouvoir viser la créature avec un maléfice donné pendant un certain temps. Par exemple, après avoir pris une créature pour cible d’un maléfice de charme, le personnage ne peut normalement pas la reprendre pour cible pendant une journée. Mais une fois qu’il a lancé ce sort sur la créature, le personnage peut lancer le même maléfice de charme de manière répétée tant que vulnérabilité aux maléfices persiste. Lorsque ce sort se termine, cela n’a aucun effet sur les maléfices actifs ou en cours sur une créature. Par exemple, si la créature rate son jet de sauvegarde contre une seconde utilisation du maléfice de charme du personnage, la victime reste charmée pendant la durée normale, même si le sort de vulnérabilité aux maléfices se termine avant le\nmaléfice.<br/><br/>Une fois que le personnage a lancé ce sort sur une cible, pendant les 24 heures suivantes, tous les lancements ultérieurs du sort donnent à la victime un bonus de +4 au jet de sauvegarde contre le sort et impose un malus de -4 au test de lanceur du personnage pour passer la résistance magique de la cible avec ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vuln%c3%a9rabilit%c3%a9%20aux%20mal%c3%a9fices.ashx",
+    "cache_fichier": "cache/html/f40fcccd189a6f568f28cdb2e45ae271ad55c5fb.html",
+    "recupere_le": "2026-07-29T07:44:50.420174+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vulnerabilite-aux-malefices",
+    "resume_court": "Rend une créature vulnérable aux maléfices répétés du lanceur pendant 1 round/niveau.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "malus_chiffre",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort ne cause pas de dégâts directs ni n'inflige une condition au sens strict, mais dégrade les défenses de la cible contre les maléfices du lanceur. Il s'agit d'un affaiblissement tactique plutôt qu'une entrave physique. Les malus de +4 et -4 mentionnés s'appliquent lors des relances du sort, non immédiatement.",
+    "slug": "vulnerabilite-aux-malefices",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:26+00:00",
+    "hash_source": "f3320851c65a5aeaa3f0910fd05478359aee476ce06cd526d5508b206fbd2790"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "31bcdf2444e9a6f343a91696529dd7f4024cf3fd58a86c006455effd3e6b47a0",
+  "hash_vue": "140027c42fd77111d2b64ed8a4272c10e9879bd36f7ef1acf9aad78374dd3f9b"
+}

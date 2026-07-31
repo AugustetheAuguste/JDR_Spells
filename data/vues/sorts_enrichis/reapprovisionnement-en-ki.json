@@ -1,0 +1,76 @@
+{
+  "id": "reapprovisionnement-en-ki",
+  "nom": "Réapprovisionnement en ki",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9approvisionnement%20en%20ki.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 4
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage harmonise la réserve interne d'énergie surnaturelle de la cible avec le cosmos, restaurant ainsi sa réserve de ki. Si le personnage se cible, il récupère 2 points de ki. S'il cible une autre créature, elle récupère 1 point de ki. Ce sort ne permet pas à la cible de dépasser la valeur maximale de sa réserve de ki et n'a aucun effet si la cible ne possède pas de réserve de ki.",
+  "description_html": "<br/><br/>Le personnage harmonise la réserve interne d'énergie surnaturelle de la cible avec le cosmos, restaurant ainsi sa <a class=\"pagelink\" href=\"Pathfinder-RPG.Moine.ashx#RESERVEDEKI\" title=\"Le moine\">réserve de ki</a>. Si le personnage se cible, il récupère 2 points de ki. S'il cible une autre créature, elle récupère 1 point de ki. Ce sort ne permet pas à la cible de dépasser la valeur maximale de sa réserve de ki et n'a aucun effet si la cible ne possède pas de réserve de ki.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Irori."
+  },
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9approvisionnement%20en%20ki.ashx",
+    "cache_fichier": "cache/html/5c7ba39b21b9a14579378596964345173e3e75f0.html",
+    "recupere_le": "2026-07-29T07:35:07.341673+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "reapprovisionnement-en-ki",
+    "resume_court": "Le lanceur restaure sa réserve de ki ou celle d'une créature touchée.",
+    "categorie_principale": "soin",
+    "tags": [
+      "amelioration_de_capacite",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort peut aussi cibler le lanceur lui-même (« Si le personnage se cible »), ce qui justifierait aussi `soi` comme cible_typique. Cependant, la description générale et la portée « contact » suggèrent que la cible typique est une créature autre que le lanceur, d'où le choix de `allie`. Le sort n'inflige pas de dégâts et ne pose aucune condition hostile : c'est un soin pur.",
+    "slug": "reapprovisionnement-en-ki",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:32+00:00",
+    "hash_source": "ea0da4133d2a9c1bdb1978b660ec6a4c8f1d84541c5d7cee1f39dfca94b9e5bf"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0b3d39e139ef90b4dab249e95c75fb23def7843410d7582accdfc4c54665ee5e",
+  "hash_vue": "7049ffd02f2ed50d209a3678d4ee659e40841abe6aa0140a35d76cb5dd2edcb6"
+}

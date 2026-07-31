@@ -1,0 +1,92 @@
+{
+  "id": "armee-du-roi-goule",
+  "nom": "Armée du Roi goule",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arm%c3%a9e%20de%20Khain.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Prê": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (une poignée de dents de goule)",
+  "portee": "1,50 m",
+  "cible": "1d4+1 goules et 1 blême",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, 1/2 dégâts (voir description)",
+  "resistance_magie": "non",
+  "description": "Créé à l’origine par le Prêtre-roi goule du seigneur démon des cannibales, pour que ses séides puissent renforcer leurs troupes lors des combats contre leurs ennemis, l’armée du Roi goule est devenue un sort apprécié de nombreux nécromanciens dans toute la Terre des pharaons et au-delà.\nEn éparpillant une poignée de dents de goule sur le sol, le personnage provoque autour de lui la levée hors du sol de 1d4+1 goules menées par un blême. Les goules et leur chef blême doivent apparaître dans des cases adjacentes au personnage et suivent ensuite de manière infaillible ses ordres prononcés à voix haute.\nSi l’une des goules est détruite avant la fin de la durée du sort, elle explose en une gerbe de chair pourrie et d’énergie nécromantique qui inflige 1d6 points de dégâts d’énergie négative à toutes les cibles adjacentes. Comme à l’accoutumée, ces dégâts d’énergie négative soignent à la place les morts-vivants touchés. Si le blême est détruit de cette façon, il inflige le double des dégâts d’énergie négative infligés par une goule. La réussite d’un jet de Vigueur diminue de moitié les dégâts d’énergie négative infligés. À la fin de la durée de ce sort, les morts-vivants restants tombent en poussière et disparaissent brusquement, sans infliger de dégâts d’énergie négative supplémentaires.",
+  "description_html": "<br/><br/><i>Créé à l’origine par le Prêtre-roi goule du seigneur démon des cannibales, pour que ses séides puissent renforcer leurs troupes lors des combats contre leurs ennemis, l’armée du Roi goule est devenue un sort apprécié de nombreux nécromanciens dans toute la Terre des pharaons et au-delà.</i><br/><br/>En éparpillant une poignée de dents de goule sur le sol, le personnage provoque autour de lui la levée hors du sol de 1d4+1 <a class=\"pagelink\" href=\"Pathfinder-RPG.Goule.ashx\" title=\"Goule\">goules</a> menées par un <a class=\"pagelink\" href=\"Pathfinder-RPG.Bl%c3%aame.ashx\" title=\"Blême\">blême</a>. Les goules et leur chef blême doivent apparaître dans des cases adjacentes au personnage et suivent ensuite de manière infaillible ses ordres prononcés à voix haute.<br/><br/>Si l’une des goules est détruite avant la fin de la durée du sort, elle explose en une gerbe de chair pourrie et d’énergie nécromantique qui inflige 1d6 points de dégâts d’énergie négative à toutes les cibles adjacentes. Comme à l’accoutumée, ces dégâts d’énergie négative soignent à la place les morts-vivants touchés. Si le blême est détruit de cette façon, il inflige le double des dégâts d’énergie négative infligés par une goule. La réussite d’un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> diminue de moitié les dégâts d’énergie négative infligés. À la fin de la durée de ce sort, les morts-vivants restants tombent en poussière et disparaissent brusquement, sans infliger de dégâts d’énergie négative supplémentaires.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arm%c3%a9e%20de%20Khain.ashx",
+    "cache_fichier": "cache/html/59bdacfdbc329bdf431a04e8d634cb35dcb73929.html",
+    "recupere_le": "2026-07-28T22:41:34.478915+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "armee-du-roi-goule",
+    "resume_court": "Invoque 1d4+1 goules et un blême qui obéissent au lanceur et explosent en dégâts négatifs s'ils sont détruits.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts d'énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "autour de lui la levée hors du sol de 1d4+1 goules"
+    },
+    "notes_ambiguite": null,
+    "slug": "armee-du-roi-goule",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:08+00:00",
+    "hash_source": "9fbc0dd48a1d3a5a2834082557778d2b54117bdaa111a88a29a213570ff66e44"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "beb8f6c714b53bbd961b3b5804d3be5ab0623e3000f3b92f57033e6b3c245db6",
+  "hash_vue": "d58aabc11c36be99aed0ac4f4a887f1b6b1fd2402fab9a82ab4a039eea9ec4e7"
+}

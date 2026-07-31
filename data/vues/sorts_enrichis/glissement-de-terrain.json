@@ -1,0 +1,94 @@
+{
+  "id": "glissement-de-terrain",
+  "nom": "Glissement de terrain",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glissement%20de%20terrain.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 6,
+    "Ens/Mag": 6
+  },
+  "temps_incantation": "voir description",
+  "composantes": "V, G, M (argile, limon, sable et une lame de fer)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "toute la terre contenue dans un carré de 225 m de côté et sur une profondeur de 3 m maximum (F)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Grâce à ce sort, le personnage peut faire bouger de la terre (il peut également s’agir d’argile, de glaise ou de sable) dans le but de faire s’effondrer des remblais ou de déplacer des buttes ou des dunes par exemple. Le sort est par contre impuissant face aux formations rocheuses.\nLe temps d’incantation dépend de la zone que le personnage désire affecter : il s’élève à 10 minutes par carré de 45 m de côté (d’une profondeur maximale de trois mètres). Il faut donc quatre heures et dix minutes pour affecter la zone maximale (225 m de côté).\nLe sort ne modifie pas la surface du sol de manière violente ; au lieu de cela, il crée des sortes de vagues qui façonnent peu à peu la terre jusqu’à ce qu’elle adopte la forme désirée. Les arbres, les bâtiments et les formations rocheuses ne sont pas affectés directement mais ils peuvent avoir été déplacés vers le haut ou vers le bas et le relief qui les entoure peut avoir été modifié.\nLe sort ne permet pas de creuser des tunnels et la transformation est trop lente pour bloquer ou ensevelir des créatures. On l’utilise plutôt pour creuser ou combler des douves, ou encore pour reconfigurer le terrain avant une bataille.\nGlissement de terrain n’a aucun effet sur les créatures de la terre.",
+  "description_html": "<br/><br/>Grâce à ce sort, le personnage peut faire bouger de la terre (il peut également s’agir d’argile, de glaise ou de sable) dans le but de faire s’effondrer des remblais ou de déplacer des buttes ou des dunes par exemple. Le sort est par contre impuissant face aux formations rocheuses.<br/><br/>Le <a class=\"pagelink\" href=\"Pathfinder-RPG.temps%20dincantation.ashx\" title=\"temps d'incantation\">temps d’incantation</a> dépend de la zone que le personnage désire affecter : il s’élève à 10 minutes par carré de 45 m de côté (d’une profondeur maximale de trois mètres). Il faut donc quatre heures et dix minutes pour affecter la zone maximale (225 m de côté).<br/><br/>Le sort ne modifie pas la surface du sol de manière violente ; au lieu de cela, il crée des sortes de vagues qui façonnent peu à peu la terre jusqu’à ce qu’elle adopte la forme désirée. Les arbres, les bâtiments et les formations rocheuses ne sont pas affectés directement mais ils peuvent avoir été déplacés vers le haut ou vers le bas et le relief qui les entoure peut avoir été modifié.<br/><br/>Le sort ne permet pas de creuser des tunnels et la transformation est trop lente pour bloquer ou ensevelir des créatures. On l’utilise plutôt pour creuser ou combler des douves, ou encore pour reconfigurer le terrain avant une bataille.<br/><br/><i>Glissement de terrain</i> n’a aucun effet sur les créatures de la terre.<br/><br/>",
+  "mythique": {
+    "description": "Ce sort permet de faire bouger la terre plus rapidement et chaque round complet d’incantation permet de refaçonner une zone de 7,50 m² sur une profondeur maximale de 3 mètres. Toutes les créatures sur ou sous le sol, à l’intérieur de cette zone, tombent à terre et sont déplacées vers la case la plus proche située en dehors de la zone en cours de façonnement. Un jet de Réflexes réussi permet à une créature de ne pas tomber à terre, mais elle est tout de même déplacée.",
+    "description_html": "Ce sort permet de faire bouger la terre plus rapidement et chaque round complet d’incantation permet de refaçonner une zone de 7,50 m² sur une profondeur maximale de 3 mètres. Toutes les créatures sur ou sous le sol, à l’intérieur de cette zone, tombent à terre et sont déplacées vers la case la plus proche située en dehors de la zone en cours de façonnement. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> réussi permet à une créature de ne pas tomber à terre, mais elle est tout de même déplacée."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glissement%20de%20terrain.ashx",
+    "cache_fichier": "cache/html/a757956a8c16c697ef0bbb87cad0ddcd8dfda82b.html",
+    "recupere_le": "2026-07-28T22:55:16.392240+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "glissement-de-terrain",
+    "resume_court": "Le lanceur façonne la terre sur une vaste zone pour modifier le terrain, creuser ou combler des douves.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "terrain_ou_environnement",
+      "zone_d_effet",
+      "duree_instantanee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "toute la terre contenue dans un carré de 225 m de côté et sur une profondeur de 3 m maximum"
+    },
+    "notes_ambiguite": null,
+    "slug": "glissement-de-terrain",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:47+00:00",
+    "hash_source": "a94a484f064e5cb709f1d246602176832d9e8ba042bcdfe616d76c0b4eff8b04"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8543a825d8bbb643fbee501e9cf642b49b6055e8ba960803fa893ff64301c48c",
+  "hash_vue": "f85cd8a2f2019e1c14ad7115b71a654d50b6436c404bb375d74e0b9938bd04f4"
+}

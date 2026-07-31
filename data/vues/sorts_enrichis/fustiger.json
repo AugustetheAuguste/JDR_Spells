@@ -1,0 +1,116 @@
+{
+  "id": "fustiger",
+  "nom": "Fustiger",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fustiger.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "langage",
+    "mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Hyp": 2,
+    "Inq": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "1 round/niveau ou 1 round ; voir texte",
+  "jet_de_sauvegarde": "Volonté partiel",
+  "resistance_magie": "oui",
+  "description": "Le personnage oblige la cible à supplier qu'on la pardonne. Si cette dernière rate son jet de sauvegarde, elle se recroqueville de peur. En cas de réussite, elle est secouée pour 1 round. À chaque round, à son tour, la cible recroquevillée peut tenter un nouveau jet de sauvegarde pour mettre un terme à cet effet. Une créature qui vénère le même dieu que le personnage subit un malus de -2 au jet de sauvegarde.",
+  "description_html": "<hr/>\nLe personnage oblige la cible à supplier qu'on la pardonne. Si cette dernière rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle se <a class=\"pagelink\" href=\"Pathfinder-RPG.recroquevill%c3%a9.ashx\" title=\"Recroquevillé\">recroqueville</a> de peur. En cas de réussite, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouée</a> pour 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. À chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, à son tour, la cible <a class=\"pagelink\" href=\"Pathfinder-RPG.recroquevill%c3%a9.ashx\" title=\"Recroquevillé\">recroquevillée</a> peut tenter un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour mettre un terme à cet effet. Une créature qui vénère le même dieu que le personnage subit un malus de -2 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Fustiger de groupe",
+      "id": "fustiger-de-groupe",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "émotion",
+        "langage",
+        "mental",
+        "peur"
+      ],
+      "niveaux": {
+        "Hyp": 5,
+        "Inq": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+      "duree": "1 round/niveau ou 1 round ; voir texte",
+      "jet_de_sauvegarde": "Volonté partiel",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme fustiger mais il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.fustiger.ashx\" title=\"Fustiger\">fustiger</a></i> mais il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fustiger.ashx",
+    "cache_fichier": "cache/html/c5b200d258921992aebfc0e2e19b613852dc1c71.html",
+    "recupere_le": "2026-07-28T22:55:08.408678+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fustiger",
+    "resume_court": "Le lanceur terrorise une créature qui se recroqueville de peur ou devient secouée.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est secouée pour 1 round"
+      ],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort inflige principalement la condition « recroquevillée » (peur extrême), mais cette condition n'existe pas dans la liste fermée. La condition « secouée » s'applique en cas de réussite au jet de sauvegarde. L'effet principal (recroqueville) relève de la peur et de l'entrave, mais sans condition nommée dans la liste, seule « secouée » est retenue comme condition infligée certaine.",
+    "slug": "fustiger",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:46+00:00",
+    "hash_source": "bac66c7aba04c7b104e17655a5e4baf4422c9243c9d0ca345b36a1d8c4d6f8cb"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e1cfd677f954d39e3362d18747e52a3fd36502944a62d304435856b911b500a6",
+  "hash_vue": "07384eb3cc50ebf4d350b9628a7897395b4067cb23d3949266d7ad0ca6e41b7f"
+}

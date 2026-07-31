@@ -1,0 +1,103 @@
+{
+  "id": "frappe-douloureuse-de-groupe",
+  "nom": "Frappe douloureuse de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20douloureuse%20de%20groupe.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "douleur",
+    "mal"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Psy": 4,
+    "Sor": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme frappe douloureuse mais il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.frappe%20douloureuse.ashx\" title=\"Frappe douloureuse\">frappe douloureuse</a></i> mais il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Frappe douloureuse"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20douloureuse%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/336f62d7998275d095de273a80cab2530508e412.html",
+    "recupere_le": "2026-07-28T22:54:51.381289+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "frappe-douloureuse-de-groupe",
+    "resume_court": "Le sort inflige de la douleur à plusieurs créatures vivantes proches les unes des autres.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « frappe douloureuse » sans en donner la description complète. L'effet exact (dégâts, conditions) ne peut être déterminé que du sort de base, absent du texte fourni. La catégorie « affaiblissement » et le tag « effet_mental » reposent sur le descripteur « douleur, mal » et la mécanique de sauvegarde mentale, mais sans preuve directe de l'effet infligé.",
+    "slug": "frappe-douloureuse-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:38+00:00",
+    "hash_source": "87d1f68184f94a38fbc688c602feb79a453495d530af8a137a6db4655149198f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4de89df47b40486852fc5cc222e2f8f7eb787030fa3bc540a0a7d46d6f437bda",
+  "hash_vue": "81602aa442a5d8dc9f96b2fe77b59c1735a96bfcc937e196fa8f0a69b79270fb"
+}

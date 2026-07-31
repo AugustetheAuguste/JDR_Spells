@@ -1,0 +1,82 @@
+{
+  "id": "soeur-du-partage",
+  "nom": "Sœur du partage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.S%c5%93ur%20du%20partage.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte de sang du personnage)",
+  "portee": "contact",
+  "cible": "le personnage et une créature de même sexe",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Une Exploratrice du grand nord prétend avoir exhumé cette antique prière d’un temple de la déesse des étoiles en ruine mais des Explorateurs disent que les filles de la Reine-Sorcière utilisent une magie similaire. Même si sa désignation peut laisser penser le contraire, ce sort fonctionne tout aussi bien avec des créatures mâles ou femelles, mais il faut tout de même que les deux cibles du sort soient de même sexe.\nLorsque le personnage lance le sort, il reçoit un niveau négatif pendant toute sa durée et la deuxième cible un bonus d’intuition de +1 à son niveau de lanceur de sorts et aux DD des jets de sauvegarde de tous ses sorts. Au niveau 11, le personnage peut décider, s’il le souhaite, d’encaisser quatre niveaux négatifs pour conférer un bonus d’intuition de +2 au niveau de lanceur de sorts et aux DD des jets de sauvegarde des sorts de la deuxième cible. Au niveau 17, il peut encaisser six niveaux négatifs pour faire passer le bonus d’intuition à +3. Tout effet qui supprime ou empêche l’application de niveaux négatifs met immédiatement fin au sort de sœur du partage. Les niveaux négatifs infligés disparaissent dès que le sort prend fin. Les niveaux négatifs infligés par plusieurs incantations de ce sort se cumulent.",
+  "description_html": "<br/><br/><i>Une Exploratrice du grand nord prétend avoir exhumé cette antique prière d’un temple de la déesse des étoiles en ruine mais des Explorateurs disent que les filles de la Reine-Sorcière utilisent une magie similaire. Même si sa désignation peut laisser penser le contraire, ce sort fonctionne tout aussi bien avec des créatures mâles ou femelles, mais il faut tout de même que les deux cibles du sort soient de même sexe.</i><br/><br/>Lorsque le personnage lance le sort, il reçoit un <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> pendant toute sa durée et la deuxième cible un bonus d’intuition de +1 à son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jets de sauvegarde</a> de tous ses sorts. Au niveau 11, le personnage peut décider, s’il le souhaite, d’encaisser quatre niveaux négatifs pour conférer un bonus d’intuition de +2 au niveau de lanceur de sorts et aux DD des jets de sauvegarde des sorts de la deuxième cible. Au niveau 17, il peut encaisser six niveaux négatifs pour faire passer le bonus d’intuition à +3. Tout effet qui supprime ou empêche l’application de niveaux négatifs met immédiatement fin au sort de <i>sœur du partage</i>. Les niveaux négatifs infligés disparaissent dès que le sort prend fin. Les niveaux négatifs infligés par plusieurs incantations de ce sort se cumulent.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.S%c5%93ur%20du%20partage.ashx",
+    "cache_fichier": "cache/html/3208766a7ebb84f0e7e07b39b24008eccbf9b2c6.html",
+    "recupere_le": "2026-07-29T07:39:29.185392+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "soeur-du-partage",
+    "resume_court": "Le lanceur accepte des niveaux négatifs pour augmenter le niveau de lanceur de sorts et les DD d'une créature alliée du même sexe.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le personnage et une créature de même sexe"
+    },
+    "notes_ambiguite": "Le sort affecte techniquement deux cibles (le lanceur et un allié), mais la cible bénéficiaire principale est l'allié. Le lanceur subit des niveaux négatifs comme coût, non comme effet hostile. La catégorie « amélioration » s'applique car l'effet net est d'augmenter les capacités de la deuxième cible.",
+    "slug": "soeur-du-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:43+00:00",
+    "hash_source": "c489a0f2938654a0a44930d0ff773841f098458ae4481cf12fee162807d51c9b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "68d773a58866c8bf9b0b9213e289473aee6aa07bc0955aaff06987dcc4bad1f3",
+  "hash_vue": "60da0378bc55cff69b0dbeca6d587b629b8d6390670863384ee8338718fa8453"
+}

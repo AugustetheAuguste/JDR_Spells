@@ -1,0 +1,94 @@
+{
+  "id": "dispersion-des-sieges",
+  "nom": "Dispersion des sièges",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dispersion%20des%20si%c3%a8ges.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Cham": 5,
+    "Dru": 5,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "étendue de 15 mètres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, partiel (voir texte)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Une explosion impressionnante de roche brute et de terre se répand sur le sol de la zone d'effet, infligeant 1d6 points de dégâts tranchants tous les 2 niveaux de lanceur de sorts (maximum 5d6) à toutes les créatures au sol dans cette zone d'effet, même si elles réussissent leur jet de sauvegarde. Les créatures dans la zone d'effet qui ratent le jet de Réflexes tombent à terre et son projetées jusqu'au bord le plus proche de la zone d'effet, subissant 1d6 points de dégâts contondants par tranche de 3 mètres parcourus de cette manière. Les créatures qui ne se sont pas déplacées pendant le round précédent et celles qui possèdent le trait racial stabilité obtiennent un bonus de +4 au jet de sauvegarde.",
+  "description_html": "<br/><br/>Une explosion impressionnante de roche brute et de terre se répand sur le sol de la zone d'effet, infligeant 1d6 points de dégâts tranchants tous les 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (maximum 5d6) à toutes les créatures au sol dans cette zone d'effet, même si elles réussissent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>. Les créatures dans la zone d'effet qui ratent le jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> tombent <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a> et son projetées jusqu'au bord le plus proche de la zone d'effet, subissant 1d6 points de dégâts contondants par tranche de 3 mètres parcourus de cette manière. Les créatures qui ne se sont pas déplacées pendant le round précédent et celles qui possèdent le trait racial stabilité obtiennent un bonus de +4 au jet de sauvegarde.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains."
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dispersion%20des%20si%c3%a8ges.ashx",
+    "cache_fichier": "cache/html/b5ed0358a17978661499e3a185e37e49dac0dc45.html",
+    "recupere_le": "2026-07-28T22:51:18.815266+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "dispersion-des-sieges",
+    "resume_court": "Une explosion de roche inflige des dégâts tranchants et projette les créatures au sol hors de la zone.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "bonus_chiffre",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "tranchant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts tranchants",
+      "condition_infligee": [],
+      "cible_typique": "étendue de 15 mètres"
+    },
+    "notes_ambiguite": "Le sort inflige aussi des dégâts contondants lors de la projection, mais le type_degats principal est tranchant car c'est le premier effet nommé et le plus direct. La projection elle-même n'est pas une condition au sens des états affectant les créatures (aveugle, paralysé, etc.), mais un effet de déplacement forcé.",
+    "slug": "dispersion-des-sieges",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:50+00:00",
+    "hash_source": "fe2aa11727719b682fb8fafcd484769921b205655afe7af3e1f3146d4c3446a9"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6353549a24806d0e939142391714044dab6c8b96d974f82b49ff950b73a767b1",
+  "hash_vue": "f6b304bdd9300b859954674b2876149f903c3b5d36593572a5c80ad2fae0f504"
+}

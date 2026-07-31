@@ -1,0 +1,90 @@
+{
+  "id": "flammes",
+  "nom": "Flammes",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flammes.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "0 m",
+  "cible": "flammes dans la paume du personnage",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Des flammes aussi brillantes qu’une torche apparaissent dans la main du lanceur de sorts, sans toutefois le brûler, ni lui ni son équipement.\nUne de leurs fonctions est d’émettre de la lumière, mais le lanceur de sorts peut également les lancer ou les amener au contact d’ennemis pour brûler ceux-ci. Une attaque de contact au corps à corps réussie inflige 1d6 points de dégâts de feu, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +5). Le personnage peut également projeter les flammes jusqu’à une distance de trente-six mètres (24 cases). Pour ce faire, il doit effectuer une attaque de contact à distance (sans aucun malus de distance) pour infliger des dégâts égaux à ceux de l’attaque au corps à corps. De nouvelles flammes apparaissent dans la main du personnage dès que les premières ont été lancées. Chaque attaque consomme 1 minute de la durée du sort. Si une attaque réduit le temps restant à 0 minute (ou moins), le sort prend fin dès que le résultat de l’attaque a été appliqué.\nCe sort ne fonctionne pas sous l’eau.",
+  "description_html": "<br/><br/>Des flammes aussi brillantes qu’une torche apparaissent dans la main du lanceur de sorts, sans toutefois le brûler, ni lui ni son équipement.<br/>\nUne de leurs fonctions est d’émettre de la lumière, mais le lanceur de sorts peut également les lancer ou les amener au contact d’ennemis pour brûler ceux-ci. Une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a> réussie inflige 1d6 points de dégâts de feu, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +5). Le personnage peut également projeter les <i>flammes</i> jusqu’à une distance de trente-six mètres (24 cases). Pour ce faire, il doit effectuer une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> (sans aucun malus de distance) pour infliger des dégâts égaux à ceux de l’attaque au corps à corps. De nouvelles <i>flammes</i> apparaissent dans la main du personnage dès que les premières ont été lancées. Chaque attaque consomme 1 minute de la durée du sort. Si une attaque réduit le temps restant à 0 minute (ou moins), le sort prend fin dès que le résultat de l’attaque a été appliqué.<br/>\nCe sort ne fonctionne pas sous l’eau.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flammes.ashx",
+    "cache_fichier": "cache/html/040bf1c2ee9f2c0089fd4734dd2210be4cd68a42.html",
+    "recupere_le": "2026-07-28T22:53:45.312243+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "flammes",
+    "resume_court": "Des flammes dans la paume infligent 1d6+1 par niveau de dégâts de feu au contact ou à distance.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "rayon_ou_projectile",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "les lancer ou les amener au contact d'ennemis"
+    },
+    "notes_ambiguite": null,
+    "slug": "flammes",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:06+00:00",
+    "hash_source": "97f6ec37d3d57c934c5e2239740a45a5d776464dcbf10b4a3826ce18507c0b8c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b4bc75b36f6bb6680cdbc3f88577f7dd59a5d1eb52d99562d1ef4c804326f514",
+  "hash_vue": "3dc99f379c07ca1dc2694e85429a4e2019ee2ff3246f8137c67aa78bd7f0e3f8"
+}

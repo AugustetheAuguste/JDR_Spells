@@ -1,0 +1,113 @@
+{
+  "id": "eclat-intenable",
+  "nom": "Éclat intenable",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20intenable.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Alch": 4,
+    "Ens/Mag": 4,
+    "Occ": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle et 9 m (cf. texte)",
+  "cible": "émanation de 9 m de rayon centrée sur le lanceur",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun et Réflexes pour dégâts partiels (cf. texte)",
+  "resistance_magie": "non et oui (cf. texte)",
+  "description": "Le corps du personnage brille d’une terrible lumière. Les créatures dans un rayon de 9 mètres autour de lui et qui peuvent le voir sont Ébloui (pas de jet de sauvegarde). Les créatures sensibles à la lumière doivent réussir un jet de Réflexes pour ne pas devenir Aveuglé . La lumière compte comme une lumière du jour quand il s’agit d’affecter les effets de ténèbres (et inversement). Si l’émanation pénètre dans une zone affectée par des ténèbres magiques (ou inversement), les deux effets s’annulent temporairement, les zones d’effet superposées étant dominées par les conditions lumineuses annexes les plus importantes. Les états Ébloui et Aveuglé dus à la lumière du personnage se terminent quand le sort se termine ou quand le personnage n’est plus dans le champ de vision de la victime.",
+  "description_html": "<br/><br/>Le corps du personnage brille d’une terrible lumière. Les créatures dans un rayon de 9 mètres autour de lui et qui peuvent le voir sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89bloui.ashx\" title=\"Ébloui\">Ébloui</a> (pas de jet de sauvegarde). Les créatures sensibles à la lumière doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour ne pas devenir <a class=\"pagelink\" href=\"Pathfinder-RPG.Aveugl%c3%a9.ashx\" title=\"Aveuglé\">Aveuglé</a> . La lumière compte comme une lumière du jour quand il s’agit d’affecter les effets de ténèbres (et inversement). Si l’émanation pénètre dans une zone affectée par des ténèbres magiques (ou inversement), les deux effets s’annulent temporairement, les zones d’effet superposées étant dominées par les conditions lumineuses annexes les plus importantes. Les états <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89bloui.ashx\" title=\"Ébloui\">Ébloui</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.Aveugl%c3%a9.ashx\" title=\"Aveuglé\">Aveuglé</a> dus à la lumière du personnage se terminent quand le sort se termine ou quand le personnage n’est plus dans le champ de vision de la victime.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20intenable.ashx",
+    "cache_fichier": "cache/html/a5b17f49c714e9aced8545cb0a7b5f1846600864.html",
+    "recupere_le": "2026-07-28T22:38:52.367253+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "eclat-intenable",
+    "resume_court": "Le lanceur brille d'une lumière terrible qui éblouit les créatures visibles et peut aveugler les sensibles à la lumière.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ebloui",
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les créatures dans un rayon de 9 mètres autour de lui et qui peuvent le voir sont Ébloui",
+        "Les créatures sensibles à la lumière doivent réussir un jet de Réflexes pour ne pas devenir Aveuglé"
+      ],
+      "cible_typique": "émanation de 9 m de rayon centrée sur le lanceur"
+    },
+    "notes_ambiguite": "Le sort inflige deux conditions distinctes : l'éblouissement automatique pour toute créature voyante dans la zone, et l'aveuglement conditionnel pour les créatures sensibles à la lumière. Pas de dégâts directs, mais un contrôle de zone par effet sensoriel.",
+    "slug": "eclat-intenable",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:09+00:00",
+    "hash_source": "9d859b8dbd888cc6b509f268c75536c8a9bceb67656d4c7a195bc90ec54592fe"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8ae18a23879b08b0f67cd1a8561fdc66679668cf0a0ef4027bdd05317e1b966e",
+  "hash_vue": "494e172f39d7e408e56ee5b49c5a2c4fb03488f06fab5a21b22553fad6d96aa9"
+}

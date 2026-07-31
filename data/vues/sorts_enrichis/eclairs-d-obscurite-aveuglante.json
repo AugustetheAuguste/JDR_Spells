@@ -1,0 +1,105 @@
+{
+  "id": "eclairs-d-obscurite-aveuglante",
+  "nom": "Éclairs d'obscurité aveuglante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clairs%20dobscurit%c3%a9%20aveuglante.ashx",
+  "ecole": "Invocation (création) ombre",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "un éclair d’énergie ou plus",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes pour annuler ; voir description",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts crée un ou plusieurs éclairs d’énergie négative investis d’ombre originaires du plan de l’Ombre.\nIl peut tirer un éclair plus un par tranche de quatre niveaux au-delà du 5e (jusqu’à un maximum de trois éclairs au niveau 13) sur une même cible ou plusieurs, mais tous les éclairs doivent être lancés sur des cibles situées dans un rayon de 9 m (6 c) l’une de l’autre et nécessitent une attaque de contact à distance pour toucher. Chaque éclair inflige 4d6 points de dégâts aux créatures vivantes ou soignent 4d6 points de dégâts aux créatures mortes-vivantes.\nDe plus, l’énergie de l’éclair se diffuse sur la peau de la créature, ce qui peut l’aveugler pour un court moment. Une créature touchée par un éclair doit réussir un jet de Réflexes ou être aveuglée pendant 1 round.",
+  "description_html": "<br/><br/>Le lanceur de sorts crée un ou plusieurs éclairs d’énergie négative investis d’ombre originaires du plan de l’Ombre. <br/><br/>Il peut tirer un éclair plus un par tranche de quatre niveaux au-delà du 5e (jusqu’à un maximum de trois éclairs au niveau 13) sur une même cible ou plusieurs, mais tous les éclairs doivent être lancés sur des cibles situées dans un rayon de 9 m (6 <abbr title=\"cases\">c</abbr>) l’une de l’autre et nécessitent une attaque de contact à distance pour toucher. Chaque éclair inflige 4d6 points de dégâts aux créatures vivantes ou soignent 4d6 points de dégâts aux créatures mortes-vivantes. <br/><br/>De plus, l’énergie de l’éclair se diffuse sur la peau de la créature, ce qui peut l’aveugler pour un court moment. Une créature touchée par un éclair doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveuglée</a> pendant 1 round.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fetchelins."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clairs%20dobscurit%c3%a9%20aveuglante.ashx",
+    "cache_fichier": "cache/html/33b07a50ad99456cdf839ede49fb318029a23576.html",
+    "recupere_le": "2026-07-28T22:38:50.350106+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "eclairs-d-obscurite-aveuglante",
+    "resume_court": "Des éclairs d'énergie négative qui blessent les vivants, soignent les morts-vivants et peuvent aveugler.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts aux créatures vivantes",
+      "condition_infligee": [
+        "être aveuglée pendant 1 round"
+      ],
+      "cible_typique": "sur une même cible ou plusieurs"
+    },
+    "notes_ambiguite": null,
+    "slug": "eclairs-d-obscurite-aveuglante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:07+00:00",
+    "hash_source": "c34befa9e7ec2264d4e62a09d09478b0bfb58bb1e501799bb0d0337a5298073f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "ffa4ca959136fa6c43c461648d183108442166eb73a0485d8946e902d3ac26eb",
+  "hash_vue": "ebb13f1975907186d0f327db8dd674243f0a394d12c48ef19ae5fd40ffcaae40"
+}

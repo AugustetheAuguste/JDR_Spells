@@ -1,0 +1,77 @@
+{
+  "id": "broyage-psychique-iv",
+  "nom": "Broyage psychique IV",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20IV.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, partiel et Vigueur, partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme broyage psychique I mais la cible subit 9d6 points de dégâts +1 par niveau de lanceur de sorts si elle réussit son jet de Volonté ou de Vigueur. Elle ne reçoit aucun bonus lié à ses points de vie. S’il lui reste moins de la moitié de ses points de vie, elle n’a pas droit au moindre jet de Vigueur pour résister au sort et agit comme si elle avait raté ce jet. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.broyage%20psychique%20I.ashx\" title=\"Broyage psychique I\">broyage psychique I</a></i> mais la cible subit 9d6 points de dégâts +1 par niveau de lanceur de sorts si elle réussit son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>. Elle ne reçoit aucun bonus lié à ses points de vie. S’il lui reste moins de la moitié de ses points de vie, elle n’a pas droit au moindre jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour résister au sort et agit comme si elle avait raté ce jet. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Broyage psychique I"
+  },
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20IV.ashx",
+    "cache_fichier": "cache/html/646404c24b0aaa463ab73e37d728145ac6804660.html",
+    "recupere_le": "2026-07-28T22:45:04.066157+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "broyage-psychique-iv",
+    "resume_court": "Un sort de nécromancie infligeant 9d6+1/niveau de dégâts mentaux, avec jets de sauvegarde partiels.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "9d6 points de dégâts +1 par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans la liste (feu, froid, acide, etc.). Le texte parle de « dégâts » dans un contexte de nécromancie avec descripteur « effet mental », mais sans préciser le type énergétique. Classé en « autre » faute de précision.",
+    "slug": "broyage-psychique-iv",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:20+00:00",
+    "hash_source": "60b38323ac82e6047c9b30ff64ddf3eaf69100db740247fc4b7da05284e22231"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c17a0d19d6625a98e77b291a34f02e96383cab63f72b3b0faa361bb46c7a0a25",
+  "hash_vue": "f1192c2d8c37ab1de22e61bd422bf917bcb87668fa4ad8033ce3400a76d43f0f"
+}

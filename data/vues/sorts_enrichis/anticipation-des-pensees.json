@@ -1,0 +1,124 @@
+{
+  "id": "anticipation-des-pensees",
+  "nom": "Anticipation des pensées",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anticipation%20des%20pens%c3%a9es.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort puise dans l’esprit de la cible afin de donner au personnage une idée des actions qu’elle va entreprendre. Le personnage gagne un bonus d’intuition de +2 à la CA contre les attaques de la cible. Si la cible rate son jet de Volonté, il sait aussi comment elle va réagir à ses attaques et applique le même bonus à ses jets d’attaque et de dégâts à son encontre. Ces bonus s’appliquent uniquement tant que la cible est à portée du sort, mais si elle passe hors de portée, les bonus reviennent dès qu’elle pénètre de nouveau dans le rayon d’action du sort. À chaque fois que la cible rate le personnage alors qu’elle l’attaque, les bonus du sort augmentent de 1 jusqu’à la fin du sort (pour un maximum de +5).",
+  "description_html": "<br/><br/>Ce sort puise dans l’esprit de la cible afin de donner au personnage une idée des actions qu’elle va entreprendre. Le personnage gagne un bonus d’intuition de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> contre les attaques de la cible. Si la cible rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, il sait aussi comment elle va réagir à ses attaques et applique le même bonus à ses jets d’attaque et de dégâts à son encontre. Ces bonus s’appliquent uniquement tant que la cible est à portée du sort, mais si elle passe hors de portée, les bonus reviennent dès qu’elle pénètre de nouveau dans le rayon d’action du sort. À chaque fois que la cible rate le personnage alors qu’elle l’attaque, les bonus du sort augmentent de 1 jusqu’à la fin du sort (pour un maximum de +5).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anticipation%20des%20pens%c3%a9es.ashx",
+    "cache_fichier": "cache/html/69e6124168e408b3afb00dc12e71e9a95b3d3919.html",
+    "recupere_le": "2026-07-28T22:40:57.423355+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "anticipation-des-pensees",
+    "resume_court": "Le lanceur anticipe les actions d'une créature et gagne des bonus à la CA et aux attaques.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "divination_information"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "anticipation-des-pensees",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:33+00:00",
+    "hash_source": "3349ef58e54c4e7797b1190b8c9bc02e7dcb8205709e7ef56585d3ef543eec84"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "407c4e3d967caf031077c7b18f28a3e024fce928aa24c36cc9eeec777de0c185",
+  "hash_vue": "e309bca8eca3ebe8ff38ec2f613d345d30cde8c6ac9627ca26d5ad65d50a0d08"
+}

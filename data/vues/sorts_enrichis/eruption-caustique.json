@@ -1,0 +1,76 @@
+{
+  "id": "eruption-caustique",
+  "nom": "Éruption caustique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ruption%20caustique.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Ens/Mag": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 m (6 c)",
+  "cible": "9 m (6 c) de rayon",
+  "duree": "instantanée et 2 rounds (voir texte)",
+  "jet_de_sauvegarde": "Réflexes 1/2 dégâts (voir texte)",
+  "resistance_magie": "non",
+  "description": "De l'acide jaillit de la case du personnage et se projette dans toute les directions, infligeant 1d6 points de dégâts par niveau de lanceur de sorts (20d6 au maximum) aux créatures et aux objets abandonnés dans la zone. Au cours des deux prochains rounds, au tour du personnage, les créatures et les objets qui ratent leur jet de sauvegarde contre l'explosion initiale reçoivent 1d6 points de dégâts d'acide supplémentaires par tranche de deux niveaux de lanceur de sorts (10d6 au maximum), à moins que l'acide ne soit dissipé, neutralisé ou lavé.",
+  "description_html": "<br/><br/>De l'acide jaillit de la case du personnage et se projette dans toute les directions, infligeant 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (20d6 au maximum) aux créatures et aux objets abandonnés dans la zone. Au cours des deux prochains rounds, au tour du personnage, les créatures et les objets qui ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> contre l'explosion initiale reçoivent 1d6 points de dégâts d'acide supplémentaires par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (10d6 au maximum), à moins que l'acide ne soit dissipé, neutralisé ou lavé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ruption%20caustique.ashx",
+    "cache_fichier": "cache/html/813a79ddc22dfee8e52c3192de76c5a132920fb0.html",
+    "recupere_le": "2026-07-28T22:39:22.351533+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "eruption-caustique",
+    "resume_court": "L'acide jaillit en toutes directions, infligeant des dégâts immédiats et prolongés aux créatures de la zone.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'acide",
+      "condition_infligee": [],
+      "cible_typique": "9 m (6 c) de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "eruption-caustique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:35+00:00",
+    "hash_source": "abd53e15f0c478d0eda38b72e205ad2878486f95b72c6b11d1f1de62ec724bda"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "dff7538b6c1d67586ea69a5222507bad35ac3a6c53c3067bbda92a024fc646c7",
+  "hash_vue": "070964f1d01982890098aef1f8fa879372df745ae81f964dd4700e424392841d"
+}

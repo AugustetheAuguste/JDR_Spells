@@ -1,0 +1,135 @@
+{
+  "id": "renvoi",
+  "nom": "Renvoi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renvoi.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 4,
+    "Con": 4,
+    "ConU": 5,
+    "Inq": 4,
+    "Ens/Mag": 5,
+    "Méd": 4,
+    "Occ": 4,
+    "Prê": 4,
+    "Psy": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature extraplanaire",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Ce sort force la créature extraplanaire ciblée à retourner dans son plan d’origine si elle rate son jet de Volonté. Dans ce cas, elle disparaît aussitôt mais elle a 20 % de chances de se retrouver dans un plan autre que le sien.",
+  "description_html": "<br/><br/>Ce sort force la créature extraplanaire ciblée à retourner dans son plan d’origine si elle rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>. Dans ce cas, elle disparaît aussitôt mais elle a 20 % de chances de se retrouver dans un plan autre que le sien.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renvoi.ashx",
+    "cache_fichier": "cache/html/f50b3c440bf803b9ad13bf9e4102e8ff9d2226da.html",
+    "recupere_le": "2026-07-29T07:38:04.081020+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "renvoi",
+    "resume_court": "Force une créature extraplanaire à retourner dans son plan d'origine si elle rate son jet de Volonté.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "deplacement_ou_teleportation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature extraplanaire"
+    },
+    "notes_ambiguite": null,
+    "slug": "renvoi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:46+00:00",
+    "hash_source": "046d2e7ed4f29646d7b9abe3ca27fb594e988b59e205461c1062e7eb2d2ea11e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cd241886363308bd180b29e41acb7936f07acb44a1401006804cdbb0477994ed",
+  "hash_vue": "3104b80729e11e8f2a3a5846fec55a7c414e49f2e8fcf2b718b5c728f1b679a5"
+}

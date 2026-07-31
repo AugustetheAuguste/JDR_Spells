@@ -1,0 +1,146 @@
+{
+  "id": "vision-dans-le-noir",
+  "nom": "Vision dans le noir",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Vision%20dans%20le%20noir.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Apal": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de carotte séchée ou une agate)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible du sort acquiert la faculté de voir jusqu’à dix-huit mètres (12 c) de distance dans le noir le plus complet. Il voit les formes normalement, mais en noir et blanc.\nIl est possible d’user de permanence sur un sort de vision dans le noir.",
+  "description_html": "<hr/>\nLa cible du sort acquiert la faculté de voir jusqu’à dix-huit mètres (12 <abbr title=\"cases\">c</abbr>) de distance dans le noir le plus complet. Il voit les formes normalement, mais en noir et blanc.<br/><br/>Il est possible d’user de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> sur un sort de <i>vision dans le noir</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Vision dans le noir (partagé)",
+      "id": "vision-dans-le-noir-partage",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 3,
+        "Apal": 3,
+        "Ens/Mag": 3,
+        "Occ": 3,
+        "Psy": 3,
+        "Rôd": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M (une pincée de carotte séchée ou une agate)",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "1 heure/niveau",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme vision dans le noir mais la durée se divise entre les créatures touchées, par portions de 1 heure.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sort%20vision%20dans%20le%20noir.ashx\" title=\"Vision dans le noir\">vision dans le noir</a></i> mais la durée se divise entre les créatures touchées, par portions de 1 heure.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Vision%20dans%20le%20noir.ashx",
+    "cache_fichier": "cache/html/f2adec16760193a8a8724dfb5705c0ee91cd037e.html",
+    "recupere_le": "2026-07-29T07:45:11.450040+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vision-dans-le-noir",
+    "resume_court": "La cible voit jusqu'à 18 mètres dans le noir complet, en noir et blanc.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "perception_amelioree",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "vision-dans-le-noir",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:11+00:00",
+    "hash_source": "5d4dd01a45f5a3536515af6449723dd3b5c28c9ac154ad65f00d4e872a98b850"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "bdabdf1dd3500491dd6d302feca3f650bbc41388884096077e8ee3a9ee1509ad",
+  "hash_vue": "ec624efc1583b2fb28681a5cf6ff22fe037479150b1c3ff3fb155eace5bb2664"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "potion-de-tatouage",
+  "nom": "Potion de tatouage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Potion%20de%20tatouage.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (une potion à tatouer, des encres spéciales d’une valeur de 500 po)",
+  "portee": "une potion",
+  "cible": "un tatouage de sort",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Quand il lance ce sort, le personnage verse des encres de tatouage spéciales dans une potion de son choix. Une fois le sort potion de tatouage lancé, la potion se met à bouillonner et à pétiller. Si personne ne la boit en l’espace d’une minute après l’incantation du sort, elle est détruite et disparaît en vapeur.\nQuand une potion sous l’effet de ce sort est ingurgitée, les effets de la potion ne s’activent pas. À la place, la potion se transforme en un tatouage de sort sur la poitrine (emplacement de tatouage) du buveur de la potion. Si le buveur possède déjà un tatouage magique sur cet emplacement, la potion de tatouage ne produit aucun effet. Une fois la potion transformée en un tatouage de sort, elle reste telle quelle en permanence jusqu’à ce qu’elle soit utilisée en tant que tatouage de sort.",
+  "description_html": "<br/><br/>Quand il lance ce sort, le personnage verse des encres de tatouage spéciales dans une potion de son choix. Une fois le sort potion de tatouage lancé, la potion se met à bouillonner et à pétiller. Si personne ne la boit en l’espace d’une minute après l’incantation du sort, elle est détruite et disparaît en vapeur.<br/><br/>Quand une potion sous l’effet de ce sort est ingurgitée, les effets de la potion ne s’activent pas. À la place, la potion se transforme en un <a class=\"pagelink\" href=\"Pathfinder-RPG.tatouage%20de%20sort.ashx\" title=\"Tatouage de sort\">tatouage de sort</a> sur la poitrine (emplacement de tatouage) du buveur de la potion. Si le buveur possède déjà un tatouage magique sur cet emplacement, la potion de tatouage ne produit aucun effet. Une fois la potion transformée en un tatouage de sort, elle reste telle quelle en permanence jusqu’à ce qu’elle soit utilisée en tant que tatouage de sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Potion%20de%20tatouage.ashx",
+    "cache_fichier": "cache/html/d7d1b1ca5f525a2f76eeda8b42f18a839bd67598.html",
+    "recupere_le": "2026-07-28T23:04:20.058008+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "potion-de-tatouage",
+    "resume_court": "Transforme une potion en tatouage de sort permanent sur la poitrine du buveur.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: un tatouage de sort"
+    },
+    "notes_ambiguite": "Le sort cible techniquement un tatouage de sort, mais agit sur une potion (objet) pour la transformer. La cible_typique « objet » reflète que le sort porte sur une potion, matière première du processus.",
+    "slug": "potion-de-tatouage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:26+00:00",
+    "hash_source": "9f3605df1d43b285170fa13fec3544166cef7cd9bd218520b3cae695414406f3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c1c10230ea9f5f964f6ecfa3a4cc43109f496dc5422f63c36130020d6307d781",
+  "hash_vue": "6eb6688bf6cc332d234d9320e534651e46b42e7365b25a03fa9c484abe42436b"
+}

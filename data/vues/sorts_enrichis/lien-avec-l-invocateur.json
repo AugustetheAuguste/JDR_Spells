@@ -1,0 +1,114 @@
+{
+  "id": "lien-avec-l-invocateur",
+  "nom": "Lien avec l'invocateur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien%20avec%20linvocateur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 4,
+    "ConU": 4,
+    "Ens/Mag": 5,
+    "Occ": 4,
+    "Prê": 4,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (deux mouches)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature invoquée ou un eidolon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage exploite le lien invisible qui unit la créature qu’il vise et son invocateur, afin de blesser ce dernier. Quand la créature invoquée que vise le sort est victime d’un sort qui lui inflige des dégâts, son invocateur devient aussi la cible du sort. Il bénéficie de ses défenses normales contre le sort, comme un jet de sauvegarde ou une résistance à la magie. Le personnage ne peut pas l’affecter s’il se trouve sur un autre plan d’existence.",
+  "description_html": "<br/><br/>Le personnage exploite le lien invisible qui unit la créature qu’il vise et son invocateur, afin de blesser ce dernier. Quand la créature invoquée que vise le sort est victime d’un sort qui lui inflige des dégâts, son invocateur devient aussi la cible du sort. Il bénéficie de ses défenses normales contre le sort, comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ou une <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a>. Le personnage ne peut pas l’affecter s’il se trouve sur un autre <a class=\"pagelink\" href=\"Pathfinder-RPG.Plans.ashx\" title=\"Les plans\">plan d’existence</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien%20avec%20linvocateur.ashx",
+    "cache_fichier": "cache/html/6b6e7aed601cb022696bef91fed9f9345a2422c5.html",
+    "recupere_le": "2026-07-28T22:58:33.622765+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lien-avec-l-invocateur",
+    "resume_court": "Relie une créature invoquée à son invocateur pour que ce dernier subisse aussi les dégâts qu'elle reçoit.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "metamagie_ou_sort_cible"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature invoquée ou un eidolon"
+    },
+    "notes_ambiguite": "Le sort ne cause pas directement de dégâts mais redirige les dégâts subis par la créature invoquée vers son invocateur. Il s'agit d'une mécanique d'affaiblissement tactique plutôt qu'une attaque directe. Classé en affaiblissement car il dégrade la position défensive de l'invocateur en le rendant vulnérable aux dégâts infligés à sa créature.",
+    "slug": "lien-avec-l-invocateur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:05+00:00",
+    "hash_source": "1a2b681149f838f733572f9b94d631ddc9840195771000825b5de548bd05f436"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "eda527a66c058797583b9ed129b1af36d87f4db78170049d11f4ed5c882cc8d2",
+  "hash_vue": "b9e4f60aaee70050a75a8ff1be43bf54a15816d6626d956a542f99516d1b16b3"
+}

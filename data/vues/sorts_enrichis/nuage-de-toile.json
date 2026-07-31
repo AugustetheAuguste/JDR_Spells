@@ -1,0 +1,90 @@
+{
+  "id": "nuage-de-toile",
+  "nom": "Nuage de toile",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20de%20toile.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "le nuage s’étend sur un espace de 6 m de rayon et de 6 m de haut",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Réflexes, partiel (voir description)",
+  "resistance_magie": "non",
+  "description": "Le lanceur de sorts crée un nuage de fils de toile d’araignée adhésifs et résistants au feu qui s’élève en volutes et s’étend, comme un sort de brume mortelle. Le nuage s’éloigne du lanceur à raison de 3 mètres (2 c) par round, roulant au-dessus du sol.\nPour définir la nouvelle étendue du nuage chaque round, basez-vous sur son nouveau point d’origine qui se trouve 3 mètres plus loin que le point d’origine où le sort a été lancé. Les créatures piégées dans ce nuage en restent prisonnières même après que le nuage les dépasse, mais la zone que le nuage laisse derrière lui ne compte pas comme un terrain difficile.\nLe nuage de toile étant plus lourd que l’air, il s’enfonce dans les plus bas niveaux du sol, se déversant même dans les ouvertures des tanières et des gouffres. Le nuage de toile ne peut pas pénétrer les liquides ni être lancé sous l’eau.\nEn outre, le nuage fonctionne comme le sort toile d’araignée. Une créature située dans le nuage au début de son tour doit réussir un jet de sauvegarde ou être affectée. La toile de ce sort est inflammable (voir le sort toile d’araignée), mais a une résistance au feu de 5.",
+  "description_html": "<br/><br/>Le lanceur de sorts crée un nuage de fils de toile d’araignée adhésifs et résistants au feu qui s’élève en volutes et s’étend, comme un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.brume%20mortelle.ashx\" title=\"Brume mortelle\">brume mortelle</a></i>. Le nuage s’éloigne du lanceur à raison de 3 mètres (2 <abbr title=\"cases\">c</abbr>) par round, roulant au-dessus du sol.<br/><br/>Pour définir la nouvelle étendue du nuage chaque round, basez-vous sur son nouveau point d’origine qui se trouve 3 mètres plus loin que le point d’origine où le sort a été lancé. Les créatures piégées dans ce nuage en restent prisonnières même après que le nuage les dépasse, mais la zone que le nuage laisse derrière lui ne compte pas comme un terrain difficile.<br/><br/>Le nuage de toile étant plus lourd que l’air, il s’enfonce dans les plus bas niveaux du sol, se déversant même dans les ouvertures des tanières et des gouffres. Le nuage de toile ne peut pas pénétrer les liquides ni être lancé sous l’eau.<br/><br/>En outre, le nuage fonctionne comme le sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.toile%20daraign%c3%a9e.ashx\" title=\"Toile d'araignée\">toile d’araignée</a></i>. Une créature située dans le nuage au début de son tour doit réussir un jet de sauvegarde ou être affectée. La toile de ce sort est inflammable (voir le sort toile d’araignée), mais a une <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx\" title=\"Résistance (aux énergies destructrices) (Ext)\">résistance au feu</a> de 5.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles drows."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20de%20toile.ashx",
+    "cache_fichier": "cache/html/31550353f155155e64b89a51dbae444762c60e53.html",
+    "recupere_le": "2026-07-28T23:01:56.920117+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "nuage-de-toile",
+    "resume_court": "Un nuage de toile d'araignée qui avance et piège les créatures qu'il rencontre.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "terrain_ou_environnement",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevetre"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Une créature située dans le nuage au début de son tour doit réussir un jet de sauvegarde ou être affectée"
+      ],
+      "cible_typique": "le nuage s'étend sur un espace de 6 m de rayon et de 6 m de haut"
+    },
+    "notes_ambiguite": "Le texte renvoie au sort « toile d'araignée » pour les effets précis de l'enchevêtrement, mais ne les détaille pas ici. La condition retenue est « enchevetre » car le sort fonctionne comme toile d'araignée et piège les créatures. Le jet de sauvegarde est partiel selon le texte, mais aucune condition alternative n'est décrite dans ce texte seul.",
+    "slug": "nuage-de-toile",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:26+00:00",
+    "hash_source": "5340db3c003c541c618729be966aa5f969f13d9b76b05d9a720d417be23cb965"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "edf8c70c8de8d8c11d086a009874aff70fb328d1277e728204588b11f2c2e5eb",
+  "hash_vue": "fcf79d770daa216ed3a10e101a692e5b1066df3ae1b537e7211ccc86256d0905"
+}

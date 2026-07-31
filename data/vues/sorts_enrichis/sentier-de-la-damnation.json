@@ -1,0 +1,101 @@
+{
+  "id": "sentier-de-la-damnation",
+  "nom": "Sentier de la damnation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentier%20de%20la%20damnation.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Con": 4,
+    "ConU": 4,
+    "Ens/Mag": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": null,
+  "cible": "lanceur de sort (téléportation) et créatures dans un rayon de 3 mètres (voir description)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme porte dimensionnelle à la seule différence que le lanceur de sorts laisse une explosion de feu derrière lui. Il désigne un coin de sa case de départ : une explosion de flammes de 3 mètres de rayon jaillit de ce coin au moment où le lanceur de sorts quitte sa position, infligeant 4d6 points de dégâts de feu.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.porte%20dimensionnelle.ashx\" title=\"Porte dimensionnelle\">porte dimensionnelle</a></i> à la seule différence que le lanceur de sorts laisse une explosion de feu derrière lui. Il désigne un coin de sa case de départ : une explosion de flammes de 3 mètres de <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DEFRAYONNEMENT\" title=\"Présentation des sorts\">rayon</a> jaillit de ce coin au moment où le lanceur de sorts quitte sa position, infligeant 4d6 points de dégâts de feu.<br/><br/>",
+  "mythique": {
+    "description": "L’explosion de feu crée des relents de soufre produisant les mêmes effets qu’un nuage nauséabond (avec une durée identique et un jet de Vigueur séparé).\nAmplifié (6ème). Si le personnage dépense deux utilisations de pouvoir mythique, il peut emporter une créature adjacente et non-consentante avec lui. Il peut emporter des créatures supplémentaires, mais chacune doit être adjacente à lui et nécessite la dépense d’une utilisation supplémentaire de pouvoir mythique. Ces créatures doivent d’abord effectuer un jet de sauvegarde contre l’explosion de feu et contre le nuage nauséabond, puis effectuer un jet de Volonté pour résister à la téléportation aux côtés du personnage.",
+    "description_html": "L’explosion de feu crée des relents de soufre produisant les mêmes effets qu’un nuage nauséabond (avec une durée identique et un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> séparé).<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (6ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il peut emporter une créature adjacente et non-consentante avec lui. Il peut emporter des créatures supplémentaires, mais chacune doit être adjacente à lui et nécessite la dépense d’une utilisation supplémentaire de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>. Ces créatures doivent d’abord effectuer un jet de sauvegarde contre l’explosion de feu et contre le nuage nauséabond, puis effectuer un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour résister à la téléportation aux côtés du personnage.<br/><br/><br/><br/>"
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles tieffelins.",
+    "sorts_lies": "Porte dimensionnelle"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentier%20de%20la%20damnation.ashx",
+    "cache_fichier": "cache/html/c26fee8920909c2f988ed6544ef8a6afa88521c9.html",
+    "recupere_le": "2026-07-29T07:40:15.486588+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sentier-de-la-damnation",
+    "resume_court": "Le lanceur se téléporte et laisse une explosion de feu de 3 m de rayon infligeant 4d6 dégâts.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "deplacement_ou_teleportation",
+      "duree_instantanee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "une explosion de flammes de 3 mètres de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "sentier-de-la-damnation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:31+00:00",
+    "hash_source": "4dba0ae6093a009ef810f7a6eb3c939d47c47c6d702e058244ef7adc0a451bce"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5b26fef08d9636f2cd708698776370dd3bf412e7c28150614ec2b1a8781fc9f8",
+  "hash_vue": "44b5adda885c552c16092edb027862518af989a3463468bcb84c082108536caa"
+}

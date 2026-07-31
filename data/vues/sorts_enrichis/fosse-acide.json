@@ -1,0 +1,88 @@
+{
+  "id": "fosse-acide",
+  "nom": "Fosse acide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fosse%20acide.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Con": 4,
+    "ConU": 4,
+    "Ens/Mag": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (goutte d'acide), F (belle pelle d'une valeur de 10 po)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "trou de 3 m (2 c) sur 3m (2 c), 3 m (2 c) de profondeur/2 niveaux",
+  "duree": "1 round + 1 round/niveau",
+  "jet_de_sauvegarde": "Réflexes, annule (voir texte)",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme création de fosse sauf qu'il rajoute un bassin d'acide de 1,50 m (1 c) de profondeur au fond de la fosse. Elle fait 30 mètres (20 c) de profondeur au maximum. Les créatures qui tombent dans la fosse reçoivent des dégâts de chute normaux (l'acide compte comme une surface molle), plus 2d6 points de dégâts d'acide par round passé en contact avec l'acide. De plus, les objets exposés appartenant à la créature tombée risquent d'être endommagés. Se référer à la \"Objets affectés par les attaques magiques\". Les objets sont affectés un par un, dans l'ordre indiqué dans la table, et il faut réussir un jet de Vigueur après 3 rounds consécutifs passés dans l'acide ou l'objet gagne la condition cassée. Les objets cassés (quelle que soit la façon dont ils se sont cassés) doivent faire un jet de Vigueur à chaque round passé dans l'acide ou être détruits. Les murs de la fosse sont glissants et ont un DD d'Escalade de 30.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.cr%c3%a9ation%20de%20fosse.ashx\" title=\"Création de fosse\">création de fosse</a></i> sauf qu'il rajoute un bassin d'acide de 1,50 m (1 <abbr title=\"cases\">c</abbr>) de profondeur au fond de la fosse. Elle fait 30 mètres (20 <abbr title=\"cases\">c</abbr>) de profondeur au maximum. Les créatures qui tombent dans la fosse reçoivent des dégâts de chute normaux (l'acide compte comme une surface molle), plus 2d6 points de dégâts d'acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> passé en contact avec l'acide. De plus, les objets exposés appartenant à la créature tombée risquent d'être endommagés. Se référer à la \"<a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TABLEOBJETSAFFECTESPARLESATTAQUEMAGIQUE\" title=\"Présentation des sorts\">Objets affectés par les attaques magiques</a>\". Les objets sont affectés un par un, dans l'ordre indiqué dans la table, et il faut réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> après 3 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> consécutifs passés dans l'acide ou l'objet gagne la condition <a class=\"pagelink\" href=\"Pathfinder-RPG.cass%c3%a9.ashx\" title=\"Cassé\">cassée</a>. Les objets <a class=\"pagelink\" href=\"Pathfinder-RPG.cass%c3%a9.ashx\" title=\"Cassé\">cassés</a> (quelle que soit la façon dont ils se sont cassés) doivent faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> à chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> passé dans l'acide ou être détruits. Les murs de la fosse sont glissants et ont un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Escalade.ashx\" title=\"Escalade\">Escalade</a> de 30.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Création de fosse"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fosse%20acide.ashx",
+    "cache_fichier": "cache/html/8be8021a6bfafea542bb0fc00da1dc9c25f1259f.html",
+    "recupere_le": "2026-07-28T22:54:29.375164+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fosse-acide",
+    "resume_court": "Crée une fosse remplie d'acide qui inflige des dégâts de chute et d'acide aux créatures qui y tombent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "degats_directs",
+      "terrain_ou_environnement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts d'acide par round passé en contact avec l'acide",
+      "condition_infligee": [],
+      "cible_typique": "trou de 3 m (2 c) sur 3m (2 c), 3 m (2 c) de profondeur/2 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "fosse-acide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:29+00:00",
+    "hash_source": "fc8aa3327c670b4d9c81a2859ba6ed9e46db3a137fa3484ad60d520679a71d80"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "50f3eced2dda81c644cb2065af6a52466079e19a74afed861d386d2a8ba11c75",
+  "hash_vue": "4f5686a13ec0b52f458ee2916350ade9d8b59074a68236927eacf123e8a21103"
+}

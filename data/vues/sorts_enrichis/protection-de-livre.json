@@ -1,0 +1,89 @@
+{
+  "id": "protection-de-livre",
+  "nom": "Protection de livre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20de%20livre.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M, FD (une goutte d'huile claire)",
+  "portee": "contact",
+  "cible": "un objet au contact de maximum 5 kg par niveau",
+  "duree": "1 jour par niveau ou jusqu'à décharge (voir texte)",
+  "jet_de_sauvegarde": "Volonté, annule (objet, inoffensif)",
+  "resistance_magie": "oui (objet, inoffensif)",
+  "description": "Comme protection contre les énergies destructives, sauf ce qui noté ci-dessus et le fait que le sort ne protège que des dégâts d'acide ou de feu. Tant que la protection contre l'énergie reste en place, l’objet est aussi complètement imperméable (cette protection s’étend également aux autres liquides, tels que l’alcool ou l’huile).",
+  "description_html": "<br/><br/>Comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20les%20%c3%a9nergies%20destructives.ashx\" title=\"Protection contre les énergies destructives\">protection contre les énergies destructives</a></i>, sauf ce qui noté ci-dessus et le fait que le sort ne protège que des dégâts d'acide ou de feu. Tant que la protection contre l'énergie reste en place, l’objet est aussi complètement imperméable (cette protection s’étend également aux autres liquides, tels que l’alcool ou l’huile).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20de%20livre.ashx",
+    "cache_fichier": "cache/html/f4756da8b36f83c469c1204ff0f0d22493eb79f1.html",
+    "recupere_le": "2026-07-28T23:05:18.109716+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "protection-de-livre",
+    "resume_court": "Protège un objet contre les dégâts d'acide ou de feu et le rend imperméable.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "immunite_ou_resistance_element",
+      "objet_ou_equipement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un objet au contact de maximum 5 kg par niveau"
+    },
+    "notes_ambiguite": "Le sort est décrit par référence à « protection contre les énergies destructives » sans détail complet dans le texte fourni. L'interprétation se limite aux éléments explicitement énoncés : protection contre l'acide et le feu, imperméabilité.",
+    "slug": "protection-de-livre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:08+00:00",
+    "hash_source": "45b1ac3b66d5ddb3295b88d681d97d9d87457003a2c0a6755b0f69f44c64eef3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9cbbe51fe298bbefa2ce557b4e80f66efe94611c36bf3dd53aefc3d4e330824d",
+  "hash_vue": "100b54652a38f718743ce68aff50a2ba08a226d5be61050199b7f0df11f3b14b"
+}

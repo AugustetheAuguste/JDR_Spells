@@ -1,0 +1,78 @@
+{
+  "id": "restauration-d-eidolon-mineure",
+  "nom": "Restauration d'eidolon mineure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Restauration%20deidolon%20mineure.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 2,
+    "ConU": 2
+  },
+  "temps_incantation": "3 rounds",
+  "composantes": "V, G, M (poussière de diamant d’une valeur de 100 po ou 1 000 po, voir texte)",
+  "portee": "contact",
+  "cible": "eidolon touché",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonction comme restauration partielle mais affecte uniquement un eidolon.",
+  "description_html": "<hr/>\nCe sort fonction comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.restauration%20partielle.ashx\" title=\"Restauration partielle\">restauration partielle</a> </i> mais affecte uniquement un eidolon.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {
+    "sorts_lies": "Restauration partielle"
+  },
+  "classes": [
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Restauration%20deidolon%20mineure.ashx",
+    "cache_fichier": "cache/html/d1c450c8f6400e5a96fc83a36126173de07a5d7d.html",
+    "recupere_le": "2026-07-29T07:39:03.450201+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "restauration-d-eidolon-mineure",
+    "resume_court": "Restaure partiellement un eidolon touché, guérissant certaines de ses affections.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "eidolon touché"
+    },
+    "notes_ambiguite": "Le texte renvoie à « restauration partielle » sans en détailler les effets précis. La catégorie et les tags reposent sur le contexte d'école (guérison) et de fonction (restauration). L'eidolon est une créature invoquée, d'où le tag invocation_ou_creation.",
+    "slug": "restauration-d-eidolon-mineure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:00+00:00",
+    "hash_source": "c01fa875b772dad0258a078f1c52bc9995e235db9a5e7a91b77f4c2ed5151804"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e52f07d1cf2a352aee6db51c420915669ed9ccd4065e7529c1a946b451a8d6af",
+  "hash_vue": "bd13cc931660c9bdb036bbc4bd9a36190e593080f4c2f983631b5136d14fee8e"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "requiem-pour-les-fantomes",
+  "nom": "Requiem pour les fantômes",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Requiem%20pour%20les%20fant%c3%b4mes.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Cham": 2,
+    "Inq": 2,
+    "Occ": 2,
+    "Pal": 1,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (une vieille hanche d'instrument à vent)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature intangible",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté annule",
+  "resistance_magie": "oui",
+  "description": "La cible se solidifie partiellement pour une courte période. Tant que la créature intangible est soumise à ce sort, elle reçoit la moitié (50%) des dégâts des attaques non magiques et la totalité de ceux des armes magiques, des sorts, des pouvoirs magiques et des pouvoirs surnaturels.",
+  "description_html": "<hr/>\nLa cible se solidifie partiellement pour une courte période. Tant que la créature <a class=\"pagelink\" href=\"Pathfinder-RPG.intangible.ashx\" title=\"Intangible\">intangible</a> est soumise à ce sort, elle reçoit la moitié (50%) des dégâts des attaques non magiques et la totalité de ceux des armes magiques, des sorts, des pouvoirs magiques et des pouvoirs surnaturels.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Requiem pour les fantômes de groupe",
+      "id": "requiem-pour-les-fantomes-de-groupe",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Bard": 4,
+        "Cham": 5,
+        "Inq": 5,
+        "Occ": 5,
+        "Pal": 3,
+        "Prê": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, M/FD (une vieille hanche d'instrument à vent)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "une créature intangible/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme requiem pour les fantômes mais il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.requiem%20pour%20les%20fant%c3%b4mes.ashx\" title=\"Requiem pour les fantômes\">requiem pour les fantômes</a></i> mais il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Requiem%20pour%20les%20fant%c3%b4mes.ashx",
+    "cache_fichier": "cache/html/165c522d5941bc6362eeb0ab4cc5b4a2760ef50a.html",
+    "recupere_le": "2026-07-29T07:38:18.271005+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "requiem-pour-les-fantomes",
+    "resume_court": "Une créature intangible se solidifie partiellement et subit davantage de dégâts.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature intangible"
+    },
+    "notes_ambiguite": null,
+    "slug": "requiem-pour-les-fantomes",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:53+00:00",
+    "hash_source": "58b8586cbaece05ac45e2b31fd03a77837ca3d7949beb2b5c023e202e9b7ec75"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "79c1ab23c732eab95743abafa8465129af429ad43cc385bb77e7f7ae98527c53",
+  "hash_vue": "3d7a04541407ac8b3cd7319c79f442f05b151bba7a9100fae88cabc1e88491ee"
+}

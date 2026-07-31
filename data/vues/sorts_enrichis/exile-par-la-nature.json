@@ -1,0 +1,92 @@
+{
+  "id": "exile-par-la-nature",
+  "nom": "Exilé par la nature",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exil%c3%a9%20par%20la%20nature.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Dru": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Ce sort maudit la créature touchée et la rend inamicale aux yeux du monde naturel. Tous les animaux ont une attitude initiale hostile envers la cible. Les familiers et les créatures magiques ne sont pas affectés par ce sort mais les compagnons animaux si. Si la cible possède un compagnon animal, il ne devient pas hostile mais, pendant toute la durée de la malédiction, il subit un malus de -2 aux jets d'attaque, aux tests de compétence et aux jets de sauvegarde. La cible subit également un malus de -10 aux tests de Survie car le climat et l'environnement semblent également conspirer contre elle.\nUn personnage peut se débarrasser d'exilé par la nature avec annulation d'enchantement, souhait limité, miracle, délivrance des malédictions ou souhait.",
+  "description_html": "<br/><br/>Ce sort maudit la créature touchée et la rend inamicale aux yeux du monde naturel. Tous les animaux ont une <a class=\"pagelink\" href=\"Pathfinder-RPG.diplomatie.ashx\" title=\"Diplomatie\">attitude initiale hostile</a> envers la cible. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.familier.ashx\" title=\"familier\">familiers</a> et les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20cr%c3%a9ature%20magique.ashx\" title=\"Créature magique\">créatures magiques</a> ne sont pas affectés par ce sort mais les <a class=\"pagelink\" href=\"Pathfinder-RPG.compagnon%20animal.ashx\" title=\"compagnon animal\">compagnons animaux</a> si. Si la cible possède un <a class=\"pagelink\" href=\"Pathfinder-RPG.compagnon%20animal.ashx\" title=\"compagnon animal\">compagnon animal</a>, il ne devient pas hostile mais, pendant toute la durée de la <a class=\"pagelink\" href=\"Pathfinder-RPG.mal%c3%a9diction.ashx\" title=\"malédiction\">malédiction</a>, il subit un malus de -2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d'attaque</a>, aux tests de compétence et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a>. La cible subit également un malus de -10 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> car le climat et l'environnement semblent également conspirer contre elle.<br/><br/>Un personnage peut se débarrasser d'<i>exilé par la nature</i> avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">annulation d'enchantement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait%20limit%c3%a9.ashx\" title=\"Souhait limité\">souhait limité</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">délivrance des malédictions</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exil%c3%a9%20par%20la%20nature.ashx",
+    "cache_fichier": "cache/html/b3c592826b4e8fd492708864f6569f762caf5a78.html",
+    "recupere_le": "2026-07-28T22:52:49.250860+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "exile-par-la-nature",
+    "resume_court": "Une malédiction qui rend tous les animaux hostiles à la cible et dégrade ses tests de Survie.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des malus numériques (-2 et -10) sans infliger de dégâts directs ni de condition classique. La malédiction affecte le comportement des animaux et les capacités de la cible, ce qui justifie la catégorie affaiblissement. L'effet mental est retenu car la malédiction agit sur la perception des animaux envers la cible.",
+    "slug": "exile-par-la-nature",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:48+00:00",
+    "hash_source": "d88cec9e52a35715117bf6329b3f1c44066c6863ad829c88cee67f9bfacec435"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "55dd0b02cbfa9269e1921b189168f491031a7c15b2284795bae17c5eaabe4a6e",
+  "hash_vue": "873ed85f40b39d92b2bd40633b235ecb124dd6ed6c276d16a1dd166bb3f8a42e"
+}

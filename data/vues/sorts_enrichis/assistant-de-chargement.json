@@ -1,0 +1,89 @@
+{
+  "id": "assistant-de-chargement",
+  "nom": "Assistant de chargement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assistant%20de%20chargement.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "arme à projectile touchée",
+  "duree": "1 round/niveau de lanceur de sorts (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Une fois par round, des mains fantomatiques rechargent une arme à distance ou une arme à feu avec des munitions invoquées. Cette munition est considérée comme magique quand il s’agit de vaincre la résistance aux dégâts et d’attaquer des créatures intangibles mais en dehors de cela, c’est une munition normale (une balle ou des plombs ordinaires et de la poudre noire pour une arme à feu). La munition invoquée disparaît 1 round après le tir ou à la fin de la durée du sort, selon ce qui se produit en premier.",
+  "description_html": "<br/><br/>Une fois par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, des mains fantomatiques rechargent une arme à distance ou une arme à feu avec des munitions invoquées. Cette munition est considérée comme magique quand il s’agit de vaincre la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">résistance aux dégâts</a> et d’attaquer des créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.intangible.ashx\" title=\"Intangible\">intangibles</a> mais en dehors de cela, c’est une munition normale (une balle ou des plombs ordinaires et de la poudre noire pour une arme à feu). La munition invoquée disparaît 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> après le tir ou à la fin de la durée du sort, selon ce qui se produit en premier.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assistant%20de%20chargement.ashx",
+    "cache_fichier": "cache/html/381603bcfffb2439bdf015261cbdb6b61268546a.html",
+    "recupere_le": "2026-07-28T22:42:26.744724+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "assistant-de-chargement",
+    "resume_court": "Des mains fantomatiques rechargent automatiquement une arme à distance avec des munitions invoquées.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "invocation_ou_creation",
+      "arme_ou_munition",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "arme à projectile touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "assistant-de-chargement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:21+00:00",
+    "hash_source": "5344c3dc98c561e1ee55ccc788cd36b9a5816d7dd6502d3af950ca5230ab8e2f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f9afbd82b0e7c3a50cdc2422f7efbed7d2bde2f5334f55c8214fb94daed5ac0a",
+  "hash_vue": "b98c6b624e7ce7abf03e38a13d3be8a20e7074f4fff2e12cfa9787afb0e54d16"
+}

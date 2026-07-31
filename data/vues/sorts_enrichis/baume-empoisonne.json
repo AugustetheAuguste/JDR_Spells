@@ -1,0 +1,121 @@
+{
+  "id": "baume-empoisonne",
+  "nom": "Baume empoisonné",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Baume%20empoisonn%c3%a9.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [
+    "poison",
+    "ruse"
+  ],
+  "niveaux": {
+    "Cham": 4,
+    "Dru": 5,
+    "Occ": 4,
+    "Prê": 4,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée, puis 1 heure ou jusqu'à déchargement + 6 rounds ; voir description",
+  "jet_de_sauvegarde": "Volonté, partiel (inoffensif), puis Vigueur, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Le personnage traite les blessures de la cible, lui rendant 3d8 points de vie +1 par niveau de lanceur de sorts (maximum +15) comme avec soins importants, mais insinue une subtile toxine dans son corps qui reste inerte jusqu'à ce qu'il l'active. Une cible qui choisit de tenter un jet de Volonté et réussi n'est soigné que de la moitié du montant normal (comme avec soins importants) et neutralise la toxine. Autrement, le personnage peut activer la toxine en se concentrant sur le sort par une action simple, auquel cas la victime subit 1d3 points d'affaiblissement temporaire de Force par round pendant 6 rounds. Une fois le poison activé, la cible a droit à un jet de Vigueur à chaque round pour mettre fin aux affaiblissements opérants et annuler les suivants. Si le personnage ne déclenche pas le poison après 1 heure, le sort se termine et laisse la cible indemne.\nDétection du poison ne révèle un baume empoisonné que si le lanceur réussit un test de niveau de lanceur de sorts contre un DD égal à 15 + le niveau de lanceur de sorts du personnage. Toute tentative visant à identifier baume empoisonné avec un test de compétence l'identifie à tort comme soins importants (voir le registre de la ruse). Un observateur trompé confond l'aura de baume empoisonné avec l'aura persistante d'un effet d'invocation instantané.",
+  "description_html": "<br/><br/>Le personnage traite les blessures de la cible, lui rendant 3d8 points de vie +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum +15) comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20importants.ashx\" title=\"Soins importants\">soins importants</a></i>, mais insinue une subtile toxine dans son corps qui reste inerte jusqu'à ce qu'il l'active. Une cible qui choisit de tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> et réussi n'est soigné que de la moitié du montant normal (comme avec <i>soins importants</i>) et neutralise la toxine. Autrement, le personnage peut activer la toxine en se concentrant sur le sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, auquel cas la victime subit 1d3 points d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Affaiblissement%20temporaire%20(capacit%c3%a9).ashx\" title=\"Affaiblissement temporaire (Ext ou Sur)\">affaiblissement temporaire</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> par round pendant 6 rounds. Une fois le poison activé, la cible a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> à chaque round pour mettre fin aux affaiblissements opérants et annuler les suivants. Si le personnage ne déclenche pas le poison après 1 heure, le sort se termine et laisse la cible indemne.<br/><br/><i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9tection%20du%20poison.ashx\" title=\"Détection du poison\">Détection du poison</a></i> ne révèle un <i>baume empoisonné</i> que si le lanceur réussit un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> contre un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> égal à 15 + le niveau de lanceur de sorts du personnage. Toute tentative visant à identifier <i>baume empoisonné</i> avec un test de compétence l'identifie à tort comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20importants.ashx\" title=\"Soins importants\">soins importants</a></i> (voir le registre de la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">ruse</a>). Un observateur trompé confond l'aura de <i>baume empoisonné</i> avec l'aura persistante d'un effet d'<a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocation</a> instantané.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Baume%20empoisonn%c3%a9.ashx",
+    "cache_fichier": "cache/html/e93daf1388412e03cb4160b36755f3ad448fc34b.html",
+    "recupere_le": "2026-07-28T22:43:40.378635+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "baume-empoisonne",
+    "resume_court": "Le lanceur soigne une créature mais y insinue un poison qu'il peut activer pour l'affaiblir.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la victime subit 1d3 points d'affaiblissement temporaire de Force par round pendant 6 rounds"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort soigne d'abord (catégorie soin), mais son effet principal est une coercition déguisée : le lanceur contrôle l'activation du poison. L'affaiblissement de Force n'est pas une condition stricte (aveugle, étourdi, etc.) mais un malus de capacité ; j'ai retenu « ralenti » comme la condition la plus proche, bien que le texte ne nomme pas explicitement une condition standard. Le sort pourrait aussi être classé en affaiblissement, mais le soin prime dans la structure du sort.",
+    "slug": "baume-empoisonne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:46+00:00",
+    "hash_source": "d999b7e996cd3155381b47ac9a5035b3fd6914de01dac8d894bd6ed8a1c06a4f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5798c9c2904e2a076bc9b73f0cc24c0e3c5a203da489a6e96b171af78c086ad9",
+  "hash_vue": "daf260de604fa783fb9b90994f9828f38cca09eb862e8f326321d210e3f74cda"
+}

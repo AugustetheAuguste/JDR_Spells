@@ -1,0 +1,114 @@
+{
+  "id": "transfert-d-ame",
+  "nom": "Transfert d'âme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20d%c3%a2me.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 7,
+    "Ens/Mag": 7,
+    "Prê": 7,
+    "Psy": 7,
+    "Sor": 7,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une gemme d'une valeur de 1 000 po par DV de la créature ou de l'âme ciblée)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un pétitionnaire, une âme intangible ou une créature similaire",
+  "duree": "permanente (voir texte)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui (voir texte)",
+  "description": "Ce sort fonctionne comme le sort séquestration, sauf que celui-ci ne fonctionne que sur les âme sans corps (comme un mort-vivant intangibles ou une âme piégée dans une gemme) et les créatures dont la substance est une incarnation physique d'une âme (comme un pétitionnaire). Cela n'inclut pas les créatures formées d'âmes ou de matériaux planaire (comme la plupart des extérieurs). Transfert d'âme est principalement utilisé pour transférer des âmes d'un réceptacle à un autre, mais il peut également être utilisé pour capturer des âmes vulnérables qui ne sont pas liées à une chair mortelle (comme les créatures intangibles et les pétitionnaires). Quand il est utilisé pour capturer un pétitionnaire, le corps physique du pétitionnaire disparaît, ne réapparaissant seulement quand son âme est libérée du réceptacle.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme le sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.S%c3%a9questration.ashx\" title=\"Séquestration\">séquestration</a></i>, sauf que celui-ci ne fonctionne que sur les âme sans corps (comme un mort-vivant <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20intangible.ashx\" title=\"Intangible (sous-type)\">intangibles</a> ou une âme piégée dans une gemme) et les créatures dont la substance est une incarnation physique d'une âme (comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.P%c3%a9titionnaire%2c%20arch%c3%a9type.ashx\" title=\"Pétitionnaire, archétype\">pétitionnaire</a>). Cela n'inclut pas les créatures formées d'âmes ou de matériaux planaire (comme la plupart des extérieurs). <i>Transfert d'âme</i> est principalement utilisé pour transférer des âmes d'un réceptacle à un autre, mais il peut également être utilisé pour capturer des âmes vulnérables qui ne sont pas liées à une chair mortelle (comme les créatures intangibles et les pétitionnaires). Quand il est utilisé pour capturer un pétitionnaire, le corps physique du pétitionnaire disparaît, ne réapparaissant seulement quand son âme est libérée du réceptacle.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20d%c3%a2me.ashx",
+    "cache_fichier": "cache/html/9e3d219dbc347b51eb74459be2ffa2027d22ba29.html",
+    "recupere_le": "2026-07-29T07:43:02.328140+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "transfert-d-ame",
+    "resume_court": "Capture ou transfère l'âme d'une créature intangible ou d'un pétitionnaire dans un réceptacle.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un pétitionnaire, une âme intangible ou une créature similaire"
+    },
+    "notes_ambiguite": "Le sort fonctionne comme séquestration mais cible spécifiquement les âmes sans corps ou les pétitionnaires. La capture d'une âme entraîne la disparition du corps physique du pétitionnaire, mais cela ne constitue pas une condition au sens des états affligeants listés.",
+    "slug": "transfert-d-ame",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:41+00:00",
+    "hash_source": "177bf36a47c4d83ec239f4bdfabfd737bb0d1e39ff3c9dab778ba00c89f2f534"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cb12481366bed409dcf4c75408f4f9113b6e8054496f950f73f7248d5ad07d51",
+  "hash_vue": "c81cb12d07ef3dc8bcecc0ffe16d05497cf7b9ebd71a560ed244d86c65cdf737"
+}

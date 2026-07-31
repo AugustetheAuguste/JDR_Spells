@@ -1,0 +1,85 @@
+{
+  "id": "arme-alignee-partage",
+  "nom": "Arme alignée (partagé)",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20align%c3%a9e%20(partag%c3%a9).ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "voir texte"
+  ],
+  "niveaux": {
+    "Inq": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "arme touchée ou 50 projectiles devant être en contact les uns avec les autres au moment de l’incantation",
+  "duree": "1 minute/niveau (voir description)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "Oui (inoffensif, objet)",
+  "description": "Ce sort fonctionne comme arme alignée, à la seule différence que le personnage divise la durée entre toutes les armes touchées par incrément de 1 minute. Chaque groupe de 50 projectiles au maximum (qui doivent être regroupés au moment du lancement) compte comme une arme pour la division de la durée du sort.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20align%c3%a9e.ashx\" title=\"Arme alignée\">arme alignée</a></i>, à la seule différence que le personnage divise la durée entre toutes les armes touchées par incrément de 1 minute. Chaque groupe de 50 projectiles au maximum (qui doivent être regroupés au moment du lancement) compte comme une arme pour la division de la durée du sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Arme alignée"
+  },
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20align%c3%a9e%20(partag%c3%a9).ashx",
+    "cache_fichier": "cache/html/42f0c945382914f07c3ee24c77529614f0c894aa.html",
+    "recupere_le": "2026-07-28T22:41:35.483873+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "arme-alignee-partage",
+    "resume_court": "Confère l'alignement du lanceur à une ou plusieurs armes, la durée se divisant entre elles.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "duree_prolongee",
+      "transformation_du_sujet",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "arme touchée ou 50 projectiles"
+    },
+    "notes_ambiguite": "Le texte renvoie à « arme alignée » sans en reproduire les effets complets. On suppose que ce sort améliore les armes en les dotant d'une propriété d'alignement (probablement magique), sans infliger de dégâts directs lui-même. La durée divisible et la transformation temporaire justifient les tags « duree_prolongee » et « transformation_du_sujet ».",
+    "slug": "arme-alignee-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:01+00:00",
+    "hash_source": "3adc4a232564e353ef0b286569b20ea6235929ea19c362537b7fb9b75f078f3b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0e9818685f0fb8db2614e566b4bf5c85841b7a0e80242fd4342cc92ab140340d",
+  "hash_vue": "c8ce9fee91ee32f1857111417fbbc334160645dbaa17b8fe7d0830e212ac54ac"
+}

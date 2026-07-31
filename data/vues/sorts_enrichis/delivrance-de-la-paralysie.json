@@ -1,0 +1,103 @@
+{
+  "id": "delivrance-de-la-paralysie",
+  "nom": "Délivrance de la paralysie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9livrance%20de%20la%20paralysie.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 2,
+    "Inq": 2,
+    "Pal": 2,
+    "Prê": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu’à 4 créatures distantes de moins de 9 m les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Grâce à ce sort, les créatures affectées par un sort ou un effet magique de paralysie temporaire ou un autre effet similaire peuvent recouvrer leur liberté de mouvement, tout comme celles qui sont soumises à un sort ou à un effet qui les rend chancelantes. Si le sort ne cible qu’un seul individu, la paralysie est automatiquement annulée. S’il cible deux créatures, chacune d’elles bénéficie d’un nouveau jet de sauvegarde contre l’effet qui les a paralysées avec un bonus de résistance de +4. Enfin, s’il cible trois ou quatre sujets, ils reçoivent également un nouveau jet de sauvegarde mais avec un bonus de résistance de +2 seulement.\nCe sort ne permet pas de retrouver la pleine valeur d’une caractéristique, quelle que soit la cause de la diminution.",
+  "description_html": "<br/><br/>Grâce à ce sort, les créatures affectées par un sort ou un effet magique de <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysie temporaire</a> ou un autre effet similaire peuvent recouvrer leur liberté de mouvement, tout comme celles qui sont soumises à un sort ou à un effet qui les rend <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a>. Si le sort ne cible qu’un seul individu, la <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysie</a> est automatiquement annulée. S’il cible deux créatures, chacune d’elles bénéficie d’un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> contre l’effet qui les a <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysées</a> avec un bonus de résistance de +4. Enfin, s’il cible trois ou quatre sujets, ils reçoivent également un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> mais avec un bonus de résistance de +2 seulement.<br/><br/>Ce sort ne permet pas de retrouver la pleine valeur d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a>, quelle que soit la cause de la diminution.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9livrance%20de%20la%20paralysie.ashx",
+    "cache_fichier": "cache/html/da863b48dbb69fb0c7e5bd341354726219fd1fcc.html",
+    "recupere_le": "2026-07-28T22:50:16.274174+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "delivrance-de-la-paralysie",
+    "resume_court": "Libère jusqu'à 4 créatures de la paralysie ou de l'état chancelant par un nouveau jet de sauvegarde.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à 4 créatures distantes de moins de 9 m les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "delivrance-de-la-paralysie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:27+00:00",
+    "hash_source": "b56eeea87b4dab7b63e06b8b76bd16cc701728e595c1f74d411984ecf7dfccf0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1d45411d66a4113646994babd1b9e811478af18f84416e1100b67edb89491afb",
+  "hash_vue": "82e635a5c3343cd7a5899ca846e32e731e571d08cf4e04babb7282ccc6af8b6d"
+}

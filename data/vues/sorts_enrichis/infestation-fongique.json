@@ -1,0 +1,83 @@
+{
+  "id": "infestation-fongique",
+  "nom": "Infestation fongique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Infestation%20fongique.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "maladie"
+  ],
+  "niveaux": {
+    "Dru": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1d3 jours",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage enduit la cible d’un champignon nécrotique qui ramollit et fragilise sa chair. Des champignons vénéneux, des mycoses et d’autres protubérances fongiques poussent sur sa peau. La cible reçoit 1d3 points d’affaiblissement de Charisme. Toute attaque physique contre la cible lui inflige automatiquement 1d6 points de dégâts de saignement.",
+  "description_html": "<br/><br/>Le personnage enduit la cible d’un champignon nécrotique qui ramollit et fragilise sa chair. Des champignons vénéneux, des mycoses et d’autres protubérances fongiques poussent sur sa peau. La cible reçoit 1d3 points d’affaiblissement de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a>. Toute attaque physique contre la cible lui inflige automatiquement 1d6 points de dégâts de saignement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Infestation%20fongique.ashx",
+    "cache_fichier": "cache/html/e2b88e819891d3764af40d72b76c84c7cdac4c48.html",
+    "recupere_le": "2026-07-28T22:56:59.528880+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "infestation-fongique",
+    "resume_court": "Un champignon nécrotique affaiblit le Charisme de la cible et la fait saigner à chaque coup.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "affaiblissement_de_capacite",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts de saignement",
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts de saignement à chaque attaque physique subie, ce qui n'est pas un type énergétique élémentaire standard ; classé en « autre ». L'affaiblissement de Charisme est un effet de dégradation de capacité plutôt qu'une condition mécanique nommée.",
+    "slug": "infestation-fongique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:29+00:00",
+    "hash_source": "b9205fbe461e843fa46b35775e2859725e24f8d121afebf2054ba6a7389686fa"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "899a3f0d05749e534fe64b300ca846f7730e2cde9c325c7b1e72d8f1465bc152",
+  "hash_vue": "8f23a71289f5b35669ea98983e46bcb96465aee10a3d1af7b2ee57a7d1c3eefb"
+}

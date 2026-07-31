@@ -1,0 +1,90 @@
+{
+  "id": "broussaille-distrayante",
+  "nom": "Broussaille distrayante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broussaille%20distrayante.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une plante de taille TP, P ou M qui n'est pas une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "La plante ciblée émet un bruissement retentissant, distrayant les créatures proches. Le personnage peut effectuer un test de Bluff pour créer une distraction afin de se cacher, en utilisant son niveau de lanceur de sorts + son modificateur de Sagesse à la place de son bonus total en Bluff et applique le résultat à toutes les créatures dans un rayon de 9 m. Le personnage, ainsi que toutes les créatures qui étaient au courant de la distraction, considère la cible comme distraite. Les créatures peuvent éviter d'être distraites si elles remarquent que le personnage lance un sort ou anticipent autrement la supercherie.",
+  "description_html": "<br/><br/>La plante ciblée émet un bruissement retentissant, distrayant les créatures proches. Le personnage peut effectuer un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> pour créer une distraction afin de se cacher, en utilisant son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> + son modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> à la place de son bonus total en Bluff et applique le résultat à toutes les créatures dans un rayon de 9 m. Le personnage, ainsi que toutes les créatures qui étaient au courant de la distraction, considère la cible comme distraite. Les créatures peuvent éviter d'être distraites si elles remarquent que le personnage lance un sort ou anticipent autrement la supercherie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broussaille%20distrayante.ashx",
+    "cache_fichier": "cache/html/e3331b45be9d6e4c8644827e529ccb2fd804f414.html",
+    "recupere_le": "2026-07-28T22:44:59.437311+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "broussaille-distrayante",
+    "resume_court": "Une plante émet un bruissement qui distrait les créatures proches, permettant au lanceur de se cacher.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "objet_ou_equipement",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une plante de taille TP, P ou M qui n'est pas une créature"
+    },
+    "notes_ambiguite": "Le sort affecte une plante (objet) mais produit un effet tactique sur les créatures proches via distraction. La catégorie utilitaire reflète que le sort sert principalement à faciliter une action (se cacher) plutôt qu'à infliger des dégâts ou une condition directe. Aucune condition mécanique nommée n'est infligée aux créatures : la distraction est un effet contextuel de Bluff, non une condition de jeu.",
+    "slug": "broussaille-distrayante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:18+00:00",
+    "hash_source": "e7df81b4602e0e5babdd14cd1930956450100036e62293945d398226e4118d1e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "befc507fc0619c04ff7b019693a365912002baca9a91bdd16bf40b0194443ef4",
+  "hash_vue": "8b65bd467c25ed8635582e63edd21d309ce8e89f9984f8b206bbee1080de5a07"
+}

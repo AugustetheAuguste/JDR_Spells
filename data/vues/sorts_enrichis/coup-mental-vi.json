@@ -1,0 +1,81 @@
+{
+  "id": "coup-mental-vi",
+  "nom": "Coup mental VI",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20mental%20VI.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme coup mental IV mais la cible subit 1d8 points de dégâts par niveau de lanceur de sorts et elle est épuisée et étourdie pendant 1 round si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20mental%20IV.ashx\" title=\"Coup mental IV\">coup mental IV</a></i> mais la cible subit 1d8 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> et elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Épuisé\" title=\"Les états préjudiciables\">épuisée</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdie</a> pendant 1 round si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Coup mental IV"
+  },
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20mental%20VI.ashx",
+    "cache_fichier": "cache/html/598f082cebdca9cd56b3026e2f26c50e67b1a514.html",
+    "recupere_le": "2026-07-28T22:49:13.059423+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "coup-mental-vi",
+    "resume_court": "Un coup mental qui inflige des dégâts et rend la cible épuisée et étourdie si elle échoue.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts par niveau de lanceur de sorts",
+      "condition_infligee": [
+        "elle est épuisée et étourdie pendant 1 round si elle rate son jet de sauvegarde"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le texte mentionne « épuisée et étourdie » mais seul « étourdi » figure dans la liste des conditions. « Épuisée » n'existe pas dans la liste fermée ; j'ai retenu uniquement « etourdi » qui y figure explicitement.",
+    "slug": "coup-mental-vi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:56+00:00",
+    "hash_source": "4ad9a2901e5e39d528a3511519225f51d63fd051dab4026196c31419f36c3ab0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9a4815f0cfd88dfd04b6033b721a5fa24e1e581590fdb5c6fd11f522e677a389",
+  "hash_vue": "c9740e145285e74a9f9f5869379c914fd76027f13440f5c0265b92d27faaee69"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "guerison-diabolique",
+  "nom": "Guérison diabolique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20diabolique.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Con": 1,
+    "ConU": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Prê": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G,M (une goutte de sang de diable ou une dose d'eau maudite)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage oint une créature blessée avec du sang de diable ou de l’eau maudite, ce qui lui donne une guérison accélérée 1. Ce pouvoir ne répare pas les dégâts causés par des armes en argent, alignées sur le Bien ou par des sorts ou effets avec le registre Bien. La cible est détectée comme une créature Maléfique pendant toute la durée du sort et perçoit le côté Maléfique de cette magie, même si ceci n’a pas d’effet à long terme sur son alignement.",
+  "description_html": "<hr/>\nLe personnage oint une créature blessée avec du sang de diable ou de l’eau maudite, ce qui lui donne une <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx\" title=\"Guérison accélérée (Ext)\">guérison accélérée</a> 1. Ce pouvoir ne répare pas les dégâts causés par des armes en argent, alignées sur le Bien ou par des sorts ou effets avec le registre Bien. La cible est détectée comme une créature Maléfique pendant toute la durée du sort et perçoit le côté Maléfique de cette magie, même si ceci n’a pas d’effet à long terme sur son alignement.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Guérison diabolique supérieure",
+      "id": "guerison-diabolique-superieure",
+      "ecole": "Invocation (guérison)",
+      "descripteurs": [
+        "Mal"
+      ],
+      "niveaux": {
+        "Con": 4,
+        "ConU": 4,
+        "Ens/Mag": 4,
+        "Magus": 4,
+        "Prê": 4,
+        "Sor": 4
+      },
+      "temps_incantation": "1 round",
+      "composantes": "V, G,M (une goutte de sang de diable ou une dose d'eau maudite)",
+      "portee": "contact",
+      "cible": "créature touchée",
+      "duree": "1 minute",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Comme guérison diabolique, mais donne une guérison accélérée 4 et fait détecter la cible comme si elle était un prêtre Mauvais.",
+      "description_html": "<hr/>\nComme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20diabolique.ashx\" title=\"Guérison diabolique\">guérison diabolique</a></i>, mais donne une <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx\" title=\"Guérison accélérée (Ext)\">guérison accélérée</a> 4 et fait détecter la cible comme si elle était un prêtre Mauvais.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Inner Sea World Guide/La Mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Asmodéus."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20diabolique.ashx",
+    "cache_fichier": "cache/html/bc1ecf0c9dd4fb5488db14da3790e24a2197e687.html",
+    "recupere_le": "2026-07-28T22:55:49.453799+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "guerison-diabolique",
+    "resume_court": "Guérison accélérée par du sang de diable, mais inefficace contre les armes du Bien.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "alignement_ou_divin",
+      "duree_prolongee",
+      "attaque_de_contact"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "guerison-diabolique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:00+00:00",
+    "hash_source": "8b2c3cfa5b51a500418ed980f1fbccd07ad4fb65fa1e087225f53cdf0f7ced9f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "464839861603473cc878751250307322aa88f15023fe8c3ed98f2a99bcfdaf2e",
+  "hash_vue": "ea271447e30a9f1c50d1cf70a0c365439cbc3836c675a855c88411ab6c724468"
+}

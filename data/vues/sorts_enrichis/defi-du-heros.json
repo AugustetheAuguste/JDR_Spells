@@ -1,0 +1,72 @@
+{
+  "id": "defi-du-heros",
+  "nom": "Défi du héros",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fi%20du%20h%c3%a9ros.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 1
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Un instant avant que le personnage ne tombe à 0 point de vie ou moins, il peut utiliser une imposition des mains pour se soigner comme s'il avait utilisé ce pouvoir en bénéficiant de 1d6 points de vie guéris supplémentaires. Si ceci fait repasser son total de points de vie au-dessus de 0, le personnage ne tombe pas et peut continuer d'agir. Si le personnage a déjà utilisé toutes ses impositions, le sort n'a aucun effet.",
+  "description_html": "<br/><br/>Un instant avant que le personnage ne tombe à 0 point de vie ou moins, il peut utiliser une <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#IMPOSITIONDESMAINS\" title=\"Le paladin\">imposition des mains</a> pour se soigner comme s'il avait utilisé ce pouvoir en bénéficiant de 1d6 points de vie guéris supplémentaires. Si ceci fait repasser son total de points de vie au-dessus de 0, le personnage ne tombe pas et peut continuer d'agir. Si le personnage a déjà utilisé toutes ses <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#IMPOSITIONDESMAINS\" title=\"Le paladin\">impositions</a>, le sort n'a aucun effet.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fi%20du%20h%c3%a9ros.ashx",
+    "cache_fichier": "cache/html/3e9b26a3cc0b485d53529edfa01ce7eb2dd16f27.html",
+    "recupere_le": "2026-07-28T22:50:04.604077+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "defi-du-heros",
+    "resume_court": "Avant de tomber à 0 PV, le lanceur utilise une imposition des mains renforcée pour se soigner.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_instantanee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort est classé en école « Invocation (guérison) » mais fonctionne comme une amélioration du pouvoir existant « imposition des mains » plutôt que comme une invocation stricte. La catégorie « soin » reflète son effet principal : restaurer des points de vie au moment critique.",
+    "slug": "defi-du-heros",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:22+00:00",
+    "hash_source": "471dbf88ef723c7cbdf4d8e56319f3596d408a828dec14ff5e6d0eef3c8b5352"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4a1274c119e327a79fb3922a8e14cf79ce810edd84a3ba902fd9361f2aa52983",
+  "hash_vue": "21c0a208cf3dc74494cf6167f7e6923b7bb710cb6e70c2535e15785ccccc209f"
+}

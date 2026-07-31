@@ -1,0 +1,133 @@
+{
+  "id": "porteur-de-peste",
+  "nom": "Porteur de peste",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Porteur%20de%20peste.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Mal",
+    "maladie"
+  ],
+  "niveaux": {
+    "Alch": 6,
+    "Antipal": 6,
+    "Dru": 6,
+    "Ens/Mag": 7,
+    "Inq": 6,
+    "Prê": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature vivante",
+  "duree": "1 round/niveau ; voir texte",
+  "jet_de_sauvegarde": "Vigueur, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage fait de la cible un porteur asymptomatique d'une foule de maladies virulentes. Les créatures qui terminent leur tour adjacentes à la cible doivent réussir un jet de sauvegarde de Vigueur ou être affectées comme si elles avaient été soumises à un sort de contagion. La cible elle-même ne devient pas malade et ne subit aucun effet néfaste de ce sort. Une fois le sort porteur de peste terminé, la cible n'est plus contagieuse, mais les créatures qu'elle a infectées restent malades.",
+  "description_html": "<br/><br/>Le personnage fait de la cible un porteur asymptomatique d'une foule de maladies virulentes. Les créatures qui terminent leur tour adjacentes à la cible doivent réussir un jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou être affectées comme si elles avaient été soumises à un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.contagion.ashx\" title=\"Contagion\">contagion</a></i>. La cible elle-même ne devient pas malade et ne subit aucun effet néfaste de ce sort. Une fois le sort <i>porteur de peste</i> terminé, la cible n'est plus contagieuse, mais les créatures qu'elle a infectées restent malades.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Urgathoa."
+  },
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Porteur%20de%20peste.ashx",
+    "cache_fichier": "cache/html/72d64897b002f04b8f2eb40ad670b68660d17445.html",
+    "recupere_le": "2026-07-28T23:04:11.027026+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "porteur-de-peste",
+    "resume_court": "La cible devient porteuse de maladies virulentes qui contaminent les créatures adjacentes.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas directement de dégâts ni de condition nommée à la cible elle-même, mais transforme celle-ci en vecteur de contagion pour les créatures adjacentes. La catégorie « controle_de_zone » reflète que l'effet s'étend à un volume (adjacence) plutôt qu'une cible unique. Les conditions infligées aux créatures contaminées relèvent du sort de contagion, non du présent sort, donc elles ne sont pas listées ici.",
+    "slug": "porteur-de-peste",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:22+00:00",
+    "hash_source": "5063de6aa204ae5c14f024f9e7f9d8bebd33eaf45310d2c502bdada6b23639f6"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "650a03953d65e165c13895443ecb7fd02fc360900aec23ee57427a5dc484a79b",
+  "hash_vue": "d943a999842e5ad174652aa519c74296cb3ec59644a30e9ffd55194f92143c56"
+}

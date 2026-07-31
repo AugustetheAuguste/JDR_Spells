@@ -1,0 +1,100 @@
+{
+  "id": "vol-de-sort",
+  "nom": "Vol de sort",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20sort.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Prê": 5,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "une créature",
+  "duree": "instantanée et voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "L’homme-serpent génère un souffle d’énergie discordant qui perturbe la magie accessible de la cible et transfère sa connaissance de cette magie au monstre.\nSi la cible prépare ses sorts, elle doit choisir un sort préparé de niveau 3, qu’elle perd aussitôt. Si la cible n’a pas de sorts préparés de niveau 3, elle perd un sort préparé de niveau 2. Procédez de même avec un sort préparé de niveau 1 si elle n’a pas de sorts préparés de niveau 2. Ce sort n’a aucun effet si la cible n’a pas de sorts préparés de niveau 1. Si le sort apparaît dans la liste de sorts de l’homme-serpent, il peut lancer le sort que la cible a perdu (avec son propre niveau de lanceur) lors de son prochain tour.\nSi la cible est un lanceur de sorts spontanés, elle perd un emplacement de sort de niveau 3.\nSi elle n’a pas d’emplacement de sort de niveau 3, elle perd un emplacement de sort de niveau 2 (et ainsi de suite, comme indiqué ci-dessus).\nChoisissez au hasard un sort connu de ce niveau appartenant à la cible : si ce sort apparaît dans la liste de sorts de l’homme-serpent, celui-ci peut le lancer (avec son propre niveau de lanceur) lors de son prochain tour. L’homme-serpent doit utiliser tous les focalisateurs ou composantes matérielles nécessaires pour lancer le sort dérobé.\nSi la cible possède plus d’une classe de lanceur de sorts, choisissez-en une au hasard : c’est celle-ci qui est affectée. Ce sort n’a aucun effet sur les pouvoirs magiques.\nPour tous les sorts ou emplacements de sort perdus à cause de ce sort, on considère que la cible a raté un test de concentration alors qu’elle essayait de le lancer (le sort ou l’emplacement de sort est gâché et n’a aucun effet, mais la cible le récupère normalement la prochaine fois qu’elle prépare ses sorts ou regagne ses emplacements de sort).",
+  "description_html": "<br/><br/>L’homme-serpent génère un souffle d’énergie discordant qui perturbe la magie accessible de la cible et transfère sa connaissance de cette magie au monstre.<br/><br/>Si la cible prépare ses sorts, elle doit choisir un sort préparé de niveau 3, qu’elle perd aussitôt. Si la cible n’a pas de sorts préparés de niveau 3, elle perd un sort préparé de niveau 2. Procédez de même avec un sort préparé de niveau 1 si elle n’a pas de sorts préparés de niveau 2. Ce sort n’a aucun effet si la cible n’a pas de sorts préparés de niveau 1. Si le sort apparaît dans la liste de sorts de l’homme-serpent, il peut lancer le sort que la cible a perdu (avec son propre niveau de lanceur) lors de son prochain tour.<br/><br/>Si la cible est un lanceur de sorts spontanés, elle perd un emplacement de sort de niveau 3.<br/><br/>Si elle n’a pas d’emplacement de sort de niveau 3, elle perd un emplacement de sort de niveau 2 (et ainsi de suite, comme indiqué ci-dessus).<br/><br/>Choisissez au hasard un sort connu de ce niveau appartenant à la cible : si ce sort apparaît dans la liste de sorts de l’homme-serpent, celui-ci peut le lancer (avec son propre niveau de lanceur) lors de son prochain tour. L’homme-serpent doit utiliser tous les focalisateurs ou composantes matérielles nécessaires pour lancer le sort dérobé.<br/><br/>Si la cible possède plus d’une classe de lanceur de sorts, choisissez-en une au hasard : c’est celle-ci qui est affectée. Ce sort n’a aucun effet sur les pouvoirs magiques.<br/><br/>Pour tous les sorts ou emplacements de sort perdus à cause de ce sort, on considère que la cible a raté un test de concentration alors qu’elle essayait de le lancer (le sort ou l’emplacement de sort est gâché et n’a aucun effet, mais la cible le récupère normalement la prochaine fois qu’elle prépare ses sorts ou regagne ses emplacements de sort).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "autres": {
+    "Cette option est plus courante chez les hommes-serpents": null
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20sort.ashx",
+    "cache_fichier": "cache/html/0f4610931ec3a1cd476389cbce2a963847198202.html",
+    "recupere_le": "2026-07-29T07:44:41.376112+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vol-de-sort",
+    "resume_court": "Le lanceur vole un sort préparé ou un emplacement de sort à une créature et peut le lancer à son tour suivant.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "metamagie_ou_sort_cible",
+      "duree_instantanee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "vol-de-sort",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:22+00:00",
+    "hash_source": "12b6ed72bcd66ba7dd91b94e6cabd1ba07a4fb1ff32649a03fcd243db2f0cb6c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "20648fd8bca079efc3dd5b8fe886b803fa302ab0f4018f4594ccb0e3446a424b",
+  "hash_vue": "5645c8ea2b2d9dff21df0ebc6c54bc58e5d3ca6218abb41bf8ee65d833506178"
+}

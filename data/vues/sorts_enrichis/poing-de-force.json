@@ -1,0 +1,111 @@
+{
+  "id": "poing-de-force",
+  "nom": "Poing de force",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing%20de%20force.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Psy": 3,
+    "San": 3,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur partielle",
+  "resistance_magie": "oui",
+  "description": "Ce sort charge les mains du personnage de force télékinétique. Par une attaque de contact réussie, le personnage inflige 1d4 dégâts de force par niveau (10d4 au maximum) et repousse la cible en ligne droite sur 1,50 mètre par tranche de deux niveaux de lanceur de sorts. La distance sur laquelle la cible est repoussée est réduite pour chaque catégorie de taille au-dessus de M (-1,50 mètre pour une créature G, -3 pour une T, -4,50 pour une Gig et -6 pour une Col), avec un minimum de 0 mètre. Un jet de Vigueur réussi annule le mouvement mais pas les dégâts.",
+  "description_html": "<br/><br/>Ce sort charge les mains du personnage de force télékinétique. Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#ATTAQUESDECONTACT\" title=\"Valeurs de combat\">attaque de contact</a> réussie, le personnage inflige 1d4 dégâts de force par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> (10d4 au maximum) et repousse la cible en ligne droite sur 1,50 mètre par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a>. La distance sur laquelle la cible est repoussée est réduite pour chaque catégorie de <a class=\"pagelink\" href=\"Pathfinder-RPG.taille.ashx\" title=\"taille\">taille</a> au-dessus de M (-1,50 mètre pour une créature G, -3 pour une T, -4,50 pour une Gig et -6 pour une Col), avec un minimum de 0 mètre. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> réussi annule le mouvement mais pas les dégâts.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 1d6 points de dégâts de force par niveau de lanceur de sorts (10d6 maximum). Si le déplacement pousse la cible dans l’emplacement occupé par une autre créature et que la distance restante est au moins égale à 3 mètres, le personnage peut tenter de renverser l’autre créature en ajoutant son grade au test de manœuvre offensive. Pour chaque créature que le personnage renverse à l’aide de sa cible, réduisez la distance de déplacement de la cible de 1,50 mètre. Si le déplacement pousse la cible contre un obstacle solide (tel qu’un mur ou un arbre), elle subit des dégâts de chute équivalents à la distance parcourue avant la collision.",
+    "description_html": "Les dégâts infligés s’élèvent à 1d6 points de dégâts de force par niveau de lanceur de sorts (10d6 maximum). Si le déplacement pousse la cible dans l’emplacement occupé par une autre créature et que la distance restante est au moins égale à 3 mètres, le personnage peut tenter de renverser l’autre créature en ajoutant son grade au test de manœuvre offensive. Pour chaque créature que le personnage renverse à l’aide de sa cible, réduisez la distance de déplacement de la cible de 1,50 mètre. Si le déplacement pousse la cible contre un obstacle solide (tel qu’un mur ou un arbre), elle subit des dégâts de chute équivalents à la distance parcourue avant la collision."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing%20de%20force.ashx",
+    "cache_fichier": "cache/html/f30fc53a888deddafc2ce12db483259886d34ac0.html",
+    "recupere_le": "2026-07-28T23:03:53.010927+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "poing-de-force",
+    "resume_court": "Une attaque de contact qui inflige des dégâts de force et repousse la cible.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d4 dégâts de force par niveau",
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "poing-de-force",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:15+00:00",
+    "hash_source": "d26fdf204efe55fa7454c4ec8d8659f3fa8d838bac5973cb1f765673102a429c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e46bb21af0ee64f1c707431ce4105cbbe0b40fe0fcbe8cc3b152907db777b531",
+  "hash_vue": "e8df73d010ad3daf9521e9359612a6e2d5440ed048c455de62057b0c3471f979"
+}

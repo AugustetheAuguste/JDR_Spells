@@ -1,0 +1,73 @@
+{
+  "id": "serment-de-sacrifice",
+  "nom": "Serment de sacrifice",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serment%20de%20sacrifice.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage établit un puissant lien entre sa personne et une créature. Jusqu'à expiration du sort, à chaque fois que la cible est touchée par une attaque ou rate un jet de sauvegarde, le personnage peut subir la totalité des effets néfastes que la créature aurait dû endurer. S'il choisit de ne pas le faire, il reçoit, en contrecoup, un nombre de points de dégâts égal à sa valeur de Constitution. Les résistances et immunités du paladin s'appliquent normalement mais en dehors de cela, il ne peut ni réduire ni annuler les dégâts ou les effets du transfert ou du contrecoup. Si le personnage ou la cible se déplace hors de vue de l'autre, le sort se termine.",
+  "description_html": "<br/><br/>Le personnage établit un puissant lien entre sa personne et une créature. Jusqu'à expiration du sort, à chaque fois que la cible est touchée par une attaque ou rate un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, le personnage peut subir la totalité des effets néfastes que la créature aurait dû endurer. S'il choisit de ne pas le faire, il reçoit, en contrecoup, un nombre de points de dégâts égal à sa valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>. Les résistances et immunités du <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx\" title=\"Le paladin\">paladin</a> s'appliquent normalement mais en dehors de cela, il ne peut ni réduire ni annuler les dégâts ou les effets du transfert ou du contrecoup. Si le personnage ou la cible se déplace hors de vue de l'autre, le sort se termine.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serment%20de%20sacrifice.ashx",
+    "cache_fichier": "cache/html/55722e4934004d16b28dded27fe7e87a3ac0bb4e.html",
+    "recupere_le": "2026-07-29T07:40:22.449262+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "serment-de-sacrifice",
+    "resume_court": "Le lanceur établit un lien pour absorber les dégâts et effets néfastes destinés à une créature alliée.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts au lanceur en contrecoup (égal à sa Constitution), mais ce n'est pas un effet primaire du sort : c'est une pénalité pour refus de transfert. Les dégâts transférés ne sont pas du type_degats du sort lui-même, mais ceux de l'attaque originelle. Aucun type de dégâts n'est nommé dans la description du sort.",
+    "slug": "serment-de-sacrifice",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:36+00:00",
+    "hash_source": "e409c23943b0573b1274cc71fd857cd390e1b7eef88eddf2149c5d7d13e4488b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b0ffcfca23fcf88149c6e25254bf52ae85b3e3891cab219834ac93df694d865c",
+  "hash_vue": "452da91101f57d45a2c2d1236b5996d8ee1090abe6fa611d750ecc5aec94801a"
+}

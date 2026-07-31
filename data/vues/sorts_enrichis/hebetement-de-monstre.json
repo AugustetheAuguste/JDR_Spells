@@ -1,0 +1,144 @@
+{
+  "id": "hebetement-de-monstre",
+  "nom": "Hébétement de monstre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9b%c3%a9tement%20de%20monstre.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Con": 1,
+    "ConU": 1,
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "San": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un brin de laine ou une substance similaire)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 créature vivante de 6 DV ou moins",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme hébétement, si ce n’est qu’il peut affecter les créatures vivantes de tout type, pour autant qu’elles ne possèdent pas 7 DV ou plus.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9tement.ashx\" title=\"Hébétement\">hébétement</a></i>, si ce n’est qu’il peut affecter les créatures vivantes de tout type, pour autant qu’elles ne possèdent pas 7 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ou plus.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Hébétement"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9b%c3%a9tement%20de%20monstre.ashx",
+    "cache_fichier": "cache/html/6e98d93c3c54d36c2203a5fa320486c9db4e0ec0.html",
+    "recupere_le": "2026-07-28T22:55:55.442734+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "hebetement-de-monstre",
+    "resume_court": "Étourdit une créature vivante de 6 DV ou moins pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce sort fonctionne comme hébétement"
+      ],
+      "cible_typique": "1 créature vivante de 6 DV ou moins"
+    },
+    "notes_ambiguite": "Le texte renvoie à « hébétement » sans en reproduire les effets exacts. La condition « étourdi » est déduite du nom du sort et de la référence à hébétement, sort connu qui inflige cette condition. La durée est instantanée car l'effet se résout au round suivant sans persister au-delà.",
+    "slug": "hebetement-de-monstre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:07+00:00",
+    "hash_source": "00ab661296a764cc0553075cba99cd06e06d1f7d9d5781940382b968ac0b7ea4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "15aa6faa861a52519639d7b9707fbbdbdc517bc839bf3bc75bfd58dd5c7672a6",
+  "hash_vue": "8f8d7ed3bd3cd1651d092031f074580712ba8f8766452caf3d561925a48cb183"
+}

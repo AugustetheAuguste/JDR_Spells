@@ -1,0 +1,127 @@
+{
+  "id": "river-le-regard",
+  "nom": "River le regard",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.River%20le%20regard.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage oblige sa cible à le regarder, à l’exclusion de toute autre chose, pendant toute la durée du sort ou jusqu’à ce qu’il se décharge. Tant que la cible le fixe, elle détourne son regard de toutes les autres créatures qui bénéficient alors d’un camouflage contre ses attaques. Si la cible fait volontairement passer le personnage hors de sa ligne de mire, elle est aveugle pendant 1 round et le sort se termine. En revanche, si c’est le personnage qui sort volontairement de sa ligne de mire ou s’il tombe mort ou inconscient, la cible du sort ne subit aucun effet néfaste. Les créatures aveugles et les créatures immunisées contre les attaques de regard sont immunisées contre ce sort.",
+  "description_html": "<br/><br/>Le personnage oblige sa cible à le regarder, à l’exclusion de toute autre chose, pendant toute la durée du sort ou jusqu’à ce qu’il se décharge. Tant que la cible le fixe, elle détourne son regard de toutes les autres créatures qui bénéficient alors d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> contre ses attaques. Si la cible fait volontairement passer le personnage hors de sa ligne de mire, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveugle</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et le sort se termine. En revanche, si c’est le personnage qui sort volontairement de sa ligne de mire ou s’il tombe mort ou <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconscient</a>, la cible du sort ne subit aucun effet néfaste. Les créatures aveugles et les créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.immunit%c3%a9%20(capacit%c3%a9).ashx\" title=\"Immunité (Ext ou Sur)\">immunisées</a> contre les attaques de regard sont <a class=\"pagelink\" href=\"Pathfinder-RPG.immunit%c3%a9%20(capacit%c3%a9).ashx\" title=\"Immunité (Ext ou Sur)\">immunisées</a> contre ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.River%20le%20regard.ashx",
+    "cache_fichier": "cache/html/c598ff8b4e1e6993eb959f49366e50721c4f95b9.html",
+    "recupere_le": "2026-07-29T07:39:16.427794+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "river-le-regard",
+    "resume_court": "Force une créature à fixer le lanceur, la rendant aveugle aux autres et vulnérable.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est aveugle pendant 1 round"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "river-le-regard",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:06+00:00",
+    "hash_source": "7541872ed343ffdc1d3e2bb124ed1ed9d5476f11a970bbbd786c05f7e1741f7c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9c221a5f98a540efbd32c734fcd1e3803a1ea813fa74f7d4a0a08b8bfecb70cd",
+  "hash_vue": "8014081eedfb19e8593eb4ba5a28073ff299eecdb862904cf56ad583c31fa7eb"
+}

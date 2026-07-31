@@ -1,0 +1,75 @@
+{
+  "id": "teleportation-factice",
+  "nom": "Téléportation factice",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20factice.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle et contact",
+  "cible": "le personnage et une créature consentante",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "non",
+  "description": "Ce sort rend instantanément le personnage invisible comme avec invisibilité, mais crée une illusion visuelle et auditive qui fait croire à une téléportation. Le personnage peut également affecter une créature de taille M ou plus petite supplémentaire tous les 3 niveaux de lanceur de sorts (une créature de taille G compte pour deux créatures de taille M, une créature de taille TG compte pour quatre créatures de taille M, et ainsi de suite). Toutes les créatures affectées doivent être en contact les unes avec les autres, et au moins une d’elles doit être en contact avec le personnage.\nSi un spectateur identifie le sort avec un test d’Art de la magie réussi, il peut tenter un jet de Volonté immédiatement comme s'il interagissait avec une illusion. S’il réussit ce test, le spectateur peut identifier correctement le sort ; sinon, il y voit un sort de porte dimensionnelle, de téléportation ou une magie d’invocation similaire. Un jet de Volonté réussi n'annule pas l'invisibilité.",
+  "description_html": "<br/><br/>Ce sort rend instantanément le personnage invisible comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.invisibilit%c3%a9.ashx\" title=\"Invisibilité\">invisibilité</a></i>, mais crée une illusion visuelle et auditive qui fait croire à une téléportation. Le personnage peut également affecter une créature de taille M ou plus petite supplémentaire tous les 3 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (une créature de taille G compte pour deux créatures de taille M, une créature de taille TG compte pour quatre créatures de taille M, et ainsi de suite). Toutes les créatures affectées doivent être en contact les unes avec les autres, et au moins une d’elles doit être en contact avec le personnage.<br/><br/>Si un spectateur identifie le sort avec un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> réussi, il peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> immédiatement comme s'il interagissait avec une illusion. S’il réussit ce test, le spectateur peut identifier correctement le sort ; sinon, il y voit un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.porte%20dimensionnelle.ashx\" title=\"Porte dimensionnelle\">porte dimensionnelle</a></i>, de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> ou une magie d’<a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocation</a> similaire. Un jet de Volonté réussi n'annule pas l'invisibilité.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Origins/Origines occultes ; /!\\ Traduit par la communauté /!\\"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20factice.ashx",
+    "cache_fichier": "cache/html/784ca9c0016583bae903fa29d6c98a3b93f27511.html",
+    "recupere_le": "2026-07-29T07:42:00.547630+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "teleportation-factice",
+    "resume_court": "Le lanceur et ses alliés deviennent invisibles tandis qu'une illusion simule une téléportation.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "invisibilite_ou_dissimulation",
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature consentante"
+    },
+    "notes_ambiguite": "Le sort affecte le lanceur et des créatures consentantes : cible_typique pourrait être « soi » (le lanceur) ou « allie » (les créatures supplémentaires). J'ai choisi « allie » car le sort est décrit comme affectant « le personnage et une créature consentante », mettant l'accent sur les créatures alliées supplémentaires qui en sont la particularité mécanique.",
+    "slug": "teleportation-factice",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:18+00:00",
+    "hash_source": "57476a5b6da438ef90864c7cd5a3d3d7f52687b6c26d9061ebf23719a9d26b84"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4056fddf54a123606433707ae57cb930377135c291211561c19c2a94bf51cb7f",
+  "hash_vue": "f1414b68605c4c5bfb1f853eacebcecbeec645d463baa2eeb026e8934e2375d9"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "erreur-malencontreuse",
+  "nom": "Erreur malencontreuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Erreur%20malencontreuse.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Inq": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau ou jusqu'à déchargement",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage instille une malchance chez son adversaire qui déjoue même ses attaques les plus précises. La cible est incapable d'obtenir un critique potentiel pendant la durée de ce sort, même si le résultat de son jet aurait normalement été un critique potentiel. Si la créature obtient un 20 naturel, l'attaque reste une réussite automatique, quelle que soit la CA de sa victime, mais n'est pas éligible à un jet de confirmation critique. Une fois qu'un critique potentiel a été annulé par erreur malencontreuse, le sort se termine.",
+  "description_html": "<br/><br/>Le personnage instille une malchance chez son adversaire qui déjoue même ses attaques les plus précises. La cible est incapable d'obtenir un critique potentiel pendant la durée de ce sort, même si le résultat de son jet aurait normalement été un critique potentiel. Si la créature obtient un 20 naturel, l'attaque reste une réussite automatique, quelle que soit la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> de sa victime, mais n'est pas éligible à un jet de confirmation critique. Une fois qu'un critique potentiel a été annulé par <i>erreur malencontreuse</i>, le sort se termine.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Erreur%20malencontreuse.ashx",
+    "cache_fichier": "cache/html/8397b5487f29ba7cdcf68755d5584f3f6f88a4e5.html",
+    "recupere_le": "2026-07-28T22:52:32.272330+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "erreur-malencontreuse",
+    "resume_court": "La cible ne peut pas obtenir de critique potentiel pendant la durée du sort.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "malus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas une condition au sens strict (aveugle, paralysé, etc.), mais dégrade la capacité de la cible à infliger des coups critiques. Il s'agit d'un affaiblissement de capacité plutôt qu'une entrave ou une attaque directe. Le tag malus_chiffre reflète la perte d'efficacité au combat, bien que le malus soit qualitatif plutôt que numérique.",
+    "slug": "erreur-malencontreuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:34+00:00",
+    "hash_source": "4b8f8f793da40f3a240bd0f182e3ae62f1be8a5464fd2be07b855237cf69e7be"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fe4103c2c2bcb523f5601d409666f545fcca27de7f84199055a38a4f2ef05d05",
+  "hash_vue": "fe02a132388cf10fc362aed2857feaf73f8538850de6ec73d7027d7d5d1f8744"
+}

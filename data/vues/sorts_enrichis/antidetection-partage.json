@@ -1,0 +1,109 @@
+{
+  "id": "antidetection-partage",
+  "nom": "Antidétection (partagé)",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antid%c3%a9tection%20(partag%c3%a9).ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 4,
+    "Hyp": 4,
+    "Ens/Mag": 4,
+    "Occ": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (25 po de poussière de diamant par cible)",
+  "portee": "contact",
+  "cible": "créatures ou objets touchés",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort fonctionne comme antidétection mais la durée se divise entre les créatures ou les objets touchés, par portions de 1 heure.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.antid%c3%a9tection.ashx\" title=\"Antidétection\">antidétection</a></i> mais la durée se divise entre les créatures ou les objets touchés, par portions de 1 heure.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {
+    "sorts_lies": "Antidétection"
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antid%c3%a9tection%20(partag%c3%a9).ashx",
+    "cache_fichier": "cache/html/09c5751a2e58836120a5a312dd3d5e04598f453a.html",
+    "recupere_le": "2026-07-28T22:40:59.541367+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "antidetection-partage",
+    "resume_court": "Protège plusieurs créatures ou objets contre la détection magique en partageant une durée totale.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures ou objets touchés"
+    },
+    "notes_ambiguite": "Le texte renvoie à un sort « antidétection » non fourni et ne détaille pas le mécanisme exact de protection. La cible est interprétée comme « allie » car le sort est inoffensif et s'applique à des créatures volontaires ou des objets alliés.",
+    "slug": "antidetection-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:34+00:00",
+    "hash_source": "21629e623466817a4d92dc2df548aab83ff13c3072758409f39e2bb692063770"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "66dc1f04ac912128137c670f6db7f08f7ea4967ec55ec92ebd0554b3d3da052f",
+  "hash_vue": "b3771536d35ac785b60a8492d5c9131428ca85ecc20ac010b2e8fdd485d3f9de"
+}

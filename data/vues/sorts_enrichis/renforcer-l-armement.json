@@ -1,0 +1,130 @@
+{
+  "id": "renforcer-l-armement",
+  "nom": "Renforcer l'armement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renforcer%20larmement.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Occ": 1,
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (une épingle en métal)",
+  "portee": "contact",
+  "cible": "une armure ou une arme",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Le personnage renforce une arme ou une armure. Il l’améliore ou annule sa condition fragile temporairement. Une arme ou une armure fragile n’est plus considérée comme telle tant qu’elle se trouve sous l’effet de ce sort. Une armure ou une arme normale soumise à ce sort devient de maître et double sa solidité. Si le sort affecte une arme ou une armure magique, sa solidité double pendant la durée du sort.",
+  "description_html": "<hr/>\nLe personnage renforce une arme ou une armure. Il l’améliore ou annule sa condition <a class=\"pagelink\" href=\"Pathfinder-RPG.fragile.ashx\" title=\"fragile\">fragile</a> temporairement. Une arme ou une armure <a class=\"pagelink\" href=\"Pathfinder-RPG.fragile.ashx\" title=\"fragile\">fragile</a> n’est plus considérée comme telle tant qu’elle se trouve sous l’effet de ce sort. Une armure ou une arme normale soumise à ce sort devient <a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20de%20ma%c3%aetre.ashx\" title=\"arme de maître\">de maître</a> et double sa <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a>. Si le sort affecte une arme ou une <a class=\"pagelink\" href=\"Pathfinder-RPG.armures%20magiques.ashx\" title=\"Les armures et boucliers magiques\">armure magique</a>, sa <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> double pendant la durée du sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Renforcer l'armement (partagé)",
+      "id": "renforcer-l-armement-partage",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Ens/Mag": 2,
+        "Magus": 2,
+        "Occ": 2,
+        "Prê": 2,
+        "Sor": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F/FD (une épingle en métal)",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "10 minutes/niveau",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+      "resistance_magie": "oui (inoffensif, objet)",
+      "description": "Ce sort fonctionne comme renforcer l’armement mais la durée se divise entre les objets touchés, par portions de 10 minutes.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.renforcer%20larmement.ashx\" title=\"Renforcer l'armement\">renforcer l’armement</a></i> mais la durée se divise entre les objets touchés, par portions de 10 minutes.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renforcer%20larmement.ashx",
+    "cache_fichier": "cache/html/d2ed61eea28d99942578eeb76d8410eb99e143ce.html",
+    "recupere_le": "2026-07-29T07:37:59.331976+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "renforcer-l-armement",
+    "resume_court": "Renforce une arme ou une armure, annulant sa fragilité ou doublant sa solidité.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une armure ou une arme"
+    },
+    "notes_ambiguite": null,
+    "slug": "renforcer-l-armement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:45+00:00",
+    "hash_source": "5b1fc2804682b5711389a262f5842259089edb23e8ab168992093a361735ac09"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "74a33ab983389e05c97cf4912c7cd2845358088536e657f8b65896bd13ae2f24",
+  "hash_vue": "eb15029133d8540596fc05930b187bf2d583a45196efee5bf04346d3eacc0225"
+}

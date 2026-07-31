@@ -1,0 +1,83 @@
+{
+  "id": "crime-de-situation",
+  "nom": "Crime de situation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crime%20de%20situation.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Antipal": 1,
+    "Hyp": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une bourse fendue)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage éveille une pulsion criminelle chez la cible, la poussant à commettre un acte criminel comme si elle était affectée par un sort de vague de criminalité.",
+  "description_html": "<br/><br/>Le personnage éveille une pulsion criminelle chez la cible, la poussant à commettre un acte criminel comme si elle était affectée par un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.vague%20de%20criminalit%c3%a9.ashx\" title=\"Vague de criminalité\">vague de criminalité</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crime%20de%20situation.ashx",
+    "cache_fichier": "cache/html/f0b1543bc3e5e0043b4aeb7f00d9f58f61f92ec2.html",
+    "recupere_le": "2026-07-28T22:49:48.182184+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "crime-de-situation",
+    "resume_court": "Le lanceur éveille une pulsion criminelle chez une créature pour 1 round.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La durée est 1 round, ce qui est très court mais non instantané ; cependant, le texte ne décrit pas une condition persistante au sens des conditions listées. Le sort impose une compulsion comportementale plutôt qu'une condition mécanique nommée. Aucune condition de la liste ne s'applique précisément.",
+    "slug": "crime-de-situation",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:11+00:00",
+    "hash_source": "06edebc8818534a4104b2eeb70484ae6ef0193d0bc5141440eddd4a98126f15a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "12a3676fe6eaadc7ecefca0af80dd88489a5ebc310d595656c2ecc278d9cfc3b",
+  "hash_vue": "dc2d66b3d96a9767229f2a086fa9e5e49699cb5b036b51ba4adeac57d63c5d7e"
+}

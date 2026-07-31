@@ -1,0 +1,79 @@
+{
+  "id": "prison-de-glace-de-groupe",
+  "nom": "Prison de glace de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prison%20de%20glace%20de%20groupe.ashx",
+  "ecole": "évocation",
+  "descripteurs": [
+    "froid"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature/niveau qui doivent être distantes de moins de 9m (2 c) les unes des autres",
+  "duree": "1 minute/niveau, voir texte",
+  "jet_de_sauvegarde": "Réflexes, partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme prison de glace sauf ce qui est indiqué plus haut.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.prison%20de%20glace.ashx\" title=\"Prison de glace\">prison de glace</a></i> sauf ce qui est indiqué plus haut.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {
+    "sorts_lies": "Prison de glace"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Prison%20de%20glace%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/2c18de6a945883d73aad2f097eda34d4b9a47ee3.html",
+    "recupere_le": "2026-07-28T23:04:42.053927+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "prison-de-glace-de-groupe",
+    "resume_court": "Emprisonne plusieurs créatures dans de la glace, les immobilisant pour 1 minute par niveau.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau qui doivent être distantes de moins de 9m"
+    },
+    "notes_ambiguite": "Le texte renvoie à « prison de glace » sans en fournir la description complète. Les conditions infligées ne peuvent être déterminées que si le sort de base était fourni. La catégorie « entrave » et les tags « entrave_ou_immobilisation » et « plusieurs_cibles » sont déduits du nom, de la portée et de la mécanique (immobilisation par glace), mais sans preuve textuelle explicite de la condition infligée.",
+    "slug": "prison-de-glace-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:54+00:00",
+    "hash_source": "4bbf779c51c7aef55448033fd49aa9f19637fe3b8c289d4120ca378c79149a3e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "160a2b8da8aac5aa24f89c15dc0a5d55b31a0631fdf237f29c3d6a36128c2729",
+  "hash_vue": "12f32f37629db8e0f48d6fcd282bfeed98332b5665cfebfcd6f61124f95a55a9"
+}

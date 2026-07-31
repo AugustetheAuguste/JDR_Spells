@@ -1,0 +1,103 @@
+{
+  "id": "immobilisation-de-personne-de-groupe",
+  "nom": "Immobilisation de personne de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20personne%20de%20groupe.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 6,
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (un petit bout de fer bien droit)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 ou plusieurs humanoïdes, distants de moins de 9 m/6 c les uns des autres",
+  "duree": "1 round/niveau (T) (voir description)",
+  "jet_de_sauvegarde": "Volonté, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Les cibles du sort se figent et se retrouvent paralysées. Elles restent conscientes de ce qui se passe autour d’elles et peuvent respirer normalement mais ne peuvent entreprendre aucune action, pas même parler. Chaque round, lors de leur tour, elles peuvent effectuer un nouveau jet de sauvegarde pour tenter de mettre fin à l’effet. Il s’agit d’une action complexe qui ne provoque pas d’attaques d’opportunité. Si une créature ailée se retrouve paralysée, elle ne peut plus battre des ailes et tombe. Un nageur paralysé ne peut plus bouger et risque de se noyer.",
+  "description_html": "<br/><br/>Les cibles du sort se figent et se retrouvent <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysées</a>. Elles restent conscientes de ce qui se passe autour d’elles et peuvent respirer normalement mais ne peuvent entreprendre aucune action, pas même parler. Chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, lors de leur tour, elles peuvent effectuer un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a> pour tenter de mettre fin à l’effet. Il s’agit d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a> qui ne provoque pas d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a>. Si une créature ailée se retrouve <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysée</a>, elle ne peut plus battre des ailes et tombe. Un nageur <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysé</a> ne peut plus bouger et risque de se noyer.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20personne%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/329dc73178215921bf34cac9b22d2f9ea6c834f3.html",
+    "recupere_le": "2026-07-28T22:56:41.509762+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "immobilisation-de-personne-de-groupe",
+    "resume_court": "Paralyse un ou plusieurs humanoïdes dans une zone, les figeant complètement pendant plusieurs rounds.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "plusieurs_cibles",
+      "entrave_ou_immobilisation",
+      "charme_ou_coercition",
+      "zone_d_effet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les cibles du sort se figent et se retrouvent paralysées"
+      ],
+      "cible_typique": "1 ou plusieurs humanoïdes"
+    },
+    "notes_ambiguite": null,
+    "slug": "immobilisation-de-personne-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:20+00:00",
+    "hash_source": "1997cd485c3f74aa658786767a43354922cb1ee5f1c1db91fceba83c0c4e7cb3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a22bb2404ad8e323777cf3bd29aa101eba1048e93bf7ab6e3299336084d7404a",
+  "hash_vue": "1b1e8ac0dcd93a3b582683dc8f8a3739b2805927ba7e6983adfbdb9155974baf"
+}

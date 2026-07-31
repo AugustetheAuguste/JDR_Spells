@@ -1,0 +1,89 @@
+{
+  "id": "litanie-de-folie",
+  "nom": "Litanie de folie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20folie.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 4,
+    "Inq": 6
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round ou plus (voir plus bas)",
+  "jet_de_sauvegarde": "non, voir texte",
+  "resistance_magie": "oui",
+  "description": "Cette litanie est un sermon dément. La cible est confuse. Au début de chaque tour, elle doit faire un jet de Volonté contre l’effet de confusion (même DD que le sort). Si elle rate son jet de sauvegarde, elle reste confuse. Si elle réussit le jet, l’effet prend fin.\nQuand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>Cette litanie est un sermon dément. La cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a>. Au début de chaque tour, elle doit faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> contre l’effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confusion</a> (même <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> que le sort). Si elle rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle reste <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a>. Si elle réussit le jet, l’effet prend fin.<br/><br/>Quand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20folie.ashx",
+    "cache_fichier": "cache/html/781fe6053836898b79322a277d8a98f05fa25c6f.html",
+    "recupere_le": "2026-07-28T22:58:47.648096+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "litanie-de-folie",
+    "resume_court": "Une litanie qui rend la cible confuse ; elle peut tenter un jet de Volonté chaque round pour s'en libérer.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "communication_ou_langage",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La cible est confuse"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "litanie-de-folie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:10+00:00",
+    "hash_source": "a212f4bab5cf826e48141f87cd2a05f45e261b1544fba8ff20760c714e0806c4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a4d988657b9cf1951dc8c957a1f8ae7a97ed3921fca416d02f393800532047e8",
+  "hash_vue": "3360c172ce3ce9e165492f7d001084ff0788ff4e66fb94ce0a3f86ed90e26506"
+}

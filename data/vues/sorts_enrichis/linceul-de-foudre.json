@@ -1,0 +1,96 @@
+{
+  "id": "linceul-de-foudre",
+  "nom": "Linceul de foudre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Linceul%20de%20foudre.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Dru": 3,
+    "Ens/Mag": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "étendue de 6 m (4 c) de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, partiel",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts crée un éclair éblouissant d’électricité qui emplit la zone cible. Linceul de foudre inflige 1 point de dégâts d’électricité à toutes les créatures présentes dans la zone d’effet (pas de jet de sauvegarde). La véritable puissance du sort ne réside cependant pas dans les dégâts qu’il inflige mais dans la douleur accablante que provoque l’éclair. L’éclair et le choc soudains hébètent les créatures vivantes pendant 1 round si elles échouent leur jet de sauvegarde. Les créatures qui réussissent leur jet de sauvegarde sont, quant à elles, éblouies pendant 1 round. Toute créature portant une armure en métal subit un malus de -2 à ce jet de sauvegarde.",
+  "description_html": "<br/><br/>Le lanceur de sorts crée un éclair éblouissant d’électricité qui emplit la zone cible. <i>Linceul de foudre</i> inflige 1 point de dégâts d’électricité à toutes les créatures présentes dans la zone d’effet (pas de <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>). La véritable puissance du sort ne réside cependant pas dans les dégâts qu’il inflige mais dans la douleur accablante que provoque l’éclair. L’éclair et le choc soudains <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébètent</a> les créatures vivantes pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> si elles échouent leur jet de sauvegarde. Les créatures qui réussissent leur jet de sauvegarde sont, quant à elles, <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouies</a> pendant 1 round. Toute créature portant une armure en métal subit un malus de -2 à ce jet de sauvegarde.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "NPC Codex, NPC Guide, Rival Guide/Manuel des PNJ"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Linceul%20de%20foudre.ashx",
+    "cache_fichier": "cache/html/520fedc67926c452a1da5d99790193f5f495e967.html",
+    "recupere_le": "2026-07-28T22:58:43.649965+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "linceul-de-foudre",
+    "resume_court": "Un éclair électrique qui blesse toutes les créatures d'une zone et les étourdit ou les éblouit.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "electricite",
+    "condition_infligee": [
+      "etourdi",
+      "ebloui"
+    ],
+    "preuves": {
+      "type_degats": "1 point de dégâts d'électricité",
+      "condition_infligee": [
+        "hébètent les créatures vivantes pendant 1 round si elles échouent leur jet de sauvegarde",
+        "éblouies pendant 1 round"
+      ],
+      "cible_typique": "étendue de 6 m (4 c) de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "linceul-de-foudre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:08+00:00",
+    "hash_source": "956479a97cc08431226911d09e8c6f157595077062e9dd9730cd15de10725eb8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f563de28ec9cee8a0b3c79cace3bf53e53400a88573b3856e2de8a04f095e1a3",
+  "hash_vue": "19a991a84f68bc4c0bae43d9cb831a19da833b579c3fbfa2e6523e16d79f5814"
+}

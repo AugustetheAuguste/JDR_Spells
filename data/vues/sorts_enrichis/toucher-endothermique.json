@@ -1,0 +1,112 @@
+{
+  "id": "toucher-endothermique",
+  "nom": "Toucher endothermique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20endothermique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (petit bout de peau de serpent)",
+  "portee": "contact",
+  "cible": "une créature vivante de type dragon ou de sous-type reptilien",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort ralentit le métabolisme et les fonctions corporelles d’une créature pendant une courte période. La cible est chancelante et se déplace à la moitié de sa vitesse (arrondie à l’inférieur au facteur de 1,50 mètre le plus proche). En revanche, elle peut retenir son souffle deux fois plus longtemps que d’habitude.",
+  "description_html": "<br/><br/>Ce sort ralentit le métabolisme et les fonctions corporelles d’une créature pendant une courte période. La cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> et se déplace à la moitié de sa vitesse (arrondie à l’inférieur au facteur de 1,50 mètre le plus proche). En revanche, elle peut retenir son souffle deux fois plus longtemps que d’habitude.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "autres": {
+    "Cette option est plus courante chez les hommes-lézards": null
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20endothermique.ashx",
+    "cache_fichier": "cache/html/e4931d190739aa8e3a36cc045f6a219e780dea1e.html",
+    "recupere_le": "2026-07-29T07:42:46.723324+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "toucher-endothermique",
+    "resume_court": "Ralentit le métabolisme d'une créature dragon ou reptilienne, la rendant chancelante et réduisant sa vitesse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "malus_chiffre",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La cible est chancelante"
+      ],
+      "cible_typique": "une créature vivante de type dragon ou de sous-type reptilien"
+    },
+    "notes_ambiguite": null,
+    "slug": "toucher-endothermique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:35+00:00",
+    "hash_source": "3090b4dcad8fd12fd17c2e6c3838f17b6ad36c64ec655e0fb1875f19092392c7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9117fc8f6fa0724b93f94a9256f706e611f9df6475eda0dceb4b546d8206ffe7",
+  "hash_vue": "cbe5be75da21c6203c62fb58f7192ec997409ed6da9e9f63871d31e3cbf5a3f7"
+}

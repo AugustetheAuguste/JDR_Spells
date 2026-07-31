@@ -1,0 +1,107 @@
+{
+  "id": "foulee-urbaine",
+  "nom": "Foulée urbaine",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Foul%c3%a9e%20urbaine.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Occ": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de toile d'araignée)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "deux portes (ou autres portails) à portée",
+  "duree": "1 round",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage créé un lien magique entre deux portes (ou d'autres portails physiques, comme des fenêtres) qui doivent tous deux être à portée et vers lesquels il a une ligne de vue et une ligne d'effet directe. Pendant la durée du sort, il peut se déplacer à travers l'un des deux portails. Lorsqu'il le fait, il est téléporté à l'autre portail et réapparaît dans une direction au choix. Les deux portails doivent être ouverts et dégagés lorsque le personnage lance le sort et traverse le premier portail, et ils doivent être assez large pour l'accueillir, autrement le sort se termine et la téléportation échoue. Le personnage peut transporter des objets et des créatures avec lui, mais les créatures qui ne peuvent pas passer le portail ne sont pas téléportées. Une fois que le personnage a traversé, le sort se termine et il ne peut plus entreprendre d'autre action avant son prochain tour.",
+  "description_html": "<br/><br/>Le personnage créé un lien magique entre deux portes (ou d'autres portails physiques, comme des fenêtres) qui doivent tous deux être à portée et vers lesquels il a une ligne de vue et une ligne d'effet directe. Pendant la durée du sort, il peut se déplacer à travers l'un des deux portails. Lorsqu'il le fait, il est téléporté à l'autre portail et réapparaît dans une direction au choix. Les deux portails doivent être ouverts et dégagés lorsque le personnage lance le sort et traverse le premier portail, et ils doivent être assez large pour l'accueillir, autrement le sort se termine et la téléportation échoue. Le personnage peut transporter des objets et des créatures avec lui, mais les créatures qui ne peuvent pas passer le portail ne sont pas téléportées. Une fois que le personnage a traversé, le sort se termine et il ne peut plus entreprendre d'autre action avant son prochain tour.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Foul%c3%a9e%20urbaine.ashx",
+    "cache_fichier": "cache/html/bafa8396703d8012236de4e778deb77577bd0465.html",
+    "recupere_le": "2026-07-28T22:54:47.371665+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "foulee-urbaine",
+    "resume_court": "Le lanceur crée un lien magique entre deux portes et peut se téléporter entre elles pendant 1 round.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "deux portes (ou autres portails) à portée"
+    },
+    "notes_ambiguite": null,
+    "slug": "foulee-urbaine",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:34+00:00",
+    "hash_source": "ee2b999dcdd79979950f2ee0f35c4299cd751b015f6d64f46d0f5a91d8927a80"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "efebc00554aeedc1046f0ea5c6ea5056ca23bdab3c891d84451375890dc51b7d",
+  "hash_vue": "8a5beb15fbbd79ce3273188730af7cb51d07554de98eccd9bd07d3e0d022b62c"
+}

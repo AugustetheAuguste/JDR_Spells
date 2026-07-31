@@ -1,0 +1,123 @@
+{
+  "id": "caresse-vaseuse",
+  "nom": "Caresse vaseuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Caresse%20vaseuse.ashx",
+  "ecole": "invocation (création)",
+  "descripteurs": [
+    "maladie"
+  ],
+  "niveaux": {
+    "Alch": 4,
+    "Dru": 4,
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "San": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte d’acide et une sphère de verre noire)",
+  "portee": "contact",
+  "cible": "une créature vivante touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage génère une couche de vase autour de sa main. Quand il réussit une attaque de contact avec, la vase se décolle du personnage et reste attachée à la cible. Elle agit alors comme un limon vert et inflige 1d3 points d’affaiblissement de Constitution par round. Tout ce qui permet de se débarrasser d’un limon vert (en le grattant, en le gelant, en le brûlant, en le coupant, avec la lumière du soleil ou avec guérison des maladies) détruit la couche de vase. Si le limon tue une créature, il la dévore et meurt ensuite. Il ne peut pas se transférer sur une créature autre que sa cible originelle et meurt s’il en est séparé.",
+  "description_html": "<br/><br/>Le personnage génère une couche de vase autour de sa main. Quand il réussit une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact.ashx\" title=\"attaque de contact\">attaque de contact</a> avec, la vase se décolle du personnage et reste attachée à la cible. Elle agit alors comme un limon vert et inflige 1d3 points d’affaiblissement de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Tout ce qui permet de se débarrasser d’un limon vert (en le grattant, en le gelant, en le brûlant, en le coupant, avec la lumière du soleil ou avec <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20des%20maladies.ashx\" title=\"Guérison des maladies\">guérison des maladies</a>)\ndétruit la couche de vase. Si le limon tue une créature, il la dévore et meurt ensuite. Il ne peut pas se transférer sur une créature autre que sa cible originelle et meurt s’il en est séparé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Caresse%20vaseuse.ashx",
+    "cache_fichier": "cache/html/b0f2dc303aa54fe332e3243020fc83db0774fc3a.html",
+    "recupere_le": "2026-07-28T22:45:40.682259+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "caresse-vaseuse",
+    "resume_court": "Une attaque de contact qui colle une vase à la cible, lui infligeant 1d3 points d'affaiblissement de Constitution par round.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement de Constitution (dégradation de capacité) plutôt que des dégâts directs. Bien que la vase agisse « comme un limon vert », le texte ne nomme pas explicitement un type de dégâts énergétique ou physique, seulement l'effet mécanique d'affaiblissement. La catégorie est attaque_directe car le sort passe par une attaque de contact et produit un effet nuisible immédiat.",
+    "slug": "caresse-vaseuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:32+00:00",
+    "hash_source": "3d9364f52aa9ab63b9379f690ef65877e39d9ae67e7e4318abfd021b23e2b9f4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "90bac9d4df1dd1d3625c7c25f706cc73001cf48b61f209def9b814db897f07d4",
+  "hash_vue": "0354a7003fdb600485aa6470b5d1f18f22e68218ebc6c14bd6bface737f09133"
+}

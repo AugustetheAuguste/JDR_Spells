@@ -1,0 +1,116 @@
+{
+  "id": "visage-du-devoreur",
+  "nom": "Visage du dévoreur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Visage%20du%20d%c3%a9voreur.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [],
+  "niveaux": {
+    "Adepte": 1,
+    "Antipal": 1,
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Prê": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage transforme le visage de la cible en une forme hideuse, une chose à moitié fondue avec des pattes d'insecte à la place des dents, des trous suppurants à la place des yeux et des langues pendantes. Il ne choisit pas la forme que prend le visage de la cible et elle est différente à chaque fois qu'il lance le sort. Cette transformation n'interfère pas avec les sens de sa victime ou sa capacité à respirer, mais elle peut l'empêcher de parler. La cible obtient un bonus de circonstances de +4 aux tests d'Intimidation.\nSi celle-ci n'a normalement pas de morsure, elle gagne une attaque naturelle de morsure pour la durée du sort. Cette attaque inflige 1d6 points de dégâts si la cible est de taille M, 1d4 si elle est de taille P ou 1d8 si elle est de taille G. La cible peut utiliser cette morsure comme une attaque primaire ou secondaire.",
+  "description_html": "<br/><br/>Le personnage transforme le visage de la cible en une forme hideuse, une chose à moitié fondue avec des pattes d'insecte à la place des dents, des trous suppurants à la place des yeux et des langues pendantes. Il ne choisit pas la forme que prend le visage de la cible et elle est différente à chaque fois qu'il lance le sort. Cette transformation n'interfère pas avec les sens de sa victime ou sa capacité à respirer, mais elle peut l'empêcher de parler. La cible obtient un bonus de circonstances de +4 aux tests d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a>.<br/><br/>Si celle-ci n'a normalement pas de morsure, elle gagne une <a class=\"pagelink\" href=\"Pathfinder-RPG.Attaques%20naturelles%20(capacit%c3%a9).ashx\" title=\"Attaques naturelles\">attaque naturelle</a> de morsure pour la durée du sort. Cette attaque inflige 1d6 points de dégâts si la cible est de taille M, 1d4 si elle est de taille P ou 1d8 si elle est de taille G. La cible peut utiliser cette morsure comme une attaque primaire ou secondaire.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Rovagug."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Visage%20du%20d%c3%a9voreur.ashx",
+    "cache_fichier": "cache/html/fb14ed8710a5f7e18ee8a3087fbfdbd4099f0921.html",
+    "recupere_le": "2026-07-29T07:44:14.145208+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "visage-du-devoreur",
+    "resume_court": "Transforme le visage de la cible en forme hideuse et lui confère une attaque de morsure.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "bonus_chiffre",
+      "degats_directs",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort transforme le sujet et lui confère des avantages (bonus d'Intimidation, attaque de morsure), ce qui le classe en amélioration plutôt qu'en affaiblissement. Le type de dégâts est contondant par défaut pour une morsure non spécifiée autrement. La cible peut être un allié puisque le sort est inoffensif et autorise un jet de sauvegarde.",
+    "slug": "visage-du-devoreur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:12+00:00",
+    "hash_source": "872b0c6f69c5055f2e3a5bf1c07f1989663ae6a7b64fc7de29c7aea67daef50c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8fb3beb995a0f3a58050a2cc9f2338429fb2a8ac090a067a422a5e39fa83ed12",
+  "hash_vue": "3a0cee42c163d31294b6aeac0845c57a363053eb79b17080b7ff2be0224bdbdd"
+}

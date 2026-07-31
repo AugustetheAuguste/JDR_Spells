@@ -1,0 +1,83 @@
+{
+  "id": "convocation-de-gardien-ancestral",
+  "nom": "Convocation de gardien ancestral",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocation%20de%20gardien%20ancestral.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (une effigie en pierre ou en métal de l’ancêtre du personnage)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "deux esprits d’ancêtres convoqués",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage peut demander aux esprits de deux ancêtres qu’ils se manifestent dans le monde des mortels pour attaquer ses ennemis. Chaque esprit ressemble à un nain translucide, sage et puissant, doté d’une arme naine traditionnelle de son choix. Ces esprits se déplacent et attaquent selon les choix du personnage et chacun détient les pouvoirs d’une arme spirituelle, sauf qu’ils peuvent attaquer des cibles différentes et infliger des dégâts physiques (de type contondant, perforant ou tranchant, en fonction de l’arme brandie par l’esprit) à la place des dégâts de force. Comme toute créature convoquée par le biais d’une convocation de monstres, les ancêtres du personnage ne meurent pas vraiment si leur manifestation est détruite.",
+  "description_html": "<br/><br/>Le personnage peut demander aux esprits de deux ancêtres qu’ils se manifestent dans le monde des mortels pour attaquer ses ennemis. Chaque esprit ressemble à un nain translucide, sage et puissant, doté d’une arme naine traditionnelle de son choix. Ces esprits se déplacent et attaquent selon les choix du personnage et chacun détient les pouvoirs d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20spirituelle.ashx\" title=\"Arme spirituelle\">arme spirituelle</a></i>, sauf qu’ils peuvent attaquer des cibles différentes et infliger des dégâts physiques (de type contondant, perforant ou tranchant, en fonction de l’arme brandie par l’esprit) à la place des dégâts de force. Comme toute créature convoquée par le biais d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20de%20monstres%20I.ashx\" title=\"Convocation de monstres I\">convocation de monstres</a></i>, les ancêtres du personnage ne meurent pas vraiment si leur manifestation est détruite.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocation%20de%20gardien%20ancestral.ashx",
+    "cache_fichier": "cache/html/0af5fe5de573b86244d5a49e0e5681caae39426a.html",
+    "recupere_le": "2026-07-28T22:48:15.753844+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "convocation-de-gardien-ancestral",
+    "resume_court": "Convoque deux esprits d'ancêtres nains qui attaquent les ennemis du lanceur selon ses ordres.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "plusieurs_cibles",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "dégâts physiques (de type contondant, perforant ou tranchant, en fonction de l'arme brandie par l'esprit)",
+      "condition_infligee": [],
+      "cible_typique": "attaquer ses ennemis"
+    },
+    "notes_ambiguite": "Le type de dégâts peut être contondant, perforant ou tranchant selon l'arme de l'esprit ; contondant est retenu comme valeur par défaut, mais le sort est polymorphe sur ce point.",
+    "slug": "convocation-de-gardien-ancestral",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:39+00:00",
+    "hash_source": "2deb5e5c4ba6e7b7eea3328621653fb3771a4ff74dde88369137e94ef953d187"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3f3d58e58ee716cf31e9ae58da76e608de6c706817331bbe66db7d8d96d1b0f4",
+  "hash_vue": "4e88d5afe5edf92c1142cbc567160638f3635f5b3c3d5e9bb2b25069bbb5853c"
+}

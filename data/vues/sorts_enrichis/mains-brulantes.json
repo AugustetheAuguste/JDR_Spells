@@ -1,0 +1,119 @@
+{
+  "id": "mains-brulantes",
+  "nom": "Mains brûlantes",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mains%20br%c3%bblantes.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Occ": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "4,50 m (3 c)",
+  "cible": "rayonnement en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Un cône de flammes jaillit des mains tendues du personnage. Toutes les créatures prises dans ce cône subissent 1d4 points de dégâts de feu par niveau de lanceur de sorts (jusqu’à un maximum de 5d4). Les matières inflammables prennent feu si elles sont exposées aux flammes. N’importe qui peut les éteindre par une action complexe.",
+  "description_html": "<br/><br/>Un <a class=\"pagelink\" href=\"Pathfinder-RPG.c%c3%b4ne.ashx\" title=\"cône\">cône</a> de flammes jaillit des mains tendues du personnage. Toutes les créatures prises dans ce <a class=\"pagelink\" href=\"Pathfinder-RPG.c%c3%b4ne.ashx\" title=\"cône\">cône</a> subissent 1d4 points de dégâts de feu par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (jusqu’à un maximum de 5d4). Les matières inflammables <a class=\"pagelink\" href=\"Pathfinder-RPG.Dangers%20naturels.ashx#PRENDREFEU\" title=\"Les dangers naturels\">prennent feu</a> si elles sont exposées aux flammes. N’importe qui peut les éteindre par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a>.<br/><br/>",
+  "mythique": {
+    "description": "La portée du sort s’élève à 6 mètres et il inflige 1d6 points de dégâts de feu par niveau de lanceur de sorts (5d6 maximum).",
+    "description_html": "La portée du sort s’élève à 6 mètres et il inflige 1d6 points de dégâts de feu par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (5d6 maximum)."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mains%20br%c3%bblantes.ashx",
+    "cache_fichier": "cache/html/8ec80f65baa839186d40d93133ea56acb483bcac.html",
+    "recupere_le": "2026-07-28T22:59:41.721070+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "mains-brulantes",
+    "resume_court": "Un cône de flammes inflige des dégâts de feu à toutes les créatures dans sa zone.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": null,
+    "slug": "mains-brulantes",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:24+00:00",
+    "hash_source": "48aa5a087c7676e2c97986cdd55687b7f2d48c16645a9c6c1d5c8db06f3c6b67"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "59816a2277ada4b891411b6cc6cec56f9e15a3189a73114839d05514cbf1ccc9",
+  "hash_vue": "bb70268a1956db895d8dbadb7e36cf6d95f418d99f7ab788debe797334dc3683"
+}

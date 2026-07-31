@@ -1,0 +1,89 @@
+{
+  "id": "litanie-de-defense",
+  "nom": "Litanie de défense",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20d%c3%a9fense.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 2,
+    "Inq": 2,
+    "Pal": 2
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Les défenses du personnage se renforcent quand il invoque cette litanie. Tous les bonus d’altération de son armure doublent et il est immunisé contre la peur.\nQuand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>Les défenses du personnage se renforcent quand il invoque cette litanie. Tous les bonus d’altération de son armure doublent et il est <a class=\"pagelink\" href=\"Pathfinder-RPG.immunit%c3%a9.ashx\" title=\"Immunité\">immunisé</a> contre la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">peur</a>.<br/><br/>Quand il est sous l’effet de ce sort, il ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20d%c3%a9fense.ashx",
+    "cache_fichier": "cache/html/ae05bcb6f576e520632812ea51083550dfcc7010.html",
+    "recupere_le": "2026-07-28T22:58:45.670608+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "litanie-de-defense",
+    "resume_court": "Le lanceur double les bonus d'altération de son armure et devient immunisé à la peur pendant 1 round.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "duree_instantanee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "La durée est 1 round (instantanée en pratique tactique), mais le sort confère des bonus et une immunité qui persistent pendant ce round. Le tag `duree_instantanee` reflète que l'effet se résout en un round de combat, bien que techniquement la durée soit nommée. L'immunité à la peur n'est pas une condition infligée au sens de la liste (qui concerne les états négatifs imposés), mais une protection.",
+    "slug": "litanie-de-defense",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:09+00:00",
+    "hash_source": "d2173bcf2079a1f3454ce0d887731e5ce13cdedd653721b91b1de1dea3601e33"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "dae8fa9cb1b02c9f440a0f68b9a8d27846adf8d6cabf55bd44c932a6529c6815",
+  "hash_vue": "ec386d91d1abf2dedc32f74a91081497914f640cbb5469632d54bc19a304f330"
+}

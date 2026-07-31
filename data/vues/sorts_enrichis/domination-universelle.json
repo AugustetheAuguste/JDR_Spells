@@ -1,0 +1,103 @@
+{
+  "id": "domination-universelle",
+  "nom": "Domination universelle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Domination%20universelle.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Con": 6,
+    "Ens/Mag": 9,
+    "Psy": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort est semblable à domination, si ce n’est qu’il n’est pas limité par le type de la cible.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.domination.ashx\" title=\"Domination\">domination</a></i>, si ce n’est qu’il n’est pas limité par le type de la cible.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Domination"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Domination%20universelle.ashx",
+    "cache_fichier": "cache/html/484f9bdc778c4249fbb475058b0ff7bc03b40171.html",
+    "recupere_le": "2026-07-28T22:51:35.186739+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "domination-universelle",
+    "resume_court": "Enchantement mental qui soumet une créature à la volonté du lanceur pour 1 jour par niveau.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le texte ne décrit pas précisément les effets du sort au-delà de la référence à « domination » ; on en déduit qu'il s'agit d'une coercition mentale sans dégâts directs ni condition nommée autre que la soumission implicite.",
+    "slug": "domination-universelle",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:56+00:00",
+    "hash_source": "8064e02398faa3d3fcb5fc8cdbd70c55d8b9d17dc7282979aa1fa3df3f7ff710"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6f98ed72364549768def436ce80438353e352336c4486ca2f1ae3d37a9e29dba",
+  "hash_vue": "d9c188f1cd77e2e9e71ac911e70e4bc924c7028d4d4bff8cdef7d0fd83dcc926"
+}

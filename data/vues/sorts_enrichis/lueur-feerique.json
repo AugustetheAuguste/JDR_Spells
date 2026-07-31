@@ -1,0 +1,95 @@
+{
+  "id": "lueur-feerique",
+  "nom": "Lueur féerique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lueur%20f%c3%a9erique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Hyp": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "créatures et objets pris dans un rayonnement de 1,50 m (1 c) de rayon",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Une lueur blafarde entoure les cibles, ce qui les rend plus visibles. Cette lumière éclaire autant qu’une bougie. Les créatures affectées subissent un malus de -20 aux tests de Discrétion et ne peuvent bénéficier du camouflage normalement lié à l’obscurité (bien qu’un sort de ténèbres de 2e niveau ou plus fonctionne normalement) ou à des sorts tels que déplacement, flou ou invisibilité. La lumière est trop faible pour avoir un quelconque effet spécial sur les morts-vivants ou les créatures vivant dans le noir et vulnérables à la lumière. La lueur féerique peut être bleue, verte ou violette, ce choix étant effectué lors de l’incantation. Elle ne fait aucun mal aux objets ou créatures qu’elle entoure.",
+  "description_html": "<br/><br/>Une lueur blafarde entoure les cibles, ce qui les rend plus visibles. Cette lumière éclaire autant qu’une bougie. Les créatures affectées subissent un malus de -20 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Discr%c3%a9tion.ashx\" title=\"Discrétion\">Discrétion</a> et ne peuvent bénéficier du <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> normalement lié à l’obscurité (bien qu’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9n%c3%a8bres.ashx\" title=\"Ténèbres\">ténèbres</a></i> de 2e niveau ou plus fonctionne normalement) ou à des sorts tels que <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placement.ashx\" title=\"Déplacement\">déplacement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.flou.ashx\" title=\"Flou\">flou</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.invisibilit%c3%a9.ashx\" title=\"Invisibilité\">invisibilité</a></i>. La lumière est trop faible pour avoir un quelconque effet spécial sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> ou les créatures vivant dans le noir et vulnérables à la lumière. La <i>lueur féerique</i> peut être bleue, verte ou violette, ce choix étant effectué lors de l’incantation. Elle ne fait aucun mal aux objets ou créatures qu’elle entoure.<br/><br/>",
+  "mythique": {
+    "description": "Les créatures entourées par la lueur sont éblouies. Le sort entoure les illusions de type chimère situées dans le rayonnement et révèle leur véritable nature. Cet effet s’applique uniquement aux chimères dont le niveau de lanceur de sorts est égal ou inférieur au grade du personnage.\nAmplifié (2ème). Si le personnage dépense deux utilisations de pouvoir mythique, chaque créature dans le rayonnement doit réussir un jet de Vigueur pour ne pas être aveuglée pendant un round.",
+    "description_html": "Les créatures entourées par la lueur sont éblouies. Le sort entoure les illusions de type chimère situées dans le rayonnement et révèle leur véritable nature. Cet effet s’applique uniquement aux chimères dont le <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> est égal ou inférieur au <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (2ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, chaque créature dans le rayonnement doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour ne pas être aveuglée pendant un round."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lueur%20f%c3%a9erique.ashx",
+    "cache_fichier": "cache/html/8cfbe54f912d91cbc25b145eff01ef5e2c0de61a.html",
+    "recupere_le": "2026-07-28T22:59:04.662465+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lueur-feerique",
+    "resume_court": "Une lueur blafarde entoure les cibles, les rendant plus visibles et pénalisant leur discrétion.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "zone_d_effet",
+      "malus_chiffre",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures et objets pris dans un rayonnement de 1,50 m (1 c) de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "lueur-feerique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:15+00:00",
+    "hash_source": "9101081f34f1df83d20df8f1768e33a34d2e97e1eef01d378f3a02171fddf73b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2af36d47405d4a4ab11f8e35db269e84c774b7601b931f8846c057c9b81f9792",
+  "hash_vue": "2cd1ad5f8aa027f27ef5d2f391f3038a41a1931eb54accb2e9d0015ace1f7129"
+}

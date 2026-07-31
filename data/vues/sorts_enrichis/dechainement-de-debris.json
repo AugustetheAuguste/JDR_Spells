@@ -1,0 +1,130 @@
+{
+  "id": "dechainement-de-debris",
+  "nom": "Déchaînement de débris",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9cha%c3%aenement%20de%20d%c3%a9bris.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Prê": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau)",
+  "cible": "une nuée de pierres",
+  "duree": "concentration + 2 rounds",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "Oui",
+  "description": "Le lanceur de sorts anime une zone de débris, de graviers ou autres petits cailloux, et crée une zone dangereuse de débris déferlant. Les débris animés occupent un espace de 3 mètres de côté et agissent comme une nuée, blessant (1d6 points de vie) et distrayant (DD 12) tout ce qui s’y trouve. Par une action de mouvement, le lanceur peut diriger les débris, les déplaçant de 3 mètres maximum. Si les débris sont attaqués, ils sont considérés comme un objet animé de taille M ayant l’archétype simple jeune créature et le sous-type nuée.",
+  "description_html": "<br/><br/>Le lanceur de sorts anime une zone de débris, de graviers ou autres\npetits cailloux, et crée une zone dangereuse de débris déferlant. Les\ndébris animés occupent un espace de 3 mètres de côté et agissent\ncomme une <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20nu%c3%a9e.ashx\" title=\"Nuée (sous-type)\">nuée</a>, blessant (1d6 points de vie) et distrayant (DD 12)\ntout ce qui s’y trouve. Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>, le lanceur peut\ndiriger les débris, les déplaçant de 3 mètres maximum. Si les débris\nsont attaqués, ils sont considérés comme un objet animé de <a class=\"pagelink\" href=\"Pathfinder-RPG.Petites%20et%20grandes%20cr%c3%a9atures.ashx#TABLEAUDESTAILLES\" title=\"Créatures de taille inférieure ou supérieure à la moyenne\">taille M</a>\nayant l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx\" title=\"Les archétypes\">archétype</a> simple <a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx#CREATUREJEUNE\" title=\"Les archétypes\">jeune créature</a> et le <a class=\"pagelink\" href=\"Pathfinder-RPG.Sous-types%20de%20cr%c3%a9atures.ashx\" title=\"Les sous-types de créatures\">sous-type</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20nu%c3%a9e.ashx\" title=\"Nuée (sous-type)\">nuée</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles oréades."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9cha%c3%aenement%20de%20d%c3%a9bris.ashx",
+    "cache_fichier": "cache/html/28db0ebd12f03bac5f5251398023dfde875ebbe2.html",
+    "recupere_le": "2026-07-28T22:49:56.986280+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "dechainement-de-debris",
+    "resume_court": "Le lanceur anime une zone de débris qui blesse et distrait les créatures qu'elle contient.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "invocation_ou_creation",
+      "terrain_ou_environnement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "contondant",
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": "blessant (1d6 points de vie)",
+      "condition_infligee": [
+        "distrayant (DD 12)"
+      ],
+      "cible_typique": "une zone dangereuse de débris déferlant"
+    },
+    "notes_ambiguite": "La distraction est interprétée comme confusion légère (fascination ou désorientation) faute de condition nommée explicitement. Le texte ne précise pas le type de dégâts (contondant retenu par défaut pour des débris/cailloux).",
+    "slug": "dechainement-de-debris",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:18+00:00",
+    "hash_source": "83c7aef4eacd6253372bc9fe62f9b6929423a4d41a38265694c2fa0e476c2b94"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "583cf812dbe68ceb7df75ec725ffbc648902560fca45e2cae7d19da74ab9e733",
+  "hash_vue": "f34657e22dacf8826fd2bd4de95655c3b22b3db6ccc7230c0665fa1f7f3149b6"
+}

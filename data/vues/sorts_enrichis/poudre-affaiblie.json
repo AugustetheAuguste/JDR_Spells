@@ -1,0 +1,97 @@
+{
+  "id": "poudre-affaiblie",
+  "nom": "Poudre affaiblie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre%20affaiblie.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (une cartouche de papier vide)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une arme à feu chargée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "La munition chargée a des difficultés à exploser quand l’arme tire. Le facteur de portée de l’arme à feu est réduit de moitié et le tireur reçoit un malus de -2 au jet de dégâts. S’il sait ce que fait le sort avant de tirer (un test d’Art de la magie ou un effet similaire permet d’identifier le sort), le tireur peut passer une action simple à nettoyer l’arme pour la débarrasser de la munition défectueuse. Cette dernière est détruite lors du nettoyage.",
+  "description_html": "<br/><br/>La munition chargée a des difficultés à exploser quand l’arme tire. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.FP.ashx\" title=\"FP\">facteur de portée</a> de l’arme à feu est réduit de moitié et le tireur reçoit un malus de -2 au jet de dégâts. S’il sait ce que fait le sort avant de tirer (un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> ou un effet similaire permet d’identifier le sort), le tireur peut passer une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> à nettoyer l’arme pour la débarrasser de la munition défectueuse. Cette dernière est détruite lors du nettoyage.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre%20affaiblie.ashx",
+    "cache_fichier": "cache/html/85463484e204a145410a394e71a4ccef52b80128.html",
+    "recupere_le": "2026-07-28T23:04:20.999313+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "poudre-affaiblie",
+    "resume_court": "Affaiblit la munition d'une arme à feu, réduisant sa portée et les dégâts infligés.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "arme_ou_munition",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme à feu chargée"
+    },
+    "notes_ambiguite": null,
+    "slug": "poudre-affaiblie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:26+00:00",
+    "hash_source": "e660519b3420ada24e465ba39d7c376be0cf13fc8030114255c7ab9bee2bc318"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b196b48669ae695340b1899883482e38124ce92f9d2d4145955d02b581501a6d",
+  "hash_vue": "0c3cebf68b0d1ac0c82ab14fd2894fdc58fcbf2e37211b04ed79761c707e7c20"
+}

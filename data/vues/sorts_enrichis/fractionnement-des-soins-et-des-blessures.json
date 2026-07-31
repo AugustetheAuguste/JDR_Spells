@@ -1,0 +1,98 @@
+{
+  "id": "fractionnement-des-soins-et-des-blessures",
+  "nom": "Fractionnement des soins et des blessures",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fractionnement%20des%20soins%20et%20des%20blessures.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Ens/Mag": 3,
+    "Prê": 3,
+    "San": 3
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort canalise une partie du prochain sort que le personnage lance en magie guérisseuse. Le prochain sort instantané de 3e niveau ou inférieur infligeant des dégâts de zone que le personnage lance n'inflige que 75 % de ses dégâts, mais le soigne d'un montant égal aux 25 % restants des dégâts du sort. Par exemple, s'il lance ce sort puis une boule de feu qui devrait normalement infliger 40 points de dégâts, la boule de feu inflige 30 points de dégâts et lui rend 10 points de vie. Le sort affecté par celui-ci doit être lancé avant la fin du prochain tour du personnage. Ce sort n'a aucun effet sur les sorts qui n'infligent pas de dégâts ou sur les sorts d'un niveau supérieur au 3e. Cette guérison est traitée comme si le personnage avait été affecté par un sort de « soins » ou de « blessure » (selon celui qui le soignerait), et est traitée comme ayant le même niveau de sort que le sort de zone utilisé pour ce qui est des effets liés au niveau de sort des sorts de « soins » ou de « blessure ».",
+  "description_html": "<br/><br/>Ce sort canalise une partie du prochain sort que le personnage lance en magie guérisseuse. Le prochain sort instantané de 3e niveau ou inférieur infligeant des dégâts de zone que le personnage lance n'inflige que 75 % de ses dégâts, mais le soigne d'un montant égal aux 25 % restants des dégâts du sort. Par exemple, s'il lance ce sort puis une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.boule%20de%20feu.ashx\" title=\"Boule de feu\">boule de feu</a></i> qui devrait normalement infliger 40 points de dégâts, la boule de feu inflige 30 points de dégâts et lui rend 10 points de vie. Le sort affecté par celui-ci doit être lancé avant la fin du prochain tour du personnage. Ce sort n'a aucun effet sur les sorts qui n'infligent pas de dégâts ou sur les sorts d'un niveau supérieur au 3e. Cette guérison est traitée comme si le personnage avait été affecté par un sort de « soins » ou de « blessure » (selon celui qui le soignerait), et est traitée comme ayant le même niveau de sort que le sort de zone utilisé pour ce qui est des effets liés au niveau de sort des sorts de « soins » ou de « blessure ».",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Néthys."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fractionnement%20des%20soins%20et%20des%20blessures.ashx",
+    "cache_fichier": "cache/html/a9ac31ecf522f5e7bee5bac55e0fcf33eb8c0f61.html",
+    "recupere_le": "2026-07-28T22:54:49.372570+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fractionnement-des-soins-et-des-blessures",
+    "resume_court": "Le lanceur réduit les dégâts de zone de son prochain sort et se soigne du montant réduit.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "metamagie_ou_sort_cible",
+      "soin_ou_guerison",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": "Ce sort est une métamagie qui modifie un sort de dégâts de zone à venir plutôt qu'un sort autonome. Il n'inflige pas lui-même de dégâts mais réduit ceux du sort affecté et convertit une partie en soin. Classé en `amelioration` car l'effet net pour le lanceur est bénéfique (réduction de dégâts subis + soin), avec le tag `metamagie_ou_sort_cible` pour refléter sa nature de modificateur de sort.",
+    "slug": "fractionnement-des-soins-et-des-blessures",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:38+00:00",
+    "hash_source": "ccad6ed502566b386629b4617453186ff18df46d8414594d16cd5c9caf306f8c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "82cbb403d282b9b706a4aae013126fefe5b20633ac01baf439e34d1267bada9f",
+  "hash_vue": "81247e9a622281589ac4f89f075e3af7f09e3e3a9178f3507dbbb560014788b8"
+}

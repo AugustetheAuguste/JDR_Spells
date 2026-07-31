@@ -1,0 +1,96 @@
+{
+  "id": "poing-invincible-de-la-terre",
+  "nom": "Poing invincible de la terre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing%20invincible%20de%20la%20terre.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "Oui",
+  "description": "Le lanceur de sorts crée une pierre de la taille d’un poing qui vole sur un ennemi. Le lanceur doit faire un jet d’attaque à mains nues contre la cible, comme si celle-ci était dans la zone qu’il menace. Si l’attaque réussit, la pierre inflige des dégâts contondants à la cible comme si le lanceur lui avait porté une attaque à mains nues. Si le lanceur a une réserve de ki, la pierre compte comme une frappe ki. Au niveau 4, le moine qinggong peut choisir ce sort comme pouvoir ki dont l’activation coûte 1 point de ki (si le moine a 0 point de ki après l’activation de ce pouvoir ki, la pierre ne compte pas comme une frappe ki).",
+  "description_html": "<br/><br/>Le lanceur de sorts crée une pierre de la taille d’un poing qui vole sur un ennemi. Le lanceur doit faire un <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#JETDATTAQUE\" title=\"Valeurs de combat\">jet d’attaque</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20simples.ashx#ATTAQUEMAINSNUES\" title=\"Actions simples\">à mains nues</a> contre la cible, comme si celle-ci était dans la zone qu’il menace. Si l’attaque réussit, la pierre inflige des dégâts contondants à la cible comme si le lanceur lui avait porté une <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20simples.ashx#ATTAQUEMAINSNUES\" title=\"Actions simples\">attaque à mains nues</a>. Si le lanceur a une <a class=\"pagelink\" href=\"Pathfinder-RPG.Moine.ashx#RESERVEDEKI\" title=\"Le moine\">réserve de ki</a>, la pierre compte comme une frappe ki. Au niveau 4, le <a class=\"pagelink\" href=\"Pathfinder-RPG.Moine%20qinggong%20(moine).ashx\" title=\"Moine qinggong\">moine qinggong</a> peut choisir ce sort comme pouvoir ki dont l’activation coûte 1 point de ki (si le moine a 0 point de ki après l’activation de ce pouvoir ki, la pierre ne compte pas comme une frappe ki).<br/><br/>",
+  "mythique": {
+    "description": "Le personnage ajoute son grade aux jets d’attaque et de dégâts de la pierre. Il augmente le multiplicateur de critique de l’attaque de 1 (avec un maximum de ×4).",
+    "description_html": "Le personnage ajoute son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> aux jets d’attaque et de dégâts de la pierre. Il augmente le multiplicateur de critique de l’attaque de 1 (avec un maximum de ×4)."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles oréades."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing%20invincible%20de%20la%20terre.ashx",
+    "cache_fichier": "cache/html/3f5ce6296b0093900c5ba4ea9515180ff6282b47.html",
+    "recupere_le": "2026-07-28T23:03:55.011316+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "poing-invincible-de-la-terre",
+    "resume_court": "Le lanceur crée une pierre qui vole sur un ennemi et inflige des dégâts contondants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "invocation_ou_creation",
+      "attaque_de_contact",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "dégâts contondants",
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "poing-invincible-de-la-terre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:16+00:00",
+    "hash_source": "3e32de03dbc7f137d84074b0e9f9952e7ce08c7300677f9683fa5f77089203bc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7738bab8fab341d2a290933af4e0cd97771c1f9bb0e1caef43ae49e17de94c91",
+  "hash_vue": "c9b65e72b3a568f154fe203e50ddea1c2907f74fb133ddb10886dca9e96b4f71"
+}

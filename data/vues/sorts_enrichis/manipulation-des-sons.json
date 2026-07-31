@@ -1,0 +1,72 @@
+{
+  "id": "manipulation-des-sons",
+  "nom": "Manipulation des sons",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manipulation%20des%20sons.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature ou 1 objet/niveau, distants de moins de 9 m (6 c) les uns des autres",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Cette incantation permet au barde de modifier les sons produits par les objets ou les créatures. Il peut créer des bruits là où il n’y en a pas, étouffer ceux qui existent ou les transformer. Tous les objets ou créatures doivent être affectés de la même manière. Une fois son choix fait, le personnage ne peut plus le modifier. Le barde peut manipuler les sons, mais pas créer des mots qui ne lui sont pas familiers.\nUn lanceur de sorts dont la voix est fortement modifiée est incapable de prononcer la moindre incantation. Les sorts à composante verbale lui sont donc interdits.",
+  "description_html": "<br/><br/>Cette incantation permet au <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx\" title=\"Le barde\">barde</a> de modifier les sons produits par les objets ou les créatures. Il peut créer des bruits là où il n’y en a pas, étouffer ceux qui existent ou les transformer. Tous les objets ou créatures doivent être affectés de la même manière. Une fois son choix fait, le personnage ne peut plus le modifier. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx\" title=\"Le barde\">barde</a> peut manipuler les sons, mais pas créer des mots qui ne lui sont pas familiers.<br/><br/>Un lanceur de sorts dont la voix est fortement modifiée est incapable de prononcer la moindre incantation. Les sorts à <a class=\"pagelink\" href=\"Pathfinder-RPG.composante%20verbale.ashx\" title=\"composante verbale\">composante verbale</a> lui sont donc interdits.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manipulation%20des%20sons.ashx",
+    "cache_fichier": "cache/html/9930d8fd0b8b9133992508b17c743feb2890e37b.html",
+    "recupere_le": "2026-07-28T22:59:54.739420+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "manipulation-des-sons",
+    "resume_court": "Le barde modifie, crée ou étouffe les sons produits par des créatures ou des objets.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "communication_ou_langage",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "social"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature ou 1 objet/niveau"
+    },
+    "notes_ambiguite": "Le sort affecte plusieurs créatures ou objets dans une zone définie par la portée et la distance mutuelle, plutôt qu'une cible unique désignée. La cible_typique « zone » reflète cette nature collective. Le sort peut aussi servir au combat en rendant un lanceur muet incapable de lancer des sorts à composante verbale, mais son usage principal est utilitaire ou social (déguiser une voix, créer des bruits de distraction).",
+    "slug": "manipulation-des-sons",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:33+00:00",
+    "hash_source": "fedf1d515009852b914827b36d00535417d64f8f5d2178ba6e33778fb86cac8b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6ddd30ce0080942a32aa0c19bfc9e86ce3a6d5adb15b4e03dbb10efc572597e9",
+  "hash_vue": "210622069e35885eca956aaa71c9afe44ff8b598b5735d229cc4d7780b3ef5f6"
+}

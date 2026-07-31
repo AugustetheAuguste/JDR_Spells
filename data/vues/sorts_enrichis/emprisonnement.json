@@ -1,0 +1,80 @@
+{
+  "id": "emprisonnement",
+  "nom": "Emprisonnement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Emprisonnement.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Lorsque le lanceur de sort touche une créature à la fin de l’incantation, la cible se retrouve emprisonnée dans une petite sphère loin sous la surface du sol et maintenue dans un état d’animation suspendue similaire à celui engendré par le sort du même nom. Elle y reste jusqu’à ce qu’un sort de délivrance soit lancé à l’endroit où elle a été emprisonnée. Des recherches effectuées à l’aide d’une boule de cristal ou d’un sort de localisation d’objet ne révèlent pas qu’une créature a été emprisonnée, mais localisation suprême l’indique. Un souhait ou un miracle ne suffit pas à libérer l’individu emprisonné mais permet de connaître l’endroit où l’emprisonnement a eu lieu. Si le lanceur du sort connaît le nom de sa victime et certains détails de sa vie, elle subit un malus de -4 au jet de sauvegarde.",
+  "description_html": "<br/><br/>Lorsque le lanceur de sort touche une créature à la fin de l’incantation, la cible se retrouve emprisonnée dans une petite sphère loin sous la surface du sol et maintenue dans un état d’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.animation%20suspendue.ashx\" title=\"Animation suspendue\">animation suspendue</a></i> similaire à celui engendré par le sort du même nom. Elle y reste jusqu’à ce qu’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance.ashx\" title=\"Délivrance\">délivrance</a></i> soit lancé à l’endroit où elle a été emprisonnée. Des recherches effectuées à l’aide d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.boule%20de%20cristal.ashx\" title=\"Boule de cristal\">boule de cristal</a></i> ou d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.localisation%20dobjet.ashx\" title=\"Localisation d'objet\">localisation d’objet</a></i> ne révèlent pas qu’une créature a été emprisonnée, mais <i><a class=\"pagelink\" href=\"Pathfinder-RPG.localisation%20supr%c3%aame.ashx\" title=\"Localisation suprême\">localisation suprême</a></i> l’indique. Un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> ou un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i> ne suffit pas à libérer l’individu emprisonné mais permet de connaître l’endroit où l’<i>emprisonnement</i> a eu lieu. Si le lanceur du sort connaît le nom de sa victime et certains détails de sa vie, elle subit un malus de -4 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Emprisonnement.ashx",
+    "cache_fichier": "cache/html/d085712cf434420d560c3353db6b78643b0cfced.html",
+    "recupere_le": "2026-07-28T22:52:01.188982+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "emprisonnement",
+    "resume_court": "Emprisonne une créature touchée dans une sphère souterraine en animation suspendue jusqu'à délivrance.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "resistance_a_la_magie",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Lorsque le lanceur de sort touche une créature à la fin de l'incantation, la cible se retrouve emprisonnée"
+    },
+    "notes_ambiguite": null,
+    "slug": "emprisonnement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:15+00:00",
+    "hash_source": "a99b224ee0ef5fa85291065d03368fe8018414bb592048ab87299e5e15c61673"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "252e1e0af2ef5d36744c30a09f34d251476403f05ccad3a3d687f30dadf97ed7",
+  "hash_vue": "9dac68bcefa7d8bb942fc8d1bd823993dc8ac69815ad8bfcc0b8ecaa5a1f6c18"
+}

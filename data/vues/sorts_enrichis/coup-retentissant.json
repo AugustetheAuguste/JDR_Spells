@@ -1,0 +1,99 @@
+{
+  "id": "coup-retentissant",
+  "nom": "Coup retentissant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20retentissant.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Apal": 4,
+    "Inq": 5,
+    "Pal": 4
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur partiel ; voir texte",
+  "resistance_magie": "non",
+  "description": "Pour lancer ce sort, le personnage doit avoir une arme en main. En cas de jet d'attaque réussi, cette arme frappe avec un fracas retentissant. La cible reçoit 1d6 points de dégâts sonores. L'arme n'est pas endommagée par l'attaque.\nSi le personnage utilisait son pouvoir de jugement ou de châtiment contre la cible, cette dernière est chancelante pendant 1 round en cas d'attaque réussie. Un jet de Vigueur permet d'annuler cet effet.\nEn cas de coup critique, la cible est étourdie pendant 1 round et sourde pendant 1d6 rounds. Un jet de Vigueur réussi permet d'annuler ces deux effets. Si le personnage utilisait son pouvoir de jugement ou de châtiment contre la cible, cette dernière ne fait qu'un seul jet de sauvegarde valable contre tous les effets néfastes.\nCe sort se termine immédiatement si l'arme du personnage quitte sa main. Coup retentissant se cumule avec les propriétés d'une arme de tonnerre.",
+  "description_html": "<br/><br/>Pour lancer ce sort, le personnage doit avoir une arme en main. En cas de jet d'attaque réussi, cette arme frappe avec un fracas retentissant. La cible reçoit 1d6 points de dégâts sonores. L'arme n'est pas endommagée par l'attaque.<br/><br/>Si le personnage utilisait son pouvoir de <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx#JUGEMENT\" title=\"L'inquisiteur\">jugement</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL\" title=\"Le paladin\">châtiment</a> contre la cible, cette dernière est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pendant 1 round en cas d'attaque réussie. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> permet d'annuler cet effet.<br/><br/>En cas de <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdie</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.assourdi.ashx\" title=\"Assourdi\">sourde</a> pendant 1d6 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> réussi permet d'annuler ces deux effets. Si le personnage utilisait son pouvoir de <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx#JUGEMENT\" title=\"L'inquisiteur\">jugement</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL\" title=\"Le paladin\">châtiment</a> contre la cible, cette dernière ne fait qu'un seul <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> valable contre tous les effets néfastes.<br/><br/>Ce sort se termine immédiatement si l'arme du personnage quitte sa main. <i>Coup retentissant</i> se cumule avec les propriétés d'une arme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.tonnerre%20(propri%c3%a9t%c3%a9).ashx\" title=\"tonnerre (propriété)\">de tonnerre</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20retentissant.ashx",
+    "cache_fichier": "cache/html/a720831e3d48645fe514b3a81995e05f7e6e981d.html",
+    "recupere_le": "2026-07-28T22:49:16.041853+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "coup-retentissant",
+    "resume_court": "Une arme inflige des dégâts sonores et peut étourdir ou rendre sourde sa cible en cas de coup critique.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "arme_ou_munition",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [
+      "chancelant",
+      "etourdi",
+      "assourdi"
+    ],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts sonores",
+      "condition_infligee": [
+        "cette dernière est chancelante pendant 1 round en cas d'attaque réussie",
+        "la cible est étourdie pendant 1 round",
+        "sourde pendant 1d6 rounds"
+      ],
+      "cible_typique": "cette arme frappe avec un fracas retentissant. La cible reçoit"
+    },
+    "notes_ambiguite": null,
+    "slug": "coup-retentissant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:56+00:00",
+    "hash_source": "71e581ac508eaf6649f62df39b2b6392b8bf0af6cc9031d8442a99e7e4887695"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cda7047ba2b75197f82eef07a9fdb161171e85b0a1c6c5357e02860d67abf420",
+  "hash_vue": "70476049428c791b09e832e0d29691589888c2d75be18f666b6c10410cfdb329"
+}

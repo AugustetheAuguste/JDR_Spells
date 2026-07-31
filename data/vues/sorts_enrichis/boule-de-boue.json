@@ -1,0 +1,120 @@
+{
+  "id": "boule-de-boue",
+  "nom": "Boule de boue",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20boue.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2niveaux)",
+  "cible": "une boule de boue gluante de la taille d’un poing",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes pour annuler",
+  "resistance_magie": "non",
+  "description": "Lorsque le personnage lance ce sort, il fait apparaître une unique boule de boue gluante et la lance au visage d’un ennemi avec une attaque de contact à distance. Si la boule de boue touche, la cible est aveuglée. Tous les rounds, au début de son tour, une créature aveuglée par ce sort peut tenter un jet de Réflexes pour se secouer et se débarrasser de la boue, mettant fin à l’effet. La boule de boue peut aussi être enlevée par la créature affectée ou par une créature adjacente à elle par une action simple.",
+  "description_html": "<br/><br/>Lorsque le personnage lance ce sort, il fait apparaître une unique boule de boue gluante et la lance au visage d’un ennemi avec une <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#ATTAQUEDECONTACT\" title=\"Valeurs de combat\">attaque de contact</a> à distance. Si la boule de boue touche, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Aveuglé\" title=\"Les états préjudiciables\">aveuglée</a>. Tous les rounds, au début de son <a class=\"pagelink\" href=\"Pathfinder-RPG.tour.ashx\" title=\"tour\">tour</a>, une créature aveuglée par ce sort peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour se secouer et se débarrasser de la boue, mettant fin à l’effet. La boule de boue peut aussi être enlevée par la créature affectée ou par une créature adjacente à elle par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles gobelins."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20boue.ashx",
+    "cache_fichier": "cache/html/c954e8b39b121e69a2d14d61b3c111246e1641f1.html",
+    "recupere_le": "2026-07-28T22:44:33.512228+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "boule-de-boue",
+    "resume_court": "Le lanceur projette une boule de boue gluante qui aveugle l'ennemi touché.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "invocation_ou_creation",
+      "attaque_de_contact",
+      "degats_directs",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": "une unique boule de boue gluante",
+      "condition_infligee": [
+        "la cible est aveuglée"
+      ],
+      "cible_typique": "la lance au visage d'un ennemi"
+    },
+    "notes_ambiguite": "Le type de dégâts est classé comme « autre » car la boue elle-même n'inflige pas de dégâts numériques : l'effet principal est l'aveuglement. La boule est une création matérielle (terre) lancée comme projectile.",
+    "slug": "boule-de-boue",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:07+00:00",
+    "hash_source": "27d6b800b432e9b06c6640889915dcadf6c31dba5b5d2435a4bffea3c86d38d8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "ccea3c84c0f0dc7eedcf14034ca049c7e47577723e721eabec262a94ac245b05",
+  "hash_vue": "2824ffb0a1de8c70076052b07dd5032ab9ab923f34d0af4fe1cf20ea59b116ba"
+}

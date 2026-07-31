@@ -1,0 +1,117 @@
+{
+  "id": "sillage-nauseabond",
+  "nom": "Sillage nauséabond",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sillage%20naus%c3%a9abond.ashx",
+  "ecole": "invocation (création)",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Alch": 3,
+    "Cham": 3,
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un œuf pourri ou des feuilles de chou)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)",
+  "cible": "une créature volontaire",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun et Vigueur pour annuler (cf. texte)",
+  "resistance_magie": "non",
+  "description": "La cible exsude des vapeurs nauséabondes qui emplissent l’espace qu’elle occupe. Ces vapeurs n’obscurcissent pas la vision mais rendent les créatures nauséeuses comme le ferait un nuage nauséabond. La cible est immunisée contre ces vapeurs. Celles-ci persistent si la créature se déplace, emplissant chaque case qu’elle traverse jusqu’à ce qu’elle ait rempli un nombre de case égal à 4 × le niveau de lanceur du personnage : si elle traverse plus de cases que cela, les cases en surplus ne s’emplissent pas de vapeurs. Chaque créature qui entre dans la zone remplie de ces vapeurs ou y termine son tour doit réussir un jet de Vigueur pour ne pas être nauséeuse tant qu’elle y reste et pendant 1d4+1 rounds après l’avoir quittée.",
+  "description_html": "<br/><br/>La cible exsude des vapeurs nauséabondes qui emplissent l’espace qu’elle occupe. Ces vapeurs n’obscurcissent pas la vision mais rendent les créatures nauséeuses comme le ferait un nuage nauséabond. La cible est immunisée contre ces vapeurs. Celles-ci persistent si la créature se déplace, emplissant chaque case qu’elle traverse jusqu’à ce qu’elle ait rempli un nombre de case égal à 4 × le niveau de lanceur du personnage : si elle traverse plus de cases que cela, les cases en surplus ne s’emplissent pas de vapeurs.\nChaque créature qui entre dans la zone remplie de ces vapeurs ou y termine son tour doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour ne pas être <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeuse</a> tant qu’elle y reste et pendant 1d4+1 rounds après l’avoir quittée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sillage%20naus%c3%a9abond.ashx",
+    "cache_fichier": "cache/html/4d4192518b112a4b532946d8801d7fd51b0703fe.html",
+    "recupere_le": "2026-07-29T07:40:35.728598+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sillage-nauseabond",
+    "resume_court": "La cible exsude des vapeurs nauséabondes qui remplissent son sillage et rendent malades les créatures qui les traversent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "terrain_ou_environnement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature volontaire"
+    },
+    "notes_ambiguite": "Le texte mentionne que les créatures deviennent « nauséeuses » mais cette condition n'existe pas dans la liste fermée. Le sort ne produit pas de dégâts directs ni de condition nommée parmi celles disponibles (aveugle, étourdi, etc.). L'effet est un contrôle de zone par des vapeurs persistantes.",
+    "slug": "sillage-nauseabond",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:40+00:00",
+    "hash_source": "827e9b7c68c92ff78f0f13bb94e528cd69e68438047ce265abd0f704186aba7d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "ba30daadc82fb8b656f47f58ede5422703756e8d60415f7ed15d556dca7baea9",
+  "hash_vue": "c442ae08f71b759915fc4c54757c59b643fab064135df4e1f64ceacb4130521f"
+}

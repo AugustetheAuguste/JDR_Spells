@@ -1,0 +1,108 @@
+{
+  "id": "vagues-de-fatigue",
+  "nom": "Vagues de fatigue",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20de%20fatigue.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 5,
+    "Ens/Mag": 5,
+    "Psy": 5,
+    "Sor": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 m (6 c)",
+  "cible": "rayonnement en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Des vagues d’énergie négative fatiguent toutes les créatures situées dans la zone. Ce sort n’a aucun effet sur les créatures déjà fatiguées.",
+  "description_html": "<br/><br/>Des vagues d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguent</a> toutes les créatures situées dans la zone. Ce sort n’a aucun effet sur les créatures déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguées</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20de%20fatigue.ashx",
+    "cache_fichier": "cache/html/9d63b502115a55127dce4a1ba5ec6a2190177049.html",
+    "recupere_le": "2026-07-29T07:43:47.268593+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vagues-de-fatigue",
+    "resume_court": "Des vagues d'énergie négative fatiguent toutes les créatures dans un cône.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "degats_directs",
+      "resistance_a_la_magie",
+      "duree_instantanee",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "vagues d'énergie négative",
+      "condition_infligee": [
+        "fatiguent toutes les créatures situées dans la zone"
+      ],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": "Le texte emploie « fatiguent » sans préciser si cela correspond à la condition « chancelant » (une seule action par round) ou à un autre état. Faute de définition explicite dans le texte fourni, j'ai retenu « chancelant » comme la condition la plus proche d'une fatigue mécanique en Pathfinder 1e, mais cette correspondance reste une interprétation.",
+    "slug": "vagues-de-fatigue",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:00+00:00",
+    "hash_source": "d40cee61bc6ba56d90897a801745aa3d9b24f79f4751421cc67884a098446bcc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "db63951515a90ee52a1f248bb2a6d2c96e8dcdae9a2874fd3f367999811492be",
+  "hash_vue": "e1d4e7c4848156c3041e134b5a67de3dcf99d79aba9fd1adf2df3936e66c6d23"
+}

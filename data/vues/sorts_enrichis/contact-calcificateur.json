@@ -1,0 +1,96 @@
+{
+  "id": "contact-calcificateur",
+  "nom": "Contact calcificateur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20calcificateur.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "Terre"
+  ],
+  "niveaux": {
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "San": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature(s) touchée(s) (jusqu'à une par niveau)",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "Le contact du personnage transmute la substance de la créature touchée en pierre. Une fois par round, il peut faire une attaque de contact qui inflige 1d4 points d'affaiblissement temporaire de Dextérité et ralentit la cible (comme par un sort de lenteur) pendant 1 round. Un jet de Vigueur permet d'annuler l'effet de lenteur mais pas l'affaiblissement de caractéristique. Une cible avec une Dextérité réduite à 0 est pétrifiée de façon permanente. Annulation d'enchantement, restauration ou Transmutation de la pierre en chair inversent les effets du contact calcificateur.",
+  "description_html": "<br/><br/>Le contact du personnage transmute la substance de la créature touchée en pierre. Une fois par round, il peut faire une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact.ashx\" title=\"attaque de contact\">attaque de contact</a> qui inflige 1d4 points d'<a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissement temporaire</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> et ralentit la cible (comme par un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a></i>) pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> permet d'annuler l'effet de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a></i> mais pas l'<a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissement de caractéristique</a>. Une cible avec une <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> réduite à 0 est <a class=\"pagelink\" href=\"Pathfinder-RPG.p%c3%a9trifi%c3%a9.ashx\" title=\"Pétrifié\">pétrifiée</a> de façon permanente. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">Annulation d'enchantement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.restauration.ashx\" title=\"Restauration\">restauration</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Transmutation%20de%20la%20pierre%20en%20chair.ashx\" title=\"Transmutation de la pierre en chair\">Transmutation de la pierre en chair</a></i> inversent les effets du <i>contact calcificateur</i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20calcificateur.ashx",
+    "cache_fichier": "cache/html/22731e93d02d415b9b9205e5df9f56ed72bb588d.html",
+    "recupere_le": "2026-07-28T22:47:30.967920+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contact-calcificateur",
+    "resume_court": "Une attaque de contact qui réduit la Dextérité et ralentit la cible, la pétrifiant si elle atteint 0.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "affaiblissement_de_capacite",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "ralentit la cible (comme par un sort de lenteur) pendant 1 round"
+      ],
+      "cible_typique": "créature(s) touchée(s)"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement de Dextérité (tag affaiblissement_de_capacite) plutôt que des dégâts directs. La pétrification permanente est un effet de transformation du sujet, non une condition instantanée. Le type_degats est null car l'affaiblissement de caractéristique n'est pas un type de dégâts énergétique ou physique.",
+    "slug": "contact-calcificateur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:18+00:00",
+    "hash_source": "5337cf9b522032fae64178645866ccba8004798367b6ef949bb68accf731a363"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "701bc9ce29f19ab7185da49edb21509a45ca220e6527a773a9ed6b89bb549645",
+  "hash_vue": "2bc666af4bd7cfc95332c6ada5473464e2a5b9b6a4478fecf0b587530c4f1612"
+}

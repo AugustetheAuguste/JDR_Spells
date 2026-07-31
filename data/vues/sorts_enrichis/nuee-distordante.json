@@ -1,0 +1,93 @@
+{
+  "id": "nuee-distordante",
+  "nom": "Nuée distordante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20distordante.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "Ens/Mag": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M/FD (un carré de tissu rouge)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 nuée d’araignées, de chauves-souris ou de rats",
+  "duree": "concentration + 2 rounds et 1 heure/niveau (voir texte)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme nuée grouillante, excepté que les créatures vivantes et mortes-vivantes qui ratent leur jet de sauvegarde contre la distraction de la nuée voient leurs membres pris de spasmes et de torsions incontrôlables alors que leur corps devient plus sensible aux transmutations. De telles créatures subissent un malus de -4 à la Dextérité et aux jets de sauvegarde contre les effets de transmutation pendant 1 heure par niveau de lanceur de sorts.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.nu%c3%a9e%20grouillante.ashx\" title=\"Nuée grouillante\">nuée grouillante</a></i>, excepté que les créatures vivantes et mortes-vivantes qui ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> contre la <a class=\"pagelink\" href=\"Pathfinder-RPG.Distraction%20(capacit%c3%a9).ashx\" title=\"Distraction (Ext)\">distraction</a> de la nuée voient leurs membres pris de spasmes et de torsions incontrôlables alors que leur corps devient plus sensible aux transmutations. De telles créatures subissent un malus de -4 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> et aux jets de sauvegarde contre les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.transmutation.ashx\" title=\"Transmutation\">transmutation</a> pendant 1 heure par niveau de lanceur de sorts.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles drows.",
+    "sorts_lies": "Nuée grouillante"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20distordante.ashx",
+    "cache_fichier": "cache/html/febeb5037320f57d1056b44894db1421ac002bd7.html",
+    "recupere_le": "2026-07-28T23:01:53.862979+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "nuee-distordante",
+    "resume_court": "Invoque une nuée qui distord les membres des créatures ratées, réduisant leur Dextérité et leur résistance aux transmutations.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "malus_chiffre",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 nuée d'araignées, de chauves-souris ou de rats"
+    },
+    "notes_ambiguite": "Le sort invoque une nuée (cible_typique: zone) mais affecte les créatures vivantes et mortes-vivantes qui ratent un jet de sauvegarde implicite (hérité de nuée grouillante). Aucune condition listée ne correspond aux spasmes et torsions ; le malus de -4 à la Dextérité est capturé par le tag malus_chiffre.",
+    "slug": "nuee-distordante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:29+00:00",
+    "hash_source": "c4dee1a60ba35c67239746a54394d51e58c1b56a81af53bc33f051d5c824aef0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6c5c62e4da6e6ef84fe2edece817c9d8128279d260c7af1d482ee103a4618639",
+  "hash_vue": "74b0baa5a51f25b2650b488c03169c86665fba54fee4fb324bc55d75a2099530"
+}

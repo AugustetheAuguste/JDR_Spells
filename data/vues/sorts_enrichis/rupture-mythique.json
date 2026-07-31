@@ -1,0 +1,127 @@
+{
+  "id": "rupture-mythique",
+  "nom": "Rupture mythique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rupture%20mythique.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Inq": 3,
+    "Ens/Mag": 4,
+    "Méd": 2,
+    "Prê": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "une créature",
+  "duree": "permanent",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage restreint l’accès de la cible à son pouvoir mythique. Chaque fois que la cible tente de lancer un sort mythique, de dépenser du pouvoir mythique pour activer une aptitude de voie ou d’utiliser un effet qui nécessite la dépense de pouvoir mythique, elle doit effectuer un jet de Volonté contre le DD de ce sort. Si elle rate son jet de sauvegarde, la créature perd son action et l’aptitude qu’elle tentait d’utiliser ne produit aucun effet.\nCe sort ne produit aucun effet sur les aptitudes mythiques qui ne nécessitent aucune dépense de pouvoir mythique.",
+  "description_html": "<br/><br/>Le personnage restreint l’accès de la cible à son <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>. Chaque fois que la cible tente de lancer un <a class=\"pagelink\" href=\"Pathfinder-RPG.sort%20mythique.ashx\" title=\"sort mythique\">sort mythique</a>, de dépenser du <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a> pour activer une <a class=\"pagelink\" href=\"Pathfinder-RPG.aptitude%20de%20voie.ashx\" title=\"aptitude de voie\">aptitude de voie</a> ou d’utiliser un effet qui nécessite la dépense de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, elle doit effectuer un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> contre le DD de ce sort. Si elle rate son jet de sauvegarde, la créature perd son action et l’aptitude qu’elle tentait d’utiliser ne produit aucun effet.<br/><br/>Ce sort ne produit aucun effet sur les aptitudes mythiques qui ne nécessitent aucune dépense de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rupture%20mythique.ashx",
+    "cache_fichier": "cache/html/5d10d003dee082c829e66bc7bbb20fe44ef1fcba.html",
+    "recupere_le": "2026-07-29T07:39:20.379372+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "rupture-mythique",
+    "resume_court": "Entrave l'accès de la cible à son pouvoir mythique en annulant ses tentatives d'utilisation.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "malus_chiffre",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la créature perd son action"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La condition « chancelant » est justifiée par la perte d'action à chaque tentative d'utilisation de pouvoir mythique. Le sort n'inflige pas de dégâts directs mais restreint les capacités de la cible. La durée est permanente mais l'effet se déclenche à chaque tentative d'utilisation, d'où le tag duree_instantanee pour chaque résolution.",
+    "slug": "rupture-mythique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:10+00:00",
+    "hash_source": "22edb17e77eca98d690eb162bc75aa309f41450fedfd448d555d3bfabe682d4f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b7138902ea81ed9ee04c2fc7cf4f03d88845a86877e69e717d720d26b9d97155",
+  "hash_vue": "71fafb54f0950042f2b69f807c6144e9cec32f40a4a73a17dbf8cb434b288f67"
+}

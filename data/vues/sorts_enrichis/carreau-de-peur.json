@@ -1,0 +1,80 @@
+{
+  "id": "carreau-de-peur",
+  "nom": "Carreau de peur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carreau%20de%20peur.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "projectile d’énergie maléfique en forme de flèche",
+  "duree": "instantanée (1d4 rounds)",
+  "jet_de_sauvegarde": "Volonté partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Grâce à son symbole maudit, le personnage envoie un projectile fait de ténèbres crépitantes vers une cible à portée, par une attaque de contact à distance. Les créatures Bonnes frappées par ce projectile reçoivent 1d8 points de dégâts par tranche de deux niveaux de lanceur de sorts (5d8 au maximum). Un extérieur Bon subit 1d6 points de dégâts par niveau de lanceur de sorts (10d6 au maximum) et se retrouve fiévreux pendant 1 round. Jet de Volonté 1/2 dégâts et annule la condition fiévreux. Ce sort inflige seulement la moitié des dégâts aux créatures qui ne sont ni Bonnes ni Maléfiques, qui ne sont donc pas fiévreuses. Il n’a aucun effet sur les créatures Mauvaises.",
+  "description_html": "<br/><br/>Grâce à son symbole maudit, le personnage envoie un projectile fait de ténèbres crépitantes vers une cible à portée, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a>. Les créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Bonnes</a> frappées par ce projectile reçoivent 1d8 points de dégâts par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (5d8 au maximum). Un extérieur <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Bon</a> subit 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (10d6 au maximum) et se retrouve <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreux</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">1/2 dégâts</a> et annule la condition <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreux</a>. Ce sort inflige seulement la moitié des dégâts aux créatures qui ne sont ni <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Bonnes</a> ni <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Maléfique</a>s, qui ne sont donc pas <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuses</a>. Il n’a aucun effet sur les créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Mauvaises</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carreau%20de%20peur.ashx",
+    "cache_fichier": "cache/html/16f1e3ff42eb18795354ef7b7b939889017a4084.html",
+    "recupere_le": "2026-07-28T22:45:44.379840+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "carreau-de-peur",
+    "resume_court": "Un projectile de ténèbres qui blesse les créatures Bonnes et rend les extérieurs Bons fiévreux.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": "projectile fait de ténèbres crépitantes",
+      "condition_infligee": [
+        "se retrouve fiévreux pendant 1 round"
+      ],
+      "cible_typique": "vers une cible à portée"
+    },
+    "notes_ambiguite": "Le texte mentionne « fiévreux » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral léger). Le sort inflige des dégâts d'énergie négative (ténèbres maléfiques), classé comme « negatif ».",
+    "slug": "carreau-de-peur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:33+00:00",
+    "hash_source": "1b73aa89fb572e753455db98e35f6090455322bc6eac664de3aacbbd426b3a23"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "153087b46637f868155982539d50f1951c85f812c6e4661b606c1a5d87d6f069",
+  "hash_vue": "e2af4d91519eb3df4607f8451d4186445b8c03f79ce5e6ee4a2e3359c357e5eb"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "fierte-illusoire",
+  "nom": "Fierté illusoire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fiert%c3%a9%20illusoire.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "Méd": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "La cible se laisse tellement distraire par une opinion exagérée de sa propre valeur qu'elle subit un malus de -2 aux jets d'attaque et aux tests de compétences. En revanche, ce sentiment lui donne aussi un bonus de moral de +2 contre les effets de charme et coercition.",
+  "description_html": "<br/><br/>La cible se laisse tellement distraire par une opinion exagérée de sa propre valeur qu'elle subit un malus de -2 aux jets d'attaque et aux tests de compétences. En revanche, ce sentiment lui donne aussi un bonus de moral de +2 contre les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.charme.ashx\" title=\"charme\">charme</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.coercition.ashx\" title=\"coercition\">coercition</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fiert%c3%a9%20illusoire.ashx",
+    "cache_fichier": "cache/html/a91193da5a155ece33492fd4cf7d43ee96737439.html",
+    "recupere_le": "2026-07-28T22:53:22.305259+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fierte-illusoire",
+    "resume_court": "La cible subit un malus aux attaques et compétences, mais gagne un bonus contre les charmes.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige un malus mais confère aussi un bonus : classé en affaiblissement car l'effet principal est la dégradation des capacités offensives et de compétence. Les tags incluent à la fois malus_chiffre et bonus_chiffre pour refléter cette dualité.",
+    "slug": "fierte-illusoire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:02+00:00",
+    "hash_source": "68f362744fe5d16a9504881305861953c9bd2aacf446f8365f126c4fb9b83ffe"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4bf4096e38637106b2bfa68efd0ceabae38f7ad0e6d1c43037b34133a2ddfcbc",
+  "hash_vue": "6d426124d25fde5089c1efe186420af7aabe31b88b6eee9b4eae9c1896a9cf91"
+}

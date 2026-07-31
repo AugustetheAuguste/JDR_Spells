@@ -1,0 +1,78 @@
+{
+  "id": "deformation-corporelle",
+  "nom": "Déformation corporelle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9formation%20corporelle.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de chair marinée)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "une créature vivante ou morte-vivante",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage provoque la décoloration et la déformation du corps de la créature ciblée pour amoindrir ses fonctions. Quand il lance ce sort, il doit choisir l’un des trois types d’effets qu’il souhaite infliger à la cible : déplacement, attaques ou défense.\nAttaques. L’une des attaques naturelles de la créature subit un malus de -2 aux jets d’attaque et de dégâts, inflige un coup critique sur un 20 naturel uniquement avec un multiplicateur de ×2 en cas de coup critique confirmé.\nDéfense. Le bonus d’armure naturelle de la créature diminue de -4 jusqu’à un bonus minimum de +0.\nDéplacement. L’une des vitesses de déplacement de la créature (au choix du personnage) est diminuée de moitié.\nLa plupart des morts-vivants sont vulnérables à la déformation corporelle, mais les créatures informes ou dénuées de chair (comme les élémentaires, les vases, les plantes, les créatures intangibles ou gazeuses et les squelettes) sont immunisées.",
+  "description_html": "<br/><br/>Le personnage provoque la décoloration et la déformation du corps de la créature ciblée pour amoindrir ses fonctions. Quand il lance ce sort, il doit choisir l’un des trois types d’effets qu’il souhaite infliger à la cible : déplacement, attaques ou défense.\n<ul><li><b>Attaques.</b> L’une des attaques naturelles de la créature subit un malus de -2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#DEGATS\" title=\"Valeurs de combat\">de dégâts</a>, inflige un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> sur un 20 naturel uniquement avec un multiplicateur de ×2 en cas de coup critique confirmé.</li><li><b>Défense.</b> Le bonus d’armure naturelle de la créature diminue de -4 jusqu’à un bonus minimum de +0.</li><li><b>Déplacement.</b> L’une des vitesses de déplacement de la créature (au choix du personnage) est diminuée de moitié.</li></ul>\nLa plupart des morts-vivants sont vulnérables à la <i>déformation corporelle</i>, mais les créatures informes ou dénuées de chair (comme les élémentaires, les vases, les plantes, les créatures intangibles ou gazeuses et les squelettes) sont immunisées.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut choisir deux effets au lieu d’un seul ou alors décider d’améliorer un effet. S’il améliore l’effet d’attaque, toutes les attaques naturelles de la créature sont affectées. S’il améliore l’effet de défense, tous les critiques potentiels contre la créature bénéficient d’un bonus de +4 au jet de confirmation, en plus de l’effet normal de déformation corporelle sur le bonus d’armure naturelle. S’il améliore l’effet de déplacement, toutes les vitesses de déplacement de la créature sont réduites de moitié.\nAmplifié (6ème). Si le personnage dépense deux utilisations de pouvoir mythique, il peut choisir deux effets améliorés à infliger à la cible.",
+    "description_html": "Le personnage peut choisir deux effets au lieu d’un seul ou alors décider d’améliorer un effet. S’il améliore l’effet d’attaque, toutes les attaques naturelles de la créature sont affectées. S’il améliore l’effet de défense, tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">critiques potentiels</a> contre la créature bénéficient d’un bonus de +4 au jet de confirmation, en plus de l’effet normal de <i>déformation corporelle</i> sur le bonus d’armure naturelle. S’il améliore l’effet de déplacement, toutes les vitesses de déplacement de la créature sont réduites de moitié.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (6ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il peut choisir deux effets améliorés à infliger à la cible."
+  },
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9formation%20corporelle.ashx",
+    "cache_fichier": "cache/html/f45b7d4b1be445afe0780b71b1a737752308731e.html",
+    "recupere_le": "2026-07-28T22:50:08.434002+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "deformation-corporelle",
+    "resume_court": "Déforme le corps d'une créature pour affaiblir ses attaques, sa défense ou sa mobilité.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante ou morte-vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "deformation-corporelle",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:23+00:00",
+    "hash_source": "ca0b84c23f077560de5a87aca63eeddd5c2b472a14b91a87f56bab3176850a71"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f7bb00da177b7d6de1f9de486c7149d6a942aeaa9d793014eb6ab739869799bf",
+  "hash_vue": "9e9e408e975853bb7312cbe25c4b3a95d1576b0f377826002e63e840152cc791"
+}

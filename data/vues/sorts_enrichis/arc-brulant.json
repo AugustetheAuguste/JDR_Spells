@@ -1,0 +1,78 @@
+{
+  "id": "arc-brulant",
+  "nom": "Arc brûlant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc%20br%c3%bblant.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Ens/Mag": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 cible principale plus 1 cible supplémentaire/3 niveaux (chacune doit être dans un rayon de 4,5 m de la cible principale)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Le peuple de l'Est se vante d’avoir volé ce sort aux génies il y a des milliers d’années, alors que les autres civilisations luttaient sans encore avoir découvert la maîtrise du feu.\nCe sort crée un arc de feu qui surgit des doigts du lanceur, brûlant un certain nombre d’ennemis à proximité. Il inflige 1d6 points de dégâts de feu par niveau de lanceur de sorts (10d6 au maximum). Pour chaque cible supplémentaire que vise la décharge, réduisez le nombre de dés de dégâts de moitié (arrondi à l’inférieur). Ainsi, au niveau 9, l’arc brûlant inflige 9d6 points de dégâts de feu à la cible principale, 4d6 points de dégâts de feu à la deuxième cible et 2d6 points de dégâts de feu à une cible supplémentaire.\nChaque cible peut faire un jet de Réflexes pour réduire les dégâts de moitié. Le DD du jet de Réflexes pour réduire les dégâts de moitié des éclairs secondaires est égal au DD du jet de l’éclair principal -2. Le lanceur peut choisir les cibles secondaires comme il le souhaite, mais elles doivent toutes être dans un rayon de 4,5 mètres de la cible principale, et aucune cible ne peut être frappée plus d’une fois. Le lanceur peut décider d’affecter moins de cibles secondaires que le maximum.",
+  "description_html": "<br/><br/><i>Le <a class=\"pagelink\" href=\"Golarion.K%c3%a9lesh.ashx\" title=\"Kélesh\">peuple de l'Est</a> se vante d’avoir volé ce sort aux génies il y a des milliers d’années, alors que les autres civilisations luttaient sans encore avoir découvert la maîtrise du feu.</i><br/><br/>Ce sort crée un arc de feu qui surgit des doigts du lanceur, brûlant un certain nombre d’ennemis à proximité. Il inflige 1d6 points de dégâts de feu par niveau de lanceur de sorts (10d6 au maximum). Pour chaque cible supplémentaire que vise la décharge, réduisez le nombre de dés de dégâts de moitié (arrondi à l’inférieur). Ainsi, au niveau 9, l’arc brûlant inflige 9d6 points de dégâts de feu à la cible principale, 4d6 points de dégâts de feu à la deuxième cible et 2d6 points de dégâts de feu à une cible supplémentaire.<br/><br/>Chaque cible peut faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour réduire les dégâts de moitié. Le DD du jet de Réflexes pour réduire les dégâts de moitié des éclairs secondaires est égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du jet de l’éclair principal -2. Le lanceur peut choisir les cibles secondaires comme il le souhaite, mais elles doivent toutes être dans un rayon de 4,5 mètres de la cible principale, et aucune cible ne peut être frappée plus d’une fois. Le lanceur peut décider d’affecter moins de cibles secondaires que le maximum.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles kéléshites."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc%20br%c3%bblant.ashx",
+    "cache_fichier": "cache/html/de0622744671f4dbf665186ffd8923d423479677.html",
+    "recupere_le": "2026-07-28T22:41:30.456360+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "arc-brulant",
+    "resume_court": "Un arc de feu jaillit des doigts du lanceur, brûlant une cible principale et jusqu'à plusieurs cibles secondaires à proximité.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "1 cible principale plus 1 cible supplémentaire/3 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "arc-brulant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:59+00:00",
+    "hash_source": "58a23db68688846c239d7e8ac443f8d5c04c3e179d0904cf445ddbd81ee76205"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1870196a552b2d1bcf46f3f92e1bc998ffa76d5998668a77306780ee6655c4e8",
+  "hash_vue": "0bc3ccf30f4e5f7ebdd67ffb980029df46533731664f52af2128d3c8fdca8604"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "lamentation-des-derniers-jours-d-ete",
+  "nom": "Lamentation des derniers jours d'été",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lamentation%20des%20derniers%20jours%20d%c3%a9t%c3%a9.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "Bien",
+    "feu"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "étendue de 9 mètres de rayon centrée sur une créature, un objet ou un point dans l'espace",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage enveloppe la cible dans un manteau d'air estival, au sein duquel la température ambiante ne tombe jamais sous 20°C. Les créatures de sous-type froid qui commencent leur tour dans la zone d'effet subissent 1d4 points de dégâts de feu + 1 tous les 2 niveaux de lanceur de sorts (maximum 1d4+5) sans jet de sauvegarde. Chaque fois qu'un dragon, une fée ou un géant mauvais subit des dégâts de ce sort, il doit réussir un jet de sauvegarde de Volonté ou être secoué pendant 1 round. Les créatures qui tentent de lancer un sort de froid dans la zone d'effet doivent réussir un jet de Volonté ou perdre ce sort. Réussir un tel jet de sauvegarde pour lancer un sort permet à une créature de continuer à lancer des sorts de froid dans la zone d'effet pendant toute la durée du sort.",
+  "description_html": "<br/><br/>Le personnage enveloppe la cible dans un manteau d'air estival, au sein duquel la température ambiante ne tombe jamais sous 20°C. Les créatures de sous-type <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20froid.ashx\" title=\"Froid (sous-type)\">froid</a> qui commencent leur tour dans la zone d'effet subissent 1d4 points de dégâts de feu + 1 tous les 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (maximum 1d4+5) sans <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>. Chaque fois qu'un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20Dragon.ashx\" title=\"Dragon\">dragon</a>, une <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20F%c3%a9e.ashx\" title=\"Fée\">fée</a> ou un <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20g%c3%a9ant.ashx\" title=\"Géant (sous-type)\">géant</a> mauvais subit des dégâts de ce sort, il doit réussir un jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secoué</a> pendant 1 round. Les créatures qui tentent de lancer un sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">froid</a> dans la zone d'effet doivent réussir un jet de Volonté ou perdre ce sort. Réussir un tel jet de sauvegarde pour lancer un sort permet à une créature de continuer à lancer des sorts de froid dans la zone d'effet pendant toute la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles ulfes."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lamentation%20des%20derniers%20jours%20d%c3%a9t%c3%a9.ashx",
+    "cache_fichier": "cache/html/1485f004fcb6520dafb510f177596f0666b61748.html",
+    "recupere_le": "2026-07-28T22:58:06.620343+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lamentation-des-derniers-jours-d-ete",
+    "resume_court": "Un manteau d'air chaud qui blesse les créatures de sous-type froid et entrave les sorts de froid.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "protection_defensive",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts de feu",
+      "condition_infligee": [
+        "être secoué pendant 1 round"
+      ],
+      "cible_typique": "étendue de 9 mètres de rayon centrée sur une créature, un objet ou un point dans l'espace"
+    },
+    "notes_ambiguite": null,
+    "slug": "lamentation-des-derniers-jours-d-ete",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:55+00:00",
+    "hash_source": "6e60f3279fe66f5a8c378841b3f5981a2ec58a94b1a891c340821615f01618fb"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "bff3cd05377915d2528fb4f184b776cd6ba43f9d5a8dde92be8d5069ef64c503",
+  "hash_vue": "8a27f940ceca6936e90f746bb9f1bfcbfd653cb65f7948632616223905b6b998"
+}

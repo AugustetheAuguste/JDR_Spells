@@ -1,0 +1,128 @@
+{
+  "id": "charme-personne-de-groupe",
+  "nom": "Charme-personne de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charme-personne%20de%20groupe.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 4,
+    "Cham": 5,
+    "Ens/Mag": 5,
+    "Hyp": 4,
+    "Occ": 4,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une ou plusieurs créatures humanoïdes, chacune se trouvant à 9 m ou moins l'une de l'autre",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme charme-personne, excepté que charme-personne de groupe cible un nombre de créatures humanoïdes dont le nombre DV combinés ne dépasse pas le double du niveau du personnage. S'il y a plus de cibles potentielles que le personnage ne peut en affecter, il les choisit une par une jusqu'à ce qu'il atteigne le maximum de DV qu'il peut affecter. Si le personnage lance charme-personne de groupe sur une seule créature, il ignore la limite de DV du sort.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.charme-personne.ashx\" title=\"Charme-personne\">charme-personne</a></i>, excepté que <i>charme-personne de groupe</i> cible un nombre de créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20Humano%c3%afde.ashx\" title=\"Humanoïde\">humanoïdes</a> dont le nombre <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> combinés ne dépasse pas le double du niveau du personnage. S'il y a plus de cibles potentielles que le personnage ne peut en affecter, il les choisit une par une jusqu'à ce qu'il atteigne le maximum de DV qu'il peut affecter. Si le personnage lance <i>charme-personne de groupe</i> sur une seule créature, il ignore la limite de DV du sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {
+    "sorts_lies": "Charme-personne"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charme-personne%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/9d8dc5e636cc70e8d9b7f63ba8837e2b35e8c654.html",
+    "recupere_le": "2026-07-28T22:46:27.039335+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "charme-personne-de-groupe",
+    "resume_court": "Le lanceur charme plusieurs créatures humanoïdes dont les DV combinés ne dépassent pas le double de son niveau.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une ou plusieurs créatures humanoïdes"
+    },
+    "notes_ambiguite": "Le texte ne décrit pas précisément l'effet du charme (amitié, obéissance, etc.), mais le titre et le contexte d'enchantement indiquent clairement une coercition. Aucune condition spécifique n'est énumérée au-delà du charme lui-même, qui relève de la catégorie plutôt que d'une condition listée.",
+    "slug": "charme-personne-de-groupe",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:11+00:00",
+    "hash_source": "9dbf3c28ca7e4dabe057f174f6aa91ffa61dc6570d32624646a80121ce337a7e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c7460843e2fa2f132f5570ebc89a81d74186efd3903c57fc2a1aa09aa0396423",
+  "hash_vue": "5358f76402d46730d1f28a2121c1be49c90851e9ea5fbaa0b7864c1c87472e1b"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "suffocation",
+  "nom": "Suffocation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Suffocation.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Occ": 5,
+    "Psy": 5,
+    "Sor": 5,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une fiole contenant une bouffée de souffle du lanceur de sort)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "3 rounds",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort extrait l'air contenu dans les poumons de la cible et la fait rapidement suffoquer. La cible peut tenter un jet de Vigueur pour résister aux effets du sort. Si elle réussit, elle est juste chancelante pendant 1 round alors qu'elle reprend son souffle. Si elle échoue elle se met immédiatement à suffoquer. Au prochain tour de la cible, elle est réduite à 0 point de vie et tombe inconsciente. Un round après, elle passe à -1 point de vie et agonise. Elle meurt au round suivant. À chaque round, la cible peut retarder les effets du sort si elle réussit un jet de Vigueur, mais le sort l'affecte tout de même pour 3 rounds et, à chaque fois qu'elle rate un jet de sauvegarde, la cible se rapproche un peu plus de la suffocation. Ce sort affecte seulement les créatures qui doivent respirer. Il est impossible de vaincre les effets de ce sort en retenant sa respiration : si la victime rate le premier jet de sauvegarde, l'air s'échappe de ses poumons.",
+  "description_html": "<br/><br/>Ce sort extrait l'air contenu dans les poumons de la cible et la fait rapidement suffoquer. La cible peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour résister aux effets du sort. Si elle réussit, elle est juste <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> alors qu'elle reprend son souffle. Si elle échoue elle se met immédiatement à suffoquer. Au prochain tour de la cible, elle est réduite à 0 point de vie et tombe <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconsciente</a>. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> après, elle passe à -1 point de vie et <a class=\"pagelink\" href=\"Pathfinder-RPG.mourant.ashx\" title=\"Mourant\">agonise</a>. Elle meurt au <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> suivant. À chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, la cible peut retarder les effets du sort si elle réussit un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, mais le sort l'affecte tout de même pour 3 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> et, à chaque fois qu'elle rate un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, la cible se rapproche un peu plus de la suffocation. Ce sort affecte seulement les créatures qui doivent respirer. Il est impossible de vaincre les effets de ce sort en retenant sa respiration : si la victime rate le premier <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, l'air s'échappe de ses poumons.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Suffocation.ashx",
+    "cache_fichier": "cache/html/a2a9a7c26dbc4abd5724a32f0eb673eefe70bb2d.html",
+    "recupere_le": "2026-07-29T07:41:26.517417+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "suffocation",
+    "resume_court": "Le sort extrait l'air des poumons de la cible, la faisant suffoquer progressivement sur 3 rounds.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est juste chancelante pendant 1 round"
+      ],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort inflige une mort progressive plutôt que des dégâts directs : la cible passe à 0 PV, puis -1, puis meurt. Classé en affaiblissement car l'effet principal est la dégradation progressive de l'état de la créature. Seule la condition immédiate (chancelant) figure dans condition_infligee, car les états ultérieurs (inconscience, agonie, mort) résultent de la mécanique du sort plutôt que d'une condition appliquée au sens des règles.",
+    "slug": "suffocation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:03+00:00",
+    "hash_source": "264614a1553b4c079f37f72c3d6468c6fdc4758f9427e34cdef2cff7705ad769"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5989f9fc15991ee6a218b98f6a3f69e52a624ac97998b2205735cdf04d721214",
+  "hash_vue": "10661b556c871080898fa2df55a2ed7b4b4912a78887bb0935619b6be739e012"
+}

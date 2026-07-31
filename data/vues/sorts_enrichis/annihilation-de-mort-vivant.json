@@ -1,0 +1,96 @@
+{
+  "id": "annihilation-de-mort-vivant",
+  "nom": "Annihilation de mort-vivant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Annihilation%20de%20mort-vivant.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 6,
+    "Ens/Mag": 6,
+    "Prê": 6,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (poudre de diamant (500 po))",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "plusieurs morts-vivants situés dans un rayonnement de 12 m de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Cercle de mort éteint l’étincelle de vie des morts-vivants présents dans la zone d’effet, qui meurent instantanément. Le sort tue 1d4 DV de créatures par niveau de lanceur de sorts (allant jusqu’à un maximum de 20d4). Les plus faibles créatures sont les premières à être affectées. En cas de DV identiques, ce sont les cibles les plus proches du point d’origine du rayonnement qui sont touchées en priorité. Toute créature disposant d’un minimum de 9 DV est immunisée contre ce sort. Si les DV restants sont insuffisant pour toucher la cible suivante, ils sont perdus.",
+  "description_html": "<br/><br/>Cercle de mort éteint l’étincelle de vie des <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> présents dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a>, qui meurent instantanément. Le sort tue 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> de créatures par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (allant jusqu’à un maximum de 20d4). Les plus faibles créatures sont les premières à être affectées. En cas de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> identiques, ce sont les cibles les plus proches du point d’origine du <a class=\"pagelink\" href=\"Pathfinder-RPG.rayonnement.ashx\" title=\"rayonnement\">rayonnement</a> qui sont touchées en priorité. Toute créature disposant d’un minimum de 9 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> est immunisée contre ce sort. Si les <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> restants sont insuffisant pour toucher la cible suivante, ils sont perdus.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Annihilation%20de%20mort-vivant.ashx",
+    "cache_fichier": "cache/html/6e89be65d2a234092eff9a5d9359e0fd81d07319.html",
+    "recupere_le": "2026-07-28T22:40:55.427265+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "annihilation-de-mort-vivant",
+    "resume_court": "Le sort tue instantanément plusieurs morts-vivants faibles dans une zone de 12 m de rayon.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "Cercle de mort éteint l'étincelle de vie des morts-vivants",
+      "condition_infligee": [],
+      "cible_typique": "plusieurs morts-vivants situés dans un rayonnement de 12 m de rayon"
+    },
+    "notes_ambiguite": "Le texte dit « Cercle de mort » au début de la description, mais l'id et le nom du sort sont « Annihilation de mort-vivant ». Le type de dégâts est classé comme « negatif » car le sort « éteint l'étincelle de vie » des morts-vivants, ce qui relève de la nécromancie et de l'énergie négative, bien que le texte ne nomme pas explicitement le type de dégâts.",
+    "slug": "annihilation-de-mort-vivant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:33+00:00",
+    "hash_source": "3db6d0baab4d3d734f88c78d97100336efb55231d59668e5319adc08ee9f2b58"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5160cc4c32e666ac87ced730dc092e9ea02159534487d2a0d4a0c24dc75fa51b",
+  "hash_vue": "5c3bf96125ce815aef38d3537f40cd79794e269710a361da144d9a325b6eca42"
+}

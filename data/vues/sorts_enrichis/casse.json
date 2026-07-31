@@ -1,0 +1,102 @@
+{
+  "id": "casse",
+  "nom": "Cassé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cass%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Occ": 1,
+    "Psy": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une brindille)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un objet de taille M ou plus petit",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Le personnage peut essayer de casser ou au moins d'endommager un objet de taille M ou moins à portée. Si la cible rate son jet de Vigueur, elle acquiert la condition cassée. Si le personnage lance ce sort sur un objet déjà cassé et que ce dernier rate son jet de sauvegarde, il est détruit.",
+  "description_html": "<br/><br/>Le personnage peut essayer de <a class=\"pagelink\" href=\"Pathfinder-RPG.bris%c3%a9.ashx\" title=\"Brisé\">casser</a> ou au moins d'endommager un objet de taille M ou moins à portée. Si la cible rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, elle acquiert la condition <a class=\"pagelink\" href=\"Pathfinder-RPG.bris%c3%a9.ashx\" title=\"Brisé\">cassée</a>. Si le personnage lance ce sort sur un objet déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.bris%c3%a9.ashx\" title=\"Brisé\">cassé</a> et que ce dernier rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, il est détruit.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut cibler jusqu’à un objet de taille M ou inférieure par niveau de lanceur de sorts.\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique, les objets ciblés deviennent brisés en cas de jet de sauvegarde réussi et sont détruits en cas de jet de sauvegarde raté. Le sort n’affecte pas les objets mythiques ou ceux manipulés ou transportés par des créatures mythiques.",
+    "description_html": "Le personnage peut cibler jusqu’à un objet de taille M ou inférieure par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a>.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, les objets ciblés deviennent brisés en cas de jet de sauvegarde réussi et sont détruits en cas de jet de sauvegarde raté. Le sort n’affecte pas les objets mythiques ou ceux manipulés ou transportés par des créatures mythiques."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cass%c3%a9.ashx",
+    "cache_fichier": "cache/html/19b76f0eff10677527ea6c2fbd02b94d244df59c.html",
+    "recupere_le": "2026-07-28T22:45:48.372806+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "casse",
+    "resume_court": "Endommage ou casse un objet de taille M ou moins à portée courte.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "objet_ou_equipement",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un objet de taille M ou plus petit"
+    },
+    "notes_ambiguite": "Le sort inflige une condition nommée « cassée » à l'objet, mais cette condition n'existe pas dans la liste fermée de condition_infligee. Le texte ne décrit pas les effets mécaniques de cette condition, donc elle ne peut pas être retenue. Le sort est classé en affaiblissement car il dégrade l'état d'un objet sans infliger de dégâts directs.",
+    "slug": "casse",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:05+00:00",
+    "hash_source": "dcb5a0146c8bca81e4d2233360bc339a5fe2a8c94500030274b370fc6c8cdd43"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d27da5232d7e9cbb530a4b9b074ba02370ceaf0b37fbdc16cdb2bfea19ea476d",
+  "hash_vue": "d6816356440c991d4f13746a75e3fbc02eb190bc7191aa29c8cd7ad269a0ea3d"
+}

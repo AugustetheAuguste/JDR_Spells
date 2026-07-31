@@ -1,0 +1,73 @@
+{
+  "id": "lien-de-vie-superieur",
+  "nom": "Lien de vie supérieur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien%20de%20vie%20sup%c3%a9rieur.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 5,
+    "ConU": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme lien de vie mais le personnage transfère 3d6 points de vie par une action rapide.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <a class=\"pagelink\" href=\"Pathfinder-RPG.lien%20de%20vie.ashx\" title=\"Lien de vie\">lien de vie</a> mais le personnage transfère 3d6 points de vie par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien%20de%20vie%20sup%c3%a9rieur.ashx",
+    "cache_fichier": "cache/html/bc632421c1dde15b32bc0cf933d10abb36626b99.html",
+    "recupere_le": "2026-07-28T22:58:34.613810+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lien-de-vie-superieur",
+    "resume_court": "Le lanceur transfère 3d6 points de vie à une créature alliée par une action rapide.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le texte indique « cible: lanceur de sorts » mais décrit un transfert de points de vie « par une action rapide », ce qui suggère une interaction avec une créature alliée. Cependant, le texte ne précise pas explicitement si le sort affecte une autre créature ou seulement le lanceur. Interprétation : le sort permet au lanceur de transférer des points de vie, donc la cible typique est « allie » (la créature qui reçoit les points). La durée « 1 round/niveau » justifie le tag « duree_prolongee ».",
+    "slug": "lien-de-vie-superieur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:05+00:00",
+    "hash_source": "e377705847fe9b3f5c05e7af61afe65f845833b4f3d5337fb89f4a5721fa62d8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b608775b974c6a6d19d8d71833cf1c82c3a5dff5d5c408a75c3af1e60bc55327",
+  "hash_vue": "20a1a9cd2ed6148ad9e92a1f4f3b78fce11f250d220a836b509ca66dbd066c21"
+}

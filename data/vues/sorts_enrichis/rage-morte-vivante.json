@@ -1,0 +1,108 @@
+{
+  "id": "rage-morte-vivante",
+  "nom": "Rage morte-vivante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20morte-vivante.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 2,
+    "Ens/Mag": 3,
+    "Prê": 2,
+    "Sor": 3,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature morte-vivante volontaire/3 niveaux, ne devant pas se trouver à plus de 9 m les unes des autres",
+  "duree": "concentration + 1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme rage, à la seule différence qu’il n’affecte que les créatures mortes-vivantes et les renforce d’énergie nécromantique plutôt que d’une émotion. Chaque créature affectée gagne un bonus de malfaisance de +2 en Force et en Charisme, un bonus de malfaisance de +1 aux jets de Volonté et reçoit un malus de -2 à la CA.\nOutre cela, cet effet est identique à la rage du barbare.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rage.ashx\" title=\"Rage\">rage</a></i>, à la seule différence qu’il n’affecte que les créatures mortes-vivantes et les renforce d’énergie nécromantique plutôt que d’une émotion. Chaque créature affectée gagne un bonus de malfaisance de +2 en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> et en <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a>, un bonus de malfaisance de +1 aux jets de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> et reçoit un malus de -2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>.<br/><br/>Outre cela, cet effet est identique à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Barbare.ashx#RAGEDEBERSERKER\" title=\"Le barbare\">rage</a> du barbare.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Rage"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20morte-vivante.ashx",
+    "cache_fichier": "cache/html/019144aae5268fbcb6db88ca300c84f156518475.html",
+    "recupere_le": "2026-07-29T07:36:58.111173+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "rage-morte-vivante",
+    "resume_court": "Renforce les morts-vivants volontaires avec des bonus de Force et Charisme, au prix d'une CA réduite.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature morte-vivante volontaire"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités des morts-vivants alliés (bonus de Force et Charisme) mais inflige aussi un malus à la CA. La catégorie `amelioration` s'applique car l'effet principal est un renforcement des capacités, même si un coût défensif l'accompagne. Les cibles sont des alliés volontaires, non des ennemis.",
+    "slug": "rage-morte-vivante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:19+00:00",
+    "hash_source": "637351cfec88d4491db44faba4eeafbda6563c2210411c8e7d023bd9c57638c7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "51c6a542c10113238f2078d1bdc563facef5eae717570deec9cc48d7f8164659",
+  "hash_vue": "493f7768c292295f29d316602614f6ff1326978aefe196fb874a7cf75c1e5bee"
+}

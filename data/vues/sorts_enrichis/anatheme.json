@@ -1,0 +1,119 @@
+{
+  "id": "anatheme",
+  "nom": "Anathème",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anath%c3%a8me.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "émotion",
+    "mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Apal": 1,
+    "Cham": 1,
+    "Hyp": 1,
+    "Inq": 1,
+    "Prê": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 créature vivante",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La cible ressent une vive terreur lui faisant perdre toute confiance. Elle est secouée.",
+  "description_html": "<br/><br/>La cible ressent une vive terreur lui faisant perdre toute confiance. Elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouée</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anath%c3%a8me.ashx",
+    "cache_fichier": "cache/html/cf7fbe5c42b04043ca09e1700dd67acf85b8431f.html",
+    "recupere_le": "2026-07-28T22:40:40.390251+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "anatheme",
+    "resume_court": "La cible ressent une terreur qui la secoue et lui fait perdre confiance.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Elle est secouée"
+      ],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "anatheme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:26+00:00",
+    "hash_source": "05213326055cc396873147e0a036d5b2f01857f377a332cc622469b859550e3f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3ae26ebbb6db1bdeaedc3d7e6fb0d9d679454cf02bb1ac020a16c8fe313f5c3b",
+  "hash_vue": "7984be94da0eba0e827b5657c5e7e83714cf2a00fd4009d5745244d468820dcc"
+}

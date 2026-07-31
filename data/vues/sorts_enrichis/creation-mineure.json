@@ -1,0 +1,185 @@
+{
+  "id": "creation-mineure",
+  "nom": "Création mineure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20mineure.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 4,
+    "Occ": 3,
+    "Psy": 4,
+    "Sor": 4,
+    "Spi": 3
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (un morceau de matériau correspondant à celui que l’on souhaite créer)",
+  "portee": "0 m",
+  "cible": "objet non-magique de matière inerte et végétale de 30 dm³/niveau",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Grâce à cette invocation le personnage peut créer un objet non-magique de matière inerte et d’origine végétale. Le volume de l’objet créé ne peut en aucun cas dépasser 30 dm³ par niveau. Si l’objet souhaité est assez complexe, il faut réussir un test d’Artisanat approprié.\nSi l’on essaye d’utiliser un objet créé grâce à cette incantation comme composante matérielle d’un autre sort, ce dernier échoue automatiquement.",
+  "description_html": "<hr/>\nGrâce à cette invocation le personnage peut créer un objet non-magique de matière inerte et d’origine végétale. Le volume de l’objet créé ne peut en aucun cas dépasser 30 dm³ par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Si l’objet souhaité est assez complexe, il faut réussir un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> approprié.<br/><br/>Si l’on essaye d’utiliser un objet créé grâce à cette incantation comme <a class=\"pagelink\" href=\"Pathfinder-RPG.composante%20mat%c3%a9rielle.ashx\" title=\"composante matérielle\">composante matérielle</a> d’un autre sort, ce dernier échoue automatiquement.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Objet fantomatique mineur",
+      "id": "objet-fantomatique-mineur",
+      "ecole": "Illusion (ombre)",
+      "descripteurs": [
+        "ombre"
+      ],
+      "niveaux": {
+        "Hyp": 4,
+        "Ens/Mag": 4,
+        "Psy": 4
+      },
+      "temps_incantation": "1 minute",
+      "composantes": "V, G",
+      "portee": "0 m",
+      "cible": "un objet illusoire non magique abandonné, en matière végétale non vivante, d’un maximum de 0,03 m3/niveau",
+      "duree": "10 minutes/niveau (T)",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme création mineure, mais crée seulement un objet illusoire. Si une créature interagit avec, elle a droit à un jet de Volonté pour faire disparaître l’objet. Un gnome qui lance ce sort peut faire un test d’Art de la magie au lieu d’un test d’Artisanat pour fabriquer un objet complexe.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.cr%c3%a9ation%20mineure.ashx\" title=\"Création mineure\">création mineure</a></i>, mais crée seulement un objet illusoire. Si une créature interagit avec, elle a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour faire disparaître l’objet. Un gnome qui lance ce sort peut faire un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> au lieu d’un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> pour fabriquer un objet complexe.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Création majeure",
+      "id": "creation-majeure",
+      "ecole": "Invocation (création)",
+      "descripteurs": [],
+      "niveaux": {
+        "Con": 4,
+        "ConU": 4,
+        "Ens/Mag": 5,
+        "Occ": 4,
+        "Psy": 5,
+        "Sor": 5
+      },
+      "temps_incantation": "10 minutes",
+      "composantes": "V, G, M (un morceau de matériau correspondant à celui que l’on souhaite créer)",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "objet non-magique de matière inerte de 30 dm³/niveau",
+      "duree": "voir texte",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "non",
+      "description": "Ce sort s’apparente à celui de création mineure, à la différence qu’il permet également de créer des objets minéraux.\nGrâce à cette invocation le personnage peut créer un objet non-magique de matière inerte, d’origine végétale ou minérale (pierre, métaux, cristaux, etc.). La durée d’existence de l’objet est déterminée par sa dureté et sa rareté :\nExemples de matériauxDurée d’existence\nMatière végétale2 heures/niveau\nPierre, cristal, métal vulgaire1 heure/niveau\nMétal précieux20 minutes/niveau\nPierre précieuse10 minutes/niveau\nMétal rare*1 round/niveau\n(*) Incluant l’adamantium, l’argent alchimique et le mithral. Il n’est pas possible d’utiliser création majeure pour créer un objet en fer froid.\nLe volume de l’objet créé ne peut en aucun cas dépasser 30 dm³ par niveau. Si l’objet souhaité est assez complexe, il faut réussir un test d’Artisanat approprié.\nSi l’on essaye d’utiliser un objet créé grâce à cette incantation comme composante matérielle d’un autre sort, ce dernier échoue automatiquement.",
+      "description_html": "<hr/>\nCe sort s’apparente à celui de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.cr%c3%a9ation%20mineure.ashx\" title=\"Création mineure\">création mineure</a></i>, à la différence qu’il permet également de créer des objets minéraux.<br/><br/>Grâce à cette <a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocation</a> le personnage peut créer un objet non-magique de matière inerte, d’origine végétale ou minérale (pierre, métaux, cristaux, etc.). La durée d’existence de l’objet est déterminée par sa dureté et sa rareté :<br/><br/><table class=\"tablo centre autoalt\"><tr class=\"titre\"><td>Exemples de matériaux</td><td>Durée d’existence</td></tr><tr class=\"premier\"><td>Matière végétale</td><td>2 heures/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a></td></tr><tr><td>Pierre, cristal, métal vulgaire</td><td>1 heure/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a></td></tr><tr><td>Métal précieux</td><td>20 minutes/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a></td></tr><tr><td>Pierre précieuse</td><td>10 minutes/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a></td></tr><tr><td>Métal rare*</td><td>1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>/<a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a></td></tr><tr class=\"note\"><td colspan=\"2\"><i>(*) Incluant l’<a class=\"pagelink\" href=\"Pathfinder-RPG.adamantium.ashx\" title=\"adamantium\">adamantium</a>, l’<a class=\"pagelink\" href=\"Pathfinder-RPG.argent%20alchimique.ashx\" title=\"argent alchimique\">argent alchimique</a> et le <a class=\"pagelink\" href=\"Pathfinder-RPG.mithral.ashx\" title=\"mithral\">mithral</a>. Il n’est pas possible d’utiliser création majeure pour créer un objet en <a class=\"pagelink\" href=\"Pathfinder-RPG.fer%20froid.ashx\" title=\"fer froid\">fer froid</a>.</i></td></tr></table><br/>Le volume de l’objet créé ne peut en aucun cas dépasser 30 dm³ par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Si l’objet souhaité est assez complexe, il faut réussir un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> approprié.<br/><br/>Si l’on essaye d’utiliser un objet créé grâce à cette incantation comme <a class=\"pagelink\" href=\"Pathfinder-RPG.composante%20mat%c3%a9rielle.ashx\" title=\"composante matérielle\">composante matérielle</a> d’un autre sort, ce dernier échoue automatiquement.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Objet fantomatique majeur",
+      "id": "objet-fantomatique-majeur",
+      "ecole": "Illusion (ombre)",
+      "descripteurs": [
+        "ombre"
+      ],
+      "niveaux": {
+        "Hyp": 5,
+        "Ens/Mag": 5,
+        "Psy": 5
+      },
+      "temps_incantation": "10 minutes",
+      "composantes": null,
+      "portee": "courte (7,5 m + 1,5 m/2 niveau) (5 c + 1 c/2 niveau)",
+      "cible": "un objet illusoire non magique abandonné, d’un maximum de 0,03 m3/niveau",
+      "duree": "10 minutes/niveau (T)",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme création majeure, en dehors de ce qui est noté plus haut, et crée seulement un objet illusoire. Si une créature interagit avec, elle a droit à un jet de Volonté pour faire disparaître l’objet. Un gnome qui lance ce sort peut faire un test d’Art de la magie au lieu d’un test d’Artisanat pour fabriquer un objet complexe.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.cr%c3%a9ation%20majeure.ashx\" title=\"Création majeure\">création majeure</a></i>, en dehors de ce qui est noté plus haut, et crée seulement un objet illusoire. Si une créature interagit avec, elle a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour faire disparaître l’objet. Un gnome qui lance ce sort peut faire un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> au lieu d’un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> pour fabriquer un objet complexe.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20mineure.ashx",
+    "cache_fichier": "cache/html/3919afd62b02f5725b689158266647a79a007d14.html",
+    "recupere_le": "2026-07-28T22:49:37.352638+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "creation-mineure",
+    "resume_court": "Le lanceur crée un objet non-magique de matière inerte ou végétale pendant 1 heure par niveau.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "objet_ou_equipement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "utilitaire",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "objet non-magique de matière inerte et végétale de 30 dm³/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "creation-mineure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:06+00:00",
+    "hash_source": "d7a0111e80971394e382787acefe8ff34e7f5d8c8b9d252e357a9863312dcb09"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9ce46eda1deee2ea69e2ffbd57d081e2b2640872d397897190903af2d6eded75",
+  "hash_vue": "d8c300c9f9309d10114b1c0ae804f9dd8124c466d1ef87f61aac1b08d4e7545c"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "membre-fantome",
+  "nom": "Membre fantôme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Membre%20fant%c3%b4me.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Psy": 6,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature",
+  "duree": "24 heures (voir texte)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Ce sort crée une manifestation psychique semi-visible qui permet à une créature de remplacer une ou des parties manquantes de son corps. Ce peut être un simple doigt manquant ou un membre plus complexe comme une paire d'ailes. La créature peut utiliser ces appendices ectoplasmiques exactement comme s'il étaient ses véritables membres, y compris pour porter n'importe quelle attaque naturelle ou autre capacité spéciale. Cela inclut les capacités extraordinaires octroyées par ces appendices, mais pas les surnaturelles. Si la cible n'a pas besoin de remplacer un de ses membres (ou décide de ne pas l'utiliser de cette façon), elle peut choisir une des options suivantes. Dans ce cas, le sort dure seulement 10 minutes par niveau.\nBras supplémentaire. La cible se voit pousser 2 bras fantomatiques, lui offrant 2 attaques de griffes supplémentaires ; la cible ne peut utiliser ces membres supplémentaires à d'autres fins.\nJambes supplémentaires. La cible se voit pousser 2 jambes fantomatiques et des hanches puissantes semblables à celles d’un cheval, lui offrant un bonus d'altération de +9 m à sa vitesse de déplacement et un bonus de +4 à son DMD contre les manœuvres de renversement et de croc-en-jambe.\nQueue de sirène. La cible se voit pousser une queue fantomatique, lui offrant une vitesse de nage de 18 m.\nAiles fantômes. La cible se voit pousser des ailes fantomatiques, lui offrant une vitesse de vol de 18 m (bonne manœuvrabilité).",
+  "description_html": "<br/><br/>Ce sort crée une manifestation psychique semi-visible qui permet à une créature de remplacer une ou des parties manquantes de son corps. Ce peut être un simple doigt manquant ou un membre plus complexe comme une paire d'ailes. La créature peut utiliser ces appendices ectoplasmiques exactement comme s'il étaient ses véritables membres, y compris pour porter n'importe quelle attaque naturelle ou autre capacité spéciale. Cela inclut les capacités extraordinaires octroyées par ces appendices, mais pas les surnaturelles. Si la cible n'a pas besoin de remplacer un de ses membres (ou décide de ne pas l'utiliser de cette façon), elle peut choisir une des options suivantes. Dans ce cas, le sort dure seulement 10 minutes par niveau.<br/><br/><i>Bras supplémentaire.</i> La cible se voit pousser 2 bras fantomatiques, lui offrant 2 attaques de griffes supplémentaires ; la cible ne peut utiliser ces membres supplémentaires à d'autres fins.<br/><br/><i>Jambes supplémentaires.</i> La cible se voit pousser 2 jambes fantomatiques et des hanches puissantes semblables à celles d’un cheval, lui offrant un bonus d'altération de +9 m à sa vitesse de déplacement et un bonus de +4 à son <a class=\"pagelink\" href=\"Pathfinder-RPG.DMD.ashx\" title=\"DMD\">DMD</a> contre les manœuvres de <a class=\"pagelink\" href=\"Pathfinder-RPG.renversement.ashx\" title=\"renversement\">renversement</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.croc-en-jambe.ashx\" title=\"croc-en-jambe\">croc-en-jambe</a>.<br/><br/><i>Queue de sirène.</i> La cible se voit pousser une queue fantomatique, lui offrant une vitesse de nage de 18 m.<br/><br/><i>Ailes fantômes.</i> La cible se voit pousser des ailes fantomatiques, lui offrant une vitesse de vol de 18 m (bonne manœuvrabilité).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Origins/Origines occultes ; /!\\ Traduit par la communauté /!\\"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Membre%20fant%c3%b4me.ashx",
+    "cache_fichier": "cache/html/ca3d7fffc660b94c2e3f03af0f08165e56f7bb9c.html",
+    "recupere_le": "2026-07-28T23:00:29.765966+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "membre-fantome",
+    "resume_court": "Le lanceur crée des appendices ectoplasmiques qui remplacent des membres manquants ou octroient des capacités supplémentaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort peut servir au combat (attaques supplémentaires, bonus de manœuvre) ou à l'exploration (vol, nage, déplacement). Les appendices sont semi-visibles et ectoplasmiques, ce qui justifie le tag invocation_ou_creation. La cible est généralement un allié puisque le sort améliore ses capacités sans contrainte hostile.",
+    "slug": "membre-fantome",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:46+00:00",
+    "hash_source": "6ae3f14661967b57403c8244a675d76a011d778e6009a9652b7df95b774bbbbe"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0a4d5cc82a796a74dc5a59dd69f77f3d60cd7ddaf4e235584a58952bf1687ecf",
+  "hash_vue": "ec39a815e9a7cd3757d74835d6e8377d6e4ec6f8311272b6ca169b240ae909af"
+}

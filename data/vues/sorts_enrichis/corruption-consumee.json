@@ -1,0 +1,95 @@
+{
+  "id": "corruption-consumee",
+  "nom": "Corruption consumée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corruption%20consum%c3%a9e.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Bien",
+    "feu"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Magus": 5,
+    "San": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "jusqu'à un cube de 3 m d'arête/niveau (F)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts ; Résistance à la magie' oui",
+  "resistance_magie": null,
+  "description": "Ce sort remplit la zone d'effet de flammes violettes qui la vide de toute vie, en particulier des vies corrompues par les Abysses. Les créatures (et la végétation) dans la zone d'effet subit 1d8 points de dégâts de feu tous les deux niveaux de lanceur de sorts (maximum 7d8) à moins qu'il s'agisse d'extérieurs de sous-type Chaos et Mal ou qu'elles soient autrement polluées par des démons, auquel cas elles subissent à la place 1d6 points de dégâts de feu par niveau de lanceur de sorts (maximum 15d6). Ces dégâts de feu ignorent la résistance au feu offerte par le sous-type démon, mais sont normalement réduits par les autres formes de résistance ou d'immunité au feu.",
+  "description_html": "<br/><br/>Ce sort remplit la zone d'effet de flammes violettes qui la vide de toute vie, en particulier des vies corrompues par les Abysses. Les créatures (et la végétation) dans la zone d'effet subit 1d8 points de dégâts de feu tous les deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (maximum 7d8) à moins qu'il s'agisse d'<a class=\"pagelink\" href=\"Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx\" title=\"Extérieur\">extérieurs</a> de sous-type <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Chaos.ashx\" title=\"Chaos (sous-type)\">Chaos</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Mal.ashx\" title=\"Mal (sous-type)\">Mal</a> ou qu'elles soient autrement polluées par des démons, auquel cas elles subissent à la place 1d6 points de dégâts de feu par niveau de lanceur de sorts (maximum 15d6). Ces dégâts de feu ignorent la <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx\" title=\"Résistance (aux énergies destructrices) (Ext)\">résistance</a> au feu offerte par le sous-type <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20d%c3%a9mon.ashx\" title=\"Démon (sous-type)\">démon</a>, mais sont normalement réduits par les autres formes de résistance ou d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Immunit%c3%a9%20(capacit%c3%a9).ashx\" title=\"Immunité (Ext ou Sur)\">immunité</a> au feu.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles elfes."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corruption%20consum%c3%a9e.ashx",
+    "cache_fichier": "cache/html/67bb239b77f85276e9aea55db81dc8d316e9f6f9.html",
+    "recupere_le": "2026-07-28T22:49:00.880842+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "corruption-consumee",
+    "resume_court": "Des flammes violettes remplissent une zone et infligent des dégâts de feu, davantage aux créatures corrompues par les Abysses.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à un cube de 3 m d'arête/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "corruption-consumee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:53+00:00",
+    "hash_source": "5a83ba6d9e0793e67956d5881b32c9833787e8c2f3b67cc4775b234237a53f9d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8043c2847385d438d2dd0c1e468d2e33c90ce72651e5e6419dcb47be5f9ed408",
+  "hash_vue": "fef01d127dd2c739dcc16636066830967fa540c2897e96e36098de0c257a7783"
+}

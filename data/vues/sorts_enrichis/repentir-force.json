@@ -1,0 +1,84 @@
+{
+  "id": "repentir-force",
+  "nom": "Repentir forcé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repentir%20forc%c3%a9.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Inq": 4,
+    "Pal": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature Mauvaise qui n'est pas de sous-type Mal",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage contraint une créature Mauvaise qui ne possède pas le sous-type Mal à réfléchir momentanément à ses actions passées et à se laisser submerger par les remords et la prise de conscience. La cible tombe immédiatement à terre et, pendant toute la durée du sort, elle se met à se confesser à haute voix auprès du lanceur de sorts pour tous ses péchés et toutes ses transgressions. Le sort se termine immédiatement si le personnage sort du champ de vision de la cible ou si cette dernière se fait attaquer.",
+  "description_html": "<br/><br/>Le personnage contraint une créature Mauvaise qui ne possède pas le <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Mal.ashx\" title=\"Mal (sous-type)\">sous-type Mal</a> à réfléchir momentanément à ses actions passées et à se laisser submerger par les remords et la prise de conscience. La cible tombe immédiatement <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a> et, pendant toute la durée du sort, elle se met à se confesser à haute voix auprès du lanceur de sorts pour tous ses péchés et toutes ses transgressions. Le sort se termine immédiatement si le personnage sort du champ de vision de la cible ou si cette dernière se fait attaquer.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repentir%20forc%c3%a9.ashx",
+    "cache_fichier": "cache/html/88f76ee2dff26c11a5caca0866df5b046f29b097.html",
+    "recupere_le": "2026-07-29T07:38:04.383218+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "repentir-force",
+    "resume_court": "Force une créature Mauvaise sans sous-type Mal à se confesser, immobilisée par les remords.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature Mauvaise qui n'est pas de sous-type Mal"
+    },
+    "notes_ambiguite": "Le sort immobilise la cible (« tombe immédiatement à terre ») mais ne lui inflige pas une condition nommée de la liste. L'effet est clairement une entrave, classée en categorie_principale. Les tags reflètent la coercition mentale et l'immobilisation fonctionnelle sans invoquer une condition formelle.",
+    "slug": "repentir-force",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:50+00:00",
+    "hash_source": "ff36a98bed829691e29f0e0e5148729753032e9789fb4d0324df43c8adc22872"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6d62c536e21fa53cd19c304655580c5681042c666ed44d90a58ec5fc3a4ca955",
+  "hash_vue": "1d384804a71ab96a346d7703901c685084d3413095c3ff9d358037b4e389e509"
+}

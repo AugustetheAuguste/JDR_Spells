@@ -1,0 +1,97 @@
+{
+  "id": "aura-de-funeste-destin",
+  "nom": "Aura de funeste destin",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20funeste%20destin.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental",
+    "émotion",
+    "peur"
+  ],
+  "niveaux": {
+    "Prê": 4,
+    "Psy": 4,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (os en poudre)",
+  "portee": "personnelle",
+  "cible": "émanation de 6 m (4 c) centrée sur le personnage",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Une aura d’horreur palpable émane du personnage. Les créatures qui ne sont pas alliées à lui et qui se trouvent dans la zone ou y entrent par la suite doivent réussir un jet de Volonté ou être secouées. Un jet de sauvegarde réussi annule cet effet. Les créatures qui quittent la zone et y retournent doivent refaire un jet si elles ne veulent pas être affectées.",
+  "description_html": "<br/><br/>Une aura d’horreur palpable émane du personnage. Les créatures qui ne sont pas alliées à lui et qui se trouvent dans la zone ou y entrent par la suite doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouées</a>. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> réussi annule cet effet. Les créatures qui quittent la zone et y retournent doivent refaire un jet si elles ne veulent pas être affectées.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20funeste%20destin.ashx",
+    "cache_fichier": "cache/html/cc7573c192b65c03993e6e4f14ad40b32f1ac8eb.html",
+    "recupere_le": "2026-07-28T22:42:39.555665+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "aura-de-funeste-destin",
+    "resume_court": "Une aura d'horreur émane du lanceur, secouant les créatures non alliées dans un rayon de 6 m.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être secouées"
+      ],
+      "cible_typique": "émanation de 6 m (4 c) centrée sur le personnage"
+    },
+    "notes_ambiguite": null,
+    "slug": "aura-de-funeste-destin",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:26+00:00",
+    "hash_source": "c40e895bbf0aee4ec02dc64dd9871c82db26ff5bb991a51af5339309aa7956c4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2cb5b8a18c1be3bb28c610250cc3578efc5bb654c43e7ef54b1103e67bc644f0",
+  "hash_vue": "687b833653b4998c6f23f9e1820dfa78a64266ae90d5be87e0522fc47024cbe9"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "vomir-une-nuee",
+  "nom": "Vomir une nuée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vomir%20une%20nu%c3%a9e.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "personnelle",
+  "cible": "une nuée d'araignées",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage vomit une nuée d'araignées qui attaque toutes les créatures qui se trouvent dans la zone. La nuée apparaît dans une case adjacente au personnage mais si cette case ne contient pas de créature vivante, elle se dirige à sa vitesse normale dans une direction choisie par le lanceur de sorts. Ce dernier peut déplacer la nuée ou changer sa direction par une action simple, en se concentrant sur elle, sinon la nuée continue d'avancer dans sa direction actuelle. Si le personnage possède au moins un niveau de lanceur de sorts de 7, il peut vomir une nuée de guêpes. Enfin, si son niveau de lanceur de sorts est de 13 au minimum, il peut vomir une nuée de fourmis soldats.",
+  "description_html": "<br/><br/>Le personnage vomit une <a class=\"pagelink\" href=\"Pathfinder-RPG.nu%c3%a9e%20daraign%c3%a9es.ashx\" title=\"Araignée, Nuée d'araignées\">nuée d'araignées</a> qui attaque toutes les créatures qui se trouvent dans la zone. La nuée apparaît dans une case adjacente au personnage mais si cette case ne contient pas de créature vivante, elle se dirige à sa vitesse normale dans une direction choisie par le lanceur de sorts. Ce dernier peut déplacer la nuée ou changer sa direction par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, en se concentrant sur elle, sinon la nuée continue d'avancer dans sa direction actuelle. Si le personnage possède au moins un <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> de 7, il peut vomir une <a class=\"pagelink\" href=\"Pathfinder-RPG.nu%c3%a9e%20de%20gu%c3%aapes.ashx\" title=\"Guêpe, Nuée de guêpes\">nuée de guêpes</a>. Enfin, si son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> est de 13 au minimum, il peut vomir une <a class=\"pagelink\" href=\"Pathfinder-RPG.nu%c3%a9e%20de%20fourmis%20soldats.ashx\" title=\"Fourmi, Nuée de fourmis soldats\">nuée de fourmis soldats</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vomir%20une%20nu%c3%a9e.ashx",
+    "cache_fichier": "cache/html/252b4156a9892cfd028d2344903fef319e864a28.html",
+    "recupere_le": "2026-07-29T07:44:46.504497+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vomir-une-nuee",
+    "resume_court": "Le lanceur vomit une nuée d'araignées qui attaque les créatures adjacentes et se déplace sous son contrôle.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une nuée d'araignées"
+    },
+    "notes_ambiguite": "Le texte ne précise pas les dégâts infligés par la nuée ni les conditions qu'elle impose. La cible est désignée comme « une nuée » plutôt qu'une zone géographique, mais l'effet s'applique à toutes les créatures dans la zone où la nuée se trouve, ce qui justifie le classement en zone.",
+    "slug": "vomir-une-nuee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:23+00:00",
+    "hash_source": "b08ce88b100a3e5057d8263aecdcd1c2ee2fc474659aeadec619e0dc5d1f049b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f05915eb7b40bd10ac963a09118ced771b57fb0f284578495451c94e32dee444",
+  "hash_vue": "02948aee76ef7716d2e8e15805bcc7e12f91fdf44bb237b00bddc5658d3b7eca"
+}

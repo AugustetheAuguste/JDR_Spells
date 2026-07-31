@@ -1,0 +1,93 @@
+{
+  "id": "esprit-impenetrable-partage",
+  "nom": "Esprit impénétrable (partagé)",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20imp%c3%a9n%c3%a9trable%20(partag%c3%a9).ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 8,
+    "Sor": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "créatures touchées",
+  "duree": "24 heures",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme esprit impénétrable mais la durée se divise entre les créatures touchées, par portions de 1 heure.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.esprit%20imp%c3%a9n%c3%a9trable.ashx\" title=\"Esprit impénétrable\">esprit impénétrable</a></i> mais la durée se divise entre les créatures touchées, par portions de 1 heure.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {
+    "sorts_lies": "Esprit impénétrable"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20imp%c3%a9n%c3%a9trable%20(partag%c3%a9).ashx",
+    "cache_fichier": "cache/html/757c4e0e55156eafe547d4046a4484126ea3ed98.html",
+    "recupere_le": "2026-07-28T22:52:38.261738+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "esprit-impenetrable-partage",
+    "resume_court": "Protège plusieurs créatures touchées contre les intrusions mentales pendant 24 heures répartis.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures touchées"
+    },
+    "notes_ambiguite": "Le texte renvoie à un sort de base « esprit impénétrable » non fourni. L'annotation repose sur le titre, la description fonctionnelle (protection mentale) et les mécaniques déclarées (Abjuration, jet de Volonté inoffensif, résistance à la magie inoffensif). La durée partagée entre plusieurs créatures justifie le tag « plusieurs_cibles ».",
+    "slug": "esprit-impenetrable-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:39+00:00",
+    "hash_source": "10c83e9bb7d682d443bef0cecc24c16091db8502137f7b2650ffc99473bbf5bd"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a026e9462964510f6cca61f58b94463ca3d702d0d2558378b18560ce0e1afb1c",
+  "hash_vue": "c9394876cc4bd7ea8b4d711f276233d2efc4c63029f7e7b02a1405e2f0faa4b6"
+}

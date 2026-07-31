@@ -1,0 +1,84 @@
+{
+  "id": "fouet-d-ego-iii",
+  "nom": "Fouet d'ego III",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20III.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme fouet d’ego I mais la cible subit un malus de –6 dans la valeur de caractéristique choisie et se trouve chancelante pendant 1d6 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.fouet%20dego%20I.ashx\" title=\"Fouet d'ego I\">fouet d’ego I</a></i> mais la cible subit un malus de –6 dans la valeur de caractéristique choisie et se trouve <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant\" title=\"Les états préjudiciables\">chancelante</a> pendant 1d6 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Fouet d'ego I"
+  },
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20III.ashx",
+    "cache_fichier": "cache/html/9208596cb656666fb211f6ae9786c74c5bf71677.html",
+    "recupere_le": "2026-07-28T22:54:42.381721+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fouet-d-ego-iii",
+    "resume_court": "Inflige un malus de –6 à une caractéristique et rend la cible chancelante si elle échoue son jet.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "malus_chiffre",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "se trouve chancelante pendant 1d6 rounds si elle rate son jet de sauvegarde"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "fouet-d-ego-iii",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:32+00:00",
+    "hash_source": "34685ffa44631137cc5be165a68934467cf06b4c73f695b89dfbc071a2f976f0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "42093549b74b34e8e2d98c85b534445640fb3385ea7ccfbbe0334969645e5a39",
+  "hash_vue": "164052a7b9534693e856ccb22689ddd075bfd4799a3eb7e68a0d338f99e25932"
+}

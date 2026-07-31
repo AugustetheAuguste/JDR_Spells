@@ -1,0 +1,89 @@
+{
+  "id": "destruction",
+  "nom": "Destruction",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Destruction.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mort"
+  ],
+  "niveaux": {
+    "Cham": 8,
+    "Prê": 7,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (symbole sacré ou maudit d’une valeur de 500 po)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort inflige immédiatement 10 points de dégâts par niveau de lanceur de sorts. S’il tue la cible, il consume le corps de celle-ci dans une flamme sacrée (ou maudite) (mais ni son équipement ni ses possessions). Si la victime réussit son jet de Vigueur, elle perd tout de même 10d6 points de vie. Un individu tué par ce sort ne peut être ramené à la vie que par une résurrection suprême, par un souhait énoncé avec le plus grand soin et suivi d’une résurrection, ou par un miracle.",
+  "description_html": "<br/><br/>Ce sort inflige immédiatement 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. S’il tue la cible, il consume le corps de celle-ci dans une flamme sacrée (ou maudite) (mais ni son équipement ni ses possessions). Si la victime réussit son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, elle perd tout de même 10d6 points de vie. Un individu tué par ce sort ne peut être ramené à la vie que par une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection%20supr%c3%aame.ashx\" title=\"Résurrection suprême\">résurrection suprême</a></i>, par un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> énoncé avec le plus grand soin et suivi d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection.ashx\" title=\"Résurrection\">résurrection</a></i>, ou par un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Destruction.ashx",
+    "cache_fichier": "cache/html/36a14db53a92ff1020f5a0c30a18902acbb7e86f.html",
+    "recupere_le": "2026-07-29T07:45:03.436317+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "destruction",
+    "resume_court": "Un sort de nécromancie qui inflige 10 points de dégâts par niveau et consume le corps si la cible meurt.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "10 points de dégâts par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts d'énergie négative (nécromancie, descripteur « mort », flamme sacrée ou maudite). Bien que le texte ne nomme pas explicitement « dégâts négatifs », la nature du sort et ses effets (consomption du corps, impossibilité de résurrection standard) relèvent clairement de l'énergie négative.",
+    "slug": "destruction",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:33+00:00",
+    "hash_source": "c1c2b59a5ce0b30203fc26852ec6dec8789c16d76e4bc64902cdd5edad44d458"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9463fbf131a945aa1844f0091e25b0ad13a4ba99bb3ca078d22541b1b89bf67c",
+  "hash_vue": "5a8944bfe5ed1fa03a8662cb52236c05d0c28347aa7f4de7479afc8ccbe5721e"
+}

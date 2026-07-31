@@ -1,0 +1,91 @@
+{
+  "id": "sanglantes-represailles",
+  "nom": "Sanglantes représailles",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanglantes%20repr%c3%a9sailles.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 4,
+    "Prê": 6,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (le sang du personnage)",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "spéciale (voir description)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort est réservé aux personnages qui vénèrent la déesse naine de la vengeance.\nLorsqu’il lance ce sort, le personnage entaille une partie de son corps et prononce un serment de représailles avec son sang. Il détermine la quantité de dégâts qu’il s’inflige par le biais de cette attaque, jusqu’à un maximum de 25 points. Ces dégâts ne peuvent être soignés tant que dure le sort. À chaque fois qu’il effectue une attaque, une sauvegarde ou un test directement liés au serment qui le rapproche de son accomplissement, il gagne un bonus de moral à ces jets égal au nombre de points de dégâts qu’il s’est infligés lors de la prononciation du serment, divisés par 5. Le MJ est l’arbitre final pour déterminer si une action peut bénéficier ou non de ce bonus. Lorsqu’il accomplit le serment (ou décide de le renier), le sort prend fin et les points de vie perdus peuvent être soignés.\nPar exemple, un chef bandit tristement célèbre a tué le frère de Stigur et Stigur veut venger la mort de son frère. Il lance ce sort et sacrifie 20 points de vie. Pendant toute la durée de ce sort, Stigur gagne un bonus de moral de +4 sur ses jets d’attaque effectués contre les séides du chef des bandits, à ses jets de sauvegarde contre ces mêmes séides, à ses tests d’Intimidation pour obliger un informateur à lui révéler l’emplacement du campement du chef, et ainsi de suite.",
+  "description_html": "<br/><br/><i>Ce sort est réservé aux personnages qui vénèrent la déesse naine de la vengeance.</i><br/><br/>Lorsqu’il lance ce sort, le personnage entaille une partie de son corps et prononce un serment de représailles avec son sang. Il détermine la quantité de dégâts qu’il s’inflige par le biais de cette attaque, jusqu’à un maximum de 25 points. Ces dégâts ne peuvent être soignés tant que dure le sort. À chaque fois qu’il effectue une attaque, une sauvegarde ou un test directement liés au serment qui le rapproche de son accomplissement, il gagne un bonus de moral à ces jets égal au nombre de points de dégâts qu’il s’est infligés lors de la prononciation du serment, divisés par 5. Le MJ est l’arbitre final pour déterminer si une action peut bénéficier ou non de ce bonus. Lorsqu’il accomplit le serment (ou décide de le renier), le sort prend fin et les points de vie perdus peuvent être soignés.<br/><br/>Par exemple, un chef bandit tristement célèbre a tué le frère de Stigur et Stigur veut venger la mort de son frère. Il lance ce sort et sacrifie 20 points de vie. Pendant toute la durée de ce sort, Stigur gagne un bonus de moral de +4 sur ses jets d’attaque effectués contre les séides du chef des bandits, à ses jets de sauvegarde contre ces mêmes séides, à ses tests d’Intimidation pour obliger un informateur à lui révéler l’emplacement du campement du chef, et ainsi de suite.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanglantes%20repr%c3%a9sailles.ashx",
+    "cache_fichier": "cache/html/8910641de4f654dba36116ec8afbdd287ca7a711.html",
+    "recupere_le": "2026-07-29T07:39:51.466640+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sanglantes-represailles",
+    "resume_court": "Le lanceur se blesse volontairement et gagne un bonus de moral sur les actions liées à son serment de vengeance.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts au lanceur lui-même (auto-dommage volontaire), mais ce n'est pas un effet offensif : c'est le mécanisme d'activation d'une amélioration. La catégorie est donc `amelioration` plutôt que `attaque_directe`. Le bonus de moral est numérique et nommé, justifiant le tag `bonus_chiffre`. La durée est spéciale et liée à l'accomplissement d'un objectif, ce qui relève de `duree_prolongee`.",
+    "slug": "sanglantes-represailles",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:23+00:00",
+    "hash_source": "204b509c4492fa532ded3df7076a7ea391300ac4573efb356d69f094ace62a99"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cca1f77c4d952543d8ac1fc27aa5700f548f658acc62b5e114386a740321e820",
+  "hash_vue": "1b5afd9bb44318a775b736415a6acb45621c4ec47d120c7f2e7dd1333ee8cc08"
+}

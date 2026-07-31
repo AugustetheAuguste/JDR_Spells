@@ -1,0 +1,97 @@
+{
+  "id": "animal-anthropomorphe",
+  "nom": "Animal anthropomorphe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animal%20anthropomorphe.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une phalange de pouce humain)",
+  "portee": "contact",
+  "cible": "animal touché",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le sort transforme l’animal touché en un hybride de bipède et de sa forme originelle, qui rappelle le mélange d’humain et d’animal de la forme hybride des lycanthropes. La taille de l’animal, son type et ses valeurs de caractéristiques ne changent pas. Il perd toutes ses attaques naturelles à l’exception de sa morsure (s’il en avait une quand il était animal) et tous ses types de déplacement autres que la vitesse de base sur terre ainsi que toutes les attaques spéciales basées sur des attaques naturelles. Une paire de membres devient capable de manipuler des objets et des armes comme des mains humaines. Les animaux dépourvus de pattes, comme les serpents, acquièrent une paire de bras temporaires. L’Intelligence de la créature passe à 3 et elle peut parler un langage connu du lanceur de sorts. Elle n’est pas formée au maniement des armes manufacturées. Elle peut attaquer à mains nues et fait alors des dégâts appropriés pour une créature de sa taille (à moins qu’elle ne fasse une attaque de morsure, considérée comme une attaque naturelle).\nCe sort peut devenir permanent grâce à un sort de permanence lancé par un lanceur de sorts de niveau 11 ou plus pour 7 500 po.",
+  "description_html": "<br/><br/>Le sort transforme l’animal touché en un hybride de bipède et de sa forme originelle, qui rappelle le mélange d’humain et d’animal de la forme hybride des <a class=\"pagelink\" href=\"Pathfinder-RPG.lycanthrope%2c%20arch%c3%a9type.ashx\" title=\"Lycanthrope, archétype\">lycanthropes</a>. La taille de l’animal, son type et ses valeurs de caractéristiques ne changent pas. Il perd toutes ses attaques naturelles à l’exception de sa morsure (s’il en avait une quand il était animal) et tous ses types de déplacement autres que la vitesse de base sur terre ainsi que toutes les attaques spéciales basées sur des attaques naturelles. Une paire de membres devient capable de manipuler des objets et des armes comme des mains humaines. Les animaux dépourvus de pattes, comme les serpents, acquièrent une paire de bras temporaires. L’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> de la créature passe à 3 et elle peut parler un langage connu du lanceur de sorts. Elle n’est pas formée au maniement des armes manufacturées. Elle peut attaquer à mains nues et fait alors des dégâts appropriés pour une créature de sa taille (à moins qu’elle ne fasse une attaque de morsure, considérée comme une attaque naturelle).<br/><br/>Ce sort peut devenir permanent grâce à un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> lancé par un lanceur de sorts de <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 11 ou plus pour 7 500 po.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animal%20anthropomorphe.ashx",
+    "cache_fichier": "cache/html/840c4f558d8829d1573c5025b94dbd31efb65067.html",
+    "recupere_le": "2026-07-28T22:40:47.422802+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "animal-anthropomorphe",
+    "resume_court": "Transforme un animal en hybride bipède capable de parler et manipuler des objets.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "animal touché"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités de l'animal (parole, manipulation d'objets, Intelligence) tout en le dégradant (perte d'attaques naturelles, de déplacements spéciaux). Classé en `amelioration` car l'effet global rend l'animal plus utile au lanceur, bien que certains aspects soient des restrictions. La cible est un allié car le sort requiert un contact volontaire et transforme l'animal en créature capable de coopérer.",
+    "slug": "animal-anthropomorphe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:30+00:00",
+    "hash_source": "969507a74f1469db22d4b255987be36d163285d1dd4b184543cf31427787fb1e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0340c4fd77b813259523f143a4839ac436c955ea12fc8b54a4e4b59b180b01ea",
+  "hash_vue": "ae45aaae8bdf98d5cc4315778f16d436c542a26f0982fc838dbe59bfbba28142"
+}

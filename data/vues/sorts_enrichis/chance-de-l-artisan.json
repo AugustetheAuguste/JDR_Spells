@@ -1,0 +1,88 @@
+{
+  "id": "chance-de-l-artisan",
+  "nom": "Chance de l'artisan",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chance%20de%20lartisan.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Ens/Mag": 1,
+    "Occ": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un outil)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 jour/niveau ou jusqu'à utilisation (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible est frappée pour une inspiration soudaine et reçoit un bonus de chance de +5 au prochain test d'Artisanat pendant toute la durée du sort.",
+  "description_html": "<br/><br/>La cible est frappée pour une inspiration soudaine et reçoit un bonus de chance de +5 au prochain test d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Artisanat.ashx\" title=\"Artisanat\">Artisanat</a> pendant toute la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chance%20de%20lartisan.ashx",
+    "cache_fichier": "cache/html/72c75fc42e9f58451960816dd2c857d0c407e9ad.html",
+    "recupere_le": "2026-07-28T22:46:08.155337+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "chance-de-l-artisan",
+    "resume_court": "La cible gagne un bonus de +5 au prochain test d'Artisanat pendant 1 jour par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "chance-de-l-artisan",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:42+00:00",
+    "hash_source": "668ac7a2afe959385c66959fcaf50ad7ff26d7b75a7c566d9a81930b5496e65f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d7f8f338315f2cb7ff3d84a61c94d55585ee2781fecd439562a63c9f229c3197",
+  "hash_vue": "474fb5d1348a8fb2a67b335369f12672e612690871fd35ad6ce112010d185339"
+}

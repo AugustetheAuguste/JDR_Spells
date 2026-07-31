@@ -1,0 +1,108 @@
+{
+  "id": "contagion-superieure",
+  "nom": "Contagion supérieure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contagion%20sup%c3%a9rieure.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mal",
+    "maladie"
+  ],
+  "niveaux": {
+    "Dru": 5,
+    "Ens/Mag": 6,
+    "Prê": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme contagion mais la victime ne peut pas surmonter la maladie sans recourir à la magie : même si elle réussit le nombre de jets de sauvegarde requis, elle ne guérit pas. Le DD pour dissiper la maladie à l’aide de la magie est égal à celui du jet de sauvegarde +5.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.contagion.ashx\" title=\"Contagion\">contagion</a></i> mais la victime ne peut pas surmonter la <a class=\"pagelink\" href=\"Pathfinder-RPG.maladie.ashx\" title=\"maladie\">maladie</a> sans recourir à la magie : même si elle réussit le nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> requis, elle ne guérit pas. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> pour <a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissiper</a> la <a class=\"pagelink\" href=\"Pathfinder-RPG.maladie.ashx\" title=\"maladie\">maladie</a> à l’aide de la magie est égal à celui du <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> +5.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contagion%20sup%c3%a9rieure.ashx",
+    "cache_fichier": "cache/html/860ff19d5ddc24496965f8663f52b2c10da5a9cb.html",
+    "recupere_le": "2026-07-28T22:47:36.926068+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contagion-superieure",
+    "resume_court": "Inflige une maladie magique incurable sans intervention magique à une créature vivante.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le texte ne décrit pas les conditions spécifiques infligées (le sort renvoie à « contagion » sans en détailler les effets). Aucune condition nommée n'est présente dans le texte fourni. Le sort inflige une maladie mais sans préciser ses symptômes ou conditions de jeu dans ce texte seul.",
+    "slug": "contagion-superieure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:20+00:00",
+    "hash_source": "306e89d8c5526556549f7ae1153651a8db746fce909498be6e996f451b36b07c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d03b16d9c892d9cbd67e6db3f8f3fc30bf2b3ea966e31c20cd5b4433d70e5c83",
+  "hash_vue": "2aa25937964fe7d61dcd0681c1becf6a3d124a6b32a0a26107e5cec96c218761"
+}

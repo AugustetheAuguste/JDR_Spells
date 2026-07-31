@@ -1,0 +1,110 @@
+{
+  "id": "colonne-de-feu",
+  "nom": "Colonne de feu",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colonne%20de%20feu.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Cham": 5,
+    "Dru": 4,
+    "Inq": 5,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "cylindre de 12 m de haut sur 3 m (2 c) de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort crée une colonne de flammes semblant tomber du ciel. Il administre 1d6 points de dégâts par niveau de lanceur de sorts (jusqu’à un maximum de 15d6). La moitié est causée par le feu, mais le reste prend la forme d’énergie divine et donc ne peut être réduit par une résistance au feu.",
+  "description_html": "<br/><br/>Ce sort crée une colonne de flammes semblant tomber du ciel. Il administre 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de 15d6). La moitié est causée par le feu, mais le reste prend la forme d’énergie divine et donc ne peut être réduit par une résistance au feu.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 1d8 points de dégâts par niveau de lanceur de sorts (15d8 maximum). La zone d’effet augmente pour devenir un cylindre de 6 mètres de rayon et de 12 mètres de haut. Le personnage peut faire en sorte que la moitié des dégâts d’origine divine affecte un type spécifique de créatures seulement (de façon identique à la propriété spéciale d’arme tueuse).",
+    "description_html": "Les dégâts infligés s’élèvent à 1d8 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d8 maximum). La zone d’effet augmente pour devenir un cylindre de 6 mètres de rayon et de 12 mètres de haut. Le personnage peut faire en sorte que la moitié des dégâts d’origine divine affecte un type spécifique de créatures seulement (de façon identique à la propriété spéciale d’arme tueuse)."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colonne%20de%20feu.ashx",
+    "cache_fichier": "cache/html/f3aaf399ee6bf969ae995d77be6f6baa80e1b8d5.html",
+    "recupere_le": "2026-07-28T22:46:53.706025+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "colonne-de-feu",
+    "resume_court": "Une colonne de flammes inflige des dégâts de feu et d'énergie divine dans une zone cylindrique.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "La moitié est causée par le feu",
+      "condition_infligee": [],
+      "cible_typique": "cylindre de 12 m de haut sur 3 m (2 c) de rayon"
+    },
+    "notes_ambiguite": "Le sort inflige aussi de l'énergie divine (moitié des dégâts), mais seul le feu figure dans la liste type_degats. L'énergie divine n'étant pas énumérée (ni positif ni négatif, mais explicitement divine), type_degats retient feu comme type principal nommé.",
+    "slug": "colonne-de-feu",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:04+00:00",
+    "hash_source": "fa85d56b5c46bd07e88f1ea18148c6df2e08647753c13e0a73ae93b90da4e360"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2f0ad73ea7da844fdda92b3496e34a911f85d2d20932a2b26b8898c84d67145b",
+  "hash_vue": "738be2ca2cc714da248f255f012c785c055429d1c64b7ab1b8f78d15b9322ff7"
+}

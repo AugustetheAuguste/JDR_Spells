@@ -1,0 +1,97 @@
+{
+  "id": "soins-importants-de-groupe",
+  "nom": "Soins importants de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20importants%20de%20groupe.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 7,
+    "Dru": 8,
+    "Prê": 7,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) ou Volonté, 1/2 dégâts (voir description)",
+  "resistance_magie": "oui (inoffensif) ou oui (voir description)",
+  "description": "Ce sort est semblable à soins légers de groupe, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +35).",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers%20de%20groupe.ashx\" title=\"Soins légers de groupe\">soins légers de groupe</a></i>, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +35).<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Soins légers de groupe"
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20importants%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/f6802422762fb007b71a129b5f972fc14701a42c.html",
+    "recupere_le": "2026-07-29T07:40:41.473035+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "soins-importants-de-groupe",
+    "resume_court": "Guérit 3d8 points de dégâts (+1 par niveau) à plusieurs créatures alliées à portée courte.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "soins-importants-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:41+00:00",
+    "hash_source": "d4c4dc16b2d141d427876ed338551f23ac9a79fe43d8053b9a8aaa4bf6e77177"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fd65baca3f727af73f79827af6eb12d802f94f82d73cad21fdc3814f52d67454",
+  "hash_vue": "414c06c3e5f54806f03debf00e31f093bbe4cce4d09bc5347b733cbd56d267c7"
+}

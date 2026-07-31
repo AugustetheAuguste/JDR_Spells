@@ -1,0 +1,88 @@
+{
+  "id": "passe-muraille",
+  "nom": "Passe-muraille",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Passe-muraille.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 5,
+    "Ens/Mag": 5,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (graines de sésame)",
+  "portee": "contact",
+  "cible": "ouverture de 2,40 m x 1,50 m, 3 m de profondeur + 1,50 m/3 niveaux",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort permet d’ouvrir un passage dans un mur en bois, plâtre ou pierre (mais pas en métal ou en un matériau plus dur). Il mesure 3 m de profondeur, plus 1,50 m tous les trois niveaux de lanceur de sorts au-dessus du niveau 9 (4,50 m au niveau 12, 6 m au niveau 15 et 7,50 m maximum au niveau 18). Si l’épaisseur du mur est supérieure à la profondeur du passage, passe-muraille crée seulement une alcôve ou une petite galerie. On peut lancer ce sort à plusieurs reprises pour percer un mur particulièrement épais. Quand la durée indiquée arrive à son terme, les créatures qui se trouvent encore dans le passage sont éjectées par l’issue la plus proche. Si quelqu’un dissipe passe-muraille (ou si le mage décide d’y mettre un terme prématurément), toute créature dans le passage est automatiquement expulsée du côté opposé à celui du lanceur de sorts (à moins que le passage ne débouche nulle part, comme c’est le cas pour une alcôve, auquel cas la créature est éjectée vers le lanceur de sorts).",
+  "description_html": "<br/><br/>Ce sort permet d’ouvrir un passage dans un mur en bois, plâtre ou pierre (mais pas en métal ou en un matériau plus dur). Il mesure 3 m de profondeur, plus 1,50 m tous les trois <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> au-dessus du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 9 (4,50 m au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 12, 6 m au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 15 et 7,50 m maximum au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 18). Si l’épaisseur du mur est supérieure à la profondeur du passage, <i>passe-muraille</i> crée seulement une alcôve ou une petite galerie. On peut lancer ce sort à plusieurs reprises pour percer un mur particulièrement épais. Quand la durée indiquée arrive à son terme, les créatures qui se trouvent encore dans le passage sont éjectées par l’issue la plus proche. Si quelqu’un dissipe <i>passe-muraille</i> (ou si le mage décide d’y mettre un terme prématurément), toute créature dans le passage est automatiquement expulsée du côté opposé à celui du lanceur de sorts (à moins que le passage ne débouche nulle part, comme c’est le cas pour une alcôve, auquel cas la créature est éjectée vers le lanceur de sorts).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Passe-muraille.ashx",
+    "cache_fichier": "cache/html/94f6c2f54e63e8c6616bcc3f937ce927405fb5a0.html",
+    "recupere_le": "2026-07-28T23:02:49.967842+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "passe-muraille",
+    "resume_court": "Ouvre un passage temporaire dans un mur de bois, plâtre ou pierre.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "terrain_ou_environnement",
+      "duree_prolongee",
+      "deplacement_ou_teleportation"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "ouverture de 2,40 m x 1,50 m, 3 m de profondeur + 1,50 m/3 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "passe-muraille",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:50+00:00",
+    "hash_source": "d9065e2ccce04eef0e85a17d0376d58c86139da063575f066d10b11a78db71f7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "878006813765850d12d653e1a59fe564d90d3c20e49f8ffb2a83481642c6aeca",
+  "hash_vue": "03bfe39f1495e692964aa8df26fb186337e02f8e867a81b7e755e85cdf321889"
+}

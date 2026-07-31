@@ -1,0 +1,115 @@
+{
+  "id": "nuee-de-crocs",
+  "nom": "Nuée de crocs",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20crocs.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3,
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (une dent de lézard)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un essaim de crocs animés",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le troglodyte invoque une nuée qui se compose de milliers de crocs volants animés couvrant un cube de 3 mètres de côté. Ces crocs attaquent toutes les créatures situées dans la zone occupée. Le troglodyte peut convoquer cette nuée de façon à ce qu’elle partage l’espace d’autres créatures et il peut la déplacer d’un maximum de 12 mètres par round par une action de mouvement. Si le troglodyte décide de ne pas déplacer la nuée, celle-ci se déplace automatiquement d’un maximum de 12 mètres pour envelopper la créature la plus proche (y compris le troglodyte) si elle ne l’a pas déjà fait.\nLes créatures prises dans la zone d’effet de la nuée reçoivent 2d6 points de dégâts. Les crocs infligent des dégâts à toutes les créatures qui partagent leur espace quand elles y entrent et à la fin de leur mouvement, lors de chaque round.",
+  "description_html": "<br/><br/>Le troglodyte invoque une nuée qui se compose de milliers de crocs volants animés couvrant un cube de 3 mètres de côté. Ces crocs attaquent toutes les créatures situées dans la zone occupée. Le troglodyte peut convoquer cette nuée de façon à ce qu’elle partage l’espace d’autres créatures et il peut la déplacer d’un maximum de 12 mètres par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>. Si le troglodyte décide de ne pas déplacer la nuée, celle-ci se déplace automatiquement d’un maximum de 12 mètres pour envelopper la créature la plus proche (y compris le troglodyte) si elle ne l’a pas déjà fait.<br/><br/>Les créatures prises dans la zone d’effet de la nuée reçoivent 2d6 points de dégâts. Les crocs infligent des dégâts à toutes les créatures qui partagent leur espace quand elles y entrent et à la fin de leur mouvement, lors de chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "autres": {
+    "Cette option est plus courante chez les troglodytes": null
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20crocs.ashx",
+    "cache_fichier": "cache/html/ba4a2be3c75ddac2b107ce5d35eda249f4b6dc24.html",
+    "recupere_le": "2026-07-28T23:01:50.850488+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "nuee-de-crocs",
+    "resume_court": "Une nuée de crocs volants inflige des dégâts à toutes les créatures dans sa zone.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "degats_directs",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "un cube de 3 mètres de côté"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) : il s'agit de dégâts physiques infligés par des crocs volants, classés comme « autre ».",
+    "slug": "nuee-de-crocs",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:27+00:00",
+    "hash_source": "ff58529399804dc8629303b5c75a88776df1fd72dc534750767236beb54bdf9e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "31c873a26fea9947f2741038101c13aae0db99f83c3070d77d713babe50c4a3a",
+  "hash_vue": "e3e231bd358c12e3351264c2a412dc9b98e5f5ff1df51cbd178af56543e275ee"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "verole",
+  "nom": "Vérole",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9role.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "maladie"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (feuilles d'une plante toxique)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage inflige une douloureuse urticaire à la créature visée. Cette dernière est fiévreuse et subit un malus de -4 à la Dextérité (ce malus ne peut pas faire tomber la Dextérité en dessous de 0). La cible peut utiliser une action de mouvement pour se gratter furieusement et se débarrasser de la condition fiévreux (mais pas du malus de Dextérité) jusqu'au début de son prochain tour.",
+  "description_html": "<br/><br/>Le personnage inflige une douloureuse urticaire à la créature visée. Cette dernière est <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> et subit un malus de -4 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> (ce malus ne peut pas faire tomber la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> en dessous de 0). La cible peut utiliser une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> pour se gratter furieusement et se débarrasser de la condition <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreux</a> (mais pas du malus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a>) jusqu'au début de son prochain tour.<br/><br/>",
+  "mythique": {
+    "description": "Le malus à la Dextérité s’élève à -6. La cible subit 1 point de dégâts de saignement chaque round. Si elle passe une action de mouvement à se gratter, les dégâts de saignement augmentent de 1 point chaque round. Si le saignement est interrompu, il reprend en cas de grattement, à raison de 1 point de saignement par round.",
+    "description_html": "Le malus à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> s’élève à -6. La cible subit 1 point de dégâts de saignement chaque round. Si elle passe une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> à se gratter, les dégâts de saignement augmentent de 1 point chaque round. Si le saignement est interrompu, il reprend en cas de grattement, à raison de 1 point de saignement par round."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9role.ashx",
+    "cache_fichier": "cache/html/ebee52c5ce522f2e139cbaa6055005ccb979b70e.html",
+    "recupere_le": "2026-07-29T07:43:42.604463+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "verole",
+    "resume_court": "Le lanceur inflige une urticaire douloureuse qui rend la cible fiévreuse et réduit sa Dextérité.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne « fiévreuse » mais cette condition n'existe pas dans la liste fermée. Le sort inflige un malus de Dextérité et une condition temporaire de grattage, mais aucune des conditions listées (aveugle, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchevetré, ralenti, assourdi) ne correspond exactement à « fiévreuse ». Le malus de Dextérité relève du tag affaiblissement_de_capacite.",
+    "slug": "verole",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:06+00:00",
+    "hash_source": "e4d4f4d4d51f45db7fc798cd8f5416fc95d76abe8dbcaa77f54a0bb4a277c62a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "dd7a81709358f7aa8e88c8a892994899bc9a13d0fff1919aa18f601d4511d76b",
+  "hash_vue": "d2a9f5d34f3943e0933d23b62200adf614d8ede34f43984ebba2e391760c1123"
+}

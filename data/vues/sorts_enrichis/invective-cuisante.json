@@ -1,0 +1,105 @@
+{
+  "id": "invective-cuisante",
+  "nom": "Invective cuisante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invective%20cuisante.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu",
+    "dépendant du langage"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Bard": 2,
+    "Hyp": 2,
+    "Inq": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "9 m (6 c) de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes partiel, voir texte",
+  "resistance_magie": "spécial, voir plus bas",
+  "description": "Le personnage débite une tirade insultante si vicieuse et méprisante que tous les ennemis qui l’entendent subissent des brûlures physiques sous l’effet de sa fureur. Quand le personnage lance ce sort, il fait un test d’Intimidation pour démoraliser chaque ennemi qui se trouve dans les 9 m (6 c). Les ennemis ainsi démoralisés subissent 1d10 points de dégâts de feu et doivent réussir un jet de Réflexes pour ne pas prendre feu. La résistance aux sorts permet d’annuler les dégâts de feu du sort mais elle ne protège pas la cible contre l’effet démoralisant.",
+  "description_html": "<br/><br/>Le personnage débite une tirade insultante si vicieuse et méprisante que tous les ennemis qui l’entendent subissent des brûlures physiques sous l’effet de sa fureur. Quand le personnage lance ce sort, il fait un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> pour\ndémoraliser chaque ennemi qui se trouve dans les 9 m (6 <abbr title=\"cases\">c</abbr>). Les ennemis ainsi démoralisés subissent 1d10 points de dégâts de feu et doivent réussir un jet de Réflexes pour ne pas prendre feu. La résistance aux sorts permet d’annuler les dégâts de feu du sort mais elle ne protège pas la cible contre l’effet démoralisant.<br/><br/>",
+  "mythique": {
+    "description": "Les ennemis démoralisés par le test d’Intimidation du personnage subissent 2d8 points de dégâts de feu et prennent feu (aucun jet de sauvegarde). Les jets de Réflexes effectués pour éteindre les flammes ratent automatiquement tant que la créature est démoralisée par le test d’Intimidation du personnage.\nAmplifié (5ème). Si le personnage dépense deux utilisations de pouvoir mythique, le sort ne possède plus le registre dépendant du langage et le personnage ne subit plus le malus au test d’Intimidation effectué pour démoraliser les créatures plus grandes que lui.",
+    "description_html": "Les ennemis démoralisés par le test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> du personnage subissent 2d8 points de dégâts de feu et prennent feu (aucun jet de sauvegarde). Les jets de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> effectués pour éteindre les flammes ratent automatiquement tant que la créature est démoralisée par le test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> du personnage.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (5ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, le sort ne possède plus le registre dépendant du langage et le personnage ne subit plus le malus au test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> effectué pour démoraliser les créatures plus grandes que lui."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invective%20cuisante.ashx",
+    "cache_fichier": "cache/html/6692088719502267183a8cd5f1f9191a566fa049.html",
+    "recupere_le": "2026-07-28T22:57:28.556089+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "invective-cuisante",
+    "resume_court": "Une tirade insultante qui inflige des dégâts de feu aux ennemis démoralisés à proximité.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "communication_ou_langage"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d10 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "9 m (6 c) de rayon"
+    },
+    "notes_ambiguite": "Le sort inflige aussi un effet de démoralisation (via le test d'Intimidation), mais « secoue » ou « effraye » ne sont pas explicitement nommés dans le texte comme conditions infligées par le sort lui-même — l'effet découle du test d'Intimidation, non du sort. Les dégâts de feu et le risque d'être « en feu » (enchevêtré par les flammes ?) sont les effets directs du sort ; le texte ne précise pas la condition exacte du jet de Réflexes, donc aucune condition n'est retenue.",
+    "slug": "invective-cuisante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:41+00:00",
+    "hash_source": "549723938714568452cbc74cee32073dce8e7a87145831d770bc22070d0c9d9f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "37a907a30d6d92443bc052d39ce2b78208a41d60f3b81199ff20d83199747069",
+  "hash_vue": "2f50d25649aceaa9650a7ddfab8f91ebd33f2f04892e3f54ecd4c2d76a68d0d6"
+}

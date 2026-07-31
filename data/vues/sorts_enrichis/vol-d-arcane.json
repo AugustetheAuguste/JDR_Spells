@@ -1,0 +1,82 @@
+{
+  "id": "vol-d-arcane",
+  "nom": "Vol d'arcane",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20darcane.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Magus": 4,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme une dissipation de la magie sur une cible mais n’affecte que les créatures et nécessite une attaque de contact au corps à corps. En cas d’attaque réussie, le sort est instantanément transféré au personnage, comme si ce dernier était sa cible originelle. Il n’a pas droit à un jet de sauvegarde ni à un test de résistance à la magie et doit accepter les effets du sort, même s’ils ne sont pas bénéfiques. Ceci ne modife pas la durée du sort, s’il lui restait seulement 4 rounds avant de se dissiper, il affecte le personnage pour 4 rounds. S’il avait une durée permanente, il persiste pendant 1 heure par niveau de lanceur de sorts du lanceur originel et se termine ensuite. Le sort volé ne revient pas à sa cible originelle.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> sur une cible mais n’affecte que les créatures et nécessite une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a>. En cas d’attaque réussie, le sort est instantanément transféré au personnage, comme si ce dernier était sa cible originelle. Il n’a pas droit à un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ni à un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> et doit accepter les effets du sort, même s’ils ne sont pas bénéfiques. Ceci ne modife pas la durée du sort, s’il lui restait seulement 4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> avant de se dissiper, il affecte le personnage pour 4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. S’il avait une durée permanente, il persiste pendant 1 heure par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> du lanceur originel et se termine ensuite. Le sort volé ne revient pas à sa cible originelle.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20darcane.ashx",
+    "cache_fichier": "cache/html/8a01bad4fcc58d0b0adaa4c47232bfd6e9524b7b.html",
+    "recupere_le": "2026-07-29T07:44:37.591251+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vol-d-arcane",
+    "resume_court": "Une attaque de contact qui transfère un sort actif de la cible au lanceur.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "dissipation_ou_contresort",
+      "resistance_a_la_magie",
+      "duree_instantanee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort fonctionne comme une dissipation mais transfère l'effet au lanceur plutôt que de le supprimer. Classé en affaiblissement car il prive la cible d'un sort bénéfique, bien que la mécanique soit proche de la dissipation. Le tag effet_mental reflète la nature magique de l'interaction.",
+    "slug": "vol-d-arcane",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:20+00:00",
+    "hash_source": "a9c2fb194b91fb88e6e6f005723ec25f70b436c22e64eefb35b8277aaa8a121d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6513aae5586c980dd9e5dfa07c23f10df36672a3fca2b1737ba5845c747f3620",
+  "hash_vue": "6adcd7ceaebcb14995d477b20c684e7aba7f9abd79693b5767726880c452f703"
+}

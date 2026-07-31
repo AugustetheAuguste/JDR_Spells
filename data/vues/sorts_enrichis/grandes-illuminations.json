@@ -1,0 +1,128 @@
+{
+  "id": "grandes-illuminations",
+  "nom": "Grandes illuminations",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grandes%20illuminations.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Psy": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayonnement de lumière de 3 m (2 c) de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme illumination mais il affecte toutes les créatures qui se trouvent dans un rayon de 3 mètres (2 c) à partir du point d'impact.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.illumination.ashx\" title=\"Illumination\">illumination</a></i> mais il affecte toutes les créatures qui se trouvent dans un rayon de 3 mètres (2 <abbr title=\"cases\">c</abbr>) à partir du point d'impact.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Illumination"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grandes%20illuminations.ashx",
+    "cache_fichier": "cache/html/18e7b1725071eb6b413b53560fc2098057d18165.html",
+    "recupere_le": "2026-07-28T22:55:40.427225+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "grandes-illuminations",
+    "resume_court": "Un éclair de lumière éblouit toutes les créatures dans un rayon de 3 mètres.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ebloui"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce sort fonctionne comme illumination mais il affecte toutes les créatures"
+      ],
+      "cible_typique": "rayonnement de lumière de 3 m (2 c) de rayon"
+    },
+    "notes_ambiguite": "Le texte renvoie à « illumination » sans en donner les détails. L'éblouissement est déduit du nom et du descripteur « lumière », et du fonctionnement du sort de base. Aucun dégât chiffré n'est mentionné, donc type_degats est null.",
+    "slug": "grandes-illuminations",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:58+00:00",
+    "hash_source": "96fc1883a273e78177c436173cc0c46ebc13273759a5853d238806d51ea5e7ab"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "24b163b5df5703d3b512c037b747e6f452c335892140578c6ff99ce50ae53639",
+  "hash_vue": "de637fcc9313c83b50486467db695dd9f4758f02dfef79cb2ea645a694af184f"
+}

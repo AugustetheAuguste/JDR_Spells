@@ -1,0 +1,111 @@
+{
+  "id": "sacrifice-partage",
+  "nom": "Sacrifice partagé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacrifice%20partag%c3%a9.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mal"
+  ],
+  "niveaux": {
+    "Antipal": 3,
+    "Cham": 2,
+    "Con": 3,
+    "ConU": 3,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Grâce à ce sort, le personnage crée un lien entre sa cible et lui, et à travers ce lien, il peut rediriger vers elle la douleur et les dégâts. Le personnage ne subit que la moitié des dégâts infligés par des blessures et des attaques affectant les points de vie. Les dégâts qu’il ne subit pas sont transférés à la cible de ce sort. Les formes de dégâts qui n’impliquent pas des points de vie, comme les effets de charme, les affaiblissements temporaires de caractéristiques, les drains de niveau et les effets de mort, ne peuvent être partagées par ce biais. Si le personnage subit une réduction de ses points de vie à cause d’une baisse de son score de Constitution, cette réduction n’est pas partagée avec la cible du sort car ce ne sont pas des dégâts aux points de vie. Lorsque le sort se termine, les dégâts subséquents ne sont plus partagés entre la cible et lui, mais ceux déjà répartis ne lui reviennent pas.\nSi le personnage et sa cible se déplacent hors de portée l’un de l’autre, le sort prend fin.",
+  "description_html": "<br/><br/>Grâce à ce sort, le personnage crée un lien entre sa cible et lui, et à travers ce lien, il peut rediriger vers elle la douleur et les dégâts. Le personnage ne subit que la moitié des dégâts infligés par des blessures et des attaques affectant les <a class=\"pagelink\" href=\"Pathfinder-RPG.pv.ashx\" title=\"pv\">points de vie</a>. Les dégâts qu’il ne subit pas sont transférés à la cible de ce sort. Les formes de dégâts qui n’impliquent pas des points de vie, comme les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.branche%20charme.ashx\" title=\"charme\">charme</a>, les <a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire%20(capacit%c3%a9).ashx\" title=\"Affaiblissement temporaire (Ext ou Sur)\">affaiblissements temporaires</a> de caractéristiques, les <a class=\"pagelink\" href=\"Pathfinder-RPG.Absorption%20d%c3%a9nergie%20(capacit%c3%a9).ashx\" title=\"Absorption d’énergie (Sur)\">drains de niveau</a> et les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">mort</a>, ne peuvent être partagées par ce biais. Si le personnage subit une réduction de ses points de vie à cause d’une baisse de son score de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>, cette réduction n’est pas partagée avec la cible du sort car ce ne sont pas des dégâts aux points de vie. Lorsque le sort se termine, les dégâts subséquents ne sont plus partagés entre la cible et lui, mais ceux déjà répartis ne lui reviennent pas.<br/><br/>Si le personnage et sa cible se déplacent hors de portée l’un de l’autre, le sort prend fin.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Asmodéus."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacrifice%20partag%c3%a9.ashx",
+    "cache_fichier": "cache/html/7ad088cafc6eb84bef6fab36f600c8aab8291104.html",
+    "recupere_le": "2026-07-29T07:39:36.049451+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sacrifice-partage",
+    "resume_court": "Le lanceur redirige la moitié de ses dégâts vers une créature liée, transférant la douleur.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort ne cause pas directement de dégâts au lanceur ou à la cible, mais redirige les dégâts existants. Il affaiblit la cible en la rendant réceptrice de douleur, sans infliger une condition nommée. La catégorie affaiblissement reflète que la cible subit un désavantage (recevoir les dégâts du lanceur), bien que le mécanisme soit un transfert plutôt qu'une dégradation de capacité.",
+    "slug": "sacrifice-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:14+00:00",
+    "hash_source": "02f0f11c336c95cb06807adaeb9807d6fd23579772a9f9fe3ec88edf6e2128d2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "88a7c5c4589d5412ee2f128103a551da5feb9b252765363210dd208b9520c096",
+  "hash_vue": "79930f26da4cc095cf9c9a08c439037c380a9a9623c5f5823d13e410acaaa447"
+}

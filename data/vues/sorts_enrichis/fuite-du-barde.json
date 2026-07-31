@@ -1,0 +1,77 @@
+{
+  "id": "fuite-du-barde",
+  "nom": "Fuite du barde",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fuite%20du%20barde.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (débris de violon)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "le lanceur de sorts et jusqu'à 1 créature consentante/2 niveaux de lanceur de sorts, créatures qui ne doivent pas être séparées de plus de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage et ses alliés consentants s'échappent d'une situation mal engagée et se transfèrent instantanément ailleurs pour adopter un placement plus stratégique. Le personnage peut déplacer les alliés à portée dans toute case de son choix à portée. Ces cases n'ont pas besoin de se trouver en ligne de mire ni sur une ligne d'effet depuis la position originelle du lanceur de sorts mais il doit s'agir d'espaces dégagés, capables de supporter les créatures téléportées. En dehors des conditions données plus haut, ce sort fonctionne comme une porte dimensionnelle.",
+  "description_html": "<hr/>\nLe personnage et ses alliés consentants s'échappent d'une situation mal engagée et se transfèrent instantanément ailleurs pour adopter un placement plus stratégique. Le personnage peut déplacer les alliés à portée dans toute case de son choix à portée. Ces cases n'ont pas besoin de se trouver en ligne de mire ni sur une ligne d'effet depuis la position originelle du lanceur de sorts mais il doit s'agir d'espaces dégagés, capables de supporter les créatures téléportées. En dehors des conditions données plus haut, ce sort fonctionne comme une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.porte%20dimensionnelle.ashx\" title=\"Porte dimensionnelle\">porte dimensionnelle</a></i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Porte dimensionnelle"
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fuite%20du%20barde.ashx",
+    "cache_fichier": "cache/html/7c511395d492131ea8dd8ee541656c8c41dad027.html",
+    "recupere_le": "2026-07-28T22:55:01.384504+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fuite-du-barde",
+    "resume_court": "Le lanceur et ses alliés consentants se téléportent instantanément vers des positions stratégiques à portée moyenne.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le lanceur de sorts et jusqu'à 1 créature consentante/2 niveaux de lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "fuite-du-barde",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:42+00:00",
+    "hash_source": "eef409e7f3871a48b0324418bf9a7da8c77b361b34cbdc36c61bc4184a6c47d7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "18ea7aefcb4c53596cc749ef656b95197aa06b9b2b5791e55a28c5163275e001",
+  "hash_vue": "9a08a8ff9b3dac0d55d277c199e720269e55af198473a4159545754269c4179e"
+}

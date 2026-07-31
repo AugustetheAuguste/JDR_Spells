@@ -1,0 +1,105 @@
+{
+  "id": "symbole-d-etourdissement",
+  "nom": "Symbole d'étourdissement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20d%c3%a9tourdissement.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Occ": 5,
+    "Prê": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore, plus un diamant et une opale en poudre (5 000 po au total))",
+  "portee": "0 m (voir texte)",
+  "cible": "1 symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort ressemble à symbole de mort, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont étourdies pendant 1d6 rounds.\nNote. Les pièges magiques tels que symbole d’étourdissement sont extrêmement difficiles à détecter et à désamorcer. Un roublard (et lui seul) peut utiliser sa compétence de Perception pour les repérer, puis de Sabotage pour les mettre hors d’état. Pour chacun des deux tests, le DD s’élève à 25 + niveau du sort, soit 32 pour symbole d’étourdissement.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i>, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdies</a> pendant 1d6 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>.<br/><br/><i>Note.</i> Les pièges magiques tels que <i>symbole d’étourdissement</i> sont extrêmement difficiles à détecter et à désamorcer. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.roublard.ashx\" title=\"Le roublard\">roublard</a> (et lui seul) peut utiliser sa compétence de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour les repérer, puis de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour les mettre hors d’état. Pour chacun des deux tests, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> s’élève à 25 + <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20du%20sort.ashx\" title=\"niveau du sort\">niveau du sort</a>, soit 32 pour <i>symbole d’étourdissement</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Symbole de mort"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20d%c3%a9tourdissement.ashx",
+    "cache_fichier": "cache/html/75496ea85d49d1bebc3cc7cc078a6cd4c3758c25.html",
+    "recupere_le": "2026-07-29T07:41:33.498558+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "symbole-d-etourdissement",
+    "resume_court": "Une rune magique qui étourdit les créatures dans un rayon de 18 m pendant 1d6 rounds.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "les créatures situées dans un rayon de 18 m de la rune sont étourdies pendant 1d6 rounds"
+      ],
+      "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+    },
+    "notes_ambiguite": null,
+    "slug": "symbole-d-etourdissement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:05+00:00",
+    "hash_source": "c1d129b526ff70958d62aac1fad00ab742372408530df3c6067c666cb87397a0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "ca7be238ba7f352a5c9b780e56c41527e9d2b4a4a0a5a7e080b223919cbe5d00",
+  "hash_vue": "d7ad44c7d8510bcb02579e18e380cabcf59f6d06c68ed6fa8d116e857f5134a1"
+}

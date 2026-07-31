@@ -1,0 +1,84 @@
+{
+  "id": "jet-d-acide",
+  "nom": "Jet d'acide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jet%20dacide.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Magus": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une fiole d’acide de 10 po)",
+  "portee": "18 m (12 c)",
+  "cible": "ligne de 18 m (12 c)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Un jet d’acide jaillit de la main tendue du personnage et inflige 1d6 points de dégâts d’acide par niveau de lanceur de sorts (15d6 au maximum) à toutes les créatures situées dans la zone (Réflexes 1/2 dégâts). L’acide continue de brûler pendant 1 round et inflige 1d6 points de dégâts par tranche de deux niveaux de lanceur de sorts (7d6 au maximum) pour toute créature qui a raté son jet de sauvegarde contre le sort (un second jet de Réflexes, fait au tour de la créature, annule les dégâts supplémentaires).",
+  "description_html": "<br/><br/>Un jet d’acide jaillit de la main tendue du personnage et inflige 1d6 points de dégâts d’acide par \n<a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d6 au maximum) à toutes les créatures situées dans la zone (<a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> 1/2 dégâts). L’acide continue de brûler pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et inflige 1d6 points de dégâts par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (7d6 au maximum) pour toute créature qui a raté son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> contre le sort (un second jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a>, fait au tour de la créature, annule les dégâts supplémentaires).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jet%20dacide.ashx",
+    "cache_fichier": "cache/html/975c90e98450a655874ed2a3259ac21be3a13e7d.html",
+    "recupere_le": "2026-07-28T22:57:41.607336+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "jet-d-acide",
+    "resume_court": "Un jet d'acide qui brûle les créatures dans une ligne et continue de les blesser.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'acide",
+      "condition_infligee": [],
+      "cible_typique": "ligne de 18 m (12 c)"
+    },
+    "notes_ambiguite": null,
+    "slug": "jet-d-acide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:44+00:00",
+    "hash_source": "286f4c1fecf73cf5387746c882eeb19629c84c4cf4fe8fdd0286a7247b1b39a5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e002285e971cfdcb93daebd605e3d21cb1ef4ae6fbae2684fe6034cabb9fa231",
+  "hash_vue": "277dc32c9b98995d6a8a5bedb0872b5384250ce28d645367ee70da1bfca9fa1f"
+}

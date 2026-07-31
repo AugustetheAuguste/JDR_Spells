@@ -1,0 +1,80 @@
+{
+  "id": "final-etourdissant",
+  "nom": "Final étourdissant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20%c3%a9tourdissant.ashx",
+  "ecole": "Enchantement (coercition) (effet mental)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu'à 3 créatures qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Vigueur partiel ; voir texte",
+  "resistance_magie": "oui",
+  "description": "Pour lancer ce sort, le personnage doit être en train de donner une représentation bardique. Il y met immédiatement un terme avec un geste théâtral qui agresse les sens de ses cibles. Elles sont toutes étourdies pour 1 round. Si elles réussissent leur jet de sauvegarde, elles sont seulement chancelantes pour 1 round.",
+  "description_html": "<br/><br/>Pour lancer ce sort, le personnage doit être en train de donner une <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation bardique</a>. Il y met immédiatement un terme avec un geste théâtral qui agresse les sens de ses cibles. Elles sont toutes <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdies</a> pour 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Si elles réussissent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elles sont seulement <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pour 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20%c3%a9tourdissant.ashx",
+    "cache_fichier": "cache/html/3b2ed5e8e26129a4e9850b38783229da0e9b1219.html",
+    "recupere_le": "2026-07-28T22:53:23.297842+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "final-etourdissant",
+    "resume_court": "Un geste théâtral qui étourdit jusqu'à 3 créatures proches, ou les rend chancelantes si elles réussissent.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi",
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Elles sont toutes étourdies pour 1 round",
+        "elles sont seulement chancelantes pour 1 round"
+      ],
+      "cible_typique": "jusqu'à 3 créatures qui doivent se trouver à moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "final-etourdissant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:02+00:00",
+    "hash_source": "d23ba1b5e6fd0b850e51ee11a9eecd92f49bd7e646273d4e51d773a3ae465391"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fb7bc2f092320bd28f45c88f0372fa579936410208146dfd91a8879a5653b18a",
+  "hash_vue": "d75e572c334b3739fa2fcb6cbbdd242ba8ab925fb72073240e5af76814a8ecee"
+}

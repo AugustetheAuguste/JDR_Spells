@@ -1,0 +1,104 @@
+{
+  "id": "echange-d-esprits-majeur",
+  "nom": "Échange d'esprits majeur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20desprits%20majeur.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 9
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (diamant d’une valeur de 10 000 po)",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "1 créature de la même race que le lanceur",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme échange d’esprits en dehors des modifications indiquées ci-dessus . De plus, au bout de 24 heures, au lieu d’utiliser les points de vie du corps de l’hôte, chaque protagoniste récupère ses points de vie originaux, modifiés par sa nouvelle valeur de Constitution. Il faut recourir à un miracle, un souhait ou un autre échange d’esprits majeur pour inverser les effets de ce sort.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9change%20desprits.ashx\" title=\"Échange d'esprits\">échange d’esprits</a></i> en dehors des modifications indiquées ci-dessus . De plus, au bout de 24 heures, au lieu d’utiliser les points de vie du corps de l’hôte, chaque protagoniste récupère ses points de vie originaux, modifiés par sa nouvelle valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>. Il faut recourir à un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>, un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> ou un autre échange d’esprits majeur pour inverser les effets de ce sort.<br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "échange d’esprits",
+      "id": "echange-d-esprits",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Con": 5,
+        "Ens/Mag": 6,
+        "Hyp": 5,
+        "Méd": 3,
+        "Occ": 4,
+        "Psy": 5,
+        "Sor": 6,
+        "Spi": 4
+      },
+      "temps_incantation": "1 round",
+      "composantes": "V, G",
+      "portee": "moyenne (30 m + 3 m/niveau)",
+      "cible": "1 créature",
+      "duree": "1 h/niveau (T)",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme possession spirituelle mais le personnage échange son esprit avec celui de sa cible. Cette dernière ne partage pas son corps avec le personnage, se retrouvant dans l’impossibilité d’agir, elle gagne le corps du personnage et le contrôle, comme si les deux protagonistes avaient chacun lancé possession spirituelle sur l’autre.",
+      "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle.ashx\" title=\"La possession\">possession spirituelle</a></i> mais le personnage échange son esprit avec celui de sa cible. Cette dernière ne partage pas son corps avec le personnage, se retrouvant dans l’impossibilité d’agir, elle gagne le corps du personnage et le contrôle, comme si les deux protagonistes avaient chacun lancé <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle.ashx\" title=\"La possession\">possession spirituelle</a></i> sur l’autre.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20desprits%20majeur.ashx",
+    "cache_fichier": "cache/html/22bd945d783533555fa768eb45929e27ddab80e2.html",
+    "recupere_le": "2026-07-28T22:38:41.366584+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "echange-d-esprits-majeur",
+    "resume_court": "Échange permanent des esprits entre deux créatures de même race, réversible uniquement par miracle ou souhait.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature de la même race que le lanceur"
+    },
+    "notes_ambiguite": "Le texte renvoie à « échange d'esprits » sans le reproduire ; on ne peut affirmer les mécanismes exacts d'échange ou les conditions infligées. La durée est décrite comme « instantanée » mais l'effet persiste indéfiniment (« au bout de 24 heures »), ce qui suggère une permanence pratique. Classé en coercition car le sort soumet la volonté de la cible à un échange forcé.",
+    "slug": "echange-d-esprits-majeur",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:15+00:00",
+    "hash_source": "68576d7e80d7b2f61d5ec45dfe85df78ca53d1abba956a2392ff256154b1e15f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c0a0ff5cfa13a04ac59612f17ffbb235855c4a22d7e37be56a52adb6a4f4dcfa",
+  "hash_vue": "ebbb2feb8f7085b9c4fe3a6831640de256f307a980dabb9842116d4fc2591af7"
+}

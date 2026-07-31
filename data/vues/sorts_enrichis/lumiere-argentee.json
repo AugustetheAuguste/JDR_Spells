@@ -1,0 +1,119 @@
+{
+  "id": "lumiere-argentee",
+  "nom": "Lumière argentée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lumi%c3%a8re%20argent%c3%a9e.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Pal": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (1 pa)",
+  "portee": "contact",
+  "cible": "objet touché",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, partiel (voir texte)",
+  "resistance_magie": "non",
+  "description": "Les serviteurs de l'impitoyable dictateur des vallons de Noire-Épine dérobèrent un sort créé à l’origine pour combattre les diables de l'Empire diabolique et le trouvent très utile pour apprivoiser et contrôler les dryades des environs.\nCe sort fonctionne comme lumière du jour mais déverse une vive lumière argentée dans un rayon de 6 mètres. En plus d’éclairer, cette lumière est douloureuse pour les créatures sensibles à l’argent alchimique. Une créature qui possède une RD/argent et qui commence son tour dans la lumière émise par le sort est automatiquement éblouie et devient fiévreuse à moins de réussir un jet de Vigueur. Ces effets disparaissent 1 round après que la cible a quitté la zone illuminée. Si la créature y entre à nouveau, elle doit refaire un jet de sauvegarde. Le sort offre une lumière faible dans un rayon de 12 mètres mais seules les créatures qui se trouvent à moins de 6 mètres sont affectées par les effets mentionnés plus haut.",
+  "description_html": "<br/><br/><i>Les serviteurs de l'impitoyable dictateur des vallons de Noire-Épine dérobèrent un sort créé à l’origine pour combattre les diables de l'Empire diabolique et le trouvent très utile pour apprivoiser et contrôler les dryades des environs.</i><br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lumi%c3%a8re%20du%20jour.ashx\" title=\"Lumière du jour\">lumière du jour</a></i> mais déverse une vive lumière argentée dans un rayon de 6 mètres. En plus d’éclairer, cette lumière est douloureuse pour les créatures sensibles à l’<a class=\"pagelink\" href=\"Pathfinder-RPG.argent.ashx\" title=\"argent\">argent alchimique</a>. Une créature qui possède une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a>/argent et qui commence son tour dans la lumière émise par le sort est automatiquement <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouie</a> et devient <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> à moins de réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>. Ces effets disparaissent 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> après que la cible a quitté la zone illuminée. Si la créature y entre à nouveau, elle doit refaire un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>. Le sort offre une <a class=\"pagelink\" href=\"Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE\" title=\"L'exploration\">lumière faible</a> dans un rayon de 12 mètres mais seules les créatures qui se trouvent à moins de 6 mètres sont affectées par les effets mentionnés plus haut.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lumi%c3%a8re%20argent%c3%a9e.ashx",
+    "cache_fichier": "cache/html/a375804953dbc9f93140909ff4eddfe17c384487.html",
+    "recupere_le": "2026-07-28T22:59:06.684098+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lumiere-argentee",
+    "resume_court": "Une lumière argentée qui éblouit et affaiblit les créatures sensibles à l'argent dans un rayon de 6 mètres.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "ebloui",
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "est automatiquement éblouie",
+        "devient fiévreuse"
+      ],
+      "cible_typique": "dans un rayon de 6 mètres"
+    },
+    "notes_ambiguite": "Le texte emploie « fiévreuse » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral), mais le texte suggère plutôt un affaiblissement. Faute de condition exacte, j'ai retenu « secoue » comme approximation du malaise décrit, avec cette réserve.",
+    "slug": "lumiere-argentee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:18+00:00",
+    "hash_source": "6a6f657859f45fd611b0fb21bf00482e1b622d926797bdab7eb87f0e0ac2dbce"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fb9310a3d70ea0416c5c1cc7d245dfc86869bc4244f74d7285fcfbc2fa667b94",
+  "hash_vue": "31efc6f015878fe0f8a129ec266d6d0f8fd122dc88a217419a33697cd65d4107"
+}

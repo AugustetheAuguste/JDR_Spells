@@ -1,0 +1,74 @@
+{
+  "id": "appel-cacophonique-de-groupe",
+  "nom": "Appel cacophonique de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20cacophonique%20de%20groupe.ashx",
+  "ecole": "enchantement (coercition) (effet mental)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de partition)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau (les cibles ne doivent pas être éloignées de plus de 9 m (6 c) les unes des autres)",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage emplit l'esprit de ses cibles d'un vacarme retentissant de sons discordants, ce qui les gêne pour se concentrer et agir. Les créatures sont nauséeuses pendant toute la durée du sort si elles ratent leur jet de sauvegarde.",
+  "description_html": "<br/><br/>Le personnage emplit l'esprit de ses cibles d'un vacarme retentissant de sons discordants, ce qui les gêne pour se concentrer et agir. Les créatures sont <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeuses</a> pendant toute la durée du sort si elles ratent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20cacophonique%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/13fd92b87e8baacf0cd60e5687891a91306b983a.html",
+    "recupere_le": "2026-07-28T22:41:09.447655+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "appel-cacophonique-de-groupe",
+    "resume_court": "Le lanceur remplit l'esprit de ses cibles d'un vacarme discordant qui les rend nauséeuses.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": "Le texte mentionne que les créatures sont « nauséeuses », mais ce terme ne figure pas dans la liste des conditions admissibles. La nausée n'est pas explicitement nommée comme une condition de jeu standard (aveugle, étourdi, etc.). Le sort gêne la concentration et l'action sans infliger une condition listée.",
+    "slug": "appel-cacophonique-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:40+00:00",
+    "hash_source": "f29f704b377b8af3cdc956d05d0eb074d8e7368dd69ac9fdde955786816bd3be"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5004fd8e753f25f0481e529a12296fcab207796b71a61c769c1df432880fbfce",
+  "hash_vue": "5e8602840013e0fb9ef3f5d7040f3c4541df8f741f98bfbc77bbb47ed3f9f3c3"
+}

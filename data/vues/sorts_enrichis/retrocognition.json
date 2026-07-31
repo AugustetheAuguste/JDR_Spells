@@ -1,0 +1,97 @@
+{
+  "id": "retrocognition",
+  "nom": "Rétrocognition",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9trocognition.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Méd": 3,
+    "Occ": 3,
+    "Psy": 5
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "concentration, jusqu’à 1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort permet au personnage d’obtenir des impressions psychiques issues des événements qui se sont déroulés là où il se trouve. Pendant la première minute de concentration, le sort révèle les impressions psychiques laissées par les événements s’étant déroulés dans l’heure précédente. Pendant la minute de concentration suivante, il révèle ceux s’étant déroulés pendant l’heure d’avant, etc. Si un événement particulièrement traumatisant ou perturbant d’un point de vue psychique s’est déroulé dans ce laps de temps, le personnage doit réussir un test de concentration (DD = 20, 30 ou 40 selon la sévérité de la perturbation psychique), sinon il perd sa concentration.\nÀ partir du niveau 13, le personnage peut récolter les impressions psychiques issues d’une période plus étendue qu’une heure par minute de concentration, à savoir une semaine par minute de concentration ou plus (voir la table suivante). La quantité de détails appris diminue, il est donc difficile de percevoir tout ce qui ne résulte pas d’un événement majeur.\nNLSPériode de temps\n13-151 semaine/minute\n16-181 an/minute\n19+1 siècle/minute",
+  "description_html": "<br/><br/>Ce sort permet au personnage d’obtenir des impressions psychiques issues des événements qui se sont déroulés là où il se trouve. Pendant la première minute de concentration, le sort révèle les impressions psychiques laissées par les événements s’étant déroulés dans l’heure précédente. Pendant la minute de concentration suivante, il révèle ceux s’étant déroulés pendant l’heure d’avant, etc. Si un événement particulièrement traumatisant ou perturbant d’un point de vue psychique s’est déroulé dans ce laps de temps, le personnage doit réussir un <a class=\"pagelink\" href=\"Pathfinder-RPG.lancer%20des%20sorts.ashx#CONCENTRATION\" title=\"Lancer des sorts\">test de concentration</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 20, 30 ou 40 selon la sévérité de la perturbation psychique), sinon il perd sa concentration.<br/><br/>À partir du niveau 13, le personnage peut récolter les impressions psychiques issues d’une période plus étendue qu’une heure par minute de concentration, à savoir une semaine par minute de concentration ou plus (voir la table suivante). La quantité de détails appris diminue, il est donc difficile de percevoir tout ce qui ne résulte pas d’un événement majeur.<br/><br/><table class=\"tablo centre\"><tr class=\"titre\"><td>NLS</td><td>Période de temps</td></tr><tr class=\"premier\"><td>13-15</td><td>1 semaine/minute</td></tr><tr class=\"alt\"><td>16-18</td><td>1 an/minute</td></tr><tr><td>19+</td><td>1 siècle/minute</td></tr></table>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9trocognition.ashx",
+    "cache_fichier": "cache/html/722ca2cdfcecfb74dc3ba5758f2bb17c6b7b08ca.html",
+    "recupere_le": "2026-07-29T07:36:20.557280+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "retrocognition",
+    "resume_court": "Le lanceur perçoit les impressions psychiques des événements passés au lieu où il se trouve.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "retrocognition",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:05+00:00",
+    "hash_source": "c88c974df7e62c4e9519ad0d2177d690f59f19c0c44452507e5df3c37a4802e2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "afc3e737765b440417c2f4e59e01ba111068de3aa9a14b8c5eb887e86303b9a6",
+  "hash_vue": "2f94c440fd6d119ce29d5730d1b6ecfd33913caa5fc7010e2f455c42d31073f6"
+}

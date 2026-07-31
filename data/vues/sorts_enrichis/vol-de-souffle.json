@@ -1,0 +1,137 @@
+{
+  "id": "vol-de-souffle",
+  "nom": "Vol de souffle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20souffle.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "air"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Dru": 2,
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "San": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau) (5 c + 1 c/2 niveau)",
+  "cible": "une créature vivante",
+  "duree": "1 round (voir description)",
+  "jet_de_sauvegarde": "Vigueur pour annuler ; voir description",
+  "resistance_magie": "oui",
+  "description": "Le lanceur extrait l’air des poumons d’une créature, ce qui lui inflige des dégâts et la laisse incapable de parler, d’utiliser ses armes de souffle ou de lancer des sorts à composante verbale. Si la cible rate son jet de sauvegarde, elle reçoit 2d6 points de dégâts et ne peut plus parler, utiliser ses armes de souffle ou faire quoi que ce soit nécessitant qu’elle respire, tandis qu’une ligne visible d’air tourbillonnant s’échappe de sa bouche pour investir celle du lanceur. Si, pendant ce temps, la cible se met hors de portée ou se déplace hors de la ligne d’effet du sort, le sort prend fin aussitôt. Ce sort n’a aucun effet sur les créatures qui n’ont pas besoin de respirer de l’air.",
+  "description_html": "<br/><br/>Le lanceur extrait l’air des poumons d’une créature, ce qui lui inflige des dégâts et la laisse incapable de parler, d’utiliser ses armes de <a class=\"pagelink\" href=\"Pathfinder-RPG.souffle.ashx\" title=\"Souffle\">souffle</a> ou de lancer des sorts à <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#COMPOSANTES\" title=\"Présentation des sorts\">composante</a> verbale. Si la cible rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#JETDESAUVEGARDE\" title=\"Valeurs de combat\">jet de sauvegarde</a>, elle reçoit 2d6 points de dégâts et ne peut plus parler, utiliser ses armes de souffle ou faire quoi que ce soit nécessitant qu’elle respire, tandis qu’une ligne visible d’air tourbillonnant s’échappe de sa bouche pour investir celle du lanceur. Si, pendant ce temps, la cible se met hors de portée ou se déplace hors de la <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#LIGNEDEFFET\" title=\"Présentation des sorts\">ligne d’effet</a> du sort, le sort prend fin aussitôt. Ce sort n’a aucun effet sur les créatures qui n’ont pas besoin de respirer de l’air.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles h-félins."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20souffle.ashx",
+    "cache_fichier": "cache/html/f64cb693e3b8324ae9e5f47db790964177cadbaf.html",
+    "recupere_le": "2026-07-29T07:44:42.444038+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vol-de-souffle",
+    "resume_court": "Le lanceur extrait l'air des poumons d'une créature, lui infligeant des dégâts et l'empêchant de parler ou de respirer.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "affaiblissement_de_capacite",
+      "entrave_ou_immobilisation",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "assourdi"
+    ],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts",
+      "condition_infligee": [
+        "ne peut plus parler, utiliser ses armes de souffle ou faire quoi que ce soit nécessitant qu'elle respire"
+      ],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Les dégâts ne correspondent à aucun type énergétique nommé (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision) : ils résultent de l'asphyxie. Le type est donc « autre ». La condition infligée est complexe (incapacité à parler, à utiliser les armes de souffle, à respirer) : elle s'apparente à une entrave fonctionnelle plutôt qu'à une condition nommée unique de la liste. « Assourdi » est le plus proche car il représente une perte sensorielle/fonctionnelle, bien que le texte ne mentionne pas explicitement la surdité. Alternativement, aucune condition nommée ne s'applique parfaitement, mais l'effet est clairement une restriction majeure.",
+    "slug": "vol-de-souffle",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:25+00:00",
+    "hash_source": "2c28d2487537f2ca7fbc60fa8378616439f29bf5d42fd466d64a673b114f8b73"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fa681f9fc9461fce01d467c5fc29fb285d5780e3b0d0d5eb27bd8bce7565e737",
+  "hash_vue": "6e43942d60ec70893dfb4a11a30e2932548b7722715799ff9aae191f892a69b4"
+}

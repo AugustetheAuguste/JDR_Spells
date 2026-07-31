@@ -1,0 +1,111 @@
+{
+  "id": "eclair",
+  "nom": "Éclair",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clair.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Occ": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (fourrure et bâtonnet en verre)",
+  "portee": "36 m (24 c)",
+  "cible": "ligne de 36 m (24 c) de long",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort libère une violente décharge électrique qui inflige 1d6 points de dégâts d’électricité par niveau de lanceur de sorts (avec un maximum de 10d6) à toutes les créatures dans la zone d’effet. L’éclair prend naissance aux extrémités des doigts du lanceur de sorts.\nL’éclair met le feu aux combustibles et endommage les objets sur sa trajectoire. Il peut faire fondre les métaux ayant un point de fusion suffisamment bas (l’or, le plomb, le cuivre, l’argent ou le bronze par exemple). Si l’éclair inflige suffisamment de dégâts à un obstacle pour le détruire ou le percer, il poursuit sa trajectoire au-delà de celui-ci si sa portée le permet ; dans le cas contraire, il est arrêté par l’obstacle, comme tout autre sort.",
+  "description_html": "<br/><br/>Ce sort libère une violente décharge électrique qui inflige 1d6 points de dégâts d’électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (avec un maximum de 10d6) à toutes les créatures dans la zone d’effet. L’éclair prend naissance aux extrémités des doigts du lanceur de sorts.<br/><br/>L’éclair met le feu aux combustibles et endommage les objets sur sa trajectoire. Il peut faire fondre les métaux ayant un point de fusion suffisamment bas (l’or, le plomb, le cuivre, l’argent ou le bronze par exemple). Si l’éclair inflige suffisamment de dégâts à un obstacle pour le détruire ou le percer, il poursuit sa trajectoire au-delà de celui-ci si sa portée le permet ; dans le cas contraire, il est arrêté par l’obstacle, comme tout autre sort.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 1d8 points de dégâts d’électricité par niveau de lanceur de sorts (10d8 maximum). Les créatures qui ratent leur jet de sauvegarde sont chancelantes pendant un round.\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique, la ligne d’effet de l’éclair peut effectuer un unique virage de 90 degrés. Les créatures qui ratent leur jet de sauvegarde sont étourdies pendant un round.",
+    "description_html": "Les dégâts infligés s’élèvent à 1d8 points de dégâts d’électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (10d8 maximum). Les créatures qui ratent leur jet de sauvegarde sont chancelantes pendant un round.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, la ligne d’effet de l’éclair peut effectuer un unique virage de 90 degrés. Les créatures qui ratent leur jet de sauvegarde sont étourdies pendant un round."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clair.ashx",
+    "cache_fichier": "cache/html/31a5a9fcb91284d4624ea03f0f8370c7227229c0.html",
+    "recupere_le": "2026-07-28T22:38:49.367520+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "eclair",
+    "resume_court": "Une décharge électrique en ligne qui inflige des dégâts d'électricité à toutes les créatures sur sa trajectoire.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "electricite",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'électricité",
+      "condition_infligee": [],
+      "cible_typique": "ligne de 36 m (24 c) de long"
+    },
+    "notes_ambiguite": null,
+    "slug": "eclair",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:07+00:00",
+    "hash_source": "c4305a6af1d0630650695ee4ba9d30e6d2bbf34a3650e2af2be4010ddc6001b4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7f08593b19499d1685dc2220aa0467e8cd0e7da206f170357b03eb8fe2940a5f",
+  "hash_vue": "df108a60c9d19fdece4364e374e18ab670ae19a42a32cbc6c6dea711eabc7381"
+}

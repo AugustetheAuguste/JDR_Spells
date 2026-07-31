@@ -1,0 +1,105 @@
+{
+  "id": "vol-de-pouvoir",
+  "nom": "Vol de pouvoir",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20pouvoir.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 4,
+    "Ens/Mag": 5,
+    "Prê": 5,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "une créature mythique",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage draine le pouvoir d’une créature mythique et l’utilise pour restaurer le sien. La cible perd 1d4 utilisations de pouvoir mythique. Si le personnage possède une aptitude qui lui permet de dépenser du pouvoir mythique, il récupère autant d’utilisations que celles perdues par la cible.",
+  "description_html": "<br/><br/>Le personnage draine le <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir</a> d’une créature mythique et l’utilise pour restaurer le sien. La cible perd 1d4 utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>. Si le personnage possède une aptitude qui lui permet de dépenser du <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il récupère autant d’utilisations que celles perdues par la cible.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol%20de%20pouvoir.ashx",
+    "cache_fichier": "cache/html/f66e7f0709f0e15128995f253ebb9d88de132e4d.html",
+    "recupere_le": "2026-07-29T07:44:39.386327+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vol-de-pouvoir",
+    "resume_court": "Le lanceur draine le pouvoir mythique d'une créature et récupère ses propres utilisations.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "affaiblissement_de_capacite",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature mythique"
+    },
+    "notes_ambiguite": null,
+    "slug": "vol-de-pouvoir",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:20+00:00",
+    "hash_source": "24b540fdb112cd3ca7e32ab9031e1a20c1fa26d220b5dbade64c3655934d61a8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "15eb1a9f60f4efabed1d18565a5339accc2d7d2a3c29234658278b4e4ef31c58",
+  "hash_vue": "0a0a6b5e0c89e6116b9e7149b7a1236c832529b653933ffceabd9c9a2fdcad91"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "traverser-l-espace",
+  "nom": "Traverser l'espace",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traverser%20lespace.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 6,
+    "Con": 6,
+    "Ens/Mag": 7,
+    "Magus": 6,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un oeuf de troglodyte)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Quand le personnage se trouve sous l’effet de ce sort, il peut se téléporter sur 9 m (6 c) par une action de mouvement. Il doit terminer ce déplacement dans une case inoccupée située dans sa ligne de mire. Sinon, il peut dépenser une action de mouvement pour passer d’une position allongée à debout sans provoquer d’attaque d’opportunité.",
+  "description_html": "<br/><br/>Quand le personnage se trouve sous l’effet de ce sort, il peut se téléporter sur 9 m (6 <abbr title=\"cases\">c</abbr>) par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>. Il doit terminer ce déplacement dans une case inoccupée située dans sa ligne de mire. Sinon, il peut dépenser une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> pour passer d’une position allongée à debout sans provoquer d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d’opportunité</a>.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut se téléporter soit par une action de mouvement soit par une action rapide, mais jamais plus d’une fois par round. S’il réalise une action de mouvement et une action rapide, il peut se téléporter jusqu’à 18 mètres.",
+    "description_html": "Le personnage peut se téléporter soit par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> soit par une action rapide, mais jamais plus d’une fois par round. S’il réalise une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> et une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a>, il peut se téléporter jusqu’à 18 mètres."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traverser%20lespace.ashx",
+    "cache_fichier": "cache/html/a022bbb2568da5154b90f7b65784233ba4ce10fc.html",
+    "recupere_le": "2026-07-29T07:43:31.570791+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "traverser-l-espace",
+    "resume_court": "Le lanceur peut se téléporter de 9 m par action de mouvement pendant 1 round par niveau.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "traverser-l-espace",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:53+00:00",
+    "hash_source": "6d1f1a2f21b6043fa132f264ea263d7f2f4183bf3904be13f0552be8c9d21516"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "adf1fe9aad2b983b63bf75643ee6c764b097dbbc656e48e0bd88c858d9d917a7",
+  "hash_vue": "c8f248ef730622cfa80142eaf531c7f256360a7b88bf533baa875b2a20671120"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "bandes-de-protection",
+  "nom": "Bandes de protection",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bandes%20de%20protection.ashx",
+  "ecole": "invocation (création)",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Con": 2,
+    "ConU": 2,
+    "Ens/Mag": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1 heure/niveau ou jusqu’à déchargement (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif )",
+  "resistance_magie": "oui",
+  "description": "Des bandes de force invisible encerclent les points vitaux de la cible. Elles résistent au broyage et aux impacts sans gêner les mouvements. La cible gagne une RD 2/perforant ou tranchant et ne reçoit que la moitié des dégâts de la part de la constriction, des chutes et de l’ensevelissement, ainsi que des effets d’écrasement similaires comme main broyeuse. Les tests de lutte pour autre chose que la constriction (comme une immobilisation ou un engloutissement) ne sont pas affectés. Le sort se décharge après avoir bloqué 12 points de dégâts par niveau de lanceur de sorts (avec un maximum de 120 au niveau 10). Les bandes n’ont aucun effet sur les attaques intangibles à moins qu’elles ne fassent des dégâts de constriction ou d’écrasement ou qu’elles ne soient sujettes à la réduction de dégâts.",
+  "description_html": "<br/><br/>Des bandes de force invisible encerclent les points vitaux de la cible. Elles résistent au broyage et aux impacts sans gêner les mouvements. La cible gagne une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> 2/perforant ou tranchant et ne reçoit que la moitié des dégâts de la part de la constriction, des chutes et de l’ensevelissement, ainsi que des effets d’écrasement similaires comme <a class=\"pagelink\" href=\"Pathfinder-RPG.main%20broyeuse.ashx\" title=\"Main broyeuse\">main broyeuse</a>. Les tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.lutte.ashx\" title=\"lutte\">lutte</a> pour autre chose que la constriction (comme une immobilisation ou un engloutissement) ne sont pas affectés. Le sort se décharge après avoir bloqué 12 points de dégâts par \n<a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (avec un maximum de 120 au niveau 10). Les bandes n’ont aucun effet sur les attaques intangibles à moins qu’elles ne fassent des dégâts de constriction ou d’écrasement ou qu’elles ne soient sujettes à la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction de dégâts</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bandes%20de%20protection.ashx",
+    "cache_fichier": "cache/html/11224917aa8ddb3eea8392e6bcf55779d232c3f2.html",
+    "recupere_le": "2026-07-28T22:43:21.353738+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "bandes-de-protection",
+    "resume_court": "Des bandes de force invisible protègent la cible contre les dégâts de broyage, chutes et constriction.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "invocation_ou_creation",
+      "duree_prolongee",
+      "immunite_ou_resistance_element"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "bandes-de-protection",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:36+00:00",
+    "hash_source": "61c1845bb4b75be13f9dfb4d1aecc4cfff3125c7420f2f31b96256bc85991802"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1d7e99ae281cd234ca6442ace65231c0cc40ab0f34c29d7b4cf30c6a48f4d14c",
+  "hash_vue": "06e9c75498fe78f4ab205da22a4b4f5dadd2ff4dd3a3e52beac6e0a42cad1bf4"
+}

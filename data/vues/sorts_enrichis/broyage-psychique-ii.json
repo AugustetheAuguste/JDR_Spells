@@ -1,0 +1,77 @@
+{
+  "id": "broyage-psychique-ii",
+  "nom": "Broyage psychique II",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20II.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, partiel et Vigueur, partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme broyage psychique I mais si la cible réussit son jet de Vigueur, elle subit 5d6 points de dégâts +1 par niveau de lanceur de sorts. De plus, elle reçoit son bonus de circonstances de +4 au jet de Vigueur uniquement si elle possède la totalité de ses points de vie, s’il lui en reste plus de la moitié le bonus est de +2 seulement. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.broyage%20psychique%20I.ashx\" title=\"Broyage psychique I\">broyage psychique I</a></i> mais si la cible réussit son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, elle subit 5d6 points de dégâts +1 par niveau de lanceur de sorts. De plus, elle reçoit son bonus de circonstances de +4 au jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> uniquement si elle possède la totalité de ses points de vie, s’il lui en reste plus de la moitié le bonus est de +2 seulement. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Broyage psychique I"
+  },
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20II.ashx",
+    "cache_fichier": "cache/html/10a0c7485662be2879879513b9492c2f1fba9a32.html",
+    "recupere_le": "2026-07-28T22:45:05.037790+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "broyage-psychique-ii",
+    "resume_court": "Un sort de nécromancie qui inflige des dégâts psychiques et peut paralyser une créature.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "5d6 points de dégâts +1 par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le texte renvoie à « broyage psychique I » pour le fonctionnement complet du sort, notamment les conditions infligées possibles. Sans accès à ce sort de référence, seuls les dégâts et les mécaniques décrites ici peuvent être annotés. Le type de dégâts est classé « autre » car le texte ne précise pas le type énergétique exact (dégâts psychiques/mentaux ne figurent pas dans la liste fermée).",
+    "slug": "broyage-psychique-ii",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:19+00:00",
+    "hash_source": "6803f4a0f39ba883db308dd78b3f9c565d773811e4c869c02c74034b89d9751c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9aa1e19ece088d09c724aa9b193b22cc22e666d7e68f339abd0359f7966e923d",
+  "hash_vue": "e97f81d19c1cbdd3a3bfa55e98ca4b7f0e690cc9729a3c24d231dfcdc11258ce"
+}

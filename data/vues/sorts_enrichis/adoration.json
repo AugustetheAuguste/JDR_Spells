@@ -1,0 +1,109 @@
+{
+  "id": "adoration",
+  "nom": "Adoration",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adoration.ashx",
+  "ecole": "Enchantement",
+  "descripteurs": [
+    "émotion",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "La cible du sort devient un objet d’adoration pour ceux qu’elle tente d’affecter avec un test de Diplomatie ou de combat de spectacle. Si la cible n’est pas impliquée dans un combat, elle reçoit un bonus de moral de +2 aux tests de Diplomatie pour influencer une créature. Si elle est engagée dans un combat de spectacle , elle gagne un bonus de moral de +2 aux tests de combat de spectacle.",
+  "description_html": "<br/><br/>La cible du sort devient un objet d’adoration pour ceux qu’elle tente d’affecter avec un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Diplomatie.ashx\" title=\"Diplomatie\">Diplomatie</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.combat%20de%20spectacle.ashx\" title=\"Les combats de spectacle\">combat de spectacle</a>. Si la cible n’est pas impliquée dans un combat, elle reçoit un bonus de moral de +2 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Diplomatie.ashx\" title=\"Diplomatie\">Diplomatie</a> pour influencer une créature. Si elle est engagée dans un <a class=\"pagelink\" href=\"Pathfinder-RPG.combat%20de%20spectacle.ashx\" title=\"Les combats de spectacle\">combat de spectacle</a> , elle gagne un bonus de moral de +2 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.combat%20de%20spectacle.ashx\" title=\"Les combats de spectacle\">combat de spectacle</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adoration.ashx",
+    "cache_fichier": "cache/html/919b872ae48a337dd12c93da395c2067597e70af.html",
+    "recupere_le": "2026-07-28T22:40:04.396091+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "adoration",
+    "resume_court": "La cible devient un objet d'adoration et gagne un bonus de moral aux tests de Diplomatie ou de combat de spectacle.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "effet_mental",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "adoration",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:10+00:00",
+    "hash_source": "8df0ba72f7db53ffda71f3e1c46448e7a750564a57ae366a4184deb2447655d6"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8da20db2a055aed2ebf269072162a0d33450b4947f8d79cfe7566b871b78a2b5",
+  "hash_vue": "14052e2c773c70fe66554922512567c47c4a40ced077d48c14230ca53cd4e2c5"
+}

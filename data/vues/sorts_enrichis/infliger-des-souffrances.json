@@ -1,0 +1,172 @@
+{
+  "id": "infliger-des-souffrances",
+  "nom": "Infliger des souffrances",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Infliger%20des%20souffrances.ashx",
+  "ecole": "Enchantement",
+  "descripteurs": [
+    "douleur",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Ens/Mag": 3,
+    "Méd": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "Sor": 3,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté partiel, voir texte",
+  "resistance_magie": "oui",
+  "description": "Le personnage provoque des souffrances insoutenables dans le corps et l’esprit de sa cible via télépathie, lui imposant un malus de –4 aux jets d’attaque ainsi qu’aux tests de compétence et de caractéristique. Si la cible réussit son jet de Volonté, la durée est réduite à 1 round.",
+  "description_html": "<hr/>\nLe personnage provoque des souffrances insoutenables dans le corps et l’esprit de sa cible via télépathie, lui imposant un malus de –4 aux jets d’attaque ainsi qu’aux tests de compétence et de caractéristique. Si la cible réussit son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, la durée est réduite à 1 round.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Infliger des souffrances de groupe",
+      "id": "infliger-des-souffrances-de-groupe",
+      "ecole": "Enchantement",
+      "descripteurs": [
+        "douleur",
+        "effet mental"
+      ],
+      "niveaux": {
+        "Apal": 4,
+        "Hyp": 5,
+        "Inq": 5,
+        "Ens/Mag": 7,
+        "Méd": 4,
+        "Occ": 5,
+        "Psy": 6,
+        "Sor": 7,
+        "Spi": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+      "cible": "1 créature/niveau, les créatures devant être à 9 m ou moins les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté partiel, voir texte",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme infliger des souffrances en dehors de ce qui est indiqué ci-dessus.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.infliger%20des%20souffrances.ashx\" title=\"Infliger des souffrances\">infliger des souffrances</a></i> en dehors de ce qui est indiqué ci-dessus.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Infliger%20des%20souffrances.ashx",
+    "cache_fichier": "cache/html/4f748f03ccccc6d29ea67c680040bbefccb8598f.html",
+    "recupere_le": "2026-07-28T22:57:01.535528+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "infliger-des-souffrances",
+    "resume_court": "Le lanceur inflige des souffrances télépathiques qui imposent un malus de –4 aux jets et tests.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "infliger-des-souffrances",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:28+00:00",
+    "hash_source": "cc49aac9a108957b9798831e4189b38edbf854c8cc6e447c4f73aeace74c3a49"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "87eeaf2241c8d284e601a1cdbf2216202d72a0a9e38e76a4328bd9f26d188105",
+  "hash_vue": "8e8659b415712e3194e89777512d40d94dbb667ae764cee84307eda1385a0a0f"
+}

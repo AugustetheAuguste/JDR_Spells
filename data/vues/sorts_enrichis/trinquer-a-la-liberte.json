@@ -1,0 +1,99 @@
+{
+  "id": "trinquer-a-la-liberte",
+  "nom": "Trinquer à la liberté",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trinquer%20%c3%a0%20la%20libert%c3%a9.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5,
+    "Ens/Mag": 4,
+    "Inq": 5,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un peu de bière dans un pichet)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Lorsque le lanceur de sorts soulève un pichet et trinque à la liberté, la cible est transportée jusqu'à 4,5 mètres de sa position vers un espace choisi par le personnage et dans la ligne de vue de ce dernier. Si la cible était à terre au moment de l'incantation, le personnage peut choisir de la remettre debout une fois arrivée à destination. De plus, si la cible était attachée par des cordes non magiques, des menottes ou d'autres entraves, ces entraves ne sont pas transportées avec la cible, ce qui la libère. Si la cible est liée par des entraves magiques, le personnage peut empêcher ces entraves d'être transportées avec la cible en réussissant un test de niveau de lanceur de sorts contre un DD basé sur le niveau de lanceur de sorts des entraves (DD = 11 + le niveau de lanceur de sorts de l'objet magique ou du sort qui entrave la cible).",
+  "description_html": "<br/><br/>Lorsque le lanceur de sorts soulève un pichet et trinque à la liberté, la cible est transportée jusqu'à 4,5 mètres de sa position vers un espace choisi par le personnage et dans la ligne de vue de ce dernier. Si la cible était <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a> au moment de l'incantation, le personnage peut choisir de la remettre debout une fois arrivée à destination. De plus, si la cible était attachée par des cordes non magiques, des menottes ou d'autres entraves, ces entraves ne sont pas transportées avec la cible, ce qui la libère. Si la cible est liée par des entraves magiques, le personnage peut empêcher ces entraves d'être transportées avec la cible en réussissant un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> contre un DD basé sur le niveau de lanceur de sorts des entraves (DD = 11 + le niveau de lanceur de sorts de l'objet magique ou du sort qui entrave la cible).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Cayden Cailéan."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trinquer%20%c3%a0%20la%20libert%c3%a9.ashx",
+    "cache_fichier": "cache/html/364ff3393b54f32ecffcfbbc35722c25361232b4.html",
+    "recupere_le": "2026-07-29T07:43:34.700473+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "trinquer-a-la-liberte",
+    "resume_court": "Téléporte une créature jusqu'à 4,5 m et la libère de ses entraves non magiques.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "invocation_ou_creation",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "trinquer-a-la-liberte",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:54+00:00",
+    "hash_source": "47f45bce0f252044b9464c499c9d5765ca08c1e56f0f005da1021f1bfcc65075"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3585a5500e39b42a18c191a2f6b93f7d7393f7fb03da7cadd688aec128c1b964",
+  "hash_vue": "ac7d0fdb877a4cde395d8843906f301a0cf102cdea41d09c52233d20b0bb1c60"
+}

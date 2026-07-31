@@ -1,0 +1,74 @@
+{
+  "id": "repos-revigorant",
+  "nom": "Repos revigorant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repos%20revigorant.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 heure ou jusqu'à utilisation",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort est réservé aux personnages qui vénèrent le dieu nain des morts.\nCe sort améliore la magie qui permet de ramener un mort à la vie. Si le personnage lance rappel à la vie, la créature prise pour cible récupère la totalité de ses points de vie. S’il lance souffle de vie, ce sort peut ramener une créature morte depuis un nombre maximum de rounds égal à la moitié du niveau de lanceur de sorts du personnage au moment où il lance le sort. L’effet de guérison est traité comme si le sort était renforcé par le don Extension d’effet. Le lancer de l’un de ces sorts déclenche, puis met fin au repos revigorant.",
+  "description_html": "<br/><br/><i>Ce sort est réservé aux personnages qui vénèrent le dieu nain des morts.</i><br/><br/>Ce sort améliore la magie qui permet de ramener un mort à la vie. Si le personnage lance <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i>, la créature prise pour cible récupère la totalité de ses points de vie. S’il lance <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souffle%20de%20vie.ashx\" title=\"Souffle de vie\">souffle de vie</a></i>, ce sort peut ramener une créature morte depuis un nombre maximum de <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> égal à la moitié du niveau de lanceur de sorts du personnage au moment où il lance le sort. L’effet de guérison est traité comme si le sort était renforcé par le don <a class=\"pagelink\" href=\"Pathfinder-RPG.Extension%20deffet.ashx\" title=\"Extension d'effet\">Extension d’effet</a>. Le lancer de l’un de ces sorts déclenche, puis met fin au <i>repos revigorant</i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains."
+  },
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repos%20revigorant.ashx",
+    "cache_fichier": "cache/html/49b8ccf5298f78d28b4ba8138874f1b838f64334.html",
+    "recupere_le": "2026-07-29T07:38:10.290529+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "repos-revigorant",
+    "resume_court": "Améliore les sorts de résurrection pour restaurer tous les PV et étendre la limite de temps.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "metamagie_ou_sort_cible"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort améliore d'autres sorts (rappel à la vie, souffle de vie) plutôt que d'agir directement. Il relève de la métamagie ou du ciblage de sort. Classé en `amelioration` car il augmente les capacités du lanceur sans viser une menace en particulier, avec le tag `metamagie_ou_sort_cible` pour refléter son action sur d'autres sorts.",
+    "slug": "repos-revigorant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:51+00:00",
+    "hash_source": "f405e5cd311a99c51271fcdb2de3d6df8885ca61b7b1354b7c7fbf472cf424d6"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0d6fac738797b39b5ad8fa38535e7d3b472644e4ef2bda253ea6199cc6df01bc",
+  "hash_vue": "317f288770c971ca83e71374e7026c5892597588facd7c2eeea9ee810001322a"
+}

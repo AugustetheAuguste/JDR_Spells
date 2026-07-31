@@ -1,0 +1,101 @@
+{
+  "id": "crachat-adhesif",
+  "nom": "Crachat adhésif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20adh%c3%a9sif.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Ens/Mag": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "4,5 m (3 c)",
+  "cible": "une créature",
+  "duree": "1 round/niveau ou jusqu’à déchargement (cf. texte)",
+  "jet_de_sauvegarde": "Réflexes pour dégâts partiels",
+  "resistance_magie": "non",
+  "description": "Pendant la durée du sort, le personnage peut cracher un liquide visqueux une seule fois par une action simple. Ce liquide fonctionne comme une sacoche immobilisante, à la seule différence que le personnage n’a pas besoin de réussir de jet d’attaque pour toucher sa cible. Le DD pour contrer cet adhésif (pour éviter d’être collé au sol, pour voler, pour briser l’adhésif ou pour lancer un sort) est égal au DD du sort plutôt qu’au DD normal de la sacoche immobilisante. L’adhésif persiste pendant 2d4 rounds après que le personnage l’a craché.",
+  "description_html": "<br/><br/>Pendant la durée du sort, le personnage peut cracher un liquide visqueux une seule fois par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>. Ce liquide fonctionne comme une <a class=\"pagelink\" href=\"Pathfinder-RPG.sacoche%20immobilisante.ashx\" title=\"Sacoche immobilisante\">sacoche immobilisante</a>, à la seule différence que le personnage n’a pas besoin de réussir de jet d’attaque pour toucher sa cible. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> pour contrer cet adhésif (pour éviter d’être collé au sol, pour voler, pour briser l’adhésif ou pour lancer un sort) est égal au DD du sort plutôt qu’au DD normal de la sacoche immobilisante. L’adhésif persiste pendant 2d4 rounds après que le personnage l’a craché.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20adh%c3%a9sif.ashx",
+    "cache_fichier": "cache/html/7be3a36c145e66350d37e430597fbe6511773a87.html",
+    "recupere_le": "2026-07-28T22:49:38.002149+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "crachat-adhesif",
+    "resume_court": "Le lanceur crache un liquide visqueux qui immobilise une créature au sol comme une sacoche immobilisante.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevetre"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce liquide fonctionne comme une sacoche immobilisante"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort crée un effet d'immobilisation sans infliger de dégâts directs. La condition « enchevetre » est la plus proche de l'effet décrit (entrave matérielle au sol), bien que le texte ne nomme pas explicitement une condition de jeu. L'adhésif fonctionne comme une sacoche immobilisante, ce qui restreint les déplacements et les actions.",
+    "slug": "crachat-adhesif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:59+00:00",
+    "hash_source": "9bf08c99e74cb9e50081e7fb59bcbd1633db95e3340b7f089d413fcf39198273"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8f0d1610d18742f11d68387267d610ca9bd9abf3a05c36027d72c9ed3dcbbc8f",
+  "hash_vue": "c270bfc30d82abda6e428eb3da45cc7f2074922efbea48df125f90f2c6623336"
+}

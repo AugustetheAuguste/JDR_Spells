@@ -1,0 +1,97 @@
+{
+  "id": "arme-de-cauterisation",
+  "nom": "Arme de cautérisation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20caut%c3%a9risation.ashx",
+  "ecole": "transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Magus": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte de cire fondue)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une arme ou 50 projectiles qui doivent être tous regroupés au moment de l’incantation.",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté annuler (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Le personnage imprègne une arme d’une énergie discrète mais pernicieuse qui gène la guérison accélérée. Les dégâts qu’infligent l’arme ou les munitions sont considérés comme de type acide, froid, électricité et feu, mais uniquement quand il s’agit de déterminer s’ils annulent la régénération d’une créature.\nÀ partir du niveau 8, l’arme est également considérée comme en argent et en fer froid quand il s’agit d’annuler la régénération et, à partir du niveau 11, elle fonctionne comme une arme Chaotique, Mauvaise, Bonne et Loyale vis-à-vis de la régénération.",
+  "description_html": "<br/><br/>Le personnage imprègne une arme d’une énergie discrète mais pernicieuse qui gène la <a class=\"pagelink\" href=\"Pathfinder-RPG.Gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx\" title=\"Guérison accélérée (Ext)\">guérison accélérée</a>. Les dégâts qu’infligent l’arme ou les munitions sont considérés comme de type acide, froid, électricité et feu, mais uniquement quand il s’agit de déterminer s’ils annulent la <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9g%c3%a9n%c3%a9ration%20(capacit%c3%a9).ashx\" title=\"Régénération (Ext)\">régénération</a> d’une créature. <br/><br/>À partir du niveau 8, l’arme est également considérée comme en <a class=\"pagelink\" href=\"Pathfinder-RPG.argent.ashx\" title=\"argent\">argent</a> et en <a class=\"pagelink\" href=\"Pathfinder-RPG.fer%20froid.ashx\" title=\"fer froid\">fer froid</a> quand il s’agit d’annuler la régénération et, à partir du niveau 11, elle fonctionne comme une arme Chaotique, Mauvaise, Bonne et Loyale vis-à-vis de la régénération.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20caut%c3%a9risation.ashx",
+    "cache_fichier": "cache/html/40b5a6f0637a0559d5c7583b979aa53854831a6e.html",
+    "recupere_le": "2026-07-28T22:41:42.482966+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "arme-de-cauterisation",
+    "resume_court": "Une arme inflige des dégâts comptant comme acide, froid, électricité et feu pour annuler la régénération.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme ou 50 projectiles"
+    },
+    "notes_ambiguite": "Le sort ne cause pas de dégâts directs : il modifie comment une arme existante inflige ses dégâts pour contourner la régénération. Aucun type de dégâts n'est infligé par le sort lui-même, seulement par l'arme imbue.",
+    "slug": "arme-de-cauterisation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:05+00:00",
+    "hash_source": "ee2a7a272823f6c06731c42c14989db6f58efc946905d701535f2e5a7280af37"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "30f61e275994b4fdb1da2014cde12fb3ace3d3448f23e71432706bfba62c376c",
+  "hash_vue": "6236e31fcb52c63f32d7caf8e6f5c2705824482bbc31e5f3d07e118862cdcf2b"
+}

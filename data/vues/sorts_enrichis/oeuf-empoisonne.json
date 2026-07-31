@@ -1,0 +1,127 @@
+{
+  "id": "oeuf-empoisonne",
+  "nom": "Œuf empoisonné",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c5%92uf%20empoisonn%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Cham": 1,
+    "Ens/Mag": 1,
+    "Inq": 1,
+    "Magus": 1,
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "1 œuf",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "non (objet)",
+  "resistance_magie": "non (objet)",
+  "description": "Le personnage transforme le contenu d’un œuf normal en une dose de venin de petit mille-pattes (Blessure; JdS DD 11, fréquence 1/round pendant 4 rounds, effet 1 Dex, guérison 1 réussite). Le poison redevient un œuf normal à la fin de la durée du sort (le contenu de l’œuf revenu à son état normal est inoffensif, à moins que la créature empoisonnée ne soit vulnérable aux œufs). Cuit ou cru, l’œuf doit être entier et dans sa coquille lorsque le sort est lancé. Lorsqu'on applique le contenu de l'oeuf empoisonné sur une arme, il n'y a aucun risque de s'y exposer, comme avec la capacité de classe utilisation du poison.",
+  "description_html": "<br/><br/>Le personnage transforme le contenu d’un œuf normal en une dose de <a class=\"pagelink\" href=\"Pathfinder-RPG.Poisons.ashx#Venindemille-pattesdetailleP\" title=\"Les poisons  \">venin de petit mille-pattes</a> (Blessure; <i>JdS</i> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 11, <i>fréquence</i> 1/round pendant 4 rounds, <i>effet</i> 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.Dex.ashx\" title=\"Dex\">Dex</a>, <i>guérison</i> 1 réussite). Le poison redevient un œuf normal à la fin de la durée du sort (le contenu de l’œuf revenu à son état normal est inoffensif, à moins que la créature empoisonnée ne soit vulnérable aux œufs). Cuit ou cru, l’œuf doit être entier et dans sa coquille lorsque le sort est lancé. Lorsqu'on applique le contenu de l'oeuf empoisonné sur une arme, il n'y a aucun risque de s'y exposer, comme avec la capacité de classe <a class=\"pagelink\" href=\"Pathfinder-RPG.Alchimiste.ashx#UTILISATIONDUPOISON\" title=\"L'alchimiste\">utilisation du poison</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Norgorber."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c5%92uf%20empoisonn%c3%a9.ashx",
+    "cache_fichier": "cache/html/45b656059e7a14cebc6c74be1e3943673a9ac060.html",
+    "recupere_le": "2026-07-28T22:39:45.349843+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "oeuf-empoisonne",
+    "resume_court": "Transforme le contenu d'un œuf en venin de mille-pattes pendant 1 minute par niveau.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 œuf"
+    },
+    "notes_ambiguite": "Le sort transforme un objet (l'œuf) en poison applicable à une arme, mais n'inflige pas directement de dégâts ni de conditions : c'est un outil de préparation. La catégorie utilitaire reflète ce rôle de création d'équipement empoisonné plutôt qu'une attaque directe. Les dégâts et conditions du poison ne sont infligés que si l'œuf est consommé ou appliqué par une autre action.",
+    "slug": "oeuf-empoisonne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:35+00:00",
+    "hash_source": "676746ca5731006fb7b30468751dd8686936a590ab5faf2c8d2b95b36f1865d5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "16949bd2353f6cd261c43903b01b3c88df9eee14f469c7ce30c19d6f15c506c4",
+  "hash_vue": "125d45dd18685f6366dc5da1595cd2d7133777c981198b8582f0033cac13de74"
+}

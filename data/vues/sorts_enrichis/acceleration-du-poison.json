@@ -1,0 +1,99 @@
+{
+  "id": "acceleration-du-poison",
+  "nom": "Accélération du poison",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acc%c3%a9l%c3%a9ration%20du%20poison.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Occ": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une épine)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage accélère le délai d'effet du poison de la cible. Si le poison met habituellement un certain temps avant de faire effet, il s'applique immédiatement. S'il n'en a pas, sa fréquence est doublée, il faut donc faire deux jets de sauvegarde et il inflige le double de dégâts par round ou minute, bien que sa durée soit réduite de moitié. Accélération du poison ne change pas les conditions de soin du poison. Si la cible est affectée par plusieurs poisons, le personnage peut déterminer celui qui l'affecte s'il l'a lui-même administré sinon, le poison affecté est choisi au hasard.",
+  "description_html": "<br/><br/>Le personnage accélère le délai d'effet du <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> de la cible. Si le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> met habituellement un certain temps avant de faire effet, il s'applique immédiatement. S'il n'en a pas, sa fréquence est doublée, il faut donc faire deux <a class=\"pagelink\" href=\"Pathfinder-RPG.Jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> et il inflige le double de dégâts par round ou minute, bien que sa durée soit réduite de moitié. <i>Accélération du poison</i> ne change pas les conditions de soin du <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a>. Si la cible est affectée par plusieurs <a class=\"pagelink\" href=\"Pathfinder-RPG.poisons.ashx\" title=\"Les poisons  \">poisons</a>, le personnage peut déterminer celui qui l'affecte s'il l'a lui-même administré sinon, le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> affecté est choisi au hasard.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acc%c3%a9l%c3%a9ration%20du%20poison.ashx",
+    "cache_fichier": "cache/html/bf663e661adb2787450f7d1638eab6e0acb0a94a.html",
+    "recupere_le": "2026-07-28T22:39:52.368295+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "acceleration-du-poison",
+    "resume_court": "Accélère l'effet d'un poison existant ou double sa fréquence et ses dégâts.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "transformation_du_sujet",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts via le poison accéléré (« inflige le double de dégâts par round ou minute »), mais le type de dégâts dépend du poison affecté, qui n'est pas spécifié dans le texte du sort lui-même. type_degats reste null car le texte ne nomme aucun type de dégâts intrinsèque au sort.",
+    "slug": "acceleration-du-poison",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:07+00:00",
+    "hash_source": "307651c51c1b80d49bee69528c5b8c351b66ba651c7d29055cd9853d6d1ced20"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c7c7b5b73226cddad18ea273a6435960b14f5c560c30ba32f243c61bb975026b",
+  "hash_vue": "e4f84268e1544ab1c441e8edeb69a20218119e2b090f7e0b6c45514073745e3d"
+}

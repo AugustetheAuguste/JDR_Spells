@@ -1,0 +1,123 @@
+{
+  "id": "vagues-d-extase",
+  "nom": "Vagues d'extase",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20dextase.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 6,
+    "Hyp": 6,
+    "Ens/Mag": 7,
+    "Prê": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 m (6 c)",
+  "cible": "explosion en forme de cône",
+  "duree": "1 round/niveau (voir texte)",
+  "jet_de_sauvegarde": "Volonté partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Des vagues de plaisir intense émanent du personnage et font vaciller toutes les cibles à portée. Les créatures affectées sont étourdies pendant 1 round et chancelantes pendant le reste de la durée du sort. Une créature qui réussit son jet de sauvegarde est chancelante pendant le premier round et peut agir ensuite normalement.",
+  "description_html": "<br/><br/>Des vagues de plaisir intense émanent du personnage et font vaciller toutes les cibles à portée. Les créatures affectées sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdies</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pendant le reste de la durée du sort. Une créature qui réussit son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pendant le premier <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et peut agir ensuite normalement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vagues%20dextase.ashx",
+    "cache_fichier": "cache/html/dc4ce141a7a05542c8015a37041ebec283e3e90c.html",
+    "recupere_le": "2026-07-29T07:43:48.365261+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "vagues-d-extase",
+    "resume_court": "Un cône d'émanation qui étourdit les créatures et les rend chancelantes pendant plusieurs rounds.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi",
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les créatures affectées sont étourdies pendant 1 round",
+        "chancelantes pendant le reste de la durée du sort"
+      ],
+      "cible_typique": "explosion en forme de cône"
+    },
+    "notes_ambiguite": null,
+    "slug": "vagues-d-extase",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:59+00:00",
+    "hash_source": "e78b0ceaf0e91a6707b120557ce82c122afe82ec6dc77226c88d338a89452c4e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "372f9bf279f6a23b5e7472e7bf0113054d23d1a6995e8ba84f1bb17fb1f09c30",
+  "hash_vue": "913a9ab17cf80f7b9a161256cf7fc88a757d68cdc2416fc5313338f458de93cd"
+}

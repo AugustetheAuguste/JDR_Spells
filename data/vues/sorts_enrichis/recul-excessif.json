@@ -1,0 +1,81 @@
+{
+  "id": "recul-excessif",
+  "nom": "Recul excessif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Recul%20excessif.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (des rognures de corne de mule)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "1 arme à feu",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "L’arme à feu ciblée tire soudain de son propre chef, même si elle n’est pas chargée. Son recul est si violent que son propriétaire doit la serrer fermement pour la garder en main et qu’il est pris au dépourvu jusqu’au début de son prochain tour. S’il est déjà pris au dépourvu, il tombe à terre. Si l’arme était chargée, la munition est gâchée.",
+  "description_html": "<br/><br/>L’arme à feu ciblée tire soudain de son propre chef, même si elle n’est pas chargée. Son recul est si violent que son propriétaire doit la serrer fermement pour la garder en main et qu’il est <a class=\"pagelink\" href=\"Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx\" title=\"Pris au dépourvu\">pris au dépourvu</a> jusqu’au début de son prochain tour. S’il est déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx\" title=\"Pris au dépourvu\">pris au dépourvu</a>, il tombe <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a>. Si l’arme était chargée, la munition est gâchée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Recul%20excessif.ashx",
+    "cache_fichier": "cache/html/1d6b0d06e1cb5f9e696f30a61bf07212e05b3a31.html",
+    "recupere_le": "2026-07-29T07:37:41.292643+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "recul-excessif",
+    "resume_court": "Une arme à feu tire d'elle-même avec un recul violent qui déstabilise son propriétaire.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "arme_ou_munition",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 arme à feu"
+    },
+    "notes_ambiguite": "Le sort affecte l'arme elle-même, pas directement une créature, bien que l'effet tactique cible le propriétaire. La cible_typique reste 'objet' car le sort s'applique à l'arme. Le texte ne décrit pas de condition infligée au sens des conditions listées (aveugle, étourdi, etc.), mais plutôt un effet de surprise et de déséquilibre qui relève de l'entrave par le contexte tactique.",
+    "slug": "recul-excessif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:34+00:00",
+    "hash_source": "f1b210daf8f2f6e3cd4b407b4b3fe91b1e29b7e117825b7af308c4724c527470"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0fb8972e996335e0190923c99920c4c20db63ecf2af232eeeb10de9d09189b1c",
+  "hash_vue": "c1231783288e973ce80378f259571f6cbc1a5b6e1d3a00bdf6b00584e196fb2a"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "resurrection",
+  "nom": "Résurrection",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9surrection.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 8,
+    "Prê": 7,
+    "Sor": 8
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (diamant 10 000 po), FD",
+  "portee": "contact",
+  "cible": "créature morte touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun (voir texte)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort ressemble à rappel à la vie mais la créature ressuscitée se réveille en pleine possession de ses moyens.\nPeu importe l’état de la dépouille, du moment qu’il reste ne serait-ce qu’une partie du corps, le défunt peut être ressuscité (les cendres laissées par une créature désintégrée suffisent pour la ramener à la vie). L’individu doit pas être mort depuis moins de dix ans par niveau de lanceur de sorts.\nAu terme de l’incantation, le sujet se réveille en parfaite santé avec la totalité de ses sorts préparés. En revanche, il reçoit un niveau négatif permanent, comme si une créature avait absorbé son énergie. Si le personnage est de niveau 1, il perd 2 points de Constitution. Si cela devait réduire sa Constitution à 0 ou moins, résurrection ne fonctionne pas.\nOn peut ressusciter quelqu’un tué par un sort de mort ou transformé en mort-vivant puis détruit. Par contre, même résurrection ne peut rien pour quelqu’un qui est mort de vieillesse. On ne peut pas ressusciter de créatures artificielles, d’élémentaires, d’Extérieurs ni de morts-vivants.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i> mais la créature ressuscitée se réveille en pleine possession de ses moyens.<br/><br/>Peu importe l’état de la dépouille, du moment qu’il reste ne serait-ce qu’une partie du corps, le défunt peut être ressuscité (les cendres laissées par une créature désintégrée suffisent pour la ramener à la vie). L’individu doit pas être mort depuis moins de dix ans par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.<br/><br/>Au terme de l’incantation, le sujet se réveille en parfaite santé avec la totalité de ses sorts préparés. En revanche, il reçoit un <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveau négatif</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.diminution%20permanente.ashx\" title=\"diminution permanente\">permanent</a>, comme si une créature avait absorbé son énergie. Si le personnage est de <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 1, il perd 2 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>. Si cela devait réduire sa <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> à 0 ou moins, <i>résurrection</i> ne fonctionne pas.<br/><br/>On peut ressusciter quelqu’un tué par un sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">mort</a> ou transformé en <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> puis détruit. Par contre, même <i>résurrection</i> ne peut rien pour quelqu’un qui est mort de vieillesse. On ne peut pas ressusciter de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20cr%c3%a9ature%20artificielle.ashx\" title=\"Créature artificielle\">créatures artificielles</a>, d’<a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20%c3%a9l%c3%a9mentaire.ashx\" title=\"Élémentaire (sous-type)\">élémentaires</a>, d’<a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">Extérieurs</a> ni de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Résurrection factice",
+      "id": "resurrection-factice",
+      "ecole": "Invocation (appel)",
+      "descripteurs": [
+        "Chaos",
+        "Mal",
+        "ruse"
+      ],
+      "niveaux": {
+        "Cham": 8,
+        "Prê": 7,
+        "Sor": 8
+      },
+      "temps_incantation": "1 minute",
+      "composantes": "V, G, M (diamant d'une valeur de 10 000 po), FD",
+      "portee": "contact",
+      "cible": "créature morte touchée",
+      "duree": "1 jour/niveau",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme résurrection excepté qu'au lieu de ramener l'âme du défunt à la vie, le sort appel un démon des ombres avec l'archétype simple évolué à posséder le corps. Si le personnage ne parvient pas à passer la résistance à la magie de la cible, son âme peut annuler l'appel et peut revenir à la vie (comme avec résurrection) dans le corps restauré. Autrement, la possession fonctionne comme possession spirituelle excepté que l'âme du sujet n'est plus présente pour y résister. Lorsque résurrection factice se termine ou que le démon est extrait du sujet, le démon retourne aux Abysses, laissant le corps vivant mais sans âme (comme celui créé par clone) derrière lui. Si l'âme n'est pas encore revenue à la vie, elle peut le faire dans le corps maintenant inerte s'il est encore en vie (comme avec résurrection). Si le corps est tué, le démon est renvoyé dans les Abysses mais le sujet reste mort.\nToute tentative visant à identifier résurrection factice avec un test de compétence l'identifie à tort comme résurrection (voir le registre de la ruse). Un observateur trompé confond l'aura de résurrection factice avec l'aura persistante d'un effet d'invocation instantané.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection.ashx\" title=\"Résurrection\">résurrection</a></i> excepté qu'au lieu de ramener l'âme du défunt à la vie, le sort appel un <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9mon%20des%20ombres.ashx\" title=\"Démon, Démon des ombres\">démon des ombres</a> avec l'archétype simple <a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx#CREATUREEVOLUEE\" title=\"Les archétypes\">évolué</a> à posséder le corps. Si le personnage ne parvient pas à passer la <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> de la cible, son âme peut annuler l'appel et peut revenir à la vie (comme avec <i>résurrection</i>) dans le corps restauré. Autrement, la possession fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle.ashx\" title=\"La possession\">possession spirituelle</a></i> excepté que l'âme du sujet n'est plus présente pour y résister. Lorsque <i>résurrection factice</i> se termine ou que le démon est extrait du sujet, le démon retourne aux Abysses, laissant le corps vivant mais sans âme (comme celui créé par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.clone.ashx\" title=\"Clone\">clone</a></i>) derrière lui. Si l'âme n'est pas encore revenue à la vie, elle peut le faire dans le corps maintenant inerte s'il est encore en vie (comme avec <i>résurrection</i>). Si le corps est tué, le démon est renvoyé dans les Abysses mais le sujet reste mort.<br/><br/>Toute tentative visant à identifier <i>résurrection factice</i> avec un test de compétence l'identifie à tort comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection.ashx\" title=\"Résurrection\">résurrection</a></i> (voir le registre de la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">ruse</a>). Un observateur trompé confond l'aura de <i>résurrection factice</i> avec l'aura persistante d'un effet d'<a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocation</a> instantané.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Résurrection factice suprême",
+      "id": "resurrection-factice-supreme",
+      "ecole": "Invocation (appel)",
+      "descripteurs": [
+        "Mal",
+        "Loi",
+        "ruse"
+      ],
+      "niveaux": {
+        "Prê": 9
+      },
+      "temps_incantation": "1 minute",
+      "composantes": "V, G, M (diamant d'une valeur de 25 000 po), FD",
+      "portee": "contact",
+      "cible": "créature morte touchée",
+      "duree": "permanente",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme résurrection factice excepté qu'il appel un diable trompeur avec l'archétype simple jeune à posséder le corps et que tous les aspects de résurrection factice qui fonctionnent comme résurrection fonctionnent à la place comme résurrection suprême.\nToute tentative visant à identifier résurrection factice suprême avec un test de compétence l'identifie à tort comme résurrection suprême (voir le registre de la ruse). Un observateur trompé confond l'aura de résurrection factice suprême avec l'aura persistante d'un effet d'invocation instantané.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection%20factice.ashx\" title=\"Résurrection factice\">résurrection factice</a></i> excepté qu'il appel un <a class=\"pagelink\" href=\"Pathfinder-RPG.diable%20trompeur.ashx\" title=\"Diable, Diable trompeur (Bdellavritra)\">diable trompeur</a> avec l'archétype simple <a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx#CERATUREJEUNE\" title=\"Les archétypes\">jeune</a> à posséder le corps et que tous les aspects de <i>résurrection factice</i> qui fonctionnent comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection.ashx\" title=\"Résurrection\">résurrection</a></i> fonctionnent à la place comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection%20supr%c3%aame.ashx\" title=\"Résurrection suprême\">résurrection suprême</a></i>.<br/><br/>Toute tentative visant à identifier <i>résurrection factice suprême</i> avec un test de compétence l'identifie à tort comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9surrection%20supr%c3%aame.ashx\" title=\"Résurrection suprême\">résurrection suprême</a></i> (voir le registre de la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">ruse</a>). Un observateur trompé confond l'aura de <i>résurrection factice suprême</i> avec l'aura persistante d'un effet d'<a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocation</a> instantané.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {
+    "sorts_lies": "Rappel à la vie"
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9surrection.ashx",
+    "cache_fichier": "cache/html/0d3c57b27917eb7cfb402e224718e82175ea516b.html",
+    "recupere_le": "2026-07-29T07:36:19.680413+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "resurrection",
+    "resume_court": "Ramène à la vie une créature morte depuis au maximum dix ans par niveau, au prix d'un niveau négatif permanent.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "invocation_ou_creation",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature morte touchée"
+    },
+    "notes_ambiguite": "La cible est techniquement un cadavre (objet inanimé) plutôt qu'une créature vivante, d'où le classement en « objet ». Le sort inflige un niveau négatif permanent, mais ce n'est pas une « condition » au sens des états énumérés (aveugle, étourdi, etc.) : c'est une pénalité mécanique durable qui ne figure pas dans la liste fermée des conditions.",
+    "slug": "resurrection",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:04+00:00",
+    "hash_source": "e70d022a19086b0a783d65fdc6ae5692cfe5ce20249a48a0e2c525d9ee81f86c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0940959d37ef3b88002e8a20221c2d4df91ed2c9d458ff779311cb46311d07c4",
+  "hash_vue": "3722b0547bbedf936a91e84cdfc7cc0485a7df886087cf0a7b54f089e5fccacb"
+}

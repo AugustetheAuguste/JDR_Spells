@@ -1,0 +1,100 @@
+{
+  "id": "apaisement-des-animaux",
+  "nom": "Apaisement des animaux",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apaisement%20des%20animaux.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Psy": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "animaux distants de 9 m ou moins les uns des autres",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort calme les animaux, les rendant dociles et inoffensifs. Seuls les animaux ordinaires (ayant 1 ou 2 en Intelligence) peuvent être affectés. Tous doivent être de la même espèce et se trouver dans une sphère de 9 m de rayon. Le nombre de dés de vie affectés est égal à 2d4 + niveau de lanceur de sorts.\nLes créatures affectées restent là où elles se trouvent et ne cherchent ni à attaquer ni à s’enfuir, mais ne sont pas sans défense et réagissent si on les attaque. La moindre menace met immédiatement un terme à l’effet de l’enchantement.",
+  "description_html": "<br/><br/>Ce sort calme les animaux, les rendant dociles et inoffensifs. Seuls les animaux ordinaires (ayant 1 ou 2 en <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a>) peuvent être affectés. Tous doivent être de la même espèce et se trouver dans une sphère de 9 m de rayon. Le nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">dés de vie</a> affectés est égal à 2d4 + <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a>.<br/><br/>Les créatures affectées restent là où elles se trouvent et ne cherchent ni à attaquer ni à s’enfuir, mais ne sont pas <a class=\"pagelink\" href=\"Pathfinder-RPG.sans%20d%c3%a9fense.ashx\" title=\"Sans défense\">sans défense</a> et réagissent si on les attaque. La moindre menace met immédiatement un terme à l’effet de l’<a class=\"pagelink\" href=\"Pathfinder-RPG.enchantement.ashx\" title=\"Enchantement\">enchantement</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apaisement%20des%20animaux.ashx",
+    "cache_fichier": "cache/html/40820c26e51e15c37fcdb133fbc9b610cc789e2f.html",
+    "recupere_le": "2026-07-28T22:41:04.478359+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "apaisement-des-animaux",
+    "resume_court": "Calme les animaux ordinaires d'une même espèce, les rendant dociles et inoffensifs.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Tous doivent être de la même espèce et se trouver dans une sphère de 9 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "apaisement-des-animaux",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:36+00:00",
+    "hash_source": "6eff4be1f5f73060f1459520c9fca5a3645cbbfec3542df1ea7fc6349307adc8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "571e7b07350b770bbf8cb696e370d2084d2c9649f14229a7e0bfde09f7d0b003",
+  "hash_vue": "421b3247006be9ae27972e10478706167eaba6d987259dcb6bd0da5434a7ccbc"
+}

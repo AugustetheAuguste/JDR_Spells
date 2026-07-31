@@ -1,0 +1,148 @@
+{
+  "id": "soins-intensifs",
+  "nom": "Soins intensifs",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20intensifs.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 4,
+    "Bard": 4,
+    "Cham": 4,
+    "Dru": 5,
+    "Inq": 4,
+    "Occ": 4,
+    "Prê": 4,
+    "Sor": 5,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+  "resistance_magie": "oui (inoffensif) (voir description)",
+  "description": "Ce sort est semblable à soins légers, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +20).",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers.ashx\" title=\"Soins légers\">soins légers</a></i>, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +20).<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts soignés s’élèvent à 8d8 points de dégâts + 2 points par niveau de lanceur de sorts (+40 maximum). Le sort soigne jusqu’à 4 points de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de caractéristique soignés par le sort.",
+    "description_html": "Les dégâts soignés s’élèvent à 8d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+40 maximum). Le sort soigne jusqu’à 4 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soignés par le sort.<br/><br/><br/><br/>"
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Soins légers"
+  },
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20intensifs.ashx",
+    "cache_fichier": "cache/html/ff6d9ab2a85ed27a7fdcba85378d1308c9e27e46.html",
+    "recupere_le": "2026-07-29T07:40:44.507324+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "soins-intensifs",
+    "resume_court": "Le lanceur guérit une créature touchée de 4d8 points de dégâts plus 1 par niveau.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "attaque_de_contact",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "soins-intensifs",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:44+00:00",
+    "hash_source": "484ab480a1c049a3aaeb86fb6732c3c413da33e0b1097ad56c6b66593577b118"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "835010c5db8c793b2456f68b78e5786aa44b1ce4d5d4215ab32cb894643a1350",
+  "hash_vue": "78c740ccb63c72d2b025008339b4592e99525af27204a40be46889fe080df4d2"
+}

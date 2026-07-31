@@ -1,0 +1,148 @@
+{
+  "id": "detection-des-morts-vivants",
+  "nom": "Détection des morts-vivants",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20des%20morts-vivants.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Cham": 1,
+    "Hyp": 1,
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Méd": 1,
+    "Pal": 1,
+    "Prê": 1,
+    "Psy": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un peu de terre issue d’une tombe)",
+  "portee": "18 m (12 c)",
+  "cible": "émanation en forme de cône",
+  "duree": "concentration, jusqu’à 1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Grâce à détection des morts-vivants, le lanceur de sorts peut détecter les auras spécifiques des morts-vivants. Les informations qu’il reçoit dépendent du temps passé à étudier la zone d’effet :\nPremier round : présence ou absence d’auras de morts-vivants.\nDeuxième round : nombre d’auras de morts-vivants dans la zone étudiée et intensité de l’aura la plus puissante. Si le lanceur de sorts est d’alignement Bon, si l’aura repérée est surpuissante (voir ci-dessous) et si la créature détectée possède un nombre de DV supérieur ou égal au double du niveau du lanceur de sorts, celui-ci est étourdi pendant 1 round et le sort prend fin immédiatement.\nTroisième round : intensité et emplacement de chacune des auras. Si une aura se trouve en-dehors du champ de vision du lanceur de sorts, il apprend la direction dans laquelle elle se trouve mais pas son emplacement exact.\nIntensité de l’aura. La puissance de l’aura dépend du nombre de DV du mort-vivant dont elle émane :\nDV du mort-vivantIntensité de l’auraPersistance\n1 ou moinsFaible1d6 rounds\n2–4Modérée1d6 minutes\n5–10Puissante1d6x10 minutes\n11 ou plusSurpuissante1d6 jours\nAura persistante. L’aura de mort-vivant ne disparaît pas immédiatement lorsque sa source est détruite. Un sort de détection des morts-vivants ciblant la zone en question révèle une aura ténue (moins puissante qu’une aura faible). Le temps pendant lequel l’aura persiste dépend de la puissance du mort-vivant, comme indiqué sur la table ci-dessus.\nLe personnage peut pivoter sur lui-même pour examiner une nouvelle zone chaque round. Le sort fonctionne à travers les barrières si celles-ci ne sont pas trop épaisses : il est bloqué par 30 cm de pierre, 2,5 cm de métal, une mince feuille de plomb ou 90 cm de bois ou de terre.",
+  "description_html": "<br/><br/>Grâce à <i>détection des morts-vivants</i>, le lanceur de sorts peut détecter les auras spécifiques des <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>. Les informations qu’il reçoit dépendent du temps passé à étudier la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> :<br/><br/>Premier <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> : présence ou absence d’auras de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>.<br/><br/>Deuxième <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> : nombre d’auras de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> dans la zone étudiée et intensité de l’aura la plus puissante. Si le lanceur de sorts est d’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> Bon, si l’aura repérée est surpuissante (voir ci-dessous) et si la créature détectée possède un nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> supérieur ou égal au double du <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau du lanceur de sorts</a>, celui-ci est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdi</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et le sort prend fin immédiatement.<br/><br/>Troisième <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> : intensité et emplacement de chacune des auras. Si une aura se trouve en-dehors du champ de vision du lanceur de sorts, il apprend la direction dans laquelle elle se trouve mais pas son emplacement exact.<br/><br/><b>Intensité de l’aura.</b> La puissance de l’aura dépend du nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> du <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> dont elle émane :<br/><br/><center>\n<table class=\"tablo\"><tr class=\"titre\"><td>DV du mort-vivant</td><td>Intensité de l’aura</td><td>Persistance</td></tr><tr class=\"premier\"><td>1 ou moins</td><td>Faible</td><td>1d6 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a></td></tr><tr class=\"alt\"><td>2–4</td><td>Modérée</td><td>1d6 minutes</td></tr><tr><td>5–10</td><td>Puissante</td><td>1d6x10 minutes</td></tr><tr class=\"alt\"><td>11 ou plus</td><td>Surpuissante</td><td>1d6 jours</td></tr></table>\n</center><br/><br/><b>Aura persistante.</b> L’aura de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> ne disparaît pas immédiatement lorsque sa source est détruite. Un sort de <i>détection des morts-vivants</i> ciblant la zone en question révèle une aura ténue (moins puissante qu’une aura faible). Le temps pendant lequel l’aura persiste dépend de la puissance du <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a>, comme indiqué sur la table ci-dessus.<br/><br/>Le personnage peut pivoter sur lui-même pour examiner une nouvelle zone chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Le sort fonctionne à travers les barrières si celles-ci ne sont pas trop épaisses : il est bloqué par 30 cm de pierre, 2,5 cm de métal, une mince feuille de plomb ou 90 cm de bois ou de terre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20des%20morts-vivants.ashx",
+    "cache_fichier": "cache/html/5ad4fe6540f1c4d72142451679d96c36f7d9ceee.html",
+    "recupere_le": "2026-07-28T22:50:45.802069+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "detection-des-morts-vivants",
+    "resume_court": "Le lanceur détecte les auras des morts-vivants dans un cône et apprend leur nombre, intensité et position.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "zone_d_effet",
+      "detection_ou_revelation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "celui-ci est étourdi pendant 1 round"
+      ],
+      "cible_typique": "émanation en forme de cône"
+    },
+    "notes_ambiguite": "La condition d'étourdissement ne s'applique que si trois conditions précises sont réunies (alignement Bon du lanceur, aura surpuissante, DV du mort-vivant ≥ 2× niveau du lanceur). Elle reste néanmoins une conséquence possible du sort et justifie son inclusion.",
+    "slug": "detection-des-morts-vivants",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:40+00:00",
+    "hash_source": "b1b22e1e2e054b25a6bb295f2b4b04f47759a6b876471393dd89ac72e11a8b18"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "62503b8c391013ccfb04a2092c7c66507af2d7ce01f9eccf19cf0bbf332c1ed3",
+  "hash_vue": "e98f7467bdb9ab672551ba424ba86c999295c65973c5db6ecd45608c57706893"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "manteau-de-reves",
+  "nom": "Manteau de rêves",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manteau%20de%20r%c3%aaves.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 5,
+    "Cham": 7,
+    "Hyp": 5,
+    "Ens/Mag": 6,
+    "Occ": 6,
+    "Psy": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (un pétale de rose et une goutte de parfum)",
+  "portee": "1,50 m (1 c)",
+  "cible": "émanation de 1,50 m (1 c) centrée sur le lanceur de sorts",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage est entouré par un arôme soporifique qui endort toute créature vivante qui commence son tour ou termine son déplacement à moins de 1,50 mètre (1 c) de lui. Les créatures doivent faire un jet de sauvegarde à chaque fois qu'elles commencent leur tour ou terminent leur déplacement au sein du manteau de rêves, même si elles ont déjà réussi un jet de sauvegarde contre cet effet. Les créatures endormies sont sans défense mais on peut les réveiller par une action simple ou en les blessant. Les créatures qui possèdent le pouvoir odorat reçoivent un malus de -4 au jet de sauvegarde.",
+  "description_html": "<br/><br/>Le personnage est entouré par un arôme soporifique qui endort toute créature vivante qui commence son tour ou termine son déplacement à moins de 1,50 mètre (1 <abbr title=\"cases\">c</abbr>) de lui. Les créatures doivent faire un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> à chaque fois qu'elles commencent leur tour ou terminent leur déplacement au sein du <i>manteau de rêves</i>, même si elles ont déjà réussi un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> contre cet effet. Les créatures endormies sont <a class=\"pagelink\" href=\"Pathfinder-RPG.sans%20d%c3%a9fense.ashx\" title=\"Sans défense\">sans défense</a> mais on peut les réveiller par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> ou en les blessant. Les créatures qui possèdent le pouvoir <a class=\"pagelink\" href=\"Pathfinder-RPG.odorat.ashx\" title=\"odorat\">odorat</a> reçoivent un malus de -4 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manteau%20de%20r%c3%aaves.ashx",
+    "cache_fichier": "cache/html/ab0946ebc002e1407e1a9bb22a41127ee0feb966.html",
+    "recupere_le": "2026-07-28T23:00:02.763032+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "manteau-de-reves",
+    "resume_court": "Une émanation soporifique autour du lanceur endort les créatures qui s'en rapprochent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "endort toute créature vivante"
+      ],
+      "cible_typique": "émanation de 1,50 m (1 c) centrée sur le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le texte décrit un sommeil magique qui rend les créatures « sans défense ». J'ai retenu « fascine » comme la condition la plus proche, car elle capture l'incapacité à agir ; cependant, le texte ne nomme pas explicitement une condition de la liste fournie. Le sommeil pourrait aussi être interprété comme une forme d'étourdissement, mais « fascine » (captivation) est plus fidèle à l'arôme soporifique qui immobilise.",
+    "slug": "manteau-de-reves",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:37+00:00",
+    "hash_source": "313abfe5624d1ca2d3c974938170177e23e2bf4250883639e9fc3e6e65043117"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "983be5371db0933c4926175831d78bc33c586e29a745205a58b164474568a55f",
+  "hash_vue": "77dd8c9db9e1b7dce5d8a7bad53c73d0953f17ba3daa141de18c778c3dc67f9f"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "souffle-de-la-banshie",
+  "nom": "Souffle de la banshie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20la%20banshie.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental",
+    "mort",
+    "son",
+    "terreur"
+  ],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Sor": 6,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 m (6 c)",
+  "cible": "rayonnement en cône",
+  "duree": "instantanée et 1 round/niveau (cf. texte)",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts et Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un cône d’énergie spectrale qui ressemble à des fantômes elfiques hurlants et qui inflige 1d4 points de dégâts par niveau de lanceur (15d4 au maximum). Un jet de Réflexes réussi permet de réduire ces dégâts de moitié. Toute créature qui rate son jet de Réflexes doit réussir un jet de Volonté pour ne pas être paniquée pendant 1 round/niveau.",
+  "description_html": "<br/><br/>Le personnage crée un cône d’énergie spectrale qui ressemble à des fantômes elfiques hurlants et qui inflige 1d4 points de dégâts par niveau de lanceur (15d4 au maximum). Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> réussi permet de réduire ces dégâts de moitié. Toute créature qui rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour ne pas être paniquée pendant 1 round/niveau.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20la%20banshie.ashx",
+    "cache_fichier": "cache/html/29f9de9ee8b92a84a70a25f52d59b7feec46a5d9.html",
+    "recupere_le": "2026-07-29T07:41:04.522958+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "souffle-de-la-banshie",
+    "resume_court": "Un cône d'énergie spectrale inflige des dégâts sonores et peut paniquer les créatures.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "son",
+    "condition_infligee": [
+      "effraye"
+    ],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts par niveau de lanceur",
+      "condition_infligee": [
+        "doit réussir un jet de Volonté pour ne pas être paniquée pendant 1 round/niveau"
+      ],
+      "cible_typique": "rayonnement en cône"
+    },
+    "notes_ambiguite": "Le texte mentionne « paniquée » ; la condition la plus proche dans la liste est « effraye » (peur). Le descripteur « son » justifie le type de dégâts, bien que le texte parle d'« énergie spectrale ».",
+    "slug": "souffle-de-la-banshie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:53+00:00",
+    "hash_source": "b26bea90ab8bfa9268a0b6ebebbd502ad4c789c813a27903e8e2f289ee931456"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "441e15b3d3fab4b2f559c6ee75efe5c11242eca6464ce39554faf1547b83252c",
+  "hash_vue": "fcaedf544cc5e3457b02452e1be33854592eb3ae302460a4ee5b7cca91ed883e"
+}

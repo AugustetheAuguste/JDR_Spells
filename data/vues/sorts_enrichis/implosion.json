@@ -1,0 +1,79 @@
+{
+  "id": "implosion",
+  "nom": "Implosion",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Implosion.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 9,
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature tangible/round",
+  "duree": "concentration (jusqu’à 1 round/2 niveaux)",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Cette incantation génère un état de résonance destructeur dans le corps de la cible. Chaque round que le prêtre passe à se concentrer (y compris le premier), il inflige 10 points de dégâts par niveau de lanceur de sorts à une créature en provoquant son implosion. Si le personnage perd sa concentration, le sort se termine immédiatement mais les créatures qui ont déjà commencé à imploser continuent de s’effondrer sur elles-mêmes. Le personnage ne peut pas affecter la même créature à plusieurs reprises au cours d’une même utilisation de ce sort.\nImplosion est sans effet sur les créatures intangibles ou celles qui se trouvent en état gazeux.",
+  "description_html": "<br/><br/>Cette incantation génère un état de résonance destructeur dans le corps de la cible. Chaque round que le <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> passe à se <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentrer</a> (y compris le premier), il inflige 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> à une créature en provoquant son implosion. Si le personnage perd sa <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentration</a>, le sort se termine immédiatement mais les créatures qui ont déjà commencé à imploser continuent de s’effondrer sur elles-mêmes. Le personnage ne peut pas affecter la même créature à plusieurs reprises au cours d’une même utilisation de ce sort. <br/><br/><i>Implosion</i> est sans effet sur les créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.intangible.ashx\" title=\"Intangible\">intangibles</a> ou celles qui se trouvent en <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tat%20gazeux.ashx\" title=\"État gazeux\">état gazeux</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Implosion.ashx",
+    "cache_fichier": "cache/html/1ab660e80d2afd43484e79cf8a66e7e68a895d73.html",
+    "recupere_le": "2026-07-28T22:56:52.509664+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "implosion",
+    "resume_court": "Le lanceur inflige des dégâts de force à une créature par round en la faisant imploser.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "10 points de dégâts par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "1 créature tangible/round"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. « Implosion » et « s'effondrer sur elles-mêmes » suggèrent des dégâts de force (énergie cinétique destructrice) plutôt qu'un type énergétique élémentaire. Aucune autre valeur de type_degats ne convient mieux.",
+    "slug": "implosion",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:26+00:00",
+    "hash_source": "da5f05fab2d54617792636fa195ad605167cbaa6253641e21520b71db00f67af"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "94e2a31e520bd9b12df09bae6944fe57c258073a57aa51f52c47f76e388e14d8",
+  "hash_vue": "15307ad0750d42f29afbb82f0cea0871683d4e0493bf8d0aab7dd93c7cac2c3a"
+}
