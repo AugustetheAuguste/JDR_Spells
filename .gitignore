@@ -3,6 +3,12 @@ __pycache__/
 .pytest_cache/
 .venv/
 
+# Dépendances Node, reconstruites depuis les lockfiles — qui, eux, SONT committés :
+# c'est le lockfile qui rend un build reproductible, pas l'arbre installé.
+node_modules/
+.next/
+.vercel/
+
 # Métadonnées laissées par `pip install -e .`, la forme installable documentée
 # dans le README. Régénérées à chaque installation, propres à une machine.
 *.egg-info/
