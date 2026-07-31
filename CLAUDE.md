@@ -25,7 +25,7 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `data/index/sorts_exclusifs.json` | 05 | les sorts exclusifs à une classe |
 | `data/sorts/<id>.json` | 07+08 | **le sort lui-même** (2070 fichiers, 21 clés) |
 | `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération |
-| `schemas/*.json` | 02 | les deux contrats de sortie (+ `enrichissement.schema.json`, § 10) |
+| `schemas/*.json` | 02 | les contrats de sortie (+ `enrichissement.schema.json` § 10, `web_index.schema.json`, l'export web) |
 | `conventions/vocabulaires/*.json` | 04 | les six listes **closes** de l'enrichissement |
 | `data/enrichissements/<id>.json` | étage 09 | la couche LLM d'un sort (2048 fichiers, 16 clés) |
 | `data/vues/sorts_enrichis/<id>.json` | — | **rien** : vue dérivée du join sur `id` (§ 10) |
