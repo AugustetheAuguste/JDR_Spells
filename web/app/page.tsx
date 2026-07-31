@@ -1,18 +1,26 @@
+import { Suspense } from 'react'
+
+import { VueNavigation } from '@/components/navigation/VueNavigation'
+
 /**
- * Navigation route — reserved.
+ * The navigation route.
  *
- * Filled by step 06 (navigation view, URL-borne filter state). It exists now, and
- * renders, so that steps 06, 07 and 08 can run in parallel without three branches
- * fighting over one newly created file.
+ * A server component whose only job is to pose the Suspense boundary that
+ * `useSearchParams` requires: under `output: 'export'` the shell is prerendered
+ * while the query string is only known in the browser, and without the boundary
+ * the build fails rather than degrading.
  */
 export default function PageNavigation() {
   return (
-    <section>
-      <h1 className="m-0 font-affichage text-titre1 font-semibold">Sorts</h1>
-      <p className="mt-2 max-w-[68ch] text-grand text-encre-douce">
-        La vue de navigation — recherche, filtres par classe, niveau et école — est
-        posée à l&apos;étape 06.
-      </p>
-    </section>
+    <Suspense
+      fallback={
+        <section>
+          <h1 className="m-0 font-affichage text-titre1 font-semibold">Sorts</h1>
+          <p className="mt-3 text-grand text-encre-douce">Chargement…</p>
+        </section>
+      }
+    >
+      <VueNavigation />
+    </Suspense>
   )
 }
