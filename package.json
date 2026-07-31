@@ -6,12 +6,20 @@
   "scripts": {
     "check:data": "tsx scripts/check_data_contract.ts",
     "check:data:fixture": "tsx scripts/check_data_contract.ts web/fixtures/index.json",
-    "check:data:reel": "tsx scripts/check_data_contract.ts web/public/data/index.json"
+    "check:data:reel": "tsx scripts/check_data_contract.ts web/public/data/index.json",
+    "data:export": "python tools/exporter_web.py && npm run check:data:reel",
+    "data:derive": "python tools/verifier_derive.py",
+    "web:build": "npm --prefix web run build",
+    "web:verifier": "tsx scripts/verifier_build.ts && tsx scripts/verifier_a11y.ts",
+    "web:test": "npm --prefix web run test && npm --prefix web run lint && npm --prefix web run typecheck",
+    "verifier:tout": "npm run check:data:reel && npm run data:derive && npm run web:test && npm run web:build && npm run web:verifier"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "axe-core": "^4.12.1",
+    "jsdom": "^30.0.1",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2"
   }
