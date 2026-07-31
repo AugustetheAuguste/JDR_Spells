@@ -1,0 +1,8 @@
+{
+  "id": "suffocation-de-groupe",
+  "raison": "schéma : preuves/type_degats — None is not of type 'string'",
+  "hash_source": "7dcfff61176eba5805d90319478b3492516ec986ab1d1cc7cd58b10cd41f3957",
+  "version_prompt": "p1.5",
+  "reponse_brute": "```json\n{\n  \"id\": \"suffocation-de-groupe\",\n  \"resume_court\": \"Le sort extrait l'air des poumons de plusieurs créatures, les faisant suffoquer mortellement.\",\n  \"categorie_principale\": \"affaiblissement\",\n  \"tags\": [\n    \"degats_directs\",\n    \"jet_de_sauvegarde\",\n    \"plusieurs_cibles\",\n    \"zone_d_effet\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"negatif\",\n  \"condition_infligee\": [\n    \"chancelant\"\n  ],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [\n      \"elle est juste chancelante pendant 1 round\"\n    ],\n    \"cible_typique\": \"une créature vivante/2 niveaux\"\n  },\n  \"notes_ambiguite\": \"Le sort inflige une mort progressive plutôt que des dégâts directs nommés : aucun type de dégâts n'est explicitement désigné. La suffocation elle-même n'est pas une condition de la liste close. Seule la condition « chancelant » du jet de sauvegarde réussi est retenue. Le type_degats est null car le texte ne nomme aucun type énergétique ou physique.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T14:58:50+00:00"
+}

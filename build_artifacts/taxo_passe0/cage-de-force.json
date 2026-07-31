@@ -1,0 +1,26 @@
+{
+  "id": "cage-de-force",
+  "etiquettes": [
+    "emprisonnement_magique",
+    "prison_invisible",
+    "barreaux_de_force",
+    "confinement_spatial",
+    "resistance_dissipation",
+    "evasion_teleportation_possible",
+    "vulnerabilite_desintegration"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:25+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "32392e45f3bb2a2bf758ce84502188091f1ba7f1a96b1c7385bb2842a671f3f9",
+  "texte_envoye_hash": "32392e45f3bb2a2bf758ce84502188091f1ba7f1a96b1c7385bb2842a671f3f9",
+  "texte_envoye": "nom: Cage de force\necole: Évocation\ndescripteurs: force\nniveaux: Ens/Mag 7, Psy 7\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (poussière de rubis (500 po))\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: cage à barreaux (cube de 6 m d’arête) ou cellule aveugle (cube de 3 m d’arête)\nduree: 1 round/niveau (T)\njet_de_sauvegarde: Réflexes, annule\nresistance_magie: non\n\nCe sort redoutable fait apparaître une prison statique et invisible aux murs (ou barreaux, au choix du personnage) magiques.\nLes créatures présentes dans la zone d’effet sont automatiquement emprisonnées, excepté dans le cas où elles se révèlent être trop grandes pour la cage ce qui fait immédiatement échouer le sort. Il est possible de s’échapper par téléportation ou par le biais du plan Astral, mais les barreaux de la cage existent également dans le plan Éthéré, ce qui empêche de passer par là pour s’échapper.\nTout comme le mur de force, la cage de force résiste à une dissipation de la magie, mais elle est vulnérable à une disjonction. Les sorts abîment la cage comme il se doit, hormis la désintégration qui la détruit automatiquement. Les murs de la cage peuvent aussi être endommagés à l’aide d’armes ou de pouvoirs surnaturels mais ils ont une solidité de 30 et 20 points de vie par niveau de lanceur de sorts. Si la cage entre en contact avec une sphère d’annihilation ou un sceptre d’oblitération, elle est détruite sur-le-champ.\nCage. Cette cage a l’aspect d’un cube de six mètre d’arête et dont les barreaux sont constitués de force (le même type d’énergie qui constitue un mur de force). Ils sont d’une épaisseur légèrement supérieure à un centimètre et sont séparés d’autant. Les créatures ayant la capacité de se faufiler peuvent se libérer, mais les autres sont prises au piège. Il est impossible d’attaquer une créature dans la cage à l’aide d’une arme, à moins que cette dernière ne puisse passer entre les barreaux. Face à de telles armes (ce qui inclut flèches et autres attaques à distance), la créature emprisonnée dispose d’un abri. Les sorts et souffles agissent de façon normale.\nCellule. La cellule est un cube de trois mètres d’arête sans la moindre ouverture. Ses parois sont constituées de six plans de force et ne présentent pas le plus petit interstice.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "emprisonnement_magique\nprison_invisible\nbarreaux_de_force\nconfinement_spatial\nresistance_dissipation\nevasion_teleportation_possible\nvulnerabilite_desintegration",
+  "usage": {
+    "inputTokens": 881,
+    "outputTokens": 52
+  },
+  "arret": "end_turn"
+}

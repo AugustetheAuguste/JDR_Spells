@@ -1,0 +1,25 @@
+{
+  "id": "boule-de-goudron",
+  "etiquettes": [
+    "degats_feu_immediat",
+    "degats_feu_continu",
+    "malus_dexterite",
+    "entrave_mobilite",
+    "attaque_a_distance",
+    "effet_temporaire"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:22+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "c346ee1d5294a05604fc4b2923d02b6581251967f87881428932f8726110ea4f",
+  "texte_envoye_hash": "c346ee1d5294a05604fc4b2923d02b6581251967f87881428932f8726110ea4f",
+  "texte_envoye": "nom: Boule de goudron\necole: Transmutation\nniveaux: Dru 2\ntemps_incantation: 1 action simple\ncomposantes: V, G, M(une petite boule de bitume)\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: attaque à distance\nduree: instantanée\njet_de_sauvegarde: non\nresistance_magie: non\n\nLe personnage crée une boule de goudron brûlant collante qu’il lance sur un ennemi à portée. S’il le touche, il lui inflige 1d4 points de dégâts de feu + modificateur de Force et asperge la cible de goudron chaud et collant. Le goudron inflige 1d4 points de dégâts de feu par round à la créature pendant les 1d4 prochains rounds et lui donne un malus de -2 à la Dextérité pendant toute cette période. Si la cible le désire, elle peut passer une action complexe à essayer d’éteindre ou de refroidir le goudron avant de subir les dégâts supplémentaires. Pour cela, elle doit réussir un jet de Réflexes DD 15 ou disposer de 5 litres d’un liquide non inflammable. Si la cible se roule par terre, elle gagne un bonus de +2 au jet de sauvegarde. L’effet se termine automatiquement si la victime saute dans un lac ou refroidit le goudron par magie.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "degats_feu_immediat\ndegats_feu_continu\nmalus_dexterite\nentrave_mobilite\nattaque_a_distance\neffet_temporaire",
+  "usage": {
+    "inputTokens": 539,
+    "outputTokens": 46
+  },
+  "arret": "end_turn"
+}

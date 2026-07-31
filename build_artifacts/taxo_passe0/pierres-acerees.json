@@ -1,0 +1,26 @@
+{
+  "id": "pierres-acerees",
+  "etiquettes": [
+    "terrain_dangereux",
+    "ralentissement_mouvement",
+    "degats_traversee",
+    "blessure_persistante",
+    "piege_magique",
+    "zone_effet",
+    "immobilisation_partielle"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:04+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "95f6d6b99008ec7e444bf2263ea8d6d3f9825648bfa4a6c71cd1d99d7e6a8662",
+  "texte_envoye_hash": "95f6d6b99008ec7e444bf2263ea8d6d3f9825648bfa4a6c71cd1d99d7e6a8662",
+  "texte_envoye": "nom: Pierres acérées\necole: Transmutation\ndescripteurs: terre\nniveaux: Cham 4, Dru 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: 1 carré de 6 m de côté/niveau\nduree: 1 heure/niveau (T)\njet_de_sauvegarde: Réflexes, partiel\nresistance_magie: oui\n\nAu terme de l’incantation, le terrain choisi (sol rocailleux ou en pierre) se couvre de pointes hérissées et invisibles, qui blessent et ralentissent toutes les créatures qui tentent de traverser la zone d’effet. Toute personne qui pénètre à pied dans la zone affectée subit 1d8 points de dégâts à chaque fois qu’il parcourt 1,50 m et sa vitesse de déplacement est réduite de moitié.\nToute créature touchée par ce sort doit réussir un jet de Réflexes ou être blessée aux pieds ou aux jambes, ce qui réduit sa vitesse de déplacement de moitié pendant vingt-quatre heures, à moins qu’elle ne reçoive un sort de soins (qui lui permet également de récupérer ses points de vie de façon normale). Elle peut aussi être soignée par un compagnon mais il doit panser ses plaies (ce qui lui prend dix minutes) et réussir un test de Premiers secours contre le DD du sort.\nLes pièges magiques tels que pierres acérées sont très difficiles à détecter. Seul un roublard peut y parvenir en faisant appel à sa compétence de Perception (DD 25 + niveau du sort, soit 29 pour pierres acérées). On ne peut pas désamorcer des pierres acérées à l’aide de la compétence Sabotage.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "terrain_dangereux\nralentissement_mouvement\ndegats_traversee\nblessure_persistante\npiege_magique\nzone_effet\nimmobilisation_partielle",
+  "usage": {
+    "inputTokens": 637,
+    "outputTokens": 45
+  },
+  "arret": "end_turn"
+}

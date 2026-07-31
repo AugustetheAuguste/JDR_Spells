@@ -1,0 +1,25 @@
+{
+  "id": "modification-des-vents",
+  "etiquettes": [
+    "alteration_vents_naturels",
+    "augmentation_reduction_intensite",
+    "zone_immobile_3m",
+    "duree_prolongee",
+    "resistance_magie_possible",
+    "effet_limite_par_niveau"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:58+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "dcafbc9927bb10aad5c5687995af2f45aea5e3d2f87477815d02ec6af0ba7349",
+  "texte_envoye_hash": "dcafbc9927bb10aad5c5687995af2f45aea5e3d2f87477815d02ec6af0ba7349",
+  "texte_envoye": "nom: Modification des vents\necole: Transmutation\ndescripteurs: air\nniveaux: Dru 1, Ens/Mag 1, Occ 1, Spi 1\ntemps_incantation: 1 minute\ncomposantes: V, G\nportee: contact\ncible: émanation immobile dans un rayon de 3 m (2 c)\nduree: 1 heure/niveau\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nLe personnage augmente ou réduit subtilement les effets des vents naturels de la zone d'effet du sort, qui se trouve être une émanation immobile centrée sur le point ciblé au moment du lancer du sort. Dans cette zone, l'effet des vents naturels (mais pas des vents magiques) est réduit ou augmenté d'un niveau d'intensité (voir \"Les vents\"). Le niveau de force de vent maximum que le personnage peut modifier dépend de son niveau de lanceur de sorts, comme indiqué dans la table suivante. Modification des vents n'a aucun effet sur un vent magique.\nNiveau de lanceur de sortsForce du vent\n1-3Léger\n4-9modéré\n10-15fort\n16 ou plusviolent",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "alteration_vents_naturels\naugmentation_reduction_intensite\nzone_immobile_3m\nduree_prolongee\nresistance_magie_possible\neffet_limite_par_niveau",
+  "usage": {
+    "inputTokens": 450,
+    "outputTokens": 48
+  },
+  "arret": "end_turn"
+}

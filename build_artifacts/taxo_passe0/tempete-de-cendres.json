@@ -1,0 +1,25 @@
+{
+  "id": "tempete-de-cendres",
+  "etiquettes": [
+    "visibilite_bloquee",
+    "terrain_difficile",
+    "zone_cylindrique",
+    "duree_prolongee",
+    "creation_cendres",
+    "blocage_vision_nocturne"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:24+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "b4bd96575e39dd27c8b658b30a95ce58adcfffc7d9b5b239cfce4a39fd4a3d2b",
+  "texte_envoye_hash": "b4bd96575e39dd27c8b658b30a95ce58adcfffc7d9b5b239cfce4a39fd4a3d2b",
+  "texte_envoye": "nom: Tempête de cendres\necole: Invocation (création)\ndescripteurs: feu\nniveaux: Dru 3, Ens/Mag 3, Sor 3\ntemps_incantation: 1 action simple\ncomposantes: V, G, M/FD (une pincée de cendres)\nportee: longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)\ncible: cylindre (12 m (8 c de rayon, 6 m (4 c) de haut)\nduree: 1 round/niveau\njet_de_sauvegarde: non\nresistance_magie: non\n\nLes cendres bloquent la visibilité dans toute la zone d’effet du sort (même la vision dans le noir) et les braises qui tombent la transforment en terrain difficile.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "visibilite_bloquee\nterrain_difficile\nzone_cylindrique\nduree_prolongee\ncreation_cendres\nblocage_vision_nocturne",
+  "usage": {
+    "inputTokens": 341,
+    "outputTokens": 41
+  },
+  "arret": "end_turn"
+}

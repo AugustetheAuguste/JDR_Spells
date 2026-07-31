@@ -1,0 +1,25 @@
+{
+  "id": "contrariete-des-geants",
+  "etiquettes": [
+    "pas_attaque_opportunite",
+    "bonus_manoeuvre_offensive",
+    "degats_supplementaires_premiere_attaque",
+    "focalisation_adversaire_plus_grand",
+    "portee_limitee_focalisation",
+    "transmutation_combat_rapproche"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:30+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "5b5c39667229d5367b48600367ad2e95699b5fea11922a59c6fb7fa361cd09ad",
+  "texte_envoye_hash": "5b5c39667229d5367b48600367ad2e95699b5fea11922a59c6fb7fa361cd09ad",
+  "texte_envoye": "nom: Contrariété des géants\necole: Transmutation\nniveaux: Rôd 3\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (un morceau d’arme de taille G ou supérieure)\nportee: personnelle\ncible: le personnage\nduree: 1 round/niveau\n\nLes géants et leurs semblables ont longtemps été un fléau pour les populations des Terres sauvages, surtout pour les barbares du plateau au nord-est du territoire. Ces barbares ont développé diverses méthodes et tactiques pour combattre ces ennemis et beaucoup de lanceurs de sorts connaissent aujourd’hui ce sort.\nQuand le personnage lance contrariété des géants, ses sens et ses réflexes s’affûtent tout particulièrement contre une unique cible située à 18 mètres ou moins, à condition que celle-ci soit au moins d’une catégorie de taille de plus que lui. Le personnage peut choisir sa cible focalisée par une action libre au moment où il lance ce sort. Le changement de focalisation vers un adversaire différent situé à 18 mètres ou moins nécessite une action de mouvement.\nSi l’adversaire se déplace à plus de 18 mètres du personnage, celui-ci perd la focalisation sur cet adversaire, mais la récupère s’il s’approche de lui à 18 mètres ou moins et effectue une action de mouvement. Même si ce sort porte le nom de contrariété des géants, il fonctionne sur tous les adversaires qui font au moins une catégorie de taille de plus que le personnage.\nContre un adversaire sur lequel il se focalise, le personnage ne provoque pas d’attaque d’opportunité s’il se déplace au travers de son espace contrôlé. De plus, la première attaque de corps à corps réussie par le personnage contre cet adversaire lors d’un round inflige 1d6 points de dégâts supplémentaires. Enfin, le personnage gagne un bonus d’intuition de +4 aux tests de manœuvre offensive effectués contre son adversaire focalisé.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "pas_attaque_opportunite\nbonus_manoeuvre_offensive\ndegats_supplementaires_premiere_attaque\nfocalisation_adversaire_plus_grand\nportee_limitee_focalisation\ntransmutation_combat_rapproche",
+  "usage": {
+    "inputTokens": 670,
+    "outputTokens": 59
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "mot-de-pouvoir-mortel",
+  "etiquettes": [
+    "mort_instantanee",
+    "elimination_directe",
+    "coercition_mentale",
+    "sans_sauvegarde",
+    "limite_points_vie",
+    "enchantement_mortel",
+    "parole_terrifiante"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:00+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "fcd95d25d14b3b963a9e403e2dcf329b93274839ce4c44eb66d5859fe8bf4c84",
+  "texte_envoye_hash": "fcd95d25d14b3b963a9e403e2dcf329b93274839ce4c44eb66d5859fe8bf4c84",
+  "texte_envoye": "nom: Mot de pouvoir mortel\necole: Enchantement (coercition)\ndescripteurs: mental, mort\nniveaux: Ens/Mag 9, Psy 9, Sor 9\ntemps_incantation: 1 action simple\ncomposantes: V\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: 1 créature vivante dotée de 100 pv ou moins\nduree: instantanée\njet_de_sauvegarde: aucun\nresistance_magie: oui\n\nLe personnage prononce un mot qui terrasse instantanément une créature de son choix, qu’elle entende le mot ou non. Une créature dotée de plus de 100 points de vie n’est pas affectée.\n{c:sort} {c:sort magicien 9} {c:règles officielles} {c:manuel des joueurs}",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "mort_instantanee\nelimination_directe\ncoercition_mentale\nsans_sauvegarde\nlimite_points_vie\nenchantement_mortel\nparole_terrifiante",
+  "usage": {
+    "inputTokens": 371,
+    "outputTokens": 47
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "froide-frappe-de-glace",
+  "etiquettes": [
+    "dégâts_froid",
+    "ligne_effet",
+    "action_rapide",
+    "jet_sauvegarde_réflexes",
+    "dégâts_par_niveau",
+    "résistance_magie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:46+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "152afad8c569c2ff9077f4319568ac5df9702e92941b5c36e7b7c6da71effb1d",
+  "texte_envoye_hash": "152afad8c569c2ff9077f4319568ac5df9702e92941b5c36e7b7c6da71effb1d",
+  "texte_envoye": "nom: Froide frappe de glace\necole: Évocation\ndescripteurs: froid\nniveaux: Ens/Mag 6, Occ 6, Prê 6\ntemps_incantation: 1 action rapide\ncomposantes: V, G\nportee: 9 m (6 c)\ncible: ligne de 9m (6 c)\nduree: instantanée\njet_de_sauvegarde: Réflexes, 1/2 dégâts\nresistance_magie: oui\n\nCe texte a été modifié suite à la FAQ suivante :\n→ Froide frappe de glace (page 228): Quelles sont les composantes de ce sort ? Son temps d’incantation est-il bien 1 action rapide ?\nLes Composantes devraient être : V, G.\nLe Temps d’incantation est 1 action rapide.\nLa Portée devrait être 9 m et la Zone d’effet devrait être une ligne de 9 m. Toutes les références à un « cône » dans la description du sort devraient indiquer « ligne ».\nMise à jour : Page 228, froide frappe de glace, après Temps d’incantation, ajoutez une ligne avec « Composantes V, G ». Remplacez la Portée par « 9 m ». Remplacez la Zone d’effet par « ligne de 9 m ». Remplacez les deux itérations de « cône » dans la description du sort par « ligne ».\nModification : Retrait de la composante M dans cette FAQ.\nLe personnage crée une rafale d'aiguilles de glace qui jaillissent de sa main en formant une ligne qui inflige 1d6 points de dégâts de froid par niveau de lanceur de sorts (15d6 au maximum).",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "dégâts_froid\nligne_effet\naction_rapide\njet_sauvegarde_réflexes\ndégâts_par_niveau\nrésistance_magie",
+  "usage": {
+    "inputTokens": 584,
+    "outputTokens": 47
+  },
+  "arret": "end_turn"
+}
