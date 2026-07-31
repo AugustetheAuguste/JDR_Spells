@@ -82,7 +82,7 @@ python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
 python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
 python -m pf_spells.build_manifest     # étape 10 - hors ligne
 python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
-python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (cf. § 7)
+python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (docs/enrichissement.md)
 python -m pf_spells.validate_enrichment  # étage 10 - hors ligne, 1 si --strict échoue
 python -m pf_spells.build_vues         # vue jointe - hors ligne, dérivée
 ```

@@ -1,6 +1,6 @@
 # JDR_Spells — corpus de sorts Pathfinder 1e (français)
 
-2070 sorts Pathfinder 1e en français, un fichier JSON par sort, plus les index
+{sorts} sorts Pathfinder 1e en français, un fichier JSON par sort, plus les index
 et les listes de classes qui permettent de répondre à « quels sorts un Paladin de
 niveau 2 peut-il lancer ? » sans jamais retourner sur le web. Une couche
 d'enrichissement générée par LLM (catégorie, résumé, tags, rôle tactique) vit à
@@ -9,15 +9,15 @@ régénérable depuis le cache HTML committé**.
 
 | Mesure | Valeur |
 |---|---:|
-| Classes lanceuses couvertes | 19 |
-| Entrées de listes de classes | 8927 |
-| Sorts uniques | 2070 |
-| Fichiers `data/sorts/*.json` | 2070 |
-| Pages HTML en cache | 2089 |
-| Sorts avec un bloc `mythique` | 287 |
-| Sorts avec des `variantes` | 196 |
-| Sorts enrichis par LLM | 2048 |
-| Fichiers de la vue jointe | 2070 |
+| Classes lanceuses couvertes | {classes} |
+| Entrées de listes de classes | {entrees} |
+| Sorts uniques | {sorts} |
+| Fichiers `data/sorts/*.json` | {sorts} |
+| Pages HTML en cache | {cache} |
+| Sorts avec un bloc `mythique` | {mythiques} |
+| Sorts avec des `variantes` | {variantes} |
+| Sorts enrichis par LLM | {enrichis} |
+| Fichiers de la vue jointe | {vues} |
 
 Ces chiffres sont recomptés depuis le disque — par
 `python -m pf_spells.build_manifest`, qui inscrit les sept premiers dans
@@ -129,66 +129,7 @@ Exemple réel et complet, **inséré à la génération** depuis
 octet) :
 
 ```json
-{
-  "id": "armes-contre-le-mal",
-  "nom": "Armes contre le mal",
-  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20contre%20le%20mal.ashx",
-  "ecole": "Transmutation",
-  "descripteurs": [],
-  "niveaux": {
-    "Inq": 1,
-    "Pal": 1,
-    "Prê": 1
-  },
-  "temps_incantation": "1 action simple",
-  "composantes": "V, FD",
-  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
-  "cible": "une arme/niveau, éloignées les unes des autres au maximum de 6 m",
-  "duree": "1 round/niveau",
-  "jet_de_sauvegarde": "Vigueur, annule (inoffensif, objet)",
-  "resistance_magie": "oui (inoffensif, objet)",
-  "description": "Les armes affectées par ce sort brillent d’une lueur pâle qui éclaire faiblement une case de 1,50m de côté. Ces armes ignorent également la RD des créatures Mauvaises si celles-ci ont une RD 5 ou inférieure et tant que ce n’est pas une RD/épique.",
-  "description_html": "<br/><br/>Les armes affectées par ce sort brillent d’une lueur pâle qui éclaire faiblement une case de 1,50m de côté. Ces armes ignorent également la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> des créatures Mauvaises si celles-ci ont une RD 5 ou inférieure et tant que ce n’est pas une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD%c3%a9pique.ashx\" title=\"RDépique\">RD/épique</a>.",
-  "mythique": null,
-  "variantes": [],
-  "sources": [
-    "Inner Sea Gods/Dieux de la mer Intérieure",
-    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
-  ],
-  "autres": {
-    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Iomédae."
-  },
-  "classes": [
-    {
-      "classe": "Inquisiteur",
-      "slug": "inquisiteur",
-      "niveau": 1,
-      "niveau_page": 1,
-      "concordance": true
-    },
-    {
-      "classe": "Paladin",
-      "slug": "paladin",
-      "niveau": 1,
-      "niveau_page": 1,
-      "concordance": true
-    },
-    {
-      "classe": "Prêtre/Prêtre combattant/Oracle",
-      "slug": "pretre-pretre-combattant-oracle",
-      "niveau": 1,
-      "niveau_page": 1,
-      "concordance": true
-    }
-  ],
-  "meta": {
-    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20contre%20le%20mal.ashx",
-    "cache_fichier": "cache/html/ee6efe568a9c4f82d75f7ec0a0993c1c98d9791c.html",
-    "recupere_le": "2026-07-28T22:41:55.490394+00:00",
-    "parser_version": "1.0.0"
-  }
-}
-```
+{exemple_sort}```
 
 Clé par clé :
 
@@ -240,8 +181,7 @@ Première ligne de `data/listes_classes/paladin.jsonl`, insérée à la généra
 un objet JSON compact par ligne :
 
 ```json
-{"id":"appel-du-chevalier","nom":"Appel du chevalier","url":"https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20chevalier.ashx","classe":"Paladin","niveau":1,"ecole":null,"description_courte":"Oblige la cible à s'avancer vers le personnage et à le combattre.","sources":["MJRA"],"ligne_html":"<b><i><a class=\"pagelink\" href=\"Pathfinder-RPG.Appel%20du%20chevalier.ashx\" title=\"Appel du chevalier\">Appel du chevalier</a></i></b> <i>(MJRA)</i>. Oblige la cible à s'avancer vers le personnage et à le combattre."}
-```
+{exemple_liste}```
 
 | Clé | Contenu |
 |---|---|
@@ -296,11 +236,11 @@ confondre : `sans_enrichissement` (le sort n'est pas couvert) et
 
 | Mesure | Valeur |
 |---|---|
-| Enregistrements produits | 2048 / 2070 |
-| Conformes à l'étage de validation | 2032 |
-| Rejets `preuve_absente_du_source` | 16 |
-| Sorts en quarantaine, non couverts | 22 |
-| `notes_ambiguite` non nul | 950 (46,4 %) — relues et acceptées |
+| Enregistrements produits | {enrichis} / {sorts} |
+| Conformes à l'étage de validation | {conformes} |
+| Rejets `preuve_absente_du_source` | {rejets} |
+| Sorts en quarantaine, non couverts | {quarantaine} |
+| `notes_ambiguite` non nul | {notes_ambiguite} ({taux_ambiguite} %) — relues et acceptées |
 
 Tout est détaillé dans **`docs/enrichissement.md`** : le flux, l'estimation de
 coût, la boucle de réglage du prompt, et quoi faire de chaque alerte du rapport.
@@ -308,21 +248,7 @@ coût, la boucle de réglage du prompt, et quoi faire de chaque alerte du rappor
 
 ## Rejouer le pipeline
 
-```
-export PYTHONPATH=src
-python -m pf_spells.fetch_classes      # étape 03 - en cache, idempotent
-python -m pf_spells.parse_lists        # étape 04 - hors ligne
-python -m pf_spells.build_index        # étape 05 - hors ligne
-python -m pf_spells.fetch_spells       # étape 06 - en cache, idempotent, ~1 h à froid
-python -m pf_spells.parse_spells       # étape 07 - hors ligne ; --overwrite explicite
-python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
-python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
-python -m pf_spells.build_manifest     # étape 10 - hors ligne
-python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
-python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (docs/enrichissement.md)
-python -m pf_spells.validate_enrichment  # étage 10 - hors ligne, 1 si --strict échoue
-python -m pf_spells.build_vues         # vue jointe - hors ligne, dérivée
-```
+{pipeline}
 
 Sur un dépôt cloné tel quel, **seul `enrich_llm` touche au réseau** :
 `cache/html/` est committé, donc les étapes 03 et 06 sont des lectures de cache,
@@ -352,11 +278,11 @@ fait foi :
 
 - **Une édition manuelle n'a aucun statut particulier** et sera écrasée à la
   première régénération. Corriger une valeur fausse se fait dans `parse_spells`,
-  puis on régénère : la correction vaut alors pour les 2070 sorts, pas pour un
+  puis on régénère : la correction vaut alors pour les {sorts} sorts, pas pour un
   seul. `cache/html/` étant committé, régénérer ne recrawle rien.
 - `parse_spells` exige quand même `--overwrite` pour réécrire un fichier
   existant. C'est un **garde-fou** contre l'accident — une relance distraite ne
-  doit pas réécrire 2070 fichiers committés — pas une garantie d'autorité sur
+  doit pas réécrire {sorts} fichiers committés — pas une garantie d'autorité sur
   le contenu.
 - `enrich_spells` ne réécrit **que** la clé `classes`, parce que c'est la seule
   qu'il calcule ; le reste du fichier est conservé tel qu'il a été lu.
@@ -396,13 +322,13 @@ n'a pas.
 
 | Limite | Détail |
 |---|---|
-| Périmètre des classes | 19 classes issues de `elements_to_do.json` ; Pathfinder 1e en compte davantage. Des abréviations hors périmètre (`Réd`, …) apparaissent donc dans `niveaux` sans entrée `classes` correspondante : c'est normal, pas une anomalie. |
+| Périmètre des classes | {classes} classes issues de `elements_to_do.json` ; Pathfinder 1e en compte davantage. Des abréviations hors périmètre (`Réd`, …) apparaissent donc dans `niveaux` sans entrée `classes` correspondante : c'est normal, pas une anomalie. |
 | `Alchimiste` en double | présent deux fois dans l'entrée (URLs différant par la casse) ; dédoublonné par URL percent-décodée et minusculisée, 20 → 19, dédoublonnage journalisé. |
-| Blocs `Mythique` | capturés et isolés dans la clé `mythique` (287 sorts) ; **suppression prévue dans une phase ultérieure** — la clé existe pour rendre l'opération triviale. |
+| Blocs `Mythique` | capturés et isolés dans la clé `mythique` ({mythiques} sorts) ; **suppression prévue dans une phase ultérieure** — la clé existe pour rendre l'opération triviale. |
 | Variantes | les sorts « qui fonctionnent comme » sont **imbriqués** dans leur parent (`variantes`) et n'ont pas de fichier propre. |
 | Paires non comparables | 518 paires (sort, classe) ont `concordance: null` : la page du sort ne nomme pas la classe. Détail dans `reports/08_enrich.md`. |
 | Étiquettes de source | conservées telles que le wiki les écrit, non normalisées vers une table d'ouvrages. |
-| Couverture de l'enrichissement | 22 sorts ne sont pas couverts et restent en quarantaine ; la vue jointe les marque `sans_enrichissement`. |
+| Couverture de l'enrichissement | {sans_enrichissement} sorts ne sont pas couverts et restent en quarantaine ; la vue jointe les marque `sans_enrichissement`. |
 | Portée du manifeste | `data/MANIFEST.json` recense la **Phase 1 seulement** : il ne compte ni `data/enrichissements/` ni `data/vues/`. Ces deux arbres ont leurs propres rapports. |
 | Audit complet | l'état de validation du corpus est dans **`reports/09_validation.md`** ; les rapports par étape vont de `reports/03_fetch_classes.md` à `reports/08_enrich.md`. |
 
@@ -417,14 +343,14 @@ classes n'ont aucun sort exclusif). Détail dans `reports/09_validation.md` et
 
 Ce qui reste ouvert, sciemment et sans blocage :
 
-- **16 enregistrements sont rejetés** par le contrôle de preuves : de vraies
+- **{rejets} enregistrements sont rejetés** par le contrôle de preuves : de vraies
   paraphrases du source. Ils sont **constatés, pas blanchis** — l'étage de
   validation refuse de les accepter, ce serait affaiblir le seul contrôle
   anti-confabulation du pipeline. `validate-enrich --strict` sort donc `1`, et
   c'est le comportement correct, pas un pipeline cassé. La correction est en
-  amont : resserrer le prompt et régénérer ces 16 enregistrements.
-- **Le seuil sur `notes_ambiguite` a été porté de 5 % à 50 %** le
-  2026-07-31, après relecture une à une des 950 notes, jugées
+  amont : resserrer le prompt et régénérer ces {rejets} enregistrements.
+- **Le seuil sur `notes_ambiguite` a été porté de 5 % à {seuil_ambiguite} %** le
+  2026-07-31, après relecture une à une des {notes_ambiguite} notes, jugées
   saines. C'est un arbitrage humain assumé et documenté ; son coût — la mesure ne
   détecte plus une régression avant un quasi-doublement du taux — est écrit dans
   `docs/enrichissement.md` § 4 et dans le module.

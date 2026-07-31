@@ -3,6 +3,12 @@ __pycache__/
 .pytest_cache/
 .venv/
 
+# Métadonnées laissées par `pip install -e .`, la forme installable documentée
+# dans le README. Régénérées à chaque installation, propres à une machine.
+*.egg-info/
+build/
+dist/
+
 # Secrets. `.env` porte un jeton Bedrock en clair : jamais committé, jamais lu
 # par un module du pipeline (le jeton passe par l'environnement).
 .env
