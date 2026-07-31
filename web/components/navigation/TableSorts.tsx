@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 
+import { BoutonFavori } from '@/components/favoris/BoutonFavori'
 import { Badge } from '@/components/primitives/Badge'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
 import { TableDense, type ColonneDense } from '@/components/primitives/TableDense'
@@ -39,6 +40,10 @@ export function TableSorts({
       entete: 'Sort',
       cellule: (sort) => (
         <span className="inline-flex items-center gap-1.5">
+          {/* The toggle sits in the name cell, first: on a narrow screen the
+              secondary columns fall off, and the ability to save a spell must
+              not fall off with them. */}
+          <BoutonFavori compact id_sort={sort.id} />
           <Link
             className="text-encre underline decoration-bord-fort underline-offset-2 hover:text-accent"
             // The object form, because `typedRoutes` cannot check an interpolated

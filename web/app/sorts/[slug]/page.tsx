@@ -18,6 +18,7 @@ import { CoucheEnrichissement } from '@/components/fiche/CoucheEnrichissement'
 import { Description } from '@/components/fiche/Description'
 import { LienSource } from '@/components/fiche/LienSource'
 import { NiveauxParClasse } from '@/components/fiche/NiveauxParClasse'
+import { BoutonFavori } from '@/components/favoris/BoutonFavori'
 import { Badge } from '@/components/primitives/Badge'
 import { MarqueurDesaccord } from '@/components/primitives/MarqueurDesaccord'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
@@ -84,7 +85,12 @@ export default async function PageSort({ params }: { params: Promise<{ slug: str
             Tous les sorts
           </Link>
         </p>
-        <h1 className="mt-1 mb-0 font-affichage text-titre1 font-semibold">{sort.nom}</h1>
+        <div className="mt-1 flex flex-wrap items-baseline justify-between gap-3">
+          <h1 className="m-0 font-affichage text-titre1 font-semibold">{sort.nom}</h1>
+          {/* The id, not the slug: a slug is a function of the naming algorithm
+              and could change, an id is the stable join key. */}
+          <BoutonFavori id_sort={sort.id} />
+        </div>
         <div className="mt-2 flex flex-wrap items-center gap-1.5">
           <PastilleEcole ecole={ecoleToken(sort)} />
           {sort.descripteurs.map((descripteur) => (

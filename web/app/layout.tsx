@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
 import { MOTS } from '@/lib/design/tokens'
+import { FournisseurFavoris } from '@/lib/favoris/contexte'
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +39,17 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
             <p className="m-0 font-affichage text-titre3 font-semibold">
               Sorts Pathfinder 1e
             </p>
+            <nav aria-label="Sections" className="flex gap-3 text-base">
+              <Link className="text-encre hover:text-accent" href="/">
+                Sorts
+              </Link>
+              <Link className="text-encre hover:text-accent" href="/comparaison">
+                Comparer
+              </Link>
+              <Link className="text-encre hover:text-accent" href="/favoris">
+                Favoris
+              </Link>
+            </nav>
             <p className="m-0 text-petit text-encre-douce">
               {MOTS.source} —{' '}
               <a
@@ -51,8 +64,11 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
           </div>
         </header>
 
+        {/* The provider wraps the content, not the shell: it is a client
+            component, and hoisting it above the header would drag the whole
+            static chrome into the client bundle for nothing. */}
         <main className="mx-auto max-w-[1180px] px-4 py-5" id="contenu">
-          {children}
+          <FournisseurFavoris>{children}</FournisseurFavoris>
         </main>
 
         <footer className="mt-8 border-t border-bord px-4 py-4 text-petit text-encre-douce">
