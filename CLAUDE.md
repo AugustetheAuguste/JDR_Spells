@@ -31,6 +31,9 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `data/vues/sorts_enrichis/<id>.json` | — | **rien** : vue dérivée du join sur `id` (§ 10) |
 | `reports/*.md` | 03–09 | le résultat et les anomalies de chaque étape (dont `09_validation.md`) |
 | `build_artifacts/rapports/`, `.../quarantaine/` | 09, 10 | la trace des appels **payants** et les réponses refusées |
+| `web/` | interface | le site consultable (§ 11) — code applicatif, fait autorité sur lui-même |
+| `web/public/data/` | export web | **rien** : dérivé du corpus, committé, jamais édité (§ 11) |
+| `web/data_sources/alias_manuel.tsv` | — | la table d'alias anglais→français, **éditée à la main** |
 
 ## 3. Règles dures — non négociables
 
@@ -154,10 +157,57 @@ et vues compris, est hors ligne.
   durcit l'instruction accuse les listes, pas le prompt.
 - Détail : `pf-enrichment-conventions`. Procédures : `docs/enrichissement.md`.
 
-## 11. Interdictions de style
+## 11. Interface web — `web/`, un site qui est une fonction du dépôt
+
+Next.js App Router, TypeScript, Tailwind, `output: 'export'` : **aucune base,
+aucune route d'API, rien à l'exécution**. Le site est une fonction pure du dépôt,
+et `output: 'export'` le rend structurel — une dépendance serveur accidentelle
+devient une erreur de build, pas une fonction déployée que personne n'a voulue.
+Si le déploiement réclame un secret, c'est le symptôme, pas la configuration.
+
+- **`web/public/data/` est DÉRIVÉ et committé** : `index.json` (2070 sorts,
+  82 kB gzip), `alias.json`, `sorts/<slug>.json`. Le déploiement ne dépend donc
+  pas de Python. Une retouche à la main **sera écrasée** — corriger `data/`, puis
+  réexporter. Le seul fichier de `web/` édité à la main côté données est
+  `web/data_sources/alias_manuel.tsv`.
+- **Le niveau est relatif à la classe, toujours.** `niv` est une table
+  classe→niveau, jamais un scalaire : un sort est de niveau 2 *pour le barde* et 3
+  *pour le magicien*, « le » niveau d'un sort n'existe pas. Tout nombre affiché
+  porte la classe à laquelle il appartient ; aucun en-tête « Niveau » nu. Le
+  niveau **0 est réel** (les oraisons), donc une absence est un tiret cadratin,
+  jamais un 0. `check_data_contract.ts` échoue sur un `niv` scalaire.
+- **Le slug est l'URL publique.** `/sorts/<slug>/` vient de l'algorithme § 4 : le
+  changer casse des liens externes et n'est pas une opération de confort. Les
+  favoris tiennent des `id`, pas des slugs, pour cette raison exactement.
+- L'état des filtres vit dans l'URL et **nulle part ailleurs** — pas de `useState`
+  parallèle qui puisse diverger. Le lien de retour vers pathfinder-fr.org est un
+  engagement, pas une décoration : il est sur chaque fiche et dans le pied de page.
+
+```
+npm run data:export     # corpus -> web/public/data/ + contrat  (hors ligne)
+npm run data:derive     # échoue si le corpus a changé sans réexport
+npm run web:test        # vitest + eslint + tsc dans web/
+npm run web:build       # next build -> web/out/ (2070 pages, ~2 min)
+npm run web:verifier    # budgets bloquants + axe-core sur 4 routes
+npm run verifier:tout   # la chaîne complète, dans l'ordre où la CI la lance
+```
+
+Budgets **bloquants**, jamais des avertissements : `index.json` < 400 kB gzip
+(à 82), JS client initial < 200 kB gzip par route (navigation à **192,5 kB**, la
+plus lourde des quatre : ~148 kB y sont le framework, donc la marge réelle sur le
+code applicatif est mince — le moteur de recherche est chargé à la demande pour
+cette raison), et pages générées == `|index.sorts|`.
+`web/out/` n'est pas committé. Déploiement Vercel : racine `web/`, `web/vercel.json`,
+`immutable` sur `/_next/static/` et `/fonts/` mais **pas** sur `/data/*.json`, dont
+l'URL est stable d'un export au suivant.
+
+## 12. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.
 - Python 3.11, `from __future__ import annotations`, types annotés partout ;
   identifiants français pour le domaine, docstrings et commentaires en anglais
   expliquant **pourquoi**, pas quoi.
+- Côté `web/` : TypeScript strict, aucun `any`, aucune couleur en dur hors
+  `lib/design/tokens.ts`, vocabulaire d'interface figé dans `MOTS` — un seul verbe
+  d'un bout à l'autre.
