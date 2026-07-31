@@ -19,8 +19,19 @@ export interface Filtres {
   /** Class slug. Required for `niveaux`, and on its own it means "spells this
    * class gets". */
   readonly classe?: string | null
-  /** Levels, relative to `classe`. Ignored when `classe` is absent. */
+  /** Levels, relative to `classe`. Without a class, see `niveauSansClasse`. */
   readonly niveaux?: readonly number[]
+  /**
+   * What a level filter means when no class is selected.
+   *
+   * `'refuser'` (the default) ignores the filter: no class, no level, because the
+   * level of a spell in the abstract does not exist. `'minimum'` filters on the
+   * lowest level across all classes — legitimate ONLY because the view labels it
+   * « Niveau le plus bas, toutes classes » in so many words. It is opt-in and
+   * named so that nobody can reach the minimum by accident; a silent fallback is
+   * precisely how a bard ends up shown a "level 1" list of level-4 spells.
+   */
+  readonly niveauSansClasse?: 'refuser' | 'minimum'
   /** School codes, as in `index.ecoles`. */
   readonly ecoles?: readonly number[]
   /** Component codes, ALL of which must be present — someone excluding material
@@ -46,6 +57,7 @@ function vide(valeurs: readonly number[] | undefined): boolean {
 export function filtresActifs(filtres: Filtres): boolean {
   return (
     (filtres.classe ?? null) !== null ||
+    (!vide(filtres.niveaux) && filtres.niveauSansClasse === 'minimum') ||
     !vide(filtres.ecoles) ||
     !vide(filtres.composantes) ||
     !vide(filtres.jets) ||
@@ -54,12 +66,26 @@ export function filtresActifs(filtres: Filtres): boolean {
   )
 }
 
+/**
+ * The lowest level across every class granting the spell, or null.
+ *
+ * null and not 0: 0 is a real level (orisons), and returning it for a spell no
+ * class grants would sort that spell to the top of a level-ordered list.
+ */
+export function niveauMinimum(sort: EntreeSort): number | null {
+  const niveaux = Object.values(sort.niv)
+  return niveaux.length === 0 ? null : Math.min(...niveaux)
+}
+
 function retenir(sort: EntreeSort, filtres: Filtres): boolean {
   const classe = filtres.classe ?? null
   if (classe !== null) {
     const niveau = sort.niv[classe]
     if (niveau === undefined) return false
     if (!vide(filtres.niveaux) && !filtres.niveaux!.includes(niveau)) return false
+  } else if (!vide(filtres.niveaux) && filtres.niveauSansClasse === 'minimum') {
+    const niveau = niveauMinimum(sort)
+    if (niveau === null || !filtres.niveaux!.includes(niveau)) return false
   }
   if (!vide(filtres.ecoles) && (sort.e === null || !filtres.ecoles!.includes(sort.e))) return false
   if (!vide(filtres.jets) && (sort.j === null || !filtres.jets!.includes(sort.j))) return false

@@ -12,7 +12,8 @@ import { readFileSync } from 'node:fs'
 
 import { describe, expect, it } from 'vitest'
 
-import { CHEMIN_INDEX_FIXTURE, type EntreeSort, type IndexWeb } from '@/lib/donnees/index-web'
+import { type EntreeSort, type IndexWeb } from '@/lib/donnees/index-web'
+import { CHEMIN_INDEX_FIXTURE } from '@/lib/donnees/lire-index'
 
 import {
   appliquerFiltres,
