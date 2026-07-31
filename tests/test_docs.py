@@ -58,15 +58,22 @@ class TestFormatDesDocs:
         assert octets.endswith(b"\n")
         octets.decode("utf-8")
 
-    def test_claude_md_tient_en_120_lignes(self, claude_texte: str) -> None:
-        # It is prepended to every session's context: it stays rules and pointers.
-        assert len(claude_texte.splitlines()) <= 120
+    def test_claude_md_tient_dans_son_budget(self, claude_texte: str) -> None:
+        """It is prepended to every session's context: rules and pointers only.
 
-    def test_claude_md_couvre_les_dix_points(self, claude_texte: str) -> None:
+        Raised from 120 to 165 when the LLM-enrichment layer added § 10 — that
+        layer has non-negotiables of its own (no human lock, `preuves`, the 5 %
+        rule) and a session that has not read them will damage data. The budget
+        exists to force deferral to the Skills, and § 10 does defer: it states the
+        rules that must not be discovered the hard way, and points for the rest.
+        """
+        assert len(claude_texte.splitlines()) <= 165
+
+    def test_claude_md_est_numerote_sans_trou(self, claude_texte: str) -> None:
         titres = [
             ligne for ligne in claude_texte.splitlines() if ligne.startswith("## ")
         ]
-        assert len(titres) == 10
+        assert len(titres) == 11
         for n, titre in enumerate(titres, start=1):
             assert titre.startswith(f"## {n}. "), titre
 
@@ -148,6 +155,73 @@ class TestCLAUDEmdContenu:
             "schemas/*.json",
         ):
             assert chemin in claude_texte, chemin
+
+
+class TestCLAUDEmdCoucheEnrichissement:
+    """§ 10 and the amendments the LLM layer forced elsewhere in the file."""
+
+    def test_les_trois_etages_et_la_vue_sont_nommes(self, claude_texte: str) -> None:
+        for attendu in ("étage 08", "étage 09", "étage 10", "data/vues/"):
+            assert attendu in claude_texte, attendu
+
+    def test_les_arbres_de_la_couche_font_partie_de_la_table(
+        self, claude_texte: str
+    ) -> None:
+        for chemin in (
+            "data/enrichissements/<id>.json",
+            "data/vues/sorts_enrichis/<id>.json",
+            "conventions/vocabulaires/*.json",
+        ):
+            assert chemin in claude_texte, chemin
+
+    def test_les_deux_nouveaux_skills_sont_cites(self, claude_texte: str) -> None:
+        assert "pf-enrichment-conventions" in claude_texte
+        assert "pf-bedrock-batch" in claude_texte
+
+    def test_la_regle_de_non_ecrasement_est_ecrite(self, claude_texte: str) -> None:
+        assert "sera écrasée" in claude_texte
+        assert "--force" in claude_texte
+
+    def test_le_verrou_humain_est_declare_inexistant(self, claude_texte: str) -> None:
+        """The semantics of `verifie_par_humain` are: it does not exist.
+
+        The plan asked for the field's semantics to be stated. Its semantics turned
+        out to be absence, and stating that is what matters — a session that thinks
+        the field exists will write a key the schema rejects.
+        """
+        assert "`verifie_par_humain` n'existe pas" in claude_texte
+        assert "17ᵉ clé" in claude_texte
+
+    def test_la_vue_est_declaree_derivee(self, claude_texte: str) -> None:
+        assert "DÉRIVÉ : jamais édité à la main" in claude_texte
+
+    def test_l_exception_reseau_est_amendee_et_non_contournee(
+        self, claude_texte: str
+    ) -> None:
+        """The file may no longer promise that everything but the wiki is offline.
+
+        `enrich_llm` is a paid network stage; a CLAUDE.md that still said "tout le
+        reste est hors ligne" full stop would be read as "this cannot cost money".
+        """
+        assert "tout le reste est hors ligne." not in claude_texte
+        assert "RÉSEAU, PAYANT" in claude_texte
+        assert "seules exceptions" in claude_texte
+
+    def test_la_note_d_exploitation_aws_est_presente(self, claude_texte: str) -> None:
+        assert "AWS_BEARER_TOKEN_BEDROCK" in claude_texte
+        assert "variable d'environnement" in claude_texte
+        assert "plafond de dépense" in claude_texte
+
+    def test_renvoie_vers_la_documentation_de_procedure(
+        self, repo_root: Path, claude_texte: str
+    ) -> None:
+        assert "docs/enrichissement.md" in claude_texte
+        assert (repo_root / "docs" / "enrichissement.md").is_file()
+
+    def test_le_seuil_des_cinq_pourcent_n_est_pas_relachable(
+        self, claude_texte: str
+    ) -> None:
+        assert "on ne desserre pas le seuil" in claude_texte
 
 
 class TestBlocDeCommandes:

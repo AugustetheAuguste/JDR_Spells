@@ -25,8 +25,12 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `data/index/sorts_exclusifs.json` | 05 | les sorts exclusifs à une classe |
 | `data/sorts/<id>.json` | 07+08 | **le sort lui-même** (2070 fichiers, 21 clés) |
 | `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération |
-| `schemas/*.json` | 02 | les deux contrats de sortie |
+| `schemas/*.json` | 02 | les deux contrats de sortie (+ `enrichissement.schema.json`, § 10) |
+| `conventions/vocabulaires/*.json` | 04 | les six listes **closes** de l'enrichissement |
+| `data/enrichissements/<id>.json` | étage 09 | la couche LLM d'un sort (2048 fichiers, 16 clés) |
+| `data/vues/sorts_enrichis/<id>.json` | — | **rien** : vue dérivée du join sur `id` (§ 10) |
 | `reports/*.md` | 03–09 | le résultat et les anomalies de chaque étape (dont `09_validation.md`) |
+| `build_artifacts/rapports/`, `.../quarantaine/` | 09, 10 | la trace des appels **payants** et les réponses refusées |
 
 ## 3. Règles dures — non négociables
 
@@ -58,9 +62,12 @@ slug attribué est stable : jamais renuméroté.** Réf. `src/pf_spells/slugs.py
 `Skill(skill="pf-corpus-conventions")` — `.claude/skills/pf-corpus-conventions/SKILL.md`.
 **Charger cette Skill dans toute session qui lit ou écrit des données du corpus.**
 Elle détient le détail : clés JSON, normalisation des libellés du bloc technique,
-table des 19 classes et abréviations, formats, anti-patterns de la source. Ce
-fichier n'en recopie rien — des règles dupliquées divergent. **Code et Skill
-divergents : la Skill gagne.**
+table des 19 classes et abréviations, formats, anti-patterns de la source. Deux
+Skills la complètent sur la couche LLM (§ 10) : `pf-enrichment-conventions` (les
+16 clés, les vocabulaires clos, `preuves`) — **à charger avant de toucher à
+`data/enrichissements/`, `data/vues/` ou `conventions/vocabulaires/`** — et
+`pf-bedrock-batch` (le client, le jeton, le caching). Ce fichier n'en recopie rien
+— des règles dupliquées divergent. **Code et Skill divergents : la Skill gagne.**
 
 ## 6. Relancer le pipeline — les relances tapent le cache, elles ne re-crawlent pas
 
@@ -76,7 +83,13 @@ python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAI
 python -m pf_spells.build_manifest     # étape 10 - hors ligne
 python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
 python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (cf. § 7)
+python -m pf_spells.validate_enrichment  # étage 10 - hors ligne, 1 si --strict échoue
+python -m pf_spells.build_vues         # vue jointe - hors ligne, dérivée
 ```
+
+Les quatre derniers ont une entrée unique, garde d'entrée comprise :
+`python -m pf_spells.cli` (`prepare-prompts`, `enrich`, `validate-enrich`,
+`build-vues`). Procédures de réglage et de correction : **`docs/enrichissement.md`**.
 
 `cache/html/` est **committé** : relancées, 03 et 06 lisent le cache et ne refont
 aucune requête — d'où la correction d'un parseur sans retoucher au wiki. Tests :
@@ -92,7 +105,12 @@ S3. Dépense bornée *par construction* : plafond d'appels, reprise sur `hash_so
 vérifiée avant l'appel, confirmation au-delà de 100 enregistrements (`--oui` hors
 terminal), coupe-circuit, `--estimer-seulement`. Le bloc système, identique pour les
 2070 sorts, est ce que le prompt caching amortit (88 % de l'entrée) ; zéro lecture de
-cache = coût doublé. Tout le reste est hors ligne.
+cache = coût doublé, et le cache a un plancher de 4096 tokens sous lequel il échoue
+**en silence**. Jeton : `AWS_BEARER_TOKEN_BEDROCK`, **variable d'environnement
+uniquement** — jamais dans le dépôt, `.env` est gitignoré et aucun module ne le lit.
+**Vérifier le plafond de dépense (`--estimer-seulement`) avant toute passe
+complète.** Ces quatre modules sont les seules exceptions : tout le reste, étage 10
+et vues compris, est hors ligne.
 
 ## 8. `data/sorts/*.json` est un artefact de machine — le pipeline fait foi
 
@@ -111,7 +129,27 @@ cache = coût doublé. Tout le reste est hors ligne.
 | Abréviations hors des 19 classes (`Réd`, …) | normales dans `niveaux`, listées dans `reports/08_enrich.md` |
 | Concordance liste ↔ page | 100 % des paires comparables ; divergences **constatées, jamais corrigées** |
 
-## 10. Interdictions de style
+## 10. Enrichissement LLM — `data/enrichissements/` et la vue jointe
+
+- **Arbre parallèle, entièrement régénérable**, joint par `id` et rien d'autre ;
+  `data/sorts/` n'est jamais touché. 16 clés closes, aucune omise.
+- **Aucun verrou humain, délibérément** : `verifie_par_humain` n'existe pas, le
+  schéma refuse une 17ᵉ clé — se déclarer relu rend *invalide*, pas exempté. Une
+  retouche à la main **sera écrasée** : corriger la liste close ou le prompt, ou
+  ré-interroger (`enrich --only <id> --force`, qui **repaie**). La reprise vérifie
+  `hash_source` et `version_prompt` avant l'appel ; `--force` seul repaie.
+- **`data/vues/sorts_enrichis/` est DÉRIVÉ : jamais édité à la main.** Idempotent à
+  l'octet. `sans_enrichissement` (non couvert) ≠ `enrichissement_invalide` (couvert,
+  réponse rejetée) : deux statuts, jamais confondus.
+- **`preuves` = le contrôle anti-confabulation** : sous-chaîne littérale du source,
+  vérifiée à l'étage 10. Seul pli toléré : `’` (U+2019) contre `'` — ne pas
+  l'élargir pour faire passer un rejet.
+- **Seuil des 5 % sur `notes_ambiguite`** : au-delà on élargit les listes closes et
+  on coupe une version — **on ne desserre pas le seuil**. Un taux de rejet qui ne
+  bouge pas quand on durcit l'instruction accuse les listes, pas le prompt.
+- Détail : `pf-enrichment-conventions`. Procédures : `docs/enrichissement.md`.
+
+## 11. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.
