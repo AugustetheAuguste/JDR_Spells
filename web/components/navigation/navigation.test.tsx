@@ -12,7 +12,7 @@
  * push/replace at the right moments.
  */
 
-import { render, screen, within } from '@testing-library/react'
+import { render as rendreNu, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
@@ -47,6 +47,18 @@ vi.mock('next/link', () => ({
 const { PanneauFiltres } = await import('@/components/navigation/PanneauFiltres')
 const { TableSorts } = await import('@/components/navigation/TableSorts')
 const { VueNavigation } = await import('@/components/navigation/VueNavigation')
+const { FournisseurFavoris } = await import('@/lib/favoris/contexte')
+
+/**
+ * Render inside the favourites provider.
+ *
+ * `TableSorts` carries the favourite toggle on every row since step 09, and
+ * `useFavoris` throws without a provider by design — a stub would make every
+ * toggle a silent no-op. So the tests mount the same tree the layout does.
+ */
+function render(ui: Parameters<typeof rendreNu>[0]): ReturnType<typeof rendreNu> {
+  return rendreNu(<FournisseurFavoris>{ui}</FournisseurFavoris>)
+}
 
 function poserFetch(index: IndexWeb): void {
   vi.stubGlobal(
