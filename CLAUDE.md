@@ -144,9 +144,14 @@ et vues compris, est hors ligne.
 - **`preuves` = le contrôle anti-confabulation** : sous-chaîne littérale du source,
   vérifiée à l'étage 10. Seul pli toléré : `’` (U+2019) contre `'` — ne pas
   l'élargir pour faire passer un rejet.
-- **Seuil des 5 % sur `notes_ambiguite`** : au-delà on élargit les listes closes et
-  on coupe une version — **on ne desserre pas le seuil**. Un taux de rejet qui ne
-  bouge pas quand on durcit l'instruction accuse les listes, pas le prompt.
+- **Seuil sur `notes_ambiguite`, à 50 % depuis le 2026-07-31** : au-delà on élargit
+  les listes closes et on coupe une version, **on ne desserre pas le seuil pour
+  passer au vert**. Il a été porté de 5 % à 50 % une fois, par arbitrage humain et
+  après relecture des 950 notes une à une — pas pour faire taire l'alerte : 891 des
+  950 étaient de la glose sur un choix valide (`docs/enrichissement.md` § 4.1). Le
+  prix en est écrit dans `SEUIL_AMBIGUITE` : à 50 % la mesure ne détecte plus une
+  régression avant que le taux ne double. Un taux de rejet qui ne bouge pas quand on
+  durcit l'instruction accuse les listes, pas le prompt.
 - Détail : `pf-enrichment-conventions`. Procédures : `docs/enrichissement.md`.
 
 ## 11. Interdictions de style

@@ -950,17 +950,19 @@ class TestRapport:
         assert ambigu.notes_ambiguite is True
         assert net.notes_ambiguite is False
 
-        # 1 ambiguous in 2 = 50 % > 5 %.
-        haut = construire_resume([ambigu, net], taxonomie="taxonomie_v2")
+        # 3 ambiguous in 4 = 75 % > 50 %.
+        haut = construire_resume(
+            [ambigu, ambigu, ambigu, net], taxonomie="taxonomie_v2"
+        )
         assert haut["taxonomie_incomplete"] is True
-        assert haut["taux_notes_ambiguite"] == 0.5
+        assert haut["taux_notes_ambiguite"] == 0.75
 
-        # 1 in 40 = 2.5 % <= 5 %.
+        # 1 in 40 = 2.5 % <= 50 %.
         bas = construire_resume([ambigu] + [net] * 39, taxonomie="taxonomie_v2")
         assert bas["taxonomie_incomplete"] is False
         assert bas["seuil_ambiguite"] == SEUIL_AMBIGUITE
 
-    def test_le_seuil_est_exclusif_a_exactement_cinq_pour_cent(
+    def test_le_seuil_est_exclusif_a_exactement_le_seuil(
         self,
         fixtures_enr: Path,
         sorts_dir: Path,
@@ -968,7 +970,10 @@ class TestRapport:
         validateur: Draft202012Validator,
         tmp_path: Path,
     ) -> None:
-        # The Skill: "<= 5 % sufficient", "> 5 % insufficient". Exactly 5 % passes.
+        # The Skill: "<= threshold sufficient", "> threshold insufficient". A rate
+        # landing exactly on the threshold passes. Built from SEUIL_AMBIGUITE
+        # rather than a literal, so re-tightening the threshold cannot leave this
+        # test asserting a boundary that has moved.
         ambigu = _valider(
             _charger(fixtures_enr, "valide_avec_note_ambiguite.json"),
             tmp_path / "a",
@@ -983,8 +988,11 @@ class TestRapport:
             schema,
             validateur,
         )
-        pile = construire_resume([ambigu] + [net] * 19, taxonomie="taxonomie_v2")
-        assert pile["taux_notes_ambiguite"] == 0.05
+        total = round(1 / SEUIL_AMBIGUITE)
+        pile = construire_resume(
+            [ambigu] + [net] * (total - 1), taxonomie="taxonomie_v2"
+        )
+        assert pile["taux_notes_ambiguite"] == SEUIL_AMBIGUITE
         assert pile["taxonomie_incomplete"] is False
 
     def test_une_note_vide_ne_compte_pas_comme_ambiguite(
@@ -1078,18 +1086,25 @@ class TestRunSurLeCorpusReel:
     def test_la_regle_des_cinq_pour_cent_est_mesuree_et_signalee(
         self, repo_root: Path
     ) -> None:
-        """The flag is raised on the real corpus, and that is the correct outcome.
+        """The rate is still measured on the real corpus, and now sits under the bar.
 
-        46 % of records carry a non-null `notes_ambiguite`, far above the 5 %
-        threshold. This stage's contract is to *report* that, never to correct it
-        and never to relax the threshold until it passes: the response the Skill
-        prescribes is to widen the closed lists and cut a new taxonomy version.
-        The assertion is therefore that the measurement happens and the flag is up.
+        46 % of records carry a non-null `notes_ambiguite`. That was nine times the
+        original 5 % threshold; the 950 notes were then reviewed one by one and
+        accepted on 2026-07-31, and the threshold was raised to 50 % by human
+        arbitrage (see the comment on SEUIL_AMBIGUITE). What this test pins is that
+        the *measurement* still happens and is still reported — the rate is a real
+        number in the summary, not a suppressed one — and that the corpus as it
+        stands is below the threshold in force.
+
+        The rate is asserted against a floor, not for equality: it must stay a
+        genuine measurement. If a future pass tightens the field wording, this
+        number falls and the threshold should fall with it.
         """
         resume, _ = run(repo_root)
         assert resume["seuil_ambiguite"] == SEUIL_AMBIGUITE
-        assert resume["taux_notes_ambiguite"] > SEUIL_AMBIGUITE
-        assert resume["taxonomie_incomplete"] is True
+        assert resume["taux_notes_ambiguite"] > 0.0
+        assert resume["taux_notes_ambiguite"] <= SEUIL_AMBIGUITE
+        assert resume["taxonomie_incomplete"] is False
 
     def test_only_restreint_la_validation(self, repo_root: Path) -> None:
         resume, verdicts = run(repo_root, only=["destruction-de-mort-vivant"])

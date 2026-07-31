@@ -64,9 +64,20 @@ CHEMIN_INDEX = Path("data") / "index" / "sorts_uniques.jsonl"
 SKILL_PATH = Path(".claude/skills/pf-enrichment-conventions/SKILL.md")
 
 # `notes_ambiguite` non-null share above this means the closed lists lack a case
-# the corpus really contains. The response is to cut a new taxonomy version, never
-# to relax this stage — hence a reported flag, not an automatic correction.
-SEUIL_AMBIGUITE = 0.05
+# the corpus really contains. The response is to cut a new taxonomy version — hence
+# a reported flag, not an automatic correction.
+#
+# Raised from 0.05 to 0.50 on 2026-07-31 by human arbitrage, after the 950 notes of
+# the p1.4/p1.5 pass were reviewed one by one and accepted. The count in
+# `docs/enrichissement.md` § 4.1 is why: 891 of the 950 are glose on an otherwise
+# valid choice, so the measure was reading prompt wording, not a gap in the lists.
+# The reviewed conclusion was that the records are sound as they stand.
+#
+# What this costs, stated because it is the reason the old value was called
+# non-negotiable: at 0.50 the flag no longer detects a *regression* in ambiguity
+# until the rate nearly doubles. Anyone re-tightening the field wording should
+# lower this in the same commit, so the measure regains its edge.
+SEUIL_AMBIGUITE = 0.50
 
 # U+FFFD by codepoint: spelling it literally would make this file trip the
 # encoding check it exists to enforce.

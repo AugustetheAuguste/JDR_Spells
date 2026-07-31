@@ -247,12 +247,31 @@ La passe 0 refuse de partir si l'empreinte de corpus de l'échantillon ne
 correspond plus à `data/sorts/` : un tirage périmé ferait payer 200 appels pour
 décrire un corpus qui a bougé.
 
-### La règle des 5 %
+### La règle du seuil d'ambiguïté — 50 % depuis le 2026-07-31
+
+Le seuil en vigueur est `SEUIL_AMBIGUITE` dans
+`src/pf_spells/validate_enrichment.py`, et c'est lui qui fait foi ; le lire plutôt
+que recopier un chiffre ici.
 
 | Mesure | Seuil | Conséquence |
 |---|---|---|
-| Part d'enregistrements avec `notes_ambiguite` non nul | **≤ 5 %** | la taxonomie est jugée suffisante |
-| Idem | **> 5 %** | la taxonomie est **insuffisante** : couper une `taxonomie_v2`, la geler, régénérer |
+| Part d'enregistrements avec `notes_ambiguite` non nul | **≤ seuil** | la taxonomie est jugée suffisante |
+| Idem | **> seuil** | la taxonomie est **insuffisante** : couper une `taxonomie_v2`, la geler, régénérer |
+
+**Le seuil valait 5 % jusqu'au 2026-07-31**, où il a été porté à 50 % par
+arbitrage humain après relecture des 950 notes de la passe `p1.4`/`p1.5` une à
+une. Le motif n'est pas de faire taire l'alerte mais le décompte du § 4.1 de
+`docs/enrichissement.md` : 891 des 950 notes glosent un choix par ailleurs valide,
+donc la mesure lisait la formulation du prompt et non un manque des listes.
+
+**Ce que le relèvement coûte, et qui doit être dit :** à 50 % la mesure ne détecte
+plus une régression de l'ambiguïté avant que le taux ne double presque. C'est
+précisément ce que l'ancienne valeur protégeait. Qui resserre un jour la
+formulation du champ doit rabaisser le seuil dans le même commit.
+
+**Ce que la règle interdit toujours** : desserrer le seuil pour rendre un critère
+vert. Le relèvement du 2026-07-31 est un arbitrage documenté sur des données
+relues, pas un précédent autorisant l'ajustement du seuil à la mesure.
 
 **Cette règle a joué le 2026-07-30.** La passe complète a mis 120 sorts sur 2070
 (5,8 %) en quarantaine ; les listes ont donc été élargies, pas la contrainte

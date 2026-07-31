@@ -223,9 +223,19 @@ aucun manque commun, et les laisser en quarantaine est la bonne réponse.
 
 ## 4. Quand le rapport lève `taxonomie_incomplete`
 
-L'étage 10 pose `taxonomie_incomplete: true` quand plus de 5 % des
-enregistrements portent un `notes_ambiguite` non nul. **La règle est : on corrige
-la taxonomie, on ne desserre pas le seuil.**
+L'étage 10 pose `taxonomie_incomplete: true` quand la part d'enregistrements
+portant un `notes_ambiguite` non nul dépasse `SEUIL_AMBIGUITE`
+(`src/pf_spells/validate_enrichment.py`), **à 50 % depuis le 2026-07-31**, 5 %
+auparavant. **La règle est : on corrige la taxonomie, on ne desserre pas le seuil
+pour rendre un critère vert.**
+
+Le seuil a été relevé une fois, et l'exception est instructive : le taux réel
+(46,4 %) a été jugé acceptable non pas parce qu'il gênait, mais parce que le
+décompte du § 4.1 a montré qu'il mesurait la formulation du prompt et non un manque
+des listes — 891 des 950 notes glosant un choix valide. Les 950 ont été relues une à
+une avant l'arbitrage. Le prix du relèvement est écrit dans le module : à 50 % la
+mesure ne détecte plus une régression avant un quasi-doublement du taux. Qui
+resserre l'instruction du champ rabaisse le seuil dans le même commit.
 
 ### 4.1 D'abord, distinguer les deux causes
 
@@ -362,8 +372,13 @@ python -m pf_spells.cli build-vues
 | Conformes à l'étage 10 | 2032 (99,2 % des produits) |
 | Rejets `preuve_absente_du_source` | 16 (0,78 %) |
 | En quarantaine | 22 (1,1 %) |
-| `notes_ambiguite` non nul | 950 (46,4 %) — dont 59 accusent une liste close |
+| `notes_ambiguite` non nul | 950 (46,4 %) — dont 59 accusent une liste close ; relues et acceptées, seuil à 50 % |
 | Provenance | 1950 en `p1.4`, 98 en `p1.5` (les ré-interrogations de `taxonomie_v2`) |
+
+**`validate-enrich --strict` sort donc 1, et c'est correct** : les 16 rejets de
+preuve subsistent, et `--strict` s'appuie sur le compte de rejets, pas sur
+`taxonomie_incomplete`. Le relèvement du seuil a éteint l'alerte de taxonomie, il
+n'a rien blanchi côté preuves. Un `--strict` vert demande de régénérer les 16.
 
 Deux constats **remontés et non corrigés**, tous deux dans `reports/` :
 
@@ -371,14 +386,16 @@ Deux constats **remontés et non corrigés**, tous deux dans `reports/` :
    désaccentué. La correction est en amont (prompt, puis régénérer). L'étage 10
    ne les blanchit pas, ce serait affaiblir le seul contrôle anti-confabulation
    du pipeline.
-2. **Le seuil de 5 % sur `notes_ambiguite` est franchi à 46,4 %.** Le compte du
-   § 4.1 l'attribue à la formulation du champ plutôt qu'aux listes : 891 des 950
-   notes sont de la glose sur un choix par ailleurs valide. Le seuil **n'a pas
-   été desserré** pour passer au vert, et l'étage continue de le signaler. La
-   correction est identifiée et **chiffrée** : resserrer l'instruction du champ
-   (« une phrase **seulement si** aucune valeur de la liste ne convient, sinon
-   null ») et régénérer. C'est une passe complète, ~5 $, donc un arbitrage humain
-   et non une correction à glisser dans cette étape.
+2. **Les 950 `notes_ambiguite` (46,4 %) ont été relues et acceptées** le
+   2026-07-31. Le compte du § 4.1 attribue le taux à la formulation du champ plutôt
+   qu'aux listes : 891 des 950 notes sont de la glose sur un choix par ailleurs
+   valide. La relecture cas par cas a confirmé que les enregistrements sont sains
+   en l'état, et le seuil a été porté de 5 % à 50 % — **arbitrage humain assumé, pas
+   un ajustement pour passer au vert** ; son coût est écrit au § 4 et dans le
+   module. La correction de fond reste identifiée et chiffrée si l'on veut ramener
+   le taux : resserrer l'instruction du champ (« une phrase **seulement si** aucune
+   valeur de la liste ne convient, sinon null ») et régénérer, soit une passe
+   complète à ~5 $.
 
 ## 8. Ce qui est committé, et ce qui ne l'est pas
 
