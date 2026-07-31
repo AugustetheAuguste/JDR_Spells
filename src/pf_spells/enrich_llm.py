@@ -862,7 +862,7 @@ def main(argv: list[str] | None = None) -> int:
     if resume["arret_budget"]:
         print(f"ARRÊT BUDGET : {resume['arret_budget']}", file=sys.stderr)
     print(f"rapport : {chemin_rapport.as_posix()}")
-    print("valider ensuite : python -m pf_spells.validate_enrichissements")
+    print("valider ensuite : python -m pf_spells.validate_enrichment")
     return 1 if (resume["echecs"] or resume["arret_budget"]) else 0
 
 
