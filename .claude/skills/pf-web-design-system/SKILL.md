@@ -51,10 +51,12 @@ leur raison.
 | `bord_fort` | `#C9C6C0` | bord d'un champ, d'un contrôle |
 | `encre` | `#1C1B19` | texte principal — 16,5:1 sur `base` |
 | `encre_douce` | `#57544E` | texte secondaire, libellés — 7,4:1 sur `base` |
-| `encre_faible` | `#78746C` | métadonnée, mention de source — 4,8:1 sur `base` |
+| `encre_faible` | `#736F67` | métadonnée, mention de source — 4,79:1 sur `base` |
 
-`encre_faible` est le plancher : **rien de plus clair ne porte de texte.** 4,8:1
-passe AA de justesse, et c'est déjà le prix de la hiérarchie.
+`encre_faible` est le plancher : **rien de plus clair ne porte de texte.** 4,79:1
+passe AA de justesse, et c'est déjà le prix de la hiérarchie. La première valeur
+essayée, `#78746C`, tombait à 4,455:1 — sous AA, et personne ne l'aurait vu à
+l'œil. C'est le test de contraste qui l'a dit.
 
 ### L'accent, unique
 
@@ -94,7 +96,7 @@ Règles dures sur ces neuf valeurs :
 
 - **Aplat, texte blanc dessus.** Chacune est assez sombre pour que du blanc y
   passe AA. Une pastille est un rectangle de 4 px de rayon, jamais un dégradé.
-- **Plancher de contraste 5,14:1** sur `base` — au-dessus de AA texte (4,5:1).
+- **Plancher de contraste 5,13:1** sur `base` — au-dessus de AA texte (4,5:1).
   Une valeur éclaircie casse le plancher : le test de contraste de l'étape 03
   échoue, et c'est le test qui a raison.
 - **La couleur n'est jamais le seul porteur.** Le nom de l'école est toujours
