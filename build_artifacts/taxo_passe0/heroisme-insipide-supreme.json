@@ -1,0 +1,26 @@
+{
+  "id": "heroisme-insipide-supreme",
+  "etiquettes": [
+    "enchantement_coercition",
+    "bonus_temporaire_inversible",
+    "malus_jets_attaque",
+    "malus_jets_sauvegarde",
+    "malus_tests_competence",
+    "degats_inversion",
+    "identification_trompeuse"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:52+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "a228e10e866a3a16b125894d484926a43642f370c55209345a20075001c5c0ef",
+  "texte_envoye_hash": "a228e10e866a3a16b125894d484926a43642f370c55209345a20075001c5c0ef",
+  "texte_envoye": "nom: Héroïsme insipide suprême\necole: Enchantement (coercition)\ndescripteurs: effet mental, ruse\nniveaux: Bard 6, Ens/Mag 7, Psy 7, Sor 7\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: contact\ncible: créature touchée\nduree: 1 minute/niveau (T)\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui (inoffensif)\n\nCe sort fonctionne comme héroïsme suprême, excepté que le personnage peut inverser les effets du sort en prononçant un ordre spécial par une action simple s'il se trouve à portée moyenne (30 m + 3 m/niveau) de la cible. La cible perd alors les bonus accordés et subit à la place un malus de -4 aux jets d'attaque, aux jets de sauvegarde et aux tests de compétence jusqu'à la fin de la durée du sort (sans jet de sauvegarde), qui passe à -8 contre les effets de peur. De plus, la cible subit un nombre de points de dégâts égal au niveau de lanceur de sorts du personnage lorsqu'il inverse le sort.\nToute tentative visant à identifier héroïsme insipide suprême avec un test de compétence l'identifie à tort comme héroïsme suprême (voir le registre de la ruse).",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "enchantement_coercition\nbonus_temporaire_inversible\nmalus_jets_attaque\nmalus_jets_sauvegarde\nmalus_tests_competence\ndegats_inversion\nidentification_trompeuse",
+  "usage": {
+    "inputTokens": 514,
+    "outputTokens": 57
+  },
+  "arret": "end_turn"
+}

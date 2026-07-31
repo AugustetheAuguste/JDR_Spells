@@ -1,0 +1,639 @@
+{
+  "bande_acceptee": [
+    190,
+    230
+  ],
+  "builder_version": "1.0.0",
+  "construit_le": "empreinte:116edc05b31ae387",
+  "convention_ecole": "école lue dans data/sorts/<id>.json clé `ecole` (jamais l'indice `ecoles` de l'index, vide pour 737 sorts), puis réduite à l'école de base : partie avant la première parenthèse, casse normalisée, Universel/Universelle fusionnés ; accents conservés",
+  "convention_niveau": "niveau_min : minimum de `niveaux` sur toutes les classes qui listent le sort (un sort n'a pas un niveau, il en a un par classe)",
+  "couverture": {
+    "ecoles": 9,
+    "niveaux": 10
+  },
+  "dans_la_bande": true,
+  "desaccords_niveau_min": [
+    {
+      "id": "convocation-de-monstres-vi",
+      "niveau_min_index": 6,
+      "niveau_min_sort": 5,
+      "retenu": 5
+    },
+    {
+      "id": "impasse-egaree",
+      "niveau_min_index": 4,
+      "niveau_min_sort": 3,
+      "retenu": 3
+    },
+    {
+      "id": "pierre-de-suppression",
+      "niveau_min_index": 4,
+      "niveau_min_sort": 3,
+      "retenu": 3
+    },
+    {
+      "id": "sonder-l-histoire",
+      "niveau_min_index": 3,
+      "niveau_min_sort": 2,
+      "retenu": 2
+    },
+    {
+      "id": "tapisserie-de-fables",
+      "niveau_min_index": 5,
+      "niveau_min_sort": 4,
+      "retenu": 4
+    },
+    {
+      "id": "telekinesie-martiale",
+      "niveau_min_index": 4,
+      "niveau_min_sort": 3,
+      "retenu": 3
+    }
+  ],
+  "distribution_brute": {
+    "Abjuration:0": 1,
+    "Abjuration:1": 43,
+    "Abjuration:2": 39,
+    "Abjuration:3": 41,
+    "Abjuration:4": 36,
+    "Abjuration:5": 17,
+    "Abjuration:6": 17,
+    "Abjuration:7": 7,
+    "Abjuration:8": 14,
+    "Abjuration:9": 9,
+    "Divination:0": 8,
+    "Divination:1": 48,
+    "Divination:2": 45,
+    "Divination:3": 29,
+    "Divination:4": 24,
+    "Divination:5": 4,
+    "Divination:6": 8,
+    "Divination:7": 2,
+    "Divination:8": 3,
+    "Divination:9": 1,
+    "Enchantement:0": 3,
+    "Enchantement:1": 51,
+    "Enchantement:2": 54,
+    "Enchantement:3": 41,
+    "Enchantement:4": 38,
+    "Enchantement:5": 22,
+    "Enchantement:6": 22,
+    "Enchantement:7": 1,
+    "Enchantement:8": 1,
+    "Enchantement:9": 6,
+    "Illusion:0": 2,
+    "Illusion:1": 27,
+    "Illusion:2": 31,
+    "Illusion:3": 33,
+    "Illusion:4": 22,
+    "Illusion:5": 13,
+    "Illusion:6": 11,
+    "Illusion:7": 4,
+    "Illusion:8": 3,
+    "Illusion:9": 4,
+    "Invocation:0": 5,
+    "Invocation:1": 39,
+    "Invocation:2": 43,
+    "Invocation:3": 54,
+    "Invocation:4": 44,
+    "Invocation:5": 33,
+    "Invocation:6": 30,
+    "Invocation:7": 18,
+    "Invocation:8": 11,
+    "Invocation:9": 22,
+    "Nécromancie:0": 4,
+    "Nécromancie:1": 29,
+    "Nécromancie:2": 44,
+    "Nécromancie:3": 33,
+    "Nécromancie:4": 34,
+    "Nécromancie:5": 17,
+    "Nécromancie:6": 18,
+    "Nécromancie:7": 6,
+    "Nécromancie:8": 8,
+    "Nécromancie:9": 11,
+    "Transmutation:0": 13,
+    "Transmutation:1": 106,
+    "Transmutation:2": 124,
+    "Transmutation:3": 95,
+    "Transmutation:4": 79,
+    "Transmutation:5": 44,
+    "Transmutation:6": 34,
+    "Transmutation:7": 15,
+    "Transmutation:8": 12,
+    "Transmutation:9": 8,
+    "Universelle:0": 2,
+    "Universelle:3": 1,
+    "Universelle:5": 1,
+    "Universelle:7": 1,
+    "Universelle:9": 2,
+    "Évocation:0": 9,
+    "Évocation:1": 21,
+    "Évocation:2": 54,
+    "Évocation:3": 50,
+    "Évocation:4": 45,
+    "Évocation:5": 17,
+    "Évocation:6": 23,
+    "Évocation:7": 12,
+    "Évocation:8": 6,
+    "Évocation:9": 8
+  },
+  "ecart_taille_cible": 0,
+  "ecoles_absentes_de_l_echantillon": [],
+  "ecoles_corpus": [
+    "Abjuration",
+    "Divination",
+    "Enchantement",
+    "Illusion",
+    "Invocation",
+    "Nécromancie",
+    "Transmutation",
+    "Universelle",
+    "Évocation"
+  ],
+  "ecoles_inattendues": [],
+  "ecoles_normalisation": {
+    "Abjuration": "Abjuration",
+    "Abjuration (voir texte)": "Abjuration",
+    "Divination": "Divination",
+    "Divination (scrutation)": "Divination",
+    "Enchantement": "Enchantement",
+    "Enchantement (charme)": "Enchantement",
+    "Enchantement (coercition)": "Enchantement",
+    "Enchantement (coercition) (dépend du langage, effet mental)": "Enchantement",
+    "Enchantement (coercition) (effet mental)": "Enchantement",
+    "Enchantement (coercition) ]émotion, effet mental]": "Enchantement",
+    "Illusion": "Illusion",
+    "Illusion (chimère)": "Illusion",
+    "Illusion (chimère, hallucination)": "Illusion",
+    "Illusion (fantasme)": "Illusion",
+    "Illusion (hallucination)": "Illusion",
+    "Illusion (mirage)": "Illusion",
+    "Illusion (ombre)": "Illusion",
+    "Invocation": "Invocation",
+    "Invocation (appel ou création)": "Invocation",
+    "Invocation (appel)": "Invocation",
+    "Invocation (convocation)": "Invocation",
+    "Invocation (convocation) (voir description)": "Invocation",
+    "Invocation (convocation) (voir texte)": "Invocation",
+    "Invocation (création)": "Invocation",
+    "Invocation (création) ombre": "Invocation",
+    "Invocation (création, téléportation)": "Invocation",
+    "Invocation (guérison)": "Invocation",
+    "Invocation (téléportation)": "Invocation",
+    "Nécromancie": "Nécromancie",
+    "Nécromancie (Mal)": "Nécromancie",
+    "Nécromancie (métamorphose)": "Nécromancie",
+    "Transmutation": "Transmutation",
+    "Transmutation (acide, électricité ou feu)": "Transmutation",
+    "Transmutation (création)": "Transmutation",
+    "Transmutation (eau)": "Transmutation",
+    "Transmutation (métamorphose)": "Transmutation",
+    "Universel": "Universelle",
+    "Universelle": "Universelle",
+    "abjuration": "Abjuration",
+    "enchantement (coercition)": "Enchantement",
+    "enchantement (coercition) (effet mental)": "Enchantement",
+    "illusion (chimère)": "Illusion",
+    "illusion (hallucination)": "Illusion",
+    "illusion (ombre)": "Illusion",
+    "invocation (convocation)": "Invocation",
+    "invocation (création)": "Invocation",
+    "invocation (téléportation)": "Invocation",
+    "invocation(guérison)": "Invocation",
+    "nécromancie": "Nécromancie",
+    "nécromancie (basé sur le langage)": "Nécromancie",
+    "transmutation": "Transmutation",
+    "transmutation (métamorphose)": "Transmutation",
+    "Évocation": "Évocation",
+    "Évocation (Loi)": "Évocation",
+    "Évocation (charme)": "Évocation",
+    "Évocation (effet mental)": "Évocation",
+    "Évocation (sonore)": "Évocation",
+    "évocation": "Évocation",
+    "évocation (force)": "Évocation",
+    "évocation (froid)": "Évocation"
+  },
+  "empreinte_corpus": "116edc05b31ae3872199afdd0066957d9daa9b672bf940ed4351c800c2a8e6f8",
+  "graine": 20240101,
+  "nb_sorts_corpus": 2070,
+  "nb_strates": 85,
+  "plancher_par_strate": 2,
+  "strates": {
+    "Abjuration:0": [
+      "resistance"
+    ],
+    "Abjuration:1": [
+      "paix-forcee",
+      "protection-contre-la-loi"
+    ],
+    "Abjuration:2": [
+      "protection-contre-le-bien-partage",
+      "vie-scellee"
+    ],
+    "Abjuration:3": [
+      "resistance-aux-energies-destructives-partage",
+      "salut-du-sang"
+    ],
+    "Abjuration:4": [
+      "communication-securisee-supreme",
+      "hurlement-primitif"
+    ],
+    "Abjuration:5": [
+      "aura-d-avidite",
+      "dissipation-supreme"
+    ],
+    "Abjuration:6": [
+      "interdiction-du-fou",
+      "protection-contre-les-sorts"
+    ],
+    "Abjuration:7": [
+      "esprit-impenetrable",
+      "tour-de-volonte-de-fer-iii"
+    ],
+    "Abjuration:8": [
+      "cicatrice-magique",
+      "mur-prismatique"
+    ],
+    "Abjuration:9": [
+      "disjonction",
+      "tour-de-volonte-de-fer-v"
+    ],
+    "Divination:0": [
+      "assistance-divine",
+      "reperage"
+    ],
+    "Divination:1": [
+      "detection-du-chaos",
+      "incantation-assuree",
+      "sages-murmures"
+    ],
+    "Divination:2": [
+      "detection-de-la-magie-supreme",
+      "examen-approfondi",
+      "pistage-d-un-navire"
+    ],
+    "Divination:3": [
+      "coup-mental-iii",
+      "detection-de-la-scrutation"
+    ],
+    "Divination:4": [
+      "contempler-de-loin",
+      "eveiller-les-devores"
+    ],
+    "Divination:5": [
+      "coup-mental-v",
+      "rendre-un-jugement-superieur"
+    ],
+    "Divination:6": [
+      "insectes-espions-supreme",
+      "pierres-commeres"
+    ],
+    "Divination:7": [
+      "vision-magique-supreme",
+      "vision-mystique"
+    ],
+    "Divination:8": [
+      "oeil-indiscret-supreme",
+      "pronostic-supreme"
+    ],
+    "Divination:9": [
+      "premonition"
+    ],
+    "Enchantement:0": [
+      "allie-involontaire",
+      "hebetement"
+    ],
+    "Enchantement:1": [
+      "action-interdite",
+      "bafouiller",
+      "deja-vu"
+    ],
+    "Enchantement:2": [
+      "bredouillement",
+      "manteau-de-calme",
+      "messager-verrouille",
+      "zone-de-verite"
+    ],
+    "Enchantement:3": [
+      "hebetement-de-groupe",
+      "symbole-de-fou-rire"
+    ],
+    "Enchantement:4": [
+      "pulsation-synaptique-supreme",
+      "sacrifice"
+    ],
+    "Enchantement:5": [
+      "brume-mentale",
+      "insinuation-du-ca-iv"
+    ],
+    "Enchantement:6": [
+      "heroisme-insipide-supreme",
+      "tranquillite-euphorique"
+    ],
+    "Enchantement:7": [
+      "fouet-d-ego-v"
+    ],
+    "Enchantement:8": [
+      "mot-de-pouvoir-etourdissant"
+    ],
+    "Enchantement:9": [
+      "localite-egaree",
+      "mot-de-pouvoir-mortel"
+    ],
+    "Illusion:0": [
+      "aspect-de-fee-hantee",
+      "son-imaginaire"
+    ],
+    "Illusion:1": [
+      "alteration-d-instrument-de-musique",
+      "dissimuler-la-magie"
+    ],
+    "Illusion:2": [
+      "demarche-decalibree",
+      "hallucination-audiovisuelle"
+    ],
+    "Illusion:3": [
+      "placage-trompeur",
+      "silence-respectueux"
+    ],
+    "Illusion:4": [
+      "chaine-cloutee-des-ombres",
+      "image-de-foudre"
+    ],
+    "Illusion:5": [
+      "synesthesie-de-groupe",
+      "traversee-des-ombres"
+    ],
+    "Illusion:6": [
+      "creation-de-paysage-mental-supreme",
+      "manteau-de-doutes"
+    ],
+    "Illusion:7": [
+      "convocation-d-ombres-supreme",
+      "voile-lunaire"
+    ],
+    "Illusion:8": [
+      "ecran",
+      "motif-scintillant"
+    ],
+    "Illusion:9": [
+      "image-psychique",
+      "microcosme"
+    ],
+    "Invocation:0": [
+      "convocation-d-instrument",
+      "detremper"
+    ],
+    "Invocation:1": [
+      "contact-corrosif",
+      "restauration-partielle"
+    ],
+    "Invocation:2": [
+      "armure-instantanee",
+      "eruption-de-fleches"
+    ],
+    "Invocation:3": [
+      "appel-d-un-esprit",
+      "guerison-de-destrier",
+      "mur-de-saumure",
+      "tempete-de-cendres"
+    ],
+    "Invocation:4": [
+      "caresse-vaseuse",
+      "convocation-d-allies-naturels-iv",
+      "embourbement"
+    ],
+    "Invocation:5": [
+      "pilier-de-vie",
+      "teleportation-supreme"
+    ],
+    "Invocation:6": [
+      "cercle-de-teleportation",
+      "mot-de-rappel"
+    ],
+    "Invocation:7": [
+      "anneau-de-repli-feerique",
+      "porte-de-phase"
+    ],
+    "Invocation:8": [
+      "convocation-d-allies-naturels-viii",
+      "manteau-marin"
+    ],
+    "Invocation:9": [
+      "resurrection-supreme",
+      "teleportation-interplanetaire"
+    ],
+    "Nécromancie:0": [
+      "destruction-de-mort-vivant",
+      "fatigue"
+    ],
+    "Nécromancie:1": [
+      "malediction-de-l-eau",
+      "rayon-affaiblissant"
+    ],
+    "Nécromancie:2": [
+      "coeur-de-l-ennemi",
+      "plaie-au-visage",
+      "sacrifice-partage"
+    ],
+    "Nécromancie:3": [
+      "empoisonnement",
+      "infestation-fongique"
+    ],
+    "Nécromancie:4": [
+      "protection-contre-la-mort",
+      "symbole-de-terreur"
+    ],
+    "Nécromancie:5": [
+      "fouet-de-l-astradaemon",
+      "possession-d-objet"
+    ],
+    "Nécromancie:6": [
+      "annihilation-de-mort-vivant",
+      "creation-de-mort-vivant"
+    ],
+    "Nécromancie:7": [
+      "destruction",
+      "tache-noire"
+    ],
+    "Nécromancie:8": [
+      "blessure-critique-de-groupe",
+      "orbe-du-neant"
+    ],
+    "Nécromancie:9": [
+      "ame-parasite",
+      "terre-maudite"
+    ],
+    "Transmutation:0": [
+      "racine",
+      "reparation"
+    ],
+    "Transmutation:1": [
+      "appel-d-arme",
+      "ascese",
+      "briser-les-lignes-ennemies",
+      "broussaille-distrayante",
+      "enchevetrement",
+      "grappin-opportun",
+      "modification-des-vents",
+      "pierre-magique",
+      "sens-surdeveloppes"
+    ],
+    "Transmutation:2": [
+      "avancee-offensive",
+      "boule-de-goudron",
+      "contact-defigurant",
+      "croissance-d-epines",
+      "enchevetrement-repugnant",
+      "flammes-du-fidele",
+      "metal-gele",
+      "reflexes-accrus",
+      "sang-adhesif",
+      "splendeur-de-l-aigle"
+    ],
+    "Transmutation:3": [
+      "amplification-d-elixir",
+      "assaut-concerte",
+      "coeur-du-metal",
+      "contrariete-des-geants",
+      "coupe-de-poussiere",
+      "page-secrete",
+      "sentinelle-de-sang"
+    ],
+    "Transmutation:4": [
+      "marteau-arboricole",
+      "pierres-acerees",
+      "sang-caustique",
+      "vermine-geante",
+      "vol-superieur",
+      "zone-de-flammes-instables"
+    ],
+    "Transmutation:5": [
+      "dard-vengeur",
+      "forme-etheree",
+      "glace-maudite"
+    ],
+    "Transmutation:6": [
+      "baton-a-sort",
+      "rememoration"
+    ],
+    "Transmutation:7": [
+      "corps-elementaire-iv",
+      "forme-vegetale-iii"
+    ],
+    "Transmutation:8": [
+      "animation-suspendue",
+      "atavisme-de-groupe"
+    ],
+    "Transmutation:9": [
+      "changement-de-forme",
+      "corps-enflamme"
+    ],
+    "Universelle:0": [
+      "prestidigitation",
+      "signature-magique"
+    ],
+    "Universelle:3": [
+      "thaumaturgie-associative"
+    ],
+    "Universelle:5": [
+      "permanence"
+    ],
+    "Universelle:7": [
+      "souhait-limite"
+    ],
+    "Universelle:9": [
+      "ascension",
+      "souhait"
+    ],
+    "Évocation:0": [
+      "lumieres-dansantes",
+      "rayon-de-givre"
+    ],
+    "Évocation:1": [
+      "disque-flottant",
+      "sabot-du-tonnerre"
+    ],
+    "Évocation:2": [
+      "cacophonie",
+      "eternuement-de-feu",
+      "fleche-de-loi"
+    ],
+    "Évocation:3": [
+      "boule-de-feu",
+      "manteau-de-colere",
+      "rafale-du-belier"
+    ],
+    "Évocation:4": [
+      "detonation",
+      "epee-impie",
+      "violent-nuage-d-orage-supreme"
+    ],
+    "Évocation:5": [
+      "main-interposee",
+      "purification"
+    ],
+    "Évocation:6": [
+      "froide-frappe-de-glace",
+      "resonance"
+    ],
+    "Évocation:7": [
+      "cage-de-force",
+      "rayon-de-soleil"
+    ],
+    "Évocation:8": [
+      "explosion-de-lumiere",
+      "rayon-polaire"
+    ],
+    "Évocation:9": [
+      "miracle",
+      "vents-de-la-vengeance"
+    ]
+  },
+  "strates_sous_plancher": [
+    {
+      "plancher": 2,
+      "strate": "Abjuration:0",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Divination:9",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Enchantement:7",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Enchantement:8",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Universelle:3",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Universelle:5",
+      "taille_strate": 1,
+      "tires": 1
+    },
+    {
+      "plancher": 2,
+      "strate": "Universelle:7",
+      "taille_strate": 1,
+      "tires": 1
+    }
+  ],
+  "taille": 200,
+  "taille_cible": 200
+}

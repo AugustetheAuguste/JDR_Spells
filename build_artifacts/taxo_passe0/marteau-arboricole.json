@@ -1,0 +1,26 @@
+{
+  "id": "marteau-arboricole",
+  "etiquettes": [
+    "animation_arbre",
+    "attaque_au_contact",
+    "degats_physiques",
+    "portee_allonge",
+    "duree_limitee",
+    "controle_lanceur",
+    "force_basee_sur_niveau"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:56+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "a67292d1dc737c35d633d00fce6c835841797250bab0411773b4b14f33ba5dbb",
+  "texte_envoye_hash": "a67292d1dc737c35d633d00fce6c835841797250bab0411773b4b14f33ba5dbb",
+  "texte_envoye": "nom: Marteau arboricole\necole: Transmutation\nniveaux: Dru 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: un arbre de taille TG ou plus grand\nduree: 1 round/niveau (T)\njet_de_sauvegarde: non\nresistance_magie: non\n\nLe sort anime une branche et la dirige contre les ennemis du personnage. Un lanceur de sorts de niveau 10 ou moins peut utiliser un arbre de taille TG, un lanceur de niveau 11 à 15 un arbre de taille Gig et un lanceur de niveau 16 ou plus un arbre de taille Col. La branche animée fait une attaque de coup avec une valeur de Force égale à 10+ niveau de lanceur de sorts. La branche frappe une fois par round avec un bonus de base à l'attaque égal au niveau de lanceur de sorts+modificateur de force de la branche, avec le modificateur de taille approprié(-2 pour un TG, -4 pour un Gig, et -8 pour un Col). Le coup d'un arbre de taille TG inflige 2d6 points de dégâts, celui d'un Gig 3d6 et celui d'un Col 4d6. L'arbre ajoute 1,5 fois son modificateur de force à ces dégâts. Un arbre TG a une allonge de 4,50 mètres (3 c), un Gig de 6 mètres (4 c) et un Col de 9 mètres (6 c). L'arbre attaque la créature que le lanceur de sorts lui a désignée au moment ou il jette le sort. Il est incapable de se déplacer. Le personnage peut lui dire d'attaquer une autre cible par une action de mouvement. L'arbre ne gagne aucun bonus en cas de prise en tenaille et il ne peut pas aider un allié à prendre un adversaire en tenaille. Il ne peut pas attaquer un adversaire que le lanceur de sorts ne voit pas.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "animation_arbre\nattaque_au_contact\ndegats_physiques\nportee_allonge\nduree_limitee\ncontrole_lanceur\nforce_basee_sur_niveau",
+  "usage": {
+    "inputTokens": 683,
+    "outputTokens": 48
+  },
+  "arret": "end_turn"
+}

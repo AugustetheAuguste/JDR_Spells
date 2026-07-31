@@ -1,0 +1,26 @@
+{
+  "id": "mot-de-pouvoir-etourdissant",
+  "etiquettes": [
+    "effet_instantane_etourdi",
+    "limitation_points_de_vie",
+    "duree_variable_selon_pv",
+    "enchantement_coercition",
+    "mental",
+    "resistance_magie_possible",
+    "portee_courte"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:59+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "bc9dac14ff0452b9a03cc01595e63afbe83aa1110c1baddce1d160cfdafaa501",
+  "texte_envoye_hash": "bc9dac14ff0452b9a03cc01595e63afbe83aa1110c1baddce1d160cfdafaa501",
+  "texte_envoye": "nom: Mot de pouvoir étourdissant\necole: Enchantement (coercition)\ndescripteurs: mental\nniveaux: Ens/Mag 8, Psy 8, Sor 8\ntemps_incantation: 1 action simple\ncomposantes: V\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: 1 créature dotée de 150 pv ou moins\nduree: voir description\njet_de_sauvegarde: aucun\nresistance_magie: oui\n\nLe personnage prononce un mot qui étourdit instantanément une créature de son choix, qu’elle entende le mot ou non. La durée du sort dépend du nombre de points de vie actuel de la créature affectée. Une créature dotée de plus de 150 points de vie n’est pas affectée.\nPoints de vieDurée\nJusqu’à 504d4 rounds\n51–1002d4 rounds\n101–1501d4 rounds\n{c:sort} {c:sort magicien 8} {c:manuel des joueurs} {c:règles officielles}",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "effet_instantane_etourdi\nlimitation_points_de_vie\nduree_variable_selon_pv\nenchantement_coercition\nmental\nresistance_magie_possible\nportee_courte",
+  "usage": {
+    "inputTokens": 430,
+    "outputTokens": 52
+  },
+  "arret": "end_turn"
+}

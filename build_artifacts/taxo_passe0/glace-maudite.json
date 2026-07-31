@@ -1,0 +1,25 @@
+{
+  "id": "glace-maudite",
+  "etiquettes": [
+    "creation_mur_glace",
+    "javelots_projectiles",
+    "degats_froid",
+    "degats_eau_benite",
+    "zone_controle",
+    "transmutation_eau"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:46+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "24e27a1801389c9fcdc5f5c945bc1cfadcebac8ea1bfc6220545f5508d953337",
+  "texte_envoye_hash": "24e27a1801389c9fcdc5f5c945bc1cfadcebac8ea1bfc6220545f5508d953337",
+  "texte_envoye": "nom: Glace maudite\necole: Transmutation\ndescripteurs: eau, froid, mal\nniveaux: Prê 5\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (une fiole d'eau maudite ou 2,5 kg d'argent en poudre d'une valeur de 25 po)\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: un mur de glace ou un jet de javelots de glace (voir texte)\nduree: 1 minute/niveau, instantanée ou jusqu'à déchargement (voir texte)\njet_de_sauvegarde: réflexes pour annuler ou aucun (voir texte)\nresistance_magie: oui\n\nCe sort crée une large masse d'eau maudite gelée que le personnage peut utiliser de deux manières.\nJavelots de glace maudite. Le personnage crée, dans sa case, un nombre de javelots fait d'eau maudite gelée égal à son niveau de lanceur de sorts (15 au maximum). Ils se jettent d'eux mêmes sur une ou plusieurs cibles, distantes de moins de 3 mètres (2 c) les unes des autres. Le personnage doit réussir un jet d'attaque (un par javelot) pour toucher sa cible. Il utilise son bonus de base à l'attaque + son modificateur de sagesse. Les javelots infligent chacun 1d6 points de dégâts plus 1 point de dégâts de froid et 1 point de dégâts d'eau bénie. Les javelots sont détruits à la fin de l'attaque.\nMur de glace maudite. Le sort fonctionne comme un mur de glace (hémisphère ou plan). Les créatures qui reçoivent des dégâts en cas de contact avec l'eau maudite subissent 1 point de dégâts à chaque fois qu'elles touchent ou attaquent le mur. Un contact prolongé inflige 1d6 points de dégâts. Même une fois la glace brisée, il reste une couche d'air froid maudit. Toute créature qui la traverse (y compris celle qui a brisé le mur) inflige 1d6 points de dégâts +1 par niveau de lanceur de sorts (sans jet de sauvegarde). La moitié de ces dégâts sont de froid, l'autre d'eau maudite (les créatures qui ne sont pas sensibles à l'eau maudite ne subissent pas de dégâts).",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "creation_mur_glace\njavelots_projectiles\ndegats_froid\ndegats_eau_benite\nzone_controle\ntransmutation_eau",
+  "usage": {
+    "inputTokens": 806,
+    "outputTokens": 41
+  },
+  "arret": "end_turn"
+}

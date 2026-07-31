@@ -1,0 +1,26 @@
+{
+  "id": "messager-verrouille",
+  "etiquettes": [
+    "implantation_message_mental",
+    "communication_forcee_destinataire",
+    "protection_contre_revelation",
+    "amnesia_temporaire_coercition",
+    "transfert_message_unique",
+    "verification_identite_destinataire",
+    "oubli_apres_transmission"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:56+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "76eadc0832b887347b5744689080e6fdd1e5c7765e6a4437e939d3d1f39d6e53",
+  "texte_envoye_hash": "76eadc0832b887347b5744689080e6fdd1e5c7765e6a4437e939d3d1f39d6e53",
+  "texte_envoye": "nom: Messager verrouillé\necole: Enchantement (coercition)\ndescripteurs: effet mental, basé sur le langage\nniveaux: Bard 2, Cham 3, Hyp 2, Ens/Mag 3, Psy 3, Sor 3, Spi 3\ntemps_incantation: 10 minutes\ncomposantes: V, G\nportee: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: une créature vivante volontaire\nduree: permanente jusqu’à déchargement (cf. texte)\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui (inoffensif)\n\nLe personnage prononce un message court (d’un maximum de 10 mots par niveau de lanceur), l’implantant, en plus de l’identité du destinataire voulu du message, dans l’esprit d’une créature volontaire. La créature est consciente du message et de l’identité du destinataire. Toute tentative visant à prononcer, à écrire ou à communiquer autrement le message à n’importe qui d’autre que le destinataire prévu fait oublier le message à la cible pendant 1d6 minutes. Les tentatives de lecture de l’esprit de la cible (comme avec une détection de pensées) ou visant à forcer la cible à révéler le message (comme par la torture ou la coercition magique) provoquent également une amnésie temporaire.\nLa cible ne peut communiquer le message qu’à quelqu’un qu’elle croit être le destinataire prévu, ce qui signifie que les déguisements, les illusions et les effets de métamorphose peuvent duper la cible et la pousser à remettre le message. Une fois que la cible a communiqué le message, celui-ci est définitivement effacé de sa mémoire.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "implantation_message_mental\ncommunication_forcee_destinataire\nprotection_contre_revelation\namnesia_temporaire_coercition\ntransfert_message_unique\nverification_identite_destinataire\noubli_apres_transmission",
+  "usage": {
+    "inputTokens": 641,
+    "outputTokens": 60
+  },
+  "arret": "end_turn"
+}

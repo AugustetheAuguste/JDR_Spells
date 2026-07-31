@@ -1,0 +1,25 @@
+{
+  "id": "reparation",
+  "etiquettes": [
+    "restauration_objet",
+    "reparation_degats",
+    "recuperation_points_de_vie",
+    "suppression_condition_cassé",
+    "reparation_objet_magique",
+    "reconstruction_partielle"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:15+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "dc1a27f8ec1963ffbfbf9535308987c75096b68d0482f2be2e1a022ed122c79d",
+  "texte_envoye_hash": "dc1a27f8ec1963ffbfbf9535308987c75096b68d0482f2be2e1a022ed122c79d",
+  "texte_envoye": "nom: Réparation\necole: Transmutation\nniveaux: Bard 0, Cham 0, Con 0, ConU 0, Dru 0, Ens/Mag 0, Occ 0, Prê 0, Psy 0, Sor 0, Spi 0\ntemps_incantation: 10 minutes\ncomposantes: V, G\nportee: 3 m\ncible: 1 objet pesant jusqu’à 500 g/niveau\nduree: instantanée\njet_de_sauvegarde: Volonté, annule (inoffensif, objet)\nresistance_magie: oui (inoffensif, objet)\n\nCe sort permet de réparer les dommages superficiels causés aux objets et leur rend 1d4 points de vie. Dans le cas d’un objet cassé, l’objet n’est plus affecté par cette condition néfaste si l’objet se retrouve à au moins 50% de ses points de vie. Pour que ce sort fonctionne, le personnage doit disposer de tous les morceaux de l’objet. Le personnage peut utiliser ce sort pour réparer un objet magique cassé à condition que son niveau de lanceur de sorts soit égal ou supérieur à celui de l’objet. Il peut aussi réparer un objet magique détruit (à 0 point de vie ou moins) mais le sort ne lui rend pas ses aptitudes magiques. Ce sort n’affecte pas les créatures (pas même les créatures artificielles). Ce sort n’a aucun effet sur les objets pervertis ou transmutés mais il peut réparer les dégâts qu’ils ont subis.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "restauration_objet\nreparation_degats\nrecuperation_points_de_vie\nsuppression_condition_cassé\nreparation_objet_magique\nreconstruction_partielle",
+  "usage": {
+    "inputTokens": 548,
+    "outputTokens": 47
+  },
+  "arret": "end_turn"
+}

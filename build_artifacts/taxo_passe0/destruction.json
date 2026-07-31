@@ -1,0 +1,26 @@
+{
+  "id": "destruction",
+  "etiquettes": [
+    "destruction_instantanee",
+    "degats_massifs",
+    "consomption_du_corps",
+    "mort_difficile_a_inverser",
+    "jet_de_sauvegarde_vigueur",
+    "resistance_magie_applicable",
+    "sort_necromancie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:35+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "c1c2b59a5ce0b30203fc26852ec6dec8789c16d76e4bc64902cdd5edad44d458",
+  "texte_envoye_hash": "c1c2b59a5ce0b30203fc26852ec6dec8789c16d76e4bc64902cdd5edad44d458",
+  "texte_envoye": "nom: Destruction\necole: Nécromancie\ndescripteurs: mort\nniveaux: Cham 8, Prê 7, Sor 8\ntemps_incantation: 1 action simple\ncomposantes: V, G, F (symbole sacré ou maudit d’une valeur de 500 po)\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: 1 créature\nduree: instantanée\njet_de_sauvegarde: Vigueur, partiel\nresistance_magie: oui\n\nCe sort inflige immédiatement 10 points de dégâts par niveau de lanceur de sorts. S’il tue la cible, il consume le corps de celle-ci dans une flamme sacrée (ou maudite) (mais ni son équipement ni ses possessions). Si la victime réussit son jet de Vigueur, elle perd tout de même 10d6 points de vie. Un individu tué par ce sort ne peut être ramené à la vie que par une résurrection suprême, par un souhait énoncé avec le plus grand soin et suivi d’une résurrection, ou par un miracle.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "destruction_instantanee\ndegats_massifs\nconsomption_du_corps\nmort_difficile_a_inverser\njet_de_sauvegarde_vigueur\nresistance_magie_applicable\nsort_necromancie",
+  "usage": {
+    "inputTokens": 439,
+    "outputTokens": 59
+  },
+  "arret": "end_turn"
+}
