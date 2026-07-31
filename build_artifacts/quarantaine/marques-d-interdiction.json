@@ -1,8 +1,0 @@
-{
-  "id": "marques-d-interdiction",
-  "raison": "schéma : cible_typique — 'plusieurs_cibles' is not one of ['soi', 'allie', 'ennemi', 'zone', 'objet']",
-  "hash_source": "84beafd0adce1172827432aa146d44b1ea57d82566b94bf66a94eda7793f23a4",
-  "version_prompt": "p1.5",
-  "reponse_brute": "```json\n{\n  \"id\": \"marques-d-interdiction\",\n  \"resume_court\": \"Marque deux créatures pour les empêcher de s'attaquer l'une l'autre pendant la durée.\",\n  \"categorie_principale\": \"entrave\",\n  \"tags\": [\n    \"effet_mental\",\n    \"jet_de_sauvegarde\",\n    \"plusieurs_cibles\",\n    \"entrave_ou_immobilisation\",\n    \"duree_prolongee\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"plusieurs_cibles\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"un allié et un ennemi\"\n  },\n  \"notes_ambiguite\": \"La liste `cible_typique` ne contient pas de valeur pour « plusieurs créatures désignées ». La cible est composée d'un allié et d'un ennemi, ce qui ne correspond à aucune valeur unique de la liste. J'ai retenu la valeur la plus proche du contexte, mais cette ambiguïté persiste : le sort affecte deux créatures spécifiques, pas une zone, pas un objet, et pas seulement le lanceur ou un allié unique.\"\n}\n```",
-  "mis_en_quarantaine_le": "2026-07-30T14:58:29+00:00"
-}
