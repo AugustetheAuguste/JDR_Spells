@@ -1,0 +1,105 @@
+/**
+ * Filtering, kept apart from searching.
+ *
+ * The search knows nothing about filters and the filters know nothing about
+ * scores: the caller decides whether to filter the whole corpus (no query) or
+ * the result list (a query). That separation is the reason both can be tested in
+ * isolation, and the reason a filter change never has to re-run the index.
+ *
+ * The level filter is class-relative (B4). `niveaux` alone is meaningless — a
+ * spell is level 2 *for the bard*, and "the" level of a spell does not exist. So
+ * a level filter without a class is refused, not silently applied against some
+ * minimum: the minimum across classes is a number nobody asked for, and it would
+ * show a bard a "level 1" list containing spells the bard gets at 4.
+ */
+
+import type { EntreeSort } from '@/lib/donnees/index-web'
+
+export interface Filtres {
+  /** Class slug. Required for `niveaux`, and on its own it means "spells this
+   * class gets". */
+  readonly classe?: string | null
+  /** Levels, relative to `classe`. Ignored when `classe` is absent. */
+  readonly niveaux?: readonly number[]
+  /** School codes, as in `index.ecoles`. */
+  readonly ecoles?: readonly number[]
+  /** Component codes, ALL of which must be present — someone excluding material
+   * components wants spells with none of it, not spells with some other. */
+  readonly composantes?: readonly number[]
+  /** Saving-throw codes, as in `index.jets`. */
+  readonly jets?: readonly number[]
+  /** Tag codes from the optional LLM layer. A spell matches if it carries any. */
+  readonly tags?: readonly number[]
+  /** True keeps only spells whose corpus records a level disagreement. */
+  readonly desaccord?: boolean
+}
+
+/** The empty filter set: `appliquer` returns its input untouched. */
+export const FILTRES_VIDES: Filtres = {}
+
+function vide(valeurs: readonly number[] | undefined): boolean {
+  return valeurs === undefined || valeurs.length === 0
+}
+
+/** True when `filtres` would keep everything — lets a caller skip the pass and
+ * lets the UI know whether to offer "clear filters". */
+export function filtresActifs(filtres: Filtres): boolean {
+  return (
+    (filtres.classe ?? null) !== null ||
+    !vide(filtres.ecoles) ||
+    !vide(filtres.composantes) ||
+    !vide(filtres.jets) ||
+    !vide(filtres.tags) ||
+    filtres.desaccord === true
+  )
+}
+
+function retenir(sort: EntreeSort, filtres: Filtres): boolean {
+  const classe = filtres.classe ?? null
+  if (classe !== null) {
+    const niveau = sort.niv[classe]
+    if (niveau === undefined) return false
+    if (!vide(filtres.niveaux) && !filtres.niveaux!.includes(niveau)) return false
+  }
+  if (!vide(filtres.ecoles) && (sort.e === null || !filtres.ecoles!.includes(sort.e))) return false
+  if (!vide(filtres.jets) && (sort.j === null || !filtres.jets!.includes(sort.j))) return false
+  if (!vide(filtres.composantes) && !filtres.composantes!.every((c) => sort.c.includes(c))) {
+    return false
+  }
+  if (!vide(filtres.tags) && !filtres.tags!.some((t) => sort.t.includes(t))) return false
+  if (filtres.desaccord === true && !sort.d) return false
+  return true
+}
+
+/**
+ * Keep the entries matching `filtres`, in the order they came in.
+ *
+ * Order is preserved rather than re-sorted, because for a filtered search result
+ * the incoming order IS the relevance ranking; re-sorting here would throw away
+ * what the engine computed.
+ */
+export function appliquerFiltres<T extends EntreeSort>(
+  entrees: readonly T[],
+  filtres: Filtres,
+): T[] {
+  if (!filtresActifs(filtres)) return [...entrees]
+  return entrees.filter((entree) => retenir(entree, filtres))
+}
+
+/**
+ * Filter search results by resolving each back to its index entry.
+ *
+ * Results carry `i`/`id`/`s`/`n` only — enough to render a row, not enough to
+ * filter on — so the index entry is the authority here.
+ */
+export function appliquerFiltresAuxResultats<R extends { readonly id: string }>(
+  resultats: readonly R[],
+  parId: ReadonlyMap<string, EntreeSort>,
+  filtres: Filtres,
+): R[] {
+  if (!filtresActifs(filtres)) return [...resultats]
+  return resultats.filter((resultat) => {
+    const sort = parId.get(resultat.id)
+    return sort !== undefined && retenir(sort, filtres)
+  })
+}
