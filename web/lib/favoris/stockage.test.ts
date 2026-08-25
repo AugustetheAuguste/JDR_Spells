@@ -291,6 +291,68 @@ describe('exporter / importer', () => {
     expect(rapport?.etat.listes.map((liste) => liste.nom)).toEqual(['Ma liste', 'Importée'])
   })
 
+  it('« nouvelle liste » sur un état vide laisse une liste active', () => {
+    // The restore-on-another-device flow: nothing stored yet, so there is no
+    // active list to protect. Importing lists and activating none produces a
+    // state `valider` itself refuses — lists present, nothing selected — which
+    // the view can only render as empty.
+    const rapport = importer(
+      ETAT_FAVORIS_VIDE,
+      { version: 1, listes: [{ id_liste: 'x', nom: 'Importée', sorts: ['neuf'] }] },
+      'nouvelle',
+      T1,
+      () => 'l1',
+    )
+    expect(rapport?.etat.liste_active).toBe('l1')
+    expect(listeActive(rapport?.etat as EtatFavoris)?.sorts).toEqual(['neuf'])
+  })
+
+  it('active la première liste du fichier quand il en apporte plusieurs', () => {
+    const rapport = importer(
+      ETAT_FAVORIS_VIDE,
+      {
+        version: 1,
+        listes: [
+          { id_liste: 'a', nom: 'Première', sorts: ['un'] },
+          { id_liste: 'b', nom: 'Seconde', sorts: ['deux'] },
+        ],
+      },
+      'nouvelle',
+      T1,
+      (indice) => `l${indice}`,
+    )
+    expect(rapport?.etat.liste_active).toBe('l0')
+    expect(listeActive(rapport?.etat as EtatFavoris)?.nom).toBe('Première')
+  })
+
+  it('n’active rien quand le fichier n’apporte aucune liste', () => {
+    // Rule 3: there is nothing to activate, so the null is honest. The interface
+    // owes the user a sentence saying the file was empty — see the view test.
+    const rapport = importer(ETAT_FAVORIS_VIDE, { version: 1, listes: [] }, 'nouvelle', T1, () => 'l1')
+    expect(rapport?.listes_lues).toBe(0)
+    expect(rapport?.etat.listes).toEqual([])
+    expect(rapport?.etat.liste_active).toBeNull()
+  })
+
+  it('ne rend jamais un état où des listes existent sans liste active', () => {
+    // The invariant `valider` enforces on the read path, asserted on the write
+    // path: this is the class of defect, not one instance of it.
+    for (const depart of [ETAT_FAVORIS_VIDE, avecUneListe(['deja'])]) {
+      for (const mode of ['nouvelle', 'fusionner'] as const) {
+        const rapport = importer(
+          depart,
+          { version: 1, listes: [{ id_liste: 'x', nom: 'X', sorts: ['neuf'] }] },
+          mode,
+          T1,
+          () => 'l2',
+        )
+        if (rapport === null) continue
+        if (rapport.etat.listes.length > 0) expect(rapport.etat.liste_active).not.toBeNull()
+        expect(listeActive(rapport.etat)).not.toBeNull()
+      }
+    }
+  })
+
   it('réattribue les id_liste à l’import pour ne pas écraser une liste existante', () => {
     const cible = avecUneListe(['deja'])
     const rapport = importer(

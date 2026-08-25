@@ -364,6 +364,40 @@ describe('l’import', () => {
     expect(enregistre.listes[1]?.sorts).toEqual(['neuf'])
   })
 
+  it('dans un navigateur vierge, affiche les sorts importés au lieu de « liste vide »', async () => {
+    // The restore flow. A success message above an empty panel is the defect:
+    // the user is told the import worked and shown that nothing arrived.
+    await monterVue()
+    await userEvent.upload(
+      screen.getByLabelText('Fichier de favoris à importer'),
+      fichier({ version: 1, listes: [{ id_liste: 'x', nom: 'Importée', sorts: ['degout'] }] }),
+    )
+    await userEvent.click(
+      await screen.findByRole('button', { name: 'Créer de nouvelles listes' }),
+    )
+    expect((await screen.findByText(/Import terminé/)).textContent).toContain('1 id(s) ajouté(s)')
+    expect(screen.queryByText(/Aucun sort dans aucune liste/)).toBeNull()
+    expect(screen.queryByRole('heading', { name: 'Liste vide' })).toBeNull()
+    const enregistre = JSON.parse(window.localStorage.getItem(CLE_STOCKAGE) as string) as {
+      readonly liste_active: string | null
+    }
+    expect(enregistre.liste_active).not.toBeNull()
+  })
+
+  it('dit que le fichier ne contenait aucune liste, au lieu d’annoncer un import réussi', async () => {
+    // Rule 3: no active list is legitimate here, so the copy has to carry it.
+    await monterVue()
+    await userEvent.upload(
+      screen.getByLabelText('Fichier de favoris à importer'),
+      fichier({ version: 1, listes: [] }),
+    )
+    await userEvent.click(
+      await screen.findByRole('button', { name: 'Créer de nouvelles listes' }),
+    )
+    expect(await screen.findByText(/ne contenait aucune liste/)).toBeTruthy()
+    expect(screen.queryByText(/Import terminé/)).toBeNull()
+  })
+
   it('refuse un fichier illisible en le disant, sans rien modifier', async () => {
     await poserListeActive(['deja'])
     await userEvent.upload(
