@@ -5,6 +5,12 @@
 # standard. En particulier `unidecode` n'est PAS une dépendance — la
 # désaccentuation du slug passe par `unicodedata.normalize('NFKD', …)`.
 beautifulsoup4>=4.12
+# `lxml` is not optional despite being a *parser* for beautifulsoup4: the parser
+# is named explicitly at every call site (`BeautifulSoup(html, "lxml")`), so its
+# absence is a `FeatureNotFound`, not a fallback onto `html.parser`. It was
+# missing here while installed on the authors' machines — the suite passed
+# locally and failed on a clean environment.
+lxml>=5.0
 jsonschema>=4.20
 requests>=2.31
 
