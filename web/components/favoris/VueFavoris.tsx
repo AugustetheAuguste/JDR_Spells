@@ -354,7 +354,20 @@ export function VueFavoris() {
             </p>
           )}
 
-          {rapport === null ? null : (
+          {/* A file with no list is a legitimate read, not a successful import:
+              announcing « Import terminé » above an empty panel is the
+              contradiction this branch exists to prevent. */}
+          {rapport === null || rapport.listes_lues > 0 ? null : (
+            <p className="m-0 text-base text-encre-douce" role="status">
+              Ce fichier ne contenait aucune liste
+              {rapport.listes_ecartees > 0
+                ? ` lisible : ${rapport.listes_ecartees} liste(s) écartée(s) comme malformée(s)`
+                : ''}
+              . Rien n’a été ajouté.
+            </p>
+          )}
+
+          {rapport === null || rapport.listes_lues === 0 ? null : (
             <p className="m-0 text-base text-encre-douce" role="status">
               Import terminé : {rapport.ajoutes} id(s) ajouté(s), {rapport.deja} déjà
               présent(s), {rapport.listes_lues} liste(s) lue(s)

@@ -108,6 +108,24 @@ export function valider(brut: unknown): { readonly etat: EtatFavoris; readonly e
 }
 
 /**
+ * The one invariant of this module: **lists present, so one of them is active.**
+ *
+ * `valider` has always enforced it on the read path, which is why a reload used
+ * to repair a state that an import had left unselected. Enforcing it here too
+ * means the write path cannot produce a state the read path would refuse — the
+ * asymmetry was the defect, not the null itself.
+ *
+ * A list already active is never stolen: this only ever fills a hole. When there
+ * is no list at all there is nothing to activate, and the null is honest — the
+ * caller owes the user a sentence saying so rather than a success message.
+ */
+export function garantirActive(etat: EtatFavoris): EtatFavoris {
+  if (listeActive(etat) !== null) return etat
+  const premiere = etat.listes[0]?.id_liste ?? null
+  return premiere === etat.liste_active ? etat : { ...etat, liste_active: premiere }
+}
+
+/**
  * Read the state out of a storage.
  *
  * Takes the `Storage` rather than reaching for `localStorage`, so the corruption
@@ -291,9 +309,11 @@ export interface RapportImport {
  * Import a payload. Never overwrites: the caller must have chosen a mode.
  *
  * `fusionner` adds to the active list and cannot lose a pre-existing id — it is
- * a union. `nouvelle` appends the imported lists untouched and leaves the active
- * list exactly as it was, which is why it is safe to offer as the default when
- * nothing is selected.
+ * a union. `nouvelle` appends the imported lists untouched and never steals an
+ * active list, which is why it is safe to offer as the default when nothing is
+ * selected — but it does fill the hole when there was nothing active at all
+ * (`garantirActive`): the restore-into-a-fresh-browser case, where leaving the
+ * selection empty means importing lists nobody can see.
  */
 export function importer(
   etat: EtatFavoris,
@@ -313,8 +333,10 @@ export function importer(
       modifie_le: maintenant,
     }))
     return {
-      // `liste_active` untouched, deliberately: an import must not move the user.
-      etat: { ...etat, listes: [...etat.listes, ...listes] },
+      // An active list is never moved; an absent one is chosen. Both halves of
+      // the rule are `garantirActive`, so the write path cannot emit a state the
+      // read path would repair behind the user's back.
+      etat: garantirActive({ ...etat, listes: [...etat.listes, ...listes] }),
       ajoutes: listes.reduce((total, liste) => total + liste.sorts.length, 0),
       deja: 0,
       listes_lues: listes.length,
