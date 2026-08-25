@@ -1,0 +1,89 @@
+{
+  "id": "communion-ancestrale",
+  "nom": "Communion ancestrale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Communion%20ancestrale.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, F/FD (une effigie en pierre ou en métal de l’ancêtre du personnage)",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage contacte les esprits de ses ancêtres et puise dans leur grande sagesse pour améliorer ses propres connaissances. Consulter les esprits est une action complexe. Si le personnage le fait avant d’effectuer un test de Connaissances, il gagne un bonus d’intuition de +4 au test. S’il a déjà raté un test de Connaissances, il peut consulter ses ancêtres et effectuer une autre tentative. Le bonus d’intuition à ces tests est de +6 au 7e niveau de lanceur de sorts et de +8 au 11e niveau de lanceur de sorts. Le personnage peut consulter les esprits et bénéficier du bonus aussi souvent qu’il le souhaite tant que durent les effets du sort. Seul lui peut entendre les esprits lui parler.",
+  "description_html": "<br/><br/>Le personnage contacte les esprits de ses ancêtres et puise dans leur grande sagesse pour améliorer ses propres connaissances. Consulter les esprits est une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a>. Si le personnage le fait avant d’effectuer un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a>, il gagne un bonus d’intuition de +4 au test. S’il a déjà raté un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a>, il peut consulter ses ancêtres et effectuer une autre tentative. Le bonus d’intuition à ces tests est de +6 au 7e niveau de lanceur de sorts et de +8 au 11e niveau de lanceur de sorts. Le personnage peut consulter les esprits et bénéficier du bonus aussi souvent qu’il le souhaite tant que durent les effets du sort. Seul lui peut entendre les esprits lui parler.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Communion%20ancestrale.ashx",
+    "cache_fichier": "cache/html/411ac7303730ba460552078a093d7c885710ceb8.html",
+    "recupere_le": "2026-07-28T22:47:06.677011+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "communion-ancestrale",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Communion%20ancestrale.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "communion-ancestrale",
+    "resume_court": "Le lanceur contacte ses ancêtres pour obtenir un bonus aux tests de Connaissances.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "divination_information",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "communion-ancestrale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:07+00:00",
+    "hash_source": "c95419aa6ff9c67cf2a15e9f362106360436a01df65a2ba0547e6511ac2a8a7f"
+  }
+}

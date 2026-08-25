@@ -1,0 +1,114 @@
+{
+  "id": "frappe-miroir",
+  "nom": "Frappe miroir",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20miroir.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Psy": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un éclat de miroir)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage altère brièvement le cours du temps pour scinder une attaque de corps à corps en deux attaques. Avant la fin de son prochain tour, il fait une attaque au corps à corps, il compare le résultat avec la CA de deux adversaires à portée. Si ces deux adversaires prennent le personnage en tenaille, celui-ci gagne un bonus de +2 aux jets d’attaque (et aux jets de confirmation de coup critique, voir plus bas). S’il touche les deux, il inflige la moitié des dégâts à chacun. S’il n’en touche qu’un, il lui inflige les dégâts d’attaque normaux. En cas de coup critique, il peut se contenter d’un jet d’attaque pour confirmer le critique contre les deux adversaires. S’il confirme le critique sur les deux, il inflige à chacun la moitié des dégâts du coup critique. S’il confirme le critique contre un seul adversaire, le coup est juste un coup normal. Le sort expire si le personnage ne l’a pas utilisé avant la fin de son prochain tour.",
+  "description_html": "<br/><br/><br/>Le personnage altère brièvement le cours du temps pour scinder une attaque de corps à corps en deux attaques. Avant la fin de son prochain tour, il fait une attaque au corps à corps, il compare le résultat avec la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> de deux adversaires à portée. Si ces deux adversaires prennent le personnage <a class=\"pagelink\" href=\"Pathfinder-RPG.prise%20en%20tenaille.ashx\" title=\"prise en tenaille\">en tenaille</a>, celui-ci gagne un bonus de +2 aux jets d’attaque (et aux jets de confirmation de <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>, voir plus bas). S’il touche les deux, il inflige la moitié des dégâts à chacun. S’il n’en touche qu’un, il lui inflige les dégâts d’attaque normaux. En cas de <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>, il peut se contenter d’un jet d’attaque pour confirmer le critique contre les deux adversaires. S’il confirme le critique sur les deux, il inflige à chacun la moitié des dégâts du <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>. S’il confirme le critique contre un seul adversaire, le coup est juste un coup normal. Le sort expire si le personnage ne l’a pas utilisé avant la fin de son prochain tour.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20miroir.ashx",
+    "cache_fichier": "cache/html/e3b9fae21d330f9b45a1f63a6577b03cff34c858.html",
+    "recupere_le": "2026-07-28T22:54:53.386947+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "frappe-miroir",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20miroir.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "frappe-miroir",
+    "resume_court": "Le lanceur scinde une attaque de corps à corps en deux coups contre deux adversaires en tenaille.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "transformation_du_sujet",
+      "duree_instantanee",
+      "attaque_de_contact"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités offensives du lanceur plutôt que de causer directement des dégâts. La transformation du temps et la scission de l'attaque justifient le tag transformation_du_sujet. Le bonus de +2 aux jets d'attaque justifie bonus_chiffre.",
+    "slug": "frappe-miroir",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:39+00:00",
+    "hash_source": "b2b2734e65d0e8b5042700f7b16c7b03c2c4fc641a5bb916f68b5fb8f3b509db"
+  }
+}

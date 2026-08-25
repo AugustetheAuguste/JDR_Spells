@@ -1,0 +1,73 @@
+{
+  "id": "mixture-pour-bombe-ciblee",
+  "nom": "Mixture pour bombe ciblée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture%20pour%20bombe%20cibl%c3%a9e.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (spécial, voir plus bas)",
+  "resistance_magie": "spécial, voir plus bas",
+  "description": "Quand le personnage boit un extrait créé avec cette formule, il voit ses réserves magiques se modifier de façon significative et transformer toutes les bombes qu’il fabrique pendant que l’extrait fait effet. Cette modification n’a aucune conséquence sur les découvertes que le personnage utilise pour modifier ses bombes mais il ne peut activer qu’un effet de mixture (une formule avec les mots « mixture pour bombe » dans l’intitulé) à la fois. S’il boit une autre mixture pour bombe, les effets de la mixture absorbée précédemment se dissipent au profit de ceux de la nouvelle.\nQuand le personnage lance une bombe, elle affecte seulement sa cible directe, elle ne fait pas de dégâts d’aspersion. En revanche, elle inflige des dégâts normaux plus le double du modificateur d’Intelligence du personnage, pas seulement les dégâts de base plus le modificateur d’Intelligence.",
+  "description_html": "<br/><br/>Quand le personnage boit un <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAITS\" title=\"L'alchimiste\">extrait</a> créé avec cette formule, il voit ses réserves magiques se modifier de façon significative et transformer toutes les <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombes</a> qu’il fabrique pendant que l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAITS\" title=\"L'alchimiste\">extrait</a> fait effet. Cette modification n’a aucune conséquence sur les <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#DECOUVERTES\" title=\"L'alchimiste\">découvertes</a> que le personnage utilise pour modifier ses <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombes</a> mais il ne peut activer qu’un <i>effet de mixture</i> (une <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#FORMULES\" title=\"L'alchimiste\">formule</a> avec les mots « mixture pour bombe » dans l’intitulé) à la fois. S’il boit une autre <i>mixture pour bombe</i>, les effets de la mixture absorbée précédemment se dissipent au profit de ceux de la nouvelle.<br/><br/>Quand le personnage lance une <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#BOMBES\" title=\"L'alchimiste\">bombe</a>, elle affecte seulement sa cible directe, elle ne fait pas de dégâts d’aspersion. En revanche, elle inflige des dégâts normaux plus le double du modificateur d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> du personnage, pas seulement les dégâts de base plus le modificateur d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mixture%20pour%20bombe%20cibl%c3%a9e.ashx",
+    "cache_fichier": "cache/html/c1c536132765d507df0b6315e218c30e955d444b.html",
+    "recupere_le": "2026-07-28T23:00:46.799158+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "mixture-pour-bombe-ciblee",
+    "resume_court": "L'alchimiste boit un extrait qui modifie ses bombes pour cibler précisément et doubler le bonus d'Intelligence aux dégâts.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "arme_ou_munition",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités de lancer des bombes (bonus aux dégâts et ciblage précis) sans infliger lui-même de dégâts directs. La catégorie est amelioration plutôt que attaque_directe car le sort ne lance pas l'attaque, il modifie seulement les bombes futures de l'alchimiste.",
+    "slug": "mixture-pour-bombe-ciblee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:00+00:00",
+    "hash_source": "bab47a7e14a11df181b9ea8a98d1d581d4077ad835ed96ddd2aca97a8520dba7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "451d1ac9749665617e583419ae3f002eb7ba287a78b8c64379d91a0852591c03",
+  "hash_vue": "6d71a43b2837b97243bb614fd3579e784dd877ae95a5e8e01bcecf507588b665"
+}

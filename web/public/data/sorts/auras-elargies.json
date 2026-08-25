@@ -1,0 +1,88 @@
+{
+  "id": "auras-elargies",
+  "nom": "Auras élargies",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Auras%20%c3%a9largies.ashx",
+  "ecole": "transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 2,
+    "Pal": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "La portée des auras de paladin ou d’antipaladin du personnage est doublée. Par exemple, si le personnage est un paladin, son aura de bravoure affecte les alliés situés dans un rayon de 6 mètres plutôt que de 3 mètres (2 c).",
+  "description_html": "<br/><br/>La portée des auras de <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx\" title=\"Le paladin\">paladin</a> ou d’<a class=\"pagelink\" href=\"Pathfinder-RPG.antipaladin.ashx\" title=\"L'antipaladin\">antipaladin</a> du personnage est doublée. Par exemple, si le personnage est un <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx\" title=\"Le paladin\">paladin</a>, son aura de bravoure affecte les alliés situés dans un rayon de 6 mètres plutôt que de 3 mètres (2 <abbr title=\"cases\">c</abbr>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Auras%20%c3%a9largies.ashx",
+    "cache_fichier": "cache/html/bc79f9ecadf94ebf20c2be6130c5e47367a20ce9.html",
+    "recupere_le": "2026-07-28T22:42:47.927214+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "auras-elargies",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Auras%20%c3%a9largies.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "auras-elargies",
+    "resume_court": "Double la portée des auras de paladin ou d'antipaladin du lanceur pendant 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "auras-elargies",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:28+00:00",
+    "hash_source": "eb61082ad2bbf5fabd1dc35e0bec4474843fbfbbb3b81124cd6ee6eeeecba509"
+  }
+}

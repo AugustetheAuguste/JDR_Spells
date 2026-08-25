@@ -1,0 +1,96 @@
+{
+  "id": "transfert-d-affliction",
+  "nom": "Transfert d'affliction",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20daffliction.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 6,
+    "Psy": 6,
+    "Sor": 7,
+    "Spi": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "1 créature affectée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Les mains du personnage pénètrent dans le corps de la cible et en retirent une affliction sous forme d’objet tangible : une masse de chair visqueuse. La cible guérit comme si elle avait bénéficié de guérison des maladies, délivrance des malédictions ou neutralisation du poison. De plus, cette masse de chair visqueuse permet au personnage de transmettre cette affliction à une autre créature par une attaque de contact, comme s’il livrait un sort de contact. L’affliction provoque les mêmes effets, avec les mêmes jets de sauvegarde et DD.",
+  "description_html": "<br/><br/>Les mains du personnage pénètrent dans le corps de la cible et en retirent une affliction sous forme d’objet tangible : une masse de chair visqueuse. La cible guérit comme si elle avait bénéficié de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20des%20maladies.ashx\" title=\"Guérison des maladies\">guérison des maladies</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">délivrance des malédictions</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.neutralisation%20du%20poison.ashx\" title=\"Neutralisation du poison\">neutralisation du poison</a></i>. De plus, cette masse de chair visqueuse permet au personnage de transmettre cette affliction à une autre créature par une <a class=\"pagelink\" href=\"Pathfinder-RPG.contact.ashx\" title=\"contact\">attaque de contact</a>, comme s’il livrait un sort de contact. L’affliction provoque les mêmes effets, avec les mêmes jets de sauvegarde et <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20daffliction.ashx",
+    "cache_fichier": "cache/html/29f36b4fd342c127fcfe7fef50f9af7915e41265.html",
+    "recupere_le": "2026-07-29T07:43:03.304714+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "transfert-d-affliction",
+    "resume_court": "Le lanceur extrait une affliction d'une créature et peut la transmettre à une autre par contact.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "attaque_de_contact",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature affectée"
+    },
+    "notes_ambiguite": "Le sort soigne d'abord la cible initiale (rôle de soin), mais peut ensuite transmettre l'affliction à un ennemi via une attaque de contact. La cible typique est l'allié guéri, bien que le sort permette secondairement de cibler un ennemi pour transmettre l'affliction.",
+    "slug": "transfert-d-affliction",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:41+00:00",
+    "hash_source": "8f480316f1be79602947a56bb0b2879a072ab5c1b457c361ae76e132a98af084"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d9b6464e5818bb86da505d372d4f3794be17ec89297f0ba944fa1eb321355852",
+  "hash_vue": "f95f5e928eee9f88e3868f52bf2984a3ba44d1e7eff7a4c897a9d206788b472e"
+}

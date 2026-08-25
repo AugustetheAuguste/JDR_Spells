@@ -1,0 +1,82 @@
+{
+  "id": "chevaucher-la-foudre",
+  "nom": "Chevaucher la foudre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevaucher%20la%20foudre.ashx",
+  "ecole": "évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Par une action simple, le personnage peut se changer en éclair de foudre et se déplacer instantanément en ligne droite sur une distance maximale de 36 mètres. Il se matérialise à nouveau à son point d’arrivée par une action libre. Ce déplacement ne provoque pas d’attaque d’opportunité. Les créatures qui se trouvent sur son chemin reçoivent 10d6 points de dégâts électriques et sont chancelantes pendant 1 round (jet de Réflexes 1/2 dégâts et ne pas chanceler, on applique la résistance à la magie). Les objets qui se trouvent sur le trajet du personnage subissent aussi des dégâts : les combustibles s’embrasent et les métaux avec un point de fusion très bas se mettent à fondre. Si le chemin du personnage est interrompu par une barrière ou s’il est détourné, ce dernier se matérialise le plus près possible de sa destination finale, dans une case libre. Les cibles qui se trouvent entre son point de départ et son nouveau point d’arrivée subissent des dégâts normaux. Tant que le sort fait effet, le personnage est immunisé contre l’électricité.",
+  "description_html": "<br/><br/>Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, le personnage peut se changer en éclair de foudre et se déplacer instantanément en ligne droite sur une distance maximale de 36 mètres. Il se matérialise à nouveau à son point d’arrivée par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>. Ce déplacement ne provoque pas d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d’opportunité</a>. Les créatures qui se trouvent sur son chemin reçoivent 10d6 points de dégâts électriques et sont <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> (jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">1/2 dégâts</a> et ne pas <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chanceler</a>, on applique la <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie.ashx\" title=\"Résistance à la magie\">résistance à la magie</a>). Les objets qui se trouvent sur le trajet du personnage subissent aussi des dégâts : les combustibles s’embrasent et les métaux avec un point de fusion très bas se mettent à fondre. Si le chemin du personnage est interrompu par une barrière ou s’il est détourné, ce dernier se matérialise le plus près possible de sa destination finale, dans une case libre. Les cibles qui se trouvent entre son point de départ et son nouveau point d’arrivée subissent des dégâts normaux. Tant que le sort fait effet, le personnage est immunisé contre l’électricité.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevaucher%20la%20foudre.ashx",
+    "cache_fichier": "cache/html/5fd6d83848fc1bf56246406c739ec1316153f47b.html",
+    "recupere_le": "2026-07-28T22:46:29.525229+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "chevaucher-la-foudre",
+    "resume_court": "Le lanceur se transforme en éclair et se déplace en ligne droite, blessant les créatures sur son passage.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "degats_directs",
+      "transformation_du_sujet",
+      "deplacement_ou_teleportation",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "immunite_ou_resistance_element"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": "electricite",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "10d6 points de dégâts électriques",
+      "condition_infligee": [
+        "sont chancelantes pendant 1 round"
+      ],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "chevaucher-la-foudre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:53+00:00",
+    "hash_source": "3ead3c15b4d2b2f9dd974c64ce06be69864c21f420b4f9cb607c914f123863a1"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6b4cd8f1678b06c99fd18de40104baa0284b7233925f2513b2cd6f50f23d5526",
+  "hash_vue": "add8408fc61c63a7496bd7a0f235b4e64101449a397514fda6c1383f4b8840ec"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "siphon-magique",
+  "nom": "Siphon magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Siphon%20magique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Prê": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (du fil de cuivre enroulé autour de la paume)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort permet de transférer un effet magique depuis la créature touchée jusqu’au personnage. Quand le personnage touche une créature, le siphon magique tente de mettre fin à un sort en cours d’effet lancé sur la cible, comme le fait une dissipation de la magie.\nSi le personnage connaît l’effet précis du sort qu’il souhaite cibler, il peut le nommer afin de le prendre pour cible ; sinon, le siphon magique commence par l’effet de sort de plus haut niveau puis par ordre décroissant de niveau de tous les sorts qui affectent la cible, jusqu’à ce qu’il dissipe un sort ou qu’il ait échoué pour chacun d’eux, comme pour une dissipation de la magie.\nSi le siphon magique parvient à mettre fin à un effet de sort sur la cible, cet effet est transféré sur le personnage jusqu’à la fin de sa durée restante. Le sort transféré continue de produire ses effets jusqu’à la fin de cette durée, en considérant que le personnage était la cible première du sort. Si le sort autorise un jet de sauvegarde pour y résister, le personnage peut effectuer ce jet comme si le sort venait d’être lancé sur lui, mais ceci ne « réinitialise » pas pour autant la durée du sort.",
+  "description_html": "<br/><br/>Ce sort permet de transférer un effet magique depuis la créature touchée jusqu’au personnage. Quand le personnage touche une créature, le <i>siphon magique</i> tente de mettre fin à un sort en cours d’effet lancé sur la cible, comme le fait une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i>.<br/><br/>Si le personnage connaît l’effet précis du sort qu’il souhaite cibler, il peut le nommer afin de le prendre pour cible ; sinon, le <i>siphon magique</i> commence par l’effet de sort de plus haut niveau puis par ordre décroissant de niveau de tous les sorts qui affectent la cible, jusqu’à ce qu’il dissipe un sort ou qu’il ait échoué pour chacun d’eux, comme pour une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i>. <br/><br/>Si le <i>siphon magique</i> parvient à mettre fin à un effet de sort sur la cible, cet effet est transféré sur le personnage jusqu’à la fin de sa durée restante. Le sort transféré continue de produire ses effets jusqu’à la fin de cette durée, en considérant que le personnage était la cible première du sort. Si le sort autorise un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> pour y résister, le personnage peut effectuer ce jet comme si le sort venait d’être lancé sur lui, mais ceci ne « réinitialise » pas pour autant la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Siphon%20magique.ashx",
+    "cache_fichier": "cache/html/bfc53946c8934dce172c11736e8827e0fda87537.html",
+    "recupere_le": "2026-07-29T07:40:39.442223+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "siphon-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Siphon%20magique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "siphon-magique",
+    "resume_court": "Transfère un effet magique d'une créature touchée au lanceur, comme une dissipation de la magie.",
+    "categorie_principale": "dissipation",
+    "tags": [
+      "dissipation_ou_contresort",
+      "attaque_de_contact",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Quand le personnage touche une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "siphon-magique",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:48+00:00",
+    "hash_source": "2bd14d10ed6f27d74220abfa954d35a59545fc35afdf4a3c3d023657451f78e1"
+  }
+}

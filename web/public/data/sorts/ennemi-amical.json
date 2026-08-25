@@ -1,0 +1,101 @@
+{
+  "id": "ennemi-amical",
+  "nom": "Ennemi amical",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ennemi%20amical.ashx",
+  "ecole": "Enchantement (coercition) (effet mental)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5,
+    "Hyp": 5,
+    "Psy": 7
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, G",
+  "portee": "intermédiaire (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature vivante",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage lance ce sort quand un ennemi est sur le point d'attaquer un de ses alliés. La créature attaque alors une cible valide choisie par le personnage ou son attaque est avortée. De plus, la cible du sort est considérée comme un allié pour les prises en tenailles pendant 1 round.",
+  "description_html": "<br/><br/>Le personnage lance ce sort quand un ennemi est sur le point d'attaquer un de ses alliés. La créature attaque alors une cible valide choisie par le personnage ou son attaque est avortée. De plus, la cible du sort est considérée comme un allié pour les <a class=\"pagelink\" href=\"Pathfinder-RPG.pris%20en%20tenaille.ashx\" title=\"Pris en tenaille\">prises en tenailles</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ennemi%20amical.ashx",
+    "cache_fichier": "cache/html/34f1c4be76826fa8b02365b544af732e22ff9037.html",
+    "recupere_le": "2026-07-28T22:52:18.222927+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "ennemi-amical",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ennemi%20amical.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 5
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "ennemi-amical",
+    "resume_court": "Redirige l'attaque d'un ennemi vers une cible au choix du lanceur ou l'avorte.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort est lancé en réaction (action immédiate) et modifie le comportement de l'ennemi sans l'immobiliser ni le paralyser. Il s'agit d'une entrave au sens où il restreint les actions de la créature (redirection ou avortement de l'attaque), bien que le mécanisme soit coercitif plutôt que physique.",
+    "slug": "ennemi-amical",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:23+00:00",
+    "hash_source": "ada1ba684fe0f7a930b859ecbb2308f5cae4700807194a6bde7189698fa55bc5"
+  }
+}

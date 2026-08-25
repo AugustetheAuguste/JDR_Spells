@@ -1,0 +1,111 @@
+{
+  "id": "soins-intensifs-de-groupe",
+  "nom": "Soins intensifs de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20intensifs%20de%20groupe.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 8,
+    "Dru": 9,
+    "Prê": 8,
+    "Sor": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) ou Volonté, 1/2 dégâts (voir description)",
+  "resistance_magie": "oui (inoffensif) ou oui (voir description)",
+  "description": "Ce sort est semblable à soins légers de groupe, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +40).",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers%20de%20groupe.ashx\" title=\"Soins légers de groupe\">soins légers de groupe</a></i>, si ce n’est qu’il guérit 4d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +40).<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20intensifs%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/dd893b6804f3d222f34e8d74cc13f8b8f714c5ab.html",
+    "recupere_le": "2026-07-29T07:40:43.450175+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "soins-intensifs-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20intensifs%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 8
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 9
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "soins-intensifs-de-groupe",
+    "resume_court": "Guérit 4d8 points de dégâts (+1 par niveau) à plusieurs créatures alliées à portée courte.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "soins-intensifs-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:44+00:00",
+    "hash_source": "4c452c37a91258c0d4ebdb562cb48c95813001e978793a10661393d9ade205c3"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "revigorer-de-groupe",
+  "nom": "Revigorer de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Revigorer%20de%20groupe.ashx",
+  "ecole": "Illusion (chimère)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "créatures touchées, jusqu'à une par niveau",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme revigorer mais il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.revigorer.ashx\" title=\"Revigorer\">revigorer</a></i> mais il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Revigorer%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/a09d3104ec36d278673a845e8dce6502224a4526.html",
+    "recupere_le": "2026-07-29T07:39:11.415016+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "revigorer-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Revigorer%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "revigorer-de-groupe",
+    "resume_court": "Une illusion qui revigore plusieurs créatures touchées pendant 10 minutes par niveau.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures touchées, jusqu'à une par niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à un sort « revigorer » non fourni. L'école est Illusion (chimère), ce qui justifie la catégorie illusion. L'effet exact (amélioration, soin ou autre) ne peut être déterminé que par le sort de référence, absent du corpus. La cible est classée « allie » car le sort est inoffensif et s'applique à des créatures volontaires touchées.",
+    "slug": "revigorer-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:07+00:00",
+    "hash_source": "7a1b51ef6972d8acd6dac9ae811f96b5c618833cebaf2be45313f1aa514a5c50"
+  }
+}

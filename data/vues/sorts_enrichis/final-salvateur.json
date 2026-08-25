@@ -1,0 +1,76 @@
+{
+  "id": "final-salvateur",
+  "nom": "Final salvateur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20salvateur.ashx",
+  "ecole": "Évocation (effet mental)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Pour lancer ce sort, le personnage doit être en train de donner une représentation bardique. Il y met immédiatement un terme avec un geste théâtral quand une créature à portée et sous l'effet de la représentation rate son jet de sauvegarde, ce qui lui permet de relancer immédiatement le jet raté.",
+  "description_html": "<br/><br/>Pour lancer ce sort, le personnage doit être en train de donner une <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation bardique</a>. Il y met immédiatement un terme avec un geste théâtral quand une créature à portée et sous l'effet de la <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation</a> rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, ce qui lui permet de relancer immédiatement le jet raté.<br/><br/>",
+  "mythique": {
+    "description": "Ajoutez le grade du personnage à sa relance du jet de sauvegarde.",
+    "description_html": "Ajoutez le <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage à sa relance du jet de sauvegarde."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20salvateur.ashx",
+    "cache_fichier": "cache/html/47562cc5fd16f76903545b2a922372dca400f8e9.html",
+    "recupere_le": "2026-07-28T22:53:27.324013+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "final-salvateur",
+    "resume_court": "Interrompt une représentation bardique pour permettre à une créature de relancer un jet de sauvegarde échoué.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": "Le sort est classé en amélioration car il offre un avantage au sujet (relancer un jet échoué), bien que l'école soit Évocation. L'effet mental est noté dans l'école du texte source. Le tag bonus_chiffre reflète l'opportunité de relancer, qui constitue un avantage numérique.",
+    "slug": "final-salvateur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:04+00:00",
+    "hash_source": "2ab742728607cb1a208586d1daca2099f36e2a9e549d0eb049bc47b369a52ce5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e55cbb2d8607d24ac24a0c44f1f011c4263249323020494cb6f14008f559323a",
+  "hash_vue": "8b472ea8ca176420bbb5ae1e83e8f7a2657e60170b85a019c8b2fba2c051a33d"
+}

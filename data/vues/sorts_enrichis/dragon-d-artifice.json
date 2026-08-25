@@ -1,0 +1,88 @@
+{
+  "id": "dragon-d-artifice",
+  "nom": "Dragon d'artifice",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon%20dartifice.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "feu",
+    "lumière"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un tas de soufre enveloppé dans un tissu)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "feux d’artifice en forme de dragon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Réflexes pour annuler",
+  "resistance_magie": "oui",
+  "description": "Événement favori des festivals halfelins de l’été, ce sort crée des feux d’artifice en forme de petits dragons. Une fois par round, par une action de mouvement, le personnage peut désigner une case de 1,50 mètre situé à portée et y envoyer sa démonstration pyrotechnique. Les feux d’artifice suivent un chemin en zigzag qui va du personnage à la case choisie. Ils évitent toujours les créatures et les objets placés sur leur chemin et explosent dans la case choisie en une gerbe de feu et de couleurs. Les créatures qui se trouvent dans la case reçoivent 1d4 points de dégâts de feu et sont éblouies pendant 1 round (Réflexes 1/2 dégâts, annule l’éblouissement). Normalement, quand ce sort est utilisé lors d’un festival, la case de l’explosion est située haut dans le ciel, par mesure de sécurité et pour améliorer la visibilité des spectateurs.",
+  "description_html": "<br/><br/>Événement favori des festivals halfelins de l’été, ce sort crée des feux d’artifice en forme de petits dragons. Une\nfois par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>, le personnage peut désigner une case de 1,50 mètre situé à portée et y envoyer sa démonstration pyrotechnique. Les feux d’artifice suivent un chemin en zigzag qui va du personnage à la case choisie. Ils évitent toujours les créatures et les objets placés sur leur chemin et explosent dans la case choisie en une gerbe de feu et de couleurs. Les créatures qui se trouvent dans la case reçoivent 1d4 points de dégâts de feu et sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouies</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> 1/2 dégâts, annule l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">éblouissement</a>). Normalement, quand ce sort est utilisé lors d’un festival, la case de l’explosion est située haut dans le ciel, par mesure de sécurité et pour améliorer la visibilité des spectateurs.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon%20dartifice.ashx",
+    "cache_fichier": "cache/html/f7642221454057678d533896c3863765a2a1ef1a.html",
+    "recupere_le": "2026-07-28T22:51:45.154008+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "dragon-d-artifice",
+    "resume_court": "Des feux d'artifice en forme de dragons qui explosent à distance, infligeant des dégâts de feu et éblouissant.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [
+      "ebloui"
+    ],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts de feu",
+      "condition_infligee": [
+        "sont éblouies pendant 1 round"
+      ],
+      "cible_typique": "une case de 1,50 mètre situé à portée"
+    },
+    "notes_ambiguite": null,
+    "slug": "dragon-d-artifice",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:00+00:00",
+    "hash_source": "a78fb4c31609d6ea1368766f3e7cd911a52fae73fa56becae0414f0c72eb2085"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "eeedfd8ee04e49dbd4e404da75b9dc660760993fce92f78a38f53e1b42e09735",
+  "hash_vue": "54457c0ffb9d975c1429af652b985fb3be409edfc41a42592b9774fb5ee065aa"
+}

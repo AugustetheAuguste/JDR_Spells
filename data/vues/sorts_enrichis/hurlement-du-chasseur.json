@@ -1,0 +1,82 @@
+{
+  "id": "hurlement-du-chasseur",
+  "nom": "Hurlement du chasseur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20du%20chasseur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "émotion",
+    "effet mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "6 m (4 c)",
+  "cible": "émanation de 6 m (4 c) de rayon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "non",
+  "description": "D'un seul hurlement primitif, le personnage terrifie ses adversaires. Pendant toute la durée du sort, il considère les créatures affectées comme ses ennemis jurés, gagnant ainsi un bonus de +2 aux jets d'attaque, de dégâts et aux tests de Bluff, de Connaissances, de Perception, de Psychologie et de Survie lancés contre elles. Si l'une des créatures est déjà un ennemi juré du personnage, elle est secouée. C'est un effet mental de peur.",
+  "description_html": "<br/><br/>D'un seul hurlement primitif, le personnage terrifie ses adversaires. Pendant toute la durée du sort, il considère les créatures affectées comme ses <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE\" title=\"Le rôdeur\">ennemis jurés</a>, gagnant ainsi un bonus de +2 aux jets d'attaque, de dégâts et aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.Psychologie.ashx\" title=\"Psychologie\">Psychologie</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.Survie.ashx\" title=\"Survie\">Survie</a> lancés contre elles. Si l'une des créatures est déjà un <a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE\" title=\"Le rôdeur\">ennemi juré</a> du personnage, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouée</a>. C'est un <a class=\"pagelink\" href=\"Pathfinder-RPG.effet%20mental.ashx\" title=\"effet mental\">effet mental</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">peur</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20du%20chasseur.ashx",
+    "cache_fichier": "cache/html/c4bc13024a7ff81e9774d60862354653959500f7.html",
+    "recupere_le": "2026-07-28T22:56:18.480051+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "hurlement-du-chasseur",
+    "resume_court": "Le lanceur pousse un hurlement terrifiant qui le rend plus efficace contre ses adversaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "effet_mental",
+      "zone_d_effet",
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est secouée"
+      ],
+      "cible_typique": "émanation de 6 m (4 c) de rayon"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités du lanceur plutôt que de l'affecter directement. La condition « secouée » ne s'applique que si la créature est déjà un ennemi juré, ce qui limite son application. Le bonus de +2 s'applique au lanceur, pas aux cibles.",
+    "slug": "hurlement-du-chasseur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:12+00:00",
+    "hash_source": "36c5b9a24df61e86cc82c1ace1dbb5b889a61fda7819eb6f1ebe9484d31813de"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "944146dec304a2fb344161b7bd27dabb7884c274d190253ac5a275858ae41574",
+  "hash_vue": "065a1451868eefdd76906434c6a7e103d5013c9fd929ae668819b2f8d4925347"
+}

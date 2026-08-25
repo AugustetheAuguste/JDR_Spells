@@ -1,0 +1,92 @@
+{
+  "id": "bruit-penible",
+  "nom": "Bruit pénible",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bruit%20p%c3%a9nible.ashx",
+  "ecole": "évocation",
+  "descripteurs": [
+    "sonore"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Inq": 2
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1d4 créatures vivantes",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage émet un puissant bruit qui fait vibrer la chair des vivants. Les cibles doivent faire un jet de sauvegarde ou devenir fiévreuses. Les créatures immunisées contre les coups critiques le sont aussi contre ce sort.",
+  "description_html": "<br/><br/>Le personnage émet un puissant bruit qui fait vibrer la chair des vivants. Les cibles doivent faire un \n<a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ou devenir <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx\" title=\"Les états préjudiciables\">fiévreuses</a>. Les créatures immunisées contre les coups critiques le sont aussi contre ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bruit%20p%c3%a9nible.ashx",
+    "cache_fichier": "cache/html/fe3fcdd642fb1f2f78111cffd11b65119ec936f5.html",
+    "recupere_le": "2026-07-28T22:45:06.807230+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bruit-penible",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bruit%20p%c3%a9nible.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bruit-penible",
+    "resume_court": "Un bruit puissant qui fait vibrer la chair et rend les cibles fiévreuses.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "bruit",
+      "condition_infligee": [],
+      "cible_typique": "1d4 créatures vivantes"
+    },
+    "notes_ambiguite": "Le texte mentionne « devenir fiévreuses » mais « fiévreuse » n'existe pas dans la liste des conditions. La condition la plus proche serait « secoue » (malus de moral), mais le texte ne justifie pas cette interprétation. Aucune condition retenue. Le type de dégâts est « son » car le descripteur est « sonore » et le sort émet « un puissant bruit ».",
+    "slug": "bruit-penible",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:21+00:00",
+    "hash_source": "b7a4d64b01ef0ec5a8840f332c94af17d69b45fcaadb0f546b344141adb2e4aa"
+  }
+}

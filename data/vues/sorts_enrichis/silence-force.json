@@ -1,0 +1,116 @@
+{
+  "id": "silence-force",
+  "nom": "Silence forcé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Silence%20forc%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "D’un simple geste, le personnage étouffe les sons autour de la cible, ce qui l’empêche de crier ou de faire un bruit élevé, mais pas de lancer des sorts. La cible peut toujours utiliser des effets sonores mais leur DD est réduit de 2. La cible gagne un bonus de +2 aux jets de sauvegarde contre les effets sonores. Elle gagne un bonus de circonstances de +4 aux tests de Discrétion.",
+  "description_html": "<br/><br/>D’un simple geste, le personnage étouffe les sons autour de la cible, ce qui l’empêche de crier ou de faire un bruit élevé, mais pas de lancer des sorts. La cible peut toujours utiliser des <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">effets sonores</a> mais leur <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> est réduit de 2. La cible gagne un bonus de +2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> contre les <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">effets sonores</a>. Elle gagne un bonus de circonstances de +4 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Discr%c3%a9tion.ashx\" title=\"Discrétion\">Discrétion</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Silence%20forc%c3%a9.ashx",
+    "cache_fichier": "cache/html/39b6b6702532bb5a99046a0d741cb56d7b782f1f.html",
+    "recupere_le": "2026-07-29T07:40:29.449020+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "silence-force",
+    "resume_court": "Le lanceur étouffe les sons autour d'une créature, qui gagne des bonus à la Discrétion et contre les effets sonores.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort peut affecter un ennemi (jet de sauvegarde annule), mais son effet principal est bénéfique : bonus à la Discrétion et résistance aux effets sonores. Classé en cible_typique « allie » car l'effet est globalement avantageux, bien que le texte ne précise pas si la cible doit être volontaire.",
+    "slug": "silence-force",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:39+00:00",
+    "hash_source": "37e0eb5e787d68e752999d02e24bae1c95b7c620747632a0271ddc903ee2af0e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "47fea1023e9ebb90a705793767ee508729ff8057025b48ae20185983b3f5736a",
+  "hash_vue": "dc14d4b2e73ea7f7cbc97c09914e7060d26367bc340161b9bd6cdcd489f3033f"
+}

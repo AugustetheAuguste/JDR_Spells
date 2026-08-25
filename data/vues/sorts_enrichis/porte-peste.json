@@ -1,0 +1,107 @@
+{
+  "id": "porte-peste",
+  "nom": "Porte-peste",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Porte-peste.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mal",
+    "maladie"
+  ],
+  "niveaux": {
+    "Dru": 4,
+    "Ens/Mag": 5,
+    "Prê": 4,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Les attaques naturelles de la cible transmettent la fièvre des marais (DD 10 + 1/2 DV de la créature + modificateur de Con de la créature).",
+  "description_html": "<br/><br/>Les <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20naturelle.ashx\" title=\"attaque naturelle\">attaques naturelles</a> de la cible transmettent la <a class=\"pagelink\" href=\"Pathfinder-RPG.maladie.ashx\" title=\"maladie\">fièvre des marais</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 10 + 1/2 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> de la créature + modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.constitution.ashx\" title=\"La Constitution\">Con</a> de la créature).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Porte-peste.ashx",
+    "cache_fichier": "cache/html/2d810e1d796462108a0b2f6fb43697ef791676db.html",
+    "recupere_le": "2026-07-28T23:04:10.031548+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "porte-peste",
+    "resume_court": "Les attaques naturelles de la cible transmettent la fièvre des marais à ses adversaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": "Le sort améliore les attaques naturelles de la cible en les chargeant d'une maladie transmissible. Bien que le texte mentionne une maladie (fièvre des marais), aucune condition spécifique n'est nommée dans la description fournie : seul le DD du jet de sauvegarde est indiqué. La cible du sort est volontaire (jet inoffensif), d'où la classification en allie.",
+    "slug": "porte-peste",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:22+00:00",
+    "hash_source": "b6ab5b2d6609cede6d2060c8979ac7a5c99fdb0eaab0dbab820677cf80849aa4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d2c8483bb055394a6c364559592822cc65ccf9787aa497f93faf744538fa46f6",
+  "hash_vue": "3754ab9b715c27f3dba7707103e7e1e30bf951454dcdcf2284e615f287fa2871"
+}

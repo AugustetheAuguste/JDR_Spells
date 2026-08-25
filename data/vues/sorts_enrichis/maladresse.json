@@ -1,0 +1,107 @@
+{
+  "id": "maladresse",
+  "nom": "Maladresse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maladresse.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "San": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "D'un simple contact, le personnage réduit une créature à l'état de bouffon maladroit. La cible subit un malus à la Dextérité égal à 1d6+1 par tranche de 2 niveaux de lanceur de sorts (1d6+5 au maximum). Le malus ne peut pas faire passer la valeur de Dextérité en dessous de 1.\nDe plus, si la cible se déplace à plus de la moitié de sa vitesse de base, elle tombe. Si elle vole, sa manœuvrabilité est réduite d'un cran (une manœuvrabilité parfaite devient bonne, une bonne devient moyenne, etc.).\nUn jet de Vigueur réussi permet de diviser le malus de Dextérité de moitié et d'éviter la chute ou la réduction de manœuvrabilité.",
+  "description_html": "<br/><br/>D'un simple <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#PORTEE\" title=\"Présentation des sorts\">contact</a>, le personnage réduit une créature à l'état de bouffon maladroit. La cible subit un malus à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> égal à 1d6+1 par tranche de 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (1d6+5 au maximum). Le malus ne peut pas faire passer la valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> en dessous de 1.<br/><br/>De plus, si la cible se déplace à plus de la moitié de sa vitesse de base, elle tombe. Si elle vole, sa manœuvrabilité est réduite d'un cran (une manœuvrabilité parfaite devient bonne, une bonne devient moyenne, etc.).<br/><br/>Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> réussi permet de diviser le malus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> de moitié et d'éviter la chute ou la réduction de manœuvrabilité.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maladresse.ashx",
+    "cache_fichier": "cache/html/7988962fd2585e223ed2a8d3f5f3b90398cca40a.html",
+    "recupere_le": "2026-07-28T22:59:51.713667+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "maladresse",
+    "resume_court": "Le lanceur réduit la Dextérité d'une créature touchée et la fait tomber si elle se déplace trop vite.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "affaiblissement_de_capacite",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "maladresse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:26+00:00",
+    "hash_source": "95fc7eac8044fecd7825bb9777531eecc1da00f830d179c3fff012197e091d33"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0bc35e120dc74520d9e8ee43b2503c7a7e5aa980c7298f3927a0e73b70fdfb1c",
+  "hash_vue": "1e70feb292cdcebf195dbad489dcc4816d3ae0c04a8847b1209b950bb0fa4015"
+}

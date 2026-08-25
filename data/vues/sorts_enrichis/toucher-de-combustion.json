@@ -1,0 +1,131 @@
+{
+  "id": "toucher-de-combustion",
+  "nom": "Toucher de combustion",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20de%20combustion.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Inq": 1,
+    "magus": 1,
+    "Ens/Mag": 1,
+    "Sor": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature ou objet touché",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, annule",
+  "resistance_magie": "oui",
+  "description": "Sur une attaque de contact au corps à corps réussie du lanceur de sorts, la cible s’embrase en une violente explosion de flammes lui infligeant 1d6 points de dégâts de feu. Si elle rate son jet de sauvegarde, la cible prend également feu. Si la cible prend feu, lors du round qui suit, les créatures qui lui sont adjacentes (y compris le lanceur de sorts) doivent réussir un jet de Réflexes ou recevoir 1d4 points de dégâts de feu.",
+  "description_html": "<br/><br/>Sur une <a class=\"pagelink\" href=\"Pathfinder-RPG.Valeurs%20de%20combat.ashx#ATTAQUESDECONTACT\" title=\"Valeurs de combat\">attaque de contact</a> au corps à corps réussie du lanceur de sorts, la cible s’embrase en une violente explosion de flammes lui infligeant 1d6 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts.ashx\" title=\"Dégâts\">dégâts</a> de feu. Si elle rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a>, la cible prend également feu. Si la cible prend feu, lors du round qui suit, les créatures qui lui sont adjacentes (y compris le lanceur de sorts) doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> ou recevoir 1d4 points de dégâts de feu.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles ifrits."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20de%20combustion.ashx",
+    "cache_fichier": "cache/html/5407260ccc403ae81afd427c43cec5ef20e676e9.html",
+    "recupere_le": "2026-07-29T07:42:45.783864+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "toucher-de-combustion",
+    "resume_court": "Une attaque de contact qui embrase la cible en flammes et peut blesser les créatures adjacentes.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "zone_d_effet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "créature ou objet touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "toucher-de-combustion",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:34+00:00",
+    "hash_source": "9b4f224fe911806a06b6d953f73c5ce47b2ff3c2dffb6fb9de305a46de7341a2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "721ec2c8f41e583149fbac318e3c6571cd141ffb02189f6bd32e19fa6adf1f33",
+  "hash_vue": "2525da86f6ce378be3dbbee356efef9ac48fd12d446778cf28b082769030c3d9"
+}

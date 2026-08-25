@@ -1,0 +1,117 @@
+{
+  "id": "choisis-ton-poison",
+  "nom": "Choisis ton poison",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Choisis%20ton%20poison.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Inq": 1,
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort transforme même le plus mortel des poisons en un alcool enivrant. Si le sujet rate un jet de sauvegarde contre un effet de poison, il subit à la place des effets normaux du poison une pénalité de -2 à ses jets d’attaque et de sauvegarde et à ses tests, et il se sent ivre comme s’il venait de boire quelque chose de très fort. Ce sort n’affecte pas les poisons qui ont produit leurs effets avant le lancement du sort. À l’expiration de celui-ci, la pénalité cesse et l’effet normal du poison s’applique.",
+  "description_html": "<br/><br/>Ce sort transforme même le plus mortel des poisons en un alcool enivrant. Si le sujet rate un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> contre un effet de poison, il subit à la place des effets normaux du poison une pénalité de -2 à ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">de sauvegarde</a> et à ses tests, et il se sent ivre comme s’il venait de boire quelque chose de très fort. Ce sort n’affecte pas les poisons qui ont produit leurs effets avant le lancement du sort. À l’expiration de celui-ci, la pénalité cesse et l’effet normal du poison s’applique.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Choisis%20ton%20poison.ashx",
+    "cache_fichier": "cache/html/4e1ece2362fd86addba27edaded5b92397f4461b.html",
+    "recupere_le": "2026-07-28T22:46:38.939128+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "choisis-ton-poison",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Choisis%20ton%20poison.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "choisis-ton-poison",
+    "resume_court": "Transforme un poison en alcool enivrant, remplaçant ses effets par une ivresse et des malus.",
+    "categorie_principale": "protection",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort est classé en protection car il réduit les effets d'une menace (le poison) en les remplaçant par des effets moins graves. L'ivresse n'est pas une condition listée mais est mentionnée comme effet secondaire du malus. Le descripteur « effet mental » justifie le tag correspondant.",
+    "slug": "choisis-ton-poison",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:57+00:00",
+    "hash_source": "23d321f60d6ce5523ebdf5c41d327c22f730bee939afe79d3e785d33a09fa313"
+  }
+}

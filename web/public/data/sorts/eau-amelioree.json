@@ -1,0 +1,101 @@
+{
+  "id": "eau-amelioree",
+  "nom": "Eau améliorée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Eau%20am%c3%a9lior%c3%a9e.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Pal": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une pinte d’eau/niveau",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort transforme l’eau en alcool, en général de la bière, de l’hydromel ou du vin. L'alcool est de qualité moyenne mais reste buvable. Le sort sert également à neutraliser les poisons, la maladie, les minéraux et les autres toxines de l’eau qu’il transforme. Plus l’eau est contaminée, plus la bière sera sombre et plus le vin aura de corps. La teneur en alcool ne change pas en fonction de la présence ou de l'absence de contaminants.\nLe sort ne fonctionne pas sur l’eau maudite, les potions ou d’autres liquides dotés de pouvoirs magiques.",
+  "description_html": "<br/><br/>Ce sort transforme l’eau en alcool, en général de la bière, de l’hydromel ou du vin. L'alcool est de qualité moyenne mais reste buvable. Le sort sert également à neutraliser les poisons, la maladie, les minéraux et les autres toxines de l’eau qu’il transforme. Plus l’eau est contaminée, plus la bière sera sombre et plus le vin aura de corps. La teneur en alcool ne change pas en fonction de la présence ou de l'absence de contaminants.<br/><br/>Le sort ne fonctionne pas sur l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Eau%20b%c3%a9nite%20(objet).ashx\" title=\"Eau bénite\">eau maudite</a>, les potions ou d’autres liquides dotés de pouvoirs magiques.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Eau%20am%c3%a9lior%c3%a9e.ashx",
+    "cache_fichier": "cache/html/37075713029b8d78b3fd7e2790af274c4d061590.html",
+    "recupere_le": "2026-07-28T22:51:47.169218+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "eau-amelioree",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Eau%20am%c3%a9lior%c3%a9e.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "eau-amelioree",
+    "resume_court": "Transforme l'eau en alcool de qualité moyenne et neutralise les poisons et maladies qu'elle contient.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_instantanee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une pinte d'eau/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "eau-amelioree",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:01+00:00",
+    "hash_source": "e9a96147d2fd737e7beab7ec2a5b7af70abee7d7bce746190b32f537ba3a11f9"
+  }
+}

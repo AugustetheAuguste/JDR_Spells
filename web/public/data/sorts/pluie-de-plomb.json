@@ -1,0 +1,127 @@
+{
+  "id": "pluie-de-plomb",
+  "nom": "Pluie de plomb",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pluie%20de%20plomb.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 3,
+    "Magus": 4,
+    "Psy": 3,
+    "San": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une poignée de plombs en métal ou de plombs en fer froid, en argent ou en adamantium ; consultez la description pour le prix)",
+  "portee": "9 m (6 c)",
+  "cible": "cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes pour 1/2 dégâts",
+  "resistance_magie": "non",
+  "description": "Ce sort crée une explosion de plombs invoqués qui s’abat sur tout ce qui se trouve dans la zone et inflige 1d8 points de dégâts perforants par tranche de deux niveaux de lanceur de sorts, avec un maximum de 5d8. Ces dégâts sont soumis à la réduction de dégâts. Si les plombs sont en fer froid (50 po), en argent (20 po) ou en adamantium (100 po), la pluie de plomb ignore la RD appropriée. Les plombs disparaissent une fois le sort lancé et les dégâts infligés.",
+  "description_html": "<br/><br/>Ce sort crée une explosion de plombs invoqués qui s’abat sur tout ce qui se trouve dans la zone et inflige 1d8 points de dégâts perforants par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a>, avec un maximum de 5d8. Ces dégâts sont soumis à la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction de dégâts</a>. Si les plombs sont en fer froid (50 po), en argent (20 po) ou en adamantium (100 po), la pluie de plomb ignore la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> appropriée. Les plombs disparaissent une fois le sort lancé et les dégâts infligés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pluie%20de%20plomb.ashx",
+    "cache_fichier": "cache/html/a98254b8f684f5cc383a53c65947fb06d0c5fd75.html",
+    "recupere_le": "2026-07-28T23:03:46.979139+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pluie-de-plomb",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pluie%20de%20plomb.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pluie-de-plomb",
+    "resume_court": "Une explosion de plombs invoqués qui frappe tout dans un cône et inflige des dégâts perforants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "perforant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts perforants",
+      "condition_infligee": [],
+      "cible_typique": "cône"
+    },
+    "notes_ambiguite": null,
+    "slug": "pluie-de-plomb",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:12+00:00",
+    "hash_source": "81e9a13e3de21caf59bf6c696fd99b8c3e152f0e78d098f6056094ab9c12f81a"
+  }
+}

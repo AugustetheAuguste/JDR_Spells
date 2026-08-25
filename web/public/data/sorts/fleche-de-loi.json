@@ -1,0 +1,96 @@
+{
+  "id": "fleche-de-loi",
+  "nom": "Flèche de loi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20loi.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Loi"
+  ],
+  "niveaux": {
+    "Pal": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD (un symbole sacré)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "projectile en forme de flèche fait d'énergie loyale",
+  "duree": "instantanée (1 round); voir texte",
+  "jet_de_sauvegarde": "Volonté partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Une flèche d'ordre pur fuse du symbole du personnage vers une cible à portée, grâce à une attaque de contact à distance. Toute créature Chaotique touchée par la flèche reçoit 1d8 points de dégâts par tranche de deux niveaux de lanceurs de sorts (5d8 au maximum). Un extérieur Chaotique reçoit 1d6 points de dégâts par niveau de lanceur de sorts (10d6 au maximum) et il est hébété pendant 1 round. Jet de volonté 1/2 dégâts et annule l'hébètement. Ce sort inflige la moitié des dégâts aux créatures qui ne sont ni chaotique ni loyales et ne les hébète pas. La flèche n'a aucun effet sur une créature loyale.",
+  "description_html": "<br/><br/>Une flèche d'ordre pur fuse du symbole du personnage vers une cible à portée, grâce à une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a>. Toute créature Chaotique touchée par la flèche reçoit 1d8 points de dégâts par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> de lanceurs de sorts (5d8 au maximum). Un extérieur Chaotique reçoit 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> de lanceur de sorts (10d6 au maximum) et il est <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébété</a> pendant 1 round. Jet de volonté 1/2 dégâts et annule <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">l'hébètement</a>. Ce sort inflige la moitié des dégâts aux créatures qui ne sont ni chaotique ni loyales et ne les <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébète</a> pas. La flèche n'a aucun effet sur une créature loyale.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20loi.ashx",
+    "cache_fichier": "cache/html/a44d29e6f0a47e538fd806cc9887094d325a8d51.html",
+    "recupere_le": "2026-07-28T22:53:31.300111+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fleche-de-loi",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a8che%20de%20loi.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fleche-de-loi",
+    "resume_court": "Une flèche d'énergie loyale qui blesse les créatures chaotiques et peut les hébéter.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts par tranche de deux niveaux de lanceurs de sorts",
+      "condition_infligee": [
+        "il est hébété pendant 1 round"
+      ],
+      "cible_typique": "vers une cible à portée"
+    },
+    "notes_ambiguite": "Le texte emploie « hébété » qui correspond à la condition « etourdi » (perte d'actions et défense dégradée). Les dégâts sont d'énergie loyale, classés comme « force » faute de type énergétique élémentaire nommé.",
+    "slug": "fleche-de-loi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:09+00:00",
+    "hash_source": "129286ddcb95cf0b20460c2e44bda82226c93d13ca8cc4bd7afb4d5f93486f8e"
+  }
+}

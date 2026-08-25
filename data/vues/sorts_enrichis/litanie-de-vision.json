@@ -1,0 +1,90 @@
+{
+  "id": "litanie-de-vision",
+  "nom": "Litanie de vision",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20vision.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 3,
+    "Inq": 4,
+    "Pal": 3
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Cette litanie révèle l’invisible au personnage. Il voit alors les créatures et les objets invisibles situés dans un rayon de 9 m (6 c).\nLa cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>Cette litanie révèle l’invisible au personnage. Il voit alors les créatures et les objets <a class=\"pagelink\" href=\"Pathfinder-RPG.invisible.ashx\" title=\"Invisible\">invisibles</a> situés dans un rayon de 9 m (6 <abbr title=\"cases\">c</abbr>).<br/><br/>La cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20vision.ashx",
+    "cache_fichier": "cache/html/10437c1c030b070b6ec0a27d9c4be1ba0a379236.html",
+    "recupere_le": "2026-07-28T22:58:54.688454+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "litanie-de-vision",
+    "resume_court": "Le lanceur voit les créatures et objets invisibles dans un rayon de 9 m pendant 1 round.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "perception_amelioree",
+      "zone_d_effet",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "La durée est 1 round, ce qui est très court, mais le sort révèle une information (divination) plutôt que d'infliger un effet persistant. Le tag duree_instantanee s'applique car l'effet se résout à l'incantation et ne persiste pas au-delà du round.",
+    "slug": "litanie-de-vision",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:13+00:00",
+    "hash_source": "51959309dfc8552593397229b099b3e2f27a3438702a2d05f4a7149268d114cc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7180bcf2bd3fc68c25c351ad56d687c213bc76efbc5ff5cefcb75bea1ee7b585",
+  "hash_vue": "dff8ac272132c240547b13c0cf564132a7cc2dc29d735f97925ffd181410ada4"
+}

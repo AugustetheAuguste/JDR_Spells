@@ -1,0 +1,137 @@
+{
+  "id": "aide",
+  "nom": "Aide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aide.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Cham": 2,
+    "Inq": 2,
+    "Méd": 2,
+    "Prê": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "la créature vivante touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Aide apporte un bonus de moral de +1 aux jets d’attaque et aux jets de sauvegarde contre la terreur, mais également 1d8 points de vie temporaires +1 par niveau de lanceur de sorts (pour un maximum de 1d8+10 au niveau 10).",
+  "description_html": "<br/><br/><i>Aide</i> apporte un bonus de moral de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a> et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> contre la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">terreur</a>, mais également 1d8 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie%20temporaires.ashx\" title=\"points de vie temporaires\">points de vie temporaires</a> +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (pour un maximum de 1d8+10 au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 10).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aide.ashx",
+    "cache_fichier": "cache/html/620904c4bb05db06a5b9192e39fc2ba2759122b9.html",
+    "recupere_le": "2026-07-28T22:40:11.386803+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "aide",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aide.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "aide",
+    "resume_court": "Bonus de moral aux attaques et jets de sauvegarde contre la terreur, plus des points de vie temporaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "effet_mental",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "la créature vivante touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "aide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:13+00:00",
+    "hash_source": "b9d16c7369d13749545f0a78c5a897068de07f79b808497a84b15968d5460b6e"
+  }
+}

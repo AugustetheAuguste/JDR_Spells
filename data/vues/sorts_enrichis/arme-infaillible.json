@@ -1,0 +1,130 @@
+{
+  "id": "arme-infaillible",
+  "nom": "Arme infaillible",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20infaillible.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "Méd": 1,
+    "Occ": 2,
+    "Psy": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une arme ou 20 projectiles qui doivent tous se trouver groupés au moment de l’incantation",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort aide une arme à s’enfoncer plus près des organes vitaux, pour améliorer le résultat des coups critiques. La transmutation donne un bonus de +2 aux jets d’attaque pour confirmer un coup critique et 1 point de plus par tranche de quatre niveaux de lanceur de sorts (bonus total de +7 au maximum). Si le personnage lance le sort sur des projectiles, l’effet se termine pour un projectile donné quand il le tire, qu’il touche ou non. Les shuriken sont considérés comme des projectiles vis-à-vis de ce sort.",
+  "description_html": "<br/><br/>Ce sort aide une arme à s’enfoncer plus près des organes vitaux, pour améliorer le résultat des <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coups critiques</a>. La <a class=\"pagelink\" href=\"Pathfinder-RPG.transmutation.ashx\" title=\"Transmutation\">transmutation</a> donne un bonus de +2 aux jets d’attaque pour confirmer un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> et 1 point de plus par tranche de quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (bonus total de +7 au maximum). Si le personnage lance le sort sur des projectiles, l’effet se termine pour un projectile donné quand il le tire, qu’il touche ou non. Les shuriken sont considérés comme des projectiles vis-à-vis de ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20infaillible.ashx",
+    "cache_fichier": "cache/html/e9505f19defe143dc9b3c3365508dbf6b52b63ee.html",
+    "recupere_le": "2026-07-28T22:41:48.480858+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "arme-infaillible",
+    "resume_court": "Améliore les jets de confirmation de coups critiques d'une arme ou de projectiles.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "arme_ou_munition",
+      "transformation_du_sujet",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme ou 20 projectiles"
+    },
+    "notes_ambiguite": null,
+    "slug": "arme-infaillible",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:06+00:00",
+    "hash_source": "f9449c411763d41eb30fe3436024e28d8f4c86b898794ebf830933a3f3055006"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f761eab0d94e0fb755a0265f45b444eb5d2753fe328d30af3d6fc884c3b877b0",
+  "hash_vue": "d75b2be275db6d21c9c63efe06fdb1cf6a5cc4e5dae439ad524d88c09ae2e74a"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "sceau-daemonique",
+  "nom": "Sceau daémonique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceau%20da%c3%a9monique.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 5,
+    "Ens/Mag": 4,
+    "Pal": 4,
+    "Prê": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (50 po de poudre d'argent)",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme protection contre la mort à l’exception du fait qu’il ne protège que des attaques de daémons.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20la%20mort.ashx\" title=\"Protection contre la mort\">protection contre la mort</a></i> à l’exception du fait qu’il ne protège que des attaques de <a class=\"pagelink\" href=\"Pathfinder-RPG.Da%c3%a9mon.ashx\" title=\"Les daémons\">daémons</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "autres": {
+    "sorts_lies": "Protection contre la mort"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceau%20da%c3%a9monique.ashx",
+    "cache_fichier": "cache/html/54e67f8872a0e84fa4a4319408f2643b7c054d1e.html",
+    "recupere_le": "2026-07-29T07:39:59.787797+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sceau-daemonique",
+    "resume_court": "Protège une créature vivante des attaques de démons pendant 1 minute par niveau.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": "Le texte renvoie à « protection contre la mort » sans en reproduire les détails. On en déduit que le sort protège contre les attaques de démons, mais le mécanisme exact de protection n'est pas explicité dans le texte fourni. La catégorie et les tags reposent sur l'inférence que c'est un sort de protection, sans dégâts ni condition infligée au sujet.",
+    "slug": "sceau-daemonique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:25+00:00",
+    "hash_source": "b64976b726ed36c51d48ba5c6784b11fd3672528962646c1991b2bae47f3caf1"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4ca2a2a7143188466a0f4d7a3fd3a6acbda26a15e36d99965404130510eb0a69",
+  "hash_vue": "bc2124d04cc1315bf38ed08146b46cff65cbe207ef2cc3c0cbc4896040e5dc1e"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "symbole-de-fou-rire",
+  "nom": "Symbole de fou-rire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20fou-rire.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Ens/Mag": 4,
+    "Occ": 3,
+    "Sor": 4
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore, plus poudre de diamant et d’opale d’une valeur totale de 1 000 po)",
+  "portee": "0 m (voir texte)",
+  "cible": "1 symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme symbole de mort, à la seule différence que toutes les créatures situées dans un rayon de 18 mètres sont prises d’un fou rire incontrôlable (comme fou rire) pendant 1 round par niveau de lanceur.\nContrairement à symbole de mort, symbole de fou-rire n’a pas de limite de points de vie : une fois déclenché, symbole de fou-rire reste actif pendant 1 minute par niveau de lanceur.\nSymbole de fou-rire peut être rendu permanent par un sort de permanence lancé par un lanceur de niveau 10 ou supérieur pour un coût de 5 000 po.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i>, à la seule différence que toutes les créatures situées dans un rayon de 18 mètres sont prises d’un fou rire incontrôlable (comme fou rire) pendant 1 round par niveau de lanceur.<br/><br/>Contrairement à <i>symbole de mort</i>, symbole de fou-rire n’a pas de limite de points de vie : une fois déclenché, symbole de fou-rire reste actif pendant 1 minute par niveau de lanceur.<br/><br/><i>Symbole de fou-rire</i> peut être rendu permanent par un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> lancé par un lanceur de niveau 10 ou supérieur pour un coût de 5 000 po.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Symbole de mort"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20fou-rire.ashx",
+    "cache_fichier": "cache/html/cfb6da2fff7391c24d5a2e62e711c8661e147f01.html",
+    "recupere_le": "2026-07-29T07:41:39.656817+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "symbole-de-fou-rire",
+    "resume_court": "Un symbole magique qui déclenche un fou rire incontrôlable chez les créatures proches.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "toutes les créatures situées dans un rayon de 18 mètres sont prises d'un fou rire incontrôlable"
+      ],
+      "cible_typique": "toutes les créatures situées dans un rayon de 18 mètres"
+    },
+    "notes_ambiguite": "Le fou rire incontrôlable s'apparente à une confusion comportementale plutôt qu'à une fascination ou un charme direct. La condition « confus » est la plus proche, bien que le texte ne nomme pas explicitement une condition standard.",
+    "slug": "symbole-de-fou-rire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:07+00:00",
+    "hash_source": "57ef4435fd89d1619df3b9582a195a81ddd2cbcd8457e27ab2a16e72fba479c1"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8f79207dae874c01aca4866c38f782f1fa2435b578eab2e3dfcee255e0120522",
+  "hash_vue": "a295ddf47bb308db3c2f70152ca13a74775824e5ab85f8e2bd1ada635c7aa78d"
+}

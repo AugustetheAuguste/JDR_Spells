@@ -1,0 +1,78 @@
+{
+  "id": "contact-mutagene",
+  "nom": "Contact mutagène",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20mutag%c3%a8ne.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un ongle entier)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "spéciale (voir plus bas)",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Quand le lanceur de sorts se trouve sous l’effet de son mutagène, il peut lancer ce sort sur lui pour en faire bénéficier un tiers d’un simple contact. Le personnage doit réussir une attaque de contact sur la cible. S’il touche, l’effet du mutagène se transmet à la cible, mais sous une forme affaiblie. L’effet du mutagène se termine pour le personnage et affecte la nouvelle cible qui bénéficie seulement de la moitié du bonus alchimique aux caractéristiques physiques (que le personnage a choisies au moment d’absorber le mutagène) et elle subit des malus doublés aux valeurs de caractéristique mentales correspondantes. Si une valeur de caractéristique mentale de la cible tombe en dessous de 3, la cible est confuse pendant toute la durée d’effet du mutagène (jusqu’à ce que sa durée arrive à expiration). On peut mettre un terme aux effets du mutagène un peu plus tôt si la cible boit un antidote ou si quelqu’un lui en fait boire un mais l’antidote a seulement 50% de chances de succès. Le personnage peut utiliser ce sort sur un mutagène avec la découverte grand mutagène ou mutagène supérieur. Dans ce cas, le personnage transmet automatiquement la moitié de son bonus alchimique aux caractéristiques physiques et le double du malus aux caractéristiques mentales.",
+  "description_html": "<br/><br/>Quand le lanceur de sorts se trouve sous l’effet de son <a class=\"pagelink\" href=\"Pathfinder-RPG.Alchimiste.ashx#MUTAGENES\" title=\"L'alchimiste\">mutagène</a>, il peut lancer ce sort sur lui pour en faire bénéficier un tiers d’un simple contact. Le personnage doit réussir une attaque de contact sur la cible. S’il touche, l’effet du mutagène se transmet à la cible, mais sous une forme affaiblie. L’effet du mutagène se termine pour le personnage et affecte la nouvelle cible qui bénéficie seulement de la moitié du bonus alchimique aux caractéristiques physiques (que le personnage a choisies au moment d’absorber le mutagène) et elle subit des malus doublés aux valeurs de caractéristique mentales correspondantes. Si une valeur de caractéristique mentale de la cible tombe en dessous de 3, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a> pendant toute la durée d’effet du mutagène (jusqu’à ce que sa durée arrive à expiration). On peut mettre un terme aux effets du mutagène un peu plus tôt si la cible boit un antidote ou si quelqu’un lui en fait boire un mais l’antidote a seulement 50% de chances de succès.\nLe personnage peut utiliser ce sort sur un mutagène avec la <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9couvertes.ashx\" title=\"Les découvertes d'alchimiste\">découverte</a> grand mutagène ou mutagène supérieur. Dans ce cas, le personnage transmet automatiquement la moitié de son bonus alchimique aux caractéristiques physiques et le double du malus aux caractéristiques mentales.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20mutag%c3%a8ne.ashx",
+    "cache_fichier": "cache/html/79c17cd3634695c608be3bc7c35d949d5be718c6.html",
+    "recupere_le": "2026-07-28T22:47:35.160692+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contact-mutagene",
+    "resume_court": "Transmet les effets affaiblis du mutagène du lanceur à une créature touchée par contact.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la cible est confuse pendant toute la durée d'effet du mutagène"
+      ],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort peut affecter des alliés ou des ennemis selon le contexte tactique, mais le texte indique que la cible bénéficie d'un effet (bonus aux caractéristiques physiques), ce qui suggère une utilisation sur alliés. La condition confuse ne survient que si une caractéristique mentale tombe sous 3, ce qui est conditionnel.",
+    "slug": "contact-mutagene",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:20+00:00",
+    "hash_source": "a372760ff7da6e634756cfe911c0c3bfd95f94fdc2f1657462f760bf63c0597d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "88af5fc6d5787ef2b1044c51eec27626e5b814ef2fc0c63a40556fd66018964b",
+  "hash_vue": "9bbf14747b60fce07ea594160aa98f7aae16dc847e7a8010e2cba8a6dc3d52ee"
+}

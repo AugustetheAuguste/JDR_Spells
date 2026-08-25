@@ -1,0 +1,188 @@
+{
+  "id": "transport-d-animal",
+  "nom": "Transport d'animal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transport%20danimal.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "Dru": 3,
+    "Ens/Mag": 3,
+    "Hyp": 3,
+    "Méd": 3,
+    "Psy": 3,
+    "Rôd": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "un animal touché de taille TP ou inférieure",
+  "duree": "instantanée ou 1h/niveau",
+  "jet_de_sauvegarde": "annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme transport d’objet mais prend un animal pour cible. Il affecte uniquement les créatures normales, non magiques, de type animal.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.transport%20dobjet.ashx\" title=\"Transport d'objet\">transport d’objet</a></i> mais prend un animal pour cible. Il affecte uniquement les créatures normales, non magiques, de type animal.<br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Transport d’objet",
+      "id": "transport-d-objet",
+      "ecole": "Invocation (téléportation)",
+      "descripteurs": [],
+      "niveaux": {
+        "Bard": 2,
+        "Ens/Mag": 2,
+        "Hyp": 2,
+        "Méd": 2,
+        "Occ": 2,
+        "Psy": 2,
+        "Sor": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V",
+      "portee": "contact",
+      "cible": "un objet touché de 0,5 kg et 0,03 m3 max.",
+      "duree": "instantanée ou 1h/niveau",
+      "jet_de_sauvegarde": "Volonté annule (objet)",
+      "resistance_magie": "oui (objet)",
+      "description": "Ce sort permet au personnage de déplacer instantanément un objet non vivant de petite taille d’un endroit à un autre. Il s’utilise de deux manières. L’envoi permet au personnage d’envoyer immédiatement un objet qu’il tient en main vers une destination proche. La réception lui permet de lancer le sort à l’avance sur un objet, afin de le rappeler à lui ultérieurement.\nEnvoi. Si le personnage choisit d’envoyer l’objet quelque part, le sort fonctionne comme téléportation d’objet, sauf que la taille de l’objet est limitée et qu’il ne peut pas lui faire parcourir plus de 7,50 mètres + 1,50 mètre/2 niveaux. Il ne peut pas transporter un objet vers le plan Éthéré. Le personnage peut envoyer l’objet qu’il tient en main vers n’importe quelle case à portée et n’a pas besoin d’avoir la zone de réception en ligne de mire. Il peut placer l’objet à découvert ou bien dans un récipient, une poche ou même la main d’autrui. Si la zone de réception n’offre pas assez de place pour accueillir l’objet (parce qu’elle est trop petite ou parce qu’elle contient déjà quelque chose) ou bien si le destinataire ne veut pas récupérer l’objet ou ne s’attend pas à le recevoir, il apparaît au sol dans la case de la cible de destination. Le personnage peut envoyer l’objet dans un endroit surélevé par rapport du sol, tant qu’il se trouve dans les limites de portée du sort.\nRéception. Le personnage peut préparer un objet à l’avance, afin qu’il revienne à lui. Pour cela, il lance le sort sur l’objet et lui assigne un déclencheur mental qui terminera l’incantation. Il n’a pas besoin d’avoir l’objet en vue pour le rappeler à lui mais l’objet doit se trouver dans un rayon de 7,50 mètres + 1,50 mètre/2 niveaux. Pour terminer l’incantation, il faut une action rapide obéissant aux mêmes restrictions qu’un sort à composante intellectuelle. Le personnage peut transférer ainsi son objet même si une personne le tient et ne veut pas le perdre. Le sort se termine dès l’objet récupéré. Le personnage ne peut pas envoyer ou récupérer un objet vers ou depuis une case protégée par une zone d’antimagie, un globe d’invulnérabilité ou un effet similaire bloquant les effets magiques. S’il tente de le faire, le sort est gaspillé.",
+      "description_html": "<br/><br/>Ce sort permet au personnage de déplacer instantanément un objet non vivant de petite taille d’un endroit à un autre. Il s’utilise de deux manières. L’envoi permet au personnage d’envoyer immédiatement un objet qu’il tient en main vers une destination proche. La réception lui permet de lancer le sort à l’avance sur un objet, afin de le rappeler à lui ultérieurement.<br/><br/><i>Envoi</i>. Si le personnage choisit d’envoyer l’objet quelque part, le sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation%20dobjet.ashx\" title=\"Téléportation d'objet\">téléportation d’objet</a></i>, sauf que la taille de l’objet est limitée et qu’il ne peut pas lui faire parcourir plus de 7,50 mètres + 1,50 mètre/2 niveaux. Il ne peut pas transporter un objet vers le plan Éthéré. Le personnage peut envoyer l’objet qu’il tient en main vers n’importe quelle case à portée et n’a pas besoin d’avoir la zone de réception en ligne de mire. Il peut placer l’objet à découvert ou bien dans un récipient, une poche ou même la main d’autrui. Si la zone de réception n’offre pas assez de place pour accueillir l’objet (parce qu’elle est trop petite ou parce qu’elle contient déjà quelque chose) ou bien si le destinataire ne veut pas récupérer l’objet ou ne s’attend pas à le recevoir, il apparaît au sol dans la case de la cible de destination. Le personnage peut envoyer l’objet dans un endroit surélevé par rapport du sol, tant qu’il se trouve dans les limites de portée du sort.<br/><br/><i>Réception</i>. Le personnage peut préparer un objet à l’avance, afin qu’il revienne à lui. Pour cela, il lance le sort sur l’objet et lui assigne un déclencheur mental qui terminera l’incantation. Il n’a pas besoin d’avoir l’objet en vue pour le rappeler à lui mais l’objet doit se trouver dans un rayon de 7,50 mètres + 1,50 mètre/2 niveaux. Pour terminer l’incantation, il faut une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a> obéissant aux mêmes restrictions qu’un sort à <a class=\"pagelink\" href=\"Pathfinder-RPG.la%20magie%20psychique.ashx#COMPOSANTEINTELLECTUELLE\" title=\"La magie psychique\">composante intellectuelle</a>. Le personnage peut transférer ainsi son objet même si une personne le tient et ne veut pas le perdre. Le sort se termine dès l’objet récupéré. Le personnage ne peut pas envoyer ou récupérer un objet vers ou depuis une case protégée par une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20dantimagie.ashx\" title=\"Zone d'antimagie\">zone d’antimagie</a></i>, un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.globe%20dinvuln%c3%a9rabilit%c3%a9%20partielle.ashx\" title=\"Globe d'invulnérabilité partielle\">globe d’invulnérabilité</a></i> ou un effet similaire bloquant les effets magiques. S’il tente de le faire, le sort est gaspillé.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transport%20danimal.ashx",
+    "cache_fichier": "cache/html/452b41b0a288ec7eefe8cc8c7bf4de887fdc9465.html",
+    "recupere_le": "2026-07-29T07:43:25.336755+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "transport-d-animal",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transport%20danimal.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "transport-d-animal",
+    "resume_court": "Téléporte un animal de taille TP ou inférieure vers un lieu connu du lanceur.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "deplacement_ou_teleportation",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un animal touché de taille TP ou inférieure"
+    },
+    "notes_ambiguite": "Le texte renvoie à « transport d'objet » sans le reproduire ; la cible est un animal non magique, classé comme objet au sens des cibles typiques car le sort le traite comme un bien transportable plutôt que comme une créature alliée ou ennemie.",
+    "slug": "transport-d-animal",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:50+00:00",
+    "hash_source": "394f54b3b151c4f11738d1e7a8fa003fdb09c1328f903da23d67b5d328b280c0"
+  }
+}

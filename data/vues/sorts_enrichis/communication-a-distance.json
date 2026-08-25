@@ -1,0 +1,182 @@
+{
+  "id": "communication-a-distance",
+  "nom": "Communication à distance",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Communication%20%c3%a0%20distance.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 5,
+    "Cham": 4,
+    "Con": 4,
+    "ConU": 5,
+    "Hyp": 3,
+    "Inq": 4,
+    "Ens/Mag": 5,
+    "Méd": 3,
+    "Occ": 4,
+    "Prê": 4,
+    "Psy": 4,
+    "Spi": 5
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M/FD (mince fil de cuivre)",
+  "portee": "voir texte",
+  "cible": "1 créature",
+  "duree": "1 round (voir texte)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Grâce à ce sort le personnage peut, à n’importe quelle distance, entrer en contact avec une créature qu’il connait pour lui envoyer un message n’excédant pas vingt-cinq mots. Le sujet reconnaît automatiquement le personnage s’il l’a déjà rencontré et peut répondre immédiatement au message transmis. Les créatures ayant une Intelligence extrêmement limitée (Int 1) sont à même de comprendre le message, même si leurs capacités de réaction sont nécessairement réduites. Il n’est pas obligatoire pour le sujet de répondre au message envoyé.\nSi le destinataire ne se trouve pas dans le même plan que l’expéditeur, il y a 5 % de chances pour que le message n’arrive pas jusqu’à lui (dans certains cas, les conditions en vigueur dans certains plans peuvent augmenter ce risque de façon considérable).",
+  "description_html": "<hr/>\nGrâce à ce sort le personnage peut, à n’importe quelle distance, entrer en contact avec une créature qu’il connait pour lui envoyer un message n’excédant pas vingt-cinq mots. Le sujet reconnaît automatiquement le personnage s’il l’a déjà rencontré et peut répondre immédiatement au message transmis. Les créatures ayant une <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> extrêmement limitée (<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Int</a> 1) sont à même de comprendre le message, même si leurs capacités de réaction sont nécessairement réduites. Il n’est pas obligatoire pour le sujet de répondre au message envoyé.<br/><br/>Si le destinataire ne se trouve pas dans le même <a class=\"pagelink\" href=\"Pathfinder-RPG.plans.ashx\" title=\"Les plans\">plan</a> que l’expéditeur, il y a 5 % de chances pour que le message n’arrive pas jusqu’à lui (dans certains cas, les conditions en vigueur dans certains <a class=\"pagelink\" href=\"Pathfinder-RPG.plans.ashx\" title=\"Les plans\">plans</a> peuvent augmenter ce risque de façon considérable).<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut communiquer avec un nombre supplémentaire de créatures égal à son grade. Chaque créature reçoit le même message et peut répondre au personnage seulement.\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique, il peut transmettre le message à des créatures qu’il connaît mal (le nombre de créatures en question est le même que pour une communication à distance mythique non-amplifiée). Il doit décrire les destinataires prévus de manière générale ou précise (ça peut être « des orques », « la reine de cette contrée » ou « les demi-elfes masculins et gauchers ») ou définir des restrictions spécifiques telles que la portée, le type de créatures et l’alignement (ça peut être « l’ensemble des humanoïdes Bons à l’intérieur du château au sommet de la colline »). Si le nombre de créatures correspondant à la description est supérieur à la limite maximale imposée par le sort, ce sont les créatures les plus proches du personnage qui reçoivent le message.",
+    "description_html": "Le personnage peut communiquer avec un nombre supplémentaire de créatures égal à son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a>. Chaque créature reçoit le même message et peut répondre au personnage seulement.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il peut transmettre le message à des créatures qu’il connaît mal (le nombre de créatures en question est le même que pour une communication à distance mythique non-amplifiée). Il doit décrire les destinataires prévus de manière générale ou précise (ça peut être « des orques », « la reine de cette contrée » ou « les demi-elfes masculins et gauchers ») ou définir des restrictions spécifiques telles que la portée, le type de créatures et l’alignement (ça peut être « l’ensemble des humanoïdes Bons à l’intérieur du château au sommet de la colline »). Si le nombre de créatures correspondant à la description est supérieur à la limite maximale imposée par le sort, ce sont les créatures les plus proches du personnage qui reçoivent le message.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Exigence",
+      "id": "exigence",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "mental"
+      ],
+      "niveaux": {
+        "Hyp": 6,
+        "Ens/Mag": 8,
+        "Psy": 8,
+        "Sor": 8
+      },
+      "temps_incantation": "10 minutes",
+      "composantes": "V, G, M/FD (mince fil de cuivre)",
+      "portee": "voir description",
+      "cible": "1 créature",
+      "duree": "1 round (voir texte)",
+      "jet_de_sauvegarde": "Volonté, partiel",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme communication à distance, à ceci près que le message peut également contenir une suggestion (voir le sort de même nom) à laquelle le sujet obéit du mieux qu’il peut. Un jet de Volonté réussi annule la suggestion, mais pas le contact proprement dit. Si le sujet reçoit le message, il le comprend, même si son Intelligence n’est que de 1. Si le message envoyé correspond à une action impossible ou s’il n’a aucun sens étant donné les circonstances dans lesquelles le sujet se trouve lorsqu’il le reçoit, le sujet le comprend mais la suggestion n’a aucun effet.\nLe message transmis ne peut dépasser vingt-cinq mots, suggestion y compris. La créature peut également transmettre une courte réponse immédiatement après avoir reçu le message.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20%c3%a0%20distance.ashx\" title=\"Communication à distance\">communication à distance</a></i>, à ceci près que le message peut également contenir une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> (voir le sort de même nom) à laquelle le sujet obéit du mieux qu’il peut. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> réussi annule la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i>, mais pas le contact proprement dit. Si le sujet reçoit le message, il le comprend, même si son <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> n’est que de 1. Si le message envoyé correspond à une action impossible ou s’il n’a aucun sens étant donné les circonstances dans lesquelles le sujet se trouve lorsqu’il le reçoit, le sujet le comprend mais la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> n’a aucun effet.<br/><br/>Le message transmis ne peut dépasser vingt-cinq mots, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> y compris. La créature peut également transmettre une courte réponse immédiatement après avoir reçu le message.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Communication%20%c3%a0%20distance.ashx",
+    "cache_fichier": "cache/html/3d0a9d661533ee289c79a8ff53eb090fa05a6439.html",
+    "recupere_le": "2026-07-28T22:46:58.147694+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "communication-a-distance",
+    "resume_court": "Le lanceur envoie un message de 25 mots à une créature connue, à n'importe quelle distance.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "communication_ou_langage",
+      "duree_instantanee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "entrer en contact avec une créature qu'il connait"
+    },
+    "notes_ambiguite": "Le sort affecte techniquement une créature (« cible: 1 créature »), mais le texte décrit une interaction de communication bidirectionnelle où le sujet peut répondre. J'ai classé la cible comme « allie » car le sort suppose une créature connue et volontaire de communiquer, plutôt qu'une créature hostile. Le tag « plusieurs_cibles » pourrait sembler erroné (une seule cible désignée), mais le texte mentionne explicitement que le sujet « peut répondre immédiatement », ce qui implique une interaction réciproque ; cependant, strictement parlant, une seule créature est ciblée. J'ai retiré ce tag pour respecter la logique : une seule cible désignée n'active pas « plusieurs_cibles ».",
+    "slug": "communication-a-distance",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:06+00:00",
+    "hash_source": "cf30ac8c8a4257893064f1f041d18431f6053ed6086a913f97b74c76b6901144"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6c40ec4aaa367fd6a394b0bd3278e903e5ab4482ce0eea30e950c40ba6a83d52",
+  "hash_vue": "982025c2d5b152108039e4a81d0dd303c19c6a3fdb459b294b8471154df86a58"
+}

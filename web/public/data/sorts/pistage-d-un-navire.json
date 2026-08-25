@@ -1,0 +1,103 @@
+{
+  "id": "pistage-d-un-navire",
+  "nom": "Pistage d'un navire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20dun%20navire.ashx",
+  "ecole": "Divination (scrutation)",
+  "descripteurs": [
+    "voyage"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (fragment de bateau)",
+  "portee": "voir description",
+  "cible": "symbole magique",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Afin de pouvoir lancer ce sort, le personnage doit posséder un fragment du navire qu’il souhaite pister. Les marchands conservent souvent des morceaux de leurs navires pour pouvoir utiliser ce sort en particulier. Le personnage a également besoin d’une carte nautique.\nQuand il lance ce sort, le personnage fait apparaître le symbole du navire ciblé sur la carte nautique. Ce symbole se déplace en même temps que le navire pendant toute la durée du sort. Si le navire ne se trouve pas dans la zone représentée sur la carte, le sort échoue. Si le navire voit ses points de résistance tomber à 0 ou moins, son symbole se transforme en un crâne et deux os croisés.",
+  "description_html": "<br/><br/>Afin de pouvoir lancer ce sort, le personnage doit posséder un fragment du navire qu’il souhaite pister. Les marchands conservent souvent des morceaux de leurs navires pour pouvoir utiliser ce sort en particulier. Le personnage a également besoin d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.Carte%20nautique%20(objet).ashx\" title=\"Carte nautique\">carte nautique</a>.<br/><br/>Quand il lance ce sort, le personnage fait apparaître le symbole du navire ciblé sur la carte nautique. Ce symbole se déplace en même temps que le navire pendant toute la durée du sort. Si le navire ne se trouve pas dans la zone représentée sur la carte, le sort échoue. Si le navire voit ses <a class=\"pagelink\" href=\"Pathfinder-RPG.Exploration.ashx#DESTRUCTIONOBJET\" title=\"L'exploration\">points de résistance</a> tomber à 0 ou moins, son symbole se transforme en un crâne et deux os croisés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pirates of the Inner Sea/Pirates de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20dun%20navire.ashx",
+    "cache_fichier": "cache/html/5d9e5e68a699ca68dea51a2ff6aeb850320b81c4.html",
+    "recupere_le": "2026-07-28T23:03:35.957533+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pistage-d-un-navire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20dun%20navire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pistage-d-un-navire",
+    "resume_court": "Le lanceur fait apparaître le symbole d'un navire sur une carte et le suit en temps réel.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "duree_prolongee",
+      "objet_ou_equipement",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "symbole magique"
+    },
+    "notes_ambiguite": null,
+    "slug": "pistage-d-un-navire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:08+00:00",
+    "hash_source": "7e2484b8ec0706e2497ded9305dae83ab7135dfd16762908c16b2990106ff2af"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "pistage-des-traces",
+  "nom": "Pistage des traces",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20des%20traces.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Occ": 2,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (un bout de plâtre)",
+  "portee": "contact",
+  "cible": "empreinte touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Il suffit que le personnage touche une empreinte pour avoir une nette image mentale de la personne ou de la créature qui l'a laissée. Cette image a exactement la même apparence que la créature au moment où elle a laissé l'empreinte, ce qui comprend son équipement, son matériel ou toute chose qu'elle porte à cet instant. Par exemple, l'empreinte d'un cheval révèlera aussi bien la monture que le cavalier qui la chevauchait au moment où elle a laissé son empreinte.",
+  "description_html": "<br/><br/>Il suffit que le personnage touche une empreinte pour avoir une nette image mentale de la personne ou de la créature qui l'a laissée. Cette image a exactement la même apparence que la créature au moment où elle a laissé l'empreinte, ce qui comprend son équipement, son matériel ou toute chose qu'elle porte à cet instant. Par exemple, l'empreinte d'un <a class=\"pagelink\" href=\"Pathfinder-RPG.cheval.ashx\" title=\"Cheval\">cheval</a> révèlera aussi bien la monture que le cavalier qui la chevauchait au moment où elle a laissé son empreinte.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20des%20traces.ashx",
+    "cache_fichier": "cache/html/174a168c2898a7366405856495a9b744e65b86c7.html",
+    "recupere_le": "2026-07-28T23:03:34.949901+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "pistage-des-traces",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistage%20des%20traces.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "pistage-des-traces",
+    "resume_court": "En touchant une empreinte, le lanceur obtient une image mentale nette de qui l'a laissée.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "attaque_de_contact",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "empreinte touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "pistage-des-traces",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:08+00:00",
+    "hash_source": "3d51f29321e7a497cbbe6855b1a6281846b8c9b6971b400f971b18ae75b39778"
+  }
+}

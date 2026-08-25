@@ -1,0 +1,100 @@
+{
+  "id": "projectile-telekinetique",
+  "nom": "Projectile télékinétique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Occ": 0,
+    "Psy": 0,
+    "Spi": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7.5m + 1.5m /2 niveau) (5 c + 1 c/2 niveau)",
+  "cible": null,
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Vous lancez un objet pesant jusqu'à 2kg sur la cible. Vous devez réussir à une attaque à distance (pas une attaque de contact à distance) pour toucher votre cible; Si vous touchez, vous infligez 1d6 points de dégâts contondant à la cible et à l'objet. Le type d'objet lancé ne change pas le type de dommage ou toute autre propriété de l'attaque, même si vous lancez une arme ou un objet magique de cette manière.",
+  "description_html": "<br/><br/>Vous lancez un objet pesant jusqu'à 2kg sur la cible. Vous devez réussir à une attaque à distance (pas une attaque de contact à distance) pour toucher votre cible; Si vous touchez, vous infligez 1d6 points de dégâts contondant à la cible et à l'objet. Le type d'objet lancé ne change pas le type de dommage ou toute autre propriété de l'attaque, même si vous lancez une arme ou un objet magique de cette manière.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+    "cache_fichier": "cache/html/12d78377b70dd7b9fc1e79f42329164698bb2355.html",
+    "recupere_le": "2026-07-28T23:04:49.042581+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "projectile-telekinetique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+  "niveaux_par_classe": {
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 0
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 0
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "projectile-telekinetique",
+    "resume_court": "Lance un objet de 2 kg sur une cible à portée courte, infligeant 1d6 dégâts contondants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts contondant",
+      "condition_infligee": [],
+      "cible_typique": "sur la cible"
+    },
+    "notes_ambiguite": null,
+    "slug": "projectile-telekinetique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:55+00:00",
+    "hash_source": "042fc862f839ba142e3a78aaaeee21f5e337d3b9cdcb626e4448babbbfcc44a3"
+  }
+}

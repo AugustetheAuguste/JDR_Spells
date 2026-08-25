@@ -1,0 +1,116 @@
+{
+  "id": "paranoia",
+  "nom": "Paranoïa",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parano%c3%afa.ashx",
+  "ecole": "Illusion (fantasme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Hyp": 1,
+    "Méd": 1,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La cible prend tout le monde pour un adversaire. Elle se montre hostile envers toutes les créatures et traite tout le monde en ennemi, elle ne considère que sa propre personne comme un allié. Elle doit faire une attaque d’opportunité dès qu’une créature lui en donne l’occasion. Enfin, quand elle est adjacente à une ou deux créatures, elle se laisse submerger par la paranoïa et subit un malus de –2 aux jets d’attaque, de dégâts des armes et de sauvegarde, ainsi qu’aux tests de caractéristique et de compétence.",
+  "description_html": "<br/><br/>La cible prend tout le monde pour un adversaire. Elle se montre hostile envers toutes les créatures et traite tout le monde en ennemi, elle ne considère que sa propre personne comme un allié. Elle doit faire une <a class=\"pagelink\" href=\"Pathfinder-RPG.valeurs%20de%20combat.ashx#ATTAQUEDOPPORTUNITE\" title=\"Valeurs de combat\">attaque d’opportunité</a> dès qu’une créature lui en donne l’occasion. Enfin, quand elle est adjacente à une ou deux créatures, elle se laisse submerger par la paranoïa et subit un malus de –2 aux jets d’attaque, de dégâts des armes et de sauvegarde, ainsi qu’aux tests de caractéristique et de compétence.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parano%c3%afa.ashx",
+    "cache_fichier": "cache/html/917a3f36b03806de18e878576aa1d46a6691ed52.html",
+    "recupere_le": "2026-07-28T23:02:32.873159+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "paranoia",
+    "resume_court": "La cible devient hostile à tous et subit des malus quand elle est entourée.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "charme_ou_coercition",
+      "confusion_ou_desorientation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "paranoia",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:43+00:00",
+    "hash_source": "e0b6a96bf4d0be3d2a39650a42d68855ac2fe5e0d0ae986dfb0fc0492f3d036f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "012231ca90006477cba6f9589369cfc10304216087bf78648b642b3a1ef08f57",
+  "hash_vue": "c318cf7eabd3b1e44cd54dcad5cd3e11bed27e1640a59db04ffd4219dc2b51aa"
+}

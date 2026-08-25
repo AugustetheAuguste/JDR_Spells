@@ -1,0 +1,92 @@
+{
+  "id": "vigueur-du-juste",
+  "nom": "Vigueur du juste",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vigueur%20du%20juste.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Inq": 3,
+    "Pal": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage imprègne sa cible d'une vague d'énergie divine qui améliore son aptitude à blesser son adversaire en fonction du nombre de coups qu'elle lui a déjà portés. À chaque fois que la créature parvient à toucher son adversaire avec une attaque au corps à corps, le sujet gagne un bonus de moral cumulable de +1 aux jets d'attaque contre cet adversaire (avec un maximum de +4) et gagne 1d8 points de vie temporaires (avec un maximum de 20 points de vie temporaires). S'il rate son attaque, le bonus à l'attaque repart à +0 mais les points de vie temporaires persistent. Ils disparaissent quand le sort se termine.",
+  "description_html": "<br/><br/>Le personnage imprègne sa cible d'une vague d'énergie divine qui améliore son aptitude à blesser son adversaire en fonction du nombre de coups qu'elle lui a déjà portés. À chaque fois que la créature parvient à toucher son adversaire avec une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque au corps à corps\">attaque au corps à corps</a>, le sujet gagne un bonus de moral cumulable de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d'attaque</a> contre cet adversaire (avec un maximum de +4) et gagne 1d8 <a class=\"pagelink\" href=\"Pathfinder-RPG.pv.ashx\" title=\"pv\">points de vie</a> temporaires (avec un maximum de 20 points de vie temporaires). S'il rate son attaque, le bonus à l'attaque repart à +0 mais les points de vie temporaires persistent. Ils disparaissent quand le sort se termine.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vigueur%20du%20juste.ashx",
+    "cache_fichier": "cache/html/5a00a9c9e75f7b82a1d2e974ff572226d80885f7.html",
+    "recupere_le": "2026-07-29T07:44:07.640217+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vigueur-du-juste",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vigueur%20du%20juste.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vigueur-du-juste",
+    "resume_court": "La cible gagne des bonus d'attaque et des PV temporaires à chaque coup au corps à corps réussi.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "vigueur-du-juste",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:08+00:00",
+    "hash_source": "7f382e1bdd52dfdd6f41c17d51db0a749c7b8095973faffe7877f6a35eb5208a"
+  }
+}

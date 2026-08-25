@@ -1,0 +1,103 @@
+# Intégration continue : le contrat de données, les budgets, la dérive.
+#
+# Les budgets sont bloquants ou ils ne servent à rien : un avertissement ignoré
+# trois fois devient une régression permanente. Aucune étape ici n'est
+# `continue-on-error`, et c'est le point.
+#
+# L'ordre n'est pas décoratif. Le contrat de données passe en premier parce qu'un
+# `index.json` malformé fait échouer tout le reste de façon illisible ; la dérive
+# vient ensuite parce qu'elle attrape le défaut qu'aucun test ne voit — un corpus
+# corrigé et jamais réexporté, qui produit un site qui marche et qui ment.
+#
+# Rien ici n'a besoin d'un secret. Si un jour c'est le cas, c'est qu'une
+# dépendance runtime s'est glissée quelque part, et il faut la trouver, pas
+# ajouter la variable.
+
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, 'feat/**']
+
+# Une PR poussée trois fois de suite n'a pas besoin de trois builds de 2 076 pages.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONIOENCODING: utf-8
+  PYTHONUTF8: '1'
+
+jobs:
+  corpus:
+    name: Corpus — contrat, dérive, suite Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Dépendances
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          npm ci
+
+      - name: Suite Python
+        run: python -m pytest tests -q
+        env:
+          PYTHONPATH: src
+
+      # Le contrat lu par le site, pas par l'exporteur : deux programmes lisent le
+      # même fichier, celui-ci le lit comme les vues le lisent.
+      - name: Contrat de données
+        run: npm run check:data:reel
+
+      # La garde qui compte : sans elle, quelqu'un corrige un sort et le site
+      # continue d'afficher l'ancienne valeur sans que rien ne le signale.
+      - name: Dérive des données
+        run: npm run data:derive
+
+  web:
+    name: Web — tests, build, budgets, accessibilité
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            web/package-lock.json
+
+      - name: Dépendances
+        run: |
+          npm ci
+          npm --prefix web ci
+
+      - name: Tests, lint, types
+        run: npm run web:test
+
+      - name: Build statique
+        run: npm run web:build
+
+      # Compte les pages contre |index.sorts|, pèse le JS client par route, pèse
+      # index.json. Dépassement = échec.
+      - name: Budgets et complétude
+        run: npx tsx scripts/verifier_build.ts
+
+      # axe-core sur le HTML prérendu de quatre routes. Portée assumée : sans
+      # JavaScript client, donc pas l'état après hydratation.
+      - name: Accessibilité
+        run: npx tsx scripts/verifier_a11y.ts

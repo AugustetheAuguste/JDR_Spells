@@ -1,0 +1,116 @@
+{
+  "id": "disque-de-pierre",
+  "nom": "Disque de pierre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disque%20de%20pierre.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "San": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de terre ou de métal)",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un ou plusieurs disques de pierre",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage crée un disque de pierre qui vole en direction d’un ennemi. Il peut créer un disque, puis un de plus aux niveaux de lanceur 7 et 11. Pour chaque disque qu’il crée, il décide si son bord est émoussé (infligeant des dégâts contondants) ou acéré (infligeant des dégâts tranchants). Pour toucher et infliger 4d6 points de dégâts, il faut effectuer une attaque à distance avec chaque disque. Il est possible de lancer les disques sur plus d’une cible, mais aucune cible ne doit se trouver à plus de 9 mètres (6 c) des autres et les disques doivent être lancés simultanément. Au niveau de lanceur 5, les disques comptent comme des armes magiques en argent. Au niveau de lanceur 10, ils comptent également comme des armes en fer froid. Au niveau de lanceur 15, ils comptent également comme des armes en adamantium.",
+  "description_html": "<br/><br/>Le personnage crée un disque de pierre qui vole en direction d’un ennemi. Il peut créer un disque, puis un de plus aux niveaux de lanceur 7 et 11. Pour chaque disque qu’il crée, il décide si son bord est émoussé (infligeant des dégâts contondants) ou acéré (infligeant des dégâts tranchants). Pour toucher et infliger 4d6 points de dégâts, il faut effectuer une attaque à distance avec chaque disque. Il est possible de lancer les disques sur plus d’une cible, mais aucune cible ne doit se trouver à plus de 9 mètres (6 <abbr title=\"cases\">c</abbr>) des autres et les disques doivent être lancés simultanément.\nAu niveau de lanceur 5, les disques comptent comme des armes magiques en argent. Au niveau de lanceur 10, ils comptent également comme des armes en fer froid. Au niveau de lanceur 15, ils comptent également comme des armes en adamantium.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disque%20de%20pierre.ashx",
+    "cache_fichier": "cache/html/78cb0293c55d04e8d99764352f19cf4cbef838d3.html",
+    "recupere_le": "2026-07-28T22:51:19.209357+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "disque-de-pierre",
+    "resume_court": "Le lanceur crée un ou plusieurs disques de pierre volants qui attaquent des ennemis à distance.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "invocation_ou_creation",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "dégâts contondants ou tranchants selon la configuration du disque",
+      "condition_infligee": [],
+      "cible_typique": "en direction d'un ennemi"
+    },
+    "notes_ambiguite": "Le type de dégâts varie selon le choix du lanceur (émoussé = contondant, acéré = tranchant), ce qui ne correspond à aucune valeur unique de la liste `type_degats`. La valeur « autre » est retenue car le texte ne nomme pas un type énergétique élémentaire unique, mais plutôt deux types d'arme distincts au choix.",
+    "slug": "disque-de-pierre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:49+00:00",
+    "hash_source": "ddf13892379937c0c999cac72f191e9396dcb78cb1fa1e8f166590f3532ae75b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9edef0afc6071bf3d68d010e57b6cc0339d2588d998515100c77ea92da448b13",
+  "hash_vue": "b23922cabc79d1ec6064fc06afdb8b16b416f5607641982f1f33ae978d5341af"
+}

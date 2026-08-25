@@ -1,0 +1,121 @@
+{
+  "id": "soins-moderes-de-groupe",
+  "nom": "Soins modérés de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20mod%c3%a9r%c3%a9s%20de%20groupe.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 6,
+    "Cham": 6,
+    "Dru": 7,
+    "Inq": 6,
+    "Occ": 6,
+    "Prê": 6,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) ou Volonté, 1/2 dégâts (voir description)",
+  "resistance_magie": "oui (inoffensif) ou oui (voir description)",
+  "description": "Ce sort est semblable à soins légers de groupe, si ce n’est qu’il rend 2d8 points de dégâts +1 par niveau de lanceur de sorts (jusqu’à un maximum de +30).",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers%20de%20groupe.ashx\" title=\"Soins légers de groupe\">soins légers de groupe</a></i>, si ce n’est qu’il rend 2d8 points de dégâts +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +30).<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Soins légers de groupe"
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20mod%c3%a9r%c3%a9s%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/4bf022ea427e81c0ecbd0661e6addf508602f735.html",
+    "recupere_le": "2026-07-29T07:40:47.467992+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "soins-moderes-de-groupe",
+    "resume_court": "Soigne jusqu'à une créature par niveau dans un rayon de 9 m, restaurant 2d8 points de vie +1 par niveau.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "soins-moderes-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:45+00:00",
+    "hash_source": "f0b3fc22a2d68a5d2cf6531f3f438efa84176fdcf503da6e918c3bb027a615b2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4efc666c27c6b86699a6d43661c521109e78d777d02a029e168848f74ef2809e",
+  "hash_vue": "3152e3b28ca7acf6a2f59ff13374c0a2498f854cfa62f9ab1e9b1e8c379b15cc"
+}

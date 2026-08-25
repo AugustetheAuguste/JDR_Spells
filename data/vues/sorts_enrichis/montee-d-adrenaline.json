@@ -1,0 +1,88 @@
+{
+  "id": "montee-d-adrenaline",
+  "nom": "Montée d'adrénaline",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mont%c3%a9e%20dadr%c3%a9naline.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 1,
+    "Psy": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage puise dans les réserves internes de son corps et reste essoufflé. Quand il est sur le point de faire un jet de d20 basé sur la Force, la Dextérité ou la Constitution, il peut lancer ce sort pour gagner un bonus de +8 à cette caractéristique pour ce jet mais il est ensuite fatigué pendant 1 round.",
+  "description_html": "<br/><br/>Le personnage puise dans les réserves internes de son corps et reste essoufflé. Quand il est sur le point de faire un jet de d20 basé sur la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>, la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> ou la <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>, il peut lancer ce sort pour gagner un bonus de +8 à cette caractéristique pour ce jet mais il est ensuite <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fatigué\" title=\"Les états préjudiciables\">fatigué</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mont%c3%a9e%20dadr%c3%a9naline.ashx",
+    "cache_fichier": "cache/html/c77ead8d46e23a86819d532eb64764285e9ab056.html",
+    "recupere_le": "2026-07-28T23:00:57.793105+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "montee-d-adrenaline",
+    "resume_court": "Le lanceur gagne +8 à Force, Dextérité ou Constitution pour un jet, mais devient fatigué.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_instantanee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "personnelle"
+    },
+    "notes_ambiguite": "Le sort confère un bonus temporaire mais inflige une fatigue après. La catégorie « amelioration » s'applique car l'effet principal est l'augmentation de capacité ; la fatigue est une conséquence secondaire, non une condition infligée au sens tactique (elle n'apparaît pas dans la liste fermée des conditions).",
+    "slug": "montee-d-adrenaline",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:04+00:00",
+    "hash_source": "4de3ebdf59da009c41925a4071de96a6ae2a2414fc130d104c69fd1e1a73dbcf"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d306f88bf93dd6608f015fa309673ceebee401fc6e3d0ad1454a8d636f1bae06",
+  "hash_vue": "ef2ed90eeea4c5f6b1666ba2789da856136fa85399a39fdc800efb714fe9e62f"
+}

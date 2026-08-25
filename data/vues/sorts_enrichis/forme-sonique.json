@@ -1,0 +1,100 @@
+{
+  "id": "forme-sonique",
+  "nom": "Forme sonique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20sonique.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Alch": 6,
+    "Bard": 6,
+    "Ens/Mag": 6,
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de poussière récupérée sur une pierre tombale ou dans un sanctuaire sacré)",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Quand il lance ce sort, le personnage conserve sa silhouette globale mais lui et son équipement sont transformés en son semi-solide. Lorsqu’il est sous forme sonique, le personnage ne reçoit aucun malus pour se faufiler et peut traverser les cases sans malus comme s’il était plus petit de trois catégories de taille. Une fois par round, il peut effectuer une attaque de contact au corps à corps qui inflige 1d6 points de dégâts de son + 1 point par niveau de lanceur. Le personnage est considéré comme intangible (mais ne peut pas traverser les objets solides). Toute attaque non-magique qu’il effectue n’inflige que la moitié des dégâts. Les attaques magiques ne sont pas affectées et le personnage peut utiliser les objets magiques et autres pièces d’équipement normalement.\nLe personnage ne peut pas entrer dans une zone de silence. S’il se trouve dans la zone d’un sort de silence, il reçoit 1d6 points de dégâts de son par niveau de lanceur du sort de silence lors du round où celui-ci a été lancé et à chaque round où il termine son tour dans sa zone d’effet. Le personnage peut tenter de faire un jet de Vigueur chaque round pour ne recevoir que la moitié des dégâts.\nSi la durée du sort se termine alors que le personnage est sur une case qu’une créature de sa taille ne peut normalement pas occuper, il reçoit 3d6 points de dégâts et il est déplacé jusqu’à l’espace ouvert le plus proche qu’il peut normalement occuper.",
+  "description_html": "<br/><br/>Quand il lance ce sort, le personnage conserve sa silhouette globale mais lui et son équipement sont transformés en son semi-solide. Lorsqu’il est sous forme sonique, le personnage ne reçoit aucun malus pour se faufiler et peut traverser les cases sans malus comme s’il était plus petit de trois catégories de taille. Une fois par round, il peut effectuer une attaque de contact au corps à corps qui inflige 1d6 points de dégâts de son + 1 point par niveau de lanceur. Le personnage est considéré comme intangible (mais ne peut pas traverser les objets solides). Toute attaque non-magique qu’il effectue n’inflige que la moitié des dégâts. Les attaques magiques ne sont pas affectées et le personnage peut utiliser les objets magiques et autres pièces d’équipement normalement.<br/><br/>Le personnage ne peut pas entrer dans une zone de silence. S’il se trouve dans la zone d’un sort de silence, il reçoit 1d6 points de dégâts de son par niveau de lanceur du sort de silence lors du round où celui-ci a été lancé et à chaque round où il termine son tour dans sa zone d’effet. Le personnage peut tenter de faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> chaque round pour ne recevoir que la moitié des dégâts.<br/><br/>Si la durée du sort se termine alors que le personnage est sur une case qu’une créature de sa taille ne peut normalement pas occuper, il reçoit 3d6 points de dégâts et il est déplacé jusqu’à l’espace ouvert le plus proche qu’il peut normalement occuper.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20sonique.ashx",
+    "cache_fichier": "cache/html/ae9a22f1d928a2cdf28ed6ff59e5d0d0e957dba5.html",
+    "recupere_le": "2026-07-28T22:54:20.318448+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "forme-sonique",
+    "resume_court": "Le lanceur se transforme en son semi-solide, devient intangible et peut traverser les obstacles.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "degats_directs"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": "son",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts de son",
+      "condition_infligee": [],
+      "cible_typique": "le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "forme-sonique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:24+00:00",
+    "hash_source": "584528af4dedb21c2d0bec627d9a56160679f488619e79c6ae507f8fae41d3da"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "582b9091b852427aa4f466cd2584cf2b8573abace158f632321e32b70b4f29c0",
+  "hash_vue": "3fc29589dce799865eba1a610355d2a6a80a1a9dc5070db36e29a4bb75375d9b"
+}

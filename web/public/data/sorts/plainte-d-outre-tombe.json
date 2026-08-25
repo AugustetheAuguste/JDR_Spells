@@ -1,0 +1,115 @@
+{
+  "id": "plainte-d-outre-tombe",
+  "nom": "Plainte d'outre-tombe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plainte%20doutre-tombe.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mort",
+    "son"
+  ],
+  "niveaux": {
+    "Cham": 9,
+    "Ens/Mag": 9,
+    "Psy": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante/niveau dans une étendue de 12 m de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort émet des vibrations sonores meurtrières capables de tuer tous ceux qui les entendent (sauf le lanceur de sort). Il affecte une créature par niveau de lanceur de sorts à raison de 10 points de dégâts par niveau de lanceur de sorts, en commençant par celles qui se tiennent le plus près du centre de la zone d’effet.",
+  "description_html": "<br/><br/>Ce sort émet des vibrations sonores meurtrières capables de tuer tous ceux qui les entendent (sauf le lanceur de sort). Il affecte une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> à raison de 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a>, en commençant par celles qui se tiennent le plus près du centre de la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plainte%20doutre-tombe.ashx",
+    "cache_fichier": "cache/html/c319410eb216a593ffc491ea683e39a56b9c2dc5.html",
+    "recupere_le": "2026-07-28T23:03:42.965688+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "plainte-d-outre-tombe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plainte%20doutre-tombe.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 9
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "plainte-d-outre-tombe",
+    "resume_court": "Un cri meurtrier qui inflige 10 points de dégâts par niveau à plusieurs créatures proches.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "vibrations sonores meurtrières",
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante/niveau dans une étendue de 12 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "plainte-d-outre-tombe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:11+00:00",
+    "hash_source": "fac1c183de978410a7d767d4c200979ddb3eeb4e0d8e183a09acbaa677d4cca5"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "id": "message",
+  "nom": "Message",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Message.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "langage"
+  ],
+  "niveaux": {
+    "Bard": 0,
+    "Con": 0,
+    "ConU": 0,
+    "Hyp": 0,
+    "Ens/Mag": 0,
+    "Méd": 0,
+    "Occ": 0,
+    "Psy": 0,
+    "Sor": 0,
+    "Spi": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un petit morceau de fil de cuivre)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 créature/niveau",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Cette incantation permet de chuchoter des messages. Les personnes alentour discernent le message si elles réussissent un test de Perception DD 25. Le personnage commence par indiquer du doigt toutes les créatures à inclure dans le sort. Par la suite, dès qu’il murmure, le message est entendu par tous les destinataires désignés, à condition qu’ils se trouvent dans les limites de portée. L’effet du sort est bloqué par un silence d’origine magique, 30 cm de pierre, 2,5 cm de métal, une feuille de plomb, ou 90 cm de bois ou de terre. Le message n’a pas besoin de se déplacer en ligne droite. Il peut contourner un obstacle physique, à condition que le chemin qu’il emprunte reste à l’intérieur des limites de portée. Les créatures recevant le message peuvent à leur tour chuchoter une réponse, que le personnage entend. Le sort transmet les sons, pas le sens ; il ne permet donc pas de franchir la barrière du langage. Pour énoncer un message, il est nécessaire de le prononcer très bas.",
+  "description_html": "<hr/>\nCette incantation permet de chuchoter des messages. Les personnes alentour discernent le message si elles réussissent un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 25. Le personnage commence par indiquer du doigt toutes les créatures à inclure dans le sort. Par la suite, dès qu’il murmure, le message est entendu par tous les destinataires désignés, à condition qu’ils se trouvent dans les limites de portée. L’effet du sort est bloqué par un silence d’origine magique, 30 cm de pierre, 2,5 cm de métal, une feuille de plomb, ou 90 cm de bois ou de terre. Le message n’a pas besoin de se déplacer en ligne droite. Il peut contourner un obstacle physique, à condition que le chemin qu’il emprunte reste à l’intérieur des limites de portée. Les créatures recevant le message peuvent à leur tour chuchoter une réponse, que le personnage entend. Le sort transmet les sons, pas le sens ; il ne permet donc pas de franchir la barrière du langage. Pour énoncer un message, il est nécessaire de le prononcer très bas.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Message suggestif",
+      "id": "message-suggestif",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "langage",
+        "effet mental"
+      ],
+      "niveaux": {
+        "Bard": 3,
+        "Ens/Mag": 4,
+        "Hyp": 3,
+        "Méd": 3,
+        "Occ": 4,
+        "Psy": 3,
+        "Sor": 4
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F (un petit morceau de fil de cuivre)",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 créature/niveau",
+      "duree": "10 minutes/niveau, puis 1 heure/niveau ou jusqu'à accomplissement (T) ; voir texte",
+      "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+      "resistance_magie": "oui (voir texte)",
+      "description": "Ce sort fonctionne d'abord comme message (sans autoriser de jet de sauvegarde ou de résistance à la magie). Une fois que le message est actif, le personnage peut se concentrer par une action simple afin d'émettre une suggestion à une cible dans le cadre du message envoyé. La résistance à la magie et le jet de Volonté s'appliquent à la suggestion, et elle dure pendant 1 heure par niveau ou jusqu'à son accomplissement.",
+      "description_html": "<hr/>\nCe sort fonctionne d'abord comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.message.ashx\" title=\"Message\">message</a></i> (sans autoriser de jet de sauvegarde ou de résistance à la magie). Une fois que le <i>message</i> est actif, le personnage peut se concentrer par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> afin d'émettre une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> à une cible dans le cadre du message envoyé. La <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> et le jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> s'appliquent à la <i>suggestion</i>, et elle dure pendant 1 heure par niveau ou jusqu'à son accomplissement.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Message suggestif de groupe",
+      "id": "message-suggestif-de-groupe",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "langage",
+        "effet mental"
+      ],
+      "niveaux": {
+        "Bard": 6,
+        "Ens/Mag": 7,
+        "Hyp": 6,
+        "Occ": 6,
+        "Psy": 6,
+        "Sor": 7
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F (un petit morceau de fil de cuivre)",
+      "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+      "cible": "1 créature/niveau",
+      "duree": "10 minutes/niveau, puis 1 heure/niveau ou jusqu'à accomplissement (T) ; voir texte",
+      "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+      "resistance_magie": "oui (voir texte)",
+      "description": "Ce sort fonctionne comme message suggestif, excepté que le personnage peut émettre une suggestion à chacune des cibles du sort plutôt qu'à une seule. Chaque fois qu'il le fait, il doit dépenser une action simple. Le personnage peut émettre une suggestion différente à chaque cible.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.message%20suggestif.ashx\" title=\"Message suggestif\">message suggestif</a></i>, excepté que le personnage peut émettre une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> à chacune des cibles du sort plutôt qu'à une seule. Chaque fois qu'il le fait, il doit dépenser une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>. Le personnage peut émettre une <i>suggestion</i> différente à chaque cible.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Message.ashx",
+    "cache_fichier": "cache/html/0f72b010d2ad7017491ee0cda08958fe64e64977.html",
+    "recupere_le": "2026-07-28T23:00:34.784980+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "message",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Message.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 0
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 0
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 0
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 0
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 0
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 0
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 0
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 0
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "message",
+    "resume_court": "Le lanceur chuchote des messages à des créatures désignées dans sa portée, qui peuvent répondre.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "communication_ou_langage",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Le personnage commence par indiquer du doigt toutes les créatures à inclure dans le sort"
+    },
+    "notes_ambiguite": null,
+    "slug": "message",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:50+00:00",
+    "hash_source": "d8108eb6746fbe82b0782a379ac673abd178a6b1dcdc9708c12f34d30f04981b"
+  }
+}

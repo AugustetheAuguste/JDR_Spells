@@ -1,0 +1,97 @@
+{
+  "id": "brise-magie",
+  "nom": "Brise-magie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-magie.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Prê": 6,
+    "Psy": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "une créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un souffle d’énergie discordant qui perturbe la magie disponible de la cible.\nSi la cible prépare ses sorts, elle doit choisir l’un de ses sorts préparés de niveau 5, qui est immédiatement perdu.\nSi la cible n’a pas de sort préparé de niveau 5, elle doit perdre un sort préparé de niveau inférieur.\nSi la cible est un lanceur de sorts spontanés, elle perd l’un de ses emplacements de sorts de niveau 5. Si la cible n’a pas d’emplacements de sorts de niveau 5, elle perd un emplacement de sort de niveau inférieur.\nSi la cible possède plus d’une classe de lanceur de sorts, le personnage choisit au hasard laquelle il affecte. Ce sort n’a aucun effet sur les pouvoirs magiques. Pour tout sort ou emplacement de sort perdu à cause de ce sort, on considère que le lanceur a raté un test de concentration alors qu’il essayait de lancer son sort : le sort ou l’emplacement de sort est perdu et n’a aucun effet, mais le lanceur le récupère normalement la prochaine fois qu’il prépare ses sorts ou regagne ses emplacements de sorts.",
+  "description_html": "<br/><br/>Le personnage crée un souffle d’énergie discordant qui perturbe la magie disponible de la cible.<br/><br/>Si la cible prépare ses sorts, elle doit choisir l’un de ses sorts préparés de niveau 5, qui est immédiatement perdu.<br/><br/>Si la cible n’a pas de sort préparé de niveau 5, elle doit perdre un sort préparé de niveau inférieur.<br/><br/>Si la cible est un lanceur de sorts spontanés, elle perd l’un de ses emplacements de sorts de niveau 5. Si la cible n’a pas d’emplacements de sorts de niveau 5, elle perd un emplacement de sort de niveau inférieur.<br/><br/>Si la cible possède plus d’une classe de lanceur de sorts, le personnage choisit au hasard laquelle il affecte. Ce sort n’a aucun effet sur les pouvoirs magiques. Pour tout sort ou emplacement de sort perdu à cause de ce sort, on considère que le lanceur a raté un test de concentration alors qu’il essayait de lancer son sort : le sort ou l’emplacement de sort est perdu et n’a aucun effet, mais le lanceur le récupère normalement la prochaine fois qu’il prépare ses sorts ou regagne ses emplacements de sorts.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-magie.ashx",
+    "cache_fichier": "cache/html/3ae47ed835b1436b59959dbf67a6ac31fc96f3cc.html",
+    "recupere_le": "2026-07-28T22:44:52.422184+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "brise-magie",
+    "resume_court": "Détruit un sort préparé ou un emplacement de sort de niveau 5 chez la cible.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "metamagie_ou_sort_cible",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "brise-magie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:14+00:00",
+    "hash_source": "7c8adb3c240ef5597be48dbec43a3598c634dfadbe12c7db0ef12767108dd178"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "aa9c7b61c0aca858a406d79b001df28d57fba8756f84290236c3b84ed66f144e",
+  "hash_vue": "1d8c57262262a5d91a4205f65cf17cc252551b59ca8923415c5479fe643cc69c"
+}

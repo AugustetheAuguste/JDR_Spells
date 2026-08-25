@@ -1,0 +1,84 @@
+{
+  "id": "eclat-du-chaos",
+  "nom": "Éclat du chaos",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20du%20chaos.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Chaos"
+  ],
+  "niveaux": {
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "projectile d'énergie chaotique en forme de fléchette",
+  "duree": "instantanée (1d6 rounds)",
+  "jet_de_sauvegarde": "Volonté partielle (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Grâce à son symbole sacré, le personnage envoie un projectile fait de chaos coagulé vers une cible à portée, par une attaque de contact à distance. Les créatures loyales frappées par ce projectile reçoivent 1d8 points de dégâts par tranche de deux niveaux de lanceurs de sorts (5d8 au maximum). Un extérieur loyal subit 1d6 points de dégâts par niveaux de lanceurs de sort (10d6 au maximum) et est ralenti (comme avec lenteur) pendant 1 round. Volonté 1/2 dégâts et annule la lenteur. Ce sort inflige seulement la moitié des dégâts aux créatures qui ne sont ni chaotiques ni loyales, qui ne sont pas ralenties. Il n'a aucun effet sur les créatures chaotiques.",
+  "description_html": "<br/><br/><br/>Grâce à son symbole sacré, le personnage envoie un projectile fait de chaos coagulé vers une cible à portée, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a>. Les créatures loyales frappées par ce projectile reçoivent 1d8 points de dégâts par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> de lanceurs de sorts (5d8 au maximum). Un extérieur loyal subit 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> de lanceurs de sort (10d6 au maximum) et est ralenti (comme avec <a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a>) pendant\n1 round. Volonté 1/2 dégâts et annule la lenteur. Ce sort inflige seulement la moitié des dégâts aux créatures qui ne sont ni chaotiques ni loyales, qui ne sont pas ralenties. Il n'a aucun effet sur les créatures chaotiques.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20du%20chaos.ashx",
+    "cache_fichier": "cache/html/e85aa8f6ea1906e26dc640c21e94e79a49221ca3.html",
+    "recupere_le": "2026-07-28T22:38:51.399953+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "eclat-du-chaos",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20du%20chaos.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "eclat-du-chaos",
+    "resume_court": "Un projectile d'énergie chaotique qui blesse les créatures loyales et peut les ralentir.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": "projectile fait de chaos coagulé",
+      "condition_infligee": [
+        "est ralenti (comme avec lenteur) pendant 1 round"
+      ],
+      "cible_typique": "vers une cible à portée"
+    },
+    "notes_ambiguite": "Le type de dégâts est « chaos coagulé », qui ne correspond à aucune valeur énumérée (feu, froid, acide, électricité, son, force, négatif, positif, perforant, tranchant, contondant, précision) ; classé comme « autre ». La durée « instantanée (1d6 rounds) » est contradictoire : l'effet principal est instantané, mais la lenteur persiste 1 round ; seule la lenteur est retenue comme condition infligée.",
+    "slug": "eclat-du-chaos",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:08+00:00",
+    "hash_source": "630348a7294f0cce9ae79a83b658ca24d2fe3160378ebb269c6900dbcae4c9f7"
+  }
+}

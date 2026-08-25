@@ -1,0 +1,92 @@
+{
+  "id": "corrosion",
+  "nom": "Corrosion",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corrosion.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Magus": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "3 rounds",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "D’un contact, ce sort fait apparaître et grandir une tache d’acide corrosif sur une cible. Au premier round, l’acide inflige 1 point de dégâts d’acide par niveau de lanceur de sorts (15 au maximum). Au deuxième, la tache grandit et inflige 1d4 points de dégâts d’acide par niveau de lanceur de sorts (15d4 au maximum). Au troisième et dernier round, l’acide recouvre toute la créature et inflige 1d6 points de dégâts d’acide par niveau de lanceur de sorts (15d6 au maximum). La cible peut utiliser une action complexe pour gratter l’acide ou le laver avec au moins 4 litres de liquide pour réduire de moitié les dégâts du round et annuler ceux des rounds suivants.",
+  "description_html": "<br/><br/>D’un contact, ce sort fait apparaître et grandir une tache d’acide corrosif sur une cible. Au premier round, l’acide inflige 1 point de dégâts d’acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15 au maximum). Au deuxième, la tache grandit et inflige 1d4 points de dégâts d’acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d4 au maximum). Au troisième et dernier round, l’acide recouvre toute la créature et inflige 1d6 points de dégâts d’acide par \n<a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (15d6 au maximum). La cible peut utiliser une action complexe pour gratter l’acide ou le laver avec au moins 4 litres de liquide pour réduire de moitié les dégâts du round et annuler ceux des rounds suivants.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corrosion.ashx",
+    "cache_fichier": "cache/html/32689d262140ef1302edcdb9dfdf6deb60980e0c.html",
+    "recupere_le": "2026-07-28T22:48:59.206310+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "corrosion",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corrosion.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "corrosion",
+    "resume_court": "Un contact qui fait apparaître une tache d'acide corrosif infligeant des dégâts croissants sur 3 rounds.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "invocation_ou_creation",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1 point de dégâts d'acide par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "corrosion",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:52+00:00",
+    "hash_source": "6425f912c867a8022653407f2672c1c340c9544c806db231c1c24b3b14e26456"
+  }
+}

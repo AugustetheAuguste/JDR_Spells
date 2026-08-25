@@ -1,0 +1,124 @@
+{
+  "id": "blessure-grave",
+  "nom": "Blessure grave",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20grave.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 4,
+    "Cham": 3,
+    "Inq": 3,
+    "Occ": 3,
+    "Prê": 3,
+    "Sor": 4,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "En posant ses mains sur la cible, le prêtre engendre un transfert d’énergie négative faisant perdre 3d8 points de vie à sa cible, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +15). Les morts-vivants étant animés par l’énergie négative, ce sort ne les blesse pas mais les soigne du nombre indiqué.",
+  "description_html": "<br/><br/>En posant ses mains sur la cible, le <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> engendre un transfert d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a> faisant perdre 3d8 points de vie à sa cible, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +15). Les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> étant animés par l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a>, ce sort ne les blesse pas mais les soigne du nombre indiqué.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 6d8 points de dégâts + 2 points par niveau de lanceur de sorts (+30 maximum). Une cible vivante est fiévreuse pendant un round par niveau de lanceur de sorts (15 rounds maximum) si elle rate son jet de sauvegarde.",
+    "description_html": "Les dégâts infligés s’élèvent à 6d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+30 maximum). Une cible vivante est fiévreuse pendant un round par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (15 rounds maximum) si elle rate son jet de sauvegarde."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20grave.ashx",
+    "cache_fichier": "cache/html/2d67d2ba8dd15e704a5ed76f7070a0abb8956d6d.html",
+    "recupere_le": "2026-07-28T22:43:50.410086+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "blessure-grave",
+    "resume_court": "Un contact qui inflige des dégâts d'énergie négative et soigne les morts-vivants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "transfert d'énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "blessure-grave",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:51+00:00",
+    "hash_source": "ef46ec9e118ddf3681c9010a6d4ca9b96ce1b22d3314da91c035a313869f02b0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "aaf37ff991325841b20405d35c8cd8773a9073f23461171bf379aa0175b04503",
+  "hash_vue": "3e64cc82cdf9135e0784b2631b576792a4ce7b48f6362b88fcfd1f83870d30bd"
+}

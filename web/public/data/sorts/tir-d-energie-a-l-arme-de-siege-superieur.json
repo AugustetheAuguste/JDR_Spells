@@ -1,0 +1,103 @@
+{
+  "id": "tir-d-energie-a-l-arme-de-siege-superieur",
+  "nom": "Tir d'énergie à l'arme de siège supérieur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20d%c3%a9nergie%20%c3%a0%20larme%20de%20si%c3%a8ge%20sup%c3%a9rieur.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "variable"
+  ],
+  "niveaux": {
+    "Con": 6,
+    "Ens/Mag": 6,
+    "Occ": 6
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, F (une boulette de résine)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "un engin de siège de n'importe quelle taille",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort fonctionne comme tir d’énergie à l’arme de siège mais affecte un engin de siège de n’importe quelle taille, pas seulement les armes G.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.tir%20d%c3%a9nergie%20%c3%a0%20larme%20de%20si%c3%a8ge.ashx\" title=\"Tir d'énergie à l'arme de siège\">tir d’énergie à l’arme de siège</a></i> mais affecte un <a class=\"pagelink\" href=\"Pathfinder-RPG.engin%20de%20si%c3%a8ge.ashx\" title=\"engin de siège\">engin de siège</a> de n’importe quelle taille, pas seulement les armes G.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20d%c3%a9nergie%20%c3%a0%20larme%20de%20si%c3%a8ge%20sup%c3%a9rieur.ashx",
+    "cache_fichier": "cache/html/919a09eb41a1727745fb2983177dd16614179ab9.html",
+    "recupere_le": "2026-07-29T07:42:35.708104+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "tir-d-energie-a-l-arme-de-siege-superieur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20d%c3%a9nergie%20%c3%a0%20larme%20de%20si%c3%a8ge%20sup%c3%a9rieur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 6
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "tir-d-energie-a-l-arme-de-siege-superieur",
+    "resume_court": "Enchante une arme de siège de toute taille pour tirer des projectiles d'énergie pendant 10 minutes par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "arme_ou_munition",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un engin de siège de n'importe quelle taille"
+    },
+    "notes_ambiguite": "Le texte renvoie à un sort de base « tir d'énergie à l'arme de siège » non fourni. Les dégâts et conditions éventuels ne peuvent être déterminés que par ce sort de référence, absent du corpus. La catégorie « amélioration » repose sur le fait que le sort enchante une arme existante sans infliger de dégâts directs lui-même.",
+    "slug": "tir-d-energie-a-l-arme-de-siege-superieur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:31+00:00",
+    "hash_source": "36a11c7913be19a964fcdfb5ebbb606ad271cc106a37e4e4c65127c49704ff50"
+  }
+}

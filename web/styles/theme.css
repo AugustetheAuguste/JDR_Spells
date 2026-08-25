@@ -1,0 +1,162 @@
+/*
+ * Tailwind 4 is CSS-first: it no longer reads a JS config, so the tokens have to
+ * be mirrored here as `@theme` custom properties.
+ *
+ * This duplication is forced by the framework, not chosen. `lib/design/tokens.ts`
+ * stays the source, and `lib/design/tokens.test.ts` parses this file and asserts
+ * every value matches — silent drift between the two would produce components
+ * that look right in a test and wrong in a browser.
+ */
+
+@import 'tailwindcss';
+
+/*
+ * Les polices sont servies depuis le dépôt, pas depuis un CDN : le site est une
+ * fonction pure du dépôt, et une requête tierce ferait dépendre le premier rendu
+ * d'un serveur qu'on ne tient pas. `next/font` est écarté pour la raison voisine
+ * — il télécharge la police au build, donc le build ne passe plus hors ligne.
+ *
+ * Sous-ensemble latin uniquement (U+0000-00FF) : il couvre le français accentué,
+ * `œ` et `æ` compris, et c'est tout ce que le corpus contient. Licences et
+ * versions dans `public/fonts/LICENCES.md`.
+ *
+ * `swap` et non `block` : mieux vaut lire un sort en Georgia pendant 80 ms que
+ * regarder un blanc.
+ */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/fraunces-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/ibm-plex-mono-latin-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/ibm-plex-mono-latin-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@theme {
+  /* Base neutre et encre */
+  --color-base: #fafaf9;
+  --color-surface: #ffffff;
+  --color-bord: #e4e2de;
+  --color-bord-fort: #c9c6c0;
+  --color-encre: #1c1b19;
+  --color-encre-douce: #57544e;
+  --color-encre-faible: #736f67;
+  --color-survol: #f2f1ef;
+
+  /* L'accent, unique */
+  --color-accent: #116b4f;
+  --color-accent-survol: #0d5741;
+  --color-accent-voile: #e8f1ed;
+
+  /* Désaccord de niveau — informe, n'accuse pas */
+  --color-desaccord: #8a3a12;
+  --color-desaccord-voile: #fbefe6;
+
+  /* Les neuf écoles */
+  --color-ecole-abjuration: #3a5a9b;
+  --color-ecole-divination: #6b4fa8;
+  --color-ecole-enchantement: #a8377f;
+  --color-ecole-evocation: #b3421f;
+  --color-ecole-illusion: #176e77;
+  --color-ecole-invocation: #2f6b2a;
+  --color-ecole-necromancie: #3d3646;
+  --color-ecole-transmutation: #8a6412;
+  --color-ecole-universel: #5f5d55;
+
+  /* Typographie */
+  --font-affichage: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-corps: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-donnees: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Échelle de type — fixe, rien ne se calcule à la volée */
+  --text-micro: 11px;
+  --text-micro--line-height: 16px;
+  --text-petit: 12.5px;
+  --text-petit--line-height: 18px;
+  --text-base: 14.5px;
+  --text-base--line-height: 22px;
+  --text-grand: 17px;
+  --text-grand--line-height: 24px;
+  --text-titre3: 20px;
+  --text-titre3--line-height: 26px;
+  --text-titre2: 25px;
+  --text-titre2--line-height: 30px;
+  --text-titre1: 34px;
+  --text-titre1--line-height: 38px;
+
+  /* Densité */
+  --spacing-ligne: 32px;
+  --spacing-ligne-dense: 28px;
+  --spacing-gouttiere: 12px;
+  --radius-jeton: 4px;
+  --radius-panneau: 6px;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-corps);
+    /* Le corpus est en français : la coupure et la ponctuation en dépendent. */
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-encre);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    margin: 0;
+  }
+
+  /* Le focus clavier est TOUJOURS visible : la recherche se pilote au clavier,
+     et un `outline: none` sans remplacement rend le site inutilisable sans
+     souris. Aucune règle de ce dépôt ne doit le désactiver. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* Respecté parce qu'il ne coûte qu'une règle : il n'y a presque pas
+     d'animation, mais le peu qu'il y a doit disparaître quand on le demande. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0s !important;
+      animation-delay: 0s !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

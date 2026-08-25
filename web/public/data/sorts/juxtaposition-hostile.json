@@ -1,0 +1,126 @@
+{
+  "id": "juxtaposition-hostile",
+  "nom": "Juxtaposition hostile",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juxtaposition%20hostile.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 4,
+    "ConU": 5,
+    "Hyp": 4,
+    "Ens/Mag": 5,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une pièce)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature de la taille du lanceur de sorts ou plus petite",
+  "duree": "1 round/niveau ou jusqu’à épuisement",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un lien dimensionnel avec sa cible. Quand il est victime d’une attaque ou d’un sort qui inflige des dégâts, il peut dépenser une action immédiate pour changer de place avec la cible du sort, par téléportation. La cible du sort devient alors la cible de l’attaque ou du sort offensif initialement destiné au personnage. Si la téléportation ne suffit pas à faire sortir le personnage de la zone d’effet du sort offensif, ce dernier l’affecte normalement. Si la créature cible ne peut pas se tenir dans la case d’arrivée sans s’y faufiler, si le personnage essaie de la téléporter dans une case occupée ou encore dans une case où elle ne tient pas, la juxtaposition échoue. Elle échoue aussi si la cible est inconsciente ou morte au moment de l’échange. Le sort expire après que le personnage l’a utilisée une fois.",
+  "description_html": "<br/><br/>Le personnage crée un lien dimensionnel avec sa cible. Quand il est victime d’une attaque ou d’un sort qui inflige des dégâts, il peut dépenser une action immédiate pour changer de place avec la cible du sort, par téléportation. La cible du sort devient alors la cible de l’attaque ou du sort offensif initialement destiné au personnage. Si la téléportation ne suffit pas à faire sortir le personnage de la zone d’effet du sort offensif, ce dernier l’affecte normalement. Si la créature cible ne peut pas se tenir dans la case d’arrivée sans s’y faufiler, si le personnage essaie de la téléporter\ndans une case occupée ou encore dans une case où elle ne tient pas, la juxtaposition échoue. Elle échoue aussi si la cible est inconsciente ou morte au moment de l’échange. Le sort expire après que le personnage l’a utilisée une fois.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juxtaposition%20hostile.ashx",
+    "cache_fichier": "cache/html/becf10ba4bcc84ad4bbfe628db36d8d9e7dba1cd.html",
+    "recupere_le": "2026-07-28T22:57:53.588074+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "juxtaposition-hostile",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juxtaposition%20hostile.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 4
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "juxtaposition-hostile",
+    "resume_court": "Crée un lien dimensionnel permettant d'échanger de place avec une cible pour rediriger une attaque.",
+    "categorie_principale": "protection",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature de la taille du lanceur de sorts ou plus petite"
+    },
+    "notes_ambiguite": null,
+    "slug": "juxtaposition-hostile",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:48+00:00",
+    "hash_source": "c3a31e537ded901ae2b6089955156fd7c336516c5e4dfc0021c3af409a2f5752"
+  }
+}

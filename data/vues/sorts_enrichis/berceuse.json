@@ -1,0 +1,91 @@
+{
+  "id": "berceuse",
+  "nom": "Berceuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Berceuse.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 0,
+    "Hyp": 0,
+    "Psy": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "créatures vivantes situées dans une étendue de 3 m de rayon",
+  "duree": "concentration + 1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Toutes les créatures situées dans la zone d’effet sont distraites, voire somnolentes. Si ces dernières ratent leur jet de Volonté, elles subissent un malus de -5 aux tests de Perception, ainsi qu’un malus de -2 aux jets de sauvegarde contre les effets de sommeil tant que dure le sort. Berceuse dure tant que le personnage se concentre, plus 1 round par niveau de lanceur de sorts par la suite.",
+  "description_html": "<br/><br/>Toutes les créatures situées dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> sont distraites, voire somnolentes. Si ces dernières ratent leur jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, elles subissent un malus de -5 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a>, ainsi qu’un malus de -2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> contre les <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">effets de sommeil</a> tant que dure le sort. <i>Berceuse</i> dure tant que le personnage se <a class=\"pagelink\" href=\"Pathfinder-RPG.concentration.ashx\" title=\"Concentration\">concentre</a>, plus 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> par la suite.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Berceuse.ashx",
+    "cache_fichier": "cache/html/d51e917cd8f90531fdeb97d6cc433e3cbd5c8606.html",
+    "recupere_le": "2026-07-28T22:43:41.115547+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "berceuse",
+    "resume_court": "Les créatures dans une zone deviennent distraites et subissent des malus à la Perception et aux sauvegardes contre le sommeil.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "malus_chiffre",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures vivantes situées dans une étendue de 3 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "berceuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:48+00:00",
+    "hash_source": "4b87c675da2032e404bb5b1db35028fef0efc8a7a96d402613081f516a3f2f98"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a357195539bac1cd1b0da3a1c4768c5819fe52484356e791521b2f984540bb5b",
+  "hash_vue": "bf2a783b040f03939b4a84ad7394e48169adfe13bd060efcbae902122762d9c1"
+}

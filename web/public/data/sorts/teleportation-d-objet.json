@@ -1,0 +1,102 @@
+{
+  "id": "teleportation-d-objet",
+  "nom": "Téléportation d'objet",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20dobjet.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "1 objet touché, dans la limite de 25 kg/niveau et 0,1 m³/niveau",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Ce sort est semblable à téléportation, si ce n’est qu’il transporte un objet au lieu d’un personnage. Les créatures et les forces magiques (telles que la bille créée par boule de feu à retardement) ne peuvent pas être téléportées de la sorte.\nSi le lanceur de sorts le souhaite, il peut envoyer l’objet dans le plan Éthéré. Dans ce cas, l’endroit que l’objet occupait dans le plan Matériel dégage une légère aura magique jusqu’à ce qu’il revienne. Une dissipation de la magie réussie qui cible ce point bien précis ramène l’objet du plan Éthéré.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i>, si ce n’est qu’il transporte un objet au lieu d’un personnage. Les créatures et les forces magiques (telles que la bille créée par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.boule%20de%20feu%20%c3%a0%20retardement.ashx\" title=\"Boule de feu à retardement\">boule de feu à retardement</a></i>) ne peuvent pas être téléportées de la sorte.<br/><br/>Si le lanceur de sorts le souhaite, il peut envoyer l’objet dans le plan Éthéré. Dans ce cas, l’endroit que l’objet occupait dans le plan Matériel dégage une légère aura magique jusqu’à ce qu’il revienne. Une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> réussie qui cible ce point bien précis ramène l’objet du plan Éthéré.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20dobjet.ashx",
+    "cache_fichier": "cache/html/2243f441ae75a9bee165828b10f440c9cdb98ee4.html",
+    "recupere_le": "2026-07-29T07:41:59.549800+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "teleportation-d-objet",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20dobjet.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "teleportation-d-objet",
+    "resume_court": "Téléporte un objet inanimé vers un lieu connu ou le plan Éthéré.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "invocation_ou_creation",
+      "deplacement_ou_teleportation",
+      "objet_ou_equipement",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "utilitaire",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 objet touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "teleportation-d-objet",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:16+00:00",
+    "hash_source": "01d0805b2e35cb6c5a6977c8542b8ce31d8b21830c1001df6e2981e52970aad5"
+  }
+}

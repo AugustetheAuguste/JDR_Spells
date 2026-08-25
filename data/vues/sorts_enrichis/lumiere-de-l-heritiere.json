@@ -1,0 +1,94 @@
+{
+  "id": "lumiere-de-l-heritiere",
+  "nom": "Lumière de l'Héritière",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lumi%c3%a8re%20de%20Iom%c3%a9dae.ashx",
+  "ecole": "Invocation",
+  "descripteurs": [
+    "Bien",
+    "lumière"
+  ],
+  "niveaux": {
+    "Inq": 3,
+    "Pal": 2,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "tous les morts-vivants dans une étendue de 3 m de rayon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Avec ce sort, le personnage crée des colonnes de lumière bleutée qui illuminent tous les morts-vivants situés dans la zone. Les morts-vivants affectés subissent un malus de -20 aux tests de Discrétion.\nL’effet du sort ne rend pas visible les morts-vivants invisibles, mais la lumière facilite le repérage des emplacements exacts occupés par ces morts-vivants (l’invisibilité continue tout de même de leur conférer un camouflage de 50 %). La lumière de l'Héritière augmente le niveau de luminosité d’un cran dans un rayon de 1,50 mètre autour des morts-vivants affectés. Dès qu’un mort-vivant est affecté, il reste illuminé jusqu’à la fin du sort tant qu’il demeure à portée du sort et même s’il quitte le rayon d’origine du sort.\nLes morts-vivants affectés doivent également effectuer un jet de Volonté la première fois où ils sont illuminés par la lumière de l'Héritière. Ceux qui ratent ce jet de sauvegarde perdent tous les avantages conférés par une éventuelle résistance à la canalisation et subissent un malus de -2 aux jets de sauvegarde effectués contre les effets d’énergie positive.",
+  "description_html": "<br/><br/>Avec ce sort, le personnage crée des colonnes de lumière bleutée qui illuminent tous les morts-vivants situés dans la zone. Les morts-vivants affectés subissent un malus de -20 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Discr%c3%a9tion.ashx\" title=\"Discrétion\">Discrétion</a>.<br/><br/>L’effet du sort ne rend pas visible les morts-vivants invisibles, mais la lumière facilite le repérage des emplacements exacts occupés par ces morts-vivants (l’invisibilité continue tout de même de leur conférer un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage%20total.ashx\" title=\"camouflage total\">camouflage de 50 %</a>). La lumière de l'Héritière augmente le niveau de luminosité d’un cran dans un rayon de 1,50 mètre autour des morts-vivants affectés. Dès qu’un mort-vivant est affecté, il reste illuminé jusqu’à la fin du sort tant qu’il demeure à portée du sort et même s’il quitte le rayon d’origine du sort.<br/><br/>Les morts-vivants affectés doivent également effectuer un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> la première fois où ils sont illuminés par la lumière de l'Héritière. Ceux qui ratent ce <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> perdent tous les avantages conférés par une éventuelle <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20la%20canalisation%20(capacit%c3%a9).ashx\" title=\"Résistance à la canalisation (Ext)\">résistance à la canalisation</a> et subissent un malus de -2 aux jets de sauvegarde effectués contre les effets d’énergie positive.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lumi%c3%a8re%20de%20Iom%c3%a9dae.ashx",
+    "cache_fichier": "cache/html/8b7fb96700e34b10bb75f792019bce953cf56444.html",
+    "recupere_le": "2026-07-28T22:59:08.657567+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "lumiere-de-l-heritiere",
+    "resume_court": "Des colonnes de lumière bleutée illuminent les morts-vivants dans une zone et les pénalisent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "detection_ou_revelation",
+      "malus_chiffre",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "tous les morts-vivants dans une étendue de 3 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "lumiere-de-l-heritiere",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:17+00:00",
+    "hash_source": "d45be0d2c013f42581ab5012639fb0b6ed224f02e9c35d79e5b0b7f88fef31b3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d8cd8a1453a95f283b0cb85d50ae09ae24a15c437231aa528ad5ed43e8108f97",
+  "hash_vue": "85c151542aa6bed341b70c485cea12b0de23594739da4c60e02e32427e8a9021"
+}

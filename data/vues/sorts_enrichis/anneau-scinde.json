@@ -1,0 +1,106 @@
+{
+  "id": "anneau-scinde",
+  "nom": "Anneau scindé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anneau%20scind%c3%a9.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une écaille de serpent)",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "une case de 1,5 m de côté",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme tentacules noirs, à la seule différence qu’il crée un serpent décapité de taille G qui surgit du sol et agrippe une créature désignée par l’homme-serpent se trouvant dans un rayon de 1,50 mètre du serpent. Par une action simple, l’homme-serpent peut ordonner au serpent de libérer la cible agrippée pour lui désigner une autre créature à attaquer.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.tentacules%20noirs.ashx\" title=\"Tentacules noirs\">tentacules noirs</a></i>, à la seule différence qu’il crée un serpent décapité de taille G qui surgit du sol et agrippe une créature désignée par l’homme-serpent se trouvant dans un rayon de 1,50 mètre du serpent. Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, l’homme-serpent peut ordonner au serpent de libérer la cible agrippée pour lui désigner une autre créature à attaquer.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "Cette option est plus courante chez les hommes-serpents": null,
+    "sorts_lies": "Tentacules noirs"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anneau%20scind%c3%a9.ashx",
+    "cache_fichier": "cache/html/03a4d2a3c0b3fc054fce22bbe0b5b2b60f1ed930.html",
+    "recupere_le": "2026-07-28T22:40:54.409407+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "anneau-scinde",
+    "resume_court": "Un serpent décapité surgit du sol et agrippe une créature désignée par le lanceur.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevetre"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "agrippe une créature"
+      ],
+      "cible_typique": "une case de 1,5 m de côté"
+    },
+    "notes_ambiguite": "Le texte dit « agrippe » plutôt qu'« enchevêtre » explicitement, mais l'agrippement correspond à la condition d'enchevêtrement dans Pathfinder. Le sort crée une zone (case) mais l'effet principal cible une créature désignée dans un rayon du serpent.",
+    "slug": "anneau-scinde",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:32+00:00",
+    "hash_source": "d3e5eee92a828731db1b362c4526988b7694379b9fcaef4a1784deeb2f93a528"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "afd76b7dfe3c4c6ba5b0347701842c689d9f5cad36732bc4530b779a9d569492",
+  "hash_vue": "6720c28c84a299ecbfa81cccd82151d10a338a9b53af260a54143f1aa3004f99"
+}

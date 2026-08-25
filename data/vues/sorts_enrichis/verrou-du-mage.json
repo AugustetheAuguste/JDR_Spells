@@ -1,0 +1,78 @@
+{
+  "id": "verrou-du-mage",
+  "nom": "Verrou du mage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Verrou%20du%20mage.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Occ": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (poussière d’or d’une valeur de 25 po)",
+  "portee": "contact",
+  "cible": "porte, coffre ou portail touché, dans la limite de 3 m²/niveau",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Un verrou du mage ferme solidement le coffre, la porte ou le portail ciblé. Le mage peut ouvrir son propre verrou sans la moindre difficulté. Si l’objet fermé a un verrou, le DD de celui-ci augmente de 10 tant qu’il reste fixé à l’objet. Si ce dernier n’a pas de verrou, le sort en conçoit un que l’on peut ouvrir avec un test de Sabotage DD 20.\nUne porte ou un objet fermé par ce sort s’ouvre uniquement avec déblocage ou dissipation de la magie. Si quelqu’un tente d’enfoncer une porte ou un portail protégés par ce sort, ajoutez +10 au DD normal du test de Force. À noter que déblocage ne dissipe pas un verrou du mage, mais se contente de le rendre inactif pendant dix minutes.",
+  "description_html": "<br/><br/>Un <i>verrou du mage</i> ferme solidement le coffre, la porte ou le portail ciblé. Le mage peut ouvrir son propre verrou sans la moindre difficulté. Si l’objet fermé a un verrou, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de celui-ci augmente de 10 tant qu’il reste fixé à l’objet. Si ce dernier n’a pas de verrou, le sort en conçoit un que l’on peut ouvrir avec un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 20.<br/><br/>Une porte ou un objet fermé par ce sort s’ouvre uniquement avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9blocage.ashx\" title=\"Déblocage\">déblocage</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i>. Si quelqu’un tente d’enfoncer une porte ou un portail protégés par ce sort, ajoutez +10 au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> normal du test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>. À noter que <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9blocage.ashx\" title=\"Déblocage\">déblocage</a></i> ne dissipe pas un <i>verrou du mage</i>, mais se contente de le rendre inactif pendant dix minutes.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Verrou%20du%20mage.ashx",
+    "cache_fichier": "cache/html/dd8622fec6e7b359a993b9798e8fd958fdedbd97.html",
+    "recupere_le": "2026-07-29T07:44:02.504317+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "verrou-du-mage",
+    "resume_court": "Ferme solidement une porte, un coffre ou un portail, augmentant la difficulté de l'ouvrir.",
+    "categorie_principale": "protection",
+    "tags": [
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "porte, coffre ou portail touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "verrou-du-mage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:06+00:00",
+    "hash_source": "1cb48284578e8500717bca4491d3e2b176db7e72d5b05204967f02cf0a2f4e69"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3a7ffb9b7cce79e28532f572802c22ce2e8e5ab11c76ed74cf68e4466e4fac8a",
+  "hash_vue": "d758e28d4912febeeac60dc3cac9d4e6bc87013070d7ce638bec7078205ece16"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "brandon",
+  "nom": "Brandon",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brandon.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Ens/Mag": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/4 niveaux, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, voir texte)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage marque plusieurs alliés avec une rune enflammée. Cette rune ne provoque pas de dégâts et émet autant de lumière qu'une torche. Tant que le brandon brûle, toute créature marquée est immunisée contre les dégâts de tout sort de feu lancé par le personnage. Toutes les armes de la cible (naturelles ou manufacturées) infligent +1d6 points de dégâts de feu sur un coup réussi (ce bonus de dégâts se cumule avec tout dégâts de feu que les armes de la cible infligeaient déjà). Tant que le sort est actif, la créature qui porte un brandon peut, à tout moment, lancer un rayon de feu sur toute cible distante de moins de 9 mètres ((6 c) par une action rapide. Ce rayon nécessite une attaque de contact à distance et inflige 6d6 points de dégâts de feu. Une fois qu'une créature a utilisé son brandon pour lancer un rayon de feu, le sort se termine pour cette créature.",
+  "description_html": "<br/><br/>Le personnage marque plusieurs alliés avec une rune enflammée. Cette rune ne provoque pas de dégâts et émet autant de lumière qu'une torche. Tant que le <i>brandon</i> brûle, toute créature marquée est <a class=\"pagelink\" href=\"Pathfinder-RPG.immunit%c3%a9.ashx\" title=\"Immunité\">immunisée</a> contre les dégâts de tout sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">feu</a> lancé par le personnage. Toutes les armes de la cible (naturelles ou manufacturées) infligent +1d6 points de dégâts de feu sur un coup réussi (ce bonus de dégâts se cumule avec tout dégâts de feu que les armes de la cible infligeaient déjà). Tant que le sort est actif, la créature qui porte un <i>brandon </i>peut, à tout moment, lancer un rayon de feu sur toute cible distante de moins de 9 mètres ((6 <abbr title=\"cases\">c</abbr>) par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a>. Ce rayon nécessite une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> et inflige 6d6 points de dégâts de feu. Une fois qu'une créature a utilisé son <i>brandon</i> pour lancer un rayon de feu, le sort se termine pour cette créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brandon.ashx",
+    "cache_fichier": "cache/html/d4a9db31e003a79894205233061e6139a3bdee49.html",
+    "recupere_le": "2026-07-28T22:44:43.090510+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "brandon",
+    "resume_court": "Marque plusieurs alliés avec une rune enflammée qui les immunise contre le feu du lanceur, augmente leurs dégâts de feu et leur permet de lancer un rayon.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "immunite_ou_resistance_element",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/4 niveaux"
+    },
+    "notes_ambiguite": "Le sort confère aussi la capacité de lancer un rayon de feu (6d6 dégâts de feu), mais cette capacité est secondaire par rapport à l'amélioration des alliés. La catégorie principale reste `amelioration` car l'effet primaire est d'augmenter les capacités des alliés (immunité, bonus de dégâts). Le rayon est un effet tactique du sort, pas sa fonction principale.",
+    "slug": "brandon",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:11+00:00",
+    "hash_source": "088914efce8b8caf95bcc4c4d1236e08cf8dbc405f58ebd4327c63357e0fad15"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5ac29bbc7c729b706aeba1708017b03d7ac12a83cb14880cd7ecc413cb3ea599",
+  "hash_vue": "1b6555348f94dc1e8d25e0e6a06358da5f0b31c9c31d73d2a863bb691d6b2fae"
+}

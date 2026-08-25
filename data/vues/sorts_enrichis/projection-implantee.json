@@ -1,0 +1,89 @@
+{
+  "id": "projection-implantee",
+  "nom": "Projection implantée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projection%20implant%c3%a9e.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30m + 3m/niveau)",
+  "cible": "une créature",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme projection télempathique, sauf que ses effets de modification du comportement restent dormants dans l'esprit de la cible. Lorsque que ce sort est lancé, le lanceur désigne un mot de commande ou une phrase dont la cible ne conserve aucun souvenir. La prochaine créature qui prononcera le mot de commande ou la phrase à la cible déclenchera la projection télempathique implantée, traitant le locuteur comme le lanceur de sort originel.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.projection%20t%c3%a9lempathique.ashx\" title=\"Projection télempathique\">projection télempathique</a></i>, sauf que ses effets de modification du comportement restent dormants dans l'esprit de la cible. Lorsque que ce sort est lancé, le lanceur désigne un mot de commande ou une phrase dont la cible ne conserve aucun souvenir. La prochaine créature qui prononcera le mot de commande ou la phrase à la cible déclenchera la <i>projection télempathique</i> implantée, traitant le locuteur comme le lanceur de sort originel.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Origins/Origines occultes ; /!\\ Traduit par la communauté /!\\",
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Projection télempathique"
+  },
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projection%20implant%c3%a9e.ashx",
+    "cache_fichier": "cache/html/3e1bc0762b87b8296fcca79bdf3cca48d38aea70.html",
+    "recupere_le": "2026-07-28T23:04:54.045615+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "projection-implantee",
+    "resume_court": "Un sort qui implante une projection télempathique dormante, déclenchée par un mot de commande prononcé par autrui.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort ne décrit pas directement les effets de la projection télempathique implantée, qui dépendent du sort de référence « projection télempathique » non fourni. La catégorie « coercition » est retenue car le sort modifie le comportement de la cible via un déclencheur implanté dans son esprit, bien que l'effet reste dormant jusqu'à activation.",
+    "slug": "projection-implantee",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:38+00:00",
+    "hash_source": "0558fd36b629b4640572c409b0bf2273139872a875af4aaf76a5266a91d643c7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "77bd19e40ceae5f842ed54e7d9f6ce9560e5bbefbd83029bbbab7d00ca1cf475",
+  "hash_vue": "bc1c339a3efd53ee775142ede73122924fc8f9536298017b6b8a78005bcf48db"
+}

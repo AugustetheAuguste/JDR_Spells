@@ -1,0 +1,77 @@
+{
+  "id": "detonation-discordante",
+  "nom": "Détonation discordante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tonation%20discordante.ashx",
+  "ecole": "Évocation (sonore)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "3 ou 9 m (2 ou 6 c)",
+  "cible": "voir texte",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée une vague de tonnerre et de force, soit dans un rayonnement de 3 mètres (2 c) de rayon centré sur le personnage, soit dans un cône de 9 mètres (6 c). Les créatures qui se trouvent dans la zone subissent 3d6 points de dégâts sonores et sont repoussées de côté, comme par une bousculade. Le personnage fait un test de manœuvre de combat et applique ce résultat à chaque créature de la zone. Pour cette bousculade, le BMO du personnage est égal à son niveau de lanceur de sorts plus son modificateur de Charisme. Cette bousculade ne provoque pas d'attaque d'opportunité. La détonation discordante ne peut pénétrer un sort de silence (ou tout effet de silence magique similaire).",
+  "description_html": "<br/><br/>Le personnage crée une vague de tonnerre et de force, soit dans un rayonnement de 3 mètres (2 <abbr title=\"cases\">c</abbr>) de rayon centré sur le personnage, soit dans un cône de 9 mètres (6 <abbr title=\"cases\">c</abbr>). Les créatures qui se trouvent dans la zone subissent 3d6 points de dégâts sonores et sont repoussées de côté, comme par une <a class=\"pagelink\" href=\"Pathfinder-RPG.bousculade.ashx\" title=\"bousculade\">bousculade</a>. Le personnage fait un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.man%c5%93uvre%20de%20combat.ashx\" title=\"manœuvre de combat\">manœuvre de combat</a> et applique ce résultat à chaque créature de la zone. Pour cette <a class=\"pagelink\" href=\"Pathfinder-RPG.bousculade.ashx\" title=\"bousculade\">bousculade</a>, le <a class=\"pagelink\" href=\"Pathfinder-RPG.BMO.ashx\" title=\"BMO\">BMO</a> du personnage est égal à son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> plus son modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a>. Cette bousculade ne provoque pas d'<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d'opportunité</a>. La <i>détonation discordante</i> ne peut pénétrer un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i> (ou tout effet de silence magique similaire).<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 5d6 points de dégâts de son et le personnage gagne un bonus de +2 aux tests de manoeuvre offensive effectués pour bousculer ses adversaires. Le sort ignore les effets de silence magique non-mythique et dissipe les effets de silence non-mythique d’un niveau inférieur ou égal à 4.",
+    "description_html": "Les dégâts infligés s’élèvent à 5d6 points de dégâts de son et le personnage gagne un bonus de +2 aux tests de manoeuvre offensive effectués pour bousculer ses adversaires. Le sort ignore les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a> magique <a class=\"pagelink\" href=\"Pathfinder-RPG.non-mythique.ashx\" title=\"non-mythique\">non-mythique</a> et dissipe les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.non-mythique.ashx\" title=\"non-mythique\">non-mythique</a> d’un niveau inférieur ou égal à 4."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tonation%20discordante.ashx",
+    "cache_fichier": "cache/html/558e66c6b05e66a6f7e65a9c35ade8a7631bd4ac.html",
+    "recupere_le": "2026-07-28T22:50:57.711012+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "detonation-discordante",
+    "resume_court": "Une vague de tonnerre et de force qui blesse et repousse les créatures dans une zone.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "rayon_ou_projectile",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "son",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts sonores",
+      "condition_infligee": [],
+      "cible_typique": "dans un rayonnement de 3 mètres (2 c) de rayon centré sur le personnage, soit dans un cône de 9 mètres (6 c)"
+    },
+    "notes_ambiguite": null,
+    "slug": "detonation-discordante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:43+00:00",
+    "hash_source": "0f75072ec8f6c4300cfb9f2c91495f7d6294ed1ff4c793b8c17d3fbca8f624d2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "964ecacf6669b2d15290707ff5570957927ec81fa62e45d04aa59ce5f9be394d",
+  "hash_vue": "f2dda8abc414ec5dbcf249c240dc988b28e4024068ff601e87552dafe1cb6d56"
+}

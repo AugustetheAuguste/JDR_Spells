@@ -1,0 +1,101 @@
+{
+  "id": "panoplie-magique",
+  "nom": "Panoplie magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Panoplie%20magique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 3,
+    "Inq": 3,
+    "Occ": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "armure ou bouclier touché",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "L’armure ou le bouclier touché par le personnage bénéficie d’un bonus d’altération de +1 par tranche de quatre niveaux du prêtre (jusqu’à un maximum de +5 au niveau 20). Ce sort permet aussi d’enchanter des vêtements normaux qui sont alors assimilés à une armure qui ne procure aucun bonus à la CA.",
+  "description_html": "<br/><br/>L’armure ou le bouclier touché par le personnage bénéficie d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx\" title=\"bonus d'altération\">bonus d’altération</a> de +1 par tranche de quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> du <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> (jusqu’à un maximum de +5 au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 20). Ce sort permet aussi d’enchanter des vêtements normaux qui sont alors assimilés à une armure qui ne procure aucun bonus à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage peut conférer une propriété spéciale d’armure si la cible est une armure ou une propriété spéciale de bouclier si c’est un bouclier. La propriété spéciale doit posséder un modificateur au prix de vente correspondant à un bonus d’altération de +1 au maximum ou un prix de vente inférieur ou égal à 4 000 po.\nAmplifié (3ème). Si le personnage dépense deux utilisations de pouvoir mythique, il peut conférer un nombre quelconque de propriétés spéciales dont le modificateur au prix de vente total correspond à un bonus d’altération de +2 au maximum ou dont le prix de vente total est inférieur ou égal à 15 000 po.",
+    "description_html": "Le personnage peut conférer une propriété spéciale d’armure si la cible est une armure ou une propriété spéciale de bouclier si c’est un bouclier. La propriété spéciale doit posséder un modificateur au prix de vente correspondant à un bonus d’altération de +1 au maximum ou un prix de vente inférieur ou égal à 4 000 po.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (3ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, il peut conférer un nombre quelconque de propriétés spéciales dont le modificateur au prix de vente total correspond à un bonus d’altération de +2 au maximum ou dont le prix de vente total est inférieur ou égal à 15 000 po."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Panoplie%20magique.ashx",
+    "cache_fichier": "cache/html/93d0a9431f744889c9df8c02f2211aa6aca36e34.html",
+    "recupere_le": "2026-07-28T23:02:29.914073+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "panoplie-magique",
+    "resume_court": "Enchante une armure, un bouclier ou des vêtements avec un bonus d'altération temporaire.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "armure ou bouclier touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "panoplie-magique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:42+00:00",
+    "hash_source": "e331f72b0779e5e4d0ad01e7c8ed7d0422be1e56712ef8c7d96fb582301b6aaa"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "aa11afdcb9617d4e76a51d2904a594b896499c0eccd09c1dd30790bbeabfb41d",
+  "hash_vue": "5140f8a779cc06ba5a53905bc5fa55e48425c163536542311fd354200a02bf8d"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "benediction-du-guet",
+  "nom": "Bénédiction du guet",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20guet.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Inq": 1,
+    "Pal": 1,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "15 m (10 c)",
+  "cible": "lanceur de sorts et tous ses alliés dans un rayonnement de 15 m (10 c), centré sur le lanceur",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme le sort bénédiction, à l’exception de ce qui est indiqué plus haut. Il ne fonctionne que dans la ville d’origine du lanceur et concerne spécifiquement les zones sous la juridiction du guet de la ville. Par exemple, si la garde patrouille dans un bidonville en-dehors des murs de la ville mais pas dans les tunnels souterrains en ruines de celle-ci, le sort fonctionnera dans la première zone mais pas dans la seconde.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme le sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.b%c3%a9n%c3%a9diction.ashx\" title=\"Bénédiction\">bénédiction</a></i>, à l’exception de ce qui est indiqué plus haut. Il ne fonctionne que dans la ville d’origine du lanceur et concerne spécifiquement les zones sous la juridiction du guet de la ville. Par exemple, si la garde patrouille dans un bidonville en-dehors des murs de la ville mais pas dans les tunnels souterrains en ruines de celle-ci, le sort fonctionnera dans la première zone mais pas dans la seconde.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Abadar."
+  },
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20guet.ashx",
+    "cache_fichier": "cache/html/c774d81ebfbb3d983cdfe40ca8e4fbea3fb65647.html",
+    "recupere_le": "2026-07-28T22:43:10.058772+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "benediction-du-guet",
+    "resume_court": "Le lanceur et ses alliés gagnent un bonus de moral dans les zones sous juridiction du guet urbain.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "lanceur de sorts et tous ses alliés dans un rayonnement de 15 m (10 c), centré sur le lanceur"
+    },
+    "notes_ambiguite": "Le texte renvoie à « bénédiction » pour les effets précis (bonus de moral) sans les détailler ici. La catégorie et les tags reposent sur la structure générale d'un sort d'amélioration de groupe avec bonus, mais le type exact du bonus n'est pas spécifié dans ce texte.",
+    "slug": "benediction-du-guet",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:49+00:00",
+    "hash_source": "22cea534c191d7e1692d43e34fa9666f3d8bdad0d2b90f624475d390ba428cf9"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "92a9e9698c844c71efd1bd3608c260d7f2e34d041d5fed6acd9e27e2cbb3bd8f",
+  "hash_vue": "479481a34b53a4761871550eec828157835810b4059de4b133668f49a9625d84"
+}

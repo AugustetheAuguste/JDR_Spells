@@ -1,0 +1,98 @@
+{
+  "id": "voir-l-alignement",
+  "nom": "Voir l'alignement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voir%20lalignement.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un oeil de triton)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Quand le personnage lance ce sort, il choisit un alignement (Loyal Bon ou Chaotique Mauvais, par exemple). Les créatures de cet alignement émettent un halo fantomatique quand elles se trouvent dans son champ de vision mais il est le seul à le voir.\nLes sorts qui dissimulent l’alignement, comme alignement indétectable, trompent ce sort.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il choisit un <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> (Loyal Bon ou Chaotique Mauvais, par exemple). Les créatures de cet alignement émettent un halo fantomatique quand elles se trouvent dans son champ de vision mais il est le seul à le voir.<br/><br/>Les sorts qui dissimulent l’alignement, comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.alignement%20ind%c3%a9tectable.ashx\" title=\"Alignement indétectable\">alignement indétectable</a></i>, trompent ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voir%20lalignement.ashx",
+    "cache_fichier": "cache/html/7af32a4629522a819e6a165c31bab91690e79740.html",
+    "recupere_le": "2026-07-29T07:44:37.586420+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "voir-l-alignement",
+    "resume_court": "Le lanceur voit un halo autour des créatures d'un alignement choisi pendant 1 round par niveau.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "perception_amelioree",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "voir-l-alignement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:19+00:00",
+    "hash_source": "422a0675faf1b06485704fd045610f070ee96a8120d82cd3aa06ab061ee9bb01"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a4d78b967a4adf1d2eb8b829da29a3fc77f7194ffe7e054679cd36cacebe3646",
+  "hash_vue": "a9ca06fb3681a49444a87a43ed64fa186b11169bc3d61bfe322baee226b69214"
+}

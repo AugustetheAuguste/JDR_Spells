@@ -1,0 +1,89 @@
+{
+  "id": "conduit-etrange",
+  "nom": "Conduit étrange",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conduit%20%c3%a9trange.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un petit miroir)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Créé à l’origine par un disciple du Roi-mage, ce sort a été utilisé pour transformer les soldats ennemis des armées de morts-vivants du Domaine du Mort en conduits d’énergie magique susceptibles d’exploser au milieu des lignes arrières ennemies. Depuis lors, ce sort est fortement apprécié des lanceurs de sorts profanes qui maîtrisent certaines tactiques sur le champ de bataille.\nSi la cible ne parvient pas à résister aux effets de ce sort en réussissant un jet de Volonté, une faible aura lumineuse l’enveloppe, comme avec une lueur féerique. À n’importe quel moment avant que le conduit étrange ne prenne fin, le personnage peut lancer un autre sort dont la zone d’effet est un cône, un cylindre, une ligne ou une sphère et utiliser la cible du conduit étrange comme point d’origine de ce sort. Cette décision met immédiatement fin au sort. La cible doit être à courte portée (7,50 mètres + 1,50 mètre/2 niveaux) pour que le personnage puisse utiliser le conduit. Si la cible sort de cette portée, l’effet du conduit étrange persiste, mais ne peut pas être utilisé de cette façon tant que la cible ne revient pas à portée du sort.",
+  "description_html": "<br/><br/><i>Créé à l’origine par un disciple du Roi-mage, ce sort a été utilisé pour transformer les soldats ennemis des armées de morts-vivants du Domaine du Mort en conduits d’énergie magique susceptibles d’exploser au milieu des lignes arrières ennemies. Depuis lors, ce sort est fortement apprécié des lanceurs de sorts profanes qui maîtrisent certaines tactiques sur le champ de bataille.</i><br/><br/>Si la cible ne parvient pas à résister aux effets de ce sort en réussissant un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, une faible aura lumineuse l’enveloppe, comme avec une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lueur%20f%c3%a9erique.ashx\" title=\"Lueur féerique\">lueur féerique</a></i>. À n’importe quel moment avant que le <i>conduit étrange</i> ne prenne fin, le personnage peut lancer un autre sort dont la zone d’effet est un cône, un cylindre, une ligne ou une sphère et utiliser la cible du conduit étrange comme point d’origine de ce sort. Cette décision met immédiatement fin au sort. La cible doit être à courte portée (7,50 mètres + 1,50 mètre/2 niveaux) pour que le personnage puisse utiliser le conduit. Si la cible sort de cette portée, l’effet du <i>conduit étrange</i> persiste, mais ne peut pas être utilisé de cette façon tant que la cible ne revient pas à portée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conduit%20%c3%a9trange.ashx",
+    "cache_fichier": "cache/html/4351b01ca7d527d422b7f077bca5b5d350bc5762.html",
+    "recupere_le": "2026-07-28T22:47:15.755782+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "conduit-etrange",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conduit%20%c3%a9trange.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "conduit-etrange",
+    "resume_court": "Marque une créature pour servir de point d'origine à un sort de zone ultérieur du lanceur.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "metamagie_ou_sort_cible"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: une créature"
+    },
+    "notes_ambiguite": "Le sort ne cause pas de dégâts directs mais transforme la cible en vecteur pour un autre sort. Classé en utilitaire plutôt qu'en attaque directe car l'effet réside dans la modification du ciblage d'un sort futur, non dans une agression immédiate. La catégorie pourrait aussi être controle_de_zone, mais le texte insiste sur la transformation de la cible elle-même (« enveloppe ») et son rôle de point d'origine.",
+    "slug": "conduit-etrange",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:13+00:00",
+    "hash_source": "3450b7abb2bfda15538a06e11347638f7233d21f1a4f4152e454c59ff2ecf3f1"
+  }
+}

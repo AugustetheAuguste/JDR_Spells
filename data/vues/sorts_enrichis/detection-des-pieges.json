@@ -1,0 +1,112 @@
+{
+  "id": "detection-des-pieges",
+  "nom": "Détection des pièges",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20des%20pi%c3%a8ges.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 2,
+    "Méd": 2,
+    "Occ": 2,
+    "Prê": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage acquiert une connaissance innée du mécanisme des pièges, ce qui lui permet de bénéficier d’un bonus d’intuition égal à la moitié de son niveau de lanceur de sorts (+10 maximum) pour tout test de Perception visant à trouver les pièges. Il a droit à un test pour remarquer tout piège situé à moins de trois mètres de lui, même s’il ne les cherche pas activement. Notez que détection des pièges ne confère pas la faculté de désamorcer les pièges ainsi découverts.",
+  "description_html": "<br/><br/>Le personnage acquiert une connaissance innée du mécanisme des pièges, ce qui lui permet de bénéficier d’un bonus d’intuition égal à la moitié de son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (+10 maximum) pour tout test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> visant à trouver les pièges. Il a droit à un test pour remarquer tout piège situé à moins de trois mètres de lui, même s’il ne les cherche pas activement. Notez que <i>détection des pièges</i> ne confère pas la faculté de désamorcer les pièges ainsi découverts.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20des%20pi%c3%a8ges.ashx",
+    "cache_fichier": "cache/html/7f3200ed07eb7b73f9d2779769d0e1308106c4bc.html",
+    "recupere_le": "2026-07-28T22:50:47.876984+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "detection-des-pieges",
+    "resume_court": "Le lanceur détecte automatiquement les pièges à proximité et gagne un bonus aux tests de Perception.",
+    "categorie_principale": "divination",
+    "tags": [
+      "bonus_chiffre",
+      "divination_information",
+      "perception_amelioree",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le jeteur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "detection-des-pieges",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:40+00:00",
+    "hash_source": "ba9c1dfa8f16c49f230ec1398d109fbdbb4a5a9af0063e9f25bffeab02984938"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d6c675e001e3be7be494ed5653ed691e723cf1758e132d6c0e7e77ea2f1edf17",
+  "hash_vue": "ed48669f7fbb6fd6ecaae7ed140f20654286f78fd24ad68ab14af23e682afc91"
+}

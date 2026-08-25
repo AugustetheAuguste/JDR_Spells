@@ -1,0 +1,125 @@
+{
+  "id": "balle-dediee-superieure",
+  "nom": "Balle dédiée supérieure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balle%20d%c3%a9di%c3%a9e%20sup%c3%a9rieure.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 6,
+    "Ens/Mag": 6,
+    "Psy": 6,
+    "Rôd": 4,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (un objet de la créature choisie ou de son type)",
+  "portee": "contact",
+  "cible": "une munition ou une arme de jet",
+  "duree": "10 minutes/niveau ou jusqu’à déchargement",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort fonctionne comme balle dédiée mais les dégâts supplémentaires s'élèvent à 2 points par niveau de lanceur de sorts (40 au maximum).",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.balle%20d%c3%a9di%c3%a9e.ashx\" title=\"Balle dédiée\">balle dédiée</a></i> mais les dégâts supplémentaires s'élèvent à 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (40 au maximum).<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balle%20d%c3%a9di%c3%a9e%20sup%c3%a9rieure.ashx",
+    "cache_fichier": "cache/html/173f261778de841cf9bc44950dc899c7760a66ba.html",
+    "recupere_le": "2026-07-28T22:43:19.814775+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "balle-dediee-superieure",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balle%20d%c3%a9di%c3%a9e%20sup%c3%a9rieure.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "balle-dediee-superieure",
+    "resume_court": "Une munition ou arme de jet inflige 2 points de dégâts supplémentaires par niveau du lanceur contre une créature désignée.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "bonus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une munition ou une arme de jet"
+    },
+    "notes_ambiguite": "Le sort améliore une arme ou une munition sans infliger lui-même de dégâts directs ; les dégâts supplémentaires surviennent lors du déchargement de l'arme. Le texte renvoie à « balle dédiée » sans la reproduire, mais indique clairement que le bonus s'élève à 2 points par niveau.",
+    "slug": "balle-dediee-superieure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:35+00:00",
+    "hash_source": "85444365cb02699a7e4fd2e3af1cc4b39c7b063a0d27193724eb9a81013775d0"
+  }
+}

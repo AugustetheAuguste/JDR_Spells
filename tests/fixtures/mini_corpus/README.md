@@ -17,8 +17,9 @@ tests/fixtures/mini_corpus/
 ## Elle ne se régénère JAMAIS
 
 La fixture est **gelée**. Aucun test ne la reconstruit, ne la réécrit, ni ne la
-recopie depuis `data/`. Règle du plan (`build/01_SKILLS_AND_TOOLS.md`, §
-*Implementation Notes*), citée mot pour mot :
+recopie depuis `data/`. Règle du plan d'implémentation de l'étape 01, citée mot
+pour mot (le plan lui-même a été retiré, le pipeline étant achevé ; la règle, elle,
+reste en vigueur) :
 
 > La fixture est copiée puis **gelée** : un test qui casse parce que le vrai
 > corpus a bougé est un mauvais test. Documenter qu'elle ne se régénère pas.

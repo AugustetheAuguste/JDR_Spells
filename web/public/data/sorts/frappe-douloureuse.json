@@ -1,0 +1,155 @@
+{
+  "id": "frappe-douloureuse",
+  "nom": "Frappe douloureuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20douloureuse.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "douleur",
+    "mal"
+  ],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Psy": 2,
+    "San": 3,
+    "Sor": 3,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Frappe douloureuse fait courir une souffrance insoutenable dans le corps de la cible, lui infligeant 1d6 points de dégâts non létaux par round pendant 1 round par niveau (avec un maximum de 10 rounds). De plus, la créature affectée est fiévreuse pendant toute la durée du sort et le lanceur de sorts gagne un bonus de circonstance de +4 aux tests d'Intimidation contre cette cible.",
+  "description_html": "<hr/>\n<i>Frappe douloureuse</i> fait courir une souffrance insoutenable dans le corps de la cible, lui infligeant 1d6 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non%20l%c3%a9taux.ashx\" title=\"Dégâts non létaux\">dégâts non létaux</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> (avec un maximum de 10 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>). De plus, la créature affectée est <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> pendant toute la durée du sort et le lanceur de sorts gagne un bonus de circonstance de +4 aux tests d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> contre cette cible.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Frappe douloureuse de groupe",
+      "id": "frappe-douloureuse-de-groupe",
+      "ecole": "Évocation",
+      "descripteurs": [
+        "douleur",
+        "mal"
+      ],
+      "niveaux": {
+        "Ens/Mag": 5,
+        "Psy": 4,
+        "Sor": 5,
+        "Spi": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "une créature vivante/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+      "duree": "1 round/niveau (T)",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme frappe douloureuse mais il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.frappe%20douloureuse.ashx\" title=\"Frappe douloureuse\">frappe douloureuse</a></i> mais il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20douloureuse.ashx",
+    "cache_fichier": "cache/html/618bb17ac5036bb5cd15aa67aa3954701e06e2fe.html",
+    "recupere_le": "2026-07-28T22:54:52.376550+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "frappe-douloureuse",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20douloureuse.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "frappe-douloureuse",
+    "resume_court": "Inflige une souffrance insoutenable causant des dégâts non létaux et rendant la cible fiévreuse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts non létaux",
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le texte mentionne « fiévreuse » mais cette condition n'existe pas dans la liste fermée des conditions infligées (aveugle, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchevetré, ralenti, assourdi). Le sort cause une souffrance et un malaise, mais sans correspondance directe à une condition nommée du système. Les dégâts sont « non létaux », ce qui ne correspond à aucun type_degats spécifique (feu, froid, acide, électricité, son, force, négatif, positif, perforant, tranchant, contondant, précision), d'où « autre ».",
+    "slug": "frappe-douloureuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:40+00:00",
+    "hash_source": "f1b740a243598808ad6cc60d59f5123af020c465c921c51ca5ad3ede7c1f61d3"
+  }
+}

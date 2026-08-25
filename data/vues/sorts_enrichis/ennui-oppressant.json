@@ -1,0 +1,113 @@
+{
+  "id": "ennui-oppressant",
+  "nom": "Ennui oppressant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ennui%20oppressant.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau ou jusqu'à ce qu'on le brise (voir texte)",
+  "jet_de_sauvegarde": "Volonté pour annuler (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage emplit sa cible d'ennui. Elle perd tout intérêt pour la tache en cours et doit réussir un jet de volonté contre l'effet du sort si elle veut faire une action. Si elle échoue, elle ne peut pas agir pendant le round. L'ennui dure jusqu'à ce que sa durée expire ou que la cible brise l'effet du sort en réussissant un jet de sauvegarde.",
+  "description_html": "<br/><br/>Le personnage emplit sa cible d'ennui. Elle perd tout intérêt pour la tache en cours et doit réussir un jet de volonté contre l'effet du sort si elle veut faire une action. Si elle échoue, elle ne peut pas agir pendant le round. L'ennui dure jusqu'à ce que sa durée expire ou que la cible brise l'effet du sort en réussissant un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ennui%20oppressant.ashx",
+    "cache_fichier": "cache/html/5370f90fb690d846df4b41253aa5eccb82a0017a.html",
+    "recupere_le": "2026-07-28T22:52:23.230131+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "ennui-oppressant",
+    "resume_court": "La cible sombre dans l'ennui et doit réussir un jet de Volonté pour agir chaque round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle ne peut pas agir pendant le round"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La condition retenue est « chancelant » car la cible ne peut effectuer qu'une action par round (elle doit réussir un jet de Volonté pour agir, sinon elle ne peut rien faire), ce qui correspond à la restriction d'une seule action par round. Le sort ne paralyse pas complètement mais entrave gravement l'action.",
+    "slug": "ennui-oppressant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:25+00:00",
+    "hash_source": "08dc0ee2e7170e73a59a5df3908e2da2ea8c53e3635baa71fcff0c0b83f821f4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "4dae7ddf849fa9b94b34989c1e14d34857d0c74e173074eb02ab6b8e2fc392ec",
+  "hash_vue": "056c0cb6373ffa2323be55684cfa298b46b5f3527ad4749230a408f5825713b3"
+}

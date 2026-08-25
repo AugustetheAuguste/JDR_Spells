@@ -1,0 +1,75 @@
+{
+  "id": "harmonie-profane",
+  "nom": "Harmonie profane",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Harmonie%20profane.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une baguette utilisée)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage est entouré d'un halo de lumière bleue et dorée qui améliore les sorts de magie profane lancés par ses alliés dans la zone d'effet. Tout sort de ce type lancé dans cette zone gagne un bonus d'altération de +1 au DD de tout jet de sauvegarde destiné à lui résister. De plus, on peut lui appliquer l'un des dons de métamagie suivants au moment de l'incantation (sans augmenter le niveau du sort ni sa durée d'incantation) : Extension de portée, Extension de durée, Incantation silencieuse ou Incantation statique (le lanceur de sorts décide du don appliqué au moment où il lance harmonie profane).",
+  "description_html": "<br/><br/>Le personnage est entouré d'un halo de lumière bleue et dorée qui améliore les sorts de magie profane lancés par ses alliés dans la zone d'effet. Tout sort de ce type lancé dans cette zone gagne un bonus d'altération de +1 au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de tout <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> destiné à lui résister. De plus, on peut lui appliquer l'un des <a class=\"pagelink\" href=\"Pathfinder-RPG.Dons.ashx#DONMETAMAGIE\" title=\"Les dons\">dons de métamagie</a> suivants au moment de l'incantation (sans augmenter le niveau du sort ni sa durée d'incantation) : <a class=\"pagelink\" href=\"Pathfinder-RPG.Extension%20de%20port%c3%a9e.ashx\" title=\"Extension de portée\">Extension de portée</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.Extension%20de%20dur%c3%a9e.ashx\" title=\"Extension de durée\">Extension de durée</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.Incantation%20silencieuse.ashx\" title=\"Incantation silencieuse\">Incantation silencieuse</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Incantation%20statique.ashx\" title=\"Incantation statique\">Incantation statique</a> (le lanceur de sorts décide du don appliqué au moment où il lance <i>harmonie profane</i>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Harmonie%20profane.ashx",
+    "cache_fichier": "cache/html/da84dbd0f3232ae46b84778e9a439a069798f55f.html",
+    "recupere_le": "2026-07-28T22:56:11.519840+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "harmonie-profane",
+    "resume_court": "Un halo de lumière qui améliore les sorts profanes des alliés et leur applique une métamagie gratuite.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "zone_d_effet",
+      "bonus_chiffre",
+      "metamagie_ou_sort_cible",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Le personnage est entouré d'un halo de lumière bleue et dorée qui améliore les sorts de magie profane lancés par ses alliés dans la zone d'effet"
+    },
+    "notes_ambiguite": "Le sort affecte une zone autour du lanceur plutôt qu'une cible unique, mais le lanceur lui-même en est le centre. La cible_typique « zone » reflète que l'effet bénéficie aux alliés dans une étendue, non au lanceur seul. Le bonus de +1 au DD est un bonus chiffré nommé.",
+    "slug": "harmonie-profane",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:07+00:00",
+    "hash_source": "3c3b99c9a759d93fa6960df4e87003cb686804a842dd471d57e68755a9beb612"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d5ccda0c4ebf49afce6858f476406d6bb3be7b02d9d519a56d32e47ce60d6bc6",
+  "hash_vue": "2e426adb234ea23180a66dc0bc8a9bb9f023191e8d3c4dc9d3485c3431509892"
+}

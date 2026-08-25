@@ -1,0 +1,158 @@
+{
+  "id": "soins-importants",
+  "nom": "Soins importants",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20importants.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 3,
+    "Bard": 3,
+    "Cham": 3,
+    "Dru": 4,
+    "Inq": 3,
+    "Occ": 3,
+    "Pal": 4,
+    "Prê": 3,
+    "Rôd": 4,
+    "Sor": 4,
+    "Spi": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts (inoffensif) (voir description)",
+  "resistance_magie": "oui (inoffensif) (voir description)",
+  "description": "Ce sort est semblable à soins légers, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +15).",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.soins%20l%c3%a9gers.ashx\" title=\"Soins légers\">soins légers</a></i>, si ce n’est qu’il guérit 3d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +15).<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts soignés s’élèvent à 6d8 points de dégâts + 2 points par niveau de lanceur de sorts (+30 maximum). Le sort soigne jusqu’à 3 points de caractéristique temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de caractéristique soignés par le sort.",
+    "description_html": "Les dégâts soignés s’élèvent à 6d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (+30 maximum). Le sort soigne jusqu’à 3 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> temporairement affaiblie si la cible est une créature vivante. La cible choisit les points de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristique.ashx\" title=\"caractéristique\">caractéristique</a> soignés par le sort.<br/><br/><br/><br/>"
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Soins légers"
+  },
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Soins%20importants.ashx",
+    "cache_fichier": "cache/html/b3a6f9452643b3fcdd9649985490918fe5797c84.html",
+    "recupere_le": "2026-07-29T07:40:42.496800+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "soins-importants",
+    "resume_court": "Guérit 3d8 points de dégâts plus 1 par niveau de lanceur (max +15) par contact.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "soins-importants",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:42+00:00",
+    "hash_source": "1a6b0d6ef5c78753d85ca47f524ecf6d99a135f70bbc98a2e9d385ed6c4314d1"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d67a265cdbfba2b894b85a8347fd832583bd2f7de711671e3809200a944fa8a1",
+  "hash_vue": "750ccc55b61aedc42d305885d24b0e2ec7007c6ac99d10396ebae765decf4097"
+}

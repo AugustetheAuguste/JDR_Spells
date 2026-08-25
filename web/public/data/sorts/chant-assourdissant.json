@@ -1,0 +1,82 @@
+{
+  "id": "chant-assourdissant",
+  "nom": "Chant assourdissant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20assourdissant.ashx",
+  "ecole": "Évocation (sonore)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu'à trois créatures qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage chante ou joue trois notes qui se transforment en énergie profane tangible et hurlent sur tout le champ de bataille. Elles doivent réussir une attaque de contact à distance pour toucher leur cible et infligent 3d10 points de dégâts sonores chacune et la rendent sourde pendant 1d6 rounds. Les notes peuvent être dirigées contre une même cible ou contre plusieurs mais elles doivent toutes partir simultanément.",
+  "description_html": "<br/><br/>Le personnage chante ou joue trois notes qui se transforment en énergie profane tangible et hurlent sur tout le champ de bataille. Elles doivent réussir une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> pour toucher leur cible et infligent 3d10 points de dégâts sonores chacune et la rendent <a class=\"pagelink\" href=\"Pathfinder-RPG.assourdi.ashx\" title=\"Assourdi\">sourde</a> pendant 1d6 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Les notes peuvent être dirigées contre une même cible ou contre plusieurs mais elles doivent toutes partir simultanément.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20assourdissant.ashx",
+    "cache_fichier": "cache/html/1161ef5aab9c726c54d01a4622ade605ed3ef48d.html",
+    "recupere_le": "2026-07-28T22:46:12.287695+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chant-assourdissant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20assourdissant.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chant-assourdissant",
+    "resume_court": "Trois notes d'énergie sonore qui blessent et rendent sourdes jusqu'à trois créatures.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "zone_d_effet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [
+      "assourdi"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts sonores",
+      "condition_infligee": [
+        "la rendent sourde pendant 1d6 rounds"
+      ],
+      "cible_typique": "jusqu'à trois créatures qui doivent se trouver à moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "chant-assourdissant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:44+00:00",
+    "hash_source": "5eb82ea3a5984c1332e03943b199bcc54be4c5864267c4a9312900363155b725"
+  }
+}

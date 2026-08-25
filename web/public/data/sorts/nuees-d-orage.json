@@ -1,0 +1,132 @@
+{
+  "id": "nuees-d-orage",
+  "nom": "Nuées d'orage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9es%20dorage.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Cham": 8,
+    "Dru": 8,
+    "Ens/Mag": 8,
+    "Prê": 8,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un bâtonnet de cuivre)",
+  "portee": "9 m (6 c)",
+  "cible": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "Quand le personnage lance ce sort, des éclairs jaillissent de son corps dans toutes les directions. Ils n'abîment pas la végétation naturelle ni les créatures que le personnage souhaite exclure de ses ravages. Toutes les autres créatures de la zone subissent 1d8 points de dégâts d'électricité par niveau de lanceur de sorts (avec un maximum de 20d8) et sont étourdies pendant 1 round. Un jet de sauvegarde réussi réduit ces dégâts de moitié et annule l'étourdissement.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, des éclairs jaillissent de son corps dans toutes les directions. Ils n'abîment pas la végétation naturelle ni les créatures que le personnage souhaite exclure de ses ravages. Toutes les autres créatures de la zone subissent 1d8 points de dégâts d'électricité par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (avec un maximum de 20d8) et sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdies</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> réussi réduit ces dégâts de moitié et annule l'<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdissement</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9es%20dorage.ashx",
+    "cache_fichier": "cache/html/a54c5534dd1bc719dd66a2551e54635294ad051d.html",
+    "recupere_le": "2026-07-28T23:01:55.842472+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "nuees-d-orage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9es%20dorage.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 8
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 8
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "nuees-d-orage",
+    "resume_court": "Des éclairs jaillissent du lanceur en toutes directions, blessant et étourdissant les créatures de la zone.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "electricite",
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts d'électricité par niveau de lanceur de sorts",
+      "condition_infligee": [
+        "sont étourdies pendant 1 round"
+      ],
+      "cible_typique": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "nuees-d-orage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:29+00:00",
+    "hash_source": "6f22b6cc64db6d4b7327a9fb73a62218dae8ac9ffcab2dd75131414da67f232f"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "impregner-d-aura",
+  "nom": "Imprégner d'aura",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Impr%c3%a9gner%20daura.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage imprègne une autre créature de son aura divine. La cible émet une aura identique à celle du prêtre. L’alignement réel de la cible ne change pas mais les sorts comme détection du mal ou détection du bien ne détectent que l’aura du prêtre, pas le véritable alignement de la créature. Pendant toute la durée du sort, les effets qui dépendent de l’alignement de la cible fonctionnent selon l’aura qui lui est imposée, pas selon son véritable alignement. Quand le sort se termine, l’aura de la cible redevient normale et les effets magiques basés sur l’alignement l’affectent selon son véritable alignement.",
+  "description_html": "<br/><br/>Le personnage imprègne une autre créature de son <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx#AURA\" title=\"Le prêtre\">aura divine</a>. La cible émet une <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx#AURA\" title=\"Le prêtre\">aura</a> identique à celle du prêtre. L’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> réel de la cible ne change pas mais les sorts comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9tection%20du%20mal.ashx\" title=\"Détection du Mal\">détection du mal</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9tection%20du%20bien.ashx\" title=\"Détection du Bien\">détection du bien</a></i> ne détectent que l’<a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx#AURA\" title=\"Le prêtre\">aura</a> du prêtre, pas le véritable <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> de la créature. Pendant toute la durée du sort, les effets qui dépendent de l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> de la cible fonctionnent selon l’<a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx#AURA\" title=\"Le prêtre\">aura</a> qui lui est imposée, pas selon son véritable <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a>. Quand le sort se termine, l’<a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx#AURA\" title=\"Le prêtre\">aura</a> de la cible redevient normale et les effets magiques basés sur l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> l’affectent selon son véritable <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Impr%c3%a9gner%20daura.ashx",
+    "cache_fichier": "cache/html/25b4bbce52b15cdb1b2e51597615f689095167b2.html",
+    "recupere_le": "2026-07-28T22:56:54.534067+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "impregner-d-aura",
+    "resume_court": "La cible émet l'aura divine du prêtre, trompant les détections d'alignement pendant la durée.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "alignement_ou_divin",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort pourrait aussi relever de la métamorphose ou de la coercition, mais l'effet principal est de tromper la détection (illusion de l'aura), sans changer la forme ni imposer une action. La cible peut être un allié ou un ennemi selon le contexte tactique, mais le texte ne précise pas si elle doit être consentante ; le jet de Volonté suggère une possible résistance, d'où le classement en allié (usage typique) avec la note.",
+    "slug": "impregner-d-aura",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:27+00:00",
+    "hash_source": "2ca8d029e554de943604b87491947011bf1be5f1c043d23397760f8f3d25399f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "53c79333937d3efd4085c8fd6fb515fdf9cfa0884ed7fc7ba7ae6e120b47b91c",
+  "hash_vue": "dbb4f1d1f44ca808078acb0795b9f99968f5232f542cf70e8fd08616de22bff1"
+}

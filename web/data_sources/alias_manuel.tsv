@@ -1,0 +1,288 @@
+# Table d'alias anglais -> francais, EDITEE A LA MAIN, ligne par ligne.
+#
+# Format : <id>\t<alias>    Une paire par ligne. Les lignes vides et les lignes
+# commencant par # sont ignorees. Le fichier est en UTF-8, LF.
+#
+# POURQUOI A LA MAIN. Un alias faux est pire qu'un alias manquant : il envoie
+# l'utilisateur sur le mauvais sort, avec confiance, et il n'a aucun moyen de
+# s'en apercevoir. Cette table n'est donc PAS generee par un modele de langue.
+# Chaque ligne est un nom anglais de la SRD Pathfinder 1e que l'on peut relier
+# au nom francais du wiki sans supposition.
+#
+# CE QUI N'A PAS SA PLACE ICI :
+#   - une traduction devinee depuis le francais ("Abri" -> "shelter" ?) ;
+#   - un nom anglais dont on n'est pas sur qu'il designe CE sort ;
+#   - un alias qui se plie sur un nom francais reel du corpus. Le constructeur
+#     le refuse de toute facon (la priorite au nom francais est absolue), mais
+#     il n'a rien a faire dans le fichier.
+#
+# UN ALIAS PEUT VISER PLUSIEURS SORTS. C'est un fait, pas un defaut : "magic
+# missile" est sans ambiguite, mais "cure wounds" couvre les quatre paliers de
+# soins et "light" couvre `lumiere` et `lumieres-dansantes`. Le contrat de
+# sortie est un tableau d'ids, jamais une chaine, et l'etape 05 affiche les
+# deux resultats plutot que d'en choisir un.
+#
+# La table est faite pour grossir a l'usage : ajouter une ligne, relancer
+# `python -m pf_spells.build_alias`. Le rapport de couverture
+# (`reports/04_alias.md`) est la liste de travail, triee par niveau croissant
+# parce que les sorts de bas niveau sont ceux que l'on cherche le plus.
+
+# --- Attaque et degats ---
+projectile-magique	magic missile
+boule-de-feu	fireball
+boule-de-feu-a-retardement	delayed blast fireball
+eclair	lightning bolt
+eclair-multiple	chain lightning
+mains-brulantes	burning hands
+rayon-ardent	scorching ray
+flammes	produce flame
+aspersion-acide	acid splash
+fleche-acide	melf's acid arrow
+fleche-acide	acid arrow
+cone-de-froid	cone of cold
+tempete-de-neige	sleet storm
+mur-de-feu	wall of fire
+mur-de-glace	wall of ice
+mur-de-force	wall of force
+mur-de-pierre	wall of stone
+mur-d-epines	wall of thorns
+main-vagabonde	mage hand
+doigt-de-mort	finger of death
+desintegration	disintegrate
+rayon-affaiblissant	ray of enfeeblement
+contact-glacial	chill touch
+decharge-electrique	shocking grasp
+mot-de-pouvoir-etourdissant	power word stun
+mot-de-pouvoir-aveuglant	power word blind
+mot-de-pouvoir-mortel	power word kill
+tempete-de-grele	ice storm
+appel-de-la-foudre	call lightning
+nuee-de-meteores	meteor swarm
+souffle-de-vie	breath of life
+
+# --- Soins et etats ---
+soins-legers	cure light wounds
+soins-moderes	cure moderate wounds
+soins-importants	cure serious wounds
+soins-intensifs	cure critical wounds
+soins-legers-de-groupe	mass cure light wounds
+soins-moderes-de-groupe	mass cure moderate wounds
+soins-importants-de-groupe	mass cure serious wounds
+soins-intensifs-de-groupe	mass cure critical wounds
+guerison-supreme	heal
+guerison-supreme	mass heal
+rappel-a-la-vie	raise dead
+resurrection-supreme	true resurrection
+restauration	restoration
+restauration-partielle	lesser restoration
+restauration-supreme	greater restoration
+stabilisation	stabilize
+regeneration	regenerate
+delivrance-des-maledictions	remove curse
+delivrance-de-la-paralysie	remove paralysis
+guerison-des-maladies	remove disease
+guerison-de-la-cecite-surdite	remove blindness
+neutralisation-du-poison	neutralize poison
+
+# --- Protection ---
+armure-de-mage	mage armor
+bouclier	shield
+bouclier-de-la-foi	shield of faith
+sanctuaire	sanctuary
+protection-contre-le-mal	protection from evil
+protection-contre-le-bien	protection from good
+protection-contre-le-chaos	protection from chaos
+protection-contre-la-loi	protection from law
+protection-contre-les-energies-destructives	protection from energy
+resistance-aux-energies-destructives	resist energy
+cercle-magique-contre-le-mal	magic circle against evil
+cercle-magique-contre-le-bien	magic circle against good
+liberte-de-mouvement	freedom of movement
+peau-de-pierre	stoneskin
+peau-d-ecorce	barkskin
+faveur-divine	divine favor
+benediction	bless
+priere	prayer
+antidetection	nondetection
+globe-d-invulnerabilite-renforcee	globe of invulnerability
+globe-d-invulnerabilite-partielle	lesser globe of invulnerability
+
+# --- Divination ---
+detection-de-la-magie	detect magic
+detection-du-mal	detect evil
+detection-du-bien	detect good
+detection-des-morts-vivants	detect undead
+detection-de-pensees	detect thoughts
+detection-des-pieges	detect snares and pits
+detection-du-poison	detect poison
+detection-des-passages-secrets	detect secret doors
+identification	identify
+vision-lucide	true seeing
+vision-magique	arcane sight
+lecture-de-la-magie	read magic
+communication-avec-les-morts	speak with dead
+communication-avec-les-animaux	speak with animals
+communication-avec-les-plantes	speak with plants
+comprehension-des-langages	comprehend languages
+augure	augury
+communion	commune
+localisation-d-objet	locate object
+localisation-de-creature	locate creature
+oeil-du-mage	arcane eye
+scrutation	scrying
+scrutation-supreme	greater scrying
+messager-animal	animal messenger
+zone-de-verite	zone of truth
+
+# --- Illusion ---
+invisibilite	invisibility
+invisibilite-de-groupe	mass invisibility
+invisibilite-supreme	greater invisibility
+image-miroir	mirror image
+image-silencieuse	silent image
+image-accomplie	major image
+image-imparfaite	minor image
+image-permanente	permanent image
+image-programmee	programmed image
+image-predeterminee	persistent image
+deguisement	disguise self
+tenebres	darkness
+tenebres-profondes	deeper darkness
+lueur-feerique	faerie fire
+lumieres-dansantes	dancing lights
+lumiere	light
+lumiere-du-jour	daylight
+son-imaginaire	ghost sound
+terrain-hallucinatoire	hallucinatory terrain
+mirage	mirage arcana
+invisibilite-pour-les-animaux	invisibility to animals
+invisibilite-pour-les-morts-vivants	invisibility to undead
+
+# --- Enchantement ---
+charme-personne	charm person
+charme-monstre	charm monster
+charme-animal	charm animal
+sommeil	sleep
+sommeil-profond	deep slumber
+frayeur	cause fear
+terreur	fear
+immobilisation-de-personne	hold person
+immobilisation-de-monstre	hold monster
+immobilisation-d-animal	hold animal
+suggestion-de-groupe	mass suggestion
+domination	dominate person
+apaisement-des-emotions	calm emotions
+confusion-mineure	lesser confusion
+heroisme	heroism
+heroisme-supreme	greater heroism
+
+# --- Deplacement et transport ---
+vol	fly
+vol-de-groupe	mass fly
+saut	jump
+pattes-d-araignee	spider climb
+levitation	levitate
+respiration-aquatique	water breathing
+porte-dimensionnelle	dimension door
+teleportation	teleport
+teleportation-supreme	greater teleport
+changement-de-plan	plane shift
+passe-muraille	passwall
+forme-etheree	ethereal jaunt
+corde-enchantee	rope trick
+coursier-fantome	phantom steed
+lenteur	slow
+
+# --- Transmutation ---
+agrandissement	enlarge person
+agrandissement-de-groupe	mass enlarge person
+rapetissement	reduce person
+metamorphose	polymorph
+forme-bestiale-i	beast shape i
+forme-bestiale-ii	beast shape ii
+forme-bestiale-iii	beast shape iii
+forme-bestiale-iv	beast shape iv
+forme-d-arbre	tree shape
+etat-gazeux	gaseous form
+corps-de-fer	iron body
+reparation-integrale	make whole
+reparation	mending
+fabrication	fabricate
+lumiere-du-jour	continual light
+telekinesie	telekinesis
+force-de-taureau	bull's strength
+grace-feline	cat's grace
+endurance-de-l-ours	bear's endurance
+splendeur-de-l-aigle	eagle's splendor
+ruse-du-renard	fox's cunning
+sagesse-du-hibou	owl's wisdom
+faconnage-de-la-pierre	stone shape
+transmutation-de-la-pierre-en-boue	transmute rock to mud
+souhait	wish
+souhait-limite	limited wish
+permanence	permanency
+
+# --- Convocation ---
+convocation-de-monstres-i	summon monster i
+convocation-de-monstres-ii	summon monster ii
+convocation-de-monstres-iii	summon monster iii
+convocation-de-monstres-iv	summon monster iv
+convocation-de-monstres-v	summon monster v
+convocation-de-monstres-vi	summon monster vi
+convocation-de-monstres-vii	summon monster vii
+convocation-de-monstres-viii	summon monster viii
+convocation-de-monstres-ix	summon monster ix
+allie-d-outreplan	planar ally
+allie-supreme-d-outreplan	greater planar ally
+serviteur-invisible	unseen servant
+main-du-berger	spiritual weapon
+allie-spirituel	spiritual ally
+convocation-d-allies-naturels-i	summon nature's ally i
+
+# --- Necromancie ---
+animation-des-morts	animate dead
+creation-de-mort-vivant	create undead
+mise-a-mort	slay living
+absorption-d-energie	energy drain
+
+# --- Alias volontairement ambigus ---
+#
+# Ces cles visent plusieurs sorts, et c'est le comportement voulu : le nom
+# anglais generique ne designe pas un sort unique. L'etape 05 affiche tous les
+# resultats plutot que d'en elire un au hasard, parce qu'aucun des deux n'est
+# plus juste que l'autre.
+soins-legers	cure wounds
+soins-moderes	cure wounds
+soins-importants	cure wounds
+soins-intensifs	cure wounds
+convocation-de-monstres-i	summon monster
+convocation-de-monstres-ii	summon monster
+forme-bestiale-i	beast shape
+forme-bestiale-ii	beast shape
+lumiere	light spell
+lumieres-dansantes	light spell
+
+# --- Utilitaire et sorts mineurs ---
+alarme	alarm
+flamme-eternelle	continual flame
+purification-de-nourriture-et-d-eau	purify food and drink
+creation-de-nourriture-et-d-eau	create food and water
+creation-d-eau	create water
+festin-des-heros	heroes' feast
+dissipation-de-la-magie	dispel magic
+dissipation-supreme	greater dispel magic
+zone-d-antimagie	antimagic field
+verrou-du-mage	arcane lock
+ouverture-fermeture	open/close
+telepathie	telepathic bond
+don-des-langues	tongues
+page-secrete	secret page
+marque	arcane mark
+glyphe-de-garde	glyph of warding
+symbole-de-mort	symbol of death
+renvoi-des-sorts	spell turning
+resistance-a-la-magie	spell resistance
+lumiere-brulante	searing light
+espoir	guidance
+vigueur	virtue
+stimulant	enhance water

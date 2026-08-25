@@ -1,0 +1,113 @@
+{
+  "id": "piege-a-feu",
+  "nom": "Piège à feu",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pi%c3%a8ge%20%c3%a0%20feu.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 4,
+    "Occ": 4
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (poussière d’or d’une valeur de 25 po)",
+  "portee": "contact",
+  "cible": "objet touché",
+  "duree": "permanente jusqu’au déclenchement (T)",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts (voir description)",
+  "resistance_magie": "oui",
+  "description": "Ce sort déclenche une explosion de flammes dès qu’on ouvre l’objet protégé par le piège à feu. Ce sort peut défendre n’importe quel objet que l’on peut fermer.\nLors de l’incantation, le personnage choisit le point d’origine du sort, qui doit forcément se trouver sur l’objet à défendre. Par la suite, dès que quelqu’un d’autre ouvre cet objet, il déclenche une explosion dans un rayon de 1,50 m autour du point d’origine. Les flammes infligent 1d4 points de dégâts de feu, +1 par niveau de lanceur de sorts (maximum +20). L’objet protégé n’est pas endommagé par l’explosion.\nUn objet défendu par un piège à feu ne peut pas bénéficier d’un autre sort de protection (ni d’un sort de fermeture magique). Déblocage n’affecte pas le piège à feu, car celui-ci n’empêche pas d’ouvrir l’objet. Une dissipation de la magie ratée ne provoque pas d’explosion. Sous l’eau, les dégâts de piège à feu sont réduits de moitié mais le sort génère un important nuage de vapeur.\nLe lanceur de sorts peut utiliser l’objet sans déclencher le piège, de même que les créatures en phase avec le sort (c’est-à-dire, dans la plupart des cas, celles qui connaissent le mot de passe choisi par le lanceur de sorts lors de l’incantation).\nLes pièges magiques tels que piège à feu sont extrêmement durs à détecter et à désamorcer. Seul un personnage disposant de la capacité recherche des pièges peut utiliser sa compétence de Perception pour le repérer, puis de Sabotage pour le mettre hors d’état. Pour chacun des deux jets, le DD s’élève à 25 + niveau du sort, soit 27 pour un piège à feu de druide et 29 pour sa version profane.",
+  "description_html": "<br/><br/>Ce sort déclenche une explosion de flammes dès qu’on ouvre l’objet protégé par le <i>piège à feu</i>. Ce sort peut défendre n’importe quel objet que l’on peut fermer.<br/><br/>Lors de l’incantation, le personnage choisit le point d’origine du sort, qui doit forcément se trouver sur l’objet à défendre. Par la suite, dès que quelqu’un d’autre ouvre cet objet, il déclenche une explosion dans un rayon de 1,50 m autour du point d’origine. Les flammes infligent 1d4 points de dégâts de feu, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (maximum +20). L’objet protégé n’est pas endommagé par l’explosion.<br/><br/>Un objet défendu par un <i>piège à feu</i> ne peut pas bénéficier d’un autre sort de protection (ni d’un sort de fermeture magique). <i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9blocage.ashx\" title=\"Déblocage\">Déblocage</a></i> n’affecte pas le <i>piège à feu</i>, car celui-ci n’empêche pas d’ouvrir l’objet. Une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> ratée ne provoque pas d’explosion. Sous l’eau, les dégâts de <i>piège à feu</i> sont réduits de moitié mais le sort génère un important nuage de vapeur.<br/><br/>Le lanceur de sorts peut utiliser l’objet sans déclencher le piège, de même que les créatures en phase avec le sort (c’est-à-dire, dans la plupart des cas, celles qui connaissent le mot de passe choisi par le lanceur de sorts lors de l’incantation).<br/><br/>Les pièges magiques tels que <i>piège à feu</i> sont extrêmement durs à détecter et à désamorcer. Seul un personnage disposant de la capacité <i>recherche des pièges</i> peut utiliser sa compétence de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour le repérer, puis de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour le mettre hors d’état. Pour chacun des deux jets, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> s’élève à 25 + <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20du%20sort.ashx\" title=\"niveau du sort\">niveau du sort</a>, soit 27 pour un <i>piège à feu</i> de <a class=\"pagelink\" href=\"Pathfinder-RPG.druide.ashx\" title=\"Le druide\">druide</a> et 29 pour sa version profane.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pi%c3%a8ge%20%c3%a0%20feu.ashx",
+    "cache_fichier": "cache/html/c4da0a12b55df8167a10692d25c71f8bda91fc4a.html",
+    "recupere_le": "2026-07-28T23:03:18.966903+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "piege-a-feu",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pi%c3%a8ge%20%c3%a0%20feu.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "piege-a-feu",
+    "resume_court": "Un sort qui déclenche une explosion de flammes quand on ouvre l'objet protégé.",
+    "categorie_principale": "protection",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "Les flammes infligent 1d4 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "objet touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "piege-a-feu",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:03+00:00",
+    "hash_source": "f0b744cfe8cb523475611eac1ae07b7c9331130c84c89001dcef798acf921143"
+  }
+}

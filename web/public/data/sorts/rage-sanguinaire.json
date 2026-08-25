@@ -1,0 +1,104 @@
+{
+  "id": "rage-sanguinaire",
+  "nom": "Rage sanguinaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20sanguinaire.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte de sang pour chaque créature affectée)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature consentante tous les 2 niveaux, à moins de 9 mètres les unes des autres",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Les cibles de ce sort deviennent plus colériques au combat et la douleur de leurs blessures alimente leur force. Une créature ciblée gagne un bonus de moral cumulatif de +2 à sa Force et une pénalité cumulative de -1 à sa CA pour chaque tranche de 5 points de dégâts encaissés (jusqu’à un maximum de +10 en Force et -5 en CA) pendant toute la durée du sort. Ces bonus restent actifs jusqu’à la fin du sort ou jusqu’à ce que la cible tombe inconsciente.",
+  "description_html": "<br/><br/>Les cibles de ce sort deviennent plus colériques au combat et la douleur de leurs blessures alimente leur force. Une créature ciblée gagne un bonus de moral cumulatif de +2 à sa <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> et une pénalité cumulative de -1 à sa <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> pour chaque tranche de 5 points de dégâts encaissés (jusqu’à un maximum de +10 en Force et -5 en CA) pendant toute la durée du sort. Ces bonus restent actifs jusqu’à la fin du sort ou jusqu’à ce que la cible tombe <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconsciente</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20sanguinaire.ashx",
+    "cache_fichier": "cache/html/124920f6dfc6d09efb87d2ed48b620bc2fd5b159.html",
+    "recupere_le": "2026-07-29T07:36:59.073160+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rage-sanguinaire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20sanguinaire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rage-sanguinaire",
+    "resume_court": "Les cibles gagnent un bonus de Force et une pénalité de CA croissants à chaque tranche de 5 dégâts encaissés.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "charme_ou_coercition",
+      "effet_mental",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature consentante tous les 2 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "rage-sanguinaire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:18+00:00",
+    "hash_source": "513850ee19750acf4d0dfbf47627d123a5fd0caff65d601d45089c71fa245c43"
+  }
+}

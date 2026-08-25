@@ -1,0 +1,130 @@
+{
+  "id": "rayon-affaiblissant",
+  "nom": "Rayon affaiblissant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20affaiblissant.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Un rayon scintillant jaillit de la main tendue du personnage, qui doit réussir une attaque de contact à distance pour atteindre sa cible. Celle-ci subit un malus de 1d6 en Force, +1 tous les deux niveaux de lanceur de sorts (jusqu’à un maximum de 1d6+5). La valeur de Force de la cible ne peut en aucun cas tomber en dessous de 1. Un jet de Vigueur permet de réduire ce malus de moitié. Ce malus ne se cumule pas avec lui-même, on applique le plus élevé.",
+  "description_html": "<br/><br/>Un rayon scintillant jaillit de la main tendue du personnage, qui doit réussir une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> pour atteindre sa cible. Celle-ci subit un malus de 1d6 en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>, +1 tous les deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (jusqu’à un maximum de 1d6+5). La valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> de la cible ne peut en aucun cas tomber en dessous de 1. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> permet de réduire ce malus de moitié. Ce malus ne se cumule pas avec lui-même, on applique le plus élevé.<br/><br/>",
+  "mythique": {
+    "description": "Le malus à la Force s’élève à 1d8 +1 par tranche de 2 niveaux de lanceur de sorts (+10 maximum). Si la cible rate son jet de sauvegarde, elle est fatiguée.",
+    "description_html": "Le malus à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> s’élève à 1d8 +1 par tranche de 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (+10 maximum). Si la cible rate son jet de sauvegarde, elle est fatiguée."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20affaiblissant.ashx",
+    "cache_fichier": "cache/html/ed7664175f8ccf77b73aca571ccb72101c528b85.html",
+    "recupere_le": "2026-07-29T07:37:29.039246+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "rayon-affaiblissant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20affaiblissant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "rayon-affaiblissant",
+    "resume_court": "Un rayon qui réduit temporairement la Force de la cible d'un malus de 1d6+.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Un rayon scintillant jaillit de la main tendue du personnage, qui doit réussir une attaque de contact à distance pour atteindre sa cible."
+    },
+    "notes_ambiguite": "Le sort inflige un malus de caractéristique (Force) plutôt que des dégâts directs. Bien que le texte mentionne « 1/2 dégâts » dans le jet de sauvegarde, il s'agit d'une réduction du malus, non de dégâts énergétiques. Type_degats reste null car aucun type d'énergie n'est nommé.",
+    "slug": "rayon-affaiblissant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:26+00:00",
+    "hash_source": "1bf337d2de337223e426848199c524fc720592343caaa0ef7c59ffa72590dc6e"
+  }
+}

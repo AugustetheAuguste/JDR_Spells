@@ -1,0 +1,93 @@
+{
+  "id": "crochet-de-force",
+  "nom": "Crochet de force",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crochet%20de%20force.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "Force"
+  ],
+  "niveaux": {
+    "Magus": 3,
+    "Psy": 4,
+    "San": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature ou un objet à portée et le lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un crochet de force qui frappe la cible et attire le personnage dans une case adjacente à elle. Il doit faire une attaque de contact à distance contre la cible. S’il réussit, la cible subit 1 point de dégâts de force par niveau de lanceur de sorts. Que l’attaque touche ou non, le crochet de force attire le personnage en ligne droite jusqu’à une case adjacente à la cible. Ce déplacement provoque des attaques d’opportunité normales. Le crochet empêche le personnage de tomber lors de son déplacement, il peut donc s’en servir pour traverser une fosse ou atteindre un point plus élevé ou plus bas. Si la ligne d’effet entre le personnage et sa cible passe par une zone trop étroite pour son corps (comme une herse ou une meurtrière), le crochet tire le personnage jusqu’à cet emplacement et il subit des dégâts comme s’il avait fait une chute depuis son point de départ jusqu’à ce point d’arrivée. Si le personnage est entravé, s’il est enchaîné à un mur par exemple, le crochet le tire aussi loin que lui permettent ses liens mais ne les brise pas.\nSi l’itinéraire entre le personnage et la cible n’est pas bloqué, le personnage atterrit sur ses pieds, indemne malgré ce mouvement violent. Cependant, le sort ne lui assure pas d’atterrir dans un endroit sûr. Par exemple, si la cible vole ou se trouve sur une corniche où le personnage n’aura pas de place, le crochet le tire dans une case adjacente à la cible puis le personnage tombe.\nSi le personnage utilise ce sort avec son pouvoir de classe de combat magique, il peut faire une attaque de corps à corps depuis sa position initiale ou sa position d’arrivée.",
+  "description_html": "<br/><br/>Le personnage crée un crochet de force qui frappe la cible et attire le personnage dans une case adjacente à elle. Il doit faire une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> contre la cible. S’il réussit, la cible subit 1 point de dégâts de force par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Que l’attaque touche ou non, le crochet de force attire le personnage en ligne droite jusqu’à une case adjacente à la cible. Ce déplacement provoque des <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a> normales. Le crochet empêche le personnage de tomber lors de son déplacement, il peut donc s’en servir pour traverser une fosse ou atteindre un point plus élevé ou plus bas. Si la ligne d’effet entre le personnage et sa cible passe par une zone trop étroite pour son corps (comme une herse ou une meurtrière), le crochet tire le personnage jusqu’à cet emplacement et il subit des dégâts comme s’il avait fait une chute depuis son point de départ jusqu’à ce point d’arrivée. Si le personnage est <a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx\" title=\"Enchevêtré\">entravé</a>, s’il est enchaîné à un mur par exemple, le crochet le tire aussi loin que lui permettent ses liens mais ne les brise pas.<br/><br/>Si l’itinéraire entre le personnage et la cible n’est pas bloqué, le personnage atterrit sur ses pieds, indemne malgré ce mouvement violent. Cependant, le sort ne lui assure pas d’atterrir dans un endroit sûr. Par exemple, si la cible vole ou se trouve sur une corniche où le personnage n’aura pas de place, le crochet le tire dans une case adjacente à la cible puis le personnage tombe.<br/><br/>Si le personnage utilise ce sort avec son <a class=\"pagelink\" href=\"Pathfinder-RPG.magus.ashx#COMBATMAGIQUE\" title=\"Le magus\">pouvoir de classe de combat magique</a>, il peut faire une attaque de corps à corps depuis sa position initiale ou sa position d’arrivée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crochet%20de%20force.ashx",
+    "cache_fichier": "cache/html/5a94e63b381dfdf495109bebb637f87d7eed6e50.html",
+    "recupere_le": "2026-07-28T22:49:48.905965+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "crochet-de-force",
+    "resume_court": "Un crochet de force frappe une cible et attire le lanceur dans une case adjacente à elle.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "deplacement_ou_teleportation",
+      "rayon_ou_projectile",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1 point de dégâts de force par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "une créature ou un objet à portée et le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "crochet-de-force",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:11+00:00",
+    "hash_source": "9267d1cbaf98712003e27042bf97a5b43b1229cf791a76c841c9acb6d1cd7c26"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0df468bacf5088025443d2884ae5fd4aeaa3744f34df5c0a8f6af867d0e5e0f5",
+  "hash_vue": "85744b5b18e727d32f2fa9354ba4fb53b4ea20f3af53a88626e40f77fa108af1"
+}

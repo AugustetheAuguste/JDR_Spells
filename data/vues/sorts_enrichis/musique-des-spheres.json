@@ -1,0 +1,85 @@
+{
+  "id": "musique-des-spheres",
+  "nom": "Musique des sphères",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Musique%20des%20sph%c3%a8res.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 5,
+    "Prê": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un bâtonnet d’encens traité avec des baumes spéciaux)",
+  "portee": "6 m",
+  "cible": "émanation sphérique de 6 m de rayon centrée sur le personnage",
+  "duree": "concentration, jusqu’à un maximum de 1 round par niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Comme tout astrologue ou érudit spécialiste du folklore de la déesse des étoiles pourra le dire, la musique des sphères est une harmonie constante jouée sous et au travers de l’ensemble de la réalité. C’est ce chant constant, cette musique surnaturelle qui maintient en place les lois de la réalité et renforce les connexions entre les plans d’existence.\nAvec ce sort, il est possible d’amplifier la musique des sphères sous-jacente dans la zone d’effet du sort pour qu’elle baigne le lanceur de sorts et toutes les créatures, amies comme ennemies, situées à 6 mètres ou moins autour de lui. Les créatures qui commencent leur tour à l’intérieur de la zone d’effet de ce sort gagnent une guérison accélérée 5, une résistance de 10 contre tous les types d’énergies destructives et un bonus de sainteté de +3 aux jets de sauvegarde contre les poisons et les maladies. Une créature qui entre dans la zone d’effet ne gagne pas les avantages de la musique des sphères tant qu’elle ne commence pas son tour à l’intérieur de cette zone. Le personnage doit rester concentré sur l’amplification de la musique pour ne pas que l’effet prenne fin immédiatement, mais il peut se déplacer aux alentours pour empêcher que les ennemis ne bénéficient des avantages conférés par le sort.",
+  "description_html": "<br/><br/><i>Comme tout astrologue ou érudit spécialiste du folklore de la déesse des étoiles pourra le dire, la musique des sphères est une harmonie constante jouée sous et au travers de l’ensemble de la réalité. C’est ce chant constant, cette musique surnaturelle qui maintient en place les lois de la réalité et renforce les connexions entre les plans d’existence.</i><br/><br/>Avec ce sort, il est possible d’amplifier la musique des sphères sous-jacente dans la zone d’effet du sort pour qu’elle baigne le lanceur de sorts et toutes les créatures, amies comme ennemies, situées à 6 mètres ou moins autour de lui. Les créatures qui commencent leur tour à l’intérieur de la zone d’effet de ce sort gagnent une <a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx\" title=\"Guérison accélérée (Ext)\">guérison accélérée</a> 5, une <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx\" title=\"Résistance (aux énergies destructrices) (Ext)\">résistance</a> de 10 contre tous les types d’énergies destructives et un bonus de sainteté de +3 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jets de sauvegarde</a> contre les poisons et les maladies. Une créature qui entre dans la zone d’effet ne gagne pas les avantages de la <i>musique des sphères</i> tant qu’elle ne commence pas son tour à l’intérieur de cette zone. Le personnage doit rester concentré sur l’amplification de la musique pour ne pas que l’effet prenne fin immédiatement, mais il peut se déplacer aux alentours pour empêcher que les ennemis ne bénéficient des avantages conférés par le sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Musique%20des%20sph%c3%a8res.ashx",
+    "cache_fichier": "cache/html/16a7efa6e96dc16ad639752ce0290b470659a856.html",
+    "recupere_le": "2026-07-28T23:01:32.808689+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "musique-des-spheres",
+    "resume_court": "Une émanation sphérique qui soigne et protège toutes les créatures dans la zone, alliées comme ennemies.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "soin_ou_guerison",
+      "immunite_ou_resistance_element",
+      "bonus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation sphérique de 6 m de rayon centrée sur le personnage"
+    },
+    "notes_ambiguite": "Le sort affecte indifféremment alliés et ennemis dans la zone, ce qui le rend atypique pour un sort de guérison. Il a été classé en controle_de_zone plutôt qu'en soin car son effet principal est de modifier l'environnement (une zone d'effet bénéfique) plutôt que de cibler des créatures spécifiques. Les bénéfices incluent guérison accélérée, résistance aux énergies destructives et bonus aux jets de sauvegarde.",
+    "slug": "musique-des-spheres",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:19+00:00",
+    "hash_source": "4a1ddc6c85a659de065f04a424e27ebf5eba201b92d5d5f8e47bd2deb07d8e8d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "30af133e512172ad6cb3ba019cd2d483c7243b8e28cd3fc13e59bb66b9ac8dc5",
+  "hash_vue": "fefd45db83a3bc322e1763142c29b7a193349adca9de09e621163a6a8af58485"
+}

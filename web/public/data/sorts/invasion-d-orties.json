@@ -1,0 +1,91 @@
+{
+  "id": "invasion-d-orties",
+  "nom": "Invasion d'orties",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invasion%20dorties.ashx",
+  "ecole": "Invocation",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Dru": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayonnement de 3 m de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Le personnage lâche un nuage d’orties épineuses et pleines d’acide. Les créatures prises dans la zone reçoivent 3d6 points de dégâts plus 1d6 points de dégâts d’acide au round suivant. Celles qui réussissent leur jet de sauvegarde reçoivent la moitié des dégâts du premier effet et aucun au round suivant.",
+  "description_html": "<br/><br/>Le personnage lâche un nuage d’orties épineuses et pleines d’acide. Les créatures prises dans la zone reçoivent 3d6 points de dégâts plus 1d6 points de dégâts d’acide au <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> suivant. Celles qui réussissent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> reçoivent la moitié des dégâts du premier effet et aucun au <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> suivant.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invasion%20dorties.ashx",
+    "cache_fichier": "cache/html/bcc6e8c91a1a63b6c9bbf366f8014a81d8a9927e.html",
+    "recupere_le": "2026-07-28T22:57:27.568536+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "invasion-d-orties",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invasion%20dorties.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "invasion-d-orties",
+    "resume_court": "Un nuage d'orties acides qui blesse les créatures dans une zone et les brûle au round suivant.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'acide",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement de 3 m de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "invasion-d-orties",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:39+00:00",
+    "hash_source": "2e8290c10da05d4c68c0f64bd9c1f057013ae678a331b8b1f73b00a823644739"
+  }
+}

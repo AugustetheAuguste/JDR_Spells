@@ -1,0 +1,76 @@
+{
+  "id": "final-purificateur",
+  "nom": "Final purificateur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20purificateur.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Pour lancer ce sort, le personnage doit être en train de donner une représentation bardique. Il y met immédiatement un terme avec un geste théâtral qui élimine l'une des conditions suivantes sur une créature affectée par la représentation bardique : recroquevillé, ébloui, épuisé, paralysé, secoué ou étourdi.",
+  "description_html": "<br/><br/>Pour lancer ce sort, le personnage doit être en train de donner une <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation bardique</a>. Il y met immédiatement un terme avec un geste théâtral qui élimine l'une des conditions suivantes sur une créature affectée par la <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation bardique</a> : <a class=\"pagelink\" href=\"Pathfinder-RPG.recroquevill%c3%a9.ashx\" title=\"Recroquevillé\">recroquevillé</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9bloui.ashx\" title=\"Ébloui\">ébloui</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9puis%c3%a9.ashx\" title=\"Épuisé\">épuisé</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysé</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secoué</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdi</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20purificateur.ashx",
+    "cache_fichier": "cache/html/946f2e17f5f0e47971f0c20f6b82ce3053c4a1c1.html",
+    "recupere_le": "2026-07-28T22:53:25.279469+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "final-purificateur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Final%20purificateur.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "final-purificateur",
+    "resume_court": "Termine une représentation bardique pour éliminer une condition négative sur une créature affectée.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_instantanee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort lève une condition plutôt que d'en infliger une. Les conditions listées (recroquevillé, ébloui, épuisé, paralysé, secoué, étourdi) sont celles qu'il SUPPRIME, non qu'il impose. Aucune condition n'est donc retenue dans condition_infligee.",
+    "slug": "final-purificateur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:03+00:00",
+    "hash_source": "cf4097a21fbe6729e8b8aeacea9e7d3f7f1e394c7d5c9b8e07f478233a1b613c"
+  }
+}

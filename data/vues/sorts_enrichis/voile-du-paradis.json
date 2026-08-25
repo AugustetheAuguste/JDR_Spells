@@ -1,0 +1,79 @@
+{
+  "id": "voile-du-paradis",
+  "nom": "Voile du paradis",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voile%20du%20paradis.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "Bien"
+  ],
+  "niveaux": {
+    "Pal": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle ou 1,50 m (1 c) (voir description)",
+  "cible": "Lanceur de sorts ou toutes les créatures dans un rayon de 1,5 m ; voir description",
+  "duree": "10 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts",
+  "resistance_magie": "non",
+  "description": "Le lanceur de sorts s’entoure d’un voile d’énergie positive : les extérieurs Mauvais ont plus de mal à le blesser.\nPour la durée du sort, le lanceur bénéficie d’un bonus sacré de +2 à la CA et à ses jets de sauvegarde. Ces deux bonus ne s’appliquent que contre les attaques ou les effets créés par les extérieurs de sous-type Mal. Il peut mettre un terme à ce sort par une action rapide, infligeant alors 1d8 points de dégâts + 1 point par niveau de paladin contre de tels extérieurs situés dans un rayon de 1,5 m. Un jet de Volonté réussi divise ces dégâts par deux.",
+  "description_html": "<br/><br/>Le lanceur de sorts s’entoure d’un voile d’énergie positive : les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20ext%c3%a9rieur.ashx\" title=\"Extérieur\">extérieurs</a> Mauvais ont plus de mal à le blesser. <br/><br/>Pour la durée du sort, le lanceur bénéficie d’un bonus sacré de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et à ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jets de sauvegarde</a>. Ces deux bonus ne s’appliquent que contre les attaques ou les effets créés par les extérieurs de <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Mal.ashx\" title=\"Mal (sous-type)\">sous-type Mal</a>. Il peut mettre un terme à ce sort par une action rapide, infligeant alors 1d8 points de dégâts + 1 point par niveau de paladin contre de tels extérieurs situés dans un rayon de 1,5 m. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> réussi divise ces dégâts par deux.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles aasimars."
+  },
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voile%20du%20paradis.ashx",
+    "cache_fichier": "cache/html/03296b543c5e52bea234e38c198ae29f1603dfea.html",
+    "recupere_le": "2026-07-29T07:44:30.408285+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "voile-du-paradis",
+    "resume_court": "Le lanceur s'entoure d'énergie positive, gagnant des bonus contre les extérieurs Mauvais et pouvant infliger des dégâts en terminant le sort.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "alignement_ou_divin",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": "positif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts + 1 point par niveau de paladin",
+      "condition_infligee": [],
+      "cible_typique": "Lanceur de sorts ou toutes les créatures dans un rayon de 1,5 m"
+    },
+    "notes_ambiguite": "Le sort a une double nature : protection passive (bonus à la CA et aux jets de sauvegarde) et attaque active (dégâts à la résiliation). La cible typique est « soi » car le lanceur en est le bénéficiaire principal, bien que le sort puisse affecter une zone à la résiliation. Les dégâts sont classés comme « positif » car l'énergie positive blesse les extérieurs Mauvais.",
+    "slug": "voile-du-paradis",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:18+00:00",
+    "hash_source": "f302ae84505455fd07cf70e60f71fc61ea01740a2b18c348999c8014831c7d5f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6c5e8c74e8287659f4cfe0b483c8a2cbb3cf4ab166750dbf90c459c5dc967247",
+  "hash_vue": "a25b081ed9c847e0c9fa3c05d9337cbe58f0690d5ba41642f498de37a23cc341"
+}

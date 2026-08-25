@@ -1,0 +1,106 @@
+{
+  "id": "aura-elementaire",
+  "nom": "Aura élémentaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20%c3%a9l%c3%a9mentaire.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "acide",
+    "électricité",
+    "feu ou froid"
+  ],
+  "niveaux": {
+    "Alch": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "San": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Réflexes pour réduire de moitié ; voir texte",
+  "resistance_magie": "oui",
+  "description": "Ce sort forme une aura d'énergie autour du personnage et blesse tous ceux qui l'approchent. Il choisit un type d'énergie : acide, froid, électricité ou feu. Les créatures adjacentes au personnage au moment où le sort est lancé et au début de son tour reçoivent 2d6 points de dégâts d'énergie du type sélectionné. Cette aura a un effet supplémentaire en fonction du type d'énergie choisi.\nAcide. Les créatures affectées par l'aura du personnage subissent 1 point de dégâts d'acide par round en continu pendant 1 round par tranche de 3 niveaux de lanceur de sorts et sont fiévreuses tant que l'acide leur cause des dégâts.\nFroid. Les créatures affectées par l'aura du personnage sont fatiguées. Une créature déjà fatiguée ne subit pas d'effet supplémentaire.\nÉlectricité. Les créatures affectées par l'aura du personnage sont chancelantes pendant 1 round.\nFeu. Les créatures affectées par l'aura du personnage prennent feu.\nLes créatures adjacentes au personnage ont droit à un jet de Réflexes pour réduire les dégâts de moitié et annuler l'effet supplémentaire. Les effets supplémentaires de l'aura ne se cumulent pas si la créature subit les dégâts causés par cette aura à plusieurs reprises. Le personnage ne peut activer qu'une aura élémentaire à la fois. Quand le personnage lance ce sort pour causer des dégâts d'acide, de froid, d'électricité ou de feu, le sort devient de ce type.",
+  "description_html": "<br/><br/>Ce sort forme une aura d'énergie autour du personnage et blesse tous ceux qui l'approchent. Il choisit un type d'énergie : acide, froid, électricité ou feu. Les créatures adjacentes au personnage au moment où le sort est lancé et au début de son tour reçoivent 2d6 points de dégâts d'énergie du type sélectionné. Cette aura a un effet supplémentaire en fonction du type d'énergie choisi.<br/>\n<ul><li><b>Acide.</b> Les créatures affectées par l'aura du personnage subissent 1 point de dégâts d'acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> en continu pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par tranche de 3 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> et sont <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuses</a> tant que l'acide leur cause des dégâts.</li><li><b>Froid.</b> Les créatures affectées par l'aura du personnage sont <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguées</a>. Une créature déjà <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguée</a> ne subit pas d'effet supplémentaire.</li><li><b>Électricité.</b> Les créatures affectées par l'aura du personnage sont <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.</li><li><b>Feu.</b> Les créatures affectées par l'aura du personnage <a class=\"pagelink\" href=\"Pathfinder-RPG.Dangers%20naturels.ashx#PRENDREFEU\" title=\"Les dangers naturels\">prennent feu</a>.</li></ul>\nLes créatures adjacentes au personnage ont droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> pour <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">réduire les dégâts de moitié et annuler</a> l'effet supplémentaire. Les effets supplémentaires de l'aura ne se cumulent pas si la créature subit les dégâts causés par cette aura à plusieurs reprises. Le personnage ne peut activer qu'une <i>aura élémentaire</i> à la fois. Quand le personnage lance ce sort pour causer des dégâts d'acide, de froid, d'électricité ou de feu, le sort devient de ce type.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20%c3%a9l%c3%a9mentaire.ashx",
+    "cache_fichier": "cache/html/14d3886e2a5c7bffe690f2d56f59df93bccb6d8b.html",
+    "recupere_le": "2026-07-28T22:42:34.532264+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "aura-elementaire",
+    "resume_court": "Une aura d'énergie autour du lanceur blesse les créatures adjacentes et leur inflige un effet supplémentaire selon le type choisi.",
+    "categorie_principale": "protection",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "immunite_ou_resistance_element"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts d'énergie du type sélectionné",
+      "condition_infligee": [
+        "Les créatures affectées par l'aura du personnage sont chancelantes pendant 1 round"
+      ],
+      "cible_typique": "personnage"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts d'acide, froid, électricité ou feu selon le choix du lanceur, mais le type n'est pas fixe à l'incantation. Type_degats vaut 'autre' car le texte ne désigne pas un seul type énergétique. Les conditions supplémentaires (fiévreux pour acide, fatigué pour froid, enflammé pour feu) ne figurent pas dans la liste fermée de condition_infligee ; seul 'chancelant' (électricité) y correspond. Le sort fonctionne aussi comme protection offensive : il blesse les agresseurs adjacents.",
+    "slug": "aura-elementaire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:29+00:00",
+    "hash_source": "46e8742f663ff1c71a7f4482b753f73ae85b9f48987f558a71630ebd3d844b9b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cb384df0facb971bf864aeb6c036ab695db1ad0de2c2138a6905da8116b5ebe5",
+  "hash_vue": "3d9be053d14826c4abaff8c97e717c80b3c0da8216f58bd3b476b9e0067ce27b"
+}

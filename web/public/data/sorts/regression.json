@@ -1,0 +1,106 @@
+{
+  "id": "regression",
+  "nom": "Régression",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9gression.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une écaille de caméléon)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un eidolon",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fait perdre une évolution à un eidolon et une de plus par tranche de cinq niveaux de lanceur de sorts. L'eidolon perd en premier les évolutions qui coûtent le plus de points. En cas d'égalité, déterminez l'évolution perdue au hasard. Si ce sort empêche un eidolon de remplir les conditions requises par d'autres évolutions ou pouvoirs, ces derniers sont perdus tant que ce sort fait effet.",
+  "description_html": "<br/><br/>Ce sort fait perdre une <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx#EVOLUTIONS\" title=\"L'eidolon du conjurateur\">évolution</a> à un <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> et une de plus par tranche de cinq <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a>. L'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> perd en premier les <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx#EVOLUTIONS\" title=\"L'eidolon du conjurateur\">évolutions</a> qui coûtent le plus de points. En cas d'égalité, déterminez l'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx#EVOLUTIONS\" title=\"L'eidolon du conjurateur\">évolution</a> perdue au hasard. Si ce sort empêche un <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> de remplir les conditions requises par d'autres <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx#EVOLUTIONS\" title=\"L'eidolon du conjurateur\">évolutions</a> ou pouvoirs, ces derniers sont perdus tant que ce sort fait effet.<br/><br/>",
+  "mythique": {
+    "description": "Le jet de sauvegarde change et devient Volonté (partiel). Si l’eidolon réussit son jet de sauvegarde, il perd une évolution déterminée aléatoirement.",
+    "description_html": "Le jet de sauvegarde change et devient <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> (partiel). Si l’eidolon réussit son jet de sauvegarde, il perd une évolution déterminée aléatoirement."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9gression.ashx",
+    "cache_fichier": "cache/html/355bcb5ea0b876262fbbdc8998de72377e0435bd.html",
+    "recupere_le": "2026-07-29T07:35:52.894746+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "regression",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9gression.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "regression",
+    "resume_court": "Un eidolon perd temporairement une ou plusieurs de ses évolutions, en commençant par les plus coûteuses.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un eidolon"
+    },
+    "notes_ambiguite": null,
+    "slug": "regression",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:40+00:00",
+    "hash_source": "ad650b489a0e9a5758f634787dec90c7a45ced06bc385c83545226b7b7d4718e"
+  }
+}

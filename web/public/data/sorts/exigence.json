@@ -1,0 +1,117 @@
+{
+  "id": "exigence",
+  "nom": "Exigence",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exigence.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 6,
+    "Ens/Mag": 8,
+    "Psy": 8,
+    "Sor": 8
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M/FD (mince fil de cuivre)",
+  "portee": "voir description",
+  "cible": "1 créature",
+  "duree": "1 round (voir texte)",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme communication à distance, à ceci près que le message peut également contenir une suggestion (voir le sort de même nom) à laquelle le sujet obéit du mieux qu’il peut. Un jet de Volonté réussi annule la suggestion, mais pas le contact proprement dit. Si le sujet reçoit le message, il le comprend, même si son Intelligence n’est que de 1. Si le message envoyé correspond à une action impossible ou s’il n’a aucun sens étant donné les circonstances dans lesquelles le sujet se trouve lorsqu’il le reçoit, le sujet le comprend mais la suggestion n’a aucun effet.\nLe message transmis ne peut dépasser vingt-cinq mots, suggestion y compris. La créature peut également transmettre une courte réponse immédiatement après avoir reçu le message.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20%c3%a0%20distance.ashx\" title=\"Communication à distance\">communication à distance</a></i>, à ceci près que le message peut également contenir une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> (voir le sort de même nom) à laquelle le sujet obéit du mieux qu’il peut. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> réussi annule la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i>, mais pas le contact proprement dit. Si le sujet reçoit le message, il le comprend, même si son <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> n’est que de 1. Si le message envoyé correspond à une action impossible ou s’il n’a aucun sens étant donné les circonstances dans lesquelles le sujet se trouve lorsqu’il le reçoit, le sujet le comprend mais la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> n’a aucun effet.<br/><br/>Le message transmis ne peut dépasser vingt-cinq mots, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i> y compris. La créature peut également transmettre une courte réponse immédiatement après avoir reçu le message.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exigence.ashx",
+    "cache_fichier": "cache/html/3f3b0002153637e687c5d5613b3fb1687cf0dd01.html",
+    "recupere_le": "2026-07-28T22:52:48.261785+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "exigence",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exigence.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "exigence",
+    "resume_court": "Transmet un message de 25 mots maximum contenant une suggestion coercitive à distance.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "communication_ou_langage",
+      "effet_mental",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort fonctionne comme communication à distance avec une suggestion ajoutée. La cible typique est classée en « ennemi » car la suggestion est coercitive, bien que le sort puisse techniquement viser un allié. La durée est instantanée car le message et la suggestion se résolvent immédiatement à la réception, même si le contact persiste 1 round.",
+    "slug": "exigence",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:49+00:00",
+    "hash_source": "4567a66bffdffd520e518ae9ed175199affed98e9a3368369961c594aeb429a9"
+  }
+}

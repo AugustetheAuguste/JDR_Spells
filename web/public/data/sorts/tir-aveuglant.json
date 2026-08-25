@@ -1,0 +1,93 @@
+{
+  "id": "tir-aveuglant",
+  "nom": "Tir aveuglant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20aveuglant.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une pincée de pyrite en poudre)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une arme à feu",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (objet)",
+  "resistance_magie": "oui (objet), voir texte",
+  "description": "L’arme à feu tire dans un éclair aveuglant, même si elle n’est pas chargée. Toutes les créatures qui se trouvent à moins de 4,50 m (3 c) de la créature doivent réussir un jet de Vigueur, sinon, elles sont aveuglées pendant 1d4 rounds. La créature qui porte l’arme à feu subit un malus de -4 au jet de sauvegarde. Si l’arme à feu est chargée, la munition est gâchée.",
+  "description_html": "<br/><br/>L’arme à feu tire dans un éclair aveuglant, même si elle n’est pas chargée. Toutes les créatures qui se trouvent à moins de 4,50 m (3 <abbr title=\"cases\">c</abbr>) de la créature doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, sinon, elles sont <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveuglées</a> pendant 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. La créature qui porte l’arme à feu subit un malus de -4 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>. Si l’arme à feu est chargée, la munition est gâchée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20aveuglant.ashx",
+    "cache_fichier": "cache/html/d24a59f2a210855065999165dbca74512f3b18e0.html",
+    "recupere_le": "2026-07-29T07:42:34.763456+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "tir-aveuglant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20aveuglant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "tir-aveuglant",
+    "resume_court": "Une arme à feu tire dans un éclair aveuglant qui rend aveugles les créatures proches.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": "éclair aveuglant",
+      "condition_infligee": [
+        "elles sont aveuglées pendant 1d4 rounds"
+      ],
+      "cible_typique": "Toutes les créatures qui se trouvent à moins de 4,50 m (3 c) de la créature"
+    },
+    "notes_ambiguite": "Le sort inflige un effet d'éblouissement (éclair) mais la condition retenue est « aveugle » car le texte emploie explicitement le verbe « aveuglées ». Le type de dégâts est classé « autre » car l'effet lumineux n'entre dans aucune catégorie énergétique standard (feu, froid, électricité, etc.).",
+    "slug": "tir-aveuglant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:30+00:00",
+    "hash_source": "6f2e8c17f8e0cd548c1287e2eb37147071bc39e43832fe3d2dc9eae24a31e9a8"
+  }
+}

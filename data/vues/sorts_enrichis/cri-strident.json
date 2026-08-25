@@ -1,0 +1,75 @@
+{
+  "id": "cri-strident",
+  "nom": "Cri strident",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cri%20strident.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "9 m (6 c)",
+  "cible": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage lance un cri strident qui surprend tous ceux qui l'entourent et leur fait baisser leur garde. Les ennemis qui se trouvent dans la zone doivent réussir un jet de Vigueur ou déclencher une attaque d'opportunité immédiate de la part des adversaires qui les menacent. Le personnage et ses alliés ne sont pas affectés par le cri.",
+  "description_html": "<br/><br/>Le personnage lance un cri strident qui surprend tous ceux qui l'entourent et leur fait baisser leur garde. Les ennemis qui se trouvent dans la zone doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou déclencher une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d'opportunité</a> immédiate de la part des adversaires qui les menacent. Le personnage et ses alliés ne sont pas affectés par le cri.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cri%20strident.ashx",
+    "cache_fichier": "cache/html/51d2a40485c335ca16e5bfd4056bb5122f56668d.html",
+    "recupere_le": "2026-07-28T22:49:45.391497+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "cri-strident",
+    "resume_court": "Un cri strident force les ennemis à proximité à déclencher des attaques d'opportunité contre eux.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "degats_directs",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "étendue de 9 m (6 c) de rayon centrée sur le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort ne cause pas de dégâts directs mais force les ennemis à déclencher des attaques d'opportunité, ce qui peut en résulter. Aucune condition persistante n'est infligée au sens des conditions listées. Le tag degats_directs est retenu car l'effet mécanique aboutit à des dégâts via les attaques d'opportunité provoquées.",
+    "slug": "cri-strident",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:09+00:00",
+    "hash_source": "885088a5d3b8dbb9eefa1d93160ace72151cbe8503bf77746cc561b5759b9761"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d6ed38bca3fcd6b7d2816fb4814382999ed1cd06ccc81a826608c15df5df52cf",
+  "hash_vue": "2a772e5c5d8ca57e5b2695cdf56db2649eab4b4f95dd5707ab34de1b95b5604d"
+}

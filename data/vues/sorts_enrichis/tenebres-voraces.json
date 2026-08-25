@@ -1,0 +1,78 @@
+{
+  "id": "tenebres-voraces",
+  "nom": "Ténèbres voraces",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9n%c3%a8bres%20voraces.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force",
+    "obscurité"
+  ],
+  "niveaux": {
+    "Ens/Mag": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une dent de chauve-souris)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "étendue de 18 m de rayon",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui (voir description)",
+  "description": "Ce sort crée une zone de ténèbres opaques similaires aux ténèbres profondes, mais emplie de mâchoires invisibles, voraces et garnies de dents promptes à mordre. Les créatures qui commencent leur tour à l’intérieur des ténèbres voraces sont mordues et lacérées par ces crocs de force invisibles qui leur infligent 3d6 points de dégâts de force et un affaiblissement temporaire de 2 points de Constitution par round. Une fois en dehors de la zone du sort, elles continuent de subir 1d6 points de dégâts de saignement à chaque round, à moins qu’elles ne bénéficient d’un soin magique ou qu’elles ne pénètrent dans une zone de lumière vive. La résistance à la magie peut annuler les dégâts infligés par les ténèbres voraces, mais pas l’obscurité créée par ce sort.",
+  "description_html": "<br/><br/>Ce sort crée une zone de ténèbres opaques similaires aux <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9n%c3%a8bres%20profondes.ashx\" title=\"Ténèbres profondes\">ténèbres profondes</a></i>, mais emplie de mâchoires invisibles, voraces et garnies de dents promptes à mordre. Les créatures qui commencent leur tour à l’intérieur des <i>ténèbres voraces</i> sont mordues et lacérées par ces crocs de force invisibles qui leur infligent 3d6 points de dégâts de force et un <a class=\"pagelink\" href=\"Pathfinder-RPG.Affaiblissement%20temporaire%20(capacit%c3%a9).ashx\" title=\"Affaiblissement temporaire (Ext ou Sur)\">affaiblissement temporaire</a> de 2 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Une fois en dehors de la zone du sort, elles continuent de subir 1d6 points de dégâts de <a class=\"pagelink\" href=\"Pathfinder-RPG.saignement.ashx\" title=\"Saignement\">saignement</a> à chaque round, à moins qu’elles ne bénéficient d’un soin magique ou qu’elles ne pénètrent dans une zone de lumière vive. La <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> peut annuler les dégâts infligés par les ténèbres voraces, mais pas l’obscurité créée par ce sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Magic/Magie de la Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9n%c3%a8bres%20voraces.ashx",
+    "cache_fichier": "cache/html/f9916912e54f86d5c6112a939da4c6bb9a28d84c.html",
+    "recupere_le": "2026-07-29T07:42:09.523023+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "tenebres-voraces",
+    "resume_court": "Une zone de ténèbres qui mord les créatures à l'intérieur et les blesse après leur départ.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "degats_directs",
+      "terrain_ou_environnement",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "affaiblissement_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "3d6 points de dégâts de force",
+      "condition_infligee": [],
+      "cible_typique": "étendue de 18 m de rayon"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement temporaire de Constitution (mécanique de dégâts de caractéristique) plutôt qu'une condition nommée de la liste. L'affaiblissement est capturé par le tag `affaiblissement_de_capacite`. Les dégâts de saignement ultérieurs sont du type `force` selon la description des crocs de force.",
+    "slug": "tenebres-voraces",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:25+00:00",
+    "hash_source": "5176f74efd7aacb176e32556043c6735b2a31a88f383cd2b82295edb77ec162e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "174a082dd0075724e31789fc82392a42cd593e475c7bc9cb51d860af685bf969",
+  "hash_vue": "54562e9ec65d0b5bab6b4dd90f0165e606c16b19e5fcdfbe7c3b00a51a9d2199"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "poudre-stable",
+  "nom": "Poudre stable",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre%20stable.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F/FD (quelques gouttes de liqueur)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une arme à feu chargée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "La munition déjà chargée dans l’arme a peu de chances de faire long feu. La zone de long feu possible diminue de 1 + 1 par tranche de cinq niveaux de lanceur de sorts (+5 au maximum, pour une valeur de long feu minimum de 0).",
+  "description_html": "<br/><br/>La munition déjà chargée dans l’arme a peu de chances de faire <a class=\"pagelink\" href=\"Pathfinder-RPG.long%20feu.ashx\" title=\"long feu\">long feu</a>. La zone de <a class=\"pagelink\" href=\"Pathfinder-RPG.long%20feu.ashx\" title=\"long feu\">long feu</a> possible diminue de 1 + 1 par tranche de cinq <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (+5 au maximum, pour une valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.long%20feu.ashx\" title=\"long feu\">long feu</a> minimum de 0).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre%20stable.ashx",
+    "cache_fichier": "cache/html/094f4840ba200efd2c34ac993e9ab46f85afa5e5.html",
+    "recupere_le": "2026-07-28T23:04:25.046633+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "poudre-stable",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poudre%20stable.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "poudre-stable",
+    "resume_court": "Stabilise la munition d'une arme à feu pour réduire les risques d'enrayage.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "duree_instantanee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une arme à feu chargée"
+    },
+    "notes_ambiguite": null,
+    "slug": "poudre-stable",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:28+00:00",
+    "hash_source": "4bc452a66d3c23da6328d7241069c4e2a3232943db6fdb5104ab7498b54ba73b"
+  }
+}

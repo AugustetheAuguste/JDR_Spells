@@ -1,0 +1,84 @@
+{
+  "id": "glyphe-de-malefice",
+  "nom": "Glyphe de maléfice",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glyphe%20de%20mal%c3%a9fice.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (poudre de diamant (200 po))",
+  "portee": "contact",
+  "cible": "objet touché ou jusqu’à 0,5 m²/niveau",
+  "duree": "permanente jusqu’au déclenchement (T)",
+  "jet_de_sauvegarde": "voir texte",
+  "resistance_magie": "non (objet) et oui (voir texte)",
+  "description": "Ce sort fonctionne comme la version de glyphe du sort glyphe de garde, à la seule différence que le personnage peut stocker un maléfice (mais pas un maléfice majeur ni un grand maléfice) à la place d’un sort. Si le maléfice a une cible, il cible l’intrus. Si le maléfice a une zone d’effet ou un effet informe, la zone ou l’effet est centré(e) sur l’intrus. Le maléfice déclenché utilise le niveau de lanceur et le DD du sort de glyphe de maléfice. Lecture de la magie permet à celui qui le lance d’identifier un glyphe de maléfice sur un jet de Connaissances (mystères) DD 13 réussi. L’identification du glyphe ne le décharge pas et indique qu’il stocke un maléfice, mais elle n’indique pas l’effet de ce maléfice.",
+  "description_html": "<hr/>\nCe sort fonctionne comme la version de glyphe du sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.glyphe%20de%20garde.ashx\" title=\"Glyphe de garde\">glyphe de garde</a></i>, à la seule différence que le personnage peut stocker un maléfice (mais pas un maléfice majeur ni un grand maléfice) à la place d’un sort. Si le maléfice a une cible, il cible l’intrus. Si le maléfice a une zone d’effet ou un effet informe, la zone ou l’effet est centré(e) sur l’intrus. Le maléfice déclenché utilise le niveau de lanceur et le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort de glyphe de maléfice.\n<i><a class=\"pagelink\" href=\"Pathfinder-RPG.Lecture%20de%20la%20magie.ashx\" title=\"Lecture de la magie\">Lecture de la magie</a></i> permet à celui qui le lance d’identifier un glyphe de maléfice sur un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> (mystères) <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 13 réussi. L’identification du glyphe ne le décharge pas et indique qu’il stocke un maléfice, mais elle n’indique pas l’effet de ce maléfice.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Glyphe de garde"
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glyphe%20de%20mal%c3%a9fice.ashx",
+    "cache_fichier": "cache/html/75a0affc76afec84bc67b92581689cb7870233ec.html",
+    "recupere_le": "2026-07-28T22:55:24.448371+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "glyphe-de-malefice",
+    "resume_court": "Un glyphe permanent qui déclenche un maléfice stocké contre un intrus qui le touche.",
+    "categorie_principale": "protection",
+    "tags": [
+      "invocation_ou_creation",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "objet touché ou jusqu'à 0,5 m²/niveau"
+    },
+    "notes_ambiguite": "Le sort stocke un maléfice qui se déclenche sur un intrus, mais le texte ne précise pas quel type de dégâts ou de condition le maléfice inflige — cela dépend du maléfice choisi. La catégorie « protection » reflète que le glyphe protège un objet ou une zone en piégeant les intrus, bien que l'effet réel soit offensif une fois déclenché.",
+    "slug": "glyphe-de-malefice",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:52+00:00",
+    "hash_source": "c74441f87091c6c6c6ece926096c81a6c536df82833145f312977a52b41664ec"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "694775b15dc5b096559389610f5bd37a3339d51d60bc5ccd12739ee00e8d73ec",
+  "hash_vue": "50f27e3da35175a6a39dd2618558bfba93b66097683bda29fe559a408498b324"
+}

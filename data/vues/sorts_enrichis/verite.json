@@ -1,0 +1,115 @@
+{
+  "id": "verite",
+  "nom": "Vérité",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9rit%c3%a9.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 4,
+    "Hyp": 4,
+    "Ens/Mag": 5,
+    "Prê": 6,
+    "Psy": 5,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "Lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le lanceur de sorts peut communiquer avec toutes les créatures qui ne sont pas dépourvues d’intelligence. Tant qu’il peut être entendu, toutes les créatures comprennent ce qu’il dit, chacune l’entendant comme s’il parlait sa langue ou utilisait un autre mode de communication naturel, et le lanceur de sorts comprend leurs réponses comme si ces créatures parlaient sa langue natale. Il peut poser des questions et recevoir des réponses, mais ce sort ne rend pas les créatures plus amicales ou plus coopératives qu’elles ne le sont normalement, et les êtres non doués de sensations risquent de donner des réponses limitées.\nLorsque le lanceur de sorts utilise vérité, les effets basés sur son langage peuvent affecter toutes les créatures qui ne sont pas dépourvues d’intelligence.",
+  "description_html": "<br/><br/>\nLe lanceur de sorts peut communiquer avec toutes les créatures qui ne sont pas dépourvues d’intelligence. Tant qu’il peut être entendu, toutes les créatures comprennent ce qu’il dit, chacune l’entendant comme s’il parlait sa langue ou utilisait un autre mode de communication naturel, et le lanceur de sorts comprend leurs réponses comme si ces créatures parlaient sa langue natale. Il peut poser des questions et recevoir des réponses, mais ce sort ne rend pas les créatures plus amicales ou plus coopératives qu’elles ne le sont normalement, et les êtres non doués de sensations risquent de donner des réponses limitées. <br/><br/>Lorsque le lanceur de sorts utilise <i>vérité</i>, les <a class=\"pagelink\" href=\"Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#DEPENDANTDULANGAGE\" title=\"Créer un sort\">effets basés sur son langage</a> peuvent affecter toutes les créatures qui ne sont pas dépourvues d’intelligence.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles aasimars."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9rit%c3%a9.ashx",
+    "cache_fichier": "cache/html/9d071183ce1195ccd3bf9238f5273224c806b015.html",
+    "recupere_le": "2026-07-29T07:43:41.329699+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "verite",
+    "resume_court": "Le lanceur comprend et se fait comprendre de toute créature intelligente, indépendamment de sa langue.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "communication_ou_langage",
+      "duree_prolongee",
+      "perception_amelioree"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "verite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:04+00:00",
+    "hash_source": "fbadf99069d7c638152e68c8997c8ef335ab629414bc532f7f869e6c95d882f1"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "10aa9e48f8587a88af5cad857bd8aa86c042599a319dac3af4c4e82fa958d7a0",
+  "hash_vue": "0e67010aec198338ebe77a6239bb315523fec7da9b4eb3974698e93a96f494db"
+}

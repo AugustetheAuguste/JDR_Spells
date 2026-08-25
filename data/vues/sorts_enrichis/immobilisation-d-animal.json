@@ -1,0 +1,104 @@
+{
+  "id": "immobilisation-d-animal",
+  "nom": "Immobilisation d'animal",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20danimal.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Hyp": 2,
+    "Psy": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 animal",
+  "duree": "1 round/niveau (T) (voir texte)",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme immobilisation de personne, si ce n’est qu’il affecte un animal.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immobilisation%20de%20personne.ashx\" title=\"Immobilisation de personne\">immobilisation de personne</a></i>, si ce n’est qu’il affecte un animal.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Immobilisation de personne"
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20danimal.ashx",
+    "cache_fichier": "cache/html/0a63c845ae27d2b8166670472cbf5f6e45ce8132.html",
+    "recupere_le": "2026-07-28T22:56:37.510137+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "immobilisation-d-animal",
+    "resume_court": "Paralyse un animal pendant 1 round par niveau via un jet de Volonté.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce sort fonctionne comme immobilisation de personne"
+      ],
+      "cible_typique": "cible: 1 animal"
+    },
+    "notes_ambiguite": "Le texte renvoie à « immobilisation de personne » sans reproduire ses effets exacts. La condition « paralyse » est déduite de ce renvoi et du contexte d'enchantement coercitif, mais le texte fourni ne détaille pas l'effet précis. La durée est « 1 round/niveau » avec mention « (T) » (probablement « Transmutation » ou une note de jeu), ce qui justifie le tag « duree_prolongee ».",
+    "slug": "immobilisation-d-animal",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:19+00:00",
+    "hash_source": "181b22e31f66f20efe68105b22f89cfbd229c95f6b5f408d2fa519066ffbd116"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6863846a395aa551892d0a9757b4138b8561a5194d265fd6a7d31e7453af64b1",
+  "hash_vue": "12a5cab1bfc438728eefc10ad193bb6aeaa7adadc437b754e4a6b5f912902b2d"
+}

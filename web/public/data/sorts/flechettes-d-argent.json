@@ -1,0 +1,114 @@
+{
+  "id": "flechettes-d-argent",
+  "nom": "Fléchettes d'argent",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9chettes%20dargent.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une aiguille en argent)",
+  "portee": "4,5 m (3 c)",
+  "cible": "rayonnement en cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Un cône de fléchettes d’argent surgit de la main du personnage. Ces fléchettes fonctionnent comme une arme en argent infligeant 1d6 points de dégâts perforants par niveau de lanceur (10d6 au maximum). Toute créature possédant un bonus d’armure supérieur à +4 ou un bonus d’armure naturelle supérieur à +4 reçoit 50% des dégâts en moins.",
+  "description_html": "<br/><br/>Un cône de fléchettes d’argent surgit de la main du personnage. Ces fléchettes fonctionnent comme une arme en argent infligeant 1d6 points de dégâts perforants par niveau de lanceur (10d6 au maximum). Toute créature possédant un bonus d’armure supérieur à +4 ou un bonus d’armure naturelle supérieur à +4 reçoit 50% des dégâts en moins.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9chettes%20dargent.ashx",
+    "cache_fichier": "cache/html/00d234ac453425f91843db000d5fbdbe76e7dbb4.html",
+    "recupere_le": "2026-07-28T22:53:37.294179+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "flechettes-d-argent",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9chettes%20dargent.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "flechettes-d-argent",
+    "resume_court": "Un cône de fléchettes d'argent inflige des dégâts perforants à toutes les créatures dans la zone.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation",
+      "arme_ou_munition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "perforant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts perforants",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement en cône"
+    },
+    "notes_ambiguite": null,
+    "slug": "flechettes-d-argent",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:09+00:00",
+    "hash_source": "b48c52f69a5b9574a9e6c5749ffb10c1d9b99c0a7f43cc55820a4cc587f35b14"
+  }
+}

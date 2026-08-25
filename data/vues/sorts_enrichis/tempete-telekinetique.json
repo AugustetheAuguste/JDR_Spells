@@ -1,0 +1,79 @@
+{
+  "id": "tempete-telekinetique",
+  "nom": "Tempête télékinétique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Temp%c3%aate%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (12m), rayon d'action centré sur vous",
+  "cible": null,
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur (voir le texte)",
+  "resistance_magie": "oui",
+  "description": "Vous générez une tempête d'énergie télékinétique qui émane de vous, déchirant la zone d'effet du sortilège avec une force dévastatrice. Toute créature capturée dans le rayon du sortilège prend 1d6 points de dégât par niveau de lanceur de sorts (maximum 20d6) et est étourdi pendant 1 round. Un jet de Vigueur réussi réduit les dégâts de moitié et annule les effets étourdissement.\nLa tempête télékinétique endommage les objets dans la zone. Si les dommages causés à une barrière interposée la brise, la tempête télékinétique continue au-delà de la barrière si la zone du sortilège le permet; Sinon,elle s'arrête à la barrière tout comme n'importe quel autre effet de sortilège.\nVous pouvez désigner n'importe quel nombre de créatures immunisé contre l'effet du sort.",
+  "description_html": "<br/><br/>Vous générez une tempête d'énergie télékinétique qui émane de vous, déchirant la zone d'effet du sortilège avec une force dévastatrice. Toute créature capturée dans le rayon du sortilège prend 1d6 points de dégât par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum 20d6) et est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdi</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> réussi réduit les dégâts de moitié et annule les effets étourdissement.<br/><br/>La tempête télékinétique endommage les objets dans la zone. Si les dommages causés à une barrière interposée la brise, la tempête télékinétique continue au-delà de la barrière si la zone du sortilège le permet; Sinon,elle s'arrête à la barrière tout comme n'importe quel autre effet de sortilège.<br/><br/>Vous pouvez désigner n'importe quel nombre de créatures immunisé contre l'effet du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Temp%c3%aate%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+    "cache_fichier": "cache/html/9ad0ea103feb737c39eb3992013d2f48b4ef564f.html",
+    "recupere_le": "2026-07-29T07:42:21.860433+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "tempete-telekinetique",
+    "resume_court": "Une tempête d'énergie télékinétique émane du lanceur, blessant et étourdissant toutes les créatures dans la zone.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "force",
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": "points de dégât par niveau de lanceur de sorts",
+      "condition_infligee": [
+        "est etourdi pendant 1 round"
+      ],
+      "cible_typique": "rayon d'action centré sur vous"
+    },
+    "notes_ambiguite": null,
+    "slug": "tempete-telekinetique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:22+00:00",
+    "hash_source": "75b4951896af1ac8db196693d8c5ffdb919d13d3b8b7e75ecd2a89a2ad3e00cc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1d230e8f9f8d7a0e1107c44deaeee9e241192ee8a1ca9d7870dbceda23df08f9",
+  "hash_vue": "ce782040340ada0598c7eae64c8abb8fd764dee4332c5cfb0f015704f75bbec1"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "controle-de-creature-artificielle",
+  "nom": "Contrôle de créature artificielle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20de%20cr%c3%a9ature%20artificielle.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Occ": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature artificielle",
+  "duree": "concentration",
+  "jet_de_sauvegarde": "aucun (voir texte)",
+  "resistance_magie": "non",
+  "description": "Le personnage arrache le contrôle d’une créature artificielle à son maître. Tant qu’il se concentre, il la contrôle comme s’il était son maître. Il doit faire un test d’Art de la magie à chaque round pour maintenir le contrôle. Le DD de ce test est de 10 + DV de la créature artificielle. Si son constructeur ou son maître est présent et tente de la contrôler, le personnage et lui doivent faire des tests d'Art de la magie opposés à chaque round pour prendre le contrôle de la créature.",
+  "description_html": "<br/><br/>Le personnage arrache le contrôle d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.Type%20cr%c3%a9ature%20artificielle.ashx\" title=\"Créature artificielle\">créature artificielle</a> à son maître. Tant qu’il se <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DUREE\" title=\"Présentation des sorts\">concentre</a>, il la contrôle comme s’il était son maître. Il doit faire un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> à chaque round pour maintenir le contrôle. Le DD de ce test est de 10 + DV de la <a class=\"pagelink\" href=\"Pathfinder-RPG.Type%20cr%c3%a9ature%20artificielle.ashx\" title=\"Créature artificielle\">créature artificielle</a>. Si son constructeur ou son maître est présent et tente de la contrôler, le personnage et lui doivent faire des tests d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> opposés à chaque round pour prendre le contrôle de la créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20de%20cr%c3%a9ature%20artificielle.ashx",
+    "cache_fichier": "cache/html/7837071f2009bcd2df1a3c33ef75a724e6583e58.html",
+    "recupere_le": "2026-07-28T22:47:39.265582+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "controle-de-creature-artificielle",
+    "resume_court": "Le lanceur prend le contrôle d'une créature artificielle en se concentrant et en réussissant des tests d'Art de la magie.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature artificielle"
+    },
+    "notes_ambiguite": "Le sort affecte une créature unique (la créature artificielle), mais son effet est de la contrôler comme un serviteur, ce qui le rapproche davantage de l'invocation que du contrôle de zone strict. Cependant, aucune créature n'est invoquée : le sort détourne une créature existante. La catégorie « controle_de_zone » a été retenue car elle couvre les effets qui modifient ce qui s'y trouve, mais « charme_ou_coercition » en tag reflète mieux la nature du sort. L'absence de jet de sauvegarde initial (seuls des tests d'Art de la magie s'appliquent) et la durée liée à la concentration justifient « duree_prolongee ». Le tag « plusieurs_cibles » est discutable : une seule créature est ciblée, mais le sort peut impliquer des tests opposés avec le maître/constructeur.",
+    "slug": "controle-de-creature-artificielle",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:25+00:00",
+    "hash_source": "af5d2152871ec5d86d1450ef8ae3c340838ce3cad07dae88c7dd697ecdc5c892"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "089550ee21fe2fc351e58796e8dc36bb1017613e37008b3de5fe478638ef82fe",
+  "hash_vue": "22df900e4a6dd79e7b24d7a16625f185f158227ca76f6e7a43150047f16f5d54"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "explosion-de-gloire",
+  "nom": "Explosion de gloire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20de%20gloire.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Inq": 4,
+    "Pal": 4,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "3 m",
+  "cible": "rayonnement de 3 m de rayon, centré sur le lanceur",
+  "duree": "1 round/niveau (T; voir description)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Les alliés du personnage situés dans la zone d’effet bénéficient d’un bonus sacré de +1 aux jets d’attaque et de sauvegarde contre les effets de terreur, plus 1 point de vie temporaire par niveau de lanceur (maximum 20). Le lanceur irradie une lumière blanche ou dorée semblable à celle d’une torche pendant la durée du sort mais il peut supprimer cette lumière en une action libre.",
+  "description_html": "<br/><br/>Les alliés du personnage situés dans la zone d’effet bénéficient d’un bonus sacré de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">de sauvegarde</a> contre les effets de terreur, plus 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie%20temporaires.ashx\" title=\"points de vie temporaires\">point de vie temporaire</a> par niveau de lanceur (maximum 20). Le lanceur irradie une lumière blanche ou dorée semblable à celle d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.Torche%20(objet).ashx\" title=\"Torche\">torche</a> pendant la durée du sort mais il peut supprimer cette lumière en une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20de%20gloire.ashx",
+    "cache_fichier": "cache/html/4f39ee09dfd80edb7919e6ad388390b6a9b57019.html",
+    "recupere_le": "2026-07-28T22:52:51.247224+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "explosion-de-gloire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20de%20gloire.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "explosion-de-gloire",
+    "resume_court": "Les alliés dans un rayon de 3 m gagnent un bonus sacré aux attaques et jets de sauvegarde contre la terreur, plus des points de vie temporaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "amelioration_de_capacite",
+      "protection_defensive",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Les alliés du personnage situés dans la zone d'effet"
+    },
+    "notes_ambiguite": null,
+    "slug": "explosion-de-gloire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:48+00:00",
+    "hash_source": "a473222ab7d08d48ac43be3320d615a40833cdcee43d0962fd1920a806754d2b"
+  }
+}

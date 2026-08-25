@@ -1,0 +1,72 @@
+{
+  "id": "salut-du-sang",
+  "nom": "Salut du sang",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Salut%20du%20sang.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "San": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le personnage",
+  "duree": "1 round/niveau (T ; voir description)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Lorsqu’il est sous l’effet de ce sort, le personnage est immunisé contre ses propres sorts à zone d’effet qui infligent des dégâts. Il peut mettre fin à ce sort par une action immédiate lorsqu’il est dans la zone d’effet d’un sort infligeant des dégâts lancé par une autre créature, il est alors immunisé contre les effets de ce sort lors de cette incantation uniquement. Si le personnage possède l’aptitude de classe d’incantation sanguine, il peut lancer ce sort par une action rapide au lieu d’une action simple lorsqu’il est en rage sanguine.",
+  "description_html": "<br/><br/>Lorsqu’il est sous l’effet de ce sort, le personnage est immunisé contre ses propres sorts à zone d’effet qui infligent des dégâts. Il peut mettre fin à ce sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> lorsqu’il est dans la zone d’effet d’un sort infligeant des dégâts lancé par une autre créature, il est alors immunisé contre les effets de ce sort lors de cette incantation uniquement. Si le personnage possède l’aptitude de classe d’<a class=\"pagelink\" href=\"Pathfinder-RPG.sanguin.ashx#INCANTATIONSANGUINE\" title=\"Le sanguin\">incantation sanguine</a>, il peut lancer ce sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a> au lieu d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> lorsqu’il est en <a class=\"pagelink\" href=\"Pathfinder-RPG.sanguin.ashx#RAGESANGUINE\" title=\"Le sanguin\">rage sanguine</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Salut%20du%20sang.ashx",
+    "cache_fichier": "cache/html/0964f9f3bba0b96089eed024ac578ae9f089cece.html",
+    "recupere_le": "2026-07-29T07:39:41.428153+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "salut-du-sang",
+    "resume_court": "Le lanceur devient immunisé à ses propres sorts à zone d'effet dommageables et peut se protéger contre ceux d'autrui.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "immunite_ou_resistance_element",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le personnage"
+    },
+    "notes_ambiguite": "Le sort confère une immunité plutôt qu'une résistance, mais le texte ne nomme pas explicitement un type d'énergie (feu, froid, etc.) — l'immunité porte sur les dégâts de sorts à zone d'effet en général. Le tag `immunite_ou_resistance_element` est retenu car il couvre les immunités nommées ; cependant, cette immunité est générique et non élémentaire. Aucune condition n'est infligée : le sort protège sans entraver.",
+    "slug": "salut-du-sang",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:19+00:00",
+    "hash_source": "3d25279395b5b79f5784e45215caf87b18e856258ad55ccc8f6e2916b134dd25"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d573d72b48f4e5eb842ccd1ac98089967df34de8961a8d07291f438dd30b6fcd",
+  "hash_vue": "2199467712380df7ffc50bac5fc24c135e6692c91ee7b8ce1ab0634f56f7a388"
+}

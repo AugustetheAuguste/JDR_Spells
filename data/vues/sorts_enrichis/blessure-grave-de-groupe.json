@@ -1,0 +1,88 @@
+{
+  "id": "blessure-grave-de-groupe",
+  "nom": "Blessure grave de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20grave%20de%20groupe.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 7,
+    "Prê": 7,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "De l’énergie négative part dans toutes les directions depuis le point d’origine, infligeant 3d8 points de dégâts, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +35), à toutes les créatures vivantes situées alentour.\nDe la même manière que les autres sorts de blessure, blessure grave de groupe soigne les morts-vivants situés dans la zone. Un prêtre capable de lancer les sorts de blessure de façon spontanée peut en faire de même à l’égard des sorts de blessure de groupe.",
+  "description_html": "<br/><br/>De l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a> part dans toutes les directions depuis le point d’origine, infligeant 3d8 points de dégâts, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +35), à toutes les créatures vivantes situées alentour.<br/><br/>De la même manière que les autres sorts de blessure, <i>blessure grave de groupe</i> soigne les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> situés dans la zone. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> capable de lancer les sorts de blessure de façon spontanée peut en faire de même à l’égard des sorts de blessure de groupe.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20grave%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/97567c404db0ed021330c03a77e3b7e45770e781.html",
+    "recupere_le": "2026-07-28T22:43:48.445411+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "blessure-grave-de-groupe",
+    "resume_court": "L'énergie négative blesse les vivants dans une zone et soigne les morts-vivants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau, distantes de moins de 9 m les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "blessure-grave-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:51+00:00",
+    "hash_source": "727c729eab98db7bd941467f5288651758045d8bf5edb33ca678677e69ef05c2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f63aebf4f770d72ec4a04069510ce35357815497b199930346f0b495754666f6",
+  "hash_vue": "a8130eb6c8eeefefb44e857a9459ba2be04b29ea8deed1aaac5850c7b3269173"
+}

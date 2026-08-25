@@ -1,0 +1,89 @@
+{
+  "id": "guerison-supreme-de-groupe",
+  "nom": "Guérison suprême de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20supr%c3%aame%20de%20groupe.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 9,
+    "Prê": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 ou plusieurs créatures distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme guérison suprême, si ce n’est qu’il agit à distance et sur plusieurs cibles à la fois, restituant à chacune d’entre elles un nombre de points de vie pouvant aller jusqu’à 250.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20supr%c3%aame.ashx\" title=\"Guérison suprême\">guérison suprême</a></i>, si ce n’est qu’il agit à distance et sur plusieurs cibles à la fois, restituant à chacune d’entre elles un nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> pouvant aller jusqu’à 250.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20supr%c3%aame%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/44974c5c66a61d8068fbe4aee6d54ac57f8ecec1.html",
+    "recupere_le": "2026-07-28T22:55:50.425545+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "guerison-supreme-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20supr%c3%aame%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 9
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "guerison-supreme-de-groupe",
+    "resume_court": "Restaure jusqu'à 250 points de vie à plusieurs créatures alliées à portée courte.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "plusieurs_cibles",
+      "duree_instantanee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 ou plusieurs créatures distantes de moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "guerison-supreme-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:00+00:00",
+    "hash_source": "3f9f9c19383e42ee9bc77b22d6006fad645d12ab4edf52644fd324a32b3a615b"
+  }
+}

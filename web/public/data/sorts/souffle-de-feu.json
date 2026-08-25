@@ -1,0 +1,115 @@
+{
+  "id": "souffle-de-feu",
+  "nom": "Souffle de feu",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20feu.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un piment)",
+  "portee": "4,50 m (3 c)",
+  "cible": "rayonnement en forme de cône",
+  "duree": "1 round/niveau ou jusqu'à déchargement ; voir texte",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Le personnage peut cracher un cône de feu par une action simple jusqu'à trois fois pendant que ce sort fait effet. Le cône inflige 4d6 points de dégâts de feu à chaque créature qui se trouve dans la zone. Le deuxième cône n'inflige que 2d6 points de dégâts et le troisième 1d6 aux créatures se trouvant dans la zone. Un jet de Réflexes permet de réduire ces dégâts de moitié. Le sort se termine au troisième cône de flammes.",
+  "description_html": "<br/><br/>Le personnage peut cracher un cône de feu par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> jusqu'à trois fois pendant que ce sort fait effet. Le cône inflige 4d6 points de dégâts de feu à chaque créature qui se trouve dans la zone. Le deuxième cône n'inflige que 2d6 points de dégâts et le troisième 1d6 aux créatures se trouvant dans la zone. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> permet de réduire ces dégâts de moitié. Le sort se termine au troisième cône de flammes.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20feu.ashx",
+    "cache_fichier": "cache/html/b85df9bd26c8051fcfaaf8f57b683e9869a912ba.html",
+    "recupere_le": "2026-07-29T07:41:03.483491+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "souffle-de-feu",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20feu.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "souffle-de-feu",
+    "resume_court": "Le lanceur crache jusqu'à trois cônes de feu infligeant des dégâts décroissants aux créatures.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": null,
+    "slug": "souffle-de-feu",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:53+00:00",
+    "hash_source": "ff375de3dc6e95992cf4cb0eb37abb5ed9a761e7a46bfb267362a16f409f248a"
+  }
+}

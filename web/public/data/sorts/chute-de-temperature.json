@@ -1,0 +1,129 @@
+{
+  "id": "chute-de-temperature",
+  "nom": "Chute de température",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute%20de%20temp%c3%a9rature.ashx",
+  "ecole": "évocation (froid)",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Occ": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayon de 1,50 m (1 c)",
+  "duree": "1 round/2 niveaux",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "La zone d’effet du sort se couvre d’une couche de givre qui inflige 2d6 points de dégâts aux créatures qui s’y trouvent. Les créatures blessées par l’effet initial doivent réussir un jet de Vigueur ou se retrouver chancelantes pendant 1 round. La zone reste glacée pendant toute la durée du sort. Les créatures qui commencent leur tour dans la zone d’effet du sort subissent 1d6 points de dégâts de froid (Vigueur, 1/2 dégâts) mais elles ne sont pas chancelantes si elles ratent leur jet.",
+  "description_html": "<br/><br/>La zone d’effet du sort se couvre d’une couche de givre qui inflige 2d6 points de dégâts aux créatures qui s’y trouvent. Les créatures blessées par l’effet initial doivent réussir un jet de Vigueur ou se retrouver <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pendant 1 round. La zone reste glacée pendant toute la durée du sort. Les créatures qui commencent leur tour dans la zone d’effet du sort subissent 1d6 points de dégâts de froid (Vigueur, 1/2 dégâts) mais elles ne sont pas chancelantes si elles ratent leur jet.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute%20de%20temp%c3%a9rature.ashx",
+    "cache_fichier": "cache/html/9b2279c73951a2ad133bc87262ba8991b6ab3e07.html",
+    "recupere_le": "2026-07-28T22:46:40.132928+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chute-de-temperature",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute%20de%20temp%c3%a9rature.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chute-de-temperature",
+    "resume_court": "Une zone de givre inflige des dégâts de froid et peut rendre les créatures chancelantes.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "immunite_ou_resistance_element",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "froid",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts de froid",
+      "condition_infligee": [
+        "se retrouver chancelantes pendant 1 round"
+      ],
+      "cible_typique": "rayon de 1,50 m (1 c)"
+    },
+    "notes_ambiguite": null,
+    "slug": "chute-de-temperature",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:57+00:00",
+    "hash_source": "8db8e78f1cb958f58f4b6bb3b2b4153430152307afcda0371134360e5062f071"
+  }
+}

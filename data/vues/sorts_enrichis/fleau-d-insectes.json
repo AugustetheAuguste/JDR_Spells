@@ -1,0 +1,103 @@
+{
+  "id": "fleau-d-insectes",
+  "nom": "Fléau d'insectes",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9au%20dinsectes.ashx",
+  "ecole": "Invocation (convocation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 5,
+    "Con": 4,
+    "ConU": 5,
+    "Dru": 5,
+    "Prê": 5
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, FD",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "une nuée de guêpes tous les 3 niveaux, chacune devant être adjacente à une autre au moins",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage convoque un certain nombre de nuées de guêpes (une par tranche de trois niveaux, avec un maximum de six au niveau 18, voir le Bestiaire Pathfinder RPG). Les nuées doivent être placées de manière contiguë (chacune d’elles devant être adjacente à une autre), mais elles peuvent partager l’espace occupé par d’autres créatures. Chaque nuée attaque les créatures qui se situent dans son espace. Une fois convoquées, les nuées sont stationnaires et ne poursuivent pas les créatures qui prennent la fuite.",
+  "description_html": "<br/><br/>Le personnage convoque un certain nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.nu%c3%a9e%20de%20gu%c3%aapes.ashx\" title=\"Guêpe, Nuée de guêpes\">nuées de guêpes</a> (une par tranche de trois <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a>, avec un maximum de six au niveau 18, voir le Bestiaire Pathfinder RPG). Les nuées doivent être placées de manière contiguë (chacune d’elles devant être adjacente à une autre), mais elles peuvent partager l’espace occupé par d’autres créatures. Chaque nuée attaque les créatures qui se situent dans son espace. Une fois convoquées, les nuées sont stationnaires et ne poursuivent pas les créatures qui prennent la fuite.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9au%20dinsectes.ashx",
+    "cache_fichier": "cache/html/00dd6ea2504a2e8e2e2016543a0c0bf132f15cd3.html",
+    "recupere_le": "2026-07-28T22:53:36.273394+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fleau-d-insectes",
+    "resume_court": "Convoque des nuées de guêpes contiguës qui attaquent les créatures dans leur espace.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "zone_d_effet",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une nuée de guêpes tous les 3 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "fleau-d-insectes",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:05+00:00",
+    "hash_source": "27ed45ca46ffd7ffa7b2a39fec16034ec313e829125bac23ff6419d691d7667a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8fb83a6cc5e9b68a2fa671239f0bf2c187390edfe842229256e5ad04eee8fce9",
+  "hash_vue": "fe245aeaffdeb80a5bfc0df0096d3b645675bf50ad4ca9ff81aec2aa31713484"
+}

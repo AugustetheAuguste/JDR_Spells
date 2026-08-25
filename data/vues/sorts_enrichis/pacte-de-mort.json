@@ -1,0 +1,87 @@
+{
+  "id": "pacte-de-mort",
+  "nom": "Pacte de mort",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pacte%20de%20mort.ashx",
+  "ecole": "Enchantement",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 5,
+    "Sor": 6
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (un contrat signé par le sang)",
+  "portee": "contact",
+  "cible": "une créature",
+  "duree": "24 heures",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage prend le contrôle de l'esprit d'une créature et y implante des commandes subconscientes mortelles. Ce sort fonctionne comme domination, permettant au personnage de contrôler son sujet et de voir à travers ses sens, mais implante aussi une puissante rafale psychique dans l'esprit du sujet. À n'importe quel moment pendant la durée du sort, le personnage peut déclencher cette rafale par une action immédiate, infligeant 1d8 points de dégâts par niveau de lanceur de sorts (Vigueur, 1/2 dégâts) au sujet. Si ces dégâts sont suffisants pour réduire la cible à 0 points de vie ou moins, elle meurt instantanément.\nLa cible peut également déclencher volontairement cette rafale psychique par une action immédiate. Le personnage peut spécifier des conditions (comme « être capturé ») pour définir quand elle devrait le faire, mais si ces ordres sont considérés comme dangereux, ils permettent au sujet un nouveau jet de Volonté avec un bonus de +2.",
+  "description_html": "<hr/>\nLe personnage prend le contrôle de l'esprit d'une créature et y implante des commandes subconscientes mortelles. Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.domination.ashx\" title=\"Domination\">domination</a></i>, permettant au personnage de contrôler son sujet et de voir à travers ses sens, mais implante aussi une puissante rafale psychique dans l'esprit du sujet. À n'importe quel moment pendant la durée du sort, le personnage peut déclencher cette rafale par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a>, infligeant 1d8 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">1/2 dégâts</a>) au sujet. Si ces dégâts sont suffisants pour réduire la cible à 0 points de vie ou moins, elle meurt instantanément.<br/><br/>La cible peut également déclencher volontairement cette rafale psychique par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a>. Le personnage peut spécifier des conditions (comme « être capturé ») pour définir quand elle devrait le faire, mais si ces ordres sont considérés comme dangereux, ils permettent au sujet un nouveau jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> avec un bonus de +2.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Origins/Origines occultes ; /!\\ Traduit par la communauté /!\\",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Domination"
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pacte%20de%20mort.ashx",
+    "cache_fichier": "cache/html/a0a5974121db1a520d18ae6f5e742bc782a738fa.html",
+    "recupere_le": "2026-07-28T23:02:22.868996+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "pacte-de-mort",
+    "resume_court": "Le lanceur contrôle l'esprit d'une créature et peut déclencher une rafale psychique mortelle.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d8 points de dégâts par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le type de dégâts est une « rafale psychique » sans correspondance directe dans la liste énergétique standard ; classé en « autre ». Le sort fonctionne comme domination (contrôle mental) mais inflige aussi des dégâts, ce qui le range en affaiblissement plutôt qu'en entrave pure.",
+    "slug": "pacte-de-mort",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:40+00:00",
+    "hash_source": "4d1007ba70b533b02bd5fff4006417c77b4d7864f913642b8753d187c61804db"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "298f286a21904d17e911923deff8e0640b51709aa2924416795473ee7554cb92",
+  "hash_vue": "ffe19e2eed36edd3d2828fb0ea857b2bf0e31a7558147b01e5f0996cb4a0ed8b"
+}

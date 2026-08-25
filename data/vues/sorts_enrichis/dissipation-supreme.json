@@ -1,0 +1,168 @@
+{
+  "id": "dissipation-supreme",
+  "nom": "Dissipation suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dissipation%20supr%c3%aame.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 5,
+    "Cham": 6,
+    "Con": 5,
+    "ConU": 5,
+    "Dru": 6,
+    "Inq": 6,
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Occ": 5,
+    "Prê": 6,
+    "Psy": 6,
+    "Sor": 6,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 jeteur de sorts, 1 créature ou 1 objet, ou bien rayonnement de 6 m (4 c) de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Dissipation suprême permet de mettre un terme à un sort lancé sur une créature ou un objet, d’annuler temporairement les pouvoirs d’un objet magique ou de contrer un sort jeté par un autre lanceur de sorts. Un sort dissipé se termine comme si sa durée normale était écoulée. Certains sorts font exception à cette règle et ne sont pas affectés par une dissipation suprême (lorsque c’est le cas, c’est précisé dans leur description). Dissipation suprême peut également dissiper les effets des pouvoirs magiques de certaines créatures, mais pas les contrer au moment où ils sont lancés. Les effets des sorts dont la durée est instantanée ne peuvent pas être dissipés, car l’intervention magique se termine immédiatement, bien avant que la dissipation ne puisse agir.\nDissipation suprême peut servir de trois manières différentes : dissipation ciblée, dissipation de zone ou contresort.\nDissipation ciblée. Le sort cible une créature, un objet ou un autre sort. Il dissipe un sort par tranche de quatre niveaux de lanceur de sorts que possède le personnage, en commençant par le sort de plus haut niveau. Le personnage doit effectuer un test de dissipation (1d20 + son niveau de lanceur de sorts) et comparer le résultat avec un DD dépendant du niveau de lanceur de sorts de l’effet ciblé (DD = 11 + niveau de lanceur de sorts ; s’il y a plusieurs effets en jeu, on commence par celui qui possède le plus haut niveau de lanceur de sorts). Si le personnage réussit, il met fin à l’effet. Sinon, il compare son résultat à un autre effet (en considérant les effets dans l’ordre décroissant de leur niveau de lanceur de sorts). Il répète ce processus jusqu’à ce qu’il ait dissipé un ou plusieurs des sorts (à hauteur du quota précité) qui affectaient la cible ou qu’il ait échoué pour chacun d’eux.\nPar exemple, si un lanceur de sorts de niveau 12 lance dissipation suprême contre une créature affectée par peau de pierre (NLS 12), vol (NLS 6) et Bouclier (NLS 4), et qu’il obtient 19 à son test de lanceur de sorts, il ne parvient pas à dissiper la peau de pierre (il aurait fallu qu’il fasse 23 ou plus), mais il dissipe le vol (pour lequel il lui suffisait de faire 17) et le Bouclier (pour lequel il lui suffisait de faire 15). S’il avait obtenu 23 ou plus, il aurait dissipé la peau de pierre, le vol et le Bouclier (ne pouvant dissiper plus de trois sorts, un éventuel quatrième effet reste quant à lui toujours actif). S’il avait obtenu moins de 15, il n’aurait rien dissipé.\nLe personnage peut viser un sort spécifique qui affecte une cible ou un sort qui affecte une zone (comme un mur de feu). Le personnage doit annoncer l’effet qu’il vise. Si le résultat de son test de lanceur de sorts est égal ou supérieur au DD de ce sort, ce dernier se termine. Sinon, il ne se passe rien.\nSi la cible du sort est un objet ou une créature qui est le produit d’un sort encore actif (comme par exemple un monstre appelé par convocation de monstres), il effectue un test de dissipation pour mettre un terme au sort qui a fait apparaître l’objet ou la créature.\nSi la cible du sort est un objet magique, le test de dissipation s’effectue contre le niveau de lanceur de sorts de l’objet (DD = 11 + niveau de lanceur de sorts de l’objet). En cas de succès, les propriétés magiques de l’objet sont désactivées pendant 1d4 rounds, après quoi celui-ci retrouve son fonctionnement normal. Un objet ainsi désactivé n’est plus magique jusqu’à la fin de la durée de l’effet. S’il s’agit d’une interface extradimensionnelle (comme un sac sans fond), elle est temporairement fermée. Les propriétés physiques de l’objet restent inchangées cependant : une épée magique désactivée reste une épée (une épée de maître, en fait). Les artefacts et les dieux sont insensibles aux sorts des mortels tels que dissipation suprême.\nDe plus, ce sort a une chance de dissiper tout effet que l’on peut supprimer à l’aide d’une délivrance des malédictions, même si une dissipation de la magie ne le peut pas. Le DD de ce test est égal au DD de la malédiction.\nLe test de dissipation réussit automatiquement s’il cible un sort que le personnage a lancé lui-même.\nDissipation de zone. Utilisé de cette manière, le sort prend pour cible tout ce qui se trouve dans un rayonnement de 6 m.\nLe personnage fait un test de dissipation et l’applique à toutes les créatures de la zone, comme s’il les visait à l’aide d’une dissipation de la magie. Dans le cas d’un objet affecté par un ou plusieurs sorts, le personnage procède comme pour les créatures. Les objets magiques ne sont pas affectés.\nLe test de dissipation est également utilisé contre chacun des sorts ou effets de zone actifs dont le point d’origine se trouve dans la région visée. Dans le cas des sorts dont la zone d’effet empiète sur celle de dissipation suprême, le test de dissipation s’applique également mais, en cas de succès, l’effet n’est interrompu que dans la région qui se trouve dans la zone de dissipation suprême.\nLe test de dissipation s’applique également aux objets et créatures présentes dans la zone d’effet et qui sont le produit d’un sort (comme par exemple un monstre appelé par convocation de monstres). En cas de réussite, le sort qui a appelé cette créature ou cet objet est dissipé (et l’objet ou la créature retourne d’où elle vient). En cas d’échec, la dissipation s’applique normalement à la créature ou à l’objet et peut supprimer un des sorts qui l’affectent.\nSi le personnage le désire, il peut peut dissiper les sorts qu’il a lui-même lancés (en considérant que le test de dissipation est une réussite automatique).\nContresort. Il est également possible de lancer dissipation suprême pour contrer un sort en ciblant un jeteur de sorts. Contrairement à ce qui se produit dans le cas d’un véritable contresort, la réussite n’est pas automatique : le personnage doit réussir un test de dissipation avec un bonus de +4 pour contrer le sort de son adversaire.",
+  "description_html": "<br/><br/><i>Dissipation suprême</i> permet de mettre un terme à un sort lancé sur une créature ou un objet, d’annuler temporairement les pouvoirs d’un objet magique ou de contrer un sort jeté par un autre lanceur de sorts. Un sort dissipé se termine comme si sa durée normale était écoulée. Certains sorts font exception à cette règle et ne sont pas affectés par une <i>dissipation suprême</i> (lorsque c’est le cas, c’est précisé dans leur description). <i>Dissipation suprême</i> peut également dissiper les effets des <a class=\"pagelink\" href=\"Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx#TYPES\" title=\"Les capacités spéciales\">pouvoirs magiques</a> de certaines créatures, mais pas les contrer au moment où ils sont lancés. Les effets des sorts dont la durée est instantanée ne peuvent pas être dissipés, car l’intervention magique se termine immédiatement, bien avant que la dissipation ne puisse agir.<br/><br/><i>Dissipation suprême</i> peut servir de trois manières différentes : dissipation ciblée, dissipation de zone ou contresort.<br/><br/><b>Dissipation ciblée.</b> Le sort cible une créature, un objet ou un autre sort. Il dissipe un sort par tranche de quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> que possède le personnage, en commençant par le sort de plus haut <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20sort.ashx\" title=\"Niveau de sort\">niveau</a>. Le personnage doit effectuer un test de dissipation (1d20 + son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>) et comparer le résultat avec un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> dépendant du <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> de l’effet ciblé (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 11 + <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> ; s’il y a plusieurs effets en jeu, on commence par celui qui possède le plus haut <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>). Si le personnage réussit, il met fin à l’effet. Sinon, il compare son résultat à un autre effet (en considérant les effets dans l’ordre décroissant de leur <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>). Il répète ce processus jusqu’à ce qu’il ait dissipé un ou plusieurs des sorts (à hauteur du quota précité) qui affectaient la cible ou qu’il ait échoué pour chacun d’eux.<br/><br/>Par exemple, si un lanceur de sorts de niveau 12 lance <i>dissipation suprême</i> contre une créature affectée par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.peau%20de%20pierre.ashx\" title=\"Peau de pierre\">peau de pierre</a></i> (NLS 12), <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sort%20Vol.ashx\" title=\"Vol\">vol</a></i> (NLS 6) et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Bouclier.ashx\" title=\"Bouclier\">Bouclier</a></i> (NLS 4), et qu’il obtient 19 à son test de lanceur de sorts, il ne parvient pas à dissiper la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.peau%20de%20pierre.ashx\" title=\"Peau de pierre\">peau de pierre</a></i> (il aurait fallu qu’il fasse 23 ou plus), mais il dissipe le <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sort%20vol.ashx\" title=\"Vol\">vol</a></i> (pour lequel il lui suffisait de faire 17) et le <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Bouclier.ashx\" title=\"Bouclier\">Bouclier</a></i> (pour lequel il lui suffisait de faire 15). S’il avait obtenu 23 ou plus, il aurait dissipé la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.peau%20de%20pierre.ashx\" title=\"Peau de pierre\">peau de pierre</a></i>, le <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sort%20vol.ashx\" title=\"Vol\">vol</a></i> et le <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Bouclier.ashx\" title=\"Bouclier\">Bouclier</a></i> (ne pouvant dissiper plus de trois sorts, un éventuel quatrième effet reste quant à lui toujours actif). S’il avait obtenu moins de 15, il n’aurait rien dissipé.<br/><br/>Le personnage peut viser un sort spécifique qui affecte une cible ou un sort qui affecte une zone (comme un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mur%20de%20feu.ashx\" title=\"Mur de feu\">mur de feu</a></i>). Le personnage doit annoncer l’effet qu’il vise. Si le résultat de son test de lanceur de sorts est égal ou supérieur au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de ce sort, ce dernier se termine. Sinon, il ne se passe rien.<br/><br/>Si la cible du sort est un objet ou une créature qui est le produit d’un sort encore actif (comme par exemple un monstre appelé par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20de%20monstres.ashx\" title=\"Convocation de monstres\">convocation de monstres</a></i>), il effectue un test de dissipation pour mettre un terme au sort qui a fait apparaître l’objet ou la créature.<br/><br/>Si la cible du sort est un objet magique, le test de dissipation s’effectue contre le <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> de l’objet (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 11 + <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> de l’objet). En cas de succès, les propriétés magiques de l’objet sont désactivées pendant 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>, après quoi celui-ci retrouve son fonctionnement normal. Un objet ainsi désactivé n’est plus magique jusqu’à la fin de la durée de l’effet. S’il s’agit d’une interface extradimensionnelle (comme un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sac%20sans%20fond.ashx\" title=\"Sac sans fond\">sac sans fond</a></i>), elle est temporairement fermée. Les propriétés physiques de l’objet restent inchangées cependant : une épée magique désactivée reste une épée (une épée <a class=\"pagelink\" href=\"Pathfinder-RPG.arme%20de%20ma%c3%aetre.ashx\" title=\"arme de maître\">de maître</a>, en fait). Les <a class=\"pagelink\" href=\"Pathfinder-RPG.artefacts.ashx\" title=\"Les artefacts\">artefacts</a> et les dieux sont insensibles aux sorts des mortels tels que <i>dissipation suprême</i>.<br/><br/>De plus, ce sort a une chance de dissiper tout effet que l’on peut supprimer à l’aide d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">délivrance des malédictions</a></i>, même si une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> ne le peut pas. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de ce test est égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de la malédiction.<br/><br/>Le test de dissipation réussit automatiquement s’il cible un sort que le personnage a lancé lui-même.<br/><br/><b>Dissipation de zone.</b> Utilisé de cette manière, le sort prend pour cible tout ce qui se trouve dans un <a class=\"pagelink\" href=\"Pathfinder-RPG.rayonnement.ashx\" title=\"rayonnement\">rayonnement</a> de 6 m.<br/><br/>Le personnage fait un test de dissipation et l’applique à toutes les créatures de la zone, comme s’il les visait à l’aide d’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i>. Dans le cas d’un objet affecté par un ou plusieurs sorts, le personnage procède comme pour les créatures. Les objets magiques ne sont pas affectés.<br/><br/>Le test de dissipation est également utilisé contre chacun des sorts ou effets de zone actifs dont le point d’origine se trouve dans la région visée. Dans le cas des sorts dont la zone d’effet empiète sur celle de <i>dissipation suprême</i>, le test de dissipation s’applique également mais, en cas de succès, l’effet n’est interrompu que dans la région qui se trouve dans la zone de <i>dissipation suprême</i>.<br/><br/>Le test de dissipation s’applique également aux objets et créatures présentes dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> et qui sont le produit d’un sort (comme par exemple un monstre appelé par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20de%20monstres.ashx\" title=\"Convocation de monstres\">convocation de monstres</a></i>). En cas de réussite, le sort qui a appelé cette créature ou cet objet est dissipé (et l’objet ou la créature retourne d’où elle vient). En cas d’échec, la dissipation s’applique normalement à la créature ou à l’objet et peut supprimer un des sorts qui l’affectent.<br/><br/>Si le personnage le désire, il peut peut dissiper les sorts qu’il a lui-même lancés (en considérant que le test de dissipation est une réussite automatique).<br/><br/><b>Contresort.</b> Il est également possible de lancer <i>dissipation suprême</i> pour contrer un sort en ciblant un jeteur de sorts. Contrairement à ce qui se produit dans le cas d’un véritable contresort, la réussite n’est pas automatique : le personnage doit réussir un test de dissipation avec un bonus de +4 pour contrer le sort de son adversaire.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dissipation%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/33e1208c01a8e59e9632ad09f1379503d9d14ba6.html",
+    "recupere_le": "2026-07-28T22:51:28.467435+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "dissipation-supreme",
+    "resume_court": "Dissipe les sorts affectant une cible, une zone ou contrecarre un sort lancé par un adversaire.",
+    "categorie_principale": "dissipation",
+    "tags": [
+      "dissipation_ou_contresort",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "rayonnement de 6 m (4 c) de rayon"
+    },
+    "notes_ambiguite": "Le sort peut cibler une créature, un objet ou une zone. La cible_typique « zone » reflète le mode dissipation de zone décrit explicitement. Les modes ciblés et contresort sont des variantes du même sort, mais la zone est le mode le plus caractéristique pour la classification.",
+    "slug": "dissipation-supreme",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:15+00:00",
+    "hash_source": "aa34bb7489cccec4d7de90a8cb881759b3cd9a1066caff49badb56dbecd3ca90"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "68830cc60be9a8ee022bef5024beb374a850870eb368e603e3b12f8369c4dd70",
+  "hash_vue": "1802fee954c7d5d7cb7f6fd1dcd0a84a114c5f52ab277a39e96a9375cd6c73d9"
+}

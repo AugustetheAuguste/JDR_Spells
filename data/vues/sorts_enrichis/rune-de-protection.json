@@ -1,0 +1,79 @@
+{
+  "id": "rune-de-protection",
+  "nom": "Rune de protection",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rune%20de%20protection.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3
+  },
+  "temps_incantation": "1 heure",
+  "composantes": "V, G, M (poudre d’adamantine, de diamant ou de mithral pour une valeur de 200 po)",
+  "portee": "contact",
+  "cible": "porte ou portail touché",
+  "duree": "permanent jusqu'à utilisation (T)",
+  "jet_de_sauvegarde": "Réflexes, 1/2 dégâts",
+  "resistance_magie": "non (objet) et oui (voir texte)",
+  "description": "Le personnage inscrit une série de runes sur la surface d’une porte ou aux abords d’une entrée. Ces runes fonctionnent comme un glyphe de garde (glyphe explosif), mais à la différence de ce glyphe, les runes sont toujours visibles. Elles sont considérées comme un glyphe de garde pour tout ce qui concerne les sorts qui peuvent les supprimer, pour placer plusieurs glyphes au même endroit, et ainsi de suite.",
+  "description_html": "<hr/>\nLe personnage inscrit une série de runes sur la surface d’une porte ou aux abords d’une entrée. Ces runes fonctionnent comme un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.glyphe%20de%20garde.ashx\" title=\"Glyphe de garde\">glyphe de garde</a></i> (glyphe explosif), mais à la différence de ce glyphe, les runes sont toujours visibles. Elles sont considérées comme un <i><a class=\"pagelink\" href=\"Pathfinder-RPG.glyphe%20de%20garde.ashx\" title=\"Glyphe de garde\">glyphe de garde</a></i> pour tout ce qui concerne les sorts qui peuvent les supprimer, pour placer plusieurs glyphes au même endroit, et ainsi de suite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains.",
+    "sorts_lies": "Glyphe de garde"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rune%20de%20protection.ashx",
+    "cache_fichier": "cache/html/e8f8aed99f920ac0f16384bd50df5b515bb255c5.html",
+    "recupere_le": "2026-07-29T07:39:17.402781+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "rune-de-protection",
+    "resume_court": "Des runes visibles inscrites sur une porte qui explosent comme un glyphe de garde quand on les franchit.",
+    "categorie_principale": "protection",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "glyphe explosif",
+      "condition_infligee": [],
+      "cible_typique": "porte ou portail touché"
+    },
+    "notes_ambiguite": "Le texte ne précise pas le type de dégâts exact (feu, force, etc.), seulement que les runes fonctionnent comme un glyphe de garde explosif. Type_degats vaut donc 'autre'. La catégorie est 'protection' car le sort sert à défendre une entrée, bien qu'il inflige des dégâts : c'est un piège défensif, pas une attaque directe.",
+    "slug": "rune-de-protection",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:10+00:00",
+    "hash_source": "55bc58378b10c2d38780b209dfbaf9d3a7328db1cce47d03c81a70f5dc0c07cd"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2d41fedab1fdfc3a7991262be65d204e670394415ad280d468c755559abee274",
+  "hash_vue": "26a257c80fb130d875450c671a67631b63aa2188a553271568a43961437d7f68"
+}

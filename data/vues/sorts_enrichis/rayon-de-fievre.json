@@ -1,0 +1,130 @@
+{
+  "id": "rayon-de-fievre",
+  "nom": "Rayon de fièvre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20de%20fi%c3%a8vre.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 1,
+    "ConU": 1,
+    "Dru": 1,
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "Prê": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une goutte de sueur)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "rayon",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Un rayon noir jaillit du doigt tendu du personnage qui doit réussir une attaque de contact à distance pour toucher sa cible.\nCelle-ci est alors fiévreuse jusqu’à la fin du sort, si elle rate son jet de sauvegarde et elle n’est pas affectée si elle le réussit.",
+  "description_html": "<br/><br/>Un rayon noir jaillit du doigt tendu du personnage qui doit réussir une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> pour toucher sa cible.<br/><br/>Celle-ci est alors <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> jusqu’à la fin du sort, si elle rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> et elle n’est pas affectée si elle le réussit.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayon%20de%20fi%c3%a8vre.ashx",
+    "cache_fichier": "cache/html/8e335500f376876ebdc84a96902280ded9654840.html",
+    "recupere_le": "2026-07-29T07:37:33.234670+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "rayon-de-fievre",
+    "resume_court": "Un rayon noir qui rend la cible fiévreuse si elle rate son jet de Vigueur.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "rayon_ou_projectile",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Un rayon noir jaillit du doigt tendu du personnage qui doit réussir une attaque de contact à distance pour toucher sa cible."
+    },
+    "notes_ambiguite": "Le texte indique que la cible « est alors fiévreuse » mais « fiévreuse » n'apparaît pas dans la liste fermée des conditions. Le sort inflige un état de faiblesse (affaiblissement) sans correspondre à une condition nommée du système. Aucune condition n'a donc été retenue.",
+    "slug": "rayon-de-fievre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:28+00:00",
+    "hash_source": "e4c60d294d128973df6832ee1cdab96127e85f45b466d12b3deea696201a3ea3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6f009c668ebc280b4c50c03ad302ea7d6fae6f75bcb35bdf78e0a38a170be077",
+  "hash_vue": "890d59d0a57fdc04fadf8d6f24dda885031afa94607d8eac06117868c65f470f"
+}

@@ -1,0 +1,132 @@
+{
+  "id": "bredouillement",
+  "nom": "Bredouillement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bredouillement.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature ; voir texte",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort provoque une crise de bredouillements incontrôlables chez la cible qui devient par ailleurs nauséeuse. L’effet se termine si elle réussit son jet de sauvegarde, sinon, elle continue d’être nauséeuse et de bredouiller pendant toute la durée du sort. Les créatures qui se trouvent à 9 mètres ou moins de la cible et l’entendent bredouiller doivent réussir un jet de Volonté, sans quoi elles sont fascinées tant qu’elle marmonne. Une créature qui n’est plus fascinée ne peut pas l’être à nouveau par la même incantation de bredouillement. Ce sort n’affecte pas les créatures disposant d’une Intelligence de 2 ou moins.",
+  "description_html": "<br/><br/>Ce sort provoque une crise de bredouillements incontrôlables chez la cible qui devient par ailleurs <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Nauséeux\" title=\"Les états préjudiciables\">nauséeuse</a>. L’effet se termine si elle réussit son jet de sauvegarde, sinon, elle continue d’être <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Nauséeux\" title=\"Les états préjudiciables\">nauséeuse</a> et de bredouiller pendant toute la durée du sort. Les créatures qui se trouvent à 9 mètres ou moins de la cible et l’entendent bredouiller doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, sans quoi elles sont <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fasciné\" title=\"Les états préjudiciables\">fascinées</a> tant qu’elle marmonne. Une créature qui n’est plus <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fasciné\" title=\"Les états préjudiciables\">fascinée</a> ne peut pas l’être à nouveau par la même incantation de bredouillement. Ce sort n’affecte pas les créatures disposant d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> de 2 ou moins.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bredouillement.ashx",
+    "cache_fichier": "cache/html/0167533eddd2eeba27b61d04d310ae7d1b60e9c4.html",
+    "recupere_le": "2026-07-28T22:44:43.457039+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bredouillement",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bredouillement.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bredouillement",
+    "resume_court": "La cible bredouille et devient nauséeuse ; les créatures proches qui l'entendent peuvent être fascinées.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "zone_d_effet",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elles sont fascinées tant qu'elle marmonne"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort affecte d'abord une cible unique (bredouillements et nausée), puis crée une zone d'effet secondaire (fascination des créatures proches). La condition de fascination s'applique aux créatures à proximité, pas nécessairement à la cible principale. J'ai classé le sort en entrave car l'effet principal est de gêner la cible (bredouillements, nausée), bien que la fascination soit aussi un effet de contrôle mental.",
+    "slug": "bredouillement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:13+00:00",
+    "hash_source": "be06653e95796194a1f80daeb427792744a54e1a2604a0b5f6e645014f4b0185"
+  }
+}

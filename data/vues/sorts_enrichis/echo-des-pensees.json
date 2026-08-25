@@ -1,0 +1,82 @@
+{
+  "id": "echo-des-pensees",
+  "nom": "Écho des pensées",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cho%20des%20pens%c3%a9es.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "1 créature vivante touchée",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Quand le personnage lance ce sort, il crée un écho mental d’un maximum de 25 mots. Toute tentative de lecture des pensées de surface de la cible déchiffre seulement cet écho, à moins que le lanceur de sorts ne réussisse un test de niveau de lanceur de sorts (DD = 11 + NLS du personnage). Si le personnage lance l’écho des pensées sur lui-même, le DD est de 15 + son niveau de lanceur de sorts. De plus, quand le personnage lance ce sort sur lui, il peut changer les paroles de l’écho en se concentrant et en dépensant une action simple.\nÀ chaque fois que le personnage change ainsi les paroles de l’écho, il réduit la durée restante du sort de 1 minute. L’écho des pensées n’interfère pas avec la télépathie ou les effets de lecture mentale capables de fouiller plus loin que les pensées de surface.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il crée un écho mental d’un maximum de 25 mots. Toute tentative de lecture des pensées de surface de la cible déchiffre seulement cet écho, à moins que le lanceur de sorts ne réussisse un test de niveau de lanceur de sorts (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 11 + <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">NLS</a> du personnage). Si le personnage lance l’écho des pensées sur lui-même, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> est de 15 + son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. De plus, quand le personnage lance ce sort sur lui, il peut changer les paroles de l’écho en se concentrant et en dépensant une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>.<br/><br/>À chaque fois que le personnage change ainsi les paroles de l’écho, il réduit la durée restante du sort de 1 minute. L’écho des pensées n’interfère pas avec la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9pathie.ashx\" title=\"Télépathie\">télépathie</a></i> ou les effets de lecture mentale capables de fouiller plus loin que les pensées de surface.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cho%20des%20pens%c3%a9es.ashx",
+    "cache_fichier": "cache/html/100c20c635d9920c3499fd5e584a0c4f6d1e7f43.html",
+    "recupere_le": "2026-07-28T22:38:46.383992+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "echo-des-pensees",
+    "resume_court": "Le lanceur crée un faux écho mental qui trompe les tentatives de lecture de pensées de surface.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort peut aussi cibler le lanceur lui-même (« si le personnage lance l'écho des pensées sur lui-même »), ce qui justifierait aussi la cible_typique « soi ». Cependant, la cible par défaut est « allie » puisque le sort est inoffensif et peut bénéficier à un allié. Le sort ne produit pas de dégâts ni de condition au sens strict : il crée une illusion mentale qui interfère avec la divination.",
+    "slug": "echo-des-pensees",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:06+00:00",
+    "hash_source": "126e075e9f04a9fb8eb7803cda4e847a27dfadba81b16683de53a5b605e28711"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9e060500b32932acfe3b6e397252a638fa3b2cebe1fe8de9c7e3466b5458b89c",
+  "hash_vue": "d7ebec02fd1fe374108563dc6600f6967fd8129ce845b70327b5e7f75ea4cae6"
+}

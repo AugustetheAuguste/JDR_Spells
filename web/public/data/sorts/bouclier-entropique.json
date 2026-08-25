@@ -1,0 +1,91 @@
+{
+  "id": "bouclier-entropique",
+  "nom": "Bouclier entropique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20entropique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Prê": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Un champ d’énergie magique et multicolore se forme autour du prêtre détournant projectiles, rayons et autres attaques à distance. Chaque attaque à distance prenant le personnage pour cible a alors 20 % de chances de le rater (comme si le personnage bénéficiait d’un camouflage).Le sort reste sans effet contre les autres attaques à distance.",
+  "description_html": "<br/><br/>Un champ d’énergie magique et multicolore se forme autour du <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> détournant projectiles, rayons et autres attaques à distance. Chaque attaque à distance prenant le personnage pour cible a alors 20 % de chances de le rater (comme si le personnage bénéficiait d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a>).Le sort reste sans effet contre les autres attaques à distance.<br/><br/>",
+  "mythique": {
+    "description": "Lorsqu’une attaque à distance rate à cause de ce sort, il y a 50% de chances qu’elle soit redirigée vers la créature qui en est à l’origine au lieu d’être simplement déviée sans provoquer de dégâts. L’attaque applique le même résultat que celui obtenu par l’attaquant lorsqu’il a effectué son jet contre le personnage.",
+    "description_html": "Lorsqu’une attaque à distance rate à cause de ce sort, il y a 50% de chances qu’elle soit redirigée vers la créature qui en est à l’origine au lieu d’être simplement déviée sans provoquer de dégâts. L’attaque applique le même résultat que celui obtenu par l’attaquant lorsqu’il a effectué son jet contre le personnage."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20entropique.ashx",
+    "cache_fichier": "cache/html/7e7a4d35aa0dbccc89ba9ae0c939fd9759d817af.html",
+    "recupere_le": "2026-07-28T22:44:26.677927+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bouclier-entropique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20entropique.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bouclier-entropique",
+    "resume_court": "Un champ magique détourne 20 % des attaques à distance dirigées contre le lanceur.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "zone_d_effet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "bouclier-entropique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:04+00:00",
+    "hash_source": "114fc92b65716652e1400ed83b549418c85a4a0fe09baea2bdc606035bceaeeb"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "hurlement-primitif",
+  "nom": "Hurlement primitif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20primitif.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "mental",
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 4,
+    "Hyp": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage pousse un puissant cri issu des profondeurs de son âme. Ce cri le revigore et dissipe les effets d'enchantement et de paralysie. Ce sort fonctionne comme annulation d'enchantement mais il affecte uniquement le personnage et le libère seulement des effets d'enchantement et de paralysie. Si le personnage réussie son test ne niveau de lanceur de sorts pour briser l'effet hostile, il parvient à pousser un hurlement et le sort fait effet, sinon, le sort échoue sans le moindre effet. Le personnage peut lancer ce sort même si il est paralysé ou incapable de parler à cause d'un effet d'enchantement mais pas dans une zone de silence, s'il ne peut pa parler pour des raisons autres qu'un effet de paralysie ou d'enchantement(s'il est bâillonné par exemple), ou dans un environnement où il est impossible de s'exprimer.",
+  "description_html": "<br/><br/>Le personnage pousse un puissant cri issu des profondeurs de son âme. Ce cri le revigore et dissipe les effets d'enchantement et de paralysie. Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">annulation d'enchantement</a></i> mais il affecte uniquement le personnage et le libère seulement des effets d'enchantement et de paralysie. Si le personnage réussie son <a class=\"pagelink\" href=\"Pathfinder-RPG.test.ashx\" title=\"test\">test</a> ne <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> de lanceur de sorts pour briser l'effet hostile, il parvient à pousser un hurlement et le sort fait effet, sinon, le sort échoue sans le moindre effet. Le personnage peut lancer ce sort même si il est <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysé</a> ou incapable de parler à cause d'un effet d'enchantement mais pas dans une zone de silence, s'il ne peut pa parler pour des raisons autres qu'un effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysie</a> ou d'enchantement(s'il est bâillonné par exemple), ou dans un environnement où il est impossible de s'exprimer.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hurlement%20primitif.ashx",
+    "cache_fichier": "cache/html/1109ecc9c0136a6a72c48a73fe73c36709386d84.html",
+    "recupere_le": "2026-07-28T22:56:20.485378+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "hurlement-primitif",
+    "resume_court": "Le lanceur pousse un cri qui le revigore et le libère des enchantements et de la paralysie.",
+    "categorie_principale": "soin",
+    "tags": [
+      "dissipation_ou_contresort",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort fonctionne comme une dissipation (annulation d'enchantement) mais s'applique au lanceur lui-même. Il est classé en soin car il restaure l'état du sujet en le libérant d'effets négatifs, plutôt que d'infliger des dégâts ou de contrôler une zone.",
+    "slug": "hurlement-primitif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:13+00:00",
+    "hash_source": "eb79d1cbcc35903c348d78ecff5770952c76051b1c96124214213cd5be4a673e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b03e8c2a8d3c9062144e38a10a4f2c7ef944d8b641f0044a9c672bfd58a52b64",
+  "hash_vue": "72ed8a4800fa22588bddd81ec0b08e350b00916e560386514074efc091ad4ee3"
+}

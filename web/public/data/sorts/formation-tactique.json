@@ -1,0 +1,101 @@
+{
+  "id": "formation-tactique",
+  "nom": "Formation tactique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Formation%20tactique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 3,
+    "Prê": 3,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu’à une créature/niveau, distante de moins de 9 mètres les unes des autres.",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort est réservé aux personnages qui vénèrent le dieu nain de l'artisanat.\nCe sort améliore l’efficacité de la formation d’un groupe en combat. Une fois lancé, toutes les créatures affectées par l’effet du sort doivent être adjacentes les unes aux autres et former une chaîne continue de cases (qui peuvent contenir des créatures partageant une même case). Cette chaîne n’a pas besoin de former une ligne droite. Chaque cible de la chaîne gagne un bonus de parade de +2 à la CA tant que les cibles restent dans une case adjacente à une autre créature affectée par le sort ; une cible qui s’éloigne de plus de 1,50 mètre d’une autre cible ne bénéficie plus des avantages de ce sort et ne peut les récupérer par la suite. Par exemple, un prêtre peut lancer ce sort sur lui-même et quatre nains qui bloquent un couloir de 6 mètres de large ; le prêtre peut se déplacer librement vers le flanc gauche ou droit de la formation (et devant ou derrière les autres cibles) et bénéficie des effets du sort tant qu’il reste à 1,50 mètre d’au moins l’une des cibles de son sort.",
+  "description_html": "<br/><br/><i>Ce sort est réservé aux personnages qui vénèrent le dieu nain de l'artisanat.</i><br/><br/>Ce sort améliore l’efficacité de la formation d’un groupe en combat. Une fois lancé, toutes les créatures affectées par l’effet du sort doivent être adjacentes les unes aux autres et former une chaîne continue de cases (qui peuvent contenir des créatures partageant une même case). Cette chaîne n’a pas besoin de former une ligne droite. Chaque cible de la chaîne gagne un bonus de parade de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> tant que les cibles restent dans une case adjacente à une autre créature affectée par le sort ; une cible qui s’éloigne de plus de 1,50 mètre d’une autre cible ne bénéficie plus des avantages de ce sort et ne peut les récupérer par la suite. Par exemple, un prêtre peut lancer ce sort sur lui-même et quatre nains qui bloquent un couloir de 6 mètres de large ; le prêtre peut se déplacer librement vers le flanc gauche ou droit de la formation (et devant ou derrière les autres cibles) et bénéficie des effets du sort tant qu’il reste à 1,50 mètre d’au moins l’une des cibles de son sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Formation%20tactique.ashx",
+    "cache_fichier": "cache/html/e9cbc3bb07d830fe039c28a4ecec45ac95f820d7.html",
+    "recupere_le": "2026-07-28T22:53:56.301689+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "formation-tactique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Formation%20tactique.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "formation-tactique",
+    "resume_court": "Les créatures adjacentes en chaîne gagnent un bonus de parade de +2 à la CA tant qu'elles restent groupées.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à une créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "formation-tactique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:14+00:00",
+    "hash_source": "c5d8b8682c1e65f01ff75e39b601abacc6e4297d708a3c724ca17a067aa1a80e"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "chant-de-footing",
+  "nom": "Chant de footing",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20footing.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau",
+  "duree": "concentration",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage revigore ses alliés, qui peuvent se déplacer à petites foulées tant qu’il continue de chanter (ce qui requiert sa concentration). Ce déplacement compte comme une marche (pas comme un footing) quand il s’agit de calculer l’accumulation de dégâts non létaux et de fatigue. Le personnage peut se concentrer sur ce sort et se déplacer en footing en même temps.",
+  "description_html": "<br/><br/>Le personnage revigore ses alliés, qui peuvent se déplacer à <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placements.ashx\" title=\"Les déplacements\">petites foulées</a> tant qu’il continue de chanter (ce qui requiert sa concentration). Ce déplacement compte comme une <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placements.ashx\" title=\"Les déplacements\">marche</a> (pas comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placements.ashx\" title=\"Les déplacements\">footing</a>) quand il s’agit de calculer l’accumulation de dégâts non létaux et de fatigue. Le personnage peut se concentrer sur ce sort et se déplacer en <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placements.ashx\" title=\"Les déplacements\">footing</a> en même temps.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20footing.ashx",
+    "cache_fichier": "cache/html/1da54ac06aef304f9bbeafbb83902bd301328d4b.html",
+    "recupere_le": "2026-07-28T22:46:15.851568+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chant-de-footing",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20de%20footing.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chant-de-footing",
+    "resume_court": "Le lanceur revigore ses alliés qui peuvent se déplacer à petites foulées sans fatigue excessive.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "chant-de-footing",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:44+00:00",
+    "hash_source": "454a84d52c1baaf7253b4a47236a5e785335bb3d585e767da1222eaa320cdfc3"
+  }
+}

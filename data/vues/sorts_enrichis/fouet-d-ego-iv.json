@@ -1,0 +1,83 @@
+{
+  "id": "fouet-d-ego-iv",
+  "nom": "Fouet d'ego IV",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20IV.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme fouet d’ego I mais la cible subit un malus de –8 dans la valeur de caractéristique choisie et se trouve chancelante pendant 1d8 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.fouet%20dego%20I.ashx\" title=\"Fouet d'ego I\">fouet d’ego I</a></i> mais la cible subit un malus de –8 dans la valeur de caractéristique choisie et se trouve <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant\" title=\"Les états préjudiciables\">chancelante</a> pendant 1d8 rounds si elle rate son jet de sauvegarde. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Fouet d'ego I"
+  },
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20dego%20IV.ashx",
+    "cache_fichier": "cache/html/5cc5c90b048b049e0c26be6c9fa6aaf2f92ac30b.html",
+    "recupere_le": "2026-07-28T22:54:43.363694+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fouet-d-ego-iv",
+    "resume_court": "Un sort d'enchantement qui inflige un malus de –8 à une caractéristique et rend la cible chancelante.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "malus_chiffre",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "se trouve chancelante pendant 1d8 rounds si elle rate son jet de sauvegarde"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "fouet-d-ego-iv",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:32+00:00",
+    "hash_source": "c0cf02c4098bfdfd6c74b65c11289c5bb92d2c4d24a84888bd080a8c4d8d9d7e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5abee19040b11c2c5822730cabd7339d916d5d73ca1815f02a6d30f5d16bd246",
+  "hash_vue": "609e0918fd02d4df4d1ac1663226812bc9c3de83fc62d7f23659d822c1679dc2"
+}

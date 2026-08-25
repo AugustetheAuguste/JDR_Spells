@@ -1,0 +1,137 @@
+{
+  "id": "chaleur-curative",
+  "nom": "Chaleur curative",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaleur%20curative.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 4,
+    "Dru": 4,
+    "Inq": 4,
+    "Prê": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le lanceur de sorts gagne une immunité temporaire aux dégâts de feu comme pour une protection contre les énergies destructives. Par une action simple, le lanceur peut sacrifier 12 points d’énergie restante du sort d’absorption pour soigner une créature touchée de 1d8 points de dégâts. Soigner une créature provoque une attaque d’opportunité. Lorsque le sort a absorbé 12 points de dégâts de feu par niveau de lanceur de sorts (jusqu’à un maximum de 120 points au niveau 10), il est déchargé.",
+  "description_html": "<br/><br/><br/>Le lanceur de sorts gagne une immunité temporaire aux dégâts de feu comme pour une protection contre les énergies destructives. Par une action simple, le lanceur peut sacrifier 12 points d’énergie restante du sort d’absorption pour soigner une créature touchée de 1d8 points de dégâts. Soigner une créature provoque une attaque d’opportunité. Lorsque le sort a absorbé 12 points de dégâts de feu par niveau de lanceur de sorts (jusqu’à un maximum de 120 points au niveau 10), il est déchargé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaleur%20curative.ashx",
+    "cache_fichier": "cache/html/b4ac391bd4bbe8183f56e15e8fded4ba44d51d05.html",
+    "recupere_le": "2026-07-28T22:46:07.005001+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "chaleur-curative",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaleur%20curative.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "chaleur-curative",
+    "resume_court": "Le lanceur gagne une immunité au feu temporaire et peut soigner les alliés en sacrifiant l'énergie absorbée.",
+    "categorie_principale": "protection",
+    "tags": [
+      "immunite_ou_resistance_element",
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort a une double fonction : protection personnelle (immunité au feu) et soin d'alliés. La catégorie principale est « protection » car l'effet primaire est l'immunité temporaire ; le soin est un effet secondaire activable. Les tags incluent à la fois l'immunité et le soin pour refléter cette dualité.",
+    "slug": "chaleur-curative",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:42+00:00",
+    "hash_source": "0a749ac89c8be3b8d7e3a10ce1e7c1c2a59fe9a9186d19947cb6964d747eb8be"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "armure-de-glace",
+  "nom": "Armure de glace",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20de%20glace.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "eau",
+    "froid"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Prê": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, F (19 litres d'eau)",
+  "portee": "0 m ; voir texte",
+  "cible": "un ensemble d'armure fait de glace",
+  "duree": "1 heure/niveau ou jusqu'à destruction",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage crée une armure de glace. Bien que froide au toucher, elle ne blesse pas son porteur, surtout si elle est portée par-dessus des vêtements normaux (elle peut cependant accélérer les effets de l'exposition à des environnements froids). Elle offre la même protection qu'une cuirasse, excepté qu'elle a une solidité de 0 et 30 points de vie. Si le porteur à qui l'armure est destinée est immergé dans l'eau lorsque le personnage lance ce sort, il peut former l'armure autour de lui (ou de lui-même, s'il compte porter l'armure) ; sinon, le porteur doit revêtir l'armure normalement. Les attaques effectuées contre le porteur qui créent de la chaleur ou du feu dégradent l'armure, réduisant son bonus d'armure de 1 par tranche de 5 points de dégâts de feu subis par le porteur ; lorsque le bonus à la CA de l'armure atteint 0, l'armure est détruite et le sort prend fin. La glace étant légèrement flottante, le porteur bénéficie d'un bonus de circonstances de +2 aux tests de Natation, sauf lorsqu'il nage vers le bas. Les druides peuvent porter une armure de glace sans pénalité.",
+  "description_html": "<br/><br/>Le personnage crée une armure de glace. Bien que froide au toucher, elle ne blesse pas son porteur, surtout si elle est portée par-dessus des vêtements normaux (elle peut cependant accélérer les effets de l'exposition à des environnements froids). Elle offre la même protection qu'une <a class=\"pagelink\" href=\"Pathfinder-RPG.cuirasse%20(armure).ashx\" title=\"Cuirasse\">cuirasse</a>, excepté qu'elle a une <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> de 0 et 30 points de vie. Si le porteur à qui l'armure est destinée est immergé dans l'eau lorsque le personnage lance ce sort, il peut former l'armure autour de lui (ou de lui-même, s'il compte porter l'armure) ; sinon, le porteur doit revêtir l'armure normalement. Les attaques effectuées contre le porteur qui créent de la chaleur ou du feu dégradent l'armure, réduisant son bonus d'armure de 1 par tranche de 5 points de dégâts de feu subis par le porteur ; lorsque le bonus à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> de l'armure atteint 0, l'armure est détruite et le sort prend fin. La glace étant légèrement flottante, le porteur bénéficie d'un bonus de circonstances de +2 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Natation.ashx\" title=\"Natation\">Natation</a>, sauf lorsqu'il nage vers le bas. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.Druide.ashx\" title=\"Le druide\">druides</a> peuvent porter une armure de glace sans pénalité.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Gozreh."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20de%20glace.ashx",
+    "cache_fichier": "cache/html/7168698ad156c05aafd66b9976f86bb6ce872a3c.html",
+    "recupere_le": "2026-07-28T22:41:58.481193+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "armure-de-glace",
+    "resume_court": "Crée une armure de glace protectrice qui offre la protection d'une cuirasse et améliore la natation.",
+    "categorie_principale": "protection",
+    "tags": [
+      "amelioration_de_capacite",
+      "invocation_ou_creation",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un ensemble d'armure fait de glace"
+    },
+    "notes_ambiguite": "Le sort crée une armure plutôt que de transformer directement le sujet, mais inclut un élément de transformation du sujet (amélioration de la natation). Classé en protection car l'effet principal est défensif (bonus d'armure), avec transformation_du_sujet comme tag secondaire pour l'amélioration de capacité.",
+    "slug": "armure-de-glace",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:10+00:00",
+    "hash_source": "05f764bb2ca6c824fee5d36578d4f24cfa9b01eaaf2408e71c66724476605503"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9da2636320c263aa6a04d53ffc025eb38f49a5a38aa45076f62fcb0dbca97347",
+  "hash_vue": "59e420311f904f4af17eff7b869432107abaf9f1298548dd342fbbb2e2c1f249"
+}

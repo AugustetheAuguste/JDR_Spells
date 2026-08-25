@@ -1,0 +1,103 @@
+{
+  "id": "deja-vu",
+  "nom": "Déjà vu",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9j%c3%a0%20vu.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Hyp": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "1 créature",
+  "duree": "2 rounds",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage plonge dans l’esprit de la cible et piège ses processus mentaux dans une boucle temporelle. Quelles que soient les actions complexes, simples ou de mouvement que la cible effectue au premier de ses tours suivant l’incantation de ce sort, elle doit les répéter au tour suivant. Elle doit effectuer les mêmes actions dans le même ordre (par exemple une attaque à outrance, lancer un sort spécifique, tenter une manœuvre offensive de bousculade ou activer un objet magique). Elle doit agir contre la ou les mêmes cible(s) que précédemment mais elle n’est pas obligée de faire exactement les mêmes choix (elle n’est pas obligée d’utiliser Attaque en puissance lors de l’attaque, de se déplacer d’exactement 4,50 mètres ou de choisir « lâcher » lors de l’incantation d’injonction). Si les circonstances actuelles empêchent la cible de répéter ses actions, par exemple si la victime d’une attaque est morte ou si la cible est dans l’incapacité de relancer son sort, la cible est confuse jusqu’à la fin de la durée du sort de déjà vu. Une créature affectée par ce sort ne peut l’être de nouveau tant que l’effet ne s’est pas dissipé. Une créature affectée ne peut pas retarder son action et, si elle prépare une action lors de son premier tour, elle doit faire de même au second.",
+  "description_html": "<br/><br/>Le personnage plonge dans l’esprit de la cible et piège ses processus mentaux dans une boucle temporelle. Quelles que soient les actions complexes, simples ou de mouvement que la cible effectue au premier de ses tours suivant l’incantation de ce sort, elle doit les répéter au tour suivant. Elle doit effectuer les mêmes actions dans le même ordre (par exemple une attaque à outrance, lancer un sort spécifique, tenter une manœuvre offensive de bousculade ou activer un objet magique). Elle doit agir contre la ou les mêmes cible(s) que précédemment mais elle n’est pas obligée de faire exactement les mêmes choix (elle n’est pas obligée d’utiliser Attaque en puissance lors de l’attaque, de se déplacer d’exactement 4,50 mètres ou de choisir « lâcher » lors de l’incantation d’injonction). Si les circonstances actuelles empêchent la cible de répéter ses actions, par exemple si la victime d’une attaque est morte ou si la cible est dans l’incapacité de relancer son sort, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Confus\" title=\"Les états préjudiciables\">confuse</a> jusqu’à la fin de la durée du sort de déjà vu. Une créature affectée par ce sort ne peut l’être de nouveau tant que l’effet ne s’est pas dissipé. Une créature affectée ne peut pas <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20modifiant%20linitiative.ashx#RETARDER\" title=\"Actions modifiant l'initiative\">retarder son action</a> et, si elle <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20modifiant%20linitiative.ashx#PREPARER\" title=\"Actions modifiant l'initiative\">prépare une action</a> lors de son premier tour, elle doit faire de même au second.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9j%c3%a0%20vu.ashx",
+    "cache_fichier": "cache/html/902ef8ac5890bbecef508083c420730ecdb14cc3.html",
+    "recupere_le": "2026-07-28T22:50:15.113858+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "deja-vu",
+    "resume_court": "La cible est forcée de répéter ses actions du tour précédent, ou devient confuse si c'est impossible.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "confusion_ou_desorientation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la cible est confuse jusqu'à la fin de la durée du sort de déjà vu"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort entrave principalement par la répétition forcée des actions, mais n'inflige la condition « confus » que si les circonstances l'empêchent. La durée est de 2 rounds (instantanée dans sa résolution), d'où le tag duree_instantanee plutôt que duree_prolongee.",
+    "slug": "deja-vu",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:27+00:00",
+    "hash_source": "bb8b09cd2665647a01c52982ded9f780640601ed131686ac376ea0037040efa5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "546ceacb6c50b82649363145db6066c0ee355b63ee1c4e2ef59b0e1d63975bca",
+  "hash_vue": "c0ee1967f4deed273d6ee6e43f4f82202eef6397d94d463b9776eef11f7c159e"
+}

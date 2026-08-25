@@ -1,0 +1,95 @@
+{
+  "id": "faux-alibi",
+  "nom": "Faux alibi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Faux%20alibi.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Inq": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (100 po de poudre d'émeraude)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "permanente ; voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme modification de mémoire mais transforme les souvenirs de la cible de manière bien spécifique. Le lanceur détermine un déclencheur en réponse auquel la cible oubliera jusqu'aux cinq dernières minutes de sa vie qui seront remplacées par un souvenir au choix du lanceur (ou qui ne seront pas remplacées du tout). Par exemple, le personnage peut lancer ce sort sur un assassin, décréter qu'il se déclenchera quand celui-ci aura éliminé sa cible, et remplacer le souvenir du meurtre par un autre dans lequel l'assassin découvre seulement le cadavre et ramasse l'arme du crime. Le personnage peut lancer ce sort à plusieurs reprises sur la même cible, éventuellement avec le même déclencheur, pour affecter des séquences de souvenirs différentes. Une incantation affecte la cible jusqu'à son déclenchement ; une fois que la condition déclenchant la modification de mémoire s'est produite et que le souvenir a été affecté, cette même condition aura beau se répéter, elle ne déclenchera plus de modification mémorielle à moins que la cible ne soit soumise à une autre incantation de faux alibi dotée du même déclencheur.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.modification%20de%20m%c3%a9moire.ashx\" title=\"Modification de mémoire\">modification de mémoire</a></i> mais transforme les souvenirs de la cible de manière bien spécifique. Le lanceur détermine un déclencheur en réponse auquel la cible oubliera jusqu'aux cinq dernières minutes de sa vie qui seront remplacées par un souvenir au choix du lanceur (ou qui ne seront pas remplacées du tout). Par exemple, le personnage peut lancer ce sort sur un assassin, décréter qu'il se déclenchera quand celui-ci aura éliminé sa cible, et remplacer le souvenir du meurtre par un autre dans lequel l'assassin découvre seulement le cadavre et ramasse l'arme du crime. Le personnage peut lancer ce sort à plusieurs reprises sur la même cible, éventuellement avec le même déclencheur, pour affecter des séquences de souvenirs différentes. Une incantation affecte la cible jusqu'à son déclenchement ; une fois que la condition déclenchant la modification de mémoire s'est produite et que le souvenir a été affecté, cette même condition aura beau se répéter, elle ne déclenchera plus de modification mémorielle à moins que la cible ne soit soumise à une autre incantation de <i>faux alibi</i> dotée du même déclencheur.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Norgorber."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Faux%20alibi.ashx",
+    "cache_fichier": "cache/html/8524495a33f83d43dbef097cacf30c6e39f153ae.html",
+    "recupere_le": "2026-07-28T22:53:09.282858+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "faux-alibi",
+    "resume_court": "Modifie les souvenirs d'une créature selon un déclencheur, remplaçant jusqu'à cinq minutes de mémoire.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "social",
+      "utilitaire"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort ne produit pas de dégâts directs ni de condition au sens tactique (aveugle, paralysé, etc.). Il affaiblit la créature en dégradant sa mémoire et sa capacité à témoigner, ce qui justifie la catégorie « affaiblissement ». La cible typique est « ennemi » car le sort s'utilise généralement contre une créature hostile (assassin, témoin gênant), bien que techniquement il puisse viser un allié.",
+    "slug": "faux-alibi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:57+00:00",
+    "hash_source": "4f7501dd911f9aa9055e3ef186c4c02068c84859ce6234b701f487a9a97b8eef"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "85b7cbe4b23de1ffbd3079e010a9771ce50a64130bfa5263890413bd9f32e5ca",
+  "hash_vue": "4d9b36e325d08b17a67649e1991610f268661c442d7df97682dbbcf4567bc7ea"
+}

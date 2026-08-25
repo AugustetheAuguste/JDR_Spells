@@ -1,0 +1,106 @@
+{
+  "id": "cinglement-magique",
+  "nom": "Cinglement magique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cinglement%20magique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Prê": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "instantanée or 1d4 rounds ; voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Un fouet d'énergie magique crépitante apparaît dans la main du personnage, lui permettant d'arracher des sorts à l'esprit des lanceurs de sorts ennemis. D'un coup de fouet d'énergie bleu-violet, il déchire plusieurs sorts et effets de protection à une unique créature. Si la cible de ce sort est actuellement sous l'effet de sorts ou d'effets inoffensifs, elle doit réussir un jet de sauvegarde de Volonté ou voir tous ces sorts et effets prendre fin immédiatement, privant la cible de leurs avantages. Si la cible n'est pas sous l'effet d'au moins un sort inoffensif, elle est à la place confuse pendant 1d4 rounds.",
+  "description_html": "<br/><br/>Un fouet d'énergie magique crépitante apparaît dans la main du personnage, lui permettant d'arracher des sorts à l'esprit des lanceurs de sorts ennemis. D'un coup de fouet d'énergie bleu-violet, il déchire plusieurs sorts et effets de protection à une unique créature. Si la cible de ce sort est actuellement sous l'effet de sorts ou d'effets inoffensifs, elle doit réussir un jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou voir tous ces sorts et effets prendre fin immédiatement, privant la cible de leurs avantages. Si la cible n'est pas sous l'effet d'au moins un sort inoffensif, elle est à la place <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a> pendant 1d4 rounds.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cinglement%20magique.ashx",
+    "cache_fichier": "cache/html/66b291721397899b2873d4f5b71a97712535c874.html",
+    "recupere_le": "2026-07-28T22:46:41.423963+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "cinglement-magique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cinglement%20magique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "cinglement-magique",
+    "resume_court": "Un fouet d'énergie dissipe les sorts bénéfiques d'une créature ou la rend confuse.",
+    "categorie_principale": "dissipation",
+    "tags": [
+      "rayon_ou_projectile",
+      "jet_de_sauvegarde",
+      "dissipation_ou_contresort",
+      "confusion_ou_desorientation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est à la place confuse pendant 1d4 rounds"
+      ],
+      "cible_typique": "à une unique créature"
+    },
+    "notes_ambiguite": "Le sort a deux effets alternatifs selon l'état de la cible : dissipation des sorts bénéfiques (sans condition infligée) ou confusion. Seule la confusion est une condition au sens des listes ; la dissipation est capturée par le tag et la catégorie.",
+    "slug": "cinglement-magique",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:08+00:00",
+    "hash_source": "6f7303ebef139d0d9d88da814f4cbf9fc2d2b2ac23e2a6a9748b5baadd189d09"
+  }
+}

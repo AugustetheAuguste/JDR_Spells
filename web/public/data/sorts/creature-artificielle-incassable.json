@@ -1,0 +1,88 @@
+{
+  "id": "creature-artificielle-incassable",
+  "nom": "Créature artificielle incassable",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ature%20artificielle%20incassable.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Occ": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (adamantium en poudre d’une valeur 100 po)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature artificielle",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif )",
+  "resistance_magie": "non",
+  "description": "Ce sort augmente la RD/adamantium de la cible de 5 ou augmente sa solidité de 5. Si la cible n’a ni RD/adamantium ni solidité, le sort n’a aucun effet.",
+  "description_html": "<br/><br/>Ce sort augmente la <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a>/adamantium de la cible de 5 ou augmente sa <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> de 5. Si la cible n’a ni <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a>/adamantium ni solidité, le sort n’a aucun effet.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ature%20artificielle%20incassable.ashx",
+    "cache_fichier": "cache/html/f09f14b5f80b76bd7cd1fb8652ad7e8fd93604e1.html",
+    "recupere_le": "2026-07-28T22:49:37.340731+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "creature-artificielle-incassable",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ature%20artificielle%20incassable.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "creature-artificielle-incassable",
+    "resume_court": "Augmente la RD/adamantium ou la solidité d'une créature artificielle de 5 points.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature artificielle"
+    },
+    "notes_ambiguite": null,
+    "slug": "creature-artificielle-incassable",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:06+00:00",
+    "hash_source": "714ae00a9f77077e2f79f3a86d09f776fb3a55599814d74370c74ed2a5d3994d"
+  }
+}

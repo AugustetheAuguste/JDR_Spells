@@ -1,0 +1,93 @@
+{
+  "id": "blessure-sympathique",
+  "nom": "Blessure sympathique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20sympathique.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "Mal"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (250 po de poudre d’ambre)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme protection d’autrui, à l’exception du fait que certaines des blessures du personnage se transfèrent à la créature ciblée, et non le contraire. Il peut par exemple se lier à un esclave enchaîné proche, ce qui fait que s’il est blessé, une partie des dégâts subis se reporteront sur l’esclave. Le personnage doit avoir au moins autant de dés de vie que sa cible, sinon le sort échoue. Une créature ne peut être sous l’effet que d’un seul sort de blessure sympathique à la fois.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20dautrui.ashx\" title=\"Protection d'autrui\">protection d’autrui</a></i>, à l’exception du fait que certaines des blessures du personnage se transfèrent à la créature ciblée, et non le contraire. Il peut par exemple se lier à un esclave enchaîné proche, ce qui fait que s’il est blessé, une partie des dégâts subis se reporteront sur l’esclave. Le personnage doit avoir au moins autant de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">dés de vie</a> que sa cible, sinon le sort échoue. Une créature ne peut être sous l’effet que d’un seul sort de <i>blessure sympathique</i> à la fois.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Zon-Kuthon.",
+    "sorts_lies": "Protection d’autrui"
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20sympathique.ashx",
+    "cache_fichier": "cache/html/354070cacbbe6ffc63769b496f22105306a527c1.html",
+    "recupere_le": "2026-07-28T22:43:52.624732+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "blessure-sympathique",
+    "resume_court": "Le lanceur transfère une partie de ses blessures à une créature ciblée pendant 1 heure par niveau.",
+    "categorie_principale": "protection",
+    "tags": [
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort transfère des dégâts du lanceur vers la cible, ce qui en fait une forme de protection pour le lanceur mais une charge pour la cible. Classé en protection car l'effet principal est de réduire les dégâts subis par le lanceur. La cible est typiquement un allié consentant (esclave, serviteur) plutôt qu'un ennemi.",
+    "slug": "blessure-sympathique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:53+00:00",
+    "hash_source": "a78ce533d58190377dbe624af6c59e0f3e09ebeb1061d9e3384ed1f170b94c29"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6dbde723a37bffa8d7b3f5664aa3f4a8e927163337972f31d9b7a61d837a0d48",
+  "hash_vue": "bf5ca14777c2efa469de3b5f4de0e260fcbf563198c372e15417e252ebe65a87"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "symbole-de-terreur",
+  "nom": "Symbole de terreur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20terreur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "émotion",
+    "mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Occ": 4,
+    "Prê": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore, plus un diamant et une opale en poudre (1 000 po au total))",
+  "portee": "0 m (voir texte)",
+  "cible": "1 symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort ressemble à symbole de mort, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont paniquées pendant 1 round par niveau de lanceur de sorts.\nNote. Les pièges magiques tels que symbole de terreur sont extrêmement difficiles à détecter et à désamorcer. Un roublard (et lui seul) peut utiliser sa compétence de Perception pour les repérer, puis de Sabotage pour les mettre hors d’état. Pour chacun des deux tests, le DD s’élève à 25 + niveau du sort, soit 31 pour symbole de terreur.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i>, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont <a class=\"pagelink\" href=\"Pathfinder-RPG.paniqu%c3%a9.ashx\" title=\"Paniqué\">paniquées</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.<br/><br/><i>Note.</i> Les pièges magiques tels que <i>symbole de terreur</i> sont extrêmement difficiles à détecter et à désamorcer. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.roublard.ashx\" title=\"Le roublard\">roublard</a> (et lui seul) peut utiliser sa compétence de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour les repérer, puis de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour les mettre hors d’état. Pour chacun des deux tests, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> s’élève à 25 + <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20du%20sort.ashx\" title=\"niveau du sort\">niveau du sort</a>, soit 31 pour <i>symbole de terreur</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Symbole de mort"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20terreur.ashx",
+    "cache_fichier": "cache/html/ce98fe721a1645d256d92f658c633a07e410c70a.html",
+    "recupere_le": "2026-07-29T07:41:50.578679+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "symbole-de-terreur",
+    "resume_court": "Une rune magique qui panique les créatures dans un rayon de 18 m pendant plusieurs rounds.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "effraye"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "les créatures situées dans un rayon de 18 m de la rune sont paniquées pendant 1 round par niveau de lanceur de sorts"
+      ],
+      "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+    },
+    "notes_ambiguite": "Le texte emploie « paniquées » plutôt que « effrayées » ; j'ai retenu « effraye » comme la condition la plus proche dans la liste, car la panique est un degré supérieur de peur en Pathfinder.",
+    "slug": "symbole-de-terreur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:12+00:00",
+    "hash_source": "363bf8cc546c31d72c3b03f5f855d42359ee5153dd26cc68841b7abf086e7075"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e1c3d3c3434e1faba84cb98d612d7a5f4a46cddb170180412dcde705f5ea4b84",
+  "hash_vue": "319abf4efd53d77ef266f66644b5199e624c62596d5723f951acfac35bfc22ab"
+}

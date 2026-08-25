@@ -1,0 +1,88 @@
+{
+  "id": "fletrissure",
+  "nom": "Flétrissure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9trissure.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 8,
+    "Ens/Mag": 8,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un morceau d’éponge)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "plusieurs créatures vivantes distantes de 18 m (12 c) ou moins les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort assèche le corps de chaque créature vivante affectée en faisant s’évaporer les fluides qu’il contient. La chair se flétrit et se brise avant d’être réduite en poussières. L’effet inflige 1d6 points de dégâts par niveau de lanceur de sorts (jusqu’à un maximum de 20d6). Ce sort est tout particulièrement dévastateur lorsqu’il touche un élémentaire de l’Eau ou une créature végétale : celle-ci subit alors 1d8 points de dégâts par niveau de lanceur de sorts (jusqu’à un maximum de 20d8).",
+  "description_html": "<br/><br/>Ce sort assèche le corps de chaque créature vivante affectée en faisant s’évaporer les fluides qu’il contient. La chair se flétrit et se brise avant d’être réduite en poussières. L’effet inflige 1d6 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (jusqu’à un maximum de 20d6). Ce sort est tout particulièrement dévastateur lorsqu’il touche un <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9l%c3%a9mentaire%20de%20lEau.ashx\" title=\"Élémentaire de l'Eau\">élémentaire de l’Eau</a> ou une <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20plante.ashx\" title=\"Plante\">créature végétale</a> : celle-ci subit alors 1d8 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> (jusqu’à un maximum de 20d8).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9trissure.ashx",
+    "cache_fichier": "cache/html/7c615a26b388a24a1086427b8211a5e1e145a774.html",
+    "recupere_le": "2026-07-28T22:53:39.324717+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fletrissure",
+    "resume_court": "Un sort de nécromancie qui déshydrate les créatures vivantes, infligeant des dégâts massifs.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "L'effet inflige 1d6 points de dégâts par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "plusieurs créatures vivantes distantes de 18 m (12 c) ou moins les unes des autres"
+    },
+    "notes_ambiguite": null,
+    "slug": "fletrissure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:11+00:00",
+    "hash_source": "086d35577bb89804fb6ede69be5bf15b7f0a794e4febff045f89abbacf33d13f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2cb1ff4a2abc127f12924b0d02de92d76ada41751268535f9deee48ff0ed754c",
+  "hash_vue": "3895c0a60dd17b9ab060412f9555314a8a0023a60fbbb4aa8f3e957252eb4b36"
+}

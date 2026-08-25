@@ -1,0 +1,100 @@
+{
+  "id": "tache-noire",
+  "nom": "Tâche noire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a2che%20noire.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "malédiction",
+    "terreur"
+  ],
+  "niveaux": {
+    "Dru": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une fiole d'eau de mer)",
+  "portee": "contact",
+  "cible": "une créature",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage marque la cible d’une tache noire sur la peau. Il peut déterminer la forme exacte de la marque, mais elle ne peut pas être plus grande que sa main. La tache noire fonctionne comme la marque de la justice. Une fois la marque activée, la victime est secouée dès qu’elle se trouve sur l’eau ou dans l’eau, à plus de 1,50 mètre du rivage. De plus, tant que la tache noire est active, sa victime est frappée par l’effet exilé par la nature, sauf que toutes les créatures de sous-type eau ou aquatique ou possédant une vitesse de nage sont hostiles, même si elles ne sont pas de type animal. En revanche, la tache n’affecte pas les autres animaux.",
+  "description_html": "<br/><br/>Le personnage marque la cible d’une tache noire sur la peau. Il peut déterminer la forme exacte de la marque, mais elle ne peut pas être plus grande que sa main. La tache noire fonctionne comme la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marque%20de%20la%20justice.ashx\" title=\"Marque de la justice\">marque de la justice</a></i>. Une fois la marque activée, la victime est secouée dès qu’elle se trouve sur l’eau ou dans l’eau, à plus de 1,50 mètre du rivage. De plus, tant que la tache noire est active, sa victime est frappée par l’effet <i><a class=\"pagelink\" href=\"Pathfinder-RPG.exil%c3%a9%20par%20la%20nature.ashx\" title=\"Exilé par la nature\">exilé par la nature</a></i>, sauf que toutes les créatures de <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20eau.ashx\" title=\"Eau (sous-type)\">sous-type eau</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20aquatique.ashx\" title=\"Aquatique (sous-type)\">aquatique</a> ou possédant une vitesse de nage sont hostiles, même si elles ne sont pas de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20animal.ashx\" title=\"Animal\">type animal</a>. En revanche, la tache n’affecte pas les autres animaux.<br/><br/>",
+  "mythique": {
+    "description": "Chaque jour pendant lequel la créature affectée par ce sort se trouve sur l’eau ou dans l’eau à plus de 1,5 kilomètre du rivage, elle (ou le bateau sur lequel elle navigue) est attaquée par un ou plusieurs monstres de sous-type eau ou aquatique, comme s’ils avaient été convoqués par une convocation d’alliés naturels VII (NLS 13).",
+    "description_html": "Chaque jour pendant lequel la créature affectée par ce sort se trouve sur l’eau ou dans l’eau à plus de 1,5 kilomètre du rivage, elle (ou le bateau sur lequel elle navigue) est attaquée par un ou plusieurs monstres de sous-type eau ou aquatique, comme s’ils avaient été convoqués par une <a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20dalli%c3%a9s%20naturels%20VII.ashx\" title=\"Convocation d'alliés naturels VII\">convocation d’alliés naturels VII</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">NLS</a> 13)."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a2che%20noire.ashx",
+    "cache_fichier": "cache/html/d8c4fe4e3a95aaac3e70e01972a127b7e7808748.html",
+    "recupere_le": "2026-07-29T07:41:55.749026+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "tache-noire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a2che%20noire.ashx",
+  "niveaux_par_classe": {
+    "druide": {
+      "nom": "Druide",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "tache-noire",
+    "resume_court": "Le lanceur marque une créature d'une tache noire qui la rend secouée sur l'eau et hostile aux créatures aquatiques.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la victime est secouée dès qu'elle se trouve sur l'eau ou dans l'eau"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige une malédiction permanente avec plusieurs effets : la condition « secouée » est explicitement nommée, mais le sort produit aussi un effet d'hostilité des créatures aquatiques (« exilé par la nature »). Seule la condition « secouée » figure dans la liste fermée des conditions infligeables. L'effet d'hostilité relève plutôt d'une modification comportementale sans condition standard applicable.",
+    "slug": "tache-noire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:14+00:00",
+    "hash_source": "f62dbbedc8ff5529ebb0d12800d495bcc58e8194de26cc7bd90b93112c74dca9"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "oubliette-alienante",
+  "nom": "Oubliette aliénante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oubliette%20ali%c3%a9nante.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Prê": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (les os réduits en poudre d'une créature morte en prison)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "spéciale ; voir texte",
+  "jet_de_sauvegarde": "Volonté, annule (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La cible est transportée dans une prison sombre et humide dans un demi-plan horrible inconnu, où des tentacules se tortillent, des doigts griffus s'agrippent à la créature (sans lui infliger de dégâts), et des voix cinglantes et chuchotantes profèrent des blasphèmes et des secrets déments. À la fin de chaque round passé dans cette terrifiante oubliette, la cible a droit à un jet de sauvegarde de Volonté pour s'échapper de la prison. Le jet de sauvegarde subit un malus égal au nombre de rounds que la cible a passé dans l'oubliette (minimum -1 et maximum -5). Si la cible réussit son jet de sauvegarde, elle retourne dans l'espace qu'elle occupait avant le lancement du sort. Si cet espace est occupé ou indisponible, la cible est déplacée vers l'espace disponible le plus proche. Lorsque la cible revient de l'oubliette, elle est confuse pendant un nombre de rounds égal au nombre de rounds qu'elle y a passée (minimum 1), sauf si elle a été enfermée dans l'oubliette pendant 10 rounds ou plus, auquel cas la cible est affectée comme si elle était soumise à un sort d’aliénation mentale.",
+  "description_html": "<br/><br/>La cible est transportée dans une prison sombre et humide dans un demi-plan horrible inconnu, où des tentacules se tortillent, des doigts griffus s'agrippent à la créature (sans lui infliger de dégâts), et des voix cinglantes et chuchotantes profèrent des blasphèmes et des secrets déments. À la fin de chaque round passé dans cette terrifiante oubliette, la cible a droit à un jet de sauvegarde de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour s'échapper de la prison. Le jet de sauvegarde subit un malus égal au nombre de rounds que la cible a passé dans l'oubliette (minimum -1 et maximum -5). Si la cible réussit son jet de sauvegarde, elle retourne dans l'espace qu'elle occupait avant le lancement du sort. Si cet espace est occupé ou indisponible, la cible est déplacée vers l'espace disponible le plus proche. Lorsque la cible revient de l'oubliette, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.confus.ashx\" title=\"Confus\">confuse</a> pendant un nombre de rounds égal au nombre de rounds qu'elle y a passée (minimum 1), sauf si elle a été enfermée dans l'oubliette pendant 10 rounds ou plus, auquel cas la cible est affectée comme si elle était soumise à un sort d’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.ali%c3%a9nation%20mentale.ashx\" title=\"Aliénation mentale\">aliénation mentale</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oubliette%20ali%c3%a9nante.ashx",
+    "cache_fichier": "cache/html/1b141206d1e354af57010de48ec6b082ef8389ca.html",
+    "recupere_le": "2026-07-28T23:02:14.919453+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "oubliette-alienante",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oubliette%20ali%c3%a9nante.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "oubliette-alienante",
+    "resume_court": "Transporte une créature dans un demi-plan horrifique d'où elle peut s'échapper chaque round, mais revient confuse ou aliénée.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est confuse pendant un nombre de rounds égal au nombre de rounds qu'elle y a passée"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort inflige aussi une aliénation mentale si l'enfermement dure 10 rounds ou plus, mais « aliénation mentale » n'est pas une condition nommée dans la liste close ; seule « confus » y figure et s'applique au cas général.",
+    "slug": "oubliette-alienante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:39+00:00",
+    "hash_source": "77282a46bc886d43df82aace8218a6846b073b393345b7533b527edd89f6f4fa"
+  }
+}

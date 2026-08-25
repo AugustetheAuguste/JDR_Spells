@@ -1,0 +1,107 @@
+{
+  "id": "repulsif",
+  "nom": "Répulsif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9pulsif.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "douleur"
+  ],
+  "niveaux": {
+    "Bard": 4,
+    "Cham": 4,
+    "Dru": 4,
+    "Prê": 4,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "3 m (2 c)",
+  "cible": "émanation de 3 m (2 c) de rayon, centrée sur le jeteur de sorts",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": "aucun ou Volonté, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Cette incantation génère une barrière invisible qui repousse la vermine. Les créatures qui appartiennent à cette catégorie n’ont aucune chance de passer si leur nombre de dés de vie est inférieur au tiers du niveau du personnage.\nAu-delà, elles ont droit à un jet de Volonté pour surmonter l’effet du sort. Même en cas de succès, elles reçoivent 2d6 points de dégâts en traversant la barrière du répulsif. La douleur qu’elles ressentent en s’approchant de la zone suffit bien souvent à faire rebrousser chemin aux moins agressives.",
+  "description_html": "<br/><br/>Cette incantation génère une barrière invisible qui repousse la <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20vermine.ashx\" title=\"Vermine\">vermine</a>. Les créatures qui appartiennent à cette catégorie n’ont aucune chance de passer si leur nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">dés de vie</a> est inférieur au tiers du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> du personnage.<br/><br/>Au-delà, elles ont droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour surmonter l’effet du sort. Même en cas de succès, elles reçoivent 2d6 points de dégâts en traversant la barrière du <i>répulsif</i>. La douleur qu’elles ressentent en s’approchant de la zone suffit bien souvent à faire rebrousser chemin aux moins agressives.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9pulsif.ashx",
+    "cache_fichier": "cache/html/0dcf133776bb8980eb219ba10e7999d5b5aa0c9b.html",
+    "recupere_le": "2026-07-29T07:36:01.952407+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "repulsif",
+    "resume_court": "Une barrière invisible repousse la vermine et inflige des dégâts à celles qui la traversent.",
+    "categorie_principale": "protection",
+    "tags": [
+      "zone_d_effet",
+      "protection_defensive",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "émanation de 3 m (2 c) de rayon, centrée sur le jeteur de sorts"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Le descripteur « douleur » et la mention « La douleur qu'elles ressentent » suggèrent des dégâts contondants ou de force, mais le texte ne précise pas. J'ai retenu « contondant » comme le plus probable pour une barrière répulsive, mais « autre » aurait pu être justifié.",
+    "slug": "repulsif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:54+00:00",
+    "hash_source": "6cb074e22858563ddbc64feec6998798fae5df38296066ea383e832e9609b127"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "33ccab732588fcb820df5fa34b76f316f25e6c758d5274625c5c61844af7ef8c",
+  "hash_vue": "396bf95adc2d253d231b52a44621f4094f296f336334b44c5bfeb94abcb80a3e"
+}

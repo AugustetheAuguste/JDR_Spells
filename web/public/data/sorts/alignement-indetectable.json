@@ -1,0 +1,160 @@
+{
+  "id": "alignement-indetectable",
+  "nom": "Alignement indétectable",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alignement%20ind%c3%a9tectable.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Apal": 2,
+    "Bard": 1,
+    "Hyp": 1,
+    "Inq": 2,
+    "Pal": 2,
+    "Prê": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature ou 1 objet",
+  "duree": "24 heures",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Alignement indétectable empêche de connaître par divination l’alignement de la créature ou de l’objet protégé.",
+  "description_html": "<br/><br/><i>Alignement indétectable</i> empêche de connaître par <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9cole%20divination.ashx\" title=\"Divination\">divination</a> l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> de la créature ou de l’objet protégé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alignement%20ind%c3%a9tectable.ashx",
+    "cache_fichier": "cache/html/be07696c02e68bae11ba591e51639b4775aec406.html",
+    "recupere_le": "2026-07-28T22:40:20.390663+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "alignement-indetectable",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alignement%20ind%c3%a9tectable.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "alignement-indetectable",
+    "resume_court": "Masque l'alignement d'une créature ou d'un objet contre les divinations pendant 24 heures.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature ou 1 objet"
+    },
+    "notes_ambiguite": "La cible peut être une créature alliée ou un objet. Classée en cible_typique « allie » car le sort protège plutôt qu'il n'agresse, et s'applique typiquement à une créature volontaire ou à un objet qu'on souhaite protéger.",
+    "slug": "alignement-indetectable",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:17+00:00",
+    "hash_source": "738f6aa6144bbac6da5c05f290354d568c4550050abcd6fd96487438d688bc1d"
+  }
+}

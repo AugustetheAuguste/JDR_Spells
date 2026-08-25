@@ -1,0 +1,100 @@
+{
+  "id": "enchevetrement-repugnant",
+  "nom": "Enchevêtrement répugnant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enchev%c3%aatrement%20r%c3%a9pugnant.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Cham": 2,
+    "Dru": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "toute la végétation sur une étendue de 12 m (8 c) de rayon",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Réflexes, partiel et Vigueur, annule (voir description)",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme enchevêtrement, à la seule différence que les plantes sont enduites d’une sève irritante qui provoque des éruptions cutanées douloureuses qui démangent les créatures touchées. Toute créature qui entre ou termine son tour dans la zone doit réussir un jet de Vigueur pour ne pas être fiévreuse tant qu’elle y reste et pendant 1d4 rounds après l’avoir quittée. Il s’agit d’un effet de poison.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatrement.ashx\" title=\"Enchevêtrement\">enchevêtrement</a></i>, à la seule différence que les plantes sont enduites d’une sève irritante qui provoque des éruptions cutanées douloureuses qui démangent les créatures touchées. Toute créature qui entre ou termine son tour dans la zone doit réussir un jet de Vigueur pour ne pas être fiévreuse tant qu’elle y reste et pendant 1d4 rounds après l’avoir quittée. Il s’agit d’un effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">poison</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Enchevêtrement"
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enchev%c3%aatrement%20r%c3%a9pugnant.ashx",
+    "cache_fichier": "cache/html/35f645b0939a7c6f1f288800a97c266261c6d853.html",
+    "recupere_le": "2026-07-28T22:52:08.197036+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "enchevetrement-repugnant",
+    "resume_court": "Les plantes d'une zone s'enchevêtrent et sécrètent une sève toxique qui rend fiévreux.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "terrain_ou_environnement",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "fievreux"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être fiévreuse tant qu'elle y reste et pendant 1d4 rounds après l'avoir quittée"
+      ],
+      "cible_typique": "toute la végétation sur une étendue de 12 m (8 c) de rayon"
+    },
+    "notes_ambiguite": null,
+    "slug": "enchevetrement-repugnant",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:16+00:00",
+    "hash_source": "cccd5fda33340e3c355d04c47179002d5031ae14f7c79ca33d4b78b4efb06e72"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a48a70895a7353cc15ac500b132930648e1a8e908222f6b6ac32aa449cd9e25f",
+  "hash_vue": "a4ac246e6c017553931e7be29881aa5704475e37f7bb90932f8c026c76342565"
+}

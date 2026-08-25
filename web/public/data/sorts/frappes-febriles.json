@@ -1,0 +1,139 @@
+{
+  "id": "frappes-febriles",
+  "nom": "Frappes fébriles",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappes%20f%c3%a9briles.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "maladie"
+  ],
+  "niveaux": {
+    "Alch": 2,
+    "Apal": 2,
+    "Dru": 2,
+    "Magus": 3,
+    "Rôd": 4,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V,G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sort",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts est en proie à la maladie et toutes les créatures qui le frappent avec une attaque de corps à corps doivent réussir un jet de Vigueur ou être fiévreuses pendant 1 minute. Les créatures immunisées aux maladies sont immunisées à cet effet de fièvre.",
+  "description_html": "<br/><br/>Le lanceur de sorts est en proie à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Maladies.ashx\" title=\"Les maladies\">maladie</a> et toutes les créatures qui le frappent avec <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20simples.ashx#ATTAQUECORPSACORPS\" title=\"Actions simples\">une attaque de corps à corps</a> doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fiévreux\" title=\"Les états préjudiciables\">fiévreuses</a> pendant 1 minute. Les créatures immunisées aux maladies sont immunisées à cet effet de fièvre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappes%20f%c3%a9briles.ashx",
+    "cache_fichier": "cache/html/78c8e91f4062aec4f9b859cf052373ff7f65ec0c.html",
+    "recupere_le": "2026-07-28T22:54:55.381216+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "frappes-febriles",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappes%20f%c3%a9briles.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "frappes-febriles",
+    "resume_court": "Le lanceur devient vecteur de maladie : ses agresseurs au corps à corps risquent la fièvre.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort transforme le lanceur en vecteur de maladie, ce qui justifie le tag transformation_du_sujet. Bien que le texte mentionne « maladie » et « fièvre », aucune condition de la liste fermée ne correspond exactement à « fiévreuse » (absent de condition_infligee). Le sort améliore tactiquement le lanceur en le rendant dangereux au contact, d'où categorie_principale: amelioration plutôt que affaiblissement.",
+    "slug": "frappes-febriles",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:39+00:00",
+    "hash_source": "f24e07b60655a86b2ed8cb06edb81e1cc1bfdaebce609a07a99835669a12117b"
+  }
+}

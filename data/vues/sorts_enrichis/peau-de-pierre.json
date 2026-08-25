@@ -1,0 +1,183 @@
+{
+  "id": "peau-de-pierre",
+  "nom": "Peau de pierre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau%20de%20pierre.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 4,
+    "Cham": 5,
+    "Con": 3,
+    "ConU": 4,
+    "Dru": 5,
+    "Inq": 4,
+    "Ens/Mag": 4,
+    "Magus": 4,
+    "Occ": 4,
+    "Psy": 4,
+    "San": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (granite et poussière de diamant (250 po))",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "10 minutes/niveau ou jusqu’à utilisation",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le sujet bénéficie d’une importante protection contre les attaques physiques qui se traduit par une réduction des dégâts de 10/adamantium. Il ignore donc les 10 premiers points de dégâts infligés par chaque attaque, sauf si ceux-ci sont occasionnés par une arme en adamantium. Dans ce cas, ils l’affectent normalement. Dès que la peau de pierre a absorbé un total de 10 points de dégâts par niveau du lanceur de sorts (jusqu’à un maximum de 150 points), elle cesse de faire effet.",
+  "description_html": "<hr/>\nLe sujet bénéficie d’une importante protection contre les attaques physiques qui se traduit par une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction des dégâts</a> de 10/<a class=\"pagelink\" href=\"Pathfinder-RPG.adamantium.ashx\" title=\"adamantium\">adamantium</a>. Il ignore donc les 10 premiers points de dégâts infligés par chaque attaque, sauf si ceux-ci sont occasionnés par une arme en <a class=\"pagelink\" href=\"Pathfinder-RPG.adamantium.ashx\" title=\"adamantium\">adamantium</a>. Dans ce cas, ils l’affectent normalement. Dès que la <i>peau de pierre</i> a absorbé un total de 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau du lanceur de sorts</a> (jusqu’à un maximum de 150 points), elle cesse de faire effet.<br/><br/>",
+  "mythique": {
+    "description": "La cible gagne un bonus de +4 aux jets de sauvegarde contre la maladie, le poison et les effets étourdissants. Il y a 50% de chances que les coups critiques et les attaques sournoises effectués contre elle soient considérés comme des coups normaux, comme si elle portait une armure de défense intermédiaire.",
+    "description_html": "La cible gagne un bonus de +4 aux jets de sauvegarde contre la maladie, le poison et les effets étourdissants. Il y a 50% de chances que les coups critiques et les attaques sournoises effectués contre elle soient considérés comme des coups normaux, comme si elle portait une armure de défense intermédiaire.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Peau de pierre (partagé)",
+      "id": "peau-de-pierre-partage",
+      "ecole": "Abjuration",
+      "descripteurs": [],
+      "niveaux": {
+        "Alch": 5,
+        "Con": 4,
+        "ConU": 5,
+        "Dru": 6,
+        "Inq": 5,
+        "Ens/Mag": 5,
+        "Occ": 5,
+        "Psy": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, F (du granit et de la poudre de diamant [d’une valeur de 250 po par créature affectée])",
+      "portee": "contact",
+      "cible": "créatures touchées",
+      "duree": "10 minutes/niveau ou jusqu’à utilisation",
+      "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+      "resistance_magie": "oui (inoffensif)",
+      "description": "Ce sort fonctionne comme peau de pierre mais la durée se divise entre les créatures touchées, par portions de 10 minutes. Une fois que le sort a absorbé 10 points de dégâts par niveau de lanceur de sorts (150 au maximum) pour une créature donnée, le sort se dissipe pour cette créature.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.peau%20de%20pierre.ashx\" title=\"Peau de pierre\">peau de pierre</a></i> mais la durée se divise entre les créatures touchées, par portions de 10 minutes. Une fois que le sort a absorbé 10 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (150 au maximum) pour une créature donnée, le sort se dissipe pour cette créature.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau%20de%20pierre.ashx",
+    "cache_fichier": "cache/html/85296d1563ab2866fa8f1007e87837ff6617ca6f.html",
+    "recupere_le": "2026-07-28T23:02:55.920921+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "peau-de-pierre",
+    "resume_court": "Le sujet gagne une réduction de dégâts de 10/adamantium pendant 10 minutes par niveau.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "peau-de-pierre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:52+00:00",
+    "hash_source": "062a88eba546c973645d9d2e729375615e587cf2428e34e8288dafac29c025a6"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cbef92b5a0513b8673fb3aec6d36556b15794dc8fdcb982c42404b18d5658ea2",
+  "hash_vue": "b085b2da319d6613f8397a782b605a07efd2533ae4a0e434d63a7a2527a7df5b"
+}

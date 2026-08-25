@@ -1,0 +1,111 @@
+{
+  "id": "vision-mystique",
+  "nom": "Vision mystique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20mystique.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 7,
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (encens (250 po)), F (quatre lamelles d’ivoire (50 po chacune))",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "voir description",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort est semblable à mythes et légendes, si ce n’est qu’il donne des résultats plus rapidement, au prix d’efforts plus importants. Le mage commence par poser une question concernant un lieu, un individu ou un objet, après quoi il effectue son incantation. Si l’objet ou la personne se trouvent à proximité ou si le mage se situe à l’endroit qui l’intéresse, il reçoit une vision mystique en réussissant un test de niveau de lanceur de sorts (1d20 +1 par niveau de lanceur de sorts ; maximum +25) contre un DD de 20. S’il ne possède que des informations détaillées sur ce qui l’intéresse, le DD passe à 25 et les renseignements obtenus sont incomplets. Enfin, s’il a seulement entendu des rumeurs au sujet du lieu, de l’individu ou de l’objet qu’il recherche, il n’obtient que des informations extrêmement vagues (DD 30). Le personnage est fatigué après avoir lancé ce sort.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mythes%20et%20l%c3%a9gendes.ashx\" title=\"Mythes et légendes\">mythes et légendes</a></i>, si ce n’est qu’il donne des résultats plus rapidement, au prix d’efforts plus importants. Le mage commence par poser une question concernant un lieu, un individu ou un objet, après quoi il effectue son incantation. Si l’objet ou la personne se trouvent à proximité ou si le mage se situe à l’endroit qui l’intéresse, il reçoit une <i>vision mystique</i> en réussissant un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (1d20 +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> ; maximum +25) contre un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de 20. S’il ne possède que des informations détaillées sur ce qui l’intéresse, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> passe à 25 et les renseignements obtenus sont incomplets. Enfin, s’il a seulement entendu des rumeurs au sujet du lieu, de l’individu ou de l’objet qu’il recherche, il n’obtient que des informations extrêmement vagues (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 30). Le personnage est <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatigué</a> après avoir lancé ce sort.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20mystique.ashx",
+    "cache_fichier": "cache/html/09d0588274dbc17c02883234891082f01b702177.html",
+    "recupere_le": "2026-07-29T07:44:23.365515+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vision-mystique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20mystique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 7
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vision-mystique",
+    "resume_court": "Le lanceur pose une question et reçoit une vision mystique sur un lieu, une personne ou un objet.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le jeteur de sorts"
+    },
+    "notes_ambiguite": "Le sort inflige de la fatigue au lanceur, mais « fatigué » n'est pas une condition listée (c'est un état de jeu, non une condition d'incapacité). La durée est décrite comme « voir description » et dépend du succès du test, donc elle n'est pas clairement définie ; j'ai retenu « duree_prolongee » car le résultat persiste au-delà de l'incantation instantanée.",
+    "slug": "vision-mystique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:15+00:00",
+    "hash_source": "42ade6a77b92ecbfca6ed1226c05464263be96a71f07a98941bc9c8062db0e78"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "metal-solaire",
+  "nom": "Métal solaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9tal%20solaire.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Pal": 1,
+    "Prê": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une arme de corps à corps",
+  "duree": "1 round/niveau (voir texte)",
+  "jet_de_sauvegarde": "vigueur pour annuler",
+  "resistance_magie": "oui (objet)",
+  "description": "L’arme de la cible s’enveloppe de flammes qui ne blessent pas son propriétaire et ne l’endommagent pas. Quand elle touche, elle inflige 1d4 points de dégâts de feu de plus. Ces dégâts ne se multiplient pas en cas de coup critique. L’effet se termine immédiatement si l’arme est immergée. L’effet ne se cumule pas avec les propriétés de feu ou de feu intense, ni avec tout autre effet qui accorde des dégâts de feu supplémentaires à une arme. Le sort ne fonctionne pas sur une arme de froid ou de froid intense ni sur une arme qui inflige des dégâts supplémentaires de froid.",
+  "description_html": "<br/><br/>L’arme de la cible s’enveloppe de flammes qui ne blessent pas son propriétaire et ne l’endommagent pas. Quand elle touche, elle inflige 1d4 points de dégâts de feu de plus. Ces dégâts ne se multiplient pas en cas de <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>. L’effet se termine immédiatement si l’arme est immergée. L’effet ne se cumule pas avec les propriétés <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu (propriété)\">de feu</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20intense%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu intense (propriété)\">de feu intense</a></i>, ni avec tout autre effet qui accorde des dégâts de feu supplémentaires à une arme. Le sort ne fonctionne pas sur une arme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.froid%20(propri%c3%a9t%c3%a9).ashx\" title=\"froid (propriété)\">de froid</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.froid%20intense%20(propri%c3%a9t%c3%a9).ashx\" title=\"froid intense (propriété)\">de froid intense</a></i> ni sur une arme qui inflige des dégâts supplémentaires de froid.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts supplémentaires infligés par l’arme s’élèvent à 1d6 points de dégâts de feu. Les créatures frappées par l’arme sont éblouies pendant un round (aucun jet de sauvegarde). En cas de coup critique, la cible est aveuglée pendant un round (Vigueur annule, DD égal à celui du sort).",
+    "description_html": "Les dégâts supplémentaires infligés par l’arme s’élèvent à 1d6 points de dégâts de feu. Les créatures frappées par l’arme sont éblouies pendant un round (aucun jet de sauvegarde). En cas de coup critique, la cible est aveuglée pendant un round (<a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> annule, <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> égal à celui du sort)."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9tal%20solaire.ashx",
+    "cache_fichier": "cache/html/f259a67d4e96d914820c590b7ff4d00b5bd9bee6.html",
+    "recupere_le": "2026-07-28T22:59:21.678049+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "metal-solaire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9tal%20solaire.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "metal-solaire",
+    "resume_court": "Une arme de corps à corps s'enveloppe de flammes et inflige 1d4 dégâts de feu supplémentaires.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "degats_directs",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts de feu de plus",
+      "condition_infligee": [],
+      "cible_typique": "une arme de corps à corps"
+    },
+    "notes_ambiguite": null,
+    "slug": "metal-solaire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:52+00:00",
+    "hash_source": "c3623005645bb54b9e4c75cebcb7af8af186c032850a4217970f56cdac300b4c"
+  }
+}

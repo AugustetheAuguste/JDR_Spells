@@ -1,0 +1,127 @@
+{
+  "id": "coeur-devaste",
+  "nom": "Coeur dévasté",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20d%c3%a9vast%c3%a9.ashx",
+  "ecole": "nécromancie",
+  "descripteurs": [
+    "mort"
+  ],
+  "niveaux": {
+    "Cham": 3,
+    "Hyp": 2,
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "Sor": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "la créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Ce sort enveloppe la main du personnage d’une aura noire ondulante. Lorsqu’il lance son sort, il peut effectuer une attaque de contact au corps à corps qui inflige 2d6 points de dégâts d’énergie négative et qui fait chanceler la cible pendant 1 round. Si l’attaque est un coup critique, la cible est chancelante pendant 1 minute. Les créatures immunisées contre les dégâts de précision sont immunisées contre l’effet chancelant.",
+  "description_html": "<br/><br/>Ce sort enveloppe la main du personnage d’une aura noire ondulante. Lorsqu’il lance son sort, il peut effectuer une attaque de contact au corps à corps qui inflige 2d6 points de dégâts d’énergie négative et qui fait <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chanceler</a> la cible pendant 1 round. Si l’attaque est un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>, la cible est chancelante pendant 1 minute. Les créatures immunisées contre les dégâts de précision sont immunisées contre l’effet chancelant.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20d%c3%a9vast%c3%a9.ashx",
+    "cache_fichier": "cache/html/e3ab0f648bfe2e2f7406da2d95fd5049db6b9521.html",
+    "recupere_le": "2026-07-28T22:46:47.662407+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "coeur-devaste",
+    "resume_court": "Une attaque de contact qui inflige des dégâts d'énergie négative et rend la cible chancelante.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "points de dégâts d'énergie négative",
+      "condition_infligee": [
+        "qui fait chanceler la cible pendant 1 round"
+      ],
+      "cible_typique": "la créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "coeur-devaste",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:01+00:00",
+    "hash_source": "f462ee9168278dde7d7984f13fdbdc7ea41cb260e3b0470fa9f6ccfd352a4b0a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e89f1d91a6f9bf97a38f1dfa19dd581182fdf12ddc005cde16031c6b6377c9d4",
+  "hash_vue": "48fff4dbb3c8f7e42a1588add0642afc744f7883f68c20307e003ce2fb5810d3"
+}

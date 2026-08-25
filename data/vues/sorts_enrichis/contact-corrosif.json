@@ -1,0 +1,100 @@
+{
+  "id": "contact-corrosif",
+  "nom": "Contact corrosif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20corrosif.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "acide"
+  ],
+  "niveaux": {
+    "Con": 1,
+    "ConU": 1,
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "San": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature ou objet touché",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Si le personnage réussit son attaque de contact au corps à corps, il inflige 1d4 points de dégâts d’acide par niveau de lanceur de sorts (5d4 au maximum).",
+  "description_html": "<br/><br/>Si le personnage réussit son <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a>, il inflige 1d4 points de dégâts d’acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (5d4 au maximum).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20corrosif.ashx",
+    "cache_fichier": "cache/html/7303c536db70991c0bc350b12e93d372a5a3491f.html",
+    "recupere_le": "2026-07-28T22:47:33.038764+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contact-corrosif",
+    "resume_court": "Une attaque de contact qui inflige des dégâts d'acide au toucher.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts d'acide",
+      "condition_infligee": [],
+      "cible_typique": "une créature ou objet touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "contact-corrosif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:17+00:00",
+    "hash_source": "5de913c0a104d9fa2558b8686eb9c6e2c67cac2685776acc82ba121b7ac12869"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d1b020381253ca7a70cbf2c5aa8de541dfe7549402560c0a7db53e12d11bb1d0",
+  "hash_vue": "39a4c7fbd4a25e2af6025eecbc41d711a80475145e15f8e6197f310942648d45"
+}

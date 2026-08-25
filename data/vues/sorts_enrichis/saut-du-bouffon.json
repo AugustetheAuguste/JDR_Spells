@@ -1,0 +1,82 @@
+{
+  "id": "saut-du-bouffon",
+  "nom": "Saut du bouffon",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Saut%20du%20bouffon.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage téléporte sa cible dans une case visible qui se situe à moins de 9 mètres (6 c) de celle-ci. Cette destination doit se trouver sur un terrain solide et la téléportation ne peut pas se terminer dans une case d'une nature dangereuse pour la créature téléportée.",
+  "description_html": "<br/><br/>Le personnage téléporte sa cible dans une case visible qui se situe à moins de 9 mètres (6 <abbr title=\"cases\">c</abbr>) de celle-ci. Cette destination doit se trouver sur un terrain solide et la téléportation ne peut pas se terminer dans une case d'une nature dangereuse pour la créature téléportée.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Saut%20du%20bouffon.ashx",
+    "cache_fichier": "cache/html/ad3835276412b129c995cae26a305a8bc3ecb844.html",
+    "recupere_le": "2026-07-29T07:39:54.881309+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "saut-du-bouffon",
+    "resume_court": "Téléporte une créature consentante vers une case visible à moins de 9 mètres.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "La cible peut être un ennemi si elle échoue son jet de Volonté, mais le sort s'applique par contact et le contexte (école d'invocation, nom « bouffon ») suggère un usage plutôt allié ou tactique. Classé en « allie » car le sort ne désigne pas intrinsèquement une créature hostile.",
+    "slug": "saut-du-bouffon",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:23+00:00",
+    "hash_source": "abfd0533b980b3f1c37ae694957b106928939c407f9544fd85f35e1326c95725"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "66f1148088f4a8e6e1770ef08e02099dded325c5f6c555764ddcf59f8a170e41",
+  "hash_vue": "a3049bee9f88112aa9e5b817c7a21457dcb669acdc0822a3e5be355c0dbdfff8"
+}

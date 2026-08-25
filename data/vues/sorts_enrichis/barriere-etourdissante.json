@@ -1,0 +1,109 @@
+{
+  "id": "barriere-etourdissante",
+  "nom": "Barrière étourdissante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barri%c3%a8re%20%c3%a9tourdissante.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Pal": 1,
+    "Prê": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 round/niveau ou jusqu’à déchargement",
+  "jet_de_sauvegarde": "aucun et Volonté, annule (voir texte)",
+  "resistance_magie": "non et oui (voir description)",
+  "description": "Le personnage est étroitement entouré d’un champ magique à peine visible. Ce champ lui apporte un bonus de parade de +1 à la CA et un bonus de résistance de +1 aux jets de sauvegarde. Toute créature qui touche le personnage avec une attaque au corps à corps est étourdie pendant 1 round (Volonté, annule). Une fois que le champ a étourdi un adversaire, le sort est déchargé.",
+  "description_html": "<br/><br/>Le personnage est étroitement entouré d’un champ magique à peine visible. Ce champ lui apporte un bonus de parade de +1 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et un bonus de résistance de +1 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.JDS.ashx\" title=\"JDS\">jets de sauvegarde</a>. Toute créature qui touche le personnage avec une attaque au corps à corps est <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdie</a> pendant 1 round (<a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, annule). Une fois que le champ a <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdi</a> un adversaire, le sort est déchargé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barri%c3%a8re%20%c3%a9tourdissante.ashx",
+    "cache_fichier": "cache/html/9f1dd550cda991b36bee741112bff1cf6ecfcdc2.html",
+    "recupere_le": "2026-07-28T22:43:31.462507+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "barriere-etourdissante",
+    "resume_court": "Un champ magique qui améliore la CA et les sauvegardes, et étourdit au contact.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "est étourdie pendant 1 round"
+      ],
+      "cible_typique": "le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "barriere-etourdissante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:39+00:00",
+    "hash_source": "90e58bc8e95651f509f24b3439b42ff34cdd8035f37f9aa3c2c5e514c1e87d35"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "de95597c344f31f6428e0fbcb90590397d287c479f3f13de92682832eb5743c7",
+  "hash_vue": "36c88b24dbe67787bd5b9a822e7d5c43d4e576e9111842c91a79d0d7d88063b8"
+}

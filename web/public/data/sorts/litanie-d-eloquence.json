@@ -1,0 +1,109 @@
+{
+  "id": "litanie-d-eloquence",
+  "nom": "Litanie d'éloquence",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20d%c3%a9loquence.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Inq": 3,
+    "Pal": 2
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "La litanie du personnage est une fascinante diatribe pleine de grâce qui incite la cible à ne rien faire d'autre qu'écouter. La cible est fascinée. Comme d'habitude, une menace évidente annule la fascination, et un danger potentiel autorise un nouveau jet de sauvegarde.\nLa cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>La litanie du personnage est une fascinante diatribe pleine de grâce qui incite la cible à ne rien faire d'autre qu'écouter. La cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.fascin%c3%a9.ashx\" title=\"Fasciné\">fascinée</a>. Comme d'habitude, une menace évidente annule la fascination, et un danger potentiel autorise un nouveau jet de sauvegarde.<br/><br/>La cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20d%c3%a9loquence.ashx",
+    "cache_fichier": "cache/html/8b8a0c0c1d7c3a6a172545071973aa6b116e0147.html",
+    "recupere_le": "2026-07-28T22:58:44.662363+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "litanie-d-eloquence",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20d%c3%a9loquence.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "litanie-d-eloquence",
+    "resume_court": "Une diatribe captivante qui fascine une créature pendant 1 round.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "communication_ou_langage",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "fascine"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La cible est fascinée"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "litanie-d-eloquence",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:08+00:00",
+    "hash_source": "83b17d87854258c80ef74dd93b3e525bfeb3be344a6f92a1920dd8db802b225f"
+  }
+}

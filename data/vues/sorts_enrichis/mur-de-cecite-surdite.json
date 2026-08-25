@@ -1,0 +1,113 @@
+{
+  "id": "mur-de-cecite-surdite",
+  "nom": "Mur de cécité/surdité",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur%20de%20c%c3%a9cit%c3%a9%20surdit%c3%a9.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 4,
+    "Ens/Mag": 4,
+    "Prê": 5,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "mur translucide de 6 m (4 c) de long/niveau ou anneau translucide de 1,5 m (1 c) de rayon/2 niveaux ; 6 m (4 c) de hauteur quelle que soit la forme",
+  "duree": "concentration + 1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un mur d’énergie translucide au sein duquel on distingue des visages flous aux paupières ou aux oreilles cousues.\nQuand il crée le mur, le personnage décide si celui-ci aveugle ou assourdit. Toute créature qui traverse le mur doit réussir un jet de sauvegarde pour ne pas être définitivement aveuglée ou assourdie (comme cécité/surdité).\nLe mur doit être vertical et soit rectangulaire, soit circulaire. Il ne doit pas nécessairement toucher le sol. Il doit être continu et intact au moment de la création.\nSi sa surface est brisée par un objet ou une créature quelconque au moment du lancement, le sort échoue.",
+  "description_html": "<br/><br/>Le personnage crée un mur d’énergie translucide au sein duquel on distingue des visages flous aux paupières ou aux oreilles cousues.<br/><br/>Quand il crée le mur, le personnage décide si celui-ci aveugle ou assourdit. Toute créature qui traverse le mur doit réussir un jet de sauvegarde pour ne pas être définitivement aveuglée ou assourdie (comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.c%c3%a9cit%c3%a9surdit%c3%a9.ashx\" title=\"Cécité/surdité\">cécité/surdité</a></i>).<br/><br/>Le mur doit être vertical et soit rectangulaire, soit circulaire. Il ne doit pas nécessairement toucher le sol. Il doit être continu et intact au moment de la création.<br/><br/>Si sa surface est brisée par un objet ou une créature quelconque au moment du lancement, le sort échoue.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur%20de%20c%c3%a9cit%c3%a9%20surdit%c3%a9.ashx",
+    "cache_fichier": "cache/html/1571447f19c3dc89cd3fc8c7c008a595823abd46.html",
+    "recupere_le": "2026-07-28T23:01:15.791336+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "mur-de-cecite-surdite",
+    "resume_court": "Un mur translucide qui aveugle ou assourdit définitivement les créatures qui le traversent.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "aveugle",
+      "assourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "définitivement aveuglée",
+        "assourdie (comme cécité/surdité)"
+      ],
+      "cible_typique": "mur translucide de 6 m (4 c) de long/niveau ou anneau translucide de 1,5 m (1 c) de rayon/2 niveaux"
+    },
+    "notes_ambiguite": "Le sort inflige deux conditions mutuellement exclusives selon le choix du lanceur (aveugle OU assourdi), mais le texte les énumère toutes deux comme possibles. Les deux sont retenues car le sort peut produire l'une ou l'autre.",
+    "slug": "mur-de-cecite-surdite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:10+00:00",
+    "hash_source": "973b8ffa5753439b3c53d81e4783b2ffac2275e9492021197571884aaf4a2a63"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "459dc0dd6c79a62a278d423821cf774a4440f6ff0efa94d437d912dd8e7aabdf",
+  "hash_vue": "056fc7947f0188bbf8246d738ce3af2c6ba21ade64bd56d160e3c802ea91b910"
+}

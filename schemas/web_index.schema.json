@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JDR_Spells/schemas/web_index.schema.json",
+  "title": "Index web mince des sorts",
+  "description": "Le contrat de l'artefact `web/public/data/index.json`, chargé une fois par le client pour la recherche et le filtrage. TOUT EST CODÉ EN ENTIERS via les tables de tête (`ecoles`, `portees`, `jets`, `composantes`, `tags`) : c'est la décision qui tient le budget de 400 kB gzip sur 2070 sorts, en supprimant la répétition de milliers de chaînes identiques. Ne PAS « simplifier » en réinsérant les libellés dans chaque entrée — un index de 2070 sorts porterait alors 2070 copies de « Transmutation ». Les libellés complets, verbatim et non normalisés, vivent dans les props par sort (`web/public/data/sorts/<slug>.json`), qui ne sont chargées qu'à l'ouverture d'une fiche.",
+  "type": "object",
+  "required": [
+    "version",
+    "genere_le",
+    "ecoles",
+    "classes",
+    "portees",
+    "jets",
+    "composantes",
+    "tags",
+    "sorts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "description": "Version du contrat lui-même, pas du corpus. Un changement de forme incompatible l'incrémente.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "genere_le": {
+      "description": "Horodatage ISO 8601 UTC de l'export. SEUL champ autorisé à varier entre deux exports du même corpus : le contrôle de dérive de l'étape 10 le neutralise avant de comparer.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ecoles": {
+      "description": "Table de codes des écoles de magie. L'index dans ce tableau EST le code utilisé par `sorts[].e`. Écoles NORMALISÉES (radical avant la parenthèse, accents pliés, minuscules) : le corpus porte 60 orthographes distinctes pour 8 écoles canoniques, dont des variantes de casse et des sous-écoles parenthésées. Un filtre par école a besoin de la famille, pas de la variante. Trié alphabétiquement pour que les codes soient déterministes.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "classes": {
+      "description": "Les classes qui possèdent au moins un sort. `slug` est la clé utilisée dans `sorts[].niv` ET dans la query string (`?classe=barde`). `nom` est le libellé verbatim et accentué du wiki, y compris les libellés multi-classes combinés (`Arcaniste/Ensorceleur/Magicien`), qui ne sont JAMAIS scindés.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "nom"],
+        "additionalProperties": false,
+        "properties": {
+          "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "nom": { "type": "string", "minLength": 1 }
+        }
+      },
+      "uniqueItems": true
+    },
+    "portees": {
+      "description": "Table de codes des portées, normalisées en familles (`contact`, `personnelle`, `courte`, `moyenne`, `longue`, `autre`). Le corpus porte 103 chaînes distinctes parce que chacune inclut sa formule chiffrée (« courte (7,50 m + 1,50 m/2 niveaux) ») et que la même portée s'écrit de plusieurs façons. La formule exacte reste dans les props de la fiche ; ici on ne garde que ce sur quoi on filtre.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "jets": {
+      "description": "Table de codes des jets de sauvegarde, normalisés à la caractéristique (`aucun`, `volonte`, `vigueur`, `reflexes`, `special`). Le corpus porte 222 chaînes distinctes (« Volonté, annule », « Volonté pour annuler (inoffensif) ») : c'est la caractéristique qu'on filtre, pas la phrase. Le libellé complet est sur la fiche.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "composantes": {
+      "description": "Table de codes des composantes atomiques, extraites des sigles du champ `composantes` (V, G, M, FP, F, PS...). Le champ source est une phrase (« S, M (un petit carillon) ») ; le filtre porte sur la présence d'un sigle.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "tags": {
+      "description": "Table de codes des tags de la couche d'enrichissement LLM. VIDE si `data/enrichissements/` est absent — dans ce cas tous les `sorts[].t` valent `[]` et l'interface MASQUE la section de filtre par tags, sans message d'erreur. La couche LLM est strictement optionnelle.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "sorts": {
+      "description": "Les entrées, triées par `id` croissant pour que l'export soit déterministe à l'octet près.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/entree" }
+    }
+  },
+  "$defs": {
+    "entree": {
+      "type": "object",
+      "description": "Un sort, réduit à ce qui sert à chercher, filtrer et afficher une ligne de table. La description N'EST PAS ici : c'est un choix de taille assumé (B1). Si la recherche plein texte devient nécessaire, la réponse est un second index chargé à la demande, pas un gonflement de celui-ci.",
+      "required": ["i", "id", "s", "n", "nf", "e", "niv", "c", "p", "j", "rm", "t", "d"],
+      "additionalProperties": false,
+      "properties": {
+        "i": {
+          "description": "Index dense (0..n-1), égal à la position dans `sorts`. Identifiant court utilisé par les vues comme clé de liste et dans les calculs d'ensembles de la comparaison de classes, où manipuler des entiers plutôt que des chaînes compte.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "id": {
+          "description": "L'identifiant stable du corpus, clé de jointure unique vers `data/sorts/<id>.json`. C'est lui que les favoris stockent, JAMAIS le slug : un slug peut bouger si l'algorithme évolue.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "s": {
+          "description": "Le slug, qui EST l'URL publique (`/sorts/<s>`). Aucune table de correspondance supplémentaire. Le changer casse des liens externes : c'est une décision de compatibilité, pas une décision interne.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "n": {
+          "description": "Nom d'affichage, verbatim et accenté.",
+          "type": "string",
+          "minLength": 1
+        },
+        "nf": {
+          "description": "Nom plié pour la recherche : minuscules, diacritiques supprimés, apostrophes (U+0027 et U+2019) remplacées par des espaces, espaces réduits. Produit par la MÊME fonction de pliage que celle appliquée à la requête côté client. Deux implémentations divergentes feraient échouer silencieusement la recherche sur tous les mots accentués, c'est-à-dire sur la moitié d'un corpus français.",
+          "type": "string",
+          "minLength": 1
+        },
+        "e": {
+          "description": "Code d'école : index dans `ecoles`. `null` si la source ne donne pas d'école.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "niv": {
+          "description": "LE NIVEAU EST RELATIF À LA CLASSE (B4) : table slug de classe → niveau, jamais un scalaire. Un sort peut être de niveau 2 pour le barde et 3 pour le magicien ; aplatir cette table en un « niveau du sort » rendrait l'interface menteuse en pleine partie, et B4 impossible en aval. Une clé par classe qui accorde le sort. Objet vide impossible : un sort de l'index est accordé par au moins une classe.",
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 9 }
+        },
+        "c": {
+          "description": "Codes de composantes : index dans `composantes`, triés.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "p": {
+          "description": "Code de portée : index dans `portees`. `null` si absent de la source.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "j": {
+          "description": "Code de jet de sauvegarde : index dans `jets`. `null` si absent de la source.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "rm": {
+          "description": "Résistance à la magie, réduite à un booléen pour le filtre. `null` quand la source est absente OU conditionnelle (« non et oui (cf. texte) », « voir description ») : forcer un booléen sur un cas conditionnel serait une affirmation que la source ne fait pas. Le libellé exact est sur la fiche.",
+          "type": ["boolean", "null"]
+        },
+        "t": {
+          "description": "Codes de tags d'enrichissement : index dans `tags`, triés. `[]` si le sort n'a pas d'enrichissement ou si la couche est absente.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "d": {
+          "description": "`true` si le corpus signale un DÉSACCORD DE NIVEAU pour ce sort : la liste de classe et la page du sort annoncent des niveaux différents (`classes[].concordance === false`). C'est l'information que le wiki n'expose pas et le seul endroit où le site apporte plus que sa source. Le détail (quelle classe, quelle source dit quoi) est dans les props de la fiche ; ici, un booléen suffit à filtrer. Sur le corpus actuel ce champ vaut `false` partout : les 8409 paires comparables concordent toutes. Le champ n'est pas pour autant décoratif — c'est la sonde qui rendra visible la première divergence introduite par une correction du wiki.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

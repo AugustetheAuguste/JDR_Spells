@@ -1,0 +1,120 @@
+{
+  "id": "symbole-de-lutte",
+  "nom": "Symbole de lutte",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lutte.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Occ": 6,
+    "Prê": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore plus poudre de diamant et d'opale pour une valeur de 15 000 po)",
+  "portee": "0 m ; voir texte",
+  "cible": "un symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme symbole de mort mais toutes les créatures situées dans la zone d’effet sont obligées d’attaquer l’être conscient le plus proche pendant 1 round par niveau de lanceur de sorts (comme le résultat « attaquer la créature la plus proche » du sort confusion), même après avoir quitté la zone d’effet du symbole. S’il n’y a pas d’autres créatures visibles, un être affecté peut agir normalement. Une fois le symbole déclenché il reste actif pendant 10 minutes par niveau de lanceur de sorts.\nOn peut rendre le symbole de lutte permanent à l’aide d’un sort de permanence si le lanceur de sorts est de niveau 18 ou plus et s’il paie 25 000 po.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i> mais toutes les créatures situées dans la zone d’effet sont obligées d’attaquer l’être conscient le plus proche pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (comme le résultat « attaquer la créature la plus proche » du sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.confusion.ashx\" title=\"Confusion\">confusion</a></i>), même après avoir quitté la zone d’effet du symbole. S’il n’y a pas d’autres créatures visibles, un être affecté peut agir normalement. Une fois le symbole déclenché il reste actif pendant 10 minutes par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.<br/><br/>On peut rendre le <i>symbole de lutte</i> permanent à l’aide d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> si le lanceur de sorts est de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau</a> 18 ou plus et s’il paie 25 000 po.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lutte.ashx",
+    "cache_fichier": "cache/html/408cb1b65f9a633d9974c613951be641cd4e13c6.html",
+    "recupere_le": "2026-07-29T07:41:42.733319+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "symbole-de-lutte",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20lutte.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 6
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "symbole-de-lutte",
+    "resume_court": "Un symbole qui force les créatures affectées à attaquer la créature consciente la plus proche pendant plusieurs rounds.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "charme_ou_coercition",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "obligées d'attaquer l'être conscient le plus proche pendant 1 round par niveau de lanceur de sorts (comme le résultat « attaquer la créature la plus proche » du sort confusion)"
+      ],
+      "cible_typique": "toutes les créatures situées dans la zone d'effet"
+    },
+    "notes_ambiguite": "Le sort provoque un comportement similaire à confusion (attaque forcée de la créature la plus proche) plutôt qu'une confusion totale ; la condition retenue est confus car c'est l'effet mental le plus proche disponible dans la liste, bien que le texte précise que l'action est dirigée et non aléatoire.",
+    "slug": "symbole-de-lutte",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:09+00:00",
+    "hash_source": "635c0d2570d71de6b0d799262a491fa5812c010f990f991bd3cd06699b7d222f"
+  }
+}

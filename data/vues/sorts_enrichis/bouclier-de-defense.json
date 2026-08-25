@@ -1,0 +1,96 @@
+{
+  "id": "bouclier-de-defense",
+  "nom": "Bouclier de défense",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20de%20d%c3%a9fense.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 1,
+    "Pal": 1,
+    "Prê": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "la créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage crée une barrière magique qui protège les zones vitales de la cible. Quand la cible est touchée par un coup critique ou une attaque sournoise, il y a 25% de chances que le critique ou l’attaque sournoise soit annulé et que les dégâts soient lancés normalement.\nCet avantage ne se cumule pas avec les autres effets permettant de transformer les coups critiques ou les attaques sournoises en attaques normales, comme la propriété spéciale d’armure de défense.",
+  "description_html": "<br/><br/>Le personnage crée une barrière magique qui protège les zones vitales de la cible. Quand la cible est touchée par un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> ou une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20sournoise.ashx\" title=\"attaque sournoise\">attaque sournoise</a>, il y a 25% de chances que le critique ou l’attaque sournoise soit annulé et que les dégâts soient lancés normalement.<br/><br/>Cet avantage ne se cumule pas avec les autres effets permettant de transformer les coups critiques ou les attaques sournoises en attaques normales, comme la propriété spéciale d’armure de défense.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20de%20d%c3%a9fense.ashx",
+    "cache_fichier": "cache/html/2dd8eb994a5b312b8cdfb82c4982793fc201faf4.html",
+    "recupere_le": "2026-07-28T22:44:09.544676+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "bouclier-de-defense",
+    "resume_court": "Une barrière magique qui a 25% de chances d'annuler les coups critiques ou attaques sournoises contre la cible.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "la créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "bouclier-de-defense",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:59+00:00",
+    "hash_source": "46067df58f58ad00a50bd7cc18d2ff7d9e3a052f4158e443235ae5fe3b8e807c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5592b9f5b6639128d970849e603702584d3dafea1405dc2e5f904576421a9f76",
+  "hash_vue": "2590048111f1bebcefa3ef22fb874446020911fd0ebfc0110ea97967e27c9ff9"
+}

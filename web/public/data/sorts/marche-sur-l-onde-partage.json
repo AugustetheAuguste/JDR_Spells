@@ -1,0 +1,103 @@
+{
+  "id": "marche-sur-l-onde-partage",
+  "nom": "Marche sur l'onde (partagé)",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche%20sur%20londe%20(partag%c3%a9).ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "eau"
+  ],
+  "niveaux": {
+    "Prê": 2,
+    "Psy": 4,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créatures touchées",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme marche sur l’onde mais la durée se divise entre les créatures touchées, par portions de 10 minutes.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marche%20sur%20londe.ashx\" title=\"Marche sur l'onde\">marche sur l’onde</a></i> mais la durée se divise entre les créatures touchées, par portions de 10 minutes.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche%20sur%20londe%20(partag%c3%a9).ashx",
+    "cache_fichier": "cache/html/4335aec9ec0376c255ad1057b1fc88cf523369e2.html",
+    "recupere_le": "2026-07-28T23:00:10.756040+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "marche-sur-l-onde-partage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche%20sur%20londe%20(partag%c3%a9).ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "marche-sur-l-onde-partage",
+    "resume_court": "Le lanceur et ses alliés peuvent marcher sur l'eau pendant 10 minutes par niveau, la durée se partageant entre eux.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures touchées"
+    },
+    "notes_ambiguite": "Le texte renvoie à « marche sur l'onde » sans le reproduire intégralement. On en déduit que le sort améliore la capacité de déplacement sur l'eau. La cible est « créatures touchées » (pluriel), ce qui suggère des alliés volontaires plutôt que des ennemis, confirmé par le jet de sauvegarde inoffensif.",
+    "slug": "marche-sur-l-onde-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:38+00:00",
+    "hash_source": "e97883dca58ed3acd9c434ce12105a9a6221b3710cd4046a7e62752198e2b661"
+  }
+}

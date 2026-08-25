@@ -1,0 +1,107 @@
+{
+  "id": "violent-nuage-d-orage",
+  "nom": "Violent nuage d'orage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Violent%20nuage%20dorage.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "électricité"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un morceau d’arbre frappé par la foudre)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)",
+  "cible": "sphère de 1,5 m de diamètre",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Réflexes pour annuler",
+  "resistance_magie": "oui",
+  "description": "Un nuage de tempête sphérique et crépitant vole dans la direction indiquée par le personnage et inflige des dégâts d’électricité à ceux qui le touchent. Il a une vitesse de vol de 6 mètres avec une manœuvrabilité parfaite. Si l’orage entre dans un espace qui accueille une créature, il arrête de se déplacer pour le round et inflige 3d6 points de dégâts d’électricité à cette créature, mais un jet de Réflexes réussi annule ces dégâts. Le nuage offre un camouflage (20% de chances de rater) à tout ce qui s’y trouve et sa lumière vacillante illumine la même zone que le ferait une bougie. La sphère se déplace tant que le personnage la dirige activement (ce qui requiert une action de mouvement de sa part). Sinon, elle reste en place et crépite d’éclairs. Les effets de vent permettent de la déplacer et elle compte comme une créature de taille P quand il s’agit de déterminer la manière dont les vents l’affectent. La sphère n’a pas de substance physique et ne peut exercer aucune force sur les créatures tangibles ou les objets. Elle se disperse si elle sort de la portée du sort.",
+  "description_html": "<br/><br/>Un nuage de tempête sphérique et crépitant vole dans la direction indiquée par le personnage et inflige des dégâts d’électricité à ceux qui le touchent. Il a une vitesse de vol de 6 mètres avec une manœuvrabilité parfaite. Si l’orage entre dans un espace qui accueille une créature, il arrête de se déplacer pour le round et inflige 3d6 points de dégâts d’électricité à cette créature, mais un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> réussi annule ces dégâts. Le nuage offre un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> (20% de chances de rater) à tout ce qui s’y trouve et sa lumière vacillante illumine la même zone que le ferait une bougie.\nLa sphère se déplace tant que le personnage la dirige activement (ce qui requiert une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> de sa part). Sinon, elle reste en place et crépite d’éclairs. Les effets de vent permettent de la déplacer et elle compte comme une créature de taille P quand il s’agit de déterminer la manière dont les vents l’affectent. La sphère n’a pas de substance physique et ne peut exercer aucune force sur les créatures tangibles ou les objets. Elle se disperse si elle sort de la portée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Violent%20nuage%20dorage.ashx",
+    "cache_fichier": "cache/html/585b80e25ce94c8ceccebeeaf6c0db6e33e5d378.html",
+    "recupere_le": "2026-07-29T07:44:12.346015+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "violent-nuage-d-orage",
+    "resume_court": "Un nuage de tempête sphérique qui se déplace et inflige des dégâts d'électricité aux créatures qu'il touche.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "terrain_ou_environnement",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "electricite",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "dégâts d'électricité",
+      "condition_infligee": [],
+      "cible_typique": "sphère de 1,5 m de diamètre"
+    },
+    "notes_ambiguite": null,
+    "slug": "violent-nuage-d-orage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:11+00:00",
+    "hash_source": "6cfa0155d2602262a8c727e665a65f8ede0f116058503129bb630f732e50b4e3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7e380ae88cc55230c600e23a7d664ff6dc031e3f4d641572459bc8af0104a9cf",
+  "hash_vue": "5bdcb9027fc28d4c7465cde8bbca65c763414f47a634e7d246851d7fa7842e79"
+}

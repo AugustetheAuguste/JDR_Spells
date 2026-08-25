@@ -1,0 +1,82 @@
+{
+  "id": "tracage-de-teleportation",
+  "nom": "Traçage de téléportation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tra%c3%a7age%20de%20t%c3%a9l%c3%a9portation.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une lentille grossissante)",
+  "portee": "12 m",
+  "cible": "émanation de 12 m de rayon centrée sur le personnage",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage devient particulièrement sensible aux effets de téléportation qui commencent ou se terminent dans la zone d'effet du sort. Cette zone émane du personnage et le suit lorsqu'il se déplace. Il connaît le point d'origine exact de tout effet de téléportation qui commence dans la zone, et l'exacte destination de tout effet de téléportation qui vise un point dans cette zone. De plus, il peut détecter les traces persistantes de tout effet de téléportation ayant opéré il y a jusqu'à 1 heure, et ce avec la même précision. Il sait quand, à la minute près, l'effet de téléportation a opéré.\nLorsque le personnage détecte le point d'origine ou de destination d'un effet de téléportation grâce à ce sort, il peut étudier ce point pendant 1 round. S'il le fait, il peut effectuer un test de niveau de lanceur de sorts (DD = 11 + niveau de lanceur de sorts de l'effet de téléportation), avec un malus de -5 si l'effet a opéré il y a plus d'une minute. Si ce test est réussi, il a un aperçu du point de destination (s'il a détecté son point d'origine) ou d'origine (s'il a détecté son point de destination) de l'effet. Cet aperçu dure suffisamment longtemps pour que le personnage ait un bref coup d'œil de l'endroit, mais pas assez pour le scruter en détail. Cela n'offre pas de précision géographique sur le lieu aperçu, et n'est donc pas suffisant pour une téléportation ou une magie similaire. Le personnage ne peut pas refaire ce test de niveau de lanceur de sorts, même s'il lance traçage de téléportation à nouveau.",
+  "description_html": "<br/><br/>Le personnage devient particulièrement sensible aux effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.branche%20t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a> qui commencent ou se terminent dans la zone d'effet du sort. Cette zone émane du personnage et le suit lorsqu'il se déplace. Il connaît le point d'origine exact de tout effet de téléportation qui commence dans la zone, et l'exacte destination de tout effet de téléportation qui vise un point dans cette zone. De plus, il peut détecter les traces persistantes de tout effet de téléportation ayant opéré il y a jusqu'à 1 heure, et ce avec la même précision. Il sait quand, à la minute près, l'effet de téléportation a opéré.<br/><br/>Lorsque le personnage détecte le point d'origine ou de destination d'un effet de téléportation grâce à ce sort, il peut étudier ce point pendant 1 round. S'il le fait, il peut effectuer un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 11 + niveau de lanceur de sorts de l'effet de téléportation), avec un malus de -5 si l'effet a opéré il y a plus d'une minute. Si ce test est réussi, il a un aperçu du point de destination (s'il a détecté son point d'origine) ou d'origine (s'il a détecté son point de destination) de l'effet. Cet aperçu dure suffisamment longtemps pour que le personnage ait un bref coup d'œil de l'endroit, mais pas assez pour le scruter en détail. Cela n'offre pas de précision géographique sur le lieu aperçu, et n'est donc pas suffisant pour une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> ou une magie similaire. Le personnage ne peut pas refaire ce test de niveau de lanceur de sorts, même s'il lance <i>traçage de téléportation</i> à nouveau.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tra%c3%a7age%20de%20t%c3%a9l%c3%a9portation.ashx",
+    "cache_fichier": "cache/html/624f60672cd6c15c1349e2787d1fa1220573ca09.html",
+    "recupere_le": "2026-07-29T07:42:55.735656+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "tracage-de-teleportation",
+    "resume_court": "Le lanceur détecte les téléportations dans une émanation de 12 m et peut en voir l'origine ou la destination.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "zone_d_effet",
+      "detection_ou_revelation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation de 12 m de rayon centrée sur le personnage"
+    },
+    "notes_ambiguite": null,
+    "slug": "tracage-de-teleportation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:38+00:00",
+    "hash_source": "2aceab61e01f3197317d64088a699f4c1e88e961569284cd8a4037331fe4a7b2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f43aea780bbb72ca41a1354aad2f7dfe9f2bcd6840f3356ad14e0d80b52e04df",
+  "hash_vue": "41e8f6eb2c7cf16b4595efa02aa585a9a5dd591d3a0968b7d9030baaa2791833"
+}

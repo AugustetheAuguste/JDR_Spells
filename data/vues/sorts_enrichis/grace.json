@@ -1,0 +1,79 @@
+{
+  "id": "grace",
+  "nom": "Grâce",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20(sort).ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 1,
+    "Prê": 2
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Les déplacements du personnage ne provoquent pas d'attaque d'opportunité jusqu'à la fin de son tour.",
+  "description_html": "<br/><br/>Les déplacements du personnage ne provoquent pas d'<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d'opportunité</a> jusqu'à la fin de son tour.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20(sort).ashx",
+    "cache_fichier": "cache/html/8dc653a7cb513a088c3c6adcd2e0c2458aecb1e6.html",
+    "recupere_le": "2026-07-28T22:55:28.422385+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "grace",
+    "resume_court": "Le lanceur ne provoque pas d'attaque d'opportunité en se déplaçant jusqu'à la fin de son tour.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "grace",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:54+00:00",
+    "hash_source": "c822d0afccfa065d76392bdb3fd3d1ce7a3937a3865871725901b320b214d469"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "edcc0446b31a790daf5403ec4979aca1390fade21ee3cb3bbf580e8856568178",
+  "hash_vue": "9830229b55c0125247ee970963e1a0a147b4306645957a70b6647e32e94ff8b0"
+}

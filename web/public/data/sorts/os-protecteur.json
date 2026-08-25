@@ -1,0 +1,125 @@
+{
+  "id": "os-protecteur",
+  "nom": "Os protecteur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Os%20protecteur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (le crâne ou le fémur d’une créature de taille M), FD",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 heure/niveau ou jusqu’à déchargement",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Grâce à l’énergie nécromantique, le personnage anime un os et lui donne le pouvoir de flotter près de son corps et de s’interposer entre lui et les attaques physiques qui le prendraient pour cible. Ce sort confère une RD 5/contondant. Une fois qu’il a évité au lanceur un total de 5 points de dégâts par niveau de lanceur (maximum 50), l’os est détruit et le sort déchargé. Le sort n’a aucun effet si le personnage bénéficie déjà d’une réduction des dégâts par une autre source.",
+  "description_html": "<br/><br/>Grâce à l’énergie nécromantique, le personnage anime un os et lui donne le pouvoir de flotter près de son corps et de s’interposer entre lui et les attaques physiques qui le prendraient pour cible. Ce sort confère une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> 5/contondant. Une fois qu’il a évité au lanceur un total de 5 points de dégâts par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur</a> (maximum 50), l’os est détruit et le sort déchargé. Le sort n’a aucun effet si le personnage bénéficie déjà d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">réduction des dégâts</a> par une autre source.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Os%20protecteur.ashx",
+    "cache_fichier": "cache/html/f6477fae90f56e3e7414c09893777dfdc14d7dd6.html",
+    "recupere_le": "2026-07-28T23:02:13.864918+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "os-protecteur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Os%20protecteur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "os-protecteur",
+    "resume_court": "Un os animé flotte près du lanceur et réduit les dégâts physiques qu'il subit de 5 points.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "invocation_ou_creation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "os-protecteur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:38+00:00",
+    "hash_source": "a1706fef9ee1ee87993483cc973d71768bdfaf0b4418c7a4adcacc20e82eea0d"
+  }
+}

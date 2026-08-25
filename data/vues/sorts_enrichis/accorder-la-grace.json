@@ -1,0 +1,73 @@
+{
+  "id": "accorder-la-grace",
+  "nom": "Accorder la grâce",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Accorder%20la%20gr%c3%a2ce.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "une créature Bonne touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Grâce à ce sort, le personnage peut accorder sa grâce divine à une autre créature d'alignement Bon pendant un bref laps de temps, en l'imprégnant d'une part de sa sainte vertu. Quand il touche le sujet, il lui transmet un bonus sacré à tous les jets de sauvegarde égal à son bonus de Charisme (le cas échéant).",
+  "description_html": "<br/><br/>Grâce à ce sort, le personnage peut accorder sa grâce divine à une autre créature d'alignement <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">Bon</a> pendant un bref laps de temps, en l'imprégnant d'une part de sa sainte vertu. Quand il touche le sujet, il lui transmet un bonus sacré à tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> égal à son bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> (le cas échéant).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Accorder%20la%20gr%c3%a2ce.ashx",
+    "cache_fichier": "cache/html/f309d9ba855c4e11ae9008a948509846fdaed1f4.html",
+    "recupere_le": "2026-07-28T22:39:55.358908+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "accorder-la-grace",
+    "resume_court": "Confère à une créature Bonne un bonus sacré aux jets de sauvegarde égal au bonus de Charisme du lanceur.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature Bonne touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "accorder-la-grace",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:07+00:00",
+    "hash_source": "30ec3d82d8add938e2265293fa1e51d6654583aeb69127d88d7dc3d8d6133b7a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5e09838c1a5c0b0f9e36f87dbecbb848e748a18ec4dce172081732af1efa0bc6",
+  "hash_vue": "81966d18a6aad60a732d480b30ae8c0eafd77441327e49bcae8a0b83b3d9211d"
+}

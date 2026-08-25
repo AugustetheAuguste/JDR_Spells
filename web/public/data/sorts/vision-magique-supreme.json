@@ -1,0 +1,99 @@
+{
+  "id": "vision-magique-supreme",
+  "nom": "Vision magique suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20magique%20supr%c3%aame.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort fonctionne comme vision magique, sauf que le mage découvre les sorts et effets magiques actifs sur un individu ou objet qu’il observe.\nContrairement à vision magique, ce sort ne peut pas bénéficier de permanence.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.vision%20magique.ashx\" title=\"Vision magique\">vision magique</a></i>, sauf que le mage découvre les sorts et effets magiques actifs sur un individu ou objet qu’il observe.<br/><br/>Contrairement à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.vision%20magique.ashx\" title=\"Vision magique\">vision magique</a></i>, ce sort ne peut pas bénéficier de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20magique%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/e9e87ca7d37680efb437acf8aaa6a34ab913467b.html",
+    "recupere_le": "2026-07-29T07:44:21.396789+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "vision-magique-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20magique%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "vision-magique-supreme",
+    "resume_court": "Le lanceur perçoit les sorts et effets magiques actifs sur une créature ou un objet observé.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "perception_amelioree",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le jeteur de sorts"
+    },
+    "notes_ambiguite": "Le sort affecte le lanceur (cible: le jeteur de sorts), mais son effet pratique porte sur ce qu'il observe (un individu ou objet). La cible_typique reste 'soi' car le sort s'incante sur le lanceur lui-même, qui gagne la capacité de perception.",
+    "slug": "vision-magique-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:14+00:00",
+    "hash_source": "401fc10a958ac439e9b15e85db0b1dc3f9418aab9244ce9a44505a619dc35053"
+  }
+}

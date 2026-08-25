@@ -1,0 +1,105 @@
+{
+  "id": "forme-du-nuage",
+  "nom": "Forme du nuage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20du%20nuage.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "air"
+  ],
+  "niveaux": {
+    "Dru": 4,
+    "Ens/Mag": 4,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G, M/FD (un morceau de gaze et une volute de fumée)",
+  "portee": "personelle",
+  "cible": "lanceur de sort",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme état gazeux, à la seule différence que le lanceur prend la forme d’un nuage de taille C occupant un espace de 9 mètres. Le lanceur de sorts choisit l’apparence générale du nuage (blanc, orageux, cotonneux, plat, etc.), après quoi il ne peut plus en changer. Même un examen minutieux ne peut révéler que le nuage en question est en réalité une créature magiquement dissimulée. Pour tous les tests normaux, le lanceur de sorts est en réalité un nuage, bien qu’un sort de détection de la magie révèle une aura de transmutation modérée sur le nuage. La vitesse de vol du lanceur sous forme de nuage est de 9 mètres.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tat%20gazeux.ashx\" title=\"État gazeux\">état gazeux</a></i>, à la seule différence que le lanceur prend la forme d’un nuage de <a class=\"pagelink\" href=\"Pathfinder-RPG.Petites%20et%20grandes%20cr%c3%a9atures.ashx#TABLEAUTAILLES\" title=\"Créatures de taille inférieure ou supérieure à la moyenne\">taille C</a> occupant un espace de 9 mètres. Le lanceur de sorts choisit l’apparence générale du nuage (blanc, orageux, cotonneux, plat, etc.), après quoi il ne peut plus en changer. Même un examen minutieux ne peut révéler que le nuage en question est en réalité une créature magiquement dissimulée. Pour tous les tests normaux, le lanceur de sorts est en réalité un nuage, bien qu’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9tection%20de%20la%20magie.ashx\" title=\"Détection de la magie\">détection de la magie</a></i> révèle une aura de <a class=\"pagelink\" href=\"Pathfinder-RPG.Transmutation%20(%c3%a9cole).ashx\" title=\"L'école de Transmutation\">transmutation</a> modérée sur le nuage. La vitesse de <a class=\"pagelink\" href=\"Pathfinder-RPG.vol.ashx\" title=\"Vol\">vol</a> du lanceur sous forme de nuage est de 9 mètres.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20du%20nuage.ashx",
+    "cache_fichier": "cache/html/4acaca39c3041fae5d3f98376c60df154ec0c6b8.html",
+    "recupere_le": "2026-07-28T22:54:17.335195+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "forme-du-nuage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20du%20nuage.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "forme-du-nuage",
+    "resume_court": "Le lanceur se transforme en nuage de taille C volant à 9 mètres par round pendant 10 minutes par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "invisibilite_ou_dissimulation"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sort"
+    },
+    "notes_ambiguite": "Le sort améliore les capacités du lanceur (vol, dissimulation, transformation) sans viser une menace en particulier, d'où la catégorie « amelioration » plutôt que « deplacement ». La transformation est un tag, non une catégorie.",
+    "slug": "forme-du-nuage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:23+00:00",
+    "hash_source": "1f8d9e3cc44fb4f5ab43c10e3743549893594ad8f87367119287608beeaec953"
+  }
+}

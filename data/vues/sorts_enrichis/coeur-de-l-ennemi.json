@@ -1,0 +1,94 @@
+{
+  "id": "coeur-de-l-ennemi",
+  "nom": "Cœur de l'ennemi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.C%c5%93ur%20de%20lennemi.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mort",
+    "mal"
+  ],
+  "niveaux": {
+    "Apal": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action complexe ; spécial, voir ci-dessous.",
+  "composantes": "V, G, M (cœur de la créature)",
+  "portee": "contact",
+  "cible": "une créature vivante touchée",
+  "duree": "concentration/1 minute/DV du sujet ; voir description",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts découpe le cœur de l’ennemi et le dévore, absorbant son pouvoir comme s’il était le sien. Tandis qu’il lance son sort, le personnage porte un coup de grâce avec une arme tranchante à une créature vivante sans défense et adjacente. Si la cible meurt, le lanceur dévore son cœur pour bénéficier des avantages du sort. Si la cible survit, le sort n’est pas gâché et le lanceur peut essayer à nouveau tant qu’il se concentre sur le sort. Lorsqu’il dévore le cœur, le lanceur gagne les avantages du sort mise à mort, à la seule différence qu’il gagne 1d8 points de vie temporaires +1 par DV de la cible, et le bonus de Force est un bonus de malfaisance.",
+  "description_html": "<br/><br/>Le lanceur de sorts découpe le cœur de l’ennemi et le dévore, absorbant son pouvoir comme s’il était le sien. Tandis qu’il lance son sort, le personnage porte un <a class=\"pagelink\" href=\"Pathfinder-RPG.Modificateurs%20de%20combat.ashx#COUPDEGRACE\" title=\"Modificateurs de combat\">coup de grâce</a> avec une arme tranchante à une créature vivante sans défense et adjacente. Si la cible meurt, le lanceur dévore son cœur pour bénéficier des avantages du sort. Si la cible survit, le sort n’est pas gâché et le lanceur peut essayer à nouveau tant qu’il se concentre sur le sort. Lorsqu’il dévore le cœur, le lanceur gagne les avantages du sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mise%20%c3%a0%20mort.ashx\" title=\"Mise à mort\">mise à mort</a></i>, à la seule différence qu’il gagne 1d8 points de vie temporaires +1 par DV de la cible, et le bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> est un bonus de malfaisance.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles orques."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.C%c5%93ur%20de%20lennemi.ashx",
+    "cache_fichier": "cache/html/60756b55b86a7985b67b6ca92185c5edb8d7fda2.html",
+    "recupere_le": "2026-07-28T22:45:21.337832+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "coeur-de-l-ennemi",
+    "resume_court": "Le lanceur porte un coup de grâce à une créature sans défense et dévore son cœur pour gagner des points de vie temporaires et un bonus de Force.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "attaque_de_contact",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort combine un coup de grâce (attaque) et un effet de soin (points de vie temporaires). La catégorie principale est « soin » car l'effet principal du sort est l'octroi de points de vie temporaires au lanceur, bien que l'incantation implique une attaque de contact. Le texte ne précise pas les dégâts du coup de grâce lui-même, seulement que c'est une arme tranchante.",
+    "slug": "coeur-de-l-ennemi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:02+00:00",
+    "hash_source": "fb1ce7dbcc8dbd346a0a135a9d354a790df62700b894e017eda522ec0409ee3f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5c9e9ad49dfdea0430aafa467b6727456e8383197e26d1a37f7ac0aff1341f14",
+  "hash_vue": "bd2a32fe725cacfac7889c598efda411e4853b92e1b0a97702f89e35802d5a39"
+}

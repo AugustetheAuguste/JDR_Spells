@@ -1,0 +1,118 @@
+{
+  "id": "appel-du-tueur-planaire",
+  "nom": "Appel du tueur planaire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20tueur%20planaire.ashx",
+  "ecole": "enchantement (coercition)",
+  "descripteurs": [
+    "effet mental",
+    "voir texte"
+  ],
+  "niveaux": {
+    "Inq": 4,
+    "Occ": 4,
+    "Pal": 4,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "6 m",
+  "cible": "alliés dans un rayon de 6 m centré sur le lanceur",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "La magie des alliés présents dans la zone devient plus puissante contre certains extérieurs. Le personnage choisit un sous-type d’alignement (Bon, Chaotique, Loyal ou Mauvais). Contre les extérieurs de ce sous-type ou de cette composante d’alignement, les alliés du personnage présents dans la zone gagnent un bonus de +2 aux tests de lanceur de sorts pour passer la résistance à la magie et leurs sorts ignorent les 10 premiers points de résistance aux énergies (mais pas l’immunité contre les énergies destructives).\nCe sort gagne le registre d’alignement opposé à l’alignement choisi pour les extérieurs. Par exemple, si le personnage décide que le sort affecte les extérieurs Mauvais, alors ce sort appartient au registre du Bien.",
+  "description_html": "<br/><br/>La magie des alliés présents dans la zone devient plus puissante contre certains extérieurs. Le personnage choisit un sous-type d’alignement (<a class=\"pagelink\" href=\"Pathfinder-RPG.Registre.ashx\" title=\"Registre\">Bon, Chaotique, Loyal ou Mauvais</a>). Contre les extérieurs de ce sous-type ou de cette composante d’alignement, les alliés du personnage présents dans la zone gagnent un bonus de +2 aux tests de lanceur de sorts pour passer la résistance à la magie et leurs sorts ignorent les 10 premiers points de résistance aux énergies (mais pas l’immunité contre les énergies destructives).<br/><br/>Ce sort gagne le registre d’alignement opposé à l’alignement choisi pour les extérieurs. Par exemple, si le personnage décide que le sort affecte les extérieurs Mauvais, alors ce sort appartient au registre du <a class=\"pagelink\" href=\"Pathfinder-RPG.Registre.ashx\" title=\"Registre\">Bien</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20tueur%20planaire.ashx",
+    "cache_fichier": "cache/html/22009be1e00d2eb3d68cbeaae4b0790b0fc4a18e.html",
+    "recupere_le": "2026-07-28T22:41:21.438090+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "appel-du-tueur-planaire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Appel%20du%20tueur%20planaire.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "appel-du-tueur-planaire",
+    "resume_court": "Les alliés dans la zone gagnent un bonus contre la résistance à la magie des extérieurs d'un alignement choisi.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "amelioration_de_capacite",
+      "alignement_ou_divin",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "alliés dans un rayon de 6 m centré sur le lanceur"
+    },
+    "notes_ambiguite": null,
+    "slug": "appel-du-tueur-planaire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:10:55+00:00",
+    "hash_source": "cb479139458bdbc5cbd8daafab28cc460f9129e0efec338ca15054e51d4229d8"
+  }
+}

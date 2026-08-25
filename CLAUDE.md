@@ -25,8 +25,15 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `data/index/sorts_exclusifs.json` | 05 | les sorts exclusifs à une classe |
 | `data/sorts/<id>.json` | 07+08 | **le sort lui-même** (2070 fichiers, 21 clés) |
 | `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération |
-| `schemas/*.json` | 02 | les deux contrats de sortie |
+| `schemas/*.json` | 02 | les contrats de sortie (+ `enrichissement.schema.json` § 10, `web_index.schema.json`, l'export web) |
+| `conventions/vocabulaires/*.json` | 04 | les six listes **closes** de l'enrichissement |
+| `data/enrichissements/<id>.json` | étage 09 | la couche LLM d'un sort (2048 fichiers, 16 clés) |
+| `data/vues/sorts_enrichis/<id>.json` | — | **rien** : vue dérivée du join sur `id` (§ 10) |
 | `reports/*.md` | 03–09 | le résultat et les anomalies de chaque étape (dont `09_validation.md`) |
+| `build_artifacts/rapports/`, `.../quarantaine/` | 09, 10 | la trace des appels **payants** et les réponses refusées |
+| `web/` | interface | le site consultable (§ 11) — code applicatif, fait autorité sur lui-même |
+| `web/public/data/` | export web | **rien** : dérivé du corpus, committé, jamais édité (§ 11) |
+| `web/data_sources/alias_manuel.tsv` | — | la table d'alias anglais→français, **éditée à la main** |
 
 ## 3. Règles dures — non négociables
 
@@ -58,9 +65,12 @@ slug attribué est stable : jamais renuméroté.** Réf. `src/pf_spells/slugs.py
 `Skill(skill="pf-corpus-conventions")` — `.claude/skills/pf-corpus-conventions/SKILL.md`.
 **Charger cette Skill dans toute session qui lit ou écrit des données du corpus.**
 Elle détient le détail : clés JSON, normalisation des libellés du bloc technique,
-table des 19 classes et abréviations, formats, anti-patterns de la source. Ce
-fichier n'en recopie rien — des règles dupliquées divergent. **Code et Skill
-divergents : la Skill gagne.**
+table des 19 classes et abréviations, formats, anti-patterns de la source. Deux
+Skills la complètent sur la couche LLM (§ 10) : `pf-enrichment-conventions` (les
+16 clés, les vocabulaires clos, `preuves`) — **à charger avant de toucher à
+`data/enrichissements/`, `data/vues/` ou `conventions/vocabulaires/`** — et
+`pf-bedrock-batch` (le client, le jeton, le caching). Ce fichier n'en recopie rien
+— des règles dupliquées divergent. **Code et Skill divergents : la Skill gagne.**
 
 ## 6. Relancer le pipeline — les relances tapent le cache, elles ne re-crawlent pas
 
@@ -75,8 +85,14 @@ python -m pf_spells.enrich_spells      # étape 08 - hors ligne, idempotent
 python -m pf_spells.validate_corpus    # étape 09 - hors ligne, sortie 1 si FAIL
 python -m pf_spells.build_manifest     # étape 10 - hors ligne
 python -m pf_spells.prepare_prompts    # étage 08 - hors ligne, idempotent
-python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (cf. § 7)
+python -m pf_spells.enrich_llm         # étage 09 - RÉSEAU, PAYANT (docs/enrichissement.md)
+python -m pf_spells.validate_enrichment  # étage 10 - hors ligne, 1 si --strict échoue
+python -m pf_spells.build_vues         # vue jointe - hors ligne, dérivée
 ```
+
+Les quatre derniers ont une entrée unique, garde d'entrée comprise :
+`python -m pf_spells.cli` (`prepare-prompts`, `enrich`, `validate-enrich`,
+`build-vues`). Procédures de réglage et de correction : **`docs/enrichissement.md`**.
 
 `cache/html/` est **committé** : relancées, 03 et 06 lisent le cache et ne refont
 aucune requête — d'où la correction d'un parseur sans retoucher au wiki. Tests :
@@ -92,7 +108,12 @@ S3. Dépense bornée *par construction* : plafond d'appels, reprise sur `hash_so
 vérifiée avant l'appel, confirmation au-delà de 100 enregistrements (`--oui` hors
 terminal), coupe-circuit, `--estimer-seulement`. Le bloc système, identique pour les
 2070 sorts, est ce que le prompt caching amortit (88 % de l'entrée) ; zéro lecture de
-cache = coût doublé. Tout le reste est hors ligne.
+cache = coût doublé, et le cache a un plancher de 4096 tokens sous lequel il échoue
+**en silence**. Jeton : `AWS_BEARER_TOKEN_BEDROCK`, **variable d'environnement
+uniquement** — jamais dans le dépôt, `.env` est gitignoré et aucun module ne le lit.
+**Vérifier le plafond de dépense (`--estimer-seulement`) avant toute passe
+complète.** Ces quatre modules sont les seules exceptions : tout le reste, étage 10
+et vues compris, est hors ligne.
 
 ## 8. `data/sorts/*.json` est un artefact de machine — le pipeline fait foi
 
@@ -111,10 +132,82 @@ cache = coût doublé. Tout le reste est hors ligne.
 | Abréviations hors des 19 classes (`Réd`, …) | normales dans `niveaux`, listées dans `reports/08_enrich.md` |
 | Concordance liste ↔ page | 100 % des paires comparables ; divergences **constatées, jamais corrigées** |
 
-## 10. Interdictions de style
+## 10. Enrichissement LLM — `data/enrichissements/` et la vue jointe
+
+- **Arbre parallèle, entièrement régénérable**, joint par `id` et rien d'autre ;
+  `data/sorts/` n'est jamais touché. 16 clés closes, aucune omise.
+- **Aucun verrou humain, délibérément** : `verifie_par_humain` n'existe pas, le
+  schéma refuse une 17ᵉ clé — se déclarer relu rend *invalide*, pas exempté. Une
+  retouche à la main **sera écrasée** : corriger la liste close ou le prompt, ou
+  ré-interroger (`enrich --only <id> --force`, qui **repaie**). La reprise vérifie
+  `hash_source` et `version_prompt` avant l'appel ; `--force` seul repaie.
+- **`data/vues/sorts_enrichis/` est DÉRIVÉ : jamais édité à la main.** Idempotent à
+  l'octet. `sans_enrichissement` (non couvert) ≠ `enrichissement_invalide` (couvert,
+  réponse rejetée) : deux statuts, jamais confondus.
+- **`preuves` = le contrôle anti-confabulation** : sous-chaîne littérale du source,
+  vérifiée à l'étage 10. Seul pli toléré : `’` (U+2019) contre `'` — ne pas
+  l'élargir pour faire passer un rejet.
+- **Seuil sur `notes_ambiguite`, à 50 % depuis le 2026-07-31** : au-delà on élargit
+  les listes closes et on coupe une version, **on ne desserre pas le seuil pour
+  passer au vert**. Il a été porté de 5 % à 50 % une fois, par arbitrage humain et
+  après relecture des 950 notes une à une — pas pour faire taire l'alerte : 891 des
+  950 étaient de la glose sur un choix valide (`docs/enrichissement.md` § 4.1). Le
+  prix en est écrit dans `SEUIL_AMBIGUITE` : à 50 % la mesure ne détecte plus une
+  régression avant que le taux ne double. Un taux de rejet qui ne bouge pas quand on
+  durcit l'instruction accuse les listes, pas le prompt.
+- Détail : `pf-enrichment-conventions`. Procédures : `docs/enrichissement.md`.
+
+## 11. Interface web — `web/`, un site qui est une fonction du dépôt
+
+Next.js App Router, TypeScript, Tailwind, `output: 'export'` : **aucune base,
+aucune route d'API, rien à l'exécution**. Le site est une fonction pure du dépôt,
+et `output: 'export'` le rend structurel — une dépendance serveur accidentelle
+devient une erreur de build, pas une fonction déployée que personne n'a voulue.
+Si le déploiement réclame un secret, c'est le symptôme, pas la configuration.
+
+- **`web/public/data/` est DÉRIVÉ et committé** : `index.json` (2070 sorts,
+  82 kB gzip), `alias.json`, `sorts/<slug>.json`. Le déploiement ne dépend donc
+  pas de Python. Une retouche à la main **sera écrasée** — corriger `data/`, puis
+  réexporter. Le seul fichier de `web/` édité à la main côté données est
+  `web/data_sources/alias_manuel.tsv`.
+- **Le niveau est relatif à la classe, toujours.** `niv` est une table
+  classe→niveau, jamais un scalaire : un sort est de niveau 2 *pour le barde* et 3
+  *pour le magicien*, « le » niveau d'un sort n'existe pas. Tout nombre affiché
+  porte la classe à laquelle il appartient ; aucun en-tête « Niveau » nu. Le
+  niveau **0 est réel** (les oraisons), donc une absence est un tiret cadratin,
+  jamais un 0. `check_data_contract.ts` échoue sur un `niv` scalaire.
+- **Le slug est l'URL publique.** `/sorts/<slug>/` vient de l'algorithme § 4 : le
+  changer casse des liens externes et n'est pas une opération de confort. Les
+  favoris tiennent des `id`, pas des slugs, pour cette raison exactement.
+- L'état des filtres vit dans l'URL et **nulle part ailleurs** — pas de `useState`
+  parallèle qui puisse diverger. Le lien de retour vers pathfinder-fr.org est un
+  engagement, pas une décoration : il est sur chaque fiche et dans le pied de page.
+
+```
+npm run data:export     # corpus -> web/public/data/ + contrat  (hors ligne)
+npm run data:derive     # échoue si le corpus a changé sans réexport
+npm run web:test        # vitest + eslint + tsc dans web/
+npm run web:build       # next build -> web/out/ (2070 pages, ~2 min)
+npm run web:verifier    # budgets bloquants + axe-core sur 4 routes
+npm run verifier:tout   # la chaîne complète, dans l'ordre où la CI la lance
+```
+
+Budgets **bloquants**, jamais des avertissements : `index.json` < 400 kB gzip
+(à 82), JS client initial < 200 kB gzip par route (navigation à **192,5 kB**, la
+plus lourde des quatre : ~148 kB y sont le framework, donc la marge réelle sur le
+code applicatif est mince — le moteur de recherche est chargé à la demande pour
+cette raison), et pages générées == `|index.sorts|`.
+`web/out/` n'est pas committé. Déploiement Vercel : racine `web/`, `web/vercel.json`,
+`immutable` sur `/_next/static/` et `/fonts/` mais **pas** sur `/data/*.json`, dont
+l'URL est stable d'un export au suivant.
+
+## 12. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.
 - Python 3.11, `from __future__ import annotations`, types annotés partout ;
   identifiants français pour le domaine, docstrings et commentaires en anglais
   expliquant **pourquoi**, pas quoi.
+- Côté `web/` : TypeScript strict, aucun `any`, aucune couleur en dur hors
+  `lib/design/tokens.ts`, vocabulaire d'interface figé dans `MOTS` — un seul verbe
+  d'un bout à l'autre.

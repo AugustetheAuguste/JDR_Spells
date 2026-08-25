@@ -1,0 +1,110 @@
+{
+  "id": "pulsation-synaptique",
+  "nom": "Pulsation synaptique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pulsation%20synaptique.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "9 m",
+  "cible": "étendue de 9 m de rayon centrée sur le lanceur",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage émet une pulsation mentale qui étourdit toutes les créatures à portée de ce hurlement psychique pendant 1 round.",
+  "description_html": "<hr/>\nLe personnage émet une pulsation mentale qui <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdit</a> toutes les créatures à portée de ce hurlement psychique pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Pulsation synaptique suprême",
+      "id": "pulsation-synaptique-supreme",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Hyp": 4,
+        "Psy": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V",
+      "portee": "9 m",
+      "cible": "étendue de 9 m de rayon centrée sur le lanceur",
+      "duree": "1d4 rounds, voir texte",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Le personnage émet une pulsation mentale qui étourdit toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds. Sur un jet de sauvegarde réussi, la cible est seulement fiévreuse pendant 1 round.",
+      "description_html": "<hr/>\nLe personnage émet une pulsation mentale qui <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdit</a> toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds. Sur un jet de sauvegarde réussi, la cible est seulement <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fiévreux\" title=\"Les états préjudiciables\">fiévreuse</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pulsation%20synaptique.ashx",
+    "cache_fichier": "cache/html/0493d8eec57fcbbdcdd828f3a159048d774d9618.html",
+    "recupere_le": "2026-07-29T07:45:18.422144+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "pulsation-synaptique",
+    "resume_court": "Une pulsation mentale étourdit toutes les créatures dans une zone de 9 m autour du lanceur.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "étourdit toutes les créatures à portée de ce hurlement psychique pendant 1 round"
+      ],
+      "cible_typique": "étendue de 9 m de rayon centrée sur le lanceur"
+    },
+    "notes_ambiguite": null,
+    "slug": "pulsation-synaptique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:10+00:00",
+    "hash_source": "649397341f49738ba2075cc0a546c4d51e84c7fd83b0e90ab66cd8a4eaa72c81"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9e549eaa75e16f0016dfe4790c252a93311b1ead6e2c843f06f48ef786146862",
+  "hash_vue": "ab2f65dca20dd0758f0f763bf5bc36be01724c7e39525fb4dcd08b9af045c469"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "blocage-cognitif",
+  "nom": "Blocage cognitif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blocage%20cognitif.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 2,
+    "Méd": 2,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un blocage mental dans l’esprit de sa cible, entravant son processus d’incantation mentale et l’obligeant à ajouter une composante intellectuelle à ses sorts et pouvoirs magiques. Cela vient en plus des autres composantes du sort et ne remplace pas la composante verbale. Les pouvoirs magiques exigent cette composante intellectuelle, alors même qu’ils ne demandent habituellement pas de composante.\nComme d’habitude, la composante intellectuelle augmente le DD d’un éventuel test de concentration de la cible de 10, à moins qu’elle ne dépense une action de mouvement pour concentrer son esprit sur la composante intellectuelle.",
+  "description_html": "<br/><br/>Le personnage crée un blocage mental dans l’esprit de sa cible, entravant son processus d’incantation mentale et l’obligeant à ajouter une <a class=\"pagelink\" href=\"Pathfinder-RPG.La%20magie%20psychique.ashx#COMPOSANTEINTELLECTUELLE\" title=\"La magie psychique\">composante intellectuelle</a> à ses sorts et pouvoirs magiques. Cela vient en plus des autres composantes du sort et ne remplace pas la <a class=\"pagelink\" href=\"Pathfinder-RPG.composantes.ashx\" title=\"composantes\">composante verbale</a>. Les pouvoirs magiques exigent cette <a class=\"pagelink\" href=\"Pathfinder-RPG.La%20magie%20psychique.ashx#COMPOSANTEINTELLECTUELLE\" title=\"La magie psychique\">composante intellectuelle</a>, alors même qu’ils ne demandent habituellement pas de composante.<br/><br/>Comme d’habitude, la <a class=\"pagelink\" href=\"Pathfinder-RPG.La%20magie%20psychique.ashx#COMPOSANTEINTELLECTUELLE\" title=\"La magie psychique\">composante intellectuelle</a> augmente le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> d’un éventuel test de concentration de la cible de 10, à moins qu’elle ne dépense une action de mouvement pour concentrer son esprit sur la composante intellectuelle.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blocage%20cognitif.ashx",
+    "cache_fichier": "cache/html/b884a6ac966c957420cb438a490befcd964c1b84.html",
+    "recupere_le": "2026-07-28T22:43:59.214201+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "blocage-cognitif",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blocage%20cognitif.ashx",
+  "niveaux_par_classe": {
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "blocage-cognitif",
+    "resume_court": "Entrave l'incantation mentale de la cible en lui imposant une composante intellectuelle supplémentaire.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "blocage-cognitif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:53+00:00",
+    "hash_source": "75c5ba5dbcde118c1cacfd188a0db2c6d3e199ecbd8fd0728b0b31372a94b084"
+  }
+}

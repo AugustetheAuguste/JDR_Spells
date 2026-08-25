@@ -1,0 +1,120 @@
+{
+  "id": "nodule-explosif",
+  "nom": "Nodule explosif",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nodule%20explosif.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Méd": 3,
+    "Occ": 2,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "1 objet touché pesant moins de 5 kg",
+  "duree": "permanente jusqu’à déchargement (T)",
+  "jet_de_sauvegarde": "Volonté, partiel (voir texte)",
+  "resistance_magie": "non",
+  "description": "Le personnage imprègne un objet d’énergie psychique. Le nodule explosif provoque une explosion mentale dès qu’une créature dotée d’un esprit touche l’objet, lui infligeant 6d6 points de dégâts et la rendant chancelante pendant 1 minute. Un jet de sauvegarde réussi réduit les dégâts de moitié et annule le chancellement.\nLes pièges magiques comme celui-ci sont difficiles à repérer et à désamorcer. Un personnage disposant du pouvoir de classe recherche de pièges peut utiliser Sabotage pour désactiver le nodule explosif. Le DD des tests de Perception pour repérer le nodule et de Sabotage pour le désamorcer sont tous deux de 25 + niveau du sort. De plus, une créature disposant de l’extension de compétence occulte lecture d'auras a droit au même test de Perception pour repérer le nodule.",
+  "description_html": "<br/><br/>Le personnage imprègne un objet d’énergie psychique. Le nodule explosif provoque une explosion mentale dès qu’une créature dotée d’un esprit touche l’objet, lui infligeant 6d6 points de dégâts et la rendant <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant\" title=\"Les états préjudiciables\">chancelante</a> pendant 1 minute. Un jet de sauvegarde réussi réduit les dégâts de moitié et annule le chancellement.<br/>\nLes pièges magiques comme celui-ci sont difficiles à repérer et à désamorcer. Un personnage disposant du pouvoir de classe recherche de pièges peut utiliser <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour désactiver le nodule explosif. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour repérer le nodule et de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour le désamorcer sont tous deux de 25 + niveau du sort. De plus, une créature disposant de l’extension de compétence occulte <a class=\"pagelink\" href=\"Pathfinder-RPG.Extensions%20de%20comp%c3%a9tences%20occultes.ashx#LECTUREDAURAS\" title=\"Extensions de compétences occultes\">lecture d'auras</a> a droit au même test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour repérer le nodule.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nodule%20explosif.ashx",
+    "cache_fichier": "cache/html/669a1b1974e7bc22954b205595eb204ab2fe9685.html",
+    "recupere_le": "2026-07-28T23:01:45.832467+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "nodule-explosif",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nodule%20explosif.ashx",
+  "niveaux_par_classe": {
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "nodule-explosif",
+    "resume_court": "Un objet piégé qui explose mentalement au contact, infligeant des dégâts et rendant chancelant.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "force",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "6d6 points de dégâts",
+      "condition_infligee": [
+        "la rendant chancelante pendant 1 minute"
+      ],
+      "cible_typique": "1 objet touché pesant moins de 5 kg"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé dans le texte. Le descripteur « effet mental » et la mention « explosion mentale » suggèrent une énergie psychique, classée ici comme force faute de type spécifique dans la liste.",
+    "slug": "nodule-explosif",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:24+00:00",
+    "hash_source": "1d214e79d7f136c381446d6c259952f6120b7dd723c76ebe48776698ab00a159"
+  }
+}

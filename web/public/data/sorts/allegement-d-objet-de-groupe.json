@@ -1,0 +1,117 @@
+{
+  "id": "allegement-d-objet-de-groupe",
+  "nom": "Allègement d'objet de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.All%c3%a8gement%20dobjet%20de%20groupe.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 5,
+    "ConU": 5,
+    "Ens/Mag": 5,
+    "Magus": 5,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, M (duvet d’oie)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "plusieurs objets de 28 litres/niveau, qui ne doivent pas être éloignés de plus de 9 mètres les uns des autres",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Ce sort fonctionne comme allègement d’objet, excepté qu’il affecte un nombre d’objets égal à la moitié du niveau de lanceur de sorts du personnage.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.all%c3%a8gement%20dobjet.ashx\" title=\"Allègement d'objet\">allègement d’objet</a></i>, excepté qu’il affecte un nombre d’objets égal à la moitié du <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> du personnage.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.All%c3%a8gement%20dobjet%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/3d150c780d494d580cdb68b588fe98bfa40ae14b.html",
+    "recupere_le": "2026-07-28T22:40:21.391357+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "allegement-d-objet-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.All%c3%a8gement%20dobjet%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 5
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 5
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "allegement-d-objet-de-groupe",
+    "resume_court": "Réduit le poids de plusieurs objets proches de moitié du niveau du lanceur.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "utilitaire",
+      "exploration"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "plusieurs objets de 28 litres/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "allegement-d-objet-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:17+00:00",
+    "hash_source": "9a11f2a425e8e02846958062bd2b46b8fb7d44d921741c788937401acd580d39"
+  }
+}

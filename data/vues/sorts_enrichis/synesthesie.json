@@ -1,0 +1,111 @@
+{
+  "id": "synesthesie",
+  "nom": "Synesthésie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Synesth%c3%a9sie.ashx",
+  "ecole": "Illusion (fantasme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature vivante",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage stimule à l’excès les sens de la cible, à tel point qu’ils interfèrent les uns avec les autres. Tant qu’une créature est sous l’effet de ce sort, les informations sensorielles sont traitées par les mauvais sens, les bruits se traduisant par exemple par des explosions de couleurs tandis que les odeurs se transcrivent sous forme de sons, etc. La créature affectée se déplace à la moitié de sa vitesse, a 20 % de chances de rater ses attaques et subit un malus de –4 à la CA, aux tests de compétence et aux jets de Réflexes. Tant que la cible est affectée, pour lancer un sort, elle doit réussir un test de concentration d’un DD égal au DD du jet de sauvegarde contre la synesthésie + niveau du sort désiré.\nDe plus, la créature affectée est considérée comme distraite vis-à-vis des tests de Perception. Les effets qui annulent ou réduisent le camouflage n’affectent pas les chances de rater liées à la synesthésie.",
+  "description_html": "<hr/>\nLe personnage stimule à l’excès les sens de la cible, à tel point qu’ils interfèrent les uns avec les autres. Tant qu’une créature est sous l’effet de ce sort, les informations sensorielles sont traitées par les mauvais sens, les bruits se traduisant par exemple par des explosions de couleurs tandis que les odeurs se transcrivent sous forme de sons, etc. La créature affectée se déplace à la moitié de sa vitesse, a 20 % de chances de rater ses attaques et subit un malus de –4 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>, aux tests de compétence et aux jets de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a>. Tant que la cible est affectée, pour lancer un sort, elle doit réussir un <a class=\"pagelink\" href=\"Pathfinder-RPG.lancer%20des%20sorts.ashx#CONCENTRATION\" title=\"Lancer des sorts\">test de concentration</a> d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du jet de sauvegarde contre la synesthésie + niveau du sort désiré.<br/><br/>De plus, la créature affectée est considérée comme distraite vis-à-vis des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a>. Les effets qui annulent ou réduisent le camouflage n’affectent pas les chances de rater liées à la synesthésie.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Synesthésie de groupe",
+      "id": "synesthesie-de-groupe",
+      "ecole": "Illusion (fantasme)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Hyp": 5,
+        "Psy": 7
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "moyenne (30 m + 3 m/niveau)",
+      "cible": "1 créature vivante ou plus, toutes devant se trouver à 9 m ou moins les unes des autres",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "En dehors des modifications indiquées ci-dessus, ce sort fonctionne comme synesthésie.",
+      "description_html": "<hr/>\nEn dehors des modifications indiquées ci-dessus, ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.synesth%c3%a9sie.ashx\" title=\"Synesthésie\">synesthésie</a></i>.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Synesth%c3%a9sie.ashx",
+    "cache_fichier": "cache/html/b8ca08d7f220db12e9e1ce06f126b5eb00e00eb3.html",
+    "recupere_le": "2026-07-29T07:41:55.618900+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "synesthesie",
+    "resume_court": "La cible subit une confusion sensorielle qui ralentit ses mouvements, dégrade sa défense et ses attaques.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "confusion_ou_desorientation",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La créature affectée se déplace à la moitié de sa vitesse"
+      ],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": "Le sort inflige plusieurs malus (–4 à la CA, aux tests de compétence, aux jets de Réflexes, 20 % de chances de rater les attaques) mais seul le ralentissement constitue une condition nommée de la liste. La confusion sensorielle est représentée par le tag confusion_ou_desorientation plutôt que par une condition spécifique.",
+    "slug": "synesthesie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:15+00:00",
+    "hash_source": "fc5f09d85eae5f8a862a9f92f6e954379dfe84e691d8ae91442187cd6a1db7c9"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b67cb65cf9b550a0dc5dc926d6545454617f4eb5ff59643439b07aa16873e517",
+  "hash_vue": "b7c5a4b5c72ef2ff426c409a21ea199b7e3d3f9c5c87265c6d37c705cf11aff6"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "contagion",
+  "nom": "Contagion",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contagion.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Mal",
+    "maladie"
+  ],
+  "niveaux": {
+    "Apal": 3,
+    "Dru": 3,
+    "Ens/Mag": 4,
+    "Prê": 3,
+    "San": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le sujet contracte une maladie tirée de la liste suivante : bouille-crâne, mal aveuglant (anciennement croupissure), fièvre des marais, fièvre gloussante, lèpre, mal rouge, mort vaseuse, peste bubonique, tremblante.\nCette maladie le frappe sur-le-champ, sans la moindre période d’incubation. Utilisez la fréquence et le DD des maladies indiquées pour déterminer leurs effets. Pour plus d’informations sur ces maladies, consultez la section \"Les maladies\".",
+  "description_html": "<br/><br/>Le sujet contracte une <a class=\"pagelink\" href=\"Pathfinder-RPG.maladies.ashx\" title=\"Les maladies\">maladie</a> tirée de la liste suivante : bouille-crâne, mal aveuglant (<i>anciennement croupissure</i>), fièvre des marais, fièvre gloussante, lèpre, mal rouge, mort vaseuse, peste bubonique, tremblante.<br/><br/>Cette <a class=\"pagelink\" href=\"Pathfinder-RPG.maladies.ashx\" title=\"Les maladies\">maladie</a> le frappe sur-le-champ, sans la moindre période d’incubation. Utilisez la fréquence et le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des maladies indiquées pour déterminer leurs effets. Pour plus d’informations sur ces <a class=\"pagelink\" href=\"Pathfinder-RPG.maladies.ashx\" title=\"Les maladies\">maladies</a>, consultez la section \"<a class=\"pagelink\" href=\"Pathfinder-RPG.maladies.ashx\" title=\"Les maladies\">Les maladies</a>\".<br/><br/>",
+  "mythique": {
+    "description": "La cible affectée est hautement contagieuse. Les créatures qu’elle touche et celles qui la touchent avec leurs armes naturelles ou leurs coups à mains nues doivent réussir leur jet de sauvegarde pour ne pas contracter la maladie. Le DD du jet de sauvegarde pour ces cibles est égal à celui du sort -4. La cible ne peut transmettre cette maladie au personnage.\nAmplifié (7ème). Si le personnage dépense cinq utilisations de pouvoir mythique, le sort cible toutes les créatures vivantes dans un rayon de 1,5 kilomètre. Le personnage peut sélectionner une créature par niveau de lanceur de sorts dans sa ligne de mire : ces créatures ne sont pas affectées par le sort.",
+    "description_html": "La cible affectée est hautement contagieuse. Les créatures qu’elle touche et celles qui la touchent avec leurs armes naturelles ou leurs coups à mains nues doivent réussir leur jet de sauvegarde pour ne pas contracter la maladie. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du jet de sauvegarde pour ces cibles est égal à celui du sort -4. La cible ne peut transmettre cette maladie au personnage.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (7ème).</b> Si le personnage dépense cinq utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, le sort cible toutes les créatures vivantes dans un rayon de 1,5 kilomètre. Le personnage peut sélectionner une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> dans sa ligne de mire : ces créatures ne sont pas affectées par le sort."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contagion.ashx",
+    "cache_fichier": "cache/html/cf0f57de5c3f9d7ebbbe1a4e39ed80d819ec3658.html",
+    "recupere_le": "2026-07-28T22:47:36.921349+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contagion",
+    "resume_court": "Le lanceur inflige une maladie grave à une créature touchée, qui prend effet immédiatement.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_instantanee",
+      "resistance_a_la_magie",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort inflige une maladie sans dégâts directs ni condition instantanée nommée dans la liste fermée. Les maladies produisent des effets durables mais ne correspondent pas aux conditions énumérées (aveugle, étourdi, etc.). Le tag 'effet_mental' est discutable : les maladies relèvent plutôt de l'affaiblissement physique, mais aucun tag ne couvre explicitement les maladies. J'ai retenu 'effet_mental' faute de mieux, bien que le texte ne le justifie pas directement.",
+    "slug": "contagion",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:22+00:00",
+    "hash_source": "e8a9495ff0d5cda2b133e7c1938632bd230a145eddb412cc090eb78599cba4c3"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0d3893f2c6a68af56496379f8fb36efb4485604588aea9de78c045778b1ee960",
+  "hash_vue": "429748ad1fc6c14dcb787c0868db4d62c2c6cbf2e6a60744bdc713d800c05aef"
+}

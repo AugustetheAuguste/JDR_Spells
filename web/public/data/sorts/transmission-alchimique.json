@@ -1,0 +1,76 @@
+{
+  "id": "transmission-alchimique",
+  "nom": "Transmission alchimique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmission%20alchimique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 round",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Cet extrait fait émaner un éclat pâle de la bouche du lanceur de sorts. S'il consomme une potion ou un élixir dans le round qui suit l'absorption de cet extrait, il peut le recracher dans un récipient par une action libre. Il bénéficie alors de tous les avantages de la potion ou de l'élixir mais ce dernier n'est pas consommé. Le personnage bénéficie des effets d'une potion ou d'un élixir seulement par utilisation de cet extrait.",
+  "description_html": "<br/><br/>Cet <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAIT\" title=\"L'alchimiste\">extrait</a> fait émaner un éclat pâle de la bouche du lanceur de sorts. S'il consomme une <a class=\"pagelink\" href=\"Pathfinder-RPG.potions%20magiques.ashx\" title=\"Les potions magiques\">potion</a> ou un élixir dans le <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> qui suit l'absorption de cet <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAIT\" title=\"L'alchimiste\">extrait</a>, il peut le recracher dans un récipient par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>. Il bénéficie alors de tous les avantages de la <a class=\"pagelink\" href=\"Pathfinder-RPG.potions%20magiques.ashx\" title=\"Les potions magiques\">potion</a> ou de l'élixir mais ce dernier n'est pas consommé. Le personnage bénéficie des effets d'une <a class=\"pagelink\" href=\"Pathfinder-RPG.potions%20magiques.ashx\" title=\"Les potions magiques\">potion</a> ou d'un élixir seulement par utilisation de cet <a class=\"pagelink\" href=\"Pathfinder-RPG.alchimiste.ashx#EXTRAIT\" title=\"L'alchimiste\">extrait</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmission%20alchimique.ashx",
+    "cache_fichier": "cache/html/44b65c564ecbc9e6fdfe9487168eab28d85b9e5d.html",
+    "recupere_le": "2026-07-29T07:43:16.296043+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "transmission-alchimique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmission%20alchimique.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "transmission-alchimique",
+    "resume_court": "Le lanceur peut consommer une potion et la recracher sans la consommer, en bénéficiant quand même.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_instantanee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort modifie la façon dont le lanceur consomme les potions (transformation du processus), mais ne produit pas d'effet physique direct. La durée est 1 round, mais l'effet utile (recracher sans consommer) est instantané une fois la potion absorbée. Classé en utilitaire car le sort rend un service pratique hors combat sans entrer dans les autres catégories.",
+    "slug": "transmission-alchimique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:48+00:00",
+    "hash_source": "2ff720cbf596599f75b9d929df2eeb2be8542d28affc2347fd6120a91cc4a1df"
+  }
+}

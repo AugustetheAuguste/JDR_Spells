@@ -1,0 +1,105 @@
+{
+  "id": "guide",
+  "nom": "Guide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guide.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 2,
+    "Prê": 3,
+    "Psy": 3,
+    "Rôd": 2,
+    "Sor": 3
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G, M (une bobine de fil ou une ficelle)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 jour/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Quand le personnage lance ce sort, il forge un lien avec son environnement. Pendant toute la durée du sort, il sera en permanence capable de déterminer approximativement, par une action simple, la distance qui le sépare de cet endroit et la direction dans laquelle il doit avancer pour le rejoindre. Le sort ne fonctionne plus si le personnage change de plan. La zone est considérée comme « très familière » pour les sorts de téléportation et autres. Le personnage ne peut se lier qu'à un endroit à la fois. S'il lance son sort dans un autre lieu, il ne pourra plus localiser le premier.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il forge un lien avec son environnement. Pendant toute la durée du sort, il sera en permanence capable de déterminer approximativement, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a>, la distance qui le sépare de cet endroit et la direction dans laquelle il doit avancer pour le rejoindre. Le sort ne fonctionne plus si le personnage change de <a class=\"pagelink\" href=\"Pathfinder-RPG.plans.ashx\" title=\"Les plans\">plan</a>. La zone est considérée comme « <i>très familière</i> » pour les sorts de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> et autres. Le personnage ne peut se lier qu'à un endroit à la fois. S'il lance son sort dans un autre lieu, il ne pourra plus localiser le premier.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guide.ashx",
+    "cache_fichier": "cache/html/7e9077dd5096667173ae2939c29cb6e5ee8544a1.html",
+    "recupere_le": "2026-07-28T22:55:53.462303+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "guide",
+    "resume_court": "Le lanceur se lie à un lieu et peut toujours en déterminer la distance et la direction.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "duree_prolongee",
+      "perception_amelioree"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "guide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:01+00:00",
+    "hash_source": "b60c72676faf6a0bdeaf1f74b8e8e16b3c5d2ab2f5d29b8f31df262c5d2de409"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6aaf6fa3b3873e33568a0d3013ba3cc470a65ecb12d1a527430c888746c95c5b",
+  "hash_vue": "02f01f63b85860bfe5d66f358b2d90cd7a4c725e806245214ae6f96928cfe3e1"
+}

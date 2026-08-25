@@ -1,0 +1,113 @@
+{
+  "id": "charge-telekinetique",
+  "nom": "Charge télékinétique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+  "ecole": "évocation (force)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "San": 4,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature consentante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage utilise la télékinésie pour lancer un allié à travers le champ de bataille, n’importe où dans les limites du sort. Tant que l’allié bouge, il vole au ras du sol, à moins que vous n’en décidiez autrement. Ce déplacement provoque les attaques d’opportunité habituelles mais le personnage peut soulever son allié au-dessus des obstacles ou hors de portée des ennemis, tant qu’il ne le sort pas des limites du sort. Si votre allié se trouve adjacent à un adversaire quand il atterrit, il peut dépenser une action immédiate pour faire un jet d’attaque avec un bonus de +2.",
+  "description_html": "<br/><br/>Le personnage utilise la télékinésie pour lancer un allié à travers le champ de bataille, n’importe où dans les limites du sort. Tant que l’allié bouge, il vole au ras du sol, à moins que vous n’en décidiez autrement. Ce déplacement provoque les <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaques d’opportunité</a> habituelles mais le personnage peut soulever son allié au-dessus des obstacles ou hors de portée des ennemis, tant qu’il ne le sort pas des limites du sort. Si votre allié se trouve adjacent à un adversaire quand il atterrit, il peut dépenser une action immédiate pour faire un jet d’attaque\navec un bonus de +2.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+    "cache_fichier": "cache/html/cadaddcda1ec5db3d56110e3a340915b7329af9b.html",
+    "recupere_le": "2026-07-28T22:46:21.551654+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "charge-telekinetique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 4
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "charge-telekinetique",
+    "resume_court": "Le lanceur propulse un allié consentant à travers le champ de bataille via la télékinésie.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "amelioration_de_capacite",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature consentante"
+    },
+    "notes_ambiguite": "Le sort offre un bonus d'attaque (+2) à l'allié s'il atterrit adjacent à un adversaire, mais ce bonus est optionnel et conditionnel, non un effet principal du sort. La catégorie principale est `deplacement` car l'effet central est le transport de l'allié à travers le champ de bataille.",
+    "slug": "charge-telekinetique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:47+00:00",
+    "hash_source": "5213fc54d89822e1ec4303c321c8264456b81d39b351880134d7aa7684fd8c5e"
+  }
+}

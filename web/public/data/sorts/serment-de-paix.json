@@ -1,0 +1,81 @@
+{
+  "id": "serment-de-paix",
+  "nom": "Serment de paix",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serment%20de%20paix.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Pour demander l'aide de son dieu, le personnage fait un serment de paix temporaire qui lui accorde des défenses supérieures mais l'empêche d'attaquer pendant toute la durée du sort. Tant qu'il est soumis aux effets du sort, il gagne un bonus sacré de +5 à la CA et aux jets de sauvegarde ainsi qu'une RD 10/Mal. S'il attaque, directement ou non, ou s'il fait montre de la moindre hostilité envers une créature, le sort prend fin.",
+  "description_html": "<br/><br/>Pour demander l'aide de son dieu, le personnage fait un serment de paix temporaire qui lui accorde des défenses supérieures mais l'empêche d'attaquer pendant toute la durée du sort. Tant qu'il est soumis aux effets du sort, il gagne un bonus sacré de +5 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> ainsi qu'une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a> 10/Mal. S'il attaque, directement ou non, ou s'il fait montre de la moindre hostilité envers une créature, le sort prend fin.<br/><br/>",
+  "mythique": {
+    "description": "Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue des tests de Premiers secours, lorsqu’il lance des sorts ciblés inoffensifs ou lorsqu’il utilise des effets d’énergie positive pour soigner des créatures vivantes.",
+    "description_html": "Le personnage ne provoque pas d’attaque d’opportunité lorsqu’il effectue des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Premiers%20secours.ashx\" title=\"Premiers secours\">Premiers secours</a>, lorsqu’il lance des sorts ciblés inoffensifs ou lorsqu’il utilise des effets d’énergie positive pour soigner des créatures vivantes."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serment%20de%20paix.ashx",
+    "cache_fichier": "cache/html/d2d6f8d80daa1ac2350c9324ca2668498a9e6f57.html",
+    "recupere_le": "2026-07-29T07:40:21.606211+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "serment-de-paix",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serment%20de%20paix.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "serment-de-paix",
+    "resume_court": "Le lanceur gagne +5 à la CA et aux jets de sauvegarde, RD 10/Mal, mais ne peut pas attaquer.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "serment-de-paix",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:34+00:00",
+    "hash_source": "bee5d261bc8b5ef1eb9115b7aad35042fbbbd1f5bd313d8dbfadd843b8da7cb8"
+  }
+}

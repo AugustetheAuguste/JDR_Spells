@@ -1,0 +1,113 @@
+{
+  "id": "boulette",
+  "nom": "Boulette",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boulette.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [],
+  "niveaux": {
+    "Hyp": 1,
+    "Ens/Mag": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un humanoïde",
+  "duree": "concentration + 2 rounds ou jusqu’à déclenchement",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible reçoit un malus de -20 au prochain jet d’attaque ou test nécessitant un jet de d20. Il doit s’agir d’une action que la cible entreprend volontairement à son tour. Ce sort n’affecte pas les créatures qui possèdent plus de 10 DV.",
+  "description_html": "<br/><br/>La cible reçoit un malus de -20 au prochain <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jet d’attaque</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx\" title=\"test de compétence\">test</a> nécessitant un jet de d20. Il doit s’agir d’une action que la cible entreprend volontairement à son tour. Ce sort n’affecte pas les créatures qui possèdent plus de 10 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boulette.ashx",
+    "cache_fichier": "cache/html/c831ecb4dc40a35c998a5aaa09a046c0aa4fe820.html",
+    "recupere_le": "2026-07-28T22:44:39.453032+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "boulette",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boulette.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "boulette",
+    "resume_court": "Impose un malus de -20 au prochain jet d'attaque ou test de la cible.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un humanoïde"
+    },
+    "notes_ambiguite": null,
+    "slug": "boulette",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:10+00:00",
+    "hash_source": "ff8a4336c267193ce0934c9b70e31ab3b9f8ed7230333543b163f3a09137e7cf"
+  }
+}

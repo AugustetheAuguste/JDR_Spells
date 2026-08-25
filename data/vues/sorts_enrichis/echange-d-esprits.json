@@ -1,0 +1,137 @@
+{
+  "id": "echange-d-esprits",
+  "nom": "Échange d'esprits",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20desprits.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Con": 5,
+    "Ens/Mag": 6,
+    "Hyp": 5,
+    "Méd": 3,
+    "Occ": 4,
+    "Psy": 5,
+    "Sor": 6,
+    "Spi": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau)",
+  "cible": "1 créature",
+  "duree": "1 h/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme possession spirituelle mais le personnage échange son esprit avec celui de sa cible. Cette dernière ne partage pas son corps avec le personnage, se retrouvant dans l’impossibilité d’agir, elle gagne le corps du personnage et le contrôle, comme si les deux protagonistes avaient chacun lancé possession spirituelle sur l’autre.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle.ashx\" title=\"La possession\">possession spirituelle</a></i> mais le personnage échange son esprit avec celui de sa cible. Cette dernière ne partage pas son corps avec le personnage, se retrouvant dans l’impossibilité d’agir, elle gagne le corps du personnage et le contrôle, comme si les deux protagonistes avaient chacun lancé <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession%20spirituelle.ashx\" title=\"La possession\">possession spirituelle</a></i> sur l’autre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20desprits.ashx",
+    "cache_fichier": "cache/html/00c1fc85e1394438c44d526b3c4f109739041177.html",
+    "recupere_le": "2026-07-28T22:38:42.361633+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "echange-d-esprits",
+    "resume_court": "Le lanceur échange son esprit avec celui d'une créature, prenant son corps tandis qu'elle prend le sien.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "transformation_du_sujet",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "se retrouvant dans l'impossibilité d'agir"
+      ],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "La cible est effectivement paralysée dans le corps du lanceur (« impossibilité d'agir »), bien que le texte ne nomme pas explicitement cette condition. Le sort affecte aussi le lanceur lui-même, mais la cible typique reste l'ennemi désigné.",
+    "slug": "echange-d-esprits",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:04+00:00",
+    "hash_source": "d3c09ed079cacae32d1d21b087ce4e0a6e4a5107e8e795161b180bc87481ca1a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1897c2f574aa86a336862a49b05fdfec70de3026497fe758cdac5cd404a5eee2",
+  "hash_vue": "716c0c358a75768e1cd4ea2c6d1977aa5fe4cee44b6ef5e5216b7f0be6a976d9"
+}

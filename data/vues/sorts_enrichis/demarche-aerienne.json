@@ -1,0 +1,120 @@
+{
+  "id": "demarche-aerienne",
+  "nom": "Démarche aérienne",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20a%c3%a9rienne.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Dru": 1,
+    "Psy": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Pendant toute la durée du sort, le sujet ignore les effets négatifs dus au terrain difficile et peut même faire un pas de placement de 1,50 mètre (1 c) sur ce type de terrain.",
+  "description_html": "<hr/>\nPendant toute la durée du sort, le sujet ignore les effets négatifs dus au <a class=\"pagelink\" href=\"Pathfinder-RPG.terrain%20difficile.ashx\" title=\"terrain difficile\">terrain difficile</a> et peut même faire un pas de placement de 1,50 mètre (1 <abbr title=\"cases\">c</abbr>) sur ce type de terrain.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Démarche aérienne de groupe",
+      "id": "demarche-aerienne-de-groupe",
+      "ecole": "Transmutation",
+      "descripteurs": [],
+      "niveaux": {
+        "Bard": 3,
+        "Dru": 3,
+        "Psy": 3,
+        "Rôd": 3
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+      "duree": "10 minutes/niveau",
+      "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme démarche aérienne mais il affecte plusieurs créatures.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9marche%20a%c3%a9rienne.ashx\" title=\"Démarche aérienne\">démarche aérienne</a></i> mais il affecte plusieurs créatures.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20a%c3%a9rienne.ashx",
+    "cache_fichier": "cache/html/a14eefa107d818cd01760c9d30b47e3d4ad5531b.html",
+    "recupere_le": "2026-07-28T22:50:20.024815+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "demarche-aerienne",
+    "resume_court": "Le sujet ignore le terrain difficile et peut se déplacer librement dessus pendant 10 minutes par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "demarche-aerienne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:27+00:00",
+    "hash_source": "d0418777d6efd0c36edfb14f1e2181bb8365dd098df135f349b2e17d03959ce5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "1b1adef53a2fa9c957af6e8e3e863ffe2f26e5aa8fde091a3827f01d2a85b7c8",
+  "hash_vue": "491ac88e9c4c1016d836b442828bb8980d142240172717b039fe82a6e3c5ae00"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "bricolage-alchimique",
+  "nom": "Bricolage alchimique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bricolage%20alchimique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Prê": 2,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V,G",
+  "portee": "contact",
+  "cible": "arme à feu ou objet alchimique touché",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts transforme un objet alchimique ou une arme à feu en un autre objet alchimique ou en une autre arme à feu de coût égal ou moindre. Les objets magiques ne sont pas affectés par ce sort. Quand la durée du sort se termine, les objets alchimiques utilisés alors qu’ils étaient transformés sont détruits et ne retrouvent pas un état fonctionnel, tandis que les armes à feu retrouvent leur type d’origine.",
+  "description_html": "<br/><br/>Le lanceur de sorts transforme un objet alchimique ou une <a class=\"pagelink\" href=\"Pathfinder-RPG.Armes%20%c3%a0%20feu.ashx\" title=\"Caractéristiques des armes à feu\">arme à feu</a> en un autre objet alchimique ou en une autre arme à feu de coût égal ou moindre. Les <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx\" title=\"Règles relatives aux objets magiques\">objets magiques</a> ne sont pas affectés par ce sort. Quand la <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DUREE\" title=\"Présentation des sorts\">durée</a> du sort se termine, les objets alchimiques utilisés alors qu’ils étaient transformés sont détruits et ne retrouvent pas un état fonctionnel, tandis que les armes à feu retrouvent leur type d’origine.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles h-rats."
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bricolage%20alchimique.ashx",
+    "cache_fichier": "cache/html/ee8792a572a50205b2af818bf2e326ae04a34f7a.html",
+    "recupere_le": "2026-07-28T22:44:47.784632+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "bricolage-alchimique",
+    "resume_court": "Transforme temporairement un objet alchimique ou une arme à feu en un autre de coût égal ou moindre.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "arme à feu ou objet alchimique touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "bricolage-alchimique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:11+00:00",
+    "hash_source": "7fafd8abe090bcb430e6cf4692f4ecda90546c8aa9a5f7cb4c46455f71de7810"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2c728a152645d92aed8e39357cb8071984203d6365c060569dc38e39108980c4",
+  "hash_vue": "dbcf9d07f0c0df96c741cbd9f77217d60e38a7cb3427e2f5d321ec950513aa17"
+}

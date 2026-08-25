@@ -1,0 +1,92 @@
+{
+  "id": "venin-conditionne",
+  "nom": "Venin conditionné",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20conditionn%c3%a9.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Cham": 4,
+    "Ens/Mag": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (herbes utilisées dans l'antitoxine d'une valeur de 100 po)",
+  "portee": "contact",
+  "cible": "une dose de poison ou une créature venimeuse",
+  "duree": "permanente jusqu'à déchargement (T)",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme venin latent, mais le personnage peut énoncer une condition ou des circonstances spécifiques sous lesquelles le temps d'incubation du poison se termine immédiatement, déclenchant ses effets. La condition de déclenchement peut être aussi vague ou aussi détaillée que le personnage le souhaite, mais le déclencheur doit être visuel ou auditif (comme avec bouche magique) ou autrement basé sur un contact physique ou la consommation d'un objet, d'une substance ou d'une créature spécifique. Cette condition de déclenchement peut soit mener à l'incubation immédiate du poison, soit à l'incubation du poison après une période choisie jusqu'à un maximum de 1 round par niveau de lanceur de sorts. Le personnage doit prendre toutes les décisions relatives au déclenchement lorsqu'il lance venin conditionné, et il ne peut pas les modifier par la suite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.venin%20latent.ashx\" title=\"Venin latent\">venin latent</a></i>, mais le personnage peut énoncer une condition ou des circonstances spécifiques sous lesquelles le temps d'incubation du poison se termine immédiatement, déclenchant ses effets. La condition de déclenchement peut être aussi vague ou aussi détaillée que le personnage le souhaite, mais le déclencheur doit être visuel ou auditif (comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.bouche%20magique.ashx\" title=\"Bouche magique\">bouche magique</a></i>) ou autrement basé sur un contact physique ou la consommation d'un objet, d'une substance ou d'une créature spécifique. Cette condition de déclenchement peut soit mener à l'incubation immédiate du poison, soit à l'incubation du poison après une période choisie jusqu'à un maximum de 1 round par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Le personnage doit prendre toutes les décisions relatives au déclenchement lorsqu'il lance <i>venin conditionné</i>, et il ne peut pas les modifier par la suite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20conditionn%c3%a9.ashx",
+    "cache_fichier": "cache/html/1e2037f7cd4cdf75736173f901b877dfdc209aec.html",
+    "recupere_le": "2026-07-29T07:43:52.526456+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "venin-conditionne",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20conditionn%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "venin-conditionne",
+    "resume_court": "Le lanceur applique un poison à déclenchement conditionnel sur une dose ou une créature venimeuse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une dose de poison ou une créature venimeuse"
+    },
+    "notes_ambiguite": "Le sort ne décrit pas directement les dégâts ou conditions du poison lui-même, mais plutôt le mécanisme de déclenchement conditionnel. Les effets réels dépendent du poison appliqué (référence à « venin latent »). La cible peut être un objet (dose de poison) ou une créature (créature venimeuse), ce qui justifie le choix de « objet » comme cible typique la plus pertinente.",
+    "slug": "venin-conditionne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:02+00:00",
+    "hash_source": "6ee7dded651f4ff0013e4ba7f102176d36f24821cb7e7ae0108a92cef3542708"
+  }
+}

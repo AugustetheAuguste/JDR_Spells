@@ -1,0 +1,101 @@
+{
+  "id": "poussiere-du-crepuscule",
+  "nom": "Poussière du crépuscule",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poussi%c3%a8re%20du%20cr%c3%a9puscule.ashx",
+  "ecole": "Invocation",
+  "descripteurs": [
+    "obscurité"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (poussière de charbon)",
+  "portee": "intermédiaire (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "créatures et objets dans une étendue de 3 mètres (2 c)",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour annuler (fatigue seulement)",
+  "resistance_magie": "non",
+  "description": "Une pluie de particules noires iridescentes s'accroche aux torches, aux lanternes, aux bâtons éclairants et aux sources de lumière ordinaire similaires et les éteint. Elle dissipe également tout sort de niveau 2 ou moins qui possède le registre de la lumière (comme une dissipation de la magie). Les créatures qui se trouvent dans la zone doivent faire un test de Vigueur ou être fatiguées.",
+  "description_html": "<br/><br/>Une pluie de particules noires iridescentes s'accroche aux torches, aux lanternes, aux bâtons éclairants et aux sources de lumière ordinaire similaires et les éteint. Elle dissipe également tout sort de <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20sort.ashx\" title=\"Niveau de sort\">niveau</a> 2 ou moins qui possède le <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">registre</a> de la lumière (comme une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i>). Les créatures qui se trouvent dans la zone doivent faire un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatiguées</a>.<br/><br/>",
+  "mythique": {
+    "description": "Une créature qui rate son jet de Vigueur contre ce sort doit également réussir un jet de Volonté contre le même DD pour ne pas s’endormir (comme avec le sort sommeil). Les créatures qui réussissent ce jet de sauvegarde sont simplement somnolentes (comme avec le sort berceuse).\nAmplifié. Si le personnage dépense deux utilisations de pouvoir mythique, ajoutez la moitié de son grade au niveau des sorts de lumière que la poussière du crépuscule mythique dissipe.",
+    "description_html": "Une créature qui rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> contre ce sort doit également réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> contre le même <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> pour ne pas s’endormir (comme avec le sort <a class=\"pagelink\" href=\"Pathfinder-RPG.sommeil.ashx\" title=\"Sommeil\">sommeil</a>). Les créatures qui réussissent ce jet de sauvegarde sont simplement somnolentes (comme avec le sort <a class=\"pagelink\" href=\"Pathfinder-RPG.berceuse.ashx\" title=\"Berceuse\">berceuse</a>).<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a>.</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, ajoutez la moitié de son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> au niveau des sorts de lumière que la <a class=\"pagelink\" href=\"Pathfinder-RPG.poussi%c3%a8re%20du%20cr%c3%a9puscule.ashx\" title=\"Poussière du crépuscule\">poussière du crépuscule</a> mythique dissipe."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poussi%c3%a8re%20du%20cr%c3%a9puscule.ashx",
+    "cache_fichier": "cache/html/f86452bad35c26f3d517f9b4399f159d24a5cefc.html",
+    "recupere_le": "2026-07-28T23:04:31.017430+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "poussiere-du-crepuscule",
+    "resume_court": "Une pluie de particules noires éteint les sources de lumière et fatigue les créatures de la zone.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "dissipation_ou_contresort",
+      "terrain_ou_environnement",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "fatigue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Les créatures qui se trouvent dans la zone doivent faire un test de Vigueur ou être fatiguées"
+      ],
+      "cible_typique": "créatures et objets dans une étendue de 3 mètres"
+    },
+    "notes_ambiguite": null,
+    "slug": "poussiere-du-crepuscule",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:37+00:00",
+    "hash_source": "cdebf035d7b12585617325ce68a56771aeab814ee2c9ec52876fa9cf0aa82319"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "53661b2a78e3925e6a6f31992adf176b80d205b175d0a5ed115bdcdeef949007",
+  "hash_vue": "48489c1d4b7650f8b27a0ab24e8cde25f86b3a652278654afa93d3ac14abaa5c"
+}

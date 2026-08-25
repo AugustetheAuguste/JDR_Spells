@@ -1,0 +1,106 @@
+{
+  "id": "flottabilite",
+  "nom": "Flottabilité",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flottabilit%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Cham": 2,
+    "Ens/Mag": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux)",
+  "cible": "un objet ou une créature/niveau, de taille M ou plus petit, chacun ne devant pas se trouver à plus de 6 m des autres",
+  "duree": "jusqu'à 1 round/niveau (cf. texte)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif) ou Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "La cible affectée acquiert une incroyable flottabilité : elle flotte naturellement sur toute étendue d’eau d’au moins 30 centimètres de profondeur. Une créature affectée qui essaye délibérément de s’immerger doit réussir un test de Natation DD 20 tous les rounds pour rester sous l’eau. Si une cible passe au moins 1 round sur la terre ferme, le sort se termine pour elle uniquement.",
+  "description_html": "<br/><br/>La cible affectée acquiert une incroyable flottabilité : elle flotte naturellement sur toute étendue d’eau d’au moins 30 centimètres de profondeur. Une créature affectée qui essaye délibérément de s’immerger doit réussir un test de Natation DD 20 tous les rounds pour rester sous l’eau. Si une cible passe au moins 1 round sur la terre ferme, le sort se termine pour elle uniquement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flottabilit%c3%a9.ashx",
+    "cache_fichier": "cache/html/75c5f20b9000a8c439b2ccbb1e7c89549557f2bb.html",
+    "recupere_le": "2026-07-28T22:53:48.358311+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "flottabilite",
+    "resume_court": "La cible flotte naturellement sur l'eau et doit réussir un test de Natation pour s'immerger.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un objet ou une créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "flottabilite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:13+00:00",
+    "hash_source": "004866984d2c850f3e7c6d2e319be4ca0d70df4c8c385b806748548e36763af2"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9d3c674846fce92c5c489efad78db1eb9a83a2b172711bac4984c8a005676c29",
+  "hash_vue": "a6d24568986ad851ad4e13b0b43cdf2c30ba1431af9bf1ef55ed2774b880d065"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "pulsation-synaptique-supreme",
+  "nom": "Pulsation synaptique suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pulsation%20synaptique%20supr%c3%aame.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 4,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "9 m",
+  "cible": "étendue de 9 m de rayon centrée sur le lanceur",
+  "duree": "1d4 rounds, voir texte",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage émet une pulsation mentale qui étourdit toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds. Sur un jet de sauvegarde réussi, la cible est seulement fiévreuse pendant 1 round.",
+  "description_html": "<hr/>\nLe personnage émet une pulsation mentale qui <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi\" title=\"Les états préjudiciables\">étourdit</a> toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds. Sur un jet de sauvegarde réussi, la cible est seulement <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fiévreux\" title=\"Les états préjudiciables\">fiévreuse</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {
+    "sorts_lies": "Pulsation synaptique"
+  },
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pulsation%20synaptique%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/871e06bf1f463bfd31bf2c39053280510f4d748f.html",
+    "recupere_le": "2026-07-29T07:45:17.489831+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "pulsation-synaptique-supreme",
+    "resume_court": "Une pulsation mentale étourdit les créatures à portée ou les rend fiévreuses si elles réussissent leur sauvegarde.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi",
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "étourdit toutes les créatures à portée de ce hurlement psychique pendant 1d4 rounds",
+        "la cible est seulement fiévreuse pendant 1 round"
+      ],
+      "cible_typique": "étendue de 9 m de rayon centrée sur le lanceur"
+    },
+    "notes_ambiguite": "Le texte emploie « fiévreuse » qui n'existe pas dans la liste des conditions. La condition la plus proche est « secoue » (malus de moral léger, premier degré des effets de peur), mais le texte ne justifie pas explicitement cette interprétation. Cependant, aucune autre condition de la liste ne convient mieux à un effet mental de coercition réduit.",
+    "slug": "pulsation-synaptique-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:11+00:00",
+    "hash_source": "4ef159834a346a9e0c874b19671d8f6b8d6c2112f19bec7c7356cd10a7805480"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cff97a0ab3623e8017a99f9c29a82184b9b2ece91c3a8eafbd8bae08a28b58ba",
+  "hash_vue": "c2fe33c8d539ce34849fea1759a479b5c2b12b37ed241dd60b8ed7c83eb1d366"
+}

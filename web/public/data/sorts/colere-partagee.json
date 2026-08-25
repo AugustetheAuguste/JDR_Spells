@@ -1,0 +1,81 @@
+{
+  "id": "colere-partagee",
+  "nom": "Colère partagée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re%20partag%c3%a9e.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Inq": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une ronce)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu'à une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 minute",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme colère mais permet à plusieurs créatures de bénéficier du bonus dont le personnage dispose contre un adversaire désigné. Tous les sujets de la colère partagée reçoivent des bonus contre la même créature.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.col%c3%a8re.ashx\" title=\"Colère\">colère</a></i> mais permet à plusieurs créatures de bénéficier du bonus dont le personnage dispose contre un adversaire désigné. Tous les sujets de la <i>colère partagée</i> reçoivent des bonus contre la même créature.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re%20partag%c3%a9e.ashx",
+    "cache_fichier": "cache/html/03f93ba26a712192aba5ec18c623b5552e80cdf1.html",
+    "recupere_le": "2026-07-28T22:46:50.836362+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "colere-partagee",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Col%c3%a8re%20partag%c3%a9e.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "colere-partagee",
+    "resume_court": "Plusieurs créatures alliées reçoivent des bonus d'attaque contre un adversaire désigné.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "charme_ou_coercition",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à une créature/niveau"
+    },
+    "notes_ambiguite": "Le texte ne précise pas la nature exacte des bonus (bonus d'attaque, de dégâts, etc.), ni leur valeur numérique. La catégorie « amelioration » est retenue car le sort augmente les capacités des sujets sans viser une menace directe en tant que tel — il les prépare à affronter un adversaire désigné. Le tag « charme_ou_coercition » est inclus car l'école est explicitement « Enchantement (coercition) ».",
+    "slug": "colere-partagee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:03+00:00",
+    "hash_source": "42e83ffa0e67deb881baacbdbcc05862074a0f6a54a2e80862efc47a56bbf020"
+  }
+}

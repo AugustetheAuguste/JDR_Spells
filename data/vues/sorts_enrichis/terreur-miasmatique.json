@@ -1,0 +1,108 @@
+{
+  "id": "terreur-miasmatique",
+  "nom": "Terreur miasmatique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20miasmatique.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Antipal": 2,
+    "Bard": 2,
+    "Hyp": 3,
+    "Inq": 3,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "9 mètres",
+  "cible": "rayonnement en forme de cône",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Un nuage de brume verte répugnante s'échappe de la bouche du personnage et se rassemble autour des créatures dans le cône. Le personnage effectue un unique test d'Intimidation pour démoraliser dans le cadre de l'incantation du sort, et compare le résultat au DD d'Intimidation de chaque adversaire dans la zone d'effet. Il démoralise tous les adversaires dont il atteint ou dépasse le DD.",
+  "description_html": "<br/><br/>Un nuage de brume verte répugnante s'échappe de la bouche du personnage et se rassemble autour des créatures dans le cône. Le personnage effectue un unique test d'<a class=\"pagelink\" href=\"Pathfinder-RPG.Intimidation.ashx\" title=\"Intimidation\">Intimidation</a> pour démoraliser dans le cadre de l'incantation du sort, et compare le résultat au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> d'Intimidation de chaque adversaire dans la zone d'effet. Il démoralise tous les adversaires dont il atteint ou dépasse le DD.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles demi-orques."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20miasmatique.ashx",
+    "cache_fichier": "cache/html/e9da48f0c875cb664bac90879320668188d54cfe.html",
+    "recupere_le": "2026-07-29T07:42:29.693056+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "terreur-miasmatique",
+    "resume_court": "Un nuage de brume verte démoralise les créatures dans un cône via un test d'Intimidation.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "charme_ou_coercition",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Il démoralise tous les adversaires dont il atteint ou dépasse le DD"
+      ],
+      "cible_typique": "rayonnement en forme de cône"
+    },
+    "notes_ambiguite": "Le texte ne nomme pas explicitement la condition « secoue », mais « démoraliser » en Pathfinder 1e inflige cette condition. Le sort affecte une zone (cône) plutôt que des créatures désignées individuellement, d'où la catégorie « controle_de_zone ».",
+    "slug": "terreur-miasmatique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:28+00:00",
+    "hash_source": "06cb5f1af44be906bdbcef30337d9867934d401012ab8585ddb55ae232115ce5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8fe3d1a6189514eda8419f2f5379c1eef06a49caefedf261845ff731769ccb3c",
+  "hash_vue": "e90bf1251de2a8f67d526867bad15db49efbd84fc2b9cac7ff05f9f9f09df10c"
+}

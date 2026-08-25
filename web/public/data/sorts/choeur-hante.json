@@ -1,0 +1,93 @@
+{
+  "id": "choeur-hante",
+  "nom": "Chœur hanté",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ch%c5%93ur%20hant%c3%a9.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "douleur",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "émanation de 9 m",
+  "duree": "concentration +2 rounds",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage crée un chœur spectral et dirige la musique de ses gémissements fantomatiques torturés, ce qui pousse les auditeurs à croire qu’ils souffrent des tourments de la mort. Les chanteurs transparents occupent un cube de 3 mètres de côté mais sont intangibles et n’interfèrent pas physiquement avec les créatures. On ne peut pas les attaquer. Les créatures situées à moins de 9 mètres du chœur éprouvent de violentes douleurs qui leur imposent un malus de -2 aux jets d’attaque, aux tests de compétence et aux tests de caractéristique. Les individus qui quittent la zone conservent ces malus pendant 2 rounds avant que l’illusion ne se dissipe.",
+  "description_html": "<br/><br/>Le personnage crée un chœur spectral et dirige la musique de ses gémissements fantomatiques torturés, ce qui pousse les auditeurs à croire qu’ils souffrent des tourments de la mort. Les chanteurs transparents occupent un cube de 3 mètres de côté mais sont <a class=\"pagelink\" href=\"Pathfinder-RPG.intangible.ashx\" title=\"Intangible\">intangibles</a> et n’interfèrent pas physiquement avec les créatures. On ne peut pas les attaquer. Les créatures situées à moins de 9 mètres du chœur éprouvent de violentes douleurs qui leur imposent un malus de -2 aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20dattaque.ashx\" title=\"jet dattaque\">jets d’attaque</a>, aux <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx\" title=\"test de compétence\">tests de compétence</a> et aux <a class=\"pagelink\" href=\"Pathfinder-RPG.test.ashx\" title=\"test\">tests de caractéristique</a>. Les individus qui quittent la zone conservent ces malus pendant 2 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> avant que l’illusion ne se dissipe.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ch%c5%93ur%20hant%c3%a9.ashx",
+    "cache_fichier": "cache/html/bf28e7d8dda0a14ff5feb9890f98adbe2ba5c1f8.html",
+    "recupere_le": "2026-07-28T22:46:00.981236+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "choeur-hante",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ch%c5%93ur%20hant%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "choeur-hante",
+    "resume_court": "Un chœur spectral inflige des douleurs mentales et un malus de -2 aux créatures proches.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "malus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation de 9 m"
+    },
+    "notes_ambiguite": "Le sort inflige un malus numérique (-2) plutôt qu'une condition listée. Les douleurs sont décrites comme mentales (« croire qu'ils souffrent ») mais produisent un effet mécanique mesurable (malus). Aucune condition de la liste `condition_infligee` ne s'applique strictement : le sujet n'est pas aveugle, étourdi, paralysé, etc., mais subit une pénalité de performance.",
+    "slug": "choeur-hante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:57+00:00",
+    "hash_source": "6dd320131538ca64107ba72bdef6eb9b31a10a714aae9934074c65779d1e92cb"
+  }
+}

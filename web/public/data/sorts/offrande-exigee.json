@@ -1,0 +1,163 @@
+{
+  "id": "offrande-exigee",
+  "nom": "Offrande exigée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Offrande%20exig%c3%a9e.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "AntiPal": 1,
+    "Bard": 2,
+    "Ens/Mag": 2,
+    "Hyp": 1,
+    "Inq": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "1,50 m",
+  "cible": "1 créature",
+  "duree": "instantanée ou 1 round",
+  "jet_de_sauvegarde": "Volonté annule",
+  "resistance_magie": "oui",
+  "description": "Une créature qui rate son jet de sauvegarde dépense une action immédiate pour remettre au personnage l’objet qu’elle tient actuellement en main. Si elle n’a plus d’action immédiate disponible, elle dépense une action de mouvement au début de son prochain tour pour remettre l’objet au personnage. Si elle tient plusieurs objets en main, elle en donne un au hasard. Si la créature n’est plus adjacente au personnage quand elle doit lui donner l’objet, le sort se dissipe sans effet. Si la cible ne tient aucun objet quand elle est victime du sort, celui-ci ne l’affecte pas.",
+  "description_html": "<br/><br/>Une créature qui rate son jet de sauvegarde dépense une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> pour remettre au personnage l’objet qu’elle tient actuellement en main. Si elle n’a plus d’<a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> disponible, elle dépense une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> au début de son prochain tour pour remettre l’objet au personnage. Si elle tient plusieurs objets en main, elle en donne un au hasard. Si la créature n’est plus adjacente au personnage quand elle doit lui donner l’objet, le sort se dissipe sans effet. Si la cible ne tient aucun objet quand elle est victime du sort, celui-ci ne l’affecte pas.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Offrande%20exig%c3%a9e.ashx",
+    "cache_fichier": "cache/html/1f65f09f1c92f0630d883e2f96ebd16233073ebc.html",
+    "recupere_le": "2026-07-28T23:02:04.869609+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "offrande-exigee",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Offrande%20exig%c3%a9e.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 1
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "offrande-exigee",
+    "resume_court": "Force une créature adjacente à remettre un objet qu'elle tient au lanceur.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "offrande-exigee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:34+00:00",
+    "hash_source": "9ab91c41e61f9fad39b01a84fd6e5cb0753e5f1a8197d26b317f827b4aae67a7"
+  }
+}

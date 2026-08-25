@@ -1,0 +1,115 @@
+{
+  "id": "casse-superieur",
+  "nom": "Cassé supérieur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cass%c3%a9%20sup%c3%a9rieur.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Occ": 6,
+    "Psy": 6,
+    "San": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (un diapason en platine neuf d'une valeur de 100 po)",
+  "portee": "9 m",
+  "cible": "tous les objets de taille M ou inférieure dans un rayonnement de 9 m autour du lanceur",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui (objet)",
+  "description": "Le personnage libère une explosion d'énergie destructrice. Chaque objet de taille M ou inférieure dans la zone obtient l'état brisé sauf s'il réussit un jet de Vigueur. Si un objet brisé rate ce jet de sauvegarde, il est détruit à la place. Les objets magiques peuvent être brisés par ce sort, mais pas détruits. Les objets en possession du personnage ne sont pas immunisés.",
+  "description_html": "<br/><br/>Le personnage libère une explosion d'énergie destructrice. Chaque objet de taille M ou inférieure dans la zone obtient l'état <a class=\"pagelink\" href=\"Pathfinder-RPG.bris%c3%a9.ashx\" title=\"Brisé\">brisé</a> sauf s'il réussit un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>. Si un objet brisé rate ce jet de sauvegarde, il est détruit à la place. Les objets magiques peuvent être brisés par ce sort, mais pas détruits. Les objets en possession du personnage ne sont pas immunisés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cass%c3%a9%20sup%c3%a9rieur.ashx",
+    "cache_fichier": "cache/html/b82c8b3acb69932bac09d817a2729edfd116e921.html",
+    "recupere_le": "2026-07-28T22:45:47.346657+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "casse-superieur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cass%c3%a9%20sup%c3%a9rieur.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "casse-superieur",
+    "resume_court": "Une explosion d'énergie destructrice brise ou détruit les objets de taille M ou inférieure dans un rayon de 9 m.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "tous les objets de taille M ou inférieure dans un rayonnement de 9 m autour du lanceur"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas de dégâts directs au sens classique, mais détruit des objets. La catégorie « controle_de_zone » s'applique car l'effet couvre une étendue et modifie ce qui s'y trouve (les objets). Les objets brisés ou détruits ne constituent pas une « condition » au sens des états de créature (aveugle, paralysé, etc.), donc condition_infligee reste vide.",
+    "slug": "casse-superieur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:34+00:00",
+    "hash_source": "3cc5578d494cb33a914544f7362a30f57ab201fa44bfcbab98337873e1930175"
+  }
+}

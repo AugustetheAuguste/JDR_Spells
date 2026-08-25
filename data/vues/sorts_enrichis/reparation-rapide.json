@@ -1,0 +1,88 @@
+{
+  "id": "reparation-rapide",
+  "nom": "Réparation rapide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9paration%20rapide.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Occ": 4,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "une créature artificielle touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La créature artificielle visée gagne la guérison accélérée 5. Elle ne se cumule pas avec une guérison accélérée qu’elle pourrait avoir par ailleurs. La guérison rapide n’a aucun effet sur une créature artificielle à 0 point de vie ou qui est détruite.",
+  "description_html": "<br/><br/>La créature artificielle visée gagne la guérison accélérée 5. Elle ne se cumule pas avec une guérison accélérée qu’elle pourrait avoir par ailleurs. La guérison rapide n’a aucun effet sur une créature artificielle à 0 point de vie ou qui est détruite.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9paration%20rapide.ashx",
+    "cache_fichier": "cache/html/bfbf5f759197c4f3b524822d25f53c7785f710a5.html",
+    "recupere_le": "2026-07-29T07:35:57.928558+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "reparation-rapide",
+    "resume_court": "Une créature artificielle gagne la guérison accélérée 5 pendant 1 round par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature artificielle touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "reparation-rapide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:47+00:00",
+    "hash_source": "3efe981a51db7580b73b02d3b6dc52ed3c84e87f451c47d06282c2c63df24068"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f4db519df9908cc3d3800b036f254cdd749defeb9a765531238ad6c82067a5ea",
+  "hash_vue": "5381b05b87fbf22fd88e67659dbdc315e780017859f6eb7a455f381bcd304df4"
+}

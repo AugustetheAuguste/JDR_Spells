@@ -1,0 +1,75 @@
+{
+  "id": "reflets-d-ombre",
+  "nom": "Reflets d'ombre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Reflets%20dombre.ashx",
+  "ecole": "Illusion (ombre)",
+  "descripteurs": [
+    "ombre"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "voir texte",
+  "cible": "voir texte",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, dévoile (en cas d’interaction) ; variable (voir texte)",
+  "resistance_magie": "oui (voir texte)",
+  "description": "Ce sort est semblable à convocation d’ombres mais il permet aussi de reproduire les invocations des magiciens et des ensorceleurs du 8e niveau. Les dégâts infligés aux cibles ayant réussi leur jet de sauvegarde sont de 80% et les sorts qui n’infligent pas de dégâts ont 80% de chances de fonctionner face aux cibles ayant réussi leur jet de sauvegarde.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20dombres.ashx\" title=\"Convocation d'ombres\">convocation d’ombres</a></i> mais il permet aussi de reproduire les <a class=\"pagelink\" href=\"Pathfinder-RPG.invocation.ashx\" title=\"Invocation\">invocations</a> des <a class=\"pagelink\" href=\"Pathfinder-RPG.magicien.ashx\" title=\"Le magicien\">magiciens</a> et des <a class=\"pagelink\" href=\"Pathfinder-RPG.ensorceleur.ashx\" title=\"L'ensorceleur\">ensorceleurs</a> du 8e <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Les dégâts infligés aux cibles ayant réussi leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> sont de 80% et les sorts qui n’infligent pas de dégâts ont 80% de chances de fonctionner face aux cibles ayant réussi leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Convocation d'ombres"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Reflets%20dombre.ashx",
+    "cache_fichier": "cache/html/0e969807c9a1048dafce835d31ce027e598c6603.html",
+    "recupere_le": "2026-07-29T07:37:42.289782+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "reflets-d-ombre",
+    "resume_court": "Reproduit les invocations d'ombres des magiciens et ensorceleurs de niveau 8, avec efficacité réduite contre les cibles ayant réussi leur sauvegarde.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "illusion_visuelle_ou_sonore"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "voir texte"
+    },
+    "notes_ambiguite": "Le texte renvoie à « convocation d'ombres » pour les détails de portée, cible et durée, et ne précise pas le type de dégâts infligés par les invocations reproduites. Aucun type de dégâts n'est nommé dans le texte fourni, d'où type_degats: null. Aucune condition spécifique n'est infligée par ce sort lui-même, les effets dépendant des invocations reproduites.",
+    "slug": "reflets-d-ombre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:37+00:00",
+    "hash_source": "af654c751d1b5224dd110be0db60d56d40b3d35f260d5cc816d89a00545f4066"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "d8a0162d4295ed82140a58d2388f64a1a7f88b7b72286cb151c518609ade885c",
+  "hash_vue": "5d0bbb39030843f05adc1c2474f97ffacf0d5e3f367d12adedef76ec12bcc952"
+}

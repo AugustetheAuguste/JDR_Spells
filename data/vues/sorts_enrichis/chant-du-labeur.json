@@ -1,0 +1,78 @@
+{
+  "id": "chant-du-labeur",
+  "nom": "Chant du labeur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20du%20labeur.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1
+  },
+  "temps_incantation": "voir texte",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau) (5 c + 1 c/2 niveau)",
+  "cible": "une créature vivante",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage peut lancer ce sort comme partie de l’action qui lui permet d’initier une représentation bardique d’inspiration talentueuse. Les avantages de cette inspiration durent aussi longtemps que nécessaire, afin que la cible puisse l’utiliser lors du prochain test associé à la compétence choisie (avec un maximum de 1 heure par niveau de lanceur de sorts), même si le barde cesse sa représentation.",
+  "description_html": "<br/><br/>Le personnage peut lancer ce sort comme partie de l’action qui lui permet d’initier une <a class=\"pagelink\" href=\"Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx\" title=\"représentation bardique\">représentation bardique</a> d’<a class=\"pagelink\" href=\"Pathfinder-RPG.inspiration%20talentueuse%20(barde).ashx\" title=\"inspiration talentueuse (barde)\">inspiration talentueuse</a>. Les avantages de cette inspiration durent aussi longtemps que nécessaire, afin que la cible puisse l’utiliser lors du prochain test associé à la compétence choisie (avec un maximum de 1 heure par niveau de lanceur de sorts), même si le barde cesse sa représentation.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chant%20du%20labeur.ashx",
+    "cache_fichier": "cache/html/d47e012f1487f9f366d920b9d4694caa9926d3e4.html",
+    "recupere_le": "2026-07-28T22:46:16.638171+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "chant-du-labeur",
+    "resume_court": "Le barde inspire une créature pour améliorer son prochain test de compétence.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "effet_mental",
+      "bonus_chiffre",
+      "duree_prolongee",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "social",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le texte ne précise pas la valeur numérique du bonus accordé, mais le sort confère clairement un avantage à un test de compétence. La durée est prolongée (jusqu'à 1 heure par niveau). Le jet de sauvegarde est marqué « inoffensif », ce qui indique que la cible bénéficie du sort.",
+    "slug": "chant-du-labeur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:45+00:00",
+    "hash_source": "b4688e7414445130a404c887a2f731b088983da5e92780db34e981bc9e190519"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "f1dd6058e871f9c11bb26330665bab734206fb2d9df3a15fd3a864a9b92a1d65",
+  "hash_vue": "fb2759a467c53098eabd8ea27cb363e228ed48faef69cbdc742e63fa62eb1df8"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "ombre-du-doute",
+  "nom": "Ombre du doute",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ombre%20du%20doute.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental",
+    "émotion",
+    "Mal",
+    "obscurité"
+  ],
+  "niveaux": {
+    "Antipal": 4,
+    "Bard": 4,
+    "Hyp": 4,
+    "Psy": 6,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/3 niveaux",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Le personnage créé une aura obscure de doutes alimentée par les faiblesses psychologiques de son ennemi. Les cibles perçoivent toutes les sources de lumière comme étant d'une catégorie plus sombre, jusqu'à un niveau de luminosité minimum équivalent à des ténèbres (mais pas des ténèbres surnaturelles), et ce même si elles réussissent leur jet de sauvegarde.\nDes ombres mentales fugaces de regrets et d'angoisses distraient les cibles du sort. Au début de chacun de leur tour, elles doivent réussir un jet de Volonté ou être chancelantes pendant 1 round. Une cible d'alignement Bon subit un malus de -4 aux jets de sauvegarde contre cette effet, tandis qu'une cible d'alignement Mauvais obtient un bonus de +4.",
+  "description_html": "<br/><br/>Le personnage créé une aura obscure de doutes alimentée par les faiblesses psychologiques de son ennemi. Les cibles perçoivent toutes les sources de lumière comme étant d'une catégorie plus sombre, jusqu'à un niveau de luminosité minimum équivalent à des <a class=\"pagelink\" href=\"Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE\" title=\"L'exploration\">ténèbres</a> (mais pas des ténèbres surnaturelles), et ce même si elles réussissent leur <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a>.<br/><br/>Des ombres mentales fugaces de regrets et d'angoisses distraient les cibles du sort. Au début de chacun de leur tour, elles doivent réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelantes</a> pendant 1 round. Une cible d'alignement Bon subit un malus de -4 aux jets de sauvegarde contre cette effet, tandis qu'une cible d'alignement Mauvais obtient un bonus de +4.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Races/Races de la mer Intérieure"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles tieffelins."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ombre%20du%20doute.ashx",
+    "cache_fichier": "cache/html/6b4a44efcf7c66f8ca01d8d85a56d7954024147c.html",
+    "recupere_le": "2026-07-28T23:02:05.881205+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "ombre-du-doute",
+    "resume_court": "Une aura de doutes obscurcit la vision et distrait les cibles, les rendant chancelantes.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "être chancelantes pendant 1 round"
+      ],
+      "cible_typique": "une créature/3 niveaux"
+    },
+    "notes_ambiguite": null,
+    "slug": "ombre-du-doute",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:35+00:00",
+    "hash_source": "d727b00e06f791e1ad4832905ede50d16ad39e6e6dff5961e00c0ef3f3fe5e2f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5d749a7b04b0585c29ee45093060b18d69a08d932720cbb3c8402d7035450112",
+  "hash_vue": "dab06f48105f71fe65b7d09e518e2b8f6ed15a578310c766e2ce9f745581893c"
+}

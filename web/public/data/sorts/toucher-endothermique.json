@@ -1,0 +1,130 @@
+{
+  "id": "toucher-endothermique",
+  "nom": "Toucher endothermique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20endothermique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (petit bout de peau de serpent)",
+  "portee": "contact",
+  "cible": "une créature vivante de type dragon ou de sous-type reptilien",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort ralentit le métabolisme et les fonctions corporelles d’une créature pendant une courte période. La cible est chancelante et se déplace à la moitié de sa vitesse (arrondie à l’inférieur au facteur de 1,50 mètre le plus proche). En revanche, elle peut retenir son souffle deux fois plus longtemps que d’habitude.",
+  "description_html": "<br/><br/>Ce sort ralentit le métabolisme et les fonctions corporelles d’une créature pendant une courte période. La cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> et se déplace à la moitié de sa vitesse (arrondie à l’inférieur au facteur de 1,50 mètre le plus proche). En revanche, elle peut retenir son souffle deux fois plus longtemps que d’habitude.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Codex monstrueux/Monster Codex"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20endothermique.ashx",
+    "cache_fichier": "cache/html/e4931d190739aa8e3a36cc045f6a219e780dea1e.html",
+    "recupere_le": "2026-07-29T07:42:46.723324+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "toucher-endothermique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Toucher%20endothermique.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "toucher-endothermique",
+    "resume_court": "Ralentit le métabolisme d'une créature dragon ou reptilienne, la rendant chancelante et réduisant sa vitesse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "malus_chiffre",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La cible est chancelante"
+      ],
+      "cible_typique": "une créature vivante de type dragon ou de sous-type reptilien"
+    },
+    "notes_ambiguite": null,
+    "slug": "toucher-endothermique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:35+00:00",
+    "hash_source": "3090b4dcad8fd12fd17c2e6c3838f17b6ad36c64ec655e0fb1875f19092392c7"
+  }
+}

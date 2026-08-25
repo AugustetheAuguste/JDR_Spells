@@ -1,0 +1,81 @@
+{
+  "id": "atavisme",
+  "nom": "Atavisme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Atavisme.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un animal",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage éveille une arme de destruction sauvage en faisant ressortir les caractéristiques ancestrales primitives d’un animal. L’animal gagne immédiatement l’archétype simple de créature évoluée. Il gagne un bonus de +2 à tous les jets, y compris aux jets de dégâts et au DD des pouvoirs spéciaux, un bonus de +4 à la CA et au DMD et +2 points de vie par DV. L’instinct primitif de la bête prend le dessus pendant toute la durée du sort : s’il connaissait des tours grâce à la compétence Dressage, il les oublie tous hormis « attaque. » Ce sort n’a aucun effet sur les créatures qui possèdent déjà l’archétype de créature évoluée.",
+  "description_html": "<br/><br/>Le personnage éveille une arme de destruction sauvage en faisant ressortir les caractéristiques ancestrales primitives d’un animal. L’animal gagne immédiatement l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx#CREATUREEVOLUEE\" title=\"Les archétypes\">archétype simple de créature évoluée</a>. Il gagne un bonus de +2 à tous les jets, y compris aux jets de dégâts et au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des pouvoirs spéciaux, un bonus de +4 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et au <a class=\"pagelink\" href=\"Pathfinder-RPG.DMD.ashx\" title=\"DMD\">DMD</a> et +2 points de vie par <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a>. L’instinct primitif de la bête prend le dessus pendant toute la durée du sort : s’il connaissait des tours grâce à la compétence <a class=\"pagelink\" href=\"Pathfinder-RPG.Dressage.ashx\" title=\"Dressage\">Dressage</a>, il les oublie tous hormis « attaque. » Ce sort n’a aucun effet sur les créatures qui possèdent déjà l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Arch%c3%a9types.ashx#CREATUREEVOLUEE\" title=\"Les archétypes\">archétype de créature évoluée</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Atavisme.ashx",
+    "cache_fichier": "cache/html/a0c7f47d319b16c6f920ffe2289b88ba653e1c89.html",
+    "recupere_le": "2026-07-28T22:42:28.493716+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "atavisme",
+    "resume_court": "Un animal gagne des bonus de combat et devient sauvage, oubliant ses tours dressés.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un animal"
+    },
+    "notes_ambiguite": "Le sort améliore un animal allié (bonus de combat, CA, DMD, PV) mais le rend aussi sauvage et lui fait oublier ses tours. La cible est typiquement un allié du lanceur, bien que le texte ne le précise pas explicitement. La transformation du sujet (archétype de créature évoluée) justifie le tag correspondant.",
+    "slug": "atavisme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:23+00:00",
+    "hash_source": "1daf1e6ebc76f2a098ed423c68923e14beab32f85cc64a8e2508f1a5a803ecee"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7183cf5f0fbf59b8614ee52ea3b8ebb7b0dea165155acbba399f001599dd31e3",
+  "hash_vue": "752b014bbeaa653e62435c3da7a34d670d98ad56f1a7385739323fdb3639f930"
+}

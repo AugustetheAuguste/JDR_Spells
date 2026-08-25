@@ -1,0 +1,89 @@
+{
+  "id": "tete-explosive",
+  "nom": "Tête explosive",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%aate%20explosive.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "Une créature corporelle vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Spécial (voir le texte)",
+  "resistance_magie": "oui",
+  "description": "Vous créez une pression incroyable dans la tête de la cible; Ce sort ne fonctionne que sur une créature qui a une tête et qui mourra de la perte de celle-ci. Le sortilège tue instantanément une cible qui a 20 points de vie ou moins, en explosant sa tête et projetant des débris dans un rayon de 3m.\nChaque créature dans la zone doit réussir un jet de Réflexes ou prendre 2d6 points de dégâts causés par les débris volants.\nUne cible avec plus de 20 points de vie prend 1d6 points de dégât par niveau de lanceur de sorts (maximum 20d6), mais peut tenter un jet de Vigueur pour ne prendre que la moitié des dégâts. Si ces dégâts entraînent la mort de la cible ou la rendent mourante, la cible disparaît et sa tête explose comme décrit ci-dessus.",
+  "description_html": "<br/><br/>Vous créez une pression incroyable dans la tête de la cible; Ce sort ne fonctionne que sur une créature qui a une tête et qui mourra de la perte de celle-ci. Le sortilège tue instantanément une cible qui a 20 points de vie ou moins, en explosant sa tête et projetant des débris dans un rayon de 3m.<br/><br/>Chaque créature dans la zone doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> ou prendre 2d6 points de dégâts causés par les débris volants.<br/><br/>Une cible avec plus de 20 points de vie prend 1d6 points de dégât par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum 20d6), mais peut tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour ne prendre que la moitié des dégâts. Si ces dégâts entraînent la mort de la cible ou la rendent <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Mourant\" title=\"Les états préjudiciables\">mourante</a>, la cible disparaît et sa tête explose comme décrit ci-dessus.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%aate%20explosive.ashx",
+    "cache_fichier": "cache/html/8875011154fcbfd25927d4220f1d3b4214b8da98.html",
+    "recupere_le": "2026-07-29T07:42:11.531152+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "tete-explosive",
+    "resume_court": "Un sort qui crée une pression mortelle dans la tête d'une créature, la tuant ou l'explosant.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts causés par les débris volants",
+      "condition_infligee": [],
+      "cible_typique": "Une créature corporelle vivante"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts de débris volants (type « autre »), mais tue aussi instantanément les créatures faibles. La zone d'effet secondaire (débris) affecte plusieurs créatures, d'où les tags zone_d_effet et plusieurs_cibles.",
+    "slug": "tete-explosive",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:30+00:00",
+    "hash_source": "4dba8be97661b6a77dfaf2542bcd599fac156c163012609c491b58520373dc1e"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "bc55352a8f6f2a2510b915464f3aade142c6bf11385d6fb0cc9d01f6576d6ef5",
+  "hash_vue": "dfb0dcafff65e575683b67930ad65ef3701addd6d545dd7550ae94b2851930d8"
+}

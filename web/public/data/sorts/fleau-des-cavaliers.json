@@ -1,0 +1,92 @@
+{
+  "id": "fleau-des-cavaliers",
+  "nom": "Fléau des cavaliers",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9au%20des%20cavaliers.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "acide",
+    "Mal"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Prê": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "rayonnement de 9 m de rayon",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "Ce sort fait exploser dans la zone un horrible mélange d’énergie destructrice d’âme et de corrosion physique. Les créatures dans la zone d’effet acquièrent 1d4 niveaux négatifs et subissent 1d6 points de dégâts d’acide par niveau de lanceur de sorts (maximum 20d6).",
+  "description_html": "<br/><br/>Ce sort fait exploser dans la zone un horrible mélange d’énergie destructrice d’âme et de corrosion physique. Les créatures dans la zone d’effet acquièrent 1d4 <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveaux négatifs</a> et subissent 1d6 points de dégâts d’acide par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (maximum 20d6).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9au%20des%20cavaliers.ashx",
+    "cache_fichier": "cache/html/fcb7e54f0622b92cfa5911509438cdccea5e1d41.html",
+    "recupere_le": "2026-07-28T22:53:35.300094+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "fleau-des-cavaliers",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9au%20des%20cavaliers.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "fleau-des-cavaliers",
+    "resume_court": "Une explosion de nécromancie et d'acide qui inflige des niveaux négatifs et des dégâts à toute créature dans une zone.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts d'acide par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "rayonnement de 9 m de rayon"
+    },
+    "notes_ambiguite": "Les niveaux négatifs acquis ne correspondent à aucune condition de la liste fermée fournie ; seuls les dégâts d'acide et la zone d'effet sont retenus.",
+    "slug": "fleau-des-cavaliers",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:07+00:00",
+    "hash_source": "5a084a68aadc6dd31ca4fbd8e32e2c92fb68c99bc0885683e273236638de3f02"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "reverberation-cinetique",
+  "nom": "Réverbération cinétique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9verb%c3%a9ration%20cin%c3%a9tique.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Ens/Mag": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un peu de sève d'arbre à caoutchouc)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Le sort transfère l’élan et la puissance des attaques de mêlée qui visent la cible de ce sort en les renvoyant dans l'arme de son assaillant. Quand un adversaire réussit une attaque de corps à corps contre la cible de ce sort, il doit faire un jet de Vigueur pour son arme. S’il rate son jet, l'arme reçoit un montant de dégâts égal à ceux qu’elle inflige à la cible du sort. Le sort n’affecte pas les créatures qui utilisent une arme naturelle ou une attaque à mains nues.",
+  "description_html": "<br/><br/>Le sort transfère l’élan et la puissance des attaques de mêlée qui visent la cible de ce sort en les renvoyant dans l'arme de son assaillant. Quand un adversaire réussit une attaque de corps à corps contre la cible de ce sort, il doit faire un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour son arme. S’il rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.JdS.ashx\" title=\"JDS\">jet</a>, l'arme reçoit un montant de dégâts égal à ceux qu’elle inflige à la cible du sort. Le sort n’affecte pas les créatures qui utilisent une arme naturelle ou une attaque à mains nues.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9verb%c3%a9ration%20cin%c3%a9tique.ashx",
+    "cache_fichier": "cache/html/7bc0bc1ee533230dd7b18377c396437ba635d232.html",
+    "recupere_le": "2026-07-29T07:36:20.024962+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "reverberation-cinetique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9verb%c3%a9ration%20cin%c3%a9tique.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "reverberation-cinetique",
+    "resume_court": "Les attaques de mêlée contre la cible sont renvoyées vers l'arme de l'assaillant, qui subit des dégâts.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort inflige indirectement des dégâts à l'arme de l'assaillant, mais ce n'est pas une attaque directe du lanceur : la catégorie est protection plutôt qu'attaque_directe. Les dégâts sont un effet secondaire de la défense, non l'objectif principal.",
+    "slug": "reverberation-cinetique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:06+00:00",
+    "hash_source": "a2c40300d095167705103f7608432d44239191acbb16fbd349ec32bda9984f2a"
+  }
+}

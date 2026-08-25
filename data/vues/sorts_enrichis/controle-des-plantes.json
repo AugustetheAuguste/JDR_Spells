@@ -1,0 +1,73 @@
+{
+  "id": "controle-des-plantes",
+  "nom": "Contrôle des plantes",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20plantes.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "jusqu’à 2 DV de créatures végétales/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "non",
+  "description": "Ce sort permet d’exercer un contrôle sur les actions de créatures végétales. Le personnage leur donne des ordres de vive voix et celles-ci les comprennent, quelle que soit la langue parlée. Si toute forme de communication vocale est impossible (dans la zone d’effet d’un sort de silence, par exemple), les plantes contrôlées n’agressent pas le personnage. Au terme du sort, les sujets retrouvent leur comportement habituel.\nLes ordres suicidaires ou destructeurs sont tout simplement ignorés.",
+  "description_html": "<br/><br/>Ce sort permet d’exercer un contrôle sur les actions de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20plante.ashx\" title=\"Plante\">créatures végétales</a>. Le personnage leur donne des ordres de vive voix et celles-ci les comprennent, quelle que soit la langue parlée. Si toute forme de communication vocale est impossible (dans la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20deffet.ashx\" title=\"zone deffet\">zone d’effet</a> d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.silence.ashx\" title=\"Silence\">silence</a></i>, par exemple), les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20plante.ashx\" title=\"Plante\">plantes</a> contrôlées n’agressent pas le personnage. Au terme du sort, les sujets retrouvent leur comportement habituel.<br/><br/>Les ordres suicidaires ou destructeurs sont tout simplement ignorés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20plantes.ashx",
+    "cache_fichier": "cache/html/4ee5b8990843d21c7f68c894c3eb82435dd7a3ca.html",
+    "recupere_le": "2026-07-28T22:47:44.813631+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "controle-des-plantes",
+    "resume_court": "Le lanceur contrôle les actions de créatures végétales par des ordres vocaux pendant 1 minute par niveau.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "communication_ou_langage"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à 2 DV de créatures végétales/niveau, distantes de moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": "Le sort affecte plusieurs créatures végétales dans une zone définie par la portée et la distance mutuelle, plutôt qu'une cible unique désignée. La catégorie « controle_de_zone » reflète ce contrôle collectif sur un ensemble de créatures dans un volume spatial.",
+    "slug": "controle-des-plantes",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:28+00:00",
+    "hash_source": "7f1a575c64aefb1e3a8cd0b73f696614d6ba245056963ee0a7ddc7523f9559dd"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "744e2d6fecee330361e08a17a1c2386caf37cb83eb7eafdf13803ac5fbcbdf50",
+  "hash_vue": "9a16a38fb6123db5c397ec18e1e9c529b9ca257868e15fa7a304c2abb5787da5"
+}

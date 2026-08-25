@@ -1,0 +1,110 @@
+{
+  "id": "froid-penetrant",
+  "nom": "Froid pénétrant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Froid%20p%c3%a9n%c3%a9trant.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "froid"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "San": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "10 minutes/niveau, voir texte",
+  "jet_de_sauvegarde": "Vigueur pour annuler (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La cible est entourée de froid pénétrant pendant toute la durée du sort et souffre d'un froid important. Si la cible rate son premier jet de sauvegarde, elle subit donc 1d6 points de dégâts de froid et doit réussir un jet toute les 10 minutes(avec DD du froid important en non celui de ce sort) ou subir des dégâts supplémentaires.",
+  "description_html": "<br/><br/>La cible est entourée de froid pénétrant pendant toute la durée du sort et souffre d'un <a class=\"pagelink\" href=\"Pathfinder-RPG.Dangers%20naturels.ashx#FROID\" title=\"Les dangers naturels\">froid important</a>. Si la cible rate son premier <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle subit donc 1d6 points de dégâts de froid et doit réussir un jet toute les 10 minutes(avec <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du froid important en non celui de ce sort) ou subir des dégâts supplémentaires.<br/><br/>",
+  "mythique": {
+    "description": "En cas de jet de sauvegarde raté, la cible subit immédiatement 1d6 points de dégâts de froid non létaux par grade. Ajoutez le grade du personnage au DD de tous les autres jets de Vigueur effectués par la cible pour résister au froid important dans le cadre des effets du sort. La cible subit également un malus de -4 aux jets de sauvegarde effectués contre les sorts ou les effets dotés du registre froid.\nAmplifié (5ème). Si le personnage dépense deux utilisations de pouvoir mythique, la cible est affublée d’une vulnérabilité au feu.",
+    "description_html": "En cas de jet de sauvegarde raté, la cible subit immédiatement 1d6 points de dégâts de froid non létaux par <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a>. Ajoutez le <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage au DD de tous les autres jets de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> effectués par la cible pour résister au froid important dans le cadre des effets du sort. La cible subit également un malus de -4 aux jets de sauvegarde effectués contre les sorts ou les effets dotés du registre froid.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (5ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, la cible est affublée d’une vulnérabilité au feu."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Froid%20p%c3%a9n%c3%a9trant.ashx",
+    "cache_fichier": "cache/html/49fd3f6e586b37b0643d96605f87e54e21b4628e.html",
+    "recupere_le": "2026-07-28T22:54:58.362741+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "froid-penetrant",
+    "resume_court": "La cible subit un froid pénétrant qui lui inflige des dégâts de froid répétés.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "froid",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts de froid",
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "froid-penetrant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:40+00:00",
+    "hash_source": "1aa16ff0797bdb0f098fc4b9da9770ed90ac06a8198a12070b119ed7e9b0f713"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e14ca7f54cef985059252c7bdf19b53a9506a451bee30fa9d0e1ff6ee082f5de",
+  "hash_vue": "ea8f9e0353e9d19bdb71f530ba44acf231722386059cdc3bc7aea93c318a7157"
+}

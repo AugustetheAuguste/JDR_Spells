@@ -1,0 +1,103 @@
+{
+  "id": "litanie-de-vengeance",
+  "nom": "Litanie de vengeance",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20vengeance.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "langage"
+  ],
+  "niveaux": {
+    "Apal": 4,
+    "Inq": 5,
+    "Pal": 4
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Cette litanie accentue la douleur des coups que l’adversaire reçoit. Toute créature qui touche la cible avec une attaque gagne un bonus de sainteté ou de malfaisance (selon l’alignement du lanceur de sorts) de +5 aux dégâts.\nLa cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "description_html": "<br/><br/>Cette litanie accentue la douleur des coups que l’adversaire reçoit. Toute créature qui touche la cible avec une attaque gagne un bonus de sainteté ou de malfaisance (selon l’<a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a> du lanceur de sorts) de +5 aux dégâts.<br/><br/>La cible affectée par ce sort ne peut pas bénéficier des effets d’un autre sort de litanie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20vengeance.ashx",
+    "cache_fichier": "cache/html/e1812072713b413fe627884503d28b3e79e3ca33.html",
+    "recupere_le": "2026-07-28T22:58:52.659563+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "litanie-de-vengeance",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Litanie%20de%20vengeance.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 5
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "litanie-de-vengeance",
+    "resume_court": "La cible subit un bonus de dégâts aux attaques qui la touchent pendant 1 round.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "duree_instantanee",
+      "resistance_a_la_magie",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas directement de dégâts mais augmente les dégâts reçus par la cible via les attaques d'autres créatures. La durée est instantanée (1 round) mais l'effet persiste pendant ce round. Classé en affaiblissement car la cible est désavantagée, bien que le bonus soit techniquement un malus pour elle.",
+    "slug": "litanie-de-vengeance",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:11+00:00",
+    "hash_source": "0275a59929df7d196203074a90ad5151aca8acba9363bc51cb027dadec9d5426"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "sonde-mentale",
+  "nom": "Sonde mentale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonde%20mentale.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Hyp": 4,
+    "Méd": 3,
+    "Occ": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage accède aux souvenirs et connaissances de la cible. Il peut tenter de découvrir la réponse à une question par round. Un jet de Volonté réussi met fin au sort, sinon, la créature peut tenter un test de Bluff DD 11 + modificateur de Psychologie du personnage. Si elle rate le test, le personnage obtient l’information désirée, si elle le réussit, il n’obtient aucune information. Si elle le réussit de 5 ou plus, elle donne la réponse qu’elle veut et le personnage est persuadé d’avoir obtenu le bon renseignement. Les questions du personnage se posent entièrement par télépathie et les réponses arrivent directement dans son esprit, le personnage et la cible n’ont donc pas besoin de partager un même langage, bien que les créatures à l’intelligence limitée puissent n’offrir que des images sensorielles en réponse aux questions posées.",
+  "description_html": "<br/><br/>Le personnage accède aux souvenirs et connaissances de la cible. Il peut tenter de découvrir la réponse à une question par round. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> réussi met fin au sort, sinon, la créature peut tenter un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> DD 11 + modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Psychologie.ashx\" title=\"Psychologie\">Psychologie</a> du personnage. Si elle rate le test, le personnage obtient l’information désirée, si elle le réussit, il n’obtient aucune information. Si elle le réussit de 5 ou plus, elle donne la réponse qu’elle veut et le personnage est persuadé d’avoir obtenu le bon renseignement. Les questions du personnage se posent entièrement par télépathie et les réponses arrivent directement dans son esprit, le personnage et la cible n’ont donc pas besoin de partager un même langage, bien que les créatures à l’intelligence limitée puissent n’offrir que des images sensorielles en réponse aux questions posées.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonde%20mentale.ashx",
+    "cache_fichier": "cache/html/a5974ec5489b268d84d96493f87e5ec429504a4c.html",
+    "recupere_le": "2026-07-29T07:40:58.556014+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sonde-mentale",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonde%20mentale.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 4
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sonde-mentale",
+    "resume_court": "Le lanceur accède aux souvenirs et connaissances d'une créature par télépathie pendant plusieurs rounds.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "sonde-mentale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:50+00:00",
+    "hash_source": "640dea421eae40e4077919f625f71bde2d8d6c26066ee562e5155fd0cf2d77ae"
+  }
+}

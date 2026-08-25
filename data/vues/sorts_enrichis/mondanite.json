@@ -1,0 +1,140 @@
+{
+  "id": "mondanite",
+  "nom": "Mondanité",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mondanit%c3%a9.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Méd": 1,
+    "Occ": 2,
+    "Pal": 1,
+    "Prê": 2,
+    "Psy": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (le fil d'un tabard ou d'une livrée)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage transmet sa connaissance de la noblesse et de la pairie à la cible, ce qui lui permet de reconnaître les membres d'une maison noble, de différencier un blason d'un autre, et d'identifier qui est qui dans un bal royal ou tout autre événement social notable. La cible est capable d'identifier les personnes nobles, les noms de familles nobles, les armoiries, les chevalières et autres symboles. La cible considère que son nombre de rangs en Connaissances (noblesse) est égal à celui du personnage, jusqu'à un maximum de 5 et un minimum de 0. Si le nombre de rangs de la cible est supérieur à celui du personnage, elle utilise son propre nombre de rangs à la place. De plus, si le nouveau bonus total en Connaissances (noblesse) de la cible est d'au moins +0, elle réussit automatiquement tous les tests de Connaissances (noblesse) avec un DD de 10 ou moins.",
+  "description_html": "<br/><br/>Le personnage transmet sa connaissance de la noblesse et de la pairie à la cible, ce qui lui permet de reconnaître les membres d'une maison noble, de différencier un blason d'un autre, et d'identifier qui est qui dans un bal royal ou tout autre événement social notable. La cible est capable d'identifier les personnes nobles, les noms de familles nobles, les armoiries, les chevalières et autres symboles. La cible considère que son nombre de rangs en <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> (noblesse) est égal à celui du personnage, jusqu'à un maximum de 5 et un minimum de 0. Si le nombre de rangs de la cible est supérieur à celui du personnage, elle utilise son propre nombre de rangs à la place. De plus, si le nouveau bonus total en Connaissances (noblesse) de la cible est d'au moins +0, elle réussit automatiquement tous les tests de Connaissances (noblesse) avec un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de 10 ou moins.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mondanit%c3%a9.ashx",
+    "cache_fichier": "cache/html/606e20c97dc6e469d26e78a2799fc05598778d2b.html",
+    "recupere_le": "2026-07-28T23:00:56.800963+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "mondanite",
+    "resume_court": "La cible acquiert temporairement l'expertise en noblesse du lanceur pour identifier nobles et armoiries.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "effet_mental",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "mondanite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:03+00:00",
+    "hash_source": "9d655a2c05230bb3289b3315372982abb962f00c562e91052f94846c80c91cdf"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2e8c617a6cd4188bdb34e7bb2e0896a1dbb98416882623604235174f3af8ebd8",
+  "hash_vue": "57bdbf7ad939c192a56eecea9f2b2efafc612d26949632f828edb7d4fe0edb98"
+}

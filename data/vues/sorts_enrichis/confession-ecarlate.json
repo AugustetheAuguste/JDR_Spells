@@ -1,0 +1,97 @@
+{
+  "id": "confession-ecarlate",
+  "nom": "Confession écarlate",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confession%20%c3%a9carlate.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Occ": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "ou zone l’objet touché ou une zone maximale de 30 cm de côté",
+  "duree": "permanente et 1 heure/niveau (cf. texte)",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage protège un objet ou une zone avec sa rune ou sa marque personnelle. Il peut décider de rendre l’inscription visible ou invisible, et celle-ci n’endommage pas le matériau sur lequel elle est placée. Un sort de détection de la magie permet de faire briller et de rendre visible une marque invisible. Si une créature autre que le personnage touche l’objet ou la zone protégé(e) et rate un jet de Vigueur, sa peau devient rouge vif pendant 1 heure par niveau. Il est impossible de se débarrasser de cette coloration en se lavant, mais elle peut être dissipée.\nDétection de l’invisibilité, vision lucide, une gemme de vision ou une robe de vision totale permettent également à leur utilisateur de voir une marque invisible. Un sort de lecture de la magie révèle les mots, le cas échéant. La protection ne peut pas être dissipée mais le lanceur peut l’annuler, tout comme le fait un sort d’effacement.",
+  "description_html": "<br/><br/>Le personnage protège un objet ou une zone avec sa rune ou sa marque personnelle. Il peut décider de rendre l’inscription visible ou invisible, et celle-ci n’endommage pas le matériau sur lequel elle est placée. Un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9tection%20de%20la%20magie.ashx\" title=\"Détection de la magie\">détection de la magie</a></i> permet de faire briller et de rendre visible une marque invisible. Si une créature autre que le personnage touche l’objet ou la zone protégé(e) et rate un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, sa peau devient rouge vif pendant 1 heure par niveau. Il est impossible de se débarrasser de cette coloration en se lavant, mais elle peut être dissipée.<br/><br/><i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9tection%20de%20linvisibilit%c3%a9.ashx\" title=\"Détection de l'invisibilité\">Détection de l’invisibilité</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.vision%20lucide.ashx\" title=\"Vision lucide\">vision lucide</a></i>, une gemme de vision ou une robe de vision totale permettent également à leur utilisateur de voir une marque invisible. Un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lecture%20de%20la%20magie.ashx\" title=\"Lecture de la magie\">lecture de la magie</a></i> révèle les mots, le cas échéant. La protection ne peut pas être dissipée mais le lanceur peut l’annuler, tout comme le fait un sort d’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.effacement.ashx\" title=\"Effacement\">effacement</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confession%20%c3%a9carlate.ashx",
+    "cache_fichier": "cache/html/9d67a1790fa7a1f820c60700172c41c9fc472438.html",
+    "recupere_le": "2026-07-28T22:47:16.737036+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "confession-ecarlate",
+    "resume_court": "Le lanceur marque un objet ou une zone ; toute créature autre que lui qui la touche rougit pendant 1 heure par niveau.",
+    "categorie_principale": "protection",
+    "tags": [
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "l'objet touché ou une zone maximale de 30 cm de côté"
+    },
+    "notes_ambiguite": "Le sort inflige une condition cosmétique (rougeur) plutôt qu'une condition mécanique de la liste fournie. La rougeur n'est pas énumérée dans `condition_infligee` (aveugle, étourdi, etc.), qui ne couvre que les conditions mécaniques. Le sort fonctionne comme un piège ou un marqueur plutôt que comme une attaque directe, d'où la catégorie `protection` (défense d'un objet) et non `attaque_directe`.",
+    "slug": "confession-ecarlate",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:14+00:00",
+    "hash_source": "d785568a673ead9fe686590258df38433d8175e1855567b0a35b3d4f1b4f1634"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7504112ff2605b2335f1ab3dc02d31c1cdaf30410ff8db4326a3c73d459c88ca",
+  "hash_vue": "feff95db0181dd738579a78c52bc22093ce4864ee846a632b3428743b35be33b"
+}

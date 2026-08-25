@@ -1,0 +1,110 @@
+{
+  "id": "crachat-venimeux",
+  "nom": "Crachat venimeux",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Cham": 4,
+    "Dru": 3,
+    "Prê": 4,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un jet de venin",
+  "duree": "instantanée, voir texte",
+  "jet_de_sauvegarde": "Vigueur partielle",
+  "resistance_magie": "non",
+  "description": "Le personnage crache un jet de venin sur une cible grâce à une attaque de contact à distance. S’il touche, la cible est aveugle pendant 1 round. La cible doit aussi réussir un jet de sauvegarde ou être empoisonnée par du venin de vipère noire. Le DD des rounds de poison successifs est égal au DD du sort.",
+  "description_html": "<br/><br/>Le personnage crache un jet de venin sur une cible grâce à une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a>. S’il touche, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.aveugl%c3%a9.ashx\" title=\"Aveuglé\">aveugle</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. La cible doit aussi réussir un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> ou être <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">empoisonnée</a> par du venin de vipère noire. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> des <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> successifs est égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux.ashx",
+    "cache_fichier": "cache/html/e16bc9a0e38f9d0c63c2fa47e5462ca7879fbd81.html",
+    "recupere_le": "2026-07-28T22:49:38.434691+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "crachat-venimeux",
+    "resume_court": "Le lanceur crache du venin qui aveugle et empoisonne sa cible à courte portée.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "aveugle"
+    ],
+    "preuves": {
+      "type_degats": "un jet de venin",
+      "condition_infligee": [
+        "la cible est aveugle pendant 1 round"
+      ],
+      "cible_typique": "une cible grâce à une attaque de contact à distance"
+    },
+    "notes_ambiguite": "Le poison infligé (venin de vipère noire) n'est pas une condition instantanée mais un effet continu sur plusieurs rounds ; seule la cécité instantanée de 1 round figure dans condition_infligee. Le type de dégâts est classé en « autre » car le texte ne précise pas les points de dégâts directs du venin, seulement son effet de poison.",
+    "slug": "crachat-venimeux",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:00+00:00",
+    "hash_source": "a6b2426bf4e4d169ab5d7deebeecb96d8dec85f34bb68ffec9501b270fcdd367"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b5220b5f64e207e544242bbeb26d112ec150897b7272d777498b27313de549f5",
+  "hash_vue": "eecf5b3b4810e11c388477ac451307fe3e6b9a7c4ee08e03ac56d8ec033543c3"
+}

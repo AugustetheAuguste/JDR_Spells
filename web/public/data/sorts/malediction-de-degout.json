@@ -1,0 +1,147 @@
+{
+  "id": "malediction-de-degout",
+  "nom": "Malédiction de dégoût",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20d%c3%a9go%c3%bbt.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "malédiction",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Ens/Mag": 5,
+    "Occ": 4,
+    "Psy": 6,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage place une malédiction sur une créature, ce qui la pousse à fuir la vue d'un déclencheur spécifique comme un type de créature, un objet ou une condition choisi par le lanceur de sorts. Qunad la cible se trouve à moins de 9 mètres de ce déclencheur et qu'elle est consciente de sa présence, elle devient fiévreuse et ressent un besoin impérieux de s'en aller. Voici quelques exemples de déclencheur:des mendiants, des vêtements crasseux, des créatures malades, le roi, du sang, des araignées, des rats, des cadavres ou des égoûts.",
+  "description_html": "<br/><br/>Le personnage place une malédiction sur une créature, ce qui la pousse à fuir la vue d'un déclencheur spécifique comme un type de créature, un objet ou une condition choisi par le lanceur de sorts. Qunad la cible se trouve à moins de 9 mètres de ce déclencheur et qu'elle est consciente de sa présence, elle devient <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> et ressent un besoin impérieux de s'en aller. Voici quelques exemples de déclencheur:des mendiants, des vêtements crasseux, des créatures malades, le roi, du sang, des araignées, des rats, des cadavres ou des égoûts.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20d%c3%a9go%c3%bbt.ashx",
+    "cache_fichier": "cache/html/63e654ec8315af782d753e3ff708cef058e808f0.html",
+    "recupere_le": "2026-07-28T22:59:43.711080+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "malediction-de-degout",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20de%20d%c3%a9go%c3%bbt.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "malediction-de-degout",
+    "resume_court": "Une malédiction qui pousse la cible à fuir la vue d'un déclencheur spécifique choisi par le lanceur.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "effet_mental",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "effraye"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle devient fiévreuse et ressent un besoin impérieux de s'en aller"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte emploie « fiévreuse » qui ne figure pas dans la liste des conditions fermées. La condition retenue « effraye » correspond au comportement décrit : la cible fuit la source de sa peur (le déclencheur). Le terme « malédiction » et « coercition » confirment l'effet de contrainte mentale.",
+    "slug": "malediction-de-degout",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:28+00:00",
+    "hash_source": "516bb9038d399a79390c59d6e7211b1f9eb633b2477af7a78b2273256e1f4c12"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "mot-de-pouvoir-mortel",
+  "nom": "Mot de pouvoir mortel",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20pouvoir%20mortel.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental",
+    "mort"
+  ],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante dotée de 100 pv ou moins",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage prononce un mot qui terrasse instantanément une créature de son choix, qu’elle entende le mot ou non. Une créature dotée de plus de 100 points de vie n’est pas affectée.\n{c:sort} {c:sort magicien 9} {c:règles officielles} {c:manuel des joueurs}",
+  "description_html": "<br/><br/>Le personnage prononce un mot qui terrasse instantanément une créature de son choix, qu’elle entende le mot ou non. Une créature dotée de plus de 100 <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a> n’est pas affectée.<br/><br/>{c:sort} {c:sort magicien 9} {c:règles officielles} {c:manuel des joueurs}<br/><br/>",
+  "mythique": {
+    "description": "Considérez que le total actuel de points de vie de la cible est diminué d’un montant égal à 5 fois le grade du personnage. Par exemple, un archimage de grade 3 qui lance un mot de pouvoir mortel mythique tuera instantanément une créature dotée de 115 points de vie ou moins.\nLe personnage peut cibler une créature dotée d’un montant de points de vie supérieur à la limite imposée par le sort. Le cas échéant, la créature devient épuisée.\nAmplifié (6ème). Si le personnage dépense quatre utilisations de pouvoir mythique, la magie du mot continue d’affaiblir la cible. Si, avant le début du prochain tour du personnage, le total actuel des points de vie de la cible tombe à une valeur qui aurait permis au sort de la tuer lors de son incantation, elle meurt instantanément.",
+    "description_html": "Considérez que le total actuel de points de vie de la cible est diminué d’un montant égal à 5 fois le <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage. Par exemple, un <a class=\"pagelink\" href=\"Pathfinder-RPG.archimage%20mythique.ashx\" title=\"L'archimage mythique\">archimage</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> 3 qui lance un mot de pouvoir mortel mythique tuera instantanément une créature dotée de 115 points de vie ou moins.<br/><br/>Le personnage peut cibler une créature dotée d’un montant de points de vie supérieur à la limite imposée par le sort. Le cas échéant, la créature devient épuisée.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (6ème).</b> Si le personnage dépense quatre utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, la magie du mot continue d’affaiblir la cible. Si, avant le début du prochain tour du personnage, le total actuel des points de vie de la cible tombe à une valeur qui aurait permis au sort de la tuer lors de son incantation, elle meurt instantanément."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20pouvoir%20mortel.ashx",
+    "cache_fichier": "cache/html/cf745f1bd3ce59eb8a0a54e4eda481bd13893c8d.html",
+    "recupere_le": "2026-07-28T23:01:10.827797+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "mot-de-pouvoir-mortel",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20pouvoir%20mortel.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "mot-de-pouvoir-mortel",
+    "resume_court": "Un mot prononcé qui terrasse instantanément une créature de 100 pv ou moins.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "duree_instantanee",
+      "resistance_a_la_magie",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "terrasse instantanément",
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante dotée de 100 pv ou moins"
+    },
+    "notes_ambiguite": "Le sort tue instantanément sans infliger de dégâts nommés : classé en « autre » faute de type énergétique explicite. L'effet est mortel mais le texte ne précise pas le mécanisme (énergie négative, force brute, etc.).",
+    "slug": "mot-de-pouvoir-mortel",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:09+00:00",
+    "hash_source": "fcd95d25d14b3b963a9e403e2dcf329b93274839ce4c44eb66d5859fe8bf4c84"
+  }
+}

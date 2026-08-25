@@ -1,0 +1,80 @@
+{
+  "id": "dangereux-final",
+  "nom": "Dangereux final",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dangereux%20final.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "son"
+  ],
+  "niveaux": {
+    "Bard": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/3 niveaux qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur partiel",
+  "resistance_magie": "oui",
+  "description": "Pour lancer ce sort, le personnage doit être en train de donner une représentation bardique. Il y met immédiatement un terme avec un geste théâtral qui inflige 2d8 points de dégâts sonores à chaque cible. De plus, chaque cible reçoit 3d6 points de dégâts de saignement pendant 1d6 rounds. Un jet de sauvegarde réussi annule les dégâts de saignement mais pas les dégâts sonores.",
+  "description_html": "<br/><br/>Pour lancer ce sort, le personnage doit être en train de donner une <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE\" title=\"Le barde\">représentation bardique</a>. Il y met immédiatement un terme avec un geste théâtral qui inflige 2d8 points de dégâts sonores à chaque cible. De plus, chaque cible reçoit 3d6 points de dégâts de <a class=\"pagelink\" href=\"Pathfinder-RPG.saignement.ashx\" title=\"Saignement\">saignement</a> pendant 1d6 rounds. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> réussi annule les dégâts de <a class=\"pagelink\" href=\"Pathfinder-RPG.saignement.ashx\" title=\"Saignement\">saignement</a> mais pas les dégâts sonores.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dangereux%20final.ashx",
+    "cache_fichier": "cache/html/bcd69d00b0e6bbd1e10d09ef1c537941b95d3b61.html",
+    "recupere_le": "2026-07-28T22:51:04.490514+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "dangereux-final",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dangereux%20final.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "dangereux-final",
+    "resume_court": "Un geste théâtral inflige des dégâts sonores et de saignement à plusieurs créatures proches.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "son",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d8 points de dégâts sonores",
+      "condition_infligee": [],
+      "cible_typique": "1 créature/3 niveaux qui doivent se trouver à moins de 9 m (6 c) les unes des autres"
+    },
+    "notes_ambiguite": "Le sort inflige aussi des dégâts de saignement (3d6 pendant 1d6 rounds), mais ce dernier n'est pas un type de dégâts de la liste fournie. Le type_degats retenu est 'son' car c'est le seul type énergétique explicitement nommé dans la description et dans les descripteurs de l'école.",
+    "slug": "dangereux-final",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:15+00:00",
+    "hash_source": "e7014c2365b454a9c31d31897579d87f5731f67f4508afb822dcbb6d352718c5"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "transfert-divin",
+  "nom": "Transfert divin",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20divin.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "D'un simple contact, le personnage transfère une partie de son essence vitale au sujet, lui transmettant ainsi ses points de vie et sa résolution. Quand il touche le sujet, il peut lui transférer un nombre de points de vie égal à sa valeur de Constitution. Ces points de vie soignent le sujet mais ne peuvent pas faire passer ses points de vie au-dessus de son total de vie. De plus, le sujet gagne une RD/Mal égale au bonus de Charisme du personnage (le cas échéant) pendant toute la durée du sort.",
+  "description_html": "<br/><br/>D'un simple contact, le personnage transfère une partie de son essence vitale au sujet, lui transmettant ainsi ses points de vie et sa résolution. Quand il touche le sujet, il peut lui transférer un nombre de points de vie égal à sa valeur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>. Ces points de vie soignent le sujet mais ne peuvent pas faire passer ses points de vie au-dessus de son total de vie. De plus, le sujet gagne une <a class=\"pagelink\" href=\"Pathfinder-RPG.RD.ashx\" title=\"RD\">RD</a>/Mal égale au bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> du personnage (le cas échéant) pendant toute la durée du sort.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20divin.ashx",
+    "cache_fichier": "cache/html/a0b497b57beec5e8cab948cf78152833f8393302.html",
+    "recupere_le": "2026-07-29T07:43:11.270212+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "transfert-divin",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20divin.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "transfert-divin",
+    "resume_court": "Le lanceur transfère ses points de vie à une créature et lui confère une RD temporaire.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "bonus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "transfert-divin",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:44+00:00",
+    "hash_source": "b23a92cb22a73769b0f3eb58364d60a8a12ed3e8d4d9ab1a55fc7dd3f9557405"
+  }
+}

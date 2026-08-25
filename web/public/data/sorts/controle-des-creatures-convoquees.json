@@ -1,0 +1,153 @@
+{
+  "id": "controle-des-creatures-convoquees",
+  "nom": "Contrôle des créatures convoquées",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20cr%c3%a9atures%20convoqu%c3%a9es.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Con": 3,
+    "ConU": 3,
+    "Hyp": 3,
+    "Ens/Mag": 4,
+    "Occ": 3,
+    "Prê": 4,
+    "Psy": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature convoquée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage prend le contrôle d’une créature invoquée en détruisant le lien qui l’unit au lanceur de sorts qui l’a invoquée. Si la créature rate son jet de sauvegarde, le personnage peut lui donner des ordres comme si c’était lui qui l’avait invoquée. Le lanceur de sorts originel peut tenter d’en reprendre le contrôle par une action simple en faisant un test d’Art de la magie opposé à celui du personnage. Quand le sort du personnage se termine, l’invocateur originel reprend le contrôle. Si le sort de convocation se termine avant celui du personnage, la durée qui lui restait est perdue.",
+  "description_html": "<br/><br/>Le personnage prend le contrôle d’une créature invoquée en détruisant le lien qui l’unit au lanceur de sorts qui l’a invoquée. Si la créature rate son jet de sauvegarde, le personnage peut lui donner des ordres comme si c’était lui qui l’avait invoquée. Le lanceur de sorts originel peut tenter d’en reprendre le contrôle par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> en faisant un test d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Art%20de%20la%20magie.ashx\" title=\"Art de la magie\">Art de la magie</a> opposé à celui du personnage. Quand le sort du personnage se termine, l’invocateur\noriginel reprend le contrôle. Si le sort de convocation se termine avant celui du personnage, la durée qui lui restait est perdue.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20cr%c3%a9atures%20convoqu%c3%a9es.ashx",
+    "cache_fichier": "cache/html/2c92747dcac566a1f8560c6a45212302fba5a477.html",
+    "recupere_le": "2026-07-28T22:47:44.811611+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "controle-des-creatures-convoquees",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20cr%c3%a9atures%20convoqu%c3%a9es.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "controle-des-creatures-convoquees",
+    "resume_court": "Le lanceur prend le contrôle d'une créature invoquée en détruisant son lien avec son invocateur.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature convoquée"
+    },
+    "notes_ambiguite": null,
+    "slug": "controle-des-creatures-convoquees",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:08+00:00",
+    "hash_source": "919c9d2d10a55c76476060616164b45443bfc6a4f7e1e84065c017a1b38c4558"
+  }
+}

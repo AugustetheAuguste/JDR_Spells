@@ -1,0 +1,117 @@
+{
+  "id": "aura-de-mise-a-mort-supreme",
+  "nom": "Aura de mise à mort suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20mise%20%c3%a0%20mort%20supr%c3%aame.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Mal",
+    "mort"
+  ],
+  "niveaux": {
+    "Inq": 6,
+    "Ens/Mag": 6,
+    "Prê": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "6 m (4 c)",
+  "cible": "émanation de 6 m (4 c) de rayon centrée sur le personnage",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme aura de mise à mort, à l’exception du fait qu’une créature mourante qui se trouve dans la zone ne peut pas se stabiliser seule et subit automatiquement 1 point de dégât de saignement lors de son tour à chaque round. Un mort-vivant intangible ou un esprit vivant voyageant en dehors de son corps (comme dans le cas d’une personne utilisant projection astrale ou possession) et situé dans la zone d’effet de l’aura au début de son tour subit 1d8 points de dégâts.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.aura%20de%20mise%20%c3%a0%20mort.ashx\" title=\"Aura de mise à mort\">aura de mise à mort</a></i>, à l’exception du fait qu’une créature <a class=\"pagelink\" href=\"Pathfinder-RPG.mourant.ashx\" title=\"Mourant\">mourante</a> qui se trouve dans la zone ne peut pas se stabiliser seule et subit automatiquement 1 point de dégât de <a class=\"pagelink\" href=\"Pathfinder-RPG.saignement.ashx\" title=\"Saignement\">saignement</a> lors de son tour à chaque round. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20Mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> intangible ou un esprit vivant voyageant en dehors de son corps (comme dans le cas d’une personne utilisant <i><a class=\"pagelink\" href=\"Pathfinder-RPG.projection%20astrale.ashx\" title=\"Projection astrale\">projection astrale</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession.ashx\" title=\"Possession\">possession</a></i>) et situé dans la zone d’effet de l’aura au début de son tour subit 1d8 points de dégâts.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20mise%20%c3%a0%20mort%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/ab0938b249ae9d719feb66b0228477a77cb53b08.html",
+    "recupere_le": "2026-07-28T22:42:41.542486+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "aura-de-mise-a-mort-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20mise%20%c3%a0%20mort%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 6
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 6
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "aura-de-mise-a-mort-supreme",
+    "resume_court": "Une aura de 6 m qui empêche les créatures mourantes de se stabiliser et blesse les morts-vivants intangibles.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1 point de dégât de saignement",
+      "condition_infligee": [],
+      "cible_typique": "émanation de 6 m (4 c) de rayon centrée sur le personnage"
+    },
+    "notes_ambiguite": "Le texte mentionne des dégâts de saignement et des dégâts d'énergie négative (1d8 pour les morts-vivants intangibles). Le type_degats retenu est « negatif » car le sort relève de la nécromancie et affecte spécifiquement les morts-vivants et les esprits, bien que le saignement soit aussi mentionné. Les dégâts de saignement pourraient être classés « autre », mais le contexte de nécromancie et l'effet sur les morts-vivants justifient « negatif ».",
+    "slug": "aura-de-mise-a-mort-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:28+00:00",
+    "hash_source": "b38371620ebd22408b89aedbc5da42a2810e82823a5dc426eede31b3ab739b94"
+  }
+}

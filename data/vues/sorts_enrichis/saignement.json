@@ -1,0 +1,143 @@
+{
+  "id": "saignement",
+  "nom": "Saignement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Saignement.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 0,
+    "Hyp": 0,
+    "Inq": 0,
+    "Ens/Mag": 0,
+    "Méd": 0,
+    "Occ": 0,
+    "Prê": 0,
+    "Psy": 0,
+    "Sor": 0,
+    "Spi": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "À cause du personnage, une créature qui se trouvait sous 0 points de vie mais s’était stabilisée recommence à agoniser. Le lanceur de sorts vise une créature qui possède -1 point de vie ou moins. Celle-ci perd alors un point de vie par round. On peut la stabiliser ensuite normalement mais le sort fait perdre 1 point de vie à toute créature mourante.",
+  "description_html": "<br/><br/>À cause du personnage, une créature qui se trouvait sous 0 points de vie mais s’était <a class=\"pagelink\" href=\"Pathfinder-RPG.stable.ashx\" title=\"Stable\">stabilisée</a> recommence à agoniser. Le lanceur de sorts vise une créature qui possède -1 point de vie ou moins. Celle-ci perd alors un point de vie par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. On peut la <a class=\"pagelink\" href=\"Pathfinder-RPG.stable.ashx\" title=\"Stable\">stabiliser</a> ensuite normalement mais le sort fait perdre 1 point de vie à toute créature <a class=\"pagelink\" href=\"Pathfinder-RPG.mourant.ashx\" title=\"Mourant\">mourante</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Saignement.ashx",
+    "cache_fichier": "cache/html/3ffe36e3c51a08fa0425aa760738da87918a123b.html",
+    "recupere_le": "2026-07-29T07:45:09.442916+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "saignement",
+    "resume_court": "Une créature stabilisée sous 0 PV recommence à perdre 1 PV par round jusqu'à la mort.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort inflige une perte de PV progressive (1 par round) plutôt que des dégâts instantanés typés. Bien que le texte mentionne « le sort fait perdre 1 point de vie », il ne s'agit pas de dégâts énergétiques classés (feu, froid, etc.), mais d'une hémorragie mécanique. Type_degats reste null car aucun type énergétique n'est nommé. Le tag « effet_mental » a été rejeté au profit de tags plus pertinents : le sort agit physiquement (saignement), pas mentalement. Revu : tags finaux sont degats_directs, jet_de_sauvegarde, duree_instantanee, et un quatrième pour compléter.",
+    "slug": "saignement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:18+00:00",
+    "hash_source": "9ac9493c7046f3341b03257a12d85afef7bb7e3c0e56d4a16b45c84e768b3916"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "70f0902557a61e217d31730ef07cc39a2fb34b3a21b2e2f186e446e67db6ed07",
+  "hash_vue": "53a1c2b16afe4ed939fa45c71df8c4cb21dc067bc6f110277b6c5517bbfc402a"
+}

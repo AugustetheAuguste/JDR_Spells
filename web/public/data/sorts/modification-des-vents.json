@@ -1,0 +1,127 @@
+{
+  "id": "modification-des-vents",
+  "nom": "Modification des vents",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Modification%20des%20vents.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "air"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Occ": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "émanation immobile dans un rayon de 3 m (2 c)",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage augmente ou réduit subtilement les effets des vents naturels de la zone d'effet du sort, qui se trouve être une émanation immobile centrée sur le point ciblé au moment du lancer du sort. Dans cette zone, l'effet des vents naturels (mais pas des vents magiques) est réduit ou augmenté d'un niveau d'intensité (voir \"Les vents\"). Le niveau de force de vent maximum que le personnage peut modifier dépend de son niveau de lanceur de sorts, comme indiqué dans la table suivante. Modification des vents n'a aucun effet sur un vent magique.\nNiveau de lanceur de sortsForce du vent\n1-3Léger\n4-9modéré\n10-15fort\n16 ou plusviolent",
+  "description_html": "<br/><br/>Le personnage augmente ou réduit subtilement les effets des vents naturels de la zone d'effet du sort, qui se trouve être une émanation immobile centrée sur le point ciblé au moment du lancer du sort. Dans cette zone, l'effet des vents naturels (mais pas des vents magiques) est réduit ou augmenté d'un niveau d'intensité (voir \"<a class=\"pagelink\" href=\"Pathfinder-RPG.Vents.ashx\" title=\"Les vents\">Les vents</a>\"). Le niveau de force de vent maximum que le personnage peut modifier dépend de son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>, comme indiqué dans la table suivante. <i>Modification des vents</i> n'a aucun effet sur un vent magique.<br/><br/><table class=\"tablo centre autoalt\"><tr class=\"titre\"><td>Niveau de lanceur de sorts</td><td>Force du vent</td></tr><tr class=\"premier\"><td class=\"centre\">1-3</td><td class=\"gauche\">Léger</td></tr><tr><td class=\"centre\">4-9</td><td class=\"gauche\">modéré</td></tr><tr><td class=\"centre\">10-15</td><td class=\"gauche\">fort</td></tr><tr><td class=\"centre\">16 ou plus</td><td class=\"gauche\">violent</td></tr></table>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Modification%20des%20vents.ashx",
+    "cache_fichier": "cache/html/e172418a6be14c4aef82369f4f3c3103a1c8c764.html",
+    "recupere_le": "2026-07-28T23:00:54.828654+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "modification-des-vents",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Modification%20des%20vents.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "modification-des-vents",
+    "resume_court": "Le lanceur modifie l'intensité des vents naturels dans une zone immobile de 3 m de rayon.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "terrain_ou_environnement",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation immobile dans un rayon de 3 m (2 c)"
+    },
+    "notes_ambiguite": null,
+    "slug": "modification-des-vents",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:02+00:00",
+    "hash_source": "dcafbc9927bb10aad5c5687995af2f45aea5e3d2f87477815d02ec6af0ba7349"
+  }
+}

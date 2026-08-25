@@ -1,0 +1,116 @@
+{
+  "id": "sommeil-de-l-amnesique",
+  "nom": "Sommeil de l'amnésique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sommeil%20de%20lamn%c3%a9sique.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 4,
+    "Hyp": 4,
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, F (quelques gouttes d'eau d'un ruisseau)",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau) (5 c + 1 c/2 niveau)",
+  "cible": "une créature vivante",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort agit comme sommeil profond, mais affecte seulement une créature de 10 DV ou moins. De plus, quand elle se réveille, elle ne garde aucun souvenir des circonstances dans lesquelles le sort a été lancé. La cible perd tout souvenir de ce qui s’est passé pendant les 5 minutes qui ont précédé le lancement du sort. Aucun effet ne peut lui rendre la mémoire, à part un miracle ou un souhait.",
+  "description_html": "<hr/>\nCe sort agit comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sommeil%20profond.ashx\" title=\"Sommeil profond\">sommeil profond</a></i>, mais affecte seulement une créature de 10 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ou moins. De plus, quand elle se réveille, elle ne garde aucun souvenir des circonstances dans lesquelles le sort a été lancé. La cible perd tout souvenir de ce qui s’est passé pendant les 5 minutes qui ont précédé le lancement du sort. Aucun effet ne peut\nlui rendre la mémoire, à part un miracle ou un souhait.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles demi-elfes.",
+    "sorts_lies": "Sommeil profond"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sommeil%20de%20lamn%c3%a9sique.ashx",
+    "cache_fichier": "cache/html/4bbc20764f8152ad83310556f551229b301aaa57.html",
+    "recupere_le": "2026-07-29T07:40:51.483632+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "sommeil-de-l-amnesique",
+    "resume_court": "Endort une créature et efface ses souvenirs des 5 minutes précédentes et du lancement du sort.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce sort agit comme sommeil profond"
+      ],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": "Le sort endort la cible (état similaire à étourdi, qui perd ses actions). L'amnésie est un effet secondaire du charme mais ne correspond pas à une condition de la liste. Sommeil profond est la mécanique principale qui restreint les actions.",
+    "slug": "sommeil-de-l-amnesique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:47+00:00",
+    "hash_source": "5ecaf8e0e769ff2bb4642388c9d22defed89490e9d40cf82c874ff4d3c1bd154"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "40a0da1ec2922e4576c65f466c95c202d79624cb91b3baa2855eb8f6ab716524",
+  "hash_vue": "49fccb2298456af75d7951aed15161413919a687d9a260eaaf4124a110be1fe9"
+}

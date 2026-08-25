@@ -1,0 +1,92 @@
+{
+  "id": "animation-suspendue",
+  "nom": "Animation suspendue",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animation%20suspendue.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 8,
+    "Psy": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (poudre de diamant, d’émeraude, de rubis et de saphir, pour une valeur totale de 5 000 po)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Le lanceur de sorts doit toucher sa cible à l’aide d’une attaque de contact au corps à corps. S’il réussit, son adversaire se retrouve en état de stase. Pour ce dernier le temps cesse de s’écouler et plus rien ne l’affecte. Il ne vieillit pas, ses fonctions corporelles se mettent en sommeil et aucune attaque ne peut lui faire de mal. L’animation suspendue se poursuit jusqu’à ce qu’une délivrance ou une dissipation de la magie réussie vienne y mettre un terme.",
+  "description_html": "<br/><br/>Le lanceur de sorts doit toucher sa cible à l’aide d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a>. S’il réussit, son adversaire se retrouve en état de stase. Pour ce dernier le temps cesse de s’écouler et plus rien ne l’affecte. Il ne vieillit pas, ses fonctions corporelles se mettent en sommeil et aucune attaque ne peut lui faire de mal. L’<i>animation suspendue</i> se poursuit jusqu’à ce qu’une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance.ashx\" title=\"Délivrance\">délivrance</a></i> ou une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">dissipation de la magie</a></i> réussie vienne y mettre un terme.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animation%20suspendue.ashx",
+    "cache_fichier": "cache/html/3a6df6708a06c5520cea02ab53d387e9193cb8b3.html",
+    "recupere_le": "2026-07-28T22:40:52.528444+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "animation-suspendue",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animation%20suspendue.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "animation-suspendue",
+    "resume_court": "Le lanceur fige une créature en stase permanente, où le temps cesse et rien ne l'affecte.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "entrave_ou_immobilisation",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "son adversaire se retrouve en état de stase"
+      ],
+      "cible_typique": "Le lanceur de sorts doit toucher sa cible"
+    },
+    "notes_ambiguite": "La stase n'est pas nommée explicitement dans la liste des conditions, mais elle correspond à une immobilisation totale où la créature est figée et sans défense, ce qui justifie le classement en « paralyse ».",
+    "slug": "animation-suspendue",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:31+00:00",
+    "hash_source": "9c91f0aefb8df202788f06381a85a9b6bfec86e43fec3cf2ae9b55354bdcc400"
+  }
+}

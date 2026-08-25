@@ -1,0 +1,149 @@
+{
+  "id": "image-accomplie",
+  "nom": "Image accomplie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Image%20accomplie.ashx",
+  "ecole": "Illusion (chimère)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Méd": 3,
+    "Occ": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (toison de mouton)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "chimère visuelle ne pouvant occuper plus de 4 cubes de 3 m/2 c d’arête + 1 cube de 3 m/2 c d’arête par niveau (F)",
+  "duree": "concentration + 3 rounds",
+  "jet_de_sauvegarde": "Volonté, dévoile (en cas d’interaction)",
+  "resistance_magie": "non",
+  "description": "Ce sort fonctionne comme image silencieuse, si ce n’est que l’illusion obtenue inclut également des composantes sonores, olfactives et thermiques. Tant que le personnage continue de se concentrer, il peut déplacer l’illusion dans les limites de portée indiquées.\nL’image disparaît dès qu’un adversaire la frappe, sauf si le lanceur du sort la fait réagir de manière appropriée.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.image%20silencieuse.ashx\" title=\"Image silencieuse\">image silencieuse</a></i>, si ce n’est que l’illusion obtenue inclut également des composantes sonores, olfactives et thermiques. Tant que le personnage continue de se <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#DUREE\" title=\"Présentation des sorts\">concentrer</a>, il peut déplacer l’illusion dans les limites de portée indiquées.<br/><br/>L’image disparaît dès qu’un adversaire la frappe, sauf si le lanceur du sort la fait réagir de manière appropriée.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Image%20accomplie.ashx",
+    "cache_fichier": "cache/html/50fd629f65864d05ea8a5319f902e7847b398b25.html",
+    "recupere_le": "2026-07-28T22:56:27.520673+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "image-accomplie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Image%20accomplie.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 3
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "image-accomplie",
+    "resume_court": "Une illusion multisensorielle (visuelle, sonore, olfactive, thermique) que le lanceur peut déplacer par concentration.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "chimère visuelle ne pouvant occuper plus de 4 cubes de 3 m/2 c d'arête + 1 cube de 3 m/2 c d'arête par niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "image-accomplie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:15+00:00",
+    "hash_source": "1283e9ea6f8f6132984b9c8162ca703f57673dd8086858d76f3649393d870466"
+  }
+}

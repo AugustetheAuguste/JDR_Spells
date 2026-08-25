@@ -1,0 +1,103 @@
+{
+  "id": "affutage",
+  "nom": "Affûtage",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aff%c3%bbtage.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 3,
+    "Ens/Mag": 3,
+    "Magus": 3,
+    "Occ": 3,
+    "San": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "arme touchée ou 50 projectiles devant être en contact les uns avec les autres au moment de l’incantation",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif, objet)",
+  "description": "Ce sort augmente le tranchant d’une arme, donc les chances qu’elle a de porter des coups plus importants. La zone de critique possible de l’arme affectée est alors doublée. Une zone de critique possible normale devient 19–20. Une zone de 19–20 passe à 17–20. Une zone de 18–20 devient 15–20. Il ne fonctionne que sur les armes tranchantes et perforantes. Lancé sur des flèches ou des carreaux d’arbalète, l’affûtage de chaque projectile cesse de faire effet après usage, qu’il ait atteint sa cible ou non. Les shuriken sont considérés comme des flèches et non comme des armes de jet pour ce sort\nLes effets augmentant la zone de critique possible d’une arme ne sont pas cumulatifs (par exemple, le sort affûtage et le don Science du critique). Il est impossible de lancer ce sort sur une arme naturelle, comme des griffes.",
+  "description_html": "<br/><br/>Ce sort augmente le tranchant d’une arme, donc les chances qu’elle a de porter des coups plus importants. La <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20de%20critique.ashx\" title=\"zone de critique\">zone de critique</a> possible de l’arme affectée est alors doublée. Une <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20de%20critique.ashx\" title=\"zone de critique\">zone de critique</a> possible normale devient 19–20. Une zone de 19–20 passe à 17–20. Une zone de 18–20 devient 15–20. Il ne fonctionne que sur les armes tranchantes et perforantes. Lancé sur des flèches ou des carreaux d’arbalète, l’<i>affûtage</i> de chaque projectile cesse de faire effet après usage, qu’il ait atteint sa cible ou non. Les shuriken sont considérés comme des flèches et non comme des armes de jet pour ce sort<br/><br/>Les effets augmentant la <a class=\"pagelink\" href=\"Pathfinder-RPG.zone%20de%20critique.ashx\" title=\"zone de critique\">zone de critique</a> possible d’une arme ne sont pas cumulatifs (par exemple, le sort <i>affûtage</i> et le don <a class=\"pagelink\" href=\"Pathfinder-RPG.Science%20du%20critique.ashx\" title=\"Science du critique\">Science du critique</a>). Il est impossible de lancer ce sort sur une arme naturelle, comme des griffes.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aff%c3%bbtage.ashx",
+    "cache_fichier": "cache/html/466f9b4309a127507b9c27b7d138bc46989becf4.html",
+    "recupere_le": "2026-07-28T22:40:05.354531+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "affutage",
+    "resume_court": "Augmente la zone de critique d'une arme tranchante ou perforante en la doublant.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "arme touchée ou 50 projectiles"
+    },
+    "notes_ambiguite": null,
+    "slug": "affutage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:11+00:00",
+    "hash_source": "9a20f864d2e655861ad6ef147352e1ab60e7fb5553a40f72952cf4acce8709d7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "00f8de9b19feb46c039fb6dce1878315ed74cba08bc67d338c49512bceef0f46",
+  "hash_vue": "8a4e1e821918bb936b102dc49091fb49f928cd86111f1010eee2140892fed2b6"
+}

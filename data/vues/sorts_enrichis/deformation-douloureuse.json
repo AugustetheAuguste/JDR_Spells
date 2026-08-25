@@ -1,0 +1,105 @@
+{
+  "id": "deformation-douloureuse",
+  "nom": "Déformation douloureuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9formation%20douloureuse.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [
+    "mal",
+    "douleur"
+  ],
+  "niveaux": {
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "L’attaque de contact du personnage inflige une difformité douloureuse à la cible. Ses membres se tordent et se recourbent tandis que son corps se contorsionne de façon incontrôlable alors qu’il change. À chaque round, la cible souffre d’une douleur insoutenable qui lui inflige 2d6 points de dégâts non-létaux, 1 point d’affaiblissement de Dextérité et 1 point d’affaiblissement de Constitution. Sa vitesse de base est réduite de 3 mètres. À son tour, une fois par round, par une action libre, la cible peut tenter un nouveau jet de Vigueur pour résister au sort pendant 1 round.",
+  "description_html": "<br/><br/>L’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact.ashx\" title=\"attaque de contact\">attaque de contact</a> du personnage inflige une difformité douloureuse à la cible. Ses membres se tordent et se recourbent tandis que son corps se contorsionne de façon incontrôlable alors qu’il change. À chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, la cible souffre d’une douleur insoutenable qui lui inflige 2d6 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non-l%c3%a9taux.ashx\" title=\"Dégâts non-létaux\">dégâts non-létaux</a>, 1 point d’affaiblissement de <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> et 1 point d’affaiblissement de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a>. Sa <a class=\"pagelink\" href=\"Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx\" title=\"vitesse de déplacement\">vitesse de base</a> est réduite de 3 mètres. À son tour, une fois par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>, la cible peut tenter un nouveau jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour résister au sort pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9formation%20douloureuse.ashx",
+    "cache_fichier": "cache/html/92cfeace457457c6c5be332dc89efc211495ba28.html",
+    "recupere_le": "2026-07-28T22:50:09.006934+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "deformation-douloureuse",
+    "resume_court": "Une attaque de contact qui déforme la cible et lui inflige douleur, affaiblissements et ralentissement.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "transformation_du_sujet",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "affaiblissement_de_capacite",
+      "degats_directs"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": "2d6 points de dégâts non-létaux",
+      "condition_infligee": [
+        "Sa vitesse de base est réduite de 3 mètres"
+      ],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": "Les dégâts sont non-létaux et ne correspondent à aucun type énergétique élémentaire de la liste, d'où le classement en « autre ». L'affaiblissement de Dextérité et Constitution est capturé par le tag « affaiblissement_de_capacite » plutôt que par une condition spécifique, car aucune condition de la liste ne représente directement une réduction de caractéristique.",
+    "slug": "deformation-douloureuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:24+00:00",
+    "hash_source": "3d4017a5a7f1621eaa646001b32e160613f39bd015ca4a394490befd8ee34e47"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9ff6378530526b917e11fae83c6f9fcdd6d9515eeda86b5f1f90288d8cf0023c",
+  "hash_vue": "c82ec63d7e191b4159bec1bca028c2c66db880e6177cb7c7176e10c7d90c293a"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "somnambulisme",
+  "nom": "Somnambulisme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Somnambulisme.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Hyp": 4,
+    "Inq": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (une branche de belladone valant 100 po)",
+  "portee": "contact",
+  "cible": "créature inconsciente touchée",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Volonté pour annuler ; voir texte",
+  "resistance_magie": "oui",
+  "description": "Le personnage oblige une créature inconsciente ou endormie à se lever et se déplacer dans un état semi-éveillé. Si on guide la créature, elle avance en titubant mais sinon, elle est sans défense. Elle se déplace à la moitié de sa vitesse de base et elle est limitée à une seule action par round. Elle ne peut pas avancer plus vite ni faire une action autre qu'une action de mouvement, sauf si on l'aide par magie, et elle rate automatiquement tout test de compétence basé sur la Dextérité ou la Force. Si elle reçoit le moindre dégât pendant la crise de somnambulisme, elle doit faire un nouveau jet de sauvegarde pour voir si le sort se termine et si elle se réveille (à condition qu'elle ait plus de 0 point de vie). Quand le sort se termine ou que le personnage y met un terme, la cible reste inconsciente et doit encore se réveiller normalement.\nSomnambulisme permet à une créature inconsciente de se déplacer mais ne la réveille pas et ne lui permet pas de se stabiliser ni de guérir. Une créature hors de combat qui se déplace sous l'effet de ce sort n'agonise pas à cause de ce mouvement.",
+  "description_html": "<br/><br/>Le personnage oblige une créature inconsciente ou endormie à se lever et se déplacer dans un état semi-éveillé. Si on guide la créature, elle avance en titubant mais sinon, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.sans%20d%c3%a9fense.ashx\" title=\"Sans défense\">sans défense</a>. Elle se déplace à la moitié de sa vitesse de base et elle est limitée à une seule action par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Elle ne peut pas avancer plus vite ni faire une action autre qu'une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>, sauf si on l'aide par magie, et elle rate automatiquement tout test de compétence basé sur la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> ou la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>. Si elle reçoit le moindre dégât pendant la crise de somnambulisme, elle doit faire un nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour voir si le sort se termine et si elle se réveille (à condition qu'elle ait plus de 0 point de vie). Quand le sort se termine ou que le personnage y met un terme, la cible reste <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconsciente</a> et doit encore se réveiller normalement. <br/><br/><i>Somnambulisme</i> permet à une créature <a class=\"pagelink\" href=\"Pathfinder-RPG.inconscient.ashx\" title=\"Inconscient\">inconsciente</a> de se déplacer mais ne la réveille pas et ne lui permet pas de se <a class=\"pagelink\" href=\"Pathfinder-RPG.stable.ashx\" title=\"Stable\">stabiliser</a> ni de guérir. Une créature <a class=\"pagelink\" href=\"Pathfinder-RPG.hors%20de%20combat.ashx\" title=\"Hors de combat\">hors de combat</a> qui se déplace sous l'effet de ce sort n'<a class=\"pagelink\" href=\"Pathfinder-RPG.mourant.ashx\" title=\"Mourant\">agonise</a> pas à cause de ce mouvement.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Somnambulisme.ashx",
+    "cache_fichier": "cache/html/9de4732b39b285b0e1cab93bf68c88f412316fc4.html",
+    "recupere_le": "2026-07-29T07:40:55.728133+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "somnambulisme",
+    "resume_court": "Force une créature endormie à se déplacer en titubant, sans la réveiller ni lui permettre d'agir librement.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est limitée à une seule action par round"
+      ],
+      "cible_typique": "créature inconsciente touchée"
+    },
+    "notes_ambiguite": "La créature est entravée dans ses mouvements et actions, justifiant la catégorie « entrave ». La condition « chancelant » reflète la limitation à une seule action par round. Le sort relève de l'enchantement (coercition) et produit un effet mental, d'où les tags correspondants.",
+    "slug": "somnambulisme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:48+00:00",
+    "hash_source": "f8bc15f80db7d2d9762836eadbef34c6589916f5191d78bb1d1a680d465c4289"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c8e6b1a156a263cc27a8bf9e83148782df5685152d4829017da5de9e143bb0ca",
+  "hash_vue": "795f2ebf430dc19dabbc736f2744ba7776dd09b1987f4ba6c80209a26623da44"
+}

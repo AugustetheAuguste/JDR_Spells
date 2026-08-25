@@ -1,0 +1,111 @@
+{
+  "id": "action-interdite-superieure",
+  "nom": "Action interdite supérieure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Action%20interdite%20sup%c3%a9rieure.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "dépendant du langage",
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 4,
+    "Inq": 5,
+    "Occ": 5,
+    "Prê": 5,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau qui ne doivent pas être distantes de plus de 9 m (6 c) les unes des autres",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme action interdite mais affecte jusqu’à une créature par niveau. Toutes les créatures affectées sont soumises à la même interdiction.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.action%20interdite.ashx\" title=\"Action interdite\">action interdite</a></i> mais affecte jusqu’à une créature par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Toutes les créatures affectées sont soumises à la même interdiction.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {
+    "sorts_lies": "Action interdite"
+  },
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Action%20interdite%20sup%c3%a9rieure.ashx",
+    "cache_fichier": "cache/html/6ae4043bfc243f812274bb01dd711b5f37530e2d.html",
+    "recupere_le": "2026-07-28T22:39:59.371632+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "action-interdite-superieure",
+    "resume_court": "Interdit à plusieurs créatures d'effectuer une action spécifique pendant plusieurs rounds.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": "Le texte ne précise pas quelle action est interdite, car il renvoie à un sort de base « action interdite » non fourni. Aucune condition spécifique (aveugle, paralysé, etc.) n'est nommée dans ce texte seul ; l'effet est une restriction d'action, classée sous « entrave ».",
+    "slug": "action-interdite-superieure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:09+00:00",
+    "hash_source": "85667c322d697f1ca232eea5a5bacb49c013c47c3c1cbc7149d8b8d705c7f219"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "987b1d823f3c9881029a4a05c451c0fde405c67bc200df087cc2907889b4fc66",
+  "hash_vue": "726734eb46d68383f89d9fe2e4ffcde35535107ec89f7d5d86369692b02c4373"
+}

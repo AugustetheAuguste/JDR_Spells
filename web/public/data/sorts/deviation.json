@@ -1,0 +1,90 @@
+{
+  "id": "deviation",
+  "nom": "Déviation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9viation.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Psy": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un morceau de caoutchouc trempé dans de la colle)",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage s'entoure d'une barrière de forces tourbillonnantes qui renvoie toute attaque qui le rate vers sa source. Ceci s'applique aussi bien aux attaques à distance qu'aux attaques au corps à corps dirigées contre le personnage tant que l'adversaire doit faire un jet d'attaque pour savoir s'il touche ou non. Si l'attaquant rate le personnage, il doit faire un second jet d'attaque contre sa propre CA en utilisant tous les modificateurs de l'attaque initiale et, s'il touche, il subit les dégâts de son attaque en totalité et souffre de toutes les conséquences qui l'accompagnent. Le personnage ne peut pas renvoyer les attaques qui le ratent pour une raison autre qu'un jet d'attaque raté (comme un camouflage par exemple). De même, il ne peut pas renvoyer une attaque qui le touche bien mais ne lui inflige pas de dégâts.",
+  "description_html": "<br/><br/>Le personnage s'entoure d'une barrière de forces tourbillonnantes qui renvoie toute attaque qui le rate vers sa source. Ceci s'applique aussi bien aux attaques à distance qu'aux attaques au corps à corps dirigées contre le personnage tant que l'adversaire doit faire un jet d'attaque pour savoir s'il touche ou non. Si l'attaquant rate le personnage, il doit faire un second jet d'attaque contre sa propre <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> en utilisant tous les modificateurs de l'attaque initiale et, s'il touche, il subit les dégâts de son attaque en totalité et souffre de toutes les conséquences qui l'accompagnent. Le personnage ne peut pas renvoyer les attaques qui le ratent pour une raison autre qu'un jet d'attaque raté (comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.camouflage.ashx\" title=\"camouflage\">camouflage</a> par exemple). De même, il ne peut pas renvoyer une attaque qui le touche bien mais ne lui inflige pas de dégâts.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9viation.ashx",
+    "cache_fichier": "cache/html/69aa0afe25b322665250670ce7527d9e3d9c1f78.html",
+    "recupere_le": "2026-07-28T22:51:00.178224+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "deviation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9viation.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "deviation",
+    "resume_court": "Une barrière de forces qui renvoie les attaques ratées vers leur auteur.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "duree_prolongee",
+      "zone_d_effet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "deviation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:44+00:00",
+    "hash_source": "3b9bfd5e3c31f752fd633b877be810f31bdd2071cb88a8c158692b12a39cbd33"
+  }
+}

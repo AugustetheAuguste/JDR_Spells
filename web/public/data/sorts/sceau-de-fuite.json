@@ -1,0 +1,125 @@
+{
+  "id": "sceau-de-fuite",
+  "nom": "Sceau de fuite",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceau%20de%20fuite.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 2,
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "Rôd": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sceau améliore la maniabilité du personnage quand il évite les attaques d’adversaires plus grands que lui. Quand le personnage est sous l’effet de ce sort et qu’une créature d’au moins une catégorie de taille de plus que lui l’attaque et le rate, il peut, par une action immédiate, s’éloigner de 1,50 mètre de son assaillant. Ce mouvement augmente de 1,50 mètre par tranche de cinq niveaux de lanceur de sorts. Ce déplacement ne provoque jamais d’attaque d’opportunité.",
+  "description_html": "<br/><br/><br/>Ce sceau améliore la maniabilité du personnage quand il évite les attaques d’adversaires plus grands que lui. Quand le personnage est sous l’effet de ce sort et qu’une créature d’au moins une catégorie de taille de plus que lui l’attaque et le rate, il peut, par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a>, s’éloigner de 1,50 mètre de son assaillant. Ce mouvement augmente de 1,50 mètre par tranche de cinq niveaux de lanceur de sorts. Ce déplacement ne provoque jamais d’<a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx\" title=\"attaque d'opportunité\">attaque d’opportunité</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceau%20de%20fuite.ashx",
+    "cache_fichier": "cache/html/028ef10ff73f8eed54340ab8b4b9c3629f1e40ff.html",
+    "recupere_le": "2026-07-29T07:40:01.439347+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sceau-de-fuite",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceau%20de%20fuite.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sceau-de-fuite",
+    "resume_court": "Le lanceur peut se déplacer sans risque quand une créature plus grande le rate.",
+    "categorie_principale": "protection",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "sceau-de-fuite",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:46+00:00",
+    "hash_source": "ec83a4e2c113829f282284b84c408a02590d52eccacaf6367c00556b310aee62"
+  }
+}

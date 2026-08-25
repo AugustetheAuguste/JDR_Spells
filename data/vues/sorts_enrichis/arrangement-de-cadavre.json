@@ -1,0 +1,89 @@
+{
+  "id": "arrangement-de-cadavre",
+  "nom": "Arrangement de cadavre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arrangement%20de%20cadavre.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (un hareng mariné)",
+  "portee": "contact",
+  "cible": "cadavre touché",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "La chair et les os du cadavre touché changent pour s'adapter à un scénario choisit par le personnage. Ce sort peut cacher ou créer des blessures, des contusions et d'autres indices subtils sur la nature de la mort de la cible et sur les dernières heures qui l'ont précédée, ce qui permet au personnage de faire croire que le cadavre est mort de la façon qu'il souhaite. Le personnage pourrait, par exemple, faire en sorte que les blessures par arme blanche se referment comme si elles n'avaient jamais existé, réorganiser les bleus sur le cou, faire disparaître les traces de poison dans le corps, faire en sorte que des brûlures recouvrent la peau du cadavre ou d'amaigrir le corps de la cible comme si elle était morte de faim. Ce sort ne peut ni cacher les altérations extrêmes (comme la perte d'un membre), ni restaurer la chair sur un cadavre squelettique, ni décharner un cadavre jusqu'à obtenir un squelette. Il ne peut pas non plus changer son identité.\nQuiconque examine le cadavre de près peut effectuer un test de Perception (DD = 10 + le niveau de lanceur de sorts du personnage) pour remarquer que les blessures sur le cadavre (ou leur absence) ne sont pas naturelles, sans pouvoir déterminer à quoi ressemblait le corps avant que ce sort ne soit lancé. Examiner le corps avec un test de Premiers secours (DD = 15 + le niveau de lanceur de sorts du personnage) réussi révèle non-seulement que les blessures sur le corps sont fausses, mais également où les blessures originales dissimulées se trouvaient.",
+  "description_html": "<br/><br/>La chair et les os du cadavre touché changent pour s'adapter à un scénario choisit par le personnage. Ce sort peut cacher ou créer des blessures, des contusions et d'autres indices subtils sur la nature de la mort de la cible et sur les dernières heures qui l'ont précédée, ce qui permet au personnage de faire croire que le cadavre est mort de la façon qu'il souhaite. Le personnage pourrait, par exemple, faire en sorte que les blessures par arme blanche se referment comme si elles n'avaient jamais existé, réorganiser les bleus sur le cou, faire disparaître les traces de poison dans le corps, faire en sorte que des brûlures recouvrent la peau du cadavre ou d'amaigrir le corps de la cible comme si elle était morte de faim. Ce sort ne peut ni cacher les altérations extrêmes (comme la perte d'un membre), ni restaurer la chair sur un cadavre squelettique, ni décharner un cadavre jusqu'à obtenir un squelette. Il ne peut pas non plus changer son identité.<br/><br/>Quiconque examine le cadavre de près peut effectuer un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 10 + le <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> du personnage) pour remarquer que les blessures sur le cadavre (ou leur absence) ne sont pas naturelles, sans pouvoir déterminer à quoi ressemblait le corps avant que ce sort ne soit lancé. Examiner le corps avec un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Premiers%20secours.ashx\" title=\"Premiers secours\">Premiers secours</a> (DD = 15 + le niveau de lanceur de sorts du personnage) réussi révèle non-seulement que les blessures sur le corps sont fausses, mais également où les blessures originales dissimulées se trouvaient.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arrangement%20de%20cadavre.ashx",
+    "cache_fichier": "cache/html/20828235c69c8503c8cc22661dab239c920c66d3.html",
+    "recupere_le": "2026-07-28T22:42:08.447083+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "arrangement-de-cadavre",
+    "resume_court": "Modifie l'apparence des blessures d'un cadavre pour dissimuler ou feindre la cause de la mort.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "transformation_du_sujet",
+      "objet_ou_equipement",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cadavre touché"
+    },
+    "notes_ambiguite": "Le sort affecte un cadavre, classé comme objet plutôt que créature. La transformation du sujet est un tag approprié car le sort modifie l'apparence physique du cadavre. Bien que le sort serve principalement à tromper (rôle social), il peut aussi servir à des fins utilitaires hors combat.",
+    "slug": "arrangement-de-cadavre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:14+00:00",
+    "hash_source": "8fdee3b4039e87399134bf9a8a311588ebb7eda17b1ae86bd61b9cf9d4adf784"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "856b82140f8c81a889e82713dd1fd9d45928f28d847d1a746f945feb64dab180",
+  "hash_vue": "10de4dc7cbece1dc350e87bafc80bbd29ac8bb6bff1fa85e903fcba1dc100ac9"
+}

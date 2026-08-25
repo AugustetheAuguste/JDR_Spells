@@ -1,0 +1,78 @@
+{
+  "id": "science-du-lien-de-vie",
+  "nom": "Science du lien de vie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20lien%20de%20vie.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 3,
+    "ConU": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Le personnage utilise ce sort pour partager ses points de vie avec son eidolon. Quand le sort est actif, il peut dépenser une action rapide pour faire passer 2d6 points de vie de l’un à l’autre, soit en se blessant pour soigner l’eidolon, soit en blessant l’eidolon pour se soigner. Si l’eidolon s’éloigne de plus de 15 m (10 c) le sort se termine.",
+  "description_html": "<br/><br/>Le personnage utilise ce sort pour partager ses points de vie avec son <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a>. Quand le sort est actif, il peut dépenser une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a> pour faire passer 2d6 points de vie de l’un à l’autre, soit en se blessant pour soigner l’<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a>, soit en blessant l’<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> pour se soigner. Si l’<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> s’éloigne de plus de 15 m (10 <abbr title=\"cases\">c</abbr>) le sort se termine.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20lien%20de%20vie.ashx",
+    "cache_fichier": "cache/html/ec0eb36e2e4239737571c6b649b5891f248a7140.html",
+    "recupere_le": "2026-07-29T07:40:05.439568+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "science-du-lien-de-vie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20lien%20de%20vie.ashx",
+  "niveaux_par_classe": {
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "science-du-lien-de-vie",
+    "resume_court": "Le lanceur partage ses points de vie avec son eidolon via une action rapide, jusqu'à 15 m de distance.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort affecte techniquement le lanceur lui-même, mais son effet principal est de soigner l'eidolon (allié). La cible typique pourrait être « soi » si l'on considère que le lanceur est la cible désignée, ou « allie » si l'on privilégie l'eidolon comme bénéficiaire principal. J'ai choisi « allie » car le sort sert principalement à soigner l'eidolon, bien que le lanceur soit la cible formelle.",
+    "slug": "science-du-lien-de-vie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:27+00:00",
+    "hash_source": "368d28a282c1fa63127379694fe771dd7711517b289f8b63e26504838e379ac7"
+  }
+}

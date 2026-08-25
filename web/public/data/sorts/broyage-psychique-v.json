@@ -1,0 +1,79 @@
+{
+  "id": "broyage-psychique-v",
+  "nom": "Broyage psychique V",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20V.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, partiel et Vigueur, partiel (voir texte)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme broyage psychique IV mais si la cible réussit son jet de Vigueur ou de Volonté, elle subit 11d6 points de dégâts +1 par niveau de lanceur de sorts. S’il lui reste moins de la moitié de ses points de vie, elle subit un malus de –2 au jet de Volonté pour résister au sort. On peut lancer ce sort dans une version réduite.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.broyage%20psychique%20IV.ashx\" title=\"Broyage psychique IV\">broyage psychique IV</a></i> mais si la cible réussit son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>, elle subit 11d6 points de dégâts +1 par niveau de lanceur de sorts. S’il lui reste moins de la moitié de ses points de vie, elle subit un malus de –2 au jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour résister au sort. On peut lancer ce sort dans une version réduite.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20V.ashx",
+    "cache_fichier": "cache/html/ef978bd7df017f8f4ed19ccaaf03975113363fb6.html",
+    "recupere_le": "2026-07-28T22:45:05.874402+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "broyage-psychique-v",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Broyage%20psychique%20V.ashx",
+  "niveaux_par_classe": {
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "broyage-psychique-v",
+    "resume_court": "Un sort de nécromancie infligeant 11d6 dégâts mentaux et imposant un malus si la cible est affaiblie.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "11d6 points de dégâts +1 par niveau de lanceur de sorts",
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le texte ne précise pas le type énergétique des dégâts (feu, froid, etc.), seulement qu'il s'agit d'un effet mental en nécromancie. Classé comme 'autre' faute de précision. Aucune condition persistante n'est infligée : le malus au jet de Volonté est une mécanique de résolution, non une condition appliquée après le sort.",
+    "slug": "broyage-psychique-v",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:20+00:00",
+    "hash_source": "435f22d283619710f8eda6c50ab671194d423294e3fcf485f3f651623ef4fe7c"
+  }
+}

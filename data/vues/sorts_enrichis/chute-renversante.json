@@ -1,0 +1,94 @@
+{
+  "id": "chute-renversante",
+  "nom": "Chute renversante",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute%20renversante.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature qui tombe",
+  "duree": "1 round/niveau (voir ci-dessous)",
+  "jet_de_sauvegarde": "Vigueur, partiel (voir ci-dessous)",
+  "resistance_magie": "oui",
+  "description": "Ce sort doit être lancé sur une créature au moment où elle tombe, soit d’une certaine hauteur, soit après avoir été mise à terre ou victime d’un croc-en-jambe. La magie de ce sort augmente la violence de la chute, ce qui coupe le souffle de la victime. Celle-ci subit 1d6 points de dégâts de chute supplémentaires. En outre, elle est chancelante pendant toute la durée du sort, à moins de réussir un jet de Volonté. Chaque round pendant lequel persistent les effets du sort, la créature peut tenter un nouveau jet de Volonté par une action libre pour mettre fin à l’état préjudiciable chancelant. Une créature sous les effets de ce sort doit réaliser une action simple pour se relever.",
+  "description_html": "<br/><br/>Ce sort doit être lancé sur une créature au moment où elle tombe, soit d’une certaine hauteur, soit après avoir été mise <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a0%20terre.ashx\" title=\"À terre\">à terre</a> ou victime d’un <a class=\"pagelink\" href=\"Pathfinder-RPG.croc-en-jambe.ashx\" title=\"croc-en-jambe\">croc-en-jambe</a>. La magie de ce sort augmente la violence de la chute, ce qui coupe le souffle de la victime. Celle-ci subit 1d6 points de dégâts de chute supplémentaires. En outre, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pendant toute la durée du sort, à moins de réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a>. Chaque round pendant lequel persistent les effets du sort, la créature peut tenter un nouveau jet de Volonté par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a> pour mettre fin à l’état préjudiciable chancelant. Une créature sous les effets de ce sort doit réaliser une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20simple.ashx\" title=\"Action simple\">action simple</a> pour se relever.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "NPC Codex, NPC Guide, Rival Guide/Manuel des PNJ"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chute%20renversante.ashx",
+    "cache_fichier": "cache/html/759ae3fd39dcc4331e1b3809d76b4fe25e2bc3ed.html",
+    "recupere_le": "2026-07-28T22:46:39.160242+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "chute-renversante",
+    "resume_court": "Augmente les dégâts de chute et rend la cible chancelante pendant plusieurs rounds.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts de chute supplémentaires",
+      "condition_infligee": [
+        "elle est chancelante pendant toute la durée du sort"
+      ],
+      "cible_typique": "une créature qui tombe"
+    },
+    "notes_ambiguite": "Le type de dégâts est classé en « autre » car il s'agit de dégâts de chute, qui ne correspondent à aucun type énergétique élémentaire de la liste (feu, froid, acide, électricité, son, force, négatif, positif) ni à un type d'arme (perforant, tranchant, contondant, précision). Le sort relève de la transmutation et modifie la nature de la chute, justifiant le tag « transformation_du_sujet ».",
+    "slug": "chute-renversante",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:59+00:00",
+    "hash_source": "918d0e4eaa710229241f00a924c471b45de284116ab6ecbdc26c8c372709dc1a"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "58dfdcfbf0b3baa04f96c8428d2c0a9d1cb47d8ab6893ef3822988fba5e2eb4f",
+  "hash_vue": "2e36993dee54932efc39b98b6b97e9ef44861d4ee1e4cf39722b387c1c239feb"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "piege-de-teleportation",
+  "nom": "Piège de téléportation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pi%c3%a8ge%20de%20t%c3%a9l%c3%a9portation.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (poudre de magnétite et d'argent de valeur de 100 PO par cube de 12 mètres affecté)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "un cube de 12 m (8 c) de côté par niveau",
+  "duree": "1 jour/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le piège de téléportation protège une zone, redirigeant toute téléportation vers ou en dehors de la surface piégée vers un endroit précis de la zone déterminé au moment du lancement du sort. La destination doit être un endroit libre sur une surface solide. Une créature affectée par un tel piège a droit à un jet de Volonté : en cas de réussite, elle ne se téléporte pas du tout (mais l'utilisation de la téléportation est consommée malgré tout). Un jet de Connaissances (mystères) de DD 27 permet de remarquer la présence du piège, mais pas de déterminer sa destination.\nLe lanceur de sort peut choisir en lançant le sort de faire en sorte qu'une catégorie de personnes ne soit pas affectée par le sort, par exemple les créatures d'un certain type ou alignement, possédant un certain objet ou connaissant un certain mot de passe (cette dernière option ne fonctionnant que pour les créatures cherchant à en sortir). Ces conditions sont choisies au moment du lancement du sort. Des conditions plus complexes peuvent être mises en place, mais elles risquent fortement de faire échouer le sort. Plusieurs pièges de téléportations peuvent être placés de manière adjacente, de manière à toutes renvoyer vers le même point contenu dans une des zones affectées.\nOn peut user de permanence sur un piège de téléportation, mais cela coute 7 000 po.",
+  "description_html": "<br/><br/>Le <i>piège de téléportation</i> protège une zone, redirigeant toute téléportation vers ou en dehors de la surface piégée vers un endroit précis de la zone déterminé au moment du lancement du sort. La destination doit être un endroit libre sur une surface solide. Une créature affectée par un tel piège a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> : en cas de réussite, elle ne se téléporte pas du tout (mais l'utilisation de la téléportation est consommée malgré tout). Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Connaissances.ashx\" title=\"Connaissances\">Connaissances</a> (mystères) de DD 27 permet de remarquer la présence du piège, mais pas de déterminer sa destination. <br/><br/>Le lanceur de sort peut choisir en lançant le sort de faire en sorte qu'une catégorie de personnes ne soit pas affectée par le sort, par exemple les créatures d'un certain type ou <a class=\"pagelink\" href=\"Pathfinder-RPG.alignement.ashx\" title=\"L'alignement\">alignement</a>, possédant un certain objet ou connaissant un certain mot de passe (cette dernière option ne fonctionnant que pour les créatures cherchant à en sortir). Ces conditions sont choisies au moment du lancement du sort. Des conditions plus complexes peuvent être mises en place, mais elles risquent fortement de faire échouer le sort. Plusieurs pièges de téléportations peuvent être placés de manière adjacente, de manière à toutes renvoyer vers le même point contenu dans une des zones affectées.<br/><br/>On peut user de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.permanence.ashx\" title=\"Permanence\">permanence</a></i> sur un piège de téléportation, mais cela coute 7 000 po.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea World Guide/La Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pi%c3%a8ge%20de%20t%c3%a9l%c3%a9portation.ashx",
+    "cache_fichier": "cache/html/e8f713de79254386d0d0fe5292573671da4bf0df.html",
+    "recupere_le": "2026-07-28T23:03:19.944119+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "piege-de-teleportation",
+    "resume_court": "Protège une zone en redirigeant toute téléportation vers un point précis déterminé au lancement.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un cube de 12 m (8 c) de côté par niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "piege-de-teleportation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:03+00:00",
+    "hash_source": "2415fda56f83681adb0a3a651b45d0065f4b87878ebeb89583fcbb7538a17dfc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c176505d4863e54b9d54cc311f7211414fca8b241a19c6a1f465caf03f5249b1",
+  "hash_vue": "04c8b73d2342a9c31854240525d78e6b24f8d9a51fb72d55535a5105fa2cf9f9"
+}

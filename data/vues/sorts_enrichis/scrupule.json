@@ -1,0 +1,124 @@
+{
+  "id": "scrupule",
+  "nom": "Scrupule",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scrupule.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Inq": 2,
+    "Ens/Mag": 2,
+    "Méd": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau ou jusqu'à déchargement",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La cible est soudain assaillie de doutes quant à l’efficacité de ses actions et la justesse de sa cause. Elle subit un malus de -10 aux tests de caractéristique, de compétence et de Concentration, jusqu’à la fin du sort ou jusqu’à ce qu’elle passe un tour entier sans rien faire (elle utilise une action complexe pour reprendre ses esprits). Le sort expire après un round à ne rien faire.",
+  "description_html": "<br/><br/>La cible est soudain assaillie de doutes quant à l’efficacité de ses actions et la justesse de sa cause. Elle subit un malus de -10 aux tests de caractéristique, <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx\" title=\"test de compétence\">de compétence</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.Test%20de%20concentration.ashx\" title=\"test de concentration\">de Concentration</a>, jusqu’à la fin du sort ou jusqu’à ce qu’elle passe un tour entier sans rien faire (elle utilise une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a> pour reprendre ses esprits). Le sort expire après un <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> à ne rien faire.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scrupule.ashx",
+    "cache_fichier": "cache/html/11533092da7095cb6167ebf7b664d601d688646e.html",
+    "recupere_le": "2026-07-29T07:40:07.550748+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "scrupule",
+    "resume_court": "La cible subit un malus de -10 à ses tests et doute de ses actions jusqu'à rester inactive.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "scrupule",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:28+00:00",
+    "hash_source": "52bd789fb770addb03da13b8991cae08f22f46d2a4e8bc1bc6c699c40a05916b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "13bba791aef0348c8748fb53b55668d8c63758554ddb3684366281b18dbebbae",
+  "hash_vue": "0021abf8caa5f4688d948cbb055201ee334fcd0a317bea812da3c1217ecd4468"
+}

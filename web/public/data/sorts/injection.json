@@ -1,0 +1,105 @@
+{
+  "id": "injection",
+  "nom": "Injection",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injection.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Ens/Mag": 3,
+    "Psy": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Le personnage doit tenir un élixir, un extrait, un poison ou une potion en main quand il lance le sort. La substance passe alors de son récipient à un sac magique qui se forme dans le corps du personnage. Tant que le sort fait effet, il peut transmettre la substance d’un simple contact. Dans le cas d'une infusion d'alchimiste, la cible a droit à un jet de Vigueur et à sa résistance à la magie. S’il touche, la substance agit immédiatement, même si elle devrait attendre une période d’incubation, et l’adversaire a droit à un jet de sauvegarde contre la substance (si elle l’autorise).\nLe sort protège le personnage contre le poison contenu dans le sac corporel mais, s’il ne possède pas le pouvoir de classe utilisation des poisons, il a 5% de chances de s’exposer à ses effets quand il lance le sort. S’il fait un 1 naturel quand il tente d’injecter le poison à un adversaire, il s’expose à ses effets.",
+  "description_html": "<br/><br/>Le personnage doit tenir un élixir, un extrait, un poison ou une potion en main quand il lance le sort. La substance passe alors de son récipient à un sac magique qui se forme dans le corps du personnage. Tant que le sort fait effet, il peut transmettre la substance d’un simple contact. Dans le cas d'une infusion d'alchimiste, la cible a droit à un jet de Vigueur et à sa résistance à la magie. S’il touche, la substance agit immédiatement, même si elle devrait attendre une période d’incubation, et l’adversaire a droit à un jet de sauvegarde contre la substance (si elle l’autorise).<br/><br/>Le sort protège le personnage contre le poison contenu dans le sac corporel mais, s’il ne possède pas le pouvoir de classe utilisation des poisons, il a 5% de chances de s’exposer à ses effets quand il lance le sort. S’il fait un 1 naturel quand il tente d’injecter le poison à un adversaire, il s’expose à ses effets.<br/><br/>",
+  "mythique": {
+    "description": "Ajoutez la moitié du grade du personnage au DD d’un poison ou d’une potion injecté dans le corps d’une créature à l’aide de ce sort. S’il injecte une substance qui confère un bonus de compétence, ajoutez son grade à ce bonus.",
+    "description_html": "Ajoutez la moitié du <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage au <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> d’un poison ou d’une potion injecté dans le corps d’une créature à l’aide de ce sort. S’il injecte une substance qui confère un bonus de compétence, ajoutez son <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> à ce bonus."
+  },
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injection.ashx",
+    "cache_fichier": "cache/html/f1dbc5d0048e06c4f8475c7bc78cc149600a6c3e.html",
+    "recupere_le": "2026-07-28T22:57:03.522599+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "injection",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Injection.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 2
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "injection",
+    "resume_court": "Le lanceur stocke une substance dans son corps et peut l'injecter par contact pendant 1 heure par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "duree_prolongee",
+      "attaque_de_contact",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le jeteur de sorts"
+    },
+    "notes_ambiguite": "Le sort lui-même n'inflige pas de dégâts ni de condition : il prépare le lanceur à en infliger via la substance injectée. La substance agit selon ses propres règles, pas selon le sort. L'effet du sort est une amélioration tactique (capacité à injecter) plutôt qu'une attaque directe.",
+    "slug": "injection",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:29+00:00",
+    "hash_source": "bdb9f47addd254b924bac6ae1b28a8d69abe1c311c43e66a12f0eaee00133c60"
+  }
+}

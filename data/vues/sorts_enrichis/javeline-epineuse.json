@@ -1,0 +1,91 @@
+{
+  "id": "javeline-epineuse",
+  "nom": "Javeline épineuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Javeline%20%c3%a9pineuse.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "0 m",
+  "cible": "épine en forme de javeline",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Une épine de la taille d’une javeline (adaptée à la taille du personnage) apparaît dans la main du personnage. Il s’en sert comme d’une javeline et il est considéré comme formé à son maniement. Toute créature touchée par la javeline doit réussir un jet de Vigueur pour ne pas être fiévreuse pendant 1 round. Si le personnage lance la javeline, une autre apparaît dans sa main. Toute javeline quittant la main du personnage disparaît à la fin de son tour. Chaque attaque de javeline que le personnage effectue réduit la durée restante du sort d’une minute. Si une attaque réduit la durée restante à 0 minute ou moins, le sort se termine après que l’attaque a été résolue.",
+  "description_html": "<br/><br/>Une épine de la taille d’une javeline (adaptée à la taille du personnage) apparaît dans la main du personnage. Il s’en sert comme d’une javeline et il est considéré comme formé à son maniement. Toute créature touchée par la javeline doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> pour ne pas être <a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fiévreux\" title=\"Les états préjudiciables\">fiévreuse</a> pendant 1 round. Si le personnage lance la javeline, une autre apparaît dans sa main. Toute javeline quittant la main du personnage disparaît à la fin de son tour. Chaque attaque de javeline que le personnage effectue réduit la durée restante du sort d’une minute. Si une attaque réduit la durée restante à 0 minute ou moins, le sort se termine après que l’attaque a été résolue.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Javeline%20%c3%a9pineuse.ashx",
+    "cache_fichier": "cache/html/bc649097f3d96c21b0ce6b2f2f93b5f36d89a661.html",
+    "recupere_le": "2026-07-28T22:57:40.572611+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "javeline-epineuse",
+    "resume_court": "Une javeline empoisonnée apparaît dans la main du lanceur et peut rendre fiévreuse sa cible.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "arme_ou_munition",
+      "jet_de_sauvegarde",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "épine en forme de javeline"
+    },
+    "notes_ambiguite": "Le sort crée une arme (javeline) plutôt qu'une créature invoquée. La condition « fiévreuse » n'existe pas dans la liste fermée des conditions ; le texte la mentionne mais elle ne peut être retenue. Le sort inflige des dégâts d'arme via la javeline, mais ceux-ci ne sont pas explicitement quantifiés dans la description du sort lui-même.",
+    "slug": "javeline-epineuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:45+00:00",
+    "hash_source": "7d78f8f8fd9e7264aff6194e9c324389c15567b5cb31286300f6aeba85ed8fc9"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e52ad53cd43a61d88267bc4447f60492ac825edcbcd07d9171a997e11cc40332",
+  "hash_vue": "9b87838fc0efa88e7e93cbef6057f1d06893af1ab55818f5835bfef825c38883"
+}

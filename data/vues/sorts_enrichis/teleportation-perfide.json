@@ -1,0 +1,127 @@
+{
+  "id": "teleportation-perfide",
+  "nom": "Téléportation perfide",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20perfide.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [
+    "ruse"
+  ],
+  "niveaux": {
+    "Con": 6,
+    "ConU": 6,
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Occ": 6,
+    "Psy": 6,
+    "Sor": 6,
+    "Spi": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "personnelle et contact",
+  "cible": "le jeteur de sorts et les créatures consentantes ou objets qu’il touche",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun ou Volonté, annule (objet)",
+  "resistance_magie": "non ou oui (objet)",
+  "description": "Ce sort fonctionne comme téléportation excepté que le personnage peut sciemment faire en sorte que certaines créatures se déplaçant avec lui subissent un incident ou atterrissent à un autre endroit spécifique visualisé en même temps que la destination originale, ou les deux.\nToute tentative visant à identifier téléportation perfide avec un test de compétence l'identifie à tort comme téléportation (voir le registre de la ruse).",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> excepté que le personnage peut sciemment faire en sorte que certaines créatures se déplaçant avec lui subissent un incident ou atterrissent à un autre endroit spécifique visualisé en même temps que la destination originale, ou les deux.<br/><br/>Toute tentative visant à identifier <i>téléportation perfide</i> avec un test de compétence l'identifie à tort comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> (voir le registre de la <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">ruse</a>).<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "autres": {
+    "sorts_lies": "Téléportation"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9portation%20perfide.ashx",
+    "cache_fichier": "cache/html/72612f4c41a05721f06cc3002dbaea1f63b0c1e2.html",
+    "recupere_le": "2026-07-29T07:42:03.615530+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "teleportation-perfide",
+    "resume_court": "Le lanceur se téléporte avec des alliés, mais peut faire échouer certains ou les envoyer ailleurs.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "charme_ou_coercition",
+      "duree_instantanee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "les créatures consentantes ou objets qu'il touche"
+    },
+    "notes_ambiguite": "Le sort permet au lanceur de faire échouer intentionnellement la téléportation de certaines créatures ou de les envoyer ailleurs, ce qui relève de la coercition. Cependant, le texte ne précise pas si cela inflige une condition spécifique (comme étourdi ou confus) ou simplement un effet de placement. Aucune condition nommée n'est mentionnée, donc condition_infligee reste vide.",
+    "slug": "teleportation-perfide",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:20+00:00",
+    "hash_source": "a615607f7e2322b91e65295027c106270838654c23d4190aa9e9fbd1bc2cba1c"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3022f994fc33de9ad9b21a0bb7e96dc0a15062937f49791b57fa84af78da36e4",
+  "hash_vue": "3cfda4aa793080825642ed9591c55314701cc86e6efbfb4347470f47c67c42e0"
+}

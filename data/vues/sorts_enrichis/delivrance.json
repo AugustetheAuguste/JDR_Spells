@@ -1,0 +1,78 @@
+{
+  "id": "delivrance",
+  "nom": "Délivrance",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9livrance.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux) (voir description)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Tous les sorts et effets limitant les capacités de mouvement de la cible sont immédiatement suspendus. Cela inclut animation suspendue, dédale, emprisonnement, enchevêtrement, entrave, l’étourdissement, l’immobilisation, lenteur, la paralysie, la pétrification, sommeil et toile d’araignée. Pour délivrer une victime de dédale ou emprisonnement, il faut connaître son nom et son passé et lancer le sort à l’endroit où elle a été enfermée ou bannie.",
+  "description_html": "<br/><br/>Tous les sorts et effets limitant les capacités de mouvement de la cible sont immédiatement suspendus. Cela inclut <i><a class=\"pagelink\" href=\"Pathfinder-RPG.animation%20suspendue.ashx\" title=\"Animation suspendue\">animation suspendue</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9dale.ashx\" title=\"Dédale\">dédale</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.emprisonnement.ashx\" title=\"Emprisonnement\">emprisonnement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.enchev%c3%aatrement.ashx\" title=\"Enchevêtrement\">enchevêtrement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.entrave.ashx\" title=\"Entrave\">entrave</a></i>, l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9tourdi.ashx\" title=\"Étourdi\">étourdissement</a>, l’<a class=\"pagelink\" href=\"Pathfinder-RPG.immobilis%c3%a9.ashx\" title=\"Immobilisé\">immobilisation</a>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a></i>, la <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysie</a>, la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.p%c3%a9trification.ashx\" title=\"Pétrification\">pétrification</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.sommeil.ashx\" title=\"Sommeil\">sommeil</a></i> et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.toile%20daraign%c3%a9e.ashx\" title=\"Toile d'araignée\">toile d’araignée</a></i>. Pour délivrer une victime de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9dale.ashx\" title=\"Dédale\">dédale</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.emprisonnement.ashx\" title=\"Emprisonnement\">emprisonnement</a></i>, il faut connaître son nom et son passé et lancer le sort à l’endroit où elle a été enfermée ou bannie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9livrance.ashx",
+    "cache_fichier": "cache/html/ab590fbd80515fbf01f81799350149fa3bfefa91.html",
+    "recupere_le": "2026-07-28T22:50:18.295125+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "delivrance",
+    "resume_court": "Suspend immédiatement tous les sorts et effets qui limitent les mouvements de la cible.",
+    "categorie_principale": "soin",
+    "tags": [
+      "dissipation_ou_contresort",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": "Le sort lève des conditions d'entrave plutôt que d'en infliger. Classé en `soin` car il restaure la liberté de mouvement, bien que `dissipation_ou_contresort` soit aussi pertinent. La cible est inoffensive (jet annule), donc `allie` s'impose.",
+    "slug": "delivrance",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:28+00:00",
+    "hash_source": "4b51aa15906bc047b21c65c2a1fab459b370e4abcb0dde32a006d7e56164a89b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3b616e51fc3c4584f518714944c6d474b3f6cdbc7a68b6f5434edc3a228c1dd0",
+  "hash_vue": "0f8bbfcdb5cfafa931f7806519bf5cd602ea26f76f34e74c23d4efb782a3710d"
+}

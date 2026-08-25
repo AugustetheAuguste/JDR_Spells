@@ -1,0 +1,101 @@
+{
+  "id": "defoliant",
+  "nom": "Défoliant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9foliant.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Rod": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une sauterelle)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "voir texte",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Une petite sphère d'énergie négative jaillit des mains du personnage, tuant toutes les plantes sur une ligne de 18 mètres (12 c) ou dans une émanation de 3 mètres (2 c). Il supprime ainsi tout camouflage ou abri que ces plantes pourraient offrir.\nVous pouvez aussi cibler une unique créature plante avec ce sort. Vous devez réussir une attaque de contact à distance pour toucher votre cible. Si vous réussissez à la toucher, la créature subit 2d8 points de dommage.",
+  "description_html": "<br/><br/>Une petite sphère d'énergie négative jaillit des mains du personnage, tuant toutes les plantes sur une ligne de 18 mètres (12 <abbr title=\"cases\">c</abbr>) ou dans une émanation de 3 mètres (2 <abbr title=\"cases\">c</abbr>). Il supprime ainsi tout camouflage ou abri que ces plantes pourraient offrir.<br/><br/>Vous pouvez aussi cibler une unique créature plante avec ce sort. Vous devez réussir une attaque de contact à distance pour toucher votre cible. Si vous réussissez à la toucher, la créature subit 2d8 points de dommage.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9foliant.ashx",
+    "cache_fichier": "cache/html/ace6791df96eded815c24c5aa7e0e5e3013e28f4.html",
+    "recupere_le": "2026-07-28T22:50:07.235248+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "defoliant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9foliant.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 2
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "defoliant",
+    "resume_court": "Une sphère d'énergie négative détruit les plantes sur une ligne ou dans une émanation, ou blesse une créature plante.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "attaque_de_contact",
+      "terrain_ou_environnement",
+      "rayon_ou_projectile"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "Une petite sphère d'énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "tuant toutes les plantes sur une ligne de 18 mètres (12 c) ou dans une émanation de 3 mètres (2 c)"
+    },
+    "notes_ambiguite": "Le sort affecte principalement une zone (plantes), mais peut aussi cibler une créature plante unique avec une attaque de contact. La cible_typique « zone » reflète l'usage principal décrit en premier. Les dégâts (2d8) ne s'appliquent que si une créature plante est ciblée et touchée.",
+    "slug": "defoliant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:23+00:00",
+    "hash_source": "caad9d882265d778f29f92cf37573e0e2f71c00972827db55bd588a877779042"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "brume-de-reves",
+  "nom": "Brume de rêves",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20de%20r%c3%aaves.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "effet mental",
+    "émotion"
+  ],
+  "niveaux": {
+    "Bard": 1,
+    "Cham": 1,
+    "Inq": 1,
+    "Pal": 1,
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, M (une pincée de sable)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage assaille un ennemi de rêves éveillés, en rappel des plaisirs, des délices et des terreurs que l’on rencontre dans le monde des rêves. Durant cet étrange état de songe, la cible se déplace à la moitié de sa vitesse normale (arrondie à la tranche de 1,50m inférieure), ce qui affecte comme à l’accoutumée sa distance de saut.\nDes effets multiples de brume de rêves ne se cumulent pas, et l’effet de ce sort ne se cumule pas non plus avec lenteur.",
+  "description_html": "<br/><br/>Le personnage assaille un ennemi de rêves éveillés, en rappel des plaisirs, des délices et des terreurs que l’on rencontre dans le monde des rêves. Durant cet étrange état de songe, la cible se déplace à la moitié de sa vitesse normale (arrondie à la tranche de 1,50m inférieure), ce qui affecte comme à l’accoutumée sa distance de saut.<br/><br/>Des effets multiples de <i>brume de rêves</i> ne se cumulent pas, et l’effet de ce sort ne se cumule pas non plus avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Desna."
+  },
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20de%20r%c3%aaves.ashx",
+    "cache_fichier": "cache/html/d81c83764b10e039198dc3439d26af451baf26fe.html",
+    "recupere_le": "2026-07-28T22:45:11.408876+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "brume-de-reves",
+    "resume_court": "La cible est plongée dans des rêves éveillés et se déplace à la moitié de sa vitesse.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "ralenti"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la cible se déplace à la moitié de sa vitesse normale"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "La condition « ralenti » est la plus proche de l'effet décrit (réduction de vitesse et d'actions), bien que le texte ne nomme pas explicitement cette condition. L'effet mental et le charme justifient les tags correspondants.",
+    "slug": "brume-de-reves",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:23+00:00",
+    "hash_source": "93fb3d14b19f03a4b07044eb5ba114ae584c0734d5fffa1110fc5ab7837c3848"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5980859369bc24eac623aaf374200497548aff1aebd9c71bfdb49526a133a4bd",
+  "hash_vue": "93b530ad4f43898b7b0cd9da88f4558c51fa48854a82f750d5ee35a9bfbfdee2"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "emprunt-de-competence",
+  "nom": "Emprunt de compétence",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Emprunt%20de%20comp%c3%a9tence.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Méd": 1,
+    "Psy": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "jusqu'à 1 round/niveau (voir texte)",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage emprunte une compétence connue de lui à la cible. Après l'avoir touchée, il peut faire un unique test pour la compétence choisie en utilisant le rang de la cible auquel il applique son propre modificateur de caractéristique. Si le personnage dépasse la durée d'effet du sort pour effectuer son test ou si le test demande plus de temps, le sort échoue et le personnage doit utiliser ses propres rangs de compétence (s'il en a). Si la compétence d'emprunt est une compétence de classe pour le personnage, il gagne un bonus de +3 au test quand il l'utilise.",
+  "description_html": "<br/><br/>Le personnage emprunte une <a class=\"pagelink\" href=\"Pathfinder-RPG.comp%c3%a9tences.ashx\" title=\"Les compétences\">compétence</a> connue de lui à la cible. Après l'avoir touchée, il peut faire un unique test pour la <a class=\"pagelink\" href=\"Pathfinder-RPG.comp%c3%a9tences.ashx\" title=\"Les compétences\">compétence</a> choisie en utilisant le <a class=\"pagelink\" href=\"Pathfinder-RPG.rang.ashx\" title=\"rang\">rang</a> de la cible auquel il applique son propre modificateur de caractéristique. Si le personnage dépasse la durée d'effet du sort pour effectuer son test ou si le test demande plus de temps, le sort échoue et le personnage doit utiliser ses propres <a class=\"pagelink\" href=\"Pathfinder-RPG.rang.ashx\" title=\"rang\">rangs</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.comp%c3%a9tences.ashx\" title=\"Les compétences\">compétence</a> (s'il en a). Si la <a class=\"pagelink\" href=\"Pathfinder-RPG.comp%c3%a9tences.ashx\" title=\"Les compétences\">compétence</a> d'emprunt est une <a class=\"pagelink\" href=\"Pathfinder-RPG.comp%c3%a9tence%20de%20classe.ashx\" title=\"compétence de classe\">compétence de classe</a> pour le personnage, il gagne un bonus de +3 au test quand il l'utilise.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Emprunt%20de%20comp%c3%a9tence.ashx",
+    "cache_fichier": "cache/html/981697608efafd1d348b90d94bedfff4b44347a4.html",
+    "recupere_le": "2026-07-28T22:52:03.203769+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "emprunt-de-competence",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Emprunt%20de%20comp%c3%a9tence.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "emprunt-de-competence",
+    "resume_court": "Le lanceur emprunte une compétence à une créature touchée et peut l'utiliser une fois.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "bonus_chiffre",
+      "attaque_de_contact"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "social",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "emprunt-de-competence",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:16+00:00",
+    "hash_source": "3485423ad558a1f9cec1218e05a2626ffd158bc5db4c2169f355305119db87c6"
+  }
+}

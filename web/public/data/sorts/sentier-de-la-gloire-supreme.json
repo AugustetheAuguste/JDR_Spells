@@ -1,0 +1,90 @@
+{
+  "id": "sentier-de-la-gloire-supreme",
+  "nom": "Sentier de la gloire suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentier%20de%20la%20gloire%20supr%c3%aame.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 4,
+    "Prê": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact (voir description)",
+  "cible": "quatre cases de 1,5 m de côté/niveau (cf. texte)",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Le personnage fait briller quatre cases de 1,5 mètre de côté (dont l’une doit correspondre à l’espace qu’il occupe) d’une faible lumière. Au début de son tour suivant et par une action rapide, le personnage peut étendre la zone illuminée de quatre cases supplémentaires de 1,5 mètre de côté : chaque nouvelle case doit être adjacente à une case précédemment illuminée. Les alliés qui terminent leur tour sur une case brillante (y compris ceux qui tombent inconscients sur l’une de ces cases) sont soignés de 5 points de dégâts.",
+  "description_html": "<br/><br/>Le personnage fait briller quatre cases de 1,5 mètre de côté (dont l’une doit correspondre à l’espace qu’il occupe) d’une faible lumière. Au début de son tour suivant et par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a>, le personnage peut étendre la zone illuminée de quatre cases supplémentaires de 1,5 mètre de côté : chaque nouvelle case doit être adjacente à une case précédemment illuminée. Les alliés qui terminent leur tour sur une case brillante (y compris ceux qui tombent inconscients sur l’une de ces cases) sont soignés de 5 points de dégâts.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentier%20de%20la%20gloire%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/db0cea9016075edd0b03dbbc5bc8aa40af6df3bc.html",
+    "recupere_le": "2026-07-29T07:40:16.433508+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sentier-de-la-gloire-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentier%20de%20la%20gloire%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sentier-de-la-gloire-supreme",
+    "resume_court": "Le lanceur crée une zone lumineuse qui soigne les alliés s'y terminant leur tour.",
+    "categorie_principale": "soin",
+    "tags": [
+      "zone_d_effet",
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "terrain_ou_environnement"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "quatre cases de 1,5 m de côté/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "sentier-de-la-gloire-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:32+00:00",
+    "hash_source": "216a3f8169018ea02b4adfd66a6b5bc8dc43c5dc7a71d2057e55b1bc65b73028"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "invisibilite-de-groupe",
+  "nom": "Invisibilité de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invisibilit%c3%a9%20de%20groupe.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 5,
+    "ConU": 6,
+    "Hyp": 6,
+    "Ens/Mag": 7,
+    "Psy": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un cil préservé dans de la gomme arabique)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "créatures distantes de 54 m/36 c ou moins les unes des autres",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif) ou Volonté, annule (inoffensif, objet)",
+  "resistance_magie": "oui (inoffensif) ou oui (inoffensif, objet)",
+  "description": "Ce sort fonctionne comme invisibilité, si ce n’est que son effet se déplace avec le groupe et que le sort est brisé dès que l’un des membres du groupe attaque quelqu’un. Les créatures affectées ne se voient pas entre elles. Si l’une d’elles s’éloigne à plus de 54 mètres du membre du groupe le plus proche, elle redevient visible ; si cela se produit pour un groupe qui ne comporte que deux créatures invisibles, c’est celle qui s’éloigne de l’autre qui réapparait et si les deux créatures se déplacent, elles redeviennent toutes deux visibles dès que l’écart dépasse 54 mètres.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.invisibilit%c3%a9.ashx\" title=\"Invisibilité\">invisibilité</a></i>, si ce n’est que son effet se déplace avec le groupe et que le sort est brisé dès que l’un des membres du groupe attaque quelqu’un. Les créatures affectées ne se voient pas entre elles. Si l’une d’elles s’éloigne à plus de 54 mètres du membre du groupe le plus proche, elle redevient visible ; si cela se produit pour un groupe qui ne comporte que deux créatures invisibles, c’est celle qui s’éloigne de l’autre qui réapparait et si les deux créatures se déplacent, elles redeviennent toutes deux visibles dès que l’écart dépasse 54 mètres.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Invisibilité"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invisibilit%c3%a9%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/b0f1141c5576e45a9477d1c7897cbdf60a931f82.html",
+    "recupere_le": "2026-07-28T22:57:30.557983+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "invisibilite-de-groupe",
+    "resume_court": "Rend invisibles plusieurs créatures proches les unes des autres, tant qu'elles ne s'éloignent pas ou n'attaquent pas.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "invisibilite_ou_dissimulation",
+      "illusion_visuelle_ou_sonore",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures distantes de 54 m/36 c ou moins les unes des autres"
+    },
+    "notes_ambiguite": "Le sort affecte plusieurs créatures dans une zone définie par leur proximité mutuelle plutôt qu'une zone géographique fixe. La cible_typique « zone » reflète cette nature collective, bien que techniquement plusieurs créatures soient désignées.",
+    "slug": "invisibilite-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:42+00:00",
+    "hash_source": "836fb435868e15a78e73fec13cf47a2ea150d6acb3c58aad7ea521e2ac421dfe"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "9a2b7a50ad8c9f57afb6be17ef2af23d056a63f08ca599ee34b9d680f79ba603",
+  "hash_vue": "6be8e7197e4ec8f0c35ff42212530e98f0846aed49395571977e4e9463a28caf"
+}

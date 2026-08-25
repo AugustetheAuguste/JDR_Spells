@@ -1,0 +1,138 @@
+{
+  "id": "bulle-d-air",
+  "nom": "Bulle d'air",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle%20dair.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Prê": 1,
+    "Psy": 1,
+    "Rôd": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G, M/FD (petite vessie remplie d’air)",
+  "portee": "contact",
+  "cible": "créature vivante ou objet pas plus gros qu’une arme à deux mains G",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Bulle d’air crée une petite poche d’air respirable qui entoure la tête de la créature touchée ou l’objet. Elle lui permet de respirer sous l’eau ou dans un environnement dépourvu d’air ou de protéger un objet des dégâts de l’eau.\nDans ces conditions, on peut charger une arme à feu et tirer avec (si la poudre noire vient d’une corne à poudre, d’une cartouche ou d’un autre emballage hermétique). Quand un personnage tire sous l’eau avec une arme ainsi protégée, le coup subit tout de même le malus habituel de -2 par tranche de 1,50 m (1 c) entre la cible et le tireur, en plus des malus de distances classiques.\nUne arme à feu explose normalement si elle se trouve sous l’eau et entourée d’une bulle d’air.",
+  "description_html": "<br/><br/>Bulle d’air crée une petite poche d’air respirable qui entoure la tête de la créature touchée ou l’objet. Elle lui permet de respirer sous l’eau ou dans un environnement dépourvu d’air ou de protéger un objet des dégâts de l’eau.<br/><br/>Dans ces conditions, on peut charger une arme à feu et tirer avec (si la poudre noire vient d’une corne à poudre, d’une cartouche ou d’un autre emballage hermétique). Quand un personnage tire sous l’eau avec une arme ainsi protégée, le coup\nsubit tout de même le malus habituel de -2 par tranche de 1,50 m (1 <abbr title=\"cases\">c</abbr>) entre la cible et le tireur, en plus des malus de distances classiques.<br/><br/>Une arme à feu explose normalement si elle se trouve sous l’eau et entourée d’une bulle d’air.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle%20dair.ashx",
+    "cache_fichier": "cache/html/82976b6cb686df22311fcf19d748264f4babfa72.html",
+    "recupere_le": "2026-07-28T22:45:15.312025+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "bulle-d-air",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle%20dair.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "bulle-d-air",
+    "resume_court": "Crée une poche d'air respirable autour de la tête ou d'un objet pour respirer sous l'eau.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature vivante ou objet pas plus gros qu'une arme à deux mains G"
+    },
+    "notes_ambiguite": "Le sort peut aussi cibler un objet inanimé, ce qui pourrait justifier `objet` comme cible_typique, mais la description privilégie l'usage sur une créature vivante pour respirer sous l'eau. La cible peut être hostile (ennemi) ou alliée ; j'ai retenu `allie` car le sort est inoffensif et ne s'utilise pas contre une créature hostile.",
+    "slug": "bulle-d-air",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:24+00:00",
+    "hash_source": "dc30feb27cb1a67ad6b958fb06a8443f6c5418249183f2aeccd458df102f4dd1"
+  }
+}

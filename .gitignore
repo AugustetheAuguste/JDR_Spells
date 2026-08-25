@@ -3,6 +3,25 @@ __pycache__/
 .pytest_cache/
 .venv/
 
+# Dépendances Node, reconstruites depuis les lockfiles — qui, eux, SONT committés :
+# c'est le lockfile qui rend un build reproductible, pas l'arbre installé.
+node_modules/
+.next/
+.vercel/
+
+# Sortie du build statique (`next build` avec `output: 'export'`) et cache
+# incrémental de tsc. Reconstruits par la chaîne de build, propres à une machine :
+# commettre `web/out/` mettrait 2 070 pages HTML générées à côté des données qui
+# les produisent, et la copie périmerait au premier changement de parseur.
+web/out/
+web/tsconfig.tsbuildinfo
+
+# Métadonnées laissées par `pip install -e .`, la forme installable documentée
+# dans le README. Régénérées à chaque installation, propres à une machine.
+*.egg-info/
+build/
+dist/
+
 # Secrets. `.env` porte un jeton Bedrock en clair : jamais committé, jamais lu
 # par un module du pipeline (le jeton passe par l'environnement).
 .env

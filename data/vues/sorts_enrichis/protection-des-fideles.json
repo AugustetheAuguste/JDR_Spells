@@ -1,0 +1,74 @@
+{
+  "id": "protection-des-fideles",
+  "nom": "Protection des fidèles",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20des%20fid%c3%a8les.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "émanation de 3 m (2 c) de rayon issue de la créature touchée",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "non",
+  "description": "Toutes les créatures qui se trouvent dans la zone et vénèrent le même dieu que le personnage gagnent un bonus de parade de +2 à la CA et un bonus de résistance de +2 à tous les jets de sauvegarde. Au niveau 12, ces bonus passent à +3 et à +4 au niveau 18.\nSi le personnage ne vénère pas de dieu particulier, les bonus s'appliquent à tous ceux qui partagent les mêmes croyances que lui. Si le personnage n'a ni croyances ni religion déterminée, le sort ne profite qu'à lui. Les ennemis du personnage bénéficient également des effets du sort s'ils ont la même religion ou les mêmes croyances que lui, même s'il les considère comme des hérétiques.",
+  "description_html": "<br/><br/>Toutes les créatures qui se trouvent dans la zone et vénèrent le même dieu que le personnage gagnent un bonus de parade de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et un bonus de résistance de +2 à tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a>. Au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 12, ces bonus passent à +3 et à +4 au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 18.<br/><br/>Si le personnage ne vénère pas de dieu particulier, les bonus s'appliquent à tous ceux qui partagent les mêmes croyances que lui. Si le personnage n'a ni croyances ni religion déterminée, le sort ne profite qu'à lui. Les ennemis du personnage bénéficient également des effets du sort s'ils ont la même religion ou les mêmes croyances que lui, même s'il les considère comme des hérétiques.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Protection%20des%20fid%c3%a8les.ashx",
+    "cache_fichier": "cache/html/97cb6e5803434aaa20c0ea21813b3a68de7650f2.html",
+    "recupere_le": "2026-07-28T23:05:19.301962+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "protection-des-fideles",
+    "resume_court": "Les créatures partageant la foi du lanceur dans une zone gagnent des bonus à la CA et aux sauvegardes.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "zone_d_effet",
+      "protection_defensive",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "émanation de 3 m (2 c) de rayon issue de la créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "protection-des-fideles",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:07+00:00",
+    "hash_source": "7f5eb76f05939f5daa3aae9c2cbf8c2f5cc449da4bf6199da8576ccf588e7e88"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "dd94f4ad1bb04cbcfda8e2b9cdbe32463d82199e43781732d4a727d673605334",
+  "hash_vue": "15c663f7f2b4976b0efe25c1316432687c534c61787c5ca3c65d78ac790b9fd3"
+}

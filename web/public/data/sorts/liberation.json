@@ -1,0 +1,78 @@
+{
+  "id": "liberation",
+  "nom": "Libération",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lib%c3%a9ration.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Con": 1,
+    "ConU": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (chaîne brisée)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "eidolon du lanceur de sorts",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "non",
+  "description": "Ce sort brise le lien entre le personnage et son eidolon, ce qui permet à ce dernier de s'aventurer à plus de 30 mètres (20 c) de lui sans malus. Il peut parcourir n'importe quelle distance tant que le sort est actif mais, s'il expire alors que l'eidolon est à plus de 30 mètres (20 c) du personnage, il perd automatiquement les points de vie appropriés en fonction de son éloignement et il est possible qu'il soit renvoyé dans son plan d'origine. Tant que le sort fait effet, le personnage ne peut pas sacrifier de points de vie pour empêcher que son eidolon ne reçoive de dégâts. Le transfert de dégâts par le lien vital est temporairement impossible. Si le personnage essaye de se servir du pouvoir de transposition alors que ce sort fait encore effet, il doit lancer un dé sur la table des incidents de téléportation en utilisant la ligne « soigneusement étudié. »",
+  "description_html": "<br/><br/>Ce sort brise le lien entre le personnage et son <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a>, ce qui permet à ce dernier de s'aventurer à plus de 30 mètres (20 <abbr title=\"cases\">c</abbr>) de lui sans malus. Il peut parcourir n'importe quelle distance tant que le sort est actif mais, s'il expire alors que l'<a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> est à plus de 30 mètres (20 <abbr title=\"cases\">c</abbr>) du personnage, il perd automatiquement les points de vie appropriés en fonction de son éloignement et il est possible qu'il soit renvoyé dans son <a class=\"pagelink\" href=\"Pathfinder-RPG.plans.ashx\" title=\"Les plans\">plan</a> d'origine. Tant que le sort fait effet, le personnage ne peut pas sacrifier de points de vie pour empêcher que son <a class=\"pagelink\" href=\"Pathfinder-RPG.eidolon.ashx\" title=\"L'eidolon du conjurateur\">eidolon</a> ne reçoive de dégâts. Le transfert de dégâts par le lien vital est temporairement impossible. Si le personnage essaye de se servir du pouvoir de transposition alors que ce sort fait encore effet, il doit lancer un dé sur la table des incidents de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.t%c3%a9l%c3%a9portation.ashx\" title=\"Téléportation\">téléportation</a></i> en utilisant la ligne « soigneusement étudié. »",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lib%c3%a9ration.ashx",
+    "cache_fichier": "cache/html/786631028a567b897b8d2373644335338deb5fc1.html",
+    "recupere_le": "2026-07-28T22:58:31.632632+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "liberation",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lib%c3%a9ration.ashx",
+  "niveaux_par_classe": {
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "liberation",
+    "resume_court": "Brise le lien entre le lanceur et son eidolon, permettant à ce dernier de s'éloigner sans malus.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "eidolon du lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "liberation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:03+00:00",
+    "hash_source": "d66e1c6193f4b411b03ca72f0d7037502540bef75e594bd4afc26b4bc7d7c2d8"
+  }
+}

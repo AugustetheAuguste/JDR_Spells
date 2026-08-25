@@ -1,0 +1,140 @@
+{
+  "id": "langage-cache",
+  "nom": "Langage caché",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Langage%20cach%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "dépend du langage"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Inq": 3,
+    "Méd": 2,
+    "Psy": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (un glyphe écrit sur une feuille de parchemin)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "le lanceur de sorts + une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "10 minutes/niveau (T)",
+  "jet_de_sauvegarde": "Volonté (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Le personnage améliore grandement les aptitudes des sujets à faire passer des messages secrets. Chaque cible gagne un bonus de compétence de +10 aux tests de Bluff destinés à envoyer des messages secrets aux autres cibles. Les autres créatures subissent un malus de -5 aux tests de Psychologie opposés pour déchiffrer ces messages. Tous les sujets affectés par le sort doivent partager un langage commun pour transmettre leurs messages.",
+  "description_html": "<br/><br/>Le personnage améliore grandement les aptitudes des sujets à faire passer des messages secrets. Chaque cible gagne un bonus de compétence de +10 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> destinés à envoyer des messages secrets aux autres cibles. Les autres créatures subissent un malus de -5 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Psychologie.ashx\" title=\"Psychologie\">Psychologie</a> opposés pour déchiffrer ces messages. Tous les sujets affectés par le sort doivent partager un langage commun pour transmettre leurs messages.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Langage%20cach%c3%a9.ashx",
+    "cache_fichier": "cache/html/c90e4acd9b33adbfe7b3b54870326e446d422a15.html",
+    "recupere_le": "2026-07-28T22:58:13.627156+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "langage-cache",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Langage%20cach%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "langage-cache",
+    "resume_court": "Les cibles gagnent un bonus à Bluff pour envoyer des messages secrets et les autres subissent un malus à Psychologie pour les déchiffrer.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "social",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le lanceur de sorts + une créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "langage-cache",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:56+00:00",
+    "hash_source": "506b46d70773cd6d27d2144e7081d8843ce4cbf739e0cb9f4c3a5251e6b3e4fc"
+  }
+}

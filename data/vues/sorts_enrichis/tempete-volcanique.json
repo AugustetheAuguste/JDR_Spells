@@ -1,0 +1,109 @@
+{
+  "id": "tempete-volcanique",
+  "nom": "Tempête volcanique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Temp%c3%aate%20volcanique.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Dru": 4,
+    "Ens/Mag": 4,
+    "San": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (de l'obsidienne et des cendres)",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "cylindre (6 m (4 c) de rayon, 12 m (8 c) de haut)",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Ce sort fait pleuvoir des morceaux de roche volcanique brûlante et des paquets de cendres qui infligent 3d6 points de dégâts contondants et 2d6 points de dégâts de feu à toutes les créatures de la zone. Ces dégâts ne s’appliquent qu’une fois, lorsque le personnage lance le sort. Pour le reste de la durée du sort, une épaisse pluie de cendres s’abat sur la zone. Les créatures subissent un malus de -4 aux tests de Perception et toute la zone est transformée en terrain difficile. À la fin du sort, les rochers et les cendres disparaissent et ne laissent pas d’effets permanents (en dehors des dégâts infligés).",
+  "description_html": "<br/><br/>Ce sort fait pleuvoir des morceaux de roche volcanique brûlante et des paquets de cendres qui infligent 3d6 points de dégâts contondants et 2d6 points de dégâts de feu à toutes les créatures de la zone. Ces dégâts ne s’appliquent qu’une fois, lorsque le personnage lance le sort. Pour le reste de la durée du sort, une épaisse pluie de cendres s’abat sur la zone. Les créatures subissent un malus de -4 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> et toute la zone est transformée en <a class=\"pagelink\" href=\"Pathfinder-RPG.terrain%20difficile.ashx\" title=\"terrain difficile\">terrain difficile</a>. À la fin du sort, les rochers et les cendres disparaissent et ne laissent pas d’effets permanents (en dehors des dégâts infligés).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Temp%c3%aate%20volcanique.ashx",
+    "cache_fichier": "cache/html/c55a8aebe27a6b7b8080517a8cdd8ab383ffb1e0.html",
+    "recupere_le": "2026-07-29T07:42:24.063752+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "tempete-volcanique",
+    "resume_court": "Une pluie de roche brûlante et de cendres inflige des dégâts et crée un terrain difficile.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "degats_directs",
+      "zone_d_effet",
+      "terrain_ou_environnement",
+      "malus_chiffre",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": "contondant",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "points de dégâts contondants",
+      "condition_infligee": [],
+      "cible_typique": "cylindre (6 m (4 c) de rayon, 12 m (8 c) de haut)"
+    },
+    "notes_ambiguite": "Le sort inflige deux types de dégâts (contondants et feu). J'ai retenu contondant comme type_degats principal car il est mentionné en premier et le tag degats_directs couvre l'ensemble. Le malus de -4 aux tests de Perception justifie le tag malus_chiffre sans créer une condition infligee distincte.",
+    "slug": "tempete-volcanique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:24+00:00",
+    "hash_source": "0945e60d9f6ac3e9fc88c20a1a19191eac599fedbdef27ffec383a0bc5fda647"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "5182c15469d48e34225ebac2f4604c817447918d7bed1b5d60cd3c5573fbce0b",
+  "hash_vue": "bdb01f4d971e89e51b24ab6ac8f26e8e53def32aaaa85fe9853758de8bd02658"
+}

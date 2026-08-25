@@ -1,0 +1,111 @@
+{
+  "id": "petites-fractures",
+  "nom": "Petites fractures",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Petites%20fractures.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Cham": 1,
+    "Dru": 1,
+    "Prê": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une brindille cassée)",
+  "portee": "contact",
+  "cible": "une section de pierre de 1,5 m de côté ou une créature possédant le sous-type Terre",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "D’un simple contact, le personnage crée une petite fracture temporaire dans un morceau de pierre ou une créature de sous-type Terre. Si le personnage lance ce sort sur un morceau de pierre, il réduit sa solidité de 5 et ses points de vie de 10 par tranche de 2,5 cm d’épaisseur. S’il le lance sur une créature de sous-type terre, celle-ci subit une malus de -2 à sa CA pendant toute la durée du sort. Un sort de réparation intégrale inverse les effets de petites fractures.",
+  "description_html": "<br/><br/>D’un simple contact, le personnage crée une petite fracture temporaire dans un morceau de pierre ou une créature de sous-type <a class=\"pagelink\" href=\"Pathfinder-RPG.sous-type%20Terre.ashx\" title=\"Terre (sous-type)\">Terre</a>. Si le personnage lance ce sort sur un morceau de pierre, il réduit sa <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> de 5 et ses points de vie de 10 par tranche de 2,5 cm d’épaisseur. S’il le lance sur une créature de sous-type terre, celle-ci subit une malus de -2 à sa <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> pendant toute la durée du sort. Un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.r%c3%a9paration%20int%c3%a9grale.ashx\" title=\"Réparation intégrale\">réparation intégrale</a></i> inverse les effets de <i>petites fractures</i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles fidèles\nde Torag."
+  },
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Petites%20fractures.ashx",
+    "cache_fichier": "cache/html/067ec336cd3295da4744409e4b5f3d658a265ce6.html",
+    "recupere_le": "2026-07-28T23:03:11.927089+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "petites-fractures",
+    "resume_court": "Le lanceur crée une fracture temporaire dans la pierre ou affaiblit une créature de sous-type Terre.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "attaque_de_contact",
+      "transformation_du_sujet",
+      "malus_chiffre",
+      "duree_prolongee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une section de pierre de 1,5 m de côté ou une créature possédant le sous-type Terre"
+    },
+    "notes_ambiguite": "Le sort affecte deux types de cibles très différentes : la pierre (objet) et les créatures de sous-type Terre (créatures). La cible_typique « objet » a été retenue car elle couvre le cas principal de la pierre ; le cas des créatures Terre est secondaire et inflige un malus plutôt que des dégâts. Les tags incluent transformation_du_sujet (fracture) et malus_chiffre (-2 à la CA).",
+    "slug": "petites-fractures",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:00+00:00",
+    "hash_source": "935b60fa0e9a007c3a5d99aed4eec4f7c3ca1d8d09dc9c9247da652b3a6f7e93"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c94b02f0932f01ddadc9ac262afe822410862fd9500281a670ec216ecf94c185",
+  "hash_vue": "5f8c708cd09ce0aa6dcb589bd5e8e0bd22a25edb40c356cce8a55ad0cba2e684"
+}

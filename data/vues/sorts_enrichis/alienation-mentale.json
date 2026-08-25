@@ -1,0 +1,102 @@
+{
+  "id": "alienation-mentale",
+  "nom": "Aliénation mentale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ali%c3%a9nation%20mentale.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Hyp": 6,
+    "Ens/Mag": 7,
+    "Psy": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La créature affectée souffre en permanence de l’effet du sort confusion. Délivrance des malédictions est insuffisant pour soigner un individu frappé d’aliénation mentale. Un sort tel que guérison suprême, miracle, restauration suprême, souhait ou souhait limité est nécessaire pour lui permettre de recouvrer ses facultés.",
+  "description_html": "<br/><br/>La créature affectée souffre en permanence de l’effet du sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.confusion.ashx\" title=\"Confusion\">confusion</a></i>. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">Délivrance des malédictions</a></i> est insuffisant pour soigner un individu frappé d’<i>aliénation mentale</i>. Un sort tel que <i><a class=\"pagelink\" href=\"Pathfinder-RPG.gu%c3%a9rison%20supr%c3%aame.ashx\" title=\"Guérison suprême\">guérison suprême</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.restauration%20supr%c3%aame.ashx\" title=\"Restauration suprême\">restauration suprême</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait%20limit%c3%a9.ashx\" title=\"Souhait limité\">souhait limité</a></i> est nécessaire pour lui permettre de recouvrer ses facultés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ali%c3%a9nation%20mentale.ashx",
+    "cache_fichier": "cache/html/295bfc902639d49ef443cced9c3e3e03aba715ef.html",
+    "recupere_le": "2026-07-28T22:40:19.422326+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "alienation-mentale",
+    "resume_court": "La cible souffre en permanence de l'effet du sort confusion et ne peut être soignée que par magie très puissante.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "La créature affectée souffre en permanence de l'effet du sort confusion"
+      ],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "alienation-mentale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:16+00:00",
+    "hash_source": "a4df0ce929d62de42797f12ceb0eb822abee7cc6fbc3a785834962cba76f2e1d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e29edb655e46fad3729318086ab2f51c102fb31ca5bd943c02bcf436ca08c712",
+  "hash_vue": "efb0caeb9ac45b2a8ec97f95d14935799edd4c067112c92920ecb1cea483511d"
+}

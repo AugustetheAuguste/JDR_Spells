@@ -1,0 +1,95 @@
+{
+  "id": "dard-de-nausee",
+  "nom": "Dard de nausée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dard%20de%20naus%c3%a9e.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Dru": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "G, FD",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un dard empoisonné",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur pour dégâts partiels (cf. texte)",
+  "resistance_magie": "non",
+  "description": "Le personnage crache un dard empoisonné de la taille d’une plume sur une créature à portée, comme s’il avait tiré une fléchette avec une sarbacane. Le personnage doit réussir une attaque à distance pour toucher sa cible. Le dard inflige 1d2 points de dégâts perforants et de poison à la cible, la rendant nauséeuse pendant 1 round à moins qu’elle ne réussisse un jet de Vigueur.",
+  "description_html": "<br/><br/>Le personnage crache un dard empoisonné de la taille d’une plume sur une créature à portée, comme s’il avait tiré une fléchette avec une sarbacane. Le personnage doit réussir une attaque à distance pour toucher sa cible. Le dard inflige 1d2 points de dégâts perforants et de poison à la cible, la rendant <a class=\"pagelink\" href=\"Pathfinder-RPG.naus%c3%a9eux.ashx\" title=\"Nauséeux\">nauséeuse</a> pendant 1 round à moins qu’elle ne réussisse un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dard%20de%20naus%c3%a9e.ashx",
+    "cache_fichier": "cache/html/30c37d143c3800c605027a42f890ef0919061cf1.html",
+    "recupere_le": "2026-07-28T22:51:08.251210+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "dard-de-nausee",
+    "resume_court": "Le lanceur crache un dard empoisonné qui blesse et rend nauséeuse sa cible.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "perforant",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "1d2 points de dégâts perforants",
+      "condition_infligee": [
+        "la rendant nauséeuse pendant 1 round"
+      ],
+      "cible_typique": "sur une créature à portée"
+    },
+    "notes_ambiguite": "Le texte dit « nauséeuse » mais cette condition n'existe pas dans la liste fermée. « Chancelant » (une seule action par round) est l'effet le plus proche d'une nausée qui gêne l'action. Alternativement, aucune condition ne correspondrait exactement, mais le texte affirme clairement un effet de condition.",
+    "slug": "dard-de-nausee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:17+00:00",
+    "hash_source": "171bcca4cb69a3ee2c29aac4dc3d474e232e958dd50b00c14865c7f5ae24e686"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2e6f102bdb5b3fe406ba115e4d491dc4dc79c02c82586103a5cc3b81712a8c2d",
+  "hash_vue": "c1a73fc96fc982c4ad00909f4560dd1d3d97314e903e7cd13975e0eea19f0c97"
+}

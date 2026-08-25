@@ -1,0 +1,119 @@
+{
+  "id": "preservation-des-morts",
+  "nom": "Préservation des morts",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9servation%20des%20morts.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 2,
+    "Ens/Mag": 3,
+    "Méd": 2,
+    "Occ": 3,
+    "Prê": 2,
+    "Sor": 2,
+    "Spi": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (du sel et une pièce de cuivre pour chaque œil du mort)",
+  "portee": "contact",
+  "cible": "cadavre touché",
+  "duree": "1 jour/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "Ce sort permet de préserver la dépouille d’un mort afin d’empêcher la décomposition, ce qui a pour effet de rallonger le délai au bout duquel on ne peut plus le ramener à la vie (voir rappel à la vie). Les jours passés sous l’effet de préservation des morts ne sont pas comptabilisés dans la limite imposée par rappel à la vie. Ce sort rend le transport d'un camarade défunt moins désagréable.\nPréservation des morts fonctionne aussi sur les membres tranchés.",
+  "description_html": "<br/><br/>Ce sort permet de préserver la dépouille d’un mort afin d’empêcher la décomposition, ce qui a pour effet de rallonger le délai au bout duquel on ne peut plus le ramener à la vie (voir <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i>). Les jours passés sous l’effet de <i>préservation des morts</i> ne sont pas comptabilisés dans la limite imposée par <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rappel%20%c3%a0%20la%20vie.ashx\" title=\"Rappel à la vie\">rappel à la vie</a></i>. Ce sort rend le transport d'un camarade défunt moins désagréable.<br/><br/><i>Préservation des morts</i> fonctionne aussi sur les membres tranchés.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9servation%20des%20morts.ashx",
+    "cache_fichier": "cache/html/644598a40256ce9d80cefbe291cf653d44e7b365.html",
+    "recupere_le": "2026-07-28T23:04:37.036258+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "preservation-des-morts",
+    "resume_court": "Préserve un cadavre de la décomposition et prolonge le délai de résurrection.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cadavre touché"
+    },
+    "notes_ambiguite": null,
+    "slug": "preservation-des-morts",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:50+00:00",
+    "hash_source": "a98de160d942e9effc6db10c0bb8cf210b508efe522d6d73052d7051514a8aaa"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "36c20aadd88ceac99efb6a5ac508addaee20c0a206b14c271643a10e22d759ce",
+  "hash_vue": "38b4be37023e7512e8446f68f5db4deec98875691e5cc7ea0764c4ead2760b9f"
+}

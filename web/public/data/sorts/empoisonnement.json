@@ -1,0 +1,161 @@
+{
+  "id": "empoisonnement",
+  "nom": "Empoisonnement",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Empoisonnement.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "poison"
+  ],
+  "niveaux": {
+    "Apal": 4,
+    "Cham": 4,
+    "Dru": 3,
+    "Hyp": 4,
+    "Occ": 4,
+    "Prê": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature vivante touchée",
+  "duree": "instantanée (voir description)",
+  "jet_de_sauvegarde": "Vigueur, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fait appel au pouvoir des entités venimeuses. Il permet au personnage d’empoisonner sa cible en réussissant une attaque de contact au corps à corps. Le poison inflige 1d3 points d’affaiblissement temporaire de Constitution par round pendant 6 rounds. Une créature empoisonnée a droit à un jet de Vigueur par round pour annuler les dégâts et se débarrasser du poison.",
+  "description_html": "<br/><br/>Ce sort fait appel au pouvoir des entités venimeuses. Il permet au personnage d’empoisonner sa cible en réussissant une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20au%20corps%20%c3%a0%20corps.ashx\" title=\"attaque de contact au corps à corps\">attaque de contact au corps à corps</a>. Le <a class=\"pagelink\" href=\"Pathfinder-RPG.poison.ashx\" title=\"poison\">poison</a> inflige 1d3 points d’<a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissement temporaire</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> pendant 6 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Une créature empoisonnée a droit à un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> pour annuler les dégâts et se débarrasser du poison.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Empoisonnement.ashx",
+    "cache_fichier": "cache/html/6fa8e146504465fab4245f438eabd2da20c64783.html",
+    "recupere_le": "2026-07-28T22:52:00.174935+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "empoisonnement",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Empoisonnement.ashx",
+  "niveaux_par_classe": {
+    "antipaladin": {
+      "nom": "Antipaladin",
+      "niveau": 4
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 4
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "empoisonnement",
+    "resume_court": "Un poison infligé au contact qui réduit la Constitution de la cible pendant 6 rounds.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "affaiblissement_de_capacite",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d3 points d'affaiblissement temporaire de Constitution",
+      "condition_infligee": [],
+      "cible_typique": "créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement de caractéristique (Constitution) plutôt que des dégâts énergétiques classés. Type_degats vaut « autre » car l'affaiblissement temporaire ne correspond à aucun type énergétique de la liste.",
+    "slug": "empoisonnement",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:15+00:00",
+    "hash_source": "394602362244a21498b8212f5789d48fc0dd9e148f96108d3188aad2ec2d3e1f"
+  }
+}

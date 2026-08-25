@@ -1,0 +1,88 @@
+{
+  "id": "restauration-supreme",
+  "nom": "Restauration suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Restauration%20supr%c3%aame.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 7,
+    "Prê": 7
+  },
+  "temps_incantation": "3 rounds",
+  "composantes": "V, G, M (poussière de diamant (5 000 po))",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort ressemble à restauration partielle mais il dissipe tous les niveaux négatifs (temporaires comme permanents) affectant la cible. Il dissipe également tous les effets qui réduisent les caractéristiques de la cible et guérit l’intégralité des affaiblissements temporaires et des diminutions permanentes de caractéristiques. Il contre également la fatigue et l’épuisement. Enfin, ce sort fait disparaître toute forme d’aliénation mentale, de confusion et autres effets similaires.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.restauration%20partielle.ashx\" title=\"Restauration partielle\">restauration partielle</a></i> mais il dissipe tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx\" title=\"niveau négatif\">niveaux négatifs</a> (<a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">temporaires</a> comme <a class=\"pagelink\" href=\"Pathfinder-RPG.diminution%20permanente.ashx\" title=\"diminution permanente\">permanents</a>) affectant la cible. Il dissipe également tous les effets qui réduisent les <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristiques.ashx\" title=\"Les caractéristiques\">caractéristiques</a> de la cible et guérit l’intégralité des <a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissements temporaires</a> et des <a class=\"pagelink\" href=\"Pathfinder-RPG.diminution%20permanente.ashx\" title=\"diminution permanente\">diminutions permanentes</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.caract%c3%a9ristiques.ashx\" title=\"Les caractéristiques\">caractéristiques</a>. Il contre également la <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatigue</a> et l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9puis%c3%a9.ashx\" title=\"Épuisé\">épuisement</a>. Enfin, ce sort fait disparaître toute forme d’<i><a class=\"pagelink\" href=\"Pathfinder-RPG.ali%c3%a9nation%20mentale.ashx\" title=\"Aliénation mentale\">aliénation mentale</a></i>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.confusion.ashx\" title=\"Confusion\">confusion</a> et autres effets similaires.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Restauration%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/69ac93e1ef4f3678e8aa41a1d604272049440aa9.html",
+    "recupere_le": "2026-07-29T07:39:06.412829+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "restauration-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Restauration%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 7
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 7
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "restauration-supreme",
+    "resume_court": "Dissipe tous les niveaux négatifs, restaure les caractéristiques et lève les affections mentales.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "dissipation_ou_contresort",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "restauration-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:00+00:00",
+    "hash_source": "5de99e4fdd73671d9a2bd9e9df27d2ed5a73c68bae5064b3c7951d3f426358a1"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gardien-de-la-foi",
+  "nom": "Gardien de la foi",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20de%20la%20foi.ashx",
+  "ecole": "Abjuration (voir texte)",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 4,
+    "Prê": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (parchemin portant un texte sacré)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)/(5 c + 1 c/2 niveaux)",
+  "cible": "un allié",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "non",
+  "description": "La cible profite des avantages d’un bouclier de la foi et d’une protection contre le Bien, le Chaos, la Loi ou le Mal (au choix du personnage). Par une action de mouvement, la cible peut transférer ce sort à un allié qu’elle touche et qui devient alors la nouvelle cible du sort. Le registre d’alignement de ce sort correspond au registre d’alignement du sort de protection que le personnage choisit quand il lance le sort. Par exemple, s’il accorde une protection contre le Mal à la cible, alors ce sort est du registre du Bien.",
+  "description_html": "<br/><br/>La cible profite des avantages d’un bouclier de la foi et d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20le%20Bien.ashx\" title=\"Protection contre le Bien\">protection contre le Bien</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20le%20Chaos.ashx\" title=\"Protection contre le Chaos\">le Chaos</a>, <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20la%20Loi.ashx\" title=\"Protection contre la Loi\">la Loi</a> ou <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20le%20Mal.ashx\" title=\"Protection contre le Mal\">le Mal</a> (au choix du personnage).\nPar une action de mouvement, la cible peut transférer ce sort à un allié qu’elle touche et qui devient alors la nouvelle cible du sort.\nLe registre d’alignement de ce sort correspond au registre d’alignement du sort de protection que le personnage choisit quand il lance le sort. Par exemple, s’il accorde une <a class=\"pagelink\" href=\"Pathfinder-RPG.protection%20contre%20le%20Mal.ashx\" title=\"Protection contre le Mal\">protection contre le Mal</a> à la cible, alors ce sort est du registre du <a class=\"pagelink\" href=\"Pathfinder-RPG.Registre.ashx\" title=\"Registre\">Bien</a>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20de%20la%20foi.ashx",
+    "cache_fichier": "cache/html/e49f3837c95351082661438e4c6b618fe867c22d.html",
+    "recupere_le": "2026-07-28T22:55:09.410976+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "gardien-de-la-foi",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20de%20la%20foi.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "gardien-de-la-foi",
+    "resume_court": "La cible bénéficie d'un bouclier de la foi et d'une protection contre un alignement au choix.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "bonus_chiffre",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: un allié"
+    },
+    "notes_ambiguite": null,
+    "slug": "gardien-de-la-foi",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:44+00:00",
+    "hash_source": "7122f60912e0b335ae212b8e79fe3ca0cc3825a6d01ee76812fe47b956852e77"
+  }
+}

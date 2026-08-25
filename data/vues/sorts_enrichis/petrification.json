@@ -1,0 +1,100 @@
+{
+  "id": "petrification",
+  "nom": "Pétrification",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.P%c3%a9trification.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 6,
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (de la chaux, de l’eau et un peu de terre)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "1 créature",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "La cible et tout son équipement se transforment en statue de pierre. Si cette statue est endommagée, le sujet souffre de mutilations similaires si on le ramène un jour à son état normal. La victime n’est pas morte (son âme ne quitte pas son corps) mais elle n’a rien de vivant (même si on la sonde à l’aide d’un sort tel que perception de la mort). Pétrification ne fonctionne que sur les êtres de chair.",
+  "description_html": "<br/><br/>La cible et tout son équipement se transforment en statue de pierre. Si cette statue est endommagée, le sujet souffre de mutilations similaires si on le ramène un jour à son état normal. La victime n’est pas morte (son âme ne quitte pas son corps) mais elle n’a rien de vivant (même si on la sonde à l’aide d’un sort tel que <i><a class=\"pagelink\" href=\"Pathfinder-RPG.perception%20de%20la%20mort.ashx\" title=\"Perception de la mort\">perception de la mort</a></i>). <i>Pétrification</i> ne fonctionne que sur les êtres de chair.<br/><br/>",
+  "mythique": {
+    "description": "Une créature qui réussit son jet de sauvegarde est partiellement pétrifiée ; elle est ralentie (comme le ferait une lenteur) pendant un nombre de rounds égal au grade du personnage. La créature peut mettre prématurément fin à cet effet en passant une action complexe à briser les morceaux pétrifiés de sa chair, ce qui lui inflige 5d10 points de dégâts. Les effets qui dissipent ou inversent la pétrification annulent cette pétrification partielle et l’effet de lenteur. Le sort peut affecter les objets et les morts-vivants s’ils sont principalement constitués de chair ou d’os, comme un cadavre ou un zombi. Le sort n’affecte pas l’équipement de la cible. S’il est lancé sur une créature équipée, la créature se transforme en pierre mais pas son équipement.\nAmplifié (9ème). Si le personnage dépense deux utilisations de pouvoir mythique, les créatures de taille G ou inférieure complètement pétrifiées par le sort s’animent immédiatement et suivent les directives du personnage, comme s’il avait lancé animation des objets.",
+    "description_html": "Une créature qui réussit son jet de sauvegarde est partiellement pétrifiée ; elle est ralentie (comme le ferait une <a class=\"pagelink\" href=\"Pathfinder-RPG.lenteur.ashx\" title=\"Lenteur\">lenteur</a>) pendant un nombre de rounds égal au <a class=\"pagelink\" href=\"Pathfinder-RPG.grade.ashx\" title=\"Grade\">grade</a> du personnage. La créature peut mettre prématurément fin à cet effet en passant une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a> à briser les morceaux pétrifiés de sa chair, ce qui lui inflige 5d10 points de dégâts. Les effets qui dissipent ou inversent la pétrification annulent cette pétrification partielle et l’effet de lenteur. Le sort peut affecter les objets et les morts-vivants s’ils sont principalement constitués de chair ou d’os, comme un cadavre ou un zombi. Le sort n’affecte pas l’équipement de la cible. S’il est lancé sur une créature équipée, la créature se transforme en pierre mais pas son équipement.<br/><br/><b><a class=\"pagelink\" href=\"Pathfinder-RPG.Amplifi%c3%a9.ashx\" title=\"Amplifié\">Amplifié</a> (9ème).</b> Si le personnage dépense deux utilisations de <a class=\"pagelink\" href=\"Pathfinder-RPG.pouvoir%20mythique.ashx\" title=\"pouvoir mythique\">pouvoir mythique</a>, les créatures de taille G ou inférieure complètement pétrifiées par le sort s’animent immédiatement et suivent les directives du personnage, comme s’il avait lancé animation des objets."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.P%c3%a9trification.ashx",
+    "cache_fichier": "cache/html/ff7f72ab82b92119df9162fb2cfb07ade22d5bf9.html",
+    "recupere_le": "2026-07-28T23:02:20.865268+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "petrification",
+    "resume_court": "Transforme une créature de chair en statue de pierre, instantanément, si elle échoue son jet de Vigueur.",
+    "categorie_principale": "metamorphose",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "petrification",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:31+00:00",
+    "hash_source": "451220f6d1060033d6e492eb0956a6092f4c6e867a3b2266031ec3e3de1e58e8"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "cec40a4775c6676c3dd5f394f4dbc9ffc5b40427b9122499576b8f49caac1dfc",
+  "hash_vue": "eec50973c09260efeca12783600f9da0486bc6401ed0cec8a4366957c4eb0118"
+}

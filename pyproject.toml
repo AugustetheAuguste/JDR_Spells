@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pf-spells"
+version = "1.0.0"
+description = "Corpus de sorts Pathfinder 1e en français, scrapé depuis pathfinder-fr.org, plus sa couche d'enrichissement LLM"
+requires-python = ">=3.11"
+
+# Version floors, not pins: these are the versions the corpus was produced and
+# validated under. Floors rather than `==` because nothing here pins behaviour a
+# patch release would change — the parsers are tested against committed HTML.
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "jsonschema>=4.20",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+# The four enrichment stages behind one guarded entry point. The ten `python -m
+# pf_spells.<module>` commands stay valid and are what the docs use; this is a
+# convenience for an installed checkout, not a replacement.
+pf-spells = "pf_spells.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# `src` layout without an editable install: the suite imports `pf_spells` the way
+# every documented command does, via PYTHONPATH=src. Declaring it here means a
+# bare `pytest` works too.
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,85 @@
+{
+  "id": "force-decuplee",
+  "nom": "Force décuplée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20d%c3%a9cupl%c3%a9e.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 4,
+    "Prê": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "le lanceur de sorts",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Identique au sort force de taureau, excepté qu’il octroie un bonus d’altération de +8 à la Force.",
+  "description_html": "<hr/>\nIdentique au sort <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, excepté qu’il octroie un bonus d’altération de +8 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles nains.",
+    "sorts_lies": "Force de taureau"
+  },
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20d%c3%a9cupl%c3%a9e.ashx",
+    "cache_fichier": "cache/html/b6d8db9fa8b99922eb1fab81c4ecb0734d932f79.html",
+    "recupere_le": "2026-07-28T22:53:52.313300+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "force-decuplee",
+    "resume_court": "Le lanceur gagne un bonus d'altération de +8 à la Force pendant 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: le lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "force-decuplee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:14+00:00",
+    "hash_source": "f8cd7f8c285bf0a728f94231076802894167b6908f3f4e8af3a80c8d1226b136"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "52ab7215a430767c90fa4b8e9f14df665ab46fa46740c497989170e6ea6e09e2",
+  "hash_vue": "475fdfa680a971755d9d25fd17a21d34e7f4589256422e635d281051de1f5b41"
+}

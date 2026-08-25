@@ -1,0 +1,80 @@
+{
+  "id": "rythme-naturel",
+  "nom": "Rythme naturel",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rythme%20naturel.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une poignée de graviers laissés tomber un par un)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage améliore l'aptitude d'une créature à blesser son adversaire en fonction du nombre de coups qu'elle lui a déjà portés avec une attaque naturelle. À chaque fois que la créature parvient à toucher son adversaire avec une attaque naturelle, le sujet gagne un bonus cumulable de +1 aux jets de dégâts contre cet adversaire s'il utilise son attaque naturelle (avec un maximum de +5). S'il rate son attaque, le bonus aux dégâts repart à +0.",
+  "description_html": "<br/><br/>Le personnage améliore l'aptitude d'une créature à blesser son adversaire en fonction du nombre de coups qu'elle lui a déjà portés avec une attaque naturelle. À chaque fois que la créature parvient à toucher son adversaire avec une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20naturelle.ashx\" title=\"attaque naturelle\">attaque naturelle</a>, le sujet gagne un bonus cumulable de +1 aux jets de dégâts contre cet adversaire s'il utilise son <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20naturelle.ashx\" title=\"attaque naturelle\">attaque naturelle</a> (avec un maximum de +5). S'il rate son attaque, le bonus aux dégâts repart à +0.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rythme%20naturel.ashx",
+    "cache_fichier": "cache/html/ae4ce23732b13cebb0a9228a62b617c415cdc2b3.html",
+    "recupere_le": "2026-07-29T07:39:23.638076+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "rythme-naturel",
+    "resume_court": "La créature gagne un bonus cumulable aux dégâts de ses attaques naturelles contre un adversaire touché, jusqu'à +5.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "rythme-naturel",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:11+00:00",
+    "hash_source": "65c0c0c185f7bf2bab583ce580319ca55c330a20c115d6dd352c8f40ce3eb7b7"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "273a8618a63d986b8a25b5eff3b52bf8ef32779d7842d609a4e16ed36f4f1ef9",
+  "hash_vue": "a979316702d078469ab51b24646fec3741587440de27133e996cbc8ff3a7608e"
+}

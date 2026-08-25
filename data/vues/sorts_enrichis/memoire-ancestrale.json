@@ -1,0 +1,105 @@
+{
+  "id": "memoire-ancestrale",
+  "nom": "Mémoire ancestrale",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9moire%20ancestrale.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 5,
+    "Cham": 5,
+    "Dru": 4,
+    "Prê": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Quand le personnage lance ce sort, il ouvre son esprit aux nombreuses expériences de ses ancêtres dans l’espoir d’apprendre quelque chose de pertinent sur sa situation actuelle. Les chances de trouver un souvenir utile sont de 70% + niveau de lanceur de sorts.\nEn cas d’échec, le personnage gagne seulement un bonus d’intuition de +5 aux tests de compétence basés sur l’Intelligence pour la durée du sort. En cas de réussite, il gagne non seulement le bonus mais découvre aussi que l’un de ses ancêtres a rencontré le même problème ou s’est trouvé dans la même situation. Dans ce cas, le MJ lui donne des informations spécifiques pour l’aider à surmonter la difficulté.\nPar exemple, si le personnage rencontre un golem d’argile dans un profond complexe souterrain et se rend compte que ses armes magiques et ses sorts ne sont d’aucune utilité, il peut lancer souvenir ancestral et se « souvenir » des armes et des sorts qui fonctionnent contre ce type de créature.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il ouvre son esprit aux nombreuses expériences de ses ancêtres dans l’espoir d’apprendre quelque chose de pertinent sur sa situation actuelle. Les chances de trouver un souvenir utile sont de 70% + <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>.<br/><br/>En cas d’échec, le personnage gagne seulement un bonus d’intuition de +5 aux tests de compétence basés sur l’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> pour la durée du sort. En cas de réussite, il gagne non seulement le bonus mais découvre aussi que l’un de ses ancêtres a rencontré le même problème ou s’est trouvé dans la même situation. Dans ce cas, le <a class=\"pagelink\" href=\"Pathfinder-RPG.MJ.ashx\" title=\"MJ\">MJ</a> lui donne des informations spécifiques pour l’aider à surmonter la difficulté.<br/><br/>Par exemple, si le personnage rencontre un <a class=\"pagelink\" href=\"Pathfinder-RPG.Golem%20dargile.ashx\" title=\"Golem, Golem d'argile\">golem d’argile</a> dans un profond complexe souterrain et se rend compte que ses armes magiques et ses sorts ne sont d’aucune utilité, il peut lancer souvenir ancestral et se « souvenir » des armes et des sorts qui fonctionnent contre ce type de créature.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea World Guide/La Mer Intérieure"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9moire%20ancestrale.ashx",
+    "cache_fichier": "cache/html/1b241bb9e0fd13d9f3776d011bcdb0bdf7a5c908.html",
+    "recupere_le": "2026-07-28T22:59:15.666205+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "memoire-ancestrale",
+    "resume_court": "Le lanceur accède aux souvenirs de ses ancêtres pour obtenir des conseils sur sa situation actuelle.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "bonus_chiffre",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "memoire-ancestrale",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:46+00:00",
+    "hash_source": "44e80719dc8fdd9d49fdc0aa2fb03571e8cec06f613302d943b6266bf31efb82"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a1cdd2888225d624239b23fc327f824e3a5beb8a2adefc86bda711dcedabff5b",
+  "hash_vue": "260ac565216f2253e2a23acb12b659a2fc476e784ba6576e6fa0dffc9cea4386"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "echec-annonce",
+  "nom": "Échec annoncé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89chec%20annonc%c3%a9.ashx",
+  "ecole": "Divination",
+  "descripteurs": [
+    "malédiction",
+    "mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Ens/Mag": 8,
+    "Occ": 6,
+    "Psy": 8,
+    "Sor": 8
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "permanent ou 1 round/niveau",
+  "jet_de_sauvegarde": "Volonté partielle",
+  "resistance_magie": "oui",
+  "description": "Le personnage flagelle le corps et l'esprit de sa cible en lui faisant ressentir l'angoisse de l'échec et les souffrances de toutes les défaites à venir, ce qui la rend définitivement secouée et fiévreuse. Un jet de volonté réussi réduit la durée à 1 round par niveau. Si la cible est un lanceur de sort, il reçoit une plaie mineure aléatoire en cas de jet raté.",
+  "description_html": "<br/><br/>Le personnage flagelle le corps et l'esprit de sa cible en lui faisant ressentir l'angoisse de l'échec et les souffrances de toutes les défaites à venir, ce qui la rend définitivement <a class=\"pagelink\" href=\"Pathfinder-RPG.secou%c3%a9.ashx\" title=\"secoué\">secouée</a> et <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a>. Un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.volont%c3%a9.ashx\" title=\"Volonté\">volonté</a> réussi réduit la durée à 1 round par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a>. Si la cible est un lanceur de sort, il reçoit une <a class=\"pagelink\" href=\"Pathfinder-RPG.Description%20des%20plaies%20magiques.ashx\" title=\"Description des plaies magiques\">plaie mineure</a> aléatoire en cas de jet raté.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89chec%20annonc%c3%a9.ashx",
+    "cache_fichier": "cache/html/80ecf665705db8341b7f89d896a558bef566fdab.html",
+    "recupere_le": "2026-07-28T22:38:45.370542+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "echec-annonce",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89chec%20annonc%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 8
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "echec-annonce",
+    "resume_court": "Le lanceur accable sa cible d'angoisse et de défaites futures, la rendant secouée et fiévreuse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "la rend définitivement secouée"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne « fiévreuse » mais cette condition n'existe pas dans la liste fermée. Seule « secouée » est retenue. La mention de « plaie mineure aléatoire » pour les lanceurs de sorts ne constitue pas une condition standard et n'est pas documentée suffisamment pour être incluse.",
+    "slug": "echec-annonce",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:05+00:00",
+    "hash_source": "02c4fcf7f5984022454f1b19e8e95bf42abab1ae13aa83cdc76e9f8545ca0cd7"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "contrat-supreme",
+  "nom": "Contrat suprême",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrat%20supr%c3%aame.ashx",
+  "ecole": "Invocation (appel)",
+  "descripteurs": [
+    "voir texte"
+  ],
+  "niveaux": {
+    "Con": 6,
+    "Ens/Mag": 8,
+    "Psy": 8
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux) (voir texte)",
+  "cible": "jusqu’à 3 élémentaires ou Extérieurs (ne totalisant pas plus de 18 DV), apparaissant à 9 m (6 c) ou moins les uns des autres",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "non et oui (voir texte)",
+  "description": "Ce sort s’apparente à contrat, si ce n’est qu’il permet d’appeler une entité ayant jusqu’à 18 DV, ou plusieurs créatures du même type dont la somme des DV ne dépasse pas 18. Chacune peut faire un jet de sauvegarde et a la possibilité de s’échapper, et le mage doit les convaincre une par une de lui rendre service.",
+  "description_html": "<hr/>\nCe sort s’apparente à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.contrat.ashx\" title=\"Contrat\">contrat</a></i>, si ce n’est qu’il permet d’appeler une entité ayant jusqu’à 18 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a>, ou plusieurs créatures du même type dont la somme des <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> ne dépasse pas 18. Chacune peut faire un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> et a la possibilité de s’échapper, et le mage doit les convaincre une par une de lui rendre service.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 8,
+      "niveau_page": 8,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrat%20supr%c3%aame.ashx",
+    "cache_fichier": "cache/html/bcf9e0a0ac3a7b028e6b1fcb474e3f156034703e.html",
+    "recupere_le": "2026-07-28T22:47:52.503254+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "contrat-supreme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrat%20supr%c3%aame.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 8
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 8
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "contrat-supreme",
+    "resume_court": "Invoque jusqu'à 3 élémentaires ou Extérieurs (max 18 DV) qu'il faut convaincre individuellement.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "jusqu'à 3 élémentaires ou Extérieurs"
+    },
+    "notes_ambiguite": "Le sort invoque des créatures mais ne les contrôle pas automatiquement : elles peuvent refuser et s'échapper. La cible est désignée comme les créatures invoquées elles-mêmes, bien que le lanceur soit l'initiateur.",
+    "slug": "contrat-supreme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:22+00:00",
+    "hash_source": "d030ac8daf64aafd9c95a34e2fe67bbc973836fe3919bd68a84a4aee2fc8c08d"
+  }
+}

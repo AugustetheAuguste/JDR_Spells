@@ -1,0 +1,129 @@
+{
+  "id": "ame-parasite",
+  "nom": "Âme parasite",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%82me%20parasite.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Mal",
+    "mort"
+  ],
+  "niveaux": {
+    "Cham": 9,
+    "Ens/Mag": 9,
+    "Prê": 9,
+    "Psy": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une gemme ou cristal d'une valeur d'au moins 100 po)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "permanente (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme possession à la différence des indications ci-dessus, et qu'au lieu de sa propre âme, le personnage peut transférer une âme prisonnière (comme une prise au piège dans une gemme spirituelle ou grâce à capture d'âme ou séquestration) de son réceptacle vers le corps d'une cible non consentante. Si la créature ciblée rate son jet de sauvegarde, elle meurt et l'âme piégée dans le réceptacle s'installe de manière permanente dans le corps comme si elle utilisait possession. L'âme piégée n'a pas droit à un jet de sauvegarde pour résister à ce transfert. Pour annuler le sort, le personnage doit être à portée du corps possédé.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.possession.ashx\" title=\"Possession\">possession</a></i> à la différence des indications ci-dessus, et qu'au lieu de sa propre âme, le personnage peut transférer une âme prisonnière (comme une prise au piège dans une gemme spirituelle ou grâce à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Capture%20d%c3%a2me.ashx\" title=\"Capture d'âme\">capture d'âme</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.s%c3%a9questration.ashx\" title=\"Séquestration\">séquestration</a></i>) de son réceptacle vers le corps d'une cible non consentante. Si la créature ciblée rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle meurt et l'âme piégée dans le réceptacle s'installe de manière permanente dans le corps comme si elle utilisait <i>possession</i>. L'âme piégée n'a pas droit à un jet de sauvegarde pour résister à ce transfert. Pour annuler le sort, le personnage doit être à portée du corps possédé.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Book of the Damned/Livre des damnés"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%82me%20parasite.ashx",
+    "cache_fichier": "cache/html/2c80ac494439002a20054e64403154f263e34f53.html",
+    "recupere_le": "2026-07-28T22:38:38.367943+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "ame-parasite",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%82me%20parasite.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 9
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 9
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "ame-parasite",
+    "resume_court": "Transfère une âme prisonnière dans le corps d'une créature, la tuant et la possédant de manière permanente.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort tue la cible et la possède ensuite, ce qui pourrait relever de plusieurs catégories (invocation, transformation, affaiblissement). J'ai retenu affaiblissement car l'effet principal est de dégrader durablement la créature ciblée en la tuant et en la contrôlant. Le tag charme_ou_coercition couvre la possession permanente qui en résulte.",
+    "slug": "ame-parasite",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:23+00:00",
+    "hash_source": "ee35374e436c1620b273442a540aa0a0a6f2b5c5fa445b7ed6048898d2b0e07c"
+  }
+}

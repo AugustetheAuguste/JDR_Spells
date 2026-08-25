@@ -1,0 +1,99 @@
+{
+  "id": "symbole-de-faiblesse",
+  "nom": "Symbole de faiblesse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20faiblesse.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 7,
+    "Occ": 5,
+    "Prê": 7,
+    "Sor": 7
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (mercure et phosphore, plus un diamant et une opale en poudre (5 000 po au total))",
+  "portee": "0 m (voir texte)",
+  "cible": "1 symbole",
+  "duree": "voir texte",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort ressemble à symbole de mort, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont frappées par un mal qui leur inflige un affaiblissement temporaire de 3d6 points de Force.\nContrairement à symbole de mort, symbole de faiblesse ne présente pas de limite de points de vie. Une fois déclenché, il reste actif pendant dix minutes par niveau de lanceur de sorts. Une créature est affectée une seule fois par ce symbole.\nNote. Les pièges magiques tels que symbole de faiblesse sont extrêmement difficiles à détecter et à désamorcer. Un roublard (et lui seul) peut utiliser sa compétence de Perception pour les repérer, puis de Sabotage pour les mettre hors d’état. Pour chacun des deux tests, le DD s’élève à 25 + niveau du sort, soit 32 pour symbole de faiblesse.",
+  "description_html": "<hr/>\nCe sort ressemble à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i>, si ce n’est que les créatures situées dans un rayon de 18 m de la rune sont frappées par un mal qui leur inflige un <a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissement temporaire</a> de 3d6 points de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>.<br/><br/>Contrairement à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.symbole%20de%20mort.ashx\" title=\"Symbole de mort\">symbole de mort</a></i>, <i>symbole de faiblesse</i> ne présente pas de limite de <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a>. Une fois déclenché, il reste actif pendant dix minutes par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Une créature est affectée une seule fois par ce symbole.<br/><br/><i>Note.</i> Les pièges magiques tels que <i>symbole de faiblesse</i> sont extrêmement difficiles à détecter et à désamorcer. Un <a class=\"pagelink\" href=\"Pathfinder-RPG.roublard.ashx\" title=\"Le roublard\">roublard</a> (et lui seul) peut utiliser sa compétence de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> pour les repérer, puis de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sabotage.ashx\" title=\"Sabotage\">Sabotage</a> pour les mettre hors d’état. Pour chacun des deux tests, le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> s’élève à 25 + <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20du%20sort.ashx\" title=\"niveau du sort\">niveau du sort</a>, soit 32 pour <i>symbole de faiblesse</i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Symbole de mort"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20faiblesse.ashx",
+    "cache_fichier": "cache/html/c25e4a4a75d0482ac91a6b36d569b502f1401c86.html",
+    "recupere_le": "2026-07-29T07:41:38.706097+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "symbole-de-faiblesse",
+    "resume_court": "Une rune qui affaiblit temporairement la Force de toute créature dans un rayon de 18 m.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "affaiblissement_de_capacite",
+      "duree_prolongee",
+      "detection_ou_revelation"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "les créatures situées dans un rayon de 18 m de la rune"
+    },
+    "notes_ambiguite": "Le sort inflige un affaiblissement temporaire de Force (3d6 points) plutôt qu'une condition nommée de la liste. L'affaiblissement est un effet de dégradation de capacité, classé en tag mais pas en condition_infligee, car aucune condition de la liste ne le couvre précisément.",
+    "slug": "symbole-de-faiblesse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:06+00:00",
+    "hash_source": "f6dfc9b4d3d7a7f18517121ea7242f14447e4c41b2ecb8c2afdb198342e648cf"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "157f7a17413520dcf316023ce0134c62800ff26aebfa032537d7a139441fad90",
+  "hash_vue": "de49ed7c303bf769a1e2bea82836340f0cacc648cc51e5e03a277ca7af75db46"
+}

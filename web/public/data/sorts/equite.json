@@ -1,0 +1,106 @@
+{
+  "id": "equite",
+  "nom": "Équité",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quit%c3%a9.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Inq": 2,
+    "Pal": 2,
+    "Prê": 1
+  },
+  "temps_incantation": "1 action complexe",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature humanoïde par niveau",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Les créatures humanoïdes affectées par ce sort doivent commercer équitablement avec les autres et au mieux de leurs capacités. Si elles connaissent la vraie valeur (ou même une valeur estimée) d’un bien ou d’un service, les cibles ne peuvent permettre la conclusion d’une affaire si cette dernière est à l’avantage d’une des parties, et ce de manière inéquitable. Elles empêchent toute tentative de tricherie d’un côté comme de l’autre lorsqu’elles sont sous l’influence de ce sort. Le symbole du dieu de la civilisation apparaît au-dessus de la tête des cibles du sort, ce qui montre immédiatement qui est affecté par le sort et qui ne l’est pas.",
+  "description_html": "<br/><br/>Les créatures humanoïdes affectées par ce sort doivent commercer équitablement avec les autres et au mieux de leurs capacités. Si elles connaissent la vraie valeur (ou même une valeur estimée) d’un bien ou d’un service, les cibles ne peuvent permettre la conclusion d’une affaire si cette dernière est à l’avantage d’une des parties, et ce de manière inéquitable. Elles empêchent toute tentative de tricherie d’un côté comme de l’autre lorsqu’elles sont sous l’influence de ce sort. Le symbole du dieu de la civilisation apparaît au-dessus de la tête des cibles du sort, ce qui montre immédiatement qui est affecté par le sort et qui ne l’est pas.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quit%c3%a9.ashx",
+    "cache_fichier": "cache/html/b39afd0a7289c2fa6a2a28de14d5b35ebd0b92de.html",
+    "recupere_le": "2026-07-28T22:39:21.324808+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "equite",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quit%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 2
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 2
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "equite",
+    "resume_court": "Les créatures affectées doivent commercer équitablement et empêchent toute tricherie.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "social",
+      "utilitaire"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature humanoïde par niveau"
+    },
+    "notes_ambiguite": "Le sort affecte potentiellement des alliés ou des neutres selon le contexte, mais la cible typique reste hostile puisque le sort impose une contrainte comportementale. La catégorie coercition s'applique car le sort soumet la volonté des créatures à une conduite qu'elles n'auraient pas choisie.",
+    "slug": "equite",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:17+00:00",
+    "hash_source": "24d2f03e2111cb8800e0ee256eaf205d83f0c6cc3d2482e32341bf7670fbdb6f"
+  }
+}

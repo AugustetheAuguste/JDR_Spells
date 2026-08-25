@@ -1,0 +1,104 @@
+{
+  "id": "voie-des-vents",
+  "nom": "Voie des vents",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voie%20des%20vents.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "air"
+  ],
+  "niveaux": {
+    "Dru": 6,
+    "Ens/Mag": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "30 mètres",
+  "cible": "souffle de vent ascendant de 12 m de haut sur une ligne de 30 m",
+  "duree": "concentration + 1 round",
+  "jet_de_sauvegarde": "Vigueur annule",
+  "resistance_magie": "oui",
+  "description": "D’un balayage de la main, le lanceur de sorts fait appel à des vents puissants pour dégager un passage devant lui. Les vents sont l’équivalent d’une tempête. Pendant le premier round du sort, les vents balayent la zone indiquée pour en dégager toute chose de taille P ou plus petite, les poussant hors des limites de l’effet du sort (50 % de chances d’atterrir d’un côté ou de l’autre). Le lanceur peut traverser cet effet sans malus, mais toutes les autres créatures sont sujettes aux effets du vent. Lors du deuxième round et de ceux qui suivent, les frontières de l’effet sont considérées comme des murs de vent. Si l’effet inclut un corps d’eau ou d’un autre liquide, le vent crée un canal de 12 mètres de profondeur maximum à la surface du liquide. Lors de son tour et par une action de mouvement, le lanceur peut déplacer l’effet du sort, en faisant pivoter une extrémité de 45° maximum ou en le déplaçant de 15 mètres maximum en ligne droite en gardant la même orientation (qu’il le fasse avancer vers lui ou dans la direction opposée).",
+  "description_html": "<br/><br/>D’un balayage de la main, le lanceur de sorts fait appel à des vents puissants pour dégager un passage devant lui. Les vents sont l’équivalent d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.Vents.ashx#EFFETSDUVENT\" title=\"Les vents\">tempête</a>. Pendant le premier <a class=\"pagelink\" href=\"Pathfinder-RPG.Vocabulaire%20courant.ashx#ROUND\" title=\"Vocabulaire courant\">round</a> du sort, les vents balayent la zone indiquée pour en dégager toute chose de taille P ou plus petite, les poussant hors des limites de l’effet du sort (50 % de chances d’atterrir d’un côté ou de l’autre). Le lanceur peut traverser cet effet sans malus, mais toutes les autres créatures sont sujettes aux <a class=\"pagelink\" href=\"Pathfinder-RPG.Vents.ashx#EFFETSDUVENT\" title=\"Les vents\">effets du vent</a>. Lors du deuxième round et de ceux qui suivent, les frontières de l’effet sont considérées comme des <a class=\"pagelink\" href=\"Pathfinder-RPG.Mur%20de%20vent.ashx\" title=\"Mur de vent\">murs de vent</a>. Si l’effet inclut un corps d’eau ou d’un autre liquide, le vent crée un canal de 12 mètres de profondeur maximum à la surface du liquide. Lors de son tour et par une <a class=\"pagelink\" href=\"Pathfinder-RPG.Actions%20de%20mouvement.ashx\" title=\"Actions de mouvement\">action de mouvement</a>, le lanceur peut déplacer l’effet du sort, en faisant pivoter une extrémité de 45° maximum ou en le déplaçant de 15 mètres maximum en ligne droite en gardant la même orientation (qu’il le fasse avancer vers lui ou dans la direction opposée).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voie%20des%20vents.ashx",
+    "cache_fichier": "cache/html/52d5ec6246f3bbb8a4cc33fb02957de6bb3b4e45.html",
+    "recupere_le": "2026-07-29T07:44:27.382443+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "voie-des-vents",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voie%20des%20vents.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 6
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 6
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "voie-des-vents",
+    "resume_court": "Un souffle de vent tempétueux qui repousse les créatures et crée un passage dégagé.",
+    "categorie_principale": "controle_de_zone",
+    "tags": [
+      "zone_d_effet",
+      "jet_de_sauvegarde",
+      "terrain_ou_environnement",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "souffle de vent ascendant de 12 m de haut sur une ligne de 30 m"
+    },
+    "notes_ambiguite": null,
+    "slug": "voie-des-vents",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:17+00:00",
+    "hash_source": "c7a3697364325e7d8609cb08ce01aa63d7ce372aec260fda3aacea4ee587b66c"
+  }
+}

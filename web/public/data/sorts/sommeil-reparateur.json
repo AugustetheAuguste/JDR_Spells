@@ -1,0 +1,78 @@
+{
+  "id": "sommeil-reparateur",
+  "nom": "Sommeil réparateur",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sommeil%20r%c3%a9parateur.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G, M (une pincée de sable)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "8 ou 24 heures, voir texte",
+  "jet_de_sauvegarde": "Vigueur, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage lance ce sort juste avant de se reposer. Tant que ses alliés et lui sont sous l'effet de ce sort, ils bénéficient d'une nuit de sommeil réparateur. Si le sujet profite d'une nuit de sommeil complet, il regagne ses points de vie comme s'il avait passé une journée entière au lit (il regagne alors deux fois son niveau de personnage en points de vie). Si le sujet se repose une journée entière, il récupère trois fois son niveau de personnage en points de vie. Toute interruption de la période de repos (si on réveille le sujet par exemple) l'empêche de guérir pendant la nuit et met un terme au sort pour le sujet éveillé. Toute guérison reçue sous l'effet du sort est considérée comme une guérison naturelle et n'affecte pas les effets qui requièrent des soins magiques.",
+  "description_html": "<br/><br/>Le personnage lance ce sort juste avant de se reposer. Tant que ses alliés et lui sont sous l'effet de ce sort, ils bénéficient d'une nuit de sommeil réparateur. Si le sujet profite d'une nuit de sommeil complet, il regagne ses points de vie comme s'il avait passé une journée entière au lit (il regagne alors deux fois son <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> de personnage en points de vie). Si le sujet se repose une journée entière, il récupère trois fois son <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> de personnage en points de vie. Toute interruption de la période de repos (si on réveille le sujet par exemple) l'empêche de guérir pendant la nuit et met un terme au sort pour le sujet éveillé. Toute guérison reçue sous l'effet du sort est considérée comme une guérison naturelle et n'affecte pas les effets qui requièrent des soins magiques.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sommeil%20r%c3%a9parateur.ashx",
+    "cache_fichier": "cache/html/22feafdc229c8d31f905daa21a4436d86db57230.html",
+    "recupere_le": "2026-07-29T07:40:53.468531+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "sommeil-reparateur",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sommeil%20r%c3%a9parateur.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "sommeil-reparateur",
+    "resume_court": "Le lanceur et ses alliés bénéficient d'une nuit de sommeil réparateur qui restaure leurs points de vie.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "duree_prolongee",
+      "amelioration_de_capacite",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "utilitaire",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "sommeil-reparateur",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:47+00:00",
+    "hash_source": "2886d54583277bf87fb9f321ad42ed09edd328b417bf255826b2d87a73dbf077"
+  }
+}

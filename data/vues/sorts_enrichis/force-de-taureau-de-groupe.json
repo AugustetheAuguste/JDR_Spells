@@ -1,0 +1,130 @@
+{
+  "id": "force-de-taureau-de-groupe",
+  "nom": "Force de taureau de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau%20de%20groupe.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 6,
+    "Con": 4,
+    "ConU": 6,
+    "Dru": 6,
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Prê": 6,
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (quelques poils de taureau ou une pincée de bouse séchée)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort est semblable à force de taureau, si ce n’est qu’il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.force%20de%20taureau.ashx\" title=\"Force de taureau\">force de taureau</a></i>, si ce n’est qu’il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Force de taureau"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Force%20de%20taureau%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/eba4f9bd0f4c8c3c813622963a294185c959e8f8.html",
+    "recupere_le": "2026-07-28T22:53:53.316329+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "force-de-taureau-de-groupe",
+    "resume_court": "Augmente la force de plusieurs créatures alliées pendant 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « force de taureau » sans en donner les détails. L'effet exact (bonus de force) n'est pas explicité ici, mais le sort est clairement une amélioration de capacité affectant plusieurs alliés. La cible est désignée comme « 1 créature/niveau », ce qui inclut potentiellement le lanceur, mais le contexte (jet de sauvegarde inoffensif, résistance à la magie inoffensif) et la comparaison avec un sort d'amélioration suggèrent que les alliés volontaires sont la cible typique.",
+    "slug": "force-de-taureau-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:14+00:00",
+    "hash_source": "fab6d047034aa12103499e2c4ef96ee0cc7084062ac46806fa6ad303a521dd72"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b79e6afbd085e025865863d8b2e787d655621b662bbdbb2b746548a7d686e209",
+  "hash_vue": "fbd18daae5c2535e7c75ceeb651505074973d9067088cd62f5c93305353c2847"
+}

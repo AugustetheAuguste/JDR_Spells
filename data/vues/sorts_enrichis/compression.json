@@ -1,0 +1,92 @@
+{
+  "id": "compression",
+  "nom": "Compression",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Compression.ashx",
+  "ecole": "Transmutation (métamorphose)",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 2,
+    "Ens/Mag": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Vigueur annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "La cible devient souple quelle que soit sa taille et sa masse réelles. Elle peut se faufiler dans les zones qui font au moins la moitié de sa taille sans malus. Elle peut traverser des espaces faisant au moins 1/4 de sa largeur en subissant les malus de compression comme si elle traversait un espace qui fait au moins la moitié de sa largeur.",
+  "description_html": "<br/><br/>La cible devient souple quelle que soit sa <a class=\"pagelink\" href=\"Pathfinder-RPG.Petites%20et%20grandes%20cr%c3%a9atures.ashx#TABLEAUTAILLES\" title=\"Créatures de taille inférieure ou supérieure à la moyenne\">taille</a> et sa masse réelles. Elle peut <a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9placement%20et%20position.ashx\" title=\"Déplacement et position\">se faufiler</a> dans les zones qui font au moins la moitié de sa taille sans malus. Elle peut <a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9placement%20et%20position.ashx#PASSERSANSSARRETER\" title=\"Déplacement et position\">traverser des espaces</a> faisant au moins 1/4 de sa largeur en subissant les malus de compression comme si elle traversait un espace qui fait au moins la moitié de sa largeur.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles vishkanyas."
+  },
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Compression.ashx",
+    "cache_fichier": "cache/html/3c2b6531e2433bfb14f082fbd5ed737e1f9ecb5f.html",
+    "recupere_le": "2026-07-28T22:47:12.551999+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "compression",
+    "resume_court": "La cible devient souple et peut se faufiler dans des espaces étroits sans malus ou avec malus réduit.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "compression",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:10+00:00",
+    "hash_source": "d179fa1c5f5549c5409dcaeaf10ff92d3d24f0f22389bfca8d0952da42d1bb61"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "64b96c4b59e5f42598a60d28d4fcc7f068db0247186be7db5e7d27a953155334",
+  "hash_vue": "bd1fd5262035c026c82c833ffc1bd940bc8389d54e8261dfa5633214e77662f7"
+}

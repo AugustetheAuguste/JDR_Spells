@@ -1,0 +1,12 @@
+# Dépendances d'exécution du pipeline. Miroir de `[project.dependencies]` dans
+# `pyproject.toml`, pour qui préfère `pip install -r`.
+#
+# Rien d'autre n'est requis : le reste du pipeline n'utilise que la bibliothèque
+# standard. En particulier `unidecode` n'est PAS une dépendance — la
+# désaccentuation du slug passe par `unicodedata.normalize('NFKD', …)`.
+beautifulsoup4>=4.12
+jsonschema>=4.20
+requests>=2.31
+
+# Tests : pytest seul, sans plugin.
+pytest>=8.0

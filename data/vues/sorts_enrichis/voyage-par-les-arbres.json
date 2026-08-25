@@ -1,0 +1,79 @@
+{
+  "id": "voyage-par-les-arbres",
+  "nom": "Voyage par les arbres",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voyage%20par%20les%20arbres.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 5,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "le jeteur de sorts",
+  "duree": "1 heure/niveau ou jusqu’à utilisation (voir description)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Ce sort permet de pénétrer dans un arbre ou de se déplacer d’un arbre à un autre. L’arbre dans lequel le personnage entre et ceux par lesquels il passe avant de ressortir doivent appartenir à la même espèce. La largeur de leur tronc doit également leur permettre d’accueillir le lanceur de sorts. Dès que ce dernier pénètre dans un chêne (par exemple), il sait instantanément où tous les autres chênes situés dans les limites de portée du sort se trouvent (voir ci-dessous), ce qui lui permet de décider jusqu’auquel il souhaite se téléporter ou s’il veut ressortir par l’arbre par lequel il est entré. L’arbre au cœur duquel il peut réapparaître peut se trouver plus ou moins loin, en fonction de son espèce :\nEspèce d’arbrePortée du déplacement\nChêne, frêne, if900 m\nOrme, tilleul600 m\nAutre arbre à feuilles caduques450 m\nConifère300 m\nLe personnage peut se téléporter une fois par niveau de lanceur de sorts (le fait de se déplacer du premier au deuxième arbre compte seulement pour un passage). Le sort s’achève dès que le personnage a épuisé son nombre de déplacements possibles ou dès qu’il sort d’un arbre. Chaque déplacement est une action complexe.\nIl est également possible de rester dans l’arbre de son choix sans en sortir, mais le personnage en est expulsé au terme de la durée indiquée. Si l’arbre dans lequel il se cache est abattu ou incendié, le personnage meurt s’il ne s’extrait pas de l’arbre avant la mort de ce dernier.",
+  "description_html": "<br/><br/>Ce sort permet de pénétrer dans un arbre ou de se déplacer d’un arbre à un autre. L’arbre dans lequel le personnage entre et ceux par lesquels il passe avant de ressortir doivent appartenir à la même espèce. La largeur de leur tronc doit également leur permettre d’accueillir le lanceur de sorts. Dès que ce dernier pénètre dans un chêne (par exemple), il sait instantanément où tous les autres chênes situés dans les limites de portée du sort se trouvent (voir ci-dessous), ce qui lui permet de décider jusqu’auquel il souhaite se téléporter ou s’il veut ressortir par l’arbre par lequel il est entré. L’arbre au cœur duquel il peut réapparaître peut se trouver plus ou moins loin, en fonction de son espèce :<br/><br/><center>\n<table class=\"tablo\"><tr class=\"titre\"><td>Espèce d’arbre</td><td>Portée du déplacement</td></tr><tr class=\"premier\"><td>Chêne, frêne, if</td><td>900 m</td></tr><tr class=\"alt\"><td>Orme, tilleul</td><td>600 m</td></tr><tr><td> Autre arbre à feuilles caduques</td><td>450 m</td></tr><tr class=\"alt\"><td>Conifère</td><td>300 m</td></tr></table>\n</center><br/><br/>Le personnage peut se téléporter une fois par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (le fait de se déplacer du premier au deuxième arbre compte seulement pour un passage). Le sort s’achève dès que le personnage a épuisé son nombre de déplacements possibles ou dès qu’il sort d’un arbre. Chaque déplacement est une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a>.<br/><br/>Il est également possible de rester dans l’arbre de son choix sans en sortir, mais le personnage en est expulsé au terme de la durée indiquée. Si l’arbre dans lequel il se cache est abattu ou incendié, le personnage meurt s’il ne s’extrait pas de l’arbre avant la mort de ce dernier.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voyage%20par%20les%20arbres.ashx",
+    "cache_fichier": "cache/html/1aaed266daedf905f6f1e56ee258d56cf1e7a19b.html",
+    "recupere_le": "2026-07-29T07:44:49.788678+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "voyage-par-les-arbres",
+    "resume_court": "Le lanceur se téléporte entre arbres de même espèce, jusqu'à une fois par niveau.",
+    "categorie_principale": "deplacement",
+    "tags": [
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "invocation_ou_creation"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "le jeteur de sorts"
+    },
+    "notes_ambiguite": "Le sort relève de l'invocation (téléportation) selon l'école déclarée, mais son effet principal est le déplacement. La catégorie `deplacement` a été retenue car elle décrit mieux l'usage tactique. Le tag `invocation_ou_creation` est inclus car l'école l'indique explicitement, bien que le sort ne crée pas de créature.",
+    "slug": "voyage-par-les-arbres",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:26:26+00:00",
+    "hash_source": "3217edf5309ad163a11699c507575aa83c714a53e34740baf66640846e0c33fc"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "b5ad49d020858405103ce1056369256365a70e57f56254b5852edca9a9165527",
+  "hash_vue": "d63597ba2310074720635d632a471429731fca75a57ee7057ef3b52fdaf0e3bb"
+}

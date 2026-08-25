@@ -1,0 +1,131 @@
+{
+  "id": "cierge-de-mort",
+  "nom": "Cierge de mort",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cierge%20de%20mort.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "Feu",
+    "Mal",
+    "mort"
+  ],
+  "niveaux": {
+    "Apal": 1,
+    "Inq": 2,
+    "Prê": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": null,
+  "duree": "instantanée/1 round par DV du sujet ; voir description",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme mise à mort, à la seule différence qu’au lieu d’utiliser l’énergie vitale de la cible tuée pour s’améliorer, le lanceur de sorts l’utilise pour invoquer un élémentaire de feu de taille P ressemblant à une version hurlante et enflammée de la créature tuée. Cet élémentaire agit immédiatement lors du tour du lanceur de sorts et se comporte comme si le lanceur l’avait invoqué grâce à une convocation de monstres II. L’élémentaire reste pendant un nombre de rounds égal aux dés de vie de la créature tuée.",
+  "description_html": "<br/><br/>Ce sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mise%20%c3%a0%20mort.ashx\" title=\"Mise à mort\">mise à mort</a></i>, à la seule différence qu’au lieu d’utiliser l’énergie vitale de la cible tuée pour s’améliorer, le lanceur de sorts l’utilise pour invoquer un élémentaire de feu de taille P ressemblant à une version hurlante et enflammée de la créature tuée. Cet élémentaire agit immédiatement lors du tour du lanceur de sorts et se comporte comme si le lanceur l’avait invoqué grâce à une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.convocation%20de%20monstres%20II.ashx\" title=\"Convocation de monstres II\">convocation de monstres II</a></i>. L’élémentaire reste pendant un nombre de rounds égal aux dés de vie de la créature tuée.<br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "mise à mort",
+      "id": "mise-a-mort",
+      "ecole": "Nécromancie",
+      "descripteurs": [
+        "Mal",
+        "mort"
+      ],
+      "niveaux": {
+        "Apal": 1,
+        "Inq": 2,
+        "Prê": 2,
+        "Sor": 2,
+        "Spi": 2
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "contact",
+      "cible": "créature vivante touchée",
+      "duree": "instantanée/10 minutes par DV de la cible (voir description)",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort permet au prêtre d’absorber l’énergie vitale d’une créature. Mise à mort ne fonctionne que sur une créature vivante se trouvant à -1 point de vie ou moins. Si la victime rate son jet de sauvegarde, elle décède aussitôt, tandis que le prêtre gagne 1d8 points de vie temporaires et un bonus d’altération de +2 en Force. De plus, son niveau de lanceur de sorts augmente de +1, ce qui rend ses sorts plus efficaces (sans toutefois lui permettre d’en apprendre de nouveaux). Tous ces effets se dissipent au bout de 10 minutes par DV de la créature achevée.",
+      "description_html": "<br/><br/>Ce sort permet au <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> d’absorber l’énergie vitale d’une créature. <i>Mise à mort</i> ne fonctionne que sur une créature vivante se trouvant à -1 point de vie ou moins. Si la victime rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle décède aussitôt, tandis que le <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> gagne 1d8 points de vie temporaires et un <a class=\"pagelink\" href=\"Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx\" title=\"bonus d'altération\">bonus d’altération</a> de +2 en <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a>. De plus, son <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a> augmente de +1, ce qui rend ses sorts plus efficaces (sans toutefois lui permettre d’en apprendre de nouveaux). Tous ces effets se dissipent au bout de 10 minutes par <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> de la créature achevée.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles ifrits."
+  },
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cierge%20de%20mort.ashx",
+    "cache_fichier": "cache/html/0763b83d48a8e8c7677f96a92191b892abaac385.html",
+    "recupere_le": "2026-07-28T22:46:40.499088+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "cierge-de-mort",
+    "resume_court": "Tue une créature et invoque un élémentaire de feu à son image pour servir le lanceur.",
+    "categorie_principale": "invocation",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "la cible tuée"
+    },
+    "notes_ambiguite": "Le sort tue la cible (effet instantané) mais invoque un élémentaire dont la durée dépend des DV du sujet tué (1 round par DV). La catégorie principale est invocation car l'effet principal est la création de l'élémentaire de feu ; la mort de la cible est le mécanisme d'activation.",
+    "slug": "cierge-de-mort",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:59+00:00",
+    "hash_source": "26ce7ccead69040dbe0ebe4ad20fc98516e66e386dc0b9409b768998620846e0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "32aba91e82a65298b7cae87acee5b7c1f676b85e23142a59f8ae098ad2bd1b27",
+  "hash_vue": "63d367047f8896dd61627cb09a6f5172a3aa0330ec2226f1058e5c00343c5040"
+}

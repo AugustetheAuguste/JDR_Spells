@@ -1,0 +1,114 @@
+{
+  "id": "negation-de-l-arome",
+  "nom": "Négation de l'arôme",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.N%c3%a9gation%20de%20lar%c3%b4me.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 1,
+    "Dru": 1,
+    "Occ": 1,
+    "Rôd": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (une pincée d'alun)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature ou un objet touché/niveau",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui",
+  "description": "D'un geste, ce sort permet au personnage de réduire à néant toutes les odeurs, même les plus ignobles ou les plus reconnaissables. Quand le personnage le lance, les créatures ou les objets choisis perdent toute odeur, naturelle ou autre. Il est impossible de traquer ou de localiser une créature sous l'effet de négation de l'arôme à l'aide du pouvoir odorat. De plus, ce sort empêche la cible d'utiliser le pouvoir puanteur ou d'autres aptitudes similaires basées sur les odeurs (comme celles que possèdent les troglodytes).\nNégation de l'arôme n'empêche pas la cible de se faire imprégner par une odeur extérieure. Si elle se plonge dans une substance au parfum puissant, les effets du sort sont annulés jusqu'à ce qu'elle se débarrasse de cette substance ou la neutralise.",
+  "description_html": "<br/><br/>D'un geste, ce sort permet au personnage de réduire à néant toutes les odeurs, même les plus ignobles ou les plus reconnaissables. Quand le personnage le lance, les créatures ou les objets choisis perdent toute odeur, naturelle ou autre. Il est impossible de traquer ou de localiser une créature sous l'effet de <i>négation de l'arôme</i> à l'aide du pouvoir <a class=\"pagelink\" href=\"Pathfinder-RPG.odorat.ashx\" title=\"odorat\">odorat</a>. De plus, ce sort empêche la cible d'utiliser le pouvoir <a class=\"pagelink\" href=\"Pathfinder-RPG.puanteur.ashx\" title=\"Puanteur\">puanteur</a> ou d'autres aptitudes similaires basées sur les odeurs (comme celles que possèdent les <a class=\"pagelink\" href=\"Pathfinder-RPG.troglodyte.ashx\" title=\"Troglodyte\">troglodytes</a>).<br/><br/><i>Négation de l'arôme</i> n'empêche pas la cible de se faire imprégner par une odeur extérieure. Si elle se plonge dans une substance au parfum puissant, les effets du sort sont annulés jusqu'à ce qu'elle se débarrasse de cette substance ou la neutralise.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.N%c3%a9gation%20de%20lar%c3%b4me.ashx",
+    "cache_fichier": "cache/html/f2f2bbfbb50432ef111005e177ed49490acaddc2.html",
+    "recupere_le": "2026-07-28T23:01:34.828908+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "negation-de-l-arome",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.N%c3%a9gation%20de%20lar%c3%b4me.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 1
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 1
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 1
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "negation-de-l-arome",
+    "resume_court": "Supprime toutes les odeurs de la cible, empêchant le pistage olfactif et les pouvoirs basés sur les odeurs.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature ou un objet touché/niveau"
+    },
+    "notes_ambiguite": "Le sort affecte plusieurs créatures ou objets (« une créature ou un objet touché/niveau »), ce qui justifie le tag « plusieurs_cibles ». La cible peut être un allié volontaire ou une créature neutre, d'où « allie ». Le rôle « social » s'ajoute car le sort peut servir à dissimuler une présence lors d'interactions ou de négociations.",
+    "slug": "negation-de-l-arome",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:22+00:00",
+    "hash_source": "03199123640fd28c70ad401748f6967f9c883694f57cc4a7cf1237c2ddc79e63"
+  }
+}

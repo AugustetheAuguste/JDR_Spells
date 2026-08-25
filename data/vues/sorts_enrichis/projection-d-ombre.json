@@ -1,0 +1,77 @@
+{
+  "id": "projection-d-ombre",
+  "nom": "Projection d'ombre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projection%20dombre.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "mal"
+  ],
+  "niveaux": {
+    "Ens/Mag": 4
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "G",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": null,
+  "resistance_magie": null,
+  "description": "Grâce à ce sort, le personnage intègre sa force vitale et sa psyché à son ombre, lui donnant ainsi une vie propre et la capacité de se mouvoir comme une ombre morte-vivante. Son corps physique tombe dans un état comateux tant qu'il se projette dans son ombre et, tant que le sort fait effet, son corps ne produit plus ni ombre ni reflet.\nQuand le personnage s'incarne dans son ombre, il gagne la vision dans le noir, les capacités défensives, la vitesse de vol, le modificateur de discrétion racial et l'attaque d'affaiblissement temporaire de Force d'une ombre. Il ne bénéficie pas du pouvoir de création de rejetons ni des rangs de compétence ou des dés de vie de l'ombre. La projection d'ombre est de type mort-vivant, on peut donc la renvoyer ou l'affecter comme un mort-vivant.\nSi la projection d'ombre du personnage se fait tuer, ce dernier retourne immédiatement dans son corps et tombe à -1 point de vie. Il est mourant et doit commencer à faire des tests de Constitution pour se stabiliser.",
+  "description_html": "<br/><br/>Grâce à ce sort, le personnage intègre sa force vitale et sa psyché à son ombre, lui donnant ainsi une vie propre et la capacité de se mouvoir comme une <a class=\"pagelink\" href=\"Pathfinder-RPG.ombre.ashx\" title=\"Ombre\">ombre</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morte-vivante</a>. Son corps physique tombe dans un état comateux tant qu'il se projette dans son ombre et, tant que le sort fait effet, son corps ne produit plus ni ombre ni reflet.<br/><br/>Quand le personnage s'incarne dans son ombre, il gagne la <a class=\"pagelink\" href=\"Pathfinder-RPG.vision%20dans%20le%20noir.ashx\" title=\"vision dans le noir\">vision dans le noir</a>, les capacités défensives, la vitesse de vol, le modificateur de discrétion racial et l'attaque d'<a class=\"pagelink\" href=\"Pathfinder-RPG.affaiblissement%20temporaire.ashx\" title=\"affaiblissement temporaire\">affaiblissement temporaire</a> de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> d'une <a class=\"pagelink\" href=\"Pathfinder-RPG.ombre.ashx\" title=\"Ombre\">ombre</a>. Il ne bénéficie pas du pouvoir de <a class=\"pagelink\" href=\"Pathfinder-RPG.ombre.ashx\" title=\"Ombre\">création de rejetons</a> ni des rangs de compétence ou des dés de vie de l'ombre. La <i>projection d'ombre</i> est de <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">type mort-vivant</a>, on peut donc la renvoyer ou l'affecter comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a>.<br/><br/>Si la <i>projection d'ombre</i> du personnage se fait tuer, ce dernier retourne immédiatement dans son corps et tombe à -1 point de vie. Il est <a class=\"pagelink\" href=\"Pathfinder-RPG.mourant.ashx\" title=\"Mourant\">mourant</a> et doit commencer à faire des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Constitution.ashx\" title=\"La Constitution\">Constitution</a> pour se <a class=\"pagelink\" href=\"Pathfinder-RPG.stable.ashx\" title=\"Stable\">stabiliser</a>.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projection%20dombre.ashx",
+    "cache_fichier": "cache/html/81d4435be47561e9b70e16ce9bd6f82a2b97aea4.html",
+    "recupere_le": "2026-07-28T23:04:53.041264+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "projection-d-ombre",
+    "resume_court": "Le lanceur projette sa conscience dans son ombre, qui devient une créature morte-vivante autonome.",
+    "categorie_principale": "metamorphose",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "perception_amelioree",
+      "deplacement_ou_teleportation",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": "Le sort transforme le lanceur en ombre morte-vivante avec des capacités offensives (attaque d'affaiblissement temporaire de Force), mais ne produit pas directement de dégâts : c'est l'ombre qui attaque. La catégorie metamorphose s'impose car le corps du lanceur change de nature et de forme. Les tags incluent transformation_du_sujet (le lanceur devient une ombre), perception_amelioree (vision dans le noir), deplacement_ou_teleportation (vol), et alignement_ou_divin (école Nécromancie, descripteur mal, type mort-vivant).",
+    "slug": "projection-d-ombre",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:38+00:00",
+    "hash_source": "e2192679c1b678bfea6ea38b9498c2e21c4b225690f6bc4d6d4432d12f1405eb"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "a1bdec088ae73f893c1aad718325c975665b42069312dc2ae47df7252f5de756",
+  "hash_vue": "64d7f10047c74c57025a28a0b7006668adf5d253f4484a4ece4879c532e121e3"
+}

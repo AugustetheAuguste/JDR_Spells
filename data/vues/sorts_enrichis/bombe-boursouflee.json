@@ -1,0 +1,93 @@
+{
+  "id": "bombe-boursouflee",
+  "nom": "Bombe boursouflée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bombe%20boursoufl%c3%a9e.ashx",
+  "ecole": "nécromancie",
+  "descripteurs": [
+    "acide",
+    "mort"
+  ],
+  "niveaux": {
+    "Apal": 4,
+    "Ens/Mag": 4,
+    "Prê": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "la créature vivante touchée",
+  "duree": "instantanée et 1 minute/niveau (cf. texte)",
+  "jet_de_sauvegarde": "Vigueur, annule ou Réflexes, 1/2 dégâts (voir texte)",
+  "resistance_magie": "oui",
+  "description": "La créature-cible meurt si elle rate un jet de Vigueur et si ses dés de vie ne dépassent pas la moitié du niveau de lanceur de sorts du personnage.\nSi elle meurt, son cadavre se putréfie rapidement. Pendant une minute par niveau de lanceur de sorts après la mort de la cible, la première créature à toucher le cadavre le fait exploser dans un rayonnement de 3 mètres, infligeant 3d6 points de dégâts d’acide (Réflexes, 1/2 dégâts).",
+  "description_html": "<br/><br/>La créature-cible meurt si elle rate un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a> et si ses dés de vie ne dépassent pas la moitié du niveau de lanceur de sorts du personnage.<br/><br/>Si elle meurt, son cadavre se putréfie rapidement. Pendant une minute par niveau de lanceur de sorts après la mort de la cible, la première créature à toucher le cadavre le fait exploser dans un rayonnement de 3 mètres, infligeant 3d6 points de dégâts d’acide (<a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a>, 1/2 dégâts).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bombe%20boursoufl%c3%a9e.ashx",
+    "cache_fichier": "cache/html/c954f51fe24b7729824f680148f3ba3cdb3ec2df.html",
+    "recupere_le": "2026-07-28T22:43:59.338297+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "bombe-boursouflee",
+    "resume_court": "La cible meurt si elle échoue son jet de Vigueur, puis son cadavre explose au contact infligeant des dégâts d'acide.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "zone_d_effet",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "acide",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "3d6 points de dégâts d'acide",
+      "condition_infligee": [],
+      "cible_typique": "la créature vivante touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "bombe-boursouflee",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:55+00:00",
+    "hash_source": "1bc203a570ac13a1275639dd87177036bcf51109eb5a9debea6b87a7000478a4"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "81adbd6250d17482fecec07ca3c06aa3b89564a224468f8ed908b79c671d7a1d",
+  "hash_vue": "bb5d9a9bb81682350d78c32f6ed696903d4fc6847b1ff14d356c4668c88df6f4"
+}

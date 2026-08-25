@@ -1,0 +1,116 @@
+{
+  "id": "presage-debilitant",
+  "nom": "Présage débilitant",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20d%c3%a9bilitant.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Prê": 4,
+    "Psy": 4,
+    "Sor": 4,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) / (20 c + 2 c/niveau)",
+  "cible": "une créature",
+  "duree": "1 round/niveau (T) voir texte",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "La cible est entourée d’une aura verdâtre qui indique un sinistre destin. À chaque fois qu’elle fait un jet d’attaque ou qu’elle lance un sort, elle doit réussir un jet de Volonté DD = 10 + 1/2 niveau de lanceur de sorts + Charisme (pour les oracles), ou Intelligence (pour les sorcières), ou Sagesse (pour les prêtres). Si elle rate son jet de sauvegarde, l’attaque ou le sort inflige seulement la moitié des dégâts. Le personnage peut dissiper ce sort par une action immédiate si la cible réussit un coup critique : la dissipation transforme le critique en coup normal. L’attaque touche mais elle inflige seulement la moitié des dégâts.",
+  "description_html": "<br/><br/>La cible est entourée d’une aura verdâtre qui indique un sinistre destin. À chaque fois qu’elle fait un jet d’attaque ou qu’elle lance un sort, elle doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> = 10 + 1/2 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> + <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> (pour les <a class=\"pagelink\" href=\"Pathfinder-RPG.oracle.ashx\" title=\"L'oracle\">oracles</a>), ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> (pour les <a class=\"pagelink\" href=\"Pathfinder-RPG.sorci%c3%a8re.ashx\" title=\"La sorcière\">sorcières</a>), ou <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> (pour les <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtres</a>). Si elle rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, l’attaque ou le sort inflige seulement la moitié des dégâts. Le personnage peut dissiper ce sort par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20imm%c3%a9diate.ashx\" title=\"Action immédiate\">action immédiate</a> si la cible réussit un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a> : la dissipation transforme le critique en coup normal. L’attaque touche mais elle inflige seulement la moitié des dégâts.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20d%c3%a9bilitant.ashx",
+    "cache_fichier": "cache/html/70e99a65ea808a4eafa35354a6a56b2e24386a42.html",
+    "recupere_le": "2026-07-28T23:04:34.014631+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "presage-debilitant",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sage%20d%c3%a9bilitant.ashx",
+  "niveaux_par_classe": {
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "presage-debilitant",
+    "resume_court": "Une aura verdâtre force la cible à réduire ses dégâts infligés à chaque attaque ou sort.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas directement de dégâts mais réduit ceux de la cible. Il s'agit d'un affaiblissement de capacité plutôt qu'une entrave, car la créature conserve ses actions mais leur efficacité diminue. Le tag 'charme_ou_coercition' s'applique car le sort relève de l'école Enchantement (coercition) et impose une contrainte via un jet de sauvegarde répété.",
+    "slug": "presage-debilitant",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:50+00:00",
+    "hash_source": "41728eddeddd0d00bb486765e25df0013d949a50cd8fdd0716aa059e448c0acb"
+  }
+}

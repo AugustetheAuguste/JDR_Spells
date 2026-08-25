@@ -1,0 +1,105 @@
+{
+  "id": "malediction-du-vieux-loup-de-mer",
+  "nom": "Malédiction du vieux loup de mer",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20du%20vieux%20loup%20de%20mer.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Dru": 5,
+    "Hyp": 4,
+    "Sor": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (une fiole d'eau de mer)",
+  "portee": "contact",
+  "cible": "une créature",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "La cible se sent constamment comme sur une mer agitée, ce qui la rend fiévreuse en permanence. À chaque fois qu’elle se trouve sur l’eau ou dans l’eau à plus de 1,5 kilomètre du rivage, le mal de mer la rend chancelante. Il est impossible de dissiper cette malédiction, mais on peut l’annuler avec une délivrance des malédictions ou une annulation d’enchantement.",
+  "description_html": "<br/><br/>La cible se sent constamment comme sur une mer agitée, ce qui la rend fiévreuse en permanence. À chaque fois qu’elle se trouve sur l’eau ou dans l’eau à plus de 1,5 kilomètre du rivage, le mal de mer la rend chancelante. Il est impossible de dissiper cette malédiction, mais on peut l’annuler avec une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">délivrance des malédictions</a></i> ou une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">annulation d’enchantement</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles humains."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 5,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9diction%20du%20vieux%20loup%20de%20mer.ashx",
+    "cache_fichier": "cache/html/da6aaf3944f95f0f4a38b04ecdc390986d02f1d2.html",
+    "recupere_le": "2026-07-28T22:59:49.739098+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "malediction-du-vieux-loup-de-mer",
+    "resume_court": "Une malédiction permanente qui rend la cible fiévreuse et chancelante en mer loin du rivage.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "effet_mental"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "le mal de mer la rend chancelante"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": "Le texte mentionne que la cible « se sent constamment comme sur une mer agitée, ce qui la rend fiévreuse en permanence », mais « fiévreuse » n'existe pas dans la liste des conditions. Seule « chancelant » figure dans les conditions infligées et est explicitement nommée dans le texte.",
+    "slug": "malediction-du-vieux-loup-de-mer",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:29+00:00",
+    "hash_source": "e0952c94078b6fd0d0341fb61b50092a36ba6d1f2d5d4012ec326215c4fa5df5"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "abadf1deeddc44c95abbb5046eda0e37934b4c219673724ca36c8cb50989f892",
+  "hash_vue": "4b4d6708996508958985f2911ae50a61438bb02796f15c1e36d3cb10bbc7470e"
+}

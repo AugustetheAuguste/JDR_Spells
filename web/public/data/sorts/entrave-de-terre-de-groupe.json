@@ -1,0 +1,108 @@
+{
+  "id": "entrave-de-terre-de-groupe",
+  "nom": "Entrave de terre de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entrave%20de%20terre%20de%20groupe.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 6,
+    "Sor": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau)",
+  "cible": "une créature ou un objet/niveau, il ne doit pas y avoir plus de 9 mètres entre deux cibles.",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme entrave de terre, aux seules différences indiquées ci-dessus.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.entrave%20de%20terre.ashx\" title=\"Entrave de terre\">entrave de terre</a></i>, aux seules différences indiquées ci-dessus.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 6,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entrave%20de%20terre%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/9225bb520082e0b7fe83eda9e6abceb1bc93c81d.html",
+    "recupere_le": "2026-07-28T22:52:24.237368+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "entrave-de-terre-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entrave%20de%20terre%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 6
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 6
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "entrave-de-terre-de-groupe",
+    "resume_court": "Entrave plusieurs créatures ou objets dans la terre, les immobilisant pour plusieurs rounds.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "entrave_ou_immobilisation",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "terrain_ou_environnement",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "enchevetre"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Ce sort fonctionne comme entrave de terre"
+      ],
+      "cible_typique": "une créature ou un objet/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « entrave de terre » sans en reproduire les détails. La condition d'enchevêtrement est déduite du nom et de la mécanique d'entrave de terre standard en Pathfinder, mais le texte fourni ne la décrit pas explicitement. La preuve repose sur le renvoi fonctionnel au sort de base.",
+    "slug": "entrave-de-terre-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:25+00:00",
+    "hash_source": "61048464e84bcdd8105ae4f06fa302bee9f6df29917508914e9dbb02c2cbe270"
+  }
+}

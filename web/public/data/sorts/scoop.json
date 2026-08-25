@@ -1,0 +1,78 @@
+{
+  "id": "scoop",
+  "nom": "Scoop",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scoop.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force"
+  ],
+  "niveaux": {
+    "Ens/Mag": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) / (5 c + 1 c/2 niveaux)",
+  "cible": "un récipient de force de 15 cm de diamètre",
+  "duree": "concentration",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Vous créez une petite coupe de force. Par une action de mouvement, vous pouvez diriger le récipient de 4,5 m (3 c) par round dans toutes les directions, mais le sort s’achève si la distance entre vous et le récipient dépasse la portée du sort. Une action de mouvement vous permet de récupérer ou renverser un liquide. Le récipient peut contenir un demi-litre de liquide ou de petits objets, ne pesant pas plus de 2,5 kg. Si ce même volume est étalé sur une surface quelconque, vous pouvez le rassembler en vous concentrant pendant 1 mn.",
+  "description_html": "<br/><br/>Vous créez une petite coupe de force. Par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>, vous pouvez diriger le récipient de 4,5 m (3 <abbr title=\"cases\">c</abbr>) par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> dans toutes les directions, mais le sort s’achève si la distance entre vous et le récipient dépasse la portée du sort. Une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a> vous permet de récupérer ou renverser un liquide. Le récipient peut contenir un demi-litre de liquide ou de petits objets, ne pesant pas plus de 2,5 kg. Si ce même volume est étalé sur une surface quelconque, vous pouvez le rassembler en vous concentrant pendant 1 mn.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scoop.ashx",
+    "cache_fichier": "cache/html/9e7bf7dc7d8d02145aa5206cd7cb2ffe15106dd6.html",
+    "recupere_le": "2026-07-29T07:40:07.184256+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "scoop",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scoop.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 0
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "scoop",
+    "resume_court": "Crée une petite coupe de force que vous dirigez à distance pour collecter et transporter des liquides ou petits objets.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "invocation_ou_creation",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un récipient de force de 15 cm de diamètre"
+    },
+    "notes_ambiguite": null,
+    "slug": "scoop",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:27+00:00",
+    "hash_source": "3fbb9d3c3a4a1d974f0a0e346af0060704dac128779bc6ddf66be1b85cc82bd5"
+  }
+}

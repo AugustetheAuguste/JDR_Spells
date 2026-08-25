@@ -1,0 +1,82 @@
+{
+  "id": "transfert-d-auras",
+  "nom": "Transfert d'auras",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20dauras.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Apal": 3,
+    "Pal": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 minute/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Le personnage transfère une ou plusieurs de ses auras de paladin ou d’antipaladin (comme aura de bravoure ou aura de fermeté) à une autre créature. Le personnage conserve l’effet personnel de son aura mais c’est la cible plutôt que lui qui en devient le centre. Par exemple, si le personnage transfère son aura de bravoure, il reste immunisé contre les effets de terreur mais c’est la cible du sort qui devient le centre de l’aura accordant un bonus de moral de +4 aux jets de sauvegarde contre les effets de terreur. Si une aura ne fonctionne que lorsque le personnage est conscient, celle qui est transférée ne fonctionne que lorsque la cible est consciente. Si une aura ne fonctionne que quand le personnage dépense des utilisations d’un autre pouvoir (comme l’aura de justice ou l’aura de vengeance), celle qui est transférée ne fonctionne que si la cible possède cet autre pouvoir et en dépense des utilisations pour activer l’aura. Le personnage ne peut pas transférer une aura qui n’affecte que lui (comme aura du Bien).",
+  "description_html": "<br/><br/>Le personnage transfère une ou plusieurs de ses auras de <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx\" title=\"Le paladin\">paladin</a> ou d’<a class=\"pagelink\" href=\"Pathfinder-RPG.antipaladin.ashx\" title=\"L'antipaladin\">antipaladin</a> (comme aura de bravoure ou aura de fermeté) à une autre créature. Le personnage conserve l’effet personnel de son aura mais c’est la cible plutôt que lui qui en devient le centre. Par exemple, si le personnage transfère son aura de bravoure, il reste immunisé contre les effets de terreur mais c’est la cible du sort qui devient le centre de l’aura accordant un bonus de moral de +4 aux jets de sauvegarde contre les effets de terreur. Si une aura ne fonctionne que lorsque le personnage est conscient, celle qui est transférée ne fonctionne que lorsque la cible est consciente. Si une aura ne fonctionne que quand le personnage dépense des utilisations d’un autre pouvoir (comme l’aura de justice ou l’aura de vengeance), celle qui est transférée ne fonctionne que si la cible possède cet autre pouvoir et en dépense des utilisations pour activer l’aura. Le personnage ne peut pas transférer une aura qui n’affecte que lui (comme aura du Bien).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Antipaladin",
+      "slug": "antipaladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20dauras.ashx",
+    "cache_fichier": "cache/html/b362340fce00311ef6386c05d98f2dbec5e82ba2.html",
+    "recupere_le": "2026-07-29T07:43:04.248631+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "transfert-d-auras",
+    "resume_court": "Le lanceur transfère une ou plusieurs de ses auras de paladin à une créature alliée.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "à une autre créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "transfert-d-auras",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:41+00:00",
+    "hash_source": "e8389bb2f8105021d55c47a1ad31334437ab6bcf9f3abf6cd2801bd4ce03b37b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "7fed5725bcf47b4fd4bb7e6c258d989871f467ea46745f4e98113dcd1bc26d86",
+  "hash_vue": "a85c059eec4f01a1e2f528b7de605f5a133f4dfbf6b1d0ee7813a33b652d8649"
+}

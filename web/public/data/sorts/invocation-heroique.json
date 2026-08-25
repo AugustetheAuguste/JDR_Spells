@@ -1,0 +1,103 @@
+{
+  "id": "invocation-heroique",
+  "nom": "Invocation héroïque",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation%20h%c3%a9ro%c3%afque.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 9,
+    "Psy": 9,
+    "Sor": 9
+  },
+  "temps_incantation": "10 minutes",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature ou plus, qui ne doivent être distantes de plus de 9 m (6 c) les unes des autres",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage utilise des mots de puissance ancestraux pour accorder des pouvoirs héroïques à toutes les cibles du sort. Elles gagnent un bonus de moral de +4 aux jets d’attaque et de dégâts, 2d8+4 points de vie temporaires et elles sont immunisées contre les effets de peur et de charme pendant toute la durée du sort. Le sujet est fatigué quand le sort expire.",
+  "description_html": "<br/><br/>Le personnage utilise des mots de puissance ancestraux pour accorder des pouvoirs héroïques à toutes les cibles du sort. Elles gagnent un bonus de moral de +4 aux jets d’attaque et de dégâts, 2d8+4 <a class=\"pagelink\" href=\"Pathfinder-RPG.point%20de%20vie%20temporaire.ashx\" title=\"point de vie temporaire\">points de vie temporaires</a> et elles sont immunisées contre les effets de <a class=\"pagelink\" href=\"Pathfinder-RPG.peur.ashx\" title=\"peur\">peur</a> et de <a class=\"pagelink\" href=\"Pathfinder-RPG.charme.ashx\" title=\"charme\">charme</a> pendant toute la durée du sort.\nLe sujet est <a class=\"pagelink\" href=\"Pathfinder-RPG.fatigu%c3%a9.ashx\" title=\"Fatigué\">fatigué</a> quand le sort expire.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 9,
+      "niveau_page": 9,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation%20h%c3%a9ro%c3%afque.ashx",
+    "cache_fichier": "cache/html/139d2537c12b04306712e71453d925f8e53bc989.html",
+    "recupere_le": "2026-07-28T22:57:35.565927+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "invocation-heroique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation%20h%c3%a9ro%c3%afque.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 9
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 9
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 9
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "invocation-heroique",
+    "resume_court": "Le lanceur accorde des pouvoirs héroïques à plusieurs créatures : bonus de moral, points de vie temporaires et immunité à la peur et au charme.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "plusieurs_cibles",
+      "amelioration_de_capacite",
+      "immunite_ou_resistance_element",
+      "duree_prolongee",
+      "charme_ou_coercition"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature ou plus"
+    },
+    "notes_ambiguite": null,
+    "slug": "invocation-heroique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:42+00:00",
+    "hash_source": "ae74a5bc77ed1a43bb91d16f541dd7e4201a8bc69f2580591de2acdabfe6a037"
+  }
+}

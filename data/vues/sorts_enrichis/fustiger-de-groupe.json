@@ -1,0 +1,95 @@
+{
+  "id": "fustiger-de-groupe",
+  "nom": "Fustiger de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fustiger%20de%20groupe.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "langage",
+    "mental",
+    "peur"
+  ],
+  "niveaux": {
+    "Hyp": 5,
+    "Inq": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "1 round/niveau ou 1 round ; voir texte",
+  "jet_de_sauvegarde": "Volonté partiel",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme fustiger mais il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.fustiger.ashx\" title=\"Fustiger\">fustiger</a></i> mais il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {
+    "sorts_lies": "Fustiger"
+  },
+  "classes": [
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fustiger%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/b316d7de11fe7684c0bd62774110a3296eefd37d.html",
+    "recupere_le": "2026-07-28T22:55:07.397615+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "fustiger-de-groupe",
+    "resume_court": "Le lanceur intimide plusieurs créatures proches, les rendant effrayées ou secouées.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "effraye",
+      "secoue"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "fonctionne comme fustiger",
+        "fonctionne comme fustiger"
+      ],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « fustiger » sans le reproduire. Les conditions exactes (effraye ou secoue) et la durée variable (1 round ou 1 round/niveau) dépendent du sort de base non fourni. J'ai retenu les deux conditions les plus probables pour un sort de coercition/peur de l'école Enchantement, mais cette annotation reste partielle.",
+    "slug": "fustiger-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:45+00:00",
+    "hash_source": "9dd89a1b85e4a2437438dd8a642bb3f4a65c28b6636c3829a3788cfea925a858"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "0c9bab39e1034be43454df6d2c371d6da4bd3e952187de79632d264a1c6e2dc4",
+  "hash_vue": "550234df1f0a0407e4793d975e62de7782bac7b7198281444424b42685bb8790"
+}

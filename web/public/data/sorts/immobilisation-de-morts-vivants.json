@@ -1,0 +1,92 @@
+{
+  "id": "immobilisation-de-morts-vivants",
+  "nom": "Immobilisation de morts-vivants",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20morts-vivants.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 3,
+    "Ens/Mag": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de souffre et de l’ail en poudre)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "jusqu’à 3 morts-vivants distants de moins de 9 m/6 c les uns des autres",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (voir description)",
+  "resistance_magie": "oui",
+  "description": "Ce sort peut figer jusqu’à trois morts-vivants. Seuls les morts-vivants doués d’intelligence ont droit à un jet de sauvegarde. Les créatures mortes-vivantes affectées par ce sort restent immobiles pendant toute sa durée. Elles sont considérées comme paralysées (comme les créatures vivantes soumises à une immobilisation de personne). Si les créatures affectées sont attaquées ou si elles subissent des dégâts, le sort est brisé.",
+  "description_html": "<br/><br/>Ce sort peut figer jusqu’à trois <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a>. Seuls les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> doués d’intelligence ont droit à un <a class=\"pagelink\" href=\"Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#JETSDESAUVEGARDE\" title=\"Présentation des sorts\">jet de sauvegarde</a>. Les créatures <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mortes-vivantes</a> affectées par ce sort restent immobiles pendant toute sa durée. Elles sont considérées comme <a class=\"pagelink\" href=\"Pathfinder-RPG.paralys%c3%a9.ashx\" title=\"Paralysé\">paralysées</a> (comme les créatures vivantes soumises à une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immobilisation%20de%20personne.ashx\" title=\"Immobilisation de personne\">immobilisation de personne</a></i>). Si les créatures affectées sont attaquées ou si elles subissent des dégâts, le sort est brisé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20morts-vivants.ashx",
+    "cache_fichier": "cache/html/2df494f1fef42daadbbdcd3602391b4c0eabb604.html",
+    "recupere_le": "2026-07-28T22:56:40.543138+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "immobilisation-de-morts-vivants",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immobilisation%20de%20morts-vivants.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "immobilisation-de-morts-vivants",
+    "resume_court": "Fige jusqu'à trois morts-vivants sur place, les rendant paralysés pendant 1 round par niveau.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "entrave_ou_immobilisation",
+      "jet_de_sauvegarde",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "paralyse"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "Elles sont considérées comme paralysées"
+      ],
+      "cible_typique": "jusqu'à 3 morts-vivants"
+    },
+    "notes_ambiguite": null,
+    "slug": "immobilisation-de-morts-vivants",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:20+00:00",
+    "hash_source": "81a91b552e9b5bf779b5a3ad428767b619368f84b754d29535ec50115c068dd2"
+  }
+}

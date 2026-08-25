@@ -1,0 +1,93 @@
+{
+  "id": "manteau-de-colere",
+  "nom": "Manteau de colère",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manteau%20de%20col%c3%a8re.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "force",
+    "lumière"
+  ],
+  "niveaux": {
+    "Pal": 3,
+    "Prê": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact ou 1,50 m (1 c) (voir description)",
+  "cible": "créature touchée ou toutes les créatures dans un rayon de 1,50 m (1 c) ; voir texte",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Un manteau de lumière scintillante enveloppe le sujet en émettant autant de lumière qu'une torche. Le sujet gagne un bonus de résistance de +1 à tous les jets de sauvegarde par tranche de quatre niveaux de lanceur de sorts (maximum +5 au niveau 20). Le sujet peut mettre un terme au manteau de colère quand il le désire par une action rapide afin d'infliger 2d8 points de dégâts de force à toutes les créatures qui se trouvent à moins de 1,50 mètre (1 c).",
+  "description_html": "<br/><br/>Un manteau de lumière scintillante enveloppe le sujet en émettant autant de lumière qu'une torche. Le sujet gagne un bonus de résistance de +1 à tous les <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a> par tranche de quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (maximum +5 au niveau 20). Le sujet peut mettre un terme au <i>manteau de colère</i> quand il le désire par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20rapide.ashx\" title=\"Action rapide\">action rapide</a> afin d'infliger 2d8 points de dégâts de force à toutes les créatures qui se trouvent à moins de 1,50 mètre (1 <abbr title=\"cases\">c</abbr>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manteau%20de%20col%c3%a8re.ashx",
+    "cache_fichier": "cache/html/00f0bcfea24294fdb39b7fdd72936c80b86cd4e2.html",
+    "recupere_le": "2026-07-28T22:59:59.749421+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "manteau-de-colere",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manteau%20de%20col%c3%a8re.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "manteau-de-colere",
+    "resume_court": "Un manteau de lumière qui renforce les sauvegardes et peut exploser en dégâts de force.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "protection_defensive",
+      "zone_d_effet",
+      "degats_directs",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": "force",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "2d8 points de dégâts de force",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée ou toutes les créatures dans un rayon de 1,50 m (1 c)"
+    },
+    "notes_ambiguite": "Le sort fonctionne en deux phases : d'abord une amélioration défensive (bonus aux sauvegardes), puis optionnellement une attaque de zone. La cible typique est « allie » car le sort s'applique à une créature touchée volontairement, bien qu'il puisse affecter des ennemis lors de l'activation de l'explosion.",
+    "slug": "manteau-de-colere",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:34+00:00",
+    "hash_source": "62cc2a0573a4ec5f9076850200467e92c35e76d7f7bf2f196f759cc8d0ba9736"
+  }
+}

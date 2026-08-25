@@ -1,0 +1,171 @@
+{
+  "id": "mission",
+  "nom": "Mission",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mission.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "langage",
+    "malédiction",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Inq": 4,
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante ayant 7 DV ou moins",
+  "duree": "1 jour/niveau ou jusqu’à accomplissement (T)",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort oblige la cible à accomplir une mission, ou au contraire à la refuser, au choix du personnage. La cible, qui ne peut pas posséder plus de 7 DV, doit pouvoir comprendre le lanceur de sorts. Les seules restrictions de Mission sont qu’il ne peut pas inciter au suicide ou à l’accomplissement d’actes conduisant immanquablement la cible à la mort.\nCette dernière ne peut que suivre les instructions reçues tant que la mission n’est pas accomplie, sans considération de temps.\nSi l’ordre prend la forme d’une tâche qu’il est impossible de mener à bien dans la période de temps accordée, le sort dure au maximum 1 jour par niveau de lanceur de sorts. Si elle est suffisamment maligne, la cible peut détourner les instructions qui lui sont données par le sort.\nSi la cible est dans l’incapacité d’essayer d’accomplir sa mission pendant une journée entière, elle subit un malus de -2 à toutes ses caractéristiques. Cette pénalité est cumulative, jusqu’à un maximum de -8 (aucune caractéristique ne peut toutefois descendre en dessous de 1). Ses caractéristiques retrouvent leur valeur normale un jour après qu’elle a repris sa mission.\nLes sorts suivants mettent un terme à mission (et aux malus qui l’accompagnent) : annulation d’enchantement, délivrance des malédictions, miracle, souhait et souhait limité. Dissipation de la magie reste sans effet.",
+  "description_html": "<hr/>\nCe sort oblige la cible à accomplir une mission, ou au contraire à la refuser, au choix du personnage. La cible, qui ne peut pas posséder plus de 7 <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a>, doit pouvoir comprendre le lanceur de sorts. Les seules restrictions de <i>Mission</i> sont qu’il ne peut pas inciter au suicide ou à l’accomplissement d’actes conduisant immanquablement la cible à la mort.<br/><br/>Cette dernière ne peut que suivre les instructions reçues tant que la <i>mission</i> n’est pas accomplie, sans considération de temps.<br/><br/>Si l’ordre prend la forme d’une tâche qu’il est impossible de mener à bien dans la période de temps accordée, le sort dure au maximum 1 jour par <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx\" title=\"Niveau de lanceur de sorts\">niveau de lanceur de sorts</a>. Si elle est suffisamment maligne, la cible peut détourner les instructions qui lui sont données par le sort.<br/><br/>Si la cible est dans l’incapacité d’essayer d’accomplir sa mission pendant une journée entière, elle subit un malus de -2 à toutes ses caractéristiques. Cette pénalité est cumulative, jusqu’à un maximum de -8 (aucune caractéristique ne peut toutefois descendre en dessous de 1). Ses caractéristiques retrouvent leur valeur normale un jour après qu’elle a repris sa mission.<br/><br/>Les sorts suivants mettent un terme à <i>mission</i> (et aux malus qui l’accompagnent) : <i><a class=\"pagelink\" href=\"Pathfinder-RPG.annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">annulation d’enchantement</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">délivrance des malédictions</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait%20limit%c3%a9.ashx\" title=\"Souhait limité\">souhait limité</a></i>. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.Dissipation%20de%20la%20magie.ashx\" title=\"Dissipation de la magie\">Dissipation de la magie</a></i> reste sans effet.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Quête",
+      "id": "quete",
+      "ecole": "Enchantement (coercition)",
+      "descripteurs": [
+        "langage",
+        "malédiction",
+        "mental"
+      ],
+      "niveaux": {
+        "Bard": 6,
+        "Hyp": 6,
+        "Inq": 5,
+        "Ens/Mag": 6,
+        "Prê": 6,
+        "Psy": 6,
+        "Sor": 6
+      },
+      "temps_incantation": "10 minutes",
+      "composantes": "V",
+      "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+      "cible": "1 créature vivante",
+      "duree": "1 jour/niveau ou jusqu’à accomplissement (T)",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "oui",
+      "description": "Ce sort est semblable à mission, si ce n’est qu’il affecte un nombre de DV de la créature illimité et n’autorise aucun jet de sauvegarde.\nSi le sujet ne peut accomplir sa quête pendant vingt-quatre heures, il subit un malus de -3 à chaque valeur de caractéristique. Ces malus s’accumulent chaque jour, jusqu’à un total de -12, mais les valeurs de caractéristiques ne descendent jamais en dessous de 1. Ces malus disparaissent vingt-quatre heures après que le sujet s’est réattelé à sa quête.\nDélivrance des malédictions peut mettre un terme à quête, mais seulement si le personnage qui le lance a au moins deux niveaux de lanceur de sorts de plus que celui qui a assigné la quête. Annulation d’enchantement est sans effet. Par contre, miracle, souhait et souhait limité mettent un terme à ce sort.\nQuête est le terme universellement reconnu par les magiciens, les ensorceleurs et les bardes, mais les prêtres des clergés particulièrement militants le baptisent croisade.",
+      "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mission.ashx\" title=\"Mission\">mission</a></i>, si ce n’est qu’il affecte un nombre de <a class=\"pagelink\" href=\"Pathfinder-RPG.DV.ashx\" title=\"DV\">DV</a> de la créature illimité et n’autorise aucun <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>.<br/><br/>Si le sujet ne peut accomplir sa <i>quête</i> pendant vingt-quatre heures, il subit un malus de -3 à chaque valeur de caractéristique. Ces malus s’accumulent chaque jour, jusqu’à un total de -12, mais les valeurs de caractéristiques ne descendent jamais en dessous de 1. Ces malus disparaissent vingt-quatre heures après que le sujet s’est réattelé à sa <i>quête</i>.<br/><br/><i><a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9livrance%20des%20mal%c3%a9dictions.ashx\" title=\"Délivrance des malédictions\">Délivrance des malédictions</a></i> peut mettre un terme à <i>quête</i>, mais seulement si le personnage qui le lance a au moins deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> de plus que celui qui a assigné la quête. <i><a class=\"pagelink\" href=\"Pathfinder-RPG.annulation%20denchantement.ashx\" title=\"Annulation d'enchantement\">Annulation d’enchantement</a></i> est sans effet. Par contre, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.miracle.ashx\" title=\"Miracle\">miracle</a></i>, <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait.ashx\" title=\"Souhait\">souhait</a></i> et <i><a class=\"pagelink\" href=\"Pathfinder-RPG.souhait%20limit%c3%a9.ashx\" title=\"Souhait limité\">souhait limité</a></i> mettent un terme à ce sort.<br/><br/><i>Quête</i> est le terme universellement reconnu par les <a class=\"pagelink\" href=\"Pathfinder-RPG.magicien.ashx\" title=\"Le magicien\">magiciens</a>, les <a class=\"pagelink\" href=\"Pathfinder-RPG.ensorceleur.ashx\" title=\"L'ensorceleur\">ensorceleurs</a> et les <a class=\"pagelink\" href=\"Pathfinder-RPG.barde.ashx\" title=\"Le barde\">bardes</a>, mais les <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtres</a> des clergés particulièrement militants le baptisent croisade.",
+      "mythique": null
+    }
+  ],
+  "sources": [],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mission.ashx",
+    "cache_fichier": "cache/html/97c885d564fd94a646c007dbc4537f0e609ad569.html",
+    "recupere_le": "2026-07-28T23:00:44.777409+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "mission",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mission.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "mission",
+    "resume_court": "Oblige une créature à accomplir ou refuser une mission pendant 1 jour/niveau ou jusqu'à accomplissement.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "jet_de_sauvegarde",
+      "effet_mental",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante ayant 7 DV ou moins"
+    },
+    "notes_ambiguite": "Le sort inflige un malus de -2 à toutes les caractéristiques si la cible ne peut pas accomplir sa mission pendant une journée, mais ce malus est une conséquence conditionnelle et non une condition infligée directement par le sort lui-même. La cible n'est pas immobilisée ou paralysée, mais entravée dans son libre arbitre par la coercition magique.",
+    "slug": "mission",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:59+00:00",
+    "hash_source": "782f4991d32dce140fc887d1ec9c8a00332919f9438e438895762333d9c7119f"
+  }
+}

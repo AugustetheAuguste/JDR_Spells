@@ -1,0 +1,100 @@
+{
+  "id": "ruse-du-renard-de-groupe",
+  "nom": "Ruse du renard de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ruse%20du%20renard%20de%20groupe.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 6,
+    "Con": 4,
+    "ConU": 6,
+    "Ens/Mag": 6,
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M/FD (poils ou crottes de renard)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distantes de moins de 9 m (6 c) les unes des autres",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Ce sort est semblable à ruse du renard, si ce n’est qu’il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort est semblable à <i><a class=\"pagelink\" href=\"Pathfinder-RPG.ruse%20du%20renard.ashx\" title=\"Ruse du renard\">ruse du renard</a></i>, si ce n’est qu’il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {
+    "sorts_lies": "Ruse du renard"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ruse%20du%20renard%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/53e640b5b906a16eaa6156329ff5ea919c93090b.html",
+    "recupere_le": "2026-07-29T07:39:21.505484+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "ruse-du-renard-de-groupe",
+    "resume_court": "Le sort affecte plusieurs créatures, les rendant aussi rusées qu'un renard pendant 1 minute par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "jet_de_sauvegarde",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": "Le texte renvoie à « ruse du renard » sans en détailler les effets précis. La catégorie « amelioration » et le tag « transformation_du_sujet » reposent sur l'inférence que le sort confère des capacités de renard (ruse, agilité) sans infliger de dégâts ni de condition négative. Le jet de sauvegarde est marqué « inoffensif », ce qui confirme qu'il bénéficie au sujet.",
+    "slug": "ruse-du-renard-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:11+00:00",
+    "hash_source": "3c09da41be3abd56769072d031a8d44c5d61c9407e80d373e8470329d708993d"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "6988d590c931bb656c1a5683f10cf92ad9df769f3e12c6193423872f8c4be06d",
+  "hash_vue": "fff67266d9e992e10ada0a56618eca1edc8077985116e49ea8ddc842748bfe2a"
+}

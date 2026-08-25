@@ -1,0 +1,138 @@
+{
+  "id": "decomposition-de-cadavre",
+  "nom": "Décomposition de cadavre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9composition%20de%20cadavre.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 1,
+    "Ens/Mag": 1,
+    "Méd": 1,
+    "Occ": 1,
+    "Prê": 1,
+    "Psy": 1,
+    "Sor": 1,
+    "Spi": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M(une pincée de crapaud séché)",
+  "portee": "contact",
+  "cible": "un cadavre ou un mort-vivant tangible",
+  "duree": "instantanée ou 1 minute (voir texte)",
+  "jet_de_sauvegarde": "Vigueur pour annuler",
+  "resistance_magie": "oui (objet)",
+  "description": "Quand le personnage utilise ce sort, il décompose rapidement la chair d’un unique cadavre de taille TG ou moins et ne laisse qu’un squelette parfaitement nettoyé. Si le personnage le lance sur un mort-vivant tangible, ce dernier subit un malus de -2 à tous les jets, à la CA et au DMD pendant 1 minute.",
+  "description_html": "<br/><br/>Quand le personnage utilise ce sort, il décompose rapidement la chair d’un unique cadavre de taille TG ou moins et ne laisse qu’un squelette parfaitement nettoyé. Si le personnage le lance sur un <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">mort-vivant</a> tangible, ce dernier subit un malus de -2 à tous les jets, à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a> et au <a class=\"pagelink\" href=\"Pathfinder-RPG.DMD.ashx\" title=\"DMD\">DMD</a> pendant 1 minute.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 1,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9composition%20de%20cadavre.ashx",
+    "cache_fichier": "cache/html/aa92c2899ff513aebeb965e42c9f8f11895066ad.html",
+    "recupere_le": "2026-07-28T22:50:01.393149+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "decomposition-de-cadavre",
+    "resume_court": "Décompose un cadavre en squelette ou affaiblit un mort-vivant tangible pendant 1 minute.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "malus_chiffre",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un cadavre ou un mort-vivant tangible"
+    },
+    "notes_ambiguite": "Le sort a deux effets distincts : décomposition instantanée d'un cadavre (utilitaire) et affaiblissement d'un mort-vivant (combat). La cible typique « objet » reflète que les cadavres ne sont pas des créatures vivantes, bien que les morts-vivants le soient techniquement. Le malus s'applique aux jets, à la CA et au DMD, justifiant le tag malus_chiffre.",
+    "slug": "decomposition-de-cadavre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:20+00:00",
+    "hash_source": "ec81568f6cb62f1cf92bf680a0995c645f2c108c6c02ae61fde219d96df61e20"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "54c4a55e2b8dc931b8a5dd53e3d17332acc4d3bc9d2af82f23fc967648fcdab7",
+  "hash_vue": "920a3a5b0373e63ef1f49d4d565cbf466271a0af9c557a3ee88b0e700649293a"
+}

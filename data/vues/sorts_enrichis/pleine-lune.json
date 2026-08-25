@@ -1,0 +1,122 @@
+{
+  "id": "pleine-lune",
+  "nom": "Pleine lune",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pleine%20lune.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Dru": 4,
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "San": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M (une pincée de pierre de lune en poudre)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "une créature humanoïde",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage invoque le pouvoir mystique de la lune pour plonger la cible dans une frénésie démente et bestiale. Si la cible rate son jet de sauvegarde, elle est hébétée pendant 1 round et lâche tous les objets qu'elle tenait alors que ses ongles et ses dents s'allongent et s'aiguisent. La cible gagne une attaque de morsure et deux attaques de griffes qui infligent les dégâts adéquats pour une créature de sa taille. Pendant toute la durée du sort, la cible se comporte comme si elle était à la fois sous l'effet d'un sort de rage et d'un sort de confusion. Elle préfère attaquer avec ses armes naturelles plutôt que d'entreprendre toute autre action. Pendant le dernier round du sort, la cible est à nouveau hébétée avant de retourner à son état naturel.",
+  "description_html": "<br/><br/>Le personnage invoque le pouvoir mystique de la lune pour plonger la cible dans une frénésie démente et bestiale. Si la cible rate son <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébétée</a> pendant 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> et lâche tous les objets qu'elle tenait alors que ses ongles et ses dents s'allongent et s'aiguisent. La cible gagne une attaque de morsure et deux attaques de griffes qui infligent les dégâts adéquats pour une créature de sa taille. Pendant toute la durée du sort, la cible se comporte comme si elle était à la fois sous l'effet d'un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.rage.ashx\" title=\"Rage\">rage</a></i> et d'un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.confusion.ashx\" title=\"Confusion\">confusion</a></i>. Elle préfère attaquer avec ses <a class=\"pagelink\" href=\"Pathfinder-RPG.armes%20naturelles.ashx\" title=\"armes naturelles\">armes naturelles</a> plutôt que d'entreprendre toute autre action. Pendant le dernier <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> du sort, la cible est à nouveau <a class=\"pagelink\" href=\"Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx\" title=\"Hébété\">hébétée</a> avant de retourner à son état naturel.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pleine%20lune.ashx",
+    "cache_fichier": "cache/html/ea4e7085166962579359b6ec1d8692d1512b5534.html",
+    "recupere_le": "2026-07-28T23:03:44.972182+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "pleine-lune",
+    "resume_court": "La cible entre en frénésie bestiale, gagne des attaques naturelles et agit sous rage et confusion.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "transformation_du_sujet",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "etourdi",
+      "confus"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est hébétée pendant 1 round",
+        "la cible se comporte comme si elle était à la fois sous l'effet d'un sort de rage et d'un sort de confusion"
+      ],
+      "cible_typique": "une créature humanoïde"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts indirectement via les attaques naturelles acquises, mais le texte ne précise pas le type de dégâts de ces attaques naturelles. Hébétée correspond à étourdi (perte d'actions et défense dégradée). Confusion est explicitement nommée.",
+    "slug": "pleine-lune",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:20:13+00:00",
+    "hash_source": "60b4b7be484aa1a6d51903d75fce0172534b3e2ad609db5b68f74282f0b4932b"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "fb2df1acca6eb1472ed614731d9995fe15e72ef97ba065f4fc9ea2b74dee98a7",
+  "hash_vue": "ddbe1e6d72c2d7fad3ffc0535f77054d0555eb81bcbbf0c86cee27224759a738"
+}

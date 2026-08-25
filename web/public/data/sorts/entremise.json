@@ -1,0 +1,118 @@
+{
+  "id": "entremise",
+  "nom": "Entremise",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entremise.ashx",
+  "ecole": "Enchantement (charme)",
+  "descripteurs": [
+    "effet mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Ens/Mag": 3,
+    "Hyp": 2,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "S, M (un pétale de rose)",
+  "portee": "moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)",
+  "cible": "deux créatures vivantes",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté, partiel, voir description",
+  "resistance_magie": "oui",
+  "description": "Le personnage entraîne les créatures ciblées à développer une attirance romantique l'une pour l'autre. Chaque créature effectue un jet de sauvegarde et applique sa résistance à la magie séparément. Chacune doit être affectée pour que le sort fonctionne. Si l'une des créatures a une attitude inamicale ou hostile envers l'autre, elle bénéficie d'un bonus de +4 au jet de sauvegarde.\nCe sort ne passe en général pas outre les préférences sexuelles ou les autres limitations des cibles. Si des sentiments amoureux sont ainsi impossibles, la créature ressent à la place un profond lien platonique avec l'autre.",
+  "description_html": "<br/><br/>Le personnage entraîne les créatures ciblées à développer une attirance romantique l'une pour l'autre. Chaque créature effectue un <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jet de sauvegarde</a> et applique sa <a class=\"pagelink\" href=\"Pathfinder-RPG.RM.ashx\" title=\"RM\">résistance à la magie</a> séparément. Chacune doit être affectée pour que le sort fonctionne. Si l'une des créatures a une attitude inamicale ou hostile envers l'autre, elle bénéficie d'un bonus de +4 au jet de sauvegarde.<br/><br/>Ce sort ne passe en général pas outre les préférences sexuelles ou les autres limitations des cibles. Si des sentiments amoureux sont ainsi impossibles, la créature ressent à la place un profond lien platonique avec l'autre.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entremise.ashx",
+    "cache_fichier": "cache/html/e321ae6815c61e321a3c13ebf4cd3b5966926dcb.html",
+    "recupere_le": "2026-07-28T22:52:27.223131+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "entremise",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entremise.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "entremise",
+    "resume_court": "Le lanceur crée une attirance romantique entre deux créatures vivantes pour 1 heure par niveau.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "charme_ou_coercition",
+      "plusieurs_cibles",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "deux créatures vivantes"
+    },
+    "notes_ambiguite": "Le sort affecte deux créatures et peut servir en combat (pour neutraliser des ennemis) ou en contexte social. Cible_typique est « ennemi » car le sort s'applique généralement à des créatures hostiles qu'on cherche à désorganiser, bien que techniquement il puisse cibler des alliés.",
+    "slug": "entremise",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:16+00:00",
+    "hash_source": "f8e19e2f953e624191dc3da1d9e0227d31a5f85514a2655f2ade49b49761993d"
+  }
+}

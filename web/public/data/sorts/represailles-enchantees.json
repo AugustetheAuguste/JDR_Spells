@@ -1,0 +1,77 @@
+{
+  "id": "represailles-enchantees",
+  "nom": "Représailles enchantées",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sailles%20enchant%c3%a9es.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 3
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V",
+  "portee": "longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)",
+  "cible": "une créature dont le personnage a contré le sort depuis son dernier tour",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage ne peut lancer ce sort qu’immédiatement après avoir réussi un contresort sur un adversaire. Puisant dans l’énergie résiduelle des sorts contrés, le personnage gagne un nombre de points de vie temporaires égal au niveau du sort contré plus son modificateur de Charisme ou d’Intelligence (respectivement pour les ensorceleurs et les magiciens). L’adversaire contré reçoit des dégâts égaux à ce nombre.\nSi le sort contré était au moins de niveau 4, le personnage et son adversaire font un test de concentration en opposition. Si le personnage bat son adversaire de dix ou plus, il conserve ce sort (ou son emplacement, s’il est ensorceleur) comme s’il ne l’avait pas lancé.",
+  "description_html": "<br/><br/>Le personnage ne peut lancer ce sort qu’immédiatement après avoir réussi un <a class=\"pagelink\" href=\"Pathfinder-RPG.contresort.ashx\" title=\"contresort\">contresort</a> sur un adversaire. Puisant dans l’énergie résiduelle des sorts contrés, le personnage gagne un nombre de points de vie temporaires égal au niveau du sort contré plus son modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Charisme.ashx\" title=\"Le Charisme\">Charisme</a> ou d’<a class=\"pagelink\" href=\"Pathfinder-RPG.Intelligence.ashx\" title=\"L'Intelligence\">Intelligence</a> (respectivement pour les <a class=\"pagelink\" href=\"Pathfinder-RPG.Ensorceleur.ashx\" title=\"L'ensorceleur\">ensorceleurs</a> et les <a class=\"pagelink\" href=\"Pathfinder-RPG.Magicien.ashx\" title=\"Le magicien\">magiciens</a>). L’adversaire contré reçoit des dégâts égaux à ce nombre.<br/><br/>Si le sort contré était au moins de niveau 4, le personnage et son adversaire font un <a class=\"pagelink\" href=\"Pathfinder-RPG.test%20de%20concentration.ashx\" title=\"test de concentration\">test de concentration</a> en opposition. Si le personnage bat son adversaire de dix ou plus, il conserve ce sort (ou son emplacement, s’il est ensorceleur) comme s’il ne l’avait pas lancé.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Pathfinder Society Primer; Seekers of Secrets; Pathfinder Society Field Guide; Andoran, Spirit of Liberty; Cheliax, Empire of Devils; Osirion, Land of the Pharaohs; Qadira, Gateway to the East; Taldor, Echoes of Glory/Recueil de la Société des Éclaireurs"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sailles%20enchant%c3%a9es.ashx",
+    "cache_fichier": "cache/html/08609e639c3999f04b379c0a955cfffbdc6cf1f0.html",
+    "recupere_le": "2026-07-29T07:38:10.371882+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "represailles-enchantees",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sailles%20enchant%c3%a9es.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "represailles-enchantees",
+    "resume_court": "Après un contresort réussi, le lanceur gagne des PV temporaires et inflige des dégâts à l'adversaire.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "bonus_chiffre",
+      "resistance_a_la_magie",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "L'adversaire contré reçoit des dégâts égal à ce nombre",
+      "condition_infligee": [],
+      "cible_typique": "une créature dont le personnage a contré le sort depuis son dernier tour"
+    },
+    "notes_ambiguite": "Le type de dégâts n'est pas explicitement nommé (feu, froid, etc.) ; il s'agit d'énergie résiduelle de sorts contrés, donc classé en « autre ». Le sort confère aussi des PV temporaires (bonus_chiffre) au lanceur lui-même.",
+    "slug": "represailles-enchantees",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:23:51+00:00",
+    "hash_source": "55f23e0464f75fa10dfbc19e908c7a4c83624ec35c4c1e40617586645f1fe976"
+  }
+}

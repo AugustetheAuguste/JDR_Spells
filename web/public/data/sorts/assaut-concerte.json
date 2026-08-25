@@ -1,0 +1,102 @@
+{
+  "id": "assaut-concerte",
+  "nom": "Assaut concerté",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut%20concert%c3%a9.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 3,
+    "Prê": 3,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature/niveau, distante de moins de 9 mètres les unes des autres",
+  "duree": "1 minute/niveau ou jusqu'à utilisation",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "non",
+  "description": "Ce sort est réservé aux personnages qui vénèrent le dieu nain des stratégies offensives.\nCe sort améliore l’efficacité d’une action concertée. Si les cibles passent au moins 1 minute à analyser une situation, elles reçoivent des bonus sur les premières actions entreprises en réaction à la situation. Toutes les cibles doivent déclarer par avance les actions qu’elles prévoient d’exécuter. Si elles accomplissent ces actions, elles gagnent un bonus divin de +2 à la CA, aux jets de sauvegarde et aux tests pendant le premier round. Ce bonus s’élève à +4 au niveau 10 et à +6 au niveau 15.\nPar exemple, les PJ découvrent un camp d’orques ; le PJ prêtre lance assaut concerté, le groupe passe 1 minute à analyser la configuration du camp, puis chacun déclare ses actions. Tant que les personnages s’en tiennent au plan prévu, ils gagnent un bonus de moral de +2 à la CA, aux jets de sauvegarde et à toutes les actions accomplies pendant le premier round.",
+  "description_html": "<br/><br/><i>Ce sort est réservé aux personnages qui vénèrent le dieu nain des stratégies offensives.</i><br/><br/>Ce sort améliore l’efficacité d’une action concertée. Si les cibles passent au moins 1 minute à analyser une situation, elles reçoivent des bonus sur les premières actions entreprises en réaction à la situation. Toutes les cibles doivent déclarer par avance les actions qu’elles prévoient d’exécuter. Si elles accomplissent ces actions, elles gagnent un bonus divin de +2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.CA.ashx\" title=\"CA\">CA</a>, aux <a class=\"pagelink\" href=\"Pathfinder-RPG.jds.ashx\" title=\"JDS\">jets de sauvegarde</a> et aux tests pendant le premier <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>. Ce bonus s’élève à +4 au niveau 10 et à +6 au niveau 15.<br/><br/>Par exemple, les PJ découvrent un camp d’orques ; le PJ prêtre lance assaut concerté, le groupe passe 1 minute à analyser la configuration du camp, puis chacun déclare ses actions. Tant que les personnages s’en tiennent au plan prévu, ils gagnent un bonus de moral de +2 à la CA, aux jets de sauvegarde et à toutes les actions accomplies pendant le premier round.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut%20concert%c3%a9.ashx",
+    "cache_fichier": "cache/html/bf521cd0fa661e123021139d49a11ce6725284d3.html",
+    "recupere_le": "2026-07-28T22:42:22.532488+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "assaut-concerte",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut%20concert%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "assaut-concerte",
+    "resume_court": "Les cibles qui planifient ensemble gagnent un bonus divin si elles exécutent leur plan au premier round.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "bonus_chiffre",
+      "amelioration_de_capacite",
+      "plusieurs_cibles",
+      "duree_prolongee",
+      "alignement_ou_divin"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "assaut-concerte",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:20+00:00",
+    "hash_source": "cef9062c45e7ca02280722674dda5cd2e80f34d8cf538009efb1508160c0f15e"
+  }
+}

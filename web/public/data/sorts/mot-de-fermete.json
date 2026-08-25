@@ -1,0 +1,76 @@
+{
+  "id": "mot-de-fermete",
+  "nom": "Mot de fermeté",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20fermet%c3%a9.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Pal": 1
+  },
+  "temps_incantation": "1 action immédiate",
+  "composantes": "V, FD",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un allié",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté pour annuler (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Le personnage concentre son aura sur un allié et lui permet de refaire un jet de sauvegarde raté contre un effet de charme ou de peur avec un bonus de +4. Si le personnage ne dispose pas du pouvoir de classe aura de bravoure, ce sort n'a aucun effet sur les peurs de la cible. S'il ne dispose pas du pouvoir de classe aura de fermeté, ce sort n'a aucun effet sur les effets de charmes qui visent la cible.",
+  "description_html": "<br/><br/>Le personnage concentre son aura sur un allié et lui permet de refaire un <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> raté contre un effet de <a class=\"pagelink\" href=\"Pathfinder-RPG.registre.ashx\" title=\"Registre\">charme</a> ou de peur avec un bonus de +4. Si le personnage ne dispose pas du pouvoir de classe <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#AURADEBRAVOURE\" title=\"Le paladin\">aura de bravoure</a>, ce sort n'a aucun effet sur les peurs de la cible. S'il ne dispose pas du pouvoir de classe <a class=\"pagelink\" href=\"Pathfinder-RPG.paladin.ashx#AURADEFERMETE\" title=\"Le paladin\">aura de fermeté</a>, ce sort n'a aucun effet sur les effets de charmes qui visent la cible.<br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Paladin",
+      "slug": "paladin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20fermet%c3%a9.ashx",
+    "cache_fichier": "cache/html/aa7bb0d14263f8e7a361217d14652b3733da1009.html",
+    "recupere_le": "2026-07-28T23:01:07.791610+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "mot-de-fermete",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mot%20de%20fermet%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "paladin": {
+      "nom": "Paladin",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "mot-de-fermete",
+    "resume_court": "Permet à un allié de refaire un jet de sauvegarde raté contre un charme ou une peur avec un bonus de +4.",
+    "categorie_principale": "protection",
+    "tags": [
+      "bonus_chiffre",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un allié"
+    },
+    "notes_ambiguite": null,
+    "slug": "mot-de-fermete",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:06+00:00",
+    "hash_source": "d6d8131a2a2340e3c013c39536ab6f9b9fb8ef9b4fe870c4593f18bbcc093019"
+  }
+}

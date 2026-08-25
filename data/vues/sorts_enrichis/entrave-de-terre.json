@@ -1,0 +1,117 @@
+{
+  "id": "entrave-de-terre",
+  "nom": "Entrave de terre",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entrave%20de%20terre.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "terre"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Sor": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "courte (7,5 m + 1,5 m/2 niveau)",
+  "cible": "une créature ou un objet inutilisé (voir description)",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Si la cible de ce sort rate son jet de Vigueur, les sols de terre et de pierre agissent comme des fouets de boue qui font tomber la cible et la blessent si elle essaye de traverser ce genre de terrains. Si la cible est une créature, elle traite toutes les zones de terre et de pierre qu’elle traverse comme des terrains difficiles. En outre, pour chaque tranche de 1,5 mètre qu’elle franchit dans ces zones, elle reçoit 1d6 points de dégâts. Les créatures ayant une vitesse de creusement ou le pouvoir nage dans la terre ne sont pas affectées par entrave de terre. Si le sort est lancé sur un objet non-utilisé reposant dans une zone de terre ou de pierre, la terre ou la pierre l’enveloppe, l’attirant fermement dans le sol. Il faut réussir un test de Force DD 15 pour tirer l’objet et le libérer de la terre ou de la roche qui l’agrippe.",
+  "description_html": "<hr/>\nSi la cible de ce sort rate son jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Vigueur.ashx\" title=\"Vigueur\">Vigueur</a>, les sols de terre et de pierre agissent comme des fouets de boue qui font tomber la cible et la blessent si elle essaye de traverser ce genre de terrains. Si la cible est une créature, elle traite toutes les zones de terre et de pierre qu’elle traverse comme des <a class=\"pagelink\" href=\"Pathfinder-RPG.D%c3%a9placement%20et%20position.ashx#TERRAINDIFFICILE\" title=\"Déplacement et position\">terrains difficiles</a>. En outre, pour chaque tranche de 1,5 mètre qu’elle franchit dans ces zones, elle reçoit 1d6 points de dégâts. Les créatures ayant une vitesse de creusement ou le pouvoir nage dans la terre ne sont pas affectées par entrave de terre. Si le sort est lancé sur un objet non-utilisé reposant dans une zone de terre ou de pierre, la terre ou la pierre l’enveloppe, l’attirant fermement dans le sol. Il faut réussir un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> DD 15 pour tirer l’objet et le libérer de la terre ou de la roche qui l’agrippe.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Entrave de terre de groupe",
+      "id": "entrave-de-terre-de-groupe",
+      "ecole": "Transmutation",
+      "descripteurs": [
+        "terre"
+      ],
+      "niveaux": {
+        "Dru": 6,
+        "Sor": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G, FD",
+      "portee": "courte (7,5 m + 1,5 m/2 niveau)",
+      "cible": "une créature ou un objet/niveau, il ne doit pas y avoir plus de 9 mètres entre deux cibles.",
+      "duree": "1 round/niveau",
+      "jet_de_sauvegarde": "Vigueur, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme entrave de terre, aux seules différences indiquées ci-dessus.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.entrave%20de%20terre.ashx\" title=\"Entrave de terre\">entrave de terre</a></i>, aux seules différences indiquées ci-dessus.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "autres": {
+    "restriction_divinite": "Option plus\ncommune chez\nles oréades."
+  },
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entrave%20de%20terre.ashx",
+    "cache_fichier": "cache/html/e7371106a11778290ea12900c3d832df2ac76a77.html",
+    "recupere_le": "2026-07-28T22:52:25.222652+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "entrave-de-terre",
+    "resume_court": "Les terrains de terre et pierre deviennent difficiles et blessent la cible qui les traverse.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "terrain_ou_environnement",
+      "jet_de_sauvegarde",
+      "degats_directs",
+      "zone_d_effet",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "elle reçoit 1d6 points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "une créature ou un objet inutilisé"
+    },
+    "notes_ambiguite": "Le sort affecte principalement le terrain plutôt que la créature directement, mais la cible est bien une créature ou un objet. Les dégâts ne sont pas d'un type élémentaire nommé (feu, froid, etc.), d'où le classement en « autre ».",
+    "slug": "entrave-de-terre",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:26+00:00",
+    "hash_source": "c9f9602398a4f082d7c697e82c3c6f0e997103ac0446788ca0004116a3dc9927"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "2435e4f62b7fc9756f4c3aaeb546193cf421eccd6026428a7246a9dfb96cd528",
+  "hash_vue": "6c7396ec442e75b9f40453e316cd0a44dd610c7959d254aef102cf03cdb37f26"
+}

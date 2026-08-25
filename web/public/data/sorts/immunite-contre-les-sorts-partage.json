@@ -1,0 +1,115 @@
+{
+  "id": "immunite-contre-les-sorts-partage",
+  "nom": "Immunité contre les sorts (partagé)",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immunit%c3%a9%20contre%20les%20sorts%20(partag%c3%a9).ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 5,
+    "Occ": 5,
+    "Prê": 5,
+    "Psy": 5
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créatures touchées",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort fonctionne comme immunité contre les sorts mais la durée se divise entre les créatures touchées, par portions de 10 minutes.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.immunit%c3%a9%20contre%20les%20sorts.ashx\" title=\"Immunité contre les sorts\">immunité contre les sorts</a></i> mais la durée se divise entre les créatures touchées, par portions de 10 minutes.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immunit%c3%a9%20contre%20les%20sorts%20(partag%c3%a9).ashx",
+    "cache_fichier": "cache/html/4cfb0d5e78758fb1d6b1e990512dc7f37ff70486.html",
+    "recupere_le": "2026-07-28T22:56:45.545772+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "immunite-contre-les-sorts-partage",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immunit%c3%a9%20contre%20les%20sorts%20(partag%c3%a9).ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 5
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 5
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 5
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "immunite-contre-les-sorts-partage",
+    "resume_court": "Partage une immunité temporaire aux sorts entre plusieurs créatures touchées.",
+    "categorie_principale": "protection",
+    "tags": [
+      "protection_defensive",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créatures touchées"
+    },
+    "notes_ambiguite": "Le texte renvoie à un sort « immunité contre les sorts » non fourni. L'annotation repose sur le titre, la description fonctionnelle (immunité, partage de durée) et les métadonnées (école Abjuration, jet de sauvegarde Volonté inoffensif, résistance à la magie applicable). La cible est classée « allie » car le jet de sauvegarde est marqué « inoffensif ».",
+    "slug": "immunite-contre-les-sorts-partage",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:23+00:00",
+    "hash_source": "8048b0a60fc561b8bc332e6a5de19a6f0ca65044ac6e086ec706626d3c89e514"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "echange-d-objet",
+  "nom": "Échange d'objet",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20dobjet.ashx",
+  "ecole": "Invocation (téléportation)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Con": 3,
+    "ConU": 3,
+    "Ens/Mag": 4,
+    "Hyp": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, F (un objet tenu ne pesant pas plus de 2.5 kg/niveau)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "un objet ne pesant pas plus de 2.5 kg/niveau",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (objet)",
+  "resistance_magie": "oui (objet)",
+  "description": "L'objet ciblé et l'objet utilisé comme focalisateur pour ce sort échangent immédiatement de place. L'objet ciblé apparaît dans la main du personnage (ou tombe au sol dans sa case s'il est incapable de le tenir). Plus la connexion entre les deux objets est puissante, plus il est difficile de résister au sort, comme indiqué dans le tableau ci-dessous. Les modificateurs se cumulent.\nSimilaritéMod. au DD\nLes deux objets sont du même types (comme “clés”, “épées”, “parchemins”, etc)+1\nLes objets sont faits du même matériau+1\nLes deux objets ont le même poids (à trente grammes près)+1\nLes deux objets font partie d'un même ensemble ou ont été formés dans le même moule+2\nL'objet ciblé a une plus grande valeur en po que l'objet utilisé comme focalisateur-2\nL'objet ciblé est lié à son propriétaire, comme un objet fétiche-2",
+  "description_html": "<br/><br/>L'objet ciblé et l'objet utilisé comme focalisateur pour ce sort échangent immédiatement de place. L'objet ciblé apparaît dans la main du personnage (ou tombe au sol dans sa case s'il est incapable de le tenir). Plus la connexion entre les deux objets est puissante, plus il est difficile de résister au sort, comme indiqué dans le tableau ci-dessous. Les modificateurs se cumulent.<br/><br/><table class=\"tablo centre autoalt\"><tr class=\"titre\"><td>Similarité</td><td>Mod. au DD</td></tr><tr class=\"premier\"><td>Les deux objets sont du même types (comme “clés”, “épées”, “parchemins”, etc)</td><td>+1</td></tr><tr><td>Les objets sont faits du même matériau</td><td>+1</td></tr><tr><td>Les deux objets ont le même poids (à trente grammes près)</td><td>+1</td></tr><tr><td>Les deux objets font partie d'un même ensemble ou ont été formés dans le même moule</td><td>+2</td></tr><tr><td>L'objet ciblé a une plus grande valeur en po que l'objet utilisé comme focalisateur</td><td>-2</td></tr><tr><td>L'objet ciblé est lié à son propriétaire, comme un <a class=\"pagelink\" href=\"Pathfinder-RPG.Magicien.ashx#PACTEMAGIQUE\" title=\"Le magicien\">objet fétiche</a></td><td>-2</td></tr></table>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Conjurateur",
+      "slug": "conjurateur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20dobjet.ashx",
+    "cache_fichier": "cache/html/36a81232dff05fba4864a52c370987880590a036.html",
+    "recupere_le": "2026-07-28T22:38:43.343059+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "echange-d-objet",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20dobjet.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 4
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "conjurateur": {
+      "nom": "Conjurateur",
+      "niveau": 3
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "echange-d-objet",
+    "resume_court": "Échange instantané de deux objets : celui ciblé et celui tenu comme focalisateur.",
+    "categorie_principale": "utilitaire",
+    "tags": [
+      "invocation_ou_creation",
+      "deplacement_ou_teleportation",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_instantanee",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "un objet ne pesant pas plus de 2.5 kg/niveau"
+    },
+    "notes_ambiguite": null,
+    "slug": "echange-d-objet",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:04+00:00",
+    "hash_source": "54c1bf77c35cfa8c907a432d859156b066c17fdb7112c3eaf9f784768543463c"
+  }
+}

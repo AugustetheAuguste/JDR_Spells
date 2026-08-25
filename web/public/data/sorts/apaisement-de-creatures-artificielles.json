@@ -1,0 +1,100 @@
+{
+  "id": "apaisement-de-creatures-artificielles",
+  "nom": "Apaisement de créatures artificielles",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apaisement%20de%20cr%c3%a9atures%20artificielles.ashx",
+  "ecole": "Abjuration",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 5,
+    "Occ": 4,
+    "Prê": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature artificielle",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Le personnage apaise l’esprit élémentaire d’une créature artificielle et réduit les risques qu’elle devienne berserk de 1d4% par tranche de 4 niveaux de lanceur de sorts (5d4% au maximum). Si le personnage lance le sort sur une créature déjà berserk dont il est le maître, il peut lancer immédiatement le d% pour mettre un terme à l’accès de folie et rendre la créature de nouveau fonctionnelle, ramenant ses chances de devenir berserk à 0%.",
+  "description_html": "<br/><br/>Le personnage apaise l’esprit élémentaire d’une <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20cr%c3%a9ature%20artificielle.ashx\" title=\"Créature artificielle\">créature artificielle</a> et réduit les risques qu’elle devienne berserk de 1d4% par tranche de 4 <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> (5d4% au maximum). Si le personnage lance le sort sur une créature déjà berserk dont il est le maître, il peut lancer immédiatement le d% pour mettre un terme à l’accès de folie et rendre la créature de nouveau fonctionnelle, ramenant ses chances de devenir berserk à 0%.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apaisement%20de%20cr%c3%a9atures%20artificielles.ashx",
+    "cache_fichier": "cache/html/db03e81bccf10011f7086738490ac836f3e587e2.html",
+    "recupere_le": "2026-07-28T22:41:02.512380+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "apaisement-de-creatures-artificielles",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apaisement%20de%20cr%c3%a9atures%20artificielles.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "apaisement-de-creatures-artificielles",
+    "resume_court": "Apaise l'esprit élémentaire d'une créature artificielle et réduit son risque de devenir berserk.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "duree_instantanee",
+      "objet_ou_equipement"
+    ],
+    "roles_tactiques": [
+      "utilitaire"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature artificielle"
+    },
+    "notes_ambiguite": "Le sort affecte une créature artificielle (golem, construct), classée comme objet plutôt qu'ennemi ou allié car elle n'est pas une créature vivante au sens des règles de Pathfinder. L'effet est une amélioration de son fonctionnement (réduction du risque de berserk) plutôt qu'une attaque ou une entrave.",
+    "slug": "apaisement-de-creatures-artificielles",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:06:35+00:00",
+    "hash_source": "3a8dd3a62e7cfdf5d3c3a8d6a513ab88368333c61aae2cf0cb9c0e4711305c47"
+  }
+}

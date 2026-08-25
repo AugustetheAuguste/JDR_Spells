@@ -1,0 +1,155 @@
+{
+  "id": "interrogatoire",
+  "nom": "Interrogatoire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [
+    "douleur",
+    "mal"
+  ],
+  "niveaux": {
+    "Hyp": 1,
+    "Inq": 1,
+    "Ens/Mag": 1,
+    "Psy": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "une créature vivante touchée",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Le personnage interroge la cible et renforce l’interrogatoire en menaçant de lui infliger des douleurs magiques. Il peut poser une question par tranche de deux niveaux de lanceur de sorts. La cible répond ou subit 1d4 points de dégâts plus bonus de Sagesse du personnage. La cible n’est pas obligée de répondre sincèrement mais la menace de torture lui donne un malus de -4 aux tests de Bluff pour convaincre le personnage d’un mensonge.",
+  "description_html": "<hr/>\nLe personnage interroge la cible et renforce l’interrogatoire en menaçant de lui infliger des douleurs magiques. Il peut poser une question par tranche de deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a>. La cible répond ou subit 1d4 points de dégâts plus bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> du personnage. La cible n’est pas obligée de répondre sincèrement mais la menace de torture lui donne un malus de -4 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> pour convaincre le personnage d’un mensonge.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [
+    {
+      "nom": "Interrogatoire supérieur",
+      "id": "interrogatoire-superieur",
+      "ecole": "Nécromancie",
+      "descripteurs": [
+        "douleur",
+        "mal"
+      ],
+      "niveaux": {
+        "Inq": 4,
+        "Psy": 4
+      },
+      "temps_incantation": "1 round",
+      "composantes": "V, G",
+      "portee": "contact",
+      "cible": "une créature vivante touchée",
+      "duree": "1 minute/niveau",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme interrogatoire mais le personnage pose une question par niveaux de lanceur de sorts et les dégâts infligés sont de 1d8 + bonus de Sagesse si la cible refuse de répondre.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.interrogatoire.ashx\" title=\"Interrogatoire\">interrogatoire</a></i> mais le personnage pose une question par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux de lanceur de sorts</a> et les dégâts infligés sont de 1d8 + bonus de <a class=\"pagelink\" href=\"Pathfinder-RPG.Sagesse.ashx\" title=\"La Sagesse\">Sagesse</a> si la cible refuse de répondre.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire.ashx",
+    "cache_fichier": "cache/html/1f6a1939d8c825e7da868428316aa0f6f5e8d179.html",
+    "recupere_le": "2026-07-28T22:57:25.590595+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "interrogatoire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Interrogatoire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "interrogatoire",
+    "resume_court": "Le lanceur interroge une créature en la menaçant de douleurs magiques, infligeant des dégâts si elle refuse.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "attaque_de_contact",
+      "charme_ou_coercition",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "social",
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts plus bonus de Sagesse du personnage",
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts de douleur magique sans type énergétique élémentaire nommé, classé en 'autre'. La catégorie 'affaiblissement' reflète l'intention coercitive du sort plutôt qu'une dégradation de capacité permanente, mais 'entrave' aurait pu convenir si la menace était plus directement restrictive. Le malus de Bluff est un effet secondaire, non une condition infligée au sens des conditions listées.",
+    "slug": "interrogatoire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:17:39+00:00",
+    "hash_source": "d65916dcc10e33bc7bbd580c3651afe9d17a293796f588101403eac35865d42c"
+  }
+}

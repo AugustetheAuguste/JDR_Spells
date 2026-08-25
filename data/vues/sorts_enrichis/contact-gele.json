@@ -1,0 +1,109 @@
+{
+  "id": "contact-gele",
+  "nom": "Contact gelé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20gel%c3%a9.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "froid"
+  ],
+  "niveaux": {
+    "Dru": 2,
+    "Ens/Mag": 2,
+    "Magus": 2,
+    "San": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Au terme de l'incantation, la main du mage s'auréole d'une lueur bleutée. Une attaque de contact inflige 4D6 de dégâts de froid et la cible est chancelante pour 1 round. Si l'attaque est un coup critique, la cible est chancelante pour 1 minute.",
+  "description_html": "<br/><br/>Au terme de l'incantation, la main du mage s'auréole d'une lueur bleutée. Une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact.ashx\" title=\"attaque de contact\">attaque de contact</a> inflige 4D6 de dégâts de froid et la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pour 1 round. Si l'attaque est un <a class=\"pagelink\" href=\"Pathfinder-RPG.coup%20critique.ashx\" title=\"coup critique\">coup critique</a>, la cible est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> pour 1 minute.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contact%20gel%c3%a9.ashx",
+    "cache_fichier": "cache/html/b1e0ae1afec9f184cd2f14edb8278c85fb0887c2.html",
+    "recupere_le": "2026-07-28T22:47:33.104316+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "contact-gele",
+    "resume_court": "Une attaque de contact qui inflige des dégâts de froid et rend la cible chancelante.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "froid",
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": "4D6 de dégâts de froid",
+      "condition_infligee": [
+        "la cible est chancelante pour 1 round"
+      ],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "contact-gele",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:13:18+00:00",
+    "hash_source": "d0c6dd0bac2966731d57cb56bc76089e56cf6cb40de3c1807003e05732c52103"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "3b8f4c2021352050551c90a77333cdd380c912df2124915e72bba8f7bf3d1721",
+  "hash_vue": "6f370ec8f63ef1958d741ad2ea9ce200e52be3f62eddb0b015bebac5da4e667f"
+}

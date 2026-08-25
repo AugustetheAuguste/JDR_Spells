@@ -1,0 +1,141 @@
+{
+  "id": "stabilisation",
+  "nom": "Stabilisation",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Stabilisation.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 0,
+    "Dru": 0,
+    "Inq": 0,
+    "Méd": 0,
+    "Occ": 0,
+    "Prê": 0,
+    "Psy": 0,
+    "Sor": 0,
+    "Spi": 0
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature vivante",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Quand le personnage lance ce sort, il vise une créature ayant -1 point de vie ou moins. Cette créature se stabilise alors automatiquement et ne perd pas d’autres points de vie. Si, par la suite, elle reçoit de nouveaux dégâts, elle agonise de nouveau.",
+  "description_html": "<br/><br/>Quand le personnage lance ce sort, il vise une créature ayant -1 <a class=\"pagelink\" href=\"Pathfinder-RPG.PV.ashx\" title=\"pv\">point de vie</a> ou moins. Cette créature se <a class=\"pagelink\" href=\"Pathfinder-RPG.Blessures%20et%20mort.ashx#STABLE\" title=\"Blessures et mort\">stabilise</a> alors automatiquement et ne perd pas d’autres <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a>. Si, par la suite, elle reçoit de nouveaux dégâts, elle agonise de nouveau.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 0,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 0,
+      "niveau_page": 0,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Stabilisation.ashx",
+    "cache_fichier": "cache/html/9794e133242fe6acc01d3b3447eda292042eea0c.html",
+    "recupere_le": "2026-07-29T07:41:20.550594+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "stabilisation",
+    "resume_court": "Stabilise une créature mourante pour l'empêcher de perdre d'autres points de vie.",
+    "categorie_principale": "soin",
+    "tags": [
+      "soin_ou_guerison",
+      "jet_de_sauvegarde",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "stabilisation",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:58+00:00",
+    "hash_source": "024aada279e2683aeec0a15624f5aa67221c5e5d64d98df6e53b5f9975c75916"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "351acb2012b29bcc4cfe5e81f869e9d5e3a4f44022d7062ff8cb85714b3703b2",
+  "hash_vue": "6240dd6cdf72c35f238e177dad264213278b98db91f5152ad0d1099f4288017e"
+}

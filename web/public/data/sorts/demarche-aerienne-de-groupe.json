@@ -1,0 +1,115 @@
+{
+  "id": "demarche-aerienne-de-groupe",
+  "nom": "Démarche aérienne de groupe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20a%c3%a9rienne%20de%20groupe.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 3,
+    "Dru": 3,
+    "Psy": 3,
+    "Rôd": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature/niveau, qui doivent se trouver à moins de 9 m (6 c) les unes des autres",
+  "duree": "10 minutes/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (inoffensif)",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme démarche aérienne mais il affecte plusieurs créatures.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9marche%20a%c3%a9rienne.ashx\" title=\"Démarche aérienne\">démarche aérienne</a></i> mais il affecte plusieurs créatures.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20a%c3%a9rienne%20de%20groupe.ashx",
+    "cache_fichier": "cache/html/0d953a539bf8b25c6ab2cec761d9c884c4d55621.html",
+    "recupere_le": "2026-07-28T22:50:19.114764+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "demarche-aerienne-de-groupe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20a%c3%a9rienne%20de%20groupe.ashx",
+  "niveaux_par_classe": {
+    "barde": {
+      "nom": "Barde",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "demarche-aerienne-de-groupe",
+    "resume_court": "Plusieurs créatures proches gagnent la capacité de se déplacer dans les airs pendant 10 minutes par niveau.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "amelioration_de_capacite",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "plusieurs_cibles",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "exploration"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une créature/niveau"
+    },
+    "notes_ambiguite": "Le texte ne précise pas si les cibles doivent être volontaires ou alliées, mais le jet de sauvegarde est inoffensif, ce qui suggère une application bénéfique. La cible_typique « allie » est retenue par défaut pour un sort d'amélioration avec sauvegarde inoffensive.",
+    "slug": "demarche-aerienne-de-groupe",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:14:28+00:00",
+    "hash_source": "3e2a0933e6f0ccc8810758478b5fc729573af377723f317ff91abe306ddfa551"
+  }
+}

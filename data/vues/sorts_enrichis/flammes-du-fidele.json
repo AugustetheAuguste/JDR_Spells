@@ -1,0 +1,79 @@
+{
+  "id": "flammes-du-fidele",
+  "nom": "Flammes du fidèle",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flammes%20du%20fid%c3%a8le.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Inq": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V",
+  "portee": "contact",
+  "cible": "arme touchée",
+  "duree": "1 round/niveau",
+  "jet_de_sauvegarde": "Vigueur pour annuler (objet, inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "D'un simple contact, le personnage fait apparaître une rune luisante sur une arme à laquelle il accorde le pouvoir de feu (et lui permet de faire 1d6 points de dégâts supplémentaires en cas de coup réussi). Si le personnage utilise son pouvoir de classe de jugement, son arme revêt la propriété de feu intense. Le sort fonctionne uniquement pour les armes que le personnage manie, si elles quittent sa main, pour quelque raison que ce soit, le sort se termine. Les effets de ce sort ne se cumulent pas avec tout effet de feu ou de feu intense que l'arme visée pourrait déjà posséder.",
+  "description_html": "<br/><br/>D'un simple contact, le personnage fait apparaître une rune luisante sur une arme à laquelle il accorde le pouvoir <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu (propriété)\">de feu</a></i> (et lui permet de faire 1d6 points de dégâts supplémentaires en cas de coup réussi). Si le personnage utilise son pouvoir de classe de <a class=\"pagelink\" href=\"Pathfinder-RPG.inquisiteur.ashx#JUGEMENT\" title=\"L'inquisiteur\">jugement</a>, son arme revêt la propriété <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20intense%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu intense (propriété)\">de feu intense</a></i>. Le sort fonctionne uniquement pour les armes que le personnage manie, si elles quittent sa main, pour quelque raison que ce soit, le sort se termine. Les effets de ce sort ne se cumulent pas avec tout effet <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu (propriété)\">de feu</a></i> ou <i><a class=\"pagelink\" href=\"Pathfinder-RPG.feu%20intense%20(propri%c3%a9t%c3%a9).ashx\" title=\"feu intense (propriété)\">de feu intense</a></i> que l'arme visée pourrait déjà posséder.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts de feu infligés par ce sort ignorent les immunités et les résistances au feu. Lors d’un coup critique réussi, la cible prend feu.",
+    "description_html": "Les dégâts de feu infligés par ce sort ignorent les immunités et les résistances au feu. Lors d’un coup critique réussi, la cible prend feu."
+  },
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flammes%20du%20fid%c3%a8le.ashx",
+    "cache_fichier": "cache/html/84afb8bfde4923196335b5547f0b9557c478bbc6.html",
+    "recupere_le": "2026-07-28T22:53:44.316839+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "flammes-du-fidele",
+    "resume_court": "Le lanceur enchante son arme pour lui ajouter 1d6 dégâts de feu tant qu'il la tient.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "arme_ou_munition",
+      "bonus_chiffre",
+      "duree_prolongee",
+      "transformation_du_sujet"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts supplémentaires",
+      "condition_infligee": [],
+      "cible_typique": "arme touchée"
+    },
+    "notes_ambiguite": "Le sort inflige des dégâts de feu via l'arme enchantée, mais n'est pas une attaque directe du lanceur : c'est une amélioration d'équipement. Le type_degats est justifié par le descripteur « feu » et la mention explicite de « dégâts supplémentaires » de feu.",
+    "slug": "flammes-du-fidele",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:06+00:00",
+    "hash_source": "0605c5927c2d886728c53abfb7d16d248f666f9980aee8b9e5eff952ecd5b774"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "e1e5dc1da95a25a0f9ef2a0cb1a4e789348b051a2b5050cfe8aade8dc2ad2b15",
+  "hash_vue": "3c03e380c1665e71f489b4c436e0f23105f54c78d87b6b00978052fee4bb723a"
+}

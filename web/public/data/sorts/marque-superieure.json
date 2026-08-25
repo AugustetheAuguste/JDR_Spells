@@ -1,0 +1,80 @@
+{
+  "id": "marque-superieure",
+  "nom": "Marque supérieure",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20sup%c3%a9rieure.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "malédiction"
+  ],
+  "niveaux": {
+    "Inq": 4
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "permanente",
+  "jet_de_sauvegarde": "Vigueur, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme la marque mais il inflige 1d6 points de dégâts lors de l'application de la marque et il est impossible de la retirer, même temporairement. De plus, la marque supérieure brille comme une torche quand elle se trouve à moins de 9 mètres (6 c) d'un symbole visible de la religion du personnage. La victime marquée est fiévreuse tant que sa marque brille. Comme les malédictions, les marques supérieures ne se dissipent pas mais on peut les faire disparaître par les mêmes méthodes qu'une marque de la justice.",
+  "description_html": "<hr/>\nCe sort fonctionne comme la <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marque.ashx\" title=\"Marque\">marque</a></i> mais il inflige 1d6 points de dégâts lors de l'application de la marque et il est impossible de la retirer, même temporairement. De plus, la <i>marque supérieure</i> brille comme une torche quand elle se trouve à moins de 9 mètres (6 <abbr title=\"cases\">c</abbr>) d'un symbole visible de la religion du personnage. La victime marquée est <a class=\"pagelink\" href=\"Pathfinder-RPG.fi%c3%a9vreux.ashx\" title=\"Fiévreux\">fiévreuse</a> tant que sa marque brille. Comme les <i><a class=\"pagelink\" href=\"Pathfinder-RPG.mal%c3%a9dictions.ashx\" title=\"Les malédictions\">malédictions</a></i>, les <i>marques supérieures</i> ne se dissipent pas mais on peut les faire disparaître par les mêmes méthodes qu'une <i><a class=\"pagelink\" href=\"Pathfinder-RPG.marque%20de%20la%20justice.ashx\" title=\"Marque de la justice\">marque de la justice</a></i>.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "classes": [
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20sup%c3%a9rieure.ashx",
+    "cache_fichier": "cache/html/d7e95cbc341ae19c0425e998f54845dd3cda9a00.html",
+    "recupere_le": "2026-07-28T23:00:20.794082+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "marque-superieure",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marque%20sup%c3%a9rieure.ashx",
+  "niveaux_par_classe": {
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "marque-superieure",
+    "resume_court": "Un sort de malédiction qui marque une créature de manière permanente, lui inflige des dégâts et la rend fiévreuse près de symboles religieux.",
+    "categorie_principale": "affaiblissement",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "autre",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d6 points de dégâts",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le texte mentionne que la victime est « fiévreuse » quand la marque brille, mais « fiévreuse » n'existe pas dans la liste des conditions. La condition la plus proche serait « secoue » (malus de moral), mais le texte ne justifie pas cette interprétation. Aucune condition n'a donc été retenue. Les dégâts sont classés en « autre » car le texte ne précise pas leur nature énergétique ou physique.",
+    "slug": "marque-superieure",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:18:43+00:00",
+    "hash_source": "2ff509214508e60b7f02266b311bd7a79c9a52aad7b7c2ca76660873c079b18f"
+  }
+}

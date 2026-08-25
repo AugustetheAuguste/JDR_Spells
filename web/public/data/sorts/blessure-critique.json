@@ -1,0 +1,140 @@
+{
+  "id": "blessure-critique",
+  "nom": "Blessure critique",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20critique.ashx",
+  "ecole": "Nécromancie",
+  "descripteurs": [],
+  "niveaux": {
+    "Cham": 4,
+    "Inq": 4,
+    "Occ": 4,
+    "Prê": 4,
+    "Sor": 5,
+    "Spi": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "Volonté, 1/2 dégâts",
+  "resistance_magie": "oui",
+  "description": "En posant ses mains sur la cible, le prêtre engendre un transfert d’énergie négative faisant perdre 4d8 points de vie à sa cible, +1 par niveau de lanceur de sorts (jusqu’à un maximum de +20). Les morts-vivants étant animés par l’énergie négative, ce sort ne les blesse pas mais les soigne du nombre indiqué.",
+  "description_html": "<br/><br/>En posant ses mains sur la cible, le <a class=\"pagelink\" href=\"Pathfinder-RPG.pr%c3%aatre.ashx\" title=\"Le prêtre\">prêtre</a> engendre un transfert d’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a> faisant perdre 4d8 points de vie à sa cible, +1 par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (jusqu’à un maximum de +20). Les <a class=\"pagelink\" href=\"Pathfinder-RPG.type%20mort-vivant.ashx\" title=\"Mort-vivant\">morts-vivants</a> étant animés par l’<a class=\"pagelink\" href=\"Pathfinder-RPG.%c3%a9nergie%20n%c3%a9gative.ashx\" title=\"Énergie négative\">énergie négative</a>, ce sort ne les blesse pas mais les soigne du nombre indiqué.<br/><br/>",
+  "mythique": {
+    "description": "Les dégâts infligés s’élèvent à 8d8 points de dégâts + 2 points par niveau de lanceur de sorts (+40 maximum). Une cible vivante est fiévreuse pendant un round par niveau de lanceur de sorts (20 rounds maximum) si elle rate son jet de sauvegarde.",
+    "description_html": "Les dégâts infligés s’élèvent à 8d8 points de dégâts + 2 points par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (+40 maximum). Une cible vivante est fiévreuse pendant un round par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a> (20 rounds maximum) si elle rate son jet de sauvegarde."
+  },
+  "variantes": [],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20critique.ashx",
+    "cache_fichier": "cache/html/294995b8c6f850f8cfd011e6bd61b542eec4c813.html",
+    "recupere_le": "2026-07-28T22:43:47.424405+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "blessure-critique",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blessure%20critique.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 4
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 4
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 5
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 4
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "blessure-critique",
+    "resume_court": "Un contact qui inflige des dégâts d'énergie négative et soigne les morts-vivants.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "attaque_de_contact",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "negatif",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "transfert d'énergie négative",
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": null,
+    "slug": "blessure-critique",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:11:50+00:00",
+    "hash_source": "f1ada0752c66d41fd06bde03f56155a25d7c50c25bdc3e9b48d53a1d4473ffc9"
+  }
+}

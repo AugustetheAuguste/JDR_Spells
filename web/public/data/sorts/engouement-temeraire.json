@@ -1,0 +1,132 @@
+{
+  "id": "engouement-temeraire",
+  "nom": "Engouement téméraire",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Engouement%20t%c3%a9m%c3%a9raire.ashx",
+  "ecole": "Enchantement (coercition)",
+  "descripteurs": [
+    "émotion",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 2,
+    "Hyp": 2,
+    "Ens/Mag": 3,
+    "Psy": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "une créature",
+  "duree": "1 heure/niveau",
+  "jet_de_sauvegarde": "Volonté pour annuler",
+  "resistance_magie": "oui",
+  "description": "Le personnage fait éprouver à sa cible une attirance irrésistible pour un individu de sa connaissance. Quand il lance le sort, il désigne une unique créature qui devient l'objet du désir de sa cible. Par la suite, la cible fait tout son possible pour rester à moins de 9 mètres de l'être désiré. Si la cible dépasse cette distance, elle est chancelante jusqu'à ce qu'elle revienne à côté de l'objet de son désir. Si le fait de rester à moins de 9 mètres met la cible en danger, elle a droit à un second jet de sauvegarde pour briser le sort.\nEngouement téméraire contre pur dégoût.",
+  "description_html": "<br/><br/>Le personnage fait éprouver à sa cible une attirance irrésistible pour un individu de sa connaissance. Quand il lance le sort, il désigne une unique créature qui devient l'objet du désir de sa cible. Par la suite, la cible fait tout son possible pour rester à moins de 9 mètres de l'être désiré. Si la cible dépasse cette distance, elle est <a class=\"pagelink\" href=\"Pathfinder-RPG.chancelant.ashx\" title=\"Chancelant\">chancelante</a> jusqu'à ce qu'elle revienne à côté de l'objet de son désir. Si le fait de rester à moins de 9 mètres met la cible en danger, elle a droit à un second <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a> pour briser le sort.<br/>\n<i>Engouement téméraire</i> contre <i><a class=\"pagelink\" href=\"Pathfinder-RPG.pur%20d%c3%a9go%c3%bbt.ashx\" title=\"Pur dégoût\">pur dégoût</a></i>.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Engouement%20t%c3%a9m%c3%a9raire.ashx",
+    "cache_fichier": "cache/html/bac1de6b522ae48e82eb12a1d1d5dff18412853d.html",
+    "recupere_le": "2026-07-28T22:52:17.210884+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "engouement-temeraire",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Engouement%20t%c3%a9m%c3%a9raire.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 3
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 2
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 2
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "engouement-temeraire",
+    "resume_court": "La cible éprouve une attirance irrésistible pour une créature désignée et reste à proximité.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [
+      "chancelant"
+    ],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [
+        "elle est chancelante jusqu'à ce qu'elle revienne à côté de l'objet de son désir"
+      ],
+      "cible_typique": "une créature"
+    },
+    "notes_ambiguite": null,
+    "slug": "engouement-temeraire",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:23+00:00",
+    "hash_source": "3ab163fdc4b5d8c366b25d1edcb7c85af0e4a6cfafa27eb16107109ba7436f80"
+  }
+}

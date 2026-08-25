@@ -1,0 +1,101 @@
+{
+  "id": "trouver-la-proie",
+  "nom": "Trouver la proie",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trouver%20la%20proie.ashx",
+  "ecole": "Divination",
+  "descripteurs": [],
+  "niveaux": {
+    "Inq": 4,
+    "Occ": 5,
+    "Rôd": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "personnelle",
+  "cible": "lanceur de sorts",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Le personnage sent si une créature qu’il connaît bien et qu’il peut visualiser se trouve dans un rayon de 30 km. Il connaît aussi la distance et la direction dans laquelle elle se trouve par rapport à lui. Il sait aussi si la créature se déplace et, si oui, dans quelle direction, à quelle vitesse et par quel moyen. Le rayon d’effet du sort augmente de 8 km tous les deux niveaux après le niveau 10, pour un maximum de 72 km au niveau 20. Tout ce qui empêcherait localisation de créature de trouver une créature empêche aussi ce sort de le faire.",
+  "description_html": "<br/><br/>Le personnage sent si une créature qu’il connaît bien et qu’il peut visualiser se trouve dans un rayon de 30 km. Il connaît aussi la distance et la direction dans laquelle elle se trouve par rapport à lui. Il sait aussi si la créature se déplace et, si oui, dans quelle direction, à quelle vitesse et par quel moyen. Le rayon d’effet du sort augmente de 8 km tous les deux <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveaux</a> après le <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau</a> 10, pour un maximum de 72 km au <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau</a> 20. Tout ce qui empêcherait <i><a class=\"pagelink\" href=\"Pathfinder-RPG.localisation%20de%20cr%c3%a9ature.ashx\" title=\"Localisation de créature\">localisation de créature</a></i> de trouver une créature empêche aussi ce sort de le faire.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Combat/Art de la Guerre"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 4,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trouver%20la%20proie.ashx",
+    "cache_fichier": "cache/html/67566911524d8788cea54eef0e5dde9878e5330e.html",
+    "recupere_le": "2026-07-29T07:43:37.292116+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "trouver-la-proie",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trouver%20la%20proie.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 4
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 4
+    },
+    "occultiste": {
+      "nom": "Occultiste",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "trouver-la-proie",
+    "resume_court": "Le lanceur localise une créature qu'il connaît bien dans un rayon de 30 km et perçoit sa direction, distance et mouvement.",
+    "categorie_principale": "divination",
+    "tags": [
+      "divination_information",
+      "detection_ou_revelation",
+      "duree_instantanee"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "soi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "cible: lanceur de sorts"
+    },
+    "notes_ambiguite": null,
+    "slug": "trouver-la-proie",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:25:56+00:00",
+    "hash_source": "8ec8ca06f9788c2d063698e5e6d3139439cac97a1e75f7a28163988fac21250f"
+  }
+}

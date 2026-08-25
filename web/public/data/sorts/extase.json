@@ -1,0 +1,127 @@
+{
+  "id": "extase",
+  "nom": "Extase",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Extase.ashx",
+  "ecole": "Invocation (guérison)",
+  "descripteurs": [
+    "émotion"
+  ],
+  "niveaux": {
+    "Bard": 5,
+    "Hyp": 5,
+    "Ens/Mag": 7,
+    "Prê": 6,
+    "Psy": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "18 mètres (12 c)",
+  "cible": "tous les alliés et ennemis situés dans un rayon de 18 m (12 c) centré sur le personnage",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "oui",
+  "description": "Les paroles inspirées du personnage plongent les autres dans un état de béatitude transcendantale. Tous les alliés dans la zone d'effet se libèrent de tout effet d'émotion néfaste. Le sort soigne également 1d4 points d'affaiblissement d'intelligence, de sagesse ou de charisme (au choix du personnage) pour tous les alliés situés dans la zone.",
+  "description_html": "<br/><br/>Les paroles inspirées du personnage plongent les autres dans un état de béatitude transcendantale. Tous les alliés dans la zone d'effet se libèrent de tout effet d'émotion néfaste. Le sort soigne également 1d4 points d'affaiblissement d'<a class=\"pagelink\" href=\"Pathfinder-RPG.intelligence.ashx\" title=\"L'Intelligence\">intelligence</a>, de <a class=\"pagelink\" href=\"Pathfinder-RPG.sagesse.ashx\" title=\"La Sagesse\">sagesse</a> ou de <a class=\"pagelink\" href=\"Pathfinder-RPG.charisme.ashx\" title=\"Le Charisme\">charisme</a> (au choix du personnage) pour tous les alliés situés dans la zone.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Extase.ashx",
+    "cache_fichier": "cache/html/4ae2756b468cf829c9311d11c9a3af91b50029fb.html",
+    "recupere_le": "2026-07-28T22:52:54.254623+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "extase",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Extase.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 7
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 5
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 6
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 6
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "extase",
+    "resume_court": "Le lanceur plonge les créatures proches dans la béatitude, libérant les alliés des effets d'émotion néfastes et soignant l'affaiblissement mental.",
+    "categorie_principale": "soin",
+    "tags": [
+      "zone_d_effet",
+      "soin_ou_guerison",
+      "effet_mental",
+      "resistance_a_la_magie"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "zone",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "tous les alliés et ennemis situés dans un rayon de 18 m (12 c) centré sur le personnage"
+    },
+    "notes_ambiguite": null,
+    "slug": "extase",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:15:50+00:00",
+    "hash_source": "fbd61a8d80d976a2e6c27da25f5c6b1414c95e311d0130b13911deb53b30ae81"
+  }
+}

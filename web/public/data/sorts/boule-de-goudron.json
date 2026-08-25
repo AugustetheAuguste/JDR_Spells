@@ -1,0 +1,89 @@
+{
+  "id": "boule-de-goudron",
+  "nom": "Boule de goudron",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20goudron.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Dru": 2
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, M(une petite boule de bitume)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "attaque à distance",
+  "duree": "instantanée",
+  "jet_de_sauvegarde": "non",
+  "resistance_magie": "non",
+  "description": "Le personnage crée une boule de goudron brûlant collante qu’il lance sur un ennemi à portée. S’il le touche, il lui inflige 1d4 points de dégâts de feu + modificateur de Force et asperge la cible de goudron chaud et collant. Le goudron inflige 1d4 points de dégâts de feu par round à la créature pendant les 1d4 prochains rounds et lui donne un malus de -2 à la Dextérité pendant toute cette période. Si la cible le désire, elle peut passer une action complexe à essayer d’éteindre ou de refroidir le goudron avant de subir les dégâts supplémentaires. Pour cela, elle doit réussir un jet de Réflexes DD 15 ou disposer de 5 litres d’un liquide non inflammable. Si la cible se roule par terre, elle gagne un bonus de +2 au jet de sauvegarde. L’effet se termine automatiquement si la victime saute dans un lac ou refroidit le goudron par magie.",
+  "description_html": "<br/><br/>Le personnage crée une boule de goudron brûlant collante qu’il lance sur un ennemi à portée. S’il le touche, il lui inflige 1d4 points de dégâts de feu + modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Force.ashx\" title=\"La Force\">Force</a> et asperge la cible de goudron chaud et collant. Le goudron inflige 1d4 points de dégâts de feu par <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> à la créature pendant les 1d4 prochains <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> et lui donne un malus de -2 à la <a class=\"pagelink\" href=\"Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx\" title=\"La Dextérité\">Dextérité</a> pendant toute cette période. Si la cible le désire, elle peut passer une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20complexe.ashx\" title=\"Action complexe\">action complexe</a> à essayer d’éteindre ou de refroidir le goudron avant de subir les dégâts supplémentaires. Pour cela, elle doit réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> 15 ou disposer de 5 litres d’un liquide non inflammable. Si la cible se roule par terre, elle gagne un bonus de +2 au <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jet de sauvegarde</a>. L’effet se termine automatiquement si la victime saute dans un lac ou refroidit le goudron par magie.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Magic/Art de la Magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 2,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 2,
+      "niveau_page": 2,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20goudron.ashx",
+    "cache_fichier": "cache/html/c4ac78d1ee12e6cb7a4f3ca0d0c405cc0f65098d.html",
+    "recupere_le": "2026-07-28T22:44:38.550343+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "boule-de-goudron",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20goudron.ashx",
+  "niveaux_par_classe": {
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 2
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 2
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "boule-de-goudron",
+    "resume_court": "Lance une boule de goudron brûlant qui inflige des dégâts initiaux et continus de feu, réduisant la Dextérité.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "1d4 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "attaque à distance"
+    },
+    "notes_ambiguite": "Le malus de -2 à la Dextérité n'est pas une condition listée mais une pénalité numérique couverte par le tag malus_chiffre. Les dégâts continus sont infligés par le goudron pendant plusieurs rounds, ce qui justifie duree_prolongee.",
+    "slug": "boule-de-goudron",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:12:10+00:00",
+    "hash_source": "c346ee1d5294a05604fc4b2923d02b6581251967f87881428932f8726110ea4f"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "id": "songe",
+  "nom": "Songe",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Songe.ashx",
+  "ecole": "Illusion (fantasme)",
+  "descripteurs": [
+    "mental"
+  ],
+  "niveaux": {
+    "Alch": 5,
+    "Bard": 5,
+    "Hyp": 4,
+    "Ens/Mag": 5,
+    "Méd": 3,
+    "Psy": 4,
+    "Spi": 5
+  },
+  "temps_incantation": "1 minute",
+  "composantes": "V, G",
+  "portee": "illimitée",
+  "cible": "créature vivante touchée",
+  "duree": "voir description",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage, ou un messager qu’il touche lors de l’incantation, transmet un message onirique à un autre individu. Au début de l’incantation, le lanceur de sorts doit nommer le destinataire du message ou l’identifier afin qu’il soit impossible de se tromper sur son identité. Le messager entre en transe, apparaît dans les rêves du destinataire et délivre le message qu’on l’a chargé de transmettre. La longueur du message n’est pas limitée, et celui qui le reçoit s’en rappelle parfaitement au réveil. La communication ne s’effectue que dans un sens : le destinataire ne peut pas envoyer de réponse ni poser de question et le messager ne tire aucune information des rêves de la cible.\nLe messager réintègre immédiatement son corps une fois le message transmis. La durée du sort est égale au temps nécessaire pour s’infiltrer dans l’univers onirique de la cible et délivrer le message prévu.\nSi le destinataire n’est pas endormi au début du sort, le messager a le choix entre se réveiller (ce qui met immédiatement un terme au sort) ou rester en transe. S’il attend ainsi que la cible s’endorme, il peut transmettre son message. S’il est dérangé, il sort de sa transe et le sort s’achève.\nLes créatures qui ne dorment ni ne rêvent jamais ne peuvent pas être contactées à l’aide de songe.\nTant que le messager est en transe, il n’est pas conscient du monde qui l’entoure. Il est sans défense, tant physiquement que mentalement (il rate automatiquement tous ses jets de sauvegarde, par exemple).",
+  "description_html": "<hr/>\nLe personnage, ou un messager qu’il touche lors de l’incantation, transmet un message onirique à un autre individu. Au début de l’incantation, le lanceur de sorts doit nommer le destinataire du message ou l’identifier afin qu’il soit impossible de se tromper sur son identité. Le messager entre en transe, apparaît dans les rêves du destinataire et délivre le message qu’on l’a chargé de transmettre. La longueur du message n’est pas limitée, et celui qui le reçoit s’en rappelle parfaitement au réveil. La communication ne s’effectue que dans un sens : le destinataire ne peut pas envoyer de réponse ni poser de question et le messager ne tire aucune information des rêves de la cible.<br/><br/>Le messager réintègre immédiatement son corps une fois le message transmis. La durée du sort est égale au temps nécessaire pour s’infiltrer dans l’univers onirique de la cible et délivrer le message prévu.<br/><br/>Si le destinataire n’est pas endormi au début du sort, le messager a le choix entre se réveiller (ce qui met immédiatement un terme au sort) ou rester en transe. S’il attend ainsi que la cible s’endorme, il peut transmettre son message. S’il est dérangé, il sort de sa transe et le sort s’achève.<br/><br/>Les créatures qui ne dorment ni ne rêvent jamais ne peuvent pas être contactées à l’aide de songe.<br/><br/>Tant que le messager est en transe, il n’est pas conscient du monde qui l’entoure. Il est <a class=\"pagelink\" href=\"Pathfinder-RPG.sans%20d%c3%a9fense.ashx\" title=\"Sans défense\">sans défense</a>, tant physiquement que mentalement (il rate automatiquement tous ses <a class=\"pagelink\" href=\"Pathfinder-RPG.jet%20de%20sauvegarde.ashx\" title=\"jet de sauvegarde\">jets de sauvegarde</a>, par exemple).<br/><br/>",
+  "mythique": {
+    "description": "Le personnage ou son messager peut obtenir des informations de la part du rêveur contacté, en lui posant des questions, comme si le personnage utilisait communication avec les morts pour parler avec un cadavre. Un rêveur non-consentant peut tenter de résister à cet interrogatoire en réussissant un jet de Volonté (identique à communication avec les morts en utilisant le DD qu’aurait le songe s’il autorisait un jet de sauvegarde). Toutefois, les réponses à ces questions sont généralement brèves et énigmatiques.",
+    "description_html": "Le personnage ou son messager peut obtenir des informations de la part du rêveur contacté, en lui posant des questions, comme si le personnage utilisait <a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20avec%20les%20morts.ashx\" title=\"Communication avec les morts\">communication avec les morts</a> pour parler avec un cadavre. Un rêveur non-consentant peut tenter de résister à cet interrogatoire en réussissant un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> (identique à <a class=\"pagelink\" href=\"Pathfinder-RPG.communication%20avec%20les%20morts.ashx\" title=\"Communication avec les morts\">communication avec les morts</a> en utilisant le <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> qu’aurait le songe s’il autorisait un jet de sauvegarde). Toutefois, les réponses à ces questions sont généralement brèves et énigmatiques.<br/><br/><br/><br/>"
+  },
+  "variantes": [
+    {
+      "nom": "Songe mineur",
+      "id": "songe-mineur",
+      "ecole": "Illusion (chimère)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Alch": 2,
+        "Bard": 3,
+        "Hyp": 3,
+        "Ens/Mag": 3,
+        "Méd": 2,
+        "Psy": 3,
+        "Sor": 2
+      },
+      "temps_incantation": "1 minute",
+      "composantes": "V, G",
+      "portee": "illimitée",
+      "cible": "lanceur de sorts ou gnome touché",
+      "duree": "voir texte",
+      "jet_de_sauvegarde": "aucun",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme songe à quelques différences près. Le messager doit être le lanceur de sorts ou le gnome touché. Le message ne doit pas dépasser 20 mots. Si le destinataire du message ne dort pas au moment où le personnage lance le sort, ce dernier échoue automatiquement.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.songe.ashx\" title=\"Songe\">songe</a></i> à quelques différences près. Le messager doit être le lanceur de sorts ou le gnome touché. Le message ne doit pas dépasser 20 mots. Si le destinataire du message ne dort pas au moment où le personnage lance le sort, ce dernier échoue automatiquement.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Examen des rêves",
+      "id": "examen-des-reves",
+      "ecole": "Divination",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Bard": 6,
+        "Ens/Mag": 6,
+        "Hyp": 5,
+        "Méd": 4,
+        "Psy": 5
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "illimitée",
+      "cible": "1 créature vivante",
+      "duree": "voir texte",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme songe, mais au lieu d’envoyer un message à une cible endormie, le personnage lit dans ses pensées. Pour lancer ce sort, la cible doit être endormie bien que, si ce n’est pas le cas, le personnage puisse attendre en transe jusqu’à ce qu’elle s’endorme.\nUne fois la cible endormie, le personnage peut se concentrer pour lire ses pensées superficielles comme avec détection des pensées. Il peut se concentrer pendant 1 minute par niveau de lanceur de sorts. Au lieu de lire les pensées de surface, il peut étudier les rêves et le subconscient de la cible, en quête de réponses à ses questions. À chaque fois qu’il passe une minute à se concentrer, il peut obtenir la réponse à une question mais elle peut être brève, cryptique ou répétitive. La cible a droit à un nouveau jet de Volonté pour mettre un terme à l’examen des rêves à chaque fois que le personnage lui pose une question. Sinon, elle a droit à un test de Bluff contre un DD de 11 + modificateur de Psychologie du personnage.\nSi elle rate son test de Bluff, le personnage obtient l’information désirée ; si elle réussit, il ne recueille aucune information. Si elle réussit son test de 5 ou plus, le personnage se trompe dans son interprétation des rêves et en tire une conclusion erronée, au choix de la cible, en étant persuadé qu’il a raison. Contrairement au songe, ce sort ne permet pas d’utiliser la cible comme messager.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.songe.ashx\" title=\"Songe\">songe</a></i>, mais au lieu d’envoyer un message à une cible endormie, le personnage lit dans ses pensées. Pour lancer ce sort, la cible doit être endormie bien que, si ce n’est pas le cas, le personnage puisse attendre en transe jusqu’à ce qu’elle s’endorme.<br/><br/>Une fois la cible endormie, le personnage peut se concentrer pour lire ses pensées superficielles comme avec <i><a class=\"pagelink\" href=\"Pathfinder-RPG.d%c3%a9tection%20des%20pens%c3%a9es.ashx\" title=\"détection des pensées\">détection des pensées</a></i>. Il peut se concentrer pendant 1 minute par <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Au lieu de lire les pensées de surface, il peut étudier les rêves et le subconscient de la cible, en quête de réponses à ses questions. À chaque fois qu’il passe une minute à se concentrer, il peut obtenir la réponse à une question mais elle peut être brève, cryptique ou répétitive. La cible a droit à un nouveau jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour mettre un terme à l’examen des rêves à chaque fois que le personnage lui pose une question. Sinon, elle a droit à un test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a> contre un <a class=\"pagelink\" href=\"Pathfinder-RPG.DD.ashx\" title=\"DD\">DD</a> de 11 + modificateur de <a class=\"pagelink\" href=\"Pathfinder-RPG.Psychologie.ashx\" title=\"Psychologie\">Psychologie</a> du personnage.<br/><br/>Si elle rate son test de <a class=\"pagelink\" href=\"Pathfinder-RPG.Bluff.ashx\" title=\"Bluff\">Bluff</a>, le personnage obtient l’information désirée ; si elle réussit, il ne recueille aucune information. Si elle réussit son test de 5 ou plus, le personnage se trompe dans son interprétation des rêves et en tire une conclusion erronée, au choix de la cible, en étant persuadé qu’il a raison. Contrairement au <i><a class=\"pagelink\" href=\"Pathfinder-RPG.songe.ashx\" title=\"Songe\">songe</a></i>, ce sort ne permet pas d’utiliser la cible comme messager.<br/><br/>",
+      "mythique": null
+    },
+    {
+      "nom": "Conseil onirique",
+      "id": "conseil-onirique",
+      "ecole": "Illusion (fantasme)",
+      "descripteurs": [
+        "effet mental"
+      ],
+      "niveaux": {
+        "Bard": 6,
+        "Ens/Mag": 7,
+        "Hyp": 5,
+        "Méd": 4,
+        "Psy": 6
+      },
+      "temps_incantation": "1 action simple",
+      "composantes": "V, G",
+      "portee": "illimitée",
+      "cible": "une ou plusieurs créatures vivantes",
+      "duree": "voir texte",
+      "jet_de_sauvegarde": "Volonté, annule",
+      "resistance_magie": "oui",
+      "description": "Ce sort fonctionne comme songe mais le lanceur et la cible du sort peuvent converser de manière limitée tant que cette dernière est endormie. Le personnage peut envoyer ou recevoir un nombre de messages oniriques égal à son niveau de lanceur de sorts. Chaque message fait jusqu’à 25 mots ou prend la forme d’une image vague ne comportant pas d’éléments détaillés tels que des mots. Il peut échanger avec une ou plusieurs cibles mais chaque message envoyé ou reçu est décompté du total autorisé. Il faut 1 round pour envoyer un message. Le sort se termine et le personnage se réveille quand il a épuisé son quota de messages.\nSi le personnage utilise conseil onirique pour envoyer un message à une créature endormie ayant préparé un sort de songe ou de conseil onirique (ou capable de le lancer de façon spontanée ou comme un pouvoir magique), elle peut dépenser l’un des messages du personnage pour lancer le sort sans se réveiller. Cela dépense l’emplacement de sort, le sort ou le pouvoir magique quotidien comme à l’accoutumée, mais au lieu de répondre aux messages du personnage, la créature peut alors pénétrer dans son paysage onirique. Si le destinataire du message psychique dispose du don Rêveur lucide, il peut entrer dans le paysage onirique du personnage sans lancer ces sorts. Une fois dans le paysage onirique du lanceur de sorts originel, les membres du conseil peuvent interagir entre eux et avec le paysage pendant 10 minutes par message restant. Le sort se termine une fois cette durée écoulée.",
+      "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.songe.ashx\" title=\"Songe\">songe</a></i> mais le lanceur et la cible du sort peuvent converser de manière limitée tant que cette dernière est endormie. Le personnage peut envoyer ou recevoir un nombre de messages oniriques égal à son <a class=\"pagelink\" href=\"Pathfinder-RPG.NLS.ashx\" title=\"NLS\">niveau de lanceur de sorts</a>. Chaque message fait jusqu’à 25 mots ou prend la forme d’une image vague ne comportant pas d’éléments détaillés tels que des mots. Il peut échanger avec une ou plusieurs cibles mais chaque message envoyé ou reçu est décompté du total autorisé. Il faut 1 <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> pour envoyer un message. Le sort se termine et le personnage se réveille quand il a épuisé son quota de messages.<br/><br/>Si le personnage utilise conseil onirique pour envoyer un message à une créature endormie ayant préparé un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.songe.ashx\" title=\"Songe\">songe</a></i> ou de conseil onirique (ou capable de le lancer de façon spontanée ou comme un pouvoir magique), elle peut dépenser l’un des messages du personnage pour lancer le sort sans se réveiller. Cela dépense l’emplacement de sort, le sort ou le pouvoir magique quotidien comme à l’accoutumée, mais au lieu de répondre aux messages du personnage, la créature peut alors pénétrer dans son paysage onirique. Si le destinataire du message psychique dispose du don <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%aaveur%20lucide.ashx\" title=\"Rêveur lucide\">Rêveur lucide</a>, il peut entrer dans le paysage onirique du personnage sans lancer ces sorts. Une fois dans le paysage onirique du lanceur de sorts originel, les membres du conseil peuvent interagir entre eux et avec le paysage pendant 10 minutes par message restant. Le sort se termine une fois cette durée écoulée.",
+      "mythique": null
+    }
+  ],
+  "sources": [
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques",
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races",
+    "Occult Adventures/Aventures occultes"
+  ],
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Médium",
+      "slug": "medium",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Spirite",
+      "slug": "spirite",
+      "niveau": 5,
+      "niveau_page": 5,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Songe.ashx",
+    "cache_fichier": "cache/html/f2c624bedb9ddc43c40e0f1761d9fd4789a7f1ae.html",
+    "recupere_le": "2026-07-29T07:41:01.487620+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "songe",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Songe.ashx",
+  "niveaux_par_classe": {
+    "alchimiste": {
+      "nom": "Alchimiste",
+      "niveau": 5
+    },
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 5
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 5
+    },
+    "hypnotiseur": {
+      "nom": "Hypnotiseur",
+      "niveau": 4
+    },
+    "medium": {
+      "nom": "Médium",
+      "niveau": 3
+    },
+    "psychiste": {
+      "nom": "Psychiste",
+      "niveau": 4
+    },
+    "spirite": {
+      "nom": "Spirite",
+      "niveau": 5
+    }
+  },
+  "desaccords": [],
+  "enrichissement": null
+}

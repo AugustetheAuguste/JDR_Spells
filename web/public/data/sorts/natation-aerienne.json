@@ -1,0 +1,140 @@
+{
+  "id": "natation-aerienne",
+  "nom": "Natation aérienne",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Natation%20a%c3%a9rienne.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [
+    "Air"
+  ],
+  "niveaux": {
+    "Cham": 3,
+    "Dru": 3,
+    "Prê": 3,
+    "San": 3,
+    "Sor": 3
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G, FD",
+  "portee": "contact",
+  "cible": "créature touchée de taille G ou inférieure",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "aucun (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Ce sort confère à la cible la capacité de nager dans les airs. Les créatures qui ont une vitesse de nage peuvent se déplacer dans l’air à cette vitesse. Celles qui en sont dépourvues doivent faire des tests de Natation afin de se déplacer normalement. En l’absence de vent, l’air a les mêmes effets qu’une eau calme, le vent léger ou modéré a les mêmes effets qu’une eau agitée, et il est impossible de nager dans des vents plus forts. Ce sort ne confère pas la capacité de respirer l’air aux créatures qui ne le peuvent pas en temps normal.",
+  "description_html": "<br/><br/>Ce sort confère à la cible la capacité de nager dans les airs. Les créatures qui ont une vitesse de nage peuvent se déplacer dans l’air à cette vitesse. Celles qui en sont dépourvues doivent faire des tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Natation.ashx\" title=\"Natation\">Natation</a> afin de se déplacer normalement. En l’absence de vent, l’air a les mêmes effets qu’une eau calme, le vent léger ou modéré a les mêmes effets qu’une eau agitée, et il est impossible de nager dans des <a class=\"pagelink\" href=\"Pathfinder-RPG.Vents.ashx\" title=\"Les vents\">vents plus forts</a>. Ce sort ne confère pas la capacité de respirer l’air aux créatures qui ne le peuvent pas en temps normal.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Inner Sea Gods/Dieux de la mer Intérieure",
+    "Gods and Magic, Faiths of Purity, Faiths of Balance, Faiths of Corruption/Dieux et magie"
+  ],
+  "classes": [
+    {
+      "classe": "Chaman",
+      "slug": "chaman",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Chasseur",
+      "slug": "chasseur",
+      "niveau": 3,
+      "niveau_page": null,
+      "concordance": null
+    },
+    {
+      "classe": "Druide",
+      "slug": "druide",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Prêtre/Prêtre combattant/Oracle",
+      "slug": "pretre-pretre-combattant-oracle",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Natation%20a%c3%a9rienne.ashx",
+    "cache_fichier": "cache/html/ae369c834be91d3cb936ebaee63500121633292f.html",
+    "recupere_le": "2026-07-28T23:01:42.843745+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "natation-aerienne",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Natation%20a%c3%a9rienne.ashx",
+  "niveaux_par_classe": {
+    "chaman": {
+      "nom": "Chaman",
+      "niveau": 3
+    },
+    "chasseur": {
+      "nom": "Chasseur",
+      "niveau": 3
+    },
+    "druide": {
+      "nom": "Druide",
+      "niveau": 3
+    },
+    "pretre-pretre-combattant-oracle": {
+      "nom": "Prêtre/Prêtre combattant/Oracle",
+      "niveau": 3
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 3
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 3
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "natation-aerienne",
+    "resume_court": "La cible peut nager dans l'air comme dans l'eau, selon sa vitesse de nage ou ses tests de Natation.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "deplacement_ou_teleportation",
+      "duree_prolongee",
+      "amelioration_de_capacite"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée de taille G ou inférieure"
+    },
+    "notes_ambiguite": null,
+    "slug": "natation-aerienne",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:21+00:00",
+    "hash_source": "34956c4a5d4f42e029718e57f80f863a5902c96e5b3c4f3b83c916f90df8ce8c"
+  }
+}

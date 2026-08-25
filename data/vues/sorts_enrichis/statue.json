@@ -1,0 +1,87 @@
+{
+  "id": "statue",
+  "nom": "Statue",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Statue.ashx",
+  "ecole": "Transmutation",
+  "descripteurs": [],
+  "niveaux": {
+    "Alch": 6,
+    "Ens/Mag": 7,
+    "Occ": 6
+  },
+  "temps_incantation": "1 round",
+  "composantes": "V, G, M (un peu de chaux, quelques grains de sable et une goutte d’eau, le tout mélangé par un clou ou une pointe en fer)",
+  "portee": "contact",
+  "cible": "créature touchée",
+  "duree": "1 heure/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, annule (inoffensif)",
+  "resistance_magie": "oui (inoffensif)",
+  "description": "Cette incantation transforme le sujet et tout ce qu’il porte en statue de pierre. Sous forme de statue, il a une solidité de 8 et conserve son total de points de vie. Le personnage statufié voit, entend et sent normalement, mais il n’a plus besoin de manger, boire ou respirer. Son sens du toucher se restreint aux pressions suffisamment importantes pour affecter son corps de granit : si quelqu’un fait sauter quelques éclats de pierre, il perçoit cela comme une simple égratignure mais si on lui casse un bras il subit d’importants dégâts. Tant que le sort fait effet, l’individu affecté peut reprendre son apparence normale, agir et se transformer à nouveau en statue (cela lui demande seulement une action libre).",
+  "description_html": "<br/><br/>Cette incantation transforme le sujet et tout ce qu’il porte en statue de pierre. Sous forme de statue, il a une <a class=\"pagelink\" href=\"Pathfinder-RPG.solidit%c3%a9.ashx\" title=\"solidité\">solidité</a> de 8 et conserve son total de <a class=\"pagelink\" href=\"Pathfinder-RPG.points%20de%20vie.ashx\" title=\"points de vie\">points de vie</a>. Le personnage statufié voit, entend et sent normalement, mais il n’a plus besoin de manger, boire ou respirer. Son sens du toucher se restreint aux pressions suffisamment importantes pour affecter son corps de granit : si quelqu’un fait sauter quelques éclats de pierre, il perçoit cela comme une simple égratignure mais si on lui casse un bras il subit d’importants dégâts. Tant que le sort fait effet, l’individu affecté peut reprendre son apparence normale, agir et se transformer à nouveau en statue (cela lui demande seulement une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a>).",
+  "mythique": null,
+  "variantes": [],
+  "sources": [],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Alchimiste",
+      "slug": "alchimiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 7,
+      "niveau_page": 7,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Statue.ashx",
+    "cache_fichier": "cache/html/b85881431af0d9b5a9031ebf627e936da169f36e.html",
+    "recupere_le": "2026-07-29T07:41:21.670289+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "statue",
+    "resume_court": "Le sujet se transforme en statue de pierre, conservant ses sens et pouvant reprendre forme à volonté.",
+    "categorie_principale": "amelioration",
+    "tags": [
+      "transformation_du_sujet",
+      "duree_prolongee",
+      "jet_de_sauvegarde"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "utilitaire"
+    ],
+    "cible_typique": "allie",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "créature touchée"
+    },
+    "notes_ambiguite": "Le sort est classé en amélioration plutôt qu'en transformation car il offre des avantages (protection, absence de besoins biologiques) sans dégrader les capacités du sujet. Le jet de sauvegarde est marqué « inoffensif » dans le texte, ce qui confirme que le sort bénéficie au sujet.",
+    "slug": "statue",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:24:59+00:00",
+    "hash_source": "1f4e6a8732262b1fdcc6dc588fb196716705370c8acba216f43ba5a8430581b0"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "c851a108a7ebf3cf7a00397cbe35d275269f4409cbdaa1e514650090d2fc2ba4",
+  "hash_vue": "b8df863e5a715427b901e36b03b679f715d9cf15ce65ffc9a38f19f0c8dddfe7"
+}

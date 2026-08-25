@@ -1,0 +1,93 @@
+{
+  "id": "flamme-contagieuse",
+  "nom": "Flamme contagieuse",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flamme%20contagieuse.ashx",
+  "ecole": "Évocation",
+  "descripteurs": [
+    "feu"
+  ],
+  "niveaux": {
+    "Ens/Mag": 6,
+    "Magus": 6,
+    "Occ": 6
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "3 rayons ou plus",
+  "duree": "3 rounds",
+  "jet_de_sauvegarde": "aucun",
+  "resistance_magie": "oui",
+  "description": "Le personnage frappe plusieurs ennemis avec des rayons de feu. Il peut envoyer trois rayons +1 par tranche de quatre niveaux au-delà du niveau 11 (pour un maximum de cinq rayons au niveau 19). Il faut réussir une attaque de contact à distance pour chaque rayon pour qu'il touche sa cible et inflige 4d6 points de dégâts de feu. Le personnage peut diriger tous les rayons contre une même cible ou les répartir entre plusieurs mais ils doivent tous viser des cibles distantes de moins de 9 mètres (6 c) les unes des autres et être tirés simultanément.\nÀ chaque round, au tour du personnage, un nouveau rayon de feu part de chaque créature touchée par le sort au round précédent. Ces nouveaux rayons attaquent comme si c'était le personnage qui les tirait mais partent de la créature précédemment touchée. Le personnage peut choisir ses nouvelles cibles par une action libre mais elles doivent toutes se trouver à courte portée (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux) de leur nouveau point de départ. Les flammes continuent de se propager pendant un total de trois rounds. Une créature peut être frappée à plusieurs reprises par ce sort au cours de ces trois rounds mais jamais par un rayon qui part de sa propre personne.",
+  "description_html": "<br/><br/>Le personnage frappe plusieurs ennemis avec des rayons de feu. Il peut envoyer trois rayons +1 par tranche de quatre <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a> au-delà du <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 11 (pour un maximum de cinq rayons au <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveau</a> 19). Il faut réussir une <a class=\"pagelink\" href=\"Pathfinder-RPG.attaque%20de%20contact%20%c3%a0%20distance.ashx\" title=\"attaque de contact à distance\">attaque de contact à distance</a> pour chaque rayon pour qu'il touche sa cible et inflige 4d6 points de dégâts de feu. Le personnage peut diriger tous les rayons contre une même cible ou les répartir entre plusieurs mais ils doivent tous viser des cibles distantes de moins de 9 mètres (6 <abbr title=\"cases\">c</abbr>) les unes des autres et être tirés simultanément.<br/><br/>À chaque <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a>, au tour du personnage, un nouveau rayon de feu part de chaque créature touchée par le sort au <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">round</a> précédent. Ces nouveaux rayons attaquent comme si c'était le personnage qui les tirait mais partent de la créature précédemment touchée. Le personnage peut choisir ses nouvelles cibles par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20libre.ashx\" title=\"Action libre\">action libre</a> mais elles doivent toutes se trouver à courte portée (7,50 m + 1,50 m/2 <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a>) (5 <abbr title=\"cases\">c</abbr> + 1 <abbr title=\"cases\">c</abbr>/2 <a class=\"pagelink\" href=\"Pathfinder-RPG.niveau.ashx\" title=\"niveau\">niveaux</a>) de leur nouveau point de départ. Les flammes continuent de se propager pendant un total de trois <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a>. Une créature peut être frappée à plusieurs reprises par ce sort au cours de ces trois <a class=\"pagelink\" href=\"Pathfinder-RPG.round.ashx\" title=\"round\">rounds</a> mais jamais par un rayon qui part de sa propre personne.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Player's Guide/Manuel des joueurs - Règles avancées"
+  ],
+  "autres": {},
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    },
+    {
+      "classe": "Occultiste",
+      "slug": "occultiste",
+      "niveau": 6,
+      "niveau_page": 6,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flamme%20contagieuse.ashx",
+    "cache_fichier": "cache/html/6866c5ad7c5ded71fe738734298b4714ae080935.html",
+    "recupere_le": "2026-07-28T22:53:42.328452+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "flamme-contagieuse",
+    "resume_court": "Des rayons de feu qui se propagent entre créatures pendant 3 rounds, infligeant des dégâts à chaque impact.",
+    "categorie_principale": "attaque_directe",
+    "tags": [
+      "degats_directs",
+      "rayon_ou_projectile",
+      "attaque_de_contact",
+      "plusieurs_cibles",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": "feu",
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": "4d6 points de dégâts de feu",
+      "condition_infligee": [],
+      "cible_typique": "Il peut envoyer trois rayons +1 par tranche de quatre niveaux au-delà du niveau 11"
+    },
+    "notes_ambiguite": null,
+    "slug": "flamme-contagieuse",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:16:05+00:00",
+    "hash_source": "0945e12eb458a36fa57556cb49a73b8d70eda8da8b76e880f5be46c5cb2ef240"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "83dfca69197d6618006becc4e8a5e56523462b08b9576f92c5baa5526b9a22d4",
+  "hash_vue": "7db76937faffe6758feeb38fb035933301260d6069dfbb31fe428d6e4fc14fd7"
+}

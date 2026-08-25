@@ -1,0 +1,113 @@
+{
+  "id": "suggestion-programmee",
+  "nom": "Suggestion programmée",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Suggestion%20programm%c3%a9e.ashx",
+  "ecole": "enchantement (coercition)",
+  "descripteurs": [
+    "langage",
+    "mental"
+  ],
+  "niveaux": {
+    "Bard": 3,
+    "Hyp": 3,
+    "Ens/Mag": 4,
+    "Psy": 4,
+    "Sor": 4
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, M (une langue de serpent et un rayon de miel)",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)",
+  "cible": "1 créature vivante",
+  "duree": "1 jour/niveau ou jusqu’à accomplissement",
+  "jet_de_sauvegarde": "Volonté, annule",
+  "resistance_magie": "oui",
+  "description": "Ce sort fonctionne comme suggestion, à la seule différence qu’il s’utilise seulement pour spécifier une condition qui déclenche une activité spéciale et que le sujet ne se souvient pas que le personnage a fait la suggestion. Par exemple, le personnage pourrait utiliser suggestion programmée sur un garde du palais afin qu’il attaque le roi la prochaine fois qu’il se retrouve seul avec lui et le garde ne se souviendrait pas de cette suggestion jusqu’à ce que le déclencheur survienne.",
+  "description_html": "<hr/>\nCe sort fonctionne comme <i><a class=\"pagelink\" href=\"Pathfinder-RPG.suggestion.ashx\" title=\"Suggestion\">suggestion</a></i>, à la seule différence qu’il s’utilise seulement pour spécifier une condition qui déclenche une activité spéciale et que le sujet ne se souvient pas que le personnage a fait la suggestion. Par exemple, le personnage pourrait utiliser suggestion programmée sur un garde du palais afin qu’il attaque le roi la prochaine fois qu’il se retrouve seul avec lui et le garde ne se souviendrait pas de cette suggestion jusqu’à ce que le déclencheur survienne.<br/><br/><br/><br/>",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Class Guide/Manuel des joueurs - Classes avancées",
+    "Mythic Adventures, Mythic Origins/Campagnes mythiques"
+  ],
+  "autres": {
+    "sorts_lies": "Suggestion"
+  },
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Hypnotiseur",
+      "slug": "hypnotiseur",
+      "niveau": 3,
+      "niveau_page": 3,
+      "concordance": true
+    },
+    {
+      "classe": "Psychiste",
+      "slug": "psychiste",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 4,
+      "niveau_page": 4,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Suggestion%20programm%c3%a9e.ashx",
+    "cache_fichier": "cache/html/add72b73100269d4e34fec7eb335ec7cf48cd3c8.html",
+    "recupere_le": "2026-07-29T07:41:28.581745+00:00",
+    "parser_version": "1.0.0"
+  },
+  "enrichissement": {
+    "id": "suggestion-programmee",
+    "resume_court": "Impose une suggestion cachée qui se déclenche à une condition, sans que la cible s'en souvienne.",
+    "categorie_principale": "coercition",
+    "tags": [
+      "charme_ou_coercition",
+      "effet_mental",
+      "jet_de_sauvegarde",
+      "resistance_a_la_magie",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat",
+      "social"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "1 créature vivante"
+    },
+    "notes_ambiguite": null,
+    "slug": "suggestion-programmee",
+    "version_prompt": "p1.5",
+    "version_taxonomie": "taxonomie_v2",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T14:58:50+00:00",
+    "hash_source": "078b65fa0c39c4beafa53415de8583844493681f419182b4213f3f2bee66bc6f"
+  },
+  "statut_enrichissement": "ok",
+  "construit_le": null,
+  "hash_sort": "8db5887956f9ad2cada9c18ec50a9dc0d161739a6f9d15562d1bfccc3ef34e06",
+  "hash_vue": "89d8a2941eb536b9b3c0e30b70c8c9c9b686b586bab758fa3142c54c79cf93bb"
+}

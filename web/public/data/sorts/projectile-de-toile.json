@@ -1,0 +1,114 @@
+{
+  "id": "projectile-de-toile",
+  "nom": "Projectile de toile",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20de%20toile.ashx",
+  "ecole": "Invocation (création)",
+  "descripteurs": [],
+  "niveaux": {
+    "Ens/Mag": 1,
+    "Magus": 1,
+    "San": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action simple",
+  "composantes": "V, G",
+  "portee": "courte (7,50 m + 1,50 m/2 niveaux)/(5 c + 1 c/2 niveaux)",
+  "cible": "boule de toile de la taille d'un poing",
+  "duree": "1 minute/niveau",
+  "jet_de_sauvegarde": "Réflexes, annule",
+  "resistance_magie": "non",
+  "description": "Le lanceur de sorts projette une boule de toile sur une cible, qui doit alors réussir un jet de Réflexes ou être affectée comme si elle était sous les effets d’un sort de toile d’araignée n’occupant que l’espace où se trouve la créature. Si celle-ci réussit son jet ou se libère de la toile, ce qu’il reste de cette toile se dissout et la case occupée n’est pas considérée comme un terrain difficile.\nLe sort n’a aucun effet si la cible n’est pas sur ou adjacente à une surface solide pouvant supporter la toile.",
+  "description_html": "<br/><br/>Le lanceur de sorts projette une boule de toile sur une cible, qui doit alors réussir un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.R%c3%a9flexes.ashx\" title=\"Réflexes\">Réflexes</a> ou être affectée comme si elle était sous les effets d’un sort de <i><a class=\"pagelink\" href=\"Pathfinder-RPG.toile%20daraign%c3%a9e.ashx\" title=\"Toile d'araignée\">toile d’araignée</a></i> n’occupant que l’espace où se trouve la créature. Si celle-ci réussit son jet ou se libère de la toile, ce qu’il reste de cette toile se dissout et la case occupée n’est pas considérée comme un terrain difficile.<br/><br/>Le sort n’a aucun effet si la cible n’est pas sur ou adjacente à une surface solide pouvant supporter la toile.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Magus",
+      "slug": "magus",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sanguin",
+      "slug": "sanguin",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20de%20toile.ashx",
+    "cache_fichier": "cache/html/72bf84b8344ba4cb1173a487971a1c30c663b090.html",
+    "recupere_le": "2026-07-28T23:04:46.087930+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "projectile-de-toile",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Projectile%20de%20toile.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "magus": {
+      "nom": "Magus",
+      "niveau": 1
+    },
+    "sanguin": {
+      "nom": "Sanguin",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "projectile-de-toile",
+    "resume_court": "Une boule de toile immobilise une créature adjacente à une surface solide.",
+    "categorie_principale": "entrave",
+    "tags": [
+      "invocation_ou_creation",
+      "jet_de_sauvegarde",
+      "entrave_ou_immobilisation",
+      "rayon_ou_projectile",
+      "duree_prolongee"
+    ],
+    "roles_tactiques": [
+      "combat"
+    ],
+    "cible_typique": "ennemi",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "Le lanceur de sorts projette une boule de toile sur une cible"
+    },
+    "notes_ambiguite": "Le sort n'inflige pas de dégâts directs mais entrave via une toile. La condition n'est pas nommée explicitement dans le texte fourni (l'effet est décrit comme équivalent à un sort de toile d'araignée), donc aucune condition n'est retenue.",
+    "slug": "projectile-de-toile",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:22:55+00:00",
+    "hash_source": "65fa28b5599a0e7d8435a841ff6aea4d581052c7b34455756f6b630089f751c9"
+  }
+}

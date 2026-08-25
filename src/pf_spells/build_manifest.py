@@ -201,8 +201,8 @@ def construire_manifeste(racine: Path) -> dict:
             "nb_enregistrements": _nb_fichiers(racine / "schemas", "*.json"),
             "schema": None,
             "produit_par_etape": "02",
-            "autorite": "les deux contrats de sortie (sort, ligne de liste de classe)",
-            "description": "JSON Schema Draft 2020-12, validés à l'écriture par les étapes 04, 07, 08, 09.",
+            "autorite": "les contrats de sortie (sort, ligne de liste de classe, enrichissement, index web)",
+            "description": "JSON Schema Draft 2020-12, validés à l'écriture par les étapes 04, 07, 08, 09 et par l'export web.",
         },
         {
             "chemin": "reports/",

@@ -1,0 +1,115 @@
+{
+  "id": "ouvert-ferme",
+  "nom": "Ouvert/fermé",
+  "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ouvertferm%c3%a9.ashx",
+  "ecole": "Illusion (hallucination)",
+  "descripteurs": [],
+  "niveaux": {
+    "Bard": 1,
+    "Ens/Mag": 1,
+    "Inq": 1,
+    "Sor": 1
+  },
+  "temps_incantation": "1 action rapide",
+  "composantes": "V, G, F (un clou de porte, une poignée ou un gond)",
+  "portee": "contact",
+  "cible": "une porte, une fenêtre ou un portail similaire pas ne mesurant pas plus de 3 m sur 3 m",
+  "duree": "1 round/niveau (T)",
+  "jet_de_sauvegarde": "Volonté, dévoile",
+  "resistance_magie": "non",
+  "description": "Le personnage altère l'apparence d'une porte et dissimule le fait qu'elle soit ouverte ou fermée. Il peut faire en sorte que la porte touchée semble être fermée, qu'elle le soit ou non réellement, ou qu'elle semble ouverte, qu'elle le soit ou non réellement. Après avoir lancé le sort, il peut changer d'option par une action de mouvement. Les créatures qui utilisent une action de mouvement pour ouvrir ou fermer la porte peuvent tenter un jet de Volonté pour dévoiler l'illusion.\nQuelque soit l'apparence choisie, les créatures soumises à l'illusion subissent un malus de -5 aux tests de Perception concernant la porte en elle-même et les créatures qui se trouvent de l'autre côté.\nCe sort affecte les fenêtres, les portails et les ouvertures similaires de la même façon que les portes.",
+  "description_html": "<br/><br/>Le personnage altère l'apparence d'une porte et dissimule le fait qu'elle soit ouverte ou fermée. Il peut faire en sorte que la porte touchée semble être fermée, qu'elle le soit ou non réellement, ou qu'elle semble ouverte, qu'elle le soit ou non réellement. Après avoir lancé le sort, il peut changer d'option par une <a class=\"pagelink\" href=\"Pathfinder-RPG.action%20de%20mouvement.ashx\" title=\"Action de mouvement\">action de mouvement</a>. Les créatures qui utilisent une action de mouvement pour ouvrir ou fermer la porte peuvent tenter un jet de <a class=\"pagelink\" href=\"Pathfinder-RPG.Volont%c3%a9.ashx\" title=\"Volonté\">Volonté</a> pour dévoiler l'illusion.<br/><br/>Quelque soit l'apparence choisie, les créatures soumises à l'illusion subissent un malus de -5 aux tests de <a class=\"pagelink\" href=\"Pathfinder-RPG.Perception.ashx\" title=\"Perception\">Perception</a> concernant la porte en elle-même et les créatures qui se trouvent de l'autre côté.<br/><br/>Ce sort affecte les fenêtres, les portails et les ouvertures similaires de la même façon que les portes.",
+  "mythique": null,
+  "variantes": [],
+  "sources": [
+    "Ultimate Intrigue/Art de l'intrigue"
+  ],
+  "classes": [
+    {
+      "classe": "Arcaniste/Ensorceleur/Magicien",
+      "slug": "arcaniste-ensorceleur-magicien",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Barde",
+      "slug": "barde",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Inquisiteur",
+      "slug": "inquisiteur",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    },
+    {
+      "classe": "Sorcière",
+      "slug": "sorciere",
+      "niveau": 1,
+      "niveau_page": 1,
+      "concordance": true
+    }
+  ],
+  "meta": {
+    "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ouvertferm%c3%a9.ashx",
+    "cache_fichier": "cache/html/4af10908da5f62921bd02bdae072df27ae2df603.html",
+    "recupere_le": "2026-07-28T23:02:15.855417+00:00",
+    "parser_version": "1.0.0"
+  },
+  "slug": "ouvert-ferme",
+  "url_source": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ouvertferm%c3%a9.ashx",
+  "niveaux_par_classe": {
+    "arcaniste-ensorceleur-magicien": {
+      "nom": "Arcaniste/Ensorceleur/Magicien",
+      "niveau": 1
+    },
+    "barde": {
+      "nom": "Barde",
+      "niveau": 1
+    },
+    "inquisiteur": {
+      "nom": "Inquisiteur",
+      "niveau": 1
+    },
+    "sorciere": {
+      "nom": "Sorcière",
+      "niveau": 1
+    }
+  },
+  "desaccords": [],
+  "enrichissement": {
+    "id": "ouvert-ferme",
+    "resume_court": "Une illusion qui dissimule l'état ouvert ou fermé d'une porte, fenêtre ou portail.",
+    "categorie_principale": "illusion",
+    "tags": [
+      "illusion_visuelle_ou_sonore",
+      "jet_de_sauvegarde",
+      "objet_ou_equipement",
+      "duree_prolongee",
+      "malus_chiffre"
+    ],
+    "roles_tactiques": [
+      "exploration",
+      "combat"
+    ],
+    "cible_typique": "objet",
+    "type_degats": null,
+    "condition_infligee": [],
+    "preuves": {
+      "type_degats": null,
+      "condition_infligee": [],
+      "cible_typique": "une porte, une fenêtre ou un portail similaire"
+    },
+    "notes_ambiguite": null,
+    "slug": "ouvert-ferme",
+    "version_prompt": "p1.4",
+    "version_taxonomie": "taxonomie_v1",
+    "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "genere_le": "2026-07-30T13:19:39+00:00",
+    "hash_source": "10710a9180beb07973cc7d11e09e54391eee537043d51ee7c959da8767af69b4"
+  }
+}
