@@ -40,9 +40,6 @@ const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const CHEMIN_SCHEMA = resolve(RACINE, 'schemas/web_index.schema.json')
 const CHEMIN_DEFAUT = resolve(RACINE, 'web/public/data/index.json')
 
-/** Same ceiling as `BUDGET_GZIP_OCTETS` in `pf_spells.export_web`. */
-const BUDGET_GZIP_OCTETS = 400 * 1024
-
 const U_FFFD = '�'
 
 interface Entree {
@@ -296,13 +293,11 @@ function main(argv: readonly string[]): number {
 
   const octets = Buffer.from(brut, 'utf8')
   // level 9 and no timestamp: the measured size must be a function of the content
-  // alone, matching what the Python exporter reports.
-  const gzip = gzipSync(octets, { level: 9 })
-  const tailleGzip = gzip.byteLength
-  const depasse = tailleGzip > BUDGET_GZIP_OCTETS
+  // alone, matching what the Python exporter reports. Reported, never enforced —
+  // there is no weight ceiling anywhere in this repository, by decision.
+  const tailleGzip = gzipSync(octets, { level: 9 }).byteLength
 
   const ko = (n: number): string => `${(n / 1024).toFixed(1)} kB`
-  const part = ((tailleGzip / BUDGET_GZIP_OCTETS) * 100).toFixed(1)
 
   console.log(`index      : ${relative(RACINE, chemin).replaceAll('\\', '/')}`)
   console.log(`version    : ${index.version}`)
@@ -316,16 +311,7 @@ function main(argv: readonly string[]): number {
   )
   console.log(`désaccords : ${index.sorts.filter((s) => s.d).length}`)
   console.log(`brut       : ${ko(octets.byteLength)}`)
-  console.log(
-    `gzip       : ${ko(tailleGzip)} / ${ko(BUDGET_GZIP_OCTETS)} de budget (${part} %)`,
-  )
-
-  if (depasse) {
-    echec(
-      `budget dépassé : ${tailleGzip} octets gzippés contre un plafond de ` +
-        `${BUDGET_GZIP_OCTETS}. Un index hors budget est un échec, pas un avertissement.`,
-    )
-  }
+  console.log(`gzip       : ${ko(tailleGzip)}`)
 
   if (echecs.length > 0) {
     console.error(`\nÉCHEC — ${echecs.length} contrôle(s) en défaut :`)
@@ -333,7 +319,7 @@ function main(argv: readonly string[]): number {
     return 1
   }
 
-  console.log('\nOK — contrat respecté, budget tenu.')
+  console.log('\nOK — contrat respecté. Le poids ci-dessus est indicatif, aucun plafond.')
   return 0
 }
 

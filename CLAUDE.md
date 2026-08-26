@@ -192,16 +192,17 @@ npm run web:verifier    # budgets bloquants + axe-core sur 4 routes
 npm run verifier:tout   # la chaîne complète, dans l'ordre où la CI la lance
 ```
 
-Budgets **bloquants**, jamais des avertissements, et le JS mesuré en **brotli** —
-ce que le CDN sert ; le gzip est imprimé pour information seulement. `index.json`
-< 400 kB gzip (à 82), pages générées == `|index.sorts|`, et le JS client scindé en
-deux lignes parce qu'un total unique mesurait la version de Next, pas ce dépôt :
-**socle** commun aux quatre routes < 175 kB (à **161,1**), qu'aucun code
-applicatif ne fait baisser et qui ne bouge que sur mise à jour du framework ;
-**applicatif** par route < 25 kB (navigation à **9,3**, la plus lourde). Le moteur
-de recherche est chargé à la demande, et `verifier_build.ts` échoue si l'`import()`
-redevient statique — comme il échoue si son empreinte ne matche plus rien, un
-contrôle vert à vide étant pire que pas de contrôle.
+**Aucun budget de poids, nulle part — retirés le 2026-08-26 par arbitrage humain.**
+Les performances sont explicitement secondaires ici : il n'y a plus de plafond sur
+`index.json` (ni dans `export_web.py`, ni dans le contrat), plus de plafond de JS
+client par route, et plus d'assertion de durée dans `moteur.test.ts`. Les poids sont
+**mesurés et imprimés, jamais opposés à un seuil** — 82 kB gzip pour `index.json`,
+170 kB brotli de JS sur la navigation, dont 161 de framework. La dérive que ces
+budgets attrapaient n'est donc plus attrapée, **délibérément** ; ne pas les
+réintroduire au motif qu'un chiffre a monté. Ce qui reste bloquant ne concerne pas
+le poids mais la complétude : pages générées == `|index.sorts|`, `alias.json`
+présent, `/data/index.json` publié et identique à sa source. Le moteur de recherche
+reste chargé à la demande parce que c'est gratuit, non parce qu'on le mesure.
 `web/out/` n'est pas committé. Déploiement Vercel : racine `web/`, `web/vercel.json`,
 `immutable` sur `/_next/static/` et `/fonts/` mais **pas** sur `/data/*.json`, dont
 l'URL est stable d'un export au suivant.

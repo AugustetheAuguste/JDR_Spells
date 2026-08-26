@@ -1,39 +1,26 @@
 /**
- * Measure the built site against blocking budgets.
+ * Check the built site for completeness, and report its weight for information.
  *
- * This runs on `web/out/`, after `next build`, and it exists because the two
- * numbers that decide whether the site is usable are invisible from the source:
- * how many pages actually got generated, and how much JavaScript a visitor
- * actually downloads before the first keystroke works.
+ * This runs on `web/out/`, after `next build`, and what it enforces is that the
+ * output is *complete* — nothing here enforces a size.
  *
- * The page count is the one that catches a silent data regression. A spell that
- * falls out of the index does not error — `generateStaticParams` simply enumerates
- * one fewer entry, the build succeeds, and a URL that used to work 404s. Comparing
- * against `|index.sorts|` turns that into a build failure.
+ * The page count is the check that matters. A spell that falls out of the index
+ * does not error — `generateStaticParams` simply enumerates one fewer entry, the
+ * build succeeds, and a URL that used to work 404s. Comparing against
+ * `|index.sorts|` turns that into a build failure.
  *
- * The JS budget is measured per route, from the HTML, by summing every script the
- * document actually loads. Next 16 no longer prints per-route sizes, and reading a
- * build manifest would measure what the bundler intended; reading the emitted
- * `<script src>` list measures what the browser will fetch.
+ * Weight is measured and printed, never enforced. There was a blocking budget here
+ * — 200 kB gzip of client JS per route, later split into a framework floor and a
+ * per-route ceiling — and it was removed deliberately: performance is explicitly
+ * secondary for this project, and a threshold nobody intends to defend is worse
+ * than no threshold, because it fails builds for reasons the author does not care
+ * about. The numbers are still printed because they cost nothing to compute and a
+ * tenfold jump is worth seeing; seeing it is all this script now does about it.
  *
- * Two things about that measurement were wrong until now, and both made it report
- * a number nobody experiences.
- *
- * It weighed gzip. Vercel serves brotli, and on this bundle the gap is 25 kB —
- * six times the margin the old ceiling appeared to leave. A budget must be
- * denominated in the bytes that cross the wire, so the ceilings below are brotli;
- * gzip is still printed, as the floor for a hypothetical client that cannot do
- * better.
- *
- * It was a single per-route total, and 95 % of that total is React and the Next
- * router. So the budget tracked the version of Next, not this repository: a Next
- * upgrade could fail CI with no source change, while the application code could
- * grow several times over without moving the number much. It is therefore split
- * in two — a floor for the shared framework chunks, which moves only on upgrade,
- * and a per-route budget for the chunks this repository actually writes, which is
- * the one a new view or a new dependency has to answer to.
- *
- * Budgets are blocking. A warning ignored three times is a permanent regression.
+ * Measured from the HTML, by summing every script the document actually loads.
+ * Reading a build manifest would measure what the bundler intended; reading the
+ * emitted `<script src>` list measures what the browser will fetch. Both codecs are
+ * shown, brotli being what a CDN actually serves.
  *
  * Usage: tsx scripts/verifier_build.ts [--racine-web web]
  */
@@ -44,54 +31,6 @@ import { fileURLToPath } from 'node:url'
 import { brotliCompressSync, gzipSync } from 'node:zlib'
 
 const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-
-/** Same ceiling as `BUDGET_GZIP_OCTETS` in `pf_spells.export_web` and in
- * `check_data_contract.ts`. Three readers, one number, stated three times — but
- * the alternative is a shared module that only this script would import. */
-const BUDGET_INDEX_GZIP = 400 * 1024
-
-/**
- * Ceiling for the chunks shared by every route — React, the Flight client, the
- * app router. Brotli.
- *
- * This is a witness value, not an aspiration: it is what the framework weighs
- * today (161 kB) plus room for a minor upgrade. Nothing this repository writes can
- * bring it down; only leaving React would, which is a rewrite and not an
- * optimisation. Its job is to make a framework regression a visible event —
- * a Next release that adds 30 kB to every page should stop the build and be
- * decided on, not absorbed silently into a total nobody reads.
- *
- * Raising it is legitimate. Raising it without saying why, in the commit that
- * raises it, is how a budget becomes decoration.
- */
-const BUDGET_SOCLE_BROTLI = 175 * 1024
-
-/**
- * Ceiling for the route-specific chunks — the code this repository writes.
- * Brotli, per route.
- *
- * The heaviest route sits at 9.3 kB, so this is deliberately loose: it is sized to
- * admit a real feature (the search suggestion combobox, a second index) and still
- * refuse a bundled UI library. That is the whole point of splitting the budget —
- * this number is the one a pull request can actually move, so it is the one worth
- * measuring.
- */
-const BUDGET_ROUTE_BROTLI = 25 * 1024
-
-/**
- * The search engine must stay out of every route's initial payload.
- *
- * `VueNavigation` imports `lib/recherche/moteur` as a type and then via `import()`,
- * precisely so MiniSearch lands in its own chunk (5.4 kB brotli, fetched on the
- * first keystroke). Nothing in the type system enforces that: turning the dynamic
- * import into a static one compiles, passes every test, and quietly adds those
- * kilobytes to all four routes — a regression with no symptom, which is the kind
- * this file exists to catch.
- *
- * Matched on the minified class name rather than a module path, because Turbopack
- * emits no `node_modules/` comment in production output.
- */
-const EMPREINTE_MOTEUR = 'MiniSearch'
 
 /** The three routes the plan names, and the ones with genuinely distinct
  * bundles: the navigation view, one spell sheet, the comparison view. Favourites
@@ -181,22 +120,6 @@ function peserChunks(racineOut: string, urls: readonly string[]): Poids {
   return somme(poids)
 }
 
-/**
- * The chunks loaded by *every* route.
- *
- * This is the operational definition of "framework" used by the budget: not a
- * hardcoded list of `react-dom` filenames, which the next Turbopack release would
- * silently invalidate, but whatever the four routes have in common. A chunk that
- * only some routes load is application code by construction, and a shared chunk
- * that this repository put there — a provider in `layout.tsx`, say — counts
- * against the framework floor, which is the honest place for it: every visitor
- * downloads it on every page.
- */
-function chunksCommuns(parRoute: ReadonlyMap<string, readonly string[]>): ReadonlySet<string> {
-  const listes = [...parRoute.values()]
-  const premiere = listes[0] ?? []
-  return new Set(premiere.filter((url) => listes.every((liste) => liste.includes(url))))
-}
 
 function main(argv: readonly string[]): number {
   const rangRacine = argv.indexOf('--racine-web')
@@ -238,15 +161,8 @@ function main(argv: readonly string[]): number {
     )
   }
 
-  // --- poids des données -------------------------------------------------
-  const gzipIndex = pesee(brutIndex)
-  console.log(
-    `index gzip : ${ko(gzipIndex)} / ${ko(BUDGET_INDEX_GZIP)} ` +
-      `(${((gzipIndex / BUDGET_INDEX_GZIP) * 100).toFixed(1)} %)`,
-  )
-  if (gzipIndex > BUDGET_INDEX_GZIP) {
-    echec(`index.json hors budget : ${gzipIndex} octets gzippés > ${BUDGET_INDEX_GZIP}.`)
-  }
+  // --- poids des données, pour information --------------------------------
+  console.log(`index gzip : ${ko(pesee(brutIndex))}`)
 
   const cheminAlias = join(racineWeb, 'public/data/alias.json')
   if (existsSync(cheminAlias)) {
@@ -256,93 +172,20 @@ function main(argv: readonly string[]): number {
     echec('alias.json absent : la recherche le charge au démarrage.')
   }
 
-  // --- poids du JS client ------------------------------------------------
-  // Toutes les routes sont relevées d'abord : la partition socle / applicatif est
-  // définie par ce que les routes ont en commun, donc aucune ne peut être pesée
-  // avant que toutes soient lues.
-  const parRoute = new Map<string, readonly string[]>()
+  // --- poids du JS client, pour information -------------------------------
+  // La seule chose encore bloquante ici est un script référencé mais absent de la
+  // sortie : ce n'est pas un problème de poids, c'est un build cassé.
   for (const route of ROUTES) {
     const chemin = join(racineOut, route.chemin)
     if (!existsSync(chemin)) {
       echec(`route absente de la sortie : ${route.chemin}`)
       continue
     }
-    parRoute.set(route.nom, scriptsCharges(readFileSync(chemin, 'utf8')))
-  }
-
-  if (parRoute.size === ROUTES.length) {
-    const communs = chunksCommuns(parRoute)
-    const socle = peserChunks(racineOut, [...communs])
+    const urls = scriptsCharges(readFileSync(chemin, 'utf8'))
+    const poids = peserChunks(racineOut, urls)
     console.log(
-      `\njs ${'socle'.padEnd(11)}: ${ko(socle.brotli)} brotli / ${ko(BUDGET_SOCLE_BROTLI)} ` +
-        `(${((socle.brotli / BUDGET_SOCLE_BROTLI) * 100).toFixed(1)} %, ` +
-        `${ko(socle.gzip)} gzip, ${communs.size} fragment(s)) — React + routeur Next`,
-    )
-    if (socle.brotli > BUDGET_SOCLE_BROTLI) {
-      echec(
-        `socle commun hors budget : ${socle.brotli} octets brotli > ${BUDGET_SOCLE_BROTLI}. ` +
-          'Aucun code applicatif ne le fera baisser — vérifier ce qu’une mise à jour du ' +
-          'framework a ajouté, ou ce qu’un composant partagé a fait remonter dans le socle.',
-      )
-    }
-
-    for (const route of ROUTES) {
-      const urls = parRoute.get(route.nom) ?? []
-      const propres = urls.filter((url) => !communs.has(url))
-      const applicatif = peserChunks(racineOut, propres)
-      const total = peserChunks(racineOut, urls)
-      console.log(
-        `js ${route.nom.padEnd(11)}: ${ko(applicatif.brotli)} brotli / ` +
-          `${ko(BUDGET_ROUTE_BROTLI)} ` +
-          `(${((applicatif.brotli / BUDGET_ROUTE_BROTLI) * 100).toFixed(1)} %, ` +
-          `${propres.length} fragment(s)) — total page ${ko(total.brotli)} brotli, ` +
-          `${ko(total.gzip)} gzip`,
-      )
-      if (applicatif.brotli > BUDGET_ROUTE_BROTLI) {
-        echec(
-          `route ${route.nom} hors budget applicatif : ${applicatif.brotli} octets ` +
-            `brotli > ${BUDGET_ROUTE_BROTLI}. Charger à la demande ce dont la première ` +
-            'frappe n’a pas besoin, comme le moteur de recherche l’est déjà.',
-        )
-      }
-    }
-  }
-
-  // --- le moteur reste chargé à la demande -------------------------------
-  const chargesPartout = new Set([...parRoute.values()].flat())
-  const entreesFautives = [...chargesPartout].filter((url) => {
-    const chemin = join(racineOut, url)
-    return existsSync(chemin) && readFileSync(chemin, 'utf8').includes(EMPREINTE_MOTEUR)
-  })
-  const cheminChunks = join(racineOut, '_next/static/chunks')
-  const differe = existsSync(cheminChunks)
-    ? readdirSync(cheminChunks).filter(
-        (nom) =>
-          nom.endsWith('.js') &&
-          !chargesPartout.has(`/_next/static/chunks/${nom}`) &&
-          readFileSync(join(cheminChunks, nom), 'utf8').includes(EMPREINTE_MOTEUR),
-      )
-    : []
-
-  console.log(
-    `moteur     : ${differe.length} fragment(s) différé(s), ` +
-      `${entreesFautives.length} dans le payload initial`,
-  )
-  if (entreesFautives.length > 0) {
-    echec(
-      `le moteur de recherche est dans le payload initial de ${entreesFautives.length} ` +
-        'fragment(s) chargé(s) d’emblée : l’import dynamique de `lib/recherche/moteur` ' +
-        'est devenu statique.',
-    )
-  }
-  // A vacuously green check is worse than no check: if the fingerprint stops
-  // matching — a MiniSearch major that renames the class, a bundler that mangles
-  // it — the search above finds nothing anywhere and reports success.
-  if (differe.length === 0) {
-    echec(
-      `empreinte « ${EMPREINTE_MOTEUR} » introuvable dans les fragments différés : ` +
-        'le contrôle du chargement à la demande ne mesure plus rien. Réaligner ' +
-        '`EMPREINTE_MOTEUR` sur la sortie du bundler.',
+      `js ${route.nom.padEnd(11)}: ${ko(poids.brotli)} brotli, ${ko(poids.gzip)} gzip ` +
+        `(${urls.length} fragment(s))`,
     )
   }
 
@@ -360,7 +203,7 @@ function main(argv: readonly string[]): number {
     return 1
   }
 
-  console.log('\nOK — pages complètes, budgets tenus.')
+  console.log('\nOK — pages complètes. Les poids ci-dessus sont indicatifs, aucun plafond.')
   return 0
 }
 

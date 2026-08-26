@@ -94,22 +94,15 @@ cassent la production :
 - **Le comportement en fichiers plats** : les URL sans barre finale, les 404, les
   préchargements RSC. `docs/deploiement.md` les liste comme non vérifiés.
   Regarder la prévisualisation Vercel, pas seulement `localhost`.
-- **Les budgets.** Ils sont bloquants exprès, et mesurés en **brotli** — ce que
-  Vercel sert réellement. Le JS client est budgété en deux lignes distinctes,
-  parce que 95 % du poids d'une page est du framework et qu'un total unique
-  mesurait la version de Next plutôt que ce dépôt :
-  - le **socle** commun aux quatre routes (React + routeur Next) est à
-    **161,1 kB** sur 175 ; aucun code applicatif ne le fera baisser, et il ne
-    bouge que sur mise à jour du framework — un dépassement est un événement à
-    examiner, pas à absorber ;
-  - l'**applicatif** par route est à **9,3 kB** au plus (navigation) sur 25.
-    C'est la ligne qu'une PR peut réellement déplacer, donc celle à surveiller :
-    elle admet une vraie fonctionnalité, elle refuse une bibliothèque d'UI
-    empaquetée.
-
-  La recherche est chargée à la demande (5,4 kB brotli hors du payload initial)
-  et `verifier_build.ts` échoue si l'`import()` dynamique redevient statique —
-  une régression qui compile, passe les tests et ne se voit nulle part ailleurs.
+- **Il n'y a plus de budget de poids** — tous retirés le 2026-08-26 par arbitrage
+  humain, les performances étant explicitement secondaires sur ce projet. Ni
+  plafond sur `index.json`, ni plafond de JS client, ni assertion de durée dans
+  les tests du moteur. `verifier_build.ts` et `check_data_contract.ts` **impriment**
+  les poids sans les opposer à quoi que ce soit ; ce qu'ils bloquent encore est la
+  complétude de la sortie, pas sa taille. Pour mémoire, l'état au moment du
+  retrait : 82 kB gzip d'index, 170 kB brotli de JS sur la navigation dont 161 de
+  framework. Un chiffre qui monte n'est donc plus un échec de CI — et ce n'est pas
+  une raison pour réintroduire un seuil.
 
 ## 6. Les règles du site qu'on ne rediscute pas
 
