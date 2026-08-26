@@ -21,7 +21,7 @@ import type { IndexWeb } from '@/lib/donnees/index-web'
 /** The real export, 2070 spells. */
 export const CHEMIN_INDEX_REEL = join(process.cwd(), 'public', 'data', 'index.json')
 
-/** The frozen 24-spell fixture, used by tests and by the `/_design` route. */
+/** The frozen 24-spell fixture, used by tests. */
 export const CHEMIN_INDEX_FIXTURE = join(process.cwd(), 'fixtures', 'index.json')
 
 export function chargerIndex(chemin: string = CHEMIN_INDEX_REEL): IndexWeb {
