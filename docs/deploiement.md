@@ -53,7 +53,9 @@ python - <<'EOF'
 import json, jsonschema
 schema = json.load(open('build/vercel.schema.json', encoding='utf-8'))
 conf = json.load(open('web/vercel.json', encoding='utf-8'))
-print(len(sorted(jsonschema.Draft7Validator(schema).iter_errors(conf))), "erreur(s)")
+Validator = jsonschema.validators.validator_for(schema)
+Validator.check_schema(schema)
+print(len(list(Validator(schema).iter_errors(conf))), "erreur(s)")
 EOF
 ```
 
