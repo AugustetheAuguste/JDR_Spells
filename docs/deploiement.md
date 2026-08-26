@@ -28,6 +28,23 @@ pathfinder-fr.org — est publiquement téléchargeable. Ce n'est plus un index 
 consultation qui renvoie au wiki, c'est une republication de ses octets. Corriger
 *Root Directory* suffit à l'exclure, `cache/` n'entrant jamais dans le build.
 
+## `outputDirectory` est absent, et doit le rester
+
+Tentation naturelle avec `output: 'export'` : déclarer `"outputDirectory": "out"`,
+puisque c'est bien là qu'atterrit l'export. **C'est un échec de build**, observé le
+2026-08-26 :
+
+```
+The file "/vercel/path0/web/out/routes-manifest.json" couldn't be found.
+```
+
+`framework: "nextjs"` et `outputDirectory` ne se composent pas : le constructeur
+Next de Vercel cherche ses manifestes *dans* le répertoire nommé, et
+`routes-manifest.json` est produit dans `.next`, jamais dans `out/`. Vercel gère
+`output: 'export'` nativement — il lit `.next`, y constate l'export et publie
+l'arbre statique lui-même. Nommer le répertoire ne l'aide pas, ça lui retire la
+détection. Le laisser au défaut n'est donc pas un oubli.
+
 ## Aucun secret, par construction
 
 `output: 'export'` : pas de fonction, pas de base, aucune variable
