@@ -36,6 +36,10 @@ describe('lireEtatComparaison', () => {
     expect(lire('?classes=barde,druide&mode=partages')).toEqual({
       classes: ['barde', 'druide'],
       mode: 'partages',
+      tags: [],
+      tagsExclus: [],
+      tri: null,
+      sens: 'asc',
     })
   })
 
@@ -47,6 +51,10 @@ describe('lireEtatComparaison', () => {
     expect(lire('?classes=barde,ensorceleur&mode=partages', REEL)).toEqual({
       classes: ['barde'],
       mode: 'partages',
+      tags: [],
+      tagsExclus: [],
+      tri: null,
+      sens: 'asc',
     })
     expect(
       lire('?classes=barde,arcaniste-ensorceleur-magicien&mode=exclusifs', REEL).classes,
@@ -94,28 +102,28 @@ describe('ecrireEtatComparaison', () => {
   it('omet les clés vides et le mode par défaut', () => {
     expect(ecrireEtatComparaison(ETAT_COMPARAISON_VIDE).toString()).toBe('')
     expect(versQueryComparaison(ETAT_COMPARAISON_VIDE)).toBe('')
-    expect(versQueryComparaison({ classes: ['barde', 'druide'], mode: 'partages' })).toBe(
+    expect(versQueryComparaison({ ...ETAT_COMPARAISON_VIDE, classes: ['barde', 'druide'], mode: 'partages' })).toBe(
       '?classes=barde%2Cdruide',
     )
   })
 
   it('écrit un mode non défaut', () => {
-    expect(versQueryComparaison({ classes: ['barde'], mode: 'exclusifs' })).toBe(
+    expect(versQueryComparaison({ ...ETAT_COMPARAISON_VIDE, classes: ['barde'], mode: 'exclusifs' })).toBe(
       '?classes=barde&mode=exclusifs',
     )
   })
 
   it('sérialise un état en une seule chaîne, quel que soit le chemin pris', () => {
-    const etat: EtatComparaison = { classes: ['barde', 'druide'], mode: 'tous' }
+    const etat: EtatComparaison = { ...ETAT_COMPARAISON_VIDE, classes: ['barde', 'druide'], mode: 'tous' }
     expect(versQueryComparaison(etat)).toBe(versQueryComparaison({ ...etat }))
   })
 
   it('fait un aller-retour sans perte', () => {
     const etats: EtatComparaison[] = [
       ETAT_COMPARAISON_VIDE,
-      { classes: ['barde'], mode: 'tous' },
-      { classes: ['barde', 'druide'], mode: 'exclusifs' },
-      { classes: ['occultiste', 'druide', 'barde'], mode: 'partages' },
+      { ...ETAT_COMPARAISON_VIDE, classes: ['barde'], mode: 'tous' },
+      { ...ETAT_COMPARAISON_VIDE, classes: ['barde', 'druide'], mode: 'exclusifs' },
+      { ...ETAT_COMPARAISON_VIDE, classes: ['occultiste', 'druide', 'barde'], mode: 'partages' },
     ]
     for (const etat of etats) {
       expect(lire(versQueryComparaison(etat))).toEqual(etat)

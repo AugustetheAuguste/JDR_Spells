@@ -214,7 +214,13 @@ describe('l\'accord entre le pliage TypeScript et l\'artefact produit par Python
   })
 })
 
-describe('le budget de performance', () => {
+// No timing is asserted here any more: the performance gates were removed on
+// 2026-08-26 by decision — performance is secondary for this project, and a
+// wall-clock threshold on a machine under parallel-worker contention fails on load
+// rather than on a regression. What survives exercises the engine at the real
+// corpus size, which has its own value, and prints its timings for whoever cares
+// to look.
+describe('le moteur à l’échelle du corpus', () => {
   function corpusSynthetique(n: number): IndexWeb {
     const sorts: EntreeSort[] = Array.from({ length: n }, (_, i) => {
       const nom = `Sort synthétique numéro ${i} d'épreuve`
@@ -237,34 +243,24 @@ describe('le budget de performance', () => {
     return { ...FIXTURE, sorts }
   }
 
-  it('construit un index sur 2070 entrées sous le budget, mesuré', () => {
-    // 150 ms is the mid-range-mobile budget from the plan; CI runs on a faster
-    // machine, so this guards an order of magnitude, not a millisecond. The
-    // measurement is printed because a budget nobody reads is a budget nobody
-    // notices creeping.
+  it('construit un index sur 2070 entrées', () => {
     const index = corpusSynthetique(2070)
     const debut = performance.now()
     const moteur = construireMoteur(index, null)
     const duree = performance.now() - debut
     console.log(`construction de l'index sur 2070 entrées : ${duree.toFixed(1)} ms`)
     expect(moteur.taille).toBe(2070)
-    expect(duree).toBeLessThan(1500)
   })
 
-  it('répond à une requête sous le budget, mesuré', () => {
-    // 16 ms — one frame — is the budget from the plan, and the printed figure is
-    // what to read against it: 3 to 10 ms on this machine. The ASSERTION is an
-    // order of magnitude above it, like the index one above and for a sharper
-    // reason: eight other test files run in parallel workers, and under that
-    // contention the same code measures 18 to 23 ms. A gate at 16 ms therefore
-    // failed on load rather than on a regression — a flaky budget is a budget
-    // that gets deleted, so it guards the order of magnitude instead.
+  it('répond à une requête sur 2070 entrées', () => {
     const moteur = construireMoteur(corpusSynthetique(2070), null)
     moteur.chercher('synthetique') // warm-up, so the first-call cost is not measured
     const debut = performance.now()
     for (let n = 0; n < 20; n += 1) moteur.chercher(`numero ${n}`)
     const parRequete = (performance.now() - debut) / 20
     console.log(`requête moyenne sur 2070 entrées : ${parRequete.toFixed(2)} ms`)
-    expect(parRequete).toBeLessThan(160)
+    // Le résultat, lui, reste vérifié : une requête qui ne rend rien à cette
+    // échelle est un défaut, indépendamment du temps qu'elle met.
+    expect(moteur.chercher('numero 42')).not.toStrictEqual([])
   })
 })

@@ -20,6 +20,7 @@ import {
   type EtatUrl,
 } from '@/lib/navigation/etat-url'
 import { trierParNiveauPuisNom } from '@/lib/navigation/niveaux'
+import { prochainTri, trierParColonne, estColonneTri } from '@/lib/navigation/tri'
 import { appliquerFiltres } from '@/lib/recherche/filtres'
 // Type-only: the engine module pulls MiniSearch in, and a value import here would
 // put it in the entry chunk. `import type` is erased, so this costs nothing.
@@ -39,11 +40,11 @@ import type { Moteur, TableAlias } from '@/lib/recherche/moteur'
  * `/data/index.json` once lets it be cached like the static asset it is.
  *
  * The search engine is imported dynamically for the same reason, one level down:
- * MiniSearch is ~11 kB gzipped and cannot do anything until the index has arrived,
- * so shipping it in the entry chunk buys nothing and this route is the one closest
- * to the 200 kB budget. It loads in parallel with the fetch it depends on, so no
- * user-visible wait is added — and it introduces no new « not ready » state,
- * because a null engine already meant « the index has not landed ».
+ * MiniSearch cannot do anything until the index has arrived, so shipping it in the
+ * entry chunk buys nothing. It loads in parallel with the fetch it depends on, so
+ * no user-visible wait is added — and it introduces no new « not ready » state,
+ * because a null engine already meant « the index has not landed ». No budget
+ * enforces this any more; it stays because it is free, not because it is measured.
  */
 
 /** The dynamically imported factory. Held in state as a value, hence the
@@ -141,19 +142,31 @@ export function VueNavigation() {
     const filtres = versFiltres(etat, index)
     const trouves = etat.q === '' ? null : (moteur?.chercher(etat.q, 2070) ?? null)
     if (trouves === null) {
+      const gardes = appliquerFiltres(index.sorts, filtres)
       return {
-        resultats: trierParNiveauPuisNom(index, appliquerFiltres(index.sorts, filtres), etat.classe),
+        // A clicked column wins over the default level order; with no column
+        // clicked the table keeps the order a spell list is read in.
+        resultats:
+          etat.tri === null
+            ? trierParNiveauPuisNom(index, gardes, etat.classe)
+            : trierParColonne(index, gardes, etat.tri, etat.sens, etat.classe),
         viaAlias: new Set<string>(),
       }
     }
-    // With a query, the search order IS the ranking; filters cull it without
-    // re-sorting, or the relevance the engine computed would be thrown away.
+    // With a query and no column clicked, the search order IS the ranking; filters
+    // cull it without re-sorting, or the relevance the engine computed would be
+    // thrown away. Clicking a header is an explicit request to override that — the
+    // reader asked for « by range », not « by relevance, then by range ».
     const parId = new Map(index.sorts.map((sort) => [sort.id, sort]))
     const ordonnes = trouves
       .map((resultat) => parId.get(resultat.id))
       .filter((sort): sort is EntreeSort => sort !== undefined)
+    const gardes = appliquerFiltres(ordonnes, filtres)
     return {
-      resultats: appliquerFiltres(ordonnes, filtres),
+      resultats:
+        etat.tri === null
+          ? gardes
+          : trierParColonne(index, gardes, etat.tri, etat.sens, etat.classe),
       viaAlias: new Set(trouves.filter((r) => r.via === 'alias').map((r) => r.id)),
     }
   }, [index, moteur, etat])
@@ -190,7 +203,7 @@ export function VueNavigation() {
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Sorts</h1>
-      <p className="mt-1 mb-4 text-base text-encre-douce">
+      <p className="mt-1 mb-4 text-corps text-encre-douce">
         {index.sorts.length} sorts du wiki francophone.{' '}
         <span className="text-encre-faible">
           Un niveau n’existe que relativement à une classe.
@@ -255,6 +268,21 @@ export function VueNavigation() {
                 classe={etat.classe}
                 index={index}
                 sorts={resultats.slice(0, visibles)}
+                tri={{
+                  colonne: etat.tri,
+                  sens: etat.sens,
+                  // The header hands back a column key; `estColonneTri` is the
+                  // guard that keeps a key the URL cannot spell from becoming
+                  // state nobody can share or clear.
+                  surColonne: (cle) => {
+                    if (!estColonneTri(cle)) return
+                    const suivant = prochainTri(etat.tri, etat.sens, cle)
+                    // Named explicitly: `prochainTri` speaks of a `colonne`, the
+                    // URL state of a `tri`, and spreading it would add a key the
+                    // state does not have while leaving `tri` untouched.
+                    ecrire({ ...etat, tri: suivant.colonne, sens: suivant.sens })
+                  },
+                }}
                 viaAlias={viaAlias}
               />
               {/* Paging rather than a virtualizer: a windowed table breaks

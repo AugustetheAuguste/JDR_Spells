@@ -13,6 +13,14 @@ import type { KeyboardEvent, ReactNode } from 'react'
  * Generic over the row type so callers keep their own shape; `cle` must be
  * stable, and for spells that is the slug.
  */
+/** A sortable header's state. `null` means "this table is in its own order". */
+export interface EtatTriTable {
+  readonly colonne: string | null
+  readonly sens: 'asc' | 'desc'
+  /** Called with the clicked column's `cle`; the caller decides what comes next. */
+  readonly surColonne: (cle: string) => void
+}
+
 export interface ColonneDense<T> {
   readonly cle: string
   readonly entete: string
@@ -24,6 +32,25 @@ export interface ColonneDense<T> {
   readonly secondaire?: boolean
   readonly alignement?: 'gauche' | 'droite'
   readonly largeur?: string
+  /** Opt-in. A header only becomes a button when the caller can actually sort on
+   * it, because a control that does nothing is worse than no control. */
+  readonly triable?: boolean
+}
+
+/**
+ * The sort indicator.
+ *
+ * A glyph and not a coloured header: colour is never the sole carrier of
+ * information here, and `aria-sort` on the `th` already tells a screen reader the
+ * state — the arrow is for everyone else. An unsorted sortable column shows a
+ * faint neutral mark so that it is discoverable as clickable before the click.
+ */
+function FlecheTri({ etat }: { readonly etat: 'asc' | 'desc' | null }) {
+  return (
+    <span aria-hidden="true" className={etat === null ? 'text-encre-faible' : 'text-accent'}>
+      {etat === null ? '↕' : etat === 'asc' ? '↑' : '↓'}
+    </span>
+  )
 }
 
 export function TableDense<T>({
@@ -33,6 +60,7 @@ export function TableDense<T>({
   legende,
   ligneActive,
   surLigneActivee,
+  tri,
 }: {
   readonly colonnes: readonly ColonneDense<T>[]
   readonly lignes: readonly T[]
@@ -41,28 +69,69 @@ export function TableDense<T>({
   readonly legende: string
   readonly ligneActive?: string
   readonly surLigneActivee?: (ligne: T) => void
+  /** Omitted: the headers stay plain text. Sorting is a caller's capability. */
+  readonly tri?: EtatTriTable
 }) {
   return (
     <div className="overflow-x-auto rounded-panneau border border-bord bg-surface">
-      <table className="w-full border-collapse text-base">
+      <table className="w-full border-collapse text-corps">
         <caption className="sr-only">{legende}</caption>
         <thead>
           <tr>
-            {colonnes.map((colonne) => (
-              <th
-                className={[
-                  'sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5',
-                  'text-petit font-semibold text-encre-douce',
-                  colonne.alignement === 'droite' ? 'text-right' : 'text-left',
-                  colonne.secondaire === true ? 'hidden sm:table-cell' : '',
-                ].join(' ')}
-                key={colonne.cle}
-                scope="col"
-                {...(colonne.largeur === undefined ? {} : { style: { width: colonne.largeur } })}
-              >
-                {colonne.entete}
-              </th>
-            ))}
+            {colonnes.map((colonne) => {
+              const triable = tri !== undefined && colonne.triable === true
+              const actif = triable && tri.colonne === colonne.cle
+              const sens = actif ? tri.sens : null
+              return (
+                <th
+                  // `aria-sort` is what a screen reader reads; the arrow is only
+                  // its visible half, and one without the other is half a control.
+                  {...(triable
+                    ? {
+                        'aria-sort': (actif
+                          ? sens === 'asc'
+                            ? 'ascending'
+                            : 'descending'
+                          : 'none') as 'ascending' | 'descending' | 'none',
+                      }
+                    : {})}
+                  className={[
+                    'sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5',
+                    'text-petit font-semibold text-encre-douce',
+                    colonne.alignement === 'droite' ? 'text-right' : 'text-left',
+                    colonne.secondaire === true ? 'hidden sm:table-cell' : '',
+                  ].join(' ')}
+                  key={colonne.cle}
+                  scope="col"
+                  {...(colonne.largeur === undefined ? {} : { style: { width: colonne.largeur } })}
+                >
+                  {triable ? (
+                    <button
+                      className={[
+                        'inline-flex w-full items-center gap-1 bg-transparent p-0 text-petit font-semibold',
+                        'cursor-pointer hover:text-accent',
+                        actif ? 'text-encre' : 'text-encre-douce',
+                        colonne.alignement === 'droite' ? 'justify-end' : 'justify-start',
+                      ].join(' ')}
+                      onClick={() => tri.surColonne(colonne.cle)}
+                      title={
+                        actif
+                          ? sens === 'asc'
+                            ? `Trié par ${colonne.entete}, croissant. Cliquez pour inverser.`
+                            : `Trié par ${colonne.entete}, décroissant. Cliquez pour revenir à l’ordre du tableau.`
+                          : `Trier par ${colonne.entete}`
+                      }
+                      type="button"
+                    >
+                      {colonne.entete}
+                      <FlecheTri etat={sens} />
+                    </button>
+                  ) : (
+                    colonne.entete
+                  )}
+                </th>
+              )
+            })}
           </tr>
         </thead>
         <tbody>

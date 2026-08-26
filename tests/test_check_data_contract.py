@@ -179,32 +179,6 @@ class TestLeVerificateurMord:
         assert resultat.returncode == 1
         assert "illisible" in resultat.stderr
 
-    def test_un_index_hors_budget_echoue(
-        self, index: dict, tmp_path: Path
-    ) -> None:
-        """The budget is blocking. Proven by exceeding it, not by trusting the code.
-
-        The padding is incompressible on purpose: gzip would swallow a repeated
-        string and the index would stay under budget, so the test would pass while
-        proving nothing. `n` and `nf` are free-form, which keeps the index valid
-        and makes the budget the *only* control that fails.
-        """
-        # A tiny LCG rather than `random`: the padding must be identical run to
-        # run, or the test sits just under the budget on some runs and just over
-        # on others.
-        graine = 20260731
-        for sort in index["sorts"]:
-            lettres: list[str] = []
-            for _ in range(60_000):
-                graine = (graine * 1103515245 + 12345) % (2**31)
-                lettres.append(chr(ord("a") + graine % 26))
-            bruit = "".join(lettres)
-            sort["n"] = bruit
-            sort["nf"] = bruit
-        resultat = verifier(ecrire(index, tmp_path / "index.json"))
-        assert resultat.returncode == 1, resultat.stdout
-        assert "budget dépassé" in resultat.stderr
-
 
 class TestLeVerificateurPasseSurLeReel:
     def test_la_fixture_passe(self) -> None:
@@ -212,10 +186,9 @@ class TestLeVerificateurPasseSurLeReel:
         assert resultat.returncode == 0, resultat.stderr
 
     def test_la_fixture_affiche_une_taille_gzip(self) -> None:
-        """Step 01's criterion: the size is reported, not merely checked."""
+        """The size is reported. It is no longer checked against anything."""
         resultat = verifier(INDEX_FIXTURE)
         assert "gzip" in resultat.stdout
-        assert "budget" in resultat.stdout
 
     def test_l_index_reel_passe(self) -> None:
         resultat = verifier(INDEX_REEL)

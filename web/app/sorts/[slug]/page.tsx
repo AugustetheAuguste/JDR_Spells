@@ -154,7 +154,7 @@ export default async function PageSort({ params }: { params: Promise<{ slug: str
           <h2 className="m-0 font-affichage text-titre3 font-semibold" id="titre-ouvrages">
             {sort.sources.length === 1 ? 'Ouvrage' : 'Ouvrages'}
           </h2>
-          <ul className="mt-1.5 mb-0 list-none space-y-1 p-0 text-base">
+          <ul className="mt-1.5 mb-0 list-none space-y-1 p-0 text-corps">
             {sort.sources.map((source) => (
               <li key={source}>{source}</li>
             ))}

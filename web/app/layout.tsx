@@ -29,7 +29,7 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
       <body>
         <a
           href="#contenu"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-jeton focus:bg-accent focus:px-3 focus:py-2 focus:text-surface"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-jeton focus:border focus:border-accent focus:bg-accent-voile focus:px-3 focus:py-2 focus:text-accent"
         >
           Aller au contenu
         </a>
@@ -39,7 +39,7 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
             <p className="m-0 font-affichage text-titre3 font-semibold">
               Sorts Pathfinder 1e
             </p>
-            <nav aria-label="Sections" className="flex gap-3 text-base">
+            <nav aria-label="Sections" className="flex gap-3 text-corps">
               <Link className="text-encre hover:text-accent" href="/">
                 Sorts
               </Link>

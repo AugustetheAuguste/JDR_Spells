@@ -5,13 +5,19 @@ import { useEffect, useMemo, useState } from 'react'
 
 import { SelecteurClasses } from '@/components/comparaison/SelecteurClasses'
 import { TableComparaison } from '@/components/comparaison/TableComparaison'
+import { FiltreTags } from '@/components/navigation/FiltreTags'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import {
   comparer,
+  estColonneComparaison,
+  filtrerParTags,
   MIN_CLASSES,
+  trierComparaisonParColonne,
   trierParEcart,
   trierParNom,
+  type ColonneComparaison,
   type Comparaison,
+  type SortCompare,
 } from '@/lib/comparaison/ensembles'
 import {
   ETAT_COMPARAISON_VIDE,
@@ -22,6 +28,7 @@ import {
   type EtatComparaison,
 } from '@/lib/comparaison/etat-comparaison'
 import type { IndexWeb } from '@/lib/donnees/index-web'
+import { prochainTri } from '@/lib/navigation/tri'
 
 /**
  * The comparison view.
@@ -104,6 +111,34 @@ export function VueComparaison() {
     setVisibles(LIGNES_PAR_PAGE)
   }
 
+  /** The tag filter, then the sort. In that order: filtering changes which rows
+   * exist and sorting only their order, so sorting first would be work thrown
+   * away — and the row count printed above the table has to be the filtered one. */
+  function preparer(
+    lignes: readonly SortCompare[],
+    parDefaut: (lignes: readonly SortCompare[]) => SortCompare[],
+  ): SortCompare[] {
+    if (index === null) return []
+    const codes = (noms: readonly string[]): number[] =>
+      noms.map((nom) => index.tags.indexOf(nom)).filter((code) => code >= 0)
+    const gardes = filtrerParTags(lignes, codes(etat.tags), codes(etat.tagsExclus))
+    return etat.tri === null
+      ? parDefaut(gardes)
+      : trierComparaisonParColonne(index, gardes, etat.tri, etat.sens)
+  }
+
+  /** Handed to every table on the page, so a clicked column sorts the one table
+   * the click came from and stays in the URL like every other bit of state. */
+  const triTable = {
+    colonne: etat.tri,
+    sens: etat.sens,
+    surColonne: (cle: string) => {
+      if (!estColonneComparaison(cle, etat.classes)) return
+      const suivant = prochainTri(etat.tri, etat.sens, cle as ColonneComparaison & string)
+      ecrire({ ...etat, tri: suivant.colonne as ColonneComparaison | null, sens: suivant.sens })
+    },
+  }
+
   if (erreur !== null) {
     return (
       <section>
@@ -132,18 +167,34 @@ export function VueComparaison() {
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Comparer des classes</h1>
-      <p className="mt-1 mb-4 max-w-[68ch] text-base text-encre-douce">
+      <p className="mt-1 mb-4 max-w-[68ch] text-corps text-encre-douce">
         Ce que deux ou trois classes partagent, ce qui leur est propre, et surtout{' '}
         <strong>à combien de niveaux d’écart</strong> elles accèdent aux mêmes sorts.
       </p>
 
       <div className="grid gap-5 lg:grid-cols-[20rem_1fr]">
         <aside>
-          <SelecteurClasses
-            choisies={etat.classes}
-            index={index}
-            surChangement={(classes) => ecrire({ ...etat, classes })}
-          />
+          <div className="flex flex-col gap-4">
+            <SelecteurClasses
+              choisies={etat.classes}
+              index={index}
+              surChangement={(classes) =>
+                // The sort goes with the selection: a per-class column can vanish
+                // with the class it names, and a sort on a column that is no longer
+                // on screen is a table ordered by a number nobody can see.
+                ecrire({ ...etat, classes, tri: null, sens: 'asc' })
+              }
+            />
+            {/* The same closed taxonomy as the browse view, and the same three
+                states: « compare only the area spells », « compare everything but
+                the mind-affecting ones ». */}
+            <FiltreTags
+              surTags={(tags, tagsExclus) => ecrire({ ...etat, tags, tagsExclus })}
+              tags={etat.tags}
+              tagsConnus={index.tags}
+              tagsExclus={etat.tagsExclus}
+            />
+          </div>
         </aside>
 
         <div className="flex min-w-0 flex-col gap-4">
@@ -200,7 +251,7 @@ export function VueComparaison() {
                     className={[
                       'rounded-jeton border px-2.5 py-1 text-petit',
                       etat.mode === mode
-                        ? 'border-transparent bg-accent text-surface'
+                        ? 'border-accent bg-accent-voile font-semibold text-accent'
                         : 'border-bord-fort bg-surface text-encre hover:bg-survol',
                     ].join(' ')}
                     key={mode}
@@ -215,7 +266,7 @@ export function VueComparaison() {
               {etat.mode === 'exclusifs' ? (
                 <div className="flex flex-col gap-4">
                   {etat.classes.map((classe) => {
-                    const propres = trierParNom(comparaison.exclusifs[classe] ?? [])
+                    const propres = preparer(comparaison.exclusifs[classe] ?? [], trierParNom)
                     return (
                       <section aria-labelledby={`exclusifs-${classe}`} key={classe}>
                         <h2
@@ -226,7 +277,7 @@ export function VueComparaison() {
                           à {noms.get(classe) ?? classe}
                         </h2>
                         {propres.length === 0 ? (
-                          <p className="m-0 text-base text-encre-douce">
+                          <p className="m-0 text-corps text-encre-douce">
                             Aucun : toutes les autres classes comparées reçoivent aussi ces
                             sorts.
                           </p>
@@ -236,6 +287,7 @@ export function VueComparaison() {
                             index={index}
                             legende={`Sorts que seule la classe ${noms.get(classe) ?? classe} reçoit parmi celles comparées`}
                             sorts={propres.slice(0, visibles)}
+                            tri={triTable}
                           />
                         )}
                       </section>
@@ -244,8 +296,9 @@ export function VueComparaison() {
                 </div>
               ) : (
                 (() => {
-                  const lignes = trierParEcart(
+                  const lignes = preparer(
                     etat.mode === 'partages' ? comparaison.partages : comparaison.union,
+                    trierParEcart,
                   )
                   if (lignes.length === 0) {
                     return (
@@ -265,8 +318,8 @@ export function VueComparaison() {
                   return (
                     <>
                       <p className="m-0 text-petit text-encre-douce">
-                        {lignes.length} {lignes.length === 1 ? 'sort' : 'sorts'}, du plus grand
-                        écart de niveau au plus petit
+                        {lignes.length} {lignes.length === 1 ? 'sort' : 'sorts'}
+                        {etat.tri === null ? ', du plus grand écart de niveau au plus petit' : ''}
                         {lignes.length > visibles ? ` — ${visibles} affichés` : ''}
                       </p>
                       <TableComparaison
@@ -274,6 +327,7 @@ export function VueComparaison() {
                         index={index}
                         legende={`Sorts comparés entre ${nomsChoisis.join(', ')}, avec le niveau de chaque classe et l’écart`}
                         sorts={lignes.slice(0, visibles)}
+                        tri={triTable}
                       />
                       {lignes.length > visibles ? (
                         <button

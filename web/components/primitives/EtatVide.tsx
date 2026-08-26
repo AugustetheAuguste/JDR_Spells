@@ -30,7 +30,7 @@ export function EtatVide({
     <div className="rounded-panneau border border-bord bg-surface px-4 py-6 text-center">
       <p className="m-0 font-affichage text-titre3 font-semibold">{titre}</p>
       {explication === undefined ? null : (
-        <p className="mx-auto mt-2 mb-0 max-w-[52ch] text-base text-encre-douce">
+        <p className="mx-auto mt-2 mb-0 max-w-[52ch] text-corps text-encre-douce">
           {explication}
         </p>
       )}
@@ -38,9 +38,9 @@ export function EtatVide({
         {actions.map((action) => (
           <button
             className={[
-              'rounded-jeton border px-3 py-2 text-base font-medium',
+              'rounded-jeton border px-3 py-2 text-corps font-medium',
               action.primaire === true
-                ? 'border-transparent bg-accent text-surface hover:bg-accent-survol'
+                ? 'border-accent bg-accent-voile font-semibold text-accent hover:bg-survol'
                 : 'border-bord-fort bg-surface text-encre hover:bg-survol',
             ].join(' ')}
             key={action.libelle}

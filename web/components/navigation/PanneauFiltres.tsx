@@ -1,10 +1,12 @@
 'use client'
 
+import { FiltreTags } from '@/components/navigation/FiltreTags'
 import { Badge } from '@/components/primitives/Badge'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
 import { LIBELLES_ECOLES, type Ecole } from '@/lib/design/tokens'
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import { type EtatUrl, NIVEAU_MAX } from '@/lib/navigation/etat-url'
+import { grouperClasses } from '@/lib/navigation/groupes-classes'
 import { libelleNiveau } from '@/lib/navigation/niveaux'
 
 /**
@@ -90,7 +92,7 @@ export function PanneauFiltres({
   /** A class change: `router.push`, because it IS a navigation. */
   readonly surClasse: (classe: string | null) => void
 }) {
-  function basculer<C extends 'ecoles' | 'tags' | 'composantes' | 'sauvegarde'>(
+  function basculer<C extends 'ecoles' | 'composantes' | 'sauvegarde'>(
     cle: C,
     valeur: string,
     coche: boolean,
@@ -105,6 +107,7 @@ export function PanneauFiltres({
   }
 
   const niveaux = Array.from({ length: NIVEAU_MAX + 1 }, (_, n) => n)
+  const groupesClasses = grouperClasses(index)
 
   return (
     <div className="flex flex-col gap-4">
@@ -118,7 +121,7 @@ export function PanneauFiltres({
           Classe
         </label>
         <select
-          className="w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-base text-encre"
+          className="w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-corps text-encre"
           id="filtre-classe"
           onChange={(evenement) =>
             surClasse(evenement.target.value === '' ? null : evenement.target.value)
@@ -126,10 +129,17 @@ export function PanneauFiltres({
           value={etat.classe ?? ''}
         >
           <option value="">Toutes les classes</option>
-          {index.classes.map((classe) => (
-            <option key={classe.slug} value={classe.slug}>
-              {classe.nom}
-            </option>
+          {/* Two groups, the familiar ones first, and inside them an order by how
+              commonly the class is played rather than by name: alphabetical put
+              `Alchimiste` above `Barde` and buried the wizard at position three. */}
+          {groupesClasses.map((groupe) => (
+            <optgroup key={groupe.titre} label={groupe.titre}>
+              {groupe.classes.map((classe) => (
+                <option key={classe.slug} value={classe.slug}>
+                  {classe.nom}
+                </option>
+              ))}
+            </optgroup>
           ))}
         </select>
         <p className="mt-1.5 mb-0 text-micro text-encre-faible">
@@ -206,20 +216,14 @@ export function PanneauFiltres({
 
       {/* Hidden entirely when the LLM layer is absent from the export. No empty
           section, no explanatory error — the filter simply does not exist. */}
-      {index.tags.length === 0 ? null : (
-        <Groupe aide="Un sort suffit à porter l’un des tags cochés." legende="Tags">
-          {index.tags.map((tag) => (
-            <CaseJeton
-              coche={etat.tags.includes(tag)}
-              key={tag}
-              libelle={tag.replaceAll('_', ' ')}
-              surChangement={(coche) => basculer('tags', tag, coche, index.tags)}
-            >
-              {tag.replaceAll('_', ' ')}
-            </CaseJeton>
-          ))}
-        </Groupe>
-      )}
+      {/* Hidden entirely when the LLM layer is absent from the export. No empty
+          section, no explanatory error — the filter simply does not exist. */}
+      <FiltreTags
+        surTags={(tags, tagsExclus) => surEtat({ ...etat, tags, tagsExclus })}
+        tags={etat.tags}
+        tagsConnus={index.tags}
+        tagsExclus={etat.tagsExclus}
+      />
 
       <Groupe legende="Signalements">
         <CaseJeton

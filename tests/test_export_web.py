@@ -24,7 +24,6 @@ import jsonschema
 import pytest
 
 from pf_spells.export_web import (
-    BUDGET_GZIP_OCTETS,
     VERSION_CONTRAT,
     ExportWebError,
     construire,
@@ -419,12 +418,16 @@ class TestSurLeCorpusReel:
         erreurs = list(jsonschema.Draft202012Validator(schema).iter_errors(index))
         assert erreurs == [], [e.message for e in erreurs[:3]]
 
-    def test_le_budget_gzip_est_respecte(self, export_reel: tuple[Path, dict]) -> None:
+    def test_la_taille_gzip_rapportee_est_exacte(
+        self, export_reel: tuple[Path, dict]
+    ) -> None:
+        # No ceiling is asserted: weight is reported, never enforced. What is still
+        # worth pinning is that the reported number describes the file actually
+        # written — a report that drifts from its artefact is misinformation.
         sortie, rapport = export_reel
         octets = (sortie / "index.json").read_text(encoding="utf-8").encode("utf-8")
         mesure = len(gzip.compress(octets, mtime=0))
         assert mesure == rapport["taille_index_gzip"]
-        assert mesure < BUDGET_GZIP_OCTETS, f"{mesure} > {BUDGET_GZIP_OCTETS}"
 
     def test_bijection_sur_le_corpus_reel(self, export_reel: tuple[Path, dict]) -> None:
         sortie, _ = export_reel

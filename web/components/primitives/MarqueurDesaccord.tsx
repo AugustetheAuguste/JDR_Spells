@@ -50,7 +50,7 @@ export function MarqueurDesaccord({
           ? 'Les deux sources ne donnent pas le même niveau'
           : `Les deux sources ne donnent pas le même niveau (${desaccords.length} classes)`}
       </p>
-      <ul className="mt-1.5 mb-0 list-none space-y-1 p-0 text-base">
+      <ul className="mt-1.5 mb-0 list-none space-y-1 p-0 text-corps">
         {desaccords.map((desaccord) => (
           <li key={desaccord.slug ?? desaccord.classe ?? ''}>
             <strong>{desaccord.classe ?? desaccord.slug ?? 'classe inconnue'}</strong> :

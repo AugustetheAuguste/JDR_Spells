@@ -21,14 +21,14 @@ export function LienSource({ url }: { readonly url: string }) {
       <h2 className="m-0 font-affichage text-titre3 font-semibold" id="titre-source">
         Source
       </h2>
-      <p className="mt-1 mb-3 max-w-[68ch] text-base text-encre-douce">
+      <p className="mt-1 mb-3 max-w-[68ch] text-corps text-encre-douce">
         Ce sort est décrit sur <strong>pathfinder-fr.org</strong>, wiki communautaire
         tenu par des bénévoles. Cette page n&apos;en est qu&apos;un index de
         consultation : la page d&apos;origine fait foi, et c&apos;est elle qui est tenue
         à jour.
       </p>
       <a
-        className="inline-flex items-center rounded-jeton bg-accent px-3 py-2 text-base font-medium text-surface no-underline hover:bg-accent-survol"
+        className="inline-flex items-center rounded-jeton border border-accent bg-accent-voile px-3 py-2 text-corps font-medium text-accent underline hover:bg-survol"
         href={url}
         rel="noreferrer"
         target="_blank"

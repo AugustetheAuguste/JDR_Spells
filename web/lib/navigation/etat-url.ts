@@ -8,8 +8,13 @@
  * testable without a router.
  *
  * Contract:
- *   ?classe=barde&niveau=1-3&ecoles=evocation,abjuration&tags=offensif,zone
- *    &q=feu&sauvegarde=reflexes&composantes=v,s&desaccords=1
+ *   ?classe=barde&niveau=1-3&ecoles=evocation,abjuration&tags=zone_d_effet,-effet_mental
+ *    &q=feu&sauvegarde=reflexes&composantes=v,s&desaccords=1&tri=-portee
+ *
+ * A tag prefixed with `-` is EXCLUDED rather than required. One key rather than
+ * two (`tags` + `tags_exclus`) because a tag can only be in one of the three
+ * states, and two keys would let a URL name the same tag in both — a state the
+ * interface cannot show and the filter would have to arbitrate silently.
  *
  * Values are *names*, never the integer codes of the index. A URL is a durable,
  * shareable, human-readable thing; `ecoles=3` would break the day the export
@@ -22,6 +27,7 @@
  */
 
 import type { IndexWeb } from '@/lib/donnees/index-web'
+import { estColonneTri, type ColonneTri, type SensTri } from '@/lib/navigation/tri'
 import type { Filtres } from '@/lib/recherche/filtres'
 
 export const NIVEAU_MAX = 9
@@ -31,11 +37,17 @@ export interface EtatUrl {
   /** Levels, ascending and deduplicated. Empty = no level constraint. */
   readonly niveaux: readonly number[]
   readonly ecoles: readonly string[]
+  /** Tags a spell must carry at least one of. */
   readonly tags: readonly string[]
+  /** Tags a spell must carry NONE of. Disjoint from `tags` by construction. */
+  readonly tagsExclus: readonly string[]
   readonly composantes: readonly string[]
   readonly sauvegarde: readonly string[]
   readonly q: string
   readonly desaccords: boolean
+  /** The sorted column, or null for the view's own order. */
+  readonly tri: ColonneTri | null
+  readonly sens: SensTri
 }
 
 export const ETAT_VIDE: EtatUrl = {
@@ -43,10 +55,13 @@ export const ETAT_VIDE: EtatUrl = {
   niveaux: [],
   ecoles: [],
   tags: [],
+  tagsExclus: [],
   composantes: [],
   sauvegarde: [],
   q: '',
   desaccords: false,
+  tri: null,
+  sens: 'asc',
 }
 
 /** The query-string keys, so a typo is a compile error and not a dead filter. */
@@ -59,6 +74,7 @@ export const CLES = {
   sauvegarde: 'sauvegarde',
   q: 'q',
   desaccords: 'desaccords',
+  tri: 'tri',
 } as const
 
 function listeDe(valeur: string | null, connus: readonly string[]): string[] {
@@ -77,6 +93,58 @@ function listeDe(valeur: string | null, connus: readonly string[]): string[] {
   // Ordered by the index's own table, so two URLs listing the same schools in a
   // different order produce byte-identical state — and one canonical URL.
   return connus.filter((connu) => vus.has(connu))
+}
+
+/**
+ * Parse `tags`: `zone_d_effet,-effet_mental` → required and excluded.
+ *
+ * A tag named twice, or named in both states, keeps its FIRST occurrence: some
+ * arbitration is needed and "the first one wins" is the only rule a reader can
+ * predict from looking at the URL. Unknown names are dropped as everywhere else.
+ */
+export function analyserTags(
+  valeur: string | null,
+  connus: readonly string[],
+): { readonly tags: string[]; readonly tagsExclus: string[] } {
+  if (valeur === null) return { tags: [], tagsExclus: [] }
+  const parPli = new Map(connus.map((connu) => [connu.toLowerCase(), connu]))
+  const etats = new Map<string, 'inclus' | 'exclu'>()
+  for (const brut of valeur.split(',')) {
+    const propre = brut.trim()
+    const exclu = propre.startsWith('-')
+    const nom = parPli.get((exclu ? propre.slice(1) : propre).toLowerCase())
+    if (nom === undefined || etats.has(nom)) continue
+    etats.set(nom, exclu ? 'exclu' : 'inclus')
+  }
+  // Ordered by the index's own table, so two URLs listing the same tags in a
+  // different order produce byte-identical state — and one canonical URL.
+  return {
+    tags: connus.filter((connu) => etats.get(connu) === 'inclus'),
+    tagsExclus: connus.filter((connu) => etats.get(connu) === 'exclu'),
+  }
+}
+
+/** Render the two tag lists back into one key: excluded tags carry a `-`. */
+export function formaterTags(
+  tags: readonly string[],
+  tagsExclus: readonly string[],
+): string {
+  return [...tags, ...tagsExclus.map((tag) => `-${tag}`)].join(',')
+}
+
+/** Parse `tri`: `portee` ascending, `-portee` descending. Direction rides on the
+ * same key as the column because there is no such thing as a direction without a
+ * column, and a lone `sens=desc` in a URL would be a filter that does nothing. */
+export function analyserTri(valeur: string | null): {
+  readonly tri: ColonneTri | null
+  readonly sens: SensTri
+} {
+  if (valeur === null) return { tri: null, sens: 'asc' }
+  const propre = valeur.trim().toLowerCase()
+  const desc = propre.startsWith('-')
+  const nom = desc ? propre.slice(1) : propre
+  if (!estColonneTri(nom)) return { tri: null, sens: 'asc' }
+  return { tri: nom, sens: desc ? 'desc' : 'asc' }
 }
 
 /**
@@ -124,15 +192,20 @@ export function formaterNiveaux(niveaux: readonly number[]): string {
 export function lireEtat(parametres: URLSearchParams, index: IndexWeb): EtatUrl {
   const classeBrute = parametres.get(CLES.classe)?.trim().toLowerCase() ?? ''
   const classe = index.classes.some((c) => c.slug === classeBrute) ? classeBrute : null
+  const tags = analyserTags(parametres.get(CLES.tags), index.tags)
+  const tri = analyserTri(parametres.get(CLES.tri))
   return {
     classe,
     niveaux: analyserNiveaux(parametres.get(CLES.niveau)),
     ecoles: listeDe(parametres.get(CLES.ecoles), index.ecoles),
-    tags: listeDe(parametres.get(CLES.tags), index.tags),
+    tags: tags.tags,
+    tagsExclus: tags.tagsExclus,
     composantes: listeDe(parametres.get(CLES.composantes), index.composantes),
     sauvegarde: listeDe(parametres.get(CLES.sauvegarde), index.jets),
     q: parametres.get(CLES.q) ?? '',
     desaccords: parametres.get(CLES.desaccords) === '1',
+    tri: tri.tri,
+    sens: tri.sens,
   }
 }
 
@@ -149,11 +222,18 @@ export function ecrireEtat(etat: EtatUrl): URLSearchParams {
   if (etat.classe !== null) parametres.set(CLES.classe, etat.classe)
   if (etat.niveaux.length > 0) parametres.set(CLES.niveau, formaterNiveaux(etat.niveaux))
   if (etat.ecoles.length > 0) parametres.set(CLES.ecoles, etat.ecoles.join(','))
-  if (etat.tags.length > 0) parametres.set(CLES.tags, etat.tags.join(','))
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) {
+    parametres.set(CLES.tags, formaterTags(etat.tags, etat.tagsExclus))
+  }
   if (etat.composantes.length > 0) parametres.set(CLES.composantes, etat.composantes.join(','))
   if (etat.sauvegarde.length > 0) parametres.set(CLES.sauvegarde, etat.sauvegarde.join(','))
   if (etat.q !== '') parametres.set(CLES.q, etat.q)
   if (etat.desaccords) parametres.set(CLES.desaccords, '1')
+  // Last, and absent at the default order: a shared link to an unsorted table has
+  // no business carrying `tri=`, and round-tripping has to reach a fixed point.
+  if (etat.tri !== null) {
+    parametres.set(CLES.tri, `${etat.sens === 'desc' ? '-' : ''}${etat.tri}`)
+  }
   return parametres
 }
 
@@ -186,6 +266,7 @@ export function versFiltres(etat: EtatUrl, index: IndexWeb): Filtres {
     niveauSansClasse: 'minimum',
     ecoles: codes(etat.ecoles, index.ecoles),
     tags: codes(etat.tags, index.tags),
+    tagsExclus: codes(etat.tagsExclus, index.tags),
     composantes: codes(etat.composantes, index.composantes),
     jets: codes(etat.sauvegarde, index.jets),
     desaccord: etat.desaccords,
@@ -205,7 +286,7 @@ export function filtreLePlusRestrictif(etat: EtatUrl): keyof typeof CLES | null 
   if (etat.desaccords) return 'desaccords'
   if (etat.niveaux.length > 0) return 'niveau'
   if (etat.composantes.length > 0) return 'composantes'
-  if (etat.tags.length > 0) return 'tags'
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) return 'tags'
   if (etat.sauvegarde.length > 0) return 'sauvegarde'
   if (etat.ecoles.length > 0) return 'ecoles'
   if (etat.classe !== null) return 'classe'
@@ -222,7 +303,9 @@ export function sansFiltre(etat: EtatUrl, cle: keyof typeof CLES): EtatUrl {
     case 'ecoles':
       return { ...etat, ecoles: [] }
     case 'tags':
-      return { ...etat, tags: [] }
+      // Both states go: « retirer les tags » means the tag filter is off, and
+      // leaving the exclusions behind would keep culling results invisibly.
+      return { ...etat, tags: [], tagsExclus: [] }
     case 'composantes':
       return { ...etat, composantes: [] }
     case 'sauvegarde':
@@ -231,6 +314,8 @@ export function sansFiltre(etat: EtatUrl, cle: keyof typeof CLES): EtatUrl {
       return { ...etat, q: '' }
     case 'desaccords':
       return { ...etat, desaccords: false }
+    case 'tri':
+      return { ...etat, tri: null, sens: 'asc' }
   }
 }
 
@@ -244,4 +329,7 @@ export const LIBELLES_FILTRES: Readonly<Record<keyof typeof CLES, string>> = {
   sauvegarde: 'le jet de sauvegarde',
   q: 'la recherche',
   desaccords: 'le filtre des désaccords',
+  // Never named by `filtreLePlusRestrictif`: sorting reorders a list, it cannot
+  // empty one. Present because the key exists and an unlabelled key is a hole.
+  tri: 'le tri du tableau',
 }

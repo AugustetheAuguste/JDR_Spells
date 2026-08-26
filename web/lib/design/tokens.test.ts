@@ -245,6 +245,18 @@ describe('theme.css ne dérive pas de tokens.ts', () => {
     expect(propriete(`text-${nom}--line-height`)).toBe(cran.interligne)
   })
 
+  it('aucun cran de l’échelle ne porte le nom d’une couleur', () => {
+    // Tailwind builds ONE `text-<nom>` utility from both `--color-<nom>` and
+    // `--text-<nom>`, and the colour wins. When the scale held a `base` cran next
+    // to the `base` colour, `text-base` painted body text in the page background:
+    // invisible cells on a white surface, and nothing in the suite could see it
+    // because every assertion here was about a token, not about a utility class.
+    const couleurs = new Set(Object.keys(COULEURS).map((nom) => nom.toLowerCase()))
+    for (const nom of Object.keys(ECHELLE)) {
+      expect(couleurs.has(nom.toLowerCase()), `text-${nom} est ambigu`).toBe(false)
+    }
+  })
+
   it('la hauteur de ligne dense vaut le jeton', () => {
     expect(propriete('spacing-ligne')).toBe(DENSITE.ligneHauteur)
     expect(propriete('spacing-ligne-dense')).toBe(DENSITE.ligneHauteurDense)

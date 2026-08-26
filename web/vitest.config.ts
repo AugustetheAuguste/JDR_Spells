@@ -13,5 +13,9 @@ export default defineConfig({
     setupFiles: ['./vitest.setup.ts'],
     include: ['**/*.test.ts', '**/*.test.tsx'],
     exclude: ['node_modules/**', '.next/**'],
+    // The view tests mount the whole navigation over the real 2070-spell fixture,
+    // which costs seconds per mount on a cold machine. The default 5 s made them
+    // fail on load rather than on a defect, and a flaky suite gets ignored.
+    testTimeout: 20_000,
   },
 })

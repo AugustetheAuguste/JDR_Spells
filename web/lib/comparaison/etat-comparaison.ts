@@ -10,20 +10,45 @@
  */
 
 import type { IndexWeb } from '@/lib/donnees/index-web'
-import { MAX_CLASSES } from '@/lib/comparaison/ensembles'
+import {
+  estColonneComparaison,
+  MAX_CLASSES,
+  type ColonneComparaison,
+} from '@/lib/comparaison/ensembles'
+import { analyserTags, formaterTags } from '@/lib/navigation/etat-url'
+import type { SensTri } from '@/lib/navigation/tri'
 
 export const MODES = ['partages', 'exclusifs', 'tous'] as const
 export type Mode = (typeof MODES)[number]
 
-export const CLES_COMPARAISON = { classes: 'classes', mode: 'mode' } as const
+export const CLES_COMPARAISON = {
+  classes: 'classes',
+  mode: 'mode',
+  tags: 'tags',
+  tri: 'tri',
+} as const
 
 export interface EtatComparaison {
   /** In the order picked, which is the order the columns appear in. */
   readonly classes: readonly string[]
   readonly mode: Mode
+  /** Same three-state tag filter as the browse view, same `-` convention in the
+   * URL. The taxonomy is one closed list and it answers the same question here. */
+  readonly tags: readonly string[]
+  readonly tagsExclus: readonly string[]
+  /** The sorted column, or null for the view's own order — widest spread first. */
+  readonly tri: ColonneComparaison | null
+  readonly sens: SensTri
 }
 
-export const ETAT_COMPARAISON_VIDE: EtatComparaison = { classes: [], mode: 'partages' }
+export const ETAT_COMPARAISON_VIDE: EtatComparaison = {
+  classes: [],
+  mode: 'partages',
+  tags: [],
+  tagsExclus: [],
+  tri: null,
+  sens: 'asc',
+}
 
 /**
  * Read the selection from a query string.
@@ -54,7 +79,24 @@ export function lireEtatComparaison(
     ? (modeBrut as Mode)
     : ETAT_COMPARAISON_VIDE.mode
 
-  return { classes, mode }
+  const tags = analyserTags(params.get(CLES_COMPARAISON.tags), index.tags)
+
+  // The column is validated against the classes just parsed, so `tri=niveau:barde`
+  // on a comparison without the bard is dropped rather than sorting the table by a
+  // column nobody can see.
+  const triBrut = (params.get(CLES_COMPARAISON.tri) ?? '').trim()
+  const desc = triBrut.startsWith('-')
+  const nomColonne = desc ? triBrut.slice(1) : triBrut
+  const tri = estColonneComparaison(nomColonne, classes) ? nomColonne : null
+
+  return {
+    classes,
+    mode,
+    tags: tags.tags,
+    tagsExclus: tags.tagsExclus,
+    tri,
+    sens: tri !== null && desc ? 'desc' : 'asc',
+  }
 }
 
 /** Absent keys rather than empty ones, and a stable key order: two equal states
@@ -67,6 +109,12 @@ export function ecrireEtatComparaison(etat: EtatComparaison): URLSearchParams {
   }
   if (etat.mode !== ETAT_COMPARAISON_VIDE.mode) {
     params.set(CLES_COMPARAISON.mode, etat.mode)
+  }
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) {
+    params.set(CLES_COMPARAISON.tags, formaterTags(etat.tags, etat.tagsExclus))
+  }
+  if (etat.tri !== null) {
+    params.set(CLES_COMPARAISON.tri, `${etat.sens === 'desc' ? '-' : ''}${etat.tri}`)
   }
   return params
 }
