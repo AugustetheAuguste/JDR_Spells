@@ -5,7 +5,11 @@ import Link from 'next/link'
 import { BoutonFavori } from '@/components/favoris/BoutonFavori'
 import { Badge } from '@/components/primitives/Badge'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
-import { TableDense, type ColonneDense } from '@/components/primitives/TableDense'
+import {
+  TableDense,
+  type ColonneDense,
+  type EtatTriTable,
+} from '@/components/primitives/TableDense'
 import { ecoleDe, type EntreeSort, type IndexWeb } from '@/lib/donnees/index-web'
 import { libelleNiveau, niveauAffiche } from '@/lib/navigation/niveaux'
 
@@ -27,17 +31,23 @@ export function TableSorts({
   sorts,
   classe,
   viaAlias,
+  tri,
 }: {
   readonly index: IndexWeb
   readonly sorts: readonly EntreeSort[]
   readonly classe: string | null
   /** Ids reached through an English alias, flagged so the reader knows why. */
   readonly viaAlias?: ReadonlySet<string>
+  /** Column keys here are exactly `ColonneTri` values, so the URL and the headers
+   * cannot drift: a header that sorts on a name the URL cannot spell is a dead
+   * control the moment the page is shared. */
+  readonly tri?: EtatTriTable
 }) {
   const colonnes: readonly ColonneDense<EntreeSort>[] = [
     {
       cle: 'nom',
       entete: 'Sort',
+      triable: true,
       cellule: (sort) => (
         <span className="inline-flex items-center gap-1.5">
           {/* The toggle sits in the name cell, first: on a narrow screen the
@@ -72,6 +82,7 @@ export function TableSorts({
     {
       cle: 'niveau',
       entete: libelleNiveau(index, classe),
+      triable: true,
       alignement: 'droite',
       largeur: '11rem',
       cellule: (sort) => {
@@ -89,12 +100,14 @@ export function TableSorts({
     {
       cle: 'ecole',
       entete: 'École',
+      triable: true,
       largeur: '9rem',
       cellule: (sort) => <PastilleEcole ecole={ecoleDe(index, sort.e)} />,
     },
     {
       cle: 'composantes',
       entete: 'Comp.',
+      triable: true,
       secondaire: true,
       largeur: '7rem',
       cellule: (sort) =>
@@ -109,6 +122,7 @@ export function TableSorts({
     {
       cle: 'portee',
       entete: 'Portée',
+      triable: true,
       secondaire: true,
       largeur: '8rem',
       cellule: (sort) =>
@@ -121,6 +135,7 @@ export function TableSorts({
     {
       cle: 'jet',
       entete: 'Sauvegarde',
+      triable: true,
       secondaire: true,
       largeur: '8rem',
       cellule: (sort) =>
@@ -142,6 +157,7 @@ export function TableSorts({
           : `Sorts de la classe ${index.classes.find((c) => c.slug === classe)?.nom ?? classe}, avec leur niveau pour cette classe`
       }
       lignes={sorts}
+      {...(tri === undefined ? {} : { tri })}
     />
   )
 }

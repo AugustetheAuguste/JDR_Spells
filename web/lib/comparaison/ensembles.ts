@@ -116,6 +116,99 @@ export function trierParNom(sorts: readonly SortCompare[]): SortCompare[] {
 }
 
 /**
+ * The sortable columns of the comparison table.
+ *
+ * A per-class level column is named `niveau:<slug>` rather than by position: the
+ * columns ARE the selection, so a positional key would point at a different class
+ * the moment the selection changed, and a shared link would silently sort by the
+ * wrong one. `ecart` is the fourth, and the default.
+ */
+export const PREFIXE_COLONNE_NIVEAU = 'niveau:'
+
+export type ColonneComparaison = 'nom' | 'ecole' | 'ecart' | `${typeof PREFIXE_COLONNE_NIVEAU}${string}`
+
+export function colonneNiveauDe(classe: string): ColonneComparaison {
+  return `${PREFIXE_COLONNE_NIVEAU}${classe}`
+}
+
+/** The class a level column belongs to, or null for the other columns. */
+export function classeDeColonne(colonne: string): string | null {
+  return colonne.startsWith(PREFIXE_COLONNE_NIVEAU)
+    ? colonne.slice(PREFIXE_COLONNE_NIVEAU.length)
+    : null
+}
+
+/**
+ * True when `colonne` is sortable given the classes currently compared.
+ *
+ * The selection is part of the validation, not an afterthought:
+ * `tri=niveau:barde` on a comparison that does not include the bard names a column
+ * that is not on screen, and sorting by an invisible number looks like a bug.
+ */
+export function estColonneComparaison(
+  colonne: string,
+  classes: readonly string[],
+): colonne is ColonneComparaison {
+  if (colonne === 'nom' || colonne === 'ecole' || colonne === 'ecart') return true
+  const classe = classeDeColonne(colonne)
+  return classe !== null && classes.includes(classe)
+}
+
+/**
+ * Sort the comparison rows by one column.
+ *
+ * Same two rules as the browse table: a missing value sorts last in both
+ * directions — a class that does not get the spell is an absence, not a low level
+ * — and the name in French collation is the final tie-break, without which the
+ * 600-odd equal rows reshuffle between renders.
+ */
+export function trierComparaisonParColonne(
+  index: IndexWeb,
+  sorts: readonly SortCompare[],
+  colonne: ColonneComparaison,
+  sens: 'asc' | 'desc',
+): SortCompare[] {
+  const facteur = sens === 'desc' ? -1 : 1
+  const valeur = (ligne: SortCompare): string | number | null => {
+    if (colonne === 'nom') return ligne.sort.n
+    if (colonne === 'ecole') {
+      return ligne.sort.e === null ? null : (index.ecoles[ligne.sort.e] ?? null)
+    }
+    if (colonne === 'ecart') return ligne.ecart
+    const classe = classeDeColonne(colonne)
+    return classe === null ? null : (ligne.niveaux[classe] ?? null)
+  }
+  return [...sorts].sort((a, b) => {
+    const va = valeur(a)
+    const vb = valeur(b)
+    if (va === null && vb === null) return a.sort.n.localeCompare(b.sort.n, 'fr')
+    if (va === null) return 1
+    if (vb === null) return -1
+    const ordre =
+      typeof va === 'number' && typeof vb === 'number'
+        ? va - vb
+        : String(va).localeCompare(String(vb), 'fr')
+    return ordre === 0 ? a.sort.n.localeCompare(b.sort.n, 'fr') : ordre * facteur
+  })
+}
+
+/** Keep only the rows whose spell satisfies the tag filter. Same any-of to
+ * include / none-of to exclude asymmetry as the browse view, for the same
+ * reason: « hide mind-affecting » has to hide all of them. */
+export function filtrerParTags(
+  sorts: readonly SortCompare[],
+  tags: readonly number[],
+  tagsExclus: readonly number[],
+): SortCompare[] {
+  if (tags.length === 0 && tagsExclus.length === 0) return [...sorts]
+  return sorts.filter(({ sort }) => {
+    if (tags.length > 0 && !tags.some((code) => sort.t.includes(code))) return false
+    if (tagsExclus.some((code) => sort.t.includes(code))) return false
+    return true
+  })
+}
+
+/**
  * Spells a class gets that NO other class in the corpus gets.
  *
  * Different from `exclusifs`, which is relative to the selection, and it exists

@@ -105,7 +105,9 @@ describe('le niveau à l’écran est relatif à la classe', () => {
     // not read « Niveau », as if the level were a property of the spell.
     await monterVue('')
     const entete = screen.getByRole('columnheader', { name: /toutes classes/i })
-    expect(entete.textContent).toBe('Niveau le plus bas, toutes classes')
+    // The header is a sort button now, so it carries a direction glyph after the
+    // label. What matters is that the label still names the class-free reading.
+    expect(entete.textContent).toContain('Niveau le plus bas, toutes classes')
     expect(screen.queryByRole('columnheader', { name: /^Niveau$/ })).toBeNull()
   })
 
@@ -208,23 +210,86 @@ describe('l’état d’URL', () => {
 })
 
 describe('la section des tags', () => {
-  it('est rendue quand l’index porte des tags', async () => {
+  it('groupe les tags et n’ouvre un groupe que sur demande', async () => {
     await monterVue('')
-    expect(screen.getByRole('group', { name: 'Tags' })).toBeTruthy()
+    // Folded by default: thirty-five tags at once is an inventory, not a filter.
+    const groupe = screen.getByRole('button', { name: /Chiffres et jets/ })
+    expect(groupe.getAttribute('aria-expanded')).toBe('false')
+    await userEvent.click(groupe)
+    expect(groupe.getAttribute('aria-expanded')).toBe('true')
+    expect(screen.getByRole('button', { name: /^Bonus chiffré/ })).toBeTruthy()
+  })
+
+  it('ouvre d’emblée le groupe qui porte un tag posé', async () => {
+    // A shared link must never hide its own filters behind a closed fold.
+    await monterVue('tags=bonus_chiffre')
+    expect(
+      screen.getByRole('button', { name: /Chiffres et jets/ }).getAttribute('aria-expanded'),
+    ).toBe('true')
+  })
+
+  it('un premier clic exige le tag', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('button', { name: /Chiffres et jets/ }))
+    await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
+    expect(remplace).toHaveBeenCalledWith('/?tags=bonus_chiffre')
+  })
+
+  it('un second clic exclut le tag au lieu de le relâcher', async () => {
+    await monterVue('tags=bonus_chiffre')
+    await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
+    expect(remplace).toHaveBeenCalledWith('/?tags=-bonus_chiffre')
+  })
+
+  it('un troisième clic ne filtre plus', async () => {
+    await monterVue('tags=-bonus_chiffre')
+    await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
+    expect(remplace).toHaveBeenCalledWith('/')
   })
 
   it('n’est pas rendue du tout quand index.tags est vide', async () => {
     // No empty section and no explanatory error: an empty filter group invites
     // the user to hunt for a control that is not there.
     await monterVue('', SANS_TAGS)
-    expect(screen.queryByRole('group', { name: 'Tags' })).toBeNull()
-    expect(screen.queryByText(/tags/i)).toBeNull()
+    expect(screen.queryByText(/^Tags$/)).toBeNull()
   })
 
   it('ignore un tag présent dans l’URL quand la couche est absente', async () => {
     await monterVue('tags=bonus_chiffre', SANS_TAGS)
-    expect(screen.queryByRole('button', { name: /Retirer les tags/ })).toBeNull()
     expect(screen.getAllByRole('row').length).toBeGreaterThan(1)
+  })
+})
+
+describe('le tri par colonne', () => {
+  const entetePortee = (): HTMLElement =>
+    screen.getByRole('columnheader', { name: /Portée/ })
+
+  it('un clic trie sur la colonne cliquée', async () => {
+    await monterVue('')
+    expect(entetePortee().getAttribute('aria-sort')).toBe('none')
+    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    expect(remplace).toHaveBeenCalledWith('/?tri=portee')
+  })
+
+  it('un second clic inverse le sens', async () => {
+    await monterVue('tri=portee')
+    expect(entetePortee().getAttribute('aria-sort')).toBe('ascending')
+    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    expect(remplace).toHaveBeenCalledWith('/?tri=-portee')
+  })
+
+  it('un troisième clic rend au tableau son ordre par niveau', async () => {
+    // The way back: without it, only « Tout effacer » — which also drops every
+    // filter — could restore the level order.
+    await monterVue('tri=-portee')
+    expect(entetePortee().getAttribute('aria-sort')).toBe('descending')
+    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    expect(remplace).toHaveBeenCalledWith('/')
+  })
+
+  it('écarte une colonne que l’URL ne sait pas nommer', async () => {
+    await monterVue('tri=couleur-preferee')
+    expect(entetePortee().getAttribute('aria-sort')).toBe('none')
   })
 })
 

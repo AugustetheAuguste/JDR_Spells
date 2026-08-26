@@ -1,8 +1,11 @@
+'use client'
+
 import Link from 'next/link'
 
 import { Badge } from '@/components/primitives/Badge'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
-import type { SortCompare } from '@/lib/comparaison/ensembles'
+import type { EtatTriTable } from '@/components/primitives/TableDense'
+import { colonneNiveauDe, type SortCompare } from '@/lib/comparaison/ensembles'
 import { ecoleDe, type IndexWeb } from '@/lib/donnees/index-web'
 
 /**
@@ -16,54 +19,134 @@ import { ecoleDe, type IndexWeb } from '@/lib/donnees/index-web'
  * The spread column is the point of the whole page. It is the only number here
  * the wiki cannot give you, since it requires cross-referencing nineteen class
  * lists.
+ *
+ * Every header is sortable, the per-class ones included — « which of these does
+ * the bard get earliest » is the same question as « sort the bard's column », and
+ * a column key names the class rather than its position so that a shared link
+ * cannot end up sorting by whichever class happens to sit second.
  */
+/**
+ * A header cell: plain text, or a button when the caller can sort on it.
+ *
+ * Module level and not nested in `TableComparaison`: a component created during
+ * render is a new type on every render, so React would remount every header — and
+ * with it drop the focus a keyboard user had on the sort button.
+ */
+function Entete({
+  cle,
+  libelle,
+  alignement = 'gauche',
+  classeSupp = '',
+  titre,
+  tri,
+}: {
+  readonly cle: string
+  readonly libelle: string
+  readonly alignement?: 'gauche' | 'droite'
+  readonly classeSupp?: string
+  readonly titre?: string
+  /** Omitted: the header stays plain text. */
+  readonly tri?: EtatTriTable
+}) {
+  const actif = tri !== undefined && tri.colonne === cle
+  const sens = actif ? tri.sens : null
+  return (
+    <th
+      {...(tri === undefined
+        ? {}
+        : {
+            'aria-sort': (actif
+              ? sens === 'asc'
+                ? 'ascending'
+                : 'descending'
+              : 'none') as 'ascending' | 'descending' | 'none',
+          })}
+      className={[
+        'sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-petit font-semibold text-encre-douce',
+        alignement === 'droite' ? 'text-right' : 'text-left',
+        classeSupp,
+      ].join(' ')}
+      scope="col"
+      {...(titre === undefined || tri !== undefined ? {} : { title: titre })}
+    >
+      {tri === undefined ? (
+        libelle
+      ) : (
+        <button
+          className={[
+            'inline-flex w-full cursor-pointer items-center gap-1 bg-transparent p-0 text-petit font-semibold hover:text-accent',
+            actif ? 'text-encre' : 'text-encre-douce',
+            alignement === 'droite' ? 'justify-end' : 'justify-start',
+          ].join(' ')}
+          onClick={() => tri.surColonne(cle)}
+          title={
+            titre === undefined
+              ? actif
+                ? `Trié par ${libelle}. Cliquez pour changer.`
+                : `Trier par ${libelle}`
+              : `${titre} — cliquez pour trier.`
+          }
+          type="button"
+        >
+          {libelle}
+          <span
+            aria-hidden="true"
+            className={sens === null ? 'text-encre-faible' : 'text-accent'}
+          >
+            {sens === null ? '↕' : sens === 'asc' ? '↑' : '↓'}
+          </span>
+        </button>
+      )}
+    </th>
+  )
+}
+
 export function TableComparaison({
   index,
   sorts,
   classes,
   legende,
+  tri,
 }: {
   readonly index: IndexWeb
   readonly sorts: readonly SortCompare[]
   readonly classes: readonly string[]
   readonly legende: string
+  /** Omitted: the headers stay plain text. */
+  readonly tri?: EtatTriTable
 }) {
   const noms = new Map(index.classes.map((classe) => [classe.slug, classe.nom]))
 
   return (
     <div className="overflow-x-auto rounded-panneau border border-bord bg-surface">
-      <table className="w-full border-collapse text-base">
+      <table className="w-full border-collapse text-corps">
         <caption className="sr-only">{legende}</caption>
         <thead>
           <tr>
-            <th
-              className="sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-left text-petit font-semibold text-encre-douce"
-              scope="col"
-            >
-              Sort
-            </th>
-            <th
-              className="sticky top-0 z-10 hidden border-b border-bord bg-surface px-2.5 py-1.5 text-left text-petit font-semibold text-encre-douce sm:table-cell"
-              scope="col"
-            >
-              École
-            </th>
+            <Entete cle="nom" libelle="Sort" {...(tri === undefined ? {} : { tri })} />
+            <Entete
+              classeSupp="hidden sm:table-cell"
+              cle="ecole"
+              libelle="École"
+              {...(tri === undefined ? {} : { tri })}
+            />
             {classes.map((classe) => (
-              <th
-                className="sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-right text-petit font-semibold text-encre-douce"
+              <Entete
+                alignement="droite"
+                cle={colonneNiveauDe(classe)}
                 key={classe}
-                scope="col"
-              >
-                {noms.get(classe) ?? classe}
-              </th>
+                libelle={noms.get(classe) ?? classe}
+                titre={`Niveau du sort pour ${noms.get(classe) ?? classe}`}
+                {...(tri === undefined ? {} : { tri })}
+              />
             ))}
-            <th
-              className="sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-right text-petit font-semibold text-encre-douce"
-              scope="col"
-              title="Différence entre le niveau le plus haut et le plus bas parmi les classes comparées"
-            >
-              Écart
-            </th>
+            <Entete
+              alignement="droite"
+              cle="ecart"
+              libelle="Écart"
+              titre="Différence entre le niveau le plus haut et le plus bas parmi les classes comparées"
+              {...(tri === undefined ? {} : { tri })}
+            />
           </tr>
         </thead>
         <tbody>

@@ -41,6 +41,16 @@ export interface Filtres {
   readonly jets?: readonly number[]
   /** Tag codes from the optional LLM layer. A spell matches if it carries any. */
   readonly tags?: readonly number[]
+  /**
+   * Tag codes a spell must carry NONE of.
+   *
+   * Any-of to include, none-of to exclude — and deliberately not symmetric. « Show
+   * me area spells or ranged spells » is one question, but « hide mind-affecting »
+   * means hide every one of them; an exclusion that only fired when a spell
+   * carried *all* the excluded tags would let most of what you asked to hide
+   * through, which is the failure you would notice last.
+   */
+  readonly tagsExclus?: readonly number[]
   /** True keeps only spells whose corpus records a level disagreement. */
   readonly desaccord?: boolean
 }
@@ -62,6 +72,7 @@ export function filtresActifs(filtres: Filtres): boolean {
     !vide(filtres.composantes) ||
     !vide(filtres.jets) ||
     !vide(filtres.tags) ||
+    !vide(filtres.tagsExclus) ||
     filtres.desaccord === true
   )
 }
@@ -93,6 +104,9 @@ function retenir(sort: EntreeSort, filtres: Filtres): boolean {
     return false
   }
   if (!vide(filtres.tags) && !filtres.tags!.some((t) => sort.t.includes(t))) return false
+  if (!vide(filtres.tagsExclus) && filtres.tagsExclus!.some((t) => sort.t.includes(t))) {
+    return false
+  }
   if (filtres.desaccord === true && !sort.d) return false
   return true
 }

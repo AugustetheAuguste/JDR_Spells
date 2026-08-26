@@ -107,10 +107,13 @@ describe('lireEtat', () => {
       // filters always give the same canonical link.
       ecoles: ['abjuration', 'evocation'],
       tags: ['bonus_chiffre'],
+      tagsExclus: [],
       composantes: ['M', 'V'],
       sauvegarde: ['volonte'],
       q: 'feu',
       desaccords: true,
+      tri: null,
+      sens: 'asc',
     })
   })
 
@@ -249,7 +252,7 @@ describe('l’état vide nomme un filtre précis', () => {
     // If a key is ever added to the URL and forgotten here, its "remove this
     // filter" button would do nothing and the empty state would be a dead end.
     const plein = lire(
-      'classe=barde&niveau=1&ecoles=evocation&tags=bonus_chiffre&composantes=V&sauvegarde=volonte&q=feu&desaccords=1',
+      'classe=barde&niveau=1&ecoles=evocation&tags=bonus_chiffre&composantes=V&sauvegarde=volonte&q=feu&desaccords=1&tri=-portee',
     )
     for (const cle of Object.keys(CLES) as (keyof typeof CLES)[]) {
       expect(versQueryString(sansFiltre(plein, cle))).not.toBe(versQueryString(plein))
