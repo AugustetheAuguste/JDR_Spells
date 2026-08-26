@@ -39,11 +39,11 @@ import type { Moteur, TableAlias } from '@/lib/recherche/moteur'
  * `/data/index.json` once lets it be cached like the static asset it is.
  *
  * The search engine is imported dynamically for the same reason, one level down:
- * MiniSearch is ~11 kB gzipped and cannot do anything until the index has arrived,
- * so shipping it in the entry chunk buys nothing and this route is the one closest
- * to the 200 kB budget. It loads in parallel with the fetch it depends on, so no
- * user-visible wait is added — and it introduces no new « not ready » state,
- * because a null engine already meant « the index has not landed ».
+ * MiniSearch cannot do anything until the index has arrived, so shipping it in the
+ * entry chunk buys nothing. It loads in parallel with the fetch it depends on, so
+ * no user-visible wait is added — and it introduces no new « not ready » state,
+ * because a null engine already meant « the index has not landed ». No budget
+ * enforces this any more; it stays because it is free, not because it is measured.
  */
 
 /** The dynamically imported factory. Held in state as a value, hence the

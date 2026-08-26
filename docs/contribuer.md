@@ -94,10 +94,15 @@ cassent la production :
 - **Le comportement en fichiers plats** : les URL sans barre finale, les 404, les
   préchargements RSC. `docs/deploiement.md` les liste comme non vérifiés.
   Regarder la prévisualisation Vercel, pas seulement `localhost`.
-- **Les budgets.** Ils sont bloquants exprès. La marge est mince : la route de
-  navigation est à **192,5 kB** sur 200 kB de JS client, dont ~148 kB de
-  framework. Toute dépendance ajoutée au client se paie sur ces 8 kB — la
-  recherche est chargée à la demande pour cette raison, pas par élégance.
+- **Il n'y a plus de budget de poids** — tous retirés le 2026-08-26 par arbitrage
+  humain, les performances étant explicitement secondaires sur ce projet. Ni
+  plafond sur `index.json`, ni plafond de JS client, ni assertion de durée dans
+  les tests du moteur. `verifier_build.ts` et `check_data_contract.ts` **impriment**
+  les poids sans les opposer à quoi que ce soit ; ce qu'ils bloquent encore est la
+  complétude de la sortie, pas sa taille. Pour mémoire, l'état au moment du
+  retrait : 82 kB gzip d'index, 170 kB brotli de JS sur la navigation dont 161 de
+  framework. Un chiffre qui monte n'est donc plus un échec de CI — et ce n'est pas
+  une raison pour réintroduire un seuil.
 
 ## 6. Les règles du site qu'on ne rediscute pas
 

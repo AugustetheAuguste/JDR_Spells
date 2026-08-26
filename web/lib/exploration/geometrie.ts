@@ -1,10 +1,11 @@
 /**
  * The donut's arcs, computed rather than drawn by a library.
  *
- * No charting dependency: the navigation route already sits at 192,5 kB of the
- * 200 kB budget, and the smallest chart library is several times what this file
- * costs. A donut is four path commands, so the arithmetic is cheaper than the
- * dependency — and it stays a pure function, testable without a DOM.
+ * No charting dependency: the smallest chart library is several times what this
+ * file costs, and a donut is four path commands, so the arithmetic is cheaper than
+ * the dependency — and it stays a pure function, testable without a DOM. No budget
+ * enforces that trade any more (they were all removed on 2026-08-26); it is still
+ * the right trade, on the merits rather than on a ceiling.
  *
  * Conventions, fixed once so nothing recomputes them: the centre is (0, 0), the
  * first slice starts at twelve o'clock, and slices run clockwise. Coordinates are

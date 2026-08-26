@@ -1,22 +1,26 @@
 /**
- * Measure the built site against blocking budgets.
+ * Check the built site for completeness, and report its weight for information.
  *
- * This runs on `web/out/`, after `next build`, and it exists because the two
- * numbers that decide whether the site is usable are invisible from the source:
- * how many pages actually got generated, and how much JavaScript a visitor
- * actually downloads before the first keystroke works.
+ * This runs on `web/out/`, after `next build`, and what it enforces is that the
+ * output is *complete* — nothing here enforces a size.
  *
- * The page count is the one that catches a silent data regression. A spell that
- * falls out of the index does not error — `generateStaticParams` simply enumerates
- * one fewer entry, the build succeeds, and a URL that used to work 404s. Comparing
- * against `|index.sorts|` turns that into a build failure.
+ * The page count is the check that matters. A spell that falls out of the index
+ * does not error — `generateStaticParams` simply enumerates one fewer entry, the
+ * build succeeds, and a URL that used to work 404s. Comparing against
+ * `|index.sorts|` turns that into a build failure.
  *
- * The JS budget is measured per route, from the HTML, by summing the gzip of every
- * script the document actually loads. Next 16 no longer prints per-route sizes, and
- * reading a build manifest would measure what the bundler intended; reading the
- * emitted `<script src>` list measures what the browser will fetch.
+ * Weight is measured and printed, never enforced. There was a blocking budget here
+ * — 200 kB gzip of client JS per route, later split into a framework floor and a
+ * per-route ceiling — and it was removed deliberately: performance is explicitly
+ * secondary for this project, and a threshold nobody intends to defend is worse
+ * than no threshold, because it fails builds for reasons the author does not care
+ * about. The numbers are still printed because they cost nothing to compute and a
+ * tenfold jump is worth seeing; seeing it is all this script now does about it.
  *
- * Budgets are blocking. A warning ignored three times is a permanent regression.
+ * Measured from the HTML, by summing every script the document actually loads.
+ * Reading a build manifest would measure what the bundler intended; reading the
+ * emitted `<script src>` list measures what the browser will fetch. Both codecs are
+ * shown, brotli being what a CDN actually serves.
  *
  * Usage: tsx scripts/verifier_build.ts [--racine-web web]
  */
@@ -24,18 +28,9 @@
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { gzipSync } from 'node:zlib'
+import { brotliCompressSync, gzipSync } from 'node:zlib'
 
 const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-
-/** Same ceiling as `BUDGET_GZIP_OCTETS` in `pf_spells.export_web` and in
- * `check_data_contract.ts`. Three readers, one number, stated three times — but
- * the alternative is a shared module that only this script would import. */
-const BUDGET_INDEX_GZIP = 400 * 1024
-
-/** The plan's ceiling for the initial client bundle. Measured per route on the
- * gzip of the scripts the document loads. */
-const BUDGET_JS_GZIP = 200 * 1024
 
 /** The routes with genuinely distinct bundles: the navigation view, one spell
  * sheet, the comparison view. Favourites is there because its bundle is the one a
@@ -63,6 +58,22 @@ function pesee(octets: Buffer): number {
   return gzipSync(octets, { level: 9 }).byteLength
 }
 
+interface Poids {
+  readonly gzip: number
+  readonly brotli: number
+}
+
+/** Both codecs at once, at default quality for brotli — which is 11, the same
+ * maximum a CDN uses for static assets it compresses ahead of time. */
+function peser(octets: Buffer): Poids {
+  return { gzip: pesee(octets), brotli: brotliCompressSync(octets).byteLength }
+}
+
+const somme = (poids: readonly Poids[]): Poids => ({
+  gzip: poids.reduce((total, p) => total + p.gzip, 0),
+  brotli: poids.reduce((total, p) => total + p.brotli, 0),
+})
+
 /** Every `index.html` under a directory, recursively. Counting `*.html` at large
  * would also count `404.html`, which is not a spell page and not in the index. */
 function compterPages(racine: string): number {
@@ -76,27 +87,38 @@ function compterPages(racine: string): number {
 }
 
 /**
- * The gzip weight of the scripts a document loads.
+ * The scripts a document loads, as URLs.
  *
- * Deduplicated by URL, because the same chunk appears both as a preload `href`
- * and a `src` and the browser fetches it once.
+ * Deduplicated, because the same chunk appears both as a preload `href` and a
+ * `src` and the browser fetches it once.
  */
-function poidsJs(racineOut: string, html: string): { readonly gzip: number; readonly nb: number } {
+function scriptsCharges(html: string): readonly string[] {
   const urls = new Set<string>()
   for (const trouve of html.matchAll(/(?:src|href)="(\/_next\/static\/[^"]+\.js)"/g)) {
     const url = trouve[1]
     if (url !== undefined) urls.add(url)
   }
-  let gzip = 0
+  return [...urls]
+}
+
+/**
+ * Weigh a set of chunk URLs, reporting a missing one as a failure.
+ *
+ * A referenced-but-absent script is not a weight problem, it is a broken build —
+ * but it surfaces here because this is the only place that resolves those URLs
+ * against the filesystem.
+ */
+function peserChunks(racineOut: string, urls: readonly string[]): Poids {
+  const poids: Poids[] = []
   for (const url of urls) {
     const chemin = join(racineOut, url)
     if (!existsSync(chemin)) {
       echec(`script référencé mais absent de la sortie : ${url}`)
       continue
     }
-    gzip += pesee(readFileSync(chemin))
+    poids.push(peser(readFileSync(chemin)))
   }
-  return { gzip, nb: urls.size }
+  return somme(poids)
 }
 
 function main(argv: readonly string[]): number {
@@ -139,15 +161,8 @@ function main(argv: readonly string[]): number {
     )
   }
 
-  // --- poids des données -------------------------------------------------
-  const gzipIndex = pesee(brutIndex)
-  console.log(
-    `index gzip : ${ko(gzipIndex)} / ${ko(BUDGET_INDEX_GZIP)} ` +
-      `(${((gzipIndex / BUDGET_INDEX_GZIP) * 100).toFixed(1)} %)`,
-  )
-  if (gzipIndex > BUDGET_INDEX_GZIP) {
-    echec(`index.json hors budget : ${gzipIndex} octets gzippés > ${BUDGET_INDEX_GZIP}.`)
-  }
+  // --- poids des données, pour information --------------------------------
+  console.log(`index gzip : ${ko(pesee(brutIndex))}`)
 
   const cheminAlias = join(racineWeb, 'public/data/alias.json')
   if (existsSync(cheminAlias)) {
@@ -157,24 +172,21 @@ function main(argv: readonly string[]): number {
     echec('alias.json absent : la recherche le charge au démarrage.')
   }
 
-  // --- poids du JS client ------------------------------------------------
+  // --- poids du JS client, pour information -------------------------------
+  // La seule chose encore bloquante ici est un script référencé mais absent de la
+  // sortie : ce n'est pas un problème de poids, c'est un build cassé.
   for (const route of ROUTES) {
     const chemin = join(racineOut, route.chemin)
     if (!existsSync(chemin)) {
       echec(`route absente de la sortie : ${route.chemin}`)
       continue
     }
-    const { gzip, nb } = poidsJs(racineOut, readFileSync(chemin, 'utf8'))
-    const part = ((gzip / BUDGET_JS_GZIP) * 100).toFixed(1)
+    const urls = scriptsCharges(readFileSync(chemin, 'utf8'))
+    const poids = peserChunks(racineOut, urls)
     console.log(
-      `js ${route.nom.padEnd(12)}: ${ko(gzip)} / ${ko(BUDGET_JS_GZIP)} ` +
-        `(${part} %, ${nb} fragment(s))`,
+      `js ${route.nom.padEnd(11)}: ${ko(poids.brotli)} brotli, ${ko(poids.gzip)} gzip ` +
+        `(${urls.length} fragment(s))`,
     )
-    if (gzip > BUDGET_JS_GZIP) {
-      echec(
-        `route ${route.nom} hors budget JS : ${gzip} octets gzippés > ${BUDGET_JS_GZIP}.`,
-      )
-    }
   }
 
   // --- les données sont bien publiées -----------------------------------
@@ -191,7 +203,7 @@ function main(argv: readonly string[]): number {
     return 1
   }
 
-  console.log('\nOK — pages complètes, budgets tenus.')
+  console.log('\nOK — pages complètes. Les poids ci-dessus sont indicatifs, aucun plafond.')
   return 0
 }
 

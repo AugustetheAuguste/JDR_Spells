@@ -73,10 +73,6 @@ CLES_SORT = (
     "meta",
 )
 
-# Budget from the contract. Blocking, not advisory: a warning ignored three times
-# becomes a permanent regression.
-BUDGET_GZIP_OCTETS = 400 * 1024
-
 _REMPLACEMENT = chr(0xFFFD)
 
 
@@ -389,15 +385,12 @@ def construire(
     ecrire(texte_index, chemin_index)
 
     octets = texte_index.encode("utf-8")
-    # mtime=0 so the gzip header carries no timestamp: the measured size must be a
-    # function of the content alone, or the budget check drifts between runs.
+    # mtime=0 so the gzip header carries no timestamp: the size is reported, and a
+    # reported number that moves when nothing changed is a number nobody trusts.
+    # Reported only — there is no weight ceiling in this repository, by decision:
+    # performance is explicitly secondary here, and an export that fails on a size
+    # nobody intends to defend blocks work for a reason its author does not hold.
     taille_gzip = len(gzip.compress(octets, mtime=0))
-    if taille_gzip > BUDGET_GZIP_OCTETS:
-        raise ExportWebError(
-            f"budget dépassé : index.json fait {taille_gzip} octets gzippés, "
-            f"plafond {BUDGET_GZIP_OCTETS}. Un export hors budget est un échec, "
-            "pas un avertissement."
-        )
 
     return {
         "nb_sorts": len(entrees),
@@ -409,7 +402,6 @@ def construire(
         "nb_tags": len(table_tags),
         "taille_index_octets": len(octets),
         "taille_index_gzip": taille_gzip,
-        "budget_gzip": BUDGET_GZIP_OCTETS,
         "chemin_index": chemin_index.as_posix(),
         "chemin_props": dossier_props.as_posix(),
     }
