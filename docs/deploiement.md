@@ -48,6 +48,7 @@ correction du corpus. Le plan demandait `immutable` partout ; c'est le seul
 Le contrôle qui manquait — rien dans la CI ne validait ce fichier :
 
 ```bash
+mkdir -p build
 curl -sS -o build/vercel.schema.json https://openapi.vercel.sh/vercel.json
 python - <<'EOF'
 import json, jsonschema
