@@ -47,7 +47,7 @@ export function BlocTechnique({ lignes }: { readonly lignes: readonly LigneTechn
           <dt className="text-petit font-semibold text-encre-douce sm:text-right">
             {ligne.libelle}
           </dt>
-          <dd className="m-0 text-base">
+          <dd className="m-0 text-corps">
             <Valeur valeur={ligne.valeur} />
           </dd>
         </div>

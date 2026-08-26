@@ -28,7 +28,7 @@ export function BoutonFavori({
   const libelle = dedans ? 'Retirer des favoris' : 'Ajouter aux favoris'
   const classes = compact
     ? 'rounded-jeton border px-1.5 py-0.5 text-micro leading-none'
-    : 'rounded-jeton border px-3 py-2 text-base font-medium'
+    : 'rounded-jeton border px-3 py-2 text-corps font-medium'
 
   return (
     <>
@@ -37,7 +37,7 @@ export function BoutonFavori({
         className={[
           classes,
           dedans
-            ? 'border-transparent bg-accent text-surface hover:bg-accent-survol'
+            ? 'border-accent bg-accent-voile text-accent hover:bg-survol'
             : 'border-bord-fort bg-surface text-encre hover:bg-survol',
           pret ? '' : 'cursor-wait opacity-60',
         ].join(' ')}

@@ -42,11 +42,17 @@ export function PastilleEcole({
     )
   }
 
+  // The chip carries the colour and the label carries the text, rather than white
+  // text sitting on the fill. No text on this site is white; ink on the fill would
+  // have measured 2.7:1 to 3.9:1 depending on the school and failed AA, so the
+  // colour moved into a square of its own where contrast is not a text problem.
   return (
-    <span
-      className="inline-flex items-center rounded-jeton px-1.5 py-0.5 text-micro font-medium text-surface"
-      style={{ backgroundColor: fond }}
-    >
+    <span className="inline-flex items-center gap-1.5 text-micro font-medium text-encre">
+      <span
+        aria-hidden="true"
+        className="inline-block size-3 shrink-0 rounded-jeton align-middle"
+        style={{ backgroundColor: fond }}
+      />
       {libelle}
     </span>
   )

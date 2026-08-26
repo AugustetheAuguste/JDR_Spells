@@ -102,7 +102,11 @@ export const POLICES = {
 export const ECHELLE = {
   micro: { taille: '11px', interligne: '16px', graisse: 500 },
   petit: { taille: '12.5px', interligne: '18px', graisse: 400 },
-  base: { taille: '14.5px', interligne: '22px', graisse: 400 },
+  // Named `corps` and not `base`: the colour scale already owns `base`, and
+  // Tailwind resolves a single `text-corps` utility from both `--color-base` and
+  // `--text-corps` — it picked the colour, so every body cell was rendered in the
+  // page background on a white surface. Invisible text, and no test could see it.
+  corps: { taille: '14.5px', interligne: '22px', graisse: 400 },
   grand: { taille: '17px', interligne: '24px', graisse: 400 },
   titre3: { taille: '20px', interligne: '26px', graisse: 600 },
   titre2: { taille: '25px', interligne: '30px', graisse: 600 },

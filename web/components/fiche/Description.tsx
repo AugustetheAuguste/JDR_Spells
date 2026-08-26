@@ -25,7 +25,7 @@ export function Description({
         <h2 className="m-0 font-affichage text-titre3 font-semibold" id={id}>
           {titre}
         </h2>
-        <p className="mt-2 mb-0 text-base text-encre-faible">
+        <p className="mt-2 mb-0 text-corps text-encre-faible">
           La page d&apos;origine ne porte pas de texte de description exploitable.
         </p>
       </section>
@@ -42,7 +42,7 @@ export function Description({
       <h2 className="m-0 font-affichage text-titre3 font-semibold" id={id}>
         {titre}
       </h2>
-      <div className="mt-2 max-w-[68ch] space-y-2.5 text-base">
+      <div className="mt-2 max-w-[68ch] space-y-2.5 text-corps">
         {paragraphes.map((paragraphe, position) => (
           // The index is the key because the text is static build output: it is
           // never reordered, inserted into, or filtered client-side.

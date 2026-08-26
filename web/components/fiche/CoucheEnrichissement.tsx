@@ -60,7 +60,7 @@ function LigneTexte({
   return (
     <div>
       <dt className="text-petit font-semibold text-encre-douce">{titre}</dt>
-      <dd className="m-0 mt-1 text-base">{lisible(valeur)}</dd>
+      <dd className="m-0 mt-1 text-corps">{lisible(valeur)}</dd>
     </div>
   )
 }
@@ -92,7 +92,7 @@ export function CoucheEnrichissement({
       </p>
 
       {enrichissement.resume_court === null ? null : (
-        <p className="mt-0 mb-3 max-w-[68ch] text-base">{enrichissement.resume_court}</p>
+        <p className="mt-0 mb-3 max-w-[68ch] text-corps">{enrichissement.resume_court}</p>
       )}
 
       <dl className="m-0 grid grid-cols-1 gap-3 sm:grid-cols-2">

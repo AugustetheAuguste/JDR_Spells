@@ -28,7 +28,7 @@ export function NiveauxParClasse({
         <h2 className="m-0 font-affichage text-titre3 font-semibold" id="titre-niveaux">
           Niveaux par classe
         </h2>
-        <p className="mt-2 mb-0 max-w-[68ch] text-base text-encre-douce">
+        <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
           Aucune liste de classe du corpus ne revendique ce sort. Il est décrit par sa
           page, mais aucune classe ne l&apos;obtient d&apos;après les listes recensées.
         </p>
@@ -46,7 +46,7 @@ export function NiveauxParClasse({
         niveau, il y en a un par classe.
       </p>
       <div className="overflow-x-auto rounded-panneau border border-bord bg-surface">
-        <table className="w-full border-collapse text-base">
+        <table className="w-full border-collapse text-corps">
           <caption className="sr-only">
             Niveau de ce sort pour chaque classe qui le reçoit
           </caption>

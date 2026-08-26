@@ -118,7 +118,7 @@ export function VueFavoris() {
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Favoris</h1>
-      <p className="mt-1 mb-4 max-w-[68ch] text-base text-encre-douce">
+      <p className="mt-1 mb-4 max-w-[68ch] text-corps text-encre-douce">
         Vos listes sont enregistrées <strong>dans ce navigateur seulement</strong> : il
         n’y a ni compte ni serveur, donc aucune synchronisation entre appareils. Vider
         les données du site les efface — exportez le fichier pour les garder.
@@ -130,7 +130,7 @@ export function VueFavoris() {
           role="alert"
         >
           {incident.type === 'illisible' ? (
-            <p className="m-0 text-base">
+            <p className="m-0 text-corps">
               Les favoris enregistrés étaient illisibles.{' '}
               {incident.sauvegarde ? (
                 <>
@@ -143,14 +143,14 @@ export function VueFavoris() {
               )}
             </p>
           ) : incident.type === 'version' ? (
-            <p className="m-0 text-base">
+            <p className="m-0 text-corps">
               Ces favoris annoncent la version{' '}
               <code className="font-donnees">{String(incident.trouvee)}</code>, que cette
               version du site ne sait pas lire. Rien n’a été détruit : les octets
               d’origine sont sous <code className="font-donnees">{CLE_SAUVEGARDE}</code>.
             </p>
           ) : (
-            <p className="m-0 text-base">
+            <p className="m-0 text-corps">
               {incident.nombre} liste(s) enregistrée(s) étaient malformées et ont été
               écartées plutôt que devinées.
             </p>
@@ -173,10 +173,10 @@ export function VueFavoris() {
         <div className="flex flex-col gap-4">
           <div className="flex flex-wrap items-center gap-2">
             {etat.listes.length > 0 ? (
-              <label className="flex items-center gap-1.5 text-base">
+              <label className="flex items-center gap-1.5 text-corps">
                 Liste
                 <select
-                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-base"
+                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
                   onChange={(evenement) => activer(evenement.target.value)}
                   value={active?.id_liste ?? ''}
                 >
@@ -248,17 +248,17 @@ export function VueFavoris() {
                 setRenommage(null)
               }}
             >
-              <label className="flex items-center gap-1.5 text-base">
+              <label className="flex items-center gap-1.5 text-corps">
                 Nouveau nom
                 <input
                   autoFocus
-                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-base"
+                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
                   onChange={(evenement) => setRenommage(evenement.target.value)}
                   value={renommage}
                 />
               </label>
               <button
-                className="rounded-jeton border-transparent bg-accent px-2.5 py-1 text-petit text-surface"
+                className="rounded-jeton border border-accent bg-accent-voile px-2.5 py-1 text-petit font-semibold text-accent"
                 type="submit"
               >
                 Renommer
@@ -279,14 +279,14 @@ export function VueFavoris() {
               role="alertdialog"
               aria-label="Confirmer la suppression"
             >
-              <p className="m-0 text-base">
+              <p className="m-0 text-corps">
                 Supprimer « {etat.listes.find((l) => l.id_liste === aSupprimer)?.nom} » et
                 ses {etat.listes.find((l) => l.id_liste === aSupprimer)?.sorts.length} sorts
                 ? C’est définitif — exportez-la d’abord si vous hésitez.
               </p>
               <div className="mt-2 flex gap-2">
                 <button
-                  className="rounded-jeton border-transparent bg-desaccord px-2.5 py-1 text-petit text-surface"
+                  className="rounded-jeton border border-desaccord bg-desaccord-voile px-2.5 py-1 text-petit font-semibold text-desaccord"
                   onClick={() => {
                     supprimer(aSupprimer)
                     setASupprimer(null)
@@ -312,12 +312,12 @@ export function VueFavoris() {
               role="alertdialog"
               aria-label="Choisir le mode d’import"
             >
-              <p className="m-0 text-base">
+              <p className="m-0 text-corps">
                 Fichier lu. Rien n’a encore changé : que faut-il en faire ?
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <button
-                  className="rounded-jeton border-transparent bg-accent px-2.5 py-1 text-petit text-surface"
+                  className="rounded-jeton border border-accent bg-accent-voile px-2.5 py-1 text-petit font-semibold text-accent"
                   disabled={active === null}
                   onClick={() => confirmerImport('fusionner')}
                   title={
@@ -349,7 +349,7 @@ export function VueFavoris() {
           )}
 
           {erreurImport === null ? null : (
-            <p className="m-0 text-base text-desaccord" role="alert">
+            <p className="m-0 text-corps text-desaccord" role="alert">
               {erreurImport}
             </p>
           )}
@@ -358,7 +358,7 @@ export function VueFavoris() {
               announcing « Import terminé » above an empty panel is the
               contradiction this branch exists to prevent. */}
           {rapport === null || rapport.listes_lues > 0 ? null : (
-            <p className="m-0 text-base text-encre-douce" role="status">
+            <p className="m-0 text-corps text-encre-douce" role="status">
               Ce fichier ne contenait aucune liste
               {rapport.listes_ecartees > 0
                 ? ` lisible : ${rapport.listes_ecartees} liste(s) écartée(s) comme malformée(s)`
@@ -368,7 +368,7 @@ export function VueFavoris() {
           )}
 
           {rapport === null || rapport.listes_lues === 0 ? null : (
-            <p className="m-0 text-base text-encre-douce" role="status">
+            <p className="m-0 text-corps text-encre-douce" role="status">
               Import terminé : {rapport.ajoutes} id(s) ajouté(s), {rapport.deja} déjà
               présent(s), {rapport.listes_lues} liste(s) lue(s)
               {rapport.listes_ecartees > 0
@@ -404,7 +404,7 @@ export function VueFavoris() {
               </p>
 
               {inconnus.length === 0 ? null : (
-                <p className="m-0 text-base" role="status">
+                <p className="m-0 text-corps" role="status">
                   <Badge ton="alerte">{inconnus.length} inconnu(s)</Badge> Ces
                   identifiants ne sont plus dans le corpus — après une correction, un sort
                   peut avoir changé d’identifiant. Ils sont <strong>conservés</strong>, pas
@@ -413,7 +413,7 @@ export function VueFavoris() {
               )}
 
               <div className="overflow-x-auto rounded-panneau border border-bord bg-surface">
-                <table className="w-full border-collapse text-base">
+                <table className="w-full border-collapse text-corps">
                   <caption className="sr-only">
                     Les sorts de la liste « {active.nom} »
                   </caption>

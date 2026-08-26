@@ -104,8 +104,8 @@
   --text-micro--line-height: 16px;
   --text-petit: 12.5px;
   --text-petit--line-height: 18px;
-  --text-base: 14.5px;
-  --text-base--line-height: 22px;
+  --text-corps: 14.5px;
+  --text-corps--line-height: 22px;
   --text-grand: 17px;
   --text-grand--line-height: 24px;
   --text-titre3: 20px;
@@ -133,8 +133,8 @@
   body {
     background-color: var(--color-base);
     color: var(--color-encre);
-    font-size: var(--text-base);
-    line-height: var(--text-base--line-height);
+    font-size: var(--text-corps);
+    line-height: var(--text-corps--line-height);
     margin: 0;
   }
 
