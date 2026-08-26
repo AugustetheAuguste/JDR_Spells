@@ -192,11 +192,16 @@ npm run web:verifier    # budgets bloquants + axe-core sur 4 routes
 npm run verifier:tout   # la chaîne complète, dans l'ordre où la CI la lance
 ```
 
-Budgets **bloquants**, jamais des avertissements : `index.json` < 400 kB gzip
-(à 82), JS client initial < 200 kB gzip par route (navigation à **192,5 kB**, la
-plus lourde des quatre : ~148 kB y sont le framework, donc la marge réelle sur le
-code applicatif est mince — le moteur de recherche est chargé à la demande pour
-cette raison), et pages générées == `|index.sorts|`.
+Budgets **bloquants**, jamais des avertissements, et le JS mesuré en **brotli** —
+ce que le CDN sert ; le gzip est imprimé pour information seulement. `index.json`
+< 400 kB gzip (à 82), pages générées == `|index.sorts|`, et le JS client scindé en
+deux lignes parce qu'un total unique mesurait la version de Next, pas ce dépôt :
+**socle** commun aux quatre routes < 175 kB (à **161,1**), qu'aucun code
+applicatif ne fait baisser et qui ne bouge que sur mise à jour du framework ;
+**applicatif** par route < 25 kB (navigation à **9,3**, la plus lourde). Le moteur
+de recherche est chargé à la demande, et `verifier_build.ts` échoue si l'`import()`
+redevient statique — comme il échoue si son empreinte ne matche plus rien, un
+contrôle vert à vide étant pire que pas de contrôle.
 `web/out/` n'est pas committé. Déploiement Vercel : racine `web/`, `web/vercel.json`,
 `immutable` sur `/_next/static/` et `/fonts/` mais **pas** sur `/data/*.json`, dont
 l'URL est stable d'un export au suivant.

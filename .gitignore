@@ -40,3 +40,7 @@ tests/fixtures/mini_corpus/build_artifacts/
 # `build_artifacts/taxo_passe0/`, aucun appel payant n'y est engagé : il n'y a
 # donc pas de trace d'audit à conserver, seulement du poids.
 build_artifacts/prompts/
+
+# Copies de travail creees par les agents (`git worktree`) : un depot dans le
+# depot, jamais du code source de ce projet.
+.claude/worktrees/

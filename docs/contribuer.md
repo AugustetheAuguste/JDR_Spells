@@ -94,10 +94,22 @@ cassent la production :
 - **Le comportement en fichiers plats** : les URL sans barre finale, les 404, les
   préchargements RSC. `docs/deploiement.md` les liste comme non vérifiés.
   Regarder la prévisualisation Vercel, pas seulement `localhost`.
-- **Les budgets.** Ils sont bloquants exprès. La marge est mince : la route de
-  navigation est à **192,5 kB** sur 200 kB de JS client, dont ~148 kB de
-  framework. Toute dépendance ajoutée au client se paie sur ces 8 kB — la
-  recherche est chargée à la demande pour cette raison, pas par élégance.
+- **Les budgets.** Ils sont bloquants exprès, et mesurés en **brotli** — ce que
+  Vercel sert réellement. Le JS client est budgété en deux lignes distinctes,
+  parce que 95 % du poids d'une page est du framework et qu'un total unique
+  mesurait la version de Next plutôt que ce dépôt :
+  - le **socle** commun aux quatre routes (React + routeur Next) est à
+    **161,1 kB** sur 175 ; aucun code applicatif ne le fera baisser, et il ne
+    bouge que sur mise à jour du framework — un dépassement est un événement à
+    examiner, pas à absorber ;
+  - l'**applicatif** par route est à **9,3 kB** au plus (navigation) sur 25.
+    C'est la ligne qu'une PR peut réellement déplacer, donc celle à surveiller :
+    elle admet une vraie fonctionnalité, elle refuse une bibliothèque d'UI
+    empaquetée.
+
+  La recherche est chargée à la demande (5,4 kB brotli hors du payload initial)
+  et `verifier_build.ts` échoue si l'`import()` dynamique redevient statique —
+  une régression qui compile, passe les tests et ne se voit nulle part ailleurs.
 
 ## 6. Les règles du site qu'on ne rediscute pas
 
