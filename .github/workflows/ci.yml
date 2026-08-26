@@ -15,10 +15,14 @@
 
 name: CI
 
+# `pull_request` couvre toute branche de travail : lister des préfixes dans `push`
+# ne servirait qu'à faire tourner la CI deux fois sur une PR. Seul le tronc est
+# donc déclenché à la poussée — c'est lui que Vercel déploie, et un tronc rouge
+# est le seul état qu'on ne découvre pas trop tard.
 on:
   pull_request:
   push:
-    branches: [main, 'feat/**']
+    branches: [main]
 
 # Une PR poussée trois fois de suite n'a pas besoin de trois builds de 2 076 pages.
 concurrency:
@@ -43,7 +47,7 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: '24'
+          node-version-file: .nvmrc
           cache: npm
 
       - name: Dépendances
@@ -75,7 +79,7 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: '24'
+          node-version-file: .nvmrc
           cache: npm
           cache-dependency-path: |
             package-lock.json
