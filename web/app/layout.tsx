@@ -43,6 +43,9 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
               <Link className="text-encre hover:text-accent" href="/">
                 Sorts
               </Link>
+              <Link className="text-encre hover:text-accent" href="/explorer">
+                Explorer
+              </Link>
               <Link className="text-encre hover:text-accent" href="/comparaison">
                 Comparer
               </Link>

@@ -90,6 +90,32 @@ export const COULEURS = {
   desaccordVoile: '#FBEFE6',
 } as const
 
+/**
+ * The slice ramp of the exploration chart — one hue, five steps.
+ *
+ * A chart needs its slices told apart, and the brief allows exactly one accent
+ * colour. So the ramp is not a second palette: it is the accent's own hue (161°)
+ * walked down in lightness, which keeps the school pastilles the only place on
+ * the site where a colour *names* something. A slice's colour therefore carries
+ * its rank in the chart and nothing else — which is why every slice is labelled
+ * with its own name and count, in the chart and in the list beside it.
+ *
+ * Ordered darkest first, because the slices are ordered largest first and the
+ * biggest share should read as the heaviest.
+ *
+ * Five steps and not nine: below ~1,25:1 between neighbours two steps read as one
+ * colour, and a ramp that lies about being distinguishable is worse than a ramp
+ * that repeats. Beyond five slices, `couleurTranche` interpolates between the
+ * ends — see `lib/design/rampe.ts` for why that is acceptable there.
+ */
+export const RAMPE_TRANCHES = [
+  '#0E5840',
+  '#11694D',
+  '#147B5A',
+  '#178C67',
+  '#1A9E74',
+] as const
+
 export const POLICES = {
   affichage: '"Fraunces", "Iowan Old Style", Georgia, serif',
   corps: '"Inter", "Segoe UI", system-ui, sans-serif',

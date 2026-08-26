@@ -37,15 +37,16 @@ const BUDGET_INDEX_GZIP = 400 * 1024
  * gzip of the scripts the document loads. */
 const BUDGET_JS_GZIP = 200 * 1024
 
-/** The three routes the plan names, and the ones with genuinely distinct
- * bundles: the navigation view, one spell sheet, the comparison view. Favourites
- * is added because it is the fourth interactive route and its bundle is the one a
- * new `localStorage` dependency would inflate. */
+/** The routes with genuinely distinct bundles: the navigation view, one spell
+ * sheet, the comparison view. Favourites is there because its bundle is the one a
+ * new `localStorage` dependency would inflate, and exploration because it draws its
+ * own charts — the day a charting library is imported, this is where it shows. */
 const ROUTES: readonly { readonly nom: string; readonly chemin: string }[] = [
   { nom: 'navigation', chemin: 'index.html' },
   { nom: 'fiche', chemin: 'sorts/detection-de-la-magie/index.html' },
   { nom: 'comparaison', chemin: 'comparaison/index.html' },
   { nom: 'favoris', chemin: 'favoris/index.html' },
+  { nom: 'exploration', chemin: 'explorer/index.html' },
 ]
 
 const echecs: string[] = []
