@@ -13,6 +13,9 @@ requires-python = ">=3.11"
 # patch release would change — the parsers are tested against committed HTML.
 dependencies = [
     "beautifulsoup4>=4.12",
+    # Required, not optional: the "lxml" parser is named at every BeautifulSoup
+    # call site, so its absence raises instead of falling back.
+    "lxml>=5.0",
     "jsonschema>=4.20",
     "requests>=2.31",
 ]

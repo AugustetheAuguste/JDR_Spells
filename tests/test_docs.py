@@ -5,6 +5,15 @@ entry point, so both are load-bearing artifacts and are tested like code. The tw
 tests that matter most: the pipeline command block may not name a module that does
 not exist, and the README's worked example must be the *real* spell file — a
 retyped-from-memory example is worse than none, because it teaches wrong shapes.
+
+Two checks on `CLAUDE.md` used to live here and were removed on 2026-08-26 by
+human arbitration: a line budget (<= 165) and a section count (== 11, numbered
+without gaps). § 11 on the web interface took the file to 213 lines and 12
+sections, and the decision was to keep the file as written rather than raise the
+budget a second time or defer § 11 to a Skill. **Nothing measures the size of the
+always-loaded context any more** — the drift the budget existed to catch is now
+uncaught, deliberately. Content checks below still apply, so what `CLAUDE.md`
+*says* remains tested; only how much it says is not.
 """
 
 from __future__ import annotations
@@ -57,25 +66,6 @@ class TestFormatDesDocs:
         assert b"\r" not in octets
         assert octets.endswith(b"\n")
         octets.decode("utf-8")
-
-    def test_claude_md_tient_dans_son_budget(self, claude_texte: str) -> None:
-        """It is prepended to every session's context: rules and pointers only.
-
-        Raised from 120 to 165 when the LLM-enrichment layer added § 10 — that
-        layer has non-negotiables of its own (no human lock, `preuves`, the 5 %
-        rule) and a session that has not read them will damage data. The budget
-        exists to force deferral to the Skills, and § 10 does defer: it states the
-        rules that must not be discovered the hard way, and points for the rest.
-        """
-        assert len(claude_texte.splitlines()) <= 165
-
-    def test_claude_md_est_numerote_sans_trou(self, claude_texte: str) -> None:
-        titres = [
-            ligne for ligne in claude_texte.splitlines() if ligne.startswith("## ")
-        ]
-        assert len(titres) == 11
-        for n, titre in enumerate(titres, start=1):
-            assert titre.startswith(f"## {n}. "), titre
 
 
 class TestCLAUDEmdContenu:
