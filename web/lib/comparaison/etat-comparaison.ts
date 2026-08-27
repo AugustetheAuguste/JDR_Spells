@@ -32,10 +32,11 @@ export interface EtatComparaison {
   /** In the order picked, which is the order the columns appear in. */
   readonly classes: readonly string[]
   readonly mode: Mode
-  /** Same three-state tag filter as the browse view, same `-` convention in the
-   * URL. The taxonomy is one closed list and it answers the same question here. */
+  /** Same four-state tag filter as the browse view, same `-`/`!` convention in
+   * the URL. The taxonomy is one closed list and it answers the same question here. */
   readonly tags: readonly string[]
   readonly tagsExclus: readonly string[]
+  readonly tagsObliges: readonly string[]
   /** The sorted column, or null for the view's own order — widest spread first. */
   readonly tri: ColonneComparaison | null
   readonly sens: SensTri
@@ -46,6 +47,7 @@ export const ETAT_COMPARAISON_VIDE: EtatComparaison = {
   mode: 'partages',
   tags: [],
   tagsExclus: [],
+  tagsObliges: [],
   tri: null,
   sens: 'asc',
 }
@@ -94,6 +96,7 @@ export function lireEtatComparaison(
     mode,
     tags: tags.tags,
     tagsExclus: tags.tagsExclus,
+    tagsObliges: tags.tagsObliges,
     tri,
     sens: tri !== null && desc ? 'desc' : 'asc',
   }
@@ -110,8 +113,8 @@ export function ecrireEtatComparaison(etat: EtatComparaison): URLSearchParams {
   if (etat.mode !== ETAT_COMPARAISON_VIDE.mode) {
     params.set(CLES_COMPARAISON.mode, etat.mode)
   }
-  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) {
-    params.set(CLES_COMPARAISON.tags, formaterTags(etat.tags, etat.tagsExclus))
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0 || etat.tagsObliges.length > 0) {
+    params.set(CLES_COMPARAISON.tags, formaterTags(etat.tags, etat.tagsExclus, etat.tagsObliges))
   }
   if (etat.tri !== null) {
     params.set(CLES_COMPARAISON.tri, `${etat.sens === 'desc' ? '-' : ''}${etat.tri}`)

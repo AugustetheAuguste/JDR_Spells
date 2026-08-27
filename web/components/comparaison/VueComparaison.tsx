@@ -124,7 +124,12 @@ export function VueComparaison() {
     if (index === null) return []
     const codes = (noms: readonly string[]): number[] =>
       noms.map((nom) => index.tags.indexOf(nom)).filter((code) => code >= 0)
-    const gardes = filtrerParTags(lignes, codes(etat.tags), codes(etat.tagsExclus))
+    const gardes = filtrerParTags(
+      lignes,
+      codes(etat.tags),
+      codes(etat.tagsExclus),
+      codes(etat.tagsObliges),
+    )
     return etat.tri === null
       ? parDefaut(gardes)
       : trierComparaisonParColonne(index, gardes, etat.tri, etat.sens)
@@ -188,14 +193,17 @@ export function VueComparaison() {
                 ecrire({ ...etat, classes, tri: null, sens: 'asc' })
               }
             />
-            {/* The same closed taxonomy as the browse view, and the same three
+            {/* The same closed taxonomy as the browse view, and the same four
                 states: « compare only the area spells », « compare everything but
-                the mind-affecting ones ». */}
+                the mind-affecting ones », « compare only spells that are both ». */}
             <FiltreTags
-              surTags={(tags, tagsExclus) => ecrire({ ...etat, tags, tagsExclus })}
+              surTags={(tags, tagsExclus, tagsObliges) =>
+                ecrire({ ...etat, tags, tagsExclus, tagsObliges })
+              }
               tags={etat.tags}
               tagsConnus={index.tags}
               tagsExclus={etat.tagsExclus}
+              tagsObliges={etat.tagsObliges}
             />
           </div>
         </aside>

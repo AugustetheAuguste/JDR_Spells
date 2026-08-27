@@ -199,11 +199,13 @@ export function filtrerParTags(
   sorts: readonly SortCompare[],
   tags: readonly number[],
   tagsExclus: readonly number[],
+  tagsObliges: readonly number[] = [],
 ): SortCompare[] {
-  if (tags.length === 0 && tagsExclus.length === 0) return [...sorts]
+  if (tags.length === 0 && tagsExclus.length === 0 && tagsObliges.length === 0) return [...sorts]
   return sorts.filter(({ sort }) => {
     if (tags.length > 0 && !tags.some((code) => sort.t.includes(code))) return false
     if (tagsExclus.some((code) => sort.t.includes(code))) return false
+    if (!tagsObliges.every((code) => sort.t.includes(code))) return false
     return true
   })
 }
