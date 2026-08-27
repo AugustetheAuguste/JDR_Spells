@@ -38,6 +38,7 @@ describe('lireEtatComparaison', () => {
       mode: 'partages',
       tags: [],
       tagsExclus: [],
+      tagsObliges: [],
       tri: null,
       sens: 'asc',
     })
@@ -53,6 +54,7 @@ describe('lireEtatComparaison', () => {
       mode: 'partages',
       tags: [],
       tagsExclus: [],
+      tagsObliges: [],
       tri: null,
       sens: 'asc',
     })

@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
 import { MOTS } from '@/lib/design/tokens'
+import { FournisseurSession } from '@/lib/compte/session'
 import { FournisseurFavoris } from '@/lib/favoris/contexte'
 
 export const metadata: Metadata = {
@@ -71,7 +72,9 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
             component, and hoisting it above the header would drag the whole
             static chrome into the client bundle for nothing. */}
         <main className="mx-auto max-w-[1180px] px-4 py-5" id="contenu">
-          <FournisseurFavoris>{children}</FournisseurFavoris>
+          <FournisseurSession>
+            <FournisseurFavoris>{children}</FournisseurFavoris>
+          </FournisseurSession>
         </main>
 
         <footer className="mt-8 border-t border-bord px-4 py-4 text-petit text-encre-douce">

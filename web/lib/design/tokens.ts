@@ -180,4 +180,13 @@ export const MOTS = {
   filtrePose: 'filtre posé',
   source: 'source : pathfinder-fr.org',
   voirSurLeWiki: 'Voir sur pathfinder-fr.org',
+  compte: 'compte',
+  synchronisation: 'synchronisation',
+  synchroniserMaintenant: 'Synchroniser maintenant',
+  seDeconnecter: 'Se déconnecter',
+  adresseEmail: 'adresse e-mail',
+  motDePasse: 'mot de passe',
+  creerUnCompte: 'Créer un compte',
+  seConnecter: 'Se connecter',
+  motDePasseOublie: 'Mot de passe oublié',
 } as const
