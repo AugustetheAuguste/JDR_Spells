@@ -19,6 +19,12 @@ export interface Filtres {
   /** Class slug. Required for `niveaux`, and on its own it means "spells this
    * class gets". */
   readonly classe?: string | null
+  /** Several classes at once — the exploration route's widened step one. Takes
+   * over from `classe` when non-empty: a spell matches if AT LEAST ONE of these
+   * classes grants it, and if `niveaux` is posed, at the level of that same
+   * matching class. This is an OR, not `classe` repeated — a spell need not be
+   * on every listed class's list, only on one of them. */
+  readonly classes?: readonly string[]
   /** Levels, relative to `classe`. Without a class, see `niveauSansClasse`. */
   readonly niveaux?: readonly number[]
   /**
@@ -67,6 +73,7 @@ function vide(valeurs: readonly number[] | undefined): boolean {
 export function filtresActifs(filtres: Filtres): boolean {
   return (
     (filtres.classe ?? null) !== null ||
+    (filtres.classes ?? []).length > 0 ||
     (!vide(filtres.niveaux) && filtres.niveauSansClasse === 'minimum') ||
     !vide(filtres.ecoles) ||
     !vide(filtres.composantes) ||
@@ -89,8 +96,16 @@ export function niveauMinimum(sort: EntreeSort): number | null {
 }
 
 function retenir(sort: EntreeSort, filtres: Filtres): boolean {
+  const classes = filtres.classes ?? []
   const classe = filtres.classe ?? null
-  if (classe !== null) {
+  if (classes.length > 0) {
+    const correspond = classes.some((c) => {
+      const niveau = sort.niv[c]
+      if (niveau === undefined) return false
+      return vide(filtres.niveaux) || filtres.niveaux!.includes(niveau)
+    })
+    if (!correspond) return false
+  } else if (classe !== null) {
     const niveau = sort.niv[classe]
     if (niveau === undefined) return false
     if (!vide(filtres.niveaux) && !filtres.niveaux!.includes(niveau)) return false

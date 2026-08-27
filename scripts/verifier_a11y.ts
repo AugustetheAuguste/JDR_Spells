@@ -24,15 +24,17 @@ import { JSDOM, VirtualConsole } from 'jsdom'
 
 const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
-/** The three routes the plan names, each a distinct rendering path: the filter
- * panel and results table, one spell sheet, the class comparison. Favourites is
- * the fourth interactive view and its prerender is the one that must not claim a
- * state it cannot know. */
+/** One route per distinct rendering path: the filter panel and results table, one
+ * spell sheet, the class comparison. Favourites is there because its prerender must
+ * not claim a state it cannot know, and exploration because its charts are the only
+ * place on the site where a control is drawn rather than written — a wedge that is
+ * not a real button is exactly what axe should catch. */
 const ROUTES: readonly { readonly nom: string; readonly chemin: string }[] = [
   { nom: 'navigation', chemin: 'index.html' },
   { nom: 'fiche', chemin: 'sorts/detection-de-la-magie/index.html' },
   { nom: 'comparaison', chemin: 'comparaison/index.html' },
   { nom: 'favoris', chemin: 'favoris/index.html' },
+  { nom: 'exploration', chemin: 'explorer/index.html' },
 ]
 
 const NIVEAUX = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] as const
