@@ -245,8 +245,14 @@ describe('la section des tags', () => {
     expect(remplace).toHaveBeenCalledWith('/?tags=-bonus_chiffre', SANS_SAUT)
   })
 
-  it('un troisième clic ne filtre plus', async () => {
+  it('un troisième clic exige le tag au lieu de le relâcher', async () => {
     await monterVue('tags=-bonus_chiffre')
+    await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
+    expect(remplace).toHaveBeenCalledWith('/?tags=%21bonus_chiffre', SANS_SAUT)
+  })
+
+  it('un quatrième clic ne filtre plus', async () => {
+    await monterVue('tags=%21bonus_chiffre')
     await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
     expect(remplace).toHaveBeenCalledWith('/', SANS_SAUT)
   })
@@ -264,6 +270,35 @@ describe('la section des tags', () => {
   })
 })
 
+describe('les menus dépliants des facettes', () => {
+  it('sont ouverts par défaut, à la différence des tags', async () => {
+    await monterVue('')
+    const groupe = within(screen.getByRole('group', { name: /^École/ })).getByRole('button')
+    expect(groupe.getAttribute('aria-expanded')).toBe('true')
+    expect(screen.getByRole('checkbox', { name: /abjuration/i })).toBeTruthy()
+  })
+
+  it('un clic replie le groupe et en masque les cases', async () => {
+    await monterVue('')
+    const groupe = within(screen.getByRole('group', { name: /^École/ })).getByRole('button')
+    await userEvent.click(groupe)
+    expect(groupe.getAttribute('aria-expanded')).toBe('false')
+    expect(screen.queryByRole('checkbox', { name: /abjuration/i })).toBeNull()
+  })
+
+  it('pose un filtre de portée via sa case', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('checkbox', { name: 'Contact' }))
+    expect(remplace).toHaveBeenCalledWith('/?portees=contact', SANS_SAUT)
+  })
+
+  it('pose un filtre de temps d\'incantation via sa case', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('checkbox', { name: 'Action simple' }))
+    expect(remplace).toHaveBeenCalledWith('/?temps=action_simple', SANS_SAUT)
+  })
+})
+
 describe('le tri par colonne', () => {
   const entetePortee = (): HTMLElement =>
     screen.getByRole('columnheader', { name: /Portée/ })
@@ -271,14 +306,14 @@ describe('le tri par colonne', () => {
   it('un clic trie sur la colonne cliquée', async () => {
     await monterVue('')
     expect(entetePortee().getAttribute('aria-sort')).toBe('none')
-    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    await userEvent.click(within(entetePortee()).getByRole('button', { name: /Portée/ }))
     expect(remplace).toHaveBeenCalledWith('/?tri=portee', SANS_SAUT)
   })
 
   it('un second clic inverse le sens', async () => {
     await monterVue('tri=portee')
     expect(entetePortee().getAttribute('aria-sort')).toBe('ascending')
-    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    await userEvent.click(within(entetePortee()).getByRole('button', { name: /Portée/ }))
     expect(remplace).toHaveBeenCalledWith('/?tri=-portee', SANS_SAUT)
   })
 
@@ -287,7 +322,7 @@ describe('le tri par colonne', () => {
     // filter — could restore the level order.
     await monterVue('tri=-portee')
     expect(entetePortee().getAttribute('aria-sort')).toBe('descending')
-    await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
+    await userEvent.click(within(entetePortee()).getByRole('button', { name: /Portée/ }))
     expect(remplace).toHaveBeenCalledWith('/', SANS_SAUT)
   })
 
@@ -386,8 +421,17 @@ describe('l’accessibilité', () => {
 
   it('groupe chaque filtre sous une légende annoncée', async () => {
     await monterVue('')
-    for (const nom of ['École', 'Composantes', 'Jet de sauvegarde', 'Signalements']) {
-      expect(screen.getByRole('group', { name: nom })).toBeTruthy()
+    // Each legend now opens with a fold button carrying a trailing count
+    // ("École 9"), so the match is a prefix, not the bare facet name.
+    for (const nom of [
+      'École',
+      'Composantes',
+      'Jet de sauvegarde',
+      'Portée',
+      "Temps d'incantation",
+      'Signalements',
+    ]) {
+      expect(screen.getByRole('group', { name: new RegExp(`^${nom}`) })).toBeTruthy()
     }
   })
 

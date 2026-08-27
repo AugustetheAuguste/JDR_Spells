@@ -13,6 +13,7 @@
     "jets",
     "composantes",
     "tags",
+    "temps_incantation",
     "sorts"
   ],
   "additionalProperties": false,
@@ -71,6 +72,12 @@
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
     },
+    "temps_incantation": {
+      "description": "Table de codes des temps d'incantation, normalisés en familles (`action_simple`, `action_immediate`, `action_rapide`, `action_complexe`, `round`, `minute`, `heure`, `semaine`, `special`). Le corpus porte 33 chaînes distinctes (« 1 action simple », « 3 rounds », « 10 minutes, plus la période de souvenirs à modifier ») ; ici on ne garde que la famille filtrable, le libellé exact reste sur la fiche.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "sorts": {
       "description": "Les entrées, triées par `id` croissant pour que l'export soit déterministe à l'octet près.",
       "type": "array",
@@ -81,7 +88,7 @@
     "entree": {
       "type": "object",
       "description": "Un sort, réduit à ce qui sert à chercher, filtrer et afficher une ligne de table. La description N'EST PAS ici : c'est un choix de taille assumé (B1). Si la recherche plein texte devient nécessaire, la réponse est un second index chargé à la demande, pas un gonflement de celui-ci.",
-      "required": ["i", "id", "s", "n", "nf", "e", "niv", "c", "p", "j", "rm", "t", "d"],
+      "required": ["i", "id", "s", "n", "nf", "e", "niv", "c", "p", "j", "rm", "t", "ti", "d"],
       "additionalProperties": false,
       "properties": {
         "i": {
@@ -146,6 +153,11 @@
           "type": "array",
           "items": { "type": "integer", "minimum": 0 },
           "uniqueItems": true
+        },
+        "ti": {
+          "description": "Code de temps d'incantation : index dans `temps_incantation`. `null` si absent de la source.",
+          "type": ["integer", "null"],
+          "minimum": 0
         },
         "d": {
           "description": "`true` si le corpus signale un DÉSACCORD DE NIVEAU pour ce sort : la liste de classe et la page du sort annoncent des niveaux différents (`classes[].concordance === false`). C'est l'information que le wiki n'expose pas et le seul endroit où le site apporte plus que sa source. Le détail (quelle classe, quelle source dit quoi) est dans les props de la fiche ; ici, un booléen suffit à filtrer. Sur le corpus actuel ce champ vaut `false` partout : les 8409 paires comparables concordent toutes. Le champ n'est pas pour autant décoratif — c'est la sonde qui rendra visible la première divergence introduite par une correction du wiki.",

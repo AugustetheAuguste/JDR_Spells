@@ -26,6 +26,7 @@ from pf_spells.web_pliage import (
     normaliser_jet,
     normaliser_portee,
     normaliser_resistance,
+    normaliser_temps_incantation,
     plier,
     sans_diacritiques,
 )
@@ -188,6 +189,29 @@ class TestNormaliserResistance:
         assert normaliser_resistance(entree) is None
 
 
+class TestNormaliserTempsIncantation:
+    @pytest.mark.parametrize(
+        "entree,attendu",
+        [
+            ("1 action simple", "action_simple"),
+            ("1 action immédiate", "action_immediate"),
+            ("1 action rapide", "action_rapide"),
+            ("1 action complexe", "action_complexe"),
+            ("1 round", "round"),
+            ("3 rounds", "round"),
+            ("10 minutes", "minute"),
+            ("1 heure", "heure"),
+            ("1 semaine", "semaine"),
+            ("voir description", "special"),
+            ("voir texte", "special"),
+            ("1 action complexe ; spécial, voir ci-dessous.", "action_complexe"),
+            (None, None),
+        ],
+    )
+    def test_famille(self, entree: str | None, attendu: str | None) -> None:
+        assert normaliser_temps_incantation(entree) == attendu
+
+
 class TestExtraireComposantes:
     @pytest.mark.parametrize(
         "entree,attendu",
@@ -257,6 +281,23 @@ class TestSurLeCorpusReel:
         attendus = {"aucun", "volonte", "vigueur", "reflexes", "special"}
         familles = {normaliser_jet(s["jet_de_sauvegarde"]) for s in sorts}
         assert familles - {None} <= attendus
+
+    def test_chaque_temps_d_incantation_tombe_dans_une_famille(
+        self, sorts: list[dict]
+    ) -> None:
+        attendues = {
+            "action_simple",
+            "action_immediate",
+            "action_rapide",
+            "action_complexe",
+            "round",
+            "minute",
+            "heure",
+            "semaine",
+            "special",
+        }
+        familles = {normaliser_temps_incantation(s["temps_incantation"]) for s in sorts}
+        assert familles - {None} <= attendues
 
     def test_la_resistance_est_booleenne_ou_nulle(self, sorts: list[dict]) -> None:
         valeurs = {normaliser_resistance(s["resistance_magie"]) for s in sorts}

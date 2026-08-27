@@ -18,12 +18,14 @@ import { CHEMIN_INDEX_FIXTURE } from '@/lib/donnees/lire-index'
 
 import {
   analyserNiveaux,
+  analyserTags,
   CLES,
   ecrireEtat,
   ETAT_VIDE,
   etatActif,
   filtreLePlusRestrictif,
   formaterNiveaux,
+  formaterTags,
   lireEtat,
   sansFiltre,
   versFiltres,
@@ -94,6 +96,49 @@ describe('formaterNiveaux', () => {
   })
 })
 
+describe('analyserTags', () => {
+  const CONNUS = ['bonus_chiffre', 'zone_d_effet', 'effet_mental']
+
+  it('lit les trois marques : OR, NOT (-), AND (!)', () => {
+    expect(analyserTags('bonus_chiffre,-zone_d_effet,!effet_mental', CONNUS)).toEqual({
+      tags: ['bonus_chiffre'],
+      tagsExclus: ['zone_d_effet'],
+      tagsObliges: ['effet_mental'],
+    })
+  })
+
+  it('un `+` ne marche pas : il décoderait en espace dans une query string', () => {
+    // The whole reason `!` and not `+` was chosen for AND.
+    expect(analyserTags('+bonus_chiffre', CONNUS).tagsObliges).toEqual([])
+  })
+
+  it('un tag nommé deux fois garde sa première occurrence', () => {
+    expect(analyserTags('bonus_chiffre,!bonus_chiffre', CONNUS)).toEqual({
+      tags: ['bonus_chiffre'],
+      tagsExclus: [],
+      tagsObliges: [],
+    })
+  })
+})
+
+describe('formaterTags', () => {
+  it('rend OR nu, NOT avec `-`, AND avec `!`', () => {
+    expect(formaterTags(['bonus_chiffre'], ['zone_d_effet'], ['effet_mental'])).toBe(
+      'bonus_chiffre,-zone_d_effet,!effet_mental',
+    )
+  })
+
+  it('fait l’aller-retour avec analyserTags', () => {
+    const CONNUS = ['bonus_chiffre', 'zone_d_effet', 'effet_mental']
+    const rendu = formaterTags(['bonus_chiffre'], ['zone_d_effet'], ['effet_mental'])
+    expect(analyserTags(rendu, CONNUS)).toEqual({
+      tags: ['bonus_chiffre'],
+      tagsExclus: ['zone_d_effet'],
+      tagsObliges: ['effet_mental'],
+    })
+  })
+})
+
 describe('lireEtat', () => {
   it('restitue exactement l’état d’une URL complète', () => {
     const etat = lire(
@@ -108,8 +153,11 @@ describe('lireEtat', () => {
       ecoles: ['abjuration', 'evocation'],
       tags: ['bonus_chiffre'],
       tagsExclus: [],
+      tagsObliges: [],
       composantes: ['M', 'V'],
       sauvegarde: ['volonte'],
+      portees: [],
+      tempsIncantation: [],
       q: 'feu',
       desaccords: true,
       tri: null,
@@ -134,6 +182,16 @@ describe('lireEtat', () => {
     expect(etat.tags).toEqual([])
     expect(etat.composantes).toEqual([])
     expect(etat.sauvegarde).toEqual([])
+  })
+
+  it('lit portees et temps, et écarte les valeurs inconnues', () => {
+    expect(lire('portees=courte,contact').portees).toEqual(['contact', 'courte'])
+    expect(lire('temps=action_simple,round').tempsIncantation).toEqual([
+      'action_simple',
+      'round',
+    ])
+    expect(lire('portees=voyage-astral').portees).toEqual([])
+    expect(lire('temps=teleportation').tempsIncantation).toEqual([])
   })
 
   it('normalise la casse des valeurs', () => {
@@ -165,6 +223,10 @@ describe('l’aller-retour, qui fait marcher le bouton précédent', () => {
     'classe=druide&niveau=0,4&ecoles=evocation',
     'q=feu&desaccords=1',
     'classe=barde&niveau=2&ecoles=abjuration,evocation&composantes=M,V&sauvegarde=volonte&tags=bonus_chiffre&q=eclair&desaccords=1',
+    'tags=bonus_chiffre,-zone_d_effet,!effet_mental',
+    'portees=courte,contact',
+    'temps=action_simple,round',
+    'portees=contact&temps=round&classe=barde',
   ]
 
   it.each(cas)('lire ∘ écrire est l’identité sur %j', (query) => {
@@ -195,11 +257,16 @@ describe('l’aller-retour, qui fait marcher le bouton précédent', () => {
 
 describe('versFiltres', () => {
   it('résout les noms en codes de l’index', () => {
-    const filtres = versFiltres(lire('classe=barde&niveau=1&ecoles=evocation&sauvegarde=volonte'), INDEX)
+    const filtres = versFiltres(
+      lire('classe=barde&niveau=1&ecoles=evocation&sauvegarde=volonte&portees=courte&temps=round'),
+      INDEX,
+    )
     expect(filtres.classe).toBe('barde')
     expect(filtres.niveaux).toEqual([1])
     expect(filtres.ecoles).toEqual([INDEX.ecoles.indexOf('evocation')])
     expect(filtres.jets).toEqual([INDEX.jets.indexOf('volonte')])
+    expect(filtres.portees).toEqual([INDEX.portees.indexOf('courte')])
+    expect(filtres.tempsIncantation).toEqual([INDEX.temps_incantation.indexOf('round')])
   })
 
   it('demande explicitement le minimum quand aucune classe n’est choisie', () => {
@@ -216,6 +283,13 @@ describe('versFiltres', () => {
       expect(codes ?? []).not.toContain(-1)
     }
   })
+
+  it('résout tagsObliges en codes, distincts de tags et tagsExclus', () => {
+    const filtres = versFiltres(lire('tags=bonus_chiffre,-zone_d_effet,!effet_mental'), INDEX)
+    expect(filtres.tags).toEqual([INDEX.tags.indexOf('bonus_chiffre')])
+    expect(filtres.tagsExclus).toEqual([INDEX.tags.indexOf('zone_d_effet')])
+    expect(filtres.tagsObliges).toEqual([INDEX.tags.indexOf('effet_mental')])
+  })
 })
 
 describe('l’état vide nomme un filtre précis', () => {
@@ -228,7 +302,10 @@ describe('l’état vide nomme un filtre précis', () => {
     ['classe=barde&niveau=1&ecoles=evocation', 'niveau'],
     ['classe=barde&composantes=V&ecoles=evocation', 'composantes'],
     ['classe=barde&tags=bonus_chiffre&ecoles=evocation', 'tags'],
+    ['classe=barde&tags=!bonus_chiffre&ecoles=evocation', 'tags'],
     ['classe=barde&sauvegarde=volonte&ecoles=evocation', 'sauvegarde'],
+    ['classe=barde&portees=courte&ecoles=evocation', 'portees'],
+    ['classe=barde&temps=round&ecoles=evocation', 'temps'],
     ['classe=barde&ecoles=evocation', 'ecoles'],
     ['classe=barde', 'classe'],
   ])('désigne %j → %j', (query, attendu) => {
@@ -252,7 +329,8 @@ describe('l’état vide nomme un filtre précis', () => {
     // If a key is ever added to the URL and forgotten here, its "remove this
     // filter" button would do nothing and the empty state would be a dead end.
     const plein = lire(
-      'classe=barde&niveau=1&ecoles=evocation&tags=bonus_chiffre&composantes=V&sauvegarde=volonte&q=feu&desaccords=1&tri=-portee',
+      'classe=barde&niveau=1&ecoles=evocation&tags=bonus_chiffre&composantes=V&sauvegarde=volonte' +
+        '&portees=courte&temps=round&q=feu&desaccords=1&tri=-portee',
     )
     for (const cle of Object.keys(CLES) as (keyof typeof CLES)[]) {
       expect(versQueryString(sansFiltre(plein, cle))).not.toBe(versQueryString(plein))

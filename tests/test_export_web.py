@@ -37,7 +37,7 @@ HORODATAGE = "2026-07-31T00:00:00+00:00"
 
 @pytest.fixture(scope="module")
 def schema() -> dict[str, Any]:
-    chemin = REPO_ROOT / "schemas" / "web_index.schema.json"
+    chemin = REPO_ROOT / "data" / "schemas" / "web_index.schema.json"
     contrat = json.loads(chemin.read_text(encoding="utf-8"))
     # A schema that is not itself valid would make every assertion below vacuous.
     jsonschema.Draft202012Validator.check_schema(contrat)
@@ -129,6 +129,8 @@ class TestSurLaFixture:
                 assert 0 <= code < len(index_fixture["composantes"])
             for code in sort["t"]:
                 assert 0 <= code < len(index_fixture["tags"])
+            if sort["ti"] is not None:
+                assert 0 <= sort["ti"] < len(index_fixture["temps_incantation"])
 
     def test_les_classes_de_niv_sont_declarees_en_tete(self, index_fixture: dict) -> None:
         declarees = {c["slug"] for c in index_fixture["classes"]}
@@ -137,8 +139,20 @@ class TestSurLaFixture:
 
     def test_les_tables_de_codes_sont_triees(self, index_fixture: dict) -> None:
         """Sorted tables are what make the codes deterministic run to run."""
-        for cle in ("ecoles", "portees", "jets", "composantes", "tags"):
+        for cle in ("ecoles", "portees", "jets", "composantes", "tags", "temps_incantation"):
             assert index_fixture[cle] == sorted(index_fixture[cle]), cle
+
+    def test_le_temps_d_incantation_de_la_fixture_couvre_plusieurs_familles(
+        self, index_fixture: dict
+    ) -> None:
+        """The fixture's spread of source values must survive the fold as more
+        than one family, or the facet would filter on nothing."""
+        familles = {
+            index_fixture["temps_incantation"][s["ti"]]
+            for s in index_fixture["sorts"]
+            if s["ti"] is not None
+        }
+        assert familles == {"action_simple", "round", "minute", "heure"}
 
     def test_les_sorts_sont_tries_par_id(self, index_fixture: dict) -> None:
         ids = [s["id"] for s in index_fixture["sorts"]]

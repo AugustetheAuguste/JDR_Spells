@@ -64,6 +64,15 @@ _FAMILLES_PORTEE = ("contact", "personnelle", "courte", "moyenne", "longue")
 # annule (inoffensif)"); only the characteristic is a filter facet.
 _CARACTERISTIQUES_JET = ("volonte", "vigueur", "reflexes")
 
+# Casting-time families. Checked as substrings rather than prefixes, because the
+# source leads with a count the family name does not ("1 round", "10 minutes"):
+# unlike school or range, there is no fixed radical to anchor a prefix match on.
+# Ordered so an action-type clause is tried first — "1 action complexe ; spécial,
+# voir ci-dessous" must resolve to the action, not fall through to `special` on its
+# own trailing clause.
+_ACTIONS_TEMPS = ("action simple", "action immediate", "action rapide", "action complexe")
+_UNITES_TEMPS = ("round", "minute", "heure", "semaine")
+
 # Component sigils as the corpus actually writes them, counted over all 2070 files:
 # V verbale, G gestuelle, M matérielle, F focaliseur, FD/DF focaliseur divin
 # (both orderings occur), S somatique (5 spells, an older spelling of gestuelle).
@@ -163,6 +172,29 @@ def normaliser_jet(jet: str | None) -> str | None:
         if caracteristique in plie:
             return caracteristique
     # "voir texte", "spécial" and friends: a real value, just not a filterable one.
+    return "special"
+
+
+def normaliser_temps_incantation(temps: str | None) -> str | None:
+    """Return the casting-time family, or `special` for the irregular tail.
+
+    Action clauses are matched first (`action_simple`, `action_immediate`,
+    `action_rapide`, `action_complexe`), then bare time units (`round`, `minute`,
+    `heure`, `semaine`). Anything else — "voir description", "voir texte", and the
+    handful of composite durations — falls to `special`: a real value, just not a
+    filterable one, mirroring `normaliser_jet`'s own `special` bucket.
+    """
+    if temps is None:
+        return None
+    plie = plier(temps)
+    if not plie:
+        return None
+    for action in _ACTIONS_TEMPS:
+        if action in plie:
+            return action.replace(" ", "_")
+    for unite in _UNITES_TEMPS:
+        if unite in plie:
+            return unite
     return "special"
 
 

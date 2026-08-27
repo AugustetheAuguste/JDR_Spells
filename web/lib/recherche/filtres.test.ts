@@ -37,14 +37,25 @@ function sort(partiel: Partial<EntreeSort> & { id: string }): EntreeSort {
     j: null,
     rm: null,
     t: [],
+    ti: null,
     d: false,
     ...partiel,
   }
 }
 
-const A = sort({ id: 'a', niv: { barde: 1, druide: 4 }, e: 0, c: [0, 1], j: 2, t: [7], d: true })
-const B = sort({ id: 'b', niv: { barde: 4 }, e: 1, c: [0], j: 2, t: [] })
-const C = sort({ id: 'c', niv: { druide: 1 }, e: 0, c: [], j: null, t: [7, 8] })
+const A = sort({
+  id: 'a',
+  niv: { barde: 1, druide: 4 },
+  e: 0,
+  c: [0, 1],
+  j: 2,
+  p: 0,
+  ti: 0,
+  t: [7],
+  d: true,
+})
+const B = sort({ id: 'b', niv: { barde: 4 }, e: 1, c: [0], j: 2, p: 1, ti: 1, t: [] })
+const C = sort({ id: 'c', niv: { druide: 1 }, e: 0, c: [], j: null, p: null, ti: null, t: [7, 8] })
 const CORPUS = [A, B, C]
 
 function gardes(entrees: EntreeSort[]): string[] {
@@ -111,8 +122,36 @@ describe('les autres axes', () => {
     expect(gardes(appliquerFiltres(CORPUS, { tags: [7, 8] }))).toEqual(['a', 'c'])
   })
 
+  it('écarte tout sort portant un tag exclu', () => {
+    // NOT: hiding a tag has to hide every spell carrying it, not just the ones
+    // carrying only that tag.
+    expect(gardes(appliquerFiltres(CORPUS, { tagsExclus: [7] }))).toEqual(['b'])
+  })
+
+  it('exige TOUS les tags obligatoires, à la différence de tags', () => {
+    // AND: unlike `tags` (any-of), `tagsObliges` asks that a spell carry every
+    // one of the tags named this way — « area AND persistent », not « either ».
+    expect(gardes(appliquerFiltres(CORPUS, { tagsObliges: [7] }))).toEqual(['a', 'c'])
+    expect(gardes(appliquerFiltres(CORPUS, { tagsObliges: [7, 8] }))).toEqual(['c'])
+  })
+
+  it('combine les trois états du tag sans se contredire', () => {
+    expect(
+      gardes(appliquerFiltres(CORPUS, { tags: [7], tagsExclus: [8], tagsObliges: [] })),
+    ).toEqual(['a'])
+  })
+
   it('filtre par jet de sauvegarde et écarte les nuls', () => {
     expect(gardes(appliquerFiltres(CORPUS, { jets: [2] }))).toEqual(['a', 'b'])
+  })
+
+  it('filtre par portée et écarte les sorts sans portée', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { portees: [0] }))).toEqual(['a'])
+    expect(gardes(appliquerFiltres(CORPUS, { portees: [0, 1] }))).toEqual(['a', 'b'])
+  })
+
+  it('filtre par temps d\'incantation et écarte les sorts sans temps', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { tempsIncantation: [1] }))).toEqual(['b'])
   })
 
   it('isole les sorts en désaccord', () => {
@@ -157,6 +196,12 @@ describe('les cas neutres', () => {
     expect(filtresActifs({ ecoles: [] })).toBe(false)
     expect(filtresActifs({ classe: 'barde' })).toBe(true)
     expect(filtresActifs({ desaccord: true })).toBe(true)
+    expect(filtresActifs({ tagsObliges: [] })).toBe(false)
+    expect(filtresActifs({ tagsObliges: [7] })).toBe(true)
+    expect(filtresActifs({ portees: [] })).toBe(false)
+    expect(filtresActifs({ portees: [0] })).toBe(true)
+    expect(filtresActifs({ tempsIncantation: [] })).toBe(false)
+    expect(filtresActifs({ tempsIncantation: [0] })).toBe(true)
   })
 })
 

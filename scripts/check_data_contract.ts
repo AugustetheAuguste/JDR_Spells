@@ -37,7 +37,7 @@ const Ajv2020 = ajvModule.default
 const addFormats = formatsModule.default
 
 const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const CHEMIN_SCHEMA = resolve(RACINE, 'schemas/web_index.schema.json')
+const CHEMIN_SCHEMA = resolve(RACINE, 'data/schemas/web_index.schema.json')
 const CHEMIN_DEFAUT = resolve(RACINE, 'web/public/data/index.json')
 
 const U_FFFD = '�'
@@ -55,6 +55,7 @@ interface Entree {
   readonly j: number | null
   readonly rm: boolean | null
   readonly t: readonly number[]
+  readonly ti: number | null
   readonly d: boolean
 }
 
@@ -67,6 +68,7 @@ interface Index {
   readonly jets: readonly string[]
   readonly composantes: readonly string[]
   readonly tags: readonly string[]
+  readonly temps_incantation: readonly string[]
   readonly sorts: readonly Entree[]
 }
 
@@ -123,13 +125,14 @@ function verifierIndexDense(sorts: readonly Entree[]): void {
 
 function verifierCodes(index: Index): void {
   const tables: readonly {
-    readonly cle: 'e' | 'p' | 'j'
+    readonly cle: 'e' | 'p' | 'j' | 'ti'
     readonly table: readonly string[]
     readonly nom: string
   }[] = [
     { cle: 'e', table: index.ecoles, nom: 'ecoles' },
     { cle: 'p', table: index.portees, nom: 'portees' },
     { cle: 'j', table: index.jets, nom: 'jets' },
+    { cle: 'ti', table: index.temps_incantation, nom: 'temps_incantation' },
   ]
 
   for (const { cle, table, nom } of tables) {
@@ -173,6 +176,7 @@ function verifierCodes(index: Index): void {
     jets: new Set<number>(),
     composantes: new Set<number>(),
     tags: new Set<number>(),
+    temps_incantation: new Set<number>(),
   }
   for (const sort of index.sorts) {
     if (sort.e !== null) utilises.ecoles.add(sort.e)
@@ -180,6 +184,7 @@ function verifierCodes(index: Index): void {
     if (sort.j !== null) utilises.jets.add(sort.j)
     for (const code of sort.c) utilises.composantes.add(code)
     for (const code of sort.t) utilises.tags.add(code)
+    if (sort.ti !== null) utilises.temps_incantation.add(sort.ti)
   }
   const orphelines: string[] = []
   for (const [nom, table] of [
@@ -188,6 +193,7 @@ function verifierCodes(index: Index): void {
     ['jets', index.jets],
     ['composantes', index.composantes],
     ['tags', index.tags],
+    ['temps_incantation', index.temps_incantation],
   ] as const) {
     for (const [code, valeur] of table.entries()) {
       if (!utilises[nom].has(code)) orphelines.push(`${nom}[${code}]=${valeur}`)
@@ -307,7 +313,7 @@ function main(argv: readonly string[]): number {
   console.log(
     `tables     : ${index.ecoles.length} écoles, ${index.portees.length} portées, ` +
       `${index.jets.length} jets, ${index.composantes.length} composantes, ` +
-      `${index.tags.length} tags`,
+      `${index.tags.length} tags, ${index.temps_incantation.length} temps d'incantation`,
   )
   console.log(`désaccords : ${index.sorts.filter((s) => s.d).length}`)
   console.log(`brut       : ${ko(octets.byteLength)}`)

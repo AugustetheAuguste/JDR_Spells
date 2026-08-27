@@ -33,10 +33,13 @@ from pf_spells.web_pliage import (
     normaliser_jet,
     normaliser_portee,
     normaliser_resistance,
+    normaliser_temps_incantation,
     plier,
 )
 
-VERSION_CONTRAT = 1
+# Bumped for `temps_incantation`/`ti`: a new required field is an incompatible
+# shape change, not a data update (§2 of the contract's own preamble).
+VERSION_CONTRAT = 2
 
 DEFAULT_RACINE = "."
 DEFAULT_SORTIE = "web/public/data"
@@ -243,6 +246,7 @@ def construire(
     jets: set[str] = set()
     composantes: set[str] = set()
     tags: set[str] = set()
+    temps: set[str] = set()
     classes_vues: set[str] = set()
     nb_desaccords = 0
     nb_enrichis = 0
@@ -268,6 +272,7 @@ def construire(
         jet = normaliser_jet(sort["jet_de_sauvegarde"])
         sigles = extraire_composantes(sort["composantes"])
         resistance = normaliser_resistance(sort["resistance_magie"])
+        temps_incantation = normaliser_temps_incantation(sort["temps_incantation"])
 
         # The class lists are the authority. A spell in the index with no list entry
         # would have an empty `niv`, which the contract forbids (minProperties 1) —
@@ -289,6 +294,8 @@ def construire(
             portees.add(portee)
         if jet is not None:
             jets.add(jet)
+        if temps_incantation is not None:
+            temps.add(temps_incantation)
         composantes.update(sigles)
         classes_vues.update(niveaux)
         etiquettes = sorted(enrichissement.get("tags") or []) if enrichissement else []
@@ -305,6 +312,7 @@ def construire(
                 "jet": jet,
                 "sigles": sigles,
                 "resistance": resistance,
+                "temps_incantation": temps_incantation,
                 "niveaux": niveaux,
                 "ecarts": ecarts,
                 "enrichissement": enrichissement,
@@ -317,6 +325,7 @@ def construire(
     table_jets, code_jet = _table_de_codes(jets)
     table_composantes, code_composante = _table_de_codes(composantes)
     table_tags, code_tag = _table_de_codes(tags)
+    table_temps, code_temps = _table_de_codes(temps)
 
     # Only classes that actually grant a spell are listed: a filter offering a class
     # with no spells is a dead end. Sorted by slug for determinism.
@@ -351,6 +360,9 @@ def construire(
                 else None,
                 "rm": stagiaire["resistance"],
                 "t": sorted(code_tag[t] for t in stagiaire["etiquettes"]),
+                "ti": code_temps.get(stagiaire["temps_incantation"])
+                if stagiaire["temps_incantation"] is not None
+                else None,
                 "d": bool(stagiaire["ecarts"]),
             }
         )
@@ -378,6 +390,7 @@ def construire(
         "jets": table_jets,
         "composantes": table_composantes,
         "tags": table_tags,
+        "temps_incantation": table_temps,
         "sorts": entrees,
     }
     texte_index = serialiser_compact(index)
@@ -400,6 +413,7 @@ def construire(
         "couche_enrichissement": couche_enrichissement,
         "nb_ecoles": len(table_ecoles),
         "nb_tags": len(table_tags),
+        "nb_temps_incantation": len(table_temps),
         "taille_index_octets": len(octets),
         "taille_index_gzip": taille_gzip,
         "chemin_index": chemin_index.as_posix(),

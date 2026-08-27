@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-
+import { GroupeDepliant } from '@/components/navigation/GroupeDepliant'
 import { grouperTags, libelleTag } from '@/lib/navigation/groupes-tags'
 import {
   basculerTag,
@@ -40,12 +39,22 @@ function JetonTag({
   readonly libelle: string
   readonly surClic: () => void
 }) {
+  // Vert = voulu (OR), orange = exclu (NOT), rouge = exigé (AND). Three distinct
+  // colours because the three questions are shown side by side on the same
+  // control, and a reader has to tell them apart at a glance, not by re-reading
+  // the tooltip every time.
   const styles: Readonly<Record<EtatTag, string>> = {
     neutre: 'border-bord bg-surface text-encre-douce hover:bg-survol',
     inclus: 'border-accent bg-accent-voile text-encre',
     exclu: 'border-desaccord bg-desaccord-voile text-desaccord line-through',
+    oblige: 'border-oblige bg-oblige-voile text-oblige font-semibold',
   }
-  const glyphes: Readonly<Record<EtatTag, string>> = { neutre: '+', inclus: '✓', exclu: '✕' }
+  const glyphes: Readonly<Record<EtatTag, string>> = {
+    neutre: '+',
+    inclus: '✓',
+    exclu: '✕',
+    oblige: '‼',
+  }
   return (
     <button
       aria-label={`${libelle} : ${LIBELLES_ETATS_TAG[etat]}`}
@@ -69,33 +78,27 @@ export function FiltreTags({
   tagsConnus,
   tags,
   tagsExclus,
+  tagsObliges,
   surTags,
 }: {
-  /** The index's tag table. Also fixes the order both lists are written in, so one
-   * state is one URL whatever order the tags were clicked in. */
+  /** The index's tag table. Also fixes the order all three lists are written in,
+   * so one state is one URL whatever order the tags were clicked in. */
   readonly tagsConnus: readonly string[]
+  /** OR — a spell needs at least one of these. */
   readonly tags: readonly string[]
+  /** NOT — a spell must carry none of these. */
   readonly tagsExclus: readonly string[]
-  readonly surTags: (tags: readonly string[], tagsExclus: readonly string[]) => void
+  /** AND — a spell must carry every one of these. */
+  readonly tagsObliges: readonly string[]
+  readonly surTags: (
+    tags: readonly string[],
+    tagsExclus: readonly string[],
+    tagsObliges: readonly string[],
+  ) => void
 }) {
   const groupes = grouperTags(tagsConnus)
 
-  // Which groups are unfolded. NOT filter state, and deliberately not in the URL:
-  // it says nothing about which spells are shown, and putting it there would make
-  // two links to the same result set look different. A group holding a posed tag
-  // starts open, so a shared link never hides its own filters behind a fold.
-  const [deplies, setDeplies] = useState<ReadonlySet<string>>(
-    () =>
-      new Set(
-        groupes
-          .filter((groupe) =>
-            groupe.tags.some((tag) => tags.includes(tag) || tagsExclus.includes(tag)),
-          )
-          .map((groupe) => groupe.titre),
-      ),
-  )
-
-  const poses = tags.length + tagsExclus.length
+  const poses = tags.length + tagsExclus.length + tagsObliges.length
 
   if (tagsConnus.length === 0) return null
 
@@ -113,58 +116,38 @@ export function FiltreTags({
           said which of them answered the same question, so the only way to use it
           was to read all thirty-five every time. */}
       <p className="mt-0 mb-2 text-micro text-encre-faible">
-        Un clic exige le tag, un second l’exclut, un troisième le relâche. Un sort suffit
-        à porter l’un des tags exigés ; il est écarté s’il porte un tag exclu.
+        Un clic veut le tag (vert, au moins un tag voulu suffit), un second l’exclut
+        (orange, aucun tag exclu toléré), un troisième l’exige (rouge, tous les tags
+        exigés sont obligatoires), un quatrième le relâche.
       </p>
       <div className="flex flex-col gap-1">
         {groupes.map((groupe) => {
           const posesDuGroupe = groupe.tags.filter(
-            (tag) => etatDuTag(tag, tags, tagsExclus) !== 'neutre',
+            (tag) => etatDuTag(tag, tags, tagsExclus, tagsObliges) !== 'neutre',
           ).length
-          const ouvert = deplies.has(groupe.titre)
           return (
-            <section key={groupe.titre}>
-              <h3 className="m-0">
-                <button
-                  aria-expanded={ouvert}
-                  className="flex w-full cursor-pointer items-center gap-1.5 rounded-jeton border border-bord bg-surface px-2 py-1 text-left text-petit font-semibold text-encre hover:bg-survol"
-                  onClick={() =>
-                    setDeplies((actuels) => {
-                      const suivants = new Set(actuels)
-                      if (suivants.has(groupe.titre)) suivants.delete(groupe.titre)
-                      else suivants.add(groupe.titre)
-                      return suivants
-                    })
-                  }
-                  type="button"
-                >
-                  <span aria-hidden="true" className="font-donnees text-encre-faible">
-                    {ouvert ? '−' : '+'}
-                  </span>
-                  {groupe.titre}
-                  <span className="ml-auto font-normal text-encre-faible">
-                    {posesDuGroupe === 0
-                      ? groupe.tags.length
-                      : `${posesDuGroupe}/${groupe.tags.length}`}
-                  </span>
-                </button>
-              </h3>
-              {ouvert ? (
-                <div className="mt-1 mb-1 flex flex-wrap gap-1.5 pl-1">
-                  {groupe.tags.map((tag) => (
-                    <JetonTag
-                      etat={etatDuTag(tag, tags, tagsExclus)}
-                      key={tag}
-                      libelle={libelleTag(tag)}
-                      surClic={() => {
-                        const suivant = basculerTag(tag, tags, tagsExclus, tagsConnus)
-                        surTags(suivant.tags, suivant.tagsExclus)
-                      }}
-                    />
-                  ))}
-                </div>
-              ) : null}
-            </section>
+            <GroupeDepliant
+              key={groupe.titre}
+              // A group holding a posed tag starts open, so a shared link never
+              // hides its own filters behind a fold. Otherwise closed: thirty-five
+              // tags in flat groups is an inventory, not a filter.
+              ouvertParDefaut={posesDuGroupe > 0}
+              poses={posesDuGroupe}
+              titre={groupe.titre}
+              total={groupe.tags.length}
+            >
+              {groupe.tags.map((tag) => (
+                <JetonTag
+                  etat={etatDuTag(tag, tags, tagsExclus, tagsObliges)}
+                  key={tag}
+                  libelle={libelleTag(tag)}
+                  surClic={() => {
+                    const suivant = basculerTag(tag, tags, tagsExclus, tagsConnus, tagsObliges)
+                    surTags(suivant.tags, suivant.tagsExclus, suivant.tagsObliges)
+                  }}
+                />
+              ))}
+            </GroupeDepliant>
           )
         })}
       </div>

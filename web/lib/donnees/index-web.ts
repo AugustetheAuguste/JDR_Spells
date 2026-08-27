@@ -41,6 +41,9 @@ export interface EntreeSort {
   readonly rm: boolean | null
   /** Tag codes from the optional LLM layer. `[]` when the layer is absent. */
   readonly t: readonly number[]
+  /** Casting-time code, indexing into `temps_incantation`. `null` when the
+   * source gives none. */
+  readonly ti: number | null
   /** True when the corpus records a level disagreement for this spell. */
   readonly d: boolean
 }
@@ -61,6 +64,7 @@ export interface IndexWeb {
   /** Empty when the enrichment layer was absent at export: the UI then hides the
    * tag filter rather than showing an empty one. */
   readonly tags: readonly string[]
+  readonly temps_incantation: readonly string[]
   readonly sorts: readonly EntreeSort[]
 }
 

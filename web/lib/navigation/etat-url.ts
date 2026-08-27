@@ -8,13 +8,18 @@
  * testable without a router.
  *
  * Contract:
- *   ?classe=barde&niveau=1-3&ecoles=evocation,abjuration&tags=zone_d_effet,-effet_mental
- *    &q=feu&sauvegarde=reflexes&composantes=v,s&desaccords=1&tri=-portee
+ *   ?classe=barde&niveau=1-3&ecoles=evocation,abjuration&tags=zone_d_effet,-effet_mental,!persistant
+ *    &q=feu&sauvegarde=reflexes&composantes=v,s&portees=courte&temps=round&desaccords=1&tri=-portee
  *
- * A tag prefixed with `-` is EXCLUDED rather than required. One key rather than
- * two (`tags` + `tags_exclus`) because a tag can only be in one of the three
- * states, and two keys would let a URL name the same tag in both — a state the
- * interface cannot show and the filter would have to arbitrate silently.
+ * A tag prefixed with `-` is EXCLUDED (NOT) rather than required, and one
+ * prefixed with `!` is REQUIRED (AND): every spell shown must carry it, as
+ * opposed to a bare name (OR), which only asks that a spell carry at least one
+ * of the tags named that way. One key rather than three (`tags` + `tags_exclus`
+ * + `tags_obliges`) because a tag can only be in one of the four states, and
+ * three keys would let a URL name the same tag in more than one — a state the
+ * interface cannot show and the filter would have to arbitrate silently. `!` and
+ * not `+`: a `+` in a query string decodes to a space, which would strip the
+ * marker off silently.
  *
  * Values are *names*, never the integer codes of the index. A URL is a durable,
  * shareable, human-readable thing; `ecoles=3` would break the day the export
@@ -37,12 +42,18 @@ export interface EtatUrl {
   /** Levels, ascending and deduplicated. Empty = no level constraint. */
   readonly niveaux: readonly number[]
   readonly ecoles: readonly string[]
-  /** Tags a spell must carry at least one of. */
+  /** Tags a spell must carry at least one of (OR). */
   readonly tags: readonly string[]
-  /** Tags a spell must carry NONE of. Disjoint from `tags` by construction. */
+  /** Tags a spell must carry NONE of (NOT). Disjoint from `tags` and
+   * `tagsObliges` by construction. */
   readonly tagsExclus: readonly string[]
+  /** Tags a spell must carry ALL of (AND). Disjoint from `tags` and
+   * `tagsExclus` by construction. */
+  readonly tagsObliges: readonly string[]
   readonly composantes: readonly string[]
   readonly sauvegarde: readonly string[]
+  readonly portees: readonly string[]
+  readonly tempsIncantation: readonly string[]
   readonly q: string
   readonly desaccords: boolean
   /** The sorted column, or null for the view's own order. */
@@ -56,8 +67,11 @@ export const ETAT_VIDE: EtatUrl = {
   ecoles: [],
   tags: [],
   tagsExclus: [],
+  tagsObliges: [],
   composantes: [],
   sauvegarde: [],
+  portees: [],
+  tempsIncantation: [],
   q: '',
   desaccords: false,
   tri: null,
@@ -72,6 +86,8 @@ export const CLES = {
   tags: 'tags',
   composantes: 'composantes',
   sauvegarde: 'sauvegarde',
+  portees: 'portees',
+  temps: 'temps',
   q: 'q',
   desaccords: 'desaccords',
   tri: 'tri',
@@ -96,40 +112,51 @@ function listeDe(valeur: string | null, connus: readonly string[]): string[] {
 }
 
 /**
- * Parse `tags`: `zone_d_effet,-effet_mental` → required and excluded.
+ * Parse `tags`: `zone_d_effet,-effet_mental,!persistant` → required (OR),
+ * excluded (NOT), and mandatory (AND).
  *
- * A tag named twice, or named in both states, keeps its FIRST occurrence: some
- * arbitration is needed and "the first one wins" is the only rule a reader can
- * predict from looking at the URL. Unknown names are dropped as everywhere else.
+ * A tag named twice, or named in more than one state, keeps its FIRST
+ * occurrence: some arbitration is needed and "the first one wins" is the only
+ * rule a reader can predict from looking at the URL. Unknown names are dropped
+ * as everywhere else.
  */
 export function analyserTags(
   valeur: string | null,
   connus: readonly string[],
-): { readonly tags: string[]; readonly tagsExclus: string[] } {
-  if (valeur === null) return { tags: [], tagsExclus: [] }
+): { readonly tags: string[]; readonly tagsExclus: string[]; readonly tagsObliges: string[] } {
+  if (valeur === null) return { tags: [], tagsExclus: [], tagsObliges: [] }
   const parPli = new Map(connus.map((connu) => [connu.toLowerCase(), connu]))
-  const etats = new Map<string, 'inclus' | 'exclu'>()
+  const etats = new Map<string, 'inclus' | 'exclu' | 'oblige'>()
   for (const brut of valeur.split(',')) {
     const propre = brut.trim()
     const exclu = propre.startsWith('-')
-    const nom = parPli.get((exclu ? propre.slice(1) : propre).toLowerCase())
+    const oblige = propre.startsWith('!')
+    const sansMarque = exclu || oblige ? propre.slice(1) : propre
+    const nom = parPli.get(sansMarque.toLowerCase())
     if (nom === undefined || etats.has(nom)) continue
-    etats.set(nom, exclu ? 'exclu' : 'inclus')
+    etats.set(nom, oblige ? 'oblige' : exclu ? 'exclu' : 'inclus')
   }
   // Ordered by the index's own table, so two URLs listing the same tags in a
   // different order produce byte-identical state — and one canonical URL.
   return {
     tags: connus.filter((connu) => etats.get(connu) === 'inclus'),
     tagsExclus: connus.filter((connu) => etats.get(connu) === 'exclu'),
+    tagsObliges: connus.filter((connu) => etats.get(connu) === 'oblige'),
   }
 }
 
-/** Render the two tag lists back into one key: excluded tags carry a `-`. */
+/** Render the three tag lists back into one key: excluded tags carry a `-`,
+ * mandatory tags a `!`. */
 export function formaterTags(
   tags: readonly string[],
   tagsExclus: readonly string[],
+  tagsObliges: readonly string[] = [],
 ): string {
-  return [...tags, ...tagsExclus.map((tag) => `-${tag}`)].join(',')
+  return [
+    ...tags,
+    ...tagsExclus.map((tag) => `-${tag}`),
+    ...tagsObliges.map((tag) => `!${tag}`),
+  ].join(',')
 }
 
 /** Parse `tri`: `portee` ascending, `-portee` descending. Direction rides on the
@@ -200,8 +227,11 @@ export function lireEtat(parametres: URLSearchParams, index: IndexWeb): EtatUrl 
     ecoles: listeDe(parametres.get(CLES.ecoles), index.ecoles),
     tags: tags.tags,
     tagsExclus: tags.tagsExclus,
+    tagsObliges: tags.tagsObliges,
     composantes: listeDe(parametres.get(CLES.composantes), index.composantes),
     sauvegarde: listeDe(parametres.get(CLES.sauvegarde), index.jets),
+    portees: listeDe(parametres.get(CLES.portees), index.portees),
+    tempsIncantation: listeDe(parametres.get(CLES.temps), index.temps_incantation),
     q: parametres.get(CLES.q) ?? '',
     desaccords: parametres.get(CLES.desaccords) === '1',
     tri: tri.tri,
@@ -222,11 +252,15 @@ export function ecrireEtat(etat: EtatUrl): URLSearchParams {
   if (etat.classe !== null) parametres.set(CLES.classe, etat.classe)
   if (etat.niveaux.length > 0) parametres.set(CLES.niveau, formaterNiveaux(etat.niveaux))
   if (etat.ecoles.length > 0) parametres.set(CLES.ecoles, etat.ecoles.join(','))
-  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) {
-    parametres.set(CLES.tags, formaterTags(etat.tags, etat.tagsExclus))
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0 || etat.tagsObliges.length > 0) {
+    parametres.set(CLES.tags, formaterTags(etat.tags, etat.tagsExclus, etat.tagsObliges))
   }
   if (etat.composantes.length > 0) parametres.set(CLES.composantes, etat.composantes.join(','))
   if (etat.sauvegarde.length > 0) parametres.set(CLES.sauvegarde, etat.sauvegarde.join(','))
+  if (etat.portees.length > 0) parametres.set(CLES.portees, etat.portees.join(','))
+  if (etat.tempsIncantation.length > 0) {
+    parametres.set(CLES.temps, etat.tempsIncantation.join(','))
+  }
   if (etat.q !== '') parametres.set(CLES.q, etat.q)
   if (etat.desaccords) parametres.set(CLES.desaccords, '1')
   // Last, and absent at the default order: a shared link to an unsorted table has
@@ -267,8 +301,11 @@ export function versFiltres(etat: EtatUrl, index: IndexWeb): Filtres {
     ecoles: codes(etat.ecoles, index.ecoles),
     tags: codes(etat.tags, index.tags),
     tagsExclus: codes(etat.tagsExclus, index.tags),
+    tagsObliges: codes(etat.tagsObliges, index.tags),
     composantes: codes(etat.composantes, index.composantes),
     jets: codes(etat.sauvegarde, index.jets),
+    portees: codes(etat.portees, index.portees),
+    tempsIncantation: codes(etat.tempsIncantation, index.temps_incantation),
     desaccord: etat.desaccords,
   }
 }
@@ -286,8 +323,10 @@ export function filtreLePlusRestrictif(etat: EtatUrl): keyof typeof CLES | null 
   if (etat.desaccords) return 'desaccords'
   if (etat.niveaux.length > 0) return 'niveau'
   if (etat.composantes.length > 0) return 'composantes'
-  if (etat.tags.length > 0 || etat.tagsExclus.length > 0) return 'tags'
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0 || etat.tagsObliges.length > 0) return 'tags'
   if (etat.sauvegarde.length > 0) return 'sauvegarde'
+  if (etat.portees.length > 0) return 'portees'
+  if (etat.tempsIncantation.length > 0) return 'temps'
   if (etat.ecoles.length > 0) return 'ecoles'
   if (etat.classe !== null) return 'classe'
   return null
@@ -303,13 +342,17 @@ export function sansFiltre(etat: EtatUrl, cle: keyof typeof CLES): EtatUrl {
     case 'ecoles':
       return { ...etat, ecoles: [] }
     case 'tags':
-      // Both states go: « retirer les tags » means the tag filter is off, and
-      // leaving the exclusions behind would keep culling results invisibly.
-      return { ...etat, tags: [], tagsExclus: [] }
+      // All three states go: « retirer les tags » means the tag filter is off,
+      // and leaving any of them behind would keep culling results invisibly.
+      return { ...etat, tags: [], tagsExclus: [], tagsObliges: [] }
     case 'composantes':
       return { ...etat, composantes: [] }
     case 'sauvegarde':
       return { ...etat, sauvegarde: [] }
+    case 'portees':
+      return { ...etat, portees: [] }
+    case 'temps':
+      return { ...etat, tempsIncantation: [] }
     case 'q':
       return { ...etat, q: '' }
     case 'desaccords':
@@ -327,6 +370,8 @@ export const LIBELLES_FILTRES: Readonly<Record<keyof typeof CLES, string>> = {
   tags: 'les tags',
   composantes: 'les composantes',
   sauvegarde: 'le jet de sauvegarde',
+  portees: 'la portée',
+  temps: "le temps d'incantation",
   q: 'la recherche',
   desaccords: 'le filtre des désaccords',
   // Never named by `filtreLePlusRestrictif`: sorting reorders a list, it cannot

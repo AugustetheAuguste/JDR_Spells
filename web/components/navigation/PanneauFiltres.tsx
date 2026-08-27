@@ -1,12 +1,14 @@
 'use client'
 
 import { FiltreTags } from '@/components/navigation/FiltreTags'
+import { GroupeDepliant } from '@/components/navigation/GroupeDepliant'
 import { Badge } from '@/components/primitives/Badge'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
 import { LIBELLES_ECOLES, type Ecole } from '@/lib/design/tokens'
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import { type EtatUrl, NIVEAU_MAX } from '@/lib/navigation/etat-url'
 import { grouperClasses } from '@/lib/navigation/groupes-classes'
+import { libellePortee, libelleTempsIncantation } from '@/lib/navigation/libelles-facettes'
 import { libelleNiveau } from '@/lib/navigation/niveaux'
 
 /**
@@ -23,26 +25,6 @@ import { libelleNiveau } from '@/lib/navigation/niveaux'
  * checkbox is already keyboard-reachable, already announced with its group name,
  * and already understood; a div with `role="checkbox"` is three bugs waiting.
  */
-
-function Groupe({
-  legende,
-  aide,
-  children,
-}: {
-  readonly legende: string
-  readonly aide?: string
-  readonly children: React.ReactNode
-}) {
-  return (
-    <fieldset className="m-0 min-w-0 border-0 p-0">
-      <legend className="mb-1.5 p-0 text-petit font-semibold text-encre-douce">{legende}</legend>
-      {aide === undefined ? null : (
-        <p className="mt-0 mb-1.5 text-micro text-encre-faible">{aide}</p>
-      )}
-      <div className="flex flex-wrap gap-1.5">{children}</div>
-    </fieldset>
-  )
-}
 
 function CaseJeton({
   coche,
@@ -92,7 +74,7 @@ export function PanneauFiltres({
   /** A class change: `router.push`, because it IS a navigation. */
   readonly surClasse: (classe: string | null) => void
 }) {
-  function basculer<C extends 'ecoles' | 'composantes' | 'sauvegarde'>(
+  function basculer<C extends 'ecoles' | 'composantes' | 'sauvegarde' | 'portees' | 'tempsIncantation'>(
     cle: C,
     valeur: string,
     coche: boolean,
@@ -149,7 +131,7 @@ export function PanneauFiltres({
         </p>
       </div>
 
-      <Groupe legende={libelleNiveau(index, etat.classe)}>
+      <GroupeDepliant poses={etat.niveaux.length} titre={libelleNiveau(index, etat.classe)} total={niveaux.length}>
         {niveaux.map((niveau) => (
           <CaseJeton
             coche={etat.niveaux.includes(niveau)}
@@ -167,9 +149,9 @@ export function PanneauFiltres({
             </span>
           </CaseJeton>
         ))}
-      </Groupe>
+      </GroupeDepliant>
 
-      <Groupe legende="École">
+      <GroupeDepliant poses={etat.ecoles.length} titre="École" total={index.ecoles.length}>
         {index.ecoles.map((ecole) => (
           <CaseJeton
             coche={etat.ecoles.includes(ecole)}
@@ -183,11 +165,13 @@ export function PanneauFiltres({
             </span>
           </CaseJeton>
         ))}
-      </Groupe>
+      </GroupeDepliant>
 
-      <Groupe
+      <GroupeDepliant
         aide="Un sort doit porter toutes les composantes cochées."
-        legende="Composantes"
+        poses={etat.composantes.length}
+        titre="Composantes"
+        total={index.composantes.length}
       >
         {index.composantes.map((composante) => (
           <CaseJeton
@@ -201,9 +185,9 @@ export function PanneauFiltres({
             <span className="font-donnees">{composante}</span>
           </CaseJeton>
         ))}
-      </Groupe>
+      </GroupeDepliant>
 
-      <Groupe legende="Jet de sauvegarde">
+      <GroupeDepliant poses={etat.sauvegarde.length} titre="Jet de sauvegarde" total={index.jets.length}>
         {index.jets.map((jet) => (
           <CaseJeton
             coche={etat.sauvegarde.includes(jet)}
@@ -212,20 +196,49 @@ export function PanneauFiltres({
             surChangement={(coche) => basculer('sauvegarde', jet, coche, index.jets)}
           />
         ))}
-      </Groupe>
+      </GroupeDepliant>
 
-      {/* Hidden entirely when the LLM layer is absent from the export. No empty
-          section, no explanatory error — the filter simply does not exist. */}
+      <GroupeDepliant poses={etat.portees.length} titre="Portée" total={index.portees.length}>
+        {index.portees.map((portee) => (
+          <CaseJeton
+            coche={etat.portees.includes(portee)}
+            key={portee}
+            libelle={libellePortee(portee)}
+            surChangement={(coche) => basculer('portees', portee, coche, index.portees)}
+          />
+        ))}
+      </GroupeDepliant>
+
+      <GroupeDepliant
+        poses={etat.tempsIncantation.length}
+        titre="Temps d'incantation"
+        total={index.temps_incantation.length}
+      >
+        {index.temps_incantation.map((temps) => (
+          <CaseJeton
+            coche={etat.tempsIncantation.includes(temps)}
+            key={temps}
+            libelle={libelleTempsIncantation(temps)}
+            surChangement={(coche) =>
+              basculer('tempsIncantation', temps, coche, index.temps_incantation)
+            }
+          />
+        ))}
+      </GroupeDepliant>
+
       {/* Hidden entirely when the LLM layer is absent from the export. No empty
           section, no explanatory error — the filter simply does not exist. */}
       <FiltreTags
-        surTags={(tags, tagsExclus) => surEtat({ ...etat, tags, tagsExclus })}
+        surTags={(tags, tagsExclus, tagsObliges) =>
+          surEtat({ ...etat, tags, tagsExclus, tagsObliges })
+        }
         tags={etat.tags}
         tagsConnus={index.tags}
         tagsExclus={etat.tagsExclus}
+        tagsObliges={etat.tagsObliges}
       />
 
-      <Groupe legende="Signalements">
+      <GroupeDepliant poses={etat.desaccords ? 1 : 0} titre="Signalements" total={1}>
         <CaseJeton
           coche={etat.desaccords}
           libelle="Seulement les désaccords de niveau"
@@ -236,7 +249,7 @@ export function PanneauFiltres({
             <Badge ton="alerte">niveau</Badge>
           </span>
         </CaseJeton>
-      </Groupe>
+      </GroupeDepliant>
     </div>
   )
 }

@@ -45,6 +45,11 @@ export interface Filtres {
   readonly composantes?: readonly number[]
   /** Saving-throw codes, as in `index.jets`. */
   readonly jets?: readonly number[]
+  /** Range codes, as in `index.portees`. A spell matches if it carries any. */
+  readonly portees?: readonly number[]
+  /** Casting-time codes, as in `index.temps_incantation`. A spell matches if it
+   * carries any. */
+  readonly tempsIncantation?: readonly number[]
   /** Tag codes from the optional LLM layer. A spell matches if it carries any. */
   readonly tags?: readonly number[]
   /**
@@ -57,6 +62,15 @@ export interface Filtres {
    * through, which is the failure you would notice last.
    */
   readonly tagsExclus?: readonly number[]
+  /**
+   * Tag codes a spell must carry ALL of.
+   *
+   * The AND counterpart of `tags`' any-of: « only spells that are both area AND
+   * persistent » is a different question from « area or persistent », and the
+   * closed taxonomy is small enough that asking for a conjunction of several tags
+   * at once is a real thing to want at the table.
+   */
+  readonly tagsObliges?: readonly number[]
   /** True keeps only spells whose corpus records a level disagreement. */
   readonly desaccord?: boolean
 }
@@ -78,8 +92,11 @@ export function filtresActifs(filtres: Filtres): boolean {
     !vide(filtres.ecoles) ||
     !vide(filtres.composantes) ||
     !vide(filtres.jets) ||
+    !vide(filtres.portees) ||
+    !vide(filtres.tempsIncantation) ||
     !vide(filtres.tags) ||
     !vide(filtres.tagsExclus) ||
+    !vide(filtres.tagsObliges) ||
     filtres.desaccord === true
   )
 }
@@ -115,11 +132,23 @@ function retenir(sort: EntreeSort, filtres: Filtres): boolean {
   }
   if (!vide(filtres.ecoles) && (sort.e === null || !filtres.ecoles!.includes(sort.e))) return false
   if (!vide(filtres.jets) && (sort.j === null || !filtres.jets!.includes(sort.j))) return false
+  if (!vide(filtres.portees) && (sort.p === null || !filtres.portees!.includes(sort.p))) {
+    return false
+  }
+  if (
+    !vide(filtres.tempsIncantation) &&
+    (sort.ti === null || !filtres.tempsIncantation!.includes(sort.ti))
+  ) {
+    return false
+  }
   if (!vide(filtres.composantes) && !filtres.composantes!.every((c) => sort.c.includes(c))) {
     return false
   }
   if (!vide(filtres.tags) && !filtres.tags!.some((t) => sort.t.includes(t))) return false
   if (!vide(filtres.tagsExclus) && filtres.tagsExclus!.some((t) => sort.t.includes(t))) {
+    return false
+  }
+  if (!vide(filtres.tagsObliges) && !filtres.tagsObliges!.every((t) => sort.t.includes(t))) {
     return false
   }
   if (filtres.desaccord === true && !sort.d) return false
