@@ -30,6 +30,8 @@ function coche(element: HTMLElement): boolean {
 }
 
 const remplace = vi.fn()
+/** See the browse route's test: `scroll: false` is a contract, not a default. */
+const SANS_SAUT = { scroll: false }
 let recherche = new URLSearchParams()
 
 vi.mock('next/navigation', () => ({
@@ -92,7 +94,7 @@ describe('le sélecteur de classes', () => {
   it('écrit la sélection dans l’URL, l’URL étant la seule source d’état', async () => {
     await monter('?classes=barde')
     await userEvent.click(screen.getByRole('checkbox', { name: 'Druide' }))
-    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Cdruide')
+    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Cdruide', SANS_SAUT)
   })
 
   it('refuse une quatrième classe avec un message explicite, sans avaler le clic', async () => {
@@ -113,7 +115,7 @@ describe('le sélecteur de classes', () => {
     const case_ = screen.getByRole('checkbox', { name: 'Druide' })
     expect((case_ as HTMLInputElement).disabled).toBe(false)
     await userEvent.click(case_)
-    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Coccultiste')
+    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Coccultiste', SANS_SAUT)
   })
 })
 
@@ -124,7 +126,7 @@ describe('l’état vide', () => {
     expect(screen.getByText(/Choisissez deux classes/)).toBeTruthy()
     expect(screen.queryByRole('table')).toBeNull()
     await userEvent.click(screen.getByRole('button', { name: /Comparer Barde et Druide/ }))
-    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Cdruide')
+    expect(remplace).toHaveBeenCalledWith('/comparaison?classes=barde%2Cdruide', SANS_SAUT)
   })
 
   it('avec une seule classe, dit qu’il en faut une seconde et nomme celle qui est prise', async () => {
@@ -237,6 +239,7 @@ describe('les modes', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Sorts exclusifs' }))
     expect(remplace).toHaveBeenCalledWith(
       '/comparaison?classes=barde%2Cdruide&mode=exclusifs',
+      SANS_SAUT,
     )
   })
 

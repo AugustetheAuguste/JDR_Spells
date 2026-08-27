@@ -180,7 +180,10 @@ Si le déploiement réclame un secret, c'est le symptôme, pas la configuration.
   changer casse des liens externes et n'est pas une opération de confort. Les
   favoris tiennent des `id`, pas des slugs, pour cette raison exactement.
 - L'état des filtres vit dans l'URL et **nulle part ailleurs** — pas de `useState`
-  parallèle qui puisse diverger. Le lien de retour vers pathfinder-fr.org est un
+  parallèle qui puisse diverger. Corollaire : toute écriture d'état passe par le
+  routeur, donc **toujours `{ scroll: false }`** sur `router.push`/`replace` —
+  sinon chaque clic sur une facette remonte en haut du document et poser trois
+  filtres devient trois allers-retours. Les tests l'assertent (`SANS_SAUT`). Le lien de retour vers pathfinder-fr.org est un
   engagement, pas une décoration : il est sur chaque fiche et dans le pied de page.
 
 ```

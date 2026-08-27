@@ -124,8 +124,14 @@ export function VueNavigation() {
     const cible = `/${versQueryString(suivant)}` as `/?${string}` | '/'
     // `replace` for filter adjustments, `push` for a class change: ten filter
     // clicks that each add a history entry make the back button useless.
-    if (historique === 'push') router.push(cible)
-    else router.replace(cible)
+    //
+    // `scroll: false` is load-bearing, not cosmetic. The URL IS the filter state
+    // (B7), so every click on a facet goes through the router — and the router
+    // scrolls to the top of the document by default. Posting three filters then
+    // meant scrolling back down three times. The panel is in the viewport the
+    // reader is already looking at; keep them there.
+    if (historique === 'push') router.push(cible, { scroll: false })
+    else router.replace(cible, { scroll: false })
     setVisibles(LIGNES_PAR_PAGE)
   }
 

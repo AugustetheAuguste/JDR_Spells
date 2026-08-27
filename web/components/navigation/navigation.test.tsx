@@ -27,6 +27,10 @@ const SANS_TAGS: IndexWeb = { ...INDEX, tags: [] }
 
 const remplace = vi.fn()
 const pousse = vi.fn()
+/** Asserted on every write: without it the router scrolls back to the top of the
+ * document after each facet click, which is what made posting several filters a
+ * round trip down the page. It is a contract, not a default. */
+const SANS_SAUT = { scroll: false }
 let recherche = new URLSearchParams()
 
 vi.mock('next/navigation', () => ({
@@ -175,7 +179,7 @@ describe('l’état d’URL', () => {
   it('un ajustement de filtre passe par replace, sans entrée d’historique', async () => {
     await monterVue('classe=barde')
     await userEvent.click(screen.getByRole('checkbox', { name: 'Niveau 2' }))
-    expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=2')
+    expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=2', SANS_SAUT)
     expect(pousse).not.toHaveBeenCalled()
   })
 
@@ -184,7 +188,7 @@ describe('l’état d’URL', () => {
     // useless; a class change is the one thing worth going back to.
     await monterVue('')
     await userEvent.selectOptions(screen.getByLabelText('Classe'), 'druide')
-    expect(pousse).toHaveBeenCalledWith('/?classe=druide')
+    expect(pousse).toHaveBeenCalledWith('/?classe=druide', SANS_SAUT)
     expect(remplace).not.toHaveBeenCalled()
   })
 
@@ -194,13 +198,13 @@ describe('l’état d’URL', () => {
     // every later test in the file — each one then timed out at 5 s.
     await monterVue('')
     await userEvent.type(screen.getByLabelText('Chercher un sort'), 'degout')
-    await vi.waitFor(() => expect(remplace).toHaveBeenLastCalledWith('/?q=degout'))
+    await vi.waitFor(() => expect(remplace).toHaveBeenLastCalledWith('/?q=degout', SANS_SAUT))
   })
 
   it('« Tout effacer » ramène à la route nue', async () => {
     await monterVue('classe=barde&niveau=1')
     await userEvent.click(screen.getByRole('button', { name: 'Tout effacer' }))
-    expect(pousse).toHaveBeenCalledWith('/')
+    expect(pousse).toHaveBeenCalledWith('/', SANS_SAUT)
   })
 
   it('n’offre pas « Tout effacer » quand rien n’est filtré', async () => {
@@ -232,19 +236,19 @@ describe('la section des tags', () => {
     await monterVue('')
     await userEvent.click(screen.getByRole('button', { name: /Chiffres et jets/ }))
     await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
-    expect(remplace).toHaveBeenCalledWith('/?tags=bonus_chiffre')
+    expect(remplace).toHaveBeenCalledWith('/?tags=bonus_chiffre', SANS_SAUT)
   })
 
   it('un second clic exclut le tag au lieu de le relâcher', async () => {
     await monterVue('tags=bonus_chiffre')
     await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
-    expect(remplace).toHaveBeenCalledWith('/?tags=-bonus_chiffre')
+    expect(remplace).toHaveBeenCalledWith('/?tags=-bonus_chiffre', SANS_SAUT)
   })
 
   it('un troisième clic ne filtre plus', async () => {
     await monterVue('tags=-bonus_chiffre')
     await userEvent.click(screen.getByRole('button', { name: /^Bonus chiffré/ }))
-    expect(remplace).toHaveBeenCalledWith('/')
+    expect(remplace).toHaveBeenCalledWith('/', SANS_SAUT)
   })
 
   it('n’est pas rendue du tout quand index.tags est vide', async () => {
@@ -268,14 +272,14 @@ describe('le tri par colonne', () => {
     await monterVue('')
     expect(entetePortee().getAttribute('aria-sort')).toBe('none')
     await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
-    expect(remplace).toHaveBeenCalledWith('/?tri=portee')
+    expect(remplace).toHaveBeenCalledWith('/?tri=portee', SANS_SAUT)
   })
 
   it('un second clic inverse le sens', async () => {
     await monterVue('tri=portee')
     expect(entetePortee().getAttribute('aria-sort')).toBe('ascending')
     await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
-    expect(remplace).toHaveBeenCalledWith('/?tri=-portee')
+    expect(remplace).toHaveBeenCalledWith('/?tri=-portee', SANS_SAUT)
   })
 
   it('un troisième clic rend au tableau son ordre par niveau', async () => {
@@ -284,7 +288,7 @@ describe('le tri par colonne', () => {
     await monterVue('tri=-portee')
     expect(entetePortee().getAttribute('aria-sort')).toBe('descending')
     await userEvent.click(screen.getByRole('button', { name: /Portée/ }))
-    expect(remplace).toHaveBeenCalledWith('/')
+    expect(remplace).toHaveBeenCalledWith('/', SANS_SAUT)
   })
 
   it('écarte une colonne que l’URL ne sait pas nommer', async () => {
@@ -299,7 +303,7 @@ describe('l’état vide', () => {
     expect(screen.getByText('Aucun sort ne correspond')).toBeTruthy()
     const bouton = screen.getByRole('button', { name: 'Retirer le niveau' })
     await userEvent.click(bouton)
-    expect(remplace).toHaveBeenCalledWith('/?classe=barde')
+    expect(remplace).toHaveBeenCalledWith('/?classe=barde', SANS_SAUT)
   })
 
   it('nomme la recherche quand c’est elle qui vide la liste', async () => {
@@ -377,7 +381,7 @@ describe('l’accessibilité', () => {
     await monterVue('classe=barde')
     screen.getByRole('checkbox', { name: 'Niveau 1' }).focus()
     await userEvent.keyboard(' ')
-    expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=1')
+    expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=1', SANS_SAUT)
   })
 
   it('groupe chaque filtre sous une légende annoncée', async () => {

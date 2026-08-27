@@ -107,7 +107,10 @@ export function VueComparaison() {
     const cible = `/comparaison${versQueryComparaison(suivant)}` as
       | `/comparaison?${string}`
       | '/comparaison'
-    router.replace(cible)
+    // `scroll: false`: same reason as the browse route — the class and tag
+    // controls are read in place, and a jump to the top after each one turns
+    // « pick three classes » into three round trips down the page.
+    router.replace(cible, { scroll: false })
     setVisibles(LIGNES_PAR_PAGE)
   }
 
