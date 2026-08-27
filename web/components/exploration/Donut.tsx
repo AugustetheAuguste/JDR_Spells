@@ -35,6 +35,8 @@ export function Donut({
   total,
   legendeTotal,
   surChoix,
+  multiple = false,
+  selection = [],
 }: {
   readonly tranches: readonly Tranche[]
   /** The subset size. Passed rather than summed: for a partition it equals the sum,
@@ -42,7 +44,12 @@ export function Donut({
   readonly total: number
   /** What the centre counts, e.g. « sorts du barde ». */
   readonly legendeTotal: string
+  /** In single mode, a click drills immediately. In multiple mode, a click only
+   * toggles membership in `selection` — the view confirms with its own button, so
+   * several slices can be posed at once (« niveau 0, 1 et 2 »). */
   readonly surChoix: (valeur: string) => void
+  readonly multiple?: boolean
+  readonly selection?: readonly string[]
 }) {
   const [survol, setSurvol] = useState<number | null>(null)
   const arcs = secteurs(
@@ -84,7 +91,11 @@ export function Donut({
               /* The separator is the page colour, not a dark outline: two
                  neighbouring steps of a single-hue ramp need a gap to read as two
                  wedges, and a dark outline would add a tenth colour to the page. */
-              stroke="var(--color-base)"
+              stroke={
+                multiple && tranche.valeur !== null && selection.includes(tranche.valeur)
+                  ? 'var(--color-accent)'
+                  : 'var(--color-base)'
+              }
               strokeWidth={survol === rang ? 4 : 2}
             />
           )
@@ -137,21 +148,35 @@ export function Donut({
               </li>
             )
           }
+          const coche = multiple && selection.includes(tranche.valeur as string)
           return (
             <li key={tranche.libelle}>
               <button
+                aria-checked={multiple ? coche : undefined}
                 aria-label={tranche.libelleAccessible}
                 className={[
                   'flex min-h-ligne w-full items-center gap-2 rounded-jeton px-2 py-1.5 text-left text-base',
-                  survol === rang ? 'bg-survol' : 'bg-transparent',
+                  coche ? 'bg-accent-voile' : survol === rang ? 'bg-survol' : 'bg-transparent',
                 ].join(' ')}
                 onClick={() => surChoix(tranche.valeur as string)}
                 onFocus={() => setSurvol(rang)}
                 onBlur={() => setSurvol(null)}
                 onMouseEnter={() => setSurvol(rang)}
                 onMouseLeave={() => setSurvol(null)}
+                role={multiple ? 'checkbox' : 'button'}
                 type="button"
               >
+                {multiple ? (
+                  <span
+                    aria-hidden="true"
+                    className={[
+                      'inline-flex size-4 shrink-0 items-center justify-center rounded-[3px] border',
+                      coche ? 'border-accent bg-accent text-surface' : 'border-bord-fort bg-surface',
+                    ].join(' ')}
+                  >
+                    {coche ? '✓' : ''}
+                  </span>
+                ) : null}
                 {pastille}
                 <span className="min-w-0 flex-1 truncate text-encre">{tranche.libelle}</span>
                 <span className="font-donnees text-petit text-encre-douce">{tranche.nb}</span>

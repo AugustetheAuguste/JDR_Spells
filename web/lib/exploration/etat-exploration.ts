@@ -37,11 +37,17 @@ import {
 } from '@/lib/navigation/etat-url'
 import type { Filtres } from '@/lib/recherche/filtres'
 import { CLES_AXES, type CleAxe } from '@/lib/exploration/axes'
+import { classesChoisies } from '@/lib/exploration/classes-choisies'
 import { familleDe } from '@/lib/exploration/familles'
 
 export interface EtatExploration {
-  /** The filters, shared verbatim with the table route. */
+  /** The filters, shared verbatim with the table route. `base.classe` is the
+   * *primary* class when several are chosen — see `classesSupplementaires`. */
   readonly base: EtatUrl
+  /** Extra classes chosen alongside `base.classe`, widening step one from "this
+   * class" to "any of these classes" — an OR the table route has no notion of,
+   * so it lives only here rather than in `EtatUrl`. */
+  readonly classesSupplementaires: readonly string[]
   /** Slug of the tag family being explored, or null. */
   readonly categorie: string | null
   /** The axes drilled, in order. Drives « Remonter d'un cran ». */
@@ -52,14 +58,16 @@ export interface EtatExploration {
 
 export const EXPLORATION_VIDE: EtatExploration = {
   base: ETAT_VIDE,
+  classesSupplementaires: [],
   categorie: null,
   parcours: [],
   axe: null,
 }
 
-/** The three keys this module adds. Kept apart from `CLES` so that the table
- * route cannot start emitting them by accident. */
+/** The keys this module adds. Kept apart from `CLES` so that the table route
+ * cannot start emitting them by accident. */
 export const CLES_EXPLORATION = {
+  classes: 'classes',
   categorie: 'categorie',
   parcours: 'parcours',
   axe: 'axe',
@@ -80,15 +88,38 @@ function lireParcours(valeur: string | null): CleAxe[] {
 }
 
 /** Read the exploration state out of a query string, validated against the index. */
+function lireClassesSupplementaires(
+  valeur: string | null,
+  index: IndexWeb,
+  primaire: string | null,
+): string[] {
+  if (valeur === null) return []
+  const vues = new Set<string>()
+  for (const brut of valeur.split(',')) {
+    const propre = brut.trim().toLowerCase()
+    if (propre === primaire) continue
+    if (index.classes.some((entree) => entree.slug === propre)) vues.add(propre)
+  }
+  return [...vues]
+}
+
 export function lireExploration(
   parametres: URLSearchParams,
   index: IndexWeb,
 ): EtatExploration {
+  const base = lireEtat(parametres, index)
   const categorieBrute = parametres.get(CLES_EXPLORATION.categorie)?.trim().toLowerCase() ?? null
   const categorie = familleDe(index, categorieBrute) === null ? null : categorieBrute
   const axeBrut = parametres.get(CLES_EXPLORATION.axe)?.trim().toLowerCase() ?? ''
   return {
-    base: lireEtat(parametres, index),
+    base,
+    // Extra classes mean nothing without a primary one: `?classes=…` alone,
+    // with no `?classe=`, is dropped rather than promoting the first extra to
+    // primary — that would make the URL's own field order silently significant.
+    classesSupplementaires:
+      base.classe === null
+        ? []
+        : lireClassesSupplementaires(parametres.get(CLES_EXPLORATION.classes), index, base.classe),
     categorie,
     parcours: lireParcours(parametres.get(CLES_EXPLORATION.parcours)),
     axe: (CLES_AXES as readonly string[]).includes(axeBrut) ? (axeBrut as CleAxe) : null,
@@ -98,6 +129,9 @@ export function lireExploration(
 /** Serialize back to a query string. Filter keys first, in `CLES` order. */
 export function ecrireExploration(etat: EtatExploration): URLSearchParams {
   const parametres = ecrireEtat(etat.base)
+  if (etat.base.classe !== null && etat.classesSupplementaires.length > 0) {
+    parametres.set(CLES_EXPLORATION.classes, etat.classesSupplementaires.join(','))
+  }
   if (etat.categorie !== null) parametres.set(CLES_EXPLORATION.categorie, etat.categorie)
   if (etat.parcours.length > 0) {
     parametres.set(CLES_EXPLORATION.parcours, etat.parcours.join(','))
@@ -123,11 +157,20 @@ export function versQueryExploration(etat: EtatExploration): string {
  */
 export function versFiltresExploration(etat: EtatExploration, index: IndexWeb): Filtres {
   const filtres = versFiltres(etat.base, index)
-  if (etat.base.tags.length > 0) return filtres
+  // Several classes: a spell matches if AT LEAST ONE of them grants it (and, if
+  // a level is posed, grants it at one of the chosen levels) — the OR the
+  // recommended widening asks for. `classes` on `Filtres` takes over from the
+  // singular `classe` at that point; `versFiltres` already set `classe` too,
+  // but `appliquerFiltres` prefers `classes` when it is non-empty.
+  const avecClasses =
+    etat.classesSupplementaires.length > 0 && etat.base.classe !== null
+      ? { ...filtres, classes: classesChoisies(etat) }
+      : filtres
+  if (etat.base.tags.length > 0) return avecClasses
   const famille = familleDe(index, etat.categorie)
-  if (famille === null) return filtres
+  if (famille === null) return avecClasses
   return {
-    ...filtres,
+    ...avecClasses,
     tags: famille.tags.map((tag) => index.tags.indexOf(tag)).filter((code) => code >= 0),
   }
 }

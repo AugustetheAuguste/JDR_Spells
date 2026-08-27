@@ -125,7 +125,7 @@ describe('les filtres partagés avec la route en tableau', () => {
   })
 
   it('le lien en tableau n’emporte ni parcours ni axe', () => {
-    const etat = forer(lire('classe=barde'), 'niveau', '2')
+    const etat = forer(lire('classe=barde'), 'niveau', ['2'])
     const query = versQueryTableau(etat, INDEX)
     expect(query).not.toContain('parcours')
     expect(query).not.toContain('axe')
@@ -135,7 +135,7 @@ describe('les filtres partagés avec la route en tableau', () => {
 
 describe('un état foré se recharge sur la même vue', () => {
   it('le parcours survit à l’aller-retour par l’URL', () => {
-    const etat = forer(forer(lire('classe=barde'), 'niveau', '2'), 'ecole', 'evocation')
+    const etat = forer(forer(lire('classe=barde'), 'niveau', ['2']), 'ecole', ['evocation'])
     const relu = lire(ecrireExploration(etat).toString())
     expect(relu.parcours).toEqual(['niveau', 'ecole'])
     expect(relu.base.classe).toBe('barde')

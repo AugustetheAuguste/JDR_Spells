@@ -49,8 +49,16 @@ function sousEnsemble(etat: EtatExploration) {
   return appliquerFiltres(INDEX.sorts, versFiltresExploration(etat, INDEX))
 }
 
-const PARTITIONS = CLES_AXES.filter((cle) => AXES[cle].forme === 'donut')
-const RECOUVREMENTS = CLES_AXES.filter((cle) => AXES[cle].forme === 'barres')
+// The level axis's form depends on how many classes are chosen — a function, not
+// a fixed value — so every check below resolves it against the one-class state
+// these tests otherwise share.
+function forme(cle: (typeof CLES_AXES)[number], etat: EtatExploration): 'donut' | 'barres' {
+  const f = AXES[cle].forme
+  return typeof f === 'function' ? f(etat) : f
+}
+
+const PARTITIONS = CLES_AXES.filter((cle) => forme(cle, AVEC_BARDE) === 'donut')
+const RECOUVREMENTS = CLES_AXES.filter((cle) => forme(cle, AVEC_BARDE) === 'barres')
 
 describe('les axes de partition partitionnent', () => {
   it.each(PARTITIONS)('%s : les tranches totalisent le sous-ensemble', (cle) => {
@@ -64,7 +72,12 @@ describe('les axes de partition partitionnent', () => {
     // A tag axis summed to more than the subset would draw wedges claiming a share
     // of the circle they do not have. The form is the fix, and it is asserted here
     // so that flipping it back is a failing test rather than a wrong chart.
-    expect(AXES[cle].forme).toBe('barres')
+    expect(forme(cle, AVEC_BARDE)).toBe('barres')
+  })
+
+  it('le niveau passe en barres dès que plusieurs classes sont choisies', () => {
+    const deuxClasses: EtatExploration = { ...AVEC_BARDE, classesSupplementaires: ['druide'] }
+    expect(forme('niveau', deuxClasses)).toBe('barres')
   })
 })
 
@@ -135,7 +148,7 @@ describe('l’axe du niveau', () => {
 
 describe('poser, remonter, retirer', () => {
   it('forer pose le critère et inscrit l’axe au bout du parcours', () => {
-    const apres = forer(AVEC_BARDE, 'niveau', '2')
+    const apres = forer(AVEC_BARDE, 'niveau', ['2'])
     expect(apres.base.niveaux).toEqual([2])
     expect(apres.parcours).toEqual(['niveau'])
     // The axis is released so the next question can be suggested again.
@@ -143,13 +156,13 @@ describe('poser, remonter, retirer', () => {
   })
 
   it('répondre deux fois à la même question ne duplique pas le cran', () => {
-    const apres = forer(forer(AVEC_BARDE, 'niveau', '2'), 'niveau', '3')
+    const apres = forer(forer(AVEC_BARDE, 'niveau', ['2']), 'niveau', ['3'])
     expect(apres.base.niveaux).toEqual([3])
     expect(apres.parcours).toEqual(['niveau'])
   })
 
   it('remonter défait le dernier cran et rouvre ce graphique', () => {
-    const deux = forer(forer(AVEC_BARDE, 'niveau', '2'), 'ecole', 'evocation')
+    const deux = forer(forer(AVEC_BARDE, 'niveau', ['2']), 'ecole', ['evocation'])
     const avant = remonter(deux)
     expect(avant.base.ecoles).toEqual([])
     expect(avant.base.niveaux).toEqual([2])
@@ -163,7 +176,7 @@ describe('poser, remonter, retirer', () => {
   })
 
   it('retirer un cran du milieu garde les suivants', () => {
-    const deux = forer(forer(AVEC_BARDE, 'niveau', '2'), 'ecole', 'evocation')
+    const deux = forer(forer(AVEC_BARDE, 'niveau', ['2']), 'ecole', ['evocation'])
     const sansNiveau = retirerAxe(deux, 'niveau')
     expect(sansNiveau.base.niveaux).toEqual([])
     expect(sansNiveau.base.ecoles).toEqual(['evocation'])
@@ -172,9 +185,9 @@ describe('poser, remonter, retirer', () => {
 
   it('changer de famille abandonne le tag choisi dans l’ancienne', () => {
     const famille = slugFamille('Esprit')
-    const avecTag = forer(forer(AVEC_BARDE, 'categorie', famille), 'tag', 'effet_mental')
+    const avecTag = forer(forer(AVEC_BARDE, 'categorie', [famille]), 'tag', ['effet_mental'])
     expect(avecTag.base.tags).toEqual(['effet_mental'])
-    const autre = forer(avecTag, 'categorie', slugFamille('Défense'))
+    const autre = forer(avecTag, 'categorie', [slugFamille('Défense')])
     // Otherwise the filter would keep a tag the breadcrumb no longer shows.
     expect(autre.base.tags).toEqual([])
   })
@@ -186,7 +199,7 @@ describe('la suggestion du prochain axe', () => {
   })
 
   it('ne propose pas un axe déjà posé', () => {
-    const apres = forer(AVEC_BARDE, 'niveau', '1')
+    const apres = forer(AVEC_BARDE, 'niveau', ['1'])
     expect(axeSuggere(INDEX, apres, sousEnsemble)).not.toBe('niveau')
   })
 
@@ -214,7 +227,7 @@ describe('la suggestion du prochain axe', () => {
   it('le tag précis n’existe pas sans famille choisie', () => {
     // Thirty-five bars is an inventory, not a chart.
     expect(AXES.tag.disponible(INDEX, AVEC_BARDE)).toBe(false)
-    const avecFamille = forer(AVEC_BARDE, 'categorie', slugFamille('Esprit'))
+    const avecFamille = forer(AVEC_BARDE, 'categorie', [slugFamille('Esprit')])
     expect(AXES.tag.disponible(INDEX, avecFamille)).toBe(true)
   })
 

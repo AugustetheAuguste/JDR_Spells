@@ -31,6 +31,7 @@ import { LIBELLES_ECOLES, type Ecole } from '@/lib/design/tokens'
 import { libelleTag } from '@/lib/navigation/groupes-tags'
 import { libelleNiveau, LIBELLE_SANS_CLASSE } from '@/lib/navigation/niveaux'
 import { niveauMinimum } from '@/lib/recherche/filtres'
+import { classesChoisies } from '@/lib/exploration/classes-choisies'
 import { famillesDisponibles, familleDe, slugFamille } from '@/lib/exploration/familles'
 // Type-only, and deliberately so: `etat-exploration.ts` imports `CLES_AXES` from
 // this module as a value. Erased at compile time, the cycle never exists at
@@ -73,7 +74,11 @@ export interface Axe {
   readonly cle: CleAxe
   /** The label of the button that selects this axis. */
   readonly bouton: string
-  readonly forme: FormeAxe
+  /** Usually fixed, but the level axis switches to `barres` once several classes
+   * are chosen: each spell can then fall in more than one class's level at once,
+   * which is the overlap case, not a partition. A function so the view need not
+   * special-case which axis that is. */
+  readonly forme: FormeAxe | ((etat: EtatExploration) => FormeAxe)
   /** The heading above the chart, which names what the numbers belong to. */
   readonly question: (index: IndexWeb, etat: EtatExploration) => string
   /** True when the axis can exist at all here — the index carries what it needs
@@ -85,8 +90,14 @@ export interface Axe {
     index: IndexWeb,
     etat: EtatExploration,
   ) => readonly Tranche[]
-  /** Pose the criterion. Does not touch `parcours`: `forer` owns the path. */
-  readonly poser: (etat: EtatExploration, valeur: string) => EtatExploration
+  /** Pose the criterion — every slice named in `valeurs` at once, replacing
+   * whichever were posed before. An array rather than one value throughout,
+   * because every criterion this table can pose is already an array in
+   * `EtatUrl` (`niveaux`, `ecoles`, `tags`, …): letting the reader tick several
+   * slices before confirming costs nothing extra here. Only `categorie` reads
+   * just the first element — a family is chosen one at a time. Does not touch
+   * `parcours`: `forer` owns the path. */
+  readonly poser: (etat: EtatExploration, valeurs: readonly string[]) => EtatExploration
   readonly pose: (etat: EtatExploration) => boolean
   readonly retirer: (etat: EtatExploration) => EtatExploration
   /** The breadcrumb chip, or null when the axis poses nothing. */
@@ -122,22 +133,49 @@ function compter<T>(
 const AXE_NIVEAU: Axe = {
   cle: 'niveau',
   bouton: 'Niveau',
-  forme: 'donut',
-  question: (index, etat) => libelleNiveau(index, etat.base.classe),
-  // Always available: a level exists for every spell, either for the chosen class
-  // or as the cross-class floor the label names in full.
+  // A partition for zero or one class — every spell has exactly one level in
+  // that frame. With several classes chosen a spell can sit at two different
+  // levels for two different classes at once, so the wedges would sum to more
+  // than the subset: the overlap case, drawn as bars, same as tags.
+  forme: (etat) => (classesChoisies(etat).length > 1 ? 'barres' : 'donut'),
+  question: (index, etat) => {
+    const classes = classesChoisies(etat)
+    return classes.length > 1
+      ? `Quel niveau, pour ${classes.map((slug) => nomClasse(index, slug)).join(' ou ')} ?`
+      : libelleNiveau(index, etat.base.classe)
+  },
+  // Always available: a level exists for every spell, either for the chosen
+  // class(es) or as the cross-class floor the label names in full.
   disponible: () => true,
   decouper: (sorts, index, etat) => {
-    const classe = etat.base.classe
+    const classes = classesChoisies(etat)
     const compte = new Map<number, number>()
     let sans = 0
-    for (const sort of sorts) {
-      const niveau = classe === null ? niveauMinimum(sort) : (sort.niv[classe] ?? null)
-      if (niveau === null) sans += 1
-      else compte.set(niveau, (compte.get(niveau) ?? 0) + 1)
+    if (classes.length > 1) {
+      // Overlap: a spell is counted once per level at which ANY of the chosen
+      // classes grants it, so a spell on two of those lists at two different
+      // levels counts in both bars.
+      for (const sort of sorts) {
+        const niveaux = new Set(
+          classes.map((c) => sort.niv[c]).filter((n): n is number => n !== undefined),
+        )
+        if (niveaux.size === 0) sans += 1
+        else for (const niveau of niveaux) compte.set(niveau, (compte.get(niveau) ?? 0) + 1)
+      }
+    } else {
+      const classe = etat.base.classe
+      for (const sort of sorts) {
+        const niveau = classe === null ? niveauMinimum(sort) : (sort.niv[classe] ?? null)
+        if (niveau === null) sans += 1
+        else compte.set(niveau, (compte.get(niveau) ?? 0) + 1)
+      }
     }
     const contexte =
-      classe === null ? `, ${LIBELLE_SANS_CLASSE.toLowerCase()}` : ` pour ${nomClasse(index, classe)}`
+      classes.length > 1
+        ? ` pour au moins l’une de ces classes : ${classes.map((c) => nomClasse(index, c)).join(', ')}`
+        : classes.length === 1
+          ? ` pour ${nomClasse(index, classes[0]!)}`
+          : `, ${LIBELLE_SANS_CLASSE.toLowerCase()}`
     // Ascending, not by count: a caster's list is read by level, and a level axis
     // sorted by popularity would put level 4 before level 0.
     const tranches: Tranche[] = [...compte.entries()]
@@ -161,15 +199,18 @@ const AXE_NIVEAU: Axe = {
     }
     return tranches
   },
-  poser: (etat, valeur) => ({ ...etat, base: { ...etat.base, niveaux: [Number(valeur)] } }),
+  poser: (etat, valeurs) => ({
+    ...etat,
+    base: { ...etat.base, niveaux: valeurs.map(Number).sort((a, b) => a - b) },
+  }),
   pose: (etat) => etat.base.niveaux.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, niveaux: [] } }),
   libelleChoisi: (index, etat) => {
     if (etat.base.niveaux.length === 0) return null
     const niveaux = etat.base.niveaux.join(', ')
-    return etat.base.classe === null
-      ? `${LIBELLE_SANS_CLASSE} : ${niveaux}`
-      : `Niveau ${niveaux} pour ${nomClasse(index, etat.base.classe)}`
+    const classes = classesChoisies(etat)
+    if (classes.length === 0) return `${LIBELLE_SANS_CLASSE} : ${niveaux}`
+    return `Niveau ${niveaux} pour ${classes.map((slug) => nomClasse(index, slug)).join(', ')}`
   },
 }
 
@@ -214,7 +255,7 @@ const AXE_ECOLE: Axe = {
           },
         ]
   },
-  poser: (etat, valeur) => ({ ...etat, base: { ...etat.base, ecoles: [valeur] } }),
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, ecoles: valeurs } }),
   pose: (etat) => etat.base.ecoles.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, ecoles: [] } }),
   libelleChoisi: (index, etat) =>
@@ -266,7 +307,7 @@ const AXE_SAUVEGARDE: Axe = {
           },
         ]
   },
-  poser: (etat, valeur) => ({ ...etat, base: { ...etat.base, sauvegarde: [valeur] } }),
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, sauvegarde: valeurs } }),
   pose: (etat) => etat.base.sauvegarde.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, sauvegarde: [] } }),
   libelleChoisi: (_index, etat) =>
@@ -320,8 +361,13 @@ const AXE_CATEGORIE: Axe = {
         ]
   },
   // The family changes, so a tag chosen inside the previous one is dropped: it
-  // would filter on something the breadcrumb no longer shows.
-  poser: (etat, valeur) => ({ ...etat, categorie: valeur, base: { ...etat.base, tags: [] } }),
+  // would filter on something the breadcrumb no longer shows. A family is
+  // chosen one at a time — only the first tick counts.
+  poser: (etat, valeurs) => ({
+    ...etat,
+    categorie: valeurs[0] ?? null,
+    base: { ...etat.base, tags: [] },
+  }),
   pose: (etat) => etat.categorie !== null,
   retirer: (etat) => ({ ...etat, categorie: null, base: { ...etat.base, tags: [] } }),
   libelleChoisi: (index, etat) => familleDe(index, etat.categorie)?.titre ?? null,
@@ -351,7 +397,7 @@ const AXE_TAG: Axe = {
         })),
     )
   },
-  poser: (etat, valeur) => ({ ...etat, base: { ...etat.base, tags: [valeur] } }),
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, tags: valeurs } }),
   pose: (etat) => etat.base.tags.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, tags: [] } }),
   libelleChoisi: (_index, etat) =>
@@ -378,7 +424,7 @@ const AXE_COMPOSANTE: Axe = {
           ecole: null,
         })),
     ),
-  poser: (etat, valeur) => ({ ...etat, base: { ...etat.base, composantes: [valeur] } }),
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, composantes: valeurs } }),
   pose: (etat) => etat.base.composantes.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, composantes: [] } }),
   libelleChoisi: (_index, etat) =>
@@ -460,9 +506,9 @@ export function axeSuggere(
 export function forer(
   etat: EtatExploration,
   cle: CleAxe,
-  valeur: string,
+  valeurs: readonly string[],
 ): EtatExploration {
-  const pose = AXES[cle].poser(etat, valeur)
+  const pose = AXES[cle].poser(etat, valeurs)
   return {
     ...pose,
     parcours: [...pose.parcours.filter((autre) => autre !== cle), cle],

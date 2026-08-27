@@ -1,6 +1,7 @@
 'use client'
 
-import { COULEUR_TRANCHE_SANS_VALEUR, couleurTranche } from '@/lib/design/rampe'
+import { COULEUR_TRANCHE_SANS_VALEUR } from '@/lib/design/rampe'
+import { COULEURS } from '@/lib/design/tokens'
 import { formaterPart } from '@/lib/exploration/geometrie'
 import type { Tranche } from '@/lib/exploration/axes'
 
@@ -14,6 +15,14 @@ import type { Tranche } from '@/lib/exploration/axes'
  * carries, and the overlap is written out under them rather than left for the
  * reader to discover by adding the percentages up.
  *
+ * Every bar is the single accent, flat — unlike the donut, a bar's own label sits
+ * right beside it, so nothing here needs a rank told apart by hue. Fading `rang`
+ * through the ramp bought nothing but a smooth dark-to-pale blend that reads as
+ * the decorative gradient the brief refuses, worst on a family of eleven bars
+ * where the last few thin out to a colour that looks washed rather than "twelfth
+ * in line". One flat colour is both plainer and more honest about what a bar's
+ * colour here actually means: nothing, the length already carries the rank.
+ *
  * Each bar is a button: the row *is* the control, so there is nothing to mirror and
  * no `aria-hidden` chart. The bar is drawn with a plain div width, hence no SVG.
  */
@@ -21,21 +30,25 @@ export function Barres({
   tranches,
   total,
   surChoix,
+  multiple = false,
+  selection = [],
 }: {
   readonly tranches: readonly Tranche[]
   /** The subset each bar is a share of. */
   readonly total: number
+  /** In single mode, a click drills immediately. In multiple mode, a click only
+   * toggles membership in `selection` — the view confirms with its own button. */
   readonly surChoix: (valeur: string) => void
+  readonly multiple?: boolean
+  readonly selection?: readonly string[]
 }) {
   return (
     <div>
       <ul className="m-0 flex list-none flex-col gap-0.5 p-0">
-        {tranches.map((tranche, rang) => {
+        {tranches.map((tranche) => {
           const part = total <= 0 ? 0 : tranche.nb / total
-          const couleur =
-            tranche.valeur === null
-              ? COULEUR_TRANCHE_SANS_VALEUR
-              : couleurTranche(rang, tranches.length)
+          const coche = multiple && tranche.valeur !== null && selection.includes(tranche.valeur)
+          const couleur = tranche.valeur === null ? COULEUR_TRANCHE_SANS_VALEUR : COULEURS.accent
           const barre = (
             <span
               aria-hidden="true"
@@ -51,6 +64,17 @@ export function Barres({
           const contenu = (
             <>
               <span className="flex items-baseline gap-2">
+                {multiple ? (
+                  <span
+                    aria-hidden="true"
+                    className={[
+                      'inline-flex size-4 shrink-0 items-center justify-center rounded-[3px] border',
+                      coche ? 'border-accent bg-accent text-surface' : 'border-bord-fort bg-surface',
+                    ].join(' ')}
+                  >
+                    {coche ? '✓' : ''}
+                  </span>
+                ) : null}
                 <span className="min-w-0 flex-1 truncate">{tranche.libelle}</span>
                 <span className="font-donnees text-petit text-encre-douce">{tranche.nb}</span>
                 <span className="w-12 text-right text-petit text-encre-faible">
@@ -73,9 +97,14 @@ export function Barres({
           return (
             <li key={tranche.libelle}>
               <button
+                aria-checked={multiple ? coche : undefined}
                 aria-label={tranche.libelleAccessible}
-                className="block w-full rounded-jeton px-2 py-1.5 text-left text-base text-encre hover:bg-survol"
+                className={[
+                  'block w-full rounded-jeton px-2 py-1.5 text-left text-base text-encre hover:bg-survol',
+                  coche ? 'bg-accent-voile' : '',
+                ].join(' ')}
                 onClick={() => surChoix(tranche.valeur as string)}
+                role={multiple ? 'checkbox' : 'button'}
                 type="button"
               >
                 {contenu}

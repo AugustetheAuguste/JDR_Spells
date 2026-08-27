@@ -21,6 +21,7 @@ import {
   retirerAxe,
   type CleAxe,
 } from '@/lib/exploration/axes'
+import { classesChoisies } from '@/lib/exploration/classes-choisies'
 import {
   EXPLORATION_VIDE,
   explorationActive,
@@ -68,6 +69,15 @@ export function VueExploration() {
 
   const [index, setIndex] = useState<IndexWeb | null>(null)
   const [erreur, setErreur] = useState<string | null>(null)
+  /** The slices ticked on the chart on display, not yet posed. Local rather than
+   * in the URL: it is a draft, and only « Valider ce choix » turns it into a
+   * criterion worth sharing in a link. Keyed by the axis and the state it is
+   * drawn against, so switching axes or drilling elsewhere starts a fresh draft
+   * instead of carrying stale ticks onto a chart that does not show them. */
+  const [brouillon, setBrouillon] = useState<{
+    readonly cle: string
+    readonly valeurs: readonly string[]
+  }>({ cle: '', valeurs: [] })
 
   useEffect(() => {
     let vivant = true
@@ -145,14 +155,22 @@ export function VueExploration() {
       <section>
         <h1 className="m-0 font-affichage text-titre1 font-semibold">Explorer</h1>
         <p className="mt-1 mb-5 max-w-[68ch] text-grand text-encre-douce">
-          Choisissez une classe, puis resserrez de graphique en graphique jusqu’au sort
-          qu’il vous faut. Chaque clic entre d’un cran ; la flèche de retour du
-          navigateur ressort du même cran.
+          Choisissez une ou plusieurs classes, puis resserrez de graphique en graphique
+          jusqu’au sort qu’il vous faut. Plusieurs classes montrent l’union de leurs
+          sorts. Chaque clic entre d’un cran ; la flèche de retour du navigateur ressort
+          du même cran.
         </p>
         <ChoixClasse
           index={index}
-          surClasse={(classe) =>
-            ecrire({ ...EXPLORATION_VIDE, base: { ...EXPLORATION_VIDE.base, classe } }, 'push')
+          surClasses={(classes) =>
+            ecrire(
+              {
+                ...EXPLORATION_VIDE,
+                base: { ...EXPLORATION_VIDE.base, classe: classes[0] ?? null },
+                classesSupplementaires: classes.slice(1),
+              },
+              'push',
+            )
           }
           // `axe` alone is enough to mean « the reader has started »: it is state, so
           // it lives in the URL, and it saves inventing a key that means nothing else.
@@ -176,20 +194,44 @@ export function VueExploration() {
   const tranches =
     axe === null ? [] : axe.decouper(sortsDuGraphique, index, etatDuGraphique)
 
-  const nomClasse =
-    etat.base.classe === null
-      ? null
-      : (index.classes.find((entree) => entree.slug === etat.base.classe)?.nom ??
-        etat.base.classe)
+  const classes = classesChoisies(etat)
+  const nomsClasses = classes.map(
+    (slug) => index.classes.find((entree) => entree.slug === slug)?.nom ?? slug,
+  )
   const listes = trierParNiveauPuisNom(index, sorts, etat.base.classe)
   const queryTableau = versQueryTableau(etat, index)
+
+  // Every axis but the family step accepts several ticks at once, confirmed by
+  // its own button: the reader can pose « niveau 0, 1 et 2 » in one visit to the
+  // chart instead of drilling three times and backing out twice. The family step
+  // stays a single, immediate click — it only chooses which bars come next, it
+  // poses nothing of its own.
+  const multiple = axe !== null && axe.cle !== 'categorie'
+  const cleBrouillon = axe === null ? '' : `${axe.cle}${versQueryExploration(etatDuGraphique)}`
+  const selection = multiple && brouillon.cle === cleBrouillon ? brouillon.valeurs : []
+  function basculer(valeur: string): void {
+    const suivantes = selection.includes(valeur)
+      ? selection.filter((autre) => autre !== valeur)
+      : [...selection, valeur]
+    setBrouillon({ cle: cleBrouillon, valeurs: suivantes })
+  }
+  function valider(): void {
+    if (axe === null || selection.length === 0) return
+    setBrouillon({ cle: '', valeurs: [] })
+    ecrire(forer(etat, axe.cle, selection), 'push')
+  }
 
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Explorer</h1>
       <p className="mt-1 mb-4 text-base text-encre-douce">
         {sorts.length} {sorts.length === 1 ? 'sort' : 'sorts'} à ce stade
-        {nomClasse === null ? '' : `, pour le ${nomClasse.toLowerCase()}`}.{' '}
+        {nomsClasses.length === 0
+          ? ''
+          : nomsClasses.length === 1
+            ? `, pour le ${nomsClasses[0]!.toLowerCase()}`
+            : `, pour ${nomsClasses.map((nom) => nom.toLowerCase()).join(' ou ')}`}
+        .{' '}
         <Link
           className="text-accent underline hover:text-accent-survol"
           href={{ pathname: '/', query: queryTableau.replace('?', '') }}
@@ -262,20 +304,47 @@ export function VueExploration() {
             </fieldset>
           </div>
 
-          {axe.forme === 'donut' ? (
+          {(typeof axe.forme === 'function' ? axe.forme(etatDuGraphique) : axe.forme) ===
+          'donut' ? (
             <Donut
               legendeTotal={sortsDuGraphique.length === 1 ? 'sort' : 'sorts'}
-              surChoix={(valeur) => ecrire(forer(etat, axe.cle, valeur), 'push')}
+              multiple={multiple}
+              selection={selection}
+              surChoix={(valeur) =>
+                multiple ? basculer(valeur) : ecrire(forer(etat, axe.cle, [valeur]), 'push')
+              }
               total={sortsDuGraphique.length}
               tranches={tranches}
             />
           ) : (
             <Barres
-              surChoix={(valeur) => ecrire(forer(etat, axe.cle, valeur), 'push')}
+              multiple={multiple}
+              selection={selection}
+              surChoix={(valeur) =>
+                multiple ? basculer(valeur) : ecrire(forer(etat, axe.cle, [valeur]), 'push')
+              }
               total={sortsDuGraphique.length}
               tranches={tranches}
             />
           )}
+
+          {multiple ? (
+            <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-bord pt-3">
+              <button
+                className="rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
+                disabled={selection.length === 0}
+                onClick={valider}
+                type="button"
+              >
+                Valider ce choix
+              </button>
+              <p className="m-0 text-petit text-encre-douce">
+                {selection.length === 0
+                  ? 'Cochez une ou plusieurs tranches ci-dessus, puis validez — vous pouvez en poser plusieurs à la fois.'
+                  : `${selection.length} ${selection.length === 1 ? 'tranche cochée' : 'tranches cochées'}.`}
+              </p>
+            </div>
+          ) : null}
         </div>
       )}
 

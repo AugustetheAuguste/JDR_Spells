@@ -1,6 +1,7 @@
 'use client'
 
 import { AXES, CLES_AXES, type CleAxe } from '@/lib/exploration/axes'
+import { classesChoisies } from '@/lib/exploration/classes-choisies'
 import type { EtatExploration } from '@/lib/exploration/etat-exploration'
 import type { IndexWeb } from '@/lib/donnees/index-web'
 
@@ -63,11 +64,13 @@ export function CheminForage({
   readonly surRemonter: () => void
   readonly surTout: () => void
 }) {
-  const classe = etat.base.classe
-  const nomClasse =
-    classe === null
+  const classes = classesChoisies(etat)
+  const nomClasses =
+    classes.length === 0
       ? null
-      : (index.classes.find((entree) => entree.slug === classe)?.nom ?? classe)
+      : classes
+          .map((slug) => index.classes.find((entree) => entree.slug === slug)?.nom ?? slug)
+          .join(', ')
 
   const dansLeParcours = etat.parcours.filter((cle) => AXES[cle].pose(etat))
   const repris = CLES_AXES.filter(
@@ -77,11 +80,11 @@ export function CheminForage({
   return (
     <div className="flex flex-wrap items-center gap-2">
       <ul className="m-0 flex list-none flex-wrap items-center gap-1.5 p-0">
-        {nomClasse === null ? (
+        {nomClasses === null ? (
           <li className="text-petit text-encre-douce">Toutes les classes</li>
         ) : (
           <Puce
-            libelle={nomClasse}
+            libelle={nomClasses}
             surRetrait={surRetirerClasse}
             titre="Revenir au choix de la classe"
           />

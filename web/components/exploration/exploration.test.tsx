@@ -85,15 +85,26 @@ afterEach(() => {
 describe('l’étape du choix de classe', () => {
   it('ouvre sur les classes, pas sur un graphique', async () => {
     await monter('')
-    expect(screen.getByRole('button', { name: /Barde/ })).toBeTruthy()
+    expect(screen.getByRole('checkbox', { name: /Barde/ })).toBeTruthy()
     expect(screen.queryByRole('img', { hidden: true })).toBeNull()
   })
 
-  it('choisir une classe est une navigation, défaisable par le retour arrière', async () => {
+  it('choisir une classe coche la carte, et « Valider » navigue', async () => {
     await monter('')
-    await userEvent.click(screen.getByRole('button', { name: /Barde/ }))
+    await userEvent.click(screen.getByRole('checkbox', { name: /Barde/ }))
+    expect(pousse).not.toHaveBeenCalled()
+    await userEvent.click(screen.getByRole('button', { name: 'Valider ce choix' }))
     expect(pousse).toHaveBeenCalledTimes(1)
     expect(derniereCible()).toContain('classe=barde')
+  })
+
+  it('plusieurs classes cochées à la fois donnent l’union de leurs sorts', async () => {
+    await monter('')
+    await userEvent.click(screen.getByRole('checkbox', { name: /Barde/ }))
+    await userEvent.click(screen.getByRole('checkbox', { name: /Druide/ }))
+    await userEvent.click(screen.getByRole('button', { name: 'Valider ce choix' }))
+    expect(derniereCible()).toContain('classe=barde')
+    expect(derniereCible()).toContain('classes=druide')
   })
 
   it('on peut explorer sans classe — et le lien porte alors son sens', async () => {
@@ -116,19 +127,30 @@ describe('le graphique et le forage', () => {
     expect(titre?.textContent).toContain('Barde')
   })
 
-  it('chaque tranche est un vrai bouton, avec son effectif', async () => {
+  it('chaque tranche est un vrai contrôle, avec son effectif', async () => {
     await monter('classe=barde')
-    const tranches = screen.getAllByRole('button', { name: /Niveau \d.*sorts/ })
+    const tranches = screen.getAllByRole('checkbox', { name: /Niveau \d.*sorts/ })
     expect(tranches.length).toBeGreaterThan(1)
   })
 
-  it('cliquer une tranche pose le critère et empile une entrée d’historique', async () => {
+  it('cocher une tranche puis valider pose le critère et empile une entrée d’historique', async () => {
     await monter('classe=barde')
-    const [premiere] = screen.getAllByRole('button', { name: /Niveau \d.*sorts/ })
+    const [premiere] = screen.getAllByRole('checkbox', { name: /Niveau \d.*sorts/ })
     await userEvent.click(premiere as HTMLElement)
+    expect(pousse).not.toHaveBeenCalled()
+    await userEvent.click(screen.getByRole('button', { name: 'Valider ce choix' }))
     expect(pousse).toHaveBeenCalledTimes(1)
     expect(derniereCible()).toMatch(/niveau=\d/)
     expect(derniereCible()).toContain('parcours=niveau')
+  })
+
+  it('plusieurs tranches cochées à la fois posent plusieurs niveaux', async () => {
+    await monter('classe=barde')
+    const tranches = screen.getAllByRole('checkbox', { name: /Niveau \d.*sorts/ })
+    await userEvent.click(tranches[0] as HTMLElement)
+    await userEvent.click(tranches[1] as HTMLElement)
+    await userEvent.click(screen.getByRole('button', { name: 'Valider ce choix' }))
+    expect(derniereCible()).toMatch(/niveau=\d(%2C|,|-)\d/)
   })
 
   it('changer de découpage remplace l’entrée, il ne l’empile pas', async () => {
@@ -155,7 +177,7 @@ describe('le graphique et le forage', () => {
     // Cut with its own answer lifted: otherwise re-opening « quel niveau ? » shows
     // one full ring saying « ils sont tous de ce niveau », which is no chart at all.
     await monter('classe=barde&niveau=1&parcours=niveau&axe=niveau')
-    const tranches = screen.getAllByRole('button', { name: /Niveau \d.*sorts/ })
+    const tranches = screen.getAllByRole('checkbox', { name: /Niveau \d.*sorts/ })
     expect(tranches.length).toBeGreaterThan(1)
   })
 
