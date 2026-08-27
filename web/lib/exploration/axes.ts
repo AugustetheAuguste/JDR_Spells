@@ -11,15 +11,24 @@
  *   - a **partition**: every spell falls in exactly one slice (its level for the
  *     chosen class, its school, its saving throw). The shares sum to the whole, so
  *     a pie tells the truth and is drawn.
- *   - an **overlap**: a spell can be in several slices at once (it carries three
- *     tags, four components). The shares sum to more than the whole, and a pie
- *     would then be a lie — a wedge would claim a fraction of a circle it does not
- *     have. Those axes are drawn as ranked bars, each stating its share of the
- *     subset, with the overlap written out under them.
+
+ *   - an **overlap**: a spell can be in several slices at once (it carries several
+ *     components at once, or falls at two different levels once several classes
+ *     are chosen). The shares sum to more than the whole, and a pie would then be
+ *     a lie — a wedge would claim a fraction of a circle it does not have. Those
+ *     axes are drawn as ranked bars, each stating its share of the subset, with
+ *     the overlap written out under them.
  *
  * There is no « portée » axis, though the index carries the range: the filter state
  * has no range key, so a slice could be drawn but not clicked. An axis that cannot
  * narrow anything is a chart nobody can use.
+ *
+ * Tags are not an axis here at all, by explicit human decision (2026-08-27):
+ * thirty-five tags forced into a two-step drill (a family chart, then a tag chart
+ * inside it) made only one family choosable at a time. `FiltreTags` — the same
+ * grouped, three-state panel the table route uses — is shown standing beside the
+ * axis chart instead, so several tags across several families can be posed in
+ * one visit. See `VueExploration`.
  *
  * `null` as a slice value means "the source says nothing here" — 297 spells carry
  * no saving throw at all. Those spells are not dropped (nothing is discarded
@@ -28,11 +37,9 @@
 
 import { ecoleDe, type EntreeSort, type IndexWeb } from '@/lib/donnees/index-web'
 import { LIBELLES_ECOLES, type Ecole } from '@/lib/design/tokens'
-import { libelleTag } from '@/lib/navigation/groupes-tags'
 import { libelleNiveau, LIBELLE_SANS_CLASSE } from '@/lib/navigation/niveaux'
 import { niveauMinimum } from '@/lib/recherche/filtres'
 import { classesChoisies } from '@/lib/exploration/classes-choisies'
-import { famillesDisponibles, familleDe, slugFamille } from '@/lib/exploration/familles'
 // Type-only, and deliberately so: `etat-exploration.ts` imports `CLES_AXES` from
 // this module as a value. Erased at compile time, the cycle never exists at
 // runtime — and the alternative, an axis table that cannot name its own state
@@ -42,14 +49,7 @@ import type { EtatExploration } from '@/lib/exploration/etat-exploration'
 /** The axes, in the order the exploration suggests them. Order matters: it is the
  * order a spell is looked for at the table — what class, what it does, then the
  * narrower qualifiers. */
-export const CLES_AXES = [
-  'niveau',
-  'categorie',
-  'tag',
-  'ecole',
-  'sauvegarde',
-  'composante',
-] as const
+export const CLES_AXES = ['niveau', 'ecole', 'sauvegarde', 'composante'] as const
 
 export type CleAxe = (typeof CLES_AXES)[number]
 
@@ -94,8 +94,7 @@ export interface Axe {
    * whichever were posed before. An array rather than one value throughout,
    * because every criterion this table can pose is already an array in
    * `EtatUrl` (`niveaux`, `ecoles`, `tags`, …): letting the reader tick several
-   * slices before confirming costs nothing extra here. Only `categorie` reads
-   * just the first element — a family is chosen one at a time. Does not touch
+   * slices before confirming costs nothing extra here. Does not touch
    * `parcours`: `forer` owns the path. */
   readonly poser: (etat: EtatExploration, valeurs: readonly string[]) => EtatExploration
   readonly pose: (etat: EtatExploration) => boolean
@@ -316,94 +315,6 @@ const AXE_SAUVEGARDE: Axe = {
       : `Jet de sauvegarde : ${etat.base.sauvegarde.join(', ')}`,
 }
 
-const AXE_CATEGORIE: Axe = {
-  cle: 'categorie',
-  bouton: 'Famille d’effet',
-  forme: 'barres',
-  question: () => 'Que doit faire le sort ?',
-  // Hidden entirely when the enrichment layer is absent from the export: an axis
-  // that can only ever show one empty bar invites the reader to look for a control
-  // that is not there.
-  disponible: (index) => famillesDisponibles(index).length > 0,
-  decouper: (sorts, index) => {
-    const familles = famillesDisponibles(index)
-    const codes = familles.map((famille) => ({
-      famille,
-      codes: new Set(
-        famille.tags.map((tag) => index.tags.indexOf(tag)).filter((code) => code >= 0),
-      ),
-    }))
-    const tranches = parTaille(
-      compter(sorts, codes, (sort, entree) =>
-        sort.t.some((code) => entree.codes.has(code)),
-      )
-        .filter((mesure) => mesure.nb > 0)
-        .map((mesure) => ({
-          valeur: slugFamille(mesure.valeur.famille.titre),
-          libelle: mesure.valeur.famille.titre,
-          libelleAccessible: `${mesure.valeur.famille.titre} — ${mesure.nb} sorts`,
-          nb: mesure.nb,
-          ecole: null,
-        })),
-    )
-    const sans = sorts.filter((sort) => sort.t.length === 0).length
-    return sans === 0
-      ? tranches
-      : [
-          ...tranches,
-          {
-            valeur: null,
-            libelle: 'Aucun tag dans le corpus',
-            libelleAccessible: `Sans tag : la couche d’enrichissement ne couvre pas ces ${sans} sorts`,
-            nb: sans,
-            ecole: null,
-          },
-        ]
-  },
-  // The family changes, so a tag chosen inside the previous one is dropped: it
-  // would filter on something the breadcrumb no longer shows. A family is
-  // chosen one at a time — only the first tick counts.
-  poser: (etat, valeurs) => ({
-    ...etat,
-    categorie: valeurs[0] ?? null,
-    base: { ...etat.base, tags: [] },
-  }),
-  pose: (etat) => etat.categorie !== null,
-  retirer: (etat) => ({ ...etat, categorie: null, base: { ...etat.base, tags: [] } }),
-  libelleChoisi: (index, etat) => familleDe(index, etat.categorie)?.titre ?? null,
-}
-
-const AXE_TAG: Axe = {
-  cle: 'tag',
-  bouton: 'Tag précis',
-  forme: 'barres',
-  question: (index, etat) =>
-    `Quel effet, dans « ${familleDe(index, etat.categorie)?.titre ?? '—'} » ?`,
-  // Depends on a family being chosen: the 35 tags at large are an inventory, not a
-  // chart, and a bar per tag would be unreadable and unrankable.
-  disponible: (index, etat) => familleDe(index, etat.categorie) !== null,
-  decouper: (sorts, index, etat) => {
-    const famille = familleDe(index, etat.categorie)
-    if (famille === null) return []
-    return parTaille(
-      compter(sorts, famille.tags, (sort, tag) => sort.t.includes(index.tags.indexOf(tag)))
-        .filter((mesure) => mesure.nb > 0)
-        .map((mesure) => ({
-          valeur: mesure.valeur,
-          libelle: libelleTag(mesure.valeur),
-          libelleAccessible: `${libelleTag(mesure.valeur)} — ${mesure.nb} sorts`,
-          nb: mesure.nb,
-          ecole: null,
-        })),
-    )
-  },
-  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, tags: valeurs } }),
-  pose: (etat) => etat.base.tags.length > 0,
-  retirer: (etat) => ({ ...etat, base: { ...etat.base, tags: [] } }),
-  libelleChoisi: (_index, etat) =>
-    etat.base.tags.length === 0 ? null : etat.base.tags.map(libelleTag).join(', '),
-}
-
 const AXE_COMPOSANTE: Axe = {
   cle: 'composante',
   bouton: 'Composantes',
@@ -435,8 +346,6 @@ const AXE_COMPOSANTE: Axe = {
 
 export const AXES: Readonly<Record<CleAxe, Axe>> = {
   niveau: AXE_NIVEAU,
-  categorie: AXE_CATEGORIE,
-  tag: AXE_TAG,
   ecole: AXE_ECOLE,
   sauvegarde: AXE_SAUVEGARDE,
   composante: AXE_COMPOSANTE,

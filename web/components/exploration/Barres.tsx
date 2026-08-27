@@ -1,7 +1,6 @@
 'use client'
 
-import { COULEUR_TRANCHE_SANS_VALEUR } from '@/lib/design/rampe'
-import { COULEURS } from '@/lib/design/tokens'
+import { COULEUR_TRANCHE_SANS_VALEUR, couleurTranche } from '@/lib/design/rampe'
 import { formaterPart } from '@/lib/exploration/geometrie'
 import type { Tranche } from '@/lib/exploration/axes'
 
@@ -15,13 +14,9 @@ import type { Tranche } from '@/lib/exploration/axes'
  * carries, and the overlap is written out under them rather than left for the
  * reader to discover by adding the percentages up.
  *
- * Every bar is the single accent, flat — unlike the donut, a bar's own label sits
- * right beside it, so nothing here needs a rank told apart by hue. Fading `rang`
- * through the ramp bought nothing but a smooth dark-to-pale blend that reads as
- * the decorative gradient the brief refuses, worst on a family of eleven bars
- * where the last few thin out to a colour that looks washed rather than "twelfth
- * in line". One flat colour is both plainer and more honest about what a bar's
- * colour here actually means: nothing, the length already carries the rank.
+ * Each bar takes its own step of the categorical ramp, same as a donut wedge: a
+ * long list of bars is easier to scan back to its legend when the colour, not
+ * only the position, tells two rows apart.
  *
  * Each bar is a button: the row *is* the control, so there is nothing to mirror and
  * no `aria-hidden` chart. The bar is drawn with a plain div width, hence no SVG.
@@ -45,10 +40,13 @@ export function Barres({
   return (
     <div>
       <ul className="m-0 flex list-none flex-col gap-0.5 p-0">
-        {tranches.map((tranche) => {
+        {tranches.map((tranche, rang) => {
           const part = total <= 0 ? 0 : tranche.nb / total
           const coche = multiple && tranche.valeur !== null && selection.includes(tranche.valeur)
-          const couleur = tranche.valeur === null ? COULEUR_TRANCHE_SANS_VALEUR : COULEURS.accent
+          const couleur =
+            tranche.valeur === null
+              ? COULEUR_TRANCHE_SANS_VALEUR
+              : couleurTranche(rang, tranches.length)
           const barre = (
             <span
               aria-hidden="true"

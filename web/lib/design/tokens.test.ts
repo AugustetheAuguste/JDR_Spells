@@ -27,7 +27,7 @@ import {
   LIBELLES_ECOLES,
   MOUVEMENT,
   POLICES,
-  RAMPE_TRANCHES,
+  RAMPE_CATEGORIELLE,
 } from '@/lib/design/tokens'
 import { couleurTranche } from '@/lib/design/rampe'
 
@@ -124,24 +124,16 @@ describe('contraste des pastilles d’école', () => {
 })
 
 describe('la rampe des tranches', () => {
-  it('est une seule teinte, celle de l’accent', () => {
-    // The nine pastilles stay the only place where a colour *names* something. A
-    // ramp wandering across hues would have the reader looking for a school in a
-    // wedge that only means « the biggest share ».
-    for (const pas of RAMPE_TRANCHES) {
-      expect(ecartTeinte(teinte(pas), teinte(COULEURS.accent))).toBeLessThanOrEqual(4)
-    }
-  })
-
-  it('reste à distance des neuf teintes d’école', () => {
-    // Same 25° the Skill claims for the accent itself: a slice the colour of the
-    // evocation pastille would read as evocation.
-    for (const pas of RAMPE_TRANCHES) {
-      for (const ecole of ECOLES) {
+  it('a huit teintes distinguables deux à deux', () => {
+    // Categorical, by explicit human decision (2026-08-27): a chart's slices no
+    // longer read as one hue walked down in lightness. Same floor as the school
+    // pastilles' own pairwise check, applied here to the ramp's own steps.
+    for (const [rang, gauche] of RAMPE_CATEGORIELLE.entries()) {
+      for (const droite of RAMPE_CATEGORIELLE.slice(rang + 1)) {
         expect(
-          ecartTeinte(teinte(pas), teinte(COULEURS_ECOLES[ecole])),
-          `${pas} est à la teinte de ${ecole}`,
-        ).toBeGreaterThan(20)
+          ecartTeinte(teinte(gauche), teinte(droite)),
+          `${gauche} et ${droite} sont à la même teinte`,
+        ).toBeGreaterThan(6)
       }
     }
   })
@@ -150,46 +142,22 @@ describe('la rampe des tranches', () => {
     // 3:1, the floor for a graphical object, and not the 4,5:1 of the pastilles:
     // nothing is written *on* a wedge. The count and the label sit beside it, in
     // ink on the panel, because the colour is never the carrier (Skill, plancher
-    // d'accessibilité) — a ramp light enough to need white text on it would be a
-    // ramp doing the labelling's job.
-    for (const pas of RAMPE_TRANCHES) {
+    // d'accessibilité).
+    for (const pas of RAMPE_CATEGORIELLE) {
       expect(contraste(pas, COULEURS.base)).toBeGreaterThanOrEqual(3)
     }
   })
 
-  it('les valeurs interpolées tiennent le même plancher', () => {
-    // Beyond five slices the ramp is walked continuously, so those colours are not
-    // tokens and no list of them can be checked by eye.
-    for (const total of [6, 9, 14]) {
+  it('cycle proprement au-delà de huit tranches', () => {
+    // Beyond eight slices the ramp repeats rather than inventing a colour, so
+    // rang 8 must be rang 0's own step.
+    for (const total of [9, 14, 20]) {
       for (let rang = 0; rang < total; rang += 1) {
-        const rendu = couleurTranche(rang, total)
-        const [r, v, b] = rendu
-          .replace(/rgb\(|\)/g, '')
-          .split(' ')
-          .map((canal) => Number(canal))
-        const hex = `#${[r, v, b]
-          .map((canal) => (canal ?? 0).toString(16).padStart(2, '0'))
-          .join('')}`
-        expect(contraste(hex, COULEURS.base), `${rendu} (${rang}/${total})`).toBeGreaterThanOrEqual(3)
+        expect(couleurTranche(rang, total)).toBe(
+          RAMPE_CATEGORIELLE[rang % RAMPE_CATEGORIELLE.length],
+        )
       }
     }
-  })
-
-  it('deux pas voisins ne se lisent pas comme un seul', () => {
-    // Below roughly 1,25:1 between neighbours the ring reads as one flat disc and
-    // the reader cannot tell where a wedge ends — which is what the separator
-    // stroke covers, but the fill should not depend on it alone.
-    for (const [rang, pas] of RAMPE_TRANCHES.slice(0, -1).entries()) {
-      const suivant = RAMPE_TRANCHES[rang + 1] as string
-      expect(contraste(pas, suivant), `${pas} et ${suivant}`).toBeGreaterThan(1.15)
-    }
-  })
-
-  it('va du plus sombre au plus clair, sans retour en arrière', () => {
-    // The order is the meaning: darkest is the largest share. A non-monotonic ramp
-    // would rank the wedges wrong while looking deliberate.
-    const luminances = RAMPE_TRANCHES.map(luminance)
-    expect(luminances).toEqual([...luminances].sort((a, b) => a - b))
   })
 })
 

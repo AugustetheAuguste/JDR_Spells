@@ -30,7 +30,6 @@ import {
   versFiltresExploration,
   type EtatExploration,
 } from '@/lib/exploration/etat-exploration'
-import { slugFamille } from '@/lib/exploration/familles'
 import { appliquerFiltres } from '@/lib/recherche/filtres'
 
 // The real export, not a fixture: the claims below are about this corpus's shape —
@@ -182,15 +181,6 @@ describe('poser, remonter, retirer', () => {
     expect(sansNiveau.base.ecoles).toEqual(['evocation'])
     expect(sansNiveau.parcours).toEqual(['ecole'])
   })
-
-  it('changer de famille abandonne le tag choisi dans l’ancienne', () => {
-    const famille = slugFamille('Esprit')
-    const avecTag = forer(forer(AVEC_BARDE, 'categorie', [famille]), 'tag', ['effet_mental'])
-    expect(avecTag.base.tags).toEqual(['effet_mental'])
-    const autre = forer(avecTag, 'categorie', [slugFamille('Défense')])
-    // Otherwise the filter would keep a tag the breadcrumb no longer shows.
-    expect(autre.base.tags).toEqual([])
-  })
 })
 
 describe('la suggestion du prochain axe', () => {
@@ -215,27 +205,18 @@ describe('la suggestion du prochain axe', () => {
   })
 
   it('un axe qui ne réduit rien n’est pas proposé', () => {
-    // Two bars, both full width: the spells all carry both families, so clicking
-    // either leaves the same list. Two slices are the floor, not the whole test.
-    const codes = ['effet_mental', 'protection_defensive'].map((tag) =>
-      INDEX.tags.indexOf(tag),
-    )
-    const memesTags = INDEX.sorts.slice(0, 3).map((sort) => ({ ...sort, t: codes }))
-    expect(discrimine(AXES.categorie, memesTags, INDEX, EXPLORATION_VIDE)).toBe(false)
+    // Two bars, both full width: every spell carries both components, so
+    // clicking either leaves the same list. Two slices are the floor, not the
+    // whole test.
+    const codes = ['V', 'S'].map((composante) => INDEX.composantes.indexOf(composante))
+    const memesComposantes = INDEX.sorts.slice(0, 3).map((sort) => ({ ...sort, c: codes }))
+    expect(discrimine(AXES.composante, memesComposantes, INDEX, EXPLORATION_VIDE)).toBe(false)
   })
 
-  it('le tag précis n’existe pas sans famille choisie', () => {
-    // Thirty-five bars is an inventory, not a chart.
-    expect(AXES.tag.disponible(INDEX, AVEC_BARDE)).toBe(false)
-    const avecFamille = forer(AVEC_BARDE, 'categorie', [slugFamille('Esprit')])
-    expect(AXES.tag.disponible(INDEX, avecFamille)).toBe(true)
-  })
-
-  it('aucun axe de tag quand la couche d’enrichissement est absente', () => {
-    const sansTags: IndexWeb = { ...INDEX, tags: [] }
-    const cles = axesDisponibles(sansTags, AVEC_BARDE).map((axe) => axe.cle)
-    expect(cles).not.toContain('categorie')
-    expect(cles).not.toContain('tag')
+  it('aucun axe n’est proposé au-delà de ceux disponibles', () => {
+    const sansJets: IndexWeb = { ...INDEX, jets: [] }
+    const cles = axesDisponibles(sansJets, AVEC_BARDE).map((axe) => axe.cle)
+    expect(cles).not.toContain('sauvegarde')
     expect(cles).toContain('niveau')
   })
 })

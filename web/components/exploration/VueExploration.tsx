@@ -8,6 +8,7 @@ import { Barres } from '@/components/exploration/Barres'
 import { CheminForage } from '@/components/exploration/CheminForage'
 import { ChoixClasse } from '@/components/exploration/ChoixClasse'
 import { Donut } from '@/components/exploration/Donut'
+import { FiltreTags } from '@/components/navigation/FiltreTags'
 import { TableSorts } from '@/components/navigation/TableSorts'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import type { EntreeSort, IndexWeb } from '@/lib/donnees/index-web'
@@ -199,14 +200,12 @@ export function VueExploration() {
     (slug) => index.classes.find((entree) => entree.slug === slug)?.nom ?? slug,
   )
   const listes = trierParNiveauPuisNom(index, sorts, etat.base.classe)
-  const queryTableau = versQueryTableau(etat, index)
+  const queryTableau = versQueryTableau(etat)
 
-  // Every axis but the family step accepts several ticks at once, confirmed by
-  // its own button: the reader can pose « niveau 0, 1 et 2 » in one visit to the
-  // chart instead of drilling three times and backing out twice. The family step
-  // stays a single, immediate click — it only chooses which bars come next, it
-  // poses nothing of its own.
-  const multiple = axe !== null && axe.cle !== 'categorie'
+  // Every axis accepts several ticks at once, confirmed by its own button: the
+  // reader can pose « niveau 0, 1 et 2 » in one visit to the chart instead of
+  // drilling three times and backing out twice.
+  const multiple = axe !== null
   const cleBrouillon = axe === null ? '' : `${axe.cle}${versQueryExploration(etatDuGraphique)}`
   const selection = multiple && brouillon.cle === cleBrouillon ? brouillon.valeurs : []
   function basculer(valeur: string): void {
@@ -247,9 +246,40 @@ export function VueExploration() {
           surRemonter={() => ecrire(remonter(etat), 'push')}
           surRetirerAxe={(cle) => ecrire(retirerAxe(etat, cle), 'push')}
           surRetirerClasse={() => ecrire(EXPLORATION_VIDE, 'push')}
+          surRetirerTag={(tag) =>
+            ecrire(
+              {
+                ...etat,
+                base: {
+                  ...etat.base,
+                  tags: etat.base.tags.filter((autre) => autre !== tag),
+                  tagsExclus: etat.base.tagsExclus.filter((autre) => autre !== tag),
+                  tagsObliges: etat.base.tagsObliges.filter((autre) => autre !== tag),
+                },
+              },
+              'replace',
+            )
+          }
           surTout={() => ecrire(EXPLORATION_VIDE, 'push')}
         />
       </div>
+
+      {/* Standing, not a step in the drill: several tags across several families
+          can be posed at once, and none of them push a history entry — a filter
+          adjustment, exactly as the table route treats the same panel. */}
+      {index.tags.length === 0 ? null : (
+        <div className="mb-5 rounded-panneau border border-bord bg-surface px-4 py-4">
+          <FiltreTags
+            surTags={(tags, tagsExclus, tagsObliges) =>
+              ecrire({ ...etat, base: { ...etat.base, tags, tagsExclus, tagsObliges } }, 'replace')
+            }
+            tags={etat.base.tags}
+            tagsConnus={index.tags}
+            tagsExclus={etat.base.tagsExclus}
+            tagsObliges={etat.base.tagsObliges}
+          />
+        </div>
+      )}
 
       {sorts.length === 0 ? (
         <EtatVide
@@ -310,9 +340,7 @@ export function VueExploration() {
               legendeTotal={sortsDuGraphique.length === 1 ? 'sort' : 'sorts'}
               multiple={multiple}
               selection={selection}
-              surChoix={(valeur) =>
-                multiple ? basculer(valeur) : ecrire(forer(etat, axe.cle, [valeur]), 'push')
-              }
+              surChoix={basculer}
               total={sortsDuGraphique.length}
               tranches={tranches}
             />
@@ -320,9 +348,7 @@ export function VueExploration() {
             <Barres
               multiple={multiple}
               selection={selection}
-              surChoix={(valeur) =>
-                multiple ? basculer(valeur) : ecrire(forer(etat, axe.cle, [valeur]), 'push')
-              }
+              surChoix={basculer}
               total={sortsDuGraphique.length}
               tranches={tranches}
             />

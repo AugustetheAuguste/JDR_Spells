@@ -4,6 +4,7 @@ import { AXES, CLES_AXES, type CleAxe } from '@/lib/exploration/axes'
 import { classesChoisies } from '@/lib/exploration/classes-choisies'
 import type { EtatExploration } from '@/lib/exploration/etat-exploration'
 import type { IndexWeb } from '@/lib/donnees/index-web'
+import { libelleTag } from '@/lib/navigation/groupes-tags'
 
 /**
  * Where the reader is, and every way back out.
@@ -54,6 +55,7 @@ export function CheminForage({
   etat,
   surRetirerClasse,
   surRetirerAxe,
+  surRetirerTag,
   surRemonter,
   surTout,
 }: {
@@ -61,6 +63,10 @@ export function CheminForage({
   readonly etat: EtatExploration
   readonly surRetirerClasse: () => void
   readonly surRetirerAxe: (cle: CleAxe) => void
+  /** Drops one tag wherever it sits — inclus, exclu or oblige — and leaves the
+   * rest posed. The standing tag panel poses several at once, outside the
+   * drill, so each needs its own cross rather than one chip for all of them. */
+  readonly surRetirerTag: (tag: string) => void
   readonly surRemonter: () => void
   readonly surTout: () => void
 }) {
@@ -113,6 +119,30 @@ export function CheminForage({
             />
           )
         })}
+        {etat.base.tags.map((tag) => (
+          <Puce
+            key={`tag-${tag}`}
+            libelle={libelleTag(tag)}
+            surRetrait={() => surRetirerTag(tag)}
+            titre="Retirer ce tag"
+          />
+        ))}
+        {etat.base.tagsExclus.map((tag) => (
+          <Puce
+            key={`tag-exclu-${tag}`}
+            libelle={`Sans ${libelleTag(tag).toLowerCase()}`}
+            surRetrait={() => surRetirerTag(tag)}
+            titre="Retirer cette exclusion"
+          />
+        ))}
+        {etat.base.tagsObliges.map((tag) => (
+          <Puce
+            key={`tag-oblige-${tag}`}
+            libelle={`${libelleTag(tag)} obligatoire`}
+            surRetrait={() => surRetirerTag(tag)}
+            titre="Retirer cette obligation"
+          />
+        ))}
       </ul>
 
       <div className="flex flex-wrap gap-2">

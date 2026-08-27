@@ -91,29 +91,37 @@ export const COULEURS = {
 } as const
 
 /**
- * The slice ramp of the exploration chart — one hue, five steps.
+ * The slice ramp of the exploration chart — eight hues, one per slice.
  *
- * A chart needs its slices told apart, and the brief allows exactly one accent
- * colour. So the ramp is not a second palette: it is the accent's own hue (161°)
- * walked down in lightness, which keeps the school pastilles the only place on
- * the site where a colour *names* something. A slice's colour therefore carries
- * its rank in the chart and nothing else — which is why every slice is labelled
- * with its own name and count, in the chart and in the list beside it.
+ * Revision: the single-hue ramp (the accent walked down in lightness) read as
+ * five shades of the same green regardless of what was being cut — level,
+ * saving throw, component. Overridden by explicit human decision: a chart's
+ * slices now get a genuinely distinct hue each, at the cost of the property the
+ * single-hue ramp bought for free — that a slice's colour was never mistaken for
+ * a school pastille. These eight hues sit close to a school hue in a few cases
+ * (`#8C6E1E` and transmutation, notably), which is accepted rather than solved
+ * because the two never appear in the same chart: the exploration route shows
+ * one axis at a time, and the school axis draws with `COULEURS_ECOLES`, never
+ * with this ramp.
  *
- * Ordered darkest first, because the slices are ordered largest first and the
- * biggest share should read as the heaviest.
+ * Colour still names nothing here but a slice's rank in this one chart — the
+ * label and the count are what identify it, in the chart and in the list beside
+ * it, exactly as before.
  *
- * Five steps and not nine: below ~1,25:1 between neighbours two steps read as one
- * colour, and a ramp that lies about being distinguishable is worse than a ramp
- * that repeats. Beyond five slices, `couleurTranche` interpolates between the
- * ends — see `lib/design/rampe.ts` for why that is acceptable there.
+ * Eight steps because the exploration's widest partition axis (level) commonly
+ * has more slices than the old ramp's five; beyond eight, `couleurTranche`
+ * cycles rather than interpolates — seven distinguishable hues repeating reads
+ * better than an infinite gradient inventing new ones.
  */
-export const RAMPE_TRANCHES = [
-  '#0E5840',
-  '#11694D',
-  '#147B5A',
-  '#178C67',
-  '#1A9E74',
+export const RAMPE_CATEGORIELLE = [
+  '#1F6F8B',
+  '#A8501C',
+  '#8C6E1E',
+  '#6B7A1E',
+  '#8A3A8C',
+  '#7A3E9E',
+  '#4A4E8C',
+  '#B03060',
 ] as const
 
 export const POLICES = {

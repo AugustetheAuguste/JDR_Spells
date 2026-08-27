@@ -21,10 +21,8 @@ import {
   versQueryTableau,
   type EtatExploration,
 } from '@/lib/exploration/etat-exploration'
-import { slugFamille } from '@/lib/exploration/familles'
 import { appliquerFiltres } from '@/lib/recherche/filtres'
 import { lireEtat, versFiltres } from '@/lib/navigation/etat-url'
-import { grouperTags } from '@/lib/navigation/groupes-tags'
 
 const INDEX = JSON.parse(
   readFileSync(join(process.cwd(), 'public', 'data', 'index.json'), 'utf8'),
@@ -34,15 +32,13 @@ function lire(query: string): EtatExploration {
   return lireExploration(new URLSearchParams(query), INDEX)
 }
 
-const ESPRIT = slugFamille('Esprit')
-
 describe('lire puis écrire est un point fixe', () => {
   const CAS = [
     '',
     'classe=barde',
     'classe=barde&niveau=2',
-    `classe=barde&categorie=${ESPRIT}`,
-    `classe=barde&categorie=${ESPRIT}&parcours=niveau,categorie`,
+    'classe=barde&tags=effet_mental',
+    'classe=barde&tags=effet_mental&parcours=niveau',
     'classe=barde&axe=ecole',
   ]
 
@@ -59,15 +55,11 @@ describe('lire puis écrire est un point fixe', () => {
 
   it('un seul critère suffit à rendre l’exploration active', () => {
     expect(explorationActive(lire('classe=barde'))).toBe(true)
-    expect(explorationActive(lire(`categorie=${ESPRIT}`))).toBe(true)
+    expect(explorationActive(lire('tags=effet_mental'))).toBe(true)
   })
 })
 
 describe('une valeur inconnue est écartée, jamais fatale', () => {
-  it('une famille qui n’existe pas est ignorée', () => {
-    expect(lire('categorie=pyrotechnie').categorie).toBeNull()
-  })
-
   it('un axe qui n’existe pas retombe sur la suggestion', () => {
     expect(lire('axe=portee').axe).toBeNull()
   })
@@ -87,35 +79,17 @@ describe('une valeur inconnue est écartée, jamais fatale', () => {
 })
 
 describe('les filtres partagés avec la route en tableau', () => {
-  it('sans famille, ce sont exactement les filtres du tableau', () => {
-    const query = 'classe=barde&niveau=2&ecoles=evocation'
+  it('ce sont exactement les filtres du tableau', () => {
+    const query = 'classe=barde&niveau=2&ecoles=evocation&tags=effet_mental'
     expect(versFiltresExploration(lire(query), INDEX)).toEqual(
       versFiltres(lireEtat(new URLSearchParams(query), INDEX), INDEX),
     )
   })
 
-  it('une famille signifie « n’importe lequel de ses tags »', () => {
-    const famille = grouperTags(INDEX.tags).find((groupe) => groupe.titre === 'Esprit')
-    const filtres = versFiltresExploration(lire(`categorie=${ESPRIT}`), INDEX)
-    expect(filtres.tags).toHaveLength(famille?.tags.length ?? 0)
-  })
-
-  it('un tag posé rend la famille muette côté filtre', () => {
-    // The spell carrying the tag necessarily carries one of the family's tags; the
-    // family stays in the URL only so the breadcrumb can say where the reader is.
-    const avecTag = lire(`categorie=${ESPRIT}&tags=effet_mental`)
-    expect(versFiltresExploration(avecTag, INDEX).tags).toEqual(
-      versFiltres(avecTag.base, INDEX).tags,
-    )
-    expect(avecTag.categorie).toBe(ESPRIT)
-  })
-
-  it('le lien « voir en tableau » montre la même liste, pas une plus large', () => {
-    // The table route has no notion of a family, so the family is expanded into its
-    // tags on the way out. Same spells on both sides, or the link lies.
-    const etat = lire(`classe=barde&categorie=${ESPRIT}`)
+  it('le lien « voir en tableau » montre la même liste', () => {
+    const etat = lire('classe=barde&tags=effet_mental')
     const ici = appliquerFiltres(INDEX.sorts, versFiltresExploration(etat, INDEX))
-    const query = versQueryTableau(etat, INDEX)
+    const query = versQueryTableau(etat)
     const laBas = appliquerFiltres(
       INDEX.sorts,
       versFiltres(lireEtat(new URLSearchParams(query), INDEX), INDEX),
@@ -126,7 +100,7 @@ describe('les filtres partagés avec la route en tableau', () => {
 
   it('le lien en tableau n’emporte ni parcours ni axe', () => {
     const etat = forer(lire('classe=barde'), 'niveau', ['2'])
-    const query = versQueryTableau(etat, INDEX)
+    const query = versQueryTableau(etat)
     expect(query).not.toContain('parcours')
     expect(query).not.toContain('axe')
     expect(query).toContain('classe=barde')
