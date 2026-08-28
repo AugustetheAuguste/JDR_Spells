@@ -94,7 +94,20 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
         ok = _normalize(character.character_class) == req.payload["class_name"]
         return ok, f"classe {character.character_class} {'correspond' if ok else 'ne correspond pas'} à {req.payload['class_name']}"
 
-    # CLASS_FEATURE_TEXT et UNPARSED : jamais vérifiables automatiquement
+    # CLASS_FEATURE_TEXT et UNPARSED : jamais vérifiables automatiquement,
+    # sauf si le payload indique une ou plusieurs classes impliquées
+    # incompatibles avec celle du personnage.
+    implied = req.payload.get("implied_classes")
+    if implied:
+        character_class_normalized = _normalize(character.character_class)
+        if character_class_normalized not in implied:
+            return False, (
+                f"nécessite une capacité de classe réservée à "
+                f"{'/'.join(implied)} ; {character.character_class} n'y correspond pas"
+            )
+        # la classe correspond à une des classes impliquées : les détails
+        # précis (capacité, niveau de lanceur, etc.) restent à vérifier
+
     return None, f"à vérifier manuellement : {req.raw_text}"
 
 
