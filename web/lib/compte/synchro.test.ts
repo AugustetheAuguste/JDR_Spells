@@ -28,8 +28,9 @@ function liste(
   modifie_le = '2026-08-01T00:00:00.000Z',
   nom = id_liste,
   cree_le = '2026-01-01T00:00:00.000Z',
+  personnage_id: string | null = null,
 ): ListeFavoris {
-  return { id_liste, nom, cree_le, modifie_le, sorts }
+  return { id_liste, nom, cree_le, modifie_le, sorts, personnage_id }
 }
 
 function etat(listes: readonly ListeFavoris[], liste_active: string | null = null): EtatFavoris {
@@ -41,8 +42,16 @@ function ligne(
   modifie_le: string | null = '2026-08-01T00:00:00.000Z',
   supprime_le: string | null = null,
   nom: string | null = id_liste,
+  personnage_id: string | null = null,
 ): LigneListe {
-  return { id_liste, nom, cree_le: '2026-01-01T00:00:00.000Z', modifie_le, supprime_le }
+  return {
+    id_liste,
+    nom,
+    cree_le: '2026-01-01T00:00:00.000Z',
+    modifie_le,
+    supprime_le,
+    personnage_id,
+  }
 }
 
 function sort(id_liste: string, spell_id: string, position: number): LigneSort {
@@ -95,13 +104,26 @@ describe('versEtat', () => {
   })
 
   it('accepte un nom et des dates absents plutôt que d’écarter la liste', () => {
-    const distant = versEtat([{ id_liste: 'l1', nom: null, cree_le: null, modifie_le: null, supprime_le: null }], [])
+    const distant = versEtat(
+      [
+        {
+          id_liste: 'l1',
+          nom: null,
+          cree_le: null,
+          modifie_le: null,
+          supprime_le: null,
+          personnage_id: null,
+        },
+      ],
+      [],
+    )
     expect(distant.etat.listes[0]).toEqual({
       id_liste: 'l1',
       nom: '',
       cree_le: '',
       modifie_le: '',
       sorts: [],
+      personnage_id: null,
     })
   })
 })
@@ -176,6 +198,15 @@ describe('fusionner — rien ne se perd', () => {
       [],
     )
     expect(fusionner(local, distant).etat.listes[0]?.cree_le).toBe('2026-02-01T00:00:00.000Z')
+  })
+
+  it('laisse l’assignation de personnage au côté strictement plus récent, comme le nom', () => {
+    const local = etat([liste('l1', [], '2026-08-01T00:00:00.000Z', 'l1', undefined, 'perso-local')])
+    const distant = versEtat(
+      [{ ...ligne('l1', '2026-08-02T00:00:00.000Z'), personnage_id: 'perso-distant' }],
+      [],
+    )
+    expect(fusionner(local, distant).etat.listes[0]?.personnage_id).toBe('perso-distant')
   })
 })
 

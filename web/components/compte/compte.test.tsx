@@ -46,6 +46,10 @@ describe('traduireErreur', () => {
     expect(traduireErreur('Email not confirmed')).toContain('confirmé')
   })
 
+  it('reconnaît une adresse déjà prise, y compris le message d’un changement d’e-mail', () => {
+    expect(traduireErreur('Email address already in use')).toContain('existe déjà')
+  })
+
   it('nomme le captcha, parce que personne ne se souvient l’avoir activé', () => {
     const message = traduireErreur('captcha verification process failed')
     expect(message).toContain('Attack Protection')

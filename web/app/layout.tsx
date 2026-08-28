@@ -53,6 +53,9 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
               <Link className="text-encre hover:text-accent" href="/favoris">
                 Favoris
               </Link>
+              <Link className="text-encre hover:text-accent" href="/compte">
+                Compte
+              </Link>
             </nav>
             <p className="m-0 text-petit text-encre-douce">
               {MOTS.source} —{' '}

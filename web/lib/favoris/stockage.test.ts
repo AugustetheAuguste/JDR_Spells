@@ -19,6 +19,7 @@ import {
   VERSION_FAVORIS,
   activerListe,
   ajouterListe,
+  assignerPersonnage,
   basculer,
   charger,
   enregistrer,
@@ -29,6 +30,7 @@ import {
   listeActive,
   nomFichierExport,
   nouvelleListe,
+  personnageInconnu,
   renommerListe,
   supprimerListe,
   valider,
@@ -420,6 +422,37 @@ describe('idsInconnus', () => {
   it('ne signale rien quand tout est connu', () => {
     const liste = { ...nouvelleListe('A', T0, 'l1'), sorts: ['degout'] }
     expect(idsInconnus(liste, new Set(['degout', 'autre']))).toEqual([])
+  })
+})
+
+describe('assignerPersonnage', () => {
+  it('attache un personnage et met à jour modifie_le', () => {
+    const apres = assignerPersonnage(avecUneListe(), 'l1', 'perso-1', T1)
+    expect(apres.listes[0]?.personnage_id).toBe('perso-1')
+    expect(apres.listes[0]?.modifie_le).toBe(T1)
+  })
+
+  it('détache avec null', () => {
+    const avecPerso = assignerPersonnage(avecUneListe(), 'l1', 'perso-1', T0)
+    const apres = assignerPersonnage(avecPerso, 'l1', null, T1)
+    expect(apres.listes[0]?.personnage_id).toBeNull()
+  })
+})
+
+describe('personnageInconnu', () => {
+  it('signale un personnage_id que le compte ne connaît plus', () => {
+    const liste = { ...nouvelleListe('A', T0, 'l1'), personnage_id: 'perso-supprime' }
+    expect(personnageInconnu(liste, new Set(['perso-1']))).toBe(true)
+  })
+
+  it('ne signale rien pour une liste sans personnage', () => {
+    const liste = nouvelleListe('A', T0, 'l1')
+    expect(personnageInconnu(liste, new Set())).toBe(false)
+  })
+
+  it('ne signale rien quand le personnage existe', () => {
+    const liste = { ...nouvelleListe('A', T0, 'l1'), personnage_id: 'perso-1' }
+    expect(personnageInconnu(liste, new Set(['perso-1']))).toBe(false)
   })
 })
 
