@@ -129,14 +129,35 @@
     "id": "unresolved_class_feature_text_guerrier_manual_check",
     "feat_name": "Incantation contre un ennemi juré",
     "character": {"character_class": "Guerrier", "level": 5},
-    "expected_status": "manual_check",
-    "note": "Guard against over-correction: 'Capacité à lancer des sorts' has no class_ability_map.json match and no literal class name, so implied_classes stays absent and the feat must remain manual_check, not regress to ineligible."
+    "expected_status": "ineligible",
+    "note": "Superseded by the magic gate introduced in feat-detail-and-magic-gating: the raw Conditions text literally says 'Capacité à lancer des sorts', Data/feat_magic_info.json tags this feat is_magic with high confidence, and Data/class_caster_info.json confirms Guerrier has no spellcasting access, so engine.py now correctly hard-fails this instead of deferring to manual_check."
   },
   {
     "id": "unresolved_class_feature_text_magicien_manual_check",
     "feat_name": "Incantation contre un ennemi juré",
     "character": {"character_class": "Magicien", "level": 5},
     "expected_status": "manual_check",
-    "note": "Same unresolved-mapping guard exercised against a different class, confirming the outcome is class-independent when implied_classes is absent."
+    "note": "Same unresolved-mapping guard exercised against a caster class: Magicien has spellcasting access per class_caster_info.json, so the magic gate does not block it and the requirement remains unverifiable (manual_check), confirming the fix is class-dependent, not a blanket ineligible."
+  },
+  {
+    "id": "acolyte_nature_guerrier_ineligible_magic_gate",
+    "feat_name": "Acolyte de la Nature",
+    "character": {"character_class": "Guerrier", "level": 3},
+    "expected_status": "ineligible",
+    "note": "Bug rapporté par l'utilisateur : don magique proposé à un Guerrier ; couvre le nouveau filtre feat_magic_info + class_caster_info introduit en Step 10."
+  },
+  {
+    "id": "acolyte_nature_druide_not_blocked_by_magic_gate",
+    "feat_name": "Acolyte de la Nature",
+    "character": {"character_class": "Druide", "level": 3},
+    "expected_status": "manual_check",
+    "note": "Un Druide a accès à la magie : le filtre magie ne doit pas le bloquer (régression guard pour ne pas sur-corriger) ; le statut réel reste manual_check car un autre Requirement ('Suivant de la voie de la nature') est encore non vérifiable, vérifié en exécutant le vrai pipeline avant d'écrire ce cas."
+  },
+  {
+    "id": "attaque_magique_guerrier_ineligible_magic_gate",
+    "feat_name": "Attaque magique",
+    "character": {"character_class": "Guerrier", "level": 5},
+    "expected_status": "ineligible",
+    "note": "Extra magic-gate coverage picked from Data/feat_magic_info.json's is_magic:true entries ('sorts profanes'/'emplacement de sort' keywords) against a known non-caster class; verified via the real pipeline before writing."
   }
 ]
