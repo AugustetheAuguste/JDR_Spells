@@ -1,5 +1,7 @@
+import json
 import unicodedata
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Literal, Optional
 
 from .class_progression import get_bba
@@ -7,6 +9,47 @@ from .data_loader import FeatRow
 from .models import OrGroup, Requirement, RequirementType
 
 Status = Literal["eligible", "manual_check", "ineligible"]
+
+with open("Data/class_caster_info.json", encoding="utf-8") as f:
+    CLASS_CASTER_INFO = json.load(f)
+
+with open("Data/feat_magic_info.json", encoding="utf-8") as f:
+    FEAT_MAGIC_INFO = json.load(f)
+
+# Recopié littéralement depuis
+# build/feat-detail-and-magic-gating/OUTPUT_vocab_and_markup_calibration.md,
+# Section C — motif commun identifié pour les races à magie innée : ne pas
+# recalibrer cette liste ici.
+RACE_MAGIC_KEYWORDS = [
+    "comme un pouvoir magique",
+    "comme des pouvoirs magiques",
+    "niveau de lanceur de sorts",
+]
+
+_RACES_PATH = "Data/races.json"
+if Path(_RACES_PATH).exists():
+    _RACES_RAW = json.loads(Path(_RACES_PATH).read_text(encoding="utf-8"))
+else:
+    _RACES_RAW = {}
+
+
+def class_grants_magic(character_class: str) -> Optional[bool]:
+    entry = CLASS_CASTER_INFO.get(_normalize(character_class))
+    if entry is None:
+        return None  # classe inconnue -> ne jamais deviner
+    return entry["is_caster"]
+
+
+def race_grants_magic(race_name: Optional[str]) -> bool:
+    if race_name is None:
+        return False  # absence d'info != échappatoire
+    entry = _RACES_RAW.get(_normalize(race_name))
+    if entry is None:
+        return False  # race inconnue -> comportement conservateur
+    text = _normalize(
+        " ".join(trait.get("description", "") for trait in entry.get("traits", []))
+    )
+    return any(_normalize(keyword) in text for keyword in RACE_MAGIC_KEYWORDS)
 
 
 def _normalize(text: str) -> str:
@@ -133,9 +176,45 @@ def evaluate_feat(feat: FeatRow, character: Character) -> EligibilityResult:
         if ok is None:
             manual_reasons.append(reason)
 
+    status: Status = "manual_check" if manual_reasons else "eligible"
+
+    # Un don dont les Conditions imposent déjà explicitement une race précise
+    # (ex. "Ailes de tengu" : "Personnage de niveau 5, tengu") est gated de
+    # façon fiable par cette RACE Requirement elle-même ; le tag magique
+    # heuristique de feat_magic_info.json (souvent un faux positif provenant
+    # du texte de la page wiki, sans rapport avec les Conditions réelles du
+    # don) ne doit pas venir écraser ce résultat déjà déterministe.
+    has_explicit_race_requirement = any(
+        (isinstance(req, OrGroup) and any(opt.type == RequirementType.RACE for opt in req.options))
+        or (not isinstance(req, OrGroup) and req.type == RequirementType.RACE)
+        for req in feat.parsed.requirements
+    )
+
+    magic_info = FEAT_MAGIC_INFO.get(feat.name)
+    if (
+        not has_explicit_race_requirement
+        and magic_info
+        and magic_info["is_magic"]
+        and not magic_info["needs_manual_check"]
+    ):
+        class_ok = class_grants_magic(character.character_class)
+        if class_ok is False and not race_grants_magic(character.race):
+            keywords = ", ".join(magic_info["matched_keywords"])
+            return EligibilityResult(
+                feat.name,
+                "ineligible",
+                [
+                    f"don magique ({keywords}) ; ni la classe "
+                    f"{character.character_class} ni la race "
+                    f"{character.race or 'non fournie'} ne donnent accès à la magie"
+                ],
+            )
+        # class_ok is None (classe inconnue) -> ne pas overrider, garder le
+        # statut déjà calculé par la boucle de Requirement ci-dessus
+
     if manual_reasons:
-        return EligibilityResult(feat.name, "manual_check", manual_reasons)
-    return EligibilityResult(feat.name, "eligible", [])
+        return EligibilityResult(feat.name, status, manual_reasons)
+    return EligibilityResult(feat.name, status, [])
 
 
 def filter_feats(character: Character, catalog: list[FeatRow]) -> dict[Status, list[EligibilityResult]]:
