@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Union
+from typing import Optional, Union
 
 
 class RequirementType(Enum):
@@ -47,3 +47,23 @@ class ParsedConditions:
             elif req.type == RequirementType.UNPARSED:
                 return True
         return False
+
+
+@dataclass
+class ClassSkillEntry:
+    skill: str
+    ability: str  # For/Dex/Con/Int/Sag/Cha
+
+
+@dataclass
+class SkillPointsFormula:
+    base: int
+    ability: str
+
+
+@dataclass
+class ClassSkillInfo:
+    key: str
+    class_skills: list[ClassSkillEntry]
+    skill_points_formula: Optional[SkillPointsFormula]
+    skill_points_formula_raw: Optional[str]
