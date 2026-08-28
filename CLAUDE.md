@@ -24,9 +24,9 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `data/index/carte_doublons.json` | 05 | le partage des sorts entre classes |
 | `data/index/sorts_exclusifs.json` | 05 | les sorts exclusifs à une classe |
 | `data/sorts/<id>.json` | 07+08 | **le sort lui-même** (2070 fichiers, 21 clés) |
-| `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération |
-| `schemas/*.json` | 02 | les contrats de sortie (+ `enrichissement.schema.json` § 10, `web_index.schema.json`, l'export web) |
-| `conventions/vocabulaires/*.json` | 04 | les six listes **closes** de l'enrichissement |
+| `cache/html/<sha1>.html`, `cache/index.jsonl` | 03, 06 | les octets source bruts + le journal de récupération — **non committés depuis la clôture du scraping** (§9), régénérés localement par une relance de 03/06 |
+| `data/schemas/*.json` | 02 | les contrats de sortie (+ `enrichissement.schema.json` § 10, `web_index.schema.json`, l'export web) |
+| `data/conventions/vocabulaires/*.json` | 04 | les six listes **closes** de l'enrichissement |
 | `data/enrichissements/<id>.json` | étage 09 | la couche LLM d'un sort (2048 fichiers, 16 clés) |
 | `data/vues/sorts_enrichis/<id>.json` | — | **rien** : vue dérivée du join sur `id` (§ 10) |
 | `reports/*.md` | 03–09 | le résultat et les anomalies de chaque étape (dont `09_validation.md`) |
@@ -68,7 +68,7 @@ Elle détient le détail : clés JSON, normalisation des libellés du bloc techn
 table des 19 classes et abréviations, formats, anti-patterns de la source. Deux
 Skills la complètent sur la couche LLM (§ 10) : `pf-enrichment-conventions` (les
 16 clés, les vocabulaires clos, `preuves`) — **à charger avant de toucher à
-`data/enrichissements/`, `data/vues/` ou `conventions/vocabulaires/`** — et
+`data/enrichissements/`, `data/vues/` ou `data/conventions/vocabulaires/`** — et
 `pf-bedrock-batch` (le client, le jeton, le caching). Ce fichier n'en recopie rien
 — des règles dupliquées divergent. **Code et Skill divergents : la Skill gagne.**
 
@@ -94,8 +94,12 @@ Les quatre derniers ont une entrée unique, garde d'entrée comprise :
 `python -m pf_spells.cli` (`prepare-prompts`, `enrich`, `validate-enrich`,
 `build-vues`). Procédures de réglage et de correction : **`docs/enrichissement.md`**.
 
-`cache/html/` est **committé** : relancées, 03 et 06 lisent le cache et ne refont
-aucune requête — d'où la correction d'un parseur sans retoucher au wiki. Tests :
+`cache/html/` n'est **plus committé** depuis la clôture du scraping (§9) : un
+dépôt fraîchement cloné n'a pas de cache, et 03/06 refont toutes les requêtes
+réseau au prochain lancement, dans les limites de throttle du §7. Sur un dépôt où
+`cache/` existe déjà (poste de travail n'ayant jamais purgé le cache local), 03 et
+06 continuent de le lire et de ne refaire aucune requête — d'où la correction d'un
+parseur sans retoucher au wiki, quand le cache est disponible. Tests :
 `PYTHONPATH=src python -m pytest tests -q`.
 
 ## 7. Les quatre modules qui sortent sur le réseau
@@ -131,6 +135,7 @@ et vues compris, est hors ligne.
 | Libellés multi-classes (`Arcaniste/Ensorceleur/Magicien`, `Prêtre/Prêtre combattant/Oracle`) | une page, un libellé combiné — **jamais scindés** |
 | Abréviations hors des 19 classes (`Réd`, …) | normales dans `niveaux`, listées dans `reports/08_enrich.md` |
 | Concordance liste ↔ page | 100 % des paires comparables ; divergences **constatées, jamais corrigées** |
+| `cache/html/` et `cache/index.jsonl` supprimés du dépôt (scraping clos, 2026-08-27) | non committés désormais ; `data/MANIFEST.json` ne les recense plus, régénérables par une relance de 03/06 |
 
 ## 10. Enrichissement LLM — `data/enrichissements/` et la vue jointe
 

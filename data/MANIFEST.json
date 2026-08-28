@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-31T18:19:47.244389+00:00",
+  "genere_le": "2026-08-28T17:37:02.493937+00:00",
   "parser_version": "1.0.0",
   "source": {
     "site": "https://www.pathfinder-fr.org/",
@@ -30,7 +30,7 @@
       "motif": "<class-slug>.jsonl",
       "nb_fichiers": 19,
       "nb_enregistrements": 8927,
-      "schema": "schemas/liste_classe.schema.json",
+      "schema": "data/schemas/liste_classe.schema.json",
       "produit_par_etape": "04",
       "autorite": "quels sorts une classe reçoit, et à quel niveau",
       "description": "Une ligne par entrée de liste de classe, avec niveau, école, blurb, sources."
@@ -77,33 +77,13 @@
       "motif": "<spell-id>.json",
       "nb_fichiers": 2070,
       "nb_enregistrements": 2070,
-      "schema": "schemas/sort.schema.json",
+      "schema": "data/schemas/sort.schema.json",
       "produit_par_etape": "07 + 08",
       "autorite": "le sort lui-même — bloc technique, description, classes",
       "description": "Un fichier JSON par sort, 21 clés toujours présentes. Corrigeable à la main : les éditions humaines font foi."
     },
     {
-      "chemin": "cache/html/",
-      "type": "repertoire_html",
-      "motif": "<sha1>.html",
-      "nb_fichiers": 2089,
-      "nb_enregistrements": 2089,
-      "schema": null,
-      "produit_par_etape": "03, 06",
-      "autorite": "les octets source bruts (reproductibilité)",
-      "description": "HTML UTF-8 tel que servi par le wiki : permet de corriger un parseur sans re-crawler."
-    },
-    {
-      "chemin": "cache/index.jsonl",
-      "type": "jsonl",
-      "nb_enregistrements": 2107,
-      "schema": null,
-      "produit_par_etape": "03, 06",
-      "autorite": "le journal de récupération (url, fichier, statut, date)",
-      "description": "Journal append-only : peut compter plus de lignes que de fichiers en cache (une URL revisitée est réécrite)."
-    },
-    {
-      "chemin": "schemas/",
+      "chemin": "data/schemas/",
       "type": "repertoire_json_schema",
       "motif": "*.json",
       "nb_fichiers": 4,
@@ -130,7 +110,6 @@
     "nb_entrees_listes": 8927,
     "nb_sorts_uniques": 2070,
     "nb_fichiers_sorts": 2070,
-    "nb_pages_cache": 2089,
     "nb_sorts_avec_mythique": 287,
     "nb_sorts_avec_variantes": 196
   }

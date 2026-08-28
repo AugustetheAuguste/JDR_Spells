@@ -5,7 +5,8 @@ et les listes de classes qui permettent de répondre à « quels sorts un Paladi
 niveau 2 peut-il lancer ? » sans jamais retourner sur le web. Une couche
 d'enrichissement générée par LLM (catégorie, résumé, tags, rôle tactique) vit à
 côté, dans un arbre séparé. Tout est en clair, lisible, et **entièrement
-régénérable depuis le cache HTML committé**.
+régénérable depuis le wiki** — le scraping est clos et son cache HTML n'est plus
+committé, donc une régénération complète repasse par le réseau (§7 de `CLAUDE.md`).
 
 | Mesure | Valeur |
 |---|---:|
@@ -13,7 +14,6 @@ régénérable depuis le cache HTML committé**.
 | Entrées de listes de classes | {entrees} |
 | Sorts uniques | {sorts} |
 | Fichiers `data/sorts/*.json` | {sorts} |
-| Pages HTML en cache | {cache} |
 | Sorts avec un bloc `mythique` | {mythiques} |
 | Sorts avec des `variantes` | {variantes} |
 | Sorts enrichis par LLM | {enrichis} |
@@ -98,15 +98,14 @@ CLAUDE.md                           instructions permanentes pour les sessions d
 .claude/skills/pf-corpus-conventions/SKILL.md    l'autorité sur les conventions
 docs/enrichissement.md              la procédure d'exploitation de la couche LLM
 pyproject.toml, requirements.txt    dépendances et point d'entrée installable
-schemas/sort.schema.json            contrat d'un fichier de sort
-schemas/liste_classe.schema.json    contrat d'une ligne de liste de classe
-schemas/enrichissement.schema.json  contrat d'un enrichissement LLM
-conventions/vocabulaires/           les six listes CLOSES de l'enrichissement
+data/schemas/sort.schema.json            contrat d'un fichier de sort
+data/schemas/liste_classe.schema.json    contrat d'une ligne de liste de classe
+data/schemas/enrichissement.schema.json  contrat d'un enrichissement LLM
+data/conventions/vocabulaires/      les six listes CLOSES de l'enrichissement
 src/pf_spells/                      le pipeline (un module par étape + les utilitaires)
 tools/                              préflight, estimation de coût, rendu de ce README
 tests/                              pytest, adossé à pages/ et au corpus committé
-cache/html/<sha1>.html              HTML brut committé : corriger un parseur sans re-crawler
-cache/index.jsonl                   journal de récupération (url, fichier, statut, date)
+cache/html/, cache/index.jsonl      non committés (scraping clos) ; régénérables par 03/06
 data/classes.json                   les classes : libellé, slug, URL, fichier de cache
 data/listes_classes/<slug>.jsonl    une ligne par entrée de liste de classe
 data/spell_pages.jsonl              url de sort ↔ fichier de cache, statut
@@ -218,7 +217,7 @@ Deux garde-fous en font une couche vérifiable plutôt qu'une couche crue :
 - **`preuves` est le contrôle anti-confabulation.** Chaque champ dérivé du texte
   doit citer une **sous-chaîne littérale du source**, vérifiée mécaniquement.
   Seul pli toléré : `’` (U+2019) contre `'`.
-- **Les six vocabulaires sont CLOS** (`conventions/vocabulaires/`). Le modèle
+- **Les six vocabulaires sont CLOS** (`data/conventions/vocabulaires/`). Le modèle
   choisit dedans ou déclare son embarras dans `notes_ambiguite` ; il n'invente pas
   de tag.
 
@@ -250,9 +249,10 @@ coût, la boucle de réglage du prompt, et quoi faire de chaque alerte du rappor
 
 {pipeline}
 
-Sur un dépôt cloné tel quel, **seul `enrich_llm` touche au réseau** :
-`cache/html/` est committé, donc les étapes 03 et 06 sont des lectures de cache,
-pas des re-crawls. Le crawl à froid (~1 h) n'a lieu que si le cache est vidé.
+Sur un dépôt cloné tel quel, `cache/html/` n'est **plus committé** (scraping
+clos) : les étapes 03 et 06 refont toutes les requêtes au premier lancement,
+dans les limites de throttle du §7 de `CLAUDE.md`. Sur un poste où le cache
+existe déjà localement, 03 et 06 continuent de le lire sans re-crawler.
 
 `enrich_llm` **facture des appels**. Sa dépense est bornée par construction :
 plafond d'appels, reprise vérifiée sur `hash_source` avant l'appel, confirmation

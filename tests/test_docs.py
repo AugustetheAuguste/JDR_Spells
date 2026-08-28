@@ -129,7 +129,8 @@ class TestCLAUDEmdContenu:
         assert "phase ultérieure" in claude_texte
 
     def test_relances_en_cache(self, claude_texte: str) -> None:
-        assert "ne refont\naucune requête" in claude_texte
+        assert "n'est **plus committé**" in claude_texte
+        assert "refont toutes les requêtes" in claude_texte
 
     def test_interdictions_de_style(self, claude_texte: str) -> None:
         assert "__init__.py" in claude_texte
@@ -142,7 +143,7 @@ class TestCLAUDEmdContenu:
             "data/index/sorts_uniques.jsonl",
             "data/sorts/<id>.json",
             "cache/index.jsonl",
-            "schemas/*.json",
+            "data/schemas/*.json",
         ):
             assert chemin in claude_texte, chemin
 
@@ -160,7 +161,7 @@ class TestCLAUDEmdCoucheEnrichissement:
         for chemin in (
             "data/enrichissements/<id>.json",
             "data/vues/sorts_enrichis/<id>.json",
-            "conventions/vocabulaires/*.json",
+            "data/conventions/vocabulaires/*.json",
         ):
             assert chemin in claude_texte, chemin
 
@@ -345,11 +346,10 @@ class TestREADMEContenu:
             "pages/",
             "CLAUDE.md",
             ".claude/skills/pf-corpus-conventions/SKILL.md",
-            "schemas/sort.schema.json",
-            "schemas/liste_classe.schema.json",
+            "data/schemas/sort.schema.json",
+            "data/schemas/liste_classe.schema.json",
             "src/pf_spells/",
             "tests/",
-            "cache/index.jsonl",
             "data/classes.json",
             "data/spell_pages.jsonl",
             "data/index/sorts_uniques.jsonl",
