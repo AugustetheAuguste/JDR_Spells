@@ -48,6 +48,10 @@ export interface LigneListe {
   readonly cree_le: string | null
   readonly modifie_le: string | null
   readonly supprime_le: string | null
+  /** `null` covers both "no character" and "the client didn't send the
+   * column" — `personnages` is deleted with `on delete set null`, so a
+   * character removed elsewhere arrives here as an absence, never an error. */
+  readonly personnage_id: string | null
 }
 
 /** One row of `public.listes_sorts`. `position` carries the insertion order the
@@ -169,6 +173,7 @@ export function versEtat(
       // Duplicates collapse, as they do locally: the same id twice is a write
       // bug, never intent.
       sorts: [...new Set(groupe.map((sort) => sort.spell_id))],
+      personnage_id: ligne.personnage_id,
     })
   }
 
@@ -199,6 +204,7 @@ export function versLignes(
     cree_le: liste.cree_le === '' ? null : liste.cree_le,
     modifie_le: liste.modifie_le === '' ? null : liste.modifie_le,
     supprime_le: null,
+    personnage_id: liste.personnage_id,
   }))
   const sorts = etat.listes.flatMap((liste) =>
     liste.sorts.map((spell_id, position) => ({
@@ -229,6 +235,9 @@ function fusionnerListe(
       cree_le: plusAncienne(locale.cree_le, distante.cree_le),
       modifie_le: plusRecente(locale.modifie_le, distante.modifie_le),
       sorts: [...locale.sorts, ...gagnes],
+      // Same rule as the name: a character reassignment is a rename, not
+      // content, so the more recent side decides rather than unioning.
+      personnage_id: recente ? distante.personnage_id : locale.personnage_id,
     },
     gagnes: gagnes.length,
   }
@@ -265,7 +274,8 @@ export function fusionner(local: EtatFavoris, distant: Distant): RapportFusion {
     const { liste, gagnes } = fusionnerListe(locale, distante)
     resultat.push(liste)
     sorts_recus += gagnes
-    if (gagnes > 0 || liste.nom !== locale.nom) listes_fusionnees += 1
+    if (gagnes > 0 || liste.nom !== locale.nom || liste.personnage_id !== locale.personnage_id)
+      listes_fusionnees += 1
   }
 
   const parIdLocal = new Set(local.listes.map((liste) => liste.id_liste))
