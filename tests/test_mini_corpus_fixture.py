@@ -168,7 +168,7 @@ class TestSchema:
     @pytest.fixture(scope="class")
     def validateur(self, repo_root: Path) -> Draft202012Validator:
         schema = json.loads(
-            (repo_root / "schemas/sort.schema.json").read_text(encoding="utf-8")
+            (repo_root / "data/schemas/sort.schema.json").read_text(encoding="utf-8")
         )
         return Draft202012Validator(schema)
 

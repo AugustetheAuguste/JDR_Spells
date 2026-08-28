@@ -17,7 +17,7 @@ Harness decisions worth stating:
   where it can legitimately fail.
 * The schema and the closed vocabularies come from the real repo via
   `racine_conventions`: they are frozen repo-level artefacts, and giving the fixture
-  a copy is the duplication `conventions/vocabulaires/` exists to prevent.
+  a copy is the duplication `data/conventions/vocabulaires/` exists to prevent.
 """
 
 from __future__ import annotations
@@ -711,7 +711,7 @@ class TestTaxonomieLueDepuisLesConventions:
             encoding="utf-8"
         )
         for nom in ("tags.json", "categories.json", "conditions.json"):
-            doc = _charger(repo_root / "conventions" / "vocabulaires" / nom)
+            doc = _charger(repo_root / "data" / "conventions" / "vocabulaires" / nom)
             presents = [e["cle"] for e in doc["valeurs"] if e["cle"] in source]
             assert presents == [], (nom, presents)
 

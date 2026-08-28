@@ -208,14 +208,14 @@ class TestCasInvalides:
 class TestVocabulaires:
     def test_les_six_fichiers_existent(self, repo_root: Path) -> None:
         presents = sorted(
-            p.name for p in (repo_root / "conventions" / "vocabulaires").glob("*.json")
+            p.name for p in (repo_root / "data" / "conventions" / "vocabulaires").glob("*.json")
         )
         assert presents == FICHIERS_VOCABULAIRE
 
     @pytest.mark.parametrize("nom", FICHIERS_VOCABULAIRE)
     def test_le_fichier_porte_une_version_et_des_valeurs(self, repo_root: Path, nom: str) -> None:
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
+            (repo_root / "data" / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
         # `tags.json` a été recoupée en v1 par l'étape 04. `categories.json` et
         # `conditions.json` sont passées en v2 le 2026-07-30 : la passe complète a
@@ -231,7 +231,7 @@ class TestVocabulaires:
         self, repo_root: Path, nom: str
     ) -> None:
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
+            (repo_root / "data" / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
         for entree in doc["valeurs"]:
             assert set(entree) == {
@@ -267,7 +267,7 @@ class TestVocabulaires:
             if ligne.strip():
                 noms.add(json.loads(ligne)["nom"])
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
+            (repo_root / "data" / "conventions" / "vocabulaires" / nom).read_text(encoding="utf-8")
         )
         inconnus = [
             exemple
@@ -313,7 +313,7 @@ class TestVocabulaires:
         réglée d'une liste improvisée.
         """
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
+            (repo_root / "data" / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
         )
         assert doc["version"] == "v1"
         assert doc["gele_le"]
@@ -321,14 +321,14 @@ class TestVocabulaires:
         regle = doc["regle_de_coupe"]
         assert regle["seuil_sorts_echantillon"] == 10
         assert regle["source"] == "build_artifacts/taxo_passe0_agrege.csv"
-        assert regle["groupes"] == "conventions/taxo_groupes.json"
+        assert regle["groupes"] == "data/conventions/taxo_groupes.json"
         # Le plafond de 5 % de notes_ambiguite est une règle de la passe 1, mais
         # elle doit être écrite dès le gel (exigence de l'étape 04).
         assert "5 %" in doc["notes_ambiguite_plafond"]
 
     def test_tags_v1_compte_entre_25_et_40_entrees(self, repo_root: Path) -> None:
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
+            (repo_root / "data" / "conventions" / "vocabulaires" / "tags.json").read_text(encoding="utf-8")
         )
         assert 25 <= len(doc["valeurs"]) <= 40
 
@@ -383,14 +383,14 @@ class TestAntiDerive:
         self, repo_root: Path
     ) -> None:
         # Mechanical form of the plan's grep criterion: for every vocabulary, no
-        # file outside conventions/vocabulaires/ may name a majority of its keys.
+        # file outside data/conventions/vocabulaires/ may name a majority of its keys.
         # A whole closed list duplicated anywhere would trip this immediately.
         vocabulaires = {
             nom_fichier: set(charger_vocabulaire(repo_root, nom_fichier))
             for nom_fichier in FICHIERS_VOCABULAIRE
         }
         surveilles = [
-            repo_root / "schemas" / "enrichissement.schema.json",
+            repo_root / "data" / "schemas" / "enrichissement.schema.json",
             *sorted((repo_root / "src" / "pf_spells").glob("*.py")),
             repo_root / "tests" / "test_enrichissement_schema.py",
         ]
@@ -412,7 +412,7 @@ class TestAntiDerive:
     def test_les_listes_courtes_ne_sont_pas_ecrites_en_dur_dans_le_schema(
         self, repo_root: Path
     ) -> None:
-        texte = (repo_root / "schemas" / "enrichissement.schema.json").read_text(encoding="utf-8")
+        texte = (repo_root / "data" / "schemas" / "enrichissement.schema.json").read_text(encoding="utf-8")
         mots = set(re.findall(r"[a-z0-9_]+", texte))
         for nom_fichier in ("roles_tactiques.json", "cibles.json"):
             cles = set(charger_vocabulaire(repo_root, nom_fichier))
@@ -424,10 +424,10 @@ class TestFormatDesFichiers:
     @staticmethod
     def _fichiers(repo_root: Path) -> list[Path]:
         return [
-            repo_root / "schemas" / "enrichissement.schema.json",
+            repo_root / "data" / "schemas" / "enrichissement.schema.json",
             repo_root / "src" / "pf_spells" / "enrichissement_schema.py",
             repo_root / "tests" / "test_enrichissement_schema.py",
-            *sorted((repo_root / "conventions" / "vocabulaires").glob("*.json")),
+            *sorted((repo_root / "data" / "conventions" / "vocabulaires").glob("*.json")),
             *sorted((repo_root / "tests" / "fixtures" / "enrichissements").glob("*.json")),
         ]
 

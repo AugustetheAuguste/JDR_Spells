@@ -26,7 +26,7 @@ from pf_spells import prepare_prompts as pp
 
 MINI = Path("tests") / "fixtures" / "mini_corpus"
 
-# Every value here is a REAL key from conventions/vocabulaires/. Inventing
+# Every value here is a REAL key from data/conventions/vocabulaires/. Inventing
 # plausible-looking ones instead would make the stub answers fail the schema gate,
 # and the whole nominal path would read as broken when only the fixture was.
 REPONSE_TYPE: dict[str, Any] = {
@@ -534,8 +534,8 @@ class TestGardesDEntree:
     ) -> None:
         """Answers validated against lists the model never saw would all fail."""
         faux = tmp_path / "conv"
-        (faux / "conventions" / "vocabulaires").mkdir(parents=True)
-        (faux / "conventions" / "vocabulaires" / "tags.json").write_text(
+        (faux / "data" / "conventions" / "vocabulaires").mkdir(parents=True)
+        (faux / "data" / "conventions" / "vocabulaires" / "tags.json").write_text(
             json.dumps({"version": "v2", "valeurs": []}, ensure_ascii=False),
             encoding="utf-8",
             newline="\n",

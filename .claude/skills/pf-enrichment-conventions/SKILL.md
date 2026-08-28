@@ -1,6 +1,6 @@
 ---
 name: pf-enrichment-conventions
-description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/ entièrement régénérable, liste gelée des 16 clés, politique des nulls, champ preuves anti-confabulation, taxonomie et sa règle de coupe, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, conventions/vocabulaires/ ou build_artifacts/prompts/.
+description: Conventions autoritaires de la couche d'enrichissement LLM du corpus de sorts Pathfinder-fr (arbre data/enrichissements/ entièrement régénérable, liste gelée des 16 clés, politique des nulls, champ preuves anti-confabulation, taxonomie et sa règle de coupe, provenance et hash_source, vocabulaires clos) — à charger avant de lire ou d'écrire quoi que ce soit sous data/enrichissements/, data/vues/, data/conventions/vocabulaires/ ou build_artifacts/prompts/.
 ---
 
 # pf-enrichment-conventions
@@ -17,8 +17,8 @@ doit jamais être recopiée ici :
 
 | Autorité machine | Détient |
 |---|---|
-| `schemas/enrichissement.schema.json` | types, cardinalités, `additionalProperties: false`, champs requis |
-| `conventions/vocabulaires/*.json` | l'énumération réelle de chaque valeur close |
+| `data/schemas/enrichissement.schema.json` | types, cardinalités, `additionalProperties: false`, champs requis |
+| `data/conventions/vocabulaires/*.json` | l'énumération réelle de chaque valeur close |
 
 Si ce Skill et ces fichiers divergent, **les fichiers gagnent pour les valeurs**,
 et **ce Skill gagne pour les règles** (politique des nulls, règle des preuves,
@@ -52,8 +52,8 @@ régénération suivante, donc inutile.
 data/sorts/<id>.json                     # Phase 1 — LECTURE SEULE pour cette track
 data/enrichissements/<id>.json           # étage 09 — la couche LLM
 data/vues/sorts_enrichis/<id>.json       # vue jointe, DÉRIVÉE, jamais éditée
-conventions/vocabulaires/*.json          # vocabulaires clos (autorité machine)
-schemas/enrichissement.schema.json       # contrat (autorité machine)
+data/conventions/vocabulaires/*.json     # vocabulaires clos (autorité machine)
+data/schemas/enrichissement.schema.json  # contrat (autorité machine)
 build_artifacts/prompts/                 # prompts assemblés, committés (preuve + rejeu)
 reports/                                 # rapports et anomalies des étages 08/09/10
 ```
@@ -179,7 +179,7 @@ décision explicite, elle se prend en connaissance de cause et se journalise.
 
 ## Vocabulaires clos
 
-Ils vivent **uniquement** dans `conventions/vocabulaires/*.json` :
+Ils vivent **uniquement** dans `data/conventions/vocabulaires/*.json` :
 `categories.json`, `tags.json`, `roles_tactiques.json`, `cibles.json`,
 `types_degats.json`, `conditions.json`.
 
@@ -212,7 +212,7 @@ Format d'un fichier de vocabulaire :
 
 ## Les tags — GELÉS en `v1` le 2026-07-29
 
-**35 tags**, liste close, dans `conventions/vocabulaires/tags.json`
+**35 tags**, liste close, dans `data/conventions/vocabulaires/tags.json`
 (`version: "v1"`). C'est la seule autorité sur les tags admissibles : un tag hors
 de cette liste est un **rejet** à l'étage 10, jamais une suggestion.
 
@@ -224,8 +224,8 @@ d'une règle de coupe déterministe et rejouable, pas d'une signature :
 | Échantillon | `build_artifacts/echantillon_taxo.json` | 200 sorts stratifiés, 85 strates, 9 écoles, niveaux 0–9 |
 | Passe 0 | `build_artifacts/taxo_passe0/<id>.json` | proposition **libre** (aucune liste imposée), température 0, un fichier par sort, texte envoyé conservé |
 | Agrégat | `build_artifacts/taxo_passe0_agrege.csv` | 1 278 usages → 1 121 étiquettes brutes distinctes, triées par occurrences |
-| Regroupement | `conventions/taxo_groupes.json` | 54 groupes candidats (regex sur l'étiquette pliée) |
-| Coupe | `conventions/vocabulaires/tags.json` | les **35** groupes couvrant **≥ 10 sorts** de l'échantillon — exactement, ni choisis ni écartés à la main |
+| Regroupement | `data/conventions/taxo_groupes.json` | 54 groupes candidats (regex sur l'étiquette pliée) |
+| Coupe | `data/conventions/vocabulaires/tags.json` | les **35** groupes couvrant **≥ 10 sorts** de l'échantillon — exactement, ni choisis ni écartés à la main |
 
 Chaque entrée porte `definition_fr`, 2+ `exemples_positifs` et 2+
 `exemples_negatifs`. **Les exemples sont des noms de sorts réels du corpus**,
@@ -350,7 +350,7 @@ ouvrirait une connexion est un bug de conception, pas une optimisation.
 | 6 | Réintroduire une clé de relecture ou un verrou d'écrasement | le contrat est à 16 clés, toutes machine ; `additionalProperties: false` rejette la 17ᵉ |
 | 7 | Omettre une clé au lieu d'écrire `null` / `[]` | casse la forme uniforme auditable à l'œil |
 | 8 | Confondre `type_degats: null` et `notes_ambiguite` | « pas de dégâts » ≠ « je n'ai pas su » ; fausse la mesure des 5 % |
-| 9 | Recopier une liste de valeurs closes en dur (schéma, code, prompt figé) | elle divergera de `conventions/vocabulaires/` |
+| 9 | Recopier une liste de valeurs closes en dur (schéma, code, prompt figé) | elle divergera de `data/conventions/vocabulaires/` |
 | 10 | Laisser le modèle inventer un tag hors vocabulaire | rejet à l'étage 10 ; la taxonomie se corrige, la contrainte ne se relâche pas |
 | 11 | Recalculer l'`id` d'un enrichissement au lieu de reprendre celui du corpus | la jointure sur `id` casse silencieusement |
 | 12 | Tolérer un U+FFFD « isolé » | c'est une corruption d'encodage, jamais un caractère de contenu |

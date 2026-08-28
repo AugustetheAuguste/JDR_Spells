@@ -12,7 +12,7 @@ invents a fresh compound for nearly every spell
 most frequent raw label occurs **10 times** and the median occurs once. A cut
 applied to raw labels would therefore retain almost nothing. The real signal is
 in the *concepts* the compounds are built from, which is what
-`conventions/taxo_groupes.json` names:
+`data/conventions/taxo_groupes.json` names:
 each group is a regex over the accent-folded label, and a group's coverage is the
 number of **sampled spells** at least one of whose labels matches it. That count
 — spells, not label uses — is what the >= 10 cut of the step is applied to.
@@ -60,12 +60,12 @@ class AgregatError(RuntimeError):
     """A blocking condition: the aggregate cannot honestly be built."""
 
 
-# The grouping vocabulary lives in `conventions/taxo_groupes.json`, not here.
+# The grouping vocabulary lives in `data/conventions/taxo_groupes.json`, not here.
 # Two reasons, both hard: the retained group names become the v1 tag keys, and a
-# closed list of values must have exactly one home (`conventions/`), never a
+# closed list of values must have exactly one home (`data/conventions/`), never a
 # second one in code; and a curator re-running the grouping differently edits a
 # data file, not a module.
-CHEMIN_GROUPES = Path("conventions") / "taxo_groupes.json"
+CHEMIN_GROUPES = Path("data") / "conventions" / "taxo_groupes.json"
 
 
 def charger_groupes(racine: str | Path = ".") -> dict[str, str]:
@@ -175,7 +175,7 @@ def couverture_par_groupe(
     all mention damage is one spell of evidence for `degats_directs`.
 
     `racine` is threaded explicitly rather than left to the default: the groups
-    are read from `<racine>/conventions/taxo_groupes.json`, and defaulting it
+    are read from `<racine>/data/conventions/taxo_groupes.json`, and defaulting it
     deeper down would silently match against the *current directory's* groups
     whatever root the caller passed.
     """

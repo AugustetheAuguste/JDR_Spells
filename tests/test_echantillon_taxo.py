@@ -2,7 +2,7 @@
 
 Two layers. The builder is exercised offline on `tests/fixtures/mini_corpus`,
 which is a drop-in `racine` (it mirrors `data/sorts`, `data/index`,
-`data/classes.json`) but is *not* a full repo — no `src/`, no `schemas/`, no
+`data/classes.json`) but is *not* a full repo — no `src/`, no `data/schemas/`, no
 Skill — so the entry guard would legitimately fail on it and is skipped there via
 `preflight=False`. The second layer only reads the committed artifact and the real
 corpus; it never rebuilds over `build_artifacts/`.

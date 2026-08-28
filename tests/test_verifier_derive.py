@@ -40,7 +40,7 @@ def depot(tmp_path: Path) -> Path:
     `web/public/data/`, so the starting point is by construction in agreement."""
     racine = tmp_path / "depot"
     shutil.copytree(FIXTURE / "data", racine / "data")
-    for chemin in ("src/pf_spells", "schemas", "tools", "tests"):
+    for chemin in ("src/pf_spells", "data/schemas", "tools", "tests"):
         source = REPO_ROOT / chemin
         cible = racine / chemin
         cible.parent.mkdir(parents=True, exist_ok=True)

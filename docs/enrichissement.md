@@ -13,7 +13,7 @@ Toutes supposent `export PYTHONPATH=src` depuis la racine du dépôt.
 
 ```
 data/sorts/<id>.json  ──┐
-conventions/vocabulaires/  (six listes closes, gelées)
+data/conventions/vocabulaires/  (six listes closes, gelées)
                         │
       étage 08          ▼   prepare-prompts     HORS LIGNE, idempotent
       pf_spells.prepare_prompts
@@ -81,7 +81,7 @@ D'où le chemin on-demand, et le prompt caching comme seul levier de coût.
 ```
 export PYTHONPATH=src
 python -m pf_spells.cli prepare-prompts
-python tools/estimate_cost.py \
+python -m pf_spells.estimate_cost \
   --prompts build_artifacts/prompts/p1.5 \
   --tarif-entree 0.001 --tarif-sortie 0.005
 python -m pf_spells.cli enrich --estimer-seulement
@@ -89,7 +89,7 @@ python -m pf_spells.cli enrich --estimer-seulement
 
 `--estimer-seulement` passe **toutes** les gardes et **tous** les filtres du run
 réel, puis sort sans construire de client : le nombre affiché est le nombre qui
-serait dépensé. Les tarifs de `estimate_cost.py` sont par 1000 tokens, dans la
+serait dépensé. Les tarifs de `src/pf_spells/estimate_cost.py` sont par 1000 tokens, dans la
 devise qu'on veut ; ils ne sont pas codés en dur parce qu'ils changent.
 
 > **Le piège à lire avant tout `enrich`.** L'état committé porte 1950

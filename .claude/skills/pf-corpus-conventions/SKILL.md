@@ -158,7 +158,7 @@ abbreviations anyway. Class slugs use the same recipe as spell slugs.
 elements_to_do.json                  # input, never modified
 pages/                               # saved sample HTML, never modified
 .claude/skills/pf-corpus-conventions/SKILL.md
-schemas/                             # sort.schema.json, liste_classe.schema.json
+data/schemas/                        # sort.schema.json, liste_classe.schema.json
 src/pf_spells/                       # fetcher, htmlutil, slugs, classes
 tests/                               # pytest, fixture-driven on pages/
 cache/index.jsonl                    # url -> cache file, status, fetched_at

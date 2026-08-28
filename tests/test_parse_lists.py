@@ -221,7 +221,7 @@ class TestGeneratedCorpus:
 
     def test_every_line_validates(self, repo_root: Path, corpus):
         schema = json.loads(
-            (repo_root / "schemas/liste_classe.schema.json").read_text(encoding="utf-8")
+            (repo_root / "data/schemas/liste_classe.schema.json").read_text(encoding="utf-8")
         )
         validateur = Draft202012Validator(schema)
         for slug, lignes in corpus.items():

@@ -2,7 +2,7 @@
 
 Strictly offline. Separating assembly from sending is what makes the paid run
 auditable *before* it costs anything: the prompts are diffable, replayable, and
-priceable by `tools/estimate_cost.py` without a single API call. Nothing here
+priceable by `pf_spells.estimate_cost` without a single API call. Nothing here
 touches the network, and nothing here writes under `data/`.
 
 Three things this module gets deliberately right:
@@ -23,7 +23,7 @@ block is therefore a *cost* decision, not an editorial one —
 `test_le_bloc_systeme_reste_cacheable` guards the floor.
 
 **The vocabularies are read, never retyped.** Tags, categories, damage types and
-conditions come from `conventions/vocabulaires/*.json` at assembly time, with
+conditions come from `data/conventions/vocabulaires/*.json` at assembly time, with
 their definitions and examples. A list duplicated into a prompt template would
 drift from the schema that validates against it, and the drift would show up as
 mysterious rejections at stage 10.
@@ -276,11 +276,11 @@ def verifier_taxonomie_gelee(racine: Path) -> str:
     the same `version_taxonomie` — that provenance is the only thing that tells a
     v1 record from a v2 one once they sit side by side in `data/enrichissements/`.
     """
-    doc = _lire_json(racine / "conventions" / "vocabulaires" / "tags.json")
+    doc = _lire_json(racine / "data" / "conventions" / "vocabulaires" / "tags.json")
     version = doc.get("version")
     if version == "v0":
         raise PreparePromptsError(
-            "conventions/vocabulaires/tags.json est encore en version v0 : la "
+            "data/conventions/vocabulaires/tags.json est encore en version v0 : la "
             "taxonomie n'est pas gelée (étape 04 non fusionnée). Aucun prompt "
             "n'est assemblé — ils seraient bâtis sur une liste provisoire."
         )
@@ -319,7 +319,7 @@ def _bloc_vocabulaire(racine: Path, nom_champ: str, nom_fichier: str) -> str:
     examples are omitted here on purpose — they are spell names, and naming other
     spells in the system prompt invites cross-contamination between records.
     """
-    doc = _lire_json(racine / "conventions" / "vocabulaires" / nom_fichier)
+    doc = _lire_json(racine / "data" / "conventions" / "vocabulaires" / nom_fichier)
     lignes = [f"Liste `{nom_champ}` (valeurs admissibles, closes) :"]
     for entree in doc["valeurs"]:
         definition = " ".join(str(entree["definition_fr"]).split())
@@ -430,7 +430,7 @@ def run(
     the closed vocabularies live, and the fixture has none of its own — they are
     repo-level artefacts, frozen, shared by every root. Defaulting the second to
     the first would make the fixture need a copy of the taxonomy, which is exactly
-    the duplication `conventions/vocabulaires/` exists to prevent.
+    the duplication `data/conventions/vocabulaires/` exists to prevent.
 
     `sortie` gains a `<version_prompt>/` level so several prompt versions coexist.
     """
@@ -547,7 +547,7 @@ def main(argv: list[str] | None = None) -> int:
         f"{resume['repertoire']}"
     )
     print(
-        "estimer le coût : python tools/estimate_cost.py --prompts "
+        "estimer le coût : python -m pf_spells.estimate_cost --prompts "
         f"{resume['repertoire']} --tarif-entree <prix/1k> --tarif-sortie <prix/1k>"
     )
     return 0

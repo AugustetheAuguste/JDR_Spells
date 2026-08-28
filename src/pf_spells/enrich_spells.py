@@ -36,7 +36,7 @@ parser_version = "1.0.0"
 INDEX_PATH = Path("data/index/sorts_uniques.jsonl")
 CLASSES_PATH = Path("data/classes.json")
 SORTS_DIR = Path("data/sorts")
-SCHEMA_PATH = Path("schemas/sort.schema.json")
+SCHEMA_PATH = Path("data/schemas/sort.schema.json")
 REPORT_PATH = Path("reports/08_enrich.md")
 
 # The `classes` entry contract for this step.

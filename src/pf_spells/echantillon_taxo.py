@@ -416,7 +416,7 @@ def main(argv: list[str] | None = None) -> int:
         help=(
             "saute la garde d'entrée. Réservé aux tests hors ligne sur "
             "tests/fixtures/mini_corpus, qui n'est pas un dépôt complet (ni "
-            "src/, ni schemas/, ni la Skill) et sur lequel le préflight "
+            "src/, ni data/schemas/, ni la Skill) et sur lequel le préflight "
             "échouerait légitimement."
         ),
     )

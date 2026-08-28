@@ -11,20 +11,20 @@ SCHEMA_FILES = ["sort.schema.json", "liste_classe.schema.json"]
 
 @pytest.mark.parametrize("nom", SCHEMA_FILES)
 def test_schema_is_valid_draft_2020_12(repo_root: Path, nom: str) -> None:
-    schema = json.loads((repo_root / "schemas" / nom).read_text(encoding="utf-8"))
+    schema = json.loads((repo_root / "data" / "schemas" / nom).read_text(encoding="utf-8"))
     assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
     Draft202012Validator.check_schema(schema)
 
 
 @pytest.mark.parametrize("nom", SCHEMA_FILES)
 def test_schema_forbids_extra_top_level_keys(repo_root: Path, nom: str) -> None:
-    schema = json.loads((repo_root / "schemas" / nom).read_text(encoding="utf-8"))
+    schema = json.loads((repo_root / "data" / "schemas" / nom).read_text(encoding="utf-8"))
     assert schema["additionalProperties"] is False
 
 
 def test_liste_classe_accepts_a_realistic_line(repo_root: Path) -> None:
     schema = json.loads(
-        (repo_root / "schemas" / "liste_classe.schema.json").read_text(encoding="utf-8")
+        (repo_root / "data" / "schemas" / "liste_classe.schema.json").read_text(encoding="utf-8")
     )
     ligne = {
         "id": "armes-contre-le-mal",
@@ -44,7 +44,7 @@ def test_liste_classe_accepts_a_realistic_line(repo_root: Path) -> None:
 
 
 def test_sort_schema_accepts_a_realistic_spell(repo_root: Path) -> None:
-    schema = json.loads((repo_root / "schemas" / "sort.schema.json").read_text(encoding="utf-8"))
+    schema = json.loads((repo_root / "data" / "schemas" / "sort.schema.json").read_text(encoding="utf-8"))
     sort = {
         "id": "requiem-pour-les-fantomes",
         "nom": "Requiem pour les fantômes",
@@ -96,7 +96,7 @@ def test_sort_schema_accepts_a_realistic_spell(repo_root: Path) -> None:
 
 
 def test_sort_schema_mythique_block_shape(repo_root: Path) -> None:
-    schema = json.loads((repo_root / "schemas" / "sort.schema.json").read_text(encoding="utf-8"))
+    schema = json.loads((repo_root / "data" / "schemas" / "sort.schema.json").read_text(encoding="utf-8"))
     validateur = Draft202012Validator(schema)
     bloc = {"description": "t", "description_html": "<p>t</p>"}
     assert validateur.is_valid({"mythique": bloc}) is False  # champs requis manquants

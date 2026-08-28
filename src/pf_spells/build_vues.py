@@ -35,7 +35,7 @@ Four properties are load-bearing:
   written by default would make every file differ on every run and drown the real
   diff — the same reasoning as stage 08's manifest.
 
-Validity is judged against `schemas/enrichissement.schema.json` with the closed
+Validity is judged against `data/schemas/enrichissement.schema.json` with the closed
 vocabularies injected (`enrichissement_schema.charger_schema_resolu`), so a widened
 list needs no edit here. That is *shape and vocabulary* only: whether each `preuve`
 is really a substring of the source is stage 10's check, and this module does not
@@ -475,7 +475,7 @@ def main(argv: list[str] | None = None) -> int:
         help=(
             "saute la garde d'entrée. Réservé aux exécutions sur "
             "tests/fixtures/mini_corpus, qui porte des données valides mais n'est "
-            "pas un dépôt complet (ni src/, ni schemas/, ni la Skill)"
+            "pas un dépôt complet (ni src/, ni data/schemas/, ni la Skill)"
         ),
     )
     args = parseur.parse_args(argv)

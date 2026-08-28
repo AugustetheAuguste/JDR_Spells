@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "note": "taxonomie_v1, gelée le 2026-07-29 et AUTORITAIRE : c'est la liste close des tags admissibles, aucun run de génération n'en sort. Elle est DÉRIVÉE PAR MACHINE du corpus réel, sans curation humaine et sans en attendre aucune. Sa légitimité ne vient pas d'une signature mais d'une règle de coupe déterministe et rejouable : la passe 0 (build_artifacts/taxo_passe0/, 200 sorts de build_artifacts/echantillon_taxo.json, proposition libre, température 0) a produit 1278 usages d'étiquette, agrégés en 1121 étiquettes brutes distinctes (build_artifacts/taxo_passe0_agrege.csv) ; les 54 groupes candidats de conventions/taxo_groupes.json en sont le regroupement ; les 35 retenus ici sont EXACTEMENT ceux qui couvrent >= 10 sorts de l'échantillon, ni choisis ni écartés à la main. Les définitions sont rédigées ; les exemples sont tirés mécaniquement du corpus (positifs = sorts de l'échantillon couverts par le groupe, négatifs = sorts de groupes voisins qu'il ne couvre pas), jamais inventés. tests/test_taxo_passe0.py rejoue la coupe et échoue si cette liste cesse d'être exactement l'ensemble des groupes au-dessus du seuil. Pour la faire évoluer, on modifie taxo_groupes.json ou le seuil et on recoupe une v2 — on n'ajoute pas un tag à la main.",
+  "note": "taxonomie_v1, gelée le 2026-07-29 et AUTORITAIRE : c'est la liste close des tags admissibles, aucun run de génération n'en sort. Elle est DÉRIVÉE PAR MACHINE du corpus réel, sans curation humaine et sans en attendre aucune. Sa légitimité ne vient pas d'une signature mais d'une règle de coupe déterministe et rejouable : la passe 0 (build_artifacts/taxo_passe0/, 200 sorts de build_artifacts/echantillon_taxo.json, proposition libre, température 0) a produit 1278 usages d'étiquette, agrégés en 1121 étiquettes brutes distinctes (build_artifacts/taxo_passe0_agrege.csv) ; les 54 groupes candidats de data/conventions/taxo_groupes.json en sont le regroupement ; les 35 retenus ici sont EXACTEMENT ceux qui couvrent >= 10 sorts de l'échantillon, ni choisis ni écartés à la main. Les définitions sont rédigées ; les exemples sont tirés mécaniquement du corpus (positifs = sorts de l'échantillon couverts par le groupe, négatifs = sorts de groupes voisins qu'il ne couvre pas), jamais inventés. tests/test_taxo_passe0.py rejoue la coupe et échoue si cette liste cesse d'être exactement l'ensemble des groupes au-dessus du seuil. Pour la faire évoluer, on modifie taxo_groupes.json ou le seuil et on recoupe une v2 — on n'ajoute pas un tag à la main.",
   "gele_le": "2026-07-29",
   "valeurs": [
     {
@@ -497,7 +497,7 @@
   "regle_de_coupe": {
     "seuil_sorts_echantillon": 10,
     "source": "build_artifacts/taxo_passe0_agrege.csv",
-    "groupes": "conventions/taxo_groupes.json",
+    "groupes": "data/conventions/taxo_groupes.json",
     "rejouee_par": "tests/test_taxo_passe0.py"
   },
   "notes_ambiguite_plafond": "5 % des enregistrements générés : au-delà, la taxonomie est jugée mal découpée et on recoupe une v2 ; on ne laisse pas le modèle improviser un tag."

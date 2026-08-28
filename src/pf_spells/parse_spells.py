@@ -50,7 +50,7 @@ parser_version = "1.0.0"
 
 MANIFEST_PATH = Path("data/spell_pages.jsonl")
 SORTS_DIR = Path("data/sorts")
-SCHEMA_PATH = Path("schemas/sort.schema.json")
+SCHEMA_PATH = Path("data/schemas/sort.schema.json")
 REPORT_PATH = Path("reports/07_parse_spells.md")
 
 CACHE_INDEX_PATH = Path("cache/index.jsonl")

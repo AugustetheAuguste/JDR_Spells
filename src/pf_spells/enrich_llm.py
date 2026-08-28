@@ -460,39 +460,16 @@ class Budget:
                 )
 
 
-_NOM_MODULE_ESTIMATEUR = "_pf_estimate_cost"
-
-
 def _caracteres_par_token() -> float:
-    """The character→token heuristic, read from `tools/estimate_cost.py`.
+    """The character→token heuristic, read from `pf_spells.estimate_cost`.
 
     Read rather than restated: a second copy of the constant would drift from the
     estimator the operator checks prices with, and the two would only be found to
-    disagree while money was being spent. `tools/` is not a package (house rule:
-    no `__init__.py`), so it is loaded by path — and registered in `sys.modules`
-    before execution, because its `@dataclass` resolves its own module by name and
-    fails obscurely on `None` otherwise.
+    disagree while money was being spent.
     """
-    import importlib.util
+    from pf_spells.estimate_cost import CARACTERES_PAR_TOKEN
 
-    connu = sys.modules.get(_NOM_MODULE_ESTIMATEUR)
-    if connu is not None:
-        return float(connu.CARACTERES_PAR_TOKEN)
-
-    chemin = Path(__file__).resolve().parents[2] / "tools" / "estimate_cost.py"
-    specification = importlib.util.spec_from_file_location(
-        _NOM_MODULE_ESTIMATEUR, chemin
-    )
-    if specification is None or specification.loader is None:
-        raise EnrichLLMError(f"estimateur introuvable : {chemin}")
-    module = importlib.util.module_from_spec(specification)
-    sys.modules[_NOM_MODULE_ESTIMATEUR] = module
-    try:
-        specification.loader.exec_module(module)
-    except BaseException:
-        del sys.modules[_NOM_MODULE_ESTIMATEUR]
-        raise
-    return float(module.CARACTERES_PAR_TOKEN)
+    return float(CARACTERES_PAR_TOKEN)
 
 
 def estimer_run(prompts: list[Path], max_tokens_defaut: int = 1024) -> dict[str, Any]:
@@ -535,7 +512,7 @@ def rendre_estimation(estimation: dict[str, Any]) -> str:
             f"  tokens de sorts     : {estimation['tokens_utilisateur']}",
             f"  tokens de sortie    : ≤ {estimation['tokens_sortie_haut']}",
             f"  part cacheable      : {estimation['part_cacheable']:.0%} de l'entrée",
-            "  (tarifs : python tools/estimate_cost.py --prompts <rép> …)",
+            "  (tarifs : python -m pf_spells.estimate_cost --prompts <rép> …)",
         ]
     )
 

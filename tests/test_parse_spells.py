@@ -30,7 +30,7 @@ ECHANTILLONS = {
 @pytest.fixture(scope="session")
 def schema(repo_root: Path) -> dict:
     return json.loads(
-        (repo_root / "schemas" / "sort.schema.json").read_text(encoding="utf-8")
+        (repo_root / "data" / "schemas" / "sort.schema.json").read_text(encoding="utf-8")
     )
 
 

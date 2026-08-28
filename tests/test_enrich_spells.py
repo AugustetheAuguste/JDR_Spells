@@ -269,7 +269,7 @@ class TestCorpus:
 
     def test_all_files_still_validate(self, corpus, repo_root: Path):
         schema = json.loads(
-            (repo_root / "schemas" / "sort.schema.json").read_text(encoding="utf-8")
+            (repo_root / "data" / "schemas" / "sort.schema.json").read_text(encoding="utf-8")
         )
         validateur = Draft202012Validator(schema)
         for doc in corpus:

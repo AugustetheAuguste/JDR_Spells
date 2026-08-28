@@ -5,41 +5,26 @@ lengths: an estimator whose formula is only checked "approximately" is an
 estimator whose formula can silently drift. The rest pins the behaviours a caller
 depends on — the manifest being skipped, an empty directory reporting zero rather
 than crashing, and the low/high/batch ordering.
-
-`tools/` is not a package (no `__init__.py`, by house rule), so the module is
-loaded by path once per session.
 """
 
 from __future__ import annotations
 
 import ast
-import importlib.util
 import json
 import math
-import sys
 from pathlib import Path
 from types import ModuleType
 
 import pytest
 
+from pf_spells import estimate_cost
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-def charger_module(nom: str, chemin: Path) -> ModuleType:
-    """Import a path-addressed script — `tools/` is deliberately not a package."""
-    spec = importlib.util.spec_from_file_location(nom, chemin)
-    assert spec is not None and spec.loader is not None
-    module = importlib.util.module_from_spec(spec)
-    # `dataclasses` resolves string annotations through `sys.modules`, so the
-    # module has to be registered before its body runs.
-    sys.modules[nom] = module
-    spec.loader.exec_module(module)
-    return module
 
 
 @pytest.fixture(scope="session")
 def ec() -> ModuleType:
-    return charger_module("estimate_cost", REPO_ROOT / "tools" / "estimate_cost.py")
+    return estimate_cost
 
 
 def ecrire_prompt(

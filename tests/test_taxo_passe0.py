@@ -6,7 +6,7 @@ The **unit** layer exercises pure functions (folding, singularising, response
 parsing, source assembly) on hand-written input. The **wired** layer runs the pass
 and the aggregation end to end over a synthetic root built in `tmp_path`, with a
 fake `converse` client: no network, no token, no cost, and its own
-`conventions/taxo_groupes.json` so the grouping under test is the one the test
+`data/conventions/taxo_groupes.json` so the grouping under test is the one the test
 wrote — not the repo's. The **committed** layer only reads the real artifacts and
 asserts the properties the step is answerable for, above all the coverage gate
 that justifies every retained tag.
@@ -74,8 +74,8 @@ def ecrire_racine(
         (racine / "data" / "sorts" / f"{sid}.json").write_text(
             json.dumps(doc, ensure_ascii=False), encoding="utf-8"
         )
-    (racine / "conventions").mkdir(parents=True)
-    (racine / "conventions" / "taxo_groupes.json").write_text(
+    (racine / "data" / "conventions").mkdir(parents=True)
+    (racine / "data" / "conventions" / "taxo_groupes.json").write_text(
         json.dumps({"version": "t", "seuil_couverture": 2, "groupes": groupes}),
         encoding="utf-8",
     )
@@ -444,7 +444,7 @@ def echantillon_committe(repo_root: Path) -> set[str]:
 
 @pytest.fixture(scope="module")
 def tags_v1(repo_root: Path) -> dict[str, Any]:
-    chemin = repo_root / "conventions" / "vocabulaires" / "tags.json"
+    chemin = repo_root / "data" / "conventions" / "vocabulaires" / "tags.json"
     return json.loads(chemin.read_text(encoding="utf-8"))
 
 

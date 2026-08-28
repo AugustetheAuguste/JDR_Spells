@@ -138,8 +138,8 @@ class TestLesCommandesSontVraies:
         chemins = [
             "src/pf_spells/prepare_prompts.py",
             "tools/preflight_corpus.py",
-            "tools/estimate_cost.py",
-            "conventions/vocabulaires",
+            "src/pf_spells/estimate_cost.py",
+            "data/conventions/vocabulaires",
             "data/enrichissements",
             "data/sorts",
             ".claude/skills/pf-enrichment-conventions/SKILL.md",

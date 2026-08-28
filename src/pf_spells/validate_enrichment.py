@@ -233,7 +233,7 @@ def _valider_taxonomie(
     is what decides whether to cut a taxonomy v3.
 
     Reading the enums back out of the resolved schema keeps
-    `conventions/vocabulaires/` the only home of each list: no list is hard-coded
+    `data/conventions/vocabulaires/` the only home of each list: no list is hard-coded
     here, and a widened list needs no edit in this module.
     """
     defs = schema["$defs"]

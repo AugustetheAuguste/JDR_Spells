@@ -5,8 +5,8 @@ schema and never resolves an external `$ref` — no retrieval hook, no registry.
 Rather than hand-copying the closed lists into the schema (which would give each
 list two homes and guarantee drift), the schema ships each closed value slot as a
 bare `type: string` placeholder under `$defs/vocabulaire_*`, and this module
-injects the real `enum` read from `conventions/vocabulaires/*.json` at load time.
-Consequence: `conventions/vocabulaires/` stays the single source of truth, and
+injects the real `enum` read from `data/conventions/vocabulaires/*.json` at load
+time. Consequence: `data/conventions/vocabulaires/` stays the single source of truth, and
 callers still get one flat dict usable directly with `Draft202012Validator`.
 """
 
@@ -27,8 +27,8 @@ VOCABULAIRES: dict[str, str] = {
     "vocabulaire_conditions": "conditions.json",
 }
 
-CHEMIN_SCHEMA = Path("schemas") / "enrichissement.schema.json"
-CHEMIN_VOCABULAIRES = Path("conventions") / "vocabulaires"
+CHEMIN_SCHEMA = Path("data") / "schemas" / "enrichissement.schema.json"
+CHEMIN_VOCABULAIRES = Path("data") / "conventions" / "vocabulaires"
 
 # U+FFFD, spelled by codepoint: writing it literally would make this very file
 # trip the encoding checks it exists to enforce.
@@ -101,7 +101,7 @@ def charger_schema_resolu(racine: Path) -> dict[str, Any]:
         if "enum" in defs[nom_def]:
             raise ValueError(
                 f"$defs/{nom_def} porte déjà un enum : une liste close ne vit que "
-                f"dans conventions/vocabulaires/{nom_fichier}"
+                f"dans data/conventions/vocabulaires/{nom_fichier}"
             )
         defs[nom_def]["enum"] = charger_vocabulaire(racine, nom_fichier)
     return schema

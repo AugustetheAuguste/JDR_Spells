@@ -202,7 +202,7 @@ class TestStabiliteDuHash:
 class TestGardeTaxonomie:
     def test_une_taxonomie_v0_bloque_l_assemblage(self, tmp_path: Path) -> None:
         """v0 means step 04 is not merged: the prompts would be built on a draft."""
-        voc = tmp_path / "conventions" / "vocabulaires"
+        voc = tmp_path / "data" / "conventions" / "vocabulaires"
         voc.mkdir(parents=True)
         (voc / "tags.json").write_text(
             json.dumps({"version": "v0", "valeurs": []}, ensure_ascii=False),
@@ -223,7 +223,7 @@ class TestGardeTaxonomie:
 
     def test_une_version_hors_format_est_refusee(self, tmp_path: Path) -> None:
         """Une version libre ferait passer un ordre arbitraire pour un rang."""
-        voc = tmp_path / "conventions" / "vocabulaires"
+        voc = tmp_path / "data" / "conventions" / "vocabulaires"
         voc.mkdir(parents=True)
         for nom in ("tags.json", "categories.json"):
             (voc / nom).write_text(
@@ -360,7 +360,7 @@ class TestSystemeCacheable:
         self, systeme: str, repo_root: Path
     ) -> None:
         doc = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(
+            (repo_root / "data" / "conventions" / "vocabulaires" / "tags.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -530,8 +530,8 @@ class TestFormatDesSorties:
             assert texte == attendu + "\n", chemin
 
     def test_chaque_prompt_porte_exactement_les_huit_cles(self, repertoire: Path) -> None:
-        # The contract `tools/estimate_cost.py` reads. Kept in sync by this test.
-        from tools import estimate_cost  # noqa: PLC0415 - only needed here
+        # The contract `pf_spells.estimate_cost` reads. Kept in sync by this test.
+        from pf_spells import estimate_cost  # noqa: PLC0415 - only needed here
 
         for chemin in sorted(repertoire.glob("*.json")):
             if chemin.name == pp.FICHIER_MANIFESTE:
@@ -548,7 +548,7 @@ class TestFormatDesSorties:
                 assert appat not in texte, (chemin.name, appat)
 
     def test_le_cout_est_estimable_hors_ligne(self, repertoire: Path) -> None:
-        from tools import estimate_cost  # noqa: PLC0415
+        from pf_spells import estimate_cost  # noqa: PLC0415
 
         estimation = estimate_cost.estimer(repertoire, 0.001, 0.005, pp.MAX_TOKENS)
         assert estimation.nb_enregistrements == 12

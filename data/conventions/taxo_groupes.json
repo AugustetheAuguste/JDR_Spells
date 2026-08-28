@@ -1,6 +1,6 @@
 {
   "version": "g1.0",
-  "note": "Vocabulaire de REGROUPEMENT de la passe 0, pas une liste close. Chaque groupe est une expression régulière appliquée à l'étiquette brute pliée (accents retirés, minuscules). 54 groupes candidats ; ceux qui couvrent >= seuil_couverture sorts de l'échantillon FORMENT, mécaniquement et sans arbitrage, conventions/vocabulaires/tags.json v1 — seule autorité sur la liste close des tags. Ce fichier est l'entrée de cette coupe : l'éditer puis relancer src/pf_spells/taxo_agregat.py est la façon prévue de faire évoluer la taxonomie. Il n'est jamais lu comme une énumération de valeurs valides.",
+  "note": "Vocabulaire de REGROUPEMENT de la passe 0, pas une liste close. Chaque groupe est une expression régulière appliquée à l'étiquette brute pliée (accents retirés, minuscules). 54 groupes candidats ; ceux qui couvrent >= seuil_couverture sorts de l'échantillon FORMENT, mécaniquement et sans arbitrage, data/conventions/vocabulaires/tags.json v1 — seule autorité sur la liste close des tags. Ce fichier est l'entrée de cette coupe : l'éditer puis relancer src/pf_spells/taxo_agregat.py est la façon prévue de faire évoluer la taxonomie. Il n'est jamais lu comme une énumération de valeurs valides.",
   "seuil_couverture": 10,
   "groupes": {
     "degats_directs": "degat|dommage|blessure",

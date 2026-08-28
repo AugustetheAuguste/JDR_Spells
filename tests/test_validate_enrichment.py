@@ -571,7 +571,7 @@ class TestTaxonomie:
             repo_root / "src" / "pf_spells" / "validate_enrichment.py"
         ).read_text(encoding="utf-8")
         tags = json.loads(
-            (repo_root / "conventions" / "vocabulaires" / "tags.json").read_text(
+            (repo_root / "data" / "conventions" / "vocabulaires" / "tags.json").read_text(
                 encoding="utf-8"
             )
         )

@@ -2,7 +2,7 @@
 
 Reads only from `cache/html/` via `data/classes.json`: this module never touches
 the network. Every emitted line is validated against
-`schemas/liste_classe.schema.json` before it is written, and the spell `id` slug
+`data/schemas/liste_classe.schema.json` before it is written, and the spell `id` slug
 is assigned from a map shared across all classes so a spell granted by six
 classes carries one identical `id` everywhere.
 """
@@ -31,7 +31,7 @@ from pf_spells.slugs import dedupe_slug, slugify
 parser_version = "1.0.0"
 
 DEFAULT_CLASSES = "data/classes.json"
-DEFAULT_SCHEMA = "schemas/liste_classe.schema.json"
+DEFAULT_SCHEMA = "data/schemas/liste_classe.schema.json"
 DEFAULT_OUT = "data/listes_classes"
 DEFAULT_REPORT = "reports/04_parse_lists.md"
 
