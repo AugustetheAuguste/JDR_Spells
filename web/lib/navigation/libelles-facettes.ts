@@ -32,6 +32,46 @@ export const LIBELLES_TEMPS_INCANTATION: Readonly<Record<string, string>> = {
   special: 'Spécial',
 }
 
+/** Display labels for the damage-type facet, from the closed vocabulary
+ * `conventions/vocabulaires/types_degats.json`. */
+export const LIBELLES_TYPES_DEGATS: Readonly<Record<string, string>> = {
+  feu: 'Feu',
+  froid: 'Froid',
+  acide: 'Acide',
+  electricite: 'Électricité',
+  son: 'Son',
+  force: 'Force',
+  negatif: 'Énergie négative',
+  positif: 'Énergie positive',
+  perforant: 'Perforant',
+  tranchant: 'Tranchant',
+  contondant: 'Contondant',
+  precision: 'Précision',
+  autre: 'Autre',
+}
+
+/** Display labels for the inflicted-condition facet, from the closed vocabulary
+ * `conventions/vocabulaires/conditions.json`. Keys are unaccented (corpus
+ * convention, CLAUDE.md § 3); labels restore the accent. */
+export const LIBELLES_CONDITIONS: Readonly<Record<string, string>> = {
+  aveugle: 'Aveuglé',
+  ebloui: 'Ébloui',
+  etourdi: 'Étourdi',
+  chancelant: 'Chancelant',
+  secoue: 'Secoué',
+  effraye: 'Effrayé',
+  paralyse: 'Paralysé',
+  confus: 'Confus',
+  fascine: 'Fasciné',
+  enchevetre: 'Enchevêtré',
+  ralenti: 'Ralenti',
+  assourdi: 'Assourdi',
+  nauseeux: 'Nauséeux',
+  fatigue: 'Fatigué',
+  epuise: 'Épuisé',
+  fievreux: 'Fiévreux',
+}
+
 function capitaliser(code: string): string {
   return code.length === 0 ? code : code[0]!.toUpperCase() + code.slice(1)
 }
@@ -42,4 +82,12 @@ export function libellePortee(code: string): string {
 
 export function libelleTempsIncantation(code: string): string {
   return LIBELLES_TEMPS_INCANTATION[code] ?? capitaliser(code)
+}
+
+export function libelleTypeDegats(code: string): string {
+  return LIBELLES_TYPES_DEGATS[code] ?? capitaliser(code)
+}
+
+export function libelleCondition(code: string): string {
+  return LIBELLES_CONDITIONS[code] ?? capitaliser(code)
 }
