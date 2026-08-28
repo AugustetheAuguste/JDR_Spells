@@ -1,3 +1,4 @@
+import json
 import re
 import unicodedata
 
@@ -24,6 +25,9 @@ KNOWN_RACES = {
 }
 
 KNOWN_CLASSES = set(CLASS_BBA_PROGRESSION.keys())
+
+with open("Data/class_ability_map.json", encoding="utf-8") as f:
+    CLASS_ABILITY_MAP = json.load(f)["entries"]
 
 ABILITY_ABBREVIATIONS = {"For", "Dex", "Con", "Int", "Sag", "Cha"}
 
@@ -59,6 +63,19 @@ def _normalize(text: str) -> str:
 def _split_top_level(text: str) -> list[str]:
     segments = re.split(r",\s*(?![^()]*\))", text)
     return [s.strip() for s in segments if s.strip()]
+
+
+def _find_implied_classes(normalized_text: str) -> list[str] | None:
+    literal = {
+        cls for cls in KNOWN_CLASSES
+        if re.search(rf"\b{re.escape(cls)}\b", normalized_text)
+    }
+    keyword_hits: set[str] = set()
+    for entry in CLASS_ABILITY_MAP:
+        if entry["keyword"] in normalized_text:
+            keyword_hits |= set(entry["classes"])
+    result = sorted(literal | keyword_hits)
+    return result or None
 
 
 def _classify_segment(segment: str, normalized_feats: dict[str, str]) -> Requirement:
@@ -138,17 +155,25 @@ def _classify_segment(segment: str, normalized_feats: dict[str, str]) -> Require
 
     for keyword in CLASS_FEATURE_KEYWORDS:
         if _normalize(keyword) in normalized:
+            payload = {"text": raw}
+            implied = _find_implied_classes(normalized)
+            if implied:
+                payload["implied_classes"] = implied
             return Requirement(
                 type=RequirementType.CLASS_FEATURE_TEXT,
                 raw_text=raw,
-                payload={"text": raw},
+                payload=payload,
                 needs_manual_check=True,
             )
 
+    payload = {"text": raw}
+    implied = _find_implied_classes(normalized)
+    if implied:
+        payload["implied_classes"] = implied
     return Requirement(
         type=RequirementType.UNPARSED,
         raw_text=raw,
-        payload={"text": raw},
+        payload=payload,
         needs_manual_check=True,
     )
 
