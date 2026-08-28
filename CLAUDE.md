@@ -29,6 +29,24 @@ Regenerate `Data/class_features.json` (scrapes pathfinder-fr.org class progressi
 python extract_class_features.py
 ```
 
+Regenerate the other character-creation data files (each idempotent, safe to re-run; `extract_class_bonus_feats.py` requires `Data/class_features.json` to already exist):
+```
+python scrape_races.py
+python scrape_class_skills.py
+python extract_class_bonus_feats.py
+python tag_feat_categories.py
+```
+
+Character creation CLI (`pf1_dons/cli.py`):
+```
+python -m pf1_dons.cli create <name> --class <classe> --level <n> [--race <race>] [--for N --dex N --con N --int N --sag N --cha N]
+python -m pf1_dons.cli show <name>
+python -m pf1_dons.cli list
+python -m pf1_dons.cli slots <name> [--open-only]
+python -m pf1_dons.cli assign <name> <slot_id> "<nom du don>"
+python -m pf1_dons.cli unassign <name> <slot_id>
+```
+
 ## Architecture
 
 The pipeline is: **CSV → parse conditions into structured requirements → evaluate against a Character → grouped eligibility results.**
@@ -52,3 +70,23 @@ The pipeline is: **CSV → parse conditions into structured requirements → eva
 When adding a new `RequirementType`, you generally need to touch all three of `models.py` (enum + payload shape), `parser.py` (`_classify_segment` recognition), and `engine.py` (`evaluate_requirement` handling) together.
 
 `extract_class_features.py` is a standalone offline scraper (not imported by the package) that produces `Data/class_features.json`; it caches downloaded HTML in `classes_html/` and skips re-downloading unless run with `force=True`.
+
+### Character creation
+
+A second pipeline, layered on top of the eligibility engine above, handles building and persisting actual characters and assigning feats into their feat slots.
+
+5. **`race_loader.py`** — loads `Data/races.json` (scraped by `scrape_races.py` from pathfinder-fr.org race pages) into `RaceInfo` dataclasses (`models.py`): ability modifiers, size, speed, `has_bonus_feat`, `bonus_skill_rank`, and the raw traits list. `get_race()` does accent/case-insensitive lookup by race name. Races with no scrapeable standard-traits page (a few bestiary races) load with all structured fields `False`/`None` and a `note` explaining why, rather than raising.
+
+6. **`class_skills.py`** — loads `Data/class_skills.json` (scraped by `scrape_class_skills.py`) into `ClassSkillInfo` dataclasses: each class's skill list (skill + governing ability) and skill-point-per-level formula (`SkillPointsFormula(base, ability)`, or `None` if the scraped formula text didn't match the expected pattern). `is_class_skill()` checks whether a given skill name is on a class's list.
+
+7. **`feat_slots.py`** — `compute_feat_slots(character_class, level, race_name, races, class_bonus_feats)` returns the full list of `FeatSlot`s (general/racial/class) a character has at their level: one general slot at level 1 and every odd level after, one racial slot if `RaceInfo.has_bonus_feat`, and one class slot per level in `Data/class_bonus_feats.json` (produced by `extract_class_bonus_feats.py` from `Data/class_features.json`) up to the character's level. `category_restriction` on a class slot is currently always `None` (not derived automatically) but is honored if hand-edited.
+
+8. **`skill_budget.py`** — computes a real skill-point budget (`total_skill_points`) from a class's `SkillPointsFormula` and ability scores, plus the standard PF1 class-skill +3 bonus (`class_skill_bonus`). This is separate from, and does not modify, `engine.py::Character.skill_rank`'s existing "optimistic" placeholder (which returns `level` when `skill_ranks` is unset) — the CLI-driven creation flow uses `skill_budget.py`'s real numbers, while `engine.py`'s eligibility checks keep using the placeholder unless a `Character`'s `skill_ranks` is explicitly populated.
+
+9. **`character_profile.py`** — `CharacterProfile` is the creation-time model: name, class, level, race, ability scores, skill ranks, and a `list[FeatSlot]`. `to_character()` bridges it to `engine.Character` (feeding assigned feat names in as `known_feats`) so the existing `evaluate_feat` machinery can be reused unchanged. `eligible_feats_for_slot()` filters the catalog by a slot's category restriction (via `Data/feat_categories.json`, see below) then by engine eligibility, keeping both `eligible` and `manual_check` feats. `assign_feat()`/`unassign_feat()` mutate slot bookkeeping (slot must exist and be open; a feat can't be assigned to two slots at once — repeatable/multi-take feats, i.e. names ending in `*` in `Data/Dons.csv`, cannot currently be assigned more than once via the CLI).
+
+10. **`persistence.py`** — saves/loads a `CharacterProfile` as JSON under `Data/characters/<slug>.json` (`save_profile`, `load_profile`, `list_characters`). `base_dir` defaults to the module-level `DEFAULT_CHARACTERS_DIR`, read at call time (not bound as an eager default argument), so tests can monkeypatch `pf1_dons.persistence.DEFAULT_CHARACTERS_DIR` and have it take effect even for callers (like `cli.py`) that don't pass `base_dir` explicitly.
+
+11. **`cli.py`** (`python -m pf1_dons.cli ...`) — `create`/`show`/`list` build, persist, and inspect characters; `slots`/`assign`/`unassign` view open feat slots (with live-recomputed eligible candidates per slot) and mutate/persist feat assignments. `assign` always re-derives eligibility at assignment time rather than trusting a previous `slots` listing, since assigning one feat can change what's eligible elsewhere via prerequisite chains.
+
+`Data/feat_categories.json` (produced by `tag_feat_categories.py`) tags each feat with a best-effort keyword-derived category list (e.g. `combat`) and a `needs_manual_check` flag for anything the tagger wasn't confident about — mirrors the parser's existing philosophy of surfacing ambiguity instead of guessing. `scrape_races.py`, `scrape_class_skills.py`, `extract_class_bonus_feats.py`, and `tag_feat_categories.py` are standalone scripts (not imported by the package), matching `extract_class_features.py`'s pattern; the two scrapers cache downloaded HTML (`races_html/`, `classes_html/`) and skip re-downloading unless run with `force=True`.
