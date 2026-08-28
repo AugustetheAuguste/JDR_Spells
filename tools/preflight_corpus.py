@@ -87,7 +87,7 @@ CHEMINS_REQUIS: tuple[str, ...] = (
     "data/index/carte_doublons.json",
     "data/index/sorts_exclusifs.json",
     "data/classes.json",
-    "schemas",
+    "data/schemas",
     "tests",
 )
 

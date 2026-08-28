@@ -82,7 +82,7 @@ class FauxDepot:
         self.nb_sorts = nb_sorts
 
     def ecrire(self) -> Path:
-        for chemin in ("src/pf_spells", "data/sorts", "data/index", "schemas", "tests"):
+        for chemin in ("src/pf_spells", "data/sorts", "data/index", "data/schemas", "tests"):
             (self.racine / chemin).mkdir(parents=True, exist_ok=True)
         (self.racine / "data/index/sorts_uniques.jsonl").write_text(
             "", encoding="utf-8", newline="\n"
@@ -137,7 +137,7 @@ class TestDepotSain:
 
 class TestStructureManquante:
     @pytest.mark.parametrize(
-        "chemin", ["src/pf_spells", "data/sorts", "data/index", "schemas", "tests"]
+        "chemin", ["src/pf_spells", "data/sorts", "data/index", "data/schemas", "tests"]
     )
     def test_dossier_absent_bloque(
         self, faux: FauxDepot, pf: ModuleType, chemin: str
