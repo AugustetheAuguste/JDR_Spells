@@ -16,6 +16,9 @@ with open("Data/class_caster_info.json", encoding="utf-8") as f:
 with open("Data/feat_magic_info.json", encoding="utf-8") as f:
     FEAT_MAGIC_INFO = json.load(f)
 
+with open("Data/feat_creature_affinity.json", encoding="utf-8") as f:
+    FEAT_CREATURE_AFFINITY = json.load(f)
+
 # Recopié littéralement depuis
 # build/feat-detail-and-magic-gating/OUTPUT_vocab_and_markup_calibration.md,
 # Section C — motif commun identifié pour les races à magie innée : ne pas
@@ -50,6 +53,18 @@ def race_grants_magic(race_name: Optional[str]) -> bool:
         " ".join(trait.get("description", "") for trait in entry.get("traits", []))
     )
     return any(_normalize(keyword) in text for keyword in RACE_MAGIC_KEYWORDS)
+
+
+def creature_affinity_allows(race_name: Optional[str], creature_keywords: list[str]) -> bool:
+    """Un don marqué "plus courant chez les X" (page de don, hors CSV) n'a
+    de sens que pour la race/créature X — comportement conservateur si la
+    race du personnage est absente ou inconnue (comme race_grants_magic)."""
+    race_norm = _normalize(race_name) if race_name else ""
+    for keyword in creature_keywords:
+        keyword_norm = _normalize(keyword).rstrip("s")
+        if race_norm and (race_norm.rstrip("s") in keyword_norm or keyword_norm in race_norm.rstrip("s")):
+            return True
+    return False
 
 
 def _normalize(text: str) -> str:
@@ -211,6 +226,23 @@ def evaluate_feat(feat: FeatRow, character: Character) -> EligibilityResult:
             )
         # class_ok is None (classe inconnue) -> ne pas overrider, garder le
         # statut déjà calculé par la boucle de Requirement ci-dessus
+
+    affinity_info = FEAT_CREATURE_AFFINITY.get(feat.name)
+    if (
+        not has_explicit_race_requirement
+        and affinity_info
+        and affinity_info["creature_keywords"]
+        and not affinity_info["needs_manual_check"]
+        and not creature_affinity_allows(character.race, affinity_info["creature_keywords"])
+    ):
+        return EligibilityResult(
+            feat.name,
+            "ineligible",
+            [
+                f"don pensé pour : {', '.join(affinity_info['creature_keywords'])} "
+                f"(page de don) ; race {character.race or 'non fournie'} ne correspond pas"
+            ],
+        )
 
     if manual_reasons:
         return EligibilityResult(feat.name, status, manual_reasons)
