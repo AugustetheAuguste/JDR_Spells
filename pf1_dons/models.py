@@ -92,3 +92,15 @@ class ClassSkillInfo:
     class_skills: list[ClassSkillEntry]
     skill_points_formula: Optional[SkillPointsFormula]
     skill_points_formula_raw: Optional[str]
+
+
+# --- Feat slot model (added Step 07: pf1_dons/feat_slots.py) ---
+
+
+@dataclass
+class FeatSlot:
+    slot_id: str            # stable id, e.g. "general-1", "racial-1", "class-4"
+    source: str             # "general" | "racial" | "class"
+    level_gained: int
+    category_restriction: Optional[str] = None  # e.g. "combat", None = unrestricted
+    filled_by: Optional[str] = None             # feat name once assigned, else None
