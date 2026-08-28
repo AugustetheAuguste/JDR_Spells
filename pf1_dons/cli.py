@@ -7,10 +7,19 @@ extends it (same file) with ``slots``, ``assign`` and ``unassign``.
 """
 
 import argparse
+import json
 import sys
+from pathlib import Path
 
-from .character_profile import create_profile
+from .character_profile import (
+    SlotAssignmentError,
+    assign_feat,
+    create_profile,
+    eligible_feats_for_slot,
+    unassign_feat,
+)
 from .class_skills import get_class_skill_info, load_class_skills
+from .data_loader import load_catalog
 from .feat_slots import load_class_bonus_feats
 from .persistence import list_characters, load_profile, save_profile
 from .race_loader import load_races
@@ -35,7 +44,19 @@ def build_parser() -> argparse.ArgumentParser:
     p_show.add_argument("name")
 
     sub.add_parser("list")
-    # (Step 12 adds "slots", "assign", "unassign" parsers here in the same function)
+
+    p_slots = sub.add_parser("slots")
+    p_slots.add_argument("name")
+    p_slots.add_argument("--open-only", action="store_true")
+
+    p_assign = sub.add_parser("assign")
+    p_assign.add_argument("name")
+    p_assign.add_argument("slot_id")
+    p_assign.add_argument("feat_name")
+
+    p_unassign = sub.add_parser("unassign")
+    p_unassign.add_argument("name")
+    p_unassign.add_argument("slot_id")
 
     return parser
 
@@ -106,11 +127,85 @@ def _print_summary(profile) -> None:
         print(f"  {slot.slot_id} (niveau {slot.level_gained}, {slot.source}){restriction} -> {state}")
 
 
+def _load_feat_categories(path: str = "Data/feat_categories.json") -> dict:
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def cmd_slots(args) -> None:
+    try:
+        profile = load_profile(args.name)
+    except FileNotFoundError as exc:
+        print(f"Erreur : {exc}", file=sys.stderr)
+        sys.exit(1)
+    catalog = load_catalog()
+    feat_categories = _load_feat_categories()
+    slots = profile.open_slots() if args.open_only else profile.feat_slots
+    for slot in slots:
+        print(f"{slot.slot_id} (niveau {slot.level_gained}, {slot.source}) -> {slot.filled_by or '(vide)'}")
+        if slot.filled_by is not None:
+            continue
+        candidates = eligible_feats_for_slot(profile, slot, catalog, feat_categories)
+        for feat in sorted(candidates, key=lambda f: f.name)[:20]:
+            print(f"    - {feat.name}")
+        if len(candidates) > 20:
+            print(f"    ... et {len(candidates) - 20} autres")
+
+
+def cmd_assign(args) -> None:
+    try:
+        profile = load_profile(args.name)
+    except FileNotFoundError as exc:
+        print(f"Erreur : {exc}", file=sys.stderr)
+        sys.exit(1)
+    catalog = load_catalog()
+    feat_categories = _load_feat_categories()
+    slot = profile.find_slot(args.slot_id)
+    if slot is None:
+        print(f"Emplacement inconnu : {args.slot_id}")
+        sys.exit(1)
+    eligible_names = {f.name for f in eligible_feats_for_slot(profile, slot, catalog, feat_categories)}
+    if args.feat_name not in eligible_names:
+        print(
+            f"'{args.feat_name}' n'est pas éligible pour l'emplacement {args.slot_id} "
+            f"(vérifiez les prérequis ou la restriction de catégorie)."
+        )
+        sys.exit(1)
+    try:
+        assign_feat(profile, args.slot_id, args.feat_name)
+    except SlotAssignmentError as exc:
+        print(str(exc))
+        sys.exit(1)
+    save_profile(profile)
+    print(f"'{args.feat_name}' attribué à {args.slot_id} pour {profile.name}.")
+
+
+def cmd_unassign(args) -> None:
+    try:
+        profile = load_profile(args.name)
+    except FileNotFoundError as exc:
+        print(f"Erreur : {exc}", file=sys.stderr)
+        sys.exit(1)
+    try:
+        unassign_feat(profile, args.slot_id)
+    except SlotAssignmentError as exc:
+        print(str(exc))
+        sys.exit(1)
+    save_profile(profile)
+    print(f"Emplacement {args.slot_id} libéré pour {profile.name}.")
+
+
 def main(argv=None) -> None:
     parser = build_parser()
     args = parser.parse_args(argv)
-    {"create": cmd_create, "show": cmd_show, "list": cmd_list}[args.command](args)
-    # Step 12 adds "slots"/"assign"/"unassign" entries to this dispatch dict
+    dispatch = {
+        "create": cmd_create,
+        "show": cmd_show,
+        "list": cmd_list,
+        "slots": cmd_slots,
+        "assign": cmd_assign,
+        "unassign": cmd_unassign,
+    }
+    dispatch[args.command](args)
 
 
 if __name__ == "__main__":
