@@ -55,6 +55,12 @@ export interface ValeurSession {
   readonly seDeconnecter: () => Promise<Resultat>
   readonly demanderReinitialisation: (email: string) => Promise<Resultat>
   readonly definirMotDePasse: (motDePasse: string) => Promise<Resultat>
+  readonly changerEmail: (nouvelEmail: string) => Promise<Resultat>
+  /** Delete the account itself, not just its data — the login row in
+   * `auth.users` and everything that cascades from it. Distinct from
+   * `effacerDuCompte` (`SynchroFavoris`), which only empties `listes`/
+   * `listes_sorts` and leaves the login intact. */
+  readonly supprimerCompte: () => Promise<Resultat>
 }
 
 const Contexte = createContext<ValeurSession | null>(null)
@@ -86,7 +92,11 @@ export function traduireErreur(brut: string): string {
       'l’inscription, puis reconnectez-vous.'
     )
   }
-  if (texte.includes('already registered') || texte.includes('already been registered')) {
+  if (
+    texte.includes('already registered') ||
+    texte.includes('already been registered') ||
+    texte.includes('already in use')
+  ) {
     return 'Un compte existe déjà pour cette adresse. Connectez-vous, ou demandez un nouveau mot de passe.'
   }
   if (texte.includes('captcha')) {
@@ -115,6 +125,32 @@ function messageDe(erreur: unknown): string {
   if (erreur instanceof Error) return traduireErreur(erreur.message)
   if (typeof erreur === 'string') return traduireErreur(erreur)
   return 'Le service de comptes a échoué sans message. Réessayez.'
+}
+
+/**
+ * Read the `supprimer-compte` Edge Function's own message out of a failed
+ * invocation.
+ *
+ * `functions.invoke` wraps a non-2xx response in a `FunctionsHttpError` whose
+ * `.message` is a generic "non-2xx status code" — the function's actual
+ * `{ erreur: "…" }` body sits on `.context`, a `Response` that has to be read
+ * separately. Falling back to `messageDe` covers the case that never reaches the
+ * function at all — offline, DNS, CORS — where there is no body to read.
+ */
+async function messageFonction(erreur: unknown): Promise<string> {
+  if (erreur instanceof Error) {
+    const contexte = (erreur as { readonly context?: unknown }).context
+    if (contexte instanceof Response) {
+      try {
+        const corps: unknown = await contexte.clone().json()
+        const champ = (corps as { readonly erreur?: unknown } | null)?.erreur
+        if (typeof champ === 'string') return champ
+      } catch {
+        // Not a JSON body — fall through to the generic message below.
+      }
+    }
+  }
+  return messageDe(erreur)
 }
 
 /** Where an e-mail link comes back to. Derived from the current origin rather than
@@ -284,6 +320,49 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
           return { ok: true, message: 'Mot de passe enregistré.' }
         } catch (erreur) {
           return { ok: false, message: messageDe(erreur) }
+        }
+      },
+
+      changerEmail: async (nouvelEmail) => {
+        const client = await obtenirClient()
+        if (client === null) return indisponible()
+        try {
+          const cible = retour('/compte/')
+          const { error } = await client.auth.updateUser(
+            { email: nouvelEmail },
+            cible === undefined ? {} : { emailRedirectTo: cible },
+          )
+          if (error !== null) return { ok: false, message: traduireErreur(error.message) }
+          // Supabase's default is "secure email change": both the old and the
+          // new address get a confirmation link, and neither takes effect until
+          // both are opened. Saying so here is the whole point — a silent
+          // success would read as an immediate change it is not.
+          return {
+            ok: true,
+            message:
+              'Un e-mail de confirmation vient de partir à l’ancienne et à la nouvelle ' +
+              'adresse. Le changement ne prend effet qu’une fois les deux liens ouverts.',
+          }
+        } catch (erreur) {
+          return { ok: false, message: messageDe(erreur) }
+        }
+      },
+
+      supprimerCompte: async () => {
+        const client = await obtenirClient()
+        if (client === null) return indisponible()
+        try {
+          const { error } = await client.functions.invoke('supprimer-compte', {
+            method: 'POST',
+          })
+          if (error !== null) return { ok: false, message: await messageFonction(error) }
+          // The auth row is gone server-side; the local session has to follow,
+          // otherwise `onAuthStateChange` never fires and the interface keeps
+          // showing someone signed in to an account that no longer exists.
+          await client.auth.signOut()
+          return { ok: true, message: 'Le compte a été supprimé.' }
+        } catch (erreur) {
+          return { ok: false, message: await messageFonction(erreur) }
         }
       },
     }),

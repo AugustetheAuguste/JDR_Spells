@@ -27,6 +27,11 @@ export interface ListeFavoris {
   readonly modifie_le: string
   /** Spell ids, in insertion order. */
   readonly sorts: readonly string[]
+  /** The character this list belongs to, or none. Account-only: a personnage
+   * lives in `public.personnages` and has no local-only existence, so a list
+   * written before this field existed — or written while signed out — reads
+   * back as `null` rather than failing validation. */
+  readonly personnage_id: string | null
 }
 
 export interface EtatFavoris {
@@ -79,6 +84,7 @@ function validerListe(brut: unknown): ListeFavoris | null {
     modifie_le: horodatage('modifie_le'),
     // Duplicates collapse: the same id twice is a write bug, never intent.
     sorts: [...new Set(objet['sorts'] as string[])],
+    personnage_id: typeof objet['personnage_id'] === 'string' ? objet['personnage_id'] : null,
   }
 }
 
@@ -201,7 +207,14 @@ export function enregistrer(stockage: Storage, etat: EtatFavoris): boolean {
 /** An id derived from the clock, which is passed in: a module that calls
  * `Date.now()` itself cannot be tested for equality. */
 export function nouvelleListe(nom: string, maintenant: string, graine: string): ListeFavoris {
-  return { id_liste: graine, nom, cree_le: maintenant, modifie_le: maintenant, sorts: [] }
+  return {
+    id_liste: graine,
+    nom,
+    cree_le: maintenant,
+    modifie_le: maintenant,
+    sorts: [],
+    personnage_id: null,
+  }
 }
 
 function majListe(
@@ -238,6 +251,19 @@ export function renommerListe(
   maintenant: string,
 ): EtatFavoris {
   return majListe(etat, id_liste, (liste) => ({ ...liste, nom, modifie_le: maintenant }))
+}
+
+/** Attach a list to a character, or clear the attachment with `null`. Setting
+ * it is not content in the same sense as `sorts` — it does not grow `RapportFusion`
+ * accounting — but it does move `modifie_le`, so a device that only reassigns a
+ * character still wins a last-write-wins on the list's name. */
+export function assignerPersonnage(
+  etat: EtatFavoris,
+  id_liste: string,
+  personnage_id: string | null,
+  maintenant: string,
+): EtatFavoris {
+  return majListe(etat, id_liste, (liste) => ({ ...liste, personnage_id, modifie_le: maintenant }))
 }
 
 export function activerListe(etat: EtatFavoris, id_liste: string): EtatFavoris {
@@ -373,4 +399,15 @@ export function idsInconnus(
   connus: ReadonlySet<string>,
 ): readonly string[] {
   return liste.sorts.filter((id) => !connus.has(id))
+}
+
+/** Whether a list's `personnage_id` points at a character that no longer
+ * exists — deleted from another device, or from `/compte/personnages`
+ * directly. The list itself is never touched by this: it is reported, exactly
+ * as an unknown spell id is, rather than silently detached. */
+export function personnageInconnu(
+  liste: ListeFavoris,
+  personnagesConnus: ReadonlySet<string>,
+): boolean {
+  return liste.personnage_id !== null && !personnagesConnus.has(liste.personnage_id)
 }

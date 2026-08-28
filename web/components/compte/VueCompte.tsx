@@ -116,6 +116,14 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
         <p className="m-0 text-petit font-medium text-encre-douce">Connecté en tant que</p>
         <p className="mt-1 mb-0 font-donnees text-corps text-encre">{courriel}</p>
+        <p className="mt-2 mb-0">
+          <Link
+            className="text-petit text-accent underline hover:text-accent-survol"
+            href="/compte/changer-email"
+          >
+            Changer d’{MOTS.adresseEmail}
+          </Link>
+        </p>
       </div>
 
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
@@ -183,6 +191,22 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
         </div>
       </div>
 
+      <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
+        <h2 className="m-0 font-affichage text-titre3 font-semibold">Personnages</h2>
+        <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
+          Attachez une liste de {MOTS.favoris} à un personnage pour la retrouver par son
+          nom plutôt que par la vôtre.
+        </p>
+        <div className="mt-3">
+          <Link
+            className="rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
+            href="/compte/personnages"
+          >
+            Gérer mes personnages
+          </Link>
+        </div>
+      </div>
+
       {annonce === null ? null : (
         <Annonce ton={annonce.ok ? 'succes' : 'echec'}>
           {annonce.message ?? 'Terminé.'}
@@ -198,11 +222,10 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
         <h2 className="m-0 font-affichage text-titre3 font-semibold">Effacer mes données</h2>
         <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
-          Le {MOTS.compte} ne contient que votre {MOTS.adresseEmail} et vos listes de{' '}
-          {MOTS.favoris}. Le bouton ci-dessous efface les listes du serveur et ferme la
-          session ; <strong>les listes de ce navigateur ne sont pas touchées</strong>.
-          L’identifiant de connexion lui-même est retiré par l’administrateur depuis le
-          tableau de bord Supabase — un site sans serveur ne peut pas le faire lui-même.
+          Le bouton ci-dessous efface les listes du serveur et ferme la session ;{' '}
+          <strong>les listes de ce navigateur ne sont pas touchées</strong>. L’identifiant
+          de connexion, lui, reste actif — pour le retirer aussi, voir « Supprimer
+          définitivement mon {MOTS.compte} » plus bas.
         </p>
         {effacementDemande ? (
           <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -220,6 +243,99 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
           </div>
         )}
       </div>
+
+      <PanneauSuppressionCompte courriel={courriel} />
+    </div>
+  )
+}
+
+/**
+ * Delete the account itself, not just its data.
+ *
+ * Two confirmations rather than one, unlike `effacer` above: this one also
+ * removes the login, which `effacer` explicitly does not, and the Skill's rule
+ * on a dangerous action is that its consequence has to be written next to the
+ * button, not just behind a second click. Re-typing the e-mail address is the
+ * second gate — a "Oui, supprimer" a stray click can also produce, a re-typed
+ * address cannot.
+ */
+function PanneauSuppressionCompte({ courriel }: { readonly courriel: string }) {
+  const { supprimerCompte } = useSession()
+  const [demande, setDemande] = useState(false)
+  const [confirmation, setConfirmation] = useState('')
+  const [annonce, setAnnonce] = useState<Resultat | null>(null)
+  const [enAttente, setEnAttente] = useState(false)
+
+  async function supprimer(): Promise<void> {
+    setEnAttente(true)
+    const resultat = await supprimerCompte()
+    setAnnonce(resultat)
+    setEnAttente(false)
+    if (resultat.ok) {
+      setDemande(false)
+      setConfirmation('')
+    }
+  }
+
+  return (
+    <div className="rounded-panneau border border-desaccord bg-surface px-4 py-4">
+      <h2 className="m-0 font-affichage text-titre3 font-semibold">
+        Supprimer définitivement mon {MOTS.compte}
+      </h2>
+      <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
+        Contrairement à « Effacer mes données » ci-dessus, ceci retire aussi{' '}
+        <strong>l’identifiant de connexion lui-même</strong> : vous ne pourrez plus vous
+        reconnecter avec {courriel}. Vos listes de ce navigateur ne sont pas touchées.
+        C’est irréversible.
+      </p>
+
+      {annonce === null ? null : (
+        <div className="mt-3">
+          <Annonce ton={annonce.ok ? 'succes' : 'echec'}>
+            {annonce.message ?? 'Terminé.'}
+          </Annonce>
+        </div>
+      )}
+
+      {demande ? (
+        <div className="mt-3 flex flex-col gap-2">
+          <ChampTexte
+            aide={`Retapez « ${courriel} » pour confirmer.`}
+            autoComplete="off"
+            etiquette="Adresse e-mail du compte, pour confirmer"
+            id="suppression-confirmation-email"
+            surChangement={setConfirmation}
+            type="email"
+            valeur={confirmation}
+          />
+          <div className="flex flex-wrap gap-2">
+            <Bouton
+              desactive={confirmation.trim().toLowerCase() !== courriel.toLowerCase()}
+              enAttente={enAttente}
+              libelleAttente="Suppression…"
+              libelleDesactive="Adresse à confirmer"
+              primaire
+              surClic={() => void supprimer()}
+            >
+              Supprimer définitivement mon {MOTS.compte}
+            </Bouton>
+            <Bouton
+              surClic={() => {
+                setDemande(false)
+                setConfirmation('')
+              }}
+            >
+              Annuler
+            </Bouton>
+          </div>
+        </div>
+      ) : (
+        <div className="mt-3">
+          <Bouton surClic={() => setDemande(true)}>
+            Supprimer définitivement mon {MOTS.compte}
+          </Bouton>
+        </div>
+      )}
     </div>
   )
 }
