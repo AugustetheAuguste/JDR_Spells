@@ -55,6 +55,7 @@ export interface ValeurSession {
   readonly seDeconnecter: () => Promise<Resultat>
   readonly demanderReinitialisation: (email: string) => Promise<Resultat>
   readonly definirMotDePasse: (motDePasse: string) => Promise<Resultat>
+  readonly changerEmail: (nouvelEmail: string) => Promise<Resultat>
 }
 
 const Contexte = createContext<ValeurSession | null>(null)
@@ -86,7 +87,11 @@ export function traduireErreur(brut: string): string {
       'l’inscription, puis reconnectez-vous.'
     )
   }
-  if (texte.includes('already registered') || texte.includes('already been registered')) {
+  if (
+    texte.includes('already registered') ||
+    texte.includes('already been registered') ||
+    texte.includes('already in use')
+  ) {
     return 'Un compte existe déjà pour cette adresse. Connectez-vous, ou demandez un nouveau mot de passe.'
   }
   if (texte.includes('captcha')) {
@@ -282,6 +287,31 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
           const { error } = await client.auth.updateUser({ password: motDePasse })
           if (error !== null) return { ok: false, message: traduireErreur(error.message) }
           return { ok: true, message: 'Mot de passe enregistré.' }
+        } catch (erreur) {
+          return { ok: false, message: messageDe(erreur) }
+        }
+      },
+
+      changerEmail: async (nouvelEmail) => {
+        const client = await obtenirClient()
+        if (client === null) return indisponible()
+        try {
+          const cible = retour('/compte/')
+          const { error } = await client.auth.updateUser(
+            { email: nouvelEmail },
+            cible === undefined ? {} : { emailRedirectTo: cible },
+          )
+          if (error !== null) return { ok: false, message: traduireErreur(error.message) }
+          // Supabase's default is "secure email change": both the old and the
+          // new address get a confirmation link, and neither takes effect until
+          // both are opened. Saying so here is the whole point — a silent
+          // success would read as an immediate change it is not.
+          return {
+            ok: true,
+            message:
+              'Un e-mail de confirmation vient de partir à l’ancienne et à la nouvelle ' +
+              'adresse. Le changement ne prend effet qu’une fois les deux liens ouverts.',
+          }
         } catch (erreur) {
           return { ok: false, message: messageDe(erreur) }
         }

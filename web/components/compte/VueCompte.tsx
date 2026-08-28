@@ -116,6 +116,14 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
         <p className="m-0 text-petit font-medium text-encre-douce">Connecté en tant que</p>
         <p className="mt-1 mb-0 font-donnees text-corps text-encre">{courriel}</p>
+        <p className="mt-2 mb-0">
+          <Link
+            className="text-petit text-accent underline hover:text-accent-survol"
+            href="/compte/changer-email"
+          >
+            Changer d’{MOTS.adresseEmail}
+          </Link>
+        </p>
       </div>
 
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
