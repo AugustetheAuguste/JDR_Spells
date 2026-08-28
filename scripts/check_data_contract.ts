@@ -56,6 +56,8 @@ interface Entree {
   readonly rm: boolean | null
   readonly t: readonly number[]
   readonly ti: number | null
+  readonly td: number | null
+  readonly ci: readonly number[]
   readonly d: boolean
 }
 
@@ -69,6 +71,8 @@ interface Index {
   readonly composantes: readonly string[]
   readonly tags: readonly string[]
   readonly temps_incantation: readonly string[]
+  readonly types_degats: readonly string[]
+  readonly conditions_infligees: readonly string[]
   readonly sorts: readonly Entree[]
 }
 
@@ -125,7 +129,7 @@ function verifierIndexDense(sorts: readonly Entree[]): void {
 
 function verifierCodes(index: Index): void {
   const tables: readonly {
-    readonly cle: 'e' | 'p' | 'j' | 'ti'
+    readonly cle: 'e' | 'p' | 'j' | 'ti' | 'td'
     readonly table: readonly string[]
     readonly nom: string
   }[] = [
@@ -133,6 +137,7 @@ function verifierCodes(index: Index): void {
     { cle: 'p', table: index.portees, nom: 'portees' },
     { cle: 'j', table: index.jets, nom: 'jets' },
     { cle: 'ti', table: index.temps_incantation, nom: 'temps_incantation' },
+    { cle: 'td', table: index.types_degats, nom: 'types_degats' },
   ]
 
   for (const { cle, table, nom } of tables) {
@@ -148,12 +153,13 @@ function verifierCodes(index: Index): void {
   }
 
   const listes: readonly {
-    readonly cle: 'c' | 't'
+    readonly cle: 'c' | 't' | 'ci'
     readonly table: readonly string[]
     readonly nom: string
   }[] = [
     { cle: 'c', table: index.composantes, nom: 'composantes' },
     { cle: 't', table: index.tags, nom: 'tags' },
+    { cle: 'ci', table: index.conditions_infligees, nom: 'conditions_infligees' },
   ]
 
   for (const { cle, table, nom } of listes) {
@@ -177,6 +183,8 @@ function verifierCodes(index: Index): void {
     composantes: new Set<number>(),
     tags: new Set<number>(),
     temps_incantation: new Set<number>(),
+    types_degats: new Set<number>(),
+    conditions_infligees: new Set<number>(),
   }
   for (const sort of index.sorts) {
     if (sort.e !== null) utilises.ecoles.add(sort.e)
@@ -185,6 +193,8 @@ function verifierCodes(index: Index): void {
     for (const code of sort.c) utilises.composantes.add(code)
     for (const code of sort.t) utilises.tags.add(code)
     if (sort.ti !== null) utilises.temps_incantation.add(sort.ti)
+    if (sort.td !== null) utilises.types_degats.add(sort.td)
+    for (const code of sort.ci) utilises.conditions_infligees.add(code)
   }
   const orphelines: string[] = []
   for (const [nom, table] of [
@@ -194,6 +204,8 @@ function verifierCodes(index: Index): void {
     ['composantes', index.composantes],
     ['tags', index.tags],
     ['temps_incantation', index.temps_incantation],
+    ['types_degats', index.types_degats],
+    ['conditions_infligees', index.conditions_infligees],
   ] as const) {
     for (const [code, valeur] of table.entries()) {
       if (!utilises[nom].has(code)) orphelines.push(`${nom}[${code}]=${valeur}`)
@@ -313,7 +325,8 @@ function main(argv: readonly string[]): number {
   console.log(
     `tables     : ${index.ecoles.length} écoles, ${index.portees.length} portées, ` +
       `${index.jets.length} jets, ${index.composantes.length} composantes, ` +
-      `${index.tags.length} tags, ${index.temps_incantation.length} temps d'incantation`,
+      `${index.tags.length} tags, ${index.temps_incantation.length} temps d'incantation, ` +
+      `${index.types_degats.length} types de dégâts, ${index.conditions_infligees.length} conditions infligées`,
   )
   console.log(`désaccords : ${index.sorts.filter((s) => s.d).length}`)
   console.log(`brut       : ${ko(octets.byteLength)}`)

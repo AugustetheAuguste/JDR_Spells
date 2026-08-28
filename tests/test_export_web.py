@@ -131,6 +131,10 @@ class TestSurLaFixture:
                 assert 0 <= code < len(index_fixture["tags"])
             if sort["ti"] is not None:
                 assert 0 <= sort["ti"] < len(index_fixture["temps_incantation"])
+            if sort["td"] is not None:
+                assert 0 <= sort["td"] < len(index_fixture["types_degats"])
+            for code in sort["ci"]:
+                assert 0 <= code < len(index_fixture["conditions_infligees"])
 
     def test_les_classes_de_niv_sont_declarees_en_tete(self, index_fixture: dict) -> None:
         declarees = {c["slug"] for c in index_fixture["classes"]}
@@ -139,7 +143,16 @@ class TestSurLaFixture:
 
     def test_les_tables_de_codes_sont_triees(self, index_fixture: dict) -> None:
         """Sorted tables are what make the codes deterministic run to run."""
-        for cle in ("ecoles", "portees", "jets", "composantes", "tags", "temps_incantation"):
+        for cle in (
+            "ecoles",
+            "portees",
+            "jets",
+            "composantes",
+            "tags",
+            "temps_incantation",
+            "types_degats",
+            "conditions_infligees",
+        ):
             assert index_fixture[cle] == sorted(index_fixture[cle]), cle
 
     def test_le_temps_d_incantation_de_la_fixture_couvre_plusieurs_familles(
@@ -153,6 +166,29 @@ class TestSurLaFixture:
             if s["ti"] is not None
         }
         assert familles == {"action_simple", "round", "minute", "heure"}
+
+    def test_le_type_de_degats_de_la_fixture_couvre_plusieurs_familles(
+        self, index_fixture: dict
+    ) -> None:
+        """The fixture's enrichment layer must carry more than one damage type, or
+        the facet would filter on nothing."""
+        familles = {
+            index_fixture["types_degats"][s["td"]]
+            for s in index_fixture["sorts"]
+            if s["td"] is not None
+        }
+        assert familles == {"contondant", "force"}
+
+    def test_les_conditions_infligees_de_la_fixture_couvrent_plusieurs_familles(
+        self, index_fixture: dict
+    ) -> None:
+        """Same requirement as the damage-type facet, on the multi-valued field."""
+        familles = {
+            index_fixture["conditions_infligees"][code]
+            for s in index_fixture["sorts"]
+            for code in s["ci"]
+        }
+        assert familles == {"confus", "fascine", "effraye"}
 
     def test_les_sorts_sont_tries_par_id(self, index_fixture: dict) -> None:
         ids = [s["id"] for s in index_fixture["sorts"]]
@@ -304,6 +340,10 @@ class TestSansCoucheLLM:
         index = json.loads((sortie / "index.json").read_text(encoding="utf-8"))
         assert index["tags"] == []
         assert all(s["t"] == [] for s in index["sorts"])
+        assert index["types_degats"] == []
+        assert all(s["td"] is None for s in index["sorts"])
+        assert index["conditions_infligees"] == []
+        assert all(s["ci"] == [] for s in index["sorts"])
         # Still a valid index: absence of the layer is a supported state, not a defect.
         assert list(jsonschema.Draft202012Validator(schema).iter_errors(index)) == []
 
