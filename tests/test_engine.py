@@ -1,7 +1,8 @@
 import pytest
 
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.engine import Character, evaluate_feat, filter_feats
+from pf1_dons.data_loader import FeatRow, load_catalog
+from pf1_dons.engine import Character, evaluate_feat, evaluate_requirement, filter_feats
+from pf1_dons.models import ParsedConditions, Requirement, RequirementType
 
 
 @pytest.fixture(scope="module")
@@ -51,3 +52,59 @@ def test_full_catalog_has_no_exceptions_and_mixed_statuses(catalog):
     total = sum(len(v) for v in grouped.values())
     assert total == len(catalog)
     assert len(grouped["manual_check"]) < total
+
+
+def test_implied_classes_mismatch_returns_false():
+    req = Requirement(
+        type=RequirementType.CLASS_FEATURE_TEXT,
+        raw_text="capacité de classe d'oracle",
+        payload={"text": "capacité de classe d'oracle", "implied_classes": ["oracle"]},
+    )
+    guerrier = Character(character_class="Guerrier", level=1)
+    ok, _reason = evaluate_requirement(req, guerrier)
+    assert ok is False
+
+
+def test_implied_classes_match_returns_none():
+    req = Requirement(
+        type=RequirementType.CLASS_FEATURE_TEXT,
+        raw_text="capacité de classe d'oracle",
+        payload={"text": "capacité de classe d'oracle", "implied_classes": ["oracle"]},
+    )
+    oracle = Character(character_class="Oracle", level=1)
+    ok, _reason = evaluate_requirement(req, oracle)
+    assert ok is None
+
+
+def test_class_feature_text_without_implied_classes_stays_manual_check():
+    req = Requirement(
+        type=RequirementType.CLASS_FEATURE_TEXT,
+        raw_text="une capacité de classe non identifiée",
+        payload={"text": "une capacité de classe non identifiée"},
+    )
+    for character in (
+        Character(character_class="Guerrier", level=1),
+        Character(character_class="Oracle", level=1),
+    ):
+        ok, _reason = evaluate_requirement(req, character)
+        assert ok is None
+
+
+def test_evaluate_feat_end_to_end_implied_classes():
+    req = Requirement(
+        type=RequirementType.CLASS_FEATURE_TEXT,
+        raw_text="capacité de classe d'oracle",
+        payload={"text": "capacité de classe d'oracle", "implied_classes": ["oracle"]},
+    )
+    feat = FeatRow(
+        name="don-de-test-oracle",
+        display_name="Don de test oracle",
+        source="Test",
+        raw_conditions="capacité de classe d'oracle",
+        benefits="Bénéfice de test.",
+        parsed=ParsedConditions(requirements=[req]),
+    )
+    guerrier = Character(character_class="Guerrier", level=1)
+    oracle = Character(character_class="Oracle", level=1)
+    assert evaluate_feat(feat, guerrier).status == "ineligible"
+    assert evaluate_feat(feat, oracle).status == "manual_check"

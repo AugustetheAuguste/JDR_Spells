@@ -62,3 +62,23 @@ def test_unknown_segment_is_unparsed_not_ignored():
     req = parsed.requirements[0]
     assert req.type == RequirementType.UNPARSED
     assert req.needs_manual_check is True
+
+
+def test_class_feature_text_implies_class():
+    parsed = parse_conditions("Capacité de classe mystère", NORMALIZED_FEATS)
+    req = parsed.requirements[0]
+    assert req.payload["implied_classes"] == ["oracle"]
+
+
+def test_unparsed_implies_class():
+    parsed = parse_conditions(
+        "Capacité à lancer des sorts de sanguin de 2e niveau", NORMALIZED_FEATS
+    )
+    req = parsed.requirements[0]
+    assert req.payload["implied_classes"] == ["sanguin"]
+
+
+def test_unknown_segment_has_no_implied_classes():
+    parsed = parse_conditions("Un texte totalement inventé et jamais vu", NORMALIZED_FEATS)
+    req = parsed.requirements[0]
+    assert "implied_classes" not in req.payload
