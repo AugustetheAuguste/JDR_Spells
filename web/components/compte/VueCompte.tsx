@@ -183,6 +183,22 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
         </div>
       </div>
 
+      <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
+        <h2 className="m-0 font-affichage text-titre3 font-semibold">Personnages</h2>
+        <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
+          Attachez une liste de {MOTS.favoris} à un personnage pour la retrouver par son
+          nom plutôt que par la vôtre.
+        </p>
+        <div className="mt-3">
+          <Link
+            className="rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
+            href="/compte/personnages"
+          >
+            Gérer mes personnages
+          </Link>
+        </div>
+      </div>
+
       {annonce === null ? null : (
         <Annonce ton={annonce.ok ? 'succes' : 'echec'}>
           {annonce.message ?? 'Terminé.'}

@@ -32,17 +32,21 @@ export function ChampTexte({
   type,
   valeur,
   surChangement,
-  autoComplete,
+  autoComplete = 'off',
   aide,
   requis = true,
   minLongueur,
 }: {
   readonly id: string
   readonly etiquette: string
-  readonly type: 'email' | 'password'
+  readonly type: 'email' | 'password' | 'text' | 'number'
   readonly valeur: string
   readonly surChangement: (valeur: string) => void
-  readonly autoComplete: string
+  /** Required for `email`/`password` in practice — getting a password field's
+   * autocomplete wrong is the mistake this component exists to prevent (see
+   * below) — optional here only so `text`/`number` fields (personnage nom,
+   * classe, niveau) aren't forced to state an irrelevant value. */
+  readonly autoComplete?: string
   readonly aide?: string
   readonly requis?: boolean
   readonly minLongueur?: number
