@@ -50,18 +50,6 @@ def _totaux() -> dict[str, int]:
         for p in (RACINE / "data" / "vues" / "sorts_enrichis").glob("*.json")
         if p.name != "_rapport.json"
     ]
-    # Distinct pages, not journal lines: `cache/index.jsonl` is append-only, so a
-    # re-fetch of the same URL adds a line without adding a page. Counting lines
-    # gives 2107 where the manifest says 2089, and the manifest is right.
-    cache = len(
-        {
-            json.loads(ligne)["url"]
-            for ligne in (RACINE / "cache" / "index.jsonl")
-            .read_text(encoding="utf-8")
-            .splitlines()
-            if ligne.strip()
-        }
-    )
     mythiques = 0
     variantes = 0
     for chemin in sorts:
@@ -72,7 +60,6 @@ def _totaux() -> dict[str, int]:
         "classes": len(classes),
         "entrees": listes,
         "sorts": len(sorts),
-        "cache": cache,
         "mythiques": mythiques,
         "variantes": variantes,
         "enrichis": len(enrichis),

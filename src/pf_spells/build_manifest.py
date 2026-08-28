@@ -79,7 +79,6 @@ def construire_manifeste(racine: Path) -> dict:
     sorts_dir = racine / "data" / "sorts"
     listes_dir = racine / "data" / "listes_classes"
     index_dir = racine / "data" / "index"
-    cache_dir = racine / "cache"
 
     nb_fichiers_sorts = 0
     nb_mythique = 0
@@ -94,7 +93,6 @@ def construire_manifeste(racine: Path) -> dict:
     nb_classes = _nb_entrees_json(racine / "data" / "classes.json")
     nb_entrees_listes = _entrees_listes(listes_dir)
     nb_sorts_uniques = _lignes_jsonl(index_dir / "sorts_uniques.jsonl")
-    nb_pages_cache = _nb_fichiers(cache_dir / "html", "*.html")
 
     artefacts = [
         {
@@ -121,7 +119,7 @@ def construire_manifeste(racine: Path) -> dict:
             "motif": "<class-slug>.jsonl",
             "nb_fichiers": _nb_fichiers(listes_dir, "*.jsonl"),
             "nb_enregistrements": nb_entrees_listes,
-            "schema": "schemas/liste_classe.schema.json",
+            "schema": "data/schemas/liste_classe.schema.json",
             "produit_par_etape": "04",
             "autorite": "quels sorts une classe reçoit, et à quel niveau",
             "description": "Une ligne par entrée de liste de classe, avec niveau, école, blurb, sources.",
@@ -168,37 +166,17 @@ def construire_manifeste(racine: Path) -> dict:
             "motif": "<spell-id>.json",
             "nb_fichiers": nb_fichiers_sorts,
             "nb_enregistrements": nb_fichiers_sorts,
-            "schema": "schemas/sort.schema.json",
+            "schema": "data/schemas/sort.schema.json",
             "produit_par_etape": "07 + 08",
             "autorite": "le sort lui-même — bloc technique, description, classes",
             "description": "Un fichier JSON par sort, 21 clés toujours présentes. Corrigeable à la main : les éditions humaines font foi.",
         },
         {
-            "chemin": "cache/html/",
-            "type": "repertoire_html",
-            "motif": "<sha1>.html",
-            "nb_fichiers": nb_pages_cache,
-            "nb_enregistrements": nb_pages_cache,
-            "schema": None,
-            "produit_par_etape": "03, 06",
-            "autorite": "les octets source bruts (reproductibilité)",
-            "description": "HTML UTF-8 tel que servi par le wiki : permet de corriger un parseur sans re-crawler.",
-        },
-        {
-            "chemin": "cache/index.jsonl",
-            "type": "jsonl",
-            "nb_enregistrements": _lignes_jsonl(cache_dir / "index.jsonl"),
-            "schema": None,
-            "produit_par_etape": "03, 06",
-            "autorite": "le journal de récupération (url, fichier, statut, date)",
-            "description": "Journal append-only : peut compter plus de lignes que de fichiers en cache (une URL revisitée est réécrite).",
-        },
-        {
-            "chemin": "schemas/",
+            "chemin": "data/schemas/",
             "type": "repertoire_json_schema",
             "motif": "*.json",
-            "nb_fichiers": _nb_fichiers(racine / "schemas", "*.json"),
-            "nb_enregistrements": _nb_fichiers(racine / "schemas", "*.json"),
+            "nb_fichiers": _nb_fichiers(racine / "data" / "schemas", "*.json"),
+            "nb_enregistrements": _nb_fichiers(racine / "data" / "schemas", "*.json"),
             "schema": None,
             "produit_par_etape": "02",
             "autorite": "les contrats de sortie (sort, ligne de liste de classe, enrichissement, index web)",
@@ -227,7 +205,6 @@ def construire_manifeste(racine: Path) -> dict:
             "nb_entrees_listes": nb_entrees_listes,
             "nb_sorts_uniques": nb_sorts_uniques,
             "nb_fichiers_sorts": nb_fichiers_sorts,
-            "nb_pages_cache": nb_pages_cache,
             "nb_sorts_avec_mythique": nb_mythique,
             "nb_sorts_avec_variantes": nb_variantes,
         },

@@ -176,6 +176,8 @@ def test_real_roster_has_nineteen_ok_classes(roster_reel: list[dict]) -> None:
 def test_real_cached_pages_are_utf8_sane_and_sliceable(
     roster_reel: list[dict], repo_root: Path
 ) -> None:
+    if not (repo_root / "cache" / "html").is_dir():
+        pytest.skip("cache/html/ n'est pas committé (scraping clos)")
     for ligne in roster_reel:
         chemin = repo_root / ligne["cache_fichier"]
         assert chemin.exists(), ligne["cache_fichier"]
@@ -210,6 +212,8 @@ def test_real_pages_have_level_sections_and_a_nav_h2(
     """Each page holds >=4 level headings plus exactly one non-level h2 (nav)."""
     import re
 
+    if not (repo_root / "cache" / "html").is_dir():
+        pytest.skip("cache/html/ n'est pas committé (scraping clos)")
     for ligne in roster_reel:
         html = (repo_root / ligne["cache_fichier"]).read_text(encoding="utf-8")
         region = html[

@@ -133,7 +133,7 @@ class FauxCorpus:
             index=racine / "data/index",
             classes=racine / "data/classes.json",
             pages_sorts=racine / "data/spell_pages.jsonl",
-            schemas=racine / "schemas",
+            schemas=racine / "data" / "schemas",
             rapports=racine / "reports",
         )
         self.sorts: dict[str, dict] = {
@@ -260,7 +260,7 @@ class FauxCorpus:
         cible_schemas.mkdir(parents=True, exist_ok=True)
         for nom in ("sort.schema.json", "liste_classe.schema.json"):
             (cible_schemas / nom).write_text(
-                (REPO_ROOT / "schemas" / nom).read_text(encoding="utf-8"),
+                (REPO_ROOT / "data" / "schemas" / nom).read_text(encoding="utf-8"),
                 encoding="utf-8",
                 newline="\n",
             )
@@ -777,7 +777,7 @@ class TestAutoAudit:
                 index=repo_root / "data/index",
                 classes=repo_root / "data/classes.json",
                 pages_sorts=repo_root / "data/spell_pages.jsonl",
-                schemas=repo_root / "schemas",
+                schemas=repo_root / "data" / "schemas",
                 rapports=repo_root / "reports",
             )
         )
@@ -809,7 +809,7 @@ class TestCorpusReel:
                 index=repo_root / "data/index",
                 classes=repo_root / "data/classes.json",
                 pages_sorts=repo_root / "data/spell_pages.jsonl",
-                schemas=repo_root / "schemas",
+                schemas=repo_root / "data" / "schemas",
                 rapports=repo_root / "reports",
             )
         )

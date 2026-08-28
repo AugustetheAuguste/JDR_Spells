@@ -177,7 +177,7 @@ class Chemins:
     index: Path = Path("data/index")
     classes: Path = Path("data/classes.json")
     pages_sorts: Path = Path("data/spell_pages.jsonl")
-    schemas: Path = Path("schemas")
+    schemas: Path = Path("data/schemas")
     rapports: Path = Path("reports")
 
     @property
@@ -539,6 +539,13 @@ def check_b4(corpus: Corpus, resultat: Resultat) -> None:
 
 
 def check_b5(corpus: Corpus, chemins: Chemins, resultat: Resultat) -> None:
+    # `cache/html/` is no longer committed since the scraping close-out (CLAUDE.md
+    # §9) : on a fresh checkout the whole directory is absent by design, and every
+    # `cache_fichier` would otherwise trip "bloquant" for a reason that has nothing
+    # to do with corpus health. A missing *directory* is the expected, permanent
+    # state; a missing *file* while the directory exists is still real corruption
+    # (a workstation with a stale local cache) and stays blocking.
+    cache_committe = (chemins.racine / "cache" / "html").is_dir()
     manquants: list[str] = []
     for stem, doc in corpus.sorts.items():
         cache = (doc.get("meta") or {}).get("cache_fichier")
@@ -555,18 +562,32 @@ def check_b5(corpus: Corpus, chemins: Chemins, resultat: Resultat) -> None:
             continue
         if not (chemins.racine / cache).exists():
             manquants.append(stem)
-            resultat.ajouter(
-                Anomalie(
-                    "B5", "bloquant", stem,
-                    f"`meta.cache_fichier` introuvable sur disque : `{cache}`",
-                    doc.get("nom"),
+            if cache_committe:
+                resultat.ajouter(
+                    Anomalie(
+                        "B5", "bloquant", stem,
+                        f"`meta.cache_fichier` introuvable sur disque : `{cache}`",
+                        doc.get("nom"),
+                    )
                 )
-            )
-    resultat.resultats["B5"] = (
-        f"OK — {len(corpus.sorts)} fichiers de cache présents"
-        if not manquants
-        else f"ÉCHEC — {len(manquants)} référence(s) de cache en défaut"
-    )
+            else:
+                resultat.ajouter(
+                    Anomalie(
+                        "B5", "avertissement", stem,
+                        f"`meta.cache_fichier` introuvable sur disque : `{cache}` "
+                        "— `cache/html/` n'est pas committé (scraping clos)",
+                        doc.get("nom"),
+                    )
+                )
+    if not manquants:
+        resultat.resultats["B5"] = f"OK — {len(corpus.sorts)} fichiers de cache présents"
+    elif cache_committe:
+        resultat.resultats["B5"] = f"ÉCHEC — {len(manquants)} référence(s) de cache en défaut"
+    else:
+        resultat.resultats["B5"] = (
+            f"OK (non bloquant) — cache/html/ absent (scraping clos), "
+            f"{len(manquants)} référence(s) non vérifiables"
+        )
 
 
 def check_b6(corpus: Corpus, resultat: Resultat) -> None:
@@ -1184,8 +1205,8 @@ def build_report(resultat: Resultat, chemins: Chemins) -> str:
         "et prise comme autorité : algorithme de slug, vocabulaire des clés, "
         "règles d'encodage, table des classes.",
         "",
-        "Schémas utilisés : `schemas/sort.schema.json` et "
-        "`schemas/liste_classe.schema.json` (`Draft202012Validator`). Les `id` "
+        "Schémas utilisés : `data/schemas/sort.schema.json` et "
+        "`data/schemas/liste_classe.schema.json` (`Draft202012Validator`). Les `id` "
         "sont redérivés avec `pf_spells.slugs.slugify`, la volumétrie est "
         "recomptée depuis `data/listes_classes/*.jsonl` : aucun compte n'est "
         "repris d'un rapport d'étape.",

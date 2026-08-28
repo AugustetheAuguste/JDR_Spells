@@ -122,9 +122,7 @@ class TestArtefacts:
             "data/index/carte_doublons.json",
             "data/index/sorts_exclusifs.json",
             "data/sorts/",
-            "cache/html/",
-            "cache/index.jsonl",
-            "schemas/",
+            "data/schemas/",
             "reports/",
         }
         assert {a["chemin"] for a in manifest["artefacts"]} == attendus
@@ -180,10 +178,6 @@ class TestTotauxRecomptes:
         )
         assert manifest["totaux"]["nb_entrees_listes"] == reel
 
-    def test_nb_pages_cache(self, repo_root: Path, manifest: dict) -> None:
-        reel = len(list((repo_root / "cache" / "html").glob("*.html")))
-        assert manifest["totaux"]["nb_pages_cache"] == reel
-
     def test_sous_blocs_mythique_et_variantes(
         self, repo_root: Path, manifest: dict
     ) -> None:
@@ -213,8 +207,6 @@ class TestTotauxRecomptes:
             par_chemin["data/listes_classes/"]["nb_enregistrements"]
             == totaux["nb_entrees_listes"]
         )
-        assert par_chemin["cache/html/"]["nb_enregistrements"] == totaux["nb_pages_cache"]
-
     def test_manifeste_regenere_donne_les_memes_totaux(
         self, repo_root: Path, manifest: dict
     ) -> None:
@@ -241,7 +233,7 @@ class TestGenerateur:
         # A fresh clone with no data yet must still produce a well-formed manifest.
         manifeste = build_manifest.construire_manifeste(tmp_path)
         assert manifeste["totaux"]["nb_fichiers_sorts"] == 0
-        assert len(manifeste["artefacts"]) == 12
+        assert len(manifeste["artefacts"]) == 10
 
     def test_nb_entrees_json_tableau_et_objet(self, tmp_path: Path) -> None:
         tableau = tmp_path / "a.json"
