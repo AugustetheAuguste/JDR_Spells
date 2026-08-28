@@ -126,6 +126,8 @@ export function Bouton({
   primaire = false,
   enAttente = false,
   libelleAttente,
+  desactive = false,
+  libelleDesactive,
   surClic,
 }: {
   readonly children: ReactNode
@@ -133,6 +135,12 @@ export function Bouton({
   readonly primaire?: boolean
   readonly enAttente?: boolean
   readonly libelleAttente?: string
+  /** Blocked for a reason that is not "in flight" — a confirmation not yet
+   * typed, say. Distinct from `enAttente`: the two can never be true for the
+   * same click, but conflating them would make a permanently-blocked button
+   * relabel itself as "in progress", which is the wrong sentence. */
+  readonly desactive?: boolean
+  readonly libelleDesactive?: string
   readonly surClic?: () => void
 }) {
   return (
@@ -143,11 +151,15 @@ export function Bouton({
           ? 'border-accent bg-accent font-semibold text-white hover:bg-accent-survol disabled:bg-survol'
           : 'border-bord-fort bg-surface text-encre hover:bg-survol',
       ].join(' ')}
-      disabled={enAttente}
+      disabled={enAttente || desactive}
       onClick={surClic}
       type={type}
     >
-      {enAttente && libelleAttente !== undefined ? libelleAttente : children}
+      {enAttente && libelleAttente !== undefined
+        ? libelleAttente
+        : desactive && libelleDesactive !== undefined
+          ? libelleDesactive
+          : children}
     </button>
   )
 }

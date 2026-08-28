@@ -56,6 +56,11 @@ export interface ValeurSession {
   readonly demanderReinitialisation: (email: string) => Promise<Resultat>
   readonly definirMotDePasse: (motDePasse: string) => Promise<Resultat>
   readonly changerEmail: (nouvelEmail: string) => Promise<Resultat>
+  /** Delete the account itself, not just its data — the login row in
+   * `auth.users` and everything that cascades from it. Distinct from
+   * `effacerDuCompte` (`SynchroFavoris`), which only empties `listes`/
+   * `listes_sorts` and leaves the login intact. */
+  readonly supprimerCompte: () => Promise<Resultat>
 }
 
 const Contexte = createContext<ValeurSession | null>(null)
@@ -120,6 +125,32 @@ function messageDe(erreur: unknown): string {
   if (erreur instanceof Error) return traduireErreur(erreur.message)
   if (typeof erreur === 'string') return traduireErreur(erreur)
   return 'Le service de comptes a échoué sans message. Réessayez.'
+}
+
+/**
+ * Read the `supprimer-compte` Edge Function's own message out of a failed
+ * invocation.
+ *
+ * `functions.invoke` wraps a non-2xx response in a `FunctionsHttpError` whose
+ * `.message` is a generic "non-2xx status code" — the function's actual
+ * `{ erreur: "…" }` body sits on `.context`, a `Response` that has to be read
+ * separately. Falling back to `messageDe` covers the case that never reaches the
+ * function at all — offline, DNS, CORS — where there is no body to read.
+ */
+async function messageFonction(erreur: unknown): Promise<string> {
+  if (erreur instanceof Error) {
+    const contexte = (erreur as { readonly context?: unknown }).context
+    if (contexte instanceof Response) {
+      try {
+        const corps: unknown = await contexte.clone().json()
+        const champ = (corps as { readonly erreur?: unknown } | null)?.erreur
+        if (typeof champ === 'string') return champ
+      } catch {
+        // Not a JSON body — fall through to the generic message below.
+      }
+    }
+  }
+  return messageDe(erreur)
 }
 
 /** Where an e-mail link comes back to. Derived from the current origin rather than
@@ -314,6 +345,24 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
           }
         } catch (erreur) {
           return { ok: false, message: messageDe(erreur) }
+        }
+      },
+
+      supprimerCompte: async () => {
+        const client = await obtenirClient()
+        if (client === null) return indisponible()
+        try {
+          const { error } = await client.functions.invoke('supprimer-compte', {
+            method: 'POST',
+          })
+          if (error !== null) return { ok: false, message: await messageFonction(error) }
+          // The auth row is gone server-side; the local session has to follow,
+          // otherwise `onAuthStateChange` never fires and the interface keeps
+          // showing someone signed in to an account that no longer exists.
+          await client.auth.signOut()
+          return { ok: true, message: 'Le compte a été supprimé.' }
+        } catch (erreur) {
+          return { ok: false, message: await messageFonction(erreur) }
         }
       },
     }),
