@@ -50,6 +50,9 @@ export interface Filtres {
   /** Casting-time codes, as in `index.temps_incantation`. A spell matches if it
    * carries any. */
   readonly tempsIncantation?: readonly number[]
+  /** Damage-type codes from the optional LLM layer, as in `index.types_degats`.
+   * A spell matches if its single value is any of these. */
+  readonly typesDegats?: readonly number[]
   /** Tag codes from the optional LLM layer. A spell matches if it carries any. */
   readonly tags?: readonly number[]
   /**
@@ -71,6 +74,14 @@ export interface Filtres {
    * at once is a real thing to want at the table.
    */
   readonly tagsObliges?: readonly number[]
+  /** Condition codes from the optional LLM layer, as in `index.conditions_infligees`.
+   * A spell matches if it carries at least one of these (OR) — the AND/NOT
+   * counterparts below mirror the tag filter's three-state cycle. */
+  readonly conditionsInfligees?: readonly number[]
+  /** Condition codes a spell must carry NONE of. See `tagsExclus`. */
+  readonly conditionsInfligeesExclues?: readonly number[]
+  /** Condition codes a spell must carry ALL of. See `tagsObliges`. */
+  readonly conditionsInfligeesObligees?: readonly number[]
   /** True keeps only spells whose corpus records a level disagreement. */
   readonly desaccord?: boolean
 }
@@ -94,9 +105,13 @@ export function filtresActifs(filtres: Filtres): boolean {
     !vide(filtres.jets) ||
     !vide(filtres.portees) ||
     !vide(filtres.tempsIncantation) ||
+    !vide(filtres.typesDegats) ||
     !vide(filtres.tags) ||
     !vide(filtres.tagsExclus) ||
     !vide(filtres.tagsObliges) ||
+    !vide(filtres.conditionsInfligees) ||
+    !vide(filtres.conditionsInfligeesExclues) ||
+    !vide(filtres.conditionsInfligeesObligees) ||
     filtres.desaccord === true
   )
 }
@@ -144,11 +159,35 @@ function retenir(sort: EntreeSort, filtres: Filtres): boolean {
   if (!vide(filtres.composantes) && !filtres.composantes!.every((c) => sort.c.includes(c))) {
     return false
   }
+  if (
+    !vide(filtres.typesDegats) &&
+    (sort.td === null || !filtres.typesDegats!.includes(sort.td))
+  ) {
+    return false
+  }
   if (!vide(filtres.tags) && !filtres.tags!.some((t) => sort.t.includes(t))) return false
   if (!vide(filtres.tagsExclus) && filtres.tagsExclus!.some((t) => sort.t.includes(t))) {
     return false
   }
   if (!vide(filtres.tagsObliges) && !filtres.tagsObliges!.every((t) => sort.t.includes(t))) {
+    return false
+  }
+  if (
+    !vide(filtres.conditionsInfligees) &&
+    !filtres.conditionsInfligees!.some((c) => sort.ci.includes(c))
+  ) {
+    return false
+  }
+  if (
+    !vide(filtres.conditionsInfligeesExclues) &&
+    filtres.conditionsInfligeesExclues!.some((c) => sort.ci.includes(c))
+  ) {
+    return false
+  }
+  if (
+    !vide(filtres.conditionsInfligeesObligees) &&
+    !filtres.conditionsInfligeesObligees!.every((c) => sort.ci.includes(c))
+  ) {
     return false
   }
   if (filtres.desaccord === true && !sort.d) return false

@@ -54,6 +54,15 @@ export interface EtatUrl {
   readonly sauvegarde: readonly string[]
   readonly portees: readonly string[]
   readonly tempsIncantation: readonly string[]
+  readonly typesDegats: readonly string[]
+  /** Conditions a spell must carry at least one of (OR). */
+  readonly conditionsInfligees: readonly string[]
+  /** Conditions a spell must carry NONE of (NOT). Disjoint from the other two
+   * by construction. */
+  readonly conditionsInfligeesExclues: readonly string[]
+  /** Conditions a spell must carry ALL of (AND). Disjoint from the other two
+   * by construction. */
+  readonly conditionsInfligeesObligees: readonly string[]
   readonly q: string
   readonly desaccords: boolean
   /** The sorted column, or null for the view's own order. */
@@ -72,6 +81,10 @@ export const ETAT_VIDE: EtatUrl = {
   sauvegarde: [],
   portees: [],
   tempsIncantation: [],
+  typesDegats: [],
+  conditionsInfligees: [],
+  conditionsInfligeesExclues: [],
+  conditionsInfligeesObligees: [],
   q: '',
   desaccords: false,
   tri: null,
@@ -88,6 +101,8 @@ export const CLES = {
   sauvegarde: 'sauvegarde',
   portees: 'portees',
   temps: 'temps',
+  degats: 'degats',
+  conditions: 'conditions',
   q: 'q',
   desaccords: 'desaccords',
   tri: 'tri',
@@ -220,6 +235,7 @@ export function lireEtat(parametres: URLSearchParams, index: IndexWeb): EtatUrl 
   const classeBrute = parametres.get(CLES.classe)?.trim().toLowerCase() ?? ''
   const classe = index.classes.some((c) => c.slug === classeBrute) ? classeBrute : null
   const tags = analyserTags(parametres.get(CLES.tags), index.tags)
+  const conditions = analyserTags(parametres.get(CLES.conditions), index.conditions_infligees)
   const tri = analyserTri(parametres.get(CLES.tri))
   return {
     classe,
@@ -232,6 +248,10 @@ export function lireEtat(parametres: URLSearchParams, index: IndexWeb): EtatUrl 
     sauvegarde: listeDe(parametres.get(CLES.sauvegarde), index.jets),
     portees: listeDe(parametres.get(CLES.portees), index.portees),
     tempsIncantation: listeDe(parametres.get(CLES.temps), index.temps_incantation),
+    typesDegats: listeDe(parametres.get(CLES.degats), index.types_degats),
+    conditionsInfligees: conditions.tags,
+    conditionsInfligeesExclues: conditions.tagsExclus,
+    conditionsInfligeesObligees: conditions.tagsObliges,
     q: parametres.get(CLES.q) ?? '',
     desaccords: parametres.get(CLES.desaccords) === '1',
     tri: tri.tri,
@@ -260,6 +280,21 @@ export function ecrireEtat(etat: EtatUrl): URLSearchParams {
   if (etat.portees.length > 0) parametres.set(CLES.portees, etat.portees.join(','))
   if (etat.tempsIncantation.length > 0) {
     parametres.set(CLES.temps, etat.tempsIncantation.join(','))
+  }
+  if (etat.typesDegats.length > 0) parametres.set(CLES.degats, etat.typesDegats.join(','))
+  if (
+    etat.conditionsInfligees.length > 0 ||
+    etat.conditionsInfligeesExclues.length > 0 ||
+    etat.conditionsInfligeesObligees.length > 0
+  ) {
+    parametres.set(
+      CLES.conditions,
+      formaterTags(
+        etat.conditionsInfligees,
+        etat.conditionsInfligeesExclues,
+        etat.conditionsInfligeesObligees,
+      ),
+    )
   }
   if (etat.q !== '') parametres.set(CLES.q, etat.q)
   if (etat.desaccords) parametres.set(CLES.desaccords, '1')
@@ -306,6 +341,16 @@ export function versFiltres(etat: EtatUrl, index: IndexWeb): Filtres {
     jets: codes(etat.sauvegarde, index.jets),
     portees: codes(etat.portees, index.portees),
     tempsIncantation: codes(etat.tempsIncantation, index.temps_incantation),
+    typesDegats: codes(etat.typesDegats, index.types_degats),
+    conditionsInfligees: codes(etat.conditionsInfligees, index.conditions_infligees),
+    conditionsInfligeesExclues: codes(
+      etat.conditionsInfligeesExclues,
+      index.conditions_infligees,
+    ),
+    conditionsInfligeesObligees: codes(
+      etat.conditionsInfligeesObligees,
+      index.conditions_infligees,
+    ),
     desaccord: etat.desaccords,
   }
 }
@@ -327,6 +372,14 @@ export function filtreLePlusRestrictif(etat: EtatUrl): keyof typeof CLES | null 
   if (etat.sauvegarde.length > 0) return 'sauvegarde'
   if (etat.portees.length > 0) return 'portees'
   if (etat.tempsIncantation.length > 0) return 'temps'
+  if (etat.typesDegats.length > 0) return 'degats'
+  if (
+    etat.conditionsInfligees.length > 0 ||
+    etat.conditionsInfligeesExclues.length > 0 ||
+    etat.conditionsInfligeesObligees.length > 0
+  ) {
+    return 'conditions'
+  }
   if (etat.ecoles.length > 0) return 'ecoles'
   if (etat.classe !== null) return 'classe'
   return null
@@ -353,6 +406,15 @@ export function sansFiltre(etat: EtatUrl, cle: keyof typeof CLES): EtatUrl {
       return { ...etat, portees: [] }
     case 'temps':
       return { ...etat, tempsIncantation: [] }
+    case 'degats':
+      return { ...etat, typesDegats: [] }
+    case 'conditions':
+      return {
+        ...etat,
+        conditionsInfligees: [],
+        conditionsInfligeesExclues: [],
+        conditionsInfligeesObligees: [],
+      }
     case 'q':
       return { ...etat, q: '' }
     case 'desaccords':
@@ -372,6 +434,8 @@ export const LIBELLES_FILTRES: Readonly<Record<keyof typeof CLES, string>> = {
   sauvegarde: 'le jet de sauvegarde',
   portees: 'la portée',
   temps: "le temps d'incantation",
+  degats: 'le type de dégâts',
+  conditions: 'les conditions infligées',
   q: 'la recherche',
   desaccords: 'le filtre des désaccords',
   // Never named by `filtreLePlusRestrictif`: sorting reorders a list, it cannot

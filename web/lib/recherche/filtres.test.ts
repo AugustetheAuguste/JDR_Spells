@@ -38,6 +38,8 @@ function sort(partiel: Partial<EntreeSort> & { id: string }): EntreeSort {
     rm: null,
     t: [],
     ti: null,
+    td: null,
+    ci: [],
     d: false,
     ...partiel,
   }
@@ -52,10 +54,34 @@ const A = sort({
   p: 0,
   ti: 0,
   t: [7],
+  td: 0,
+  ci: [3],
   d: true,
 })
-const B = sort({ id: 'b', niv: { barde: 4 }, e: 1, c: [0], j: 2, p: 1, ti: 1, t: [] })
-const C = sort({ id: 'c', niv: { druide: 1 }, e: 0, c: [], j: null, p: null, ti: null, t: [7, 8] })
+const B = sort({
+  id: 'b',
+  niv: { barde: 4 },
+  e: 1,
+  c: [0],
+  j: 2,
+  p: 1,
+  ti: 1,
+  t: [],
+  td: 1,
+  ci: [],
+})
+const C = sort({
+  id: 'c',
+  niv: { druide: 1 },
+  e: 0,
+  c: [],
+  j: null,
+  p: null,
+  ti: null,
+  t: [7, 8],
+  td: null,
+  ci: [3, 4],
+})
 const CORPUS = [A, B, C]
 
 function gardes(entrees: EntreeSort[]): string[] {
@@ -154,6 +180,30 @@ describe('les autres axes', () => {
     expect(gardes(appliquerFiltres(CORPUS, { tempsIncantation: [1] }))).toEqual(['b'])
   })
 
+  it('filtre par type de dégâts et écarte les sorts sans dégâts typés', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { typesDegats: [0] }))).toEqual(['a'])
+    expect(gardes(appliquerFiltres(CORPUS, { typesDegats: [0, 1] }))).toEqual(['a', 'b'])
+  })
+
+  it('accepte N\'IMPORTE QUELLE condition demandée', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { conditionsInfligees: [4] }))).toEqual(['c'])
+    expect(gardes(appliquerFiltres(CORPUS, { conditionsInfligees: [3, 4] }))).toEqual(['a', 'c'])
+  })
+
+  it('écarte tout sort portant une condition exclue', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { conditionsInfligeesExclues: [3] }))).toEqual(['b'])
+  })
+
+  it('exige TOUTES les conditions obligatoires, à la différence de conditionsInfligees', () => {
+    expect(gardes(appliquerFiltres(CORPUS, { conditionsInfligeesObligees: [3] }))).toEqual([
+      'a',
+      'c',
+    ])
+    expect(gardes(appliquerFiltres(CORPUS, { conditionsInfligeesObligees: [3, 4] }))).toEqual([
+      'c',
+    ])
+  })
+
   it('isole les sorts en désaccord', () => {
     expect(gardes(appliquerFiltres(CORPUS, { desaccord: true }))).toEqual(['a'])
   })
@@ -202,6 +252,10 @@ describe('les cas neutres', () => {
     expect(filtresActifs({ portees: [0] })).toBe(true)
     expect(filtresActifs({ tempsIncantation: [] })).toBe(false)
     expect(filtresActifs({ tempsIncantation: [0] })).toBe(true)
+    expect(filtresActifs({ typesDegats: [] })).toBe(false)
+    expect(filtresActifs({ typesDegats: [0] })).toBe(true)
+    expect(filtresActifs({ conditionsInfligeesObligees: [] })).toBe(false)
+    expect(filtresActifs({ conditionsInfligeesObligees: [3] })).toBe(true)
   })
 })
 

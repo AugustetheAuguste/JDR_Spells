@@ -297,6 +297,44 @@ describe('les menus dépliants des facettes', () => {
     await userEvent.click(screen.getByRole('checkbox', { name: 'Action simple' }))
     expect(remplace).toHaveBeenCalledWith('/?temps=action_simple', SANS_SAUT)
   })
+
+  it('pose un filtre de type de dégâts via sa case', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('checkbox', { name: 'Force' }))
+    expect(remplace).toHaveBeenCalledWith('/?degats=force', SANS_SAUT)
+  })
+
+  it('n’est pas rendue quand index.types_degats est vide', async () => {
+    await monterVue('', { ...INDEX, types_degats: [] })
+    expect(screen.queryByText(/^Type de dégâts$/)).toBeNull()
+  })
+})
+
+describe('la section des conditions infligées', () => {
+  const SANS_CONDITIONS: IndexWeb = { ...INDEX, conditions_infligees: [] }
+
+  it('un premier clic exige la condition (OR)', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('button', { name: /^Confus/ }))
+    expect(remplace).toHaveBeenCalledWith('/?conditions=confus', SANS_SAUT)
+  })
+
+  it('un second clic exclut la condition (NOT)', async () => {
+    await monterVue('conditions=confus')
+    await userEvent.click(screen.getByRole('button', { name: /^Confus/ }))
+    expect(remplace).toHaveBeenCalledWith('/?conditions=-confus', SANS_SAUT)
+  })
+
+  it('un troisième clic exige la condition (AND)', async () => {
+    await monterVue('conditions=-confus')
+    await userEvent.click(screen.getByRole('button', { name: /^Confus/ }))
+    expect(remplace).toHaveBeenCalledWith('/?conditions=%21confus', SANS_SAUT)
+  })
+
+  it('n’est pas rendue du tout quand index.conditions_infligees est vide', async () => {
+    await monterVue('', SANS_CONDITIONS)
+    expect(screen.queryByText(/^Conditions infligées$/)).toBeNull()
+  })
 })
 
 describe('le tri par colonne', () => {

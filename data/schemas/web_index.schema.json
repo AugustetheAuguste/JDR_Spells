@@ -14,6 +14,8 @@
     "composantes",
     "tags",
     "temps_incantation",
+    "types_degats",
+    "conditions_infligees",
     "sorts"
   ],
   "additionalProperties": false,
@@ -78,6 +80,18 @@
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true
     },
+    "types_degats": {
+      "description": "Table de codes des types de dégâts de la couche d'enrichissement LLM (vocabulaire clos, `conventions/vocabulaires/types_degats.json` : feu, froid, acide, électricité, son, force, négatif, positif, perforant, tranchant, contondant, précision, autre). VIDE si `data/enrichissements/` est absent, comme `tags` — dans ce cas tous les `sorts[].td` valent `null` et l'interface masque le filtre.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "conditions_infligees": {
+      "description": "Table de codes des conditions infligées de la couche d'enrichissement LLM (vocabulaire clos, `conventions/vocabulaires/conditions.json` : aveuglé, ébloui, étourdi, chancelant, secoué, effrayé, paralysé, confus, fasciné, enchevêtré, ralenti, assourdi, nauséeux, fatigué, épuisé, fiévreux — clés sans accent, valeurs affichées avec). VIDE si `data/enrichissements/` est absent — dans ce cas tous les `sorts[].ci` valent `[]`.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "sorts": {
       "description": "Les entrées, triées par `id` croissant pour que l'export soit déterministe à l'octet près.",
       "type": "array",
@@ -88,7 +102,9 @@
     "entree": {
       "type": "object",
       "description": "Un sort, réduit à ce qui sert à chercher, filtrer et afficher une ligne de table. La description N'EST PAS ici : c'est un choix de taille assumé (B1). Si la recherche plein texte devient nécessaire, la réponse est un second index chargé à la demande, pas un gonflement de celui-ci.",
-      "required": ["i", "id", "s", "n", "nf", "e", "niv", "c", "p", "j", "rm", "t", "ti", "d"],
+      "required": [
+        "i", "id", "s", "n", "nf", "e", "niv", "c", "p", "j", "rm", "t", "ti", "td", "ci", "d"
+      ],
       "additionalProperties": false,
       "properties": {
         "i": {
@@ -158,6 +174,17 @@
           "description": "Code de temps d'incantation : index dans `temps_incantation`. `null` si absent de la source.",
           "type": ["integer", "null"],
           "minimum": 0
+        },
+        "td": {
+          "description": "Code de type de dégâts : index dans `types_degats`. `null` si le sort n'a pas d'enrichissement, si la couche est absente, ou si le sort n'inflige pas de dégâts typés.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "ci": {
+          "description": "Codes de conditions infligées : index dans `conditions_infligees`, triés. `[]` si le sort n'a pas d'enrichissement ou si la couche est absente.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
         },
         "d": {
           "description": "`true` si le corpus signale un DÉSACCORD DE NIVEAU pour ce sort : la liste de classe et la page du sort annoncent des niveaux différents (`classes[].concordance === false`). C'est l'information que le wiki n'expose pas et le seul endroit où le site apporte plus que sa source. Le détail (quelle classe, quelle source dit quoi) est dans les props de la fiche ; ici, un booléen suffit à filtrer. Sur le corpus actuel ce champ vaut `false` partout : les 8409 paires comparables concordent toutes. Le champ n'est pas pour autant décoratif — c'est la sonde qui rendra visible la première divergence introduite par une correction du wiki.",

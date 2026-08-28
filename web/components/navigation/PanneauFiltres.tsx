@@ -1,5 +1,6 @@
 'use client'
 
+import { FiltreConditions } from '@/components/navigation/FiltreConditions'
 import { FiltreTags } from '@/components/navigation/FiltreTags'
 import { GroupeDepliant } from '@/components/navigation/GroupeDepliant'
 import { Badge } from '@/components/primitives/Badge'
@@ -8,7 +9,11 @@ import { LIBELLES_ECOLES, type Ecole } from '@/lib/design/tokens'
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import { type EtatUrl, NIVEAU_MAX } from '@/lib/navigation/etat-url'
 import { grouperClasses } from '@/lib/navigation/groupes-classes'
-import { libellePortee, libelleTempsIncantation } from '@/lib/navigation/libelles-facettes'
+import {
+  libellePortee,
+  libelleTempsIncantation,
+  libelleTypeDegats,
+} from '@/lib/navigation/libelles-facettes'
 import { libelleNiveau } from '@/lib/navigation/niveaux'
 
 /**
@@ -74,7 +79,9 @@ export function PanneauFiltres({
   /** A class change: `router.push`, because it IS a navigation. */
   readonly surClasse: (classe: string | null) => void
 }) {
-  function basculer<C extends 'ecoles' | 'composantes' | 'sauvegarde' | 'portees' | 'tempsIncantation'>(
+  function basculer<
+    C extends 'ecoles' | 'composantes' | 'sauvegarde' | 'portees' | 'tempsIncantation' | 'typesDegats',
+  >(
     cle: C,
     valeur: string,
     coche: boolean,
@@ -226,8 +233,26 @@ export function PanneauFiltres({
         ))}
       </GroupeDepliant>
 
-      {/* Hidden entirely when the LLM layer is absent from the export. No empty
-          section, no explanatory error — the filter simply does not exist. */}
+      {/* From here down: the optional LLM layer. Each section is hidden entirely
+          when its table is empty — no empty section, no explanatory error, the
+          filter simply does not exist for a corpus with no enrichment layer. */}
+      {index.types_degats.length === 0 ? null : (
+        <GroupeDepliant
+          poses={etat.typesDegats.length}
+          titre="Type de dégâts"
+          total={index.types_degats.length}
+        >
+          {index.types_degats.map((type) => (
+            <CaseJeton
+              coche={etat.typesDegats.includes(type)}
+              key={type}
+              libelle={libelleTypeDegats(type)}
+              surChangement={(coche) => basculer('typesDegats', type, coche, index.types_degats)}
+            />
+          ))}
+        </GroupeDepliant>
+      )}
+
       <FiltreTags
         surTags={(tags, tagsExclus, tagsObliges) =>
           surEtat({ ...etat, tags, tagsExclus, tagsObliges })
@@ -236,6 +261,21 @@ export function PanneauFiltres({
         tagsConnus={index.tags}
         tagsExclus={etat.tagsExclus}
         tagsObliges={etat.tagsObliges}
+      />
+
+      <FiltreConditions
+        conditions={etat.conditionsInfligees}
+        conditionsConnues={index.conditions_infligees}
+        conditionsExclues={etat.conditionsInfligeesExclues}
+        conditionsObligees={etat.conditionsInfligeesObligees}
+        surConditions={(conditionsInfligees, conditionsInfligeesExclues, conditionsInfligeesObligees) =>
+          surEtat({
+            ...etat,
+            conditionsInfligees,
+            conditionsInfligeesExclues,
+            conditionsInfligeesObligees,
+          })
+        }
       />
 
       <GroupeDepliant poses={etat.desaccords ? 1 : 0} titre="Signalements" total={1}>

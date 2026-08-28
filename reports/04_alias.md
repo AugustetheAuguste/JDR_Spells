@@ -1,6 +1,6 @@
 # Étape 04 — couverture de la table d'alias anglais → français
 
-Généré le 2026-07-31T17:39:36+00:00 par `python -m pf_spells.build_alias`.
+Généré le 2026-08-28T13:44:28+00:00 par `python -m pf_spells.build_alias`.
 
 ## Couverture
 

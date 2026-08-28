@@ -37,9 +37,10 @@ from pf_spells.web_pliage import (
     plier,
 )
 
-# Bumped for `temps_incantation`/`ti`: a new required field is an incompatible
-# shape change, not a data update (§2 of the contract's own preamble).
-VERSION_CONTRAT = 2
+# Bumped for `types_degats`/`td` and `conditions_infligees`/`ci`: two new required
+# fields are an incompatible shape change, not a data update (§2 of the contract's
+# own preamble).
+VERSION_CONTRAT = 3
 
 DEFAULT_RACINE = "."
 DEFAULT_SORTIE = "web/public/data"
@@ -247,6 +248,8 @@ def construire(
     composantes: set[str] = set()
     tags: set[str] = set()
     temps: set[str] = set()
+    types_degats: set[str] = set()
+    conditions: set[str] = set()
     classes_vues: set[str] = set()
     nb_desaccords = 0
     nb_enrichis = 0
@@ -300,6 +303,13 @@ def construire(
         classes_vues.update(niveaux)
         etiquettes = sorted(enrichissement.get("tags") or []) if enrichissement else []
         tags.update(etiquettes)
+        type_degats = enrichissement.get("type_degats") if enrichissement else None
+        if type_degats is not None:
+            types_degats.add(type_degats)
+        conditions_infligees = (
+            sorted(enrichissement.get("condition_infligee") or []) if enrichissement else []
+        )
+        conditions.update(conditions_infligees)
 
         stagiaires.append(
             {
@@ -317,6 +327,8 @@ def construire(
                 "ecarts": ecarts,
                 "enrichissement": enrichissement,
                 "etiquettes": etiquettes,
+                "type_degats": type_degats,
+                "conditions_infligees": conditions_infligees,
             }
         )
 
@@ -326,6 +338,8 @@ def construire(
     table_composantes, code_composante = _table_de_codes(composantes)
     table_tags, code_tag = _table_de_codes(tags)
     table_temps, code_temps = _table_de_codes(temps)
+    table_types_degats, code_type_degats = _table_de_codes(types_degats)
+    table_conditions, code_condition = _table_de_codes(conditions)
 
     # Only classes that actually grant a spell are listed: a filter offering a class
     # with no spells is a dead end. Sorted by slug for determinism.
@@ -363,6 +377,10 @@ def construire(
                 "ti": code_temps.get(stagiaire["temps_incantation"])
                 if stagiaire["temps_incantation"] is not None
                 else None,
+                "td": code_type_degats.get(stagiaire["type_degats"])
+                if stagiaire["type_degats"] is not None
+                else None,
+                "ci": sorted(code_condition[c] for c in stagiaire["conditions_infligees"]),
                 "d": bool(stagiaire["ecarts"]),
             }
         )
@@ -391,6 +409,8 @@ def construire(
         "composantes": table_composantes,
         "tags": table_tags,
         "temps_incantation": table_temps,
+        "types_degats": table_types_degats,
+        "conditions_infligees": table_conditions,
         "sorts": entrees,
     }
     texte_index = serialiser_compact(index)
@@ -414,6 +434,8 @@ def construire(
         "nb_ecoles": len(table_ecoles),
         "nb_tags": len(table_tags),
         "nb_temps_incantation": len(table_temps),
+        "nb_types_degats": len(table_types_degats),
+        "nb_conditions_infligees": len(table_conditions),
         "taille_index_octets": len(octets),
         "taille_index_gzip": taille_gzip,
         "chemin_index": chemin_index.as_posix(),

@@ -44,6 +44,13 @@ export interface EntreeSort {
   /** Casting-time code, indexing into `temps_incantation`. `null` when the
    * source gives none. */
   readonly ti: number | null
+  /** Damage-type code from the optional LLM layer, indexing into
+   * `types_degats`. `null` when the layer is absent, uncovered, or the spell
+   * deals no typed damage. */
+  readonly td: number | null
+  /** Inflicted-condition codes from the optional LLM layer, indexing into
+   * `conditions_infligees`. `[]` when the layer is absent. */
+  readonly ci: readonly number[]
   /** True when the corpus records a level disagreement for this spell. */
   readonly d: boolean
 }
@@ -65,6 +72,10 @@ export interface IndexWeb {
    * tag filter rather than showing an empty one. */
   readonly tags: readonly string[]
   readonly temps_incantation: readonly string[]
+  /** Empty when the enrichment layer was absent at export, same as `tags`. */
+  readonly types_degats: readonly string[]
+  /** Empty when the enrichment layer was absent at export, same as `tags`. */
+  readonly conditions_infligees: readonly string[]
   readonly sorts: readonly EntreeSort[]
 }
 

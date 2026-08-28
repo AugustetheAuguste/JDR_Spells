@@ -158,6 +158,10 @@ describe('lireEtat', () => {
       sauvegarde: ['volonte'],
       portees: [],
       tempsIncantation: [],
+      typesDegats: [],
+      conditionsInfligees: [],
+      conditionsInfligeesExclues: [],
+      conditionsInfligeesObligees: [],
       q: 'feu',
       desaccords: true,
       tri: null,
@@ -194,6 +198,16 @@ describe('lireEtat', () => {
     expect(lire('temps=teleportation').tempsIncantation).toEqual([])
   })
 
+  it('lit degats et conditions, et écarte les valeurs inconnues', () => {
+    expect(lire('degats=contondant,force').typesDegats).toEqual(['contondant', 'force'])
+    expect(lire('degats=inexistant').typesDegats).toEqual([])
+    expect(lire('conditions=confus,-effraye,!fascine')).toMatchObject({
+      conditionsInfligees: ['confus'],
+      conditionsInfligeesExclues: ['effraye'],
+      conditionsInfligeesObligees: ['fascine'],
+    })
+  })
+
   it('normalise la casse des valeurs', () => {
     expect(lire('classe=Barde&ecoles=EVOCATION').classe).toBe('barde')
     expect(lire('ecoles=EVOCATION').ecoles).toEqual(['evocation'])
@@ -227,6 +241,8 @@ describe('l’aller-retour, qui fait marcher le bouton précédent', () => {
     'portees=courte,contact',
     'temps=action_simple,round',
     'portees=contact&temps=round&classe=barde',
+    'degats=contondant,force',
+    'conditions=confus,-effraye,!fascine',
   ]
 
   it.each(cas)('lire ∘ écrire est l’identité sur %j', (query) => {
@@ -269,6 +285,20 @@ describe('versFiltres', () => {
     expect(filtres.tempsIncantation).toEqual([INDEX.temps_incantation.indexOf('round')])
   })
 
+  it('résout le type de dégâts et les conditions en codes', () => {
+    const filtres = versFiltres(lire('degats=force&conditions=confus,-effraye,!fascine'), INDEX)
+    expect(filtres.typesDegats).toEqual([INDEX.types_degats.indexOf('force')])
+    expect(filtres.conditionsInfligees).toEqual([
+      INDEX.conditions_infligees.indexOf('confus'),
+    ])
+    expect(filtres.conditionsInfligeesExclues).toEqual([
+      INDEX.conditions_infligees.indexOf('effraye'),
+    ])
+    expect(filtres.conditionsInfligeesObligees).toEqual([
+      INDEX.conditions_infligees.indexOf('fascine'),
+    ])
+  })
+
   it('demande explicitement le minimum quand aucune classe n’est choisie', () => {
     // The view labels that number « Niveau le plus bas, toutes classes », which
     // is the only thing that makes the minimum legitimate at all.
@@ -306,6 +336,9 @@ describe('l’état vide nomme un filtre précis', () => {
     ['classe=barde&sauvegarde=volonte&ecoles=evocation', 'sauvegarde'],
     ['classe=barde&portees=courte&ecoles=evocation', 'portees'],
     ['classe=barde&temps=round&ecoles=evocation', 'temps'],
+    ['classe=barde&degats=force&ecoles=evocation', 'degats'],
+    ['classe=barde&conditions=confus&ecoles=evocation', 'conditions'],
+    ['classe=barde&conditions=!fascine&ecoles=evocation', 'conditions'],
     ['classe=barde&ecoles=evocation', 'ecoles'],
     ['classe=barde', 'classe'],
   ])('désigne %j → %j', (query, attendu) => {
@@ -330,7 +363,8 @@ describe('l’état vide nomme un filtre précis', () => {
     // filter" button would do nothing and the empty state would be a dead end.
     const plein = lire(
       'classe=barde&niveau=1&ecoles=evocation&tags=bonus_chiffre&composantes=V&sauvegarde=volonte' +
-        '&portees=courte&temps=round&q=feu&desaccords=1&tri=-portee',
+        '&portees=courte&temps=round&degats=force&conditions=confus' +
+        '&q=feu&desaccords=1&tri=-portee',
     )
     for (const cle of Object.keys(CLES) as (keyof typeof CLES)[]) {
       expect(versQueryString(sansFiltre(plein, cle))).not.toBe(versQueryString(plein))
