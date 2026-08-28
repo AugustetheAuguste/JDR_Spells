@@ -238,6 +238,8 @@ describe('le moteur à l’échelle du corpus', () => {
         rm: false,
         t: [],
         ti: 0,
+        td: null,
+        ci: [],
         d: false,
       }
     })
