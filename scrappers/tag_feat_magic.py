@@ -40,6 +40,12 @@ STRONG_MAGIC_KEYWORDS = [
     "emplacement de sort",
     "emplacements de sorts",
     "aptitude magique",
+    # Ajouté après le merge initial (voir OUTPUT_vocab_and_markup_calibration.md,
+    # Section B, entrée 9) : couvre la famille des dons d'amplification
+    # élémentaire ("Amplification brûlante" et consorts), passés inaperçus
+    # dans l'échantillon initial car ils utilisent une formulation ("lorsque
+    # le personnage lance un sort...") différente des autres mots-clés forts.
+    "lorsque le personnage lance un sort",
 ]
 
 WEAK_MAGIC_KEYWORDS = [

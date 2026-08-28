@@ -232,6 +232,19 @@ identifiée comme une rubrique).
 7. **« sorts de [Classe] de [n]e niveau »** comme condition de don — table
    de `Dons_de_metamagie.html`, don « Sale coup magique » : « Capacité à
    lancer des sorts de niveau 1, alignement Chaotique Neutre... »
+9. **« lorsque le personnage lance un sort »** (ajouté après revue post-
+   implémentation, motif non couvert par l'échantillon initial : la famille
+   des dons d'amplification élémentaire déclenchés par le fait de lancer un
+   sort) — `Amplification_brulante.html` : « Lorsque le personnage lance un
+   sort possédant le registre feu, il peut choisir... » ; confirmé sans faux
+   positif sur les 9 dons du catalogue correspondants (Amplification
+   brûlante/foudroyante/refroidissante, Chaleur glorieuse, Dissimulation de
+   sort, Enchantements subtiles, Magie des âmes, Scrutateur hors pair,
+   Élément renforcé) — chacun exige réellement de lancer un sort comme
+   déclencheur de son effet, contrairement à une simple mention en aside
+   (ex. « Arme de prédilection » : « ...ou les rayons s'il lance des sorts »
+   — écarté car ce n'est qu'une clause optionnelle, pas la condition
+   principale du don, donc ce motif n'a pas été retenu sur ce cas-là).
 8. **« Aptitude magique »** (nom de don pris comme condition/mention d'une
    aptitude explicitement liée au fait d'être lanceur de sorts) —
    `Sabotage_objet_magique.html` : `<b>Conditions.</b> Aptitude magique, 5
