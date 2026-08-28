@@ -69,3 +69,26 @@ class RaceInfo:
     bonus_skill_rank: bool
     class_skill_grants: list[str]
     note: Optional[str] = None
+
+
+# --- Class skill data models (added Step 06: pf1_dons/class_skills.py) ---
+
+
+@dataclass
+class ClassSkillEntry:
+    skill: str
+    ability: str  # For/Dex/Con/Int/Sag/Cha
+
+
+@dataclass
+class SkillPointsFormula:
+    base: int
+    ability: str
+
+
+@dataclass
+class ClassSkillInfo:
+    key: str
+    class_skills: list[ClassSkillEntry]
+    skill_points_formula: Optional[SkillPointsFormula]
+    skill_points_formula_raw: Optional[str]
