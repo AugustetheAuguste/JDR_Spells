@@ -1,11 +1,24 @@
 __pycache__/
 *.pyc
+
+# Caches HTML des scrappers (retéléchargeables, cf. scrappers/)
 races_html/
 classes_html/
 class_skills_html/
 feat_table_html/
 feat_pages_html/
+
+# Fiches de personnage et brouillons de curation
 Data/characters/
+Data/**/characters/
 Data/*.draft.json
+Data/**/*.draft.json
+
+# Sorties régénérables des scripts d'audit : ce sont des rapports, pas des
+# données. Le raisonnement qu'on en tire vit dans build/**/OUTPUT_*.md.
+build/audit_*.txt
+build/audit_*/
+slots_*.txt
+
 .claude/worktrees/
 .claude/scheduled_tasks.lock
