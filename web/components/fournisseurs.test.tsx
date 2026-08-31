@@ -1,5 +1,5 @@
-import { render, waitFor } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { act, render, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 /**
  * The one test the account feature did not have: **is synchronisation mounted?**
@@ -108,11 +108,33 @@ const ETAT_LOCAL = {
   liste_active: 'l1',
 }
 
+/** A clock the test moves by hand: the visibility throttle is a duration, and
+ * waiting a real minute to assert one is not a test anyone will keep running. */
+let maintenant = Date.parse('2026-08-31T09:00:00.000Z')
+
 beforeEach(() => {
   appels.length = 0
+  maintenant = Date.parse('2026-08-31T09:00:00.000Z')
+  vi.spyOn(Date, 'now').mockImplementation(() => maintenant)
   window.localStorage.setItem(CLE_STOCKAGE, JSON.stringify(ETAT_LOCAL))
   reinitialiserCache()
 })
+
+afterEach(() => {
+  vi.restoreAllMocks()
+})
+
+/** Simulate coming back to the tab. `visibilityState` is a getter on `document`,
+ * so it has to be redefined rather than assigned. */
+async function revenirAlOnglet(): Promise<void> {
+  Object.defineProperty(document, 'visibilityState', {
+    configurable: true,
+    get: () => 'visible',
+  })
+  await act(async () => {
+    document.dispatchEvent(new Event('visibilitychange'))
+  })
+}
 
 /** Reports the context it was given, so a test can tell the live provider from the
  * inert default without reaching into React internals. */
@@ -152,6 +174,48 @@ describe('Fournisseurs', () => {
     // passe par 'fusion' puis atteint 'a_jour'.
     await waitFor(() => {
       expect(getByTestId('etat').textContent).toBe('a_jour')
+    })
+  })
+
+  it('retirer l’onglet et revenir dans la minute ne relance rien', async () => {
+    const { getByTestId } = render(
+      <Fournisseurs>
+        <Sonde />
+      </Fournisseurs>,
+    )
+    await waitFor(() => {
+      expect(getByTestId('etat').textContent).toBe('a_jour')
+    })
+    const apresFusion = appels.length
+
+    maintenant += 30_000
+    await revenirAlOnglet()
+
+    // Le garde anti-rafale : `visibilitychange` part à chaque alt-tab, et six
+    // tirages par minute pour un état qui change deux fois par jour, c'est du bruit.
+    expect(appels.length).toBe(apresFusion)
+  })
+
+  it('revenir après plus d’une minute relance un tirage', async () => {
+    const { getByTestId } = render(
+      <Fournisseurs>
+        <Sonde />
+      </Fournisseurs>,
+    )
+    await waitFor(() => {
+      expect(getByTestId('etat').textContent).toBe('a_jour')
+    })
+    const apresFusion = appels.filter((a) => a.table === 'listes' && a.verbe === 'select').length
+
+    maintenant += 61_000
+    await revenirAlOnglet()
+
+    // C'est le trou que ceci comble : sur un téléphone dont l'onglet reste ouvert
+    // des jours, la fusion tourne une fois à la restauration de session et plus
+    // jamais — le favori ajouté sur le PC n'arrivait qu'après fermeture de l'onglet.
+    await waitFor(() => {
+      const lectures = appels.filter((a) => a.table === 'listes' && a.verbe === 'select').length
+      expect(lectures).toBeGreaterThan(apresFusion)
     })
   })
 

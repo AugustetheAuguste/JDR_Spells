@@ -83,6 +83,22 @@ const Contexte = createContext<ValeurSynchro>({
 const DELAI_ENVOI_MS = 800
 
 /**
+ * How stale a merge has to be before returning to the tab re-runs it.
+ *
+ * The merge is keyed on the account, so it runs once when a session is restored and
+ * then never again on its own. On a phone that is a real gap: the tab stays open for
+ * days, the laptop adds a favourite, and nothing arrives until the tab is closed and
+ * reopened. Coming back to the tab is the one moment a user is about to *read* their
+ * lists, which makes it the moment worth spending a pull on.
+ *
+ * A minute, and not a timer: a background poll on a statically exported site is cost
+ * with no occasion, whereas `visibilitychange` fires exactly when the answer might
+ * be looked at. The throttle is there because the event fires on every alt-tab, and
+ * six pulls a minute for a state that changes twice a day is noise.
+ */
+const DELAI_REVISITE_MS = 60_000
+
+/**
  * Progress, stamped with the account it belongs to.
  *
  * The stamp is what removes the need to reset anything on sign-out. Progress from a
@@ -120,6 +136,10 @@ export function FournisseurSynchro({ children }: { readonly children: ReactNode 
    * entitled to discard. */
   const etatCourant = useRef<EtatFavoris>(etat)
   const [demandes, setDemandes] = useState(0)
+  /** When the last merge *started*, for the visibility throttle. Start, not finish:
+   * a merge that is still running is not stale, and timing from the finish would let
+   * a slow pull be re-triggered on top of itself. */
+  const dernierTirage = useRef(0)
 
   useEffect(() => {
     etatCourant.current = etat
@@ -181,6 +201,7 @@ export function FournisseurSynchro({ children }: { readonly children: ReactNode 
     if (!pret) return
     if (compteFusionne.current === idCompte) return
     compteFusionne.current = idCompte
+    dernierTirage.current = Date.now()
 
     let vivant = true
     void (async () => {
@@ -219,6 +240,27 @@ export function FournisseurSynchro({ children }: { readonly children: ReactNode 
       vivant = false
     }
   }, [idCompte, pret, demandes])
+
+  // --- pull again when the tab comes back, at most once a minute -----------
+  //
+  // `resynchroniser` and not a separate path: coming back to the tab wants exactly
+  // what the button wants, and a second way to run the same merge is a second place
+  // for the ordering rule to be got wrong. Signed out, nothing is listened for at
+  // all — there is nothing to pull.
+  useEffect(() => {
+    if (idCompte === null) return
+
+    function surRetour(): void {
+      if (document.visibilityState !== 'visible') return
+      if (Date.now() - dernierTirage.current < DELAI_REVISITE_MS) return
+      resynchroniser()
+    }
+
+    document.addEventListener('visibilitychange', surRetour)
+    return () => {
+      document.removeEventListener('visibilitychange', surRetour)
+    }
+  }, [idCompte, resynchroniser])
 
   // --- push local changes, debounced ---------------------------------------
   useEffect(() => {
