@@ -26,6 +26,7 @@ from .race_loader import load_races
 from .skill_budget import total_skill_points
 
 ABILITY_KEYS = ["For", "Dex", "Con", "Int", "Sag", "Cha"]
+DEFAULT_ABILITY_SCORE = 10
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -37,6 +38,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_create.add_argument("--class", dest="character_class", required=True)
     p_create.add_argument("--level", type=int, required=True)
     p_create.add_argument("--race")
+    p_create.add_argument("--alignement", dest="alignment")
+    p_create.add_argument("--divinite", dest="deity")
     for ability in ABILITY_KEYS:
         p_create.add_argument(f"--{ability.lower()}", type=int, default=None)
 
@@ -48,6 +51,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_slots = sub.add_parser("slots")
     p_slots.add_argument("name")
     p_slots.add_argument("--open-only", action="store_true")
+    p_slots.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="nombre max de dons listés par emplacement (0 = tous, défaut)",
+    )
 
     p_assign = sub.add_parser("assign")
     p_assign.add_argument("name")
@@ -62,10 +71,13 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def cmd_create(args) -> None:
+    # Un personnage Pathfinder possède toujours les six caractéristiques :
+    # laisser les non renseignées à None renvoyait en vérification manuelle
+    # tous les dons qui les testent (« Dex 13 non fourni »). On les fixe donc
+    # explicitement à 10 (valeur moyenne), visible dans la fiche sauvegardée.
     ability_scores = {
-        a: getattr(args, a.lower())
+        a: (getattr(args, a.lower()) if getattr(args, a.lower()) is not None else DEFAULT_ABILITY_SCORE)
         for a in ABILITY_KEYS
-        if getattr(args, a.lower()) is not None
     }
     races = load_races()
     class_bonus_feats = load_class_bonus_feats()
@@ -77,6 +89,8 @@ def cmd_create(args) -> None:
         ability_scores,
         races,
         class_bonus_feats,
+        alignment=args.alignment,
+        deity=args.deity,
     )
     path = save_profile(profile)
     print(f"Personnage '{profile.name}' créé -> {path}")
@@ -144,11 +158,16 @@ def cmd_slots(args) -> None:
         print(f"{slot.slot_id} (niveau {slot.level_gained}, {slot.source}) -> {slot.filled_by or '(vide)'}")
         if slot.filled_by is not None:
             continue
-        candidates = eligible_feats_for_slot(profile, slot, catalog, feat_categories)
-        for feat in sorted(candidates, key=lambda f: f.name)[:20]:
+        candidates = sorted(
+            eligible_feats_for_slot(profile, slot, catalog, feat_categories),
+            key=lambda f: f.name,
+        )
+        shown = candidates if args.limit <= 0 else candidates[: args.limit]
+        print(f"    ({len(candidates)} dons candidats)")
+        for feat in shown:
             print(f"    - {feat.name}")
-        if len(candidates) > 20:
-            print(f"    ... et {len(candidates) - 20} autres")
+        if len(shown) < len(candidates):
+            print(f"    ... et {len(candidates) - len(shown)} autres (--limit 0 pour tout voir)")
 
 
 def cmd_assign(args) -> None:

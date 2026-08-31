@@ -41,6 +41,8 @@ def save_profile(
         "race": profile.race,
         "ability_scores": profile.ability_scores,
         "skill_ranks": profile.skill_ranks,
+        "alignment": profile.alignment,
+        "deity": profile.deity,
         "feat_slots": [asdict(slot) for slot in profile.feat_slots],
     }
     path.write_text(
@@ -63,6 +65,8 @@ def load_profile(
         race=data.get("race"),
         ability_scores=data.get("ability_scores", {}),
         skill_ranks=data.get("skill_ranks", {}),
+        alignment=data.get("alignment"),
+        deity=data.get("deity"),
         feat_slots=[FeatSlot(**s) for s in data.get("feat_slots", [])],
     )
 

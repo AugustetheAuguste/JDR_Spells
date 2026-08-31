@@ -53,6 +53,12 @@ def test_slots_lists_open_slots_with_candidates(capsys):
     out = capsys.readouterr().out
     assert "general-1" in out
     assert "- " in out
+    assert "dons candidats" in out
+    # Par défaut la liste est complète : plus de troncature à 20 dons.
+    assert "autres" not in out
+
+    cli.main(["slots", "Test Slots", "--limit", "5"])
+    out = capsys.readouterr().out
     assert "autres" in out
 
 

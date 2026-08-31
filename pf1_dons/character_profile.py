@@ -25,6 +25,10 @@ class CharacterProfile:
     ability_scores: dict[str, int] = field(default_factory=dict)
     skill_ranks: dict[str, int] = field(default_factory=dict)
     feat_slots: list[FeatSlot] = field(default_factory=list)
+    # Optionnels : renseignés, ils rendent décidables les prérequis
+    # d'alignement et de culte (« alignement Bon », « suivant de Torag »).
+    alignment: Optional[str] = None
+    deity: Optional[str] = None
 
     def to_character(self) -> Character:
         return Character(
@@ -34,6 +38,8 @@ class CharacterProfile:
             ability_scores=self.ability_scores or None,
             known_feats={s.filled_by for s in self.feat_slots if s.filled_by},
             skill_ranks=self.skill_ranks or None,
+            alignment=self.alignment,
+            deity=self.deity,
         )
 
     def open_slots(self) -> list[FeatSlot]:
@@ -51,6 +57,8 @@ def create_profile(
     ability_scores: dict[str, int],
     races: dict[str, RaceInfo],
     class_bonus_feats: dict[str, dict],
+    alignment: Optional[str] = None,
+    deity: Optional[str] = None,
 ) -> CharacterProfile:
     slots = compute_feat_slots(character_class, level, race, races, class_bonus_feats)
     return CharacterProfile(
@@ -60,6 +68,8 @@ def create_profile(
         race=race,
         ability_scores=dict(ability_scores),
         feat_slots=slots,
+        alignment=alignment,
+        deity=deity,
     )
 
 
