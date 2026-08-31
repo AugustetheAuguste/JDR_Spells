@@ -181,6 +181,19 @@ Si le déploiement réclame un secret, c'est le symptôme, pas la configuration.
   porte la classe à laquelle il appartient ; aucun en-tête « Niveau » nu. Le
   niveau **0 est réel** (les oraisons), donc une absence est un tiret cadratin,
   jamais un 0. `check_data_contract.ts` échoue sur un `niv` scalaire.
+- **La pile de contextes vit dans `web/components/Fournisseurs.tsx`, et nulle part
+  ailleurs.** Un provider oublié ne casse rien : `useSynchro()` retombe sur un
+  contexte par défaut inerte, et la synchronisation des favoris a ainsi été livrée
+  **sans être montée** — login à 200, zéro requête `/rest/v1/`, bouton mort, 622
+  tests verts, parce que chaque test montait le provider lui-même. D'où la règle : la
+  composition est un composant testable, et `fournisseurs.test.tsx` assert le critère
+  réseau (un `select` **puis** un `upsert` sur `listes`), jamais la fusion — que
+  `synchro.test.ts` couvre déjà. Ne pas recomposer les providers dans `layout.tsx`.
+  Détail et procédure de vérification : `docs/synchro_favoris_supabase.md`.
+- **`signOut` est `scope: 'local'`, jamais le défaut.** Le défaut de Supabase est
+  global : il révoque les jetons de tous les appareils, donc se déconnecter du PC
+  ferme la session du téléphone, qui n'affiche rien et cesse simplement de
+  synchroniser. Se déconnecter est une affirmation sur *cet* appareil.
 - **Le slug est l'URL publique.** `/sorts/<slug>/` vient de l'algorithme § 4 : le
   changer casse des liens externes et n'est pas une opération de confort. Les
   favoris tiennent des `id`, pas des slugs, pour cette raison exactement.
