@@ -1,7 +1,7 @@
-"""Curation de `Data/prereq_gating.json` : nature de chaque prérequis non
+"""Curation de `Data/conditions/prereq_gating.json` : nature de chaque prérequis non
 attribuable à une classe.
 
-Contexte. `Data/class_ability_map.json` répond à une seule question : « ce
+Contexte. `Data/classes/class_ability_map.json` répond à une seule question : « ce
 segment de Conditions désigne-t-il une capacité réservée à certaines
 classes ? ». Ses 341 entrées `no_single_class` sont donc un fourre-tout :
 traits raciaux, types de créature, anatomie, divinité, alignement,
@@ -13,12 +13,12 @@ morsure », « Suivant de Torag »…).
 Ce script transcrit la classification (relue à la main) de ces prérequis en
 *genres de gating* exploitables par `engine.py` :
 
-- ``racial_trait``   : nom d'un trait racial ; vérifiable contre `Data/races.json`
+- ``racial_trait``   : nom d'un trait racial ; vérifiable contre `Data/races/races.json`
 - ``creature_type``  : race / type / sous-type de créature ; vérifiable contre la race
 - ``anatomy``        : partie du corps ou capacité physique innée (morsure, vol,
                        armure naturelle, RD…) ; vérifiable contre les traits raciaux
 - ``spellcasting``   : nécessite de lancer des sorts / des pouvoirs magiques ;
-                       vérifiable via `Data/class_caster_info.json` + magie raciale
+                       vérifiable via `Data/classes/class_caster_info.json` + magie raciale
 - ``deity``          : culte d'une divinité précise ; vérifiable si le personnage
                        a une divinité renseignée
 - ``alignment``      : alignement requis ; vérifiable si renseigné
@@ -42,9 +42,15 @@ Usage : python scripts/curate_prereq_gating.py
 import json
 import unicodedata
 from pathlib import Path
+import sys
 
-SOURCE = Path("Data/class_ability_map.json")
-TARGET = Path("Data/prereq_gating.json")
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
+
+SOURCE = Path(paths.CLASS_ABILITY_MAP)
+TARGET = Path(paths.PREREQ_GATING)
 
 
 def _normalize(text: str) -> str:
@@ -60,7 +66,7 @@ def _normalize(text: str) -> str:
 # --------------------------------------------------------------------------
 
 # Traits raciaux : le libellé après « trait racial » est le nom du trait tel
-# qu'il apparaît dans Data/races.json.
+# qu'il apparaît dans Data/races/races.json.
 RACIAL_TRAIT_EXTRA = {
     "stabilite": "stabilite",
     "vision nocturne": "vision nocturne",
@@ -397,12 +403,12 @@ CLASS_ABILITY_OVERRIDES = {
     "capacite de classe attaque imprevisible": ["roublard", "ninja", "tueur"],
 
     # « Palpation curative » et « imposition des mains » sont deux traductions
-    # françaises de *lay on hands* : Data/class_features.json donne
+    # françaises de *lay on hands* : Data/classes/class_features.json donne
     # « imposition des mains » au paladin (niveau 2) et « palpation curative
     # (mineure) » à l'hypnotiseur (niveau 3).
     "capacite de classe palpation curative": ["paladin", "hypnotiseur"],
 
-    # Data/class_features.json : « Compréhension des sorts 1/jour » au
+    # Data/classes/class_features.json : « Compréhension des sorts 1/jour » au
     # niveau 5 du scalde.
     "capacite de classe comprehension des sorts": ["scalde"],
 

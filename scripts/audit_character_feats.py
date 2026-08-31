@@ -4,7 +4,7 @@ Sortie : un rapport texte listant, pour CHAQUE don du catalogue (aucune
 troncature, aucun "... et N autres"), le statut rendu par le moteur, le
 détail requirement par requirement (type, verdict, raison), les Conditions
 brutes du CSV et, quand elle existe, la version enrichie de la page du don
-(``Data/feat_details.json`` -> ``conditions_detail``).
+(``Data/dons/feat_details.json`` -> ``conditions_detail``).
 
 Usage :
     python scripts/audit_character_feats.py <nom_du_personnage> [-o rapport.txt]
@@ -21,6 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from pf1_dons import paths
 from pf1_dons.data_loader import load_catalog
 from pf1_dons.engine import (
     Character,
@@ -35,7 +36,7 @@ STATUS_ORDER = ["eligible", "manual_check", "ineligible"]
 
 
 def _load_feat_details() -> dict:
-    path = Path("Data/feat_details.json")
+    path = Path(paths.FEAT_DETAILS)
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))

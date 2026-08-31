@@ -11,9 +11,16 @@ sur les cas ambigus.
 import json
 import re
 import unicodedata
+import sys
+from pathlib import Path
 
-FEAT_DETAILS_PATH = "Data/feat_details.json"
-OUT_PATH = "Data/feat_creature_affinity.json"
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
+
+FEAT_DETAILS_PATH = paths.FEAT_DETAILS
+OUT_PATH = paths.FEAT_CREATURE_AFFINITY
 
 PREVALENCE_PATTERN = re.compile(
     r"plus courante?s? chez (?:le|les) ([^.]+)\.",

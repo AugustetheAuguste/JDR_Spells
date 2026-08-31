@@ -1,14 +1,20 @@
 """Récupère les tableaux de progression des classes sur pathfinder-fr.org
-et produit Data/class_features.json (capacités spéciales par niveau)."""
+et produit Data/classes/class_features.json (capacités spéciales par niveau)."""
 
 import html
 import json
 import re
 import urllib.request
 from pathlib import Path
+import sys
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 
 HTML_DIR = Path("classes_html")
-OUT_PATH = Path("Data/class_features.json")
+OUT_PATH = Path(paths.CLASS_FEATURES)
 BASE_URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.{slug}.ashx"
 USER_AGENT = "Mozilla/5.0"
 

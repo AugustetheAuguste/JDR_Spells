@@ -16,6 +16,11 @@ import argparse
 import sys
 from collections import Counter
 
+from pathlib import Path
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from pf1_dons.data_loader import load_catalog
 from pf1_dons.engine import evaluate_feat
 from pf1_dons.persistence import load_profile

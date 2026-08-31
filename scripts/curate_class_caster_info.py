@@ -1,25 +1,32 @@
 """One-off curation script for Wave 2 / Step 07: transcribes the verified
 research of Step 04 (`build/feat-detail-and-magic-gating/
 OUTPUT_class_caster_ground_truth.md`) into the final, committed
-`Data/class_caster_info.json`.
+`Data/classes/class_caster_info.json`.
 
 Not part of the package; run manually:
     python scripts/curate_class_caster_info.py
 
 This script never improvises or "corrects" a verdict itself: the markdown
 table produced by Step 04 is the sole source of truth. Step 05's draft
-(`Data/class_caster_info.draft.json`) is used only as a secondary
+(`Data/classes/class_caster_info.draft.json`) is used only as a secondary
 cross-check, to print disagreements for human audit -- never to override
 Step 04.
 """
 import json
 import re
 
+import sys
+from pathlib import Path
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
 
 GROUND_TRUTH_DOC = "build/feat-detail-and-magic-gating/OUTPUT_class_caster_ground_truth.md"
-DRAFT_PATH = "Data/class_caster_info.draft.json"
-OUT_PATH = "Data/class_caster_info.json"
+DRAFT_PATH = paths.CLASS_CASTER_INFO_DRAFT
+OUT_PATH = paths.CLASS_CASTER_INFO
 
 VALID_CLASSES = set(CLASS_BBA_PROGRESSION.keys())
 VALID_TYPES = {"arcane", "divine", "psychique"}

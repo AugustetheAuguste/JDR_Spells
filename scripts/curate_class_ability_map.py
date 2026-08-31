@@ -1,6 +1,6 @@
 """One-off curation script for Wave 2 / Step 02: turns
-Data/class_ability_map.draft.json into the final, reviewed
-Data/class_ability_map.json (568 -> 568 entries, 100% coverage).
+Data/classes/class_ability_map.draft.json into the final, reviewed
+Data/classes/class_ability_map.json (568 -> 568 entries, 100% coverage).
 
 Not part of the package; run manually:
     python scripts/curate_class_ability_map.py
@@ -17,6 +17,13 @@ import json
 import re
 import unicodedata
 
+import sys
+from pathlib import Path
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
 
 VALID_CLASSES = set(CLASS_BBA_PROGRESSION.keys())
@@ -331,7 +338,7 @@ def decide(entry):
 
 
 def main():
-    with open("Data/class_ability_map.draft.json", encoding="utf-8") as f:
+    with open(paths.CLASS_ABILITY_MAP_DRAFT, encoding="utf-8") as f:
         draft = json.load(f)
 
     expected_count = len(draft)
@@ -369,7 +376,7 @@ def main():
 
     final_entries.sort(key=lambda e: e["keyword"])
 
-    with open("Data/class_ability_map.json", "w", encoding="utf-8") as f:
+    with open(paths.CLASS_ABILITY_MAP, "w", encoding="utf-8") as f:
         json.dump({"entries": final_entries}, f, ensure_ascii=False, indent=2)
 
     mapped = sum(1 for e in final_entries if e["disposition"] == "mapped")

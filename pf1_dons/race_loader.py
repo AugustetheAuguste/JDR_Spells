@@ -2,13 +2,14 @@ import json
 from pathlib import Path
 from typing import Optional
 
+from . import paths
 from .engine import _normalize
 from .models import AbilityModifier, RaceInfo
 
-DEFAULT_RACES_PATH = "Data/races.json"
+DEFAULT_RACES_PATH = paths.RACES
 
 
-def load_races(path: str = DEFAULT_RACES_PATH) -> dict[str, RaceInfo]:
+def load_races(path: Path = DEFAULT_RACES_PATH) -> dict[str, RaceInfo]:
     raw = json.loads(Path(path).read_text(encoding="utf-8"))
     return {key: _build_race_info(key, entry) for key, entry in raw.items()}
 

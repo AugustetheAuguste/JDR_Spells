@@ -37,7 +37,7 @@ def test_ailes_de_tengu(catalog):
 
 def test_acrobate_des_corniches_resout_les_traits_raciaux(catalog):
     """« Dex 13, nain, trait racial montagnard ou stabilité » : les traits
-    raciaux sont désormais confrontés à Data/races.json au lieu d'être
+    raciaux sont désormais confrontés à Data/races/races.json au lieu d'être
     systématiquement renvoyés en vérification manuelle."""
     feat = find_feat(catalog, "Acrobate des corniches")
     nain = Character(

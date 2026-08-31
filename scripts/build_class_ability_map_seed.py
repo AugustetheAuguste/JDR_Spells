@@ -1,8 +1,8 @@
 """One-off tool: build a draft ability-keyword -> class(es) map.
 
-Cross-references Data/class_features.json against every CLASS_FEATURE_TEXT /
+Cross-references Data/classes/class_features.json against every CLASS_FEATURE_TEXT /
 UNPARSED requirement segment currently produced by the parser across the
-full Data/Dons.csv catalog, and writes a draft file for manual curation.
+full Data/dons/Dons.csv catalog, and writes a draft file for manual curation.
 
 Standalone script, not imported by the pf1_dons package. No network access.
 """
@@ -14,12 +14,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from pf1_dons import paths
 from pf1_dons.data_loader import load_catalog
 from pf1_dons.models import OrGroup, RequirementType
 from pf1_dons.parser import KNOWN_CLASSES, _normalize
 
-CLASS_FEATURES_PATH = "Data/class_features.json"
-DRAFT_OUTPUT_PATH = "Data/class_ability_map.draft.json"
+CLASS_FEATURES_PATH = paths.CLASS_FEATURES
+DRAFT_OUTPUT_PATH = paths.CLASS_ABILITY_MAP_DRAFT
 
 
 def build_reverse_index(class_to_levels: dict) -> dict[str, set[str]]:

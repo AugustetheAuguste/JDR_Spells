@@ -10,10 +10,11 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Optional
 
+from . import paths
 from .character_profile import CharacterProfile
 from .models import FeatSlot
 
-DEFAULT_CHARACTERS_DIR = Path("Data/characters")
+DEFAULT_CHARACTERS_DIR = paths.CHARACTERS_DIR
 
 
 def _character_path(name: str, base_dir: Optional[Path] = None) -> Path:

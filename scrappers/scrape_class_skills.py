@@ -1,5 +1,5 @@
 """Récupère les compétences de classe et la formule de points de compétence
-sur pathfinder-fr.org et produit Data/class_skills.json."""
+sur pathfinder-fr.org et produit Data/classes/class_skills.json."""
 
 import html
 import json
@@ -7,9 +7,15 @@ import re
 import unicodedata
 import urllib.request
 from pathlib import Path
+import sys
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 
 HTML_DIR = Path("class_skills_html")
-OUT_PATH = Path("Data/class_skills.json")
+OUT_PATH = Path(paths.CLASS_SKILLS)
 BASE_URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.{slug}.ashx"
 USER_AGENT = "Mozilla/5.0"
 

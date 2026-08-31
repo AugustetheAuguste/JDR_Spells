@@ -1,5 +1,5 @@
 """Récupère les liens vers les pages dédiées des dons depuis le tableau
-récapitulatif de pathfinder-fr.org et produit Data/feat_links.json
+récapitulatif de pathfinder-fr.org et produit Data/dons/feat_links.json
 (nom de don nettoyé -> URL absolue de la page dédiée)."""
 
 import csv
@@ -8,6 +8,12 @@ import json
 import re
 import urllib.request
 from pathlib import Path
+import sys
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 
 URL = (
     "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG."
@@ -15,8 +21,8 @@ URL = (
 )
 HTML_DIR = Path("feat_table_html")
 HTML_FILE = HTML_DIR / "tableau_recapitulatif.html"
-OUT_PATH = Path("Data/feat_links.json")
-CSV_PATH = Path("Data/Dons.csv")
+OUT_PATH = Path(paths.FEAT_LINKS)
+CSV_PATH = Path(paths.DONS_CSV)
 BASE = "https://www.pathfinder-fr.org/Wiki/"
 USER_AGENT = "Mozilla/5.0"
 
@@ -104,7 +110,7 @@ def main() -> None:
             csv_names = {clean_feat_name(row["Dons"]) for row in reader if row.get("Dons")}
         missing = sorted(n for n in csv_names if n not in out)
         coverage = 100.0 * (len(csv_names) - len(missing)) / len(csv_names) if csv_names else 0.0
-        print(f"Couverture vs Data/Dons.csv : {coverage:.2f}% ({len(csv_names) - len(missing)}/{len(csv_names)})")
+        print(f"Couverture vs Data/dons/Dons.csv : {coverage:.2f}% ({len(csv_names) - len(missing)}/{len(csv_names)})")
         if missing:
             print("Noms du CSV sans lien trouvé :")
             for name in missing:

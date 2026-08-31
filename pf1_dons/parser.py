@@ -2,6 +2,7 @@ import json
 import re
 import unicodedata
 
+from . import paths
 from .class_progression import CLASS_BBA_PROGRESSION
 from .models import OrGroup, ParsedConditions, Requirement, RequirementType
 
@@ -26,13 +27,13 @@ KNOWN_RACES = {
 
 KNOWN_CLASSES = set(CLASS_BBA_PROGRESSION.keys())
 
-with open("Data/class_ability_map.json", encoding="utf-8") as f:
+with open(paths.CLASS_ABILITY_MAP, encoding="utf-8") as f:
     CLASS_ABILITY_MAP = json.load(f)["entries"]
 
 # Nature (trait racial, type de créature, anatomie, incantation, divinité,
 # alignement…) des prérequis que class_ability_map.json classe
 # `no_single_class`. Voir scripts/curate_prereq_gating.py.
-with open("Data/prereq_gating.json", encoding="utf-8") as f:
+with open(paths.PREREQ_GATING, encoding="utf-8") as f:
     PREREQ_GATING = json.load(f)["entries"]
 
 # Les mots-clés très courts produiraient des faux positifs même en recherche
@@ -124,8 +125,8 @@ def _find_gating(normalized_text: str) -> list[dict] | None:
     """Nature des prérequis reconnus dans un segment inclassable.
 
     Renvoie une liste de ``{"kind", "param", "blocking", "keyword"}`` (voir
-    ``Data/prereq_gating.json``) que ``engine.py`` sait confronter à la race,
-    à la classe, à l'alignement ou à la divinité du personnage.
+    ``Data/conditions/prereq_gating.json``) que ``engine.py`` sait confronter
+    à la race, à la classe, à l'alignement ou à la divinité du personnage.
     """
     hits = []
     for keyword, entry in GATING_BY_KEYWORD.items():

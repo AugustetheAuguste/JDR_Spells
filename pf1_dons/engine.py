@@ -5,25 +5,26 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal, Optional
 
+from . import paths
 from .class_progression import get_bba
 from .data_loader import FeatRow
 from .models import OrGroup, Requirement, RequirementType
 
 Status = Literal["eligible", "manual_check", "ineligible"]
 
-with open("Data/class_caster_info.json", encoding="utf-8") as f:
+with open(paths.CLASS_CASTER_INFO, encoding="utf-8") as f:
     CLASS_CASTER_INFO = json.load(f)
 
-with open("Data/feat_magic_info.json", encoding="utf-8") as f:
+with open(paths.FEAT_MAGIC_INFO, encoding="utf-8") as f:
     FEAT_MAGIC_INFO = json.load(f)
 
-with open("Data/feat_creature_affinity.json", encoding="utf-8") as f:
+with open(paths.FEAT_CREATURE_AFFINITY, encoding="utf-8") as f:
     FEAT_CREATURE_AFFINITY = json.load(f)
 
 # Dons dont seul le *texte d'avantage* révèle qu'ils sont réservés à une classe
 # (ex. « ajoute les sorts suivants à sa liste de druide »), leurs Conditions
 # n'en disant rien. Curé à la main : scripts/curate_feat_class_restriction.py.
-with open("Data/feat_class_restriction.json", encoding="utf-8") as f:
+with open(paths.FEAT_CLASS_RESTRICTION, encoding="utf-8") as f:
     FEAT_CLASS_RESTRICTION = json.load(f)
 
 # Recopié littéralement depuis
@@ -36,7 +37,7 @@ RACE_MAGIC_KEYWORDS = [
     "niveau de lanceur de sorts",
 ]
 
-_RACES_PATH = "Data/races.json"
+_RACES_PATH = paths.RACES
 if Path(_RACES_PATH).exists():
     _RACES_RAW = json.loads(Path(_RACES_PATH).read_text(encoding="utf-8"))
 else:
@@ -101,7 +102,7 @@ class Character:
 
     @property
     def effective_size(self) -> Optional[str]:
-        """Taille explicite, sinon celle de la race (Data/races.json).
+        """Taille explicite, sinon celle de la race (Data/races/races.json).
 
         Sans cela, tous les prérequis de taille restaient en vérification
         manuelle alors que la race la détermine dans la quasi-totalité des cas.
@@ -156,14 +157,15 @@ def magie_inaccessible(character: "Character") -> bool:
 
     Volontairement conservateur : ne renvoie ``True`` que si la classe est
     connue ET explicitement non-lanceuse (`class_grants_magic() is False`, donc
-    jamais pour une classe absente de `Data/class_caster_info.json`).
+    jamais pour une classe absente de `Data/classes/class_caster_info.json`).
     """
     return (
         class_grants_magic(character.character_class) is False
         and not race_grants_magic(character.race)
     )
 
-# Genres de prérequis (Data/prereq_gating.json) que le moteur sait trancher.
+# Genres de prérequis (Data/conditions/prereq_gating.json) que le moteur
+# sait trancher.
 # Les autres (proficiency, feat, background, generic…) restent en
 # vérification manuelle : on ne devine pas.
 # Les alternatives restent volontairement des expressions longues : un mot
@@ -394,8 +396,9 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
         # précis (capacité, niveau de lanceur, etc.) restent à vérifier
 
     # Prérequis non liés à une classe (trait racial, type de créature,
-    # anatomie, incantation, alignement, divinité) : Data/prereq_gating.json
-    # dit lesquels sont vérifiables, et sur quoi.
+    # anatomie, incantation, alignement, divinité) :
+    # Data/conditions/prereq_gating.json dit lesquels sont vérifiables, et sur
+    # quoi.
     pending: list[str] = []
     satisfied: list[str] = []
     normalized_text = _normalize(req.payload.get("text", req.raw_text))

@@ -1,11 +1,11 @@
 """Curation : dons réservés à une classe par leur *texte d'avantage*.
 
-Certains dons n'ont aucun prérequis de classe dans `Data/Dons.csv` mais leur
+Certains dons n'ont aucun prérequis de classe dans `Data/dons/Dons.csv` mais leur
 avantage n'a de sens que pour une classe précise — typiquement « le personnage
 ajoute les sorts suivants à sa liste de druide ». Le signal est donc dans
-`Data/feat_details.json` (avantages/description), pas dans les Conditions.
+`Data/dons/feat_details.json` (avantages/description), pas dans les Conditions.
 
-Ce script produit `Data/feat_class_restriction.json`. Comme
+Ce script produit `Data/dons/feat_class_restriction.json`. Comme
 `class_ability_map.json` et `class_caster_info.json`, c'est un fichier **curé à
 la main** : `candidates()` ne sert qu'à régénérer la liste de candidats à
 relire, et seules les entrées transcrites dans RESTRICTIONS ci-dessous sont
@@ -22,10 +22,15 @@ import sys
 import unicodedata
 from pathlib import Path
 
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
 
-DETAILS = Path("Data/feat_details.json")
-OUT_PATH = Path("Data/feat_class_restriction.json")
+DETAILS = Path(paths.FEAT_DETAILS)
+OUT_PATH = Path(paths.FEAT_CLASS_RESTRICTION)
 ANALYSIS_DOC = "build/feat-detail-and-magic-gating/OUTPUT_benefit_text_class_signal.md"
 
 VALID_CLASSES = set(CLASS_BBA_PROGRESSION.keys())
@@ -64,7 +69,7 @@ RESTRICTIONS = {
             "neuf niveaux de sorts et retire les sorts de feu). Sans niveaux de "
             "druide, il n'a aucun effet. Ses Conditions ne mentionnent qu'un "
             "alignement et une divinité, d'où l'absence de restriction détectable "
-            "dans Data/Dons.csv."
+            "dans Data/dons/Dons.csv."
         ),
     },
 }

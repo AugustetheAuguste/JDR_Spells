@@ -2,13 +2,13 @@
 
 Standalone script (not imported by the `pf1_dons` package, matching the
 existing pattern of `scrappers/tag_feat_categories.py`). Reads
-`Data/feat_details.json` (produced by Step 06's
-`scrappers/scrape_feat_details.py`) and writes `Data/feat_magic_info.json`,
+`Data/dons/feat_details.json` (produced by Step 06's
+`scrappers/scrape_feat_details.py`) and writes `Data/dons/feat_magic_info.json`,
 tagging each feat with `is_magic` (the feat only has real
 sense/benefit for a character with access to magic) and
 `needs_manual_check` (insufficient confidence to decide automatically),
 mirroring the `needs_manual_check` convention used by
-`Data/feat_categories.json`.
+`Data/dons/feat_categories.json`.
 
 The three keyword lists below (STRONG_MAGIC_KEYWORDS, WEAK_MAGIC_KEYWORDS,
 EXCLUSION_PHRASES) are transcribed literally from Step 03's
@@ -22,9 +22,15 @@ Usage:
 import json
 import unicodedata
 from pathlib import Path
+import sys
 
-IN_PATH = Path("Data/feat_details.json")
-OUT_PATH = Path("Data/feat_magic_info.json")
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
+
+IN_PATH = Path(paths.FEAT_DETAILS)
+OUT_PATH = Path(paths.FEAT_MAGIC_INFO)
 CALIBRATION_DOC = (
     "build/feat-detail-and-magic-gating/OUTPUT_vocab_and_markup_calibration.md"
 )

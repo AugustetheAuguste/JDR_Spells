@@ -1,5 +1,5 @@
 """Derive per-class bonus-feat levels from the already-scraped
-``Data/class_features.json`` and write ``Data/class_bonus_feats.json``.
+``Data/classes/class_features.json`` and write ``Data/classes/class_bonus_feats.json``.
 
 Standalone script, not imported by the ``pf1_dons`` package (matches the
 pattern established by ``extract_class_features.py``). Performs no network
@@ -10,9 +10,15 @@ access: it is a pure JSON transformation over data already produced by
 import json
 import unicodedata
 from pathlib import Path
+import sys
 
-IN_PATH = Path("Data/class_features.json")
-OUT_PATH = Path("Data/class_bonus_feats.json")
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
+
+IN_PATH = Path(paths.CLASS_FEATURES)
+OUT_PATH = Path(paths.CLASS_BONUS_FEATS)
 
 BONUS_FEAT_MARKERS = ["don supplementaire", "dons supplementaires"]
 

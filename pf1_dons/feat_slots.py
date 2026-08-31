@@ -2,14 +2,15 @@ import json
 from pathlib import Path
 from typing import Optional
 
+from . import paths
 from .class_progression import _normalize_class_name
 from .models import FeatSlot, RaceInfo
 from .race_loader import get_race
 
-DEFAULT_CLASS_BONUS_FEATS_PATH = "Data/class_bonus_feats.json"
+DEFAULT_CLASS_BONUS_FEATS_PATH = paths.CLASS_BONUS_FEATS
 
 
-def load_class_bonus_feats(path: str = DEFAULT_CLASS_BONUS_FEATS_PATH) -> dict[str, dict]:
+def load_class_bonus_feats(path: Path = DEFAULT_CLASS_BONUS_FEATS_PATH) -> dict[str, dict]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 

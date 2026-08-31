@@ -1,5 +1,5 @@
 """Récupère les traits raciaux standards sur pathfinder-fr.org et produit
-Data/races.json (modificateurs de caractéristiques, taille, vitesse, dons
+Data/races/races.json (modificateurs de caractéristiques, taille, vitesse, dons
 supplémentaires, rangs de compétence bonus, et texte brut des traits)."""
 
 import html
@@ -8,9 +8,15 @@ import re
 import unicodedata
 import urllib.request
 from pathlib import Path
+import sys
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 
 HTML_DIR = Path("races_html")
-OUT_PATH = Path("Data/races.json")
+OUT_PATH = Path(paths.RACES)
 BASE_URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.{slug}.ashx"
 USER_AGENT = "Mozilla/5.0"
 

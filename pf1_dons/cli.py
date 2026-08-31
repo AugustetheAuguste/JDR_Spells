@@ -11,6 +11,7 @@ import json
 import sys
 from pathlib import Path
 
+from . import paths
 from .character_profile import (
     SlotAssignmentError,
     assign_feat,
@@ -141,7 +142,7 @@ def _print_summary(profile) -> None:
         print(f"  {slot.slot_id} (niveau {slot.level_gained}, {slot.source}){restriction} -> {state}")
 
 
-def _load_feat_categories(path: str = "Data/feat_categories.json") -> dict:
+def _load_feat_categories(path: Path = paths.FEAT_CATEGORIES) -> dict:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 

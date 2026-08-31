@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pytest
 
+from pf1_dons import paths
 from pf1_dons.character_profile import (
     SlotAssignmentError,
     assign_feat,
@@ -32,7 +33,7 @@ def class_bonus_feats():
 
 @pytest.fixture(scope="module")
 def feat_categories():
-    return json.loads(Path("Data/feat_categories.json").read_text(encoding="utf-8"))
+    return json.loads(Path(paths.FEAT_CATEGORIES).read_text(encoding="utf-8"))
 
 
 def test_create_profile_slot_count(races, class_bonus_feats):

@@ -1,8 +1,8 @@
 """One-off tool: build a draft class -> spellcasting-access map.
 
-Cross-references Data/class_features.json against the fixed list of known
+Cross-references Data/classes/class_features.json against the fixed list of known
 classes in pf1_dons/class_progression.py::CLASS_BBA_PROGRESSION, and writes a
-best-effort draft (Data/class_caster_info.draft.json) flagging which classes
+best-effort draft (Data/classes/class_caster_info.draft.json) flagging which classes
 appear to have spellcasting access, based on French keyword hits in their
 class-feature progression text.
 
@@ -20,12 +20,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from pf1_dons import paths
 from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
 
-CLASS_FEATURES_PATH = "Data/class_features.json"
-DRAFT_OUTPUT_PATH = "Data/class_caster_info.draft.json"
+CLASS_FEATURES_PATH = paths.CLASS_FEATURES
+DRAFT_OUTPUT_PATH = paths.CLASS_CASTER_INFO_DRAFT
 
-# Calibrated against real Data/class_features.json entries: known casters
+# Calibrated against real Data/classes/class_features.json entries: known casters
 # (magicien, pretre, ensorceleur, druide, barde, oracle) all hit one of these,
 # known non-casters (guerrier, barbare, moine, roublard) hit none of them.
 SPELLCASTING_KEYWORDS = [

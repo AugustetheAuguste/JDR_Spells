@@ -1,11 +1,13 @@
 from dataclasses import dataclass
+from pathlib import Path
 
 import pandas as pd
 
+from . import paths
 from .models import ParsedConditions
 from .parser import build_normalized_feats, parse_conditions
 
-DEFAULT_CSV_PATH = "Data/Dons.csv"
+DEFAULT_CSV_PATH = paths.DONS_CSV
 
 
 @dataclass
@@ -18,7 +20,7 @@ class FeatRow:
     parsed: ParsedConditions
 
 
-def load_raw(path: str = DEFAULT_CSV_PATH) -> pd.DataFrame:
+def load_raw(path: Path = DEFAULT_CSV_PATH) -> pd.DataFrame:
     return pd.read_csv(path, encoding="utf-8")
 
 
@@ -54,7 +56,7 @@ def build_catalog(df: pd.DataFrame, all_feat_names: set[str] | None = None) -> l
     return catalog
 
 
-def load_catalog(path: str = DEFAULT_CSV_PATH) -> list[FeatRow]:
+def load_catalog(path: Path = DEFAULT_CSV_PATH) -> list[FeatRow]:
     df = load_raw(path)
     all_feat_names = {clean_feat_name(n) for n in df["Dons"]}
     df = filter_valid_rows(df)

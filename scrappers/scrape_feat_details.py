@@ -1,7 +1,7 @@
 """Récupère la page détaillée de chaque don sur pathfinder-fr.org et produit
-Data/feat_details.json : description narrative complète, rubriques
+Data/dons/feat_details.json : description narrative complète, rubriques
 structurées (Source, Conditions, Avantages, Spécial, Normal) et texte brut
-intégral en fallback, à partir de Data/feat_links.json.
+intégral en fallback, à partir de Data/dons/feat_links.json.
 
 Le contrat HTML des rubriques est celui figé par
 build/feat-detail-and-magic-gating/OUTPUT_vocab_and_markup_calibration.md
@@ -15,10 +15,16 @@ import time
 import unicodedata
 import urllib.request
 from pathlib import Path
+import sys
+
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
 
 HTML_DIR = Path("feat_pages_html")
-LINKS_PATH = Path("Data/feat_links.json")
-OUT_PATH = Path("Data/feat_details.json")
+LINKS_PATH = Path(paths.FEAT_LINKS)
+OUT_PATH = Path(paths.FEAT_DETAILS)
 USER_AGENT = "Mozilla/5.0"
 REQUEST_DELAY_SECONDS = 0.3
 

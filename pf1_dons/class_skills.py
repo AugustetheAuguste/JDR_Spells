@@ -4,8 +4,9 @@ from typing import Optional
 
 from pf1_dons.class_progression import _normalize_class_name
 from pf1_dons.models import ClassSkillEntry, ClassSkillInfo, SkillPointsFormula
+from . import paths
 
-DEFAULT_CLASS_SKILLS_PATH = "Data/class_skills.json"
+DEFAULT_CLASS_SKILLS_PATH = paths.CLASS_SKILLS
 
 
 def _build(key: str, entry: dict) -> ClassSkillInfo:
@@ -18,7 +19,7 @@ def _build(key: str, entry: dict) -> ClassSkillInfo:
     )
 
 
-def load_class_skills(path: str = DEFAULT_CLASS_SKILLS_PATH) -> dict[str, ClassSkillInfo]:
+def load_class_skills(path: Path = DEFAULT_CLASS_SKILLS_PATH) -> dict[str, ClassSkillInfo]:
     raw = json.loads(Path(path).read_text(encoding="utf-8"))
     return {key: _build(key, entry) for key, entry in raw.items()}
 

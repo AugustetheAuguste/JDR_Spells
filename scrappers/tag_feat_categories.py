@@ -1,8 +1,8 @@
 """Best-effort feat category tagger.
 
 Standalone script (not imported by the `pf1_dons` package, matching the
-existing pattern of `extract_class_features.py`). Reads `Data/Dons.csv` and
-writes `Data/feat_categories.json`, tagging each feat with zero or more
+existing pattern of `extract_class_features.py`). Reads `Data/dons/Dons.csv` and
+writes `Data/dons/feat_categories.json`, tagging each feat with zero or more
 best-effort category keywords derived from its name and benefit text
 (`Avantages`). Feats that match no category are flagged
 `"needs_manual_check": true`, mirroring the `needs_manual_check` convention
@@ -17,9 +17,15 @@ import unicodedata
 from pathlib import Path
 
 import pandas as pd
+import sys
 
-IN_PATH = Path("Data/Dons.csv")
-OUT_PATH = Path("Data/feat_categories.json")
+# Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from pf1_dons import paths
+
+IN_PATH = Path(paths.DONS_CSV)
+OUT_PATH = Path(paths.FEAT_CATEGORIES)
 
 # category -> list of keyword cues (matched case/accent-insensitively as
 # substrings of the normalized name + benefit text). Kept intentionally
