@@ -35,15 +35,28 @@ def test_ailes_de_tengu(catalog):
     assert evaluate_feat(feat, niv3_tengu).status == "ineligible"
 
 
-def test_acrobate_des_corniches_forces_manual_check(catalog):
+def test_acrobate_des_corniches_resout_les_traits_raciaux(catalog):
+    """« Dex 13, nain, trait racial montagnard ou stabilité » : les traits
+    raciaux sont désormais confrontés à Data/races.json au lieu d'être
+    systématiquement renvoyés en vérification manuelle."""
     feat = find_feat(catalog, "Acrobate des corniches")
-    character = Character(
+    nain = Character(
         character_class="Guerrier",
         level=5,
         race="nain",
         ability_scores={"Dex": 13},
     )
-    assert evaluate_feat(feat, character).status == "manual_check"
+    # Le nain possède bien le trait « Stabilité », donc l'alternative est tenue.
+    assert evaluate_feat(feat, nain).status == "eligible"
+
+    humain = Character(
+        character_class="Guerrier",
+        level=5,
+        race="humain",
+        ability_scores={"Dex": 13},
+    )
+    # ...et un humain échoue dès le prérequis de race.
+    assert evaluate_feat(feat, humain).status == "ineligible"
 
 
 def test_full_catalog_has_no_exceptions_and_mixed_statuses(catalog):

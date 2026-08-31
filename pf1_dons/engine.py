@@ -1,4 +1,5 @@
 import json
+import re
 import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -18,6 +19,12 @@ with open("Data/feat_magic_info.json", encoding="utf-8") as f:
 
 with open("Data/feat_creature_affinity.json", encoding="utf-8") as f:
     FEAT_CREATURE_AFFINITY = json.load(f)
+
+# Dons dont seul le *texte d'avantage* révèle qu'ils sont réservés à une classe
+# (ex. « ajoute les sorts suivants à sa liste de druide »), leurs Conditions
+# n'en disant rien. Curé à la main : scripts/curate_feat_class_restriction.py.
+with open("Data/feat_class_restriction.json", encoding="utf-8") as f:
+    FEAT_CLASS_RESTRICTION = json.load(f)
 
 # Recopié littéralement depuis
 # build/feat-detail-and-magic-gating/OUTPUT_vocab_and_markup_calibration.md,
@@ -82,10 +89,45 @@ class Character:
     ability_scores: Optional[dict[str, int]] = None
     known_feats: Optional[set[str]] = None
     skill_ranks: Optional[dict[str, int]] = None
+    # Renseignés, ils permettent de trancher les prérequis d'alignement
+    # ("alignement Bon") et de culte ("suivant de Torag") au lieu de les
+    # renvoyer systématiquement en vérification manuelle.
+    alignment: Optional[str] = None
+    deity: Optional[str] = None
 
     @property
     def bba(self) -> int:
         return get_bba(self.character_class, self.level)
+
+    @property
+    def effective_size(self) -> Optional[str]:
+        """Taille explicite, sinon celle de la race (Data/races.json).
+
+        Sans cela, tous les prérequis de taille restaient en vérification
+        manuelle alors que la race la détermine dans la quasi-totalité des cas.
+        """
+        if self.size is not None:
+            return self.size.upper()
+        if self.race is None:
+            return None
+        entry = _RACES_RAW.get(_normalize(self.race))
+        size = (entry or {}).get("size")
+        return size.upper() if size else None
+
+    @property
+    def racial_trait_text(self) -> Optional[str]:
+        """Noms + descriptions des traits raciaux, normalisés, ou None si la
+        race est inconnue (auquel cas on ne conclut rien)."""
+        if self.race is None:
+            return None
+        entry = _RACES_RAW.get(_normalize(self.race))
+        if entry is None:
+            return None
+        parts = []
+        for trait in entry.get("traits", []):
+            parts.append(trait.get("name", ""))
+            parts.append(trait.get("description", ""))
+        return _normalize(" | ".join(parts))
 
     def skill_rank(self, skill: str) -> Optional[int]:
         if self.skill_ranks is not None and skill in self.skill_ranks:
@@ -102,10 +144,176 @@ class EligibilityResult:
     reasons: list[str] = field(default_factory=list)
 
 
+SIZE_ORDER = ["TP", "P", "M", "G", "TG", "C"]
+
+
+# « suivant de X » / « suivant d'X » / « suivant du X » -> X
+_DEITY_PREFIX_RE = re.compile(r"^suivant\s+(?:de\s+la\s+|de\s+l'|de\s+|du\s+|des\s+|d')")
+
+
+def magie_inaccessible(character: "Character") -> bool:
+    """Le personnage n'a *aucun* accès à la magie, ni par sa classe ni par sa race.
+
+    Volontairement conservateur : ne renvoie ``True`` que si la classe est
+    connue ET explicitement non-lanceuse (`class_grants_magic() is False`, donc
+    jamais pour une classe absente de `Data/class_caster_info.json`).
+    """
+    return (
+        class_grants_magic(character.character_class) is False
+        and not race_grants_magic(character.race)
+    )
+
+# Genres de prérequis (Data/prereq_gating.json) que le moteur sait trancher.
+# Les autres (proficiency, feat, background, generic…) restent en
+# vérification manuelle : on ne devine pas.
+# Les alternatives restent volontairement des expressions longues : un mot
+# isolé ("langue", "nage", "vol") apparaît dans des traits raciaux sans rapport
+# (le trait « Langues » de toutes les races, par exemple) et produirait des
+# dons éligibles à tort.
+_ANATOMY_SYNONYMS = {
+    "attaque de morsure": ["attaque de morsure", "arme naturelle (morsure)", "morsure ("],
+    "arme naturelle": ["arme naturelle", "armes naturelles"],
+    "attaques naturelles multiples": ["armes naturelles", "attaques naturelles"],
+    "griffes": ["griffes du felin", "arme naturelle (griffes)", "griffes ("],
+    "armure naturelle": ["armure naturelle"],
+    "vitesse de vol": ["vitesse de vol", "vol a la vitesse", "peut voler"],
+    "vitesse de nage": ["vitesse de nage", "vitesse de deplacement a la nage"],
+    "vision dans le noir": ["vision dans le noir"],
+    "reduction de degats": ["reduction de degats"],
+    "queue": ["queue prehensile", "arme naturelle (queue)"],
+    "langue gluante": ["langue gluante"],
+    "trois mains": ["trois mains"],
+    "morphologie bipede": ["bipede"],
+    "regeneration": ["regeneration"],
+    "retenir son souffle": ["retenir son souffle"],
+    "attaque speciale": ["attaque speciale"],
+}
+
+
+def _gating_verdict(hit: dict, character: Character) -> tuple[bool | None, str]:
+    kind, param = hit["kind"], hit["param"]
+    keyword = hit["keyword"]
+
+    if kind == "spellcasting":
+        if magie_inaccessible(character):
+            return False, (
+                f"prérequis d'incantation ({keyword}) ; ni la classe "
+                f"{character.character_class} ni la race "
+                f"{character.race or 'non fournie'} ne donnent accès à la magie"
+            )
+        return None, f"prérequis d'incantation à vérifier : {keyword}"
+
+    if kind == "class_ability":
+        classes = param or []
+        if _normalize(character.character_class) in classes:
+            return None, f"capacité de classe à vérifier ({keyword})"
+        return False, (
+            f"capacité de classe « {keyword} » réservée à {'/'.join(classes)} ; "
+            f"{character.character_class} n'y a pas accès"
+        )
+
+    if kind == "no_class_levels":
+        classes = param or []
+        if _normalize(character.character_class) in classes:
+            return False, (
+                f"{keyword} : {character.character_class} est justement une de "
+                f"ces classes"
+            )
+        return True, f"{keyword} : {character.character_class} n'en fait pas partie"
+
+    if kind == "mythic":
+        # Le moteur ne modélise pas les niveaux mythiques : un personnage est
+        # non-mythique, donc le prérequis « non-mythique uniquement » est tenu.
+        return True, "personnage non-mythique (les niveaux mythiques ne sont pas modélisés)"
+
+    if kind in ("racial_trait", "creature_type", "anatomy"):
+        traits = character.racial_trait_text
+        if traits is None:
+            return None, f"race non fournie ou inconnue (requiert : {keyword})"
+        if kind == "creature_type" and _normalize(param or "") in _normalize(character.race or ""):
+            return True, f"race {character.race} correspond à {param}"
+        needles = (
+            _ANATOMY_SYNONYMS.get(param, [param or keyword])
+            if kind == "anatomy"
+            else [param or keyword]
+        )
+        if any(_normalize(n) and _normalize(n) in traits for n in needles):
+            return True, f"la race {character.race} accorde : {param or keyword}"
+        label = {
+            "racial_trait": "trait racial",
+            "creature_type": "type/race de créature",
+            "anatomy": "capacité physique innée",
+        }[kind]
+        return False, (
+            f"{label} requis « {param or keyword} » ; la race "
+            f"{character.race} ne l'accorde pas"
+        )
+
+    if kind == "alignment":
+        if character.alignment is None:
+            return None, f"alignement non renseigné (requiert : {keyword})"
+        alignment = _normalize(character.alignment)
+        if param is None:
+            return None, f"contrainte d'alignement à arbitrer : {keyword}"
+        target = _normalize(param)
+        if target.startswith("non-"):
+            forbidden = target[4:]
+            ok = forbidden not in alignment
+            return ok, (
+                f"alignement {character.alignment} "
+                f"{'compatible' if ok else 'incompatible'} avec {param}"
+            )
+        ok = all(word in alignment for word in target.split())
+        return ok, (
+            f"alignement {character.alignment} "
+            f"{'correspond' if ok else 'ne correspond pas'} à {param}"
+        )
+
+    if kind == "deity":
+        if character.deity is None:
+            return None, f"divinité non renseignée (requiert : {keyword})"
+        if keyword.startswith("ne venere pas"):
+            return False, f"le personnage vénère {character.deity} ; {keyword}"
+        deity = _normalize(character.deity)
+        if keyword.startswith(("suivant de ", "suivant d'", "suivant du ")):
+            # `lstrip` prend un *ensemble de caractères*, pas un préfixe :
+            # « suivant de dahak » -> « de dahak » -> lstrip("de'u ") mangeait
+            # aussi le « d » de Dahak et rendait « ahak ». Retirer le préfixe
+            # comme un préfixe.
+            wanted = _DEITY_PREFIX_RE.sub("", keyword).strip()
+            ok = bool(wanted) and (wanted in deity or deity in wanted)
+            return ok, (
+                f"divinité {character.deity} "
+                f"{'correspond' if ok else 'ne correspond pas'} à « {wanted} »"
+            )
+        return True, f"le personnage vénère {character.deity} ({keyword})"
+
+    return None, f"à vérifier manuellement ({kind}) : {keyword}"
+
+
 def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool | None, str]:
     if req.type == RequirementType.LEVEL:
         ok = character.level >= req.payload["min"]
         return ok, f"niveau {character.level} {'>=' if ok else '<'} {req.payload['min']} requis"
+
+    if req.type == RequirementType.LEVEL_EXACT:
+        ok = character.level == req.payload["exact"]
+        return ok, (
+            f"don réservé au niveau {req.payload['exact']} exactement ; "
+            f"le personnage est niveau {character.level}"
+        )
+
+    if req.type == RequirementType.CLASS_LEVEL:
+        if _normalize(character.character_class) != req.payload["class_name"]:
+            return False, (
+                f"requiert {req.payload['class_name']} niveau {req.payload['min']} ; "
+                f"{character.character_class} n'y correspond pas"
+            )
+        ok = character.level >= req.payload["min"]
+        return ok, (
+            f"{req.payload['class_name']} niveau {character.level} "
+            f"{'>=' if ok else '<'} {req.payload['min']} requis"
+        )
 
     if req.type == RequirementType.BBA:
         ok = character.bba >= req.payload["min"]
@@ -121,7 +329,16 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
         return ok, f"{req.payload['ability']} {score} {'>=' if ok else '<'} {req.payload['min']} requis"
 
     if req.type == RequirementType.CASTER_LEVEL:
-        return None, f"NLS {req.payload['min']} requis (non dérivable automatiquement)"
+        # Un NLS (niveau de lanceur de sorts) exige d'être lanceur de sorts.
+        # La valeur exacte reste non dérivable, mais l'*absence totale* d'accès
+        # à la magie, elle, tranche : un guerrier n'aura jamais de NLS 1.
+        if magie_inaccessible(character):
+            return False, (
+                f"NLS {req.payload['min']} requis ; ni la classe "
+                f"{character.character_class} ni la race "
+                f"{character.race or 'non fournie'} ne donnent accès à la magie"
+            )
+        return None, f"NLS {req.payload['min']} requis (valeur non dérivable automatiquement)"
 
     if req.type == RequirementType.SKILL_RANKS:
         ranks = character.skill_rank(req.payload["skill"])
@@ -137,10 +354,20 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
         return ok, f"don prérequis {req.payload['feat_name']} {'possédé' if ok else 'non possédé'}"
 
     if req.type == RequirementType.SIZE:
-        if character.size is None:
+        actual = character.effective_size
+        if actual is None:
             return None, f"taille non fournie (requiert {req.payload['size']})"
-        ok = character.size.upper() == req.payload["size"]
-        return ok, f"taille {character.size} {'correspond' if ok else 'ne correspond pas'} à {req.payload['size']}"
+        comparator = req.payload.get("comparator", "exact")
+        wanted = req.payload["size"]
+        if actual not in SIZE_ORDER or wanted not in SIZE_ORDER:
+            return None, f"taille {character.size} non comparable à {wanted}"
+        delta = SIZE_ORDER.index(actual) - SIZE_ORDER.index(wanted)
+        ok = {"exact": delta == 0, "min": delta >= 0, "max": delta <= 0}[comparator]
+        label = {"exact": "", "min": " ou plus grand", "max": " ou plus petit"}[comparator]
+        return ok, (
+            f"taille {actual} {'correspond' if ok else 'ne correspond pas'} "
+            f"à {wanted}{label}"
+        )
 
     if req.type == RequirementType.RACE:
         if character.race is None:
@@ -166,11 +393,37 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
         # la classe correspond à une des classes impliquées : les détails
         # précis (capacité, niveau de lanceur, etc.) restent à vérifier
 
+    # Prérequis non liés à une classe (trait racial, type de créature,
+    # anatomie, incantation, alignement, divinité) : Data/prereq_gating.json
+    # dit lesquels sont vérifiables, et sur quoi.
+    pending: list[str] = []
+    satisfied: list[str] = []
+    normalized_text = _normalize(req.payload.get("text", req.raw_text))
+    for hit in req.payload.get("gating", []):
+        if not hit.get("blocking"):
+            continue
+        ok, reason = _gating_verdict(hit, character)
+        if ok is False:
+            return False, reason
+        if ok is None:
+            pending.append(reason)
+        elif hit["keyword"] == normalized_text:
+            # Le mot-clé couvre tout le segment : rien d'autre à vérifier.
+            satisfied.append(reason)
+    if pending:
+        return None, " ; ".join(pending)
+    if satisfied:
+        return True, satisfied[0]
+
     return None, f"à vérifier manuellement : {req.raw_text}"
 
 
 def evaluate_or_group(group: OrGroup, character: Character) -> tuple[bool | None, str]:
-    results = [evaluate_requirement(opt, character) for opt in group.options]
+    # Une option réduite à un fragment de découpage ("… ou familier" dans
+    # « Capacité de classe compagnon animal ou familier ») ne porte aucune
+    # information : la retenir rendrait tout le groupe indécidable.
+    options = [opt for opt in group.options if not opt.payload.get("fragment")] or group.options
+    results = [evaluate_requirement(opt, character) for opt in options]
     if any(ok is True for ok, _ in results):
         return True, f"condition OU satisfaite parmi : {group.raw_text}"
     if any(ok is None for ok, _ in results):
@@ -226,6 +479,18 @@ def evaluate_feat(feat: FeatRow, character: Character) -> EligibilityResult:
             )
         # class_ok is None (classe inconnue) -> ne pas overrider, garder le
         # statut déjà calculé par la boucle de Requirement ci-dessus
+
+    restriction = FEAT_CLASS_RESTRICTION.get(feat.name)
+    if restriction and _normalize(character.character_class) not in restriction["classes"]:
+        return EligibilityResult(
+            feat.name,
+            "ineligible",
+            [
+                f"don réservé à {'/'.join(restriction['classes'])} d'après son "
+                f"texte d'avantage (« {restriction['evidence']} ») ; "
+                f"{character.character_class} n'y a pas accès"
+            ],
+        )
 
     affinity_info = FEAT_CREATURE_AFFINITY.get(feat.name)
     if (

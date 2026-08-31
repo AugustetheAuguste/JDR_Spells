@@ -7,6 +7,8 @@ class RequirementType(Enum):
     ABILITY_SCORE = "ability_score"
     BBA = "bba"
     LEVEL = "level"
+    LEVEL_EXACT = "level_exact"
+    CLASS_LEVEL = "class_level"
     SKILL_RANKS = "skill_ranks"
     CASTER_LEVEL = "caster_level"
     SIZE = "size"
