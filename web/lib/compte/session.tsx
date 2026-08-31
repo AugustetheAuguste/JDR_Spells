@@ -274,13 +274,20 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
         const client = await obtenirClient()
         if (client === null) return indisponible()
         try {
-          const { error } = await client.auth.signOut()
+          // `scope: 'local'` and not the default. Supabase signs out globally
+          // unless told otherwise, which revokes every refresh token the account
+          // has: signing out on the laptop silently ends the phone's session too,
+          // and the phone says nothing — it keeps showing its local favourites and
+          // quietly stops synchronising. Signing out is a statement about *this*
+          // device, so that is the only session it may end.
+          const { error } = await client.auth.signOut({ scope: 'local' })
           if (error !== null) return { ok: false, message: traduireErreur(error.message) }
           return {
             ok: true,
             message:
-              'Déconnecté. Vos listes restent dans ce navigateur, et sur le compte ' +
-              'telles qu’elles y ont été envoyées.',
+              'Déconnecté de ce navigateur. Vos listes y restent, et sur le compte ' +
+              'telles qu’elles y ont été envoyées. Vos autres appareils restent ' +
+              'connectés.',
           }
         } catch (erreur) {
           return { ok: false, message: messageDe(erreur) }
@@ -359,7 +366,10 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
           // The auth row is gone server-side; the local session has to follow,
           // otherwise `onAuthStateChange` never fires and the interface keeps
           // showing someone signed in to an account that no longer exists.
-          await client.auth.signOut()
+          // `local` because a global sign-out has nothing left to talk to — the
+          // user it would revoke tokens for no longer exists, so the request fails
+          // and the local session survives the deletion.
+          await client.auth.signOut({ scope: 'local' })
           return { ok: true, message: 'Le compte a été supprimé.' }
         } catch (erreur) {
           return { ok: false, message: await messageFonction(erreur) }
