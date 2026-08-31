@@ -103,6 +103,44 @@ describe('ce que la source ne dit pas est montré, jamais cliquable', () => {
       discrimine(AXES.sauvegarde, unSeulJet.sorts, unSeulJet, EXPLORATION_VIDE),
     ).toBe(false)
   })
+
+  it('les sorts sans portée ont leur tranche, non filtrable', () => {
+    const sansPortee: IndexWeb = {
+      ...INDEX,
+      sorts: [...INDEX.sorts.slice(0, 3).map((sort) => ({ ...sort, p: null }))],
+    }
+    const tranches = AXES.portee.decouper(sansPortee.sorts, sansPortee, EXPLORATION_VIDE)
+    const absente = tranches.find((tranche) => tranche.valeur === null)
+    expect(absente?.nb).toBe(3)
+    expect(absente?.libelle).toContain('Non renseignée')
+  })
+
+  it('les sorts sans type de dégâts ont leur tranche, non filtrable', () => {
+    const sansDegats: IndexWeb = {
+      ...INDEX,
+      sorts: [...INDEX.sorts.slice(0, 3).map((sort) => ({ ...sort, td: null }))],
+    }
+    const tranches = AXES.degats.decouper(sansDegats.sorts, sansDegats, EXPLORATION_VIDE)
+    const absente = tranches.find((tranche) => tranche.valeur === null)
+    expect(absente?.nb).toBe(3)
+    expect(absente?.libelle).toContain('Non renseigné')
+  })
+})
+
+describe('portée et type de dégâts posent et retirent leur propre critère', () => {
+  it('portee : poser rejoint EtatUrl.portees, retirer le vide', () => {
+    const pose = AXES.portee.poser(EXPLORATION_VIDE, ['Personnelle'])
+    expect(pose.base.portees).toEqual(['Personnelle'])
+    expect(AXES.portee.pose(pose)).toBe(true)
+    expect(AXES.portee.retirer(pose).base.portees).toEqual([])
+  })
+
+  it('degats : poser rejoint EtatUrl.typesDegats, retirer le vide', () => {
+    const pose = AXES.degats.poser(EXPLORATION_VIDE, ['feu'])
+    expect(pose.base.typesDegats).toEqual(['feu'])
+    expect(AXES.degats.pose(pose)).toBe(true)
+    expect(AXES.degats.retirer(pose).base.typesDegats).toEqual([])
+  })
 })
 
 describe('l’axe du niveau', () => {

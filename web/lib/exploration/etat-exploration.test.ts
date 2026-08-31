@@ -61,12 +61,12 @@ describe('lire puis écrire est un point fixe', () => {
 
 describe('une valeur inconnue est écartée, jamais fatale', () => {
   it('un axe qui n’existe pas retombe sur la suggestion', () => {
-    expect(lire('axe=portee').axe).toBeNull()
+    expect(lire('axe=inexistant').axe).toBeNull()
   })
 
   it('un parcours ne garde que des axes connus, sans doublon', () => {
     // A path that visits the same axis twice is a path the breadcrumb cannot draw.
-    expect(lire('parcours=niveau,portee,niveau,ecole').parcours).toEqual([
+    expect(lire('parcours=niveau,inexistant,niveau,ecole').parcours).toEqual([
       'niveau',
       'ecole',
     ])

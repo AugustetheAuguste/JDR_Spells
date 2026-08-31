@@ -19,9 +19,10 @@
  *     axes are drawn as ranked bars, each stating its share of the subset, with
  *     the overlap written out under them.
  *
- * There is no « portée » axis, though the index carries the range: the filter state
- * has no range key, so a slice could be drawn but not clicked. An axis that cannot
- * narrow anything is a chart nobody can use.
+ * Portée and type de dégâts are axes (2026-08-31): both ride on filter keys
+ * `EtatUrl` already carried (`portees`, `typesDegats`) for the table route, so
+ * adding them here cost no schema change, only a partition `decouper` each,
+ * mirroring `AXE_SAUVEGARDE`.
  *
  * Tags are not an axis here at all, by explicit human decision (2026-08-27):
  * thirty-five tags forced into a two-step drill (a family chart, then a tag chart
@@ -46,10 +47,19 @@ import { classesChoisies } from '@/lib/exploration/classes-choisies'
 // type, would push every `poser` back into the view.
 import type { EtatExploration } from '@/lib/exploration/etat-exploration'
 
-/** The axes, in the order the exploration suggests them. Order matters: it is the
- * order a spell is looked for at the table — what class, what it does, then the
- * narrower qualifiers. */
-export const CLES_AXES = ['niveau', 'ecole', 'sauvegarde', 'composante'] as const
+/** The axes, in the order the exploration suggests them by default. Order matters
+ * as a fallback: it is the order a spell is looked for at the table — what class,
+ * what it does, then the narrower qualifiers. A reader can override which of
+ * these are offered and in what order via `preferences-roue.ts`; this array is
+ * only the default and the exhaustive list of what can exist. */
+export const CLES_AXES = [
+  'niveau',
+  'portee',
+  'degats',
+  'ecole',
+  'sauvegarde',
+  'composante',
+] as const
 
 export type CleAxe = (typeof CLES_AXES)[number]
 
@@ -315,6 +325,100 @@ const AXE_SAUVEGARDE: Axe = {
       : `Jet de sauvegarde : ${etat.base.sauvegarde.join(', ')}`,
 }
 
+const AXE_PORTEE: Axe = {
+  cle: 'portee',
+  bouton: 'Portée',
+  forme: 'donut',
+  question: () => 'Quelle portée ?',
+  disponible: (index) => index.portees.length > 0,
+  decouper: (sorts, index) => {
+    const compte = new Map<string, number>()
+    let sans = 0
+    for (const sort of sorts) {
+      const portee = sort.p === null ? undefined : index.portees[sort.p]
+      if (portee === undefined) sans += 1
+      else compte.set(portee, (compte.get(portee) ?? 0) + 1)
+    }
+    const tranches = parTaille(
+      [...compte.entries()].map(([portee, nb]) => ({
+        valeur: portee,
+        libelle: portee,
+        libelleAccessible: `Portée ${portee} — ${nb} sorts`,
+        nb,
+        ecole: null,
+      })),
+    )
+    return sans === 0
+      ? tranches
+      : [
+          ...tranches,
+          {
+            valeur: null,
+            libelle: 'Non renseignée par la source',
+            libelleAccessible: `Portée non renseignée par la source — ${sans} sorts`,
+            nb: sans,
+            ecole: null,
+          },
+        ]
+  },
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, portees: valeurs } }),
+  pose: (etat) => etat.base.portees.length > 0,
+  retirer: (etat) => ({ ...etat, base: { ...etat.base, portees: [] } }),
+  libelleChoisi: (_index, etat) =>
+    etat.base.portees.length === 0 ? null : `Portée : ${etat.base.portees.join(', ')}`,
+}
+
+const AXE_DEGATS: Axe = {
+  cle: 'degats',
+  bouton: 'Type de dégâts',
+  // A partition, not an overlap: `EntreeSort.td` is one nullable code, not an
+  // array — a spell the enrichment layer covers deals exactly one typed damage
+  // (or none), same shape as school and saving throw.
+  forme: 'donut',
+  question: () => 'Quel type de dégâts ?',
+  disponible: (index) => index.types_degats.length > 0,
+  decouper: (sorts, index) => {
+    const compte = new Map<string, number>()
+    let sans = 0
+    for (const sort of sorts) {
+      const degats = sort.td === null ? undefined : index.types_degats[sort.td]
+      if (degats === undefined) sans += 1
+      else compte.set(degats, (compte.get(degats) ?? 0) + 1)
+    }
+    const tranches = parTaille(
+      [...compte.entries()].map(([degats, nb]) => ({
+        valeur: degats,
+        libelle: degats,
+        libelleAccessible: `Type de dégâts ${degats} — ${nb} sorts`,
+        nb,
+        ecole: null,
+      })),
+    )
+    return sans === 0
+      ? tranches
+      : [
+          ...tranches,
+          {
+            valeur: null,
+            // Covers both "enrichment layer absent" and "covered, no typed damage" —
+            // the export does not distinguish the two in `td`, so neither does this
+            // slice's label.
+            libelle: 'Non renseigné ou sans dégâts typés',
+            libelleAccessible: `Type de dégâts non renseigné ou sans dégâts typés — ${sans} sorts`,
+            nb: sans,
+            ecole: null,
+          },
+        ]
+  },
+  poser: (etat, valeurs) => ({ ...etat, base: { ...etat.base, typesDegats: valeurs } }),
+  pose: (etat) => etat.base.typesDegats.length > 0,
+  retirer: (etat) => ({ ...etat, base: { ...etat.base, typesDegats: [] } }),
+  libelleChoisi: (_index, etat) =>
+    etat.base.typesDegats.length === 0
+      ? null
+      : `Type de dégâts : ${etat.base.typesDegats.join(', ')}`,
+}
+
 const AXE_COMPOSANTE: Axe = {
   cle: 'composante',
   bouton: 'Composantes',
@@ -346,6 +450,8 @@ const AXE_COMPOSANTE: Axe = {
 
 export const AXES: Readonly<Record<CleAxe, Axe>> = {
   niveau: AXE_NIVEAU,
+  portee: AXE_PORTEE,
+  degats: AXE_DEGATS,
   ecole: AXE_ECOLE,
   sauvegarde: AXE_SAUVEGARDE,
   composante: AXE_COMPOSANTE,

@@ -157,10 +157,10 @@ describe('le graphique et le forage', () => {
     // Ten flips between two ways of cutting the same subset would otherwise bury
     // the drill the back button is supposed to undo.
     await monter('classe=barde')
-    await userEvent.click(screen.getByRole('button', { name: 'École' }))
+    await userEvent.click(screen.getByRole('button', { name: 'Portée' }))
     expect(pousse).not.toHaveBeenCalled()
     expect(remplace).toHaveBeenCalledTimes(1)
-    expect(derniereCible()).toContain('axe=ecole')
+    expect(derniereCible()).toContain('axe=portee')
   })
 
   it('le découpage affiché est signalé aux technologies d’assistance', async () => {

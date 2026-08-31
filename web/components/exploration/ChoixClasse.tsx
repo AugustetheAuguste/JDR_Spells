@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import type { IndexWeb } from '@/lib/donnees/index-web'
-import { grouperClasses } from '@/lib/navigation/groupes-classes'
+import { grouperClasses, TITRE_CLASSIQUES } from '@/lib/navigation/groupes-classes'
 
 /**
  * Step one: the class or classes, before anything else.
@@ -54,52 +54,78 @@ export function ChoixClasse({
     )
   }
 
+  function grille(classes: IndexWeb['classes']) {
+    return (
+      <ul className="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(13rem,1fr))] gap-2 p-0">
+        {classes.map((classe) => {
+          const coche = selection.includes(classe.slug)
+          return (
+            <li key={classe.slug}>
+              <button
+                aria-checked={coche}
+                className={[
+                  'flex w-full items-start justify-between gap-2 rounded-panneau border px-3 py-2.5 text-left',
+                  coche
+                    ? 'border-accent bg-accent-voile'
+                    : 'border-bord bg-surface hover:border-accent hover:bg-accent-voile',
+                ].join(' ')}
+                onClick={() => basculer(classe.slug)}
+                role="checkbox"
+                type="button"
+              >
+                <span className="flex min-w-0 items-baseline gap-2">
+                  <span
+                    aria-hidden="true"
+                    className={[
+                      'mt-0.5 inline-flex size-4 shrink-0 items-center justify-center rounded-[3px] border',
+                      coche
+                        ? 'border-accent bg-accent text-surface'
+                        : 'border-bord-fort bg-surface',
+                    ].join(' ')}
+                  >
+                    {coche ? '✓' : ''}
+                  </span>
+                  {/* `whitespace-normal` overrides the flex item's implicit
+                      `nowrap`, and `break-words` is what actually lets a
+                      combined label wrap: « Arcaniste/Ensorceleur/Magicien »
+                      has no spaces, only slashes, so normal word-breaking
+                      alone still treats it as one unbreakable token and
+                      overflows the card. */}
+                  <span className="min-w-0 whitespace-normal break-words font-affichage text-grand text-encre">
+                    {classe.nom}
+                  </span>
+                </span>
+                <span className="shrink-0 font-donnees text-petit text-encre-faible">
+                  {compte.get(classe.slug) ?? 0}
+                </span>
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    )
+  }
+
   return (
     <div className="flex flex-col gap-5">
-      {grouperClasses(index).map((groupe) => (
-        <section key={groupe.titre}>
-          <h2 className="m-0 mb-2 text-petit font-semibold text-encre-douce">{groupe.titre}</h2>
-          <ul className="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(13rem,1fr))] gap-2 p-0">
-            {groupe.classes.map((classe) => {
-              const coche = selection.includes(classe.slug)
-              return (
-                <li key={classe.slug}>
-                  <button
-                    aria-checked={coche}
-                    className={[
-                      'flex w-full items-baseline justify-between gap-2 rounded-panneau border px-3 py-2.5 text-left',
-                      coche
-                        ? 'border-accent bg-accent-voile'
-                        : 'border-bord bg-surface hover:border-accent hover:bg-accent-voile',
-                    ].join(' ')}
-                    onClick={() => basculer(classe.slug)}
-                    role="checkbox"
-                    type="button"
-                  >
-                    <span className="flex items-baseline gap-2">
-                      <span
-                        aria-hidden="true"
-                        className={[
-                          'inline-flex size-4 shrink-0 items-center justify-center rounded-[3px] border',
-                          coche
-                            ? 'border-accent bg-accent text-surface'
-                            : 'border-bord-fort bg-surface',
-                        ].join(' ')}
-                      >
-                        {coche ? '✓' : ''}
-                      </span>
-                      <span className="font-affichage text-grand text-encre">{classe.nom}</span>
-                    </span>
-                    <span className="font-donnees text-petit text-encre-faible">
-                      {compte.get(classe.slug) ?? 0}
-                    </span>
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
-        </section>
-      ))}
+      {grouperClasses(index).map((groupe) =>
+        groupe.titre === TITRE_CLASSIQUES ? (
+          <section key={groupe.titre}>
+            <h2 className="m-0 mb-2 text-petit font-semibold text-encre-douce">{groupe.titre}</h2>
+            {grille(groupe.classes)}
+          </section>
+        ) : (
+          // Fourteen less-common classes behind one fold, closed by default: the
+          // point of trimming the direct list to five cards is defeated if the
+          // rest is printed right below it anyway.
+          <details className="rounded-panneau border border-bord bg-surface" key={groupe.titre}>
+            <summary className="cursor-pointer px-3 py-2.5 text-petit font-semibold text-encre-douce">
+              {groupe.titre} ({groupe.classes.length})
+            </summary>
+            <div className="px-3 pb-3">{grille(groupe.classes)}</div>
+          </details>
+        ),
+      )}
 
       <div className="flex flex-wrap items-center gap-3 border-t border-bord pt-4">
         <button

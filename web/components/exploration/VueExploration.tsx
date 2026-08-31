@@ -8,14 +8,14 @@ import { Barres } from '@/components/exploration/Barres'
 import { CheminForage } from '@/components/exploration/CheminForage'
 import { ChoixClasse } from '@/components/exploration/ChoixClasse'
 import { Donut } from '@/components/exploration/Donut'
-import { FiltreTags } from '@/components/navigation/FiltreTags'
+import { PanneauLateral } from '@/components/exploration/PanneauLateral'
+import { PersonnaliserRoue } from '@/components/exploration/PersonnaliserRoue'
 import { TableSorts } from '@/components/navigation/TableSorts'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import type { EntreeSort, IndexWeb } from '@/lib/donnees/index-web'
 import {
   AXES,
   axesDisponibles,
-  axeSuggere,
   discrimine,
   forer,
   remonter,
@@ -32,6 +32,7 @@ import {
   versQueryTableau,
   type EtatExploration,
 } from '@/lib/exploration/etat-exploration'
+import { lirePreferenceRoue } from '@/lib/exploration/preferences-roue'
 import { trierParNiveauPuisNom } from '@/lib/navigation/niveaux'
 import { appliquerFiltres } from '@/lib/recherche/filtres'
 
@@ -80,6 +81,11 @@ export function VueExploration() {
     readonly valeurs: readonly string[]
   }>({ cle: '', valeurs: [] })
 
+  // Read once, lazily, at mount — same pattern as `BasculeTheme.themeNuitInitial`:
+  // a personal preference read from `localStorage`, never from a filter, so it
+  // has no business waiting on the index fetch below.
+  const [ordreRoue, setOrdreRoue] = useState<readonly CleAxe[]>(() => lirePreferenceRoue())
+
   useEffect(() => {
     let vivant = true
     fetch('/data/index.json')
@@ -118,8 +124,11 @@ export function VueExploration() {
     const cible = `/explorer${versQueryExploration(suivant)}` as
       | '/explorer'
       | `/explorer?${string}`
-    if (historique === 'push') router.push(cible)
-    else router.replace(cible)
+    // `{ scroll: false }` always: a facet click must not re-scroll to the top of
+    // the document (CLAUDE.md § 11) — this route drills/re-slices dozens of times
+    // in a single visit, and each would otherwise cost a scroll round-trip.
+    if (historique === 'push') router.push(cible, { scroll: false })
+    else router.replace(cible, { scroll: false })
   }
 
   if (erreur !== null) {
@@ -181,13 +190,38 @@ export function VueExploration() {
     )
   }
 
-  const utilisables = axesDisponibles(index, etat).filter((axe) =>
+  // Every axis that could discriminate here — unfiltered by preference, so an
+  // `axe=` already named in a shared or hand-typed URL still renders even when
+  // it is not one of the reader's chosen wheel categories (CLAUDE.md § 3:
+  // nothing named by the URL is silently dropped).
+  const utilisablesTous = axesDisponibles(index, etat).filter((axe) =>
     discrimine(axe, sousEnsemble(axe.retirer(etat)), index, etat),
   )
-  const suggere = axeSuggere(index, etat, sousEnsemble)
+  // The reader's chosen wheel categories, in their chosen order — this is only
+  // what the button row offers to switch into, not what `axe=` may already ask
+  // for directly.
+  const rangDansPreference = new Map(ordreRoue.map((cle, rang) => [cle, rang]))
+  const utilisables = utilisablesTous
+    .filter((axe) => rangDansPreference.has(axe.cle))
+    .sort((a, b) => rangDansPreference.get(a.cle)! - rangDansPreference.get(b.cle)!)
+  // The next question to suggest, scoped to the reader's own wheel categories —
+  // the first of them, in their order, not already answered. Falls back to any
+  // discriminating axis at all only once the chosen set is exhausted, so the
+  // route still has something to show rather than stopping short.
+  const suggere =
+    utilisables.find((axe) => !axe.pose(etat))?.cle ??
+    utilisablesTous.find((axe) => !axe.pose(etat))?.cle ??
+    null
   const cleAxe: CleAxe | null =
-    etat.axe !== null && utilisables.some((axe) => axe.cle === etat.axe) ? etat.axe : suggere
+    etat.axe !== null && utilisablesTous.some((axe) => axe.cle === etat.axe) ? etat.axe : suggere
   const axe = cleAxe === null ? null : AXES[cleAxe]
+  // The active axis's own button is always offered, even when it sits outside
+  // the reader's chosen set: switching away from it has to stay reachable, and
+  // a URL naming it directly should show, in the button row, what it landed on.
+  const boutonsAxes =
+    axe !== null && !utilisables.some((autre) => autre.cle === axe.cle)
+      ? [...utilisables, axe]
+      : utilisables
 
   // The chart is cut with this axis's own answer lifted; the list below is not.
   const etatDuGraphique = axe === null ? etat : axe.retirer(etat)
@@ -264,23 +298,6 @@ export function VueExploration() {
         />
       </div>
 
-      {/* Standing, not a step in the drill: several tags across several families
-          can be posed at once, and none of them push a history entry — a filter
-          adjustment, exactly as the table route treats the same panel. */}
-      {index.tags.length === 0 ? null : (
-        <div className="mb-5 rounded-panneau border border-bord bg-surface px-4 py-4">
-          <FiltreTags
-            surTags={(tags, tagsExclus, tagsObliges) =>
-              ecrire({ ...etat, base: { ...etat.base, tags, tagsExclus, tagsObliges } }, 'replace')
-            }
-            tags={etat.base.tags}
-            tagsConnus={index.tags}
-            tagsExclus={etat.base.tagsExclus}
-            tagsObliges={etat.base.tagsObliges}
-          />
-        </div>
-      )}
-
       {sorts.length === 0 ? (
         <EtatVide
           actions={[
@@ -294,83 +311,101 @@ export function VueExploration() {
           explication="Les critères posés ne se rencontrent sur aucun sort du corpus. C’est un fait du corpus, pas une erreur : remontez d’un cran pour retrouver le dernier ensemble non vide."
           titre="Aucun sort ne réunit ces critères"
         />
-      ) : axe === null ? (
-        <div className="rounded-panneau border border-bord bg-surface px-4 py-5">
-          <p className="m-0 font-affichage text-titre3 font-semibold">Vous y êtes.</p>
-          <p className="mt-2 mb-0 max-w-[68ch] text-base text-encre-douce">
-            Plus aucun découpage ne sépare ces {sorts.length}{' '}
-            {sorts.length === 1 ? 'sort' : 'sorts'} : ils partagent tout ce que cette page
-            sait comparer. La suite se lit sur les fiches, ci-dessous.
-          </p>
-        </div>
       ) : (
-        <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
-          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-            <h2 className="m-0 font-affichage text-titre3 font-semibold">
-              {axe.question(index, etatDuGraphique)}
-            </h2>
-            <fieldset className="m-0 border-0 p-0">
-              <legend className="sr-only">Découper par</legend>
-              <div className="flex flex-wrap gap-1.5">
-                {utilisables.map((autre) => (
-                  <button
-                    aria-pressed={autre.cle === cleAxe}
-                    className={[
-                      'rounded-jeton border px-2 py-1 text-petit',
-                      autre.cle === cleAxe
-                        ? 'border-accent bg-accent-voile text-encre'
-                        : 'border-bord bg-surface text-encre-douce hover:bg-survol',
-                    ].join(' ')}
-                    key={autre.cle}
-                    // Re-slicing the same subset is not a navigation: `replace`, so
-                    // the drill stays the thing the back button undoes.
-                    onClick={() => ecrire({ ...etat, axe: autre.cle }, 'replace')}
-                    type="button"
-                  >
-                    {autre.bouton}
-                  </button>
-                ))}
+        // The wheel, on top, with its permanent tag/condition companion beside it —
+        // one column below `md` (the sidebar falls under the chart, it is never
+        // hidden: nothing here is a table column with a documented drop order).
+        <div className="grid gap-5 md:grid-cols-[1fr_320px]">
+          <div>
+            {axe === null ? (
+              <div className="rounded-panneau border border-bord bg-surface px-4 py-5">
+                <p className="m-0 font-affichage text-titre3 font-semibold">Vous y êtes.</p>
+                <p className="mt-2 mb-0 max-w-[68ch] text-base text-encre-douce">
+                  Plus aucun découpage ne sépare ces {sorts.length}{' '}
+                  {sorts.length === 1 ? 'sort' : 'sorts'} : ils partagent tout ce que cette page
+                  sait comparer. La suite se lit sur les fiches, ci-dessous.
+                </p>
               </div>
-            </fieldset>
+            ) : (
+              <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
+                <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+                  <h2 className="m-0 font-affichage text-titre3 font-semibold">
+                    {axe.question(index, etatDuGraphique)}
+                  </h2>
+                  <fieldset className="m-0 border-0 p-0">
+                    <legend className="sr-only">Découper par</legend>
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {boutonsAxes.map((autre) => (
+                        <button
+                          aria-pressed={autre.cle === cleAxe}
+                          className={[
+                            'rounded-jeton border px-2 py-1 text-petit',
+                            autre.cle === cleAxe
+                              ? 'border-accent bg-accent-voile text-encre'
+                              : 'border-bord bg-surface text-encre-douce hover:bg-survol',
+                          ].join(' ')}
+                          key={autre.cle}
+                          // Re-slicing the same subset is not a navigation: `replace`,
+                          // so the drill stays the thing the back button undoes.
+                          onClick={() => ecrire({ ...etat, axe: autre.cle }, 'replace')}
+                          type="button"
+                        >
+                          {autre.bouton}
+                        </button>
+                      ))}
+                      <PersonnaliserRoue ordre={ordreRoue} surOrdre={setOrdreRoue} />
+                    </div>
+                  </fieldset>
+                </div>
+
+                {(typeof axe.forme === 'function' ? axe.forme(etatDuGraphique) : axe.forme) ===
+                'donut' ? (
+                  <Donut
+                    legendeTotal={sortsDuGraphique.length === 1 ? 'sort' : 'sorts'}
+                    multiple={multiple}
+                    selection={selection}
+                    surChoix={basculer}
+                    total={sortsDuGraphique.length}
+                    tranches={tranches}
+                  />
+                ) : (
+                  <Barres
+                    multiple={multiple}
+                    selection={selection}
+                    surChoix={basculer}
+                    total={sortsDuGraphique.length}
+                    tranches={tranches}
+                  />
+                )}
+
+                {multiple ? (
+                  <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-bord pt-3">
+                    <button
+                      className="rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
+                      disabled={selection.length === 0}
+                      onClick={valider}
+                      type="button"
+                    >
+                      Valider ce choix
+                    </button>
+                    <p className="m-0 text-petit text-encre-douce">
+                      {selection.length === 0
+                        ? 'Cochez une ou plusieurs tranches ci-dessus, puis validez — vous pouvez en poser plusieurs à la fois.'
+                        : `${selection.length} ${selection.length === 1 ? 'tranche cochée' : 'tranches cochées'}.`}
+                    </p>
+                  </div>
+                ) : null}
+              </div>
+            )}
           </div>
 
-          {(typeof axe.forme === 'function' ? axe.forme(etatDuGraphique) : axe.forme) ===
-          'donut' ? (
-            <Donut
-              legendeTotal={sortsDuGraphique.length === 1 ? 'sort' : 'sorts'}
-              multiple={multiple}
-              selection={selection}
-              surChoix={basculer}
-              total={sortsDuGraphique.length}
-              tranches={tranches}
+          <div className="md:sticky md:top-4 md:self-start">
+            <PanneauLateral
+              etat={etat.base}
+              index={index}
+              surEtat={(base) => ecrire({ ...etat, base }, 'replace')}
             />
-          ) : (
-            <Barres
-              multiple={multiple}
-              selection={selection}
-              surChoix={basculer}
-              total={sortsDuGraphique.length}
-              tranches={tranches}
-            />
-          )}
-
-          {multiple ? (
-            <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-bord pt-3">
-              <button
-                className="rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
-                disabled={selection.length === 0}
-                onClick={valider}
-                type="button"
-              >
-                Valider ce choix
-              </button>
-              <p className="m-0 text-petit text-encre-douce">
-                {selection.length === 0
-                  ? 'Cochez une ou plusieurs tranches ci-dessus, puis validez — vous pouvez en poser plusieurs à la fois.'
-                  : `${selection.length} ${selection.length === 1 ? 'tranche cochée' : 'tranches cochées'}.`}
-              </p>
-            </div>
-          ) : null}
+          </div>
         </div>
       )}
 

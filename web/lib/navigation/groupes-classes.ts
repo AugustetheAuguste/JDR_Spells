@@ -29,7 +29,12 @@ export const TITRE_CLASSIQUES = 'Classes classiques'
 export const TITRE_AUTRES_CLASSES = 'Classes moins courantes'
 
 /**
- * The core and long-established classes, most-played first.
+ * The five classes shown directly, most-played first (human call, 2026-08-31):
+ * the two combined caster pages, then the three other classic classes with the
+ * highest spell counts. Every other class — the fourteen remaining, including
+ * `sorciere`, `inquisiteur`, `alchimiste`, `magus`, `conjurateur`,
+ * `antipaladin` — falls through to `TITRE_AUTRES_CLASSES` below a disclosure,
+ * so the picker's first screen is five cards, not nineteen.
  *
  * The three combined labels (`arcaniste-ensorceleur-magicien`,
  * `pretre-pretre-combattant-oracle`) lead because between them they cover the two
@@ -42,12 +47,6 @@ export const CLASSES_CLASSIQUES: readonly string[] = [
   'druide',
   'barde',
   'paladin',
-  'sorciere',
-  'inquisiteur',
-  'alchimiste',
-  'magus',
-  'conjurateur',
-  'antipaladin',
 ]
 
 /** Group the index's classes for a picker. Empty groups are dropped. */
