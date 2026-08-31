@@ -47,6 +47,14 @@ const EXE = join(process.env.LOCALAPPDATA, 'ms-playwright',
 await chromium.launch({ executablePath: EXE })
 ```
 
+**`build/` est gitignoré en entier (`.gitignore:22`) : les harnais ci-dessous sont
+jetables et ne survivent pas à un clone.** Ce n'est pas un oubli — c'est pourquoi
+`drive_quatre.mjs` et ses fixtures, cités par une version antérieure de cette skill,
+n'existaient plus au passage suivant. Les recettes sont donc décrites ici en
+assertions, pas en chemins de fichiers : ce qui doit être affirmé se relit, un script
+absent ne se relit pas. Générer les fixtures d'import dans le script lui-même
+(`writeFileSync` vers `tmpdir()`) plutôt que de les chercher sur le disque.
+
 ## 4. Pièges rencontrés — les connaître fait gagner une demi-heure
 
 - **Les résultats sont un `<table>`, pas des cartes.** Localiser les lignes avec
@@ -69,6 +77,16 @@ await chromium.launch({ executablePath: EXE })
   avant de conclure à une régression.
 - La clé `localStorage` des favoris est **`pf-sorts-favoris`**, de forme
   `{version, listes[{id_liste, nom, cree_le, modifie_le, sorts[]}], liste_active}`.
+- **Semer `localStorage` demande deux `goto`** : le premier pour obtenir une origine
+  où `page.evaluate` puisse écrire, le second pour que l'application relise. Le
+  magasin est lu à l'hydratation, donc écrire après coup ne se voit pas sans
+  navigation.
+- **`new URL(req.url()).pathname` exclut la query.** En interceptant PostgREST, la
+  table est `'listes'` tout court — `startsWith('listes?')` ne matche jamais, et
+  l'assertion échoue en accusant l'application. Comparer `=== 'listes'`.
+- **Un `input[type=file]` masqué se pilote quand même** : `setInputFiles()` n'a pas
+  besoin que l'élément soit visible, inutile de cliquer « Importer un fichier »
+  d'abord.
 
 ## 5. Parcours qui valent le détour
 
@@ -83,8 +101,8 @@ Ce sont ceux que la CI ne voit pas :
    **Tester les quatre branches** : navigateur vierge / liste existante ×
    « Fusionner » / « Créer de nouvelles listes ». Elles ne se comportent pas pareil
    (cf. le défaut trouvé le 2026-08-25 : import dans un navigateur vierge laissant
-   `liste_active` à `null`). Recette : `build/verify_harness/drive_quatre.mjs`,
-   qui sème chaque branche, affirme les invariants et sort 1 au premier échec.
+   `liste_active` à `null`). Semer chaque branche, affirmer les invariants, sortir 1
+   au premier échec.
    - La branche « vierge + Fusionner » est **inatteignable par l'interface** : le
      bouton est `disabled` avec un `title` qui l'explique. La preuve de cette
      branche est donc cet état-là, pas un import.
@@ -94,8 +112,23 @@ Ce sont ceux que la CI ne voit pas :
    - Deux sondes qui valent les quatre branches : un fichier à **deux** listes
      (quelle liste devient active ?) et un fichier à **zéro** liste (le message
      doit dire que le fichier était vide, jamais « Import terminé »).
-   - Fixtures : `export_favoris.json`, `export_deux.json`, `export_vide.json`.
 5. **Comparaison** : cocher deux classes → `?classes=barde,druide`, colonne d'écart.
    La quatrième case est désactivée, avec message.
 6. **Sondes** : `localStorage` corrompu, fichier importé non conforme, valeurs de
    filtre absurdes dans l'URL, requête sans résultat, route inexistante.
+7. **Compte et synchronisation** : le seul parcours dont le critère est **réseau et
+   non visuel** — l'interface affiche volontiers « à jour » au-dessus d'une synchro
+   qui n'a rien envoyé, et c'est exactement la panne du 2026-08-31
+   (`docs/synchro_favoris_supabase.md`). Intercepter avec `page.route()` :
+   `**/auth/v1/token**` et `**/auth/v1/user**` répondent une session factice,
+   `**/auth/v1/logout**` un 204, `**/rest/v1/**` un `[]` sur `GET` et un 201 sans
+   corps sur les autres. Le JWT peut être **non signé** : `supabase-js` lit `sub` et
+   `exp` côté navigateur, il ne vérifie pas la signature. Intercepter et ne pas
+   appeler n'est pas une commodité — la seule alternative est d'écrire dans le projet
+   Supabase de production.
+   - Ce qu'il faut affirmer : **déconnecté, zéro appel `/rest/v1`** (la promesse du
+     § 11) ; connecté, un `GET .../listes` **puis** un `POST .../listes`, dans cet
+     ordre ; « Synchroniser maintenant » en émet à son tour ; la déconnexion part en
+     `?scope=local` et **jamais** `global`, qui éteindrait le téléphone.
+   - Un parcours entièrement déconnecté doit voir `**/*.supabase.co/**` compter zéro
+     requête. C'est ce qui prouve que monter le provider partout n'a rien armé.
