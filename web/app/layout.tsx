@@ -3,9 +3,8 @@ import Link from 'next/link'
 import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
+import { Fournisseurs } from '@/components/Fournisseurs'
 import { MOTS } from '@/lib/design/tokens'
-import { FournisseurSession } from '@/lib/compte/session'
-import { FournisseurFavoris } from '@/lib/favoris/contexte'
 
 export const metadata: Metadata = {
   title: {
@@ -71,13 +70,14 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
           </div>
         </header>
 
-        {/* The provider wraps the content, not the shell: it is a client
-            component, and hoisting it above the header would drag the whole
-            static chrome into the client bundle for nothing. */}
+        {/* The providers wrap the content, not the shell: they are client
+            components, and hoisting them above the header would drag the whole
+            static chrome into the client bundle for nothing. The composition and
+            its order live in `Fournisseurs`, where a test can reach them — see the
+            comment there: assembling them here is how synchronisation shipped
+            without ever being mounted. */}
         <main className="mx-auto max-w-[1180px] px-4 py-5" id="contenu">
-          <FournisseurSession>
-            <FournisseurFavoris>{children}</FournisseurFavoris>
-          </FournisseurSession>
+          <Fournisseurs>{children}</Fournisseurs>
         </main>
 
         <footer className="mt-8 border-t border-bord px-4 py-4 text-petit text-encre-douce">
