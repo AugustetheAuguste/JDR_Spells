@@ -4,7 +4,17 @@ import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
 import { Fournisseurs } from '@/components/Fournisseurs'
+import { BasculeTheme } from '@/components/primitives/BasculeTheme'
 import { MOTS } from '@/lib/design/tokens'
+
+/**
+ * Read before paint, so the reader who chose night mode never sees a flash of
+ * the day palette. This is the one piece of unavoidable inline script a static
+ * export can carry without becoming a server dependency — it reads
+ * `localStorage`, nothing else, and `output: 'export'` still holds because
+ * nothing here runs at request time.
+ */
+const SCRIPT_THEME = `(function(){try{var t=localStorage.getItem('pf-theme');if(t==='nuit'){document.documentElement.dataset.theme='nuit';}}catch(e){}})();`
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +36,9 @@ export const metadata: Metadata = {
 export default function RacineLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_THEME }} />
+      </head>
       <body>
         <a
           href="#contenu"
@@ -56,17 +69,20 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
                 Compte
               </Link>
             </nav>
-            <p className="m-0 text-petit text-encre-douce">
-              {MOTS.source} —{' '}
-              <a
-                className="text-accent underline hover:text-accent-survol"
-                href="https://www.pathfinder-fr.org/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                consulter le wiki
-              </a>
-            </p>
+            <div className="flex items-baseline gap-3">
+              <p className="m-0 text-petit text-encre-douce">
+                {MOTS.source} —{' '}
+                <a
+                  className="text-accent underline hover:text-accent-survol"
+                  href="https://www.pathfinder-fr.org/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  consulter le wiki
+                </a>
+              </p>
+              <BasculeTheme />
+            </div>
           </div>
         </header>
 

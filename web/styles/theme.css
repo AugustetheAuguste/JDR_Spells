@@ -6,15 +6,20 @@
  * stays the source, and `lib/design/tokens.test.ts` parses this file and asserts
  * every value matches — silent drift between the two would produce components
  * that look right in a test and wrong in a browser.
+ *
+ * Grimoire (day/night, parchment) — human override, 2026-08-31, see
+ * `design/DECISIONS.md` D7. Flat colours only, no gradient, day is the default
+ * (no `data-theme` attribute) and night is `[data-theme="nuit"]`.
  */
 
 @import 'tailwindcss';
 
 /*
  * Les polices sont servies depuis le dépôt, pas depuis un CDN : le site est une
- * fonction pure du dépôt, et une requête tierce ferait dépendre le premier rendu
- * d'un serveur qu'on ne tient pas. `next/font` est écarté pour la raison voisine
- * — il télécharge la police au build, donc le build ne passe plus hors ligne.
+ * fonction pure du dépôt, et une requête vers un CDN tiers ferait dépendre le
+ * premier rendu d'un serveur qu'on ne tient pas. `next/font` est écarté pour la
+ * même raison — il télécharge la police au build, donc le build ne passe plus
+ * hors ligne.
  *
  * Sous-ensemble latin uniquement (U+0000-00FF) : il couvre le français accentué,
  * `œ` et `æ` compris, et c'est tout ce que le corpus contient. Licences et
@@ -24,21 +29,81 @@
  * regarder un blanc.
  */
 @font-face {
-  font-family: 'Fraunces';
+  font-family: 'Eczar';
   font-style: normal;
-  font-weight: 400 700;
+  font-weight: 400;
   font-display: swap;
-  src: url('/fonts/fraunces-latin-var.woff2') format('woff2');
+  src: url('/fonts/eczar-latin-400.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
     U+2044, U+20AC, U+2122, U+2212;
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Eczar';
   font-style: normal;
-  font-weight: 400 700;
+  font-weight: 500;
   font-display: swap;
-  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  src: url('/fonts/eczar-latin-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/eczar-latin-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/eczar-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lora-latin-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/lora-latin-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/lora-latin-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
+    U+2044, U+20AC, U+2122, U+2212;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lora-latin-400-italic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2018-201A, U+2039-203A,
     U+2044, U+20AC, U+2122, U+2212;
 }
@@ -64,39 +129,39 @@
 }
 
 @theme {
-  /* Base neutre et encre */
-  --color-base: #fafaf9;
-  --color-surface: #ffffff;
-  --color-bord: #e4e2de;
-  --color-bord-fort: #c9c6c0;
-  --color-encre: #1c1b19;
-  --color-encre-douce: #57544e;
-  --color-encre-faible: #736f67;
-  --color-survol: #f2f1ef;
+  /* Parchemin et encre — palette jour, par défaut */
+  --color-base: #f1e7d2;
+  --color-surface: #f8f2e6;
+  --color-bord: #d9cba8;
+  --color-bord-fort: #927c5d; /* 3.25:1 sur base, 3.58:1 sur surface — plancher UI 3:1 (WCAG 1.4.11) */
+  --color-encre: #2b2013;
+  --color-encre-douce: #5c4a30;
+  --color-encre-faible: #776040;
+  --color-survol: #ede2cc;
 
-  /* L'accent, unique */
-  --color-accent: #116b4f;
-  --color-accent-survol: #0d5741;
-  --color-accent-voile: #e8f1ed;
+  /* L'accent, unique — oxblood, 26° de toute école */
+  --color-accent: #7e2537;
+  --color-accent-survol: #5f1c29;
+  --color-accent-voile: #f7e9ec;
 
   /* Désaccord de niveau — informe, n'accuse pas */
-  --color-desaccord: #8a3a12;
-  --color-desaccord-voile: #fbefe6;
+  --color-desaccord: #82451c;
+  --color-desaccord-voile: #f8eee7;
 
   /* Les neuf écoles */
   --color-ecole-abjuration: #3a5a9b;
   --color-ecole-divination: #6b4fa8;
   --color-ecole-enchantement: #a8377f;
-  --color-ecole-evocation: #b3421f;
+  --color-ecole-evocation: #a53d1d;
   --color-ecole-illusion: #176e77;
   --color-ecole-invocation: #2f6b2a;
   --color-ecole-necromancie: #3d3646;
-  --color-ecole-transmutation: #8a6412;
+  --color-ecole-transmutation: #866213;
   --color-ecole-universel: #5f5d55;
 
   /* Typographie */
-  --font-affichage: 'Fraunces', 'Iowan Old Style', Georgia, serif;
-  --font-corps: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-affichage: 'Eczar', 'Iowan Old Style', Georgia, serif;
+  --font-corps: 'Lora', 'Iowan Old Style', Georgia, serif;
   --font-donnees: 'IBM Plex Mono', ui-monospace, monospace;
 
   /* Échelle de type — fixe, rien ne se calcule à la volée */
@@ -119,15 +184,40 @@
   --spacing-ligne: 32px;
   --spacing-ligne-dense: 28px;
   --spacing-gouttiere: 12px;
-  --radius-jeton: 4px;
-  --radius-panneau: 6px;
+  --radius-jeton: 0px;
+  --radius-panneau: 0px;
+}
+
+/*
+ * Palette nuit — permutation plate, aucun dégradé. `data-theme="nuit"` est posé
+ * sur `<html>` par le script inline de `layout.tsx`, avant peinture, pour éviter
+ * un flash de la palette jour. Rien d'autre ne change : même typographie, même
+ * densité, mêmes neuf écoles (elles sont un carré + un libellé, jamais du texte
+ * directement sur l'aplat, donc la même valeur sert les deux thèmes).
+ */
+[data-theme='nuit'] {
+  --color-base: #1e1710;
+  --color-surface: #26201a;
+  --color-bord: #33291d;
+  --color-bord-fort: #81735f; /* 3.84:1 sur base, 3.49:1 sur surface */
+  --color-encre: #ece1c9;
+  --color-encre-douce: #c9bca0;
+  --color-encre-faible: #997f5c;
+  --color-survol: #2a2318;
+
+  --color-accent: #d16170;
+  --color-accent-survol: #d56d7b;
+  --color-accent-voile: #34141a;
+
+  --color-desaccord: #c46c31;
+  --color-desaccord-voile: #1f150f;
 }
 
 @layer base {
   html {
     font-family: var(--font-corps);
     /* Le corpus est en français : la coupure et la ponctuation en dépendent. */
-    color-scheme: light;
+    color-scheme: light dark;
   }
 
   body {
@@ -144,6 +234,15 @@
   :focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+
+  /* Le nom du sort sur sa fiche porte une lettrine minimale : la première lettre
+     en couleur d'accent, dans le même bloc de texte — pas de boîte flottante, pas
+     de hauteur de 44px, pas de retrait du texte autour. C'est ce qui reste de
+     l'ornement du prototype une fois paré pour le minimalisme (voir
+     `design/DECISIONS.md` D7). */
+  .lettrine::first-letter {
+    color: var(--color-accent);
   }
 
   /* Respecté parce qu'il ne coûte qu'une règle : il n'y a presque pas

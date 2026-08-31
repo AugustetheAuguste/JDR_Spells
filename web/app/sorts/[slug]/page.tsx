@@ -86,7 +86,7 @@ export default async function PageSort({ params }: { params: Promise<{ slug: str
           </Link>
         </p>
         <div className="mt-1 flex flex-wrap items-baseline justify-between gap-3">
-          <h1 className="m-0 font-affichage text-titre1 font-semibold">{sort.nom}</h1>
+          <h1 className="lettrine m-0 font-affichage text-titre1 font-semibold">{sort.nom}</h1>
           {/* The id, not the slug: a slug is a function of the naming algorithm
               and could change, an id is the stable join key. */}
           <BoutonFavori id_sort={sort.id} />

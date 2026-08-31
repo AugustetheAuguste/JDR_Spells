@@ -21,6 +21,7 @@ import { describe, expect, it } from 'vitest'
 import {
   COULEURS,
   COULEURS_ECOLES,
+  COULEURS_NUIT,
   DENSITE,
   ECHELLE,
   ECOLES,
@@ -95,14 +96,17 @@ describe('contraste des pastilles d’école', () => {
     expect(contraste(COULEURS_ECOLES[ecole], COULEURS.surface)).toBeGreaterThanOrEqual(4.5)
   })
 
-  it('respecte le plancher annoncé par le Skill (5,13:1)', () => {
-    // transmutation is the floor, measured at 5.1395:1. The Skill announces
-    // 5,13:1 rather than 5,14:1 for exactly that reason — a rounded-up figure
-    // makes the guard fail against the very value it describes.
+  it('respecte le plancher annoncé par le Skill (4,53:1)', () => {
+    // transmutation is the floor, measured at 4.5359:1 against the Grimoire
+    // parchment `base` (`#F1E7D2`, luminance 0.805) — darker than v1's near-white
+    // `#FAFAF9` (0.94), which is why the floor moved down from the old 5.13:1.
+    // The Skill announces 4,53:1 rather than 4,54:1 for the same reason as
+    // before — a rounded-up figure makes the guard fail against the very value
+    // it describes.
     const plancher = Math.min(
       ...ECOLES.map((ecole) => contraste(COULEURS_ECOLES[ecole], COULEURS.base)),
     )
-    expect(plancher).toBeGreaterThanOrEqual(5.13)
+    expect(plancher).toBeGreaterThanOrEqual(4.53)
   })
 
   it('les neuf teintes sont distinguables deux à deux', () => {
@@ -187,6 +191,14 @@ describe('contraste du texte et de l’accent', () => {
     expect(luminance(COULEURS.accentSurvol)).toBeLessThan(luminance(COULEURS.accent))
   })
 
+  it('bordFort tient le plancher 3:1 d’un contour de contrôle (WCAG 1.4.11)', () => {
+    // Not the 4.5:1 text floor: a field or panel border is a UI boundary, not
+    // text, and 3:1 is the correct threshold. `#C9C6C0` measured 1.63:1 here
+    // undetected until this test existed.
+    expect(contraste(COULEURS.bordFort, COULEURS.base)).toBeGreaterThanOrEqual(3)
+    expect(contraste(COULEURS.bordFort, COULEURS.surface)).toBeGreaterThanOrEqual(3)
+  })
+
   it('l’accent est à plus de 20° de toute teinte d’école', () => {
     // The whole reason `#116B4F` was chosen. Any closer and the reader sees a
     // school where the interface means "active".
@@ -197,6 +209,41 @@ describe('contraste du texte et de l’accent', () => {
         `l’accent se confond avec ${ecole}`,
       ).toBeGreaterThan(20)
     }
+  })
+})
+
+describe('palette nuit — permutation plate, elle aussi vérifiée par calcul', () => {
+  it.each([
+    ['encre', COULEURS_NUIT.encre],
+    ['encreDouce', COULEURS_NUIT.encreDouce],
+    ['encreFaible', COULEURS_NUIT.encreFaible],
+    ['accent', COULEURS_NUIT.accent],
+    ['desaccord', COULEURS_NUIT.desaccord],
+  ])('%s passe AA sur la base nuit', (_nom, valeur) => {
+    expect(contraste(valeur, COULEURS_NUIT.base)).toBeGreaterThanOrEqual(4.5)
+  })
+
+  it('bordFort nuit tient le plancher 3:1 d’un contour de contrôle', () => {
+    expect(contraste(COULEURS_NUIT.bordFort, COULEURS_NUIT.base)).toBeGreaterThanOrEqual(3)
+    expect(contraste(COULEURS_NUIT.bordFort, COULEURS_NUIT.surface)).toBeGreaterThanOrEqual(3)
+  })
+
+  it('le désaccord nuit passe AA sur son propre voile', () => {
+    expect(
+      contraste(COULEURS_NUIT.desaccord, COULEURS_NUIT.desaccordVoile),
+    ).toBeGreaterThanOrEqual(4.5)
+  })
+
+  it('l’accent nuit est plus clair que l’accent jour, jamais plus sombre', () => {
+    // On a dark ground "further from the background" means lighter, the
+    // opposite direction from the day palette's accentSurvol rule.
+    expect(luminance(COULEURS_NUIT.accentSurvol)).toBeGreaterThan(luminance(COULEURS_NUIT.accent))
+  })
+
+  it('l’encre nuit reste lisible sur la base nuit avec une marge large', () => {
+    // Not a floor check — a sanity check that the swap kept the darkest tone
+    // for the page background and the lightest for text, not the reverse.
+    expect(contraste(COULEURS_NUIT.encre, COULEURS_NUIT.base)).toBeGreaterThan(10)
   })
 })
 
@@ -303,6 +350,33 @@ describe('theme.css ne dérive pas de tokens.ts', () => {
     expect(propriete('radius-jeton')).toBe(DENSITE.rayon)
     expect(propriete('radius-panneau')).toBe(DENSITE.rayonPanneau)
   })
+
+  describe('le bloc [data-theme="nuit"]', () => {
+    const blocNuit = /\[data-theme=['"]nuit['"]\]\s*\{([\s\S]*?)\n\}/.exec(css)?.[1] ?? ''
+
+    function proprieteNuit(nom: string): string | null {
+      const trouve = new RegExp(`--${nom}:\\s*([^;]+);`).exec(blocNuit)
+      return trouve?.[1]?.trim() ?? null
+    }
+
+    it.each([
+      ['color-base', COULEURS_NUIT.base],
+      ['color-surface', COULEURS_NUIT.surface],
+      ['color-bord', COULEURS_NUIT.bord],
+      ['color-bord-fort', COULEURS_NUIT.bordFort],
+      ['color-encre', COULEURS_NUIT.encre],
+      ['color-encre-douce', COULEURS_NUIT.encreDouce],
+      ['color-encre-faible', COULEURS_NUIT.encreFaible],
+      ['color-survol', COULEURS_NUIT.survol],
+      ['color-accent', COULEURS_NUIT.accent],
+      ['color-accent-survol', COULEURS_NUIT.accentSurvol],
+      ['color-accent-voile', COULEURS_NUIT.accentVoile],
+      ['color-desaccord', COULEURS_NUIT.desaccord],
+      ['color-desaccord-voile', COULEURS_NUIT.desaccordVoile],
+    ])('--%s vaut le jeton nuit', (nom, attendu) => {
+      expect(proprieteNuit(nom)?.toUpperCase()).toBe(attendu.toUpperCase())
+    })
+  })
 })
 
 describe('les contraintes du brief sont tenues dans le CSS', () => {
@@ -355,10 +429,13 @@ describe('les contraintes du brief sont tenues dans le CSS', () => {
     expect(hauteur).toBeGreaterThanOrEqual(28)
   })
 
-  it('la transition est courte, et le mode sombre absent', () => {
+  it('la transition est courte, et la nuit ne suit pas la préférence système', () => {
     expect(Number.parseInt(MOUVEMENT.duree, 10)).toBeLessThanOrEqual(200)
-    // Dark mode is explicitly out of scope for v1; a `prefers-color-scheme` block
-    // would be an unrequested feature shipping half-done.
+    // Night mode is an explicit, persisted choice (a toggle + localStorage,
+    // applied via `data-theme` before paint) — not `prefers-color-scheme`. An
+    // automatic switch would silently override whatever the reader picked last
+    // time their OS theme changed underneath them.
     expect(css).not.toMatch(/prefers-color-scheme/)
+    expect(css).toMatch(/\[data-theme=['"]nuit['"]\]/)
   })
 })
