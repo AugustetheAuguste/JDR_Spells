@@ -255,6 +255,68 @@ identifiée comme une rubrique).
    lancer des sorts, pas quand il s'agit d'un simple prérequis parmi
    d'autres pour un don de compétence.
 
+10. **« peut lancer des sorts »** (ajouté lors de l'audit guerrier : le don
+    décrit ce que le personnage fait *en lançant* ses sorts, il n'a donc
+    aucun sens sans incantation) — `Dispense_de_composantes_materielles.html`
+    : « Le personnage peut lancer des sorts nécessitant une composante
+    matérielle de 1 po ou moins sans utiliser cette composante. » ; 8 dons
+    concernés dans le catalogue (Ajustement crânien, Couteau de sorcière,
+    Dispense de composantes matérielles, Implantation crânienne, Incantation
+    animale, Magie démentielle, Trépanation, Vision extrasensorielle), tous
+    vérifiés comme réservés aux lanceurs de sorts.
+11. **« sorts lancés par le personnage »** — `Sort_en_embuscade.html` : « les
+    adversaires […] reçoivent un malus de -2 aux jets de sauvegarde contre
+    les sorts lancés par le personnage. » ; 1 seul don concerné.
+12. **« contrer un sort »** — `Science_du_contresort.html` : « Lorsque le
+    personnage tente de contrer un sort, il peut remplacer le sort d'origine
+    par n'importe quel sort de la même école… » ; 2 dons concernés
+    (Parade de sorts, Science du contresort), tous deux réservés aux lanceurs.
+
+13. **« à sa liste de sorts »** — 7 dons, dont 4 non tagués auparavant
+    (Conduit émotionnel, Connaissances magiques étendues, Tours de magie ou
+    oraisons supplémentaires, Études approfondies). Un don qui *ajoute* des
+    sorts à la liste du personnage suppose qu'il en ait une.
+14. **« sort de contact »** — 5 dons, dont 2 non tagués auparavant (Familier
+    libéré, Transfert longue distance) : transmettre un sort de contact exige
+    de le lancer.
+15. **« quand le personnage lance un sort »** — variante en « quand » du
+    mot-clé n° 9 (« lorsque le personnage lance un sort ») ; 10 dons, dont 4
+    non tagués auparavant (Incantation rageuse, Maîtrise de l'armure magique,
+    Sort mélodieux, École supérieure).
+16. **« tout autre sort d'un niveau plus élevé »** — mot-clé délibérément
+    hyper-spécifique (1 seul don) qui lève le « résidu connu » ci-dessous.
+17. **« la véritable nature de ses sorts »** — `Bluff magique` : « quand il
+    affronte un autre lanceur de sorts, il sait cacher la véritable nature de
+    ses sorts » ; 1 seul don.
+18. **« attaques de contact au corps à corps de ses sorts »** —
+    `Contact magique bondissant` : « le personnage peut augmenter l'allonge des
+    attaques de contact au corps à corps de ses sorts » ; 1 seul don.
+
+**Motif écarté** : le motif large « de ses sorts », qui aurait couvert les
+entrées 17 et 18 d'un coup, attrape 15 dons dont **« Signes secrets »** —
+lequel conserve un avantage entièrement non magique (+4 aux tests de Bluff pour
+faire passer des messages secrets) en plus de son volet d'incantation, et reste
+donc légitimement utile à un non-lanceur. Comme les mots-clés forts
+court-circuitent la liste d'exclusions dans `classify()`, on ne pouvait pas le
+rattraper par une exclusion : d'où deux mots-clés étroits plutôt qu'un large.
+
+**Motif écarté** : le mot-clé plus large « lancer des sorts » (sans « peut »)
+capture 18 dons dont plusieurs sont au contraire des dons de guerrier
+*anti*-lanceurs (« Perturbateur », « Tir perturbateur », qui gênent
+l'incantation *adverse*) — non retenu.
+
+**Motif écarté** : « ou tout autre sort », envisagé pour capturer « Lecture des
+résidus magiques », attrape aussi « Serviteur céleste », dont les Conditions
+(« Aasimar, compagnon animal, familier **ou aptitude de classe monture** ») sont
+satisfaites par un cavalier aasimar, qui n'a aucune magie — non retenu au profit
+du mot-clé n° 16, plus étroit.
+
+**Résidu levé** (auparavant « Résidu connu ») : « Lecture des résidus magiques »
+exige d'utiliser *identification* (donc de lancer un sort) mais le formule
+d'une façon (« Lorsque le personnage utilise identification ou tout autre sort
+d'un niveau plus élevé… ») qu'aucun mot-clé *général* ne capture sans faux
+positifs. Tranché par le mot-clé ciblé n° 16 plutôt qu'en élargissant un motif.
+
 ### WEAK_MAGIC_KEYWORDS (ambigu → `needs_manual_check=true`)
 
 1. **« objet magique » / « objets magiques » employé côté effet (pas côté

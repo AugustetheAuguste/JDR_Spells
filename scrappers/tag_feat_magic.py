@@ -46,6 +46,30 @@ STRONG_MAGIC_KEYWORDS = [
     # dans l'échantillon initial car ils utilisent une formulation ("lorsque
     # le personnage lance un sort...") différente des autres mots-clés forts.
     "lorsque le personnage lance un sort",
+    # Ajoutés lors de l'audit d'éligibilité du guerrier (voir
+    # OUTPUT_vocab_and_markup_calibration.md, Section B, entrées 10 à 12) :
+    # des dons sans aucune Condition dans le CSV mais qui décrivent ce que le
+    # personnage fait en lançant / en contrant un sort.
+    "peut lancer des sorts",
+    "sorts lances par le personnage",
+    "contrer un sort",
+    # Ajoutés lors de l'audit multi-classes niveau 6 (voir
+    # OUTPUT_vocab_and_markup_calibration.md, Section B, entrées 13 à 16) :
+    # des dons dont l'avantage décrit une manipulation de la propre magie du
+    # personnage (sa liste de sorts, ses sorts de contact, son incantation).
+    "a sa liste de sorts",
+    "sort de contact",
+    "quand le personnage lance un sort",
+    # Mot-clé volontairement très étroit (1 seul don) : il lève le « résidu
+    # connu » documenté en Section B, « Lecture des résidus magiques », dont
+    # l'avantage ne parle que d'un sort nommé sans aucun autre marqueur.
+    "tout autre sort d'un niveau plus eleve",
+    # Deux mots-clés ciblés (1 don chacun) : le motif large « de ses sorts »
+    # aurait aussi attrapé « Signes secrets », qui garde un avantage non
+    # magique indépendant (+4 en Bluff pour les messages secrets) et reste donc
+    # utile à un non-lanceur. Voir Section B, entrées 17 et 18.
+    "la veritable nature de ses sorts",
+    "attaques de contact au corps a corps de ses sorts",
 ]
 
 WEAK_MAGIC_KEYWORDS = [
