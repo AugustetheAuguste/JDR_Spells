@@ -1,0 +1,1085 @@
+[
+  {
+    "id": "abondance_de_revelations_guerrier_ineligible",
+    "feat_name": "Abondance de révélations",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3
+    },
+    "expected_status": "ineligible",
+    "note": "Original reported bug: 'Capacité de classe mystère' implies oracle only; a Guerrier must be ineligible, not manual_check."
+  },
+  {
+    "id": "absorption_rageuse_guerrier_ineligible",
+    "feat_name": "Absorption rageuse",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3
+    },
+    "expected_status": "ineligible",
+    "note": "Original reported bug: both comma-separated requirements name 'sanguin'/'sanguine' abilities, so a non-sanguin class must be ineligible, not manual_check."
+  },
+  {
+    "id": "absorption_rageuse_sanguin_manual_check",
+    "feat_name": "Absorption rageuse",
+    "character": {
+      "character_class": "Sanguin",
+      "level": 3
+    },
+    "expected_status": "manual_check",
+    "note": "Class matches the implied class, but the caster-level/class-feature detail is still unverifiable automatically, so the fix must not over-correct this to eligible."
+  },
+  {
+    "id": "level_prestige_below_ineligible",
+    "feat_name": "Prestige",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for RequirementType.LEVEL: 'Personnage de niveau 7' with level 5 must remain a hard ineligible, unaffected by the class-gating change."
+  },
+  {
+    "id": "bba_arme_en_main_magicien_ineligible",
+    "feat_name": "Arme en main",
+    "character": {
+      "character_class": "Magicien",
+      "level": 1
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for RequirementType.BBA (mirrors tests/test_engine.py::test_arme_en_main_bba): a poor-BBA class at level 1 lacks BBA +1."
+  },
+  {
+    "id": "ability_score_esquive_below_ineligible",
+    "feat_name": "Esquive",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "ability_scores": {
+        "Dex": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for RequirementType.ABILITY_SCORE: 'Dex 13' with Dex 10 explicitly provided must fail, not be treated as unknown."
+  },
+  {
+    "id": "ability_score_esquive_missing_manual_check",
+    "feat_name": "Esquive",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1
+    },
+    "expected_status": "manual_check",
+    "note": "Regression guard for RequirementType.ABILITY_SCORE with no ability_scores supplied: the sole requirement is unverifiable (None), so overall status stays manual_check."
+  },
+  {
+    "id": "skill_ranks_assurer_sa_prise_below_ineligible",
+    "feat_name": "Assurer sa prise",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "skill_ranks": {
+        "Escalade": 0
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for RequirementType.SKILL_RANKS: '1 rang en Escalade' with an explicit 0 ranks must fail, not be treated as unknown."
+  },
+  {
+    "id": "race_ailes_de_tengu_match_eligible",
+    "feat_name": "Ailes de tengu",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5,
+      "race": "tengu"
+    },
+    "expected_status": "eligible",
+    "note": "Regression guard for RequirementType.RACE (mirrors tests/test_engine.py::test_ailes_de_tengu): matching race and sufficient level together are eligible."
+  },
+  {
+    "id": "race_ailes_de_tengu_mismatch_ineligible",
+    "feat_name": "Ailes de tengu",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5,
+      "race": "nain"
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for RequirementType.RACE: an explicitly provided non-matching race must fail outright, not be left ambiguous."
+  },
+  {
+    "id": "feat_degainer_en_traitre_missing_manual_check",
+    "feat_name": "Dégainer en traître",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1
+    },
+    "expected_status": "manual_check",
+    "note": "Regression guard for RequirementType.FEAT: with known_feats unset, the sole prerequisite feat 'Arme en main' is unverifiable (None), not assumed false."
+  },
+  {
+    "id": "feat_degainer_en_traitre_present_eligible",
+    "feat_name": "Dégainer en traître",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "known_feats": [
+        "Arme en main"
+      ]
+    },
+    "expected_status": "eligible",
+    "note": "Regression guard for RequirementType.FEAT: with the prerequisite feat present in known_feats and it being the only requirement, the feat is eligible."
+  },
+  {
+    "id": "orgroup_brute_resiliente_match_eligible",
+    "feat_name": "Brute résiliente",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "race": "orque"
+    },
+    "expected_status": "eligible",
+    "note": "Regression guard for OrGroup: 'Demi-orque ou orque' with race='orque' satisfies one branch, so the group (and feat) is eligible."
+  },
+  {
+    "id": "orgroup_brute_resiliente_no_match_ineligible",
+    "feat_name": "Brute résiliente",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "race": "humain"
+    },
+    "expected_status": "ineligible",
+    "note": "Regression guard for OrGroup: 'Demi-orque ou orque' with a non-matching, explicitly known race has both branches False and none None, so the group is False and the feat ineligible."
+  },
+  {
+    "id": "implied_class_single_vision_prophetique_wrong_class_ineligible",
+    "feat_name": "Vision prophétique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5
+    },
+    "expected_status": "ineligible",
+    "note": "Core fix coverage: 'Capacité de classe mystère' maps to a single implied class (oracle) in class_ability_map.json; a Guerrier must be ineligible, the same pattern as the original bug."
+  },
+  {
+    "id": "implied_class_single_vision_prophetique_matching_class_manual_check",
+    "feat_name": "Vision prophétique",
+    "character": {
+      "character_class": "Oracle",
+      "level": 5
+    },
+    "expected_status": "manual_check",
+    "note": "Core fix coverage: an Oracle is in the implied_classes set for 'Capacité de classe mystère', so the requirement becomes unverifiable (None) rather than False — must stay manual_check, never eligible."
+  },
+  {
+    "id": "implied_class_multi_adepte_matraque_ninja_manual_check",
+    "feat_name": "Adepte de la matraque",
+    "character": {
+      "character_class": "Ninja",
+      "level": 5
+    },
+    "expected_status": "manual_check",
+    "note": "Multi-class implied_classes coverage: 'Attaque sournoise +1d6' maps to [ninja, roublard, tueur]; a Ninja is in the set, so the requirement stays unverifiable (manual_check), not eligible."
+  },
+  {
+    "id": "implied_class_multi_adepte_matraque_roublard_manual_check",
+    "feat_name": "Adepte de la matraque",
+    "character": {
+      "character_class": "Roublard",
+      "level": 5
+    },
+    "expected_status": "manual_check",
+    "note": "Same multi-class mapping as above exercised against a second matching class (Roublard) in the same implied_classes list, confirming the mapping isn't accidentally single-class."
+  },
+  {
+    "id": "unresolved_class_feature_text_guerrier_manual_check",
+    "feat_name": "Incantation contre un ennemi juré",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5
+    },
+    "expected_status": "ineligible",
+    "note": "Superseded by the magic gate introduced in feat-detail-and-magic-gating: the raw Conditions text literally says 'Capacité à lancer des sorts', Data/feat_magic_info.json tags this feat is_magic with high confidence, and Data/class_caster_info.json confirms Guerrier has no spellcasting access, so engine.py now correctly hard-fails this instead of deferring to manual_check."
+  },
+  {
+    "id": "unresolved_class_feature_text_magicien_manual_check",
+    "feat_name": "Incantation contre un ennemi juré",
+    "character": {
+      "character_class": "Magicien",
+      "level": 5
+    },
+    "expected_status": "manual_check",
+    "note": "Same unresolved-mapping guard exercised against a caster class: Magicien has spellcasting access per class_caster_info.json, so the magic gate does not block it and the requirement remains unverifiable (manual_check), confirming the fix is class-dependent, not a blanket ineligible."
+  },
+  {
+    "id": "acolyte_nature_guerrier_ineligible_magic_gate",
+    "feat_name": "Acolyte de la Nature",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3
+    },
+    "expected_status": "ineligible",
+    "note": "Bug rapporté par l'utilisateur : don magique proposé à un Guerrier ; couvre le nouveau filtre feat_magic_info + class_caster_info introduit en Step 10."
+  },
+  {
+    "id": "acolyte_nature_druide_not_blocked_by_magic_gate",
+    "feat_name": "Acolyte de la Nature",
+    "character": {
+      "character_class": "Druide",
+      "level": 3
+    },
+    "expected_status": "manual_check",
+    "note": "Un Druide a accès à la magie : le filtre magie ne doit pas le bloquer (régression guard pour ne pas sur-corriger) ; le statut réel reste manual_check car un autre Requirement ('Suivant de la voie de la nature') est encore non vérifiable, vérifié en exécutant le vrai pipeline avant d'écrire ce cas."
+  },
+  {
+    "id": "attaque_magique_guerrier_ineligible_magic_gate",
+    "feat_name": "Attaque magique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5
+    },
+    "expected_status": "ineligible",
+    "note": "Extra magic-gate coverage picked from Data/feat_magic_info.json's is_magic:true entries ('sorts profanes'/'emplacement de sort' keywords) against a known non-caster class; verified via the real pipeline before writing."
+  },
+  {
+    "id": "ailes_fielonnes_guerrier_humain_ineligible",
+    "feat_name": "Ailes fiélonnes",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Extérieur non-natif de sous-type Mal » est un prérequis de type de créature (Data/prereq_gating.json, kind=creature_type) ; un humain doit être ineligible."
+  },
+  {
+    "id": "armure_naturelle_superieure_guerrier_humain_ineligible",
+    "feat_name": "Armure naturelle supérieure",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Armure naturelle » est une capacité physique innée (kind=anatomy) absente des traits raciaux de l'humain."
+  },
+  {
+    "id": "arpenteur_de_pierres_guerrier_humain_ineligible",
+    "feat_name": "Arpenteur de pierres",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Trait racial connaissance de la pierre » (kind=racial_trait) est un trait nain, pas humain."
+  },
+  {
+    "id": "arrachage_sauvage_guerrier_humain_ineligible",
+    "feat_name": "Arrachage sauvage",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Attaque de morsure » (kind=anatomy) n'est accordée par aucun trait racial humain."
+  },
+  {
+    "id": "agilite_dimensionnelle_guerrier_humain_ineligible",
+    "feat_name": "Agilité dimensionnelle",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : l'alternative « pas chassé (moine) ou lancer porte dimensionnelle (incantation) » est fermée aux deux bouts pour un guerrier humain."
+  },
+  {
+    "id": "attaque_en_vol_guerrier_humain_ineligible",
+    "feat_name": "Attaque en vol",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Vitesse de vol » (kind=anatomy) absente des traits raciaux humains."
+  },
+  {
+    "id": "vision_affutee_guerrier_humain_ineligible",
+    "feat_name": "Vision affûtée",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Audit guerrier : « Vision dans le noir (18m) » (kind=anatomy) ; l'humain n'a pas la vision dans le noir."
+  },
+  {
+    "id": "maitrise_des_sorts_guerrier_ineligible",
+    "feat_name": "Maîtrise des sorts",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Bug de parsing : « Magicien de niveau 1 » était lu comme un simple niveau de personnage (LEVEL), rendant le don éligible à toutes les classes ; désormais CLASS_LEVEL."
+  },
+  {
+    "id": "focalisation_instrumentale_guerrier_ineligible",
+    "feat_name": "Focalisation instrumentale",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Même bug que Maîtrise des sorts : « Occultiste de niveau 3 » -> CLASS_LEVEL."
+  },
+  {
+    "id": "bebe_feerique_niveau3_ineligible",
+    "feat_name": "Bébé féerique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Personnage de niveau 1 uniquement » -> LEVEL_EXACT : un personnage de niveau 3 ne peut plus le prendre."
+  },
+  {
+    "id": "bebe_feerique_niveau1_eligible",
+    "feat_name": "Bébé féerique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 1,
+      "race": "Humain"
+    },
+    "expected_status": "eligible",
+    "note": "Pendant du cas précédent : au niveau 1 exactement, le don est éligible."
+  },
+  {
+    "id": "capture_taille_m_ineligible",
+    "feat_name": "Capture",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Taille TG ou plus » : comparaison de taille (SIZE comparator=min) et taille déduite de la race (humain -> M) au lieu d'un manual_check."
+  },
+  {
+    "id": "inapercu_taille_m_ineligible",
+    "feat_name": "Inaperçu",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Dex 13, taille P ou plus petit » : le « ou » comparatif ne doit pas être lu comme une alternative ; taille M > P."
+  },
+  {
+    "id": "acrobate_des_corniches_nain_eligible",
+    "feat_name": "Acrobate des corniches",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 5,
+      "race": "nain",
+      "ability_scores": {
+        "Dex": 13
+      }
+    },
+    "expected_status": "eligible",
+    "note": "« trait racial montagnard ou stabilité » : le nain possède le trait Stabilité (Data/races.json), l'alternative est donc tenue."
+  },
+  {
+    "id": "adversaire_familier_guerrier_eligible",
+    "feat_name": "Adversaire familier",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "eligible",
+    "note": "Prérequis NÉGATIF : « Aucun niveau dans une classe dotée d'ennemis jurés » ne doit pas être traduit en implied_classes (ce qui l'inversait) ; un guerrier le remplit."
+  },
+  {
+    "id": "adversaire_familier_rodeur_ineligible",
+    "feat_name": "Adversaire familier",
+    "character": {
+      "character_class": "Rôdeur",
+      "level": 3,
+      "race": "Humain"
+    },
+    "expected_status": "ineligible",
+    "note": "Pendant du cas précédent : le rôdeur est justement une classe dotée d'ennemis jurés."
+  },
+  {
+    "id": "bombes_supplementaires_guerrier_ineligible",
+    "feat_name": "Bombes supplémentaires",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Capacité de classe bombes » était non attribuée dans class_ability_map.json ; l'overlay de curation la rattache à l'alchimiste."
+  },
+  {
+    "id": "entrainement_aux_armures_avance_guerrier_manual",
+    "feat_name": "Entraînement aux armures avancé",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Symétrique : la capacité « entraînement aux armures » est bien celle du guerrier, donc pas d'ineligible — le niveau de capacité précis reste à vérifier."
+  },
+  {
+    "id": "dispense_composantes_guerrier_ineligible",
+    "feat_name": "Dispense de composantes matérielles",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Don sans Condition au CSV mais réservé aux lanceurs de sorts ; capté par le mot-clé « peut lancer des sorts » (Section B, entrée 10)."
+  },
+  {
+    "id": "cri_de_guerre_guerrier_ineligible",
+    "feat_name": "Cri de guerre",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 3,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 10,
+        "Con": 10,
+        "Int": 12,
+        "Sag": 10,
+        "Cha": 10
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Découpage sur « ; » : « Cha 13; BBA +5 ou 5 rangs en Représentation » donne deux prérequis distincts au lieu d'un seul segment UNPARSED — d'où un verdict net (Cha 10 < 13) au lieu d'un manual_check."
+  },
+  {
+    "id": "attaque_imprevisible_supp_guerrier_ineligible",
+    "feat_name": "Attaque imprévisible supplémentaire",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Attaque imprévisible » = Impromptu Sneak Attack, talent évolué de roublard : la capacité est désormais attribuée (roublard/ninja/tueur) au lieu de rester class_ability_unmapped."
+  },
+  {
+    "id": "attaque_imprevisible_supp_roublard_manual",
+    "feat_name": "Attaque imprévisible supplémentaire",
+    "character": {
+      "character_class": "Roublard",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 10,
+        "Dex": 18,
+        "Con": 13,
+        "Int": 14,
+        "Sag": 12,
+        "Cha": 12
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Contre-épreuve : le roublard a bien accès au talent, donc le détail reste à vérifier (manual_check) au lieu d'être refusé."
+  },
+  {
+    "id": "connaissances_magiques_etendues_guerrier_ineligible",
+    "feat_name": "Connaissances magiques étendues",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Un prérequis NLS exige d'être lanceur de sorts : un guerrier humain n'aura jamais de NLS 1. Garde la règle CASTER_LEVEL vs magie_inaccessible()."
+  },
+  {
+    "id": "familier_libere_guerrier_ineligible",
+    "feat_name": "Familier libéré",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Double gating : NLS 5 (non-lanceur) et « capacité de classe familier » désormais attribuée aux classes à familier."
+  },
+  {
+    "id": "familier_libere_magicien_manual",
+    "feat_name": "Familier libéré",
+    "character": {
+      "character_class": "Magicien",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 8,
+        "Dex": 14,
+        "Con": 12,
+        "Int": 18,
+        "Sag": 13,
+        "Cha": 10
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Contre-épreuve : le magicien est lanceur et a un familier, donc la valeur exacte du NLS reste seule à vérifier."
+  },
+  {
+    "id": "lecture_residus_magiques_guerrier_ineligible",
+    "feat_name": "Lecture des résidus magiques",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Don sans aucune Condition dans le CSV : seul son texte d'avantage (« identification ou tout autre sort d'un niveau plus élevé ») révèle qu'il faut lancer des sorts."
+  },
+  {
+    "id": "ombre_druidique_guerrier_ineligible",
+    "feat_name": "Ombre druidique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Restriction lisible seulement dans le texte d'avantage (« ajoute les sorts suivants à sa liste de druide ») : Data/feat_class_restriction.json."
+  },
+  {
+    "id": "ombre_druidique_druide_manual",
+    "feat_name": "Ombre druidique",
+    "character": {
+      "character_class": "Druide",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 12,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 18,
+        "Cha": 8
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Contre-épreuve : un druide n'est pas bloqué par la restriction ; alignement/divinité restent à arbitrer."
+  },
+  {
+    "id": "palpation_curative_supp_guerrier_ineligible",
+    "feat_name": "Palpation curative supplémentaire",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "« Palpation curative » et « imposition des mains » sont deux traductions de lay on hands : la capacité est attribuée au paladin et à l'hypnotiseur."
+  },
+  {
+    "id": "palpation_curative_supp_paladin_manual",
+    "feat_name": "Palpation curative supplémentaire",
+    "character": {
+      "character_class": "Paladin",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Loyal Bon",
+      "deity": "Iomédae",
+      "ability_scores": {
+        "For": 16,
+        "Dex": 12,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 13,
+        "Cha": 16
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Contre-épreuve du synonyme : le paladin possède l'imposition des mains, donc pas de refus."
+  },
+  {
+    "id": "bluff_magique_guerrier_ineligible",
+    "feat_name": "Bluff magique",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Faux positif trouvé en balayant les classes non-lanceuses : « cacher la véritable nature de ses sorts » n'a de sens que pour un lanceur, alors que les Conditions ne parlent que de rangs de compétence."
+  },
+  {
+    "id": "contact_magique_bondissant_guerrier_ineligible",
+    "feat_name": "Contact magique bondissant",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 10,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Idem : « l'allonge des attaques de contact au corps à corps de ses sorts »."
+  },
+  {
+    "id": "signes_secrets_guerrier_eligible",
+    "feat_name": "Signes secrets",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Humain",
+      "alignment": "Neutre",
+      "ability_scores": {
+        "For": 18,
+        "Dex": 14,
+        "Con": 16,
+        "Int": 13,
+        "Sag": 12,
+        "Cha": 8
+      }
+    },
+    "expected_status": "eligible",
+    "note": "Contre-épreuve du motif écarté « de ses sorts » : ce don garde un avantage entièrement non magique (+4 en Bluff pour les messages secrets) et doit RESTER offert à un non-lanceur."
+  },
+  {
+    "id": "forme_animale_optimale_druide_manual",
+    "feat_name": "Forme animale optimale",
+    "character": {
+      "character_class": "Druide",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 12,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 18,
+        "Cha": 8
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "« Forme animale » était attribuée au seul métamorphe dans class_ability_map.json, ce qui rendait le DRUIDE inéligible à sa propre capacité signature. Une sous-attribution produit un refus à tort ; une sur-attribution ne produit qu'un manual_check."
+  },
+  {
+    "id": "langue_sauvage_druide_manual",
+    "feat_name": "Langue sauvage",
+    "character": {
+      "character_class": "Druide",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 12,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 18,
+        "Cha": 8
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "Même correction que ci-dessus, sur un second don de forme animale."
+  },
+  {
+    "id": "connaissances_magiques_etendues_scalde_manual",
+    "feat_name": "Connaissances magiques étendues",
+    "character": {
+      "character_class": "Scalde",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 14,
+        "Dex": 13,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 10,
+        "Cha": 16
+      }
+    },
+    "expected_status": "manual_check",
+    "note": "class_caster_info.json déclarait à tort le scalde non-lanceur, ce qui lui refusait tous les dons magiques. Le scalde lance des sorts de la liste du barde (sa table de progression scrapée lui donne « tours de magie » au niveau 1)."
+  },
+  {
+    "id": "chasseur_de_dahak_rodeur_mauvaise_divinite_ineligible",
+    "feat_name": "Chasseur de Dahak",
+    "character": {
+      "character_class": "Rôdeur",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 16,
+        "Dex": 16,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 13,
+        "Cha": 8
+      },
+      "deity": "Érastil"
+    },
+    "expected_status": "ineligible",
+    "note": "Extraction du nom de divinité : `lstrip(\"de'u \")` retirait un ensemble de caractères et non un préfixe, donc « suivant de dahak » donnait « ahak ». Ce cas vérifie que la divinité comparée est bien « dahak »."
+  },
+  {
+    "id": "chasseur_de_dahak_rodeur_bonne_divinite_manual",
+    "feat_name": "Chasseur de Dahak",
+    "character": {
+      "character_class": "Rôdeur",
+      "level": 6,
+      "race": "Humain",
+      "ability_scores": {
+        "For": 16,
+        "Dex": 16,
+        "Con": 14,
+        "Int": 10,
+        "Sag": 13,
+        "Cha": 8
+      },
+      "deity": "Dahak"
+    },
+    "expected_status": "manual_check",
+    "note": "Contre-épreuve : avec la bonne divinité, le prérequis de culte est tenu et seul l'ennemi juré (dragon) reste à vérifier."
+  },
+  {
+    "id": "danse_du_dervi_guerrier_eligible_cimeterre_martial",
+    "feat_name": "Danse du derviche",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "ability_scores": {
+        "For": 10,
+        "Dex": 13,
+        "Con": 10,
+        "Int": 10,
+        "Sag": 10,
+        "Cha": 10
+      },
+      "known_feats": [
+        "Attaque en finesse"
+      ],
+      "skill_ranks": {
+        "Représentation (danse)": 2
+      }
+    },
+    "expected_status": "eligible",
+    "note": "Nouvelle couche de gating proficiency : le Guerrier a toutes les armes martiales (cimeterre inclus), donc éligible une fois les autres prérequis satisfaits."
+  },
+  {
+    "id": "danse_du_dervi_roublard_ineligible_cimeterre",
+    "feat_name": "Danse du derviche",
+    "character": {
+      "character_class": "Roublard",
+      "level": 6,
+      "ability_scores": {
+        "For": 10,
+        "Dex": 13,
+        "Con": 10,
+        "Int": 10,
+        "Sag": 10,
+        "Cha": 10
+      },
+      "known_feats": [
+        "Attaque en finesse"
+      ],
+      "skill_ranks": {
+        "Représentation (danse)": 2
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Roublard n’a ni les armes martiales ni le cimeterre en arme spécifique : la maitrise nommée (proficiency gating) doit refuser, pas renvoyer manual_check."
+  },
+  {
+    "id": "frondeur_fouetteur_halfelin_eligible_fronde_raciale",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Magicien",
+      "level": 3,
+      "race": "Halfelin"
+    },
+    "expected_status": "eligible",
+    "note": "Le Magicien n’a pas la fronde par sa classe, mais l’halfelin l’a comme arme familiale (racial_trait_text) : le gating proficiency doit consulter la race, pas seulement la classe."
+  },
+  {
+    "id": "frondeur_fouetteur_magicien_ineligible_sans_race",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Magicien",
+      "level": 3
+    },
+    "expected_status": "ineligible",
+    "note": "Magicien sans race renseignée et sans fronde par sa classe : ineligible, pas manual_check (classe connue de class_proficiencies.json)."
+  },
+  {
+    "id": "fouet_serpent_barde_eligible_arme_specifique_classe",
+    "feat_name": "Fouet-serpent",
+    "character": {
+      "character_class": "Barde",
+      "level": 4,
+      "known_feats": [
+        "Attaque en finesse"
+      ]
+    },
+    "expected_status": "eligible",
+    "note": "Le Barde a le fouet comme arme spécifique accordée par sa classe (armes_specifiques), bien qu’il n’ait pas toutes les armes exotiques."
+  },
+  {
+    "id": "fouet_serpent_guerrier_ineligible_fouet_non_accorde",
+    "feat_name": "Fouet-serpent",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 4,
+      "known_feats": [
+        "Attaque en finesse"
+      ]
+    },
+    "expected_status": "ineligible",
+    "note": "Le Guerrier a martial+simple mais pas les armes exotiques : le fouet (exotique) doit rester hors de sa portée sans le don dédié."
+  },
+  {
+    "id": "vipere_jaillissante_nain_eligible_reclassification_exotique",
+    "feat_name": "Frappe de la vipère jaillissante",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Nain"
+    },
+    "expected_status": "eligible",
+    "note": "Le nain traite toute arme « naine » (dorn-dergar naine) comme une arme de guerre, et le Guerrier a les armes martiales : reclassification exotique->martiale par la race, testée explicitement."
+  },
+  {
+    "id": "vipere_jaillissante_guerrier_ineligible_sans_reclassification",
+    "feat_name": "Frappe de la vipère jaillissante",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6
+    },
+    "expected_status": "ineligible",
+    "note": "Sans race naine, la dorn-dergar naine reste une arme exotique que le Guerrier (martial+simple seulement) ne maitrise pas."
+  },
+  {
+    "id": "frondeur_fouetteur_classe_inconnue_manual_check",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Chasseur de vampire",
+      "level": 3
+    },
+    "expected_status": "manual_check",
+    "note": "Classe absente de class_proficiencies.json (aucune classe officielle PF1 de ce nom) : le moteur ne doit jamais deviner, donc manual_check et non ineligible."
+  }
+]
