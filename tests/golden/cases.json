@@ -955,5 +955,131 @@
     },
     "expected_status": "manual_check",
     "note": "Contre-épreuve : avec la bonne divinité, le prérequis de culte est tenu et seul l'ennemi juré (dragon) reste à vérifier."
+  },
+  {
+    "id": "danse_du_dervi_guerrier_eligible_cimeterre_martial",
+    "feat_name": "Danse du derviche",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "ability_scores": {
+        "For": 10,
+        "Dex": 13,
+        "Con": 10,
+        "Int": 10,
+        "Sag": 10,
+        "Cha": 10
+      },
+      "known_feats": [
+        "Attaque en finesse"
+      ],
+      "skill_ranks": {
+        "Représentation (danse)": 2
+      }
+    },
+    "expected_status": "eligible",
+    "note": "Nouvelle couche de gating proficiency : le Guerrier a toutes les armes martiales (cimeterre inclus), donc éligible une fois les autres prérequis satisfaits."
+  },
+  {
+    "id": "danse_du_dervi_roublard_ineligible_cimeterre",
+    "feat_name": "Danse du derviche",
+    "character": {
+      "character_class": "Roublard",
+      "level": 6,
+      "ability_scores": {
+        "For": 10,
+        "Dex": 13,
+        "Con": 10,
+        "Int": 10,
+        "Sag": 10,
+        "Cha": 10
+      },
+      "known_feats": [
+        "Attaque en finesse"
+      ],
+      "skill_ranks": {
+        "Représentation (danse)": 2
+      }
+    },
+    "expected_status": "ineligible",
+    "note": "Roublard n’a ni les armes martiales ni le cimeterre en arme spécifique : la maitrise nommée (proficiency gating) doit refuser, pas renvoyer manual_check."
+  },
+  {
+    "id": "frondeur_fouetteur_halfelin_eligible_fronde_raciale",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Magicien",
+      "level": 3,
+      "race": "Halfelin"
+    },
+    "expected_status": "eligible",
+    "note": "Le Magicien n’a pas la fronde par sa classe, mais l’halfelin l’a comme arme familiale (racial_trait_text) : le gating proficiency doit consulter la race, pas seulement la classe."
+  },
+  {
+    "id": "frondeur_fouetteur_magicien_ineligible_sans_race",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Magicien",
+      "level": 3
+    },
+    "expected_status": "ineligible",
+    "note": "Magicien sans race renseignée et sans fronde par sa classe : ineligible, pas manual_check (classe connue de class_proficiencies.json)."
+  },
+  {
+    "id": "fouet_serpent_barde_eligible_arme_specifique_classe",
+    "feat_name": "Fouet-serpent",
+    "character": {
+      "character_class": "Barde",
+      "level": 4,
+      "known_feats": [
+        "Attaque en finesse"
+      ]
+    },
+    "expected_status": "eligible",
+    "note": "Le Barde a le fouet comme arme spécifique accordée par sa classe (armes_specifiques), bien qu’il n’ait pas toutes les armes exotiques."
+  },
+  {
+    "id": "fouet_serpent_guerrier_ineligible_fouet_non_accorde",
+    "feat_name": "Fouet-serpent",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 4,
+      "known_feats": [
+        "Attaque en finesse"
+      ]
+    },
+    "expected_status": "ineligible",
+    "note": "Le Guerrier a martial+simple mais pas les armes exotiques : le fouet (exotique) doit rester hors de sa portée sans le don dédié."
+  },
+  {
+    "id": "vipere_jaillissante_nain_eligible_reclassification_exotique",
+    "feat_name": "Frappe de la vipère jaillissante",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6,
+      "race": "Nain"
+    },
+    "expected_status": "eligible",
+    "note": "Le nain traite toute arme « naine » (dorn-dergar naine) comme une arme de guerre, et le Guerrier a les armes martiales : reclassification exotique->martiale par la race, testée explicitement."
+  },
+  {
+    "id": "vipere_jaillissante_guerrier_ineligible_sans_reclassification",
+    "feat_name": "Frappe de la vipère jaillissante",
+    "character": {
+      "character_class": "Guerrier",
+      "level": 6
+    },
+    "expected_status": "ineligible",
+    "note": "Sans race naine, la dorn-dergar naine reste une arme exotique que le Guerrier (martial+simple seulement) ne maitrise pas."
+  },
+  {
+    "id": "frondeur_fouetteur_classe_inconnue_manual_check",
+    "feat_name": "Frondeur-fouetteur",
+    "character": {
+      "character_class": "Chasseur de vampire",
+      "level": 3
+    },
+    "expected_status": "manual_check",
+    "note": "Classe absente de class_proficiencies.json (aucune classe officielle PF1 de ce nom) : le moteur ne doit jamais deviner, donc manual_check et non ineligible."
   }
 ]
