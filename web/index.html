@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explorateur de dons — Pathfinder 1e</title>
+
+    <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+
+    <link rel="stylesheet" href="explorateur_dons.css" />
+    <style>
+      /* Gabarit de la page de démo uniquement. Le composant, lui, ne dépend que
+       * de explorateur_dons.css : pour l'intégrer ailleurs, reprendre le bloc <script>
+       * du bas et rien d'autre. */
+      body {
+        margin: 0;
+        padding: 18px;
+        background: #f9f9f7;
+        color: #0b0b0b;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        body:where(:not([data-theme="light"])) {
+          background: #0d0d0d;
+          color: #ffffff;
+        }
+      }
+      .demo-erreur {
+        max-width: 620px;
+        margin: 40px auto;
+        padding: 16px 18px;
+        border: 1px solid rgba(11, 11, 11, 0.1);
+        border-radius: 8px;
+        background: #fcfcfb;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+      .demo-erreur code {
+        background: #f0efec;
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="explorateur"></div>
+
+    <script src="explorateur_dons.js"></script>
+    <script>
+      cytoscape.use(cytoscapeDagre);
+
+      var CHEMIN = "exemple_guerrier.json";
+      var cible = document.getElementById("explorateur");
+
+      function erreur(message) {
+        cible.innerHTML =
+          '<div class="demo-erreur"><strong>Données non chargées.</strong><p>' +
+          message +
+          "</p><p>Un navigateur refuse de lire un fichier local en <code>file://</code>. " +
+          "Lance un serveur depuis le dossier <code>web/</code> :</p>" +
+          "<pre><code>python -m http.server 8000</code></pre>" +
+          '<p>puis ouvre <code>http://localhost:8000/</code>.</p>' +
+          '<p>Ou choisis le JSON à la main : <input type="file" accept=".json" id="demo-fichier"></p></div>';
+        document
+          .getElementById("demo-fichier")
+          .addEventListener("change", function (evt) {
+            var fichier = evt.target.files[0];
+            if (!fichier) return;
+            var lecteur = new FileReader();
+            lecteur.onload = function () {
+              ExplorateurDons.rendre(cible, JSON.parse(lecteur.result));
+            };
+            lecteur.readAsText(fichier, "utf-8");
+          });
+      }
+
+      fetch(CHEMIN)
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (donnees) {
+          ExplorateurDons.rendre(cible, donnees);
+        })
+        .catch(function (e) {
+          erreur("Impossible de charger <code>" + CHEMIN + "</code> (" + e.message + ").");
+        });
+    </script>
+  </body>
+</html>

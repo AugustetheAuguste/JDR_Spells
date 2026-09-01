@@ -1,0 +1,591 @@
+/* Explorateur de dons — feuille de style du composant.
+ *
+ * Tout est écrit contre des rôles (--surface-1, --cout-3…) et jamais contre un
+ * hex brut, pour que le passage clair/sombre se joue en un seul endroit.
+ *
+ * Encodage des couleurs : le coût en emplacements est une magnitude ordinale, il
+ * prend donc la rampe séquentielle bleue (une seule teinte, clair -> foncé). Le
+ * statut du moteur (eligible / manual_check) est un état : il passe par la
+ * bordure et un marqueur textuel « ! », jamais par la teinte seule. Aucune autre
+ * facette n'est encodée en couleur — avec sept facettes, une palette par facette
+ * ne serait plus qu'un vitrail.
+ */
+
+.explorateur-dons {
+  color-scheme: light;
+  --surface-1: #fcfcfb;
+  --plan: #f9f9f7;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.1);
+  --accent-plan: rgba(42, 120, 214, 0.1);
+
+  /* Rampe ordinale du coût. Le pas le plus clair ne descend pas sous le 250
+   * (#86b6ef, 2.06:1) : en dessous, un nœud se confondrait avec la surface. */
+  --cout-1: #86b6ef;
+  --cout-2: #5598e7;
+  --cout-3: #2a78d6;
+  --cout-4: #1c5cab;
+  --cout-5: #104281;
+  --acquis: #898781;
+
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text-primary);
+  background: var(--plan);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .explorateur-dons {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --plan: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.1);
+    --accent-plan: rgba(57, 135, 229, 0.18);
+    /* Pas re-teintés pour la surface sombre : on ne descend pas sous le 600. */
+    --cout-1: #b7d3f6;
+    --cout-2: #86b6ef;
+    --cout-3: #3987e5;
+    --cout-4: #256abf;
+    --cout-5: #184f95;
+  }
+}
+
+:root[data-theme="dark"] .explorateur-dons {
+  color-scheme: dark;
+  --surface-1: #1a1a19;
+  --plan: #0d0d0d;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent-plan: rgba(57, 135, 229, 0.18);
+  --cout-1: #b7d3f6;
+  --cout-2: #86b6ef;
+  --cout-3: #3987e5;
+  --cout-4: #256abf;
+  --cout-5: #184f95;
+}
+
+/* ---------- ossature ---------- */
+
+.explorateur-dons * {
+  box-sizing: border-box;
+}
+
+.ed-entete {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 4px 2px 10px;
+}
+
+.ed-titre {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ed-sous-titre {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.ed-barre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 10px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.ed-recherche {
+  flex: 1;
+  min-width: 200px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--surface-1);
+  border: 1px solid var(--axis);
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.ed-onglets {
+  display: flex;
+  gap: 2px;
+  background: var(--plan);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.ed-onglet {
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.ed-onglet:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ed-onglet--actif {
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: 0 1px 2px var(--border);
+}
+
+/* Trois colonnes : facettes, vue, détail. Le détail reste visible pendant qu'on
+ * parcourt la liste — c'est tout l'intérêt des lignes compactes. */
+.ed-corps {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr) 320px;
+  gap: 10px;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .ed-corps {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .ed-corps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.ed-compte {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- facettes ---------- */
+
+.ed-facettes {
+  position: sticky;
+  top: 8px;
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+}
+
+.ed-facette {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.ed-facette h3 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin: 0 0 6px;
+}
+
+.ed-raz {
+  font: inherit;
+  font-size: 11px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ed-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ed-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+.ed-option:hover .ed-option-nom {
+  text-decoration: underline;
+}
+
+.ed-option-nom {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Le compte de chaque option est aligné à droite en chiffres tabulaires : c'est
+ * lui qui dit d'avance ce que le clic va donner, il doit se comparer d'un coup
+ * d'œil d'une ligne à l'autre. */
+.ed-option-compte {
+  flex: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ed-curseur {
+  width: 100%;
+  accent-color: var(--cout-3);
+}
+
+.ed-select {
+  width: 100%;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--surface-1);
+  border: 1px solid var(--axis);
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+
+.ed-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  padding: 0 12px;
+  margin: 0;
+}
+
+/* ---------- vue liste : lignes compactes ---------- */
+
+.ed-liste {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 720px;
+  overflow: auto;
+}
+
+/* Une ligne = un bouton pleine largeur : toute la surface est cliquable, et le
+ * parcours au clavier suit l'ordre de lecture sans qu'on ait à gérer le focus. */
+.ed-ligne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font: inherit;
+  color: var(--text-primary);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--grid);
+  border-left: 3px solid transparent;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ed-ligne:last-child {
+  border-bottom: 0;
+}
+
+.ed-ligne:hover {
+  background: var(--plan);
+}
+
+.ed-ligne--active {
+  background: var(--accent-plan);
+  border-left-color: var(--cout-3);
+}
+
+.ed-pastille {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.ed-ligne-texte {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ed-ligne-nom {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Le résumé est tronqué à une ligne : la densité est le but de cette vue, le
+ * texte entier est à un clic dans le panneau de détail. */
+.ed-ligne-resume {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ed-ligne-meta {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ed-etiquette {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: var(--plan);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+/* Marqueur textuel du statut : la couleur ne porte jamais seule le sens. */
+.ed-alerte {
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.ed-mesure {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  flex: none;
+}
+
+/* ---------- vue arbre ---------- */
+
+.ed-scene {
+  position: relative;
+  height: 720px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ed-graphe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- vue tableau ---------- */
+
+.ed-tableau {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 720px;
+  overflow: auto;
+}
+
+.ed-tableau table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.ed-tableau th,
+.ed-tableau td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--grid);
+  white-space: nowrap;
+}
+
+.ed-tableau th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-1);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.ed-tableau td:nth-child(n + 3) {
+  font-variant-numeric: tabular-nums;
+}
+
+.ed-vide {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* ---------- panneau de détail ---------- */
+
+.ed-detail-colonne {
+  position: sticky;
+  top: 8px;
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+}
+
+.ed-detail {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+.ed-detail-nom {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.ed-resume {
+  margin: 0 0 4px;
+  line-height: 1.45;
+}
+
+.ed-detail h4 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin: 14px 0 4px;
+}
+
+.ed-detail dl {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 2px 10px;
+  margin: 10px 0 0;
+}
+
+.ed-detail dt {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.ed-detail dd {
+  margin: 0;
+}
+
+.ed-detail p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.ed-description {
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-line;
+}
+
+.ed-mots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px !important;
+}
+
+.ed-mot {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: var(--plan);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+.ed-liens {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.ed-liens li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--grid);
+}
+
+.ed-liens li:last-child {
+  border-bottom: 0;
+}
+
+.ed-lien {
+  flex: 1;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ed-lien:hover {
+  text-decoration: underline;
+}
+
+.ed-avertissement {
+  margin: 12px 0 0;
+  padding: 8px 10px;
+  border-left: 3px solid var(--axis);
+  background: var(--plan);
+  border-radius: 0 5px 5px 0;
+}
+
+.ed-avertissement ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.45;
+}

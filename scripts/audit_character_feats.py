@@ -98,6 +98,11 @@ def build_report(character: Character, label: str, catalog: list) -> str:
             out.append("")
             out.append(f"--- {feat.name} [{feat.source}]")
             out.append(f"    Conditions (CSV) : {feat.raw_conditions!r}")
+            if feat.prereq_supplements:
+                # Prérequis lus sur la page et retenus par la curation de
+                # `Data/dons/feat_prereq_supplements.json` : le moteur les évalue,
+                # l'audit doit donc les citer à côté de la source CSV.
+                out.append(f"    Ajouts (page)    : {list(feat.prereq_supplements)!r}")
             detail = details.get(feat.name) or {}
             if detail.get("conditions_detail"):
                 out.append(f"    Conditions (page): {detail['conditions_detail']!r}")

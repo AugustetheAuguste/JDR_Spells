@@ -86,6 +86,7 @@ python scripts/comparer_classes.py "Base Guerrier" "Base Druide" [...] -o rappor
 pf1_dons/    the package: parsing + eligibility engine + character creation
 scrappers/   standalone scrapers/taggers that produce Data/ (not imported by the package)
 scripts/     standalone curation, audit and test-bench scripts (not imported by the package)
+web/         l'explorateur de dons à facettes (JSON + JS + CSS, embarquable) et son test jsdom
 tests/       pytest suite + the tests/golden/ regression fixture
 build/        per-project working notes; OUTPUT_*.md hold the durable reasoning
 Data/
@@ -108,6 +109,8 @@ a data file means editing one line in `paths.py`.
 The pipeline is: **CSV → parse conditions into structured requirements → evaluate against a Character → grouped eligibility results.**
 
 1. **`data_loader.py`** — loads `Data/dons/Dons.csv` (columns: `Dons` name, `Src` source, `Conditions`, `Avantages`) into `FeatRow` objects. Rows where `Conditions` or `Avantages` is `#ERROR!` are filtered out via `filter_valid_rows`, but the *full* set of feat names (including filtered rows) is still passed to the parser as `all_feat_names`, so that feat-name prerequisites referencing an excluded feat still resolve correctly.
+
+   **`repair_benefits` runs before `filter_valid_rows` and, in practice, leaves it nothing to drop.** 127 of the CSV's 1417 rows carried `#ERROR!` in `Avantages` while their `Conditions` were intact — the column the eligibility engine never reads. Filtering them amputated 10 % of the catalog and, worse, punched holes in the prerequisite graph at its most structural nodes: `Endurance` (a prerequisite of 15 feats, and itself requiring nothing), `Science de la lutte` (18), `Souplesse du serpent` (17), `Science du croc-en-jambe` (16)… 44 feat-name prerequisites resolved to nothing, so whole feat chains were invisible. `repair_benefits` backfills those `Avantages` from `Data/dons/feat_details.json`'s `avantages_detail` (keyed on the `clean_feat_name` form, since that file drops the repeatable-feat asterisk the CSV keeps) — it covers all 127. The catalog is therefore 1417 feats with **zero** dangling feat prerequisites; chains of depth 2 went from 123 to 177 and of depth 3 from 25 to 48. `tests/test_data_loader.py` guards both the coverage and the no-dangling-prerequisite invariant. Rows are still dropped if a repair is unavailable, so the filter remains the backstop.
 
 2. **`parser.py`** — turns the free-text `Conditions` string into a `ParsedConditions` (from `models.py`): a list of `Requirement` or `OrGroup` objects.
    - Top-level requirements are comma- *or semicolon*-separated (`_split_top_level` splits on `[,;]`, careful not to split inside parentheses).
@@ -170,6 +173,173 @@ Un prérequis `CASTER_LEVEL` (« NLS *n* ») exige d'être lanceur de sorts : `e
 `scripts/creer_fiches_classes_de_base.py` crée les 11 fiches des classes de base au niveau 6, toutes de race humaine pour isoler la variable « classe », avec alignement et divinité renseignés là où la classe en dépend. `scripts/comparer_classes.py` produit le tableau croisé (une ligne par don, une colonne par classe, `O`/`?`/`.`, sortie complète jamais tronquée) suivi des dons proposés à toutes les classes et des dons exclusifs à une seule. Ce croisement détecte la classe d'erreurs qu'un audit mono-classe ne peut pas voir — *un don refusé à la classe qui possède justement la capacité requise* — et a ainsi révélé trois erreurs de données (le scalde marqué non-lanceur, « forme animale » attribuée au seul métamorphe donc refusée au druide, et une extraction de divinité cassée par un `lstrip` pris pour un retrait de préfixe). Résultats, métriques par classe et motifs rejetés : `build/feat-detail-and-magic-gating/OUTPUT_multiclasse_niveau6.md`.
 
 Principe de sûreté qui gouverne toutes ces couches : **une sous-attribution est bien plus grave qu'une sur-attribution.** Sur-attribuer ne coûte qu'un `manual_check` ; sous-attribuer produit un `ineligible` faux, qui cache le don au joueur sans recours.
+
+### Explorateur de dons (visualisation web)
+
+`scripts/exporter_arbre_dons.py` produit, pour un personnage, le **graphe élagué**
+des dons qu'il peut viser, en JSON ; `web/explorateur_dons.js`
+(+ `explorateur_dons.css`) le rend sous forme de **navigateur à facettes**, dont
+l'arbre Cytoscape/dagre n'est qu'une des vues. La frontière est stricte : le Python
+n'émet aucune mise en forme, le JS n'émet aucune règle d'éligibilité — c'est ce qui
+rend le même JSON réutilisable dans un site. `web/index.html` est la page de démo
+*et* la référence d'intégration (elle exige un serveur, `python -m http.server`, un
+navigateur refusant `fetch` en `file://`). Point d'entrée unique :
+`ExplorateurDons.rendre(conteneur, donnees)`.
+
+```
+python scripts/exporter_arbre_dons.py <nom_du_personnage> [--slots N] [-o f.json]
+python scripts/exporter_arbre_dons.py --classe Guerrier --niveau 6 --race Humain -o web/exemple_guerrier.json
+```
+
+L'atteignabilité est calculée par **fermeture itérative** (`calculer_vagues`) : on
+évalue le catalogue, on suppose acquis les dons obtenus, on réévalue, jusqu'à
+`--slots` tours. Cette méthode réutilise `evaluate_feat` inchangé, donc elle
+hérite de tout son gating et gère les `OrGroup` sans qu'un seul bout de la logique
+des prérequis soit réimplémenté. **Elle passe un `known_feats` explicite** (jamais
+`None`), ce qui change la sémantique par rapport à `filter_feats` : un prérequis-don
+non possédé y vaut `False` au lieu de `None`, donc un don gated sur un don non pris
+est rangé dans une vague ultérieure au lieu d'être annoncé accessible (pour un
+Guerrier 6 : 234 accessibles tout de suite contre 482 vus par `filter_feats`).
+
+Grandeurs dérivées, toutes dans l'export :
+
+- **`cout`** — nombre exact d'emplacements pour décrocher le don, prérequis
+  compris. La vague n'en est qu'une borne inférieure : un don exigeant deux
+  prérequis distincts de vague 1 coûte 3, pas 2 ; `calculer_couts` calcule donc la
+  fermeture des prérequis manquants en dédupliquant les branches partagées, et
+  retient l'alternative la moins chère pour un OU.
+- **`levier`** / **`levier_catalogue`** / **`debloque`** — nombre de dons que
+  celui-ci débloque transitivement, respectivement **dans la vue** et **dans le
+  catalogue entier**, plus la **liste** des enfants directs. Le proxy de valeur le
+  plus honnête disponible : le CSV ne dit **rien** de la puissance d'un don, mais
+  « Expertise du combat » en ouvrant 65 est un fait structurel. Ne jamais présenter
+  ce classement comme une mesure de puissance.
+- **`voie`** / **`voie_taille`** — le hub racine dont le don descend, et la taille
+  de cette voie. Sans ce découpage la composante géante s'affiche d'un bloc et
+  n'apprend rien ; avec lui on retrouve les familles qu'un joueur a en tête (voie de
+  l'Expertise du combat, de l'Attaque en puissance…). `voie_taille` permet au rendu
+  de replier les voies de taille 1-2 sans rien redériver.
+
+**`construire_graphe(catalog, restreint_a=None)` est appelé deux fois, et c'est le
+cœur du correctif du bug d'origine** (« des groupes de 1 qui annoncent débloquer 2
+dons sans les montrer ») : les trois grandeurs étaient calculées sur le catalogue
+(1417 dons) puis affichées à côté d'un graphe ne montrant que le sous-ensemble
+atteignable (459 pour un Guerrier 6). Tout ce que l'une comptait et que l'autre ne
+montrait pas devenait un mensonge à l'écran : 94 nœuds à levier surévalué, 13 nœuds
+sans arête, 2 voies nommées d'après un don non retenu — désormais 0/0/0. L'écart
+entre `levier` et `levier_catalogue` n'est plus caché mais *affiché*, comme
+information (« ce don ouvre plus loin que tu ne vois d'ici »). Raisonnement complet
+et mesures avant/après : `build/explorateur-et-etiquetage-semantique/OUTPUT_defauts_du_graphe.md`.
+
+Côté rendu : la navigation à facettes passe devant le graphe parce qu'un joueur
+demande d'abord « quels dons me donnent un bonus aux dégâts pour deux emplacements »
+(le graphe ne répond qu'à « d'où vient ce don »). **OU dans une facette, ET entre
+facettes** ; chaque option est comptée sous toutes les *autres* facettes
+(`passe(n, saufFacette, …)`), de sorte que le compteur prédit exactement le résultat
+du clic, et les options à zéro disparaissent. Ajouter une facette est une ligne dans
+la table `FACETTES` — y déclarer `liste: true` est obligatoire pour un champ
+multivalué (l'oublier sur `categorie_officielle` faisait annoncer 249 dons pour un
+filtre qui n'en gardait aucun). Le coût est une magnitude ordinale, il prend donc la
+rampe séquentielle bleue à une seule teinte (validée par
+`validate_palette.js --ordinal` dans les deux modes), et le statut `manual_check`
+passe par la **bordure en tirets plus un « ! » textuel**, jamais par la teinte seule.
+Les dons **isolés** (165 pour un Guerrier 6) sont listés dans la vue liste mais
+exclus du graphe : sans arête, ils ne forment qu'un nuage de points. Cytoscape
+n'interprète pas les variables CSS, donc `lireRoles()` les résout depuis l'élément
+racine via `global.getComputedStyle` (jamais le global implicite du navigateur : le
+composant doit rester rendable sous jsdom) — la feuille de style reste l'unique
+source de vérité des couleurs, y compris pour le thème sombre (`rafraichirTheme()`).
+
+`web/test_explorateur.js` est un test headless jsdom (`npm install jsdom` puis
+`node web/test_explorateur.js web/exemple_guerrier.json`). Il garde les deux
+invariants qui *sont* le bug d'origine, et qu'aucune relecture de code ne peut
+attraper : **le compteur d'une option prédit exactement le résultat du clic**, et
+**ce que le panneau de détail annonce, il le montre** (comparé sur 38 dons réels).
+Le composant se dégrade proprement : facettes sémantiques masquées si
+`resume.dons_etiquetes === 0`, onglet « arbre » désactivé sans Cytoscape — les deux
+états sont eux aussi testés.
+
+### Étiquetage sémantique des dons (LLM)
+
+Le CSV et les pages scrapées disent ce qu'un don *exige*, jamais ce qu'il *donne*.
+`scrappers/tag_feat_semantics.py` comble ce trou en étiquetant les 1417 dons via
+Bedrock (`eu.anthropic.claude-opus-5`), et produit `Data/dons/feat_semantics.json` :
+`effet_principal` (l'axe d'organisation primaire de l'explorateur),
+`effets_secondaires`, `cible_du_bonus`, `valeur_bonus`, `contexte`, `activation`,
+`utilisations`, `polyvalence`, `resume_court`, `mots_cles`, `categorie_officielle`,
+`confiance`. Il écrit aussi `Data/dons/feat_semantics_review.json` : les 86 dons dont
+la page mentionne un prérequis **absent du CSV** (`prerequis_non_modelises`, p.ex.
+« Attaque au galop » exige 1 rang en Équitation). Ce fichier est un **relevé brut**
+destiné à une relecture humaine et ne doit **jamais** être appliqué automatiquement
+au moteur d'éligibilité ; sa relecture curée est
+`Data/dons/feat_prereq_supplements.json` (ci-dessous).
+
+```
+python scrappers/tag_feat_semantics.py [--lot N] [--limite N]
+python scrappers/tag_feat_semantics.py --normaliser   # hors-ligne, re-normalise l'existant
+```
+
+Deux propriétés du script tirées de l'expérience, à ne pas retirer : les vocabulaires
+fermés sont **renormalisés côté client** (`normaliser_fiche`), car les `enum` du
+schéma d'outil ne sont **pas** appliqués sur ce chemin Bedrock — une valeur
+hors-vocabulaire devient `None` plutôt que de polluer une facette ; et un lot qui
+échoue est **repris don par don** automatiquement, l'échec s'étant révélé être une
+propriété du lot et non des dons (les 20 récalcitrants ont tous passé en `--lot 1`).
+La reprise est incrémentale : `traiter` isole chaque lot, donc huit lots réussis ne
+sont plus perdus pour un neuvième malformé.
+
+Le rendu ne dépend pas de cette passe : sans `feat_semantics.json`, l'export reste
+valide et l'explorateur masque les facettes sémantiques. Limite connue :
+`polyvalence` vaut `conditionnel` pour 61 % des dons, c'est donc une facette faible.
+Le choix des quatre axes, les vocabulaires, les distributions mesurées et les deux
+enseignements ci-dessus sont détaillés dans
+`build/explorateur-et-etiquetage-semantique/OUTPUT_taxonomie_semantique.md`.
+
+### Prérequis lus sur la page et absents du CSV
+
+`Data/dons/feat_prereq_supplements.json` (`scripts/curate_prereq_supplements.py`)
+est la relecture **curée à la main** des 86 dons de `feat_semantics_review.json`.
+La question posée à chaque fragment relevé est : *est-il quantifiable ?* — donc
+réductible à une caractéristique, un BBA, des rangs de compétence ou un nom de don,
+les quatre choses que le parser sait déjà lire.
+
+- Oui → il part dans `ajouts`, réécrit **dans la syntaxe de la colonne
+  `Conditions`** (« bonus de base à l'attaque +1 » → « BBA +1 »).
+  `data_loader.py::_concatener_conditions` les colle aux conditions du CSV avant
+  l'appel au parser : aucune règle, aucun `RequirementType`, aucune ligne de moteur
+  n'a été ajoutée pour cette couche. `FeatRow.raw_conditions` reste le texte du CSV
+  (la source qu'un audit doit citer) ; `FeatRow.prereq_supplements` porte les
+  ajouts et `FeatRow.effective_conditions` la concaténation réellement évaluée.
+- Non → il part dans `ignores` avec le **genre** qui dit pourquoi, rien n'étant
+  jeté en silence : `self_reference` (7 dons listés comme leur propre prérequis —
+  bruit de scraping, condition insatisfiable par construction), `proficiency`
+  (« maniement de l'arme choisie » : non modélisé, et tout personnage choisit son
+  arme), `niveau_1_uniquement`, `contrainte_de_jeu` (matériel, encombrement,
+  rituel), `prose_permissive` (la phrase *élargit* l'accès, la transcrire
+  l'inverserait), `non_automatisable`, `variante_de_source`, `redondant`.
+
+Bilan : 47 dons augmentés (68 fragments), 39 entièrement écartés. Le genre le plus
+dangereux est `variante_de_source` : la page **contredit** le CSV au lieu de le
+compléter (« homme-lézard » contre « homme-serpent », ou le grade mythique de
+l'homonyme mythique de « Maîtrise du combat défensif ») et l'additionner
+fabriquerait une condition impossible, donc un `ineligible` universel.
+
+```
+python scripts/curate_prereq_supplements.py
+python scripts/curate_prereq_supplements.py --verifier   # contrôles seuls
+```
+
+Le contrôle qui compte : `--verifier` refuse d'écrire si un `ajout` n'est pas lu
+par le parser comme un prérequis quantifiable unique. Un ajout retombant en
+`UNPARSED` n'ajouterait qu'un `manual_check`, l'inverse du but de la couche — c'est
+lui qui a renvoyé « fidèle du Destructeur » vers `non_automatisable`. Fichier
+absent = catalogue inchangé, comme pour toutes les couches de gating.
+`tag_feat_semantics.py` compare désormais la page à `effective_conditions`, sinon
+un nouveau passage re-signalerait sans fin les prérequis déjà intégrés ; par
+conséquent un don curé peut quitter le relevé, et l'inclusion vérifiée est à sens
+unique (tout don du relevé doit être tranché, pas l'inverse). Relecture détaillée,
+mesures avant/après et pièges dans
+`build/explorateur-et-etiquetage-semantique/OUTPUT_prerequis_de_la_page.md`.
 
 ### Pistes futures
 
