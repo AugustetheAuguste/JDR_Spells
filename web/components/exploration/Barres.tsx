@@ -98,7 +98,7 @@ export function Barres({
                 aria-checked={multiple ? coche : undefined}
                 aria-label={tranche.libelleAccessible}
                 className={[
-                  'block w-full rounded-jeton px-2 py-1.5 text-left text-base text-encre hover:bg-survol',
+                  'block w-full rounded-jeton px-2 py-1.5 text-left text-corps text-encre hover:bg-survol',
                   coche ? 'bg-accent-voile' : '',
                 ].join(' ')}
                 onClick={() => surChoix(tranche.valeur as string)}

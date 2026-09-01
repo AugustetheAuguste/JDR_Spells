@@ -257,7 +257,7 @@ export function VueExploration() {
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Explorer</h1>
-      <p className="mt-1 mb-4 text-base text-encre-douce">
+      <p className="mt-1 mb-4 text-corps text-encre-douce">
         {sorts.length} {sorts.length === 1 ? 'sort' : 'sorts'} à ce stade
         {nomsClasses.length === 0
           ? ''
@@ -320,7 +320,7 @@ export function VueExploration() {
             {axe === null ? (
               <div className="rounded-panneau border border-bord bg-surface px-4 py-5">
                 <p className="m-0 font-affichage text-titre3 font-semibold">Vous y êtes.</p>
-                <p className="mt-2 mb-0 max-w-[68ch] text-base text-encre-douce">
+                <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
                   Plus aucun découpage ne sépare ces {sorts.length}{' '}
                   {sorts.length === 1 ? 'sort' : 'sorts'} : ils partagent tout ce que cette page
                   sait comparer. La suite se lit sur les fiches, ci-dessous.
@@ -420,7 +420,7 @@ export function VueExploration() {
             </>
           ) : (
             <details>
-              <summary className="cursor-pointer text-base text-accent">
+              <summary className="cursor-pointer text-corps text-accent">
                 Voir les {listes.length} sorts de cet ensemble (les {SEUIL_LISTE} premiers)
               </summary>
               <div className="mt-2">
