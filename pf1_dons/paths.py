@@ -49,6 +49,9 @@ CLASS_SKILLS = CLASSES_DIR / "class_skills.json"
 CLASS_BONUS_FEATS = CLASSES_DIR / "class_bonus_feats.json"
 CLASS_ABILITY_MAP = CLASSES_DIR / "class_ability_map.json"
 CLASS_CASTER_INFO = CLASSES_DIR / "class_caster_info.json"
+# Maîtrises d'armes/de boucliers accordées par la classe (cf. engine.py,
+# gating "proficiency"). Curé à la main, même patron que CLASS_CASTER_INFO.
+CLASS_PROFICIENCIES = CLASSES_DIR / "class_proficiencies.json"
 # Brouillons produits par les scripts de seed, non versionnés (.gitignore).
 CLASS_ABILITY_MAP_DRAFT = CLASSES_DIR / "class_ability_map.draft.json"
 CLASS_CASTER_INFO_DRAFT = CLASSES_DIR / "class_caster_info.draft.json"
