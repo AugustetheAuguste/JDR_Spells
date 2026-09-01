@@ -32,6 +32,16 @@ FEAT_CATEGORIES = DONS_DIR / "feat_categories.json"
 FEAT_MAGIC_INFO = DONS_DIR / "feat_magic_info.json"
 FEAT_CREATURE_AFFINITY = DONS_DIR / "feat_creature_affinity.json"
 FEAT_CLASS_RESTRICTION = DONS_DIR / "feat_class_restriction.json"
+# Étiquetage sémantique par LLM (« que donne ce don ? »), cf.
+# scrappers/tag_feat_semantics.py. Le fichier de revue rassemble les prérequis
+# que le texte de la page énonce mais que les Conditions du CSV ignorent : il
+# est destiné à une relecture humaine, jamais appliqué automatiquement.
+FEAT_SEMANTICS = DONS_DIR / "feat_semantics.json"
+FEAT_SEMANTICS_REVIEW = DONS_DIR / "feat_semantics_review.json"
+# Relecture *curée* du fichier ci-dessus : les prérequis de la page qui sont
+# quantifiables (`ajouts`, concaténés aux Conditions du CSV par data_loader)
+# et ceux qui ne le sont pas (`ignores`, avec le genre qui dit pourquoi).
+FEAT_PREREQ_SUPPLEMENTS = DONS_DIR / "feat_prereq_supplements.json"
 
 # --- Classes : progressions scrapées, et tables de gating curées -----------
 CLASS_FEATURES = CLASSES_DIR / "class_features.json"

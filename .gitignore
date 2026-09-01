@@ -22,3 +22,8 @@ slots_*.txt
 
 .claude/worktrees/
 .claude/scheduled_tasks.lock
+
+# Dépendances du test headless du composant web (npm install jsdom).
+node_modules/
+package-lock.json
+package.json
