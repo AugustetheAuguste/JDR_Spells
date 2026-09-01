@@ -1641,8 +1641,10 @@
   {
    "keyword": "maniement d'un bouclier",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "bouclier": "generique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement d'un bouclier"
    ]
@@ -1650,8 +1652,11 @@
   {
    "keyword": "maniement d'une arme de siege",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "arme de siege",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement d'une arme de siège"
    ]
@@ -1659,8 +1664,11 @@
   {
    "keyword": "maniement d'une arme exotique (armes a feu)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "arme a feu",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (armes à feu)"
    ]
@@ -1668,8 +1676,11 @@
   {
    "keyword": "maniement d'une arme exotique (chaine cloutee)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "chaine cloutee",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (chaîne cloutée)"
    ]
@@ -1677,8 +1688,11 @@
   {
    "keyword": "maniement d'une arme exotique (epee de duel)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "epee de duel",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (épée de duel)"
    ]
@@ -1686,8 +1700,11 @@
   {
    "keyword": "maniement d'une arme exotique (falcata)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "falcata",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (falcata)"
    ]
@@ -1695,8 +1712,11 @@
   {
    "keyword": "maniement d'une arme exotique (filet)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "filet",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (filet)"
    ]
@@ -1704,8 +1724,11 @@
   {
    "keyword": "maniement d'une arme exotique (lasso)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "lasso",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (lasso)"
    ]
@@ -1713,8 +1736,11 @@
   {
    "keyword": "maniement d'une arme exotique (sabre dentele)",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "sabre dentele",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement d'une arme exotique (sabre dentelé)"
    ]
@@ -1722,8 +1748,11 @@
   {
    "keyword": "maniement de l'arc long",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "arc long",
+    "categorie": "martiale"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement de l'arc long"
    ]
@@ -1758,8 +1787,11 @@
   {
    "keyword": "maniement de la dorn-dergar naine",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "dorn-dergar naine",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement de la dorn-dergar naine"
    ]
@@ -1767,8 +1799,11 @@
   {
    "keyword": "maniement de la fronde",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "fronde",
+    "categorie": "simple"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement de la fronde"
    ]
@@ -1776,8 +1811,10 @@
   {
    "keyword": "maniement de la targe",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "bouclier": "targe"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement de la targe"
    ]
@@ -1785,8 +1822,11 @@
   {
    "keyword": "maniement des pointes pour armure",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "pointes pour armure",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement des pointes pour armure"
    ]
@@ -1803,8 +1843,11 @@
   {
    "keyword": "maniement du cimeterre",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "cimeterre",
+    "categorie": "martiale"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement du cimeterre"
    ]
@@ -1812,8 +1855,11 @@
   {
    "keyword": "maniement du fouet",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "fouet",
+    "categorie": "exotique"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement du fouet"
    ]
@@ -1821,8 +1867,11 @@
   {
    "keyword": "maniement du marteau",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "marteau",
+    "categorie": "simple"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "Maniement du marteau"
    ]
@@ -1830,8 +1879,11 @@
   {
    "keyword": "maniement du marteau de guerre",
    "kind": "proficiency",
-   "param": null,
-   "blocking": false,
+   "param": {
+    "arme": "marteau de guerre",
+    "categorie": "martiale"
+   },
+   "blocking": true,
    "source_raw_examples": [
     "maniement du marteau de guerre"
    ]

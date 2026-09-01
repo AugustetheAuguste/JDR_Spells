@@ -22,8 +22,12 @@ Ce script transcrit la classification (relue à la main) de ces prérequis en
 - ``deity``          : culte d'une divinité précise ; vérifiable si le personnage
                        a une divinité renseignée
 - ``alignment``      : alignement requis ; vérifiable si renseigné
-- ``proficiency``    : maîtrise d'une arme / d'une armure ; dépend de l'équipement
-                       choisi -> reste à valider à la main
+- ``proficiency``    : maîtrise d'une arme / d'une armure. Bloquant seulement
+                       quand l'arme ou le bouclier est *nommé* (pas un choix
+                       du joueur), résoluble contre
+                       Data/classes/class_proficiencies.json + la race ;
+                       sinon (« l'arme choisie », « le bouclier utilisé »…)
+                       reste à valider à la main.
 - ``feat``           : renvoie à un autre don (parfois paramétré) -> à la main
 - ``background``     : élément d'historique / d'appartenance -> décision du MJ
 - ``mythic``         : niveau mythique -> hors périmètre du moteur
@@ -260,6 +264,41 @@ PROFICIENCY_EXTRA = {
     "specialisation martiale avec l'arme a distance choisie",
 }
 
+# Maîtrise d'arme *nommée* (pas un choix du joueur) : résoluble contre
+# Data/classes/class_proficiencies.json + les traits raciaux (arc long chez
+# l'elfe, marteau de guerre chez le nain, fronde chez l'halfelin, et la
+# reclassification exotique -> martiale des armes « naines » chez le nain).
+# Catégorie officielle des armes (simple/martiale/exotique) vérifiée contre
+# d20pfsrd.com le 2026-09-01 ; voir
+# build/armes-et-armures-de-classe/OUTPUT_class_proficiencies_ground_truth.md.
+WEAPON_PROFICIENCY = {
+    "maniement d'une arme de siege": ("arme de siege", "exotique"),
+    "maniement d'une arme exotique (armes a feu)": ("arme a feu", "exotique"),
+    "maniement d'une arme exotique (chaine cloutee)": ("chaine cloutee", "exotique"),
+    "maniement d'une arme exotique (epee de duel)": ("epee de duel", "exotique"),
+    "maniement d'une arme exotique (falcata)": ("falcata", "exotique"),
+    "maniement d'une arme exotique (filet)": ("filet", "exotique"),
+    "maniement d'une arme exotique (lasso)": ("lasso", "exotique"),
+    "maniement d'une arme exotique (sabre dentele)": ("sabre dentele", "exotique"),
+    "maniement de l'arc long": ("arc long", "martiale"),
+    "maniement de la dorn-dergar naine": ("dorn-dergar naine", "exotique"),
+    "maniement de la fronde": ("fronde", "simple"),
+    "maniement des pointes pour armure": ("pointes pour armure", "exotique"),
+    "maniement du cimeterre": ("cimeterre", "martiale"),
+    "maniement du fouet": ("fouet", "exotique"),
+    "maniement du marteau": ("marteau", "simple"),
+    "maniement du marteau de guerre": ("marteau de guerre", "martiale"),
+}
+
+# Maîtrise de bouclier *nommée* : « generique » couvre les boucliers légers
+# et lourds (Data/classes/class_proficiencies.json:boucliers) ; « targe »
+# n'est accordée qu'aux classes qui l'ont dans leur armes_specifiques (ex.
+# bretteur, qui n'a pas la maîtrise générique des boucliers).
+SHIELD_PROFICIENCY = {
+    "maniement d'un bouclier": "generique",
+    "maniement de la targe": "targe",
+}
+
 # Artefacts de découpage : morceaux de parenthèse ou mots isolés.
 FRAGMENT = {
     "bouclier)", "chant)", "d'eau; capacite de classe explosion cinetique",
@@ -314,6 +353,11 @@ def classify(keyword: str) -> tuple[str, str | None]:
         return "spellcasting", None
     if keyword in PROFICIENCY_EXTRA:
         return "proficiency", None
+    if keyword in WEAPON_PROFICIENCY:
+        arme, categorie = WEAPON_PROFICIENCY[keyword]
+        return "proficiency", {"arme": arme, "categorie": categorie}
+    if keyword in SHIELD_PROFICIENCY:
+        return "proficiency", {"bouclier": SHIELD_PROFICIENCY[keyword]}
     if keyword in GENERIC:
         return "generic", None
     if keyword in RACIAL_TRAIT_EXTRA:
@@ -485,7 +529,8 @@ def main() -> None:
                 "keyword": keyword,
                 "kind": kind,
                 "param": param,
-                "blocking": kind in BLOCKING_KINDS,
+                "blocking": kind in BLOCKING_KINDS
+                or (kind == "proficiency" and isinstance(param, dict)),
                 "source_raw_examples": entry.get("source_raw_examples", []),
             }
         )

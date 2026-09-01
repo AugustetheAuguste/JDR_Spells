@@ -15,6 +15,9 @@ Status = Literal["eligible", "manual_check", "ineligible"]
 with open(paths.CLASS_CASTER_INFO, encoding="utf-8") as f:
     CLASS_CASTER_INFO = json.load(f)
 
+with open(paths.CLASS_PROFICIENCIES, encoding="utf-8") as f:
+    CLASS_PROFICIENCIES = json.load(f)
+
 with open(paths.FEAT_MAGIC_INFO, encoding="utf-8") as f:
     FEAT_MAGIC_INFO = json.load(f)
 
@@ -73,6 +76,86 @@ def creature_affinity_allows(race_name: Optional[str], creature_keywords: list[s
         if race_norm and (race_norm.rstrip("s") in keyword_norm or keyword_norm in race_norm.rstrip("s")):
             return True
     return False
+
+
+# Maîtrises d'armes accordées explicitement par la race, en plus de la
+# classe (Data/races/races.json, trait « Armes familières ») : recopiées
+# littéralement depuis
+# build/armes-et-armures-de-classe/OUTPUT_class_proficiencies_ground_truth.md
+# -- ne couvre que le sous-ensemble d'armes concerné par cette couche de
+# gating (voir WEAPON_PROFICIENCY dans scripts/curate_prereq_gating.py).
+RACE_WEAPON_PROFICIENCY: dict[str, list[str]] = {
+    "elfe": ["arc long"],
+    "nain": ["marteau de guerre"],
+    "halfelin": ["fronde"],
+}
+
+# Races qui traitent toute arme portant cette mention dans son nom comme une
+# arme de guerre (martiale) au lieu d'exotique -- reclassification, pas une
+# maîtrise accordée : la classe doit encore donner accès aux armes
+# martiales pour que ça compte. Seul le nain est pertinent pour le
+# sous-ensemble d'armes de cette couche (« dorn-dergar naine »).
+RACE_WEAPON_RECLASSIFICATION: dict[str, str] = {
+    "nain": "naine",
+}
+
+
+def _proficiency_verdict(param: dict, character: "Character", keyword: str) -> tuple[bool | None, str]:
+    """Résout un prérequis « maniement de X » nommé (pas un choix du joueur)
+    contre Data/classes/class_proficiencies.json et les maîtrises raciales.
+
+    Volontairement conservateur, même politique que magie_inaccessible : ne
+    renvoie ``False`` que si la classe est connue de class_proficiencies.json
+    et ne l'accorde pas (ni elle, ni la race) ; une classe absente de la
+    table renvoie ``None`` (jamais deviner).
+    """
+    entry = CLASS_PROFICIENCIES.get(_normalize(character.character_class))
+    race_norm = _normalize(character.race) if character.race else None
+
+    if "bouclier" in param:
+        bouclier = param["bouclier"]
+        label = f"maniement du bouclier ({keyword})"
+        if entry is not None:
+            if entry["boucliers"]:
+                return True, f"{label} : {character.character_class} a la maîtrise des boucliers"
+            if bouclier == "targe" and "targe" in entry["armes_specifiques"]:
+                return True, f"{label} : {character.character_class} est formé à la targe"
+        if entry is not None:
+            return False, f"{label} ; {character.character_class} n'a pas cette maîtrise"
+        return None, f"{label} ; classe {character.character_class} inconnue des maîtrises de classe"
+
+    arme, categorie = param["arme"], param["categorie"]
+    label = f"maniement de {arme} ({keyword})"
+
+    if entry is not None:
+        if categorie == "simple" and entry["armes_simples"]:
+            return True, f"{label} : {character.character_class} a toutes les armes simples"
+        if categorie == "martiale" and entry["armes_martiales"]:
+            return True, f"{label} : {character.character_class} a toutes les armes martiales"
+        if arme in entry["armes_specifiques"]:
+            return True, f"{label} : accordée nommément à {character.character_class}"
+
+    if race_norm:
+        if arme in RACE_WEAPON_PROFICIENCY.get(race_norm, []):
+            return True, f"{label} : arme familière de la race {character.race}"
+        marker = RACE_WEAPON_RECLASSIFICATION.get(race_norm)
+        if (
+            marker
+            and marker in arme
+            and entry is not None
+            and entry["armes_martiales"]
+        ):
+            return True, (
+                f"{label} : la race {character.race} la traite comme une arme "
+                f"de guerre, et {character.character_class} a les armes martiales"
+            )
+
+    if entry is not None:
+        return False, (
+            f"{label} ; ni la classe {character.character_class} ni la race "
+            f"{character.race or 'non fournie'} ne l'accordent"
+        )
+    return None, f"{label} ; classe {character.character_class} inconnue des maîtrises de classe"
 
 
 def _normalize(text: str) -> str:
@@ -166,8 +249,10 @@ def magie_inaccessible(character: "Character") -> bool:
 
 # Genres de prérequis (Data/conditions/prereq_gating.json) que le moteur
 # sait trancher.
-# Les autres (proficiency, feat, background, generic…) restent en
-# vérification manuelle : on ne devine pas.
+# proficiency n'est bloquant que pour les 18 entrées à arme/bouclier nommé
+# (cf. WEAPON_PROFICIENCY/SHIELD_PROFICIENCY dans
+# scripts/curate_prereq_gating.py) ; les autres (choix du joueur, feat,
+# background, generic…) restent en vérification manuelle : on ne devine pas.
 # Les alternatives restent volontairement des expressions longues : un mot
 # isolé ("langue", "nage", "vol") apparaît dans des traits raciaux sans rapport
 # (le trait « Langues » de toutes les races, par exemple) et produirait des
@@ -250,6 +335,9 @@ def _gating_verdict(hit: dict, character: Character) -> tuple[bool | None, str]:
             f"{label} requis « {param or keyword} » ; la race "
             f"{character.race} ne l'accorde pas"
         )
+
+    if kind == "proficiency":
+        return _proficiency_verdict(param, character, keyword)
 
     if kind == "alignment":
         if character.alignment is None:
