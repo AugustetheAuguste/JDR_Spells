@@ -16,6 +16,9 @@ vivent dans `web/lib/design/tokens.ts` et nulle part ailleurs. Un hex écrit en 
 dans un composant est un défaut, et un test le refuse (étape 03). Si le code et ce
 Skill divergent, **le Skill gagne et le code est corrigé**.
 
+Ce Skill est aussi l'autorité sur le TEXTE d'interface, pas seulement sur son
+apparence : toute chaîne affichée relève de la charte typographique ci-dessous.
+
 ## La direction visuelle est Grimoire — décidée par arbitrage humain, pas négociable
 
 **2026-08-31.** Ce Skill a documenté deux systèmes le même jour : d'abord Grimoire
@@ -48,6 +51,7 @@ visuelle supplémentaire, donc il est conservé plutôt que retiré par précaut
 | Une deuxième couleur d'accent | une seule, sinon plus rien ne ressort |
 | Animation d'entrée, apparition en fondu | 2070 lignes à parcourir : chaque animation est du délai |
 | Un hex hors de `tokens.ts` | le jeton n'est un jeton que s'il est unique |
+| Une couleur Tailwind par défaut (`text-white`, `bg-red-500`, …) | même raison, et la garde de `tokens.test.ts` ne cherche que des hex — c'est ainsi qu'un `text-white` sur `accent` a survécu en échouant AA à 2,86:1 en thème nuit |
 | Double cadre, ombre de cadre, filet d'or décoratif, glyphe `❖` | c'est précisément ce que le diagnostic « trop chargé » visait — retiré, pas paré, parce qu'aucune fonction ne s'y accroche |
 | Lettrine flottante (boîte, hauteur 44px, retrait du texte autour) | idem, réduite à la première lettre en couleur d'accent — voir § Typographie |
 | Bascule de thème liée à `prefers-color-scheme` | un choix explicite mémorisé (`localStorage`) ne doit pas être écrasé par un changement de préférence système |
@@ -283,6 +287,56 @@ Un mot, un sens, d'un bout à l'autre. Ces libellés sont figés :
 2 **pour le barde**. Un libellé qui écrit « Niveau 2 » tout court est un défaut de
 modélisation qui a fui jusqu'à l'écran.
 
+## Charte typographique des textes d'interface
+
+Les lecteurs consultent en partie, sur téléphone, dans l'urgence. Chaque signe
+qu'ils doivent décoder coûte du temps.
+
+| Interdit | Pourquoi | Ce qu'on écrit à la place |
+|---|---|---|
+| deux-points | un séparateur étiquette/valeur est une structure, pas un signe | `<dl>`, `<table>`, un titre, une virgule |
+| point-virgule | deux idées dans une phrase | deux phrases |
+| tiret cadratin en prose | ambigu avec le marqueur de donnée absente | une virgule, ou un point |
+| tiret demi-cadratin | idem | idem |
+
+### Le tiret cadratin garde un emploi, un seul
+
+Arbitrage humain 2026-09-01. `—` reste le marqueur d'une donnée que la source ne
+renseigne pas, dans une cellule de tableau et dans une valeur de bloc technique,
+avec son `title`. CLAUDE.md §11 l'impose et reste vrai. Il est interdit partout
+ailleurs, phrase, libellé, titre, `title`, `aria-label`, `caption`, `legend`,
+message d'erreur, état vide.
+
+### Les cinq façons de supprimer un deux-points
+
+Couper en deux phrases, une virgule, un titre suivi du contenu, une liste à
+puces, reformuler avec un verbe.
+
+| Avant | Après |
+|---|---|
+| « Portée : 9 m + 1,50 m par niveau » | « Portée 9 m plus 1,50 m par niveau » |
+| « Afficher : » | « Afficher » (titre de groupe) |
+| « Import terminé : 3 ajoutés » | « Import terminé. 3 sorts ajoutés. » |
+| « Niveau 2 — 48 sorts » | « Niveau 2, 48 sorts » |
+| « Choix signalé comme ambigu : … » | « Choix ambigu » en titre, puis le texte |
+
+### Registre — impératif vouvoyé, un seul dans tout le site
+
+Arbitrage humain 2026-09-01. « Choisissez une classe », « Cochez une tranche ».
+Un libellé de bouton reste un nom d'action, pas une adresse, « Rechercher »,
+« Tout effacer », « Exporter en JSON ». Jamais l'infinitif dans une phrase,
+jamais le tutoiement, jamais « on ».
+
+### Autres règles de rédaction
+
+Une idée par phrase. Voix active, présent de l'indicatif. Pas de majuscule
+décorative en milieu de phrase. Un nombre de jeu s'écrit en chiffres. Jamais un
+pluriel entre parenthèses, le nombre est connu, on écrit « 1 sort » ou
+« 3 sorts », jamais « 3 sort(s) ».
+
+Le script bloquant qui vérifie est `scripts/verifier_typographie.ts`, lancé par
+`npm run web:typo` et par `verifier:tout`.
+
 ## Plancher d'accessibilité
 
 - **Responsive jusqu'au mobile.** En dessous de 640 px, la table dense devient une
@@ -292,8 +346,14 @@ modélisation qui a fui jusqu'à l'écran.
   deux thèmes**. Le test de l'étape 03 le vérifie sur les neuf pastilles et sur la
   palette nuit ; il n'est pas indicatif.
 - **`prefers-reduced-motion: reduce`** → toute transition à `0s`.
-- **Cible tactile** 32 px minimum en hauteur de ligne ; les contrôles réels
-  (boutons, cases) à 40 px.
+- **Cible tactile.** Un contrôle réel fait au moins 44 px de haut et 44 px de
+  large. Cela couvre un bouton, une case, un jeton de filtre, un en-tête
+  triable, une bascule de thème, une étoile de favori. Une ligne de tableau
+  reste à 32 px. Les deux chiffres cohabitent par arbitrage humain du
+  2026-09-01, et le calcul est écrit, 40 lignes à 44 px font 1760 px et le
+  budget de densité tombe, alors que WCAG 2.2 AA (2.5.8) pose son plancher à
+  24 px et que 32 px le dépasse. Le jeton est `cible` dans `tokens.ts`.
+  Deux contrôles voisins gardent au moins 8 px entre eux.
 - **Zoom 200 %** sans perte de contenu ni défilement horizontal.
 - La couleur n'est jamais seule porteuse d'information.
 - **La nuit est un choix, jamais une déduction** : posée par un script inline qui
@@ -311,6 +371,7 @@ composant sur la palette nuit doit revérifier le nuancier avant de le faire.
 ## Lien vers la source
 
 B8 : le lien vers `pathfinder-fr.org` est un engagement, pas une mention légale.
-Sur une fiche de sort il est **au-dessus du pli**, en `t_petit`, couleur `accent`,
-souligné, libellé `Voir sur pathfinder-fr.org`. Il n'est ni en pied de page, ni en
-gris clair, ni caché derrière une icône.
+Il apparaît deux fois sur une fiche. En haut, sous le nom du sort, en `t_petit`,
+couleur `accent`, souligné, libellé `Voir sur pathfinder-fr.org`. Et en pied de
+fiche, dans son bloc `Source`, ramené à une phrase. Ni en gris clair, ni derrière
+une icône, ni seulement en pied de page.
