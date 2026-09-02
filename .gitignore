@@ -45,3 +45,7 @@ build_artifacts/prompts/
 # Copies de travail creees par les agents (`git worktree`) : un depot dans le
 # depot, jamais du code source de ce projet.
 .claude/worktrees/
+
+# Fiches de personnage des dons : donnees locales, comme dans le depot Dons
+# d'origine (pf1_dons/paths.py::CHARACTERS_DIR).
+data/characters/
