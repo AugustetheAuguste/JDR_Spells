@@ -60,7 +60,7 @@ export function ChampTexte({
       <input
         aria-describedby={aide === undefined ? undefined : idAide}
         autoComplete={autoComplete}
-        className="w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-corps text-encre placeholder:text-encre-faible"
+        className="w-full min-h-cible rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-grand text-encre placeholder:text-encre-faible"
         id={id}
         minLength={minLongueur}
         onChange={(evenement) => surChangement(evenement.target.value)}
@@ -146,9 +146,9 @@ export function Bouton({
   return (
     <button
       className={[
-        'rounded-jeton border px-3 py-2 text-corps font-medium disabled:cursor-not-allowed disabled:border-bord disabled:text-encre-faible',
+        'min-h-cible rounded-jeton border px-3 py-2 text-corps font-medium disabled:cursor-not-allowed disabled:border-bord disabled:text-encre-faible',
         primaire
-          ? 'border-accent bg-accent font-semibold text-white hover:bg-accent-survol disabled:bg-survol'
+          ? 'border-accent bg-accent font-semibold text-base hover:bg-accent-survol disabled:bg-survol'
           : 'border-bord-fort bg-surface text-encre hover:bg-survol',
       ].join(' ')}
       disabled={enAttente || desactive}
