@@ -1,0 +1,2749 @@
+{
+  "aasimar": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les aasimars sont perspicaces, confiants et charmants.",
+        "name": "+2 en Sagesse, +2 en Charisme"
+      },
+      {
+        "description": "Les aasimars sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les aasimars sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les aasimars ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les aasimars voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les aasimars ont un bonus racial de +2 à leurs tests de Diplomatie et de Perception.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les aasimars peuvent utiliser lumière du jour comme un pouvoir magique une fois par jour (niveau de lanceur de sorts égal au niveau de personnage de l’aasimar).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les aasimars ont une résistance à l’acide de 5, au froid de 5 et à l’électricité de 5.",
+        "name": "Résistance céleste"
+      },
+      {
+        "description": "Les aasimars commencent le jeu en parlant le commun et le céleste. Ceux qui ont un haut score d’Intelligence peuvent apprendre d’autres langues parmi celles-ci : draconique, elfique, gnome, halfelin, nain et sylvestre.",
+        "name": "Langues supplémentaires"
+      }
+    ]
+  },
+  "androide": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": null,
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les androïdes sont rapides et très intelligents, mais ils ont du mal à interagir avec autrui.",
+        "name": "+2 Dextérité, +2 Intelligence, -2 Charisme"
+      },
+      {
+        "description": "Les androïdes voient dans le noir à 18 mètres et possède la vision nocturne. Ils bénéficient également d’un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens exceptionnels (Ext)"
+      },
+      {
+        "description": "Le corps d’un androïde contient des nanites. Une fois par jour et par une action immédiate, un androïde peut provoquer un afflux de ces nanites qui lui confère un bonus égal à 3 + son niveau de personnage sur n’importe quel type de jet avec un d20 ; ce pouvoir doit être activé avant d’effectuer le jet. Quand un androïde utilise ce pouvoir, ses tatouages à l’aspect de circuits électriques se mettent à luire en diffusant une lumière équivalente à celle d’une torche pendant un round.",
+        "name": "Afflux de nanites (Ext)"
+      },
+      {
+        "description": "Les androïdes ne peuvent jamais bénéficier de bonus de moral et sont immunisés contre les effets de terreur et d’émotion. Ils éprouvent des difficultés à analyser les émotions et subissent donc un malus de -4 aux tests de Psychologie.",
+        "name": "Dépourvu d’émotion (Ext)"
+      },
+      {
+        "description": "En ce qui concerne les effets qui ciblent les créatures selon leur type (tels que l'ennemi juré d’un rôdeur ou les armes tueuses), les androïdes sont considérés à la fois comme des humanoïdes et des créatures artificielles. Les androïdes bénéficient d’un bonus racial de +4 aux jets de sauvegarde contre les effets mentaux, la paralysie, le poison et les effets d’étourdissement. Ils sont immunisés à la fatigue et à l’épuisement, aux maladies et aux effets de sommeil. Ils ne peuvent jamais gagner de bonus de moral et sont immunisés aux effets de terreur et à tous les effets basés sur les émotions.",
+        "name": "Fabriqué (Ext)"
+      },
+      {
+        "description": "Les androïdes commencent le jeu en parlant le commun. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues de leur choix (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "aquatique": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les aquatiques sont beaux et vigoureux, mais la domination qu’exercent les aboleths sur eux a affaibli leur volonté.",
+        "name": "+2 Constitution, +2 Charisme, -2 Sagesse"
+      },
+      {
+        "description": "Les aquatiques sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les aquatiques sont des humanoïdes de sous-type aquatique.",
+        "name": "Aquatique"
+      },
+      {
+        "description": "Les aquatiques ont une vitesse de base de 9 mètres sur la terre ferme. En tant que créatures aquatiques, ils ont aussi une vitesse de nage de 9 mètres, peuvent se déplacer dans l’eau sans faire de test de Natation, et considèrent toujours Natation comme une compétence de classe.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les aquatiques ont le sous-type aquatique, mais peuvent respirer à l’air libre et sous l’eau.",
+        "name": "Amphibie"
+      },
+      {
+        "description": "Les aquatiques gagnent un bonus racial de +2 à leurs jets de sauvegarde contre les sorts et effets d’enchantement des non-aboleths, mais reçoivent un malus de -2 à leurs jets de sauvegarde contre les sources aboleths.",
+        "name": "Résistance à l’enchantement"
+      },
+      {
+        "description": "Le corps de l’aquatique nécessite d’être constamment immergé dans de l’eau douce ou salée. Les aquatiques qui passent plus d’une journée sans s’immerger complètement dans l’eau risquent une défaillance des organes internes, un dessèchement douloureux de la peau et la mort en 4d6 heures.",
+        "name": "Dépendant de l’eau"
+      },
+      {
+        "description": "Les aquatiques commencent le jeu en sachant parler le commun et l’aboleth. Ceux qui ont une valeur d’Intelligence élevée  peuvent apprendre d’autres langues parmi celles-ci : aklo, aquatique, draconique et elfique.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "changelin": {
+    "ability_modifiers": [
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les changelins sont frêles, mais intelligentes et avenantes.",
+        "name": "+2 Sagesse, +2 Charisme, -2 Constitution"
+      },
+      {
+        "description": "Les changelins sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les changelins sont des humanoïdes de sous-type changelin.",
+        "name": "Humanoïde"
+      },
+      {
+        "description": "Les changelins ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les changelins héritent de l’un de ces traits raciaux, en fonction du type de guenaude qu’est leur mère. (En tant qu'extérieurs, les guenaudes noires engendrent des demi-fiélons, et pas des changelins.)Chair gelée (guenaude arctique). La changelin ne laisse aucune trace dans la neige et bénéficie d'un bonus racial de +2 à tous les jets de sauvegarde contre les effets de froid.",
+        "name": "Trait racial de guenaude"
+      }
+    ]
+  },
+  "changepeau": {
+    "ability_modifiers": [
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les changepeaux sont en harmonie avec l'ordre naturel et, pour eux, la passion est plus importante que la raison. Sous leur forme bestiale, ils gagnent un bonus racial de +2 à la Force, la Dextérité ou la Constitution (voir changement de forme). Les changepeaux d'un héritage particulier (voir ci-dessous) obtiennent différents modificateurs de caractéristique, comme indiqué.",
+        "name": "+2 Sagesse, -2 Intelligence, +2 à une caractéristique physique sous forme bestiale"
+      },
+      {
+        "description": "Les changepeaux sont des humanoïdes de sous-type changepeau et métamorphe.",
+        "name": "Métamorphe"
+      },
+      {
+        "description": "Les changepeaux sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les changepeaux ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les changepeaux voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Par une action simple, un changepeau peut se métamorphoser pour prendre une apparence animale. Quand il est sous sa forme bestiale, le changepeau gagne un bonus racial de +2 de son choix parmi les caractéristiques suivantes : Force, Dextérité ou Constitution. Tant qu'il conserve cette forme, il possède aussi des aspects bestiaux responsables d'un effet spécial. À chaque fois qu'un changepeau prend une apparence animale, il peut choisir de gagner deux attaques de griffes qui infligent 1d4 points de dégâts, une vision dans le noir à 18 m ou un bonus d'armure naturelle de +1. Ces avantages persistent jusqu'à ce qu'il reprenne sa forme humanoïde par une action rapide. S'il veut modifier l'un des avantages liés à sa forme bestiale, le changepeau doit d'abord repasser par son apparence humanoïde avant de reprendre sa forme bestiale modifiée. Différents héritages de changepeau (voir ci-dessous) permettent aux personnages changepeaux de choisir différents types d'aspects bestiaux.",
+        "name": "Changement de forme"
+      },
+      {
+        "description": "Les changepeaux ont un bonus racial de +2 aux tests de Dressage et d'empathie sauvage. Les changepeaux d'un héritage spécifique (voir ci-dessous) gagnent un bonus à différents tests, comme indiqué.",
+        "name": "Compréhension animale"
+      },
+      {
+        "description": "Un changepeau avec une valeur de Sagesse de 11 ou plus peut utiliser communication avec les animaux une fois par jour comme un pouvoir magique.  Le niveau de lanceur de sorts de ce pouvoir magique est égal au niveau de personnage du changepeau. Les changepeaux d'un héritage spécifique (voir ci-dessous) gagnent d'autres pouvoirs magiques.",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les changepeaux commencent le jeu en parlant le commun. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues de leur choix (sauf les langues secrètes comme celle des druides)..",
+        "name": "Langues"
+      }
+    ]
+  },
+  "demi-elfe": {
+    "ability_modifiers": [
+      {
+        "ability": "choice",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": true,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Lors de leur création, les demi-elfes gagnent un bonus de +2 à la valeur de caractéristique de leur choix, afin de représenter leur diversité.",
+        "name": "+2 à une valeur de caractéristique"
+      },
+      {
+        "description": "Les demi-elfes sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les demi-elfes ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les demi-elfes voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les demi-elfes reçoivent Talent comme don supplémentaire au niveau 1.",
+        "name": "Adaptabilité"
+      },
+      {
+        "description": "Les demi-elfes sont immunisés aux effets de sommeil magique et bénéficient d’un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets d'enchantement.",
+        "name": "Immunités elfiques"
+      },
+      {
+        "description": "Les demi-elfes comptent comme des elfes et comme des humains vis-à-vis des effets liés à la race.",
+        "name": "Sang elfique"
+      },
+      {
+        "description": "Les demi-elfes bénéficient d'un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les demi-elfes choisissent deux classes de prédilection au niveau1 et gagnent 1 point de vie ou de compétence à chaque fois qu’ils gagnent un niveau dans l’une ou l’autre.",
+        "name": "Talents multiples"
+      },
+      {
+        "description": "Les demi-elfes commencent le jeu en parlant le commun et l’elfique. Ceux qui possèdent une Intelligence élevée peuvent apprendre tous les langages qu’ils désirent (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "demi-orque": {
+    "ability_modifiers": [
+      {
+        "ability": "choice",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Lors de leur création, les demi-orques gagnent un bonus de +2 à la valeur de caractéristique de leur choix, afin de représenter leur diversité.",
+        "name": "+2 à une valeur de caractéristique"
+      },
+      {
+        "description": "Les demi-orques sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille moyenne"
+      },
+      {
+        "description": "Les demi-orques ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les demi-orques voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les demi-orques reçoivent un bonus racial de +2 aux tests d’Intimidation en raison de leur nature féroce.",
+        "name": "Intimidant"
+      },
+      {
+        "description": "Les demi-orques comptent comme des orques et comme des humains quand il s’agit de déterminer un effet lié à la race.",
+        "name": "Sang orque"
+      },
+      {
+        "description": "Une fois par jour, quand un demi-orque tombe à moins de 0 pv mais ne meurt pas, il peut continuer à se battre pendant 1 round, comme s’il était hors de combat. À la fin de son prochain tour, il tombe inconscient et devient mourant, à moins que ses points de vie ne repassent au-dessus de 0.",
+        "name": "Férocité orque"
+      },
+      {
+        "description": "Les demi-orques sont formés au maniement des grandes haches et des cimeterres à deux mains. Ils considèrent toute arme qui porte la mention « orque » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les demi-orques commencent le jeu en parlant le commun et l’orque. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues tirées de la liste suivante : abyssal, draconique, géant, gnoll et gobelin.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "dhampir": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les dhampirs sont rapides et séduisants, mais leur lien racial avec les morts-vivants handicape leur résistance de mortel.",
+        "name": "+2 en Dextérité, +2 en Charisme, -2 en Constitution"
+      },
+      {
+        "description": "Les dhampirs sont des humanoïdes de sous-type dhampir.",
+        "name": "Dhampir"
+      },
+      {
+        "description": "Les dhampirs sont des créatures de taille M qui ne reçoivent ni malus ni bonus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les dhampirs ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les dhampirs possèdent la vision nocturne ainsi qu'une vision dans le noir à 18 mètres.",
+        "name": "Sens"
+      },
+      {
+        "description": "Les dhampirs recoivent un bonus racial de +2 en Bluff et en Perception.",
+        "name": "Manipulateur"
+      },
+      {
+        "description": "Les dhampirs gagnent un bonus racial de +2 aux jets de sauvegarde contre les maladies et les effets mentaux.",
+        "name": "Résistance des morts-vivants"
+      },
+      {
+        "description": "Les dhampirs sont éblouis dans les zones éclairées par le soleil et dans le rayon d’un sort de lumière du jour.",
+        "name": "Sensible à la lumière"
+      },
+      {
+        "description": "Même s’ils sont des créatures vivantes, les dhampirs réagissent à l’énergie positive et à l’énergie négative comme s’ils étaient morts-vivants : l’énergie positive les blesse et l’énergie négative les soigne.",
+        "name": "Affinité avec l’énergie négative"
+      },
+      {
+        "description": "Un dhampir peut utiliser détection des morts-vivants comme un pouvoir magique trois fois par jour. Son niveau de lanceur de sorts pour ce pouvoir est égal à son niveau de personnage.",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Un dhampir ne subit aucun malus des effets d’absorption d’énergie, mais il peut quand même être tué s’il accumule plus de niveaux négatifs qu’il n’a de dés de vie. Au bout de 24 heures, tous les niveaux négatifs qu’il reçoit disparaissent sans qu’il n’ait besoin de faire un nouveau jet de sauvegarde.",
+        "name": "Résistance à l’absorption de niveau (Ext)"
+      },
+      {
+        "description": "Les dhampirs commencent le jeu en parlant le commun. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues, choisissant celles qu’ils veulent (à l’exception des langues secrètes comme la langue des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "drow": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les drows sont agiles et manipulateurs.",
+        "name": "+2 en Dextérité, +2 en Charisme, -2 en Constitution"
+      },
+      {
+        "description": "Les drows sont des humanoïdes de sous-type elfe.",
+        "name": "Elfe"
+      },
+      {
+        "description": "Les drows sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les drows ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les drows voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les drows sont immunisés aux effets magiques de sommeil et gagnent un bonus racial de +2 à leurs jets de sauvegarde contre les sorts et effets d’enchantement.",
+        "name": "Immunités des drows"
+      },
+      {
+        "description": "Les drows gagnent un bonus racial de +2 à leurs tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les drows sont doués pour l’utilisation des poisons et ne risquent jamais de s’empoisonner par erreur.",
+        "name": "Utilisation des poisons"
+      },
+      {
+        "description": "Les drows ont une résistance à la magie de 6 + leur niveau de personnage.",
+        "name": "Résistance à la magie"
+      },
+      {
+        "description": "Un drow peut lancer lueur féerique, lumières dansantes et ténèbres comme des pouvoirs magiques, chacun une fois par jour, en utilisant son niveau total de personnage comme niveau de lanceur de sorts.",
+        "name": "Pouvoirs magiques"
+      },
+      {
+        "description": "La soudaine exposition à une lumière vive aveugle les drows pendant 1 round ; lors des rounds qui suivent, ils sont éblouis tant qu’ils restent dans la zone affectée.",
+        "name": "Aveuglé par la lumière"
+      },
+      {
+        "description": "Les drows sont formés au maniement des arbalètes de poing, des épées courtes et des rapières.",
+        "name": "Apprentissage martial"
+      },
+      {
+        "description": "Les drows commencent le jeu en parlant l’elfique et le commun des profondeurs. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : abyssal, aklo, aquatique, commun, draconique, gnome, gobelin ou langue signée des drows.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "duergar": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -4
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les duergars sont robustes et alertes, mais également querelleurs.",
+        "name": "+2 Constitution, +2 Sagesse, -4 Charisme"
+      },
+      {
+        "description": "Les duergars sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les duergars sont des humanoïdes de sous-type nain.",
+        "name": "Nain"
+      },
+      {
+        "description": "Les duergars ont une vitesse de base de 6 mètres, mais elle ne varie jamais, quelle que soit l’armure ou le poids qu’ils portent.",
+        "name": "Lentement mais sûrement"
+      },
+      {
+        "description": "Les duergars voient dans le noir à 36 mètres.",
+        "name": "Vision dans le noir supérieure"
+      },
+      {
+        "description": "Les duergars sont immunisés à la paralysie, aux fantasmes et aux poisons. Ils bénéficient d’un bonus racial de +2 à leurs jets de sauvegarde contre les sorts et les pouvoirs magiques.",
+        "name": "Immunités des duergars"
+      },
+      {
+        "description": "Les duergars reçoivent un bonus racial de +4 à leur DMD contre les tentatives de bousculade et de croc-en-jambe lorsqu’ils sont sur la terre ferme.",
+        "name": "Stabilité"
+      },
+      {
+        "description": "Les duergars peuvent utiliser agrandissement et invisibilité comme des pouvoirs magiques chacun une fois par jour, utilisant son niveau de personnage comme niveau de lanceur de sorts, et uniquement sur lui-même.",
+        "name": "Pouvoirs magiques"
+      },
+      {
+        "description": "Les duergars sont éblouis lorsqu’ils sont dans des zones de lumière vive.",
+        "name": "Sensible à la lumière"
+      },
+      {
+        "description": "Les duergars commencent le jeu en parlant le commun, le nain et le commun des profondeurs. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aklo, draconique, géant, gobelin, orque et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "elfe": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les elfes sont agiles d’esprit comme de corps, mais ils restent fragiles.",
+        "name": "+2 Dextérité, +2 Intelligence, -2 Constitution"
+      },
+      {
+        "description": "Les elfes sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les elfes ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les elfes voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les elfes sont immunisés contre les effets de sommeil magique et gagnent un bonus racial de +2 aux jets de sauvegarde contre les sorts et effets d’enchantement.",
+        "name": "Immunités elfiques"
+      },
+      {
+        "description": "Les elfes reçoivent un bonus racial de +2 aux tests de niveau de lanceur de sorts pour vaincre la résistance à la magie. De plus, ils reçoivent un bonus racial de +2 aux tests d’Art de la magie pour identifier les propriétés des objets magiques.",
+        "name": "Magie elfique"
+      },
+      {
+        "description": "Les elfes reçoivent un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les elfes sont formés au maniement des arcs longs (dont les arcs longs composites), des épées longues, des rapières et des arcs courts (y compris les arcs courts composites). Ils considèrent toute arme qui porte la mention « elfique » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les elfes commencent le jeu en parlant le commun et l’elfique. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues tirées de la liste suivante : céleste, draconique, gnoll, gnome, gobelin, orque et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "elfe aquatique": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les elfes aquatiques sont agiles d'esprit comme de corps, mais ils restent fragiles.",
+        "name": "+2 Dextérité, +2 Intelligence, -2 Constitution"
+      },
+      {
+        "description": "Les elfes aquatiques sont des humanoïdes de sous-type aquatique et elfe.",
+        "name": "Aquatique"
+      },
+      {
+        "description": "Les elfes aquatiques sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les elfes aquatiques ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les elfes aquatiques ont une vitesse de nage de 9 mètres.",
+        "name": "Vitesse de nage"
+      },
+      {
+        "description": "Les elfes aquatiques voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les elfes aquatiques peuvent respirer à l'air libre et sous l'eau.",
+        "name": "Amphibie"
+      },
+      {
+        "description": "Les elfes aquatiques sont immunisés contre les effets de sommeil magique et gagnent un bonus racial de +2 aux jets de sauvegarde contre les sorts et effets d'enchantement.",
+        "name": "Immunités elfiques"
+      },
+      {
+        "description": "Les elfes aquatiques reçoivent un bonus racial de +2 aux tests de niveau de lanceur de sorts pour vaincre la résistance à la magie. De plus, ils reçoivent un bonus racial de +2 aux tests d'Art de la magie pour identifier les propriétés des objets magiques.",
+        "name": "Magie elfique"
+      },
+      {
+        "description": "Les elfes aquatiques reçoivent un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les elfes aquatiques sont formés au maniement des épées courtes, des rapières et des tridents. Ils considèrent toute arme qui porte la mention « elfique » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les elfes aquatiques commencent le jeu en parlant le commun et l'elfique. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : aquatique, azlant, céleste, draconique et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "fetchelin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les fetchelins sont vifs et énergiques, mais souvent étranges et facilement distraits par mille et une pensées.",
+        "name": "+2 en Dextérité, +2 en Charisme, -2 en Sagesse"
+      },
+      {
+        "description": "Les fetchelins sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les fetchelins sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les fetchelins ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les fetchelins voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les fetchelins voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les fetchelins ont un bonus racial de +2 à leurs tests de Connaissances (plans) et de Discrétion.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les attaques contre un fetchelin en cas de faible luminosité ont 50 % de chances de rater au lieu des 20 % normaux. Cette capacité n’accorde pas de camouflage total, elle augmente simplement les chances de rater.",
+        "name": "Fusion dans les ombres (Sur)"
+      },
+      {
+        "description": "Les fetchelins ont une résistance de 5 au froid et à l’électricité.",
+        "name": "Résistance des ombres"
+      },
+      {
+        "description": "Le fetchelin peut utiliser déguisement comme un pouvoir magique une fois par jour. Il peut prendre la forme de n’importe quelle créature humanoïde utilisant ce pouvoir magique. Lorsqu’il atteint le niveau 9, quelle que soit sa combinaison de classe, il gagne traversée des ombres (personnelle uniquement) comme un pouvoir magique une fois par jour, et au niveau 13, il gagne celui de changement de plan (personnelle uniquement, vers le plan de l’Ombre ou le plan Matériel uniquement) utilisable une fois par jour. Le niveau de lanceur de sorts du fetchelin pour ces capacités est égal à son niveau de personnage.",
+        "name": "Pouvoirs magiques (Mag)"
+      },
+      {
+        "description": "Les fetchelins commencent le jeu en parlant le commun. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues choisies parmi celles-ci : aérien, aklo, aquatique, draconique, D’ziriak (le comprennent uniquement, ne savent pas le parler), igné, terreux et toute langue humaine régionale.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "gathelain": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les gathelains sont vifs, ont une personnalité dynamique et engageante mais ils sont assez fragiles.",
+        "name": "+2 Dextérité, +2 Charisme, -2 Constitution"
+      },
+      {
+        "description": "Les gathelains sont des fées et pas des humanoïdes.",
+        "name": "Fée"
+      },
+      {
+        "description": "Les gathelains sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d'attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les gathelains ont une vitesse de base de 9 mètres ainsi qu'une vitesse de vol de 12 mètres (médiocre).",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les gathelains voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les gathelains ont un bonus d'armure naturelle de +1.",
+        "name": "Armure naturelle"
+      },
+      {
+        "description": "Les gathelains peuvent utiliser démarche aérienne et enchevêtrement comme des pouvoirs magiques chacun une fois par jour. Le niveau de lanceur de sorts pour chacun est égal au niveau de personnage du gathelain.",
+        "name": "Pouvoirs magiques"
+      },
+      {
+        "description": "Les gathelains commencent le jeu en parlant le commun et le sylvestre. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : draconique, elfique, gobelin, halfelin et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "ghoran": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": null,
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les ghorans sont robustes et débrouillards, mais leur processus de réflexions est plutôt lent.",
+        "name": "+2 Constitution, +2 Charisme, -2 Intelligence"
+      },
+      {
+        "description": "Les ghorans sont protégés par une peau résistante et presque solide.",
+        "name": "+2 à l'armure naturelle"
+      },
+      {
+        "description": "Les ghorans sont de type plantes.",
+        "name": "Plante"
+      },
+      {
+        "description": "Les ghorans dotés d'une valeur de Charisme de 11 ou plus obtiennent les pouvoirs magiques suivants : 1/jour — baie nourricière (créées à partir des bourgeons de baies qui poussent sur leur propre corps), détection du poison et purification de nourriture et d'eau. Le niveau de lanceur de sorts est égal au niveau de personnage du ghoran. Le DD de ces sorts est égal à 10 + le niveau du sort + le bonus de Charisme du ghoran.",
+        "name": "Magie naturelle"
+      },
+      {
+        "description": "Les ghorans subissent un affaiblissement temporaire de 1d4 points de Constitution chaque jour pendant lequel ils ne sont pas exposés à la lumière du soleil.",
+        "name": "Besoin de lumière"
+      },
+      {
+        "description": "Les ghorans gardent en mémoire tous les souvenirs inscrits dans leur graine de ghorus. Toutes les compétences de Connaissances sont toujours des compétences de classe pour eux.",
+        "name": "Connaissance des vies passées (Ext)"
+      },
+      {
+        "description": "Les ghorans subissent un malus de -2 aux tests d'Évasion et de manœuvres offensives effectués pour se libérer d'une prise en situation de lutte contre une créature disposant d'une attaque de morsure avec le pouvoir d'étreinte.",
+        "name": "Goût délicieux (Ext)"
+      },
+      {
+        "description": "Par une action complexe, Un ghoran peut extraire sa graine de ghorus d'un orifice dans son abdomen. Si elle est semée dans un sol fertile et laissée tranquille pendant 2d6 jours, la graine pousse et se transforme en un double en pleine santé du ghoran d'origine, sauf que ce double peut réaffecter la totalité de ses rangs de compétence une fois germé. Lorsqu'un ghoran extrait sa graine, il reçoit 1 niveau négatif, et il meurt dès que son double germe. Ce double remplace le précédent personnage ghoran.",
+        "name": "Graine de ghorus (Ext)"
+      },
+      {
+        "description": "Les ghorans commencent le jeu en parlant le commun et le sylvestre. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues de leur choix (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "gnome": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "For",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les gnomes manquent de force physique, mais sont dotés d’une robustesse étonnante et possèdent une attitude naturellement agréable.",
+        "name": "+2 Constitution, +2 Charisme, -2 Force"
+      },
+      {
+        "description": "Les gnomes sont des créatures de taille P et gagnent un bonus de taille de +1 à la CA, un bonus de taille de +1 aux jets d’attaque, un malus de -1 au BMO et au DMD et un bonus de taille de +4 aux tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les gnomes ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les gnomes voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les gnomes gagnent un bonus d’esquive de +4 à la CA contre les monstres de sous-type géant.",
+        "name": "Entraînement défensif"
+      },
+      {
+        "description": "Les gnomes ajoutent +1 au DD du jet de sauvegarde de tous les sorts d’illusion qu’ils lancent. Les gnomes qui possèdent un Charisme de 11 ou plus gagnent les pouvoirs magiques suivants : 1/jour — communication avec les animaux, lumières dansantes, prestidigitation, son imaginaire. Le NLS de ces effets est égal au niveau de personnage du gnome. Leur DD est égal à 10 + niveau du sort + modificateur de Charisme du gnome.",
+        "name": "Magie gnome"
+      },
+      {
+        "description": "Les gnomes reçoivent un bonus de +1 aux jets d’attaque contre les créatures humanoïdes de sous-type reptilien et gobelinoïde en raison de l’entraînement spécial qu’ils reçoivent contre ces ennemis haïs.",
+        "name": "Haine"
+      },
+      {
+        "description": "Les gnomes gagnent un bonus racial de +2 aux jets de sauvegarde contre les sorts et effets d’illusion.",
+        "name": "Résistance aux illusions"
+      },
+      {
+        "description": "Les gnomes reçoivent un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les gnomes reçoivent un bonus racial de +2 aux tests d’un type d'Artisanat ou de Profession de leur choix.",
+        "name": "Obsession"
+      },
+      {
+        "description": "Les gnomes considèrent toute arme qui porte la mention « gnome » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les gnomes commencent le jeu en parlant le commun, le gnome et le sylvestre. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues tirées de la liste suivante : draconique, elfique, géant, gobelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "gobelin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les gobelins sont rapides, mais faibles et pas vraiment agréables à fréquenter.",
+        "name": "+4 en Dextérité, -2 en Force, -2 en Charisme"
+      },
+      {
+        "description": "Les gobelins sont des humanoïdes de sous-type gobelinoïde.",
+        "name": "Gobelinoïde"
+      },
+      {
+        "description": "Les gobelins sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les gobelins sont rapides pour des créatures de leur taille, et ils ont une vitesse de base de 9 mètres.",
+        "name": "Rapidité"
+      },
+      {
+        "description": "Les gobelins voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Bonus racial de +4 aux tests de Discrétion et d’Équitation.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les gobelins commencent le jeu en parlant le gobelin. Ceux qui ont une valeur d’Intelligence élevée peuvent choisir d’autres langues parmi celles-ci : commun, draconique, gnoll, gnome, halfelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "gobelin simiesque": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les gobelins simiesques sont vifs mais désespérément impulsifs et désagréables.",
+        "name": "+4 en Dextérité, -2 en Sagesse, -2 en Charisme"
+      },
+      {
+        "description": "Les gobelins simiesques sont des humanoïdes de sous-type gobelinoïde.",
+        "name": "Gobelinoïde"
+      },
+      {
+        "description": "Les gobelins simiesques sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d'attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les gobelins simiesques ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les gobelins simiesques voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les gobelins simiesques ont un bonus racial de +2 aux tests d'Acrobaties et de Discrétion.",
+        "name": "Acrobate"
+      },
+      {
+        "description": "Les gobelins simiesques ont un bonus racial de +2 à tous les jets de sauvegarde contre la peur.",
+        "name": "Sans peur"
+      },
+      {
+        "description": "Les gobelins simiesques ont une vitesse d'escalade de 9 mètres.",
+        "name": "Grimpeur naturel"
+      },
+      {
+        "description": "Les gobelins simiesques a une longue queue souple qu'ils peuvent utiliser pour porter des objets. Ils ne peuvent pas manier d'arme avec leur queue, mais celle-ci leur permet de récupérer de petits objets rangés sur leur personne par une action rapide.",
+        "name": "Queue préhensile"
+      },
+      {
+        "description": "Les gobelins simiesques commencent le jeu en parlant le gobelin. Ceux qui ont une valeur d'Intelligence élevée peuvent choisir d'autres langues parmi celles-ci : commun, draconique, gnoll, gnome, halfelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "grippli": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "For",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les gripplis sont agiles et alertes, mais grêles.",
+        "name": "+2 Dextérité, +2 Sagesse, -2 Force"
+      },
+      {
+        "description": "Les gripplis sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les gripplis sont des humanoïdes de sous-type grippli.",
+        "name": "Grippli"
+      },
+      {
+        "description": "Les gripplis ont une vitesse de base de 9 mètres et une vitesse d’escalade de 6 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les gripplis voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les gripplis reçoivent un bonus racial de +4 à leurs tests de Discrétion dans les zones marécageuses et forestières.",
+        "name": "Camouflage"
+      },
+      {
+        "description": "Le grippli peut traverser les terrains difficiles à vitesse normale quand il est dans les marais. Les environnements altérés magiquement affectent le grippli normalement.",
+        "name": "Déplacement facilité (marais)"
+      },
+      {
+        "description": "Les gripplis sont formés au maniement des filets.",
+        "name": "Apprentissage martial"
+      },
+      {
+        "description": "Les gripplis commencent le jeu en parlant le commun et le grippli. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : bourbiérin, draconique, elfique, gnome, gobelin et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "halfelin": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "For",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les halfelins sont agiles et volontaires, mais, à cause de leur petite taille, ils sont plus faibles que les autres races.",
+        "name": "+2 Dextérité, +2 Charisme, -2 Force"
+      },
+      {
+        "description": "Les halfelins sont des créatures de taille P et gagnent un bonus de taille de +1 à la CA et aux jets d’attaque, un malus de -1 au BMO et au DMD et un bonus de taille de +4 aux tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les halfelins ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les halfelins ont un bonus racial de +2 à tous les jets de sauvegarde contre la terreur. Ce bonus se cumule avec celui offert par chance des halfelins.",
+        "name": "Sans peur"
+      },
+      {
+        "description": "Les halfelins reçoivent un bonus racial de +1 à tous les jets de sauvegarde.",
+        "name": "Chance des halfelins"
+      },
+      {
+        "description": "Les halfelins reçoivent un bonus racial de +2 à tous les jets de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les halfelins reçoivent un bonus racial de +2 aux tests d’Acrobaties et d’Escalade.",
+        "name": "Bon équilibre"
+      },
+      {
+        "description": "Les halfelins sont formés au maniement des frondes et considèrent toute arme qui porte la mention « halfelin » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les halfelins commencent le jeu en parlant le commun et le halfelin. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues tirées de la liste suivante : elfique, gnome, gobelin et nain.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "hobgobelin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les hobgobelins sont rapides et robustes.",
+        "name": "+2 en Dextérité, +2 en Constitution"
+      },
+      {
+        "description": "Les hobgobelins sont des humanoïdes de sous-type gobelinoïde.",
+        "name": "Gobelinoïde"
+      },
+      {
+        "description": "Les hobgobelins sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les hobgobelins ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les hobgobelins voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les hobgobelins reçoivent un bonus racial de +4 à leurs tests de Discrétion.",
+        "name": "Furtif"
+      },
+      {
+        "description": "Les hobgobelins commencent le jeu en parlant le commun et le gobelin. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : draconique, géant, infernal, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "homme-felin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les hommes-félins sont sociables et agiles, mais manquent souvent de bon sens.",
+        "name": "+2 en Dextérité, +2 en Charisme, -2 en Sagesse"
+      },
+      {
+        "description": "Les hommes-félins sont des humanoïdes de sous-type homme-félin`.",
+        "name": "Homme-félin"
+      },
+      {
+        "description": "Les hommes-félins sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les hommes-félins ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les hommes-félins voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Une fois par jour, lorsqu’un homme-félin fait un jet de Réflexes, il peut le relancer et conserver le meilleur résultat. Il doit décider de l’utilisation de cette capacité avant de faire son jet.",
+        "name": "Chance féline (Sur)"
+      },
+      {
+        "description": "Les hommes-félins reçoivent un bonus racial de +2 à leurs tests de Discrétion, de Perception et de Survie.",
+        "name": "Chasseur-né"
+      },
+      {
+        "description": "Les hommes-félins gagnent un bonus racial de +3 mètres à leur vitesse lorsqu’ils chargent, courent ou battent en retraite.",
+        "name": "Sprinter"
+      },
+      {
+        "description": "Les hommes-félins commencent le jeu en parlant le commun et le félin. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : elfique, gnoll, gnome, gobelin, halfelin, orque et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "homme-poisson": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les hommes-poissons sont gracieux, vigoureux et beaux.",
+        "name": "+2 Dextérité, +2 Constitution, +2 Charisme"
+      },
+      {
+        "description": "Les hommes-poissons sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les hommes-poissons ont une vitesse de base de 1,5 mètre. Ils ont une vitesse de nage de 15 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les hommes-poissons sont des humanoïdes de sous-type aquatique.",
+        "name": "Aquatique"
+      },
+      {
+        "description": "Les hommes-poissons sont amphibies, mais préfèrent ne pas passer trop de temps hors de l’eau.",
+        "name": "Amphibie"
+      },
+      {
+        "description": "Les hommes-poissons ont la vision nocturne.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les hommes-poissons ont un bonus d’armure naturelle de +2.",
+        "name": "Armure"
+      },
+      {
+        "description": "Les hommes-poissons n’ont pas de jambes et ne peuvent pas être pris pour cible d’un croc-en-jambe.",
+        "name": "Sans jambe"
+      },
+      {
+        "description": "Les hommes-poissons commencent le jeu en parlant le commun et l’aquatique. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aboleth, aklo, draconique, elfique et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "homme-rat": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les hommes-rats sont agiles et intelligents, mais physiquement faibles.",
+        "name": "+2 en Dextérité, +2 en Intelligence, -2 en Force"
+      },
+      {
+        "description": "Les hommes-rats sont des humanoïdes de sous-type homme-rat.",
+        "name": "Homme-rat"
+      },
+      {
+        "description": "Les hommes-rats sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les hommes-rats ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les hommes-rats voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les hommes-rats gagnent un bonus racial de +4 à leurs tests de Dressage pour influencer les rongeurs.",
+        "name": "Empathie avec les rongeurs"
+      },
+      {
+        "description": "Les hommes-rats sont habitués à vivre et à combattre en communauté, et sont doués quand il s’agit de se rassembler autour de leurs ennemis pour prendre l’avantage au détriment de ces derniers. Deux hommes-rats peuvent partager la même case en même temps. Si deux hommes-rats sur la même case attaquent le même ennemi, on considère qu’ils prennent cet ennemi en tenaille comme s’ils étaient sur deux cases opposées.",
+        "name": "Regroupement"
+      },
+      {
+        "description": "Les hommes-rats gagnent un bonus racial de +2 à leurs tests d’Artisanat (alchimie), de Perception et d’Utilisation d’objets magiques.",
+        "name": "Bricoleur"
+      },
+      {
+        "description": "Les hommes-rats commencent le jeu en parlant le commun. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aklo, commun des profondeurs, draconique, gnoll, gnome, gobelin, halfelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "homme-serpent": {
+    "ability_modifiers": null,
+    "bonus_skill_rank": null,
+    "class_skill_grants": null,
+    "has_bonus_feat": null,
+    "note": "no scrapeable standard traits page found",
+    "size": null,
+    "speed": null,
+    "traits": []
+  },
+  "humain": {
+    "ability_modifiers": [
+      {
+        "ability": "choice",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": true,
+    "class_skill_grants": [],
+    "has_bonus_feat": true,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Lors de leur création, les humains gagnent un bonus de +2 à la valeur de caractéristique de leur choix, afin de représenter leur diversité.",
+        "name": "+2 à une valeur de caractéristique"
+      },
+      {
+        "description": "Les humains sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les humains ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les humains choisissent un don supplémentaire au niveau 1.",
+        "name": "Don supplémentaire"
+      },
+      {
+        "description": "Les humains gagnent un rang de compétence supplémentaire au niveau 1 et un de plus à chaque fois qu’ils prennent un niveau.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les humains commencent le jeu en parlant le commun et leur langue ethnique. Les humains dont la langue ethnique est le commun (ou le taldorien, dans les cas des cheliaxiens ou des taldoriens) ne recoivent pas de langue ethnique supplémentaire. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues de leur choix (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "ifrit": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les ifrits sont vifs et passionnés, mais impétueux et destructeurs.",
+        "name": "+2 en Dextérité, +2 en Charisme, -2 en Sagesse"
+      },
+      {
+        "description": "Les ifrits sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les ifrits sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les ifrits ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les ifrits voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les ifrits peuvent utiliser mains brûlantes comme un pouvoir magique 1/jour (niveau de lanceur de sorts égal au niveau de personnage de l’ifrit ; DD 11 + modificateur de Charisme).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les ifrits ont une résistance de 5 au feu.",
+        "name": "Résistance élémentaire"
+      },
+      {
+        "description": "Les ensorceleurs ifrits de lignage élémentaire (feu) traitent leur valeur de Charisme comme supérieure de 2 points pour tous les sorts d’ensorceleur et les capacités de classe. Les lanceurs de sorts ifrits du domaine du Feu utilisent leurs sorts et pouvoirs de domaine à un niveau de lanceur de sorts augmenté de +1.",
+        "name": "Affinité avec le feu"
+      },
+      {
+        "description": "Les ifrits commencent le jeu en parlant le commun et l’igné. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues choisies parmi celles-ci : aérien, aquatique, elfique, gnome, halfelin, nain et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "kasatha": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les kasathas sont agiles et perspicaces.",
+        "name": "+2 Dextérité, +2 Sagesse"
+      },
+      {
+        "description": "Les kasathas sont des humanoïdes de sous-type kasatha.",
+        "name": "Kasatha"
+      },
+      {
+        "description": "Les kasathas sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les kasathas ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les kasathas ont un bonus d'esquive de +2 à la CA.",
+        "name": "Entraînement défensif"
+      },
+      {
+        "description": "Les kasathas possèdent quatre bras. L'une de leur main est directrice ; toutes les autres sont non-directrices. Ils peuvent utiliser leurs mains pour effectuer diverses tâches qui nécessitent d'avoir des mains libres.",
+        "name": "Bras multiples (Ext)"
+      },
+      {
+        "description": "Les kasathas bénéficient d'un bonus racial de +4 aux tests de Constitution et aux jets de Vigueur effectués pour éviter la fatigue, l'épuisement et les divers effets néfastes engendrés par la course, la marche forcée, la faim, la soif et les environnements chauds ou froids.",
+        "name": "Coureur du désert (Ext)"
+      },
+      {
+        "description": "Les kasathas se déplacent à sa vitesse normale quand il traverse les terrains difficiles non-magiques du désert.",
+        "name": "Marcheur du désert (Ext)"
+      },
+      {
+        "description": "On considère toujours que les kasathas ont pris de l'élan quand ils effectuent des tests d'Acrobaties pour sauter.",
+        "name": "Sauteur (Ext)"
+      },
+      {
+        "description": "Perception et Discrétion sont toujours des compétences de classe pour les kasathas.",
+        "name": "Traqueur (Ext)"
+      },
+      {
+        "description": "Les kasathas commencent le jeu en parlant le commun et le kasatha. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : draconique, gnoll, nain, orque et sphinx.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "kitsune": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "For",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les kitsune sont agiles et sociables, mais ont tendance à être physiquement faibles.",
+        "name": "+2 Dextérité, +2 Charisme, -2 Force"
+      },
+      {
+        "description": "Les kitsune sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les kitsune sont des humanoïdes de sous-types kitsune et métamorphe.",
+        "name": "Kitsune"
+      },
+      {
+        "description": "Les kitsune ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les kitsune peuvent voir deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Le kitsune peut prendre une unique forme humaine spécifique de son sexe. Il prend toujours cette forme lorsqu’il utilise cette capacité. Un kitsune sous forme humaine ne peut pas utiliser son attaque de morsure, mais reçoit un bonus racial de +10 à ses tests de Déguisement pour apparaître humain. Il lui faut une action simple pour changer de forme. Cette capacité fonctionne comme modification d’apparence, à la seule différence que le kitsune ne peut pas ajuster ses valeurs de caractéristique et peut conserver cette forme indéfiniment.",
+        "name": "Changement de forme"
+      },
+      {
+        "description": "Les kitsune reçoivent un bonus racial de +2 à ses tests d’Acrobaties.",
+        "name": "Agile"
+      },
+      {
+        "description": "Le kitsune ajoute +1 au DD de tous les jets de sauvegarde contre les sorts d’enchantement qu’il lance. Un kitsune avec une valeur de Charisme de 11 ou plus reçoit ce pouvoir magique : 3/jour – lumières dansantes (niveau de lanceur de sorts égal au niveau du kitsune).",
+        "name": "Magie kitsune"
+      },
+      {
+        "description": "Sous sa forme naturelle, le kitsune a une attaque de morsure qui inflige 1d4 points de dégâts.",
+        "name": "Armes naturelles"
+      },
+      {
+        "description": "Les kitsune commencent le jeu en parlant le commun et le sylvestre. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : toutes les langues humaines, aklo, céleste, elfique, gnome et tengu.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "kobold": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les kobolds sont rapides, mais faibles.",
+        "name": "+2 en Dextérité, -4 en Force, -2 en Constitution"
+      },
+      {
+        "description": "Les kobolds sont des humanoïdes de sous-type reptilien.",
+        "name": "Reptilien"
+      },
+      {
+        "description": "Les kobolds sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les kobolds ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les kobolds voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les kobolds ont un bonus d’armure naturelle de +1.",
+        "name": "Armure"
+      },
+      {
+        "description": "Les kobolds gagnent un bonus racial de +2 à leurs tests d’Artisanat (pièges), de Perception et de Profession (mineur). Artisanat (pièges) et Discrétion sont toujours des compétences de classe pour le kobold.",
+        "name": "Ingénieux"
+      },
+      {
+        "description": "Les kobolds sont éblouis tant qu'ils se tiennent dans une zone de lumière vive.",
+        "name": "Sensible à la lumière"
+      },
+      {
+        "description": "Les kobolds commencent le jeu en parlant le draconique. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi cellesci : commun, commun des profondeurs, gnome et nain.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "lashunta": {
+    "ability_modifiers": [
+      {
+        "ability": "Int",
+        "modifier": 2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": null,
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les lashuntas sont pratiquement tous intelligents et avides d'apprendre",
+        "name": "+2 Intelligence"
+      },
+      {
+        "description": "Les hommes et les femmes lashuntas ont un corps et une personnalité très différents, bien plus que les autres espèces humanoïdes. Les hommes lashuntas sont musculeux (+2 en Force) et sont souvent irréfléchis et inattentifs (-2 en Sagesse). Les femmes lashuntas, quoique belles et autoritaires (+2 en Charisme), n'ont pas la carrure robuste des hommes (-2 en Constitution).",
+        "name": "Dimorphisme sexuel"
+      },
+      {
+        "description": "Les lashuntas qui possèdent une valeur d'Intelligence de 11 ou plus gagnent les pouvoirs magiques suivants  : À volonté — hébétement, manipulation à distance  ; 1/jour — détection de pensées. Le niveau de lanceur de sorts de ces effets est égal au niveau de personnage du lashunta.",
+        "name": "Magie lashunta (5 PR)"
+      },
+      {
+        "description": "Les lashuntas gagnent un bonus racial de +2 à toutes les compétences de Connaissances.",
+        "name": "Instruit"
+      },
+      {
+        "description": "Les lashuntas sont capables de communiquer mentalement avec n'importe quelle créature située dans un rayon de 9 mètres dont ils partagent la langue. Outre cela, cette capacité est identique à celle de télépathie.",
+        "name": "Télépathie limitée"
+      },
+      {
+        "description": "Les lashuntas commencent le jeu en parlant l'elfique et le lashunta. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues de leur choix (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "nagaji": {
+    "ability_modifiers": [
+      {
+        "ability": "For",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les nagajis sont solides et ont une forte personnalité, mais ils ont tendance à ignorer toute logique et à se moquer des aspirations scolastiques.",
+        "name": "+2 Force, +2 Charisme, -2 Intelligence"
+      },
+      {
+        "description": "Les nagajis sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les nagajis sont des humanoïdes de sous-type reptilien.",
+        "name": "Reptilien"
+      },
+      {
+        "description": "Les nagajis ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les nagajis peuvent voir deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les nagajis ont une chair écailleuse qui leur accorde un bonus d’armure naturelle de +1.",
+        "name": "Écailles renforcées"
+      },
+      {
+        "description": "Les nagajis reçoivent un bonus racial de +2 à leurs jets de sauvegarde contre les effets mentaux et les poisons.",
+        "name": "Résistant"
+      },
+      {
+        "description": "Les nagajis reçoivent un bonus racial de +2 à leurs tests de Dressage contre les reptiles, ainsi qu'un bonus racial de +2 à leurs tests de Perception.",
+        "name": "Perception du serpent"
+      },
+      {
+        "description": "Les nagajis commencent le jeu en parlant le commun et le draconique. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : toutes les langues humaines, abyssal, aklo, céleste, géant, infernal et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "nain": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les nains sont robustes et sages, mais un brin bougons.",
+        "name": "+2 Constitution, +2 Sagesse, -2 Charisme"
+      },
+      {
+        "description": "Les nains sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les nains ont une vitesse de base de 6 mètres, mais elle ne varie jamais, quelle que soit l’armure ou le poids qu’ils portent.",
+        "name": "Lentement mais sûrement"
+      },
+      {
+        "description": "Les nains voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Un nain gagne un bonus d’esquive de +4 à la CA contre les créatures de sous-type géant.",
+        "name": "Entraînement défensif"
+      },
+      {
+        "description": "Les nains gagnent un bonus racial de +2 aux tests d’Estimation pour déterminer le prix des marchandises non magiques qui incluent des métaux précieux ou des gemmes.",
+        "name": "Avarice"
+      },
+      {
+        "description": "Les nains gagnent un bonus racial de +1 aux jets d’attaque contre les créatures humanoïdes de sous-type orque et gobelinoïde, car ils ont reçu un entraînement spécial pour lutter contre ces ennemis tant haïs.",
+        "name": "Haine"
+      },
+      {
+        "description": "Les nains gagnent un bonus racial de +2 aux jets de sauvegarde contre le poison, les sorts et les pouvoirs magiques.",
+        "name": "Robuste"
+      },
+      {
+        "description": "Les nains gagnent un bonus de +4 au DMD quand ils sont debout sur le sol et tentent de résister à une bousculade ou un croc-en-jambe.",
+        "name": "Stabilité"
+      },
+      {
+        "description": "Les nains gagnent un bonus de +2 aux tests de Perception quand il s’agit de remarquer un ouvrage de maçonnerie inhabituel, comme un piège ou une porte cachée, situé dans un mur ou un sol de pierre. Ils ont droit à un test pour remarquer ce détail quand ils passent à moins de 3 mètres, qu’ils cherchent activement quelque chose ou non.",
+        "name": "Connaissance de la pierre"
+      },
+      {
+        "description": "Les nains sont formés au maniement des haches d’armes, des pics de guerre lourds et des marteaux de guerre. Ils considèrent toute arme qui porte la mention « nain » dans son nom comme une arme de guerre.",
+        "name": "Armes familières"
+      },
+      {
+        "description": "Les nains commencent le jeu en parlant le commun et le nain. Ceux qui possèdent une valeur d’Intelligence élevée peuvent apprendre d’autres langues issues de la liste suivante : commun des profondeurs, géant, gnome, gobelin, orque et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "ogre": {
+    "ability_modifiers": null,
+    "bonus_skill_rank": null,
+    "class_skill_grants": null,
+    "has_bonus_feat": null,
+    "note": "no scrapeable standard traits page found",
+    "size": null,
+    "speed": null,
+    "traits": []
+  },
+  "ondin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les ondins sont agiles et perceptifs, mais ont tendance à s’adapter plutôt qu’à répondre à la force par la force.",
+        "name": "+2 en Dextérité, +2 en Sagesse, -2 en Force"
+      },
+      {
+        "description": "Les ondins sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les ondins sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les ondins ont une vitesse de base 9 mètres sur la terre ferme, une vitesse de nage de 9 mètres, ils peuvent se déplacer dans l’eau sans faire de test de Natation et traitent toujours Natation comme une compétence de classe.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les ondins voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les ondins peuvent utiliser poussée hydraulique comme un pouvoir magique 1/jour (niveau de lanceur de sorts égal au niveau de personnage de l’ondin).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les ondins ont une résistance de 5 au froid.",
+        "name": "Résistance élémentaire"
+      },
+      {
+        "description": "Les ensorceleurs ondins de lignage élémentaire (eau) considèrent leur score de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs magiques d’ensorceleur. Les prêtres ondins du domaine de l’Eau lancent tous leurs sorts et pouvoirs de domaine à un niveau de lanceur de sorts augmenté de +1.",
+        "name": "Affinité avec l’eau"
+      },
+      {
+        "description": "Les ondins commencent le jeu en parlant le commun et l’aquatique. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre de nouvelles langues parmi celles-ci : aérien, elfique, gnome, halfelin, igné, nain et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "oreade": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les oréades sont forts, solides, stables et stoïques.",
+        "name": "+2 en Force, +2 en Sagesse, -2 en Charisme"
+      },
+      {
+        "description": "Les oréades sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les oréades sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les oréades ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les oréades voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les oréades peuvent utiliser pierre magique comme un pouvoir magique 1/jour (niveau de lanceur de sorts égal au niveau de personnage de l’oréade ; DD 11 + modificateur de Charisme).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les oréades gagnent une résistance de 5 à l’acide.",
+        "name": "Résistance élémentaire"
+      },
+      {
+        "description": "Les ensorceleurs oréades de lignage élémentaire (terre) traitent leur valeur de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs d’ensorceleur. Les prêtres oréades avec le domaine de la Terre utilisent leurs pouvoirs et sorts de domaine à un niveau de lanceur de sorts augmenté de +1.",
+        "name": "Affinité avec la terre"
+      },
+      {
+        "description": "Les oréades commencent le jeu en parlant le commun et le terreux. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aérien, aquatique, commun des profondeurs, elfique, gnome, halfelin, igné et nain.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "orque": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les orques sont brutaux et sauvages.",
+        "name": "+4 en Force, -2 en Intelligence, -2 en Sagesse, -2 en Charisme"
+      },
+      {
+        "description": "Les orques sont des humanoïdes de sous-type orque.",
+        "name": "Orque"
+      },
+      {
+        "description": "Les orques sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les orques ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les orques voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les orques sont éblouis dans les zones de forte lumière du soleil ou dans le rayon d’un sort de lumière du jour.",
+        "name": "Sensible à la lumière"
+      },
+      {
+        "description": "Les orques peuvent rester conscients et continuer à se battre même quand leur nombre total de points de vie tombe en dessous de 0. Ils sont toujours chancelants à 0 point de vie ou moins et perdent 1 point de vie par round, comme d’habitude.",
+        "name": "Férocité"
+      },
+      {
+        "description": "Les orques sont toujours formés au maniement des grandes haches et des cimeterres à deux mains. Ils considèrent toute arme qui porte la mention « orque » dans son nom comme une arme de guerre.",
+        "name": "Apprentissage martial"
+      },
+      {
+        "description": "Les orques commencent le jeu en parlant le commun et l’orque. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre de nouvelles langues parmi celles-ci : commun des profondeurs, géant, gnoll, gobelin et nain.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "samsaran": {
+    "ability_modifiers": [
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Con",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les samsarans sont perspicaces et volontaires, mais leur corps est souvent frêle.",
+        "name": "+2 Intelligence, +2 Sagesse, -2 Constitution"
+      },
+      {
+        "description": "Les samsarans sont des humanoïdes de sous-type samsaran.",
+        "name": "Samsaran"
+      },
+      {
+        "description": "Les samsarans sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les samsarans ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les samsarans voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les samsarans reçoivent un bonus racial de +2 à tous leurs jets de sauvegarde pour résister aux effets de mort, à leurs jets de sauvegarde contre les effets d’énergie négative, à leurs jets de Vigueur pour annuler des niveaux négatifs et à leurs tests de Constitution pour se stabiliser lorsque leur nombre de points de vie est négatif.",
+        "name": "Lié à la vie (Ext)"
+      },
+      {
+        "description": "Les samsarans ayant un score de Charisme de 11 ou plus gagnent ces pouvoirs magiques : 1/jour – compréhension des langages, perception de la mort et stabilisation. Le niveau de lanceur de sorts de ces effets est égal au niveau de personnage du samsaran.",
+        "name": "Magie samsaran (Mag)"
+      },
+      {
+        "description": "Les vies antérieures du samsaran lui accordent un bonus à deux compétences particulières. Le samsaran choisit deux compétences : il gagne un bonus racial de +2 à chacune d’elles et elles sont considérées comme des compétences de classe, quelle que soit sa classe. Une fois fait, ce choix ne peut pas être modifié.",
+        "name": "Éclats du passé (Ext)"
+      },
+      {
+        "description": "Les samsarans commencent le jeu en parlant le commun et le samsaran. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : toutes les langues humaines, abyssal, aérien, aquatique, céleste, draconique, géant, igné, infernal, nagaji, tengu et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "strix": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les strix sont vifs et insaisissables, mais ils ont tendance à être têtus et prompts à la colère.",
+        "name": "+2 Dextérité, -2 Charisme"
+      },
+      {
+        "description": "Les strix sont des humanoïdes de sous-type strix.",
+        "name": "Strix"
+      },
+      {
+        "description": "Les strix sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les strix ont une vitesse de base de 9 mètres sur la terre. Ils ont également une vitesse de vol de 18 mètres (moyenne).",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les strix voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les strix voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les strix reçoivent un bonus racial de +1 à leurs jets d’attaque contre les créatures humanoïdes de sous-type humain à cause de leur formation spéciale contre ces ennemis détestés.",
+        "name": "Haine"
+      },
+      {
+        "description": "Les strix reçoivent un bonus racial de +2 à leurs tests deDiscrétion et de Perception en cas de faible luminosité ou dans les ténèbres.",
+        "name": "Nocturne"
+      },
+      {
+        "description": "Les strix reçoivent un bonus racial de +2 à leurs jets de sauvegarde contre les effets et sorts d’illusion.",
+        "name": "Suspicieux"
+      },
+      {
+        "description": "Les strix commencent le jeu en parlant le strix. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aérien, azlanti, commun, draconique, géant, gnome, gobelin, infernal.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "suli": {
+    "ability_modifiers": [
+      {
+        "ability": "For",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les sulis sont musclés et séduisants, mais lents d’esprit.",
+        "name": "+2 Force, +2 Charisme, -2 Intelligence"
+      },
+      {
+        "description": "Les sulis sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les sulis sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les sulis ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les sulis voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les sulis sont de fins négociateurs et reçoivent un bonus racial de +2 à leurs tests de Diplomatie et de Psychologie.",
+        "name": "Négociateur"
+      },
+      {
+        "description": "Une fois par jour, par une action rapide, le suli peut envelopper ses bras d’acide, de froid, d’électricité ou de feu. Cette capacité dure 1 round par niveau et peut être annulée par une action libre. Les attaques à mains nues à l’aide de ses bras ou de ses mains (ou les attaques portées avec des armes tenues dans ces mains) infligent +1d6 points de dégâts du type d’énergie approprié.",
+        "name": "Assaut élémentaire (Sur)"
+      },
+      {
+        "description": "Les sulis ont une résistance de 5 à l’acide, de 5 au froid, de 5 à l’électricité et de 5 au feu.",
+        "name": "Résistance élémentaire"
+      },
+      {
+        "description": "Les sulis commencent le jeu en parlant le commun et une langue élémentaire (aérien, aquatique, igné ou terreux). Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aérien, aquatique, draconique, igné et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "svirfneblin": {
+    "ability_modifiers": [
+      {
+        "ability": "For",
+        "modifier": -2
+      },
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -4
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les svirfneblins sont rapides et observateurs, mais relativement faibles et émotionnellement détachés.",
+        "name": "-2 Force, +2 Dextérité, +2 Sagesse, -4 Charisme"
+      },
+      {
+        "description": "Les svirfneblins sont des humanoïdes de sous-type gnome.",
+        "name": "Gnome"
+      },
+      {
+        "description": "Les svirfneblins sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les svirfneblins reçoivent un bonus d’esquive de +2 à la CA.",
+        "name": "Entraînement défensif"
+      },
+      {
+        "description": "Les svirfneblins ont la vision dans le noir à 36 mètres ainsi que la vision nocturne.",
+        "name": "Sens"
+      },
+      {
+        "description": "Les svirfneblins reçoivent un bonus racial de +2 à tous leurs jets de sauvegarde.",
+        "name": "Chanceux"
+      },
+      {
+        "description": "Les svirfneblins reçoivent un bonus racial de +2 à leurs tests de Discrétion qui devient un bonus de +4 sous terre. Ils reçoivent un bonus racial de +2 à leurs tests d’Artisanat (alchimie) et de Perception.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les svirfneblins reçoivent un bonus de +1 à leurs jets d’attaque contre les créatures humanoïdes de sous-type reptilien et nain grâce à leur entraînement contre ces ennemis détestés.",
+        "name": "Haine"
+      },
+      {
+        "description": "Les svirfneblins gagnent connaissance de la pierre, comme les nains.",
+        "name": "Connaissance de la pierre"
+      },
+      {
+        "description": "Les svirfneblins ont une résistance à la magie égale à 11 + leur niveau de personnage.",
+        "name": "Résistance à la magie"
+      },
+      {
+        "description": "Les svirfneblins ajoutent +1 au DD de tous les jets de sauvegarde des sorts d’illusion qu’ils lancent. Ils gagnent également les pouvoirs magiques suivants : Constant – antidétection ; 1/jour – cécité/surdité (DD 12 + modificateur de Charisme), déguisement, flou ; le niveau de lanceur de sorts est égal au niveau de personnage du svirfneblin.",
+        "name": "Magie des svirfneblins"
+      },
+      {
+        "description": "Les svirfneblins commencent le jeu en parlant le gnome et le commun des profondeurs. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aklo, commun, draconique, elfique, géant, gobelin, nain, orque et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "sylphe": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les sylphes sont vifs et perspicaces, mais minces et délicats.",
+        "name": "+2 en Dextérité, +2 en Intelligence, -2 en Constitution"
+      },
+      {
+        "description": "Les sylphes sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les sylphes sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les sylphes ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les sylphes voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les sylphes peuvent utiliser feuille morte comme un pouvoir magique 1/jour (niveau de lanceur de sorts égal au niveau de personnage du sylphe).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les sylphes ont une résistance de 5 à l’électricité.",
+        "name": "Résistance élémentaire"
+      },
+      {
+        "description": "Les ensorceleurs sylphes de lignage élémentaire (air) considèrent leur valeur de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs magiques de l’ensorceleur. Les lanceurs de sorts sylphes du domaine de l’Air  utilisent leurs pouvoirs et sorts de domaine à un niveau de lanceur de sorts augmenté de +1.",
+        "name": "Affinité avec l’air"
+      },
+      {
+        "description": "Les sylphes commencent le jeu en parlant le commun et l’aérien. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aquatique, elfique, gnome, halfelin, igné, nain et terreux.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "syrinx": {
+    "ability_modifiers": [
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Dex",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": null,
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les syrinx sont des êtres contemplatifs et patients, traits qui les rendent assez lents à agir.",
+        "name": "+2 Sagesse, -2 Dextérité"
+      },
+      {
+        "description": "Les syrinx ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les syrinx ont une vitesse de vol de 18 mètres avec une manœuvrabilité moyenne.",
+        "name": "Vol"
+      },
+      {
+        "description": "Les syrinx voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les syrinx voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les syrinx peuvent communiquer avec tous les oiseaux de type animal et avec les créatures magiques aviaires (comme les phénix et les oiseaux-tonnerre).",
+        "name": "Communication avec les créatures aviaires (Ext)"
+      },
+      {
+        "description": "Les syrinx bénéficient d'un bonus racial de +2 aux tests de Discrétion et de Perception la nuit.",
+        "name": "Nocturne"
+      },
+      {
+        "description": "Les syrinx ont un bonus racial de +2 aux jets de sauvegarde contre les effets mentaux.",
+        "name": "Orgueil"
+      },
+      {
+        "description": "Les syrinx commencent le jeu en parlant le syrinx. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : aérien, azlant, céleste, strix et infernal.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "tengu": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les tengus sont rapides et observateurs, mais relativement fragiles et délicats.",
+        "name": "+2 en Dextérité, +2 en Sagesse, -2 en Constitution"
+      },
+      {
+        "description": "Les tengus sont des humanoïdes de sous-type tengu.",
+        "name": "Tengu"
+      },
+      {
+        "description": "Les tengus sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les tengus ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les tengus possèdent la vision nocturne.",
+        "name": "Sens"
+      },
+      {
+        "description": "Les tengus gagnent un bonus racial de +2 à leurs tests de Discrétion et de Perception.",
+        "name": "Furtif"
+      },
+      {
+        "description": "Les tengus gagnent un bonus racial de +4 à leurs tests de Linguistique, et apprennent deux langues au lieu d'une à chaque fois qu’ils gagnent un rang en Linguistique.",
+        "name": "Linguiste doué"
+      },
+      {
+        "description": "Les tengus sont entraînés dès la naissance au maniement de l’épée et, de ce fait, sont automatiquement formés au maniement des lames (y compris les cimeterres, les cimeterres à deux mains, les dagues, les dagues coup-de-poing, les doubles lames, les épées à deux mains, les épées bâtardes, les épées courtes, les épées longues, les kukris, les lames elfiques incurvées et les rapières).",
+        "name": "Entraînement aux épées"
+      },
+      {
+        "description": "Le tengu possède une attaque de morsure qui inflige 1d3 points de dégâts.",
+        "name": "Arme naturelle"
+      },
+      {
+        "description": "Les tengus commencent le jeu en parlant le commun et le tengu. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre n’importe quelle autre langue de leur choix (à l’exception des langues secrètes telles que la langue des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "tieffelin": {
+    "ability_modifiers": [],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les tieffelins sont vifs de corps et d’esprit, mais sont fondamentalement étranges et déconcertants.",
+        "name": "+2 en Dextérité, +2 en Intelligence, -2 en Charisme"
+      },
+      {
+        "description": "Les tieffelins sont des extérieurs de sous-type natif.",
+        "name": "Extérieur natif"
+      },
+      {
+        "description": "Les tieffelins sont des créatures de taille M qui ne reçoivent ni bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les tieffelins ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les tieffelins voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les tieffelins gagnent un bonus racial de +2 à leurs tests de Bluff et de Discrétion.",
+        "name": "Compétent"
+      },
+      {
+        "description": "Les tieffelins peuvent utiliser ténèbres comme un pouvoir magique une fois par jour (niveau de lanceur de sorts égal au niveau de personnage du tieffelin).",
+        "name": "Pouvoir magique"
+      },
+      {
+        "description": "Les tieffelins ont une résistance à l’électricité de 5, au feu de 5 et au froid de 5.",
+        "name": "Résistance des fiélons"
+      },
+      {
+        "description": "Les ensorceleurs tieffelins de lignage abyssal ou infernal considèrent leur valeur de Charisme supérieure de 2 points pour toutes les capacités de classe de l’ensorceleur.",
+        "name": "Magie des fiélons"
+      },
+      {
+        "description": "Les tieffelins commencent le jeu en parlant le commun et soit l’abyssal, soit l’infernal. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : abyssal, draconique, elfique, gnome, gobelin, halfelin, infernal, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "triaxien": {
+    "ability_modifiers": [
+      {
+        "ability": "Con",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "For",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": true,
+    "size": null,
+    "speed": null,
+    "traits": [
+      {
+        "description": "Les triaxiens sont",
+        "name": "+2 Constitution, +2 Sagesse, -2 Force"
+      },
+      {
+        "description": "Les triaxiens voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les triaxiens bénéficient d'un bonus racial de +2 aux tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les triaxiens choisissent un don supplémentaire au niveau 1.",
+        "name": "Don supplémentaire"
+      },
+      {
+        "description": "Les environnements chauds ne blessent pas les Enfants de l'été et les environnements froids ne blessent pas les Enfants de l'hiver. Les triaxiens Enfants de l'été peuvent supporter sans problème des températures situées entre 30 et 60 degrés Celsius sans avoir à effectuer de jets de Vigueur. Les triaxiens Enfants de l'hiver peuvent supporter sans problème des températures situées entre 5 et -30 degrés Celsius sans avoir à effectuer de jets de Vigueur. Dans des conditions de chaleur ou de froid extrême, les Triaxiens n'effectuent des jets de Vigueur qu'une fois par heure au lieu d'une fois toutes les 10 minutes. Les triaxiens transitionnels ne possèdent pas ce pouvoir spécial.",
+        "name": "Acclimaté (Ext)"
+      },
+      {
+        "description": "Les triaxiens commencent le jeu en parlant le triaxien (la langue commerciale internationale de Triaxus). Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues de leur choix (sauf les langues secrètes comme celle des druides).",
+        "name": "Langues"
+      }
+    ]
+  },
+  "troll": {
+    "ability_modifiers": null,
+    "bonus_skill_rank": null,
+    "class_skill_grants": null,
+    "has_bonus_feat": null,
+    "note": "no scrapeable standard traits page found",
+    "size": null,
+    "speed": null,
+    "traits": []
+  },
+  "trox": {
+    "ability_modifiers": [
+      {
+        "ability": "For",
+        "modifier": 6
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      },
+      {
+        "ability": "Sag",
+        "modifier": -2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "G",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les trox sont très forts, mais ils manquent parfois de perspicacité, sont peu réceptifs et relativement peu chaleureux.",
+        "name": "+6 Force, -2 Intelligence, -2 Sagesse, -2 Charisme"
+      },
+      {
+        "description": "Les trox sont des humanoïdes monstrueux.",
+        "name": "Humanoïde monstrueux"
+      },
+      {
+        "description": "Les trox ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les trox sont des créatures de taille G qui reçoivent un malus de taille de -1 à la CA, un malus de taille de -4 à leurs tests de Discrétion, et un bonus de taille de +1 au BMO et au DMD.",
+        "name": "Taille G"
+      },
+      {
+        "description": "Les trox voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les trox ont une vitesse de creusement de 6 mètres.",
+        "name": "Creusuement"
+      },
+      {
+        "description": "Les petits bras d'un trox ne sont guère utiles en dehors des situations de lutte. Un trox gagne le don Science de la lutte comme bonus supplémentaire et peut maintenir sa prise tout en continuant à attaquer avec ses bras principaux.",
+        "name": "Appendices attrapeurs (Ext)"
+      },
+      {
+        "description": "Un trox devient frénétique une fois par jour s'il subit des dégâts. Cette frénésie dure une minute et lui confère un bonus racial de +2 aux valeurs de Force et de Constitution, mais un malus de -2 à la CA.",
+        "name": "Frénétique (Ext)"
+      },
+      {
+        "description": "Les trox commencent le jeu en parlant le terreux. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : commun, commun des profondeurs, géant, nain, orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "vanara": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les vanaras sont agiles et perspicaces, mais également assez espiègles.",
+        "name": "+2 Dextérité, +2 Sagesse, -2 Charisme"
+      },
+      {
+        "description": "Les vanaras sont des humanoïdes de sous-type vanara.",
+        "name": "Vanara"
+      },
+      {
+        "description": "Les vanaras sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les vanaras ont une vitesse de base de 9 mètres et une vitesse d’escalade de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les vanaras voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les vanaras ont un bonus racial de +2 à leurs tests d’Acrobaties et de Discrétion.",
+        "name": "Agilité"
+      },
+      {
+        "description": "Le vanara a une longue queue souple qu’il peut utiliser pour porter des objets. Il ne peut pas manier d’arme avec sa queue, mais celle-ci lui permet de récupérer de petits objets rangés sur sa personne par une action rapide.",
+        "name": "Queue préhensile"
+      },
+      {
+        "description": "Les vanaras commencent le jeu en parlant le commun et le vanara. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : aklo, céleste, elfique, gnome, gobelin et sylvestre.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "virebois": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les virebois sont rapides et calculateurs. En tant que Créatures artificielles, ils ne possèdent pas de valeur de Constitution.",
+        "name": "+2 Dextérité, +2 Intelligence, -2 Charisme"
+      },
+      {
+        "description": "Les virebois ont le type créatures artificielle.",
+        "name": "Créature artificielle"
+      },
+      {
+        "description": "Les virebois sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d'attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les virebois ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les virebois voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les virebois voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les virebois commencent le jeu en parlant le commun. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : draconique, elfique, gnome, gobelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "vishkanya": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Cha",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les vishkanyas sont gracieux et élégants, mais souvent irrationnels.",
+        "name": "+2 Dextérité, +2 Charisme, -2 Sagesse"
+      },
+      {
+        "description": "Les vishkanyas sont des humanoïdes de sous-type vishkanya.",
+        "name": "Vishkanya"
+      },
+      {
+        "description": "Les vishkanyas sont des créatures de taille M et n’ont aucun bonus ni malus de taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les vishkanyas ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les vishkanyas peuvent voient deux fois plus loin que les humains en cas de faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les vishkanyas reçoivent un bonus racial de +2 à leurs tests de Perception.",
+        "name": "Sens aiguisés"
+      },
+      {
+        "description": "Les vishkanyas reçoivent un bonus racial de +2 à leurs tests de Discrétion et d’Évasion.",
+        "name": "Souplesse"
+      },
+      {
+        "description": "Le vishkanya reçoit un bonus racial égal à son nombre de dés de vie aux jets de sauvegarde contre les poisons.",
+        "name": "Résistance au poison"
+      },
+      {
+        "description": "Les vishkanyas sont rompus à l’utilisation des poisons et ne s’empoisonnent jamais accidentellement lorsqu’ils utilisent ou manipulent du poison.",
+        "name": "Utilisation des poisons"
+      },
+      {
+        "description": "Un nombre de fois par jour égal à son modificateur de Constitution, le vishkanya peut empoisonner une arme qu’il manie avec sa salive ou son sang toxique (l’emploi de son sang nécessite que le vishkanya soit blessé lorsqu’il utilise cette capacité). Il faut une action rapide pour appliquer le venin de cette manière.Venin vishkanya. Blessure ; JdS Vigueur DD 10 + 1/2 dés de vie du vishkanya + son modificateur de Constitution ; fréquence 1/round pendant 6 rounds ; effet 1d2 points de Dextérité ; guérison 1 réussite.",
+        "name": "Toxique"
+      }
+    ]
+  },
+  "wayang": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "P",
+    "speed": 6,
+    "traits": [
+      {
+        "description": "Les wayangs sont agiles et malins, mais leur perception du monde est obscurcie par les ombres.",
+        "name": "+2 Dextérité, +2 Intelligence, -2 Sagesse"
+      },
+      {
+        "description": "Les wayangs sont des humanoïdes de sous-type wayang.",
+        "name": "Wayang"
+      },
+      {
+        "description": "Les wayangs sont des créatures de taille P qui reçoivent un bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.",
+        "name": "Taille P"
+      },
+      {
+        "description": "Les wayangs ont une vitesse de base de 6 mètres.",
+        "name": "Vitesse lente"
+      },
+      {
+        "description": "Les wayangs voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Une fois par jour, par une action immédiate, le wayang peut traiter les effets d’énergie positive et d’énergie négative comme s’il était une créature morte-vivante, recevant des dégâts de l’énergie positive et soignant ses dégâts grâce à l’énergie négative. Cette capacité dure 1 minute une fois activée.",
+        "name": "Ombre et lumière (Sur)"
+      },
+      {
+        "description": "Les wayangs gagnent un bonus racial de +2 à leurs tests de Discrétion et de Perception.",
+        "name": "Traqueur"
+      },
+      {
+        "description": "Les wayangs rajoutent +1 au DD de tous leurs jets de sauvegarde contre les sorts de la branche de l’ombre qu’ils lancent. Les wayangs ayant une valeur de Charisme de 11 ou plus gagnent également ces pouvoirs magiques : 1/jour – passage sans trace, son imaginaire et ventriloquie. Le niveau de lanceur de sorts pour ces effets est égal au niveau de personnage du wayang. Le DD de ces sorts est égal à 10 + le niveau du sort + le modificateur de Charisme du wayang.",
+        "name": "Magie des ombres"
+      },
+      {
+        "description": "Les wayangs reçoivent un bonus racial de +2 à leurs jets de sauvegarde contre les sorts de la branche de l’ombre.",
+        "name": "Résistance à l’ombre"
+      },
+      {
+        "description": "Les wayangs commencent le jeu en parlant le commun et le wayang. Ceux qui ont une valeur d’Intelligence élevée peuvent apprendre d’autres langues parmi celles-ci : toutes les langues humaines, abyssal, aklo, draconique, gobelin, infernal, nagaji, samsaran et tengu.",
+        "name": "Langues"
+      }
+    ]
+  },
+  "wivaran": {
+    "ability_modifiers": [
+      {
+        "ability": "Dex",
+        "modifier": 2
+      },
+      {
+        "ability": "Sag",
+        "modifier": 2
+      },
+      {
+        "ability": "Int",
+        "modifier": -2
+      }
+    ],
+    "bonus_skill_rank": false,
+    "class_skill_grants": [],
+    "has_bonus_feat": false,
+    "size": "M",
+    "speed": 9,
+    "traits": [
+      {
+        "description": "Les wivarans font preuve d'une grâce reptilienne et sont très déterminés, tout en étant un peu obtus.",
+        "name": "+2 Dextérité, +2 Sagesse, -2 Intelligence"
+      },
+      {
+        "description": "Les wivarans ont le type dragon.",
+        "name": "Dragon"
+      },
+      {
+        "description": "Les wivarans sont des créatures de taille M qui ne reçoivent ni malus ni bonus liés à la taille.",
+        "name": "Taille M"
+      },
+      {
+        "description": "Les wivarans ont une vitesse de base de 9 mètres.",
+        "name": "Vitesse normale"
+      },
+      {
+        "description": "Les wivarans ont des ailes draconiques qui leur confère une vitesse de vol de 9 mètres avec une manœuvrabilité déplorable.",
+        "name": "Vol"
+      },
+      {
+        "description": "Les wivarans disposent d'une attaque de coup de queue qu'ils peuvent uniquement utiliser pour effectuer des attaques d'opportunité. Cette attaque de queue fouettante inflige 1d8 points de dégâts plus le modificateur de Force du wivaran.",
+        "name": "Queue fouettante (Ext)"
+      },
+      {
+        "description": "Les wivarans voient dans le noir à 18 mètres.",
+        "name": "Vision dans le noir"
+      },
+      {
+        "description": "Les wivarans voient deux fois plus loin que les humains à faible luminosité.",
+        "name": "Vision nocturne"
+      },
+      {
+        "description": "Les wivarans commencent le jeu en parlant le commun et le draconique. Ceux qui possèdent une valeur d'Intelligence élevée peuvent apprendre d'autres langues issues de la liste suivante : elfique, gnome, gobelin, nain et orque.",
+        "name": "Langues"
+      }
+    ]
+  }
+}
