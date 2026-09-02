@@ -25,9 +25,9 @@ export const LIBELLES_TEMPS_INCANTATION: Readonly<Record<string, string>> = {
   action_immediate: 'Action immédiate',
   action_rapide: 'Action rapide',
   action_complexe: 'Action complexe',
-  round: 'Round(s)',
-  minute: 'Minute(s)',
-  heure: 'Heure(s)',
+  round: 'Rounds',
+  minute: 'Minutes',
+  heure: 'Heures',
   semaine: 'Semaine',
   special: 'Spécial',
 }
