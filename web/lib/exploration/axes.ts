@@ -181,7 +181,7 @@ const AXE_NIVEAU: Axe = {
     }
     const contexte =
       classes.length > 1
-        ? ` pour au moins l’une de ces classes : ${classes.map((c) => nomClasse(index, c)).join(', ')}`
+        ? ` pour au moins l’une de ces classes, ${classes.map((c) => nomClasse(index, c)).join(', ')}`
         : classes.length === 1
           ? ` pour ${nomClasse(index, classes[0]!)}`
           : `, ${LIBELLE_SANS_CLASSE.toLowerCase()}`
@@ -193,7 +193,7 @@ const AXE_NIVEAU: Axe = {
         valeur: String(niveau),
         // Level 0 is real — the orisons — so a bare digit is shown, never a dash.
         libelle: `Niveau ${niveau}`,
-        libelleAccessible: `Niveau ${niveau}${contexte} — ${nb} sorts`,
+        libelleAccessible: `Niveau ${niveau}${contexte}, ${nb} sorts`,
         nb,
         ecole: null,
       }))
@@ -218,7 +218,7 @@ const AXE_NIVEAU: Axe = {
     if (etat.base.niveaux.length === 0) return null
     const niveaux = etat.base.niveaux.join(', ')
     const classes = classesChoisies(etat)
-    if (classes.length === 0) return `${LIBELLE_SANS_CLASSE} : ${niveaux}`
+    if (classes.length === 0) return `${LIBELLE_SANS_CLASSE} ${niveaux}`
     return `Niveau ${niveaux} pour ${classes.map((slug) => nomClasse(index, slug)).join(', ')}`
   },
 }
@@ -245,7 +245,7 @@ const AXE_ECOLE: Axe = {
         return {
           valeur: ecole,
           libelle,
-          libelleAccessible: `${libelle} — ${nb} sorts`,
+          libelleAccessible: `${libelle}, ${nb} sorts`,
           nb,
           ecole: resolue,
         }
@@ -258,7 +258,7 @@ const AXE_ECOLE: Axe = {
           {
             valeur: null,
             libelle: 'École non renseignée',
-            libelleAccessible: `École non renseignée par la source — ${sans} sorts`,
+            libelleAccessible: `École non renseignée par la source, ${sans} sorts`,
             nb: sans,
             ecole: null,
           },
@@ -296,7 +296,7 @@ const AXE_SAUVEGARDE: Axe = {
       [...compte.entries()].map(([jet, nb]) => ({
         valeur: jet,
         libelle: jet,
-        libelleAccessible: `Jet de sauvegarde ${jet} — ${nb} sorts`,
+        libelleAccessible: `Jet de sauvegarde ${jet}, ${nb} sorts`,
         nb,
         ecole: null,
       })),
@@ -310,7 +310,7 @@ const AXE_SAUVEGARDE: Axe = {
             // The corpus records values like « non et oui (cf. texte) »; the export
             // declines to force them into a code, and so does this slice.
             libelle: 'Non renseigné par la source',
-            libelleAccessible: `Jet de sauvegarde non renseigné par la source — ${sans} sorts`,
+            libelleAccessible: `Jet de sauvegarde non renseigné par la source, ${sans} sorts`,
             nb: sans,
             ecole: null,
           },
@@ -322,7 +322,7 @@ const AXE_SAUVEGARDE: Axe = {
   libelleChoisi: (_index, etat) =>
     etat.base.sauvegarde.length === 0
       ? null
-      : `Jet de sauvegarde : ${etat.base.sauvegarde.join(', ')}`,
+      : `Jet de sauvegarde ${etat.base.sauvegarde.join(', ')}`,
 }
 
 const AXE_PORTEE: Axe = {
@@ -343,7 +343,7 @@ const AXE_PORTEE: Axe = {
       [...compte.entries()].map(([portee, nb]) => ({
         valeur: portee,
         libelle: portee,
-        libelleAccessible: `Portée ${portee} — ${nb} sorts`,
+        libelleAccessible: `Portée ${portee}, ${nb} sorts`,
         nb,
         ecole: null,
       })),
@@ -355,7 +355,7 @@ const AXE_PORTEE: Axe = {
           {
             valeur: null,
             libelle: 'Non renseignée par la source',
-            libelleAccessible: `Portée non renseignée par la source — ${sans} sorts`,
+            libelleAccessible: `Portée non renseignée par la source, ${sans} sorts`,
             nb: sans,
             ecole: null,
           },
@@ -365,7 +365,7 @@ const AXE_PORTEE: Axe = {
   pose: (etat) => etat.base.portees.length > 0,
   retirer: (etat) => ({ ...etat, base: { ...etat.base, portees: [] } }),
   libelleChoisi: (_index, etat) =>
-    etat.base.portees.length === 0 ? null : `Portée : ${etat.base.portees.join(', ')}`,
+    etat.base.portees.length === 0 ? null : `Portée ${etat.base.portees.join(', ')}`,
 }
 
 const AXE_DEGATS: Axe = {
@@ -389,7 +389,7 @@ const AXE_DEGATS: Axe = {
       [...compte.entries()].map(([degats, nb]) => ({
         valeur: degats,
         libelle: degats,
-        libelleAccessible: `Type de dégâts ${degats} — ${nb} sorts`,
+        libelleAccessible: `Type de dégâts ${degats}, ${nb} sorts`,
         nb,
         ecole: null,
       })),
@@ -404,7 +404,7 @@ const AXE_DEGATS: Axe = {
             // the export does not distinguish the two in `td`, so neither does this
             // slice's label.
             libelle: 'Non renseigné ou sans dégâts typés',
-            libelleAccessible: `Type de dégâts non renseigné ou sans dégâts typés — ${sans} sorts`,
+            libelleAccessible: `Type de dégâts non renseigné ou sans dégâts typés, ${sans} sorts`,
             nb: sans,
             ecole: null,
           },
@@ -416,7 +416,7 @@ const AXE_DEGATS: Axe = {
   libelleChoisi: (_index, etat) =>
     etat.base.typesDegats.length === 0
       ? null
-      : `Type de dégâts : ${etat.base.typesDegats.join(', ')}`,
+      : `Type de dégâts ${etat.base.typesDegats.join(', ')}`,
 }
 
 const AXE_COMPOSANTE: Axe = {
@@ -434,7 +434,7 @@ const AXE_COMPOSANTE: Axe = {
         .map((mesure) => ({
           valeur: mesure.valeur,
           libelle: mesure.valeur,
-          libelleAccessible: `Composante ${mesure.valeur} — ${mesure.nb} sorts`,
+          libelleAccessible: `Composante ${mesure.valeur}, ${mesure.nb} sorts`,
           nb: mesure.nb,
           ecole: null,
         })),
@@ -445,7 +445,7 @@ const AXE_COMPOSANTE: Axe = {
   libelleChoisi: (_index, etat) =>
     etat.base.composantes.length === 0
       ? null
-      : `Composantes : ${etat.base.composantes.join(', ')}`,
+      : `Composantes ${etat.base.composantes.join(', ')}`,
 }
 
 export const AXES: Readonly<Record<CleAxe, Axe>> = {

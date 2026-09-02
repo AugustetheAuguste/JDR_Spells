@@ -80,8 +80,8 @@ export function PersonnaliserRoue({
         Catégories de la roue
       </p>
       <p className="m-0 mb-2 text-micro text-encre-faible">
-        Niveau reste toujours en premier. Cochez les autres catégories à afficher ;
-        les flèches changent leur ordre.
+        Niveau reste toujours en premier. Cochez les autres catégories à afficher.
+        Les flèches changent leur ordre.
       </p>
       <ul className="m-0 mb-3 flex list-none flex-col gap-1 p-0">
         {choisis.map((cle, rang) => (
