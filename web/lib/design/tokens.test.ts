@@ -247,6 +247,66 @@ describe('palette nuit — permutation plate, elle aussi vérifiée par calcul',
   })
 })
 
+describe('les deux jetons oblige — le troisième état du filtre à trois états', () => {
+  // Audit defect #2: `oblige` was referenced by `FiltreTags.tsx` and
+  // `FiltreConditions.tsx` (`border-oblige bg-oblige-voile text-oblige`) without
+  // existing in this file. Tailwind silently dropped the class, so the third
+  // state carried no colour at all — only the `‼` glyph distinguished it.
+  it.each([
+    ['jour', COULEURS.oblige, COULEURS.obligeVoile, COULEURS.base],
+    ['nuit', COULEURS_NUIT.oblige, COULEURS_NUIT.obligeVoile, COULEURS_NUIT.base],
+  ])('%s : oblige tient AA sur son propre voile et sur la base', (_theme, oblige, voile, base) => {
+    // The component writes `oblige` as text on `obligeVoile` — the pairing that
+    // is actually read, not an incidental one.
+    expect(contraste(oblige, voile)).toBeGreaterThanOrEqual(4.5)
+    expect(contraste(oblige, base)).toBeGreaterThanOrEqual(4.5)
+  })
+
+  it('oblige se distingue de l’accent et du désaccord — les trois états sont voisins à l’écran', () => {
+    const teinteOblige = teinte(COULEURS.oblige)
+    const teinteObligeNuit = teinte(COULEURS_NUIT.oblige)
+    expect(ecartTeinte(teinteOblige, teinte(COULEURS.accent))).toBeGreaterThanOrEqual(40)
+    expect(ecartTeinte(teinteOblige, teinte(COULEURS.desaccord))).toBeGreaterThanOrEqual(40)
+    expect(ecartTeinte(teinteObligeNuit, teinte(COULEURS_NUIT.accent))).toBeGreaterThanOrEqual(40)
+    expect(ecartTeinte(teinteObligeNuit, teinte(COULEURS_NUIT.desaccord))).toBeGreaterThanOrEqual(
+      40,
+    )
+  })
+
+  it.each(ECOLES)('oblige est à plus de 20° de %s', (ecole) => {
+    expect(
+      ecartTeinte(teinte(COULEURS.oblige), teinte(COULEURS_ECOLES[ecole])),
+    ).toBeGreaterThan(20)
+  })
+})
+
+describe('texte du bouton primaire', () => {
+  it('jour : surface (quasi-blanc) tient AA sur l’accent', () => {
+    expect(contraste(COULEURS.surface, COULEURS.accent)).toBeGreaterThanOrEqual(4.5)
+  })
+
+  it('nuit : ni le blanc ni l’encre nuit ne tiennent AA sur l’accent nuit — aucun texte clair ne convient', () => {
+    // Measured, not assumed: the Skill's prose names `encre` nuit as the button
+    // text ("dark ink... white-on-accent fails at 2.86:1"), but `encre` nuit is
+    // itself a LIGHT token (`#ECE1C9`, meant for text on the dark `base`), and
+    // measuring it against `accent` nuit gives 2.86:1 — the exact figure the
+    // Skill attributes to white. White itself measures 3.71:1 here. Both are
+    // under AA; this test documents the true state rather than repeating an
+    // unverified pairing, and it is why the button fix is left to étape 14, not
+    // decided by inventing a token here (this file changes no existing value).
+    expect(contraste('#FFFFFF', COULEURS_NUIT.accent)).toBeLessThan(4.5)
+    expect(contraste(COULEURS_NUIT.encre, COULEURS_NUIT.accent)).toBeLessThan(4.5)
+  })
+
+  it('nuit : `base` nuit est le seul ton déjà existant qui tienne AA sur l’accent nuit', () => {
+    // `base` (`#1E1710`) is the darkest night token — closer to true dark ink
+    // than any token actually named "encre" in this palette — and clears AA at
+    // 4.77:1. Left as a documented fact for étape 14 to act on, not a component
+    // change: this suite adds assertions, it does not repaint a button.
+    expect(contraste(COULEURS_NUIT.base, COULEURS_NUIT.accent)).toBeGreaterThanOrEqual(4.5)
+  })
+})
+
 describe('aucun hexadécimal hors de tokens.ts', () => {
   function fichiersSources(depuis: string): string[] {
     const ignores = new Set(['node_modules', '.next', 'public', 'fixtures', 'out'])
@@ -313,6 +373,8 @@ describe('theme.css ne dérive pas de tokens.ts', () => {
     ['color-accent-voile', COULEURS.accentVoile],
     ['color-desaccord', COULEURS.desaccord],
     ['color-desaccord-voile', COULEURS.desaccordVoile],
+    ['color-oblige', COULEURS.oblige],
+    ['color-oblige-voile', COULEURS.obligeVoile],
   ])('--%s vaut le jeton', (nom, attendu) => {
     expect(propriete(nom)?.toUpperCase()).toBe(attendu.toUpperCase())
   })
@@ -351,6 +413,12 @@ describe('theme.css ne dérive pas de tokens.ts', () => {
     expect(propriete('radius-panneau')).toBe(DENSITE.rayonPanneau)
   })
 
+  it('la cible tactile de 44px est déclarée', () => {
+    // Audit defect #7 leans on this token existing before a component can use it.
+    expect(propriete('spacing-cible')).toBe(DENSITE.cible)
+    expect(DENSITE.cible).toBe('44px')
+  })
+
   describe('le bloc [data-theme="nuit"]', () => {
     const blocNuit = /\[data-theme=['"]nuit['"]\]\s*\{([\s\S]*?)\n\}/.exec(css)?.[1] ?? ''
 
@@ -373,6 +441,8 @@ describe('theme.css ne dérive pas de tokens.ts', () => {
       ['color-accent-voile', COULEURS_NUIT.accentVoile],
       ['color-desaccord', COULEURS_NUIT.desaccord],
       ['color-desaccord-voile', COULEURS_NUIT.desaccordVoile],
+      ['color-oblige', COULEURS_NUIT.oblige],
+      ['color-oblige-voile', COULEURS_NUIT.obligeVoile],
     ])('--%s vaut le jeton nuit', (nom, attendu) => {
       expect(proprieteNuit(nom)?.toUpperCase()).toBe(attendu.toUpperCase())
     })

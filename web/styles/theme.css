@@ -148,6 +148,10 @@
   --color-desaccord: #82451c;
   --color-desaccord-voile: #f8eee7;
 
+  /* Troisième état du filtre à trois états — olive, 82°, 4.62:1 sur base */
+  --color-oblige: #4f7114;
+  --color-oblige-voile: #e8edde; /* 4.75:1 sur oblige */
+
   /* Les neuf écoles */
   --color-ecole-abjuration: #3a5a9b;
   --color-ecole-divination: #6b4fa8;
@@ -184,6 +188,7 @@
   --spacing-ligne: 32px;
   --spacing-ligne-dense: 28px;
   --spacing-gouttiere: 12px;
+  --spacing-cible: 44px; /* cible tactile, un contrôle réel — pas une ligne de table */
   --radius-jeton: 0px;
   --radius-panneau: 0px;
 }
@@ -211,6 +216,9 @@
 
   --color-desaccord: #c46c31;
   --color-desaccord-voile: #1f150f;
+
+  --color-oblige: #6f9037; /* même teinte 82°, éclairci — 4.83:1 sur base nuit */
+  --color-oblige-voile: #161c0d; /* 4.74:1 sur oblige nuit */
 }
 
 @layer base {
