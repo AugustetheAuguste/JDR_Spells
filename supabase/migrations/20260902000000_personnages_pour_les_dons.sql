@@ -25,6 +25,156 @@ alter table public.personnages
   add column if not exists divinite text,
   add column if not exists taille text,
   add column if not exists dons_acquis jsonb not null default '[]'::jsonb;
+
+-- --------------------------------------------------------------------------
+-- 2. Le vocabulaire de classes : contrainte NOMMÉE sur les 42 slugs
+-- --------------------------------------------------------------------------
+-- Les valeurs ci-dessous sont transcrites verbatim depuis les 42 `slug` de
+-- `data/conventions/classes_unifiees.json` (jamais tapées de mémoire) —
+-- `tools/verifier_vocabulaire_classes.py` garde les deux alignés. Notez
+-- `pretre combattant` : une ESPACE, pas un tiret — c'est la forme du corpus
+-- des dons, un tiret casserait la jointure avec `class_proficiencies.json`.
+--
+-- `classe` reste nullable : la contrainte tolère explicitement `null`, un
+-- personnage incomplet étant un état légitime (le moteur répond
+-- `manual_check` sur une classe inconnue, jamais `ineligible`).
+--
+-- Les valeurs existantes de `classe` qui ne correspondent à aucun des 42
+-- slugs (même après normalisation espaces/casse) sont mises à `null` avant
+-- la pose de la contrainte, plutôt que devinées : le précédent est
+-- `chasseur de vampire` (pf1_dons) — le dépôt laisse absent ce qu'il ne sait
+-- pas, parce qu'un `ineligible` faux cache le don au joueur sans recours.
+-- Cette normalisation ne couvre que les correspondances CERTAINES (casse et
+-- espaces superflus) ; toute autre valeur ancienne est simplement rapportée
+-- via une `notice`, jamais réécrite par supposition.
+
+do $$
+declare
+  slugs_connus text[] := array[
+    'alchimiste',
+    'antipaladin',
+    'arcaniste',
+    'barbare',
+    'barde',
+    'bretteur',
+    'cavalier',
+    'chaman',
+    'chasseur',
+    'chevalier',
+    'cinetiste',
+    'clerc',
+    'conjurateur',
+    'druide',
+    'enqueteur',
+    'ensorceleur',
+    'guerrier',
+    'hypnotiseur',
+    'inquisiteur',
+    'justicier',
+    'lutteur',
+    'magicien',
+    'magus',
+    'medium',
+    'metamorphe',
+    'moine',
+    'ninja',
+    'occultiste',
+    'oracle',
+    'paladin',
+    'pistolier',
+    'pretre',
+    'pretre combattant',
+    'psychiste',
+    'rodeur',
+    'roublard',
+    'samourai',
+    'sanguin',
+    'scalde',
+    'sorciere',
+    'spirite',
+    'tueur'
+  ];
+  ligne record;
+  correspondance text;
+begin
+  for ligne in
+    select id, classe from public.personnages
+    where classe is not null and classe <> all (slugs_connus)
+  loop
+    -- Correspondance certaine : la même valeur une fois la casse et les
+    -- espaces de bord normalisés. Toute autre différence (accent, tiret pour
+    -- une espace, orthographe) n'est PAS une correspondance certaine et est
+    -- laissée à `null`, rapportée en `notice`.
+    select s into correspondance
+      from unnest(slugs_connus) as s
+      where lower(trim(s)) = lower(trim(ligne.classe))
+      limit 1;
+
+    if correspondance is not null then
+      update public.personnages set classe = correspondance where id = ligne.id;
+      raise notice 'personnages.classe % -> % (id %) : correspondance certaine (casse/espaces)',
+        ligne.classe, correspondance, ligne.id;
+    else
+      update public.personnages set classe = null where id = ligne.id;
+      raise notice 'personnages.classe % (id %) : hors vocabulaire des 42 slugs, mis à null (non deviné)',
+        ligne.classe, ligne.id;
+    end if;
+  end loop;
+end;
+$$;
+
+alter table public.personnages
+  drop constraint if exists personnages_classe_connue;
+
+alter table public.personnages
+  add constraint personnages_classe_connue
+  check (
+    classe is null or classe in (
+      'alchimiste',
+      'antipaladin',
+      'arcaniste',
+      'barbare',
+      'barde',
+      'bretteur',
+      'cavalier',
+      'chaman',
+      'chasseur',
+      'chevalier',
+      'cinetiste',
+      'clerc',
+      'conjurateur',
+      'druide',
+      'enqueteur',
+      'ensorceleur',
+      'guerrier',
+      'hypnotiseur',
+      'inquisiteur',
+      'justicier',
+      'lutteur',
+      'magicien',
+      'magus',
+      'medium',
+      'metamorphe',
+      'moine',
+      'ninja',
+      'occultiste',
+      'oracle',
+      'paladin',
+      'pistolier',
+      'pretre',
+      'pretre combattant',
+      'psychiste',
+      'rodeur',
+      'roublard',
+      'samourai',
+      'sanguin',
+      'scalde',
+      'sorciere',
+      'spirite',
+      'tueur'
+    )
+  );
+
 -- --------------------------------------------------------------------------
 -- 3. Forme de `caracteristiques` : les six clés, entières, ou null
 -- --------------------------------------------------------------------------
