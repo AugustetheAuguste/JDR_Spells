@@ -46,13 +46,21 @@ def _construire_character(
 ) -> engine.Character:
     classe = classes.get(profil["classe"])
     nom_classe = classe.nom if classe is not None else profil["classe"]
+    # `engine.py::evaluate_requirement` (ABILITY_SCORE) looks up
+    # `character.ability_scores` by the *abbreviated, capitalized* key the
+    # parser writes into `payload["ability"]` (`"For"`, `"Dex"`, …, see
+    # `parser.py`'s `m.group(1).capitalize()`), never by the full French
+    # ability name the matrix uses. Keying this dict by `"force"`/`"dexterite"`
+    # made every ability-score lookup miss and fall back to `None`
+    # ("manual_check"), silently disabling that whole requirement type for the
+    # entire matrix.
     caracteristiques = {
-        "force": profil["caracteristiques"]["force"],
-        "dexterite": profil["caracteristiques"]["dexterite"],
-        "constitution": profil["caracteristiques"]["constitution"],
-        "intelligence": profil["caracteristiques"]["intelligence"],
-        "sagesse": profil["caracteristiques"]["sagesse"],
-        "charisme": profil["caracteristiques"]["charisme"],
+        "For": profil["caracteristiques"]["force"],
+        "Dex": profil["caracteristiques"]["dexterite"],
+        "Con": profil["caracteristiques"]["constitution"],
+        "Int": profil["caracteristiques"]["intelligence"],
+        "Sag": profil["caracteristiques"]["sagesse"],
+        "Cha": profil["caracteristiques"]["charisme"],
     }
     return engine.Character(
         character_class=nom_classe,
