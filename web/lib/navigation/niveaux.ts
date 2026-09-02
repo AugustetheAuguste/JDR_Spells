@@ -61,7 +61,7 @@ export function niveauAffiche(
     titre:
       detail.length === 0
         ? 'Aucune classe ne reçoit ce sort dans le corpus'
-        : `${LIBELLE_SANS_CLASSE}. Par classe : ${detail.join(', ')}.`,
+        : `${LIBELLE_SANS_CLASSE}. Par classe, ${detail.join(', ')}.`,
   }
 }
 

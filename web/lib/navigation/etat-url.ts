@@ -318,6 +318,35 @@ export function etatActif(etat: EtatUrl): boolean {
 }
 
 /**
+ * How many filters are posed, counted by category rather than by value — the
+ * count the drawer button reads out loud (« Filtrer, 3 posés »). Three schools
+ * posed at once count as one, the same way `filtreLePlusRestrictif` names one
+ * culprit rather than three. `q` and `tri` are excluded on purpose: the search
+ * box and the column sort live outside the drawer this count labels.
+ */
+export function nombreFiltresPoses(etat: EtatUrl): number {
+  let n = 0
+  if (etat.classe !== null) n += 1
+  if (etat.niveaux.length > 0) n += 1
+  if (etat.ecoles.length > 0) n += 1
+  if (etat.tags.length > 0 || etat.tagsExclus.length > 0 || etat.tagsObliges.length > 0) n += 1
+  if (etat.composantes.length > 0) n += 1
+  if (etat.sauvegarde.length > 0) n += 1
+  if (etat.portees.length > 0) n += 1
+  if (etat.tempsIncantation.length > 0) n += 1
+  if (etat.typesDegats.length > 0) n += 1
+  if (
+    etat.conditionsInfligees.length > 0 ||
+    etat.conditionsInfligeesExclues.length > 0 ||
+    etat.conditionsInfligeesObligees.length > 0
+  ) {
+    n += 1
+  }
+  if (etat.desaccords) n += 1
+  return n
+}
+
+/**
  * Turn names into the index's integer codes.
  *
  * Names live in the URL, codes live in the index; this is the one place they

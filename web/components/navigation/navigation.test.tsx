@@ -487,6 +487,38 @@ describe('l’accessibilité', () => {
   })
 })
 
+describe('le tiroir de filtres mobile', () => {
+  it('aria-expanded suit l’état du tiroir', async () => {
+    await monterVue('')
+    const bouton = screen.getByRole('button', { name: 'Filtrer' })
+    expect(bouton.getAttribute('aria-expanded')).toBe('false')
+    await userEvent.click(bouton)
+    expect(bouton.getAttribute('aria-expanded')).toBe('true')
+  })
+
+  it('porte le nombre de filtres posés, sans « (s) »', async () => {
+    await monterVue('classe=barde&niveau=1')
+    expect(screen.getByRole('button', { name: 'Filtrer, 2 posés' })).toBeTruthy()
+  })
+
+  it('Échap ferme le tiroir et rend le focus au bouton « Filtrer »', async () => {
+    await monterVue('')
+    const bouton = screen.getByRole('button', { name: 'Filtrer' })
+    await userEvent.click(bouton)
+    expect(bouton.getAttribute('aria-expanded')).toBe('true')
+    await userEvent.keyboard('{Escape}')
+    expect(bouton.getAttribute('aria-expanded')).toBe('false')
+    expect(document.activeElement).toBe(bouton)
+  })
+
+  it('n’écrit rien dans l’URL à l’ouverture, ce n’est pas un filtre', async () => {
+    await monterVue('')
+    await userEvent.click(screen.getByRole('button', { name: 'Filtrer' }))
+    expect(remplace).not.toHaveBeenCalled()
+    expect(pousse).not.toHaveBeenCalled()
+  })
+})
+
 describe('le panneau de filtres, isolé', () => {
   function monterPanneau(etat: EtatUrl, index: IndexWeb = INDEX) {
     const surEtat = vi.fn()
