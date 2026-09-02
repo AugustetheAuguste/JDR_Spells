@@ -5,7 +5,6 @@ import type { ReactNode } from 'react'
 import '@/styles/theme.css'
 import { Fournisseurs } from '@/components/Fournisseurs'
 import { BasculeTheme } from '@/components/primitives/BasculeTheme'
-import { MOTS } from '@/lib/design/tokens'
 
 /**
  * Read before paint, so the reader who chose night mode never sees a flash of
@@ -42,38 +41,61 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
       <body>
         <a
           href="#contenu"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-jeton focus:border focus:border-accent focus:bg-accent-voile focus:px-3 focus:py-2 focus:text-accent"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:flex focus:min-h-cible focus:items-center focus:rounded-jeton focus:border focus:border-accent focus:bg-accent-voile focus:px-3 focus:text-accent"
         >
           Aller au contenu
         </a>
 
         <header className="border-b border-bord bg-surface">
-          <div className="mx-auto flex max-w-[1180px] flex-wrap items-baseline justify-between gap-3 px-4 py-3">
+          <div className="mx-auto flex max-w-[1180px] flex-col gap-2 px-4 py-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
             <p className="m-0 font-affichage text-titre3 font-semibold">
               Sorts Pathfinder 1e
             </p>
-            <nav aria-label="Sections" className="flex gap-3 text-corps">
-              <Link className="text-encre hover:text-accent" href="/">
+            <nav
+              aria-label="Sections"
+              className="flex flex-wrap items-center gap-2 text-corps"
+            >
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/"
+              >
                 Sorts
               </Link>
-              <Link className="text-encre hover:text-accent" href="/explorer">
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/explorer"
+              >
                 Explorer
               </Link>
-              <Link className="text-encre hover:text-accent" href="/comparaison">
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/comparaison"
+              >
                 Comparer
               </Link>
-              <Link className="text-encre hover:text-accent" href="/favoris">
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/favoris"
+              >
                 Favoris
               </Link>
-              <Link className="text-encre hover:text-accent" href="/compte">
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/compte"
+              >
                 Compte
               </Link>
             </nav>
-            <div className="flex items-baseline gap-3">
-              <p className="m-0 text-petit text-encre-douce">
-                {MOTS.source} —{' '}
+            <div className="flex flex-wrap items-center gap-2">
+              {/* Charte typographique vs. libellé figé du Skill : `MOTS.source`
+                  porte « source : pathfinder-fr.org », deux-points inclus. La
+                  charte l'interdit en prose ; on écrit ici le libellé sans
+                  éditer `MOTS` (hors périmètre, tokens.ts appartient à 04).
+                  Divergence signalée dans les constats pour l'étape 16. */}
+              <p className="m-0 flex min-h-cible items-center text-petit text-encre-douce">
+                Source pathfinder-fr.org,{' '}
                 <a
-                  className="text-accent underline hover:text-accent-survol"
+                  className="ml-1 inline-flex min-h-cible items-center text-accent underline hover:text-accent-survol"
                   href="https://www.pathfinder-fr.org/"
                   rel="noreferrer"
                   target="_blank"
@@ -81,7 +103,9 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
                   consulter le wiki
                 </a>
               </p>
-              <BasculeTheme />
+              <div className="flex min-h-cible min-w-cible items-center justify-center">
+                <BasculeTheme />
+              </div>
             </div>
           </div>
         </header>
@@ -96,11 +120,18 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
           <Fournisseurs>{children}</Fournisseurs>
         </main>
 
-        <footer className="mt-8 border-t border-bord px-4 py-4 text-petit text-encre-douce">
-          <p className="m-0 mx-auto max-w-[1180px]">
-            Contenu de <strong>pathfinder-fr.org</strong>, wiki communautaire tenu par
-            des bénévoles. Ce site n&apos;en est qu&apos;un index de consultation ; les
-            pages d&apos;origine font foi.
+        <footer className="mt-8 flex flex-wrap items-center gap-2 border-t border-bord px-4 py-4 text-petit text-encre-douce">
+          <p className="m-0 mx-auto flex min-h-cible max-w-[1180px] items-center">
+            Les sorts viennent de{' '}
+            <a
+              className="ml-1 inline-flex min-h-cible items-center text-accent underline hover:text-accent-survol"
+              href="https://www.pathfinder-fr.org/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              pathfinder-fr.org
+            </a>
+            .
           </p>
         </footer>
       </body>
