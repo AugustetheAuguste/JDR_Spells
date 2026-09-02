@@ -85,9 +85,20 @@ def test_toutes_les_autres_entrees_ne_sont_pas_a_curer(classes_unifiees: dict) -
             assert classe["raison_curation"] is None
 
 
-def test_tous_les_lanceur_valent_null(classes_unifiees: dict) -> None:
+def test_lanceur_renseigne_depuis_class_caster_info(classes_unifiees: dict) -> None:
+    # Étape 07 : `lanceur` est désormais lu depuis data/classes/class_caster_info.json
+    # (les 42 classes du registre y sont toutes présentes ; seule
+    # « chasseur de vampire », absente des 42, n'y figure pas en None ici).
+    # Aucune entrée ne doit rester `null` par oubli : chaque valeur vaut
+    # explicitement `True` ou `False`.
     for classe in classes_unifiees["classes"]:
-        assert classe["lanceur"] is None
+        assert classe["lanceur"] in (True, False)
+
+
+def test_scalde_lanceur_sans_liste_de_sorts(classes_unifiees: dict) -> None:
+    scalde = next(c for c in classes_unifiees["classes"] if c["slug"] == "scalde")
+    assert scalde["lanceur"] is True
+    assert scalde["liste_sorts"] is None
 
 
 def test_pretre_combattant_a_une_espace_pas_un_tiret(classes_unifiees: dict) -> None:
