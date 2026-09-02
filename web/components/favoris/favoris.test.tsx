@@ -93,12 +93,14 @@ afterEach(() => {
 describe('le bouton de bascule', () => {
   it('emploie le même verbe du bouton au message de retour', async () => {
     await monterBouton()
-    const bouton = screen.getByRole('button')
-    expect(bouton.getAttribute('title')).toBe('Ajouter aux favoris')
+    const bouton = screen.getByRole('button', { name: 'Ajouter aux favoris' })
+    // No `title` here: it would only repeat the visible label, and the Skill's
+    // charte typographique retires a `title` that redoes a button's own label.
+    expect(bouton.getAttribute('title')).toBeNull()
     await userEvent.click(bouton)
     // Same verb, next tense: « Ajouter » → « Ajouté », then « Retirer ».
     expect(screen.getByText('Ajouté aux favoris')).toBeTruthy()
-    expect(screen.getByRole('button').getAttribute('title')).toBe('Retirer des favoris')
+    expect(screen.getByRole('button', { name: 'Retirer des favoris' }).getAttribute('title')).toBeNull()
   })
 
   it('porte l’état dans aria-pressed, pas seulement dans une couleur', async () => {
@@ -169,10 +171,55 @@ describe('le bouton de bascule', () => {
 })
 
 describe('la vue des favoris', () => {
-  it('dit que le stockage est local et sans synchronisation', async () => {
+  it('dit que le stockage est local et invite à se connecter pour synchroniser', async () => {
     await monterVue()
-    expect(screen.getByText(/dans ce navigateur seulement/)).toBeTruthy()
-    expect(screen.getByText(/aucune synchronisation entre appareils/)).toBeTruthy()
+    expect(screen.getByText(/vivent dans ce navigateur/)).toBeTruthy()
+    expect(screen.getByText(/Connectez-vous pour les retrouver/)).toBeTruthy()
+    expect(screen.queryByText(/aucune synchronisation/)).toBeNull()
+  })
+
+  it('ne rend aucun pluriel entre parenthèses', async () => {
+    window.localStorage.setItem(
+      CLE_STOCKAGE,
+      JSON.stringify({
+        version: 1,
+        listes: [{ id_liste: 'l1', nom: 'A', sorts: ['degout'], cree_le: '', modifie_le: '' }],
+        liste_active: 'l1',
+      }),
+    )
+    const { container } = render(
+      <FournisseurFavoris>
+        <VueFavoris />
+      </FournisseurFavoris>,
+    )
+    await screen.findByRole('heading', { name: 'Favoris' })
+    expect(container.textContent).not.toMatch(/\(s\)/)
+  })
+
+  it('rend exactement un bouton en aplat accent quand aucune liste n’existe', async () => {
+    await monterVue()
+    const primaires = screen.getAllByRole('button').filter((bouton) =>
+      bouton.className.includes('bg-accent-voile'),
+    )
+    expect(primaires).toHaveLength(1)
+    expect(primaires[0]?.textContent).toBe('Nouvelle liste')
+  })
+
+  it('rend exactement un bouton en aplat accent quand une liste choisie est vide', async () => {
+    window.localStorage.setItem(
+      CLE_STOCKAGE,
+      JSON.stringify({
+        version: 1,
+        listes: [{ id_liste: 'l1', nom: 'A', sorts: [], cree_le: '', modifie_le: '' }],
+        liste_active: 'l1',
+      }),
+    )
+    await monterVue()
+    const primaires = screen.getAllByRole('button').filter((bouton) =>
+      bouton.className.includes('bg-accent-voile'),
+    )
+    expect(primaires).toHaveLength(1)
+    expect(primaires[0]?.textContent).toBe('Parcourir les sorts')
   })
 
   it('sur une liste vide, explique comment en remplir une', async () => {
@@ -215,7 +262,7 @@ describe('la vue des favoris', () => {
       }),
     )
     await monterVue()
-    expect(await screen.findByText(/1 inconnu\(s\)/)).toBeTruthy()
+    expect(await screen.findByText(/1 identifiant inconnu/)).toBeTruthy()
     expect(screen.getByText(/Ils sont/)).toBeTruthy()
     expect(screen.getByText(/sort-renomme-par-une-correction/)).toBeTruthy()
     // And it is still in storage: reporting is not pruning.
@@ -342,8 +389,8 @@ describe('l’import', () => {
     expect(enregistre).toContain('neuf')
     expect(enregistre).toContain('deja')
     const compte = await screen.findByText(/Import terminé/)
-    expect(compte.textContent).toContain('1 id(s) ajouté(s)')
-    expect(compte.textContent).toContain('1 déjà présent(s)')
+    expect(compte.textContent).toContain('1 sort ajouté')
+    expect(compte.textContent).toContain('1 déjà présent')
   })
 
   it('en mode nouvelle liste, laisse la liste active intacte', async () => {
@@ -375,7 +422,7 @@ describe('l’import', () => {
     await userEvent.click(
       await screen.findByRole('button', { name: 'Créer de nouvelles listes' }),
     )
-    expect((await screen.findByText(/Import terminé/)).textContent).toContain('1 id(s) ajouté(s)')
+    expect((await screen.findByText(/Import terminé/)).textContent).toContain('1 sort ajouté')
     expect(screen.queryByText(/Aucun sort dans aucune liste/)).toBeNull()
     expect(screen.queryByRole('heading', { name: 'Liste vide' })).toBeNull()
     const enregistre = JSON.parse(window.localStorage.getItem(CLE_STOCKAGE) as string) as {
