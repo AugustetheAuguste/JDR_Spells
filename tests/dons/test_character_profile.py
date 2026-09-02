@@ -3,17 +3,17 @@ from pathlib import Path
 
 import pytest
 
-from pf1_dons import paths
-from pf1_dons.character_profile import (
+from pf_dons import paths
+from pf_dons.character_profile import (
     SlotAssignmentError,
     assign_feat,
     create_profile,
     eligible_feats_for_slot,
     unassign_feat,
 )
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.feat_slots import load_class_bonus_feats
-from pf1_dons.race_loader import load_races
+from pf_dons.data_loader import load_catalog
+from pf_dons.feat_slots import load_class_bonus_feats
+from pf_dons.race_loader import load_races
 
 
 @pytest.fixture(scope="module")

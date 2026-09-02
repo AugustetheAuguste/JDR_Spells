@@ -1,7 +1,7 @@
 """One-off tool: build a draft class -> spellcasting-access map.
 
 Cross-references Data/classes/class_features.json against the fixed list of known
-classes in pf1_dons/class_progression.py::CLASS_BBA_PROGRESSION, and writes a
+classes in pf_dons/class_progression.py::CLASS_BBA_PROGRESSION, and writes a
 best-effort draft (Data/classes/class_caster_info.draft.json) flagging which classes
 appear to have spellcasting access, based on French keyword hits in their
 class-feature progression text.
@@ -10,7 +10,7 @@ This draft is only a secondary automated cross-check, never the ground truth
 for arcane/divine/psychique typing (see Step 04's researched ground-truth doc)
 -- "type" is deliberately always left null here.
 
-Standalone script, not imported by the pf1_dons package. No network access.
+Standalone script, not imported by the pf_dons package. No network access.
 """
 
 import json
@@ -20,8 +20,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
+from pf_dons import paths
+from pf_dons.class_progression import CLASS_BBA_PROGRESSION
 
 CLASS_FEATURES_PATH = paths.CLASS_FEATURES
 DRAFT_OUTPUT_PATH = paths.CLASS_CASTER_INFO_DRAFT

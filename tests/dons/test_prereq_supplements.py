@@ -18,15 +18,15 @@ import json
 
 import pytest
 
-from pf1_dons import paths
-from pf1_dons.data_loader import (
+from pf_dons import paths
+from pf_dons.data_loader import (
     _concatener_conditions,
     _prereq_supplements,
     clean_feat_name,
     load_catalog,
 )
-from pf1_dons.engine import Character, evaluate_feat
-from pf1_dons.models import OrGroup, RequirementType
+from pf_dons.engine import Character, evaluate_feat
+from pf_dons.models import OrGroup, RequirementType
 
 TYPES_QUANTIFIABLES = {
     RequirementType.ABILITY_SCORE,

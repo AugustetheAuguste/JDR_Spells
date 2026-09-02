@@ -1,8 +1,8 @@
 import pytest
 
-from pf1_dons.character_profile import CharacterProfile
-from pf1_dons.models import FeatSlot
-from pf1_dons.persistence import list_characters, load_profile, save_profile
+from pf_dons.character_profile import CharacterProfile
+from pf_dons.models import FeatSlot
+from pf_dons.persistence import list_characters, load_profile, save_profile
 
 
 def _make_profile(name="Test Persist"):

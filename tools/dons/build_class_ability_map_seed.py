@@ -4,7 +4,7 @@ Cross-references Data/classes/class_features.json against every CLASS_FEATURE_TE
 UNPARSED requirement segment currently produced by the parser across the
 full Data/dons/Dons.csv catalog, and writes a draft file for manual curation.
 
-Standalone script, not imported by the pf1_dons package. No network access.
+Standalone script, not imported by the pf_dons package. No network access.
 """
 
 import json
@@ -14,10 +14,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.models import OrGroup, RequirementType
-from pf1_dons.parser import KNOWN_CLASSES, _normalize
+from pf_dons import paths
+from pf_dons.data_loader import load_catalog
+from pf_dons.models import OrGroup, RequirementType
+from pf_dons.parser import KNOWN_CLASSES, _normalize
 
 CLASS_FEATURES_PATH = paths.CLASS_FEATURES
 DRAFT_OUTPUT_PATH = paths.CLASS_ABILITY_MAP_DRAFT

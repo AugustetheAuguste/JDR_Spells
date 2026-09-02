@@ -1,6 +1,6 @@
 import pytest
 
-from pf1_dons.class_skills import get_class_skill_info, is_class_skill, load_class_skills
+from pf_dons.class_skills import get_class_skill_info, is_class_skill, load_class_skills
 
 
 @pytest.fixture(scope="module")

@@ -1,7 +1,7 @@
 """Persistence (JSON save/load) for `CharacterProfile` objects.
 
 Characters are stored as one JSON file per character under
-`Data/characters/`, keyed by a filesystem-safe slug of their display name.
+`data/characters/`, keyed by a filesystem-safe slug of their display name.
 """
 
 import json
@@ -20,7 +20,7 @@ DEFAULT_CHARACTERS_DIR = paths.CHARACTERS_DIR
 def _character_path(name: str, base_dir: Optional[Path] = None) -> Path:
     # base_dir defaults to the module-level DEFAULT_CHARACTERS_DIR read at
     # call time (not at def time) so tests can monkeypatch
-    # pf1_dons.persistence.DEFAULT_CHARACTERS_DIR and have callers that don't
+    # pf_dons.persistence.DEFAULT_CHARACTERS_DIR and have callers that don't
     # pass base_dir explicitly (e.g. cli.py) actually respect the patch.
     if base_dir is None:
         base_dir = DEFAULT_CHARACTERS_DIR

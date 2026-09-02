@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 GROUND_TRUTH_DOC = "build/armes-et-armures-de-classe/OUTPUT_class_proficiencies_ground_truth.md"
 OUT_PATH = paths.CLASS_PROFICIENCIES

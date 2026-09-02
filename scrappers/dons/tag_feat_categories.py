@@ -1,12 +1,12 @@
 """Best-effort feat category tagger.
 
-Standalone script (not imported by the `pf1_dons` package, matching the
+Standalone script (not imported by the `pf_dons` package, matching the
 existing pattern of `extract_class_features.py`). Reads `Data/dons/Dons.csv` and
 writes `Data/dons/feat_categories.json`, tagging each feat with zero or more
 best-effort category keywords derived from its name and benefit text
 (`Avantages`). Feats that match no category are flagged
 `"needs_manual_check": true`, mirroring the `needs_manual_check` convention
-used by `pf1_dons/parser.py` for unparsed prerequisite text.
+used by `pf_dons/parser.py` for unparsed prerequisite text.
 
 Usage:
     python tag_feat_categories.py
@@ -22,7 +22,7 @@ import sys
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 IN_PATH = Path(paths.DONS_CSV)
 OUT_PATH = Path(paths.FEAT_CATEGORIES)
@@ -70,7 +70,7 @@ CATEGORY_KEYWORDS = {
 def normalize(text: str) -> str:
     """Accent-insensitive, case-insensitive normalization.
 
-    Copied from `pf1_dons/parser.py::_normalize` (kept standalone rather
+    Copied from `pf_dons/parser.py::_normalize` (kept standalone rather
     than imported, matching the pattern of other scraper/tagger scripts
     in this repo staying independent of the package).
     """
@@ -80,7 +80,7 @@ def normalize(text: str) -> str:
 
 
 def clean_feat_name(name: str) -> str:
-    """Copied from `pf1_dons/data_loader.py::clean_feat_name`."""
+    """Copied from `pf_dons/data_loader.py::clean_feat_name`."""
     return name.strip().rstrip("*").strip()
 
 

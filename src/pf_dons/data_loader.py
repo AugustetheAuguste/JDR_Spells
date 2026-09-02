@@ -23,7 +23,7 @@ class FeatRow:
     benefits: str
     parsed: ParsedConditions
     # Prérequis lus sur la page du don et absents du CSV, retenus par la
-    # curation de `Data/dons/feat_prereq_supplements.json`. `raw_conditions`
+    # curation de `data/dons/feat_prereq_supplements.json`. `raw_conditions`
     # reste le texte du CSV, tel quel, pour que l'audit puisse citer sa source ;
     # `parsed` porte, lui, les conditions du CSV *et* ces ajouts.
     prereq_supplements: tuple[str, ...] = ()
@@ -51,7 +51,7 @@ def clean_feat_name(name: str) -> str:
 def _avantages_scrapes(chemin: Path = paths.FEAT_DETAILS) -> dict[str, str]:
     """Texte d'avantage scrapé par don, indexé sur son nom nettoyé.
 
-    `Data/dons/feat_details.json` est indexé sur le nom sans astérisque, alors
+    `data/dons/feat_details.json` est indexé sur le nom sans astérisque, alors
     que la colonne `Dons` du CSV garde l'astérisque des dons répétables.
     """
     if not chemin.exists():

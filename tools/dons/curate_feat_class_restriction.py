@@ -26,8 +26,8 @@ from pathlib import Path
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.class_progression import CLASS_BBA_PROGRESSION
+from pf_dons import paths
+from pf_dons.class_progression import CLASS_BBA_PROGRESSION
 
 DETAILS = Path(paths.FEAT_DETAILS)
 OUT_PATH = Path(paths.FEAT_CLASS_RESTRICTION)

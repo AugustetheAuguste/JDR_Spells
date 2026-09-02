@@ -2,12 +2,12 @@ import json
 
 import pytest
 
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.engine import Character, evaluate_feat
+from pf_dons.data_loader import load_catalog
+from pf_dons.engine import Character, evaluate_feat
 
 
 def load_cases():
-    with open("tests/golden/cases.json", encoding="utf-8") as f:
+    with open("tests/dons/golden/cases.json", encoding="utf-8") as f:
         return json.load(f)
 
 

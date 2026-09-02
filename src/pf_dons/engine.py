@@ -79,7 +79,7 @@ def creature_affinity_allows(race_name: Optional[str], creature_keywords: list[s
 
 
 # Maîtrises d'armes accordées explicitement par la race, en plus de la
-# classe (Data/races/races.json, trait « Armes familières ») : recopiées
+# classe (data/races/races.json, trait « Armes familières ») : recopiées
 # littéralement depuis
 # build/armes-et-armures-de-classe/OUTPUT_class_proficiencies_ground_truth.md
 # -- ne couvre que le sous-ensemble d'armes concerné par cette couche de
@@ -102,7 +102,7 @@ RACE_WEAPON_RECLASSIFICATION: dict[str, str] = {
 
 def _proficiency_verdict(param: dict, character: "Character", keyword: str) -> tuple[bool | None, str]:
     """Résout un prérequis « maniement de X » nommé (pas un choix du joueur)
-    contre Data/classes/class_proficiencies.json et les maîtrises raciales.
+    contre data/classes/class_proficiencies.json et les maîtrises raciales.
 
     Volontairement conservateur, même politique que magie_inaccessible : ne
     renvoie ``False`` que si la classe est connue de class_proficiencies.json
@@ -185,7 +185,7 @@ class Character:
 
     @property
     def effective_size(self) -> Optional[str]:
-        """Taille explicite, sinon celle de la race (Data/races/races.json).
+        """Taille explicite, sinon celle de la race (data/races/races.json).
 
         Sans cela, tous les prérequis de taille restaient en vérification
         manuelle alors que la race la détermine dans la quasi-totalité des cas.
@@ -240,14 +240,14 @@ def magie_inaccessible(character: "Character") -> bool:
 
     Volontairement conservateur : ne renvoie ``True`` que si la classe est
     connue ET explicitement non-lanceuse (`class_grants_magic() is False`, donc
-    jamais pour une classe absente de `Data/classes/class_caster_info.json`).
+    jamais pour une classe absente de `data/classes/class_caster_info.json`).
     """
     return (
         class_grants_magic(character.character_class) is False
         and not race_grants_magic(character.race)
     )
 
-# Genres de prérequis (Data/conditions/prereq_gating.json) que le moteur
+# Genres de prérequis (data/conditions/prereq_gating.json) que le moteur
 # sait trancher.
 # proficiency n'est bloquant que pour les 18 entrées à arme/bouclier nommé
 # (cf. WEAPON_PROFICIENCY/SHIELD_PROFICIENCY dans
@@ -485,7 +485,7 @@ def evaluate_requirement(req: Requirement, character: Character) -> tuple[bool |
 
     # Prérequis non liés à une classe (trait racial, type de créature,
     # anatomie, incantation, alignement, divinité) :
-    # Data/conditions/prereq_gating.json dit lesquels sont vérifiables, et sur
+    # data/conditions/prereq_gating.json dit lesquels sont vérifiables, et sur
     # quoi.
     pending: list[str] = []
     satisfied: list[str] = []

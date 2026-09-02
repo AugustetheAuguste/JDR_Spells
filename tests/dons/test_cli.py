@@ -1,6 +1,6 @@
 import pytest
 
-from pf1_dons import cli, persistence
+from pf_dons import cli, persistence
 
 
 @pytest.fixture(autouse=True)

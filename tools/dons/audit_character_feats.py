@@ -21,16 +21,16 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.engine import (
+from pf_dons import paths
+from pf_dons.data_loader import load_catalog
+from pf_dons.engine import (
     Character,
     evaluate_feat,
     evaluate_or_group,
     evaluate_requirement,
 )
-from pf1_dons.models import OrGroup
-from pf1_dons.persistence import load_profile
+from pf_dons.models import OrGroup
+from pf_dons.persistence import load_profile
 
 STATUS_ORDER = ["eligible", "manual_check", "ineligible"]
 

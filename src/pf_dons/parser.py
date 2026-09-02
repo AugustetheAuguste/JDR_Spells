@@ -125,7 +125,7 @@ def _find_gating(normalized_text: str) -> list[dict] | None:
     """Nature des prérequis reconnus dans un segment inclassable.
 
     Renvoie une liste de ``{"kind", "param", "blocking", "keyword"}`` (voir
-    ``Data/conditions/prereq_gating.json``) que ``engine.py`` sait confronter
+    ``data/conditions/prereq_gating.json``) que ``engine.py`` sait confronter
     à la race, à la classe, à l'alignement ou à la divinité du personnage.
     """
     hits = []

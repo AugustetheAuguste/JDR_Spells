@@ -40,7 +40,7 @@ from pathlib import Path
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 HTML_DIR = Path("feat_pages_html")
 LINKS_PATH = Path(paths.FEAT_LINKS)

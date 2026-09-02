@@ -17,7 +17,7 @@ from pathlib import Path
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 FEAT_DETAILS_PATH = paths.FEAT_DETAILS
 OUT_PATH = paths.FEAT_CREATURE_AFFINITY

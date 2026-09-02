@@ -1,6 +1,6 @@
 """Best-effort "magic-dependent feat" tagger.
 
-Standalone script (not imported by the `pf1_dons` package, matching the
+Standalone script (not imported by the `pf_dons` package, matching the
 existing pattern of `scrappers/tag_feat_categories.py`). Reads
 `Data/dons/feat_details.json` (produced by Step 06's
 `scrappers/scrape_feat_details.py`) and writes `Data/dons/feat_magic_info.json`,
@@ -27,7 +27,7 @@ import sys
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 IN_PATH = Path(paths.FEAT_DETAILS)
 OUT_PATH = Path(paths.FEAT_MAGIC_INFO)
@@ -99,7 +99,7 @@ EXCLUSION_PHRASES = [
 def normalize(text: str) -> str:
     """Accent-insensitive, case-insensitive normalization.
 
-    Copied from `pf1_dons/parser.py::_normalize` (kept standalone rather
+    Copied from `pf_dons/parser.py::_normalize` (kept standalone rather
     than imported, matching the pattern of other scraper/tagger scripts
     in this repo staying independent of the package).
     """

@@ -1,7 +1,7 @@
 """Character creation-time profile model.
 
-Wraps the engine's existing ``Character`` (``pf1_dons.engine``) with feat
-slot tracking (``pf1_dons.feat_slots``) and exposes feat assignment
+Wraps the engine's existing ``Character`` (``pf_dons.engine``) with feat
+slot tracking (``pf_dons.feat_slots``) and exposes feat assignment
 operations (assign/unassign a feat into a specific open slot, with basic
 slot-compatibility checks). This is the object the CLI and persistence
 layers operate on.

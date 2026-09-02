@@ -21,11 +21,11 @@ from pathlib import Path
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons.character_profile import create_profile
-from pf1_dons.class_skills import load_class_skills  # noqa: F401  (cohérence d'import)
-from pf1_dons.feat_slots import load_class_bonus_feats
-from pf1_dons.persistence import save_profile
-from pf1_dons.race_loader import load_races
+from pf_dons.character_profile import create_profile
+from pf_dons.class_skills import load_class_skills  # noqa: F401  (cohérence d'import)
+from pf_dons.feat_slots import load_class_bonus_feats
+from pf_dons.persistence import save_profile
+from pf_dons.race_loader import load_races
 
 NIVEAU = 6
 RACE = "Humain"

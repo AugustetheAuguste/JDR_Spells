@@ -1,4 +1,4 @@
-from pf1_dons.class_progression import get_bba
+from pf_dons.class_progression import get_bba
 
 
 def test_guerrier_niveau_10():

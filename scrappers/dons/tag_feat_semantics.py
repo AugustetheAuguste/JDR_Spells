@@ -55,8 +55,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.data_loader import load_catalog
+from pf_dons import paths
+from pf_dons.data_loader import load_catalog
 
 REGION_DEFAUT = "eu-central-1"
 MODELE_DEFAUT = "eu.anthropic.claude-opus-5"

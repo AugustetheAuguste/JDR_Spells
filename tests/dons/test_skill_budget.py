@@ -1,7 +1,7 @@
 import pytest
 
-from pf1_dons.class_skills import get_class_skill_info, load_class_skills
-from pf1_dons.skill_budget import (
+from pf_dons.class_skills import get_class_skill_info, load_class_skills
+from pf_dons.skill_budget import (
     ability_modifier,
     class_skill_bonus,
     skill_points_per_level,

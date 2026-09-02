@@ -1,8 +1,8 @@
 import pytest
 
-from pf1_dons.data_loader import FeatRow, load_catalog
-from pf1_dons.engine import Character, evaluate_feat, evaluate_requirement, filter_feats
-from pf1_dons.models import ParsedConditions, Requirement, RequirementType
+from pf_dons.data_loader import FeatRow, load_catalog
+from pf_dons.engine import Character, evaluate_feat, evaluate_requirement, filter_feats
+from pf_dons.models import ParsedConditions, Requirement, RequirementType
 
 
 @pytest.fixture(scope="module")

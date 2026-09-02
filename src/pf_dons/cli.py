@@ -1,6 +1,6 @@
 """Command-line interface for character creation and inspection.
 
-Usage: ``python -m pf1_dons.cli <command> ...``
+Usage: ``python -m pf_dons.cli <command> ...``
 
 This module currently implements ``create``, ``show`` and ``list``. Step 12
 extends it (same file) with ``slots``, ``assign`` and ``unassign``.
@@ -31,7 +31,7 @@ DEFAULT_ABILITY_SCORE = 10
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="pf1_dons")
+    parser = argparse.ArgumentParser(prog="pf_dons")
     sub = parser.add_subparsers(dest="command", required=True)
 
     p_create = sub.add_parser("create")

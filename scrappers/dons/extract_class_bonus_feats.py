@@ -1,7 +1,7 @@
 """Derive per-class bonus-feat levels from the already-scraped
 ``Data/classes/class_features.json`` and write ``Data/classes/class_bonus_feats.json``.
 
-Standalone script, not imported by the ``pf1_dons`` package (matches the
+Standalone script, not imported by the ``pf_dons`` package (matches the
 pattern established by ``extract_class_features.py``). Performs no network
 access: it is a pure JSON transformation over data already produced by
 ``extract_class_features.py``.
@@ -15,7 +15,7 @@ import sys
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 IN_PATH = Path(paths.CLASS_FEATURES)
 OUT_PATH = Path(paths.CLASS_BONUS_FEATS)
@@ -24,7 +24,7 @@ BONUS_FEAT_MARKERS = ["don supplementaire", "dons supplementaires"]
 
 
 def normalize(text):
-    """NFKD strip of accents + lowercase (copied from pf1_dons/parser.py::_normalize)."""
+    """NFKD strip of accents + lowercase (copied from pf_dons/parser.py::_normalize)."""
     nfkd = unicodedata.normalize("NFKD", text)
     stripped = "".join(ch for ch in nfkd if not unicodedata.combining(ch))
     return stripped.lower()

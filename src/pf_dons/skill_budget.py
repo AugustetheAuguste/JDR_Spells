@@ -2,10 +2,10 @@
 
 Computes the total number of skill-rank points a character has accumulated
 by their current level, given their class's skill-point formula (see
-``pf1_dons.class_skills``), and exposes the standard Pathfinder 1e +3
+``pf_dons.class_skills``), and exposes the standard Pathfinder 1e +3
 class-skill bonus rule.
 
-This module does not touch ``pf1_dons.engine.Character.skill_rank`` at all
+This module does not touch ``pf_dons.engine.Character.skill_rank`` at all
 -- that "optimistic ranks = level" placeholder is left untouched. This is a
 parallel, opt-in calculation intended for the character-creation CLI.
 Allocation of ranks to specific skills stays manual; this module only
@@ -14,8 +14,8 @@ computes/validates the *budget*.
 
 from typing import Optional
 
-from pf1_dons.class_skills import is_class_skill
-from pf1_dons.models import ClassSkillInfo
+from pf_dons.class_skills import is_class_skill
+from pf_dons.models import ClassSkillInfo
 
 
 def ability_modifier(score: int) -> int:

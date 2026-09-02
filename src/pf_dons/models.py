@@ -51,7 +51,7 @@ class ParsedConditions:
         return False
 
 
-# --- Race data models (added Step 05: pf1_dons/race_loader.py) ---
+# --- Race data models (added Step 05: pf_dons/race_loader.py) ---
 
 
 @dataclass
@@ -73,7 +73,7 @@ class RaceInfo:
     note: Optional[str] = None
 
 
-# --- Class skill data models (added Step 06: pf1_dons/class_skills.py) ---
+# --- Class skill data models (added Step 06: pf_dons/class_skills.py) ---
 
 
 @dataclass
@@ -96,7 +96,7 @@ class ClassSkillInfo:
     skill_points_formula_raw: Optional[str]
 
 
-# --- Feat slot model (added Step 07: pf1_dons/feat_slots.py) ---
+# --- Feat slot model (added Step 07: pf_dons/feat_slots.py) ---
 
 
 @dataclass

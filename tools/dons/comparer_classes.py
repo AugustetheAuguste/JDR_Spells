@@ -21,9 +21,9 @@ from pathlib import Path
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons.data_loader import load_catalog
-from pf1_dons.engine import evaluate_feat
-from pf1_dons.persistence import load_profile
+from pf_dons.data_loader import load_catalog
+from pf_dons.engine import evaluate_feat
+from pf_dons.persistence import load_profile
 
 # Une lettre par statut, pour que le tableau tienne en largeur.
 CODE = {"eligible": "O", "manual_check": "?", "ineligible": "."}

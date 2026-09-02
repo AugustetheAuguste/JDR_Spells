@@ -1,6 +1,6 @@
 import pytest
 
-from pf1_dons.race_loader import get_race, load_races
+from pf_dons.race_loader import get_race, load_races
 
 
 @pytest.fixture(scope="module")

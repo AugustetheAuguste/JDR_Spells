@@ -1,7 +1,7 @@
 """Emplacement unique de tous les fichiers de données du dépôt.
 
 Chaque module ouvrait jusqu'ici un chemin relatif écrit en dur
-(``"Data/races.json"``), donc dépendant du répertoire courant : le paquet ne
+(``"data/races.json"``), donc dépendant du répertoire courant : le paquet ne
 s'importait correctement que depuis la racine du dépôt, et déplacer un
 fichier de données obligeait à en retrouver toutes les occurrences. Les
 chemins sont désormais ancrés sur la racine, déduite de l'emplacement de ce
@@ -13,8 +13,8 @@ afin qu'il n'existe qu'une seule définition de « où vit telle donnée ».
 
 from pathlib import Path
 
-RACINE = Path(__file__).resolve().parent.parent
-DATA_DIR = RACINE / "Data"
+RACINE = Path(__file__).resolve().parent.parent.parent
+DATA_DIR = RACINE / "data"
 
 # Un sous-répertoire par sujet : le don lui-même, la classe, la race, et les
 # conditions (prérequis) qui ne se rattachent ni à l'un ni à l'autre.

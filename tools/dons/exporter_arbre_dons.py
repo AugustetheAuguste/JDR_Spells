@@ -29,11 +29,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.data_loader import FeatRow, clean_feat_name, load_catalog
-from pf1_dons.engine import Character, evaluate_feat, evaluate_requirement
-from pf1_dons.models import OrGroup, RequirementType
-from pf1_dons.persistence import load_profile
+from pf_dons import paths
+from pf_dons.data_loader import FeatRow, clean_feat_name, load_catalog
+from pf_dons.engine import Character, evaluate_feat, evaluate_requirement
+from pf_dons.models import OrGroup, RequirementType
+from pf_dons.persistence import load_profile
 
 # Un don atteignable au prix de plus de 3 emplacements relève de la planification
 # de campagne, pas du choix de niveau : au-delà, le graphe se remplit de branches

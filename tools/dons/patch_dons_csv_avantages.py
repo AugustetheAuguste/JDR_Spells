@@ -8,8 +8,8 @@ restent inchangées.
 
 import pandas as pd
 
-from pf1_dons import paths
-from pf1_dons.data_loader import ERREUR_IMPORT, load_raw, repair_benefits
+from pf_dons import paths
+from pf_dons.data_loader import ERREUR_IMPORT, load_raw, repair_benefits
 
 
 def main() -> None:

@@ -1,5 +1,5 @@
-from pf1_dons.models import OrGroup, RequirementType
-from pf1_dons.parser import build_normalized_feats, parse_conditions
+from pf_dons.models import OrGroup, RequirementType
+from pf_dons.parser import build_normalized_feats, parse_conditions
 
 KNOWN_FEATS = {"Doigts de fée", "Trépanation", "Esquive"}
 NORMALIZED_FEATS = build_normalized_feats(KNOWN_FEATS)

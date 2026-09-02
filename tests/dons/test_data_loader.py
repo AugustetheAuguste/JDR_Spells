@@ -5,14 +5,14 @@ leurs `Conditions` sont intactes. Les filtrer amputait le catalogue de 10 % de
 ses dons et trouait le graphe de prérequis à ses nœuds les plus structurants.
 """
 
-from pf1_dons.data_loader import (
+from pf_dons.data_loader import (
     ERREUR_IMPORT,
     clean_feat_name,
     load_catalog,
     load_raw,
     repair_benefits,
 )
-from pf1_dons.models import OrGroup, RequirementType
+from pf_dons.models import OrGroup, RequirementType
 
 
 def test_aucun_avantage_casse_ne_survit_au_recollage():

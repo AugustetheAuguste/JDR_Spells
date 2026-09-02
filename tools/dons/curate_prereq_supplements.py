@@ -55,10 +55,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
-from pf1_dons.data_loader import clean_feat_name, load_raw
-from pf1_dons.models import OrGroup, RequirementType
-from pf1_dons.parser import build_normalized_feats, parse_conditions
+from pf_dons import paths
+from pf_dons.data_loader import clean_feat_name, load_raw
+from pf_dons.models import OrGroup, RequirementType
+from pf_dons.parser import build_normalized_feats, parse_conditions
 
 SOURCE = Path(paths.FEAT_SEMANTICS_REVIEW)
 TARGET = Path(paths.FEAT_PREREQ_SUPPLEMENTS)

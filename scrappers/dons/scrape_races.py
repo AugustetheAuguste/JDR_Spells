@@ -13,15 +13,15 @@ import sys
 # Exécutable depuis la racine du dépôt : ce script n'est pas dans le paquet.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pf1_dons import paths
+from pf_dons import paths
 
 HTML_DIR = Path("races_html")
 OUT_PATH = Path(paths.RACES)
 BASE_URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.{slug}.ashx"
 USER_AGENT = "Mozilla/5.0"
 
-# Toutes les races connues du parseur (pf1_dons/parser.py::KNOWN_RACES),
-# recopiées ici en dur (ce script ne dépend pas du package pf1_dons).
+# Toutes les races connues du parseur (pf_dons/parser.py::KNOWN_RACES),
+# recopiées ici en dur (ce script ne dépend pas du package pf_dons).
 KNOWN_RACES = {
     "demi-elfe", "demi-orque", "elfe", "gnome", "halfelin", "humain", "nain",
     "aasimar", "dhampir", "drow", "fetchelin", "gobelin", "hobgobelin",

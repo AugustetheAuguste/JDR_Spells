@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from pf1_dons.class_progression import _normalize_class_name
-from pf1_dons.models import ClassSkillEntry, ClassSkillInfo, SkillPointsFormula
+from pf_dons.class_progression import _normalize_class_name
+from pf_dons.models import ClassSkillEntry, ClassSkillInfo, SkillPointsFormula
 from . import paths
 
 DEFAULT_CLASS_SKILLS_PATH = paths.CLASS_SKILLS
