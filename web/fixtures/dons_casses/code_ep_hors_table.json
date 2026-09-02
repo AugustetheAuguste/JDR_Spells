@@ -1,0 +1,821 @@
+{
+  "version": 1,
+  "genere_le": "2026-09-02T00:00:00Z",
+  "effets_principaux": [
+    "bonus_chiffre",
+    "compagnon",
+    "competence",
+    "creation",
+    "debuff",
+    "defense",
+    "economie_action",
+    "equipe",
+    "magie_amelioree",
+    "magie_nouvelle",
+    "manoeuvre",
+    "meta_don",
+    "mobilite",
+    "nouvelle_action",
+    "prerequis_assoupli",
+    "ressource",
+    "social",
+    "soin"
+  ],
+  "cibles_bonus": [
+    "CA",
+    "DD_des_sorts",
+    "DMD",
+    "DMO",
+    "NLS",
+    "PV",
+    "competence",
+    "confirmation_critique",
+    "degats",
+    "initiative",
+    "jet_attaque",
+    "jets_de_sauvegarde",
+    "vitesse"
+  ],
+  "contextes": [
+    "aquatique_ou_aerien",
+    "distance",
+    "exploration",
+    "furtivite",
+    "hors_combat",
+    "lancer_de_sorts",
+    "melee",
+    "monture",
+    "social"
+  ],
+  "activations": [
+    "actif_illimite",
+    "actif_limite",
+    "long",
+    "passif",
+    "reaction"
+  ],
+  "polyvalences": [
+    "conditionnel",
+    "niche",
+    "polyvalent"
+  ],
+  "categories": [
+    "combat",
+    "creation_objet",
+    "monture",
+    "sociale",
+    "tir_a_distance"
+  ],
+  "sources": [
+    "AG",
+    "AM",
+    "AO",
+    "B1",
+    "CCMI",
+    "CM",
+    "CMy",
+    "ISR",
+    "MCA",
+    "MJ",
+    "MMI",
+    "MR"
+  ],
+  "dons": [
+    {
+      "i": 0,
+      "id": "endurance",
+      "s": "endurance",
+      "n": "Endurance",
+      "nf": "endurance",
+      "r": false,
+      "ep": 23,
+      "es": [
+        2,
+        5
+      ],
+      "cb": [
+        6,
+        11
+      ],
+      "cx": [
+        2,
+        4
+      ],
+      "ac": 3,
+      "pv": 0,
+      "cat": [],
+      "src": 9,
+      "vb": "+4",
+      "rc": "+4 aux tests et jets contre fatigue, course, faim, soif, climats et asphyxie ; dort en armure légère ou intermédiaire.",
+      "mc": [
+        "fatigue",
+        "marche forcée",
+        "respiration",
+        "soif",
+        "climat"
+      ]
+    },
+    {
+      "i": 1,
+      "id": "tir-soudain-superieur",
+      "s": "tir-soudain-superieur",
+      "n": "Tir soudain supérieur*",
+      "nf": "tir soudain superieur*",
+      "r": true,
+      "ep": 0,
+      "es": [],
+      "cb": [
+        7,
+        8
+      ],
+      "cx": [
+        1
+      ],
+      "ac": 4,
+      "pv": 0,
+      "cat": [],
+      "src": 0,
+      "vb": "+2, +4 au BBA +16, +6 au BBA +20",
+      "rc": "+2 aux dégâts et à la confirmation de critique sur les attaques d'opportunité à distance (jusqu'à +6).",
+      "mc": [
+        "archer",
+        "attaque d'opportunité",
+        "critique"
+      ]
+    },
+    {
+      "i": 2,
+      "id": "science-du-tir-soudain",
+      "s": "science-du-tir-soudain",
+      "n": "Science du tir soudain*",
+      "nf": "science du tir soudain*",
+      "r": true,
+      "ep": 0,
+      "es": [
+        5
+      ],
+      "cb": [],
+      "cx": [
+        1,
+        6
+      ],
+      "ac": 3,
+      "pv": 0,
+      "cat": [
+        0
+      ],
+      "src": 0,
+      "vb": "+1,50 m",
+      "rc": "Étend de 1,50 m la portée où le tir ne provoque pas d'attaque d'opportunité (Tir soudain).",
+      "mc": [
+        "archer",
+        "portée",
+        "attaque d'opportunité",
+        "endurance"
+      ]
+    },
+    {
+      "i": 3,
+      "id": "tir-a-bout-portant",
+      "s": "tir-a-bout-portant",
+      "n": "Tir à bout portant*",
+      "nf": "tir a bout portant*",
+      "r": true,
+      "ep": 0,
+      "es": [],
+      "cb": [
+        8,
+        10
+      ],
+      "cx": [
+        1
+      ],
+      "ac": 3,
+      "pv": 2,
+      "cat": [
+        4
+      ],
+      "src": 9,
+      "vb": "+1",
+      "rc": "+1 aux jets d'attaque et de dégâts à distance contre les cibles à 9 m ou moins.",
+      "mc": [
+        "archer",
+        "arc",
+        "courte portée",
+        "arbalète"
+      ]
+    },
+    {
+      "i": 4,
+      "id": "tir-rapide",
+      "s": "tir-rapide",
+      "n": "Tir rapide*",
+      "nf": "tir rapide*",
+      "r": true,
+      "ep": 6,
+      "es": [
+        0
+      ],
+      "cb": [
+        10
+      ],
+      "cx": [
+        1
+      ],
+      "ac": 0,
+      "pv": 2,
+      "cat": [
+        4
+      ],
+      "src": 9,
+      "vb": "-2 à toutes les attaques du round",
+      "rc": "Une attaque à distance supplémentaire en attaque à outrance, au prix de -2 à toutes les attaques.",
+      "mc": [
+        "archer",
+        "arc",
+        "attaque supplémentaire",
+        "outrance"
+      ]
+    },
+    {
+      "i": 5,
+      "id": "tir-soudain",
+      "s": "tir-soudain",
+      "n": "Tir soudain*",
+      "nf": "tir soudain*",
+      "r": true,
+      "ep": 13,
+      "es": [
+        6
+      ],
+      "cb": [],
+      "cx": [
+        1,
+        6
+      ],
+      "ac": 4,
+      "pv": 0,
+      "cat": [
+        4
+      ],
+      "src": 0,
+      "vb": null,
+      "rc": "Menace les cases adjacentes et permet des attaques d'opportunité avec une arme à distance.",
+      "mc": [
+        "archer",
+        "attaque d'opportunité",
+        "zone de contrôle"
+      ]
+    },
+    {
+      "i": 6,
+      "id": "a-terre-a-cheval",
+      "s": "a-terre-a-cheval",
+      "n": "À terre à cheval*",
+      "nf": "a terre a cheval*",
+      "r": true,
+      "ep": 6,
+      "es": [
+        0,
+        12
+      ],
+      "cb": [
+        6
+      ],
+      "cx": [
+        6,
+        7
+      ],
+      "ac": 0,
+      "pv": 1,
+      "cat": [
+        0
+      ],
+      "src": 0,
+      "vb": "jusqu'à +5 (1 par point d'endurance dépensé)",
+      "rc": "Après un saut grâce au bond du lancier, permet de remonter en selle par une action rapide.",
+      "mc": [
+        "lancier",
+        "selle",
+        "saut",
+        "endurance",
+        "cavalier"
+      ]
+    },
+    {
+      "i": 7,
+      "id": "acrobate-des-corniches",
+      "s": "acrobate-des-corniches",
+      "n": "Acrobate des corniches",
+      "nf": "acrobate des corniches",
+      "r": false,
+      "ep": 12,
+      "es": [
+        0,
+        2
+      ],
+      "cb": [
+        6,
+        11,
+        12
+      ],
+      "cx": [
+        2,
+        6
+      ],
+      "ac": 3,
+      "pv": 0,
+      "cat": [],
+      "src": 11,
+      "vb": "+4",
+      "rc": "Équilibre à pleine vitesse, +4 en Escalade pour se rattraper et +4 aux JS contre les chutes.",
+      "mc": [
+        "nain",
+        "équilibre",
+        "chute",
+        "montagne",
+        "acrobaties"
+      ]
+    },
+    {
+      "i": 8,
+      "id": "absorption-rageuse",
+      "s": "absorption-rageuse",
+      "n": "Absorption rageuse",
+      "nf": "absorption rageuse",
+      "r": false,
+      "ep": 15,
+      "es": [
+        5
+      ],
+      "cb": [],
+      "cx": [
+        5,
+        6
+      ],
+      "ac": 4,
+      "pv": 0,
+      "cat": [],
+      "src": 8,
+      "vb": "1 round par tranche de 2 niveaux de sort",
+      "rc": "Réussir un JS contre un sort profane de dégâts sans subir de dégâts regagne des rounds de rage sanguine.",
+      "mc": [
+        "sanguin",
+        "bloodrager",
+        "antimagie",
+        "rounds"
+      ]
+    },
+    {
+      "i": 9,
+      "id": "arrachage-sauvage",
+      "s": "arrachage-sauvage",
+      "n": "Arrachage sauvage*",
+      "nf": "arrachage sauvage*",
+      "r": true,
+      "ep": 10,
+      "es": [
+        4,
+        6
+      ],
+      "cb": [],
+      "cx": [
+        6
+      ],
+      "ac": 0,
+      "pv": 0,
+      "cat": [
+        0
+      ],
+      "src": 7,
+      "vb": null,
+      "rc": "En lutte, une morsure réussie permet un second test de lutte gratuit pour faire tomber la cible à terre.",
+      "mc": [
+        "lutte",
+        "morsure",
+        "à terre",
+        "alligator",
+        "reptilien"
+      ]
+    },
+    {
+      "i": 10,
+      "id": "canalisateur-polyvalent",
+      "s": "canalisateur-polyvalent",
+      "n": "Canalisateur polyvalent",
+      "nf": "canalisateur polyvalent",
+      "r": false,
+      "ep": 13,
+      "es": [
+        14
+      ],
+      "cb": [],
+      "cx": [
+        5,
+        6
+      ],
+      "ac": 0,
+      "pv": 0,
+      "cat": [],
+      "src": 1,
+      "vb": "-2 au niveau de prêtre effectif",
+      "rc": "Permet de choisir énergie positive ou négative à chaque canalisation, au prix de -2 niveaux effectifs.",
+      "mc": [
+        "énergie positive",
+        "énergie négative",
+        "prêtre neutre",
+        "nécromancien"
+      ]
+    },
+    {
+      "i": 11,
+      "id": "guerison-athee",
+      "s": "guerison-athee",
+      "n": "Guérison athée",
+      "nf": "guerison athee",
+      "r": false,
+      "ep": 17,
+      "es": [
+        13
+      ],
+      "cb": [
+        5
+      ],
+      "cx": [
+        4,
+        6
+      ],
+      "ac": 1,
+      "pv": 0,
+      "cat": [],
+      "src": 4,
+      "vb": "1d8 + nombre total de dés de vie",
+      "rc": "Une fois par jour, à la moitié de ses PV ou moins, se soigne de 1d8 + DV par action de mouvement.",
+      "mc": [
+        "athée",
+        "auto-soin",
+        "sans divinité",
+        "surnaturel"
+      ]
+    },
+    {
+      "i": 12,
+      "id": "blessant",
+      "s": "blessant",
+      "n": "Blessant*",
+      "nf": "blessant*",
+      "r": true,
+      "ep": 6,
+      "es": [
+        4
+      ],
+      "cb": [],
+      "cx": [
+        6,
+        8
+      ],
+      "ac": 0,
+      "pv": 0,
+      "cat": [
+        0,
+        3
+      ],
+      "src": 5,
+      "vb": null,
+      "rc": "Après avoir démoralisé un adversaire à portée, une attaque au corps à corps par une action rapide.",
+      "mc": [
+        "intimidation",
+        "démoraliser",
+        "secoué",
+        "action rapide",
+        "gobelours"
+      ]
+    },
+    {
+      "i": 13,
+      "id": "agression-de-l-ombre",
+      "s": "agression-de-l-ombre",
+      "n": "Agression de l'ombre",
+      "nf": "agression de l ombre",
+      "r": false,
+      "ep": 8,
+      "es": [
+        0,
+        13
+      ],
+      "cb": [
+        8
+      ],
+      "cx": [
+        5,
+        6
+      ],
+      "ac": 0,
+      "pv": 1,
+      "cat": [],
+      "src": 10,
+      "vb": "1d6 par niveau du sort",
+      "rc": "Transforme un sort de chimère continu en attaque infligeant 1d6 dégâts par niveau de sort.",
+      "mc": [
+        "illusion",
+        "chimère",
+        "ombre",
+        "dégâts",
+        "plan de l'Ombre"
+      ]
+    },
+    {
+      "i": 14,
+      "id": "compagnon-mythique",
+      "s": "compagnon-mythique",
+      "n": "Compagnon mythique",
+      "nf": "compagnon mythique",
+      "r": false,
+      "ep": 14,
+      "es": [
+        0,
+        5
+      ],
+      "cb": [
+        11
+      ],
+      "cx": [
+        4,
+        5
+      ],
+      "ac": 3,
+      "pv": 1,
+      "cat": [],
+      "src": 6,
+      "vb": "+1",
+      "rc": "Compte comme créature mythique pour les sorts et effets mythiques ; +1 aux sauvegardes contre eux s'il devient mythique.",
+      "mc": [
+        "mythique",
+        "non-mythique",
+        "sauvegardes"
+      ]
+    },
+    {
+      "i": 15,
+      "id": "attaque-en-puissance",
+      "s": "attaque-en-puissance",
+      "n": "Attaque en puissance*",
+      "nf": "attaque en puissance*",
+      "r": true,
+      "ep": 0,
+      "es": [],
+      "cb": [
+        8,
+        10
+      ],
+      "cx": [
+        6
+      ],
+      "ac": 0,
+      "pv": 2,
+      "cat": [
+        0
+      ],
+      "src": 9,
+      "vb": "-1 à l'attaque pour +2 aux dégâts (progresse tous les +4 de BBA)",
+      "rc": "Échange -1 à l'attaque de mêlée contre +2 aux dégâts (davantage à deux mains), progressif avec le BBA.",
+      "mc": [
+        "dégâts",
+        "deux mains",
+        "bourrin",
+        "malus attaque"
+      ]
+    },
+    {
+      "i": 16,
+      "id": "expertise-du-combat",
+      "s": "expertise-du-combat",
+      "n": "Expertise du combat*",
+      "nf": "expertise du combat*",
+      "r": true,
+      "ep": 5,
+      "es": [
+        0
+      ],
+      "cb": [
+        0,
+        10
+      ],
+      "cx": [
+        6
+      ],
+      "ac": 0,
+      "pv": 2,
+      "cat": [],
+      "src": 9,
+      "vb": "+1 à la CA et -1 à l'attaque, +1/-1 par tranche de BBA +4",
+      "rc": "Échange un malus à l'attaque au corps à corps contre un bonus d'esquive équivalent à la CA.",
+      "mc": [
+        "esquive",
+        "défensif",
+        "finesse",
+        "tank"
+      ]
+    },
+    {
+      "i": 17,
+      "id": "enchainement",
+      "s": "enchainement",
+      "n": "Enchaînement*",
+      "nf": "enchainement*",
+      "r": true,
+      "ep": 6,
+      "es": [],
+      "cb": [],
+      "cx": [
+        6
+      ],
+      "ac": 0,
+      "pv": 0,
+      "cat": [
+        0
+      ],
+      "src": 9,
+      "vb": "-2 à la CA",
+      "rc": "Par une action simple, attaque un ennemi puis, si elle touche, un second adversaire adjacent ; -2 à la CA.",
+      "mc": [
+        "deux ennemis",
+        "attaque supplémentaire",
+        "cleave",
+        "adjacent",
+        "allonge"
+      ]
+    },
+    {
+      "i": 18,
+      "id": "adepte-psychique",
+      "s": "adepte-psychique",
+      "n": "Adepte psychique",
+      "nf": "adepte psychique",
+      "r": false,
+      "ep": 9,
+      "es": [],
+      "cb": [],
+      "cx": [
+        5
+      ],
+      "ac": 1,
+      "pv": 0,
+      "cat": [],
+      "src": 2,
+      "vb": null,
+      "rc": "Permet de lancer une astuce de psychiste de niveau 0 trois fois par jour comme pouvoir magique.",
+      "mc": [
+        "astuce",
+        "psychiste",
+        "pouvoir magique",
+        "tour de magie"
+      ]
+    },
+    {
+      "i": 19,
+      "id": "combat-monte",
+      "s": "combat-monte",
+      "n": "Combat monté*",
+      "nf": "combat monte*",
+      "r": true,
+      "ep": 5,
+      "es": [
+        2
+      ],
+      "cb": [],
+      "cx": [
+        6,
+        7
+      ],
+      "ac": 4,
+      "pv": 0,
+      "cat": [
+        0,
+        2
+      ],
+      "src": 9,
+      "vb": null,
+      "rc": "Annule un coup porté à sa monture par round grâce à un test d'Équitation (action immédiate).",
+      "mc": [
+        "monture",
+        "cavalier",
+        "équitation",
+        "protéger",
+        "parer"
+      ]
+    },
+    {
+      "i": 20,
+      "id": "feinte-du-tueur",
+      "s": "feinte-du-tueur",
+      "n": "Feinte du tueur*",
+      "nf": "feinte du tueur*",
+      "r": true,
+      "ep": 10,
+      "es": [
+        2
+      ],
+      "cb": [],
+      "cx": [
+        6
+      ],
+      "ac": 3,
+      "pv": 2,
+      "cat": [
+        0,
+        3
+      ],
+      "src": 8,
+      "vb": null,
+      "rc": "Permet d'utiliser Acrobaties au lieu de Bluff pour les feintes en combat.",
+      "mc": [
+        "acrobaties",
+        "agilité",
+        "tueur",
+        "voltigeur"
+      ]
+    },
+    {
+      "i": 21,
+      "id": "vigilance",
+      "s": "vigilance",
+      "n": "Vigilance",
+      "nf": "vigilance",
+      "r": false,
+      "ep": 2,
+      "es": [
+        0
+      ],
+      "cb": [
+        6
+      ],
+      "cx": [
+        2,
+        4,
+        8
+      ],
+      "ac": 3,
+      "pv": 2,
+      "cat": [],
+      "src": 9,
+      "vb": "+2 (+4 avec 10 rangs)",
+      "rc": "+2 en Perception et Psychologie, +4 dans celle où l'on a 10 rangs ou plus.",
+      "mc": [
+        "perception",
+        "psychologie",
+        "detecter",
+        "observer"
+      ]
+    },
+    {
+      "i": 22,
+      "id": "vigilance-instinctive",
+      "s": "vigilance-instinctive",
+      "n": "Vigilance instinctive",
+      "nf": "vigilance instinctive",
+      "r": false,
+      "ep": null,
+      "es": [],
+      "cb": [],
+      "cx": [],
+      "ac": null,
+      "pv": null,
+      "cat": [],
+      "src": 1,
+      "vb": null,
+      "rc": null,
+      "mc": []
+    },
+    {
+      "i": 23,
+      "id": "arme-naturelle-superieure",
+      "s": "arme-naturelle-superieure",
+      "n": "Arme naturelle supérieure",
+      "nf": "arme naturelle superieure",
+      "r": false,
+      "ep": 0,
+      "es": [],
+      "cb": [
+        8
+      ],
+      "cx": [
+        6
+      ],
+      "ac": 3,
+      "pv": 0,
+      "cat": [
+        0
+      ],
+      "src": 3,
+      "vb": "+1 catégorie de dés de dégâts",
+      "rc": "Augmente d'une catégorie les dés de dégâts d'une attaque naturelle.",
+      "mc": [
+        "griffe",
+        "morsure",
+        "attaque naturelle",
+        "dés de dégâts"
+      ]
+    }
+  ]
+}
