@@ -228,6 +228,16 @@ reste chargé à la demande parce que c'est gratuit, non parce qu'on le mesure.
 `immutable` sur `/_next/static/` et `/fonts/` mais **pas** sur `/data/*.json`, dont
 l'URL est stable d'un export au suivant.
 
+**Audit UI/UX 2026-09 (`design/AUDIT_UI_2026-09.md`, `design/FOLLOWUPS.md`).**
+`npm run verifier:tout` échoue sur un seul écart connu, mesuré et non corrigé :
+`defilement-horizontal` sur la route `navigation` à 320 px, causé par la
+colonne « Sort » du tableau de résultats (nom non cassable + bouton favori
+compact + badge éventuel) qui dépasse le budget laissé par les colonnes
+Niveau/École une fois celles-ci contraintes à 64 px pour rester des cibles
+tactiles valides. Corriger cet écart est un choix de produit (tronquer les
+noms avec ellipsis, ou retirer le tri sous 400 px), délibérément laissé à
+l'arbitrage humain — ne pas le fermer en assouplissant `verifier_cibles.ts`.
+
 ## 12. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
@@ -237,4 +247,7 @@ l'URL est stable d'un export au suivant.
   expliquant **pourquoi**, pas quoi.
 - Côté `web/` : TypeScript strict, aucun `any`, aucune couleur en dur hors
   `lib/design/tokens.ts`, vocabulaire d'interface figé dans `MOTS` — un seul verbe
-  d'un bout à l'autre.
+  d'un bout à l'autre. La table `MOTS` elle-même est soumise à la charte
+  typographique du Skill `pf-web-design-system` (pas de deux-points en prose) :
+  `MOTS.source` a porté un deux-points jusqu'à l'étape 16 de l'audit UI/UX
+  2026-09, retiré pour aligner la table sur sa propre règle.

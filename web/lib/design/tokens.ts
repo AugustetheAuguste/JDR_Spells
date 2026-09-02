@@ -317,7 +317,7 @@ export const MOTS = {
   desaccordNiveau: 'désaccord de niveau',
   favoris: 'favoris',
   filtrePose: 'filtre posé',
-  source: 'source : pathfinder-fr.org',
+  source: 'source pathfinder-fr.org',
   voirSurLeWiki: 'Voir sur pathfinder-fr.org',
   compte: 'compte',
   synchronisation: 'synchronisation',
