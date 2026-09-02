@@ -100,6 +100,13 @@ export function Emplacements() {
   // Candidates are recomputed from the WHOLE catalogue every render — never a
   // cached list from before the last assignment, since assigning one feat
   // can change what else becomes eligible through prerequisite chains.
+  //
+  // A candidate resting on a skill-rank prerequisite is listed here exactly
+  // as `evaluerDon` reports it (`eligible` or `manual_check`) — this panel
+  // does not second-guess that verdict. `ColonneStatut.tsx`'s "optimiste"
+  // label is the one place that surfaces the caveat explicitly; repeating it
+  // in every `<option>` here would just echo the same sentence with no room
+  // to read it.
   const candidatsParSlot = new Map<string, readonly string[]>()
   for (const emplacement of emplacements) {
     if (assignationsParSlot[emplacement.slot_id] !== undefined) continue
