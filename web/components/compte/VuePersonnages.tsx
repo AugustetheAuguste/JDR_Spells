@@ -25,10 +25,10 @@ export function VuePersonnages() {
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Personnages</h1>
       <p className="mt-1 mb-5 max-w-[68ch] text-corps text-encre-douce">
-        Un personnage porte un nom, une {MOTS.classe} et un {MOTS.niveau} — et peut être
+        Un personnage porte un nom, une {MOTS.classe} et un {MOTS.niveau}, et peut être
         attaché à une liste de {MOTS.favoris}, pour retrouver « les sorts de mon barde »
         plutôt qu’une liste sans nom. Contrairement aux {MOTS.favoris}, les personnages
-        n’existent que sur le {MOTS.compte} : il n’y a pas de repli hors connexion.
+        n’existent que sur le {MOTS.compte}. Il n’y a pas de repli hors connexion.
       </p>
 
       {statut === 'hors_service' ? (
@@ -48,7 +48,10 @@ export function VuePersonnages() {
             Les personnages demandent d’être connecté à un {MOTS.compte}.
           </Annonce>
           <p className="m-0">
-            <Link className="text-corps text-accent underline hover:text-accent-survol" href="/compte">
+            <Link
+              className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
+              href="/compte"
+            >
               Aller au {MOTS.compte}
             </Link>
           </p>
@@ -182,7 +185,7 @@ function LignePersonnageVue({
                 personnage.niveau === null ? null : `${MOTS.niveau} ${personnage.niveau}`,
               ]
                 .filter((partie) => partie !== null)
-                .join(' — ')}
+                .join(', ')}
         </p>
       </div>
       <div className="flex gap-2">
@@ -229,7 +232,7 @@ function FormulairePersonnage({
     >
       <ChampTexte etiquette="Nom" id="personnage-nom" surChangement={setNom} type="text" valeur={nom} />
       <ChampTexte
-        aide="Facultatif — texte libre, pas une des classes du corpus."
+        aide="Facultatif, texte libre, pas une des classes du corpus."
         etiquette="Classe"
         id="personnage-classe"
         requis={false}

@@ -100,7 +100,7 @@ describe('VuePersonnages, connecté', () => {
     await waitFor(() => {
       expect(screen.getByText('Elara')).toBeTruthy()
     })
-    expect(screen.getByText('barde — niveau 4')).toBeTruthy()
+    expect(screen.getByText('barde, niveau 4')).toBeTruthy()
   })
 
   it('crée un personnage et l’affiche sans rechargement de page', async () => {

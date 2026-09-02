@@ -73,7 +73,10 @@ export function VueMotDePasseOublie() {
       )}
 
       <p className="mt-5 mb-0">
-        <Link className="text-corps text-accent underline hover:text-accent-survol" href="/compte">
+        <Link
+          className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
+          href="/compte"
+        >
           Retour au {MOTS.compte}
         </Link>
       </p>

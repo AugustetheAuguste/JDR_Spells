@@ -75,11 +75,11 @@ export function VueReinitialiser() {
           <Annonce ton="echec">
             Ce lien n’ouvre pas de session. Il a expiré, il a déjà servi, ou il a été
             ouvert dans un autre navigateur que celui qui l’a demandé. Demandez-en un
-            nouveau : rien n’a été modifié.
+            nouveau. Rien n’a été modifié.
           </Annonce>
           <p className="m-0">
             <Link
-              className="text-corps text-accent underline hover:text-accent-survol"
+              className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
               href="/compte/mot-de-passe-oublie"
             >
               Demander un nouveau lien
@@ -94,7 +94,7 @@ export function VueReinitialiser() {
           </Annonce>
           <p className="m-0">
             <Link
-              className="text-corps text-accent underline hover:text-accent-survol"
+              className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
               href="/compte"
             >
               Aller au {MOTS.compte}
