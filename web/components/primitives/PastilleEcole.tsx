@@ -30,11 +30,19 @@ export function PastilleEcole({
   const libelle = LIBELLES_ECOLES[ecole]
   const fond = COULEURS_ECOLES[ecole]
 
+  // Night decision (`design/DECISIONS.md`, audit defect #18): the nine fills
+  // are not duplicated for `data-theme="nuit"` — `necromancie` on the night
+  // `base` measures ~1.5:1 without help. A 1px `bordFort` outline, in both
+  // themes, restores visibility without retaring any of the nine fills, so the
+  // day contrast figures in `tokens.ts` stay true unchanged. The swatch stays
+  // 12px and `aria-hidden`: it is not a control (nothing here is clickable), so
+  // the 44px tactile-target rule does not apply to it — growing it to 44px
+  // would blow the dense table's 40-row budget for a square nobody presses.
   if (variante === 'puce') {
     return (
       <span
         aria-label={libelle}
-        className="inline-block size-3 shrink-0 rounded-jeton align-middle"
+        className="inline-block size-3 shrink-0 rounded-jeton border border-bord-fort align-middle"
         role="img"
         style={{ backgroundColor: fond }}
         title={libelle}
@@ -50,7 +58,7 @@ export function PastilleEcole({
     <span className="inline-flex items-center gap-1.5 text-micro font-medium text-encre">
       <span
         aria-hidden="true"
-        className="inline-block size-3 shrink-0 rounded-jeton align-middle"
+        className="inline-block size-3 shrink-0 rounded-jeton border border-bord-fort align-middle"
         style={{ backgroundColor: fond }}
       />
       {libelle}
