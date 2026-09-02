@@ -115,7 +115,7 @@ export function TableDense<T>({
                   {triable ? (
                     <button
                       className={[
-                        'inline-flex w-full items-center gap-1 bg-transparent p-0 text-petit font-semibold',
+                        'inline-flex min-h-cible w-full items-center gap-1 bg-transparent p-0 text-petit font-semibold',
                         'cursor-pointer hover:text-accent',
                         actif ? 'text-encre' : 'text-encre-douce',
                         colonne.alignement === 'droite' ? 'justify-end' : 'justify-start',
