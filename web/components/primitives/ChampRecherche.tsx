@@ -57,7 +57,7 @@ export function ChampRecherche({
         <input
           aria-describedby={aide === undefined ? undefined : 'aide-recherche'}
           autoComplete="off"
-          className="w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 pr-16 text-corps text-encre placeholder:text-encre-faible"
+          className="w-full min-h-cible rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 pr-16 text-grand text-encre placeholder:text-encre-faible"
           id="champ-recherche"
           onChange={(evenement) => surChangement(evenement.target.value)}
           onKeyDown={(evenement) => {
@@ -81,7 +81,7 @@ export function ChampRecherche({
           </kbd>
         ) : (
           <button
-            className="absolute right-1.5 rounded-jeton px-1.5 py-0.5 text-micro text-encre-douce hover:bg-survol"
+            className="absolute right-1.5 min-h-cible min-w-cible rounded-jeton px-1.5 py-0.5 text-micro text-encre-douce hover:bg-survol"
             onClick={() => {
               surChangement('')
               champ.current?.focus()

@@ -153,7 +153,7 @@ export function TableSorts({
       colonnes={colonnes}
       legende={
         classe === null
-          ? 'Sorts, toutes classes confondues ; le niveau affiché est le plus bas parmi les classes qui reçoivent le sort'
+          ? 'Sorts, toutes classes confondues. Le niveau affiché est le plus bas parmi les classes qui reçoivent le sort.'
           : `Sorts de la classe ${index.classes.find((c) => c.slug === classe)?.nom ?? classe}, avec leur niveau pour cette classe`
       }
       lignes={sorts}

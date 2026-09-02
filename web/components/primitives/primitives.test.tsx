@@ -126,6 +126,60 @@ describe('TableDense', () => {
     render(<TableDense colonnes={colonnes} cleDe={(l) => l.slug} legende="Sorts" lignes={[]} />)
     expect(screen.getAllByRole('row')).toHaveLength(1)
   })
+
+  it('un en-tête triable porte aria-sort et un glyphe, pas la couleur seule', () => {
+    const colonnesTriables = [
+      { ...colonnes[0], triable: true },
+      colonnes[1],
+    ] as const
+    render(
+      <TableDense
+        colonnes={colonnesTriables}
+        cleDe={(l) => l.slug}
+        legende="Sorts"
+        lignes={lignes}
+        tri={{ colonne: 'nom', sens: 'asc', surColonne: vi.fn() }}
+      />,
+    )
+    const entete = screen.getByRole('columnheader', { name: /Sort/ })
+    expect(entete.getAttribute('aria-sort')).toBe('ascending')
+    // The arrow glyph carries the state visually, `aria-sort` carries it for a
+    // screen reader ; colour alone (a class name) is never the only signal.
+    const bouton = within(entete).getByRole('button')
+    expect(bouton.querySelector('[aria-hidden="true"]')?.textContent).toBe('↑')
+  })
+
+  it('un en-tête triable n’a plus de title redondant, aria-sort porte le sens', () => {
+    const colonnesTriables = [{ ...colonnes[0], triable: true }, colonnes[1]] as const
+    render(
+      <TableDense
+        colonnes={colonnesTriables}
+        cleDe={(l) => l.slug}
+        legende="Sorts"
+        lignes={lignes}
+        tri={{ colonne: 'nom', sens: 'asc', surColonne: vi.fn() }}
+      />,
+    )
+    const bouton = screen.getByRole('button', { name: /Sort/ })
+    expect(bouton.getAttribute('title')).toBeNull()
+  })
+
+  it('aucun en-tête de colonne ne vaut « Niveau » nu', () => {
+    render(
+      <TableDense colonnes={colonnes} cleDe={(l) => l.slug} legende="Sorts" lignes={lignes} />,
+    )
+    for (const entete of screen.getAllByRole('columnheader')) {
+      expect(entete.textContent?.trim()).not.toBe('Niveau')
+    }
+  })
+
+  it('l’en-tête se décale de --pf-decalage-collant, avec un repli à 0px', () => {
+    render(
+      <TableDense colonnes={colonnes} cleDe={(l) => l.slug} legende="Sorts" lignes={lignes} />,
+    )
+    const entete = screen.getAllByRole('columnheader')[0] as HTMLElement
+    expect(entete.style.top).toBe('var(--pf-decalage-collant, 0px)')
+  })
 })
 
 describe('ChampRecherche', () => {
@@ -173,6 +227,26 @@ describe('ChampRecherche', () => {
   it('le nombre de résultats est annoncé poliment', () => {
     render(<ChampRecherche nbResultats={12} surChangement={vi.fn()} valeur="boule" />)
     expect(screen.getByText('12 sorts correspondent.')).toBeTruthy()
+  })
+
+  it('porte une classe de police >= 16px, jamais text-corps (14,5px)', () => {
+    // jsdom never computes layout, so this reads the Tailwind class rather than
+    // a computed pixel value — `npm run web:cibles` measures the real rendered
+    // size in Chromium and is the check that actually catches an iOS zoom
+    // regression. This test only guards against `text-corps` creeping back in.
+    render(<ChampRecherche surChangement={vi.fn()} valeur="" />)
+    const champ = screen.getByLabelText('Chercher un sort')
+    expect(champ.className).toContain('text-grand')
+    expect(champ.className).not.toContain('text-corps')
+  })
+
+  it('le champ et le bouton d’effacement portent la cible tactile de 44px', () => {
+    render(<ChampRecherche surChangement={vi.fn()} valeur="boule" />)
+    const champ = screen.getByLabelText('Chercher un sort')
+    expect(champ.className).toContain('min-h-cible')
+    const effacer = screen.getByRole('button', { name: 'Effacer' })
+    expect(effacer.className).toContain('min-h-cible')
+    expect(effacer.className).toContain('min-w-cible')
   })
 })
 
