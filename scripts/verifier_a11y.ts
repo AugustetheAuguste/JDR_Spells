@@ -35,6 +35,7 @@ const ROUTES: readonly { readonly nom: string; readonly chemin: string }[] = [
   { nom: 'comparaison', chemin: 'comparaison/index.html' },
   { nom: 'favoris', chemin: 'favoris/index.html' },
   { nom: 'exploration', chemin: 'explorer/index.html' },
+  { nom: 'compte', chemin: 'compte/index.html' },
 ]
 
 const NIVEAUX = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] as const
