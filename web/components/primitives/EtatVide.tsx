@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 
+import { DENSITE } from '@/lib/design/tokens'
+
 /**
  * An empty state that offers a way out.
  *
@@ -45,6 +47,7 @@ export function EtatVide({
             ].join(' ')}
             key={action.libelle}
             onClick={action.surClic}
+            style={{ minHeight: DENSITE.cible }}
             type="button"
           >
             {action.libelle}

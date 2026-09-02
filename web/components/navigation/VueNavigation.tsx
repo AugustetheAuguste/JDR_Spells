@@ -1,12 +1,14 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 import { ChampRecherche } from '@/components/primitives/ChampRecherche'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import { PanneauFiltres } from '@/components/navigation/PanneauFiltres'
+import { TiroirFiltres } from '@/components/navigation/TiroirFiltres'
 import { TableSorts } from '@/components/navigation/TableSorts'
+import { DENSITE } from '@/lib/design/tokens'
 import type { EntreeSort, IndexWeb } from '@/lib/donnees/index-web'
 import {
   ETAT_VIDE,
@@ -14,6 +16,7 @@ import {
   filtreLePlusRestrictif,
   LIBELLES_FILTRES,
   lireEtat,
+  nombreFiltresPoses,
   sansFiltre,
   versFiltres,
   versQueryString,
@@ -67,6 +70,33 @@ export function VueNavigation() {
   const [erreur, setErreur] = useState<string | null>(null)
   const [visibles, setVisibles] = useState(LIGNES_PAR_PAGE)
   const [construire, setConstruire] = useState<TypeConstruireMoteur | null>(null)
+
+  // Whether the mobile drawer is open is local display state, éphémère, pas un
+  // filtre : CLAUDE.md §11 dit que l'état des filtres vit dans l'URL et nulle
+  // part ailleurs, mais cette règle porte sur les FILTRES. Un lien partagé ne
+  // doit pas rouvrir un tiroir, donc un `useState` ici n'est pas l'entorse que
+  // la règle interdit.
+  const [tiroirOuvert, setTiroirOuvert] = useState(false)
+  const boutonFiltrerRef = useRef<HTMLButtonElement>(null)
+
+  // The height of the sticky search zone, republished as `--pf-decalage-collant`
+  // on the results container so a collant table header (étape 10, en parallèle)
+  // can offset itself below it. Mesuré : ~68px avec un champ à `py-1.5` et son
+  // aide sous 12,5px, plus le padding qui l'entoure ; recalculé à chaque montage
+  // par un `ResizeObserver` plutôt que figé, pour rester juste si la charte
+  // typographique change la hauteur du champ.
+  const zoneRechercheRef = useRef<HTMLDivElement>(null)
+  const [decalageCollant, setDecalageCollant] = useState(0)
+
+  useEffect(() => {
+    const element = zoneRechercheRef.current
+    if (element === null) return
+    const mesurer = () => setDecalageCollant(element.offsetHeight)
+    mesurer()
+    const observateur = new ResizeObserver(mesurer)
+    observateur.observe(element)
+    return () => observateur.disconnect()
+  }, [])
 
   useEffect(() => {
     let vivant = true
@@ -205,6 +235,7 @@ export function VueNavigation() {
   }
 
   const coupable = filtreLePlusRestrictif(etat)
+  const nbFiltres = nombreFiltresPoses(etat)
 
   return (
     <section>
@@ -217,7 +248,7 @@ export function VueNavigation() {
       </p>
 
       <div className="grid gap-5 lg:grid-cols-[17rem_1fr]">
-        <aside className="flex flex-col gap-4">
+        <TiroirFiltres boutonRef={boutonFiltrerRef} fermer={() => setTiroirOuvert(false)} ouvert={tiroirOuvert}>
           <PanneauFiltres
             etat={etat}
             index={index}
@@ -228,49 +259,58 @@ export function VueNavigation() {
             <button
               className="self-start rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
               onClick={() => ecrire(ETAT_VIDE, 'push')}
+              style={{ minHeight: DENSITE.cible }}
               type="button"
             >
               Tout effacer
             </button>
           ) : null}
-        </aside>
+        </TiroirFiltres>
 
-        <div className="flex min-w-0 flex-col gap-3">
-          <ChampRecherche
-            aide="Le nom français ou anglais. Les accents et les apostrophes sont optionnels."
-            nbResultats={resultats.length}
-            surChangement={setSaisie}
-            valeur={saisie}
-          />
-
-          {resultats.length === 0 ? (
-            <EtatVide
-              actions={
-                coupable === null
-                  ? [{ libelle: 'Voir tous les sorts', primaire: true, surClic: () => ecrire(ETAT_VIDE) }]
-                  : [
-                      {
-                        libelle: `Retirer ${LIBELLES_FILTRES[coupable]}`,
-                        primaire: true,
-                        surClic: () => ecrire(sansFiltre(etat, coupable)),
-                      },
-                      { libelle: 'Tout effacer', surClic: () => ecrire(ETAT_VIDE) },
-                    ]
-              }
-              explication={
-                coupable === null
-                  ? 'Aucun sort ne correspond, et aucun filtre n’est posé — l’index est peut-être vide.'
-                  : `Aucun sort ne réunit tous les critères posés. Le plus restrictif est ${LIBELLES_FILTRES[coupable]}.`
-              }
-              titre="Aucun sort ne correspond"
+        <div aria-hidden={tiroirOuvert || undefined} className="flex min-w-0 flex-col gap-3">
+          <div
+            className="sticky top-0 z-10 -mx-1 bg-base px-1 pt-1 pb-3"
+            ref={zoneRechercheRef}
+          >
+            <ChampRecherche
+              aide="Le nom français ou anglais. Les accents et les apostrophes sont optionnels."
+              nbResultats={resultats.length}
+              surChangement={setSaisie}
+              valeur={saisie}
             />
-          ) : (
-            <>
-              <p className="m-0 text-petit text-encre-douce">
-                {resultats.length} {resultats.length === 1 ? 'sort' : 'sorts'}
-                {resultats.length > visibles ? ` — ${visibles} affichés` : ''}
-              </p>
-              <TableSorts
+          </div>
+
+          <div
+            style={{ '--pf-decalage-collant': `${decalageCollant}px` } as CSSProperties}
+          >
+            {resultats.length === 0 ? (
+              <EtatVide
+                actions={
+                  coupable === null
+                    ? [{ libelle: 'Voir tous les sorts', primaire: true, surClic: () => ecrire(ETAT_VIDE) }]
+                    : [
+                        {
+                          libelle: `Retirer ${LIBELLES_FILTRES[coupable]}`,
+                          primaire: true,
+                          surClic: () => ecrire(sansFiltre(etat, coupable)),
+                        },
+                        { libelle: 'Tout effacer', surClic: () => ecrire(ETAT_VIDE) },
+                      ]
+                }
+                explication={
+                  coupable === null
+                    ? 'Aucun sort ne correspond, et aucun filtre n’est posé. L’index est peut-être vide.'
+                    : `Aucun sort ne réunit tous les critères posés. Le plus restrictif est ${LIBELLES_FILTRES[coupable]}.`
+                }
+                titre="Aucun sort ne correspond"
+              />
+            ) : (
+              <div className="flex flex-col gap-3">
+                <p className="m-0 text-petit text-encre-douce">
+                  {resultats.length} {resultats.length === 1 ? 'sort' : 'sorts'}
+                  {resultats.length > visibles ? `, ${visibles} affichés` : ''}
+                </p>
+                <TableSorts
                 classe={etat.classe}
                 index={index}
                 sorts={resultats.slice(0, visibles)}
@@ -299,15 +339,30 @@ export function VueNavigation() {
                 <button
                   className="self-center rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
                   onClick={() => setVisibles((actuel) => actuel + LIGNES_PAR_PAGE)}
+                  style={{ minHeight: DENSITE.cible }}
                   type="button"
                 >
                   Afficher {Math.min(LIGNES_PAR_PAGE, resultats.length - visibles)} sorts de plus
                 </button>
               ) : null}
-            </>
-          )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
+
+      <button
+        aria-controls="tiroir-filtres"
+        aria-expanded={tiroirOuvert}
+        className="fixed inset-x-4 bottom-4 z-30 flex items-center justify-center border border-accent bg-accent px-4 text-corps font-semibold text-surface hover:bg-accent-survol lg:hidden"
+        id="bouton-filtrer"
+        onClick={() => setTiroirOuvert(true)}
+        ref={boutonFiltrerRef}
+        style={{ minHeight: DENSITE.cible }}
+        type="button"
+      >
+        {nbFiltres === 0 ? 'Filtrer' : `Filtrer, ${nbFiltres} ${nbFiltres === 1 ? 'posé' : 'posés'}`}
+      </button>
     </section>
   )
 }
