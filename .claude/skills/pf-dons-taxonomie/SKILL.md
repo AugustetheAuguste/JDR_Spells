@@ -28,6 +28,9 @@ Ce fichier ne recopie aucune règle du gating d'éligibilité — voir
 `pf-dons-conventions` pour les cinq couches de gating, qui sont un sujet
 orthogonal (ce qu'un don *exige*, pas ce qu'il *donne*).
 
+Côté `JDR_Spells`, §13 de `CLAUDE.md` (racine du dépôt) situe ce corpus dans
+l'architecture fusionnée ; ce Skill n'y ajoute que la taxonomie sémantique.
+
 ## Les 12 champs et leurs vocabulaires clos
 
 Produits par un LLM (Bedrock) via `tag_feat_semantics.py`, jamais dérivés d'une
