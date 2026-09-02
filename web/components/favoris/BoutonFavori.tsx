@@ -27,8 +27,8 @@ export function BoutonFavori({
 
   const libelle = dedans ? 'Retirer des favoris' : 'Ajouter aux favoris'
   const classes = compact
-    ? 'rounded-jeton border px-1.5 py-0.5 text-micro leading-none'
-    : 'rounded-jeton border px-3 py-2 text-corps font-medium'
+    ? 'flex min-h-ligne min-w-ligne items-center justify-center rounded-jeton border text-micro leading-none'
+    : 'rounded-jeton border px-3 py-2 text-corps font-medium min-h-cible'
 
   return (
     <>

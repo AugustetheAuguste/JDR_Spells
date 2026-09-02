@@ -108,7 +108,7 @@ export function traduireErreur(brut: string): string {
   }
   if (texte.includes('rate limit') || texte.includes('for security purposes')) {
     return (
-      'Trop de tentatives ou trop d’e-mails en peu de temps : le service impose une ' +
+      'Trop de tentatives ou trop d’e-mails en peu de temps, le service impose une ' +
       'pause. Réessayez dans quelques minutes.'
     )
   }
@@ -118,7 +118,7 @@ export function traduireErreur(brut: string): string {
   if (texte.includes('failed to fetch') || texte.includes('networkerror')) {
     return 'Le service de comptes est injoignable. Vos favoris restent enregistrés dans ce navigateur.'
   }
-  return `Le service de comptes a refusé la demande : ${brut}`
+  return `Le service de comptes a refusé la demande. ${brut}`
 }
 
 function messageDe(erreur: unknown): string {
@@ -245,7 +245,7 @@ export function FournisseurSession({ children }: { readonly children: ReactNode 
             return {
               ok: true,
               message:
-                'Compte créé. Un e-mail de confirmation vient de partir : ouvrez son ' +
+                'Compte créé. Un e-mail de confirmation vient de partir, ouvrez son ' +
                 'lien, puis connectez-vous.',
             }
           }

@@ -119,7 +119,7 @@ export function ChoixClasse({
           // point of trimming the direct list to five cards is defeated if the
           // rest is printed right below it anyway.
           <details className="rounded-panneau border border-bord bg-surface" key={groupe.titre}>
-            <summary className="cursor-pointer px-3 py-2.5 text-petit font-semibold text-encre-douce">
+            <summary className="flex min-h-cible cursor-pointer items-center px-3 py-2.5 text-petit font-semibold text-encre-douce">
               {groupe.titre} ({groupe.classes.length})
             </summary>
             <div className="px-3 pb-3">{grille(groupe.classes)}</div>
@@ -147,7 +147,7 @@ export function ChoixClasse({
 
       <p className="m-0 text-petit text-encre-douce">
         <button
-          className="text-accent underline hover:text-accent-survol"
+          className="inline-flex min-h-cible items-center text-accent underline hover:text-accent-survol"
           onClick={surSansClasse}
           type="button"
         >

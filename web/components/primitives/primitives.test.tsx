@@ -51,7 +51,9 @@ function contraste(a: string, b: string): number {
 describe('PastilleEcole', () => {
   it.each(ECOLES)('%s écrit son nom, la couleur n’est jamais seule', (ecole) => {
     render(<PastilleEcole ecole={ecole} />)
-    expect(screen.getByText(LIBELLES_ECOLES[ecole])).toBeTruthy()
+    // Two nodes below 400px width: one visible, one sr-only for when the
+    // dense results table hides the visible one for lack of room.
+    expect(screen.getAllByText(LIBELLES_ECOLES[ecole]).length).toBeGreaterThan(0)
   })
 
   it('la variante puce garde une étiquette accessible', () => {

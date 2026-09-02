@@ -61,7 +61,12 @@ export function PastilleEcole({
         className="inline-block size-3 shrink-0 rounded-jeton border border-bord-fort align-middle"
         style={{ backgroundColor: fond }}
       />
-      {libelle}
+      {/* Below 400px a dense results table has no room left for the longest
+          school name ("Enchantement") beside the star toggle and the level
+          column — the label stays the accessible name via the sr-only twin
+          rather than disappearing from the page. */}
+      <span className="hidden min-[400px]:inline">{libelle}</span>
+      <span className="sr-only min-[400px]:hidden">{libelle}</span>
     </span>
   )
 }

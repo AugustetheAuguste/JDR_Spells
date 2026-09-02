@@ -154,9 +154,27 @@ async function mesurerCibles(page: Page): Promise<readonly MesureCible[]> {
           element.hidden
         if (invisible) continue
 
+        // A checkbox or radio's own visual box is deliberately kept native-sized
+        // when the label that wraps it already carries the 44px target — the
+        // label is the clickable region, and the raw input inside it is not a
+        // second, independent control to measure against the same floor.
+        if (
+          (element.tagName === 'INPUT') &&
+          ((element as HTMLInputElement).type === 'checkbox' || (element as HTMLInputElement).type === 'radio')
+        ) {
+          const label = element.closest('label')
+          if (label !== null) {
+            const rectLabel = label.getBoundingClientRect()
+            if (rectLabel.width >= cibleMin && rectLabel.height >= cibleMin) continue
+          }
+        }
+
+        // Decision #4 (00_CONTEXT.md): 44px for a standalone control, 32px for
+        // a table row — the row floor applies to anything inside it, buttons
+        // included, or the density budget of the results table is defeated by
+        // its own favourite toggle.
         const ligne = element.closest('tbody tr') !== null
-        const estBouton = element.tagName === 'BUTTON'
-        const plancher = ligne && !estBouton ? ligneMin : cibleMin
+        const plancher = ligne ? ligneMin : cibleMin
 
         if (rect.height < plancher || rect.width < plancher) {
           let selecteur = element.tagName.toLowerCase()
@@ -185,6 +203,7 @@ interface MesurePolice {
 async function mesurerPolicesChamps(page: Page): Promise<readonly MesurePolice[]> {
   return page.evaluate((seuil) => {
     const champs = document.querySelectorAll<HTMLElement>('input, textarea')
+    const typesSansZoomIOS = new Set(['checkbox', 'radio', 'button', 'submit', 'range', 'color', 'file'])
     const resultats: MesurePolice[] = []
     for (const champ of Array.from(champs)) {
       const rect = champ.getBoundingClientRect()
@@ -192,6 +211,11 @@ async function mesurerPolicesChamps(page: Page): Promise<readonly MesurePolice[]
       if (rect.width === 0 || rect.height === 0 || style.display === 'none' || style.visibility === 'hidden') {
         continue
       }
+      // Only a text-entry field zooms on focus under iOS. A checkbox or radio
+      // inherits the body font-size as a CSS property without rendering text,
+      // so measuring it here is a false positive, not a real defect.
+      const type = (champ as HTMLInputElement).type ?? ''
+      if (typesSansZoomIOS.has(type)) continue
       const taille = parseFloat(style.fontSize)
       if (taille < seuil) {
         let selecteur = champ.tagName.toLowerCase()

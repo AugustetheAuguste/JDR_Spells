@@ -38,8 +38,8 @@ function avertirSansService(): void {
   deja_averti = true
   console.warn(
     '[compte] NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY absentes de ' +
-      'ce build : aucune synchronisation ne partira, les favoris restent locaux. ' +
-      'Ces variables sont figées à la compilation — les ajouter à l’hébergeur ' +
+      'ce build, donc aucune synchronisation ne partira, les favoris restent locaux. ' +
+      'Ces variables sont figées à la compilation, les ajouter à l’hébergeur ' +
       'exige un nouveau build, pas seulement un redéploiement.',
   )
 }

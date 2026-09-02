@@ -55,7 +55,7 @@ export function TableSorts({
               not fall off with them. */}
           <BoutonFavori compact id_sort={sort.id} />
           <Link
-            className="text-encre underline decoration-bord-fort underline-offset-2 hover:text-accent"
+            className="inline-flex min-h-ligne items-center text-encre underline decoration-bord-fort underline-offset-2 hover:text-accent"
             // The object form, because `typedRoutes` cannot check an interpolated
             // string against `/sorts/[slug]` — and the slug IS the URL, so the
             // path is built from data rather than from a literal.

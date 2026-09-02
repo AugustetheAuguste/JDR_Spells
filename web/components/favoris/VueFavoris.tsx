@@ -275,7 +275,7 @@ export function VueFavoris() {
                 Nouveau nom
                 <input
                   autoFocus
-                  className="min-h-cible rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
+                  className="min-h-cible rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-grand"
                   onChange={(evenement) => setRenommage(evenement.target.value)}
                   value={renommage}
                 />

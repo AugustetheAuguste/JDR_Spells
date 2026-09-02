@@ -109,6 +109,12 @@ export function TableDense<T>({
                   scope="col"
                   style={{
                     top: 'var(--pf-decalage-collant, 0px)',
+                    // A sortable header is itself a 44px control (Skill, cible
+                    // tactile): the column must never shrink its button under
+                    // that floor, even once the row content beside it does.
+                    // +20px accounts for the cell's own horizontal padding
+                    // (px-2.5 on both sides), which the button's width does not.
+                    ...(triable ? { minWidth: '64px' } : {}),
                     ...(colonne.largeur === undefined ? {} : { width: colonne.largeur }),
                   }}
                 >
