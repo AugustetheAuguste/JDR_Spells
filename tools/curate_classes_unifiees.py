@@ -37,10 +37,31 @@ dans `Dons` : une entrée douteuse est marquée, jamais devinée.
 from __future__ import annotations
 
 import json
+import sys
+import unicodedata
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SORTIE = REPO_ROOT / "data" / "conventions" / "classes_unifiees.json"
+
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from pf_dons import paths  # noqa: E402  (chemin unique, cf. Dons/CLAUDE.md)
+
+
+def _normalize(text: str) -> str:
+    # Même normalisation que pf_dons.engine._normalize : NFKD + retrait des
+    # combinants + minuscules. Réutilisée à l'identique pour ne jamais faire
+    # rater une jointure de slug par une variante de normalisation.
+    t = unicodedata.normalize("NFKD", text)
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return t.lower().strip()
+
+
+def lire_lanceurs() -> dict[str, bool]:
+    # class_caster_info.json est la SEULE autorité pour "lanceur" : on la lit
+    # ici, on ne la recopie jamais de mémoire dans une table statique.
+    brut = json.loads(paths.CLASS_CASTER_INFO.read_text(encoding="utf-8"))
+    return {_normalize(classe): entree["is_caster"] for classe, entree in brut.items()}
 
 # slug (corpus de dons, 42 entrées) -> liste_sorts (un des 19 slugs du corpus
 # de sorts, ou None). Recopié verbatim depuis la table de correspondance de
@@ -153,14 +174,20 @@ A_CURER: dict[str, str] = {
 
 def construire() -> dict:
     assert set(TABLE) == set(NOMS), "TABLE et NOMS doivent couvrir les memes slugs"
+    lanceurs = lire_lanceurs()
     entrees = []
     for slug in sorted(TABLE):
+        # Classe absente de class_caster_info.json -> None (inconnue), jamais
+        # False : un False rendrait un prérequis "NLS n" ineligible à tort
+        # pour une classe dont l'accès à la magie n'a simplement pas été
+        # curé, exactement la sous-attribution que ce dépôt cherche à éviter.
+        lanceur = lanceurs.get(_normalize(slug))
         entrees.append(
             {
                 "slug": slug,
                 "nom": NOMS[slug],
                 "liste_sorts": TABLE[slug],
-                "lanceur": None,
+                "lanceur": lanceur,
                 "a_curer": slug in A_CURER,
                 "raison_curation": A_CURER.get(slug),
             }
