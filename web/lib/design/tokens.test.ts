@@ -330,6 +330,8 @@ describe('aucun hexadécimal hors de tokens.ts', () => {
       join(RACINE_WEB, 'lib', 'design', 'tokens.ts'),
       join(RACINE_WEB, 'lib', 'design', 'tokens.test.ts'),
       join(RACINE_WEB, 'styles', 'theme.css'),
+      join(RACINE_WEB, 'lib', 'design', 'rampe.ts'),
+      join(RACINE_WEB, 'lib', 'design', 'rampe.test.ts'),
     ])
     const fautifs: string[] = []
     for (const chemin of fichiersSources(RACINE_WEB)) {
