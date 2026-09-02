@@ -136,7 +136,7 @@ export function VueExploration() {
       <section>
         <h1 className="m-0 font-affichage text-titre1 font-semibold">Explorer</h1>
         <p className="mt-3 text-grand text-encre-douce">
-          L’index des sorts n’a pas pu être chargé ({erreur}). Rechargez la page ; si
+          L’index des sorts n’a pas pu être chargé ({erreur}). Rechargez la page. Si
           l’erreur persiste, elle est dans le déploiement. Le corpus reste consultable sur{' '}
           <a className="text-accent underline" href="https://www.pathfinder-fr.org/">
             pathfinder-fr.org
@@ -167,7 +167,7 @@ export function VueExploration() {
         <p className="mt-1 mb-5 max-w-[68ch] text-grand text-encre-douce">
           Choisissez une ou plusieurs classes, puis resserrez de graphique en graphique
           jusqu’au sort qu’il vous faut. Plusieurs classes montrent l’union de leurs
-          sorts. Chaque clic entre d’un cran ; la flèche de retour du navigateur ressort
+          sorts. Chaque clic entre d’un cran. La flèche de retour du navigateur ressort
           du même cran.
         </p>
         <ChoixClasse
@@ -308,7 +308,7 @@ export function VueExploration() {
             },
             { libelle: 'Repartir de zéro', surClic: () => ecrire(EXPLORATION_VIDE, 'push') },
           ]}
-          explication="Les critères posés ne se rencontrent sur aucun sort du corpus. C’est un fait du corpus, pas une erreur : remontez d’un cran pour retrouver le dernier ensemble non vide."
+          explication="Les critères posés ne se rencontrent sur aucun sort du corpus. C’est un fait du corpus, pas une erreur. Remontez d’un cran pour retrouver le dernier ensemble non vide."
           titre="Aucun sort ne réunit ces critères"
         />
       ) : (
@@ -322,7 +322,7 @@ export function VueExploration() {
                 <p className="m-0 font-affichage text-titre3 font-semibold">Vous y êtes.</p>
                 <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
                   Plus aucun découpage ne sépare ces {sorts.length}{' '}
-                  {sorts.length === 1 ? 'sort' : 'sorts'} : ils partagent tout ce que cette page
+                  {sorts.length === 1 ? 'sort' : 'sorts'}. Ils partagent tout ce que cette page
                   sait comparer. La suite se lit sur les fiches, ci-dessous.
                 </p>
               </div>
@@ -339,7 +339,7 @@ export function VueExploration() {
                         <button
                           aria-pressed={autre.cle === cleAxe}
                           className={[
-                            'rounded-jeton border px-2 py-1 text-petit',
+                            'flex min-h-cible items-center rounded-jeton border px-2 py-1 text-petit',
                             autre.cle === cleAxe
                               ? 'border-accent bg-accent-voile text-encre'
                               : 'border-bord bg-surface text-encre-douce hover:bg-survol',
@@ -381,7 +381,7 @@ export function VueExploration() {
                 {multiple ? (
                   <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-bord pt-3">
                     <button
-                      className="rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
+                      className="flex min-h-cible items-center rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface [html[data-theme=nuit]_&]:text-encre enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
                       disabled={selection.length === 0}
                       onClick={valider}
                       type="button"
@@ -390,7 +390,7 @@ export function VueExploration() {
                     </button>
                     <p className="m-0 text-petit text-encre-douce">
                       {selection.length === 0
-                        ? 'Cochez une ou plusieurs tranches ci-dessus, puis validez — vous pouvez en poser plusieurs à la fois.'
+                        ? 'Cochez une ou plusieurs tranches ci-dessus, puis validez. Vous pouvez en poser plusieurs à la fois.'
                         : `${selection.length} ${selection.length === 1 ? 'tranche cochée' : 'tranches cochées'}.`}
                     </p>
                   </div>

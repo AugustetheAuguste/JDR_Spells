@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 
-import { COULEUR_TRANCHE_SANS_VALEUR, couleurTranche } from '@/lib/design/rampe'
+import { useThemeActif } from '@/components/exploration/theme-actif'
+import { COULEUR_TRANCHE_SANS_VALEUR, couleurCategorie } from '@/lib/design/rampe'
 import { COULEURS_ECOLES } from '@/lib/design/tokens'
 import { formaterPart, secteurs } from '@/lib/exploration/geometrie'
 import type { Tranche } from '@/lib/exploration/axes'
@@ -52,6 +53,7 @@ export function Donut({
   readonly selection?: readonly string[]
 }) {
   const [survol, setSurvol] = useState<number | null>(null)
+  const theme = useThemeActif()
   const arcs = secteurs(
     tranches.map((tranche) => tranche.nb),
     { rayon: RAYON, rayonInterne: RAYON_INTERNE, ecartDegres: ECART_DEGRES },
@@ -62,7 +64,7 @@ export function Donut({
     // On the school axis the reader already knows the nine pastilles from the
     // table; reusing them means the same colour never names two different things.
     if (tranche.ecole !== null) return COULEURS_ECOLES[tranche.ecole]
-    return couleurTranche(rang, tranches.length)
+    return couleurCategorie(rang, theme)
   }
 
   return (
@@ -143,7 +145,7 @@ export function Donut({
                     requires: there is no filter that can name an absence, so the
                     slice is shown and cannot be entered. */}
                 <span className="ml-2 text-micro">
-                  — non filtrable, la source ne dit rien ici
+                  Non filtrable, la source ne dit rien ici.
                 </span>
               </li>
             )
@@ -155,7 +157,7 @@ export function Donut({
                 aria-checked={multiple ? coche : undefined}
                 aria-label={tranche.libelleAccessible}
                 className={[
-                  'flex min-h-ligne w-full items-center gap-2 rounded-jeton px-2 py-1.5 text-left text-base',
+                  'flex min-h-cible w-full items-center gap-2 rounded-jeton px-2 py-1.5 text-left text-corps',
                   coche ? 'bg-accent-voile' : survol === rang ? 'bg-survol' : 'bg-transparent',
                 ].join(' ')}
                 onClick={() => surChoix(tranche.valeur as string)}
