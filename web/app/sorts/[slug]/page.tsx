@@ -25,6 +25,7 @@ import { PastilleEcole } from '@/components/primitives/PastilleEcole'
 import { ecoleDe } from '@/lib/donnees/index-web'
 import { chargerIndex } from '@/lib/donnees/lire-index'
 import { lirePropsSort, type PropsSort } from '@/lib/donnees/sort-page'
+import { MOTS } from '@/lib/design/tokens'
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return chargerIndex().sorts.map((sort) => ({ slug: sort.s }))
@@ -81,7 +82,10 @@ export default async function PageSort({ params }: { params: Promise<{ slug: str
     <article className="space-y-5">
       <header>
         <p className="m-0 text-petit text-encre-douce">
-          <Link className="text-accent underline hover:text-accent-survol" href="/">
+          <Link
+            className="inline-flex min-h-cible items-center text-accent underline hover:text-accent-survol"
+            href="/"
+          >
             Tous les sorts
           </Link>
         </p>
@@ -91,6 +95,16 @@ export default async function PageSort({ params }: { params: Promise<{ slug: str
               and could change, an id is the stable join key. */}
           <BoutonFavori id_sort={sort.id} />
         </div>
+        <p className="m-0 mt-1">
+          <a
+            className="inline-flex min-h-cible items-center text-petit font-medium text-accent underline hover:text-accent-survol"
+            href={sort.url_source}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {MOTS.voirSurLeWiki}
+          </a>
+        </p>
         <div className="mt-2 flex flex-wrap items-center gap-1.5">
           <PastilleEcole ecole={ecoleToken(sort)} />
           {sort.descripteurs.map((descripteur) => (
