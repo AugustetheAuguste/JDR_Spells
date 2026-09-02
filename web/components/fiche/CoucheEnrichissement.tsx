@@ -4,18 +4,16 @@ import type { Enrichissement } from '@/lib/donnees/sort-page'
 /**
  * The LLM layer, fenced off and labelled as machine-written.
  *
- * The separation is the whole point. Mixing this into the wiki's own text would
- * blur what came from the source with what came from a model, and the reader
- * would have no way to tell — which is worse than not showing it at all. So it
- * sits in its own bordered block, after the description, under a heading that
- * says where it comes from, and it names the model and the date.
+ * The separation is the whole point, but the warning paragraph that used to
+ * spell it out is gone (arbitrage humain du 2026-09-01) : 300 caractères sur
+ * chaque fiche enrichie pour dire ce qu'un lecteur presse n'exploite jamais. Le
+ * titre « Classement automatique » et la bordure en tirets portent désormais
+ * seuls le cloisonnement entre le texte du wiki et cette section générée.
  *
  * There is no "verified by a human" badge, and there cannot be: the enrichment
  * schema admits exactly sixteen keys and `verifie_par_humain` is not one of them.
  * Its absence is a decision, not an oversight — declaring a record reviewed makes
- * it *invalid* rather than trusted (CLAUDE.md § 10). The step plan asks for such
- * a badge; showing one would mean inventing the field it reads, so the block
- * states what is actually knowable instead.
+ * it *invalid* rather than trusted (CLAUDE.md § 10).
  *
  * `notes_ambiguite`, when present, is shown rather than hidden: it is the model
  * saying it had to choose, and a reader deciding whether to trust a category
@@ -74,8 +72,6 @@ export function CoucheEnrichissement({
   // rather than a heading over a blank.
   if (enrichissement === null) return null
 
-  const date = enrichissement.genere_le.slice(0, 10)
-
   return (
     <section
       aria-labelledby="titre-enrichissement"
@@ -84,12 +80,6 @@ export function CoucheEnrichissement({
       <h2 className="m-0 font-affichage text-titre3 font-semibold" id="titre-enrichissement">
         Classement automatique
       </h2>
-      <p className="mt-1 mb-3 max-w-[68ch] text-petit text-encre-douce">
-        Cette section n&apos;est <strong>pas</strong> tirée du wiki : elle a été rédigée
-        par un modèle de langage ({enrichissement.modele}) le {date}, pour rendre le
-        corpus filtrable. Elle n&apos;a pas été relue par un humain. En cas d&apos;écart,
-        c&apos;est la description ci-dessus qui fait foi.
-      </p>
 
       {enrichissement.resume_court === null ? null : (
         <p className="mt-0 mb-3 max-w-[68ch] text-corps">{enrichissement.resume_court}</p>
@@ -106,7 +96,8 @@ export function CoucheEnrichissement({
 
       {enrichissement.notes_ambiguite === null ? null : (
         <p className="mt-3 mb-0 max-w-[68ch] text-petit text-encre-douce">
-          <strong>Choix signalé comme ambigu :</strong> {enrichissement.notes_ambiguite}
+          <strong className="block">Choix ambigu</strong>
+          {enrichissement.notes_ambiguite}
         </p>
       )}
     </section>

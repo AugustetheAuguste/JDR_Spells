@@ -242,24 +242,17 @@ describe('la couche d’enrichissement', () => {
     expect(container.innerHTML).toBe('')
   })
 
-  it('s’annonce comme écrite par un modèle, et non relue', () => {
-    // The honest form of the plan's "labelled as auto-generated": there is no
-    // human-verified flag to show, so the block says so outright.
+  it('ne rend plus l’avertissement de provenance LLM, retiré par arbitrage humain', () => {
+    // 2026-09-01 : le paragraphe de 300 caractères part intégralement. Le titre
+    // « Classement automatique » suffit désormais à signaler la provenance. Ce
+    // test empêche sa restauration par une session future qui croirait réparer
+    // un oubli.
     const enrichissement = DETECTION.enrichissement as Enrichissement
     render(<CoucheEnrichissement enrichissement={enrichissement} />)
     const bloc = screen.getByRole('region', { name: 'Classement automatique' })
-    expect(bloc.textContent).toContain('pas')
-    expect(bloc.textContent).toMatch(/tirée du wiki/)
-    expect(bloc.textContent).toMatch(/modèle de langage/)
-    expect(bloc.textContent).toMatch(/n'a pas été relue par un humain/)
-    expect(bloc.textContent).toContain(enrichissement.modele)
-  })
-
-  it('nomme la date de génération, sans l’heure', () => {
-    render(<CoucheEnrichissement enrichissement={DETECTION.enrichissement} />)
-    expect(screen.getByRole('region', { name: 'Classement automatique' }).textContent).toContain(
-      '2026-07-30',
-    )
+    expect(bloc.textContent).not.toContain(enrichissement.modele)
+    expect(screen.queryByText(/modèle de langage/)).toBeNull()
+    expect(screen.queryByText(/relue par un humain/)).toBeNull()
   })
 
   it('rend le résumé, la catégorie et les tags', () => {
@@ -298,6 +291,7 @@ describe('la couche d’enrichissement', () => {
       />,
     )
     expect(screen.getByText(/Deux catégories plausibles/)).toBeTruthy()
+    expect(screen.getByText('Choix ambigu')).toBeTruthy()
   })
 })
 
@@ -309,7 +303,7 @@ describe('le lien vers la source (B8)', () => {
     expect(DETECTION.url_source).toMatch(/^https:\/\/www\.pathfinder-fr\.org\//)
   })
 
-  it('dit que la page d’origine fait foi', () => {
+  it('dit que la page d’origine fait foi, en une phrase', () => {
     render(<LienSource url={DETECTION.url_source} />)
     const bloc = screen.getByRole('region', { name: 'Source' })
     expect(bloc.textContent).toMatch(/fait foi/)
@@ -321,6 +315,25 @@ describe('le lien vers la source (B8)', () => {
     const lien = screen.getByRole('link', { name: 'Voir sur pathfinder-fr.org' })
     expect(lien.getAttribute('target')).toBe('_blank')
     expect(lien.getAttribute('rel')).toContain('noreferrer')
+  })
+})
+
+describe('les chaînes d’interface de la fiche évitent la ponctuation interdite', () => {
+  it('CoucheEnrichissement ne porte plus de deux-points sur la note d’ambiguïté', () => {
+    const base = DETECTION.enrichissement as Enrichissement
+    render(
+      <CoucheEnrichissement
+        enrichissement={{ ...base, notes_ambiguite: 'Deux catégories plausibles.' }}
+      />,
+    )
+    const bloc = screen.getByRole('region', { name: 'Classement automatique' })
+    expect(bloc.textContent).not.toMatch(/ : | :/)
+  })
+
+  it('LienSource ne porte pas de deux-points', () => {
+    render(<LienSource url={DETECTION.url_source} />)
+    const bloc = screen.getByRole('region', { name: 'Source' })
+    expect(bloc.textContent).not.toMatch(/ : | :/)
   })
 })
 
