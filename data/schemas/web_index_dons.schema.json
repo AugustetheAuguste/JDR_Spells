@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JDR_Spells/schemas/web_index_dons.schema.json",
+  "title": "Index web mince des dons",
+  "description": "Le contrat de l'artefact `web/public/data/dons/index.json`. Miroir de `web_index.schema.json` (sorts) pour les dons : identité, facettes sémantiques et catégorie, TOUJOURS codées en entiers via des tables de tête, jamais recopiées dans chaque entrée. CE CONTRAT EST INDÉPENDANT DU PERSONNAGE : aucun champ ici ne dépend d'une fiche de personnage ou du graphe de prérequis. Tout ce qui se calcule à partir d'un personnage ou d'une chaîne de prérequis (éligibilité, distance d'obtention, valeur structurelle dans le graphe, regroupement par hub, liste de prérequis) est l'objet d'un contrat séparé, `moteur_dons.schema.json`, étape 06. Les libellés verbatim et non normalisés (description complète, texte des Conditions) vivent dans les props par don (`web/public/data/dons/<slug>.json`), chargées à l'ouverture d'une fiche, jamais ici.",
+  "type": "object",
+  "required": [
+    "version",
+    "genere_le",
+    "effets_principaux",
+    "cibles_bonus",
+    "contextes",
+    "activations",
+    "polyvalences",
+    "categories",
+    "sources",
+    "dons"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "description": "Version du contrat lui-même, pas du corpus. Un changement de forme incompatible l'incrémente.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "genere_le": {
+      "description": "Horodatage ISO 8601 UTC de l'export. Seul champ autorisé à varier entre deux exports du même corpus.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "effets_principaux": {
+      "description": "Table de codes du vocabulaire clos `effet_principal` de la couche d'enrichissement LLM (`data/dons/feat_semantics.json`), 18 valeurs mesurées sur le corpus réel (jamais une liste théorique). L'index dans ce tableau EST le code utilisé par `dons[].ep`, ET par `dons[].es` (`effets_secondaires` partage exactement le même vocabulaire que `effet_principal` dans les données sources : il n'existe donc volontairement PAS de second tableau `effets_secondaires`). Trié alphabétiquement pour que les codes soient déterministes. Espace de noms DISJOINT de celui des 35 tags de sorts (`web_index.schema.json` → `tags`), à l'exception de `bonus_chiffre` qui apparaît identiquement dans les deux vocabulaires — sans risque ici puisque les deux index sont deux fichiers séparés, mais dangereux à réutiliser comme clé d'URL commune (étape 10).",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "cibles_bonus": {
+      "description": "Table de codes du vocabulaire clos `cible_du_bonus` (`feat_semantics.json`), 13 valeurs mesurées sur le corpus réel. L'index dans ce tableau EST le code utilisé par `dons[].cb`. Trié alphabétiquement.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "contextes": {
+      "description": "Table de codes du vocabulaire clos `contexte` (`feat_semantics.json`), 9 valeurs mesurées sur le corpus réel. L'index dans ce tableau EST le code utilisé par `dons[].cx`. Trié alphabétiquement.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "activations": {
+      "description": "Table de codes du vocabulaire clos `activation` (`feat_semantics.json`), 5 valeurs mesurées sur le corpus réel. L'index dans ce tableau EST le code utilisé par `dons[].ac`. Trié alphabétiquement.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "polyvalences": {
+      "description": "Table de codes du vocabulaire clos `polyvalence` (`feat_semantics.json`), 3 valeurs mesurées sur le corpus réel (`conditionnel`, `niche`, `polyvalent`). L'index dans ce tableau EST le code utilisé par `dons[].pv`. Trié alphabétiquement. Facette volontairement faible : `polyvalence` vaut `conditionnel` pour 61 % du corpus (cf. `build/explorateur-et-etiquetage-semantique/OUTPUT_taxonomie_semantique.md`), mais le contrat ne l'omet pas pour autant.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "categories": {
+      "description": "Table de codes des catégories de don. SOURCE : `data/dons/feat_categories.json` (le taguage par mots-clés, champ `categories`), PAS `feat_semantics.json.categorie_officielle` — celui-ci est une chaîne UNIQUE par don côté LLM, incapable de représenter un don à catégories multiples (ex. « Blessant » est à la fois `combat` et `sociale`), alors que `feat_categories.json` porte nativement une liste. 5 valeurs mesurées sur le corpus réel (`combat`, `creation_objet`, `monture`, `sociale`, `tir_a_distance`). L'index dans ce tableau EST le code utilisé par `dons[].cat`. Trié alphabétiquement.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "sources": {
+      "description": "Table de codes des sources (colonne `Src` de `Dons.csv` : sigles d'ouvrages, ex. `MJ`, `AG`, `CMy`). Très répétitive sur 1417 dons, donc codée comme le reste. L'index dans ce tableau EST le code utilisé par `dons[].src`. Trié alphabétiquement.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "dons": {
+      "description": "Les entrées, triées par `i` croissant (0..n-1) pour que l'export soit déterministe à l'octet près.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/entree" }
+    }
+  },
+  "$defs": {
+    "entree": {
+      "type": "object",
+      "description": "Un don, réduit à ce qui sert à identifier, chercher, filtrer et afficher une ligne de table ou une puce de facette. AUCUN champ dépendant d'un personnage ou d'un graphe de prérequis n'apparaît ici — ceux-ci relèvent d'un contrat séparé (étape 06). Le texte des Conditions et de l'Avantage complet vivent sur la fiche par don, jamais ici.",
+      "required": ["i", "id", "s", "n", "nf", "r", "ep", "es", "cb", "cx", "ac", "pv", "cat", "src", "vb", "rc", "mc"],
+      "additionalProperties": false,
+      "properties": {
+        "i": {
+          "description": "Index dense (0..n-1), égal à la position dans `dons`. Identifiant court utilisé par les vues comme clé de liste.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "id": {
+          "description": "L'identifiant stable du corpus, clé de jointure unique vers `web/public/data/dons/<id>.json`. C'est lui que les favoris stockent, JAMAIS le slug : un slug peut bouger si l'algorithme évolue.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "s": {
+          "description": "Le slug, qui EST l'URL publique (`/dons/<s>`). Calculé par `slugify` de `src/pf_spells/slugs.py` (réutilisé tel quel, jamais réécrit en variante) sur le nom SANS l'astérisque des dons répétables — le changer casse des liens externes.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "n": {
+          "description": "Nom d'affichage, verbatim et accentué, ASTÉRISQUE COMPRISE pour un don répétable (`r=true`) — l'astérisque fait partie du nom affiché du catalogue, mais n'entre jamais dans `s` ni `id`.",
+          "type": "string",
+          "minLength": 1
+        },
+        "nf": {
+          "description": "Nom plié pour la recherche, DOIT égaler `plier(n)` (voir `src/pf_spells/web_pliage.py` / `web/lib/recherche/pliage.ts`, les deux implémentations pinées par des vecteurs de test identiques). Contrairement à `s`, `nf` garde l'astérisque d'un don répétable puisque `plier` ne filtre pas les caractères non alphabétiques autres que les apostrophes.",
+          "type": "string",
+          "minLength": 1
+        },
+        "r": {
+          "description": "`true` si le don est répétable (son nom finit par `*` dans `Dons.csv`). `character_profile.assign_feat` s'appuie déjà sur ce même marqueur côté moteur ; ce champ le rend lisible côté client sans lui faire analyser une chaîne.",
+          "type": "boolean"
+        },
+        "ep": {
+          "description": "Code `effet_principal` : index dans `effets_principaux`. `null` si le don n'a pas d'enrichissement LLM (couche absente ou don non étiqueté) — dans ce cas TOUS les champs sémantiques (`ep`, `es`, `cb`, `cx`, `ac`, `pv`) valent `null`/`[]`, jamais un mélange, pour que l'interface puisse détecter et masquer la section entière plutôt que d'afficher des puces à moitié vides.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "es": {
+          "description": "Codes `effets_secondaires` : index dans `effets_principaux` (vocabulaire partagé avec `ep`, voir sa description), triés. `[]` si absent ou couche LLM absente.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "cb": {
+          "description": "Codes `cible_du_bonus` : index dans `cibles_bonus`, triés. `[]` si absent ou couche LLM absente.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "cx": {
+          "description": "Codes `contexte` : index dans `contextes`, triés. `[]` si absent ou couche LLM absente.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "ac": {
+          "description": "Code `activation` : index dans `activations`. `null` si absent ou couche LLM absente.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "pv": {
+          "description": "Code `polyvalence` : index dans `polyvalences`. `null` si absent ou couche LLM absente.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "cat": {
+          "description": "Codes de catégorie officielle : index dans `categories` (source : `feat_categories.json`, PAS `feat_semantics.json` — voir la description de `categories`), triés. Un don peut en porter plusieurs (ex. `combat` + `sociale`) : c'est pourquoi ce champ est une liste et non un scalaire, à la différence de `ep`/`ac`/`pv`. `[]` si le tagueur par mots-clés n'a retenu aucune catégorie ou si signalé `needs_manual_check` sans catégorie déduite.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "uniqueItems": true
+        },
+        "src": {
+          "description": "Code de source : index dans `sources`. `null` si la colonne `Src` du CSV est absente pour ce don (cas rare, jamais deviné).",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "vb": {
+          "description": "`valeur_bonus` : chaîne libre non normalisée (ex. `\"+2\"`, `\"vol 9 m (moyenne)\"`). Non codée : c'est une queue longue peu répétitive où une table de tête coûterait plus qu'elle ne rend. `null` si absent ou couche LLM absente.",
+          "type": ["string", "null"]
+        },
+        "rc": {
+          "description": "`resume_court` de la couche d'enrichissement LLM : une phrase, non normalisée. `null` si absent ou couche LLM absente.",
+          "type": ["string", "null"]
+        },
+        "mc": {
+          "description": "`mots_cles` de la couche d'enrichissement LLM : chaînes libres, NON codées en entiers (queue longue, peu répétitive — une table de tête n'y ferait qu'ajouter une indirection sans réduire la taille). `[]` si absent ou couche LLM absente.",
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
