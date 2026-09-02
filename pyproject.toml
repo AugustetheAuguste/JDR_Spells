@@ -18,6 +18,8 @@ dependencies = [
     "lxml>=5.0",
     "jsonschema>=4.20",
     "requests>=2.31",
+    # `pf_dons.data_loader.load_raw` lit `data/dons/Dons.csv` via pandas.
+    "pandas>=2.0",
 ]
 
 [project.optional-dependencies]
