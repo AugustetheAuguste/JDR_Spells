@@ -74,7 +74,7 @@ function Entete({
       ) : (
         <button
           className={[
-            'inline-flex w-full cursor-pointer items-center gap-1 bg-transparent p-0 text-petit font-semibold hover:text-accent',
+            'inline-flex min-h-cible w-full cursor-pointer items-center gap-1 bg-transparent p-0 text-petit font-semibold hover:text-accent',
             actif ? 'text-encre' : 'text-encre-douce',
             alignement === 'droite' ? 'justify-end' : 'justify-start',
           ].join(' ')}
@@ -84,7 +84,7 @@ function Entete({
               ? actif
                 ? `Trié par ${libelle}. Cliquez pour changer.`
                 : `Trier par ${libelle}`
-              : `${titre} — cliquez pour trier.`
+              : `${titre}. Cliquez pour trier.`
           }
           type="button"
         >
@@ -188,7 +188,7 @@ export function TableComparaison({
                 {ecart === null ? (
                   <span
                     className="font-donnees text-encre-faible"
-                    title="Une seule des classes comparées reçoit ce sort : il n’y a pas d’écart à mesurer."
+                    title="Une seule des classes comparées reçoit ce sort. Il n’y a pas d’écart à mesurer."
                   >
                     —
                   </span>
@@ -197,7 +197,10 @@ export function TableComparaison({
                     0
                   </span>
                 ) : (
-                  <Badge titre={`${ecart} niveau(x) d’écart entre les classes comparées`} ton="accent">
+                  <Badge
+                    titre={`${ecart} ${ecart === 1 ? 'niveau' : 'niveaux'} d’écart entre les classes comparées`}
+                    ton="accent"
+                  >
                     +{ecart}
                   </Badge>
                 )}

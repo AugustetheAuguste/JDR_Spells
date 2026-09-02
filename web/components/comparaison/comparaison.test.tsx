@@ -207,6 +207,14 @@ describe('la table des partagés', () => {
     )
   })
 
+  it('porte l’écart en chiffre et en texte, jamais par la seule couleur du badge', async () => {
+    await monter('?classes=druide,occultiste&mode=tous')
+    const lignes = within(screen.getByRole('table')).getAllByRole('row').slice(1)
+    const cellule = within(lignes[0] as HTMLElement).getAllByRole('cell').at(-1) as HTMLElement
+    expect(cellule.textContent).toBe('+3')
+    expect(cellule.querySelector('[title]')?.getAttribute('title')).toMatch(/3 niveaux d’écart/)
+  })
+
   it('marque d’un tiret, jamais d’un 0, la classe qui ne reçoit pas le sort', async () => {
     // 0 is a real level (orisons), so an absence can never be printed as 0.
     render(
@@ -231,6 +239,13 @@ describe('la table des partagés', () => {
 })
 
 describe('les modes', () => {
+  it('groupe les boutons d’affichage sous un nom accessible « Afficher », sans deux-points', async () => {
+    await monter('?classes=barde,druide')
+    const groupe = screen.getByRole('group', { name: 'Afficher' })
+    expect(within(groupe).getByRole('button', { name: 'Sorts partagés' })).toBeTruthy()
+    expect(screen.queryByText('Afficher :')).toBeNull()
+  })
+
   it('affiche le mode courant comme actif et écrit le changement dans l’URL', async () => {
     await monter('?classes=barde,druide')
     expect(
