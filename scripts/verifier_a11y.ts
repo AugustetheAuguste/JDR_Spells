@@ -38,6 +38,10 @@ const ROUTES: readonly {
   readonly themes: readonly ('jour' | 'nuit')[]
 }[] = [
   { nom: 'navigation', chemin: 'index.html', themes: THEMES_JOUR_SEUL },
+  // 13_UI_DONS_LIST : la navigation à facettes des 1417 dons — vérifiée dans
+  // les deux thèmes, comme la fiche d'un don, pour la même raison : le mode
+  // sombre est un mode de première classe, pas un après-coup.
+  { nom: 'dons', chemin: 'dons/index.html', themes: THEMES_JOUR_ET_NUIT },
   { nom: 'fiche', chemin: 'sorts/detection-de-la-magie/index.html', themes: THEMES_JOUR_SEUL },
   { nom: 'comparaison', chemin: 'comparaison/index.html', themes: THEMES_JOUR_SEUL },
   { nom: 'favoris', chemin: 'favoris/index.html', themes: THEMES_JOUR_SEUL },

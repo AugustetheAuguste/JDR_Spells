@@ -192,6 +192,41 @@ export const RAMPE_CATEGORIELLE = [
 ] as const
 
 /**
+ * The dons cost ramp — five steps, one hue, ascending lightness→darkness.
+ *
+ * Cost (slots to unlock a feat, prerequisites included) is an ORDINAL
+ * magnitude: 3 is not "a different kind of thing" from 2, it is simply more of
+ * the same thing. A categorical/multi-hue ramp (`RAMPE_CATEGORIELLE` above)
+ * would imply the opposite — that step 3 has nothing to do with step 2 — so
+ * this is deliberately a single hue (blue, clear of both the accent's wine hue
+ * and every school pastille) walked down in lightness, step 1 lightest / step 5
+ * darkest. `scripts/validate_palette.js --ordinal` enforces the monotonic
+ * order and the 3:1 graphical-object floor against both `COULEURS.surface` and
+ * `COULEURS_NUIT.surface`, in both palettes below — a chip is small text-on-fill,
+ * never a full-width bar, so the graphical floor applies, not the 4.5:1 text one.
+ */
+export const RAMPE_COUT = [
+  '#5B8CBB',
+  '#4472A0',
+  '#2F5A87',
+  '#1D466E',
+  '#0E3252',
+] as const
+
+/** Night counterpart: the same hue, re-anchored so step 1 still reads as
+ * "least" and step 5 as "most" against the dark `COULEURS_NUIT.surface`
+ * (`#26201A`) — lightening every step relative to the day ramp, the same
+ * correction `COULEURS_NUIT.accent` makes for the same reason (on a dark
+ * ground, "further from the background" means lighter, not darker). */
+export const RAMPE_COUT_NUIT = [
+  '#4A7291',
+  '#5D84A2',
+  '#7CA6C1',
+  '#9EC1D9',
+  '#C4DDEB',
+] as const
+
+/**
  * Eczar for display (spell names, titles), Lora for body copy, IBM Plex Mono
  * unchanged for tabular data. This is the one part of Grimoire's identity that
  * cannot be "flattened" — a typeface is not a gradient — so it carries over from

@@ -33,7 +33,13 @@
 
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import { estColonneTri, type ColonneTri, type SensTri } from '@/lib/navigation/tri'
-import { COUT_DONS_MAX, STATUTS_DONS, type Filtres, type StatutDon } from '@/lib/recherche/filtres'
+import {
+  COUT_DONS_MAX,
+  STATUTS_DONS,
+  type Filtres,
+  type FiltresDons,
+  type StatutDon,
+} from '@/lib/recherche/filtres'
 
 export const NIVEAU_MAX = 9
 
@@ -681,4 +687,41 @@ export function ecrireEtatDons(etat: EtatUrlDons): URLSearchParams {
   if (etat.statut.length > 0) parametres.set(CLES_DONS.statut, etat.statut.join(','))
   if (etat.q !== '') parametres.set(CLES_DONS.q, etat.q)
   return parametres
+}
+
+/**
+ * `EtatUrlDons` → `FiltresDons` — the one place the URL's field names (`cout`,
+ * `statut`) meet the filter domain's (`coutMax`, `statuts`); every other field
+ * is a straight rename-free copy, unlike `versFiltres` for spells above, which
+ * also resolves names to the index's integer codes. Dons filter on plain names
+ * throughout (`lib/recherche/filtres.ts`'s `FiltresDons`), so there is no code
+ * table to resolve against here — `VueDons` never has to.
+ */
+export function versFiltresDons(etat: EtatUrlDons): FiltresDons {
+  return {
+    effets: etat.effets,
+    effetsExclus: etat.effetsExclus,
+    effetsObliges: etat.effetsObliges,
+    effets2: etat.effets2,
+    effets2Exclus: etat.effets2Exclus,
+    effets2Obliges: etat.effets2Obliges,
+    cibles: etat.cibles,
+    ciblesExclues: etat.ciblesExclues,
+    ciblesObligees: etat.ciblesObligees,
+    contextes: etat.contextes,
+    contextesExclus: etat.contextesExclus,
+    contextesObliges: etat.contextesObliges,
+    activations: etat.activations,
+    activationsExclues: etat.activationsExclues,
+    activationsObligees: etat.activationsObligees,
+    polyvalences: etat.polyvalences,
+    polyvalencesExclues: etat.polyvalencesExclues,
+    polyvalencesObligees: etat.polyvalencesObligees,
+    categories: etat.categories,
+    categoriesExclues: etat.categoriesExclues,
+    categoriesObligees: etat.categoriesObligees,
+    coutMax: etat.cout,
+    statuts: etat.statut,
+    q: etat.q,
+  }
 }
