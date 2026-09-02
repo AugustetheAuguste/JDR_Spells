@@ -43,7 +43,10 @@ export function BoutonFavori({
         ].join(' ')}
         disabled={!pret}
         onClick={() => basculerSort(id_sort)}
-        title={pret ? libelle : 'Lecture des favoris en cours'}
+        // A `title` that repeats the button's own label disappears (Skill,
+        // charte typographique) — it is only useful here as the disabled
+        // reason, which the label does not carry.
+        {...(pret ? {} : { title: 'Lecture des favoris en cours' })}
         type="button"
       >
         {compact ? (

@@ -28,6 +28,12 @@ import {
  *
  * Every destructive path asks first, and the one that cannot ask — a corrupted
  * payload found at load — is announced with the key its bytes were copied to.
+ *
+ * One accent-flat button per state, never more. No list at all makes
+ * « Nouvelle liste » the primary action. Once a list is chosen, the primary
+ * need is either handled by `EtatVide` (an empty list, § brief) or by nothing
+ * at all (a full list — reviewing the table is the task, not pressing a
+ * button, decided in `design/audit_ui/12_constats.md`).
  */
 
 function horodatageCourt(iso: string): string {
@@ -36,6 +42,23 @@ function horodatageCourt(iso: string): string {
   // the browser.
   return iso === '' ? '—' : iso.slice(0, 10)
 }
+
+/** A small local pluraliser: the pattern « n singulier/pluriel » repeats more
+ * than three times below (spells added, lists read, unknown ids…), each with
+ * its own noun. No i18n dependency, just the one rule the Skill states: the
+ * number is always known here, so a parenthesised « (s) » never is. */
+function accorder(n: number, singulier: string, pluriel: string): string {
+  return `${n} ${n === 1 ? singulier : pluriel}`
+}
+
+const BOUTON_SECONDAIRE =
+  'min-h-cible rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps hover:bg-survol'
+const BOUTON_PRIMAIRE =
+  'min-h-cible rounded-jeton border border-accent bg-accent-voile px-3 py-2 text-corps font-semibold text-accent hover:bg-survol'
+const BOUTON_DESACCORD =
+  'min-h-cible rounded-jeton border border-desaccord bg-surface px-3 py-2 text-corps text-desaccord hover:bg-survol'
+const BOUTON_DESACCORD_PLEIN =
+  'min-h-cible rounded-jeton border border-desaccord bg-desaccord-voile px-3 py-2 text-corps font-semibold text-desaccord'
 
 export function VueFavoris() {
   const routeur = useRouter()
@@ -119,9 +142,9 @@ export function VueFavoris() {
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Favoris</h1>
       <p className="mt-1 mb-4 max-w-[68ch] text-corps text-encre-douce">
-        Vos listes sont enregistrées <strong>dans ce navigateur seulement</strong> : il
-        n’y a ni compte ni serveur, donc aucune synchronisation entre appareils. Vider
-        les données du site les efface — exportez le fichier pour les garder.
+        Vos listes vivent dans ce navigateur. Connectez-vous pour les retrouver
+        sur vos autres appareils. Vider les données du site les efface. Exportez
+        le fichier pour les garder.
       </p>
 
       {incident.type === 'aucun' ? null : (
@@ -136,7 +159,7 @@ export function VueFavoris() {
                 <>
                   Vos octets d’origine ont été conservés intacts sous la clé{' '}
                   <code className="font-donnees">{CLE_SAUVEGARDE}</code> du stockage
-                  local ; rien n’a été détruit.
+                  local. Rien n’a été détruit.
                 </>
               ) : (
                 <>Le stockage a refusé la copie de sauvegarde.</>
@@ -146,20 +169,21 @@ export function VueFavoris() {
             <p className="m-0 text-corps">
               Ces favoris annoncent la version{' '}
               <code className="font-donnees">{String(incident.trouvee)}</code>, que cette
-              version du site ne sait pas lire. Rien n’a été détruit : les octets
+              version du site ne sait pas lire. Rien n’a été détruit. Les octets
               d’origine sont sous <code className="font-donnees">{CLE_SAUVEGARDE}</code>.
             </p>
           ) : (
             <p className="m-0 text-corps">
-              {incident.nombre} liste(s) enregistrée(s) étaient malformées et ont été
-              écartées plutôt que devinées.
+              {accorder(
+                incident.nombre,
+                'liste enregistrée était malformée',
+                'listes enregistrées étaient malformées',
+              )}
+              . {incident.nombre === 1 ? 'Elle a été écartée' : 'Elles ont été écartées'}{' '}
+              plutôt que devinée{incident.nombre === 1 ? '' : 's'}.
             </p>
           )}
-          <button
-            className="mt-2 rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit"
-            onClick={oublierIncident}
-            type="button"
-          >
+          <button className={BOUTON_SECONDAIRE} onClick={oublierIncident} type="button">
             J’ai compris
           </button>
         </div>
@@ -171,25 +195,26 @@ export function VueFavoris() {
         </p>
       ) : (
         <div className="flex flex-col gap-4">
+          {etat.listes.length === 0 ? null : (
+            <label className="flex min-h-cible items-center gap-1.5 text-corps">
+              Liste
+              <select
+                className="min-h-cible rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
+                onChange={(evenement) => activer(evenement.target.value)}
+                value={active?.id_liste ?? ''}
+              >
+                {etat.listes.map((liste) => (
+                  <option key={liste.id_liste} value={liste.id_liste}>
+                    {liste.nom} ({liste.sorts.length})
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+
           <div className="flex flex-wrap items-center gap-2">
-            {etat.listes.length > 0 ? (
-              <label className="flex items-center gap-1.5 text-corps">
-                Liste
-                <select
-                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
-                  onChange={(evenement) => activer(evenement.target.value)}
-                  value={active?.id_liste ?? ''}
-                >
-                  {etat.listes.map((liste) => (
-                    <option key={liste.id_liste} value={liste.id_liste}>
-                      {liste.nom} ({liste.sorts.length})
-                    </option>
-                  ))}
-                </select>
-              </label>
-            ) : null}
             <button
-              className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit hover:bg-survol"
+              className={etat.listes.length === 0 ? BOUTON_PRIMAIRE : BOUTON_SECONDAIRE}
               onClick={() => creer(`${NOM_LISTE_DEFAUT} ${etat.listes.length + 1}`)}
               type="button"
             >
@@ -198,30 +223,19 @@ export function VueFavoris() {
             {active === null ? null : (
               <>
                 <button
-                  className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit hover:bg-survol"
+                  className={BOUTON_SECONDAIRE}
                   onClick={() => setRenommage(active.nom)}
                   type="button"
                 >
                   Renommer
                 </button>
-                <button
-                  className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit hover:bg-survol"
-                  onClick={telecharger}
-                  type="button"
-                >
+                <button className={BOUTON_SECONDAIRE} onClick={telecharger} type="button">
                   Exporter en JSON
-                </button>
-                <button
-                  className="rounded-jeton border border-desaccord bg-surface px-2.5 py-1 text-petit text-desaccord hover:bg-survol"
-                  onClick={() => setASupprimer(active.id_liste)}
-                  type="button"
-                >
-                  Supprimer la liste
                 </button>
               </>
             )}
             <button
-              className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit hover:bg-survol"
+              className={BOUTON_SECONDAIRE}
               onClick={() => fichier.current?.click()}
               type="button"
             >
@@ -235,6 +249,15 @@ export function VueFavoris() {
               ref={fichier}
               type="file"
             />
+            {active === null ? null : (
+              <button
+                className={`${BOUTON_DESACCORD} sm:ml-auto`}
+                onClick={() => setASupprimer(active.id_liste)}
+                type="button"
+              >
+                Supprimer la liste
+              </button>
+            )}
           </div>
 
           {renommage === null ? null : (
@@ -248,23 +271,20 @@ export function VueFavoris() {
                 setRenommage(null)
               }}
             >
-              <label className="flex items-center gap-1.5 text-corps">
+              <label className="flex min-h-cible items-center gap-1.5 text-corps">
                 Nouveau nom
                 <input
                   autoFocus
-                  className="rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
+                  className="min-h-cible rounded-jeton border border-bord-fort bg-surface px-2 py-1 text-corps"
                   onChange={(evenement) => setRenommage(evenement.target.value)}
                   value={renommage}
                 />
               </label>
-              <button
-                className="rounded-jeton border border-accent bg-accent-voile px-2.5 py-1 text-petit font-semibold text-accent"
-                type="submit"
-              >
+              <button className={BOUTON_PRIMAIRE} type="submit">
                 Renommer
               </button>
               <button
-                className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit"
+                className={BOUTON_SECONDAIRE}
                 onClick={() => setRenommage(null)}
                 type="button"
               >
@@ -281,12 +301,16 @@ export function VueFavoris() {
             >
               <p className="m-0 text-corps">
                 Supprimer « {etat.listes.find((l) => l.id_liste === aSupprimer)?.nom} » et
-                ses {etat.listes.find((l) => l.id_liste === aSupprimer)?.sorts.length} sorts
-                ? C’est définitif — exportez-la d’abord si vous hésitez.
+                ses {accorder(
+                  etat.listes.find((l) => l.id_liste === aSupprimer)?.sorts.length ?? 0,
+                  'sort',
+                  'sorts',
+                )}{' '}
+                ? C’est définitif. Exportez-la d’abord si vous hésitez.
               </p>
-              <div className="mt-2 flex gap-2">
+              <div className="mt-2 flex flex-wrap gap-2">
                 <button
-                  className="rounded-jeton border border-desaccord bg-desaccord-voile px-2.5 py-1 text-petit font-semibold text-desaccord"
+                  className={BOUTON_DESACCORD_PLEIN}
                   onClick={() => {
                     supprimer(aSupprimer)
                     setASupprimer(null)
@@ -296,7 +320,7 @@ export function VueFavoris() {
                   Supprimer définitivement
                 </button>
                 <button
-                  className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit"
+                  className={BOUTON_SECONDAIRE}
                   onClick={() => setASupprimer(null)}
                   type="button"
                 >
@@ -313,16 +337,16 @@ export function VueFavoris() {
               aria-label="Choisir le mode d’import"
             >
               <p className="m-0 text-corps">
-                Fichier lu. Rien n’a encore changé : que faut-il en faire ?
+                Fichier lu. Rien n’a encore changé. Que faut-il en faire ?
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <button
-                  className="rounded-jeton border border-accent bg-accent-voile px-2.5 py-1 text-petit font-semibold text-accent"
+                  className={BOUTON_PRIMAIRE}
                   disabled={active === null}
                   onClick={() => confirmerImport('fusionner')}
                   title={
                     active === null
-                      ? 'Aucune liste active à fusionner ; créez-en une ou importez comme nouvelle liste.'
+                      ? 'Aucune liste active à fusionner. Créez-en une ou importez comme nouvelle liste.'
                       : 'Ajoute les sorts à la liste active sans en retirer aucun'
                   }
                   type="button"
@@ -330,7 +354,7 @@ export function VueFavoris() {
                   Fusionner avec la liste active
                 </button>
                 <button
-                  className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit"
+                  className={BOUTON_SECONDAIRE}
                   onClick={() => confirmerImport('nouvelle')}
                   title="Ajoute les listes du fichier sans toucher à la liste active"
                   type="button"
@@ -338,7 +362,7 @@ export function VueFavoris() {
                   Créer de nouvelles listes
                 </button>
                 <button
-                  className="rounded-jeton border border-bord-fort bg-surface px-2.5 py-1 text-petit"
+                  className={BOUTON_SECONDAIRE}
                   onClick={() => setImportEnAttente(null)}
                   type="button"
                 >
@@ -359,9 +383,9 @@ export function VueFavoris() {
               contradiction this branch exists to prevent. */}
           {rapport === null || rapport.listes_lues > 0 ? null : (
             <p className="m-0 text-corps text-encre-douce" role="status">
-              Ce fichier ne contenait aucune liste
+              Ce fichier ne contenait aucune liste lisible
               {rapport.listes_ecartees > 0
-                ? ` lisible : ${rapport.listes_ecartees} liste(s) écartée(s) comme malformée(s)`
+                ? `. ${accorder(rapport.listes_ecartees, 'liste écartée comme malformée', 'listes écartées comme malformées')}`
                 : ''}
               . Rien n’a été ajouté.
             </p>
@@ -369,10 +393,11 @@ export function VueFavoris() {
 
           {rapport === null || rapport.listes_lues === 0 ? null : (
             <p className="m-0 text-corps text-encre-douce" role="status">
-              Import terminé : {rapport.ajoutes} id(s) ajouté(s), {rapport.deja} déjà
-              présent(s), {rapport.listes_lues} liste(s) lue(s)
+              Import terminé. {accorder(rapport.ajoutes, 'sort ajouté', 'sorts ajoutés')},{' '}
+              {accorder(rapport.deja, 'déjà présent', 'déjà présents')},{' '}
+              {accorder(rapport.listes_lues, 'liste lue', 'listes lues')}
               {rapport.listes_ecartees > 0
-                ? `, ${rapport.listes_ecartees} écartée(s) comme malformée(s)`
+                ? `, ${accorder(rapport.listes_ecartees, 'écartée comme malformée', 'écartées comme malformées')}`
                 : ''}
               .
             </p>
@@ -383,7 +408,10 @@ export function VueFavoris() {
               actions={[
                 {
                   libelle: 'Parcourir les sorts',
-                  primaire: true,
+                  // Primary only when a list is chosen and empty. With no list
+                  // at all, « Nouvelle liste » above already carries the one
+                  // accent-flat action this screen allows.
+                  primaire: active !== null,
                   surClic: () => routeur.push('/'),
                 },
               ]}
@@ -399,16 +427,18 @@ export function VueFavoris() {
           ) : (
             <>
               <p className="m-0 text-petit text-encre-douce">
-                {active.sorts.length} sort(s) dans « {active.nom} », modifiée le{' '}
-                {horodatageCourt(active.modifie_le)}
+                {accorder(active.sorts.length, 'sort', 'sorts')} dans « {active.nom} »,
+                modifiée le {horodatageCourt(active.modifie_le)}
               </p>
 
               {inconnus.length === 0 ? null : (
                 <p className="m-0 text-corps" role="status">
-                  <Badge ton="alerte">{inconnus.length} inconnu(s)</Badge> Ces
-                  identifiants ne sont plus dans le corpus — après une correction, un sort
-                  peut avoir changé d’identifiant. Ils sont <strong>conservés</strong>, pas
-                  supprimés : c’est vous qui les avez mis là.
+                  <Badge ton="alerte">
+                    {accorder(inconnus.length, 'identifiant inconnu', 'identifiants inconnus')}
+                  </Badge>{' '}
+                  Ces identifiants ne sont plus dans le corpus. Après une correction, un
+                  sort peut avoir changé d’identifiant. Ils sont <strong>conservés</strong>,
+                  pas supprimés. C’est vous qui les avez mis là.
                 </p>
               )}
 
