@@ -71,6 +71,14 @@ jobs:
       - name: Dérive des données
         run: npm run data:derive
 
+      # Parité Python/TypeScript des verdicts d'éligibilité aux dons — profil
+      # complet ici (1260 personnages), profil rapide (42) en local où le
+      # coût du profil complet ralentirait la boucle de rétroaction.
+      - name: Parité des dons (profil complet)
+        run: npm run dons:parite
+        env:
+          PROFIL: complet
+
   web:
     name: Web — tests, build, budgets, accessibilité
     runs-on: ubuntu-latest
