@@ -29,6 +29,10 @@ Dons (`CLAUDE.md`, `build/*/OUTPUT_*.md`) : ce sont les sources primaires, ce
 Skill en est la synthèse portable. En cas de doute sur un détail non repris
 ici, y retourner plutôt que d'inventer une règle par analogie.
 
+Côté `JDR_Spells`, l'absorption de cette documentation vit au §13 (« Le corpus
+des dons »), §14 et §15 de `CLAUDE.md` (racine du dépôt) : ce Skill en est la
+synthèse humaine, `CLAUDE.md` en est l'architecture actuelle fusionnée.
+
 ## Principe de sûreté
 
 > **Une sous-attribution est bien plus grave qu'une sur-attribution.**

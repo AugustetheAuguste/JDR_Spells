@@ -14,6 +14,11 @@ This Skill is scoped to the CLI runtime surface only. For the eligibility
 engine's five gating layers and their pitfalls, load `pf-dons-conventions`
 instead — this file doesn't repeat any of that.
 
+See CLAUDE.md §13 ("Le corpus des dons") at the repo root for how this
+package fits into the fused architecture (why Python parses and TypeScript
+evaluates, the parity guard, the gating layers) — this Skill only covers
+driving the CLI itself.
+
 ## Setup
 
 ```
