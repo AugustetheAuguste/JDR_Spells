@@ -4,12 +4,15 @@ import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
+import { ColonneStatut } from '@/components/dons/ColonneStatut'
+import { SelecteurPersonnageActif } from '@/components/compte/SelecteurPersonnageActif'
 import { PanneauFiltresDons } from '@/components/dons/PanneauFiltresDons'
 import { PastilleCout } from '@/components/dons/PastilleCout'
 import { VueArbre } from '@/components/dons/VueArbre'
 import { ChampRecherche } from '@/components/primitives/ChampRecherche'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import { type ColonneDense, TableDense } from '@/components/primitives/TableDense'
+import { usePersonnageActif } from '@/lib/compte/contexte-personnages'
 import { versEntreesFiltre } from '@/lib/donnees/dons-vers-entrees'
 import type { EntreeDon as EntreeDonBrut, IndexDons } from '@/lib/donnees/index-web-dons'
 import {
@@ -62,6 +65,7 @@ function etatDonsActif(etat: EtatUrlDons): boolean {
 export function VueDons() {
   const router = useRouter()
   const parametres = useSearchParams()
+  const { personnageActif } = usePersonnageActif()
 
   const [index, setIndex] = useState<IndexDons | null>(null)
   const [erreur, setErreur] = useState<string | null>(null)
@@ -267,11 +271,22 @@ export function VueDons() {
               don.cibles.length === 0 ? <span className="text-encre-faible">—</span> : don.cibles.join(', '),
           },
         ]),
-    // No status column at all without a character — the plan's explicit rule:
-    // the column is ABSENT, never present and filled with a guessed verdict.
-    // Wiring a real one is step 16's job; `MarqueurStatut` exists and is
-    // tested separately (`MarqueurStatut.test.tsx`) precisely so that step
-    // only has to add this one column.
+    // No status column at all without a character — the plan's explicit
+    // rule, kept even now that a character CAN be active: the column must
+    // still be absent for a visit with none selected, never present with a
+    // guessed verdict.
+    ...(personnageActif === null
+      ? []
+      : [
+          {
+            cle: 'statut',
+            entete: 'Statut',
+            cellule: (don: EntreeDon) => {
+              const brut = bruts.get(don.id)
+              return brut === undefined ? null : <ColonneStatut nomDon={brut.n} />
+            },
+          },
+        ]),
     ...(coutMasque
       ? []
       : [
@@ -287,9 +302,12 @@ export function VueDons() {
   return (
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Dons</h1>
-      <p className="mt-1 mb-4 text-corps text-encre-douce">
+      <p className="mt-1 mb-2 text-corps text-encre-douce">
         {index.dons.length} dons du corpus Pathfinder 1re édition en français.
       </p>
+      <div className="mb-4">
+        <SelecteurPersonnageActif />
+      </div>
 
       <div className="mb-3 flex gap-2" role="tablist" aria-label="Vue des dons">
         <button

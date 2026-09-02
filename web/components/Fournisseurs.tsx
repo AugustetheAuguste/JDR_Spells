@@ -1,6 +1,7 @@
 'use client'
 
 import { FournisseurSynchro } from '@/lib/compte/SynchroFavoris'
+import { FournisseurPersonnageActif } from '@/lib/compte/contexte-personnages'
 import { FournisseurSession } from '@/lib/compte/session'
 import { FournisseurFavoris } from '@/lib/favoris/contexte'
 
@@ -27,13 +28,23 @@ import type { ReactNode } from 'react'
  * beside them because both throw outside their provider. Favourites go inside the
  * session for the narrower reason: they do not read the session at all, so nesting
  * them keeps a sign-in from re-rendering more than it has to.
+ *
+ * `FournisseurPersonnageActif` (step 16) is the second consumer that
+ * `personnages.ts`'s own docstring anticipated for promoting the character
+ * roster into a context. It wraps `usePersonnages()` — left untouched, still
+ * a plain hook, still exercised directly by `personnages.test.tsx` with no
+ * provider — rather than replacing it, and sits inside `FournisseurSession`
+ * for the same reason `FournisseurSynchro` does: it calls `usePersonnages()`,
+ * which throws outside a session provider.
  */
 export function Fournisseurs({ children }: { readonly children: ReactNode }) {
   return (
     <FournisseurSession>
-      <FournisseurFavoris>
-        <FournisseurSynchro>{children}</FournisseurSynchro>
-      </FournisseurFavoris>
+      <FournisseurPersonnageActif>
+        <FournisseurFavoris>
+          <FournisseurSynchro>{children}</FournisseurSynchro>
+        </FournisseurFavoris>
+      </FournisseurPersonnageActif>
     </FournisseurSession>
   )
 }
