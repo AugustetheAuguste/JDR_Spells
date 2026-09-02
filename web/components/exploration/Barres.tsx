@@ -1,6 +1,7 @@
 'use client'
 
-import { COULEUR_TRANCHE_SANS_VALEUR, couleurTranche } from '@/lib/design/rampe'
+import { useThemeActif } from '@/components/exploration/theme-actif'
+import { COULEUR_TRANCHE_SANS_VALEUR, couleurCategorie } from '@/lib/design/rampe'
 import { formaterPart } from '@/lib/exploration/geometrie'
 import type { Tranche } from '@/lib/exploration/axes'
 
@@ -37,6 +38,8 @@ export function Barres({
   readonly multiple?: boolean
   readonly selection?: readonly string[]
 }) {
+  const theme = useThemeActif()
+
   return (
     <div>
       <ul className="m-0 flex list-none flex-col gap-0.5 p-0">
@@ -46,7 +49,7 @@ export function Barres({
           const couleur =
             tranche.valeur === null
               ? COULEUR_TRANCHE_SANS_VALEUR
-              : couleurTranche(rang, tranches.length)
+              : couleurCategorie(rang, theme)
           const barre = (
             <span
               aria-hidden="true"
@@ -87,7 +90,7 @@ export function Barres({
               <li className="px-2 py-1.5 text-petit text-encre-faible" key={tranche.libelle}>
                 {contenu}
                 <span className="mt-1 block text-micro">
-                  Non filtrable : aucun filtre ne nomme cette absence.
+                  Non filtrable, aucun filtre ne nomme cette absence.
                 </span>
               </li>
             )
@@ -98,7 +101,7 @@ export function Barres({
                 aria-checked={multiple ? coche : undefined}
                 aria-label={tranche.libelleAccessible}
                 className={[
-                  'block w-full rounded-jeton px-2 py-1.5 text-left text-corps text-encre hover:bg-survol',
+                  'block min-h-cible w-full rounded-jeton px-2 py-1.5 text-left text-corps text-encre hover:bg-survol',
                   coche ? 'bg-accent-voile' : '',
                 ].join(' ')}
                 onClick={() => surChoix(tranche.valeur as string)}

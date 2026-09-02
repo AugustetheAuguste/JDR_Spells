@@ -64,7 +64,7 @@ export function ChoixClasse({
               <button
                 aria-checked={coche}
                 className={[
-                  'flex w-full items-start justify-between gap-2 rounded-panneau border px-3 py-2.5 text-left',
+                  'flex min-h-cible w-full items-start justify-between gap-2 rounded-panneau border px-3 py-2.5 text-left',
                   coche
                     ? 'border-accent bg-accent-voile'
                     : 'border-bord bg-surface hover:border-accent hover:bg-accent-voile',
@@ -129,7 +129,7 @@ export function ChoixClasse({
 
       <div className="flex flex-wrap items-center gap-3 border-t border-bord pt-4">
         <button
-          className="rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
+          className="flex min-h-cible items-center rounded-jeton bg-accent px-3 py-1.5 text-petit font-semibold text-surface [html[data-theme=nuit]_&]:text-encre enabled:hover:bg-accent-survol disabled:cursor-not-allowed disabled:bg-bord-fort disabled:text-encre-faible"
           disabled={selection.length === 0}
           onClick={() => surClasses(selection)}
           type="button"
@@ -141,7 +141,7 @@ export function ChoixClasse({
             ? 'Cochez une ou plusieurs classes ci-dessus, puis validez.'
             : selection.length === 1
               ? '1 classe cochée.'
-              : `${selection.length} classes cochées — vous verrez l’union de leurs sorts.`}
+              : `${selection.length} classes cochées. Vous verrez l’union de leurs sorts.`}
         </p>
       </div>
 
@@ -153,7 +153,7 @@ export function ChoixClasse({
         >
           Explorer sans choisir de classe
         </button>{' '}
-        — les niveaux affichés seront alors le niveau le plus bas toutes classes
+        Les niveaux affichés seront alors le niveau le plus bas toutes classes
         confondues, qui n’est le niveau de personne en particulier.
       </p>
     </div>

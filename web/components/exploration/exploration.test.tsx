@@ -195,7 +195,7 @@ describe('ce que la source ne dit pas', () => {
     const item = screen.getByText(/Non renseigné/).closest('li')
     expect(item).not.toBeNull()
     expect(within(item as HTMLElement).queryByRole('button')).toBeNull()
-    expect(item?.textContent).toContain('non filtrable')
+    expect(item?.textContent).toContain('Non filtrable')
   })
 })
 

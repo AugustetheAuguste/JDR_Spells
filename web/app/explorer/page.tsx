@@ -6,8 +6,8 @@ import { VueExploration } from '@/components/exploration/VueExploration'
 export const metadata: Metadata = {
   title: 'Explorer',
   description:
-    'Choisir une classe, puis resserrer graphique après graphique — niveau, école, ' +
-    'jet de sauvegarde — et poser plusieurs tags à la fois, jusqu’au sort cherché. ' +
+    'Choisir une classe, puis resserrer graphique après graphique, niveau, école, ' +
+    'jet de sauvegarde, et poser plusieurs tags à la fois, jusqu’au sort cherché. ' +
     'Corpus extrait de pathfinder-fr.org.',
 }
 
