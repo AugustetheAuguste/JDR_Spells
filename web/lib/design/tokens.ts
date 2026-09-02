@@ -43,7 +43,20 @@ export type Ecole = (typeof ECOLES)[number]
  * A darker page background lowers every one of these ratios, so two of the nine
  * — `evocation` and `transmutation` — needed a darker shade to hold the 4.5:1
  * text floor; the other seven cleared it unchanged. See `design/DECISIONS.md` D8
- * for the recomputation and `design/GRIMOIRE_DESIGN_SYSTEM.md` §3 for the table. */
+ * for the recomputation and `design/GRIMOIRE_DESIGN_SYSTEM.md` §3 for the table.
+ *
+ * Night-theme decision (human arbitration, 2026-09-01, audit defect #18): these
+ * nine fills are NOT duplicated for `data-theme="nuit"`. `necromancie` (`#3D3646`)
+ * measures 1.53:1 on `COULEURS_NUIT.base` (`#1E1710`) — close to invisible. The
+ * fix kept is the simplest one: a 1px `bordFort` outline on the swatch, in both
+ * themes. `bordFort` already holds 3.84:1 on `base` nuit (the WCAG 1.4.11
+ * UI-boundary floor), so the outline makes the square visible again without
+ * retaring a single fill value — every day contrast figure above stays true.
+ * The label beside the swatch already carries the information (the swatch is
+ * `aria-hidden`, never text-on-fill), so 1.4.11 is not strictly engaged and this
+ * is a visibility fix, not an accessibility requirement. The outline itself is
+ * drawn in `PastilleEcole.tsx` (étape 15) — this comment records the decision,
+ * not the implementation. */
 export const COULEURS_ECOLES: Readonly<Record<Ecole, string>> = {
   abjuration: '#3A5A9B',
   divination: '#6B4FA8',
@@ -107,6 +120,22 @@ export const COULEURS = {
    * accuse. */
   desaccord: '#82451C',
   desaccordVoile: '#F8EEE7',
+
+  /** The third state of the tri-state filter (`FiltreTags.tsx`, `FiltreConditions.tsx`).
+   * Was referenced by both components as `border-oblige bg-oblige-voile text-oblige`
+   * without existing here — Tailwind dropped the class and the third state carried
+   * no colour, only the `‼` glyph (audit defect #2). Hue chosen by the same
+   * procedure that placed the accent: the nine school hues occupy 14°, 41°, 48°,
+   * 115°, 186°, 220°, 259°, 266°, 322°, `accent` sits at 348°, `desaccord` at 24°.
+   * The widest free interval left is 48°–115° (67° wide); `oblige` sits at 82°, an
+   * olive, 34° clear of `universel` (48°) and 33° clear of `invocation` (115°) —
+   * both above the 20° school floor. 94° clear of `accent`, 58° clear of
+   * `desaccord`, both above the 40° floor for tokens the three-state filter shows
+   * side by side. 4.62:1 on `base` (text-on-own-voile below). */
+  oblige: '#4F7114',
+  /** 4.75:1 against `oblige` above — a parchment tint, not a vivid fill, matching
+   * the shape of `accentVoile`/`desaccordVoile`. */
+  obligeVoile: '#E8EDDE',
 } as const
 
 /**
@@ -135,10 +164,16 @@ export const COULEURS_NUIT = {
 
   /** Lighter than the day accent, not darker: on a dark ground, "further from
    * the background" means lighter, and a hover state that darkened would sink
-   * toward the page rather than stand out. 4.77:1 on `base`; the button text
-   * that sits on it is `encre`-on-light, i.e. dark ink, not white — white-on-
-   * `accent` fails here (2.86:1) precisely because the accent had to be lifted
-   * to clear the background floor. */
+   * toward the page rather than stand out. 4.77:1 on `base`.
+   *
+   * Neither of this palette's two text-shaped tokens clears AA against it once
+   * actually measured (`lib/design/tokens.test.ts`, "texte du bouton primaire"):
+   * white measures 3.71:1, and `encre` — which reads as "dark ink" in prose but
+   * is itself a LIGHT token, `#ECE1C9`, sized for text on `base` — measures only
+   * 2.86:1. The one existing token that does clear AA here is `base` itself
+   * (4.77:1), the darkest tone in this palette. That is left as a measured fact
+   * for the button-text fix (étape 14) to act on, not resolved by adding a token
+   * this étape has no authority to invent. */
   accent: '#D16170',
   accentSurvol: '#D56D7B',
   accentVoile: '#34141A',
@@ -149,6 +184,16 @@ export const COULEURS_NUIT = {
    * own voile, and `#302117` (the "obvious" dark parchment shade) only reached
    * 4.08:1 — `#1F150F` reaches 4.72:1. */
   desaccordVoile: '#1F150F',
+
+  /** Same hue (82°) as the day `oblige`, lightened rather than darkened — the
+   * accent/desaccord pattern above applies again: on a dark ground, further from
+   * the background means lighter. 4.83:1 on `base` nuit. */
+  oblige: '#6F9037',
+  /** 4.74:1 against `oblige` nuit above — darker than `base` nuit itself, for the
+   * same reason `desaccordVoile` nuit sits darker than the "obvious" parchment
+   * shade: the voile must clear 4.5:1 against its own foreground colour, not just
+   * look like the other night voiles. */
+  obligeVoile: '#161C0D',
 } as const
 
 /**
@@ -240,6 +285,13 @@ export const DENSITE = {
   largeurMaxTexte: '68ch',
   /** The stated target, kept next to the value it justifies. */
   lignesVisiblesCible: 40,
+  /** Touch target floor, human arbitration 2026-09-01. A table row stays at
+   * `ligneHauteur` (32px) — 40 rows at 44px would be 1760px and the density
+   * budget above would fail, while WCAG 2.2 AA (2.5.8) floors at 24px and 32px
+   * already clears it. `cible` is for a real control (button, checkbox), not a
+   * row: the Skill's "40px on a real control, 44px the brief" gap is settled at
+   * 44px here. */
+  cible: '44px',
 } as const
 
 export const MOUVEMENT = {
