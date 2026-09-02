@@ -28,8 +28,8 @@ export function VueCompte() {
     <section>
       <h1 className="m-0 font-affichage text-titre1 font-semibold">Compte</h1>
       <p className="mt-1 mb-5 max-w-[68ch] text-corps text-encre-douce">
-        Les {MOTS.favoris} fonctionnent sans {MOTS.compte} : ils sont enregistrés dans ce
-        navigateur. Un {MOTS.compte} n’ajoute qu’une chose — retrouver les mêmes listes
+        Les {MOTS.favoris} fonctionnent sans {MOTS.compte}. Ils sont enregistrés dans ce
+        navigateur. Un {MOTS.compte} ajoute une seule chose, retrouver les mêmes listes
         sur un autre appareil. Il ne conditionne l’accès à aucun {MOTS.sort}.
       </p>
 
@@ -54,19 +54,22 @@ export function VueCompte() {
 function HorsService() {
   return (
     <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
-      <p className="m-0 font-affichage text-titre3 font-semibold">
+      <h2 className="m-0 font-affichage text-titre3 font-semibold">
         Aucun service de {MOTS.compte} n’est configuré pour ce site.
-      </p>
+      </h2>
       <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
-        Ce n’est pas une panne : les {MOTS.favoris} continuent de fonctionner dans ce
+        Ce n’est pas une panne. Les {MOTS.favoris} continuent de fonctionner dans ce
         navigateur, et le reste du site est identique. La {MOTS.synchronisation} demande
         deux variables au build,{' '}
         <code className="font-donnees text-petit">NEXT_PUBLIC_SUPABASE_URL</code> et{' '}
-        <code className="font-donnees text-petit">NEXT_PUBLIC_SUPABASE_ANON_KEY</code> —
+        <code className="font-donnees text-petit">NEXT_PUBLIC_SUPABASE_ANON_KEY</code>,
         voir <code className="font-donnees text-petit">web/.env.example</code>.
       </p>
       <p className="mt-3 mb-0">
-        <Link className="text-corps text-accent underline hover:text-accent-survol" href="/favoris">
+        <Link
+          className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
+          href="/favoris"
+        >
           Aller aux {MOTS.favoris}
         </Link>
       </p>
@@ -118,7 +121,7 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
         <p className="mt-1 mb-0 font-donnees text-corps text-encre">{courriel}</p>
         <p className="mt-2 mb-0">
           <Link
-            className="text-petit text-accent underline hover:text-accent-survol"
+            className="inline-flex min-h-cible items-center text-petit text-accent underline hover:text-accent-survol"
             href="/compte/changer-email"
           >
             Changer d’{MOTS.adresseEmail}
@@ -154,19 +157,19 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
               {rapport.listes_recues === 0 &&
               rapport.sorts_recus === 0 &&
               rapport.listes_supprimees === 0
-                ? 'La fusion n’a rien changé : les deux côtés étaient déjà identiques.'
+                ? 'La fusion n’a rien changé. Les deux côtés étaient déjà identiques.'
                 : [
                     rapport.listes_recues > 0
-                      ? `${rapport.listes_recues} liste(s) reçue(s) du compte`
+                      ? `${rapport.listes_recues} ${rapport.listes_recues === 1 ? 'liste reçue' : 'listes reçues'} du compte`
                       : null,
                     rapport.sorts_recus > 0
-                      ? `${rapport.sorts_recus} ${MOTS.sort}(s) ajouté(s) à vos listes`
+                      ? `${rapport.sorts_recus} ${rapport.sorts_recus === 1 ? MOTS.sort : `${MOTS.sort}s`} ajoutés à vos listes`
                       : null,
                     rapport.listes_fusionnees > 0
-                      ? `${rapport.listes_fusionnees} liste(s) présente(s) des deux côtés fusionnée(s)`
+                      ? `${rapport.listes_fusionnees} ${rapport.listes_fusionnees === 1 ? 'liste présente' : 'listes présentes'} des deux côtés fusionnées`
                       : null,
                     rapport.listes_supprimees > 0
-                      ? `${rapport.listes_supprimees} liste(s) retirée(s) ici, supprimée(s) depuis un autre appareil`
+                      ? `${rapport.listes_supprimees} ${rapport.listes_supprimees === 1 ? 'liste retirée' : 'listes retirées'} ici, supprimées depuis un autre appareil`
                       : null,
                   ]
                     .filter((partie) => partie !== null)
@@ -183,7 +186,7 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
             {MOTS.synchroniserMaintenant}
           </Bouton>
           <Link
-            className="rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
+            className="inline-flex min-h-cible items-center rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
             href="/favoris"
           >
             Voir mes listes
@@ -199,7 +202,7 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
         </p>
         <div className="mt-3">
           <Link
-            className="rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
+            className="inline-flex min-h-cible items-center rounded-jeton border border-bord-fort bg-surface px-3 py-2 text-corps font-medium text-encre hover:bg-survol"
             href="/compte/personnages"
           >
             Gérer mes personnages
@@ -222,9 +225,9 @@ function PanneauConnecte({ courriel }: { readonly courriel: string }) {
       <div className="rounded-panneau border border-bord bg-surface px-4 py-4">
         <h2 className="m-0 font-affichage text-titre3 font-semibold">Effacer mes données</h2>
         <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
-          Le bouton ci-dessous efface les listes du serveur et ferme la session ;{' '}
-          <strong>les listes de ce navigateur ne sont pas touchées</strong>. L’identifiant
-          de connexion, lui, reste actif — pour le retirer aussi, voir « Supprimer
+          Le bouton ci-dessous efface les listes du serveur et ferme la session.{' '}
+          <strong>Les listes de ce navigateur ne sont pas touchées.</strong> L’identifiant
+          de connexion, lui, reste actif. Pour le retirer aussi, voir « Supprimer
           définitivement mon {MOTS.compte} » plus bas.
         </p>
         {effacementDemande ? (
@@ -284,7 +287,7 @@ function PanneauSuppressionCompte({ courriel }: { readonly courriel: string }) {
       </h2>
       <p className="mt-2 mb-0 max-w-[68ch] text-corps text-encre-douce">
         Contrairement à « Effacer mes données » ci-dessus, ceci retire aussi{' '}
-        <strong>l’identifiant de connexion lui-même</strong> : vous ne pourrez plus vous
+        <strong>l’identifiant de connexion lui-même</strong>. Vous ne pourrez plus vous
         reconnecter avec {courriel}. Vos listes de ce navigateur ne sont pas touchées.
         C’est irréversible.
       </p>
@@ -393,7 +396,7 @@ function FormulaireIdentification() {
         <button
           aria-pressed={!inscription}
           className={[
-            'rounded-jeton border px-3 py-2 text-corps font-medium',
+            'min-h-cible rounded-jeton border px-3 py-2 text-corps font-medium',
             inscription
               ? 'border-bord-fort bg-surface text-encre hover:bg-survol'
               : 'border-accent bg-accent-voile font-semibold text-accent',
@@ -406,7 +409,7 @@ function FormulaireIdentification() {
         <button
           aria-pressed={inscription}
           className={[
-            'rounded-jeton border px-3 py-2 text-corps font-medium',
+            'min-h-cible rounded-jeton border px-3 py-2 text-corps font-medium',
             inscription
               ? 'border-accent bg-accent-voile font-semibold text-accent'
               : 'border-bord-fort bg-surface text-encre hover:bg-survol',
@@ -468,7 +471,7 @@ function FormulaireIdentification() {
             {inscription ? MOTS.creerUnCompte : MOTS.seConnecter}
           </Bouton>
           <Link
-            className="text-corps text-accent underline hover:text-accent-survol"
+            className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
             href="/compte/mot-de-passe-oublie"
           >
             {MOTS.motDePasseOublie} ?
@@ -478,7 +481,7 @@ function FormulaireIdentification() {
 
       <p className="mt-4 mb-0 max-w-[52ch] text-petit text-encre-faible">
         {inscription
-          ? 'La création demande une confirmation par e-mail : ouvrez le lien reçu avant de vous connecter.'
+          ? 'La création demande une confirmation par e-mail. Ouvrez le lien reçu avant de vous connecter.'
           : 'Vos listes de ce navigateur seront fusionnées avec celles du compte, sans en perdre aucune.'}
       </p>
     </div>

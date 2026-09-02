@@ -51,7 +51,10 @@ export function VueChangerEmail() {
             Changer d’{MOTS.adresseEmail} demande d’être connecté à un {MOTS.compte}.
           </Annonce>
           <p className="m-0">
-            <Link className="text-corps text-accent underline hover:text-accent-survol" href="/compte">
+            <Link
+              className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
+              href="/compte"
+            >
               Aller au {MOTS.compte}
             </Link>
           </p>
@@ -59,7 +62,7 @@ export function VueChangerEmail() {
       ) : (
         <>
           <p className="mt-1 mb-5 text-corps text-encre-douce">
-            {MOTS.adresseEmail[0]!.toUpperCase() + MOTS.adresseEmail.slice(1)} actuelle :{' '}
+            {MOTS.adresseEmail[0]!.toUpperCase() + MOTS.adresseEmail.slice(1)} actuelle,{' '}
             <span className="font-donnees">{utilisateur.email}</span>
           </p>
           <form
@@ -93,7 +96,10 @@ export function VueChangerEmail() {
       )}
 
       <p className="mt-5 mb-0">
-        <Link className="text-corps text-accent underline hover:text-accent-survol" href="/compte">
+        <Link
+          className="inline-flex min-h-cible items-center text-corps text-accent underline hover:text-accent-survol"
+          href="/compte"
+        >
           Retour au {MOTS.compte}
         </Link>
       </p>
