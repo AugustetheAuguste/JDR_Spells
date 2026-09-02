@@ -73,7 +73,7 @@ export function TableDense<T>({
   readonly tri?: EtatTriTable
 }) {
   return (
-    <div className="overflow-x-auto rounded-panneau border border-bord bg-surface">
+    <div className="rounded-panneau border border-bord bg-surface">
       <table className="w-full border-collapse text-corps">
         <caption className="sr-only">{legende}</caption>
         <thead>
@@ -96,14 +96,21 @@ export function TableDense<T>({
                       }
                     : {})}
                   className={[
-                    'sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5',
+                    // `top` reads the contract variable étape 09 publishes on the
+                    // results container, so this header sits below the sticky
+                    // search field rather than under it. The 0px fallback is what
+                    // keeps this étape green whether or not 09 has merged yet.
+                    'sticky z-10 border-b border-bord bg-surface px-2.5 py-1.5',
                     'text-petit font-semibold text-encre-douce',
                     colonne.alignement === 'droite' ? 'text-right' : 'text-left',
                     colonne.secondaire === true ? 'hidden sm:table-cell' : '',
                   ].join(' ')}
                   key={colonne.cle}
                   scope="col"
-                  {...(colonne.largeur === undefined ? {} : { style: { width: colonne.largeur } })}
+                  style={{
+                    top: 'var(--pf-decalage-collant, 0px)',
+                    ...(colonne.largeur === undefined ? {} : { width: colonne.largeur }),
+                  }}
                 >
                   {triable ? (
                     <button
@@ -114,13 +121,6 @@ export function TableDense<T>({
                         colonne.alignement === 'droite' ? 'justify-end' : 'justify-start',
                       ].join(' ')}
                       onClick={() => tri.surColonne(colonne.cle)}
-                      title={
-                        actif
-                          ? sens === 'asc'
-                            ? `Trié par ${colonne.entete}, croissant. Cliquez pour inverser.`
-                            : `Trié par ${colonne.entete}, décroissant. Cliquez pour revenir à l’ordre du tableau.`
-                          : `Trier par ${colonne.entete}`
-                      }
                       type="button"
                     >
                       {colonne.entete}
