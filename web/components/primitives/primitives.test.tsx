@@ -24,7 +24,29 @@ import { EtatVide } from '@/components/primitives/EtatVide'
 import { MarqueurDesaccord } from '@/components/primitives/MarqueurDesaccord'
 import { PastilleEcole } from '@/components/primitives/PastilleEcole'
 import { TableDense } from '@/components/primitives/TableDense'
-import { ECOLES, LIBELLES_ECOLES } from '@/lib/design/tokens'
+import { COULEURS, COULEURS_NUIT, ECOLES, LIBELLES_ECOLES } from '@/lib/design/tokens'
+
+/** WCAG 2.1 relative luminance and contrast — the same formula as
+ * `lib/design/tokens.test.ts`, kept local rather than imported because that
+ * file is étape 04's territory, not this one's. */
+function luminance(hex: string): number {
+  const canal = (paire: string): number => {
+    const valeur = Number.parseInt(paire, 16) / 255
+    return valeur <= 0.03928 ? valeur / 12.92 : ((valeur + 0.055) / 1.055) ** 2.4
+  }
+  const brut = hex.replace('#', '')
+  return (
+    0.2126 * canal(brut.slice(0, 2)) +
+    0.7152 * canal(brut.slice(2, 4)) +
+    0.0722 * canal(brut.slice(4, 6))
+  )
+}
+
+function contraste(a: string, b: string): number {
+  const la = luminance(a)
+  const lb = luminance(b)
+  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05)
+}
 
 describe('PastilleEcole', () => {
   it.each(ECOLES)('%s écrit son nom, la couleur n’est jamais seule', (ecole) => {
@@ -43,12 +65,59 @@ describe('PastilleEcole', () => {
     render(<PastilleEcole ecole={null} />)
     expect(screen.getByText('—')).toBeTruthy()
   })
+
+  it('le carré rend un contour bordFort — necromancie est invisible sans lui en thème nuit', () => {
+    // Audit defect #18: `necromancie` on the night `base` measures ~1.5:1,
+    // close to invisible. The nine fills are not duplicated
+    // for the night palette (`design/DECISIONS.md`); a 1px `bordFort` outline
+    // is the fix kept, in both themes, so this test does not gate on
+    // `data-theme` — the outline is unconditional.
+    const { container } = render(<PastilleEcole ecole="necromancie" />)
+    const carre = container.querySelector('[aria-hidden="true"]')
+    expect(carre?.className).toContain('border-bord-fort')
+  })
+
+  it('la variante puce rend aussi le contour', () => {
+    render(<PastilleEcole ecole="necromancie" variante="puce" />)
+    const carre = screen.getByRole('img', { name: LIBELLES_ECOLES.necromancie })
+    expect(carre.className).toContain('border-bord-fort')
+  })
 })
 
 describe('Badge', () => {
   it.each(['neutre', 'accent', 'alerte', 'donnees'] as const)('ton %s rend son contenu', (ton) => {
     render(<Badge ton={ton}>niveau 3</Badge>)
     expect(screen.getByText('niveau 3')).toBeTruthy()
+  })
+
+  // Badge always paints its own opaque fill (`bg-*` in every tone), so the
+  // background its text sits on is exactly the fill listed per tone below —
+  // never a caller's page background showing through. These are the only
+  // fills a `Badge` can actually receive; a hypothetical fifth fill is not
+  // measured because it does not exist (`CoucheEnrichissement.tsx`,
+  // `TableComparaison.tsx`, `VueFavoris.tsx`, `PanneauFiltres.tsx`,
+  // `TableSorts.tsx`, `MarqueurDesaccord.tsx` are the callers read to build
+  // this list).
+  it.each([
+    ['neutre', COULEURS.encreDouce, COULEURS.base, COULEURS_NUIT.encreDouce, COULEURS_NUIT.base],
+    [
+      'accent',
+      COULEURS.encreDouce,
+      COULEURS.accentVoile,
+      COULEURS_NUIT.encreDouce,
+      COULEURS_NUIT.accentVoile,
+    ],
+    [
+      'alerte',
+      COULEURS.desaccord,
+      COULEURS.desaccordVoile,
+      COULEURS_NUIT.desaccord,
+      COULEURS_NUIT.desaccordVoile,
+    ],
+    ['donnees', COULEURS.encre, COULEURS.surface, COULEURS_NUIT.encre, COULEURS_NUIT.surface],
+  ])('ton %s tient 4,5:1 sur son propre fond, jour et nuit', (_ton, fgJour, bgJour, fgNuit, bgNuit) => {
+    expect(contraste(fgJour, bgJour)).toBeGreaterThanOrEqual(4.5)
+    expect(contraste(fgNuit, bgNuit)).toBeGreaterThanOrEqual(4.5)
   })
 })
 

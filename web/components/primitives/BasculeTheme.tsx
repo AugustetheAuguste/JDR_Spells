@@ -38,10 +38,19 @@ export function BasculeTheme() {
     }
   }
 
+  // `aria-pressed`, not `aria-checked`: this is a single toggle button (one
+  // control, one boolean), not a member of a `switch`/`radiogroup` role, and
+  // `aria-pressed` is the attribute a plain `<button>` exposes for exactly that
+  // shape (WAI-ARIA "button (pressed)" pattern).
+  //
+  // `min-h-cible min-w-cible` puts the button at the 44px real-control floor
+  // (`DENSITE.cible`) the Skill sets — audit defect #7 lists this control by
+  // name. No transition is attached, so `prefers-reduced-motion` has nothing to
+  // gate here.
   return (
     <button
       aria-pressed={nuit}
-      className="border border-bord-fort px-2 py-1 text-petit text-encre hover:text-accent"
+      className="flex min-h-cible min-w-cible items-center justify-center border border-bord-fort px-2 py-1 text-petit text-encre hover:text-accent"
       onClick={basculer}
       type="button"
     >
