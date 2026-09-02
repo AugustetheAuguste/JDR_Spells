@@ -76,7 +76,7 @@ export function VueComparaison() {
     let vivant = true
     fetch('/data/index.json')
       .then(async (reponse) => {
-        if (!reponse.ok) throw new Error(`index.json : ${reponse.status}`)
+        if (!reponse.ok) throw new Error(`index.json a répondu ${reponse.status}`)
         return (await reponse.json()) as IndexWeb
       })
       .then((charge) => {
@@ -221,7 +221,7 @@ export function VueComparaison() {
               explication={
                 etat.classes.length === 0
                   ? 'Choisissez deux classes pour voir ce qu’elles partagent et à quel niveau chacune y accède.'
-                  : `${nomsChoisis[0]} est sélectionnée. Il en faut une seconde : une comparaison a besoin de deux listes.`
+                  : `${nomsChoisis[0]} est sélectionnée. Il en faut une seconde, une comparaison a besoin de deux listes.`
               }
               titre={
                 etat.classes.length === 0
@@ -254,13 +254,15 @@ export function VueComparaison() {
                 ) : null}
               </div>
 
-              <div className="flex flex-wrap items-baseline gap-2">
-                <span className="text-petit font-semibold text-encre-douce">Afficher :</span>
+              <fieldset className="m-0 flex flex-wrap items-center gap-2 border-0 p-0">
+                <legend className="w-full text-petit font-semibold text-encre-douce">
+                  Afficher
+                </legend>
                 {MODES.map((mode) => (
                   <button
                     aria-pressed={etat.mode === mode}
                     className={[
-                      'rounded-jeton border px-2.5 py-1 text-petit',
+                      'min-h-cible min-w-cible rounded-jeton border px-2.5 py-1 text-petit',
                       etat.mode === mode
                         ? 'border-accent bg-accent-voile font-semibold text-accent'
                         : 'border-bord-fort bg-surface text-encre hover:bg-survol',
@@ -272,7 +274,7 @@ export function VueComparaison() {
                     {LIBELLES_MODES[mode]}
                   </button>
                 ))}
-              </div>
+              </fieldset>
 
               {etat.mode === 'exclusifs' ? (
                 <div className="flex flex-col gap-4">
@@ -289,7 +291,7 @@ export function VueComparaison() {
                         </h2>
                         {propres.length === 0 ? (
                           <p className="m-0 text-corps text-encre-douce">
-                            Aucun : toutes les autres classes comparées reçoivent aussi ces
+                            Aucun. Toutes les autres classes comparées reçoivent aussi ces
                             sorts.
                           </p>
                         ) : (
@@ -342,7 +344,7 @@ export function VueComparaison() {
                       />
                       {lignes.length > visibles ? (
                         <button
-                          className="self-start rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
+                          className="min-h-cible self-start rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
                           onClick={() => setVisibles((actuel) => actuel + LIGNES_PAR_PAGE)}
                           type="button"
                         >

@@ -43,7 +43,7 @@ export function SelecteurClasses({
       </legend>
       <p className="mt-0 mb-2 max-w-[52ch] text-petit text-encre-douce">
         Deux ou trois classes. Au-delà de trois, la table gagne une colonne de
-        niveau par classe et les recoupements partiels se multiplient : elle
+        niveau par classe et les recoupements partiels se multiplient, elle
         cesse d&apos;être lisible.
       </p>
       {/* Two groups, the familiar classes first: alphabetical is the right order
@@ -62,14 +62,14 @@ export function SelecteurClasses({
                 <li key={classe.slug}>
                   <label
                     className={[
-                      "flex items-center gap-1.5 text-corps",
+                      "flex min-h-cible items-center gap-1.5 text-corps",
                       bloque
                         ? "cursor-not-allowed text-encre-faible"
                         : "cursor-pointer",
                     ].join(" ")}
                     {...(bloque
                       ? {
-                          title: `Trois classes au plus ; décochez-en une pour changer.`,
+                          title: `Trois classes au plus. Décochez-en une pour changer.`,
                         }
                       : {})}
                   >
