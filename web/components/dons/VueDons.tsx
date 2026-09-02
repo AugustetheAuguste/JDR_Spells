@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from 'next/navigation'
 
 import { PanneauFiltresDons } from '@/components/dons/PanneauFiltresDons'
 import { PastilleCout } from '@/components/dons/PastilleCout'
+import { VueArbre } from '@/components/dons/VueArbre'
 import { ChampRecherche } from '@/components/primitives/ChampRecherche'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import { type ColonneDense, TableDense } from '@/components/primitives/TableDense'
@@ -23,6 +24,17 @@ import { compterOptions, type EntreeDon, type FacetteDon, filtrerDons } from '@/
 
 const DELAI_FRAPPE = 80
 const LIGNES_PAR_PAGE = 200
+
+/** The tab this route shows — carried in the URL (`dons_onglet`), like the
+ * rest of this view's state, never mirrored in a `useState`. Not part of
+ * `EtatUrlDons`/`etat-url.ts`'s contract: that module is the frozen
+ * facet/cost/status vocabulary shared with `compterOptions`, and a tab
+ * selection is neither a facet nor something a count needs to know about. */
+type OngletDons = 'liste' | 'arbre'
+
+function ongletDe(parametres: URLSearchParams): OngletDons {
+  return parametres.get('dons_onglet') === 'arbre' ? 'arbre' : 'liste'
+}
 
 function etatDonsActif(etat: EtatUrlDons): boolean {
   return ecrireEtatDons(etat).toString() !== ''
@@ -54,6 +66,10 @@ export function VueDons() {
   const [index, setIndex] = useState<IndexDons | null>(null)
   const [erreur, setErreur] = useState<string | null>(null)
   const [visibles, setVisibles] = useState(LIGNES_PAR_PAGE)
+  // `null` = not yet known. The arbre tab stays disabled (not absent, not a
+  // crash) until this resolves — and forever, if Cytoscape genuinely is not
+  // in the bundle: the list underneath is never gated on this probe.
+  const [cytoscapeDisponible, setCytoscapeDisponible] = useState<boolean | null>(null)
 
   useEffect(() => {
     let vivant = true
@@ -66,6 +82,20 @@ export function VueDons() {
     charger().catch((cause: unknown) => {
       if (vivant) setErreur(cause instanceof Error ? cause.message : 'chargement impossible')
     })
+    return () => {
+      vivant = false
+    }
+  }, [])
+
+  useEffect(() => {
+    let vivant = true
+    import('cytoscape')
+      .then(() => {
+        if (vivant) setCytoscapeDisponible(true)
+      })
+      .catch(() => {
+        if (vivant) setCytoscapeDisponible(false)
+      })
     return () => {
       vivant = false
     }
@@ -103,11 +133,23 @@ export function VueDons() {
     setSaisie(etat.q)
   }
 
+  const onglet = ongletDe(parametres)
+
   function ecrire(suivant: EtatUrlDons): void {
-    const query = ecrireEtatDons(suivant).toString()
+    const params = ecrireEtatDons(suivant)
+    if (onglet === 'arbre') params.set('dons_onglet', 'arbre')
+    const query = params.toString()
     const cible = `/dons${query === '' ? '' : `?${query}`}` as `/dons?${string}` | '/dons'
     router.replace(cible, { scroll: false })
     setVisibles(LIGNES_PAR_PAGE)
+  }
+
+  function ecrireOnglet(suivant: OngletDons): void {
+    const params = ecrireEtatDons(etat)
+    if (suivant === 'arbre') params.set('dons_onglet', 'arbre')
+    const query = params.toString()
+    const cible = `/dons${query === '' ? '' : `?${query}`}` as `/dons?${string}` | '/dons'
+    router.replace(cible, { scroll: false })
   }
 
   useEffect(() => {
@@ -249,6 +291,33 @@ export function VueDons() {
         {index.dons.length} dons du corpus Pathfinder 1re édition en français.
       </p>
 
+      <div className="mb-3 flex gap-2" role="tablist" aria-label="Vue des dons">
+        <button
+          aria-selected={onglet === 'liste'}
+          className="rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre aria-selected:bg-accent-voile aria-selected:text-accent"
+          onClick={() => ecrireOnglet('liste')}
+          role="tab"
+          type="button"
+        >
+          Liste
+        </button>
+        <button
+          aria-selected={onglet === 'arbre'}
+          className="rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre aria-selected:bg-accent-voile aria-selected:text-accent disabled:cursor-not-allowed disabled:text-encre-faible"
+          disabled={cytoscapeDisponible !== true}
+          onClick={() => ecrireOnglet('arbre')}
+          role="tab"
+          title={
+            cytoscapeDisponible === false
+              ? 'L’arbre des prérequis n’est pas disponible dans ce navigateur.'
+              : undefined
+          }
+          type="button"
+        >
+          Arbre
+        </button>
+      </div>
+
       <div className="grid gap-5 lg:grid-cols-[17rem_1fr]">
         <aside aria-label="Filtres" className="flex flex-col gap-4">
           <PanneauFiltresDons
@@ -271,48 +340,59 @@ export function VueDons() {
         </aside>
 
         <div className="flex min-w-0 flex-col gap-3">
-          <ChampRecherche
-            aide="Le nom d’un don ou un mot de son résumé."
-            etiquette="Chercher un don"
-            nbResultats={retenus.length}
-            placeholder="Nom de don…"
-            surChangement={setSaisie}
-            valeur={saisie}
-          />
-
-          {retenus.length === 0 ? (
-            <EtatVide
-              actions={[
-                {
-                  libelle: etat.q !== '' ? 'Retirer la recherche' : 'Tout effacer',
-                  primaire: true,
-                  surClic: () => ecrire(etat.q !== '' ? { ...etat, q: '' } : ETAT_VIDE_DONS),
-                },
-              ]}
-              explication="Aucun don ne réunit tous les critères posés. Retirez le filtre le plus restrictif pour élargir la liste."
-              titre="Aucun don ne correspond"
+          {onglet === 'arbre' && cytoscapeDisponible === true ? (
+            <VueArbre
+              entrees={entrees}
+              filtres={filtres}
+              index={index}
+              surRetourListe={() => ecrireOnglet('liste')}
             />
           ) : (
             <>
-              <p className="m-0 text-petit text-encre-douce">
-                {retenus.length} {retenus.length === 1 ? 'don' : 'dons'}
-                {retenus.length > visibles ? ` — ${visibles} affichés` : ''}
-              </p>
-              <TableDense
-                cleDe={(don) => don.id}
-                colonnes={colonnes}
-                legende="Les dons Pathfinder 1e correspondant aux filtres posés"
-                lignes={retenus.slice(0, visibles)}
+              <ChampRecherche
+                aide="Le nom d’un don ou un mot de son résumé."
+                etiquette="Chercher un don"
+                nbResultats={retenus.length}
+                placeholder="Nom de don…"
+                surChangement={setSaisie}
+                valeur={saisie}
               />
-              {retenus.length > visibles ? (
-                <button
-                  className="self-center rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
-                  onClick={() => setVisibles((actuel) => actuel + LIGNES_PAR_PAGE)}
-                  type="button"
-                >
-                  Afficher {Math.min(LIGNES_PAR_PAGE, retenus.length - visibles)} dons de plus
-                </button>
-              ) : null}
+
+              {retenus.length === 0 ? (
+                <EtatVide
+                  actions={[
+                    {
+                      libelle: etat.q !== '' ? 'Retirer la recherche' : 'Tout effacer',
+                      primaire: true,
+                      surClic: () => ecrire(etat.q !== '' ? { ...etat, q: '' } : ETAT_VIDE_DONS),
+                    },
+                  ]}
+                  explication="Aucun don ne réunit tous les critères posés. Retirez le filtre le plus restrictif pour élargir la liste."
+                  titre="Aucun don ne correspond"
+                />
+              ) : (
+                <>
+                  <p className="m-0 text-petit text-encre-douce">
+                    {retenus.length} {retenus.length === 1 ? 'don' : 'dons'}
+                    {retenus.length > visibles ? ` — ${visibles} affichés` : ''}
+                  </p>
+                  <TableDense
+                    cleDe={(don) => don.id}
+                    colonnes={colonnes}
+                    legende="Les dons Pathfinder 1e correspondant aux filtres posés"
+                    lignes={retenus.slice(0, visibles)}
+                  />
+                  {retenus.length > visibles ? (
+                    <button
+                      className="self-center rounded-jeton border border-bord-fort bg-surface px-3 py-1.5 text-petit text-encre hover:bg-survol"
+                      onClick={() => setVisibles((actuel) => actuel + LIGNES_PAR_PAGE)}
+                      type="button"
+                    >
+                      Afficher {Math.min(LIGNES_PAR_PAGE, retenus.length - visibles)} dons de plus
+                    </button>
+                  ) : null}
+                </>
+              )}
             </>
           )}
         </div>

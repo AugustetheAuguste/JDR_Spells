@@ -48,7 +48,7 @@ import type {
   TablesMoteur,
   Verdict,
 } from './types.js'
-import { estGroupeOu } from './types.js'
+import { estGroupeOu } from './types'
 
 // ---------------------------------------------------------------------------
 // _normalize

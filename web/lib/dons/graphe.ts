@@ -11,10 +11,10 @@
  * precedent this split follows.
  */
 
-import { evaluerDon, nettoyerNomDon, normaliser } from './moteur.js'
+import { evaluerDon, nettoyerNomDon, normaliser } from './moteur'
 import type { CatalogueDons } from './moteur.js'
 import type { DonConditions, Personnage, ResultatEligibilite, TablesMoteur } from './types.js'
-import { estGroupeOu } from './types.js'
+import { estGroupeOu } from './types'
 
 const ACCESSIBLE = new Set(['eligible', 'manual_check'])
 
