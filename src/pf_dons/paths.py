@@ -23,6 +23,7 @@ CLASSES_DIR = DATA_DIR / "classes"
 RACES_DIR = DATA_DIR / "races"
 CONDITIONS_DIR = DATA_DIR / "conditions"
 CHARACTERS_DIR = DATA_DIR / "characters"
+CONVENTIONS_DIR = DATA_DIR / "conventions"
 
 # --- Dons : catalogue brut, pages scrapées, et tags dérivés ----------------
 DONS_CSV = DONS_DIR / "Dons.csv"
@@ -61,3 +62,6 @@ RACES = RACES_DIR / "races.json"
 
 # --- Conditions (prérequis) -----------------------------------------------
 PREREQ_GATING = CONDITIONS_DIR / "prereq_gating.json"
+
+# --- Conventions (registre de classes unifié, partagé avec le corpus sorts) -
+CLASSES_UNIFIEES = CONVENTIONS_DIR / "classes_unifiees.json"
