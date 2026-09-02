@@ -245,21 +245,32 @@ function verifierBrutEffectif(fixture: Fixture): void {
   }
 }
 
-/** Critère 6 : jointure par slug avec l'index de l'étape 05, ou skip documenté. */
-function verifierJointureIndexDons(fixture: Fixture): void {
-  if (!existsSync(CHEMIN_INDEX_DONS)) {
+/** Critère 6 : jointure par slug avec l'index de l'étape 05, ou skip documenté.
+ *
+ * Quand ce script valide un fichier réel (pas la fixture 24-dons figée), l'index
+ * à joindre n'est plus `web/fixtures/index_dons.json` (24 entrées) mais le
+ * fichier `index.json` frère du fichier moteur en cours de validation (l'export
+ * 08 écrit les deux dans le même répertoire, réel ou temporaire) — sinon la
+ * jointure comparerait toujours un catalogue complet à la fixture réduite et
+ * échouerait systématiquement dès que l'étape 05 est fusionnée. */
+function verifierJointureIndexDons(fixture: Fixture, cheminMoteur: string, estFixtureParDefaut: boolean): void {
+  const cheminIndex = estFixtureParDefaut
+    ? CHEMIN_INDEX_DONS
+    : resolve(dirname(cheminMoteur), 'index.json')
+
+  if (!existsSync(cheminIndex)) {
     console.log(
-      `SKIP : ${relative(RACINE, CHEMIN_INDEX_DONS)} absent (étape 05 non encore ` +
-        'fusionnée dans cette branche) — jointure par slug non vérifiée. ' +
-        'À activer dès la fusion de la vague 05 : comparer les Object.keys ' +
-        'de `fixture.conditions` à ceux de `index_dons.json`.',
+      `SKIP : ${relative(RACINE, cheminIndex)} absent (étape 05 non encore ` +
+        'fusionnée dans cette branche, ou fichier isolé sans index frère) — ' +
+        'jointure par slug non vérifiée. À activer dès la fusion de la vague 05 : ' +
+        'comparer les Object.keys de `fixture.conditions` à ceux de `index_dons.json`.',
     )
     return
   }
-  const indexDons = JSON.parse(readFileSync(CHEMIN_INDEX_DONS, 'utf8')) as {
-    readonly dons?: readonly { readonly slug: string }[]
+  const indexDons = JSON.parse(readFileSync(cheminIndex, 'utf8')) as {
+    readonly dons?: readonly { readonly s: string }[]
   }
-  const slugsIndex = new Set((indexDons.dons ?? []).map((d) => d.slug))
+  const slugsIndex = new Set((indexDons.dons ?? []).map((d) => d.s))
   const slugsFixture = new Set(Object.keys(fixture.conditions))
   const manquantsDansFixture = [...slugsIndex].filter((s) => !slugsFixture.has(s))
   const enTropDansFixture = [...slugsFixture].filter((s) => !slugsIndex.has(s))
@@ -317,7 +328,7 @@ function main(argv: readonly string[]): number {
   verifierGenresEtProficiency(fixture, exigences)
   verifierCasCouverts(fixture, exigences)
   verifierBrutEffectif(fixture)
-  verifierJointureIndexDons(fixture)
+  verifierJointureIndexDons(fixture, cheminFixture, argument === undefined)
 
   console.log(`fixture     : ${relative(RACINE, cheminFixture).replaceAll('\\', '/')}`)
   console.log(`dons        : ${Object.keys(fixture.conditions).length}`)

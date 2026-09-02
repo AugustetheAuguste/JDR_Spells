@@ -279,8 +279,12 @@ def build_full_contract() -> tuple[dict, list]:
                 if feat_opts and len(feat_opts) == len(
                     [o for o in req.options if not o.payload.get("fragment")]
                 ):
+                    # Slugifié comme `aretes`, jamais le nom brut : le parser
+                    # matche les noms de dons sans l'astérisque des
+                    # répétables, alors que le nom d'affichage la porte — un
+                    # nom brut ici pointerait dans le vide pour ces dons-là.
                     prerequis_dons.setdefault(slug, []).append(
-                        [o.payload["feat_name"] for o in feat_opts]
+                        [slugify(o.payload["feat_name"]) for o in feat_opts]
                     )
 
     races: dict[str, dict] = {}

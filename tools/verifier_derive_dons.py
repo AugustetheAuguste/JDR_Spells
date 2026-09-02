@@ -39,10 +39,10 @@ from pathlib import Path
 # not an error (a step upstream of this one might not have landed its data yet
 # in the exact same commit), it simply contributes zero pairs.
 GLOBS_SOURCE = (
-    "data/dons/**",
-    "data/classes/**",
-    "data/conditions/**",
-    "data/races/**",
+    "data/dons/**/*",
+    "data/classes/**/*",
+    "data/conditions/**/*",
+    "data/races/**/*",
 )
 FICHIER_SOURCE_UNIQUE = "data/conventions/classes_unifiees.json"
 
@@ -51,7 +51,7 @@ CHEMIN_ARTEFACT = "web/public/data/dons/DERIVE.json"
 # The re-export module named here does not exist yet in this wave — it is a
 # placeholder name consistent with the eventual export pipeline, not a command
 # that can be run today.
-COMMANDE_REEXPORT = "python tools/exporter_dons_web.py"
+COMMANDE_REEXPORT = "python tools/dons/exporter_web.py"
 
 
 class DeriveError(RuntimeError):
