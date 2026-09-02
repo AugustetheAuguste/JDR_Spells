@@ -29,15 +29,36 @@ const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..')
  * not claim a state it cannot know, and exploration because its charts are the only
  * place on the site where a control is drawn rather than written — a wedge that is
  * not a real button is exactly what axe should catch. */
-const ROUTES: readonly { readonly nom: string; readonly chemin: string }[] = [
-  { nom: 'navigation', chemin: 'index.html' },
-  { nom: 'fiche', chemin: 'sorts/detection-de-la-magie/index.html' },
-  { nom: 'comparaison', chemin: 'comparaison/index.html' },
-  { nom: 'favoris', chemin: 'favoris/index.html' },
-  { nom: 'exploration', chemin: 'explorer/index.html' },
+const THEMES_JOUR_SEUL = ['jour'] as const
+const THEMES_JOUR_ET_NUIT = ['jour', 'nuit'] as const
+
+const ROUTES: readonly {
+  readonly nom: string
+  readonly chemin: string
+  readonly themes: readonly ('jour' | 'nuit')[]
+}[] = [
+  { nom: 'navigation', chemin: 'index.html', themes: THEMES_JOUR_SEUL },
+  { nom: 'fiche', chemin: 'sorts/detection-de-la-magie/index.html', themes: THEMES_JOUR_SEUL },
+  { nom: 'comparaison', chemin: 'comparaison/index.html', themes: THEMES_JOUR_SEUL },
+  { nom: 'favoris', chemin: 'favoris/index.html', themes: THEMES_JOUR_SEUL },
+  { nom: 'exploration', chemin: 'explorer/index.html', themes: THEMES_JOUR_SEUL },
+  // 11_UI_DONS_SHEET : la fiche d'un don, avec ses deux blocs de conditions
+  // (source / curation) — le bloc en tirets et son étiquette textuelle sont
+  // exactement le genre de distinction qu'axe peut valider sans couleur.
+  // Vérifiée dans les deux thèmes : le mode sombre y est un mode de première
+  // classe, pas un après-coup (`CLAUDE.md`).
+  { nom: 'fiche-don', chemin: 'dons/vigilance/index.html', themes: THEMES_JOUR_ET_NUIT },
 ]
 
 const NIVEAUX = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] as const
+
+/** `data-theme="nuit"` is set on `<html>` by an inline script before paint
+ * (`tokens.ts`'s night palette); jsdom never runs that script, so this mirrors
+ * it by hand — the only way to axe-check the dark-mode markup this repository
+ * actually ships, rather than only ever checking the light default. */
+function appliquerTheme(document: Document, theme: 'jour' | 'nuit'): void {
+  if (theme === 'nuit') document.documentElement.setAttribute('data-theme', 'nuit')
+}
 
 function decrire(violation: Result): string {
   const cibles = violation.nodes
@@ -50,7 +71,7 @@ function decrire(violation: Result): string {
     `${violation.help} — ${cibles}${suite}`
 }
 
-async function analyser(html: string): Promise<AxeResults> {
+async function analyser(html: string, theme: 'jour' | 'nuit' = 'jour'): Promise<AxeResults> {
   // The prerendered markup references chunks that are not being served here, and
   // jsdom would log a resource-load failure per script. Silencing that keeps the
   // real findings visible.
@@ -62,6 +83,7 @@ async function analyser(html: string): Promise<AxeResults> {
   })
   const { window } = dom
   try {
+    appliquerTheme(window.document, theme)
     // axe-core reads globals off the window it is injected into.
     const fenetre = window as unknown as { axe?: typeof axe }
     ;(window as unknown as Record<string, unknown>).axe = axe
@@ -95,31 +117,39 @@ async function main(argv: readonly string[]): Promise<number> {
   const echecs: string[] = []
   let conseils = 0
 
+  let nbRoutesTestees = 0
+
   for (const route of ROUTES) {
     const chemin = join(racineOut, route.chemin)
     if (!existsSync(chemin)) {
       echecs.push(`route absente de la sortie : ${route.chemin}`)
       continue
     }
-    const resultats = await analyser(readFileSync(chemin, 'utf8'))
-    const bloquantes = resultats.violations.filter((violation) =>
-      violation.tags.some((tag) => (NIVEAUX as readonly string[]).includes(tag)),
-    )
-    const avis = resultats.violations.filter(
-      (violation) => !bloquantes.includes(violation),
-    )
-    conseils += avis.length
+    const html = readFileSync(chemin, 'utf8')
 
-    const verdict = bloquantes.length === 0 ? 'OK' : `${bloquantes.length} violation(s)`
-    console.log(
-      `${route.nom.padEnd(12)}: ${verdict}` +
-        (avis.length > 0 ? ` (+${avis.length} conseil(s) non bloquant(s))` : ''),
-    )
-    for (const violation of bloquantes) {
-      echecs.push(`${route.nom} — ${decrire(violation)}`)
-    }
-    for (const violation of avis) {
-      console.log(`  conseil : ${decrire(violation)}`)
+    for (const theme of route.themes) {
+      nbRoutesTestees += 1
+      const nomAffiche = route.themes.length > 1 ? `${route.nom} (${theme})` : route.nom
+      const resultats = await analyser(html, theme)
+      const bloquantes = resultats.violations.filter((violation) =>
+        violation.tags.some((tag) => (NIVEAUX as readonly string[]).includes(tag)),
+      )
+      const avis = resultats.violations.filter(
+        (violation) => !bloquantes.includes(violation),
+      )
+      conseils += avis.length
+
+      const verdict = bloquantes.length === 0 ? 'OK' : `${bloquantes.length} violation(s)`
+      console.log(
+        `${nomAffiche.padEnd(18)}: ${verdict}` +
+          (avis.length > 0 ? ` (+${avis.length} conseil(s) non bloquant(s))` : ''),
+      )
+      for (const violation of bloquantes) {
+        echecs.push(`${nomAffiche} — ${decrire(violation)}`)
+      }
+      for (const violation of avis) {
+        console.log(`  conseil : ${decrire(violation)}`)
+      }
     }
   }
 
@@ -130,7 +160,7 @@ async function main(argv: readonly string[]): Promise<number> {
   }
 
   console.log(
-    `\nOK — aucune violation WCAG A/AA sur ${ROUTES.length} routes` +
+    `\nOK — aucune violation WCAG A/AA sur ${nbRoutesTestees} route(s)×thème(s)` +
       (conseils > 0 ? `, ${conseils} conseil(s) signalé(s).` : '.') +
       '\nPortée : le HTML prérendu, sans JavaScript client — pas l’état après hydratation.',
   )
