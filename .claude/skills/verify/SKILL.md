@@ -132,3 +132,19 @@ Ce sont ceux que la CI ne voit pas :
      `?scope=local` et **jamais** `global`, qui éteindrait le téléphone.
    - Un parcours entièrement déconnecté doit voir `**/*.supabase.co/**` compter zéro
      requête. C'est ce qui prouve que monter le provider partout n'a rien armé.
+8. **Dons (fusion)** : `/dons` (liste/facettes) et `/dons/<slug>` (fiche d'un
+   don) sont des routes issues de la fusion avec le dépôt `Dons` et méritent le
+   même traitement runtime que `/sorts` — la CI ne voit, ici non plus, rien de
+   ce qui vit après l'hydratation.
+   - `/dons` : poser un filtre de facette (`?dons_effet=`, `?dons_cible=`…, cf.
+     `pf-dons-taxonomie` pour la liste des clés) et vérifier que le compteur
+     affiché sur chaque option prédit exactement le nombre de résultats après
+     clic — c'est l'invariant que `web/test_explorateur.js` (dépôt Dons)
+     garde en jsdom, à revérifier ici en navigateur réel.
+   - `/dons/<slug>` : le panneau de détail doit montrer tout ce qu'il annonce
+     (statut tri-état visible en bordure tirets + « ! », pas seulement en
+     couleur — voir `pf-web-design-system` §Dons) pour un don `manual_check`
+     et pour un don `eligible`.
+   - Onglet arbre : si Cytoscape échoue à charger, l'onglet doit se désactiver
+     proprement plutôt que planter la page — sonder en bloquant sa requête
+     réseau via `page.route()`.
