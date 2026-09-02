@@ -111,7 +111,15 @@ function scriptsCharges(html: string): readonly string[] {
 function peserChunks(racineOut: string, urls: readonly string[]): Poids {
   const poids: Poids[] = []
   for (const url of urls) {
-    const chemin = join(racineOut, url)
+    // The HTML carries the URL percent-encoded (`%5Bslug%5D`), but the file
+    // on disk is written under its literal name (`[slug]`) by every bundler
+    // this repo has run so far — webpack (used for `next build`, since it
+    // is the one whose `resolve.extensionAlias` makes `web/lib/dons/*.ts`'s
+    // `.js`-suffixed sibling imports resolve, see `next.config.ts`) and
+    // Turbopack (dev) alike. Joining the still-encoded URL as a path segment
+    // is simply wrong regardless of bundler; decoding first is what makes
+    // this check match the filesystem it is actually checking.
+    const chemin = join(racineOut, decodeURIComponent(url))
     if (!existsSync(chemin)) {
       echec(`script référencé mais absent de la sortie : ${url}`)
       continue

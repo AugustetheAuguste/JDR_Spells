@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
+import { SelecteurPersonnageActif } from '@/components/compte/SelecteurPersonnageActif'
 import { ChampRecherche } from '@/components/primitives/ChampRecherche'
 import { EtatVide } from '@/components/primitives/EtatVide'
 import { PanneauFiltres } from '@/components/navigation/PanneauFiltres'
@@ -215,6 +216,9 @@ export function VueNavigation() {
           Un niveau n’existe que relativement à une classe.
         </span>
       </p>
+      <div className="mb-4">
+        <SelecteurPersonnageActif />
+      </div>
 
       <div className="grid gap-5 lg:grid-cols-[17rem_1fr]">
         <aside className="flex flex-col gap-4">

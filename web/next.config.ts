@@ -25,6 +25,23 @@ const nextConfig: NextConfig = {
     // module resolution starts.
     root: import.meta.dirname,
   },
+  // `web/lib/dons/*.ts` (ported from `src/pf_dons/*.py` in step 09) imports its
+  // siblings with an explicit `.js` extension — the step-06/09 contract's own
+  // convention, unrelated to this app, and never worth diverging from since a
+  // Python->TS parity script (`scripts/vider_verdicts_ts.ts`) also runs that
+  // module graph directly under Node's own ESM resolver, which requires it.
+  // `tsc`'s `moduleResolution: "bundler"` already accepts a `.js` specifier
+  // resolving to a `.ts` file; webpack (the engine `next build` uses even
+  // though `next dev` defaults to Turbopack) does not, unless told to — this
+  // step is the first to pull that module graph into an actual page
+  // (`app/compte/personnages/page.tsx` -> `Emplacements.tsx` -> `moteur.ts`),
+  // so the gap was latent until now.
+  webpack(config) {
+    config.resolve.extensionAlias = {
+      '.js': ['.ts', '.tsx', '.js'],
+    }
+    return config
+  },
 }
 
 export default nextConfig
