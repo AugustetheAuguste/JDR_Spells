@@ -42,13 +42,13 @@ function JetonCondition({
   }
   return (
     <button
-      aria-label={`${libelle} : ${LIBELLES_ETATS_TAG[etat]}`}
+      aria-label={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
       className={[
-        'inline-flex cursor-pointer items-center gap-1.5 rounded-jeton border px-2 py-1 text-petit',
+        'inline-flex min-h-cible min-w-cible cursor-pointer items-center gap-1.5 rounded-jeton border px-2.5 py-1 text-petit',
         styles[etat],
       ].join(' ')}
       onClick={surClic}
-      title={`${libelle} : ${LIBELLES_ETATS_TAG[etat]}`}
+      title={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
       type="button"
     >
       <span aria-hidden="true" className="font-donnees no-underline">
@@ -87,7 +87,7 @@ export function FiltreConditions({
 
   return (
     <GroupeDepliant
-      aide="Un clic veut la condition (vert), un second l’exclut (orange), un troisième l’exige (rouge), un quatrième la relâche."
+      aide="Un clic pose la condition. Un deuxième l’exclut. Un troisième l’exige. Un quatrième la relâche. Les glyphes, + non filtrée, ✓ voulue, ✕ exclue, ‼ exigée."
       poses={poses}
       titre="Conditions infligées"
       total={conditionsConnues.length}

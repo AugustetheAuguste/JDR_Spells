@@ -45,7 +45,7 @@ function CaseJeton({
   return (
     <label
       className={[
-        'inline-flex cursor-pointer items-center gap-1.5 rounded-jeton border px-2 py-1 text-petit',
+        'inline-flex min-h-cible min-w-cible cursor-pointer items-center gap-1.5 rounded-jeton border px-2.5 py-1 text-petit',
         coche
           ? 'border-accent bg-accent-voile text-encre'
           : 'border-bord bg-surface text-encre-douce hover:bg-survol',
@@ -97,6 +97,7 @@ export function PanneauFiltres({
 
   const niveaux = Array.from({ length: NIVEAU_MAX + 1 }, (_, n) => n)
   const groupesClasses = grouperClasses(index)
+  const nomClasse = index.classes.find((classe) => classe.slug === etat.classe)?.nom ?? null
 
   return (
     <div className="flex flex-col gap-4">
@@ -110,7 +111,7 @@ export function PanneauFiltres({
           Classe
         </label>
         <select
-          className="w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-corps text-encre"
+          className="min-h-cible w-full rounded-jeton border border-bord-fort bg-surface px-2.5 py-1.5 text-corps text-encre"
           id="filtre-classe"
           onChange={(evenement) =>
             surClasse(evenement.target.value === '' ? null : evenement.target.value)
@@ -133,29 +134,35 @@ export function PanneauFiltres({
         </select>
         <p className="mt-1.5 mb-0 text-micro text-encre-faible">
           {etat.classe === null
-            ? 'Un sort n’a pas de niveau en soi : il est de niveau 2 pour le barde et 3 pour le magicien. Choisissez une classe pour lire un niveau qui veut dire quelque chose.'
+            ? 'Un sort n’a pas de niveau en soi. Il est de niveau 2 pour le barde et 3 pour le magicien. Choisissez une classe pour lire un niveau qui veut dire quelque chose.'
             : 'Les niveaux affichés sont ceux de cette classe.'}
         </p>
       </div>
 
       <GroupeDepliant poses={etat.niveaux.length} titre={libelleNiveau(index, etat.classe)} total={niveaux.length}>
-        {niveaux.map((niveau) => (
-          <CaseJeton
-            coche={etat.niveaux.includes(niveau)}
-            key={niveau}
-            libelle={`Niveau ${niveau}`}
-            surChangement={(coche) => {
-              const actuels = new Set(etat.niveaux)
-              if (coche) actuels.add(niveau)
-              else actuels.delete(niveau)
-              surEtat({ ...etat, niveaux: [...actuels].sort((a, b) => a - b) })
-            }}
-          >
-            <span aria-label={`Niveau ${niveau}`} className="font-donnees">
-              {niveau}
-            </span>
-          </CaseJeton>
-        ))}
+        {niveaux.map((niveau) => {
+          const libelleNiveauCase =
+            nomClasse === null
+              ? `Niveau ${niveau}, niveau le plus bas toutes classes`
+              : `Niveau ${niveau} pour ${nomClasse}`
+          return (
+            <CaseJeton
+              coche={etat.niveaux.includes(niveau)}
+              key={niveau}
+              libelle={libelleNiveauCase}
+              surChangement={(coche) => {
+                const actuels = new Set(etat.niveaux)
+                if (coche) actuels.add(niveau)
+                else actuels.delete(niveau)
+                surEtat({ ...etat, niveaux: [...actuels].sort((a, b) => a - b) })
+              }}
+            >
+              <span aria-hidden="true" className="font-donnees">
+                {niveau}
+              </span>
+            </CaseJeton>
+          )
+        })}
       </GroupeDepliant>
 
       <GroupeDepliant poses={etat.ecoles.length} titre="École" total={index.ecoles.length}>

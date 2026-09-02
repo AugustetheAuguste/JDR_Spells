@@ -39,10 +39,10 @@ function JetonTag({
   readonly libelle: string
   readonly surClic: () => void
 }) {
-  // Vert = voulu (OR), orange = exclu (NOT), rouge = exigé (AND). Three distinct
-  // colours because the three questions are shown side by side on the same
-  // control, and a reader has to tell them apart at a glance, not by re-reading
-  // the tooltip every time.
+  // Trois couleurs distinctes parce que les trois questions sont montrées côte
+  // à côte sur le même contrôle, et un lecteur doit les distinguer d'un coup
+  // d'œil, sans relire l'aide chaque fois. Le glyphe reste le porteur premier,
+  // la couleur ne fait que s'y ajouter (la couleur n'est jamais seule porteuse).
   const styles: Readonly<Record<EtatTag, string>> = {
     neutre: 'border-bord bg-surface text-encre-douce hover:bg-survol',
     inclus: 'border-accent bg-accent-voile text-encre',
@@ -57,13 +57,13 @@ function JetonTag({
   }
   return (
     <button
-      aria-label={`${libelle} : ${LIBELLES_ETATS_TAG[etat]}`}
+      aria-label={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
       className={[
-        'inline-flex cursor-pointer items-center gap-1.5 rounded-jeton border px-2 py-1 text-petit',
+        'inline-flex min-h-cible min-w-cible cursor-pointer items-center gap-1.5 rounded-jeton border px-2.5 py-1 text-petit',
         styles[etat],
       ].join(' ')}
       onClick={surClic}
-      title={`${libelle} : ${LIBELLES_ETATS_TAG[etat]}`}
+      title={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
       type="button"
     >
       <span aria-hidden="true" className="font-donnees no-underline">
@@ -116,10 +116,35 @@ export function FiltreTags({
           said which of them answered the same question, so the only way to use it
           was to read all thirty-five every time. */}
       <p className="mt-0 mb-2 text-micro text-encre-faible">
-        Un clic veut le tag (vert, au moins un tag voulu suffit), un second l’exclut
-        (orange, aucun tag exclu toléré), un troisième l’exige (rouge, tous les tags
-        exigés sont obligatoires), un quatrième le relâche.
+        Un clic pose le tag. Un deuxième l’exclut. Un troisième l’exige. Un
+        quatrième le relâche.
       </p>
+      <ul className="mt-0 mb-2 list-none pl-0 text-micro text-encre-faible">
+        <li>
+          <span aria-hidden="true" className="font-donnees">
+            +
+          </span>{' '}
+          non filtré
+        </li>
+        <li>
+          <span aria-hidden="true" className="font-donnees">
+            ✓
+          </span>{' '}
+          voulu, au moins un tag voulu suffit
+        </li>
+        <li>
+          <span aria-hidden="true" className="font-donnees">
+            ✕
+          </span>{' '}
+          exclu, aucun tag exclu toléré
+        </li>
+        <li>
+          <span aria-hidden="true" className="font-donnees">
+            ‼
+          </span>{' '}
+          exigé, tous les tags exigés sont obligatoires
+        </li>
+      </ul>
       <div className="flex flex-col gap-1">
         {groupes.map((groupe) => {
           const posesDuGroupe = groupe.tags.filter(

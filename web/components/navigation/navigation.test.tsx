@@ -167,9 +167,10 @@ describe('l’état d’URL', () => {
   it('restitue exactement l’état d’une URL collée', async () => {
     await monterVue('classe=druide&niveau=3&ecoles=enchantement')
     expect((screen.getByLabelText('Classe') as HTMLSelectElement).value).toBe('druide')
-    expect((screen.getByRole('checkbox', { name: 'Niveau 3' }) as HTMLInputElement).checked).toBe(
-      true,
-    )
+    expect(
+      (screen.getByRole('checkbox', { name: 'Niveau 3 pour Druide' }) as HTMLInputElement)
+        .checked,
+    ).toBe(true)
     expect(
       (screen.getByRole('checkbox', { name: /enchantement/i }) as HTMLInputElement).checked,
     ).toBe(true)
@@ -178,7 +179,7 @@ describe('l’état d’URL', () => {
 
   it('un ajustement de filtre passe par replace, sans entrée d’historique', async () => {
     await monterVue('classe=barde')
-    await userEvent.click(screen.getByRole('checkbox', { name: 'Niveau 2' }))
+    await userEvent.click(screen.getByRole('checkbox', { name: 'Niveau 2 pour Barde' }))
     expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=2', SANS_SAUT)
     expect(pousse).not.toHaveBeenCalled()
   })
@@ -443,7 +444,7 @@ describe('le désaccord de niveau', () => {
 describe('l’accessibilité', () => {
   it('rend les filtres atteignables au clavier, comme cases natives', async () => {
     await monterVue('')
-    for (const nom of ['Niveau 0', 'Composante V']) {
+    for (const nom of ['Niveau 0, niveau le plus bas toutes classes', 'Composante V']) {
       const case_ = screen.getByRole('checkbox', { name: nom })
       expect(case_.tagName).toBe('INPUT')
       expect(case_.getAttribute('type')).toBe('checkbox')
@@ -452,7 +453,7 @@ describe('l’accessibilité', () => {
 
   it('coche un filtre à la barre d’espace', async () => {
     await monterVue('classe=barde')
-    screen.getByRole('checkbox', { name: 'Niveau 1' }).focus()
+    screen.getByRole('checkbox', { name: 'Niveau 1 pour Barde' }).focus()
     await userEvent.keyboard(' ')
     expect(remplace).toHaveBeenCalledWith('/?classe=barde&niveau=1', SANS_SAUT)
   })
@@ -518,5 +519,55 @@ describe('le panneau de filtres, isolé', () => {
     const classe = screen.getByLabelText('Classe')
     const niveau = screen.getByRole('group', { name: /toutes classes/ })
     expect(classe.compareDocumentPosition(niveau) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+  })
+
+  it('aucun aria-label du panneau ne se réduit à un niveau nu, sans classe', async () => {
+    // Audit defect #17: `aria-label="Niveau 2"` says a level with no class, which
+    // has no meaning in this corpus — a spell is level 2 for the bard.
+    monterPanneau(ETAT_VIDE)
+    for (const element of document.querySelectorAll('[aria-label]')) {
+      expect(element.getAttribute('aria-label')).not.toMatch(/^Niveau \d+$/)
+    }
+  })
+
+  it('nomme la classe dans le libellé de chaque case de niveau, une classe posée', async () => {
+    monterPanneau({ ...ETAT_VIDE, classe: 'barde' })
+    expect(screen.getByRole('checkbox', { name: 'Niveau 0 pour Barde' })).toBeTruthy()
+  })
+})
+
+describe('le troisième état du filtre à trois états — un jeton `oblige`', () => {
+  it('porte des classes de couleur différentes de l’état exclu', async () => {
+    // Audit defect #2, checked at render rather than read off the source: the
+    // three states sit side by side on the same control and a reader tells them
+    // apart by more than the glyph alone.
+    // A group holding a posed tag starts open (`ouvertParDefaut`), so no click is
+    // needed here — and one would toggle it shut instead of opening it.
+    await monterVue('tags=%21bonus_chiffre')
+    const jetonOblige = screen.getByRole('button', { name: /^Bonus chiffré/ })
+    expect(jetonOblige.className).toContain('border-oblige')
+    expect(jetonOblige.className).toContain('bg-oblige-voile')
+    expect(jetonOblige.className).toContain('text-oblige')
+    expect(jetonOblige.className).not.toContain('border-desaccord')
+    expect(jetonOblige.className).not.toContain('bg-desaccord-voile')
+    expect(jetonOblige.className).not.toContain('text-desaccord')
+  })
+
+  it('l’aide des trois états ne nomme aucune couleur', async () => {
+    // Audit defect #8: the help used to say "vert", "orange", "rouge" — a claim
+    // a colour-blind reader cannot verify and a token rename makes silently false.
+    // Scoped to the tag and condition sections' own text, not the whole document:
+    // an unrelated word elsewhere on the page (e.g. "ouvert") must not fail this.
+    await monterVue('')
+    const groupeTags = screen.getByText(/^Tags$/).closest('div') as HTMLElement
+    const groupeConditions = screen
+      .getByRole('group', { name: /^Conditions infligées/ })
+      .closest('fieldset') as HTMLElement
+    for (const bloc of [groupeTags, groupeConditions]) {
+      const texte = bloc.textContent?.toLowerCase() ?? ''
+      for (const mot of ['vert', 'rouge', 'orange']) {
+        expect(texte).not.toContain(mot)
+      }
+    }
   })
 })

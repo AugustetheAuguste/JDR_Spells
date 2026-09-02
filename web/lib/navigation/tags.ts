@@ -28,10 +28,10 @@ export const PROCHAIN_ETAT_TAG: Readonly<Record<EtatTag, EtatTag>> = {
 /** Spoken and tooltip wording. Each names the state AND what a click does next:
  * a four-state control whose next step is invisible is a guessing game. */
 export const LIBELLES_ETATS_TAG: Readonly<Record<EtatTag, string>> = {
-  neutre: 'non filtré — cliquez pour vouloir ce tag',
-  inclus: 'voulu (au moins un tag voulu suffit) — cliquez pour l’exclure',
-  exclu: 'exclu (aucun sort exclu toléré) — cliquez pour l’exiger',
-  oblige: 'exigé (tous les tags exigés sont obligatoires) — cliquez pour relâcher',
+  neutre: 'non filtré, cliquez pour vouloir ce tag',
+  inclus: 'voulu, au moins un tag voulu suffit, cliquez pour l’exclure',
+  exclu: 'exclu, aucun sort exclu toléré, cliquez pour l’exiger',
+  oblige: 'exigé, tous les tags exigés sont obligatoires, cliquez pour relâcher',
 }
 
 export function etatDuTag(

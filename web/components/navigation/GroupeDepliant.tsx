@@ -43,7 +43,7 @@ export function GroupeDepliant({
       <legend className="mb-0 block w-full p-0 text-petit font-semibold text-encre-douce">
         <button
           aria-expanded={ouvert}
-          className="flex w-full cursor-pointer items-center gap-1.5 rounded-jeton border border-bord bg-surface px-2 py-1 text-left text-petit font-semibold text-encre hover:bg-survol"
+          className="flex min-h-cible w-full cursor-pointer items-center gap-1.5 rounded-jeton border border-bord bg-surface px-2.5 py-1 text-left text-petit font-semibold text-encre hover:bg-survol"
           onClick={() => setOuvert((actuel) => !actuel)}
           type="button"
         >
@@ -61,7 +61,7 @@ export function GroupeDepliant({
           {aide === undefined ? null : (
             <p className="mt-0 mb-1.5 text-micro text-encre-faible">{aide}</p>
           )}
-          <div className="flex flex-wrap gap-1.5 pl-1">{children}</div>
+          <div className="flex flex-wrap gap-2 pl-1">{children}</div>
         </div>
       ) : null}
     </fieldset>
