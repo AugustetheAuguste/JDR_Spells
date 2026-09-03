@@ -30,14 +30,29 @@ import {
  * cannot reach. The state rides on a glyph and on `aria-label` wording, never on
  * the colour alone.
  */
-function JetonTag({
+/** Exported so a second facet system — the dons panel, which does not share
+ * spells' "Tags" heading or `grouperTags` grouping — can reuse the three-state
+ * control itself without forking it. See `components/dons/FiltreFacetteDon.tsx`. */
+export function JetonTag({
   etat,
   libelle,
   surClic,
+  compte,
 }: {
   readonly etat: EtatTag
   readonly libelle: string
   readonly surClic: () => void
+  /**
+   * How many entries this option would keep if clicked (OR), computed by the
+   * caller — never recomputed here. Optional, and additive: the spell tag
+   * filter never passes it, so its rendering is unchanged.
+   *
+   * This is the visible half of `13_UI_DONS_LIST`'s counter-honesty invariant:
+   * the digit shown beside the label must equal the row count after the
+   * click, which is exactly what `compterOptions` already guarantees the
+   * caller can pass in truthfully.
+   */
+  readonly compte?: number
 }) {
   // Trois couleurs distinctes parce que les trois questions sont montrées côte
   // à côte sur le même contrôle, et un lecteur doit les distinguer d'un coup
@@ -55,21 +70,27 @@ function JetonTag({
     exclu: '✕',
     oblige: '‼',
   }
+  const suffixeCompte = compte === undefined ? '' : ` (${compte})`
   return (
     <button
-      aria-label={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
+      aria-label={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}${suffixeCompte}`}
       className={[
         'inline-flex min-h-cible min-w-cible cursor-pointer items-center gap-1.5 rounded-jeton border px-2.5 py-1 text-petit',
         styles[etat],
       ].join(' ')}
       onClick={surClic}
-      title={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}`}
+      title={`${libelle}, ${LIBELLES_ETATS_TAG[etat]}${suffixeCompte}`}
       type="button"
     >
       <span aria-hidden="true" className="font-donnees no-underline">
         {glyphes[etat]}
       </span>
       {libelle}
+      {compte === undefined ? null : (
+        <span aria-hidden="true" className="font-donnees text-encre-faible">
+          {compte}
+        </span>
+      )}
     </button>
   )
 }

@@ -12,12 +12,15 @@
     "check:data:reel": "tsx scripts/check_data_contract.ts web/public/data/index.json",
     "data:export": "python tools/exporter_web.py && npm run check:data:reel",
     "data:derive": "python tools/verifier_derive.py",
+    "dons:export": "python tools/dons/exporter_web.py",
+    "dons:verdicts": "python tools/dons/vider_verdicts.py --profil rapide -o tools/dons/verdicts_rapide.jsonl",
+    "dons:parite": "tsx scripts/dons_parite.ts",
     "web:build": "npm --prefix web run build",
     "web:typo": "tsx scripts/verifier_typographie.ts",
     "web:cibles": "tsx scripts/verifier_cibles.ts",
     "web:verifier": "tsx scripts/verifier_build.ts && tsx scripts/verifier_a11y.ts && tsx scripts/verifier_cibles.ts",
     "web:test": "npm --prefix web run test && npm --prefix web run lint && npm --prefix web run typecheck",
-    "verifier:tout": "npm run check:data:reel && npm run data:derive && npm run web:typo && npm run web:test && npm run web:build && npm run web:verifier"
+    "verifier:tout": "npm run check:data:reel && npm run data:derive && npm run web:typo && npm run web:test && npm run web:build && npm run web:verifier && npm run dons:parite"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

@@ -63,6 +63,12 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
               </Link>
               <Link
                 className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                href="/dons"
+              >
+                Dons
+              </Link>
+              <Link
+                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
                 href="/explorer"
               >
                 Explorer

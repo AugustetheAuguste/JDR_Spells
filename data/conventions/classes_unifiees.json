@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "classes": [
+    {
+      "slug": "alchimiste",
+      "nom": "Alchimiste",
+      "liste_sorts": "alchimiste",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "antipaladin",
+      "nom": "Antipaladin",
+      "liste_sorts": "antipaladin",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "arcaniste",
+      "nom": "Arcaniste",
+      "liste_sorts": "arcaniste-ensorceleur-magicien",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "barbare",
+      "nom": "Barbare",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "barde",
+      "nom": "Barde",
+      "liste_sorts": "barde",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "bretteur",
+      "nom": "Bretteur",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "cavalier",
+      "nom": "Cavalier",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "chaman",
+      "nom": "Chaman",
+      "liste_sorts": "chaman",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "chasseur",
+      "nom": "Chasseur",
+      "liste_sorts": "chasseur",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "chevalier",
+      "nom": "Chevalier",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "cinetiste",
+      "nom": "Cinétiste",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "clerc",
+      "nom": "Clerc",
+      "liste_sorts": null,
+      "lanceur": true,
+      "a_curer": true,
+      "raison_curation": "doublon suspecté de « pretre » ; Data/classes/class_proficiencies.json contient à la fois clerc, pretre et pretre combattant alors qu'en Pathfinder 1e francophone le clerc est le pretre. Aucune classe officielle « clerc » distincte du pretre n'est confirmée ; non tranché ici, à curer à la main."
+    },
+    {
+      "slug": "conjurateur",
+      "nom": "Conjurateur",
+      "liste_sorts": "conjurateur",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "druide",
+      "nom": "Druide",
+      "liste_sorts": "druide",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "enqueteur",
+      "nom": "Enquêteur",
+      "liste_sorts": null,
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "ensorceleur",
+      "nom": "Ensorceleur",
+      "liste_sorts": "arcaniste-ensorceleur-magicien",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "guerrier",
+      "nom": "Guerrier",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "hypnotiseur",
+      "nom": "Hypnotiseur",
+      "liste_sorts": "hypnotiseur",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "inquisiteur",
+      "nom": "Inquisiteur",
+      "liste_sorts": "inquisiteur",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "justicier",
+      "nom": "Justicier",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "lutteur",
+      "nom": "Lutteur",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "magicien",
+      "nom": "Magicien",
+      "liste_sorts": "arcaniste-ensorceleur-magicien",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "magus",
+      "nom": "Magus",
+      "liste_sorts": "magus",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "medium",
+      "nom": "Médium",
+      "liste_sorts": "medium",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "metamorphe",
+      "nom": "Métamorphe",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "moine",
+      "nom": "Moine",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "ninja",
+      "nom": "Ninja",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "occultiste",
+      "nom": "Occultiste",
+      "liste_sorts": "occultiste",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "oracle",
+      "nom": "Oracle",
+      "liste_sorts": "pretre-pretre-combattant-oracle",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "paladin",
+      "nom": "Paladin",
+      "liste_sorts": "paladin",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "pistolier",
+      "nom": "Pistolier",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "pretre",
+      "nom": "Prêtre",
+      "liste_sorts": "pretre-pretre-combattant-oracle",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "pretre combattant",
+      "nom": "Prêtre combattant",
+      "liste_sorts": "pretre-pretre-combattant-oracle",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "psychiste",
+      "nom": "Psychiste",
+      "liste_sorts": "psychiste",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "rodeur",
+      "nom": "Rôdeur",
+      "liste_sorts": null,
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "roublard",
+      "nom": "Roublard",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "samourai",
+      "nom": "Samouraï",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "sanguin",
+      "nom": "Sanguin",
+      "liste_sorts": "sanguin",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "scalde",
+      "nom": "Scalde",
+      "liste_sorts": null,
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "sorciere",
+      "nom": "Sorcière",
+      "liste_sorts": "sorciere",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "spirite",
+      "nom": "Spirite",
+      "liste_sorts": "spirite",
+      "lanceur": true,
+      "a_curer": false,
+      "raison_curation": null
+    },
+    {
+      "slug": "tueur",
+      "nom": "Tueur",
+      "liste_sorts": null,
+      "lanceur": false,
+      "a_curer": false,
+      "raison_curation": null
+    }
+  ]
+}

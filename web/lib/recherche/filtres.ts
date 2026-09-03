@@ -226,3 +226,291 @@ export function appliquerFiltresAuxResultats<R extends { readonly id: string }>(
     return sort !== undefined && retenir(sort, filtres)
   })
 }
+
+/*
+ * ---------------------------------------------------------------------------
+ * Dons (Pathfinder feats) — a second, disjoint filter domain.
+ *
+ * This is deliberately NOT layered onto `Filtres`/`EntreeSort` above: a don has
+ * nothing to do with a spell's level-per-class or its saving throw, and forcing
+ * one interface to describe both would only produce optional fields nobody
+ * fills. The one name the two vocabularies share, `bonus_chiffre` (present in
+ * both `effet_principal` for spells' tags and dons' `effet_principal`), stays
+ * harmless here precisely because it never has to cross into the same object —
+ * see `etat-url.ts` for why the URL keys carry a `dons_` prefix for the same
+ * reason.
+ * ---------------------------------------------------------------------------
+ */
+
+/** The eligibility verdict computed by the pf1_dons engine for one character.
+ * `manual_check` must always stay selectable: filtering it out by default would
+ * hide, from the player, exactly the feats the engine could not decide — the
+ * under-attribution the source repository's whole gating design fights. */
+export const STATUTS_DONS = ['eligible', 'manual_check', 'ineligible'] as const
+export type StatutDon = (typeof STATUTS_DONS)[number]
+
+/** The seven facet names carried in the URL (see `etat-url.ts`), independent of
+ * whether the underlying field on a `EntreeDon` is single- or multi-valued. */
+export type FacetteDon =
+  | 'effet'
+  | 'effet2'
+  | 'cible'
+  | 'contexte'
+  | 'activation'
+  | 'polyvalence'
+  | 'categorie'
+
+export const FACETTES_DONS: readonly FacetteDon[] = [
+  'effet',
+  'effet2',
+  'cible',
+  'contexte',
+  'activation',
+  'polyvalence',
+  'categorie',
+]
+
+/**
+ * Which facets carry more than one value per don.
+ *
+ * This is the one table whose omission produced the source repository's actual
+ * bug (`OUTPUT_defauts_du_graphe.md`): forgetting to mark `categorie_officielle`
+ * as multi-valued made a two-category don only ever match its first category,
+ * so a filter on its second category silently dropped it — the option looked
+ * empty when it was not. Declaring it here, and reading every facet through
+ * `champFacette` below rather than a bespoke scalar accessor, is what keeps that
+ * mistake from recurring.
+ */
+export const MULTIVALUEES: ReadonlySet<FacetteDon> = new Set(['effet2', 'cible', 'contexte', 'categorie'])
+
+/**
+ * One don's facet values, all read as plain names (never the index's integer
+ * codes — resolving those to names is the caller's job, at the boundary with
+ * the real `IndexDons`, exactly as `versFiltres` does for spells above).
+ */
+export interface EntreeDon {
+  readonly id: string
+  /** `effet_principal` — single-valued on a don. */
+  readonly effet: string | null
+  /** `effets_secondaires` — multi-valued. */
+  readonly effets2: readonly string[]
+  /** `cible_du_bonus` — multi-valued. */
+  readonly cibles: readonly string[]
+  /** `contexte` — multi-valued. */
+  readonly contextes: readonly string[]
+  /** `activation` — single-valued. */
+  readonly activation: string | null
+  /** `polyvalence` — single-valued; weak facet, 61% of dons are `conditionnel`. */
+  readonly polyvalence: string | null
+  /** `categorie_officielle` — multi-valued (e.g. « Blessant » is combat+sociale). */
+  readonly categories: readonly string[]
+  /** Slots to unlock, prerequisites included, or null if not computed for this
+   * character. */
+  readonly cout: number | null
+  readonly statut: StatutDon
+  /** Free text searched by `dons_q` — name plus short summary, typically. */
+  readonly texte: string
+}
+
+function champFacette(entree: EntreeDon, facette: FacetteDon): readonly string[] {
+  switch (facette) {
+    case 'effet':
+      return entree.effet === null ? [] : [entree.effet]
+    case 'effet2':
+      return entree.effets2
+    case 'cible':
+      return entree.cibles
+    case 'contexte':
+      return entree.contextes
+    case 'activation':
+      return entree.activation === null ? [] : [entree.activation]
+    case 'polyvalence':
+      return entree.polyvalence === null ? [] : [entree.polyvalence]
+    case 'categorie':
+      return entree.categories
+  }
+}
+
+/** The maximum cost accepted by `dons_cout` (`COUTS_MAX` in the source repository). */
+export const COUT_DONS_MAX = 5
+
+/**
+ * The three-state selection for every facet, plus cost and status.
+ *
+ * Each facet gets the same trio as spell tags (`Filtres.tags`/`tagsExclus`/
+ * `tagsObliges`): OR within `…`, NOT in `…Exclu(e)s`, AND in `…Obligé(e)s`.
+ */
+export interface FiltresDons {
+  readonly effets: readonly string[]
+  readonly effetsExclus: readonly string[]
+  readonly effetsObliges: readonly string[]
+  readonly effets2: readonly string[]
+  readonly effets2Exclus: readonly string[]
+  readonly effets2Obliges: readonly string[]
+  readonly cibles: readonly string[]
+  readonly ciblesExclues: readonly string[]
+  readonly ciblesObligees: readonly string[]
+  readonly contextes: readonly string[]
+  readonly contextesExclus: readonly string[]
+  readonly contextesObliges: readonly string[]
+  readonly activations: readonly string[]
+  readonly activationsExclues: readonly string[]
+  readonly activationsObligees: readonly string[]
+  readonly polyvalences: readonly string[]
+  readonly polyvalencesExclues: readonly string[]
+  readonly polyvalencesObligees: readonly string[]
+  readonly categories: readonly string[]
+  readonly categoriesExclues: readonly string[]
+  readonly categoriesObligees: readonly string[]
+  /** Maximum cost in slots, inclusive; null means unconstrained. */
+  readonly coutMax: number | null
+  readonly statuts: readonly StatutDon[]
+  readonly q: string
+}
+
+export const FILTRES_DONS_VIDES: FiltresDons = {
+  effets: [],
+  effetsExclus: [],
+  effetsObliges: [],
+  effets2: [],
+  effets2Exclus: [],
+  effets2Obliges: [],
+  cibles: [],
+  ciblesExclues: [],
+  ciblesObligees: [],
+  contextes: [],
+  contextesExclus: [],
+  contextesObliges: [],
+  activations: [],
+  activationsExclues: [],
+  activationsObligees: [],
+  polyvalences: [],
+  polyvalencesExclues: [],
+  polyvalencesObligees: [],
+  categories: [],
+  categoriesExclues: [],
+  categoriesObligees: [],
+  coutMax: null,
+  statuts: [],
+  q: '',
+}
+
+interface SelectionFacette {
+  readonly inclus: readonly string[]
+  readonly exclus: readonly string[]
+  readonly obliges: readonly string[]
+}
+
+function selectionFacette(filtres: FiltresDons, facette: FacetteDon): SelectionFacette {
+  switch (facette) {
+    case 'effet':
+      return { inclus: filtres.effets, exclus: filtres.effetsExclus, obliges: filtres.effetsObliges }
+    case 'effet2':
+      return {
+        inclus: filtres.effets2,
+        exclus: filtres.effets2Exclus,
+        obliges: filtres.effets2Obliges,
+      }
+    case 'cible':
+      return { inclus: filtres.cibles, exclus: filtres.ciblesExclues, obliges: filtres.ciblesObligees }
+    case 'contexte':
+      return {
+        inclus: filtres.contextes,
+        exclus: filtres.contextesExclus,
+        obliges: filtres.contextesObliges,
+      }
+    case 'activation':
+      return {
+        inclus: filtres.activations,
+        exclus: filtres.activationsExclues,
+        obliges: filtres.activationsObligees,
+      }
+    case 'polyvalence':
+      return {
+        inclus: filtres.polyvalences,
+        exclus: filtres.polyvalencesExclues,
+        obliges: filtres.polyvalencesObligees,
+      }
+    case 'categorie':
+      return {
+        inclus: filtres.categories,
+        exclus: filtres.categoriesExclues,
+        obliges: filtres.categoriesObligees,
+      }
+  }
+}
+
+/** Clear one facet's three-state selection, keeping the rest — used by
+ * `compterOptions` to apply every OTHER facet before counting this one's
+ * options, so a count always predicts exactly what clicking it would do. */
+function sansFacetteDon(filtres: FiltresDons, facette: FacetteDon): FiltresDons {
+  switch (facette) {
+    case 'effet':
+      return { ...filtres, effets: [], effetsExclus: [], effetsObliges: [] }
+    case 'effet2':
+      return { ...filtres, effets2: [], effets2Exclus: [], effets2Obliges: [] }
+    case 'cible':
+      return { ...filtres, cibles: [], ciblesExclues: [], ciblesObligees: [] }
+    case 'contexte':
+      return { ...filtres, contextes: [], contextesExclus: [], contextesObliges: [] }
+    case 'activation':
+      return { ...filtres, activations: [], activationsExclues: [], activationsObligees: [] }
+    case 'polyvalence':
+      return { ...filtres, polyvalences: [], polyvalencesExclues: [], polyvalencesObligees: [] }
+    case 'categorie':
+      return { ...filtres, categories: [], categoriesExclues: [], categoriesObligees: [] }
+  }
+}
+
+function correspondFacette(entree: EntreeDon, filtres: FiltresDons, facette: FacetteDon): boolean {
+  const valeurs = champFacette(entree, facette)
+  const { inclus, exclus, obliges } = selectionFacette(filtres, facette)
+  if (exclus.some((v) => valeurs.includes(v))) return false
+  if (obliges.length > 0 && !obliges.every((v) => valeurs.includes(v))) return false
+  if (inclus.length > 0 && !inclus.some((v) => valeurs.includes(v))) return false
+  return true
+}
+
+function retenirDon(entree: EntreeDon, filtres: FiltresDons): boolean {
+  for (const facette of FACETTES_DONS) {
+    if (!correspondFacette(entree, filtres, facette)) return false
+  }
+  if (filtres.coutMax !== null && (entree.cout === null || entree.cout > filtres.coutMax)) {
+    return false
+  }
+  if (filtres.statuts.length > 0 && !filtres.statuts.includes(entree.statut)) return false
+  const q = filtres.q.trim().toLowerCase()
+  if (q !== '' && !entree.texte.toLowerCase().includes(q)) return false
+  return true
+}
+
+/** Keep the dons matching `filtres`, in the order they came in. */
+export function filtrerDons(entrees: readonly EntreeDon[], filtres: FiltresDons): EntreeDon[] {
+  return entrees.filter((entree) => retenirDon(entree, filtres))
+}
+
+/**
+ * Count, for every value a don carries under `saufFacette`, how many dons would
+ * remain if that value were also selected — applying every OTHER facet exactly
+ * as it stands, never `saufFacette`'s own current selection.
+ *
+ * This is the invariant the source repository's `web/test_explorateur.js`
+ * guards and the one this step's tests must prove directly: a zero count is
+ * never returned (the option is simply absent from the map), and
+ * `compterOptions(...).get(v)` must equal the length of `filtrerDons` after
+ * adding `v` to `saufFacette`'s OR selection.
+ */
+export function compterOptions(
+  entrees: readonly EntreeDon[],
+  filtres: FiltresDons,
+  saufFacette: FacetteDon,
+): Map<string, number> {
+  const retenues = filtrerDons(entrees, sansFacetteDon(filtres, saufFacette))
+  const compte = new Map<string, number>()
+  for (const entree of retenues) {
+    for (const valeur of champFacette(entree, saufFacette)) {
+      compte.set(valeur, (compte.get(valeur) ?? 0) + 1)
+    }
+  }
+  return compte
+}

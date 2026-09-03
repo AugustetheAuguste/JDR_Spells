@@ -375,3 +375,65 @@ Il apparaît deux fois sur une fiche. En haut, sous le nom du sort, en `t_petit`
 couleur `accent`, souligné, libellé `Voir sur pathfinder-fr.org`. Et en pied de
 fiche, dans son bloc `Source`, ramené à une phrase. Ni en gris clair, ni derrière
 une icône, ni seulement en pied de page.
+
+## §Dons — l'explorateur de dons hérite ce système, avec trois ajouts
+
+L'explorateur de dons (`web/explorateur_dons.js`, `web/explorateur_dons.css`
+dans le dépôt Dons, migré côté `JDR_Spells` par la fusion) réutilise les jetons
+Grimoire ci-dessus tels quels — parchemin, encre, accent unique. Les trois
+règles qui suivent sont **spécifiques aux dons** et n'existaient pas avant leur
+fusion dans ce Skill ; elles n'annulent ni ne remplacent aucune valeur
+existante ci-dessus. Pour ce qui est *éligible*/*à vérifier*/*ineligible* du
+point de vue du moteur (pas du style), voir `pf-dons-conventions`.
+
+### 1. État tri-état du don — `manual_check` n'est pas une exception
+
+Un don a trois états visuels : `eligible`, `manual_check`, `acquis` (libellés
+français dans `pf-dons-taxonomie`, table `statut`). **`manual_check` est
+l'état majoritaire, pas l'exception** : 236 dons sur 459 pour un Guerrier de
+niveau 6 testé. Un style qui le traite comme un cas rare et discret rendrait la
+vue par défaut illisible sur plus de la moitié de ses lignes.
+
+| Règle | Détail |
+|---|---|
+| Porteur principal | **bordure en tirets** (`border-style: dashed`) sur la ligne ou la carte du don |
+| Porteur secondaire, obligatoire | un **« ! » textuel**, jamais une icône seule ni la couleur seule |
+| Interdit | distinguer `manual_check` d'`eligible` **uniquement** par une teinte — un lecteur daltonien doit pouvoir le lire, et la teinte seule échoue pour lui sur 51 % des lignes d'une vue typique |
+| `acquis` | traité comme un état à part, jamais fondu visuellement avec `eligible` (le joueur doit voir qu'il l'a déjà pris, pas qu'il pourrait le prendre) |
+
+### 2. Rampe ordinale de coût — recalculée pour le parchemin
+
+Le `cout` d'un don (nombre d'emplacements pour le décrocher, prérequis
+compris — voir la documentation de `exporter_arbre_dons.py` dans le dépôt
+Dons) est une **magnitude ordinale de 1 à 5**, donc une **rampe séquentielle à
+une seule teinte**, jamais une rampe catégorielle multi-teintes ni un
+dégradé (§ interdits ci-dessus).
+
+La rampe bleue existante dans `Dons/web/explorateur_dons.css` a été calibrée
+sur un fond quasi-blanc. Elle **ne tient pas le contraste sur le parchemin
+Grimoire** (`base` jour `#F1E7D2`, luminance relative 0,805) : exactement le
+même écart qui a forcé le recalcul d'`evocation` et `transmutation` plus haut
+dans ce Skill (§ Les neuf pastilles d'école) — un fond plus sombre que celui
+d'origine grignote la marge de contraste des teintes claires en haut de rampe.
+**Recalculer la rampe entière contre `base`/`surface` Grimoire dans les deux
+thèmes, plancher AA (3:1 pour un élément d'interface, 4,5:1 si un chiffre de
+coût s'écrit dans la case) avant tout usage, et consigner les ratios obtenus
+ici ou dans `tokens.ts`, jamais à l'œil.** `tokens.ts` reste l'unique autorité
+**machine** pour les hex retenus — ce paragraphe pose la contrainte, il ne fixe
+pas de valeurs numériques qui pourraient diverger du fichier. Le contrôle réel
+qui fait foi côté `JDR_Spells` est `web/lib/design/tokens.test.ts` (pas de
+script `validate_palette.js` dans ce dépôt) : tout ratio annoncé ici doit s'y
+vérifier, jamais l'inverse.
+
+### 3. Rôles de couleur pour Cytoscape — jamais le global implicite du navigateur
+
+Cytoscape n'interprète pas les variables CSS (`var(--accent)` etc.) : ses
+styles de nœuds/arêtes veulent une couleur résolue, littérale. Les couleurs du
+graphe doivent donc être lues depuis l'élément racine via
+**`global.getComputedStyle`**, jamais l'accès implicite `getComputedStyle` du
+navigateur seul — c'est ce qui garde le composant **rendable sous jsdom**
+(`web/test_explorateur.js` dans le dépôt Dons tourne sans navigateur réel).
+`tokens.ts` reste l'unique source de vérité des couleurs elles-mêmes, y compris
+pour le thème nuit : le graphe ne fixe jamais un hex en dur, il redemande la
+valeur courante à chaque rendu pour suivre un changement de thème sans
+réécriture de règle.

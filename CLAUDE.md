@@ -132,10 +132,21 @@ et vues compris, est hors ligne.
 |---|---|
 | `Alchimiste` en double dans `elements_to_do.json` (casse de l'URL) | dédoublonné par URL percent-décodée + minuscule, 20 → 19 ; toujours journalisé |
 | Blocs `Mythique` (`mythique` non nul, 287 sorts) | capturés, isolés dans leur clé ; **suppression prévue en phase ultérieure** |
-| Libellés multi-classes (`Arcaniste/Ensorceleur/Magicien`, `Prêtre/Prêtre combattant/Oracle`) | une page, un libellé combiné — **jamais scindés** |
+| Libellés multi-classes (`Arcaniste/Ensorceleur/Magicien`, `Prêtre/Prêtre combattant/Oracle`) | une page, un libellé combiné — **jamais scindés** (règle inchangée depuis l'origine ; son *objet* a changé, cf. note ci-dessous) |
 | Abréviations hors des 19 classes (`Réd`, …) | normales dans `niveaux`, listées dans `reports/08_enrich.md` |
 | Concordance liste ↔ page | 100 % des paires comparables ; divergences **constatées, jamais corrigées** |
 | `cache/html/` et `cache/index.jsonl` supprimés du dépôt (scraping clos, 2026-08-27) | non committés désormais ; `data/MANIFEST.json` ne les recense plus, régénérables par une relance de 03/06 |
+
+**Note (fusion des dons, étape 17) — l'objet du libellé combiné a changé, la
+règle non.** Depuis la fusion du corpus des dons (§12-§14), un libellé combiné
+comme `Arcaniste/Ensorceleur/Magicien` n'identifie plus « la classe du
+personnage » : cette responsabilité est passée au registre des 42 classes
+(`data/conventions/classes_unifiees.json`, §13), qui est la clé de jointure
+avec le corpus des dons. Le libellé combiné redevient ce qu'il a toujours été
+dans le corpus des sorts pris seul : **l'identité d'une liste de sorts** — une
+page du wiki, pas une classe de joueur. La règle « jamais scindés » tient donc
+toujours, mais elle porte sur un objet plus étroit qu'avant la fusion ; ne pas
+la lire comme « le libellé combiné = la classe ».
 
 ## 10. Enrichissement LLM — `data/enrichissements/` et la vue jointe
 
@@ -238,7 +249,203 @@ tactiles valides. Corriger cet écart est un choix de produit (tronquer les
 noms avec ellipsis, ou retirer le tri sous 400 px), délibérément laissé à
 l'arbitrage humain — ne pas le fermer en assouplissant `verifier_cibles.ts`.
 
-## 12. Interdictions de style
+## 12. Le corpus des dons — `src/pf_dons/`, `data/dons/`, `data/classes/`, `data/conditions/`
+
+Deuxième corpus fusionné dans ce dépôt à l'étape 17 : les dons (feats)
+Pathfinder 1e, importés du dépôt autonome `Dons` (`pf1_dons` → `pf_dons`).
+Pipeline : **CSV → conditions analysées → évaluation → résultats groupés.**
+`data/dons/Dons.csv` (1417 dons) est analysé par `src/pf_dons/parser.py` en
+`ParsedConditions` structurées, puis `src/pf_dons/engine.py` les évalue contre
+un `Character` donné. **`src/pf_dons/paths.py` est le seul endroit où
+l'emplacement d'un fichier de données des dons est écrit** — tout module,
+scraper ou test y importe ses chemins plutôt que de coder une chaîne relative.
+
+### Pourquoi Python analyse et TypeScript évalue
+
+Ce corpus est le seul du dépôt où l'évaluation elle-même s'exécute côté
+`web/` en TypeScript (`web/lib/dons/moteur.ts`), et non côté Python. Ce n'est
+pas une préférence de langage : **44 520 combinaisons classe × niveau × race**
+rendaient un précalcul intégral de tous les verdicts indisponible (~35 h de
+calcul, ~33 Go de sortie) — le web statique (§11) ne peut pas se permettre de
+committer ça, ni d'attendre 35 h à chaque export. `src/pf_dons/parser.py` ne
+voit donc jamais le personnage (il n'analyse que le texte `Conditions` du CSV,
+une fois, hors ligne) ; `src/pf_dons/engine.py` — qui, lui, voit le
+personnage — tient en 621 lignes pour **une seule** regex, l'essentiel du
+gating étant des tables de données curées à la main plutôt que du texte
+libre à ré-analyser à l'exécution. Le moteur TypeScript (`web/lib/dons/moteur.ts`)
+est un port fidèle de `engine.py`, gardé fidèle par le garde de parité (§14),
+et c'est lui qui tourne réellement dans le navigateur.
+
+### Le tri-état, jamais binaire
+
+Chaque exigence s'évalue en tri-état : `true` (satisfaite), `false` (non
+satisfaite), ou **`null` — « indéterminable », jamais « faux »**. Traiter `null`
+comme `false` produit une **régression** au sens du garde de parité (§14) :
+c'est exactement le bug injecté puis réparé pour prouver que ce garde
+fonctionne. Un don `manual_check` (au moins une exigence `null`, aucune
+`false`) reste **toujours visible** au joueur — le filtrer par défaut serait
+supprimer un don potentiellement accessible, contraire à la maxime ci-dessous.
+
+### Les cinq couches de gating curées à la main, plus un signal non retenu
+
+Les couches suivantes existent parce que le texte libre `Conditions` du CSV ne
+suffit pas à trancher automatiquement une classe de prérequis — chacune est
+une table de données relue et curée à la main, jamais dérivée par heuristique
+seule :
+
+1. **`data/classes/class_ability_map.json`** — quels mots-clés de capacité de
+   classe impliquent quelle(s) classe(s) (`implied_classes`), pour refuser
+   plutôt que laisser en `manual_check` un don d'une autre classe.
+2. **`data/conditions/prereq_gating.json`** — la nature de chaque prérequis
+   non attribuable à une seule classe : **9 genres bloquants**
+   (`racial_trait`, `creature_type`, `anatomy`, `spellcasting`, `deity`,
+   `alignment`, `mythic`, `class_ability`, `no_class_levels`) et **6 genres non
+   bloquants** (`class_ability_unmapped`, `proficiency`, `feat`, `background`,
+   `fragment`, `generic`) qui retombent en `manual_check`.
+3. **`data/classes/class_caster_info.json`** — quelles classes ont accès à la
+   magie (43 classes, hybrides/occultes incluses), pour refuser un don
+   magique de confiance haute à une classe non lanceuse et non couverte par un
+   trait racial.
+4. **`data/dons/feat_class_restriction.json`** — restriction de classe visible
+   uniquement dans le texte d'*avantage* d'un don, jamais dans ses
+   *Conditions* (cas d'école : « Ombre druidique »). Signal **très peu
+   spécifique** (1 vrai positif pour 49 candidats) : jamais appliqué
+   automatiquement, table entièrement curée à la main.
+5. **`data/classes/class_proficiencies.json`** — les 31 entrées `proficiency`
+   de la couche 2 (« maniement de X ») se répartissent en **18 bloquantes**
+   (arme ou bouclier nommé — « maniement du cimeterre ») et **13 non
+   bloquantes** (dépendent d'un choix du joueur que `Character` ne trace pas —
+   « l'arme choisie », « l'arme du dieu » — limite **assumée**, pas lacune).
+
+Deux tables de `class_proficiencies.json` sont recopiées des traits « Armes
+familières » déjà scrapés dans `data/races/races.json` :
+`RACE_WEAPON_PROFICIENCY` (l'elfe a l'arc long, le nain le marteau de guerre,
+indépendamment de la classe) et **`RACE_WEAPON_RECLASSIFICATION`** — le nain
+traite toute arme « naine » (ex. la dorn-dergar naine) comme une arme de
+guerre au lieu d'exotique, à condition que la classe ait les armes martiales ;
+sans ce mécanisme un Guerrier nain aurait été refusé à tort sur « Frappe de la
+vipère jaillissante ». Dans le même esprit de précision délibérée,
+`_ANATOMY_SYNONYMS` (couche 2, genre `anatomy`) n'utilise que des phrases
+**longues et non ambiguës** (« attaque de morsure ») plutôt que des synonymes
+courts (« langue » aurait faussement matché le trait universel « Langues »).
+
+**`chasseur de vampire` est absente de `class_proficiencies.json` : aucune
+classe officielle Pathfinder 1e de ce nom n'existe.** Le moteur la traite donc
+comme une classe **inconnue** (`manual_check`), jamais comme « aucune
+maîtrise » (`ineligible`) — une classe inconnue n'est pas une preuve d'absence.
+
+### `repair_benefits` — le CSV réparé avant filtrage
+
+127 des 1417 lignes du CSV portaient `#ERROR!` dans `Avantages` (jamais lu par
+le moteur) alors que leurs `Conditions` étaient intactes. Les filtrer aurait
+amputé 10 % du catalogue et troué le graphe de prérequis à ses nœuds les plus
+structurels. `repair_benefits` les répare depuis `data/dons/feat_details.json`
+avant tout filtrage : catalogue à **1417 dons, zéro prérequis de don
+pendant**, chaînes de profondeur 2 passées de 123 à **177**, de profondeur 3
+de 25 à **48**.
+
+### La maxime de sûreté
+
+> **Une sous-attribution est bien plus grave qu'une sur-attribution.**
+> Sur-attribuer ne coûte qu'un `manual_check` ; sous-attribuer produit un
+> `ineligible` faux, qui cache le don au joueur sans recours.
+
+Chaque couche de gating ci-dessus est gouvernée par cette maxime : en cas de
+doute entre bloquer et laisser en `manual_check`, on laisse en `manual_check`.
+
+### Limites connues, assumées et non des lacunes
+
+- **`Character.skill_rank` est optimiste** : sans rangs explicites il renvoie
+  le niveau du personnage, donc tous les prérequis de rangs de compétence
+  passent simultanément. Défendable pour un dépistage « ce personnage
+  *pourrait*-il qualifier ? » (PF1 n'a pas de malus hors-classe), mais cela
+  gonfle la liste des dons universels.
+- **6 entrées `class_ability_unmapped`** dans `prereq_gating.json` : capacité
+  de classe dont la curation n'a pas pu déterminer la classe.
+- **`polyvalence` vaut `conditionnel` pour 61 % des dons** (étiquetage
+  sémantique LLM) — une facette faible, à ne pas présenter comme discriminante.
+
+### Le double appel à `construireGraphe` — le correctif du bug d'origine
+
+L'explorateur de dons calcule ses trois grandeurs dérivées (`levier`, `voie`,
+`debloque`) **deux fois** : une fois sur le catalogue entier, une fois sur le
+sous-graphe atteignable affiché. Avant ce correctif, les trois étaient
+calculées sur le catalogue puis affichées à côté d'un graphe plus petit : tout
+ce que l'une comptait et que l'autre ne montrait pas devenait un mensonge à
+l'écran — **94 nœuds à levier surévalué, 13 nœuds sans arête affichée, 2 voies
+nommées d'après un don non retenu**. Le double appel les a ramenés à **0 / 0 /
+0** ; l'écart entre `levier` et `levier_catalogue` n'est plus caché mais
+affiché comme information. Raisonnement complet :
+`build/dons/OUTPUT_defauts_du_graphe.md`.
+
+Pour le raisonnement détaillé, couche par couche, avec les cas concrets
+corrigés (dont l'audit multi-classes qui a révélé le scalde marqué non-lanceur
+à tort, cf. §13) : `build/dons/OUTPUT_guerrier_audit_rules.md`,
+`build/dons/OUTPUT_multiclasse_niveau6.md`, `build/dons/OUTPUT_class_proficiencies_ground_truth.md`,
+`build/dons/OUTPUT_class_caster_ground_truth.md`, `build/dons/OUTPUT_taxonomie_semantique.md`,
+et `build/dons/OUTPUT_prerequis_de_la_page.md`. `build/dons/CLAUDE_dons_origine.md`
+est le `CLAUDE.md` du dépôt d'origine, conservé pour référence historique — ce
+§12 en est l'absorption dans l'architecture actuelle, pas une simple copie.
+
+## 13. Les deux corpus et leur clé de jointure
+
+Le corpus des sorts (§1-§11) a **19 classes** (`data/classes.json`, §1) comme
+ensemble canonique interne. Le corpus des dons distingue des classes plus
+nombreuses et plus fines (hybrides, occultes, variantes de source…).
+**`data/conventions/classes_unifiees.json` est le registre unifié des 42
+classes** qui sert de clé de jointure entre les deux corpus, lu par
+`src/pf_dons/classes_unifiees.py` (lecture seule — la seule façon légitime de
+l'écrire est l'outil de curation dédié, jamais une édition à la main ni une
+dérivation automatique dans `engine.py`).
+
+Chaque entrée porte, **indépendamment l'une de l'autre** : `lanceur` (bool,
+accès à la magie) et `liste_sorts` (le slug de la liste de sorts du corpus
+sorts, ou `null`). **Le scalde en est la preuve vivante** :
+`lanceur: true`, `liste_sorts: null` — il a accès à la magie (« tours de
+magie » dès le niveau 1, révélé par l'audit multi-classes du corpus des dons,
+qui avait initialement marqué le scalde à tort comme non-lanceur) sans pour
+autant posséder de liste de sorts dédiée dans le corpus des sorts. Ne jamais
+dériver l'un de l'autre : un module qui déduirait `lanceur` de la présence
+d'une `liste_sorts` (ou l'inverse) réintroduirait précisément le bug que le
+scalde a servi à détecter.
+
+**`clerc` est explicitement laissée `a_curer: true`, non tranchée.** Le
+corpus des dons contient à la fois `clerc`, `pretre` et `pretre combattant`
+alors qu'en Pathfinder 1e francophone le clerc est usuellement le prêtre ;
+aucune classe officielle « clerc » distincte du prêtre n'est confirmée. Plutôt
+que de deviner un mappage, l'entrée reste marquée à curer à la main
+(`raison_curation` porte l'explication) — conforme à la maxime de sûreté du
+§12 : deviner ici risquerait une sous-attribution silencieuse.
+
+## 14. Le garde de parité Python/TypeScript — `npm run dons:parite`
+
+Le corpus des dons est le seul du dépôt où la même logique existe
+**délibérément deux fois** : `src/pf_dons/engine.py` (référence) et
+`web/lib/dons/moteur.ts` (ce qui tourne réellement, §12). Le garde de parité
+les compare pour empêcher toute divergence silencieuse.
+
+`npm run dons:parite` (`scripts/dons_parite.ts`) vide les verdicts Python
+(`tools/dons/vider_verdicts.py`) et TypeScript (`scripts/vider_verdicts_ts.ts`)
+sur la même matrice de personnages, produit deux journaux **`verdicts.jsonl`**
+(un par moteur), puis les compare (`scripts/comparer_verdicts.ts`) selon une
+règle **asymétrique**, reflet direct de la maxime de sûreté du §12 :
+
+- **RÉGRESSION** (`eligible`/`manual_check` → `ineligible`) : échec dur,
+  **seuil zéro**.
+- **RELÂCHEMENT** (`ineligible` → `eligible`/`manual_check`) : échec, **seuil
+  zéro**.
+- **BRUIT** (seuls les motifs cités diffèrent, même statut final) :
+  avertissement, sortie 0 — jamais lissé pour faire passer le garde.
+
+Deux profils : `rapide` par défaut en local (42 personnages × 1417 dons,
+59 514 cellules), `complet` posé par la CI (`PROFIL=complet`, 1260 × 1417,
+1 785 420 cellules). Les deux tournent actuellement à 0 régression, 0
+relâchement. Détail, cause de divergence trouvée et corrigée (une conversion
+de clé de caractéristique dans le producteur Python, jamais dans
+`engine.py`/`parser.py`), et preuves d'échec/de couverture du garde :
+`build/dons/OUTPUT_parite_python_ts.md`.
+
+## 15. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.
