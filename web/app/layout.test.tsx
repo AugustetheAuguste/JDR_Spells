@@ -58,29 +58,37 @@ describe('app/layout.tsx', () => {
     expect(lignesSuspectes).toEqual([])
   })
 
-  it('porte exactement les 5 liens de navigation attendus', () => {
-    const nav = SOURCE.slice(SOURCE.indexOf('<nav'), SOURCE.indexOf('</nav>'))
-    const hrefs = [...nav.matchAll(/href="([^"]+)"/g)].map((m) => m[1])
-    expect(hrefs).toEqual(['/', '/explorer', '/comparaison', '/favoris', '/compte'])
+  it('porte exactement les 6 liens de navigation attendus, répartis en trois zones', () => {
+    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
+    const hrefs = [...entete.matchAll(/href="([^"]+)"/g)].map((m) => m[1])
+    expect(hrefs).toEqual([
+      '/',
+      '/explorer',
+      '/comparaison',
+      '/favoris',
+      '/dons',
+      '/compte',
+    ])
   })
 
-  it('porte les liens de navigation, la mention de source et la bascule à 44 px', () => {
-    const nav = SOURCE.slice(SOURCE.indexOf('<nav'), SOURCE.indexOf('</nav>'))
-    const liensNav = [...nav.matchAll(/<Link[\s\S]*?<\/Link>/g)]
-    expect(liensNav.length).toBe(5)
+  it('porte trois zones de navigation nommées', () => {
+    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
+    expect(entete).toContain('aria-label="Sections"')
+    expect(entete).toContain('aria-label="Favoris et dons"')
+    expect(entete).toContain('aria-label="Compte"')
+  })
+
+  it('porte les liens de navigation et la bascule de thème à 44 px, sans mention de source', () => {
+    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
+    const liensNav = [...entete.matchAll(/<Link[\s\S]*?<\/Link>/g)]
+    expect(liensNav.length).toBe(6)
     for (const lien of liensNav) {
       expect(lien[0]).toContain('min-h-cible')
       expect(lien[0]).toContain('min-w-cible')
     }
 
-    const enteteAvantFooter = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
-    // La mention de source et la bascule sont chacune dans un conteneur à
-    // cible tactile, même si la bascule elle-même reste hors périmètre
-    // (BasculeTheme.tsx appartient à l'étape 15).
-    const apresNav = enteteAvantFooter.slice(enteteAvantFooter.indexOf('</nav>'))
-    expect(apresNav).toContain('<BasculeTheme />')
-    const occurrencesCible = apresNav.match(/min-h-cible/g) ?? []
-    expect(occurrencesCible.length).toBeGreaterThanOrEqual(2)
+    expect(entete).toContain('<BasculeTheme />')
+    expect(entete).not.toContain('pathfinder-fr.org')
   })
 
   it("n'écrit aucun deux-points, point-virgule ou tiret cadratin en prose", () => {

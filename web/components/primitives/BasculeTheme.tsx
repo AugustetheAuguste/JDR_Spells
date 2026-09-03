@@ -47,14 +47,33 @@ export function BasculeTheme() {
   // (`DENSITE.cible`) the Skill sets — audit defect #7 lists this control by
   // name. No transition is attached, so `prefers-reduced-motion` has nothing to
   // gate here.
+  //
+  // The visible label text moved to `sr-only`: the header collapses this
+  // control to an icon (crescent moon in day mode, offered as the action to
+  // take), but the hit target stays 44px and the control stays named for a
+  // screen reader.
   return (
     <button
       aria-pressed={nuit}
-      className="flex min-h-cible min-w-cible items-center justify-center border border-bord-fort px-2 py-1 text-petit text-encre hover:text-accent"
+      className="flex min-h-cible min-w-cible items-center justify-center border border-bord-fort text-encre hover:text-accent"
       onClick={basculer}
       type="button"
     >
-      {nuit ? MOTS.themeJour : MOTS.themeNuit}
+      <svg
+        aria-hidden="true"
+        className="h-5 w-5"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        {nuit ? (
+          <circle cx="12" cy="12" r="5" />
+        ) : (
+          <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.273c-4.492 0-8.135-3.643-8.135-8.135 0-.712.093-1.403.267-2.06a.5.5 0 0 0-.67-.588A9.94 9.94 0 0 0 3.5 12.058c0 5.523 4.477 10 10 10a9.94 9.94 0 0 0 8.918-5.51.5.5 0 0 0-.676-.503Z" />
+        )}
+      </svg>
+      <span className="sr-only">
+        {nuit ? MOTS.themeJour : MOTS.themeNuit}
+      </span>
     </button>
   )
 }

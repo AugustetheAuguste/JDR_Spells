@@ -47,10 +47,11 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
         </a>
 
         <header className="border-b border-bord bg-surface">
-          <div className="mx-auto flex max-w-[1180px] flex-col gap-2 px-4 py-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+          <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-2 px-4 py-3">
             <p className="m-0 font-affichage text-titre3 font-semibold">
               Sorts Pathfinder 1e
             </p>
+
             <nav
               aria-label="Sections"
               className="flex flex-wrap items-center gap-2 text-corps"
@@ -60,12 +61,6 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
                 href="/"
               >
                 Sorts
-              </Link>
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/dons"
-              >
-                Dons
               </Link>
               <Link
                 className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
@@ -79,6 +74,12 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
               >
                 Comparer
               </Link>
+            </nav>
+
+            <nav
+              aria-label="Favoris et dons"
+              className="flex flex-wrap items-center gap-2 text-corps"
+            >
               <Link
                 className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
                 href="/favoris"
@@ -87,31 +88,22 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
               </Link>
               <Link
                 className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/compte"
+                href="/dons"
               >
-                Compte
+                Dons
               </Link>
             </nav>
-            <div className="flex flex-wrap items-center gap-2">
-              {/* Charte typographique vs. libellé figé du Skill : `MOTS.source`
-                  porte « source : pathfinder-fr.org », deux-points inclus. La
-                  charte l'interdit en prose ; on écrit ici le libellé sans
-                  éditer `MOTS` (hors périmètre, tokens.ts appartient à 04).
-                  Divergence signalée dans les constats pour l'étape 16. */}
-              <p className="m-0 flex min-h-cible items-center text-petit text-encre-douce">
-                Source pathfinder-fr.org,{' '}
-                <a
-                  className="ml-1 inline-flex min-h-cible items-center text-accent underline hover:text-accent-survol"
-                  href="https://www.pathfinder-fr.org/"
-                  rel="noreferrer"
-                  target="_blank"
+
+            <div className="flex items-center gap-2">
+              <nav aria-label="Compte">
+                <Link
+                  className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
+                  href="/compte"
                 >
-                  consulter le wiki
-                </a>
-              </p>
-              <div className="flex min-h-cible min-w-cible items-center justify-center">
-                <BasculeTheme />
-              </div>
+                  Compte
+                </Link>
+              </nav>
+              <BasculeTheme />
             </div>
           </div>
         </header>
@@ -137,7 +129,6 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
             >
               pathfinder-fr.org
             </a>
-            .
           </p>
         </footer>
       </body>
