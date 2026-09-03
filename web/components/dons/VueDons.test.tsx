@@ -30,6 +30,14 @@ vi.mock('next/navigation', () => ({
   useSearchParams: () => recherche,
 }))
 
+// `VueDons` mounts `SelecteurPersonnageActif`, which reads `useSession()`.
+// This suite is not about accounts — it stubs `statut: 'inconnu'`, the same
+// transient state the component already renders as nothing, to keep its
+// existing assertions about `VueDons` itself unaffected.
+vi.mock('@/lib/compte/session', () => ({
+  useSession: () => ({ statut: 'inconnu' }),
+}))
+
 vi.mock('next/link', () => ({
   default: ({
     children,
