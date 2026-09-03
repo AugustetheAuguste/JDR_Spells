@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 import { usePersonnageActif } from '@/lib/compte/contexte-personnages'
-import { useSession, type StatutSession } from '@/lib/compte/session'
+import { useSession } from '@/lib/compte/session'
 
 /**
  * The one selector shared by `/sorts` and `/dons` — proof, per the plan's
@@ -23,22 +23,13 @@ import { useSession, type StatutSession } from '@/lib/compte/session'
  */
 export function SelecteurPersonnageActif() {
   const { personnages, personnageActifId, selectionnerPersonnage } = usePersonnageActif()
-
   // `useSession()` throws outside `FournisseurSession` by design (see its own
-  // docstring), unlike `usePersonnageActif()`'s inert default — and
-  // `navigation.test.tsx`/`VueDons.test.tsx` mount this component without
-  // that provider. The try/catch is the same shape of degradation
-  // `contexte-personnages.tsx` already applies to `useRouter`/
-  // `useSearchParams`: a missing provider falls back to the pre-existing
-  // behaviour (dropdown if there is a roster, silence otherwise) instead of
-  // crashing the page.
-  let statut: StatutSession | null = null
-  try {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    statut = useSession().statut
-  } catch {
-    statut = null
-  }
+  // docstring) — `Fournisseurs.tsx` mounts it at the root, so this always
+  // resolves in production. Suites that mount this component in isolation
+  // (`navigation.test.tsx`, `VueDons.test.tsx`) stub the module instead of
+  // this component swallowing a missing provider — a try/catch here would
+  // hide the exact failure `useSession`'s docstring means to surface.
+  const { statut } = useSession()
 
   if (statut === 'connecte' && personnages.length === 0) {
     return (
