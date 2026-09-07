@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { BasculeTheme } from '@/components/primitives/BasculeTheme'
 import { MenuDeroulant } from '@/components/navigation/MenuDeroulant'
 import { NavigationMobile } from '@/components/navigation/NavigationMobile'
+import { RechercheGlobale } from '@/components/navigation/RechercheGlobale'
 import { ARBORESCENCE } from '@/lib/navigation/arborescence'
 import { MOTS } from '@/lib/design/tokens'
 
@@ -49,6 +50,14 @@ export function EnteteSite() {
         <NavigationMobile />
 
         <div className="flex items-center gap-2">
+          {/* Hidden below `md`: the burger panel (`NavigationMobile`) carries
+              its own copy in that range, and the desktop-nav breakpoint is
+              the right one to switch on — this zone otherwise stays visible
+              at every width (compte, theme), which would double the field on
+              a narrow viewport instead of relocating it. */}
+          <div className="hidden md:block">
+            <RechercheGlobale />
+          </div>
           <nav aria-label="Compte">
             <Link
               className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"

@@ -8,6 +8,9 @@ import { describe, expect, it, vi } from 'vitest'
 
 vi.mock('next/navigation', () => ({
   usePathname: () => '/',
+  // The panel now mounts `RechercheGlobale`, which reads `useRouter` even
+  // when no search is ever typed in this suite.
+  useRouter: () => ({ push: vi.fn() }),
 }))
 
 vi.mock('next/link', () => ({
