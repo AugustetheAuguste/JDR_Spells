@@ -49,3 +49,8 @@ build_artifacts/prompts/
 # Fiches de personnage des dons : donnees locales, comme dans le depot Dons
 # d'origine (pf_dons/paths.py::CHARACTERS_DIR).
 data/characters/
+
+# Pages de classe individuelles (cf. tools/regles/), sources brutes comme
+# cache/html/ : regenerable localement par `npm run regles:recuperer` ou
+# `npm run regles:import`, jamais committe, jamais une dependance du depot.
+cache/html_classes/
