@@ -54,3 +54,8 @@ data/characters/
 # cache/html/ : regenerable localement par `npm run regles:recuperer` ou
 # `npm run regles:import`, jamais committe, jamais une dependance du depot.
 cache/html_classes/
+
+# Pages de règles universelles (cf. tools/regles/recuperer_pages_regles.py),
+# sources brutes régénérables localement par
+# `python tools/regles/recuperer_pages_regles.py`, jamais committées.
+cache/html_regles/
