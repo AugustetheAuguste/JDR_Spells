@@ -15,12 +15,16 @@
     "dons:export": "python tools/dons/exporter_web.py",
     "dons:verdicts": "python tools/dons/vider_verdicts.py --profil rapide -o tools/dons/verdicts_rapide.jsonl",
     "dons:parite": "tsx scripts/dons_parite.ts",
+    "regles:recuperer": "python tools/regles/recuperer_pages_classes.py",
+    "regles:import": "python tools/regles/importer_cache_classes.py",
+    "regles:export": "python tools/regles/exporter_web.py && npm run regles:verifier",
+    "regles:verifier": "tsx scripts/check_contrat_regles.ts",
     "web:build": "npm --prefix web run build",
     "web:typo": "tsx scripts/verifier_typographie.ts",
     "web:cibles": "tsx scripts/verifier_cibles.ts",
     "web:verifier": "tsx scripts/verifier_build.ts && tsx scripts/verifier_a11y.ts && tsx scripts/verifier_cibles.ts",
     "web:test": "npm --prefix web run test && npm --prefix web run lint && npm --prefix web run typecheck",
-    "verifier:tout": "npm run check:data:reel && npm run data:derive && npm run web:typo && npm run web:test && npm run web:build && npm run web:verifier && npm run dons:parite"
+    "verifier:tout": "npm run check:data:reel && npm run regles:verifier && npm run data:derive && npm run web:typo && npm run web:test && npm run web:build && npm run web:verifier && npm run dons:parite"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
