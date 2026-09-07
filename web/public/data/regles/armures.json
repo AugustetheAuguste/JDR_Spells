@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "version": 1,
+    "genere_le": "2026-09-07",
+    "sources": [
+      {
+        "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%C3%A9capitulatif%20des%20armures.ashx",
+        "page": "Tableau récapitulatif des armures",
+        "lu_le": "2026-09-07"
+      }
+    ],
+    "outil": "tools/regles/parser_tables_universelles.py"
+  },
+  "donnees": {
+    "armures": [
+      {
+        "nom": "Armure cérémonielle de soie*",
+        "categorie": "legere",
+        "prix": "30",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "0%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "2"
+      },
+      {
+        "nom": "Armure de bois",
+        "categorie": "legere",
+        "prix": "20",
+        "bonus_armure": "+3",
+        "dex_max": "+3",
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Armure de cuir",
+        "categorie": "legere",
+        "prix": "10",
+        "bonus_armure": "+2",
+        "dex_max": "+6",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "10%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "7,5"
+      },
+      {
+        "nom": "Armure de cuir cloutée",
+        "categorie": "legere",
+        "prix": "25",
+        "bonus_armure": "+3",
+        "dex_max": "+5",
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "10"
+      },
+      {
+        "nom": "Armure de feuilles",
+        "categorie": "legere",
+        "prix": "500",
+        "bonus_armure": "+3",
+        "dex_max": "+5",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "10"
+      },
+      {
+        "nom": "Armure de parade",
+        "categorie": "legere",
+        "prix": "25",
+        "bonus_armure": "+3",
+        "dex_max": "+5",
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "10"
+      },
+      {
+        "nom": "Armure en bois de rose",
+        "categorie": "legere",
+        "prix": "50",
+        "bonus_armure": "+2",
+        "dex_max": "+6",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "10%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "7,5"
+      },
+      {
+        "nom": "Armure lamellaire en cuir*",
+        "categorie": "legere",
+        "prix": "60",
+        "bonus_armure": "+4",
+        "dex_max": "+3",
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "20%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Armure matelassée",
+        "categorie": "legere",
+        "prix": "5",
+        "bonus_armure": "+1",
+        "dex_max": "+8",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "5"
+      },
+      {
+        "nom": "Chemise de mailles",
+        "categorie": "legere",
+        "prix": "100",
+        "bonus_armure": "+4",
+        "dex_max": "+4",
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "20%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Cuirasse lamellaire*",
+        "categorie": "legere",
+        "prix": "15",
+        "bonus_armure": "+2",
+        "dex_max": "+4",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "4"
+      },
+      {
+        "nom": "Haramaki*",
+        "categorie": "legere",
+        "prix": "3",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "0%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "0,5"
+      },
+      {
+        "nom": "Kilt renforcé",
+        "categorie": "legere",
+        "prix": "20",
+        "bonus_armure": "+1",
+        "dex_max": "+6",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "0%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "5"
+      },
+      {
+        "nom": "Vêtements rembourrés",
+        "categorie": "legere",
+        "prix": "100",
+        "bonus_armure": "+1",
+        "dex_max": "+8",
+        "malus_tests": "0",
+        "risque_echec_sorts_profanes": "10%",
+        "vitesse_par_base": {
+          "9 m": "9 m (6 c)",
+          "6 m": "6 m (4 c)"
+        },
+        "poids": "7,5"
+      },
+      {
+        "nom": "Armure à quatre miroirs*",
+        "categorie": "intermediaire",
+        "prix": "125",
+        "bonus_armure": "+6",
+        "dex_max": "+2",
+        "malus_tests": "-5",
+        "risque_echec_sorts_profanes": "30%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Armure de la montagne*",
+        "categorie": "intermediaire",
+        "prix": "250",
+        "bonus_armure": "+6",
+        "dex_max": "+3",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "30%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "20"
+      },
+      {
+        "nom": "Armure d'écailles",
+        "categorie": "intermediaire",
+        "prix": "50",
+        "bonus_armure": "+5",
+        "dex_max": "+3",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "15"
+      },
+      {
+        "nom": "Armure en peau",
+        "categorie": "intermediaire",
+        "prix": "15",
+        "bonus_armure": "+4",
+        "dex_max": "+4",
+        "malus_tests": "-3",
+        "risque_echec_sorts_profanes": "20%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Armure lamellaire en acier*",
+        "categorie": "intermediaire",
+        "prix": "150",
+        "bonus_armure": "+6",
+        "dex_max": "+3",
+        "malus_tests": "-5",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "17,5"
+      },
+      {
+        "nom": "Armure lamellaire en corne*",
+        "categorie": "intermediaire",
+        "prix": "100",
+        "bonus_armure": "+5",
+        "dex_max": "+3",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "15"
+      },
+      {
+        "nom": "Cotte de mailles",
+        "categorie": "intermediaire",
+        "prix": "150",
+        "bonus_armure": "+6",
+        "dex_max": "+2",
+        "malus_tests": "-5",
+        "risque_echec_sorts_profanes": "30%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "20"
+      },
+      {
+        "nom": "Cuirasse",
+        "categorie": "intermediaire",
+        "prix": "200",
+        "bonus_armure": "+6",
+        "dex_max": "+3",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "15"
+      },
+      {
+        "nom": "Cuirasse agile",
+        "categorie": "intermediaire",
+        "prix": "400",
+        "bonus_armure": "+6",
+        "dex_max": "+3",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Do-maru*",
+        "categorie": "intermediaire",
+        "prix": "200",
+        "bonus_armure": "+5",
+        "dex_max": "+4",
+        "malus_tests": "-4",
+        "risque_echec_sorts_profanes": "25%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "15"
+      },
+      {
+        "nom": "Kikko*",
+        "categorie": "intermediaire",
+        "prix": "250",
+        "bonus_armure": "+5",
+        "dex_max": "+4",
+        "malus_tests": "-3",
+        "risque_echec_sorts_profanes": "20%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "12,5"
+      },
+      {
+        "nom": "Veste renforcée",
+        "categorie": "intermediaire",
+        "prix": "50",
+        "bonus_armure": "+4",
+        "dex_max": "+3",
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "20%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "10"
+      },
+      {
+        "nom": "Armure de Légionnaire infernal",
+        "categorie": "lourde",
+        "prix": "2.000",
+        "bonus_armure": "+9",
+        "dex_max": "+1",
+        "malus_tests": "-5",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "25"
+      },
+      {
+        "nom": "Armure de plaques",
+        "categorie": "lourde",
+        "prix": "600",
+        "bonus_armure": "+8",
+        "dex_max": "0",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "40%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "25"
+      },
+      {
+        "nom": "Armure de plaques agile",
+        "categorie": "lourde",
+        "prix": "850",
+        "bonus_armure": "+8",
+        "dex_max": "0",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "40%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "27,5"
+      },
+      {
+        "nom": "Armure lamellaire en fer*",
+        "categorie": "lourde",
+        "prix": "200",
+        "bonus_armure": "+7",
+        "dex_max": "0",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "40%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Armure lamellaire en pierre*",
+        "categorie": "lourde",
+        "prix": "500",
+        "bonus_armure": "+8",
+        "dex_max": "0",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "40%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Clibanion",
+        "categorie": "lourde",
+        "prix": "200",
+        "bonus_armure": "+7",
+        "dex_max": "0",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "40%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Crevice",
+        "categorie": "lourde",
+        "prix": "250",
+        "bonus_armure": "+7",
+        "dex_max": "+1",
+        "malus_tests": "-6",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "17,5"
+      },
+      {
+        "nom": "Harnois",
+        "categorie": "lourde",
+        "prix": "1.500",
+        "bonus_armure": "+9",
+        "dex_max": "+1",
+        "malus_tests": "-6",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "25"
+      },
+      {
+        "nom": "Kusari gusoku*",
+        "categorie": "lourde",
+        "prix": "350",
+        "bonus_armure": "+7",
+        "dex_max": "+1",
+        "malus_tests": "-7",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "O-yoroï*",
+        "categorie": "lourde",
+        "prix": "1.700",
+        "bonus_armure": "+8",
+        "dex_max": "+2",
+        "malus_tests": "-6",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Plate de pierre",
+        "categorie": "lourde",
+        "prix": "1.800",
+        "bonus_armure": "+9",
+        "dex_max": "+1",
+        "malus_tests": "-6",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "4,5 m (3 c)",
+          "6 m": "3 m (2 c)"
+        },
+        "poids": "37,5"
+      },
+      {
+        "nom": "Plate flexible",
+        "categorie": "lourde",
+        "prix": "1.200",
+        "bonus_armure": "+7",
+        "dex_max": "+1",
+        "malus_tests": "-5",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "25"
+      },
+      {
+        "nom": "Tatami-do*",
+        "categorie": "lourde",
+        "prix": "1.000",
+        "bonus_armure": "+7",
+        "dex_max": "+3",
+        "malus_tests": "-6",
+        "risque_echec_sorts_profanes": "35%",
+        "vitesse_par_base": {
+          "9 m": "6 m (4 c)",
+          "6 m": "4,5 m (3 c)"
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Bouclier désarmant (bois/acier)(gnome)",
+        "categorie": "bouclier",
+        "prix": "37/50",
+        "bonus_armure": "+2",
+        "dex_max": null,
+        "malus_tests": "-3",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "7,5/10"
+      },
+      {
+        "nom": "Écu (bois/acier)",
+        "categorie": "bouclier",
+        "prix": "7/20",
+        "bonus_armure": "+2",
+        "dex_max": null,
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "15%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "5/7,5"
+      },
+      {
+        "nom": "Klar",
+        "categorie": "bouclier",
+        "prix": "12",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "3"
+      },
+      {
+        "nom": "Madu (cuir/acier)",
+        "categorie": "bouclier",
+        "prix": "40/50",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "2,5/3"
+      },
+      {
+        "nom": "Pavois",
+        "categorie": "bouclier",
+        "prix": "30",
+        "bonus_armure": "+4",
+        "dex_max": "+2",
+        "malus_tests": "-10",
+        "risque_echec_sorts_profanes": "50%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "22,5"
+      },
+      {
+        "nom": "Rondache (bois/acier)",
+        "categorie": "bouclier",
+        "prix": "3/9",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "2,5/3"
+      },
+      {
+        "nom": "Rondache de preste usage (bois/acier)",
+        "categorie": "bouclier",
+        "prix": "53/59",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "-2",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "3/3,5"
+      },
+      {
+        "nom": "Targe",
+        "categorie": "bouclier",
+        "prix": "5",
+        "bonus_armure": "+1",
+        "dex_max": null,
+        "malus_tests": "-1",
+        "risque_echec_sorts_profanes": "5%",
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "2,5"
+      },
+      {
+        "nom": "Gantelet d'armes",
+        "categorie": "supplement",
+        "prix": "+8",
+        "bonus_armure": null,
+        "dex_max": null,
+        "malus_tests": "spécial",
+        "risque_echec_sorts_profanes": null,
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "+2,5"
+      },
+      {
+        "nom": "Pointes d'armure",
+        "categorie": "supplement",
+        "prix": "+50",
+        "bonus_armure": null,
+        "dex_max": null,
+        "malus_tests": null,
+        "risque_echec_sorts_profanes": null,
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "+5"
+      },
+      {
+        "nom": "Pointes de bouclier",
+        "categorie": "supplement",
+        "prix": "+10",
+        "bonus_armure": null,
+        "dex_max": null,
+        "malus_tests": null,
+        "risque_echec_sorts_profanes": null,
+        "vitesse_par_base": {
+          "9 m": null,
+          "6 m": null
+        },
+        "poids": "+2,5"
+      }
+    ]
+  }
+}

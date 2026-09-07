@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "version": 1,
+    "genere_le": "2026-09-07",
+    "sources": [
+      {
+        "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Valeurs%20de%20combat.ashx",
+        "page": "Valeurs de combat",
+        "lu_le": "2026-09-07"
+      },
+      {
+        "url": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vocabulaire%20courant.ashx",
+        "page": "Vocabulaire courant",
+        "lu_le": "2026-09-07"
+      }
+    ],
+    "outil": "tools/regles/parser_tables_universelles.py"
+  },
+  "donnees": {
+    "regle_generale": "Les bonus sont des valeurs numériques qui sont ajoutées aux jets de dés et aux valeurs des caractéristiques . La plupart des bonus possèdent un type et, en règle générale, les bonus de même type ne se cumulent pas : seul le bonus le plus élevé s’applique.",
+    "types": [
+      {
+        "cle": "alteration",
+        "libelle": "Bonus d’altération",
+        "cumulable": null,
+        "note": "Ce bonus améliore l’efficacité de l’armure."
+      },
+      {
+        "cle": "parade",
+        "libelle": "Bonus de parade",
+        "cumulable": null,
+        "note": "Les effets qui offrent un bonus de parade permettent de détourner les attaques, ce qui améliore la CA ."
+      },
+      {
+        "cle": "armure_naturelle",
+        "libelle": "Bonus d’armure naturelle",
+        "cumulable": null,
+        "note": "Si la race du personnage possède un cuir, des écailles ou une peau épaisse, il bénéficie d’un bonus à la CA ."
+      },
+      {
+        "cle": "esquive",
+        "libelle": "Bonus d’esquive",
+        "cumulable": true,
+        "note": "D’autres bonus représentent l’aisance avec laquelle le personnage évite les coups. Ce bonus est appelé bonus d’esquive et disparait si le personnage perd son bonus de Dextérité (par contre, le fait de porter une armure ne réduit pas les bonus d’esquive ; seul le bonus de Dextérité est ainsi limité). Contrairement à la plupart des types de bonus, les bonus d’esquive se cumulent entre eux."
+      },
+      {
+        "cle": "taille",
+        "libelle": "Bonus de taille",
+        "cumulable": null,
+        "note": "Le personnage reçoit un bonus ou un malus à la CA en fonction de sa taille. Voir la Table \" Modificateurs de taille \" ci-contre."
+      }
+    ]
+  }
+}
