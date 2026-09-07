@@ -396,4 +396,12 @@ export const MOTS = {
   ficheMoteurTypesBonusIntrouvable: 'la table des types de bonus est introuvable',
   ficheMoteurSupplantePar: 'supplanté par',
   ficheMoteurModificateurCaracteristique: 'modificateur de caractéristique',
+  ficheJsonIllisible: 'le fichier ne contient pas du JSON valide',
+  ficheEcritureRefusee: 'le stockage local a refusé l’écriture',
+  ficheIntrouvable: 'aucune fiche sous cet identifiant',
+  ficheAucuneSauvegarde: 'aucune copie de secours à restaurer',
+  ficheSuffixeCopie: '(copie)',
+  ficheExportNomReplique: 'personnage',
+  ficheExportClasseAbsente: 'sans-classe',
+  ficheExportNiveauAbsent: 'sans-niveau',
 } as const
