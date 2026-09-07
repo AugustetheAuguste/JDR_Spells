@@ -58,37 +58,15 @@ describe('app/layout.tsx', () => {
     expect(lignesSuspectes).toEqual([])
   })
 
-  it('porte exactement les 6 liens de navigation attendus, répartis en trois zones', () => {
-    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
-    const hrefs = [...entete.matchAll(/href="([^"]+)"/g)].map((m) => m[1])
-    expect(hrefs).toEqual([
-      '/',
-      '/explorer',
-      '/comparaison',
-      '/favoris',
-      '/dons',
-      '/compte',
-    ])
-  })
-
-  it('porte trois zones de navigation nommées', () => {
-    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
-    expect(entete).toContain('aria-label="Sections"')
-    expect(entete).toContain('aria-label="Favoris et dons"')
-    expect(entete).toContain('aria-label="Compte"')
-  })
-
-  it('porte les liens de navigation et la bascule de thème à 44 px, sans mention de source', () => {
-    const entete = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
-    const liensNav = [...entete.matchAll(/<Link[\s\S]*?<\/Link>/g)]
-    expect(liensNav.length).toBe(6)
-    for (const lien of liensNav) {
-      expect(lien[0]).toContain('min-h-cible')
-      expect(lien[0]).toContain('min-w-cible')
-    }
-
-    expect(entete).toContain('<BasculeTheme />')
-    expect(entete).not.toContain('pathfinder-fr.org')
+  it('monte <EnteteSite /> plutôt que de recomposer les trois <nav> à la main', () => {
+    // Depuis l'étape 03, le header à menus déroulants vit dans
+    // `components/navigation/EnteteSite.tsx` (comportement couvert par
+    // `MenuDeroulant.test.tsx`, `NavigationMobile.test.tsx` et
+    // `Navigation.parite.test.tsx`) — ce fichier ne vérifie plus que
+    // `layout.tsx` le monte, pas son détail interne.
+    expect(SOURCE).toContain("from '@/components/navigation/EnteteSite'")
+    expect(SOURCE).toContain('<EnteteSite />')
+    expect(SOURCE).not.toContain('aria-label="Sections"')
   })
 
   it("n'écrit aucun deux-points, point-virgule ou tiret cadratin en prose", () => {
@@ -96,8 +74,6 @@ describe('app/layout.tsx', () => {
     // une chaîne affichée. `MOTS.source` porte un deux-points figé dans
     // tokens.ts (hors périmètre) ; ce fichier ne le reprend plus tel quel.
     expect(SOURCE).not.toContain('{MOTS.source}')
-    const enteteAvantFooter = SOURCE.slice(SOURCE.indexOf('<header'), SOURCE.indexOf('</header>'))
-    expect(enteteAvantFooter).not.toMatch(/>\s*source\s*:/i)
   })
 
   it('garde le script de thème inline avant peinture, dans <head>', () => {
