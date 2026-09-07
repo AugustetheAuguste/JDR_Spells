@@ -365,4 +365,11 @@ export const MOTS = {
   motDePasseOublie: 'Mot de passe oublié',
   themeJour: 'Thème jour',
   themeNuit: 'Thème nuit',
+  navCorpus: 'Corpus',
+  navPersonnages: 'Personnages',
+  mesFiches: 'Mes fiches',
+  nouvelleFiche: 'Nouvelle fiche',
+  ouvrirLeMenu: 'Ouvrir le menu',
+  fermerLeMenu: 'Fermer le menu',
+  navigationPrincipale: 'Navigation principale',
 } as const

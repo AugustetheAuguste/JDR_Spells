@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
 import { Fournisseurs } from '@/components/Fournisseurs'
-import { BasculeTheme } from '@/components/primitives/BasculeTheme'
+import { EnteteSite } from '@/components/navigation/EnteteSite'
 
 /**
  * Read before paint, so the reader who chose night mode never sees a flash of
@@ -46,67 +45,7 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
           Aller au contenu
         </a>
 
-        <header className="border-b border-bord bg-surface">
-          <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-2 px-4 py-3">
-            <p className="m-0 font-affichage text-titre3 font-semibold">
-              Sorts Pathfinder 1e
-            </p>
-
-            <nav
-              aria-label="Sections"
-              className="flex flex-wrap items-center gap-2 text-corps"
-            >
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/"
-              >
-                Sorts
-              </Link>
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/explorer"
-              >
-                Explorer
-              </Link>
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/comparaison"
-              >
-                Comparer
-              </Link>
-            </nav>
-
-            <nav
-              aria-label="Favoris et dons"
-              className="flex flex-wrap items-center gap-2 text-corps"
-            >
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/favoris"
-              >
-                Favoris
-              </Link>
-              <Link
-                className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                href="/dons"
-              >
-                Dons
-              </Link>
-            </nav>
-
-            <div className="flex items-center gap-2">
-              <nav aria-label="Compte">
-                <Link
-                  className="flex min-h-cible min-w-cible items-center justify-center text-encre hover:text-accent"
-                  href="/compte"
-                >
-                  Compte
-                </Link>
-              </nav>
-              <BasculeTheme />
-            </div>
-          </div>
-        </header>
+        <EnteteSite />
 
         {/* The providers wrap the content, not the shell: they are client
             components, and hoisting them above the header would drag the whole
