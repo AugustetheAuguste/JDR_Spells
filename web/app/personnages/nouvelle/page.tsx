@@ -1,7 +1,10 @@
+import { FilAriane } from '@/components/navigation/FilAriane'
+
 /**
  * Waiting page for the new character sheet flow.
  *
- * Same purpose as `app/personnages/page.tsx` — see that file's docstring.
+ * Same purpose as `app/personnages/page.tsx` — see that file's docstring,
+ * including why `FilAriane` is mounted here rather than in the layout.
  */
 export const metadata = {
   title: 'Nouvelle fiche',
@@ -11,7 +14,8 @@ export const metadata = {
 export default function PageNouvellePersonnage() {
   return (
     <div className="max-w-[68ch]">
-      <h1 className="font-affichage text-titre2 font-semibold text-encre">Nouvelle fiche</h1>
+      <FilAriane segments={[{ libelle: 'Personnages', href: '/personnages/' }]} />
+      <h1 className="mt-2 font-affichage text-titre2 font-semibold text-encre">Nouvelle fiche</h1>
       <p className="mt-3 text-corps text-encre-douce">
         Cette section arrive dans une étape suivante. Elle proposera de créer une fiche de
         personnage.

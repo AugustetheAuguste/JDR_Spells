@@ -11,6 +11,9 @@ import { describe, expect, it, vi } from 'vitest'
 
 vi.mock('next/navigation', () => ({
   usePathname: () => '/',
+  // `EnteteSite` and `NavigationMobile` both now mount `RechercheGlobale`,
+  // which reads `useRouter` even when no search is ever typed in this suite.
+  useRouter: () => ({ push: vi.fn() }),
 }))
 
 vi.mock('next/link', () => ({

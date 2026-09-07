@@ -1,9 +1,13 @@
+import { FilAriane } from '@/components/navigation/FilAriane'
+
 /**
  * Waiting page for the character sheet section.
  *
  * The header's « Personnages » menu already links here (step 03) so the
  * navigation never points at a 404 while the section itself waits for a
- * later step (14) to fill it in. Nothing else lives here yet.
+ * later step (14) to fill it in. `FilAriane` is mounted here with a single
+ * simple segment — the selector segment stays for step 14, once a sheet
+ * exists to switch to.
  */
 export const metadata = {
   title: 'Mes fiches',
@@ -13,7 +17,8 @@ export const metadata = {
 export default function PagePersonnages() {
   return (
     <div className="max-w-[68ch]">
-      <h1 className="font-affichage text-titre2 font-semibold text-encre">Mes fiches</h1>
+      <FilAriane segments={[{ libelle: 'Personnages', href: '/personnages/' }]} />
+      <h1 className="mt-2 font-affichage text-titre2 font-semibold text-encre">Mes fiches</h1>
       <p className="mt-3 text-corps text-encre-douce">
         Cette section arrive dans une étape suivante. Elle listera vos fiches de personnage.
       </p>

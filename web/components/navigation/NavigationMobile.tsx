@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState } from 'react'
 
+import { RechercheGlobale } from '@/components/navigation/RechercheGlobale'
 import { ARBORESCENCE } from '@/lib/navigation/arborescence'
 import { MOTS } from '@/lib/design/tokens'
 
@@ -67,6 +68,9 @@ export function NavigationMobile() {
 
       {ouvert && (
         <nav aria-label={MOTS.navigationPrincipale} className="border-t border-bord bg-surface" id={idPanneau}>
+          <div className="px-3 py-2">
+            <RechercheGlobale />
+          </div>
           <ul className="flex flex-col">
             {ARBORESCENCE.groupes.map((groupe) => {
               const idContenu = `${idPanneau}-${groupe.cle}`
