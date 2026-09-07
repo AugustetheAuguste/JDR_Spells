@@ -54,8 +54,14 @@ interface Etat {
 
 const ETAT_INITIAL: Etat = { chargement: true, fiches: [], illisibles: [] }
 
+function lireEtatInitial(): Etat {
+  if (typeof window === 'undefined') return ETAT_INITIAL
+  const { fiches, illisibles } = lister(window.localStorage)
+  return { chargement: false, fiches, illisibles }
+}
+
 export function FournisseurFiches({ children }: { readonly children: ReactNode }) {
-  const [etat, setEtat] = useState<Etat>(ETAT_INITIAL)
+  const [etat, setEtat] = useState<Etat>(lireEtatInitial)
   /** Monotonic within the session, combined with the clock so two sheets
    * created in the same millisecond do not collide on their id. */
   const compteur = useRef(0)
@@ -67,7 +73,6 @@ export function FournisseurFiches({ children }: { readonly children: ReactNode }
   }, [])
 
   useEffect(() => {
-    recharger()
     const surStockage = (evenement: StorageEvent): void => {
       if (evenement.key === null || evenement.key.startsWith('pf-fiche')) {
         recharger()
