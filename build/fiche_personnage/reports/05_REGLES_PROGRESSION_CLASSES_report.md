@@ -138,9 +138,14 @@ réseau n'a été faite pendant cette session**. Le journal de la copie est
 4. Aucun `0` où la cellule source est vide — vérifié sur `magicien` (§6) et
    sur l'ensemble via l'implémentation (`null` explicite, jamais de
    substitution par défaut). **OK.**
-5. `PYTHONPATH=src python -m pytest tests -q` — voir la suite complète du
-   dépôt ; les trois tests de cette étape passent isolément
-   (`tests/regles/test_parser_progression_classes.py`, 3 passed).
+5. `PYTHONPATH=src python -m pytest tests -q` — exécuté en entier :
+   **1333 passed, 2 failed, 24 skipped** (21 min 49 s). Les deux échecs sont
+   préexistants et hors du périmètre de cette étape : `data/MANIFEST.json`
+   recense `data/schemas/` à 4 fichiers alors qu'il en existe 6 sur disque —
+   dérive du manifeste non liée à cette étape (rien ici n'écrit sous
+   `data/schemas/` ni ne régénère le manifeste). Les trois tests de cette
+   étape (`tests/regles/test_parser_progression_classes.py`) sont dans les
+   1333 passés.
 6. `npm run verifier:tout` — non relancé dans cette session (chaîne `web/`
    complète, hors périmètre direct de cette étape ; cette étape ne touche à
    rien sous `web/app`, `web/components` ni `web/lib`, cf. spec §
