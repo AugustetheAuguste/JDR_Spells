@@ -393,4 +393,7 @@ export const MOTS = {
   ficheRefusModificateurInvalide: 'un modificateur doit porter exactement sept clés',
   ficheRefusChampInterdit: 'champ hors périmètre, poids ou consommation',
   ficheRefusPalierManquant: 'un palier de migration est absent de la chaîne',
+  ficheMoteurTypesBonusIntrouvable: 'la table des types de bonus est introuvable',
+  ficheMoteurSupplantePar: 'supplanté par',
+  ficheMoteurModificateurCaracteristique: 'modificateur de caractéristique',
 } as const
