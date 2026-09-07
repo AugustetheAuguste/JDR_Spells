@@ -393,4 +393,12 @@ export const MOTS = {
   ficheRefusModificateurInvalide: 'un modificateur doit porter exactement sept clés',
   ficheRefusChampInterdit: 'champ hors périmètre, poids ou consommation',
   ficheRefusPalierManquant: 'un palier de migration est absent de la chaîne',
+  ficheJsonIllisible: 'le fichier ne contient pas du JSON valide',
+  ficheEcritureRefusee: 'le stockage local a refusé l’écriture',
+  ficheIntrouvable: 'aucune fiche sous cet identifiant',
+  ficheAucuneSauvegarde: 'aucune copie de secours à restaurer',
+  ficheSuffixeCopie: '(copie)',
+  ficheExportNomReplique: 'personnage',
+  ficheExportClasseAbsente: 'sans-classe',
+  ficheExportNiveauAbsent: 'sans-niveau',
 } as const

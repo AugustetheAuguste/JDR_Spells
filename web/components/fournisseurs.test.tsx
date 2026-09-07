@@ -90,6 +90,7 @@ const { FournisseurSession } = await import('@/lib/compte/session')
 const { FournisseurFavoris } = await import('@/lib/favoris/contexte')
 const { reinitialiserCache } = await import('@/lib/favoris/magasin')
 const { CLE_STOCKAGE } = await import('@/lib/favoris/stockage')
+const { useFiches } = await import('@/lib/fiche_personnage/contexte-fiches')
 
 /** A local list to push. An empty local state would make the push a no-op and the
  * test would pass against a provider that does nothing. */
@@ -216,6 +217,27 @@ describe('Fournisseurs', () => {
     await waitFor(() => {
       const lectures = appels.filter((a) => a.table === 'listes' && a.verbe === 'select').length
       expect(lectures).toBeGreaterThan(apresFusion)
+    })
+  })
+
+  it('monte FournisseurFiches : useFiches() répond sans lever, sans que le test le monte lui-même', async () => {
+    /** Reports whatever `useFiches()` gives back, or the fact that it threw —
+     * exactly the shape of the bug this file exists to catch: a hook that
+     * silently falls through to an inert default would render just as
+     * quietly as a hook that is genuinely wired. */
+    function SondeFiches() {
+      const { chargement } = useFiches()
+      return <p data-testid="etat-fiches">{chargement ? 'chargement' : 'pret'}</p>
+    }
+
+    const { getByTestId } = render(
+      <Fournisseurs>
+        <SondeFiches />
+      </Fournisseurs>,
+    )
+
+    await waitFor(() => {
+      expect(['chargement', 'pret']).toContain(getByTestId('etat-fiches').textContent)
     })
   })
 

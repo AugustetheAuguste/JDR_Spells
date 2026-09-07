@@ -4,6 +4,7 @@ import { FournisseurSynchro } from '@/lib/compte/SynchroFavoris'
 import { FournisseurPersonnageActif } from '@/lib/compte/contexte-personnages'
 import { FournisseurSession } from '@/lib/compte/session'
 import { FournisseurFavoris } from '@/lib/favoris/contexte'
+import { FournisseurFiches } from '@/lib/fiche_personnage/contexte-fiches'
 
 import type { ReactNode } from 'react'
 
@@ -36,13 +37,21 @@ import type { ReactNode } from 'react'
  * provider — rather than replacing it, and sits inside `FournisseurSession`
  * for the same reason `FournisseurSynchro` does: it calls `usePersonnages()`,
  * which throws outside a session provider.
+ *
+ * `FournisseurFiches` (step 13) sits at the innermost position, around
+ * `children`, because it reads none of the other three: a character sheet
+ * lives in `localStorage` under its own id, with no dependency on the
+ * session, the active character, or favourites. Placing it innermost means a
+ * sign-in or sign-out never re-mounts it.
  */
 export function Fournisseurs({ children }: { readonly children: ReactNode }) {
   return (
     <FournisseurSession>
       <FournisseurPersonnageActif>
         <FournisseurFavoris>
-          <FournisseurSynchro>{children}</FournisseurSynchro>
+          <FournisseurSynchro>
+            <FournisseurFiches>{children}</FournisseurFiches>
+          </FournisseurSynchro>
         </FournisseurFavoris>
       </FournisseurPersonnageActif>
     </FournisseurSession>
