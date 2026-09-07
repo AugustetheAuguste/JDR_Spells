@@ -382,4 +382,15 @@ export const MOTS = {
   rechercheVoirTousLesDons: 'Voir tous les dons',
   ariane: 'Fil d’Ariane',
   personnages: 'Personnages',
+  ficheRefusEntreeInvalide: 'la fiche n’est pas un objet',
+  ficheRefusVersionAbsente: 'la version de schéma est absente',
+  ficheRefusVersionInvalide: 'la version de schéma n’est pas un entier valide',
+  ficheRefusVersionSuperieure:
+    'la fiche vient d’une version plus récente du site, elle n’est pas lue',
+  ficheRefusCleInconnue: 'clé inconnue à la racine',
+  ficheRefusChampManquant: 'champ attendu absent',
+  ficheRefusTypeInvalide: 'type inattendu pour ce champ',
+  ficheRefusModificateurInvalide: 'un modificateur doit porter exactement sept clés',
+  ficheRefusChampInterdit: 'champ hors périmètre, poids ou consommation',
+  ficheRefusPalierManquant: 'un palier de migration est absent de la chaîne',
 } as const
