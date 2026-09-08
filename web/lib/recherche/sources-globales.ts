@@ -7,20 +7,29 @@
  * `sourceFiches` to this array and touches nothing else, because the component
  * that consumes it only ever iterates the array it is given.
  *
- * Both sources load their index lazily, on first search, and cache the
- * in-flight promise so a second keystroke does not refetch. `sourceSorts`
+ * Both corpus sources load their index lazily, on first search, and cache
+ * the in-flight promise so a second keystroke does not refetch. `sourceSorts`
  * additionally defers importing `lib/recherche/moteur` (MiniSearch) until
  * that same first search — this file itself imports nothing but types from
  * that module, so `minisearch` never lands in whatever bundle imports this
  * one until `chercher` is actually called.
+ *
+ * `sourceFiches` (étape 14) is the odd one out: sheets live in
+ * `localStorage` on this device and can change between two keystrokes, so
+ * there is nothing to cache — it is built by `source-fiches.ts`'s factory,
+ * `sourceFiches(lireFiches)`, with `lireFiches` reading the store fresh on
+ * every call.
  */
 
 import { MOTS } from '@/lib/design/tokens'
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import type { IndexDons } from '@/lib/donnees/index-web-dons'
+import { lister } from '@/lib/fiche_personnage/magasin'
+import type { Fiche } from '@/lib/fiche_personnage/schema'
 import type { Moteur, TableAlias } from '@/lib/recherche/moteur'
 
 import { plier } from './pliage'
+import { sourceFiches } from './source-fiches'
 
 export type TypeResultat = 'sort' | 'don' | 'fiche'
 
@@ -122,6 +131,16 @@ export const sourceDons: SourceGlobale = {
   },
 }
 
-/** `sourceFiches` arrives at étape 14, appended here — nothing else in this
- * file, or in `RechercheGlobale.tsx`, changes when it does. */
-export const SOURCES_PAR_DEFAUT: readonly SourceGlobale[] = [sourceSorts, sourceDons]
+/** `lireFiches` is only ever called from inside `chercher`, client-side and
+ * post-interaction, so `window` is guaranteed to exist by then — this guard
+ * is only for the module ever being evaluated during the static build. */
+function lireFichesLocales(): readonly Fiche[] {
+  if (typeof window === 'undefined') return []
+  return lister(window.localStorage).fiches
+}
+
+export const SOURCES_PAR_DEFAUT: readonly SourceGlobale[] = [
+  sourceSorts,
+  sourceDons,
+  sourceFiches(lireFichesLocales),
+]

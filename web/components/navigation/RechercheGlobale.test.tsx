@@ -195,3 +195,29 @@ describe('RechercheGlobale', () => {
     expect(() => fireEvent.keyDown(document, { key: '/' })).not.toThrow()
   })
 })
+
+describe('sourceFiches branchée dans la recherche globale', () => {
+  it('rend un groupe Fiches quand une fiche correspond', async () => {
+    const { sourceFiches } = await import('@/lib/recherche/source-fiches')
+    const { creerFicheVide } = await import('@/lib/fiche_personnage/fiche-vide')
+    const fiche = {
+      ...creerFicheVide('f1', '2026-01-01T00:00:00.000Z'),
+      meta: { ...creerFicheVide('f1', '2026-01-01T00:00:00.000Z').meta, nomPersonnage: 'Elara' },
+    }
+    render(<RechercheGlobale sources={[sourceFiches(() => [fiche])]} />)
+    await taper(screen.getByRole('combobox'), 'elara')
+
+    await waitFor(() => expect(screen.getByRole('listbox')).not.toBeNull())
+    expect(screen.getByRole('group', { name: 'Fiches' })).not.toBeNull()
+    expect(screen.getByRole('option', { name: 'Elara' })).not.toBeNull()
+  })
+
+  it("ne rend aucun groupe Fiches quand aucune fiche n'existe", async () => {
+    const { sourceFiches } = await import('@/lib/recherche/source-fiches')
+    render(<RechercheGlobale sources={[sourceFiches(() => [])]} />)
+    await taper(screen.getByRole('combobox'), 'elara')
+
+    await waitFor(() => expect(screen.getByText('Aucun résultat.')).not.toBeNull())
+    expect(screen.queryByRole('group', { name: 'Fiches' })).toBeNull()
+  })
+})

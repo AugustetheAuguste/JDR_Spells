@@ -127,3 +127,23 @@ describe('sources-globales, chargement paresseux', () => {
     expect(resultats.map((r) => r.href)).toContain('/dons/esquive/')
   })
 })
+
+describe('SOURCES_PAR_DEFAUT inclut sourceFiches', () => {
+  afterEach(() => {
+    vi.unstubAllGlobals()
+    vi.resetModules()
+  })
+
+  it('porte les trois types, sorts, dons puis fiches', async () => {
+    const { SOURCES_PAR_DEFAUT } = await import('./sources-globales')
+    expect(SOURCES_PAR_DEFAUT.map((source) => source.type)).toEqual(['sort', 'don', 'fiche'])
+  })
+
+  it("ne lit pas localStorage avant le premier appel a chercher", async () => {
+    const stockage = { length: 0, getItem: vi.fn(), key: vi.fn(), setItem: vi.fn(), removeItem: vi.fn(), clear: vi.fn() }
+    vi.stubGlobal('localStorage', stockage)
+    await import('./sources-globales')
+    expect(stockage.getItem).not.toHaveBeenCalled()
+    expect(stockage.key).not.toHaveBeenCalled()
+  })
+})

@@ -1,27 +1,24 @@
-import { FilAriane } from '@/components/navigation/FilAriane'
+import { Suspense } from 'react'
+
+import { VueIndexFiches } from '@/components/fiche_personnage/VueIndexFiches'
 
 /**
- * Waiting page for the character sheet section.
- *
- * The header's « Personnages » menu already links here (step 03) so the
- * navigation never points at a 404 while the section itself waits for a
- * later step (14) to fill it in. `FilAriane` is mounted here with a single
- * simple segment — the selector segment stays for step 14, once a sheet
- * exists to switch to.
+ * The sheet index. `VueIndexFiches` is a client component (it reads
+ * `localStorage` through `useFiches()` and the URL through
+ * `useSearchParams()`), mounted here inside the `Suspense` boundary that
+ * `useSearchParams` requires under `output: 'export'` — same pattern as
+ * `app/dons/page.tsx` and `app/page.tsx` for the spell list, since the query
+ * string is only known in the browser, not at prerender time.
  */
 export const metadata = {
   title: 'Mes fiches',
-  description: 'La section des fiches de personnage arrive dans une étape suivante.',
+  description: 'La liste de vos fiches de personnage, sur cet appareil.',
 }
 
 export default function PagePersonnages() {
   return (
-    <div className="max-w-[68ch]">
-      <FilAriane segments={[{ libelle: 'Personnages', href: '/personnages/' }]} />
-      <h1 className="mt-2 font-affichage text-titre2 font-semibold text-encre">Mes fiches</h1>
-      <p className="mt-3 text-corps text-encre-douce">
-        Cette section arrive dans une étape suivante. Elle listera vos fiches de personnage.
-      </p>
-    </div>
+    <Suspense fallback={<p className="max-w-[80ch] text-corps text-encre-douce">Chargement…</p>}>
+      <VueIndexFiches />
+    </Suspense>
   )
 }
