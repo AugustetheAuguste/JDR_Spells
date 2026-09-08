@@ -21,7 +21,6 @@ import type {
   Caracteristique,
   ClasseFiche,
   Competence,
-  EntreeCorpus,
   Equipement,
   Fiche,
   Sauvegarde,
@@ -29,9 +28,23 @@ import type {
 import type { SegmentAriane } from '@/components/navigation/FilAriane'
 import { FilAriane } from '@/components/navigation/FilAriane'
 
+import { CarnetSorts } from './CarnetSorts'
 import { ChampSaisi } from './ChampSaisi'
+import { LectureCorpus } from './LectureCorpus'
+import { PanneauLateral } from './PanneauLateral'
 import { Section } from './Section'
+import { SectionDons } from './SectionDons'
 import { ValeurCalculee } from './ValeurCalculee'
+
+/** L'état du panneau latéral partagé par la section Dons et la section
+ * Sorts : un seul panneau à la fois pour toute la fiche, jamais un par
+ * section (plan 16, § PanneauLateral). */
+interface EtatPanneau {
+  readonly corpus: 'sorts' | 'dons'
+  readonly ref: string
+  readonly titre: string
+  readonly declencheur: HTMLElement | null
+}
 
 const NIVEAUX_DE_SORT = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] as const
 const CARACTERISTIQUES: readonly Caracteristique[] = ['force', 'dexterite', 'constitution', 'intelligence', 'sagesse', 'charisme']
@@ -150,6 +163,17 @@ function VueFicheEditable({
   const [brouillon, setBrouillon] = useState<Fiche>(fiche)
   const [tables, setTables] = useState<TablesRegles | null>(null)
   const [erreurEnregistrement, setErreurEnregistrement] = useState<string | null>(null)
+  const [panneau, setPanneau] = useState<EtatPanneau | null>(null)
+
+  // Un seul panneau pour toute la fiche : les sections Dons et Sorts
+  // reçoivent chacune une fonction close sur leur propre corpus, plutôt
+  // qu'un paramètre supplémentaire que chaque appelant devrait répéter.
+  function ouvrirLectureSorts(refCorpus: string, nom: string, declencheur: HTMLElement) {
+    setPanneau({ corpus: 'sorts', ref: refCorpus, titre: nom, declencheur })
+  }
+  function ouvrirLectureDons(refCorpus: string, nom: string, declencheur: HTMLElement) {
+    setPanneau({ corpus: 'dons', ref: refCorpus, titre: nom, declencheur })
+  }
 
   useEffect(() => {
     let vivant = true
@@ -229,12 +253,24 @@ function VueFicheEditable({
         <SectionSauvegardes fiche={brouillon} setFiche={setBrouillon} tables={tablesResolues} />
         <SectionAttaques fiche={brouillon} setFiche={setBrouillon} tables={tablesResolues} />
         <SectionCompetences fiche={brouillon} setFiche={setBrouillon} tables={tablesResolues} />
-        <SectionDons fiche={brouillon} setFiche={setBrouillon} />
+        <Section cle="dons" ficheId={brouillon.id} titre={MOTS.sectionDons}>
+          <SectionDons fiche={brouillon} ouvrirLecture={ouvrirLectureDons} setFiche={setBrouillon} />
+        </Section>
         <SectionAptitudes fiche={brouillon} setFiche={setBrouillon} />
-        <SectionSorts fiche={brouillon} setFiche={setBrouillon} tables={tablesResolues} />
+        <SectionSorts fiche={brouillon} ouvrirLecture={ouvrirLectureSorts} setFiche={setBrouillon} tables={tablesResolues} />
         <SectionEquipement fiche={brouillon} setFiche={setBrouillon} />
         <SectionNotes fiche={brouillon} setFiche={setBrouillon} />
       </div>
+
+      <PanneauLateral
+        declencheur={panneau?.declencheur ?? null}
+        onFermer={() => setPanneau(null)}
+        ouvert={panneau !== null}
+        titre={panneau?.titre ?? ''}
+        urlSource={null}
+      >
+        {panneau !== null && <LectureCorpus corpus={panneau.corpus} refCorpus={panneau.ref} />}
+      </PanneauLateral>
     </section>
   )
 }
@@ -760,37 +796,9 @@ function SectionCompetences({
 }
 
 // ---------------------------------------------------------------------------
-// Dons
+// Dons — cf. `./SectionDons.tsx` (rattachement au corpus, plan 16), importé
+// plus haut et posé dans sa propre `<Section>` par l'appelant.
 // ---------------------------------------------------------------------------
-
-function SectionDons({
-  fiche,
-  setFiche,
-}: {
-  readonly fiche: Fiche
-  readonly setFiche: (mise: (f: Fiche) => Fiche) => void
-}) {
-  return (
-    <Section cle="dons" ficheId={fiche.id} titre={MOTS.sectionDons}>
-      <ul className="m-0 flex flex-col gap-2 p-0">
-        {fiche.dons.map((don, indice) => (
-          <li className="flex flex-wrap items-end gap-2" key={indice}>
-            <ChampTexte
-              libelle="Nom du don"
-              onChange={(valeur) => setFiche((f) => ({ ...f, dons: remplacerIndex(f.dons, indice, { ...don, nom: valeur }) }))}
-              valeur={don.nom}
-            />
-            <BoutonRetirer onClick={() => setFiche((f) => ({ ...f, dons: retirerIndex(f.dons, indice) }))} />
-          </li>
-        ))}
-      </ul>
-      <BoutonAjouter
-        libelle="Ajouter un don"
-        onClick={() => setFiche((f) => ({ ...f, dons: [...f.dons, { nom: '', source: 'maison', ref: null } as EntreeCorpus] }))}
-      />
-    </Section>
-  )
-}
 
 // ---------------------------------------------------------------------------
 // Aptitudes
@@ -858,10 +866,12 @@ function SectionSorts({
   fiche,
   setFiche,
   tables,
+  ouvrirLecture,
 }: {
   readonly fiche: Fiche
   readonly setFiche: (mise: (f: Fiche) => Fiche) => void
   readonly tables: TablesRegles
+  readonly ouvrirLecture: (ref: string, nom: string, declencheur: HTMLElement) => void
 }) {
   const emplacements = emplacementsTotaux(fiche, tables)
   const niveauLanceurResultat = niveauLanceur(fiche, tables)
@@ -869,25 +879,6 @@ function SectionSorts({
   return (
     <Section cle="sorts" ficheId={fiche.id} titre={MOTS.sectionSorts}>
       <div className="flex flex-col gap-3">
-        <label className="flex flex-col gap-1 text-petit text-encre-douce">
-          Mode d’incantation
-          <select
-            className="min-h-cible border border-bord-fort bg-surface px-2 text-encre"
-            onChange={(evenement) =>
-              setFiche((f) => ({
-                ...f,
-                sorts: { ...f.sorts, mode: evenement.target.value === '' ? null : (evenement.target.value as Fiche['sorts']['mode']) },
-              }))
-            }
-            value={fiche.sorts.mode ?? ''}
-          >
-            <option value="">—</option>
-            <option value="prepare">Préparé</option>
-            <option value="spontane">Spontané</option>
-            <option value="usageLimite">Usage limité</option>
-          </select>
-        </label>
-
         <label className="flex flex-col gap-1 text-petit text-encre-douce">
           Caractéristique d’incantation
           <select
@@ -932,29 +923,7 @@ function SectionSorts({
           ))}
         </div>
 
-        <div>
-          <p className="m-0 text-petit text-encre-douce">Sorts connus</p>
-          <ul className="m-0 flex flex-col gap-2 p-0">
-            {fiche.sorts.sortsConnus.map((sort, indice) => (
-              <li className="flex flex-wrap items-end gap-2" key={indice}>
-                <ChampTexte
-                  libelle="Nom du sort"
-                  onChange={(valeur) =>
-                    setFiche((f) => ({ ...f, sorts: { ...f.sorts, sortsConnus: remplacerIndex(f.sorts.sortsConnus, indice, { ...sort, nom: valeur }) } }))
-                  }
-                  valeur={sort.nom}
-                />
-                <BoutonRetirer onClick={() => setFiche((f) => ({ ...f, sorts: { ...f.sorts, sortsConnus: retirerIndex(f.sorts.sortsConnus, indice) } }))} />
-              </li>
-            ))}
-          </ul>
-          <BoutonAjouter
-            libelle="Ajouter un sort connu"
-            onClick={() =>
-              setFiche((f) => ({ ...f, sorts: { ...f.sorts, sortsConnus: [...f.sorts.sortsConnus, { nom: '', source: 'maison', ref: null } as EntreeCorpus] } }))
-            }
-          />
-        </div>
+        <CarnetSorts fiche={fiche} ouvrirLecture={ouvrirLecture} setFiche={setFiche} />
       </div>
     </Section>
   )

@@ -38,6 +38,9 @@ export interface EntreeCorpus {
   readonly nom: string
   readonly source: Source
   readonly ref: string | null
+  /** Note libre du joueur, jamais dérivée du corpus. Chaîne vide par défaut,
+   * jamais `null` — cf. le champ `note` d'`Equipement`, même convention. */
+  readonly note: string
 }
 
 export interface Race {
