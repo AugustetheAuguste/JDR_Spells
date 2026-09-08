@@ -1,25 +1,49 @@
-import { FilAriane } from '@/components/navigation/FilAriane'
+'use client'
+
+import type { Route } from 'next'
+import { useRouter } from 'next/navigation'
+import { useEffect, useRef } from 'react'
+
+import { useFiches } from '@/lib/fiche_personnage/contexte-fiches'
 
 /**
- * Waiting page for the new character sheet flow.
+ * Creates one empty sheet on mount, then redirects to it.
  *
- * Same purpose as `app/personnages/page.tsx` — see that file's docstring,
- * including why `FilAriane` is mounted here rather than in the layout.
+ * `creer()` is async, so this has to run from an effect — but a bare
+ * setState-in-effect on mount is exactly what `react-hooks/set-state-in-effect`
+ * exists to catch, and React's dev Strict Mode double-invokes an effect on
+ * mount regardless. A `useRef` latch guards against that double call: the
+ * *second* invocation sees the latch already set and does nothing, so a
+ * double mount still produces exactly one sheet (spec, notes
+ * d'implémentation — "le bug évident de cette étape").
+ *
+ * There is no local state to set after the `await`: on success this redirects
+ * immediately via `router.replace`, and on failure it redirects back to the
+ * index — either way nothing here is left mounted long enough to render a
+ * second state, so there is nothing for the lint rule to flag.
  */
-export const metadata = {
-  title: 'Nouvelle fiche',
-  description: 'La création de fiche de personnage arrive dans une étape suivante.',
-}
-
 export default function PageNouvellePersonnage() {
-  return (
-    <div className="max-w-[68ch]">
-      <FilAriane segments={[{ libelle: 'Personnages', href: '/personnages/' }]} />
-      <h1 className="mt-2 font-affichage text-titre2 font-semibold text-encre">Nouvelle fiche</h1>
-      <p className="mt-3 text-corps text-encre-douce">
-        Cette section arrive dans une étape suivante. Elle proposera de créer une fiche de
-        personnage.
-      </p>
-    </div>
-  )
+  const router = useRouter()
+  const { creer } = useFiches()
+  const dejaLancee = useRef(false)
+
+  useEffect(() => {
+    if (dejaLancee.current) return
+    dejaLancee.current = true
+
+    async function creerEtRediriger(): Promise<void> {
+      const resultat = await creer('')
+      if (resultat.ok) {
+        router.replace(`/personnages/fiche/?id=${encodeURIComponent(resultat.fiche.id)}` as Route, {
+          scroll: false,
+        })
+      } else {
+        router.replace('/personnages/' as Route, { scroll: false })
+      }
+    }
+
+    void creerEtRediriger()
+  }, [creer, router])
+
+  return null
 }
