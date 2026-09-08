@@ -37,10 +37,17 @@ const appels: Appel[] = []
 
 /** A minimal fake of the chainable, thenable builder — the same shape
  * `personnages.test.tsx` uses, with the calls recorded instead of a fixture
- * returned. Every response is empty: the remote holding nothing is the case that
- * must still push, and it is the state a real first sync starts from. */
+ * returned. Every response is empty by default: the remote holding nothing is
+ * the case that must still push, and it is the state a real first sync starts
+ * from. `reponsesTable` lets one test override a single table's `select`
+ * result (e.g. to plant a tombstone), without touching the others. */
+const reponsesTable = new Map<string, { readonly data: readonly unknown[]; readonly error: unknown }>()
+
 function tableFausse(table: string) {
   const vide = { data: [] as readonly unknown[], error: null }
+  function reponseCourante() {
+    return reponsesTable.get(table) ?? vide
+  }
   function requete() {
     const objet = {
       select: () => {
@@ -62,13 +69,18 @@ function tableFausse(table: string) {
       eq: () => objet,
       in: () => objet,
       order: () => objet,
-      single: () => Promise.resolve(vide),
-      then: (resolve: (valeur: typeof vide) => void) => Promise.resolve(vide).then(resolve),
+      single: () => Promise.resolve(reponseCourante()),
+      then: (resolve: (valeur: ReturnType<typeof reponseCourante>) => void) =>
+        Promise.resolve(reponseCourante()).then(resolve),
     }
     return objet
   }
   return requete()
 }
+
+/** Every call to `client.auth.signOut`, options included — the assertion
+ * that catches a regression to the global default (cf. CLAUDE.md § 11). */
+const appelsSignOut: unknown[] = []
 
 vi.mock('@/lib/compte/client', () => ({
   reinitialiserClient: () => {},
@@ -79,6 +91,10 @@ vi.mock('@/lib/compte/client', () => ({
         error: null,
       }),
       onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
+      signOut: async (options: unknown) => {
+        appelsSignOut.push(options)
+        return { error: null }
+      },
     },
     from: (table: string) => tableFausse(table),
   }),
@@ -86,11 +102,15 @@ vi.mock('@/lib/compte/client', () => ({
 
 const { Fournisseurs } = await import('@/components/Fournisseurs')
 const { useSynchro } = await import('@/lib/compte/SynchroFavoris')
-const { FournisseurSession } = await import('@/lib/compte/session')
+const { FournisseurSession, useSession } = await import('@/lib/compte/session')
 const { FournisseurFavoris } = await import('@/lib/favoris/contexte')
 const { reinitialiserCache } = await import('@/lib/favoris/magasin')
 const { CLE_STOCKAGE } = await import('@/lib/favoris/stockage')
 const { useFiches } = await import('@/lib/fiche_personnage/contexte-fiches')
+const { useSynchroFiches } = await import('@/lib/fiche_personnage/SynchroFiches')
+const { PropositionMontee } = await import('@/components/fiche_personnage/PropositionMontee')
+const { creerFicheVide } = await import('@/lib/fiche_personnage/fiche-vide')
+const { ecrire: ecrireFiche, cle: cleFiche } = await import('@/lib/fiche_personnage/magasin')
 
 /** A local list to push. An empty local state would make the push a no-op and the
  * test would pass against a provider that does nothing. */
@@ -115,8 +135,11 @@ let maintenant = Date.parse('2026-08-31T09:00:00.000Z')
 
 beforeEach(() => {
   appels.length = 0
+  appelsSignOut.length = 0
+  reponsesTable.clear()
   maintenant = Date.parse('2026-08-31T09:00:00.000Z')
   vi.spyOn(Date, 'now').mockImplementation(() => maintenant)
+  window.localStorage.clear()
   window.localStorage.setItem(CLE_STOCKAGE, JSON.stringify(ETAT_LOCAL))
   reinitialiserCache()
 })
@@ -256,5 +279,155 @@ describe('Fournisseurs', () => {
       expect(getByTestId('etat').textContent).toBe('inactive')
     })
     expect(appels.filter((a) => a.table === 'listes')).toEqual([])
+  })
+
+  // --- fiches, étape 18 -----------------------------------------------------
+
+  it('monte la synchronisation des fiches : une session connectée lit ET écrit dans fiches', async () => {
+    // A sheet already known to the account is what makes rule 1 of
+    // `fusion.ts` apply automatically — a never-proposed sheet deliberately
+    // must not (cf. the test below). The remote row planted here is a
+    // tombstone recorded *before* this sheet's last local edit, so rule 4
+    // decides the local edit survives and must be rewritten remotely — the
+    // deterministic way to force an upsert without relying on any
+    // auto-resolution of differing content (which `fusion.ts` refuses to do).
+    const fiche = {
+      ...creerFicheVide('f1', '2026-08-30T10:00:00.000Z'),
+      meta: {
+        nomPersonnage: 'Kaelis',
+        nomJoueur: '',
+        creeLe: '2026-08-30T10:00:00.000Z',
+        modifieLe: '2026-08-30T10:00:00.000Z',
+      },
+    }
+    ecrireFiche(window.localStorage, fiche)
+    reponsesTable.set('fiches', {
+      data: [
+        {
+          id_fiche: 'f1',
+          schema_version: 1,
+          contenu: {},
+          nom: null,
+          cree_le: null,
+          modifie_le: null,
+          supprime_le: '2020-01-01T00:00:00.000Z',
+          personnage_id: null,
+        },
+      ],
+      error: null,
+    })
+
+    function SondeFichesSynchro() {
+      const { etatSynchro } = useSynchroFiches()
+      return <p data-testid="etat-fiches-synchro">{etatSynchro}</p>
+    }
+
+    render(
+      <Fournisseurs>
+        <SondeFichesSynchro />
+      </Fournisseurs>,
+    )
+
+    await waitFor(() => {
+      expect(appels.some((a) => a.table === 'fiches' && a.verbe === 'select')).toBe(true)
+      expect(appels.some((a) => a.table === 'fiches' && a.verbe === 'upsert')).toBe(true)
+    })
+
+    const premierEnvoi = appels.findIndex((a) => a.table === 'fiches' && a.verbe === 'upsert')
+    const premiereLecture = appels.findIndex((a) => a.table === 'fiches' && a.verbe === 'select')
+    expect(premiereLecture).toBeLessThan(premierEnvoi)
+  })
+
+  it('trois fiches locales jamais proposées produisent zéro upsert et trois propositions', async () => {
+    ecrireFiche(window.localStorage, creerFicheVide('f1', '2026-08-30T10:00:00.000Z'))
+    ecrireFiche(window.localStorage, creerFicheVide('f2', '2026-08-30T10:00:00.000Z'))
+    ecrireFiche(window.localStorage, creerFicheVide('f3', '2026-08-30T10:00:00.000Z'))
+
+    const { getByText } = render(
+      <Fournisseurs>
+        <PropositionMontee />
+      </Fournisseurs>,
+    )
+
+    await waitFor(() => {
+      expect(appels.some((a) => a.table === 'fiches' && a.verbe === 'select')).toBe(true)
+    })
+
+    await waitFor(() => {
+      expect(getByText('Fiches créées hors ligne')).toBeTruthy()
+    })
+    expect(appels.filter((a) => a.table === 'fiches' && a.verbe === 'upsert')).toEqual([])
+  })
+
+  it('la déconnexion ne retire aucune clé de localStorage', async () => {
+    ecrireFiche(window.localStorage, creerFicheVide('f1', '2026-08-30T10:00:00.000Z'))
+
+    /** Exposes `seDeconnecter` behind a button, on the model of every real
+     * caller of `useSession()` — the point of this test is the storage side
+     * effect of signing out, not a bespoke path to reach it. */
+    function BoutonDeconnexion() {
+      const { seDeconnecter } = useSession()
+      return (
+        <button onClick={() => void seDeconnecter()} type="button">
+          se déconnecter
+        </button>
+      )
+    }
+
+    const { getByRole } = render(
+      <Fournisseurs>
+        <BoutonDeconnexion />
+      </Fournisseurs>,
+    )
+
+    await waitFor(() => {
+      expect(window.localStorage.getItem(cleFiche('f1'))).not.toBeNull()
+    })
+
+    const clesAvant = new Set(
+      Array.from({ length: window.localStorage.length }, (_valeur, index) => window.localStorage.key(index)),
+    )
+
+    await act(async () => {
+      getByRole('button', { name: 'se déconnecter' }).click()
+    })
+
+    await waitFor(() => {
+      expect(appelsSignOut.length).toBeGreaterThan(0)
+    })
+
+    const clesApres = new Set(
+      Array.from({ length: window.localStorage.length }, (_valeur, index) => window.localStorage.key(index)),
+    )
+    expect(clesApres).toEqual(clesAvant)
+  })
+
+  // Renforce le test existant plutôt que de le dupliquer (cf. spec) : ce
+  // fichier est celui qui monte la pile réelle, donc c'est ici que le
+  // renforcement a le plus de valeur — les autres suites de `lib/compte/`
+  // mockent `client` par appel unitaire, sans jamais composer `Fournisseurs`.
+  it('signOut est appelé avec scope local, jamais le défaut', async () => {
+    function BoutonDeconnexion() {
+      const { seDeconnecter } = useSession()
+      return (
+        <button onClick={() => void seDeconnecter()} type="button">
+          se déconnecter
+        </button>
+      )
+    }
+
+    const { getByRole } = render(
+      <Fournisseurs>
+        <BoutonDeconnexion />
+      </Fournisseurs>,
+    )
+
+    await act(async () => {
+      getByRole('button', { name: 'se déconnecter' }).click()
+    })
+
+    await waitFor(() => {
+      expect(appelsSignOut).toEqual([{ scope: 'local' }])
+    })
   })
 })

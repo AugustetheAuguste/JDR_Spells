@@ -512,4 +512,21 @@ export const MOTS = {
   ficheChampClasse: 'Classe',
   ficheChampNiveau: 'Niveau',
   ficheEnregistrementEchoue: 'L’enregistrement automatique a échoué, la modification n’a pas été gardée.',
+
+  // Étape 18, synchronisation des fiches sur le compte.
+  ficheSynchroPropositionsTitre: 'Fiches créées hors ligne',
+  ficheSynchroPropositionsTexte:
+    'Ces fiches existent sur cet appareil et n’ont jamais été envoyées à votre compte.',
+  ficheSynchroPropositionEnvoyer: 'Envoyer',
+  ficheSynchroPropositionIgnorer: 'Ignorer',
+  ficheSynchroPropositionIgnoree: 'Cette fiche ne sera plus proposée sur cet appareil.',
+  ficheSynchroPropositionEnvoyee: 'Fiche envoyée au compte.',
+  ficheSynchroConflitTitre: 'Une fiche a changé des deux côtés',
+  ficheSynchroConflitTexte:
+    'Cette fiche a été modifiée sur cet appareil et sur votre compte. Choisissez laquelle garder.',
+  ficheSynchroConflitColonneLocale: 'Sur cet appareil',
+  ficheSynchroConflitColonneDistante: 'Sur le compte',
+  ficheSynchroConflitGarderLocale: 'Garder la version de cet appareil',
+  ficheSynchroConflitGarderDistante: 'Garder la version du compte',
+  ficheSynchroConflitGarderLesDeux: 'Garder les deux, dupliquer la fiche',
 } as const
