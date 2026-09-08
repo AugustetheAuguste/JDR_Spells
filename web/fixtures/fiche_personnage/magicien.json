@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "magicien",
+  "personnageId": null,
+  "meta": {
+    "nomPersonnage": "Magicien de référence",
+    "nomJoueur": "référence",
+    "creeLe": "2026-09-08T00:00:00.000Z",
+    "modifieLe": "2026-09-08T00:00:00.000Z"
+  },
+  "identite": {
+    "race": {
+      "nom": "Elfe",
+      "source": "maison",
+      "ref": null
+    },
+    "classes": [
+      {
+        "nom": "Magicien",
+        "niveau": 6,
+        "archetype": null,
+        "source": "maison",
+        "ref": null
+      }
+    ],
+    "alignement": "Neutre",
+    "divinite": "",
+    "taille": "Moyen",
+    "langues": [
+      "Commun"
+    ]
+  },
+  "caracteristiques": {
+    "force": {
+      "base": 8,
+      "modificateurs": []
+    },
+    "dexterite": {
+      "base": 14,
+      "modificateurs": [
+        {
+          "libelle": "Bonus racial elfe",
+          "valeur": 2,
+          "type": "racial",
+          "origine": "Elfe — +2 Dextérité",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "constitution": {
+      "base": 12,
+      "modificateurs": [
+        {
+          "libelle": "Malus racial elfe",
+          "valeur": -2,
+          "type": "racial",
+          "origine": "Elfe — -2 Constitution",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "intelligence": {
+      "base": 18,
+      "modificateurs": [
+        {
+          "libelle": "Bonus racial elfe",
+          "valeur": 2,
+          "type": "racial",
+          "origine": "Elfe — +2 Intelligence",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "sagesse": {
+      "base": 12,
+      "modificateurs": []
+    },
+    "charisme": {
+      "base": 10,
+      "modificateurs": []
+    }
+  },
+  "combat": {
+    "bbaBase": 3,
+    "pvMax": 24,
+    "vitesseBase": 9,
+    "resistanceMagie": null
+  },
+  "defense": {
+    "armure": null,
+    "bouclier": null,
+    "modificateursCA": []
+  },
+  "sauvegardes": {
+    "reflexes": {
+      "base": 2,
+      "modificateurs": []
+    },
+    "vigueur": {
+      "base": 2,
+      "modificateurs": []
+    },
+    "volonte": {
+      "base": 5,
+      "modificateurs": []
+    }
+  },
+  "attaques": [
+    {
+      "nom": "Dague",
+      "type": "corpsACorps",
+      "caracteristiqueAttaque": "force",
+      "caracteristiqueDegats": "force",
+      "des": "1d4",
+      "critique": {
+        "plage": "19-20",
+        "multiplicateur": 2
+      },
+      "portee": "corps à corps",
+      "modificateursAttaque": [],
+      "modificateursDegats": [],
+      "source": "maison",
+      "ref": null
+    }
+  ],
+  "competences": [],
+  "dons": [],
+  "aptitudes": [],
+  "sorts": {
+    "mode": "prepare",
+    "caracteristiqueIncantation": "intelligence",
+    "niveauLanceur": null,
+    "emplacementsParNiveau": [],
+    "sortsConnus": [],
+    "sortsPrepares": []
+  },
+  "equipement": [],
+  "notes": "Personnage de référence, étape 12. Sourcé : https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lancer%20des%20sorts.ashx, https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Niveau%20de%20lanceur%20de%20sorts.ashx, https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Caract%C3%A9ristiques.ashx (citées par les docstrings du moteur et par sorts_bonus.json) ; web/public/data/regles/progression_classes.json (BBA, sauvegardes et emplacements de sorts du Magicien niveau 6) ; web/public/data/regles/sorts_bonus.json (sorts en bonus pour modificateur d'Intelligence +5) ; data/races/races.json (modificateurs raciaux de l'Elfe). niveauLanceur laissé null pour éprouver la déduction à une seule classe lanceuse (cf. sorts.ts). Dé de dégâts de la Dague hors attendus.json, cf. rapport §Lacunes assumées."
+}

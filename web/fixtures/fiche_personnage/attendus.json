@@ -1,0 +1,50 @@
+{
+  "guerrier-lourd": {
+    "classeArmure": { "totale": 18, "contact": 10, "prisAuDepourvu": 18 },
+    "initiative": 2,
+    "manoeuvreOffensive": 11,
+    "manoeuvreDefensive": 23,
+    "sauvegardes": { "reflexes": 4, "vigueur": 8, "volonte": 3 },
+    "serieAttaques": [6, 1],
+    "attaques": [{ "nom": "Épée longue", "bonus": [11, 6], "degats": 5 }],
+    "vitesse": 6,
+    "emplacements": null,
+    "degresDeDifficulte": null
+  },
+  "roublard": {
+    "classeArmure": { "totale": 19, "contact": 16, "prisAuDepourvu": 14 },
+    "initiative": 5,
+    "manoeuvreOffensive": 3,
+    "manoeuvreDefensive": 18,
+    "sauvegardes": { "reflexes": 10, "vigueur": 3, "volonte": 2 },
+    "serieAttaques": [4],
+    "attaques": [{ "nom": "Épée courte", "bonus": [5], "degats": 0 }],
+    "vitesse": 6,
+    "emplacements": null,
+    "degresDeDifficulte": null
+  },
+  "magicien": {
+    "classeArmure": { "totale": 13, "contact": 13, "prisAuDepourvu": 10 },
+    "initiative": 3,
+    "manoeuvreOffensive": 2,
+    "manoeuvreDefensive": 15,
+    "sauvegardes": { "reflexes": 5, "vigueur": 2, "volonte": 6 },
+    "serieAttaques": [3],
+    "attaques": [{ "nom": "Dague", "bonus": [2], "degats": -1 }],
+    "vitesse": 9,
+    "emplacements": { "0": 4, "1": 5, "2": 4, "3": 3, "4": null, "5": null, "6": null, "7": null, "8": null, "9": null },
+    "degresDeDifficulte": { "0": 15, "1": 16, "2": 17, "3": 18 }
+  },
+  "moine": {
+    "classeArmure": { "totale": 13, "contact": 13, "prisAuDepourvu": 10 },
+    "initiative": 3,
+    "manoeuvreOffensive": null,
+    "manoeuvreDefensive": null,
+    "sauvegardes": { "reflexes": null, "vigueur": null, "volonte": null },
+    "serieAttaques": [null],
+    "attaques": [],
+    "vitesse": 9,
+    "emplacements": null,
+    "degresDeDifficulte": null
+  }
+}
