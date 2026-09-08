@@ -3,7 +3,7 @@
 import type { Route } from 'next'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import { FilAriane } from '@/components/navigation/FilAriane'
 import { MOTS } from '@/lib/design/tokens'
@@ -47,7 +47,10 @@ export function VueIndexFiches() {
   const [ficheRestaurable, setFicheRestaurable] = useState<{ readonly id: string; readonly nom: string } | null>(
     null,
   )
-  const refDeclencheur = useRef<HTMLElement | null>(null)
+  // `DialogueSuppression`'s `declencheur` prop is read at render, so the
+  // triggering element lives in state, never in a ref read during render
+  // (`react-hooks/refs`) — set imperatively in the click handler below.
+  const [declencheur, setDeclencheur] = useState<HTMLElement | null>(null)
 
   // The one local copy of URL state, one-directional like `VueDons`'s own
   // name field: the box holds raw keystrokes so typing stays responsive
@@ -87,7 +90,7 @@ export function VueIndexFiches() {
   }, [fiches, requete])
 
   function surSupprimerDemande(fiche: Fiche, evenement: React.MouseEvent<HTMLElement>): void {
-    refDeclencheur.current = evenement.currentTarget
+    setDeclencheur(evenement.currentTarget)
     setFicheASupprimer(fiche)
   }
 
@@ -209,7 +212,7 @@ export function VueIndexFiches() {
       )}
 
       <DialogueSuppression
-        declencheur={refDeclencheur.current}
+        declencheur={declencheur}
         nomFiche={ficheASupprimer === null ? '' : nomAffiche(ficheASupprimer)}
         onAnnuler={() => setFicheASupprimer(null)}
         onConfirmer={() => {
