@@ -37,7 +37,7 @@ export function BoutonImport() {
   }
 
   return (
-    <div>
+    <div data-imprimer-exclure>
       <button
         className="min-h-cible min-w-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         onClick={() => refEntree.current?.click()}

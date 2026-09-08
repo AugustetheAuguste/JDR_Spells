@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
 import '@/styles/theme.css'
+import '@/app/impression.css'
 import { Fournisseurs } from '@/components/Fournisseurs'
 import { EnteteSite } from '@/components/navigation/EnteteSite'
 
@@ -39,6 +40,7 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <a
+          data-imprimer-exclure
           href="#contenu"
           className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:flex focus:min-h-cible focus:items-center focus:rounded-jeton focus:border focus:border-accent focus:bg-accent-voile focus:px-3 focus:text-accent"
         >
@@ -57,7 +59,7 @@ export default function RacineLayout({ children }: { children: ReactNode }) {
           <Fournisseurs>{children}</Fournisseurs>
         </main>
 
-        <footer className="mt-8 flex flex-wrap items-center gap-2 border-t border-bord px-4 py-4 text-petit text-encre-douce">
+        <footer className="mt-8 flex flex-wrap items-center gap-2 border-t border-bord px-4 py-4 text-petit text-encre-douce" data-imprimer-exclure>
           <p className="m-0 mx-auto flex min-h-cible max-w-[1180px] items-center">
             Les sorts viennent de{' '}
             <a

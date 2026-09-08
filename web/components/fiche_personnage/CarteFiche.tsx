@@ -56,7 +56,7 @@ export function CarteFiche({
         )}
       </ul>
 
-      <div className="mt-3 flex flex-wrap gap-2">
+      <div className="mt-3 flex flex-wrap gap-2" data-imprimer-exclure>
         <button
           className="min-h-cible min-w-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           onClick={() => onDupliquer(fiche.id)}

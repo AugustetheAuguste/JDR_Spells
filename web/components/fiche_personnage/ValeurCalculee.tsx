@@ -3,6 +3,7 @@
 import { useId, useState } from 'react'
 
 import { MOTS } from '@/lib/design/tokens'
+import { useImprimeEnCours } from '@/lib/fiche_personnage/etatImpression'
 import type { ResultatCalcul } from '@/lib/fiche_personnage/resoudre'
 
 /**
@@ -30,6 +31,11 @@ export function ValeurCalculee({
 }) {
   const [ouvert, setOuvert] = useState(false)
   const idDetail = useId()
+  // Same print-forces-open discipline as `Section.tsx`: OR the transient
+  // print state into the rendering boolean, never call `setOuvert` from it,
+  // so there is nothing to restore after the print dialog closes.
+  const impression = useImprimeEnCours()
+  const effectivementOuvert = ouvert || impression
 
   if (resultat.total === null) {
     return (
@@ -50,7 +56,7 @@ export function ValeurCalculee({
         )}
         {onSaisirManuellement && (
           <button
-            className="min-h-cible w-fit border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="min-h-cible w-fit border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
             onClick={onSaisirManuellement}
             type="button"
           >
@@ -65,20 +71,20 @@ export function ValeurCalculee({
     <div className="flex flex-col gap-1">
       <div className="flex items-baseline gap-2">
         <span className="text-encre-douce">{libelle}</span>
-        <span aria-describedby={ouvert ? idDetail : undefined} className="font-mono text-base text-encre">
+        <span aria-describedby={effectivementOuvert ? idDetail : undefined} className="font-mono text-base text-encre">
           {resultat.total}
         </span>
         <button
-          aria-expanded={ouvert}
-          className="min-h-cible px-1 text-petit text-accent underline hover:text-accent-survol focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          aria-expanded={effectivementOuvert}
+          className="min-h-cible px-1 text-petit text-accent underline hover:text-accent-survol focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
           onClick={() => setOuvert((valeur) => !valeur)}
           type="button"
         >
-          {ouvert ? MOTS.valeurReplierDetail : MOTS.valeurDeplierDetail}
+          {effectivementOuvert ? MOTS.valeurReplierDetail : MOTS.valeurDeplierDetail}
         </button>
       </div>
 
-      {ouvert && (
+      {effectivementOuvert && (
         <div className="border border-bord bg-surface p-2 text-petit" id={idDetail}>
           <p className="m-0 font-semibold text-encre">{MOTS.valeurDetailTitre}</p>
           <ul className="m-0 list-none p-0">

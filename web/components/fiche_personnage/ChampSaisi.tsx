@@ -40,7 +40,7 @@ export function ChampSaisi({
         )}
       </label>
       <input
-        className="min-h-cible w-24 border border-bord-fort bg-surface px-2 text-encre focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        className="min-h-cible w-24 border border-bord-fort bg-surface px-2 text-encre focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
         id={idChamp}
         onChange={(evenement) => {
           const texte = evenement.target.value
@@ -54,6 +54,13 @@ export function ChampSaisi({
         type="number"
         value={valeur === null ? '' : valeur}
       />
+      {/* Print alternative: a field is a rendered fact on paper, never a box
+          inviting a hand-filled answer (plan 17, notes d'implémentation) — an
+          empty value prints as an em dash, not as blank space that reads as
+          "fill this in". */}
+      <span aria-hidden="true" className="hidden border-b border-encre px-1 font-mono text-encre print:inline">
+        {valeur === null ? '—' : valeur}
+      </span>
     </div>
   )
 }

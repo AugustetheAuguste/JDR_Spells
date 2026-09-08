@@ -3,6 +3,7 @@
 import { useId, useState, type ReactNode } from 'react'
 
 import { MOTS } from '@/lib/design/tokens'
+import { useImprimeEnCours } from '@/lib/fiche_personnage/etatImpression'
 
 /** One `localStorage` key per sheet, mirroring `web/lib/fiche_personnage/magasin.ts`'s
  * per-sheet key discipline: folding one sheet's sections must never touch
@@ -60,6 +61,11 @@ export function Section({
     const etat = lireEtatPliage(ficheId)
     return cle in etat ? (etat[cle] ?? deplieParDefaut) : deplieParDefaut
   })
+  // Print forces every section open without touching the reader's own fold
+  // state (`deplie`, unmodified) — see `etatImpression.ts`'s doc comment for
+  // why this makes an explicit afterprint restore unnecessary.
+  const impression = useImprimeEnCours()
+  const effectivementDeplie = deplie || impression
 
   function basculer(): void {
     const prochain = !deplie
@@ -69,22 +75,22 @@ export function Section({
   }
 
   return (
-    <section className="border border-bord bg-surface">
+    <section className="border border-bord bg-surface print:break-inside-avoid" data-section-impression>
       <h2 className="m-0">
         <button
           aria-controls={idContenu}
-          aria-expanded={deplie}
-          aria-label={deplie ? `${MOTS.sectionReplier} ${titre}` : `${MOTS.sectionDeplier} ${titre}`}
-          className="flex min-h-cible w-full items-center justify-between px-3 py-2 text-left font-affichage text-titre3 text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          aria-expanded={effectivementDeplie}
+          aria-label={effectivementDeplie ? `${MOTS.sectionReplier} ${titre}` : `${MOTS.sectionDeplier} ${titre}`}
+          className="flex min-h-cible w-full items-center justify-between px-3 py-2 text-left font-affichage text-titre3 text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:pointer-events-none"
           id={`section-${cle}`}
           onClick={basculer}
           type="button"
         >
           {titre}
-          <span aria-hidden="true">{deplie ? '▾' : '▸'}</span>
+          <span aria-hidden="true" className="print:hidden">{effectivementDeplie ? '▾' : '▸'}</span>
         </button>
       </h2>
-      {deplie && <div className="px-3 py-3" id={idContenu}>{children}</div>}
+      {effectivementDeplie && <div className="px-3 py-3" id={idContenu}>{children}</div>}
     </section>
   )
 }
