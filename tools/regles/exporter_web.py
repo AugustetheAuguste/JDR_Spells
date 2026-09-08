@@ -24,6 +24,15 @@ RACINE = Path(__file__).resolve().parents[2]
 SOURCE_DIR = RACINE / "data/regles"
 DEST_DIR = RACINE / "web/public/data/regles"
 
+# `class_skills.json` (étape 10, moteur des compétences) est un artefact du
+# corpus des dons (§12 CLAUDE.md), pas une table de règles au sens de ce
+# module : pas d'enveloppe `meta`/`donnees`, pas de contrat vérifié par
+# `check_contrat_regles.ts`. Republié verbatim sous un répertoire séparé
+# plutôt qu'ajouté à `data/regles/`, pour ne jamais faire croire à ce fichier
+# qu'il porte l'enveloppe des autres tables.
+SOURCE_CLASS_SKILLS = RACINE / "data/classes/class_skills.json"
+DEST_CLASS_SKILLS_DIR = RACINE / "web/public/data/classes"
+
 
 class ExporterReglesError(RuntimeError):
     """Raised when the export cannot proceed at all."""
@@ -62,6 +71,27 @@ def _ecrire_index(tables: list[dict[str, object]]) -> None:
     (DEST_DIR / "index.json").write_text(texte, encoding="utf-8", newline="\n")
 
 
+def _exporter_class_skills() -> str:
+    """Republish `data/classes/class_skills.json` verbatim. Returns its sha256."""
+    if not SOURCE_CLASS_SKILLS.exists():
+        raise ExporterReglesError(f"{SOURCE_CLASS_SKILLS.as_posix()} est absent")
+
+    try:
+        contenu = json.loads(SOURCE_CLASS_SKILLS.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as erreur:
+        raise ExporterReglesError(f"class_skills.json n'est pas du JSON valide : {erreur}") from erreur
+    if not contenu:
+        raise ExporterReglesError("class_skills.json est vide — rien à publier")
+
+    octets_source = SOURCE_CLASS_SKILLS.read_bytes()
+    sha256 = hashlib.sha256(octets_source).hexdigest()
+
+    DEST_CLASS_SKILLS_DIR.mkdir(parents=True, exist_ok=True)
+    texte = json.dumps(contenu, ensure_ascii=False, indent=2) + "\n"
+    (DEST_CLASS_SKILLS_DIR / "class_skills.json").write_text(texte, encoding="utf-8", newline="\n")
+    return sha256
+
+
 def exporter() -> list[dict[str, object]]:
     if not SOURCE_DIR.exists():
         raise ExporterReglesError(f"{SOURCE_DIR.as_posix()} est absent")
@@ -96,6 +126,15 @@ def exporter() -> list[dict[str, object]]:
         raise ExporterReglesError(
             f"table(s) non publiée(s) après export : {', '.join(sorted(manquantes))}"
         )
+
+    sha256_class_skills = _exporter_class_skills()
+    tables.append(
+        {
+            "nom": "classes/class_skills.json",
+            "version": None,
+            "sha256": sha256_class_skills,
+        }
+    )
 
     return tables
 
