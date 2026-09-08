@@ -30,7 +30,7 @@ export type SegmentAriane =
  */
 export function FilAriane({ segments }: { readonly segments: readonly SegmentAriane[] }) {
   return (
-    <nav aria-label={MOTS.ariane} className="text-petit text-encre-douce">
+    <nav aria-label={MOTS.ariane} className="text-petit text-encre-douce" data-imprimer-exclure>
       <ol className="m-0 flex list-none flex-wrap items-center gap-1 p-0">
         {segments.map((segment, i) => {
           const dernier = i === segments.length - 1

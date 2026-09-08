@@ -152,6 +152,12 @@
   --color-oblige: #4f7114;
   --color-oblige-voile: #e8edde; /* 4.75:1 sur oblige */
 
+  /* Impression, étape 17 — pas un thème, jamais permuté par [data-theme="nuit"] :
+     encre pure sur stock blanc, la paire la plus économe en encre disponible. */
+  --color-impression-fond: #ffffff;
+  --color-impression-encre: #000000;
+  --color-impression-bord: #000000;
+
   /* Les neuf écoles */
   --color-ecole-abjuration: #3a5a9b;
   --color-ecole-divination: #6b4fa8;

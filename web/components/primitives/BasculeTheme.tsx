@@ -56,6 +56,7 @@ export function BasculeTheme() {
     <button
       aria-pressed={nuit}
       className="flex min-h-cible min-w-cible items-center justify-center border border-bord-fort text-encre hover:text-accent"
+      data-imprimer-exclure
       onClick={basculer}
       type="button"
     >

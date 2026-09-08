@@ -202,18 +202,28 @@ function VueFicheEditable({
   const tablesResolues = tables ?? { typesBonus: null, modificateursCarac: null, sortsBonus: null, armures: null, progressionClasses: null }
 
   return (
-    <section>
+    <section data-fiche-impression>
       <FilAriane segments={segments} />
 
       <h1 className="mt-2 font-affichage text-titre1 font-semibold text-encre lettrine">{nom}</h1>
 
+      {/* B8, réaffirmé pour la fiche imprimée (plan 17) : le lien n'est pas
+          seulement dans le pied de page du site, qui disparaît à
+          l'impression avec le reste du mobilier — il vit ici, sur la fiche
+          elle-même, où `impression.css` déplie son URL en clair. */}
+      <p className="mt-1 text-petit">
+        <a className="text-accent underline hover:text-accent-survol" href="https://www.pathfinder-fr.org/" rel="noreferrer" target="_blank">
+          {MOTS.voirSurLeWiki}
+        </a>
+      </p>
+
       {erreurEnregistrement && (
-        <p className="mt-2 border border-bord-fort bg-surface p-2 text-petit text-encre" role="alert">
+        <p className="mt-2 border border-bord-fort bg-surface p-2 text-petit text-encre print:hidden" role="alert">
           {erreurEnregistrement}
         </p>
       )}
 
-      <nav aria-label={MOTS.ficheAccesRapideTitre} className="mt-3 flex flex-wrap gap-2 text-petit">
+      <nav aria-label={MOTS.ficheAccesRapideTitre} className="mt-3 flex flex-wrap gap-2 text-petit" data-imprimer-exclure>
         {SECTIONS.map((section) => (
           <a className="text-accent underline hover:text-accent-survol" href={`#section-${section.cle}`} key={section.cle}>
             {section.titre}
@@ -1036,22 +1046,33 @@ function SectionNotes({
 
 function ChampTexte({ libelle, valeur, onChange }: { readonly libelle: string; readonly valeur: string; readonly onChange: (valeur: string) => void }) {
   return (
-    <label className="flex flex-col gap-1 text-petit text-encre-douce">
-      {libelle}
-      <input
-        className="min-h-cible border border-bord-fort bg-surface px-2 text-encre focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        onChange={(evenement) => onChange(evenement.target.value)}
-        type="text"
-        value={valeur}
-      />
-    </label>
+    // The print span sits OUTSIDE the `<label>`, as a sibling, never nested
+    // inside it: `getByLabelText` computes a label's accessible text from its
+    // full `textContent`, so an em dash nested inside the label would corrupt
+    // the very query every existing test in this file uses to find a field.
+    <div className="flex flex-col gap-1">
+      <label className="text-petit text-encre-douce">
+        {libelle}
+        <input
+          className="mt-1 block min-h-cible border border-bord-fort bg-surface px-2 text-encre focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
+          onChange={(evenement) => onChange(evenement.target.value)}
+          type="text"
+          value={valeur}
+        />
+      </label>
+      {/* Print alternative, same discipline as `ChampSaisi.tsx` — a value or an
+          em dash, never an empty box that reads as a form to fill by hand. */}
+      <span aria-hidden="true" className="hidden border-b border-encre px-1 text-encre print:inline">
+        {valeur.trim() === '' ? '—' : valeur}
+      </span>
+    </div>
   )
 }
 
 function BoutonRetirer({ onClick }: { readonly onClick: () => void }) {
   return (
     <button
-      className="min-h-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      className="min-h-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
       onClick={onClick}
       type="button"
     >
@@ -1063,7 +1084,7 @@ function BoutonRetirer({ onClick }: { readonly onClick: () => void }) {
 function BoutonAjouter({ libelle, onClick }: { readonly libelle: string; readonly onClick: () => void }) {
   return (
     <button
-      className="mt-2 min-h-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      className="mt-2 min-h-cible border border-bord-fort px-3 text-petit text-encre hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent print:hidden"
       onClick={onClick}
       type="button"
     >

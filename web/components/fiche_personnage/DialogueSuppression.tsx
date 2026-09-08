@@ -82,7 +82,7 @@ export function DialogueSuppression({
   if (!ouvert) return null
 
   return (
-    <div className="fixed inset-0 z-30 flex items-center justify-center bg-encre/40">
+    <div className="fixed inset-0 z-30 flex items-center justify-center bg-encre/40" data-imprimer-exclure>
       <div
         aria-labelledby="dialogue-suppression-titre"
         aria-modal="true"

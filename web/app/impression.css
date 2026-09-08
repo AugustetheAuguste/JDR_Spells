@@ -1,0 +1,71 @@
+/*
+ * Étape 17, la feuille A4 dédiée à l'impression de la fiche de personnage.
+ *
+ * Tout vit dans `@media print`, portée exclusive : cette feuille ne change
+ * rien à l'écran, jamais. Un hex écrit ici serait un défaut détecté par
+ * `lib/design/tokens.test.ts` ("aucun hexadécimal hors de tokens.ts") — cette
+ * feuille ne lit donc jamais une couleur littérale, seulement les
+ * `--color-impression-*` que `styles/theme.css` mirrore depuis
+ * `COULEURS_IMPRESSION` (`lib/design/tokens.ts`).
+ *
+ * Le thème nuit ne suit pas au papier (Skill `pf-fiche-personnage`, plan 17) :
+ * les variables de couleur sont réécrites ici, à la racine, dans la portée
+ * `@media print` — qu'importe si `[data-theme="nuit"]` est posé sur `<html>`,
+ * cette réécriture gagne parce qu'elle est plus spécifique et vient après.
+ */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    /* Marges raisonnables pour une fiche lue en séance, tenue à la main —
+       assez large pour une reliure ou un classeur à trois anneaux sur le
+       bord gauche, sans gaspiller le papier sur les trois autres. */
+    margin: 15mm 12mm 15mm 18mm;
+  }
+
+  :root,
+  [data-theme='nuit'] {
+    --color-base: var(--color-impression-fond);
+    --color-surface: var(--color-impression-fond);
+    --color-bord: var(--color-impression-bord);
+    --color-bord-fort: var(--color-impression-bord);
+    --color-encre: var(--color-impression-encre);
+    --color-encre-douce: var(--color-impression-encre);
+    --color-encre-faible: var(--color-impression-encre);
+    --color-accent: var(--color-impression-encre);
+    --color-accent-survol: var(--color-impression-encre);
+  }
+
+  html,
+  body {
+    background: var(--color-impression-fond);
+    color: var(--color-impression-encre);
+  }
+
+  /* Le mobilier d'écran, cité par le plan 17 : le header du site, le pied de
+     page, le lien d'évitement, la bascule de thème, le fil d'Ariane, la
+     barre d'actions d'une carte de fiche, les boutons de rattachement, de
+     détachement, de suppression, d'import, d'export. Un seul attribut, posé
+     composant par composant plutôt qu'énuméré par sélecteur de nom de
+     classe, pour qu'une section ajoutée plus tard (étape 16) hérite de la
+     règle sans qu'on y retouche. */
+  [data-imprimer-exclure] {
+    display: none !important;
+  }
+
+  /* Un bloc de section ne se coupe jamais au milieu d'une page. */
+  [data-section-impression] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-color: var(--color-impression-bord);
+    background: var(--color-impression-fond);
+  }
+
+  /* Un lien cliqué ne s'ouvre pas sur papier : son URL est imprimée en clair
+     à côté du libellé, pour tout lien de destination absolue (l'engagement
+     envers pathfinder-fr.org compris, B8). */
+  [data-fiche-impression] a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: smaller;
+  }
+}

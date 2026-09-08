@@ -23,7 +23,7 @@ export function EnteteSite() {
   const [groupeOuvert, setGroupeOuvert] = useState<string | null>(null)
 
   return (
-    <header className="border-b border-bord bg-surface">
+    <header className="border-b border-bord bg-surface" data-imprimer-exclure>
       <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-2 px-4 py-3">
         <p className="m-0 font-affichage text-titre3 font-semibold">Sorts Pathfinder 1e</p>
 

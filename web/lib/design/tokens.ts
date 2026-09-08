@@ -329,6 +329,21 @@ export const DENSITE = {
   cible: '44px',
 } as const
 
+/**
+ * Print tokens, étape 17. A printed sheet is not a themed surface: night mode
+ * must not follow to paper (Skill `pf-fiche-personnage`, plan 17 § contraintes),
+ * and ink is spent, not merely rendered, so the pairing is the highest-contrast,
+ * lowest-ink one available — pure black ink on pure white stock, no tint of
+ * `surface` or `accent` carried over. `impression.css` never writes a hex of its
+ * own: it reads these through the `--color-impression-*` custom properties
+ * `styles/theme.css` mirrors them into, exactly like every other token here.
+ */
+export const COULEURS_IMPRESSION = {
+  fond: '#FFFFFF',
+  encre: '#000000',
+  bord: '#000000',
+} as const
+
 export const MOUVEMENT = {
   /** Short enough not to be felt on a list of 2070 rows, and zeroed entirely
    * under `prefers-reduced-motion: reduce`. */
