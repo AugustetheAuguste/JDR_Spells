@@ -268,8 +268,9 @@ function formaterCleVitesse(metres: number): string {
  * « 4,5 m (3 c) », jamais une extrapolation au-delà de ce qui est écrit. */
 function parserMetres(texte: string): number | null {
   const correspondance = /^([\d]+(?:,[\d]+)?)/.exec(texte.trim())
-  if (!correspondance) return null
-  const valeur = Number(correspondance[1].replace(',', '.'))
+  const groupe = correspondance?.[1]
+  if (!groupe) return null
+  const valeur = Number(groupe.replace(',', '.'))
   return Number.isFinite(valeur) ? valeur : null
 }
 
