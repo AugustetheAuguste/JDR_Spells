@@ -124,6 +124,7 @@ class TestArtefacts:
             "data/sorts/",
             "data/schemas/",
             "reports/",
+            "data/regles/",
         }
         assert {a["chemin"] for a in manifest["artefacts"]} == attendus
 
