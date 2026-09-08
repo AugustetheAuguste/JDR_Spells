@@ -94,6 +94,9 @@ def construire_manifeste(racine: Path) -> dict:
     nb_entrees_listes = _entrees_listes(listes_dir)
     nb_sorts_uniques = _lignes_jsonl(index_dir / "sorts_uniques.jsonl")
 
+    regles_dir = racine / "data" / "regles"
+    nb_fichiers_regles = _nb_fichiers(regles_dir, "*.json")
+
     artefacts = [
         {
             "chemin": "elements_to_do.json",
@@ -194,6 +197,30 @@ def construire_manifeste(racine: Path) -> dict:
             "description": "Rien n'est jamais écarté silencieusement : lacunes, libellés inconnus, collisions de slug atterrissent ici.",
         },
     ]
+
+    if nb_fichiers_regles:
+        artefacts.append(
+            {
+                "chemin": "data/regles/",
+                "type": "repertoire_json",
+                "motif": "*.json",
+                "nb_fichiers": nb_fichiers_regles,
+                "nb_enregistrements": sum(
+                    _nb_entrees_json(f) for f in sorted(regles_dir.glob("*.json"))
+                ),
+                "schema": None,
+                "produit_par_etape": "05, 06",
+                "autorite": (
+                    "les valeurs de règles universelles et de progression de "
+                    "classe lues sur pathfinder-fr.org"
+                ),
+                "description": (
+                    "Progression de classe, modificateurs de caractéristiques, "
+                    "sorts bonus, types de bonus, armures. Committé : un clone "
+                    "frais construit la fiche de personnage sans requête réseau."
+                ),
+            }
+        )
 
     return {
         "genere_le": datetime.now(UTC).isoformat(),

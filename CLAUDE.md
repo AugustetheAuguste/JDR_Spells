@@ -34,6 +34,8 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
 | `web/` | interface | le site consultable (§ 11) — code applicatif, fait autorité sur lui-même |
 | `web/public/data/` | export web | **rien** : dérivé du corpus, committé, jamais édité (§ 11) |
 | `web/data_sources/alias_manuel.tsv` | — | la table d'alias anglais→français, **éditée à la main** |
+| `data/regles/*.json` | 05, 06 | les valeurs de règles universelles et de progression de classe lues sur pathfinder-fr.org |
+| `web/public/data/regles/` | export web | **rien**, dérivé de `data/regles/`, committé, jamais édité |
 
 ## 3. Règles dures — non négociables
 
@@ -48,6 +50,9 @@ Inventaire recompté : **`data/MANIFEST.json`** (`python -m pf_spells.build_mani
   `indent=2` + newline final, `.jsonl` compact. Aucune clé n'est omise : scalaire
   absent → `null`, liste absente → `[]`. Rien n'est écarté silencieusement — lacunes,
   libellés inconnus, collisions de slug → `reports/`.
+- Sur la fiche de personnage (§15), une valeur numérique absente **se propage**
+  en `introuvable`, jamais en zéro par défaut, et nomme l'entrée manquante.
+  Toute valeur saisie à la main porte le drapeau `saisieManuelle` à `true`.
 
 ## 4. L'algorithme de slug `id` — la clé de jointure
 
@@ -90,6 +95,13 @@ python -m pf_spells.validate_enrichment  # étage 10 - hors ligne, 1 si --strict
 python -m pf_spells.build_vues         # vue jointe - hors ligne, dérivée
 ```
 
+```
+npm run regles:recuperer  # tools/regles/recuperer_pages_classes.py - RÉSEAU, § 7
+npm run regles:import     # cache -> data/regles/*.json - hors ligne
+npm run regles:export     # data/regles/ -> web/public/data/regles/ - hors ligne
+npm run regles:verifier   # scripts/check_contrat_regles.ts - hors ligne
+```
+
 Les quatre derniers ont une entrée unique, garde d'entrée comprise :
 `python -m pf_spells.cli` (`prepare-prompts`, `enrich`, `validate-enrich`,
 `build-vues`). Procédures de réglage et de correction : **`docs/enrichissement.md`**.
@@ -102,11 +114,14 @@ réseau au prochain lancement, dans les limites de throttle du §7. Sur un dép�
 parseur sans retoucher au wiki, quand le cache est disponible. Tests :
 `PYTHONPATH=src python -m pytest tests -q`.
 
-## 7. Les quatre modules qui sortent sur le réseau
+## 7. Les cinq modules qui sortent sur le réseau
 
-**Wiki** (`fetch_classes`, `fetch_spells`) : ne jamais monter le throttle au-dessus
+**Wiki** (`fetch_classes`, `fetch_spells`, `tools/regles/recuperer_pages_classes.py`) : ne jamais monter le throttle au-dessus
 de 1 requête/seconde, ni les workers au-dessus de 4 — pathfinder-fr.org est tenu
-par des bénévoles, ce n'est pas un réglage de performance. **Bedrock, facturé**
+par des bénévoles, ce n'est pas un réglage de performance.
+`recuperer_pages_classes.py` est le cinquième module réseau, un worker,
+1 requête/seconde. Le parseur qui en lit le cache (`regles:import`), lui, est
+hors ligne. **Bedrock, facturé**
 (`taxo_passe0`, `enrich_llm`) : on-demand seulement, le jeton porteur n'ouvrant pas
 S3. Dépense bornée *par construction* : plafond d'appels, reprise sur `hash_source`
 vérifiée avant l'appel, confirmation au-delà de 100 enregistrements (`--oui` hors
@@ -116,7 +131,7 @@ cache = coût doublé, et le cache a un plancher de 4096 tokens sous lequel il �
 **en silence**. Jeton : `AWS_BEARER_TOKEN_BEDROCK`, **variable d'environnement
 uniquement** — jamais dans le dépôt, `.env` est gitignoré et aucun module ne le lit.
 **Vérifier le plafond de dépense (`--estimer-seulement`) avant toute passe
-complète.** Ces quatre modules sont les seules exceptions : tout le reste, étage 10
+complète.** Ces cinq modules sont les seules exceptions : tout le reste, étage 10
 et vues compris, est hors ligne.
 
 ## 8. `data/sorts/*.json` est un artefact de machine — le pipeline fait foi
@@ -214,6 +229,17 @@ Si le déploiement réclame un secret, c'est le symptôme, pas la configuration.
   sinon chaque clic sur une facette remonte en haut du document et poser trois
   filtres devient trois allers-retours. Les tests l'assertent (`SANS_SAUT`). Le lien de retour vers pathfinder-fr.org est un
   engagement, pas une décoration : il est sur chaque fiche et dans le pied de page.
+- **La navigation est une arborescence unique**, lue à la fois par les menus au
+  clic du bureau et par le burger mobile, avec une recherche globale unifiée et
+  un fil d'Ariane sur chaque route. La fiche de personnage (§15) vit sous
+  `/personnages/`, route unique en requête d'identifiant plutôt qu'en segment
+  dynamique, parce que `output: 'export'` ne peut pas générer un segment
+  dynamique dont les valeurs sont créées localement après le build.
+- **La fiche de personnage (§15) n'enregistre aucune consommation.** Aucune
+  case d'emplacement de sort dépensé, aucun point de vie courant, aucun bouton
+  de repos, aucun décompte de munitions, aucun état temporaire. Un seul rendu
+  imprimable, la feuille d'impression dédiée (`web/app/impression.css`), qui
+  déplie le détail resté replié à l'écran.
 
 ```
 npm run data:export     # corpus -> web/public/data/ + contrat  (hors ligne)
@@ -445,7 +471,19 @@ de clé de caractéristique dans le producteur Python, jamais dans
 `engine.py`/`parser.py`), et preuves d'échec/de couverture du garde :
 `build/dons/OUTPUT_parite_python_ts.md`.
 
-## 15. Interdictions de style
+## 15. Fiche de personnage, deux entités homonymes jamais dérivées l'une de l'autre
+
+`personnages` est la table de compte Supabase qui sert l'éligibilité des dons
+(§12), sans existence locale propre et sans compte facultatif. Une **fiche**
+est une entité distincte, le document de référence de la fiche de personnage
+interactive, locale d'abord, avec son propre identifiant et un rattachement
+`personnageId` optionnel. Ce rattachement n'est **jamais** dérivé
+automatiquement dans un sens ni dans l'autre. La fiche affiche des valeurs
+maximales et des capacités disponibles, jamais un compteur de séance, elle
+n'enregistre aucune consommation. Détail du contrat de calcul et des
+conventions, Skill `pf-fiche-personnage` et `docs/fiche_personnage.md`.
+
+## 16. Interdictions de style
 
 - **Ne jamais peupler un `__init__.py`** ni ajouter d'`__all__`, où que ce soit.
 - Pas de compatibilité ascendante à maintenir.

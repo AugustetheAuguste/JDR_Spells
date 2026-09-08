@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-28T17:40:50.034713+00:00",
+  "genere_le": "2026-09-08T03:14:34.928566+00:00",
   "parser_version": "1.0.0",
   "source": {
     "site": "https://www.pathfinder-fr.org/",
@@ -86,8 +86,8 @@
       "chemin": "data/schemas/",
       "type": "repertoire_json_schema",
       "motif": "*.json",
-      "nb_fichiers": 4,
-      "nb_enregistrements": 4,
+      "nb_fichiers": 6,
+      "nb_enregistrements": 6,
       "schema": null,
       "produit_par_etape": "02",
       "autorite": "les contrats de sortie (sort, ligne de liste de classe, enrichissement, index web)",
@@ -97,12 +97,23 @@
       "chemin": "reports/",
       "type": "repertoire_markdown",
       "motif": "*.md",
-      "nb_fichiers": 8,
-      "nb_enregistrements": 8,
+      "nb_fichiers": 13,
+      "nb_enregistrements": 13,
       "schema": null,
       "produit_par_etape": "03–09",
       "autorite": "le résultat et les anomalies de chaque étape",
       "description": "Rien n'est jamais écarté silencieusement : lacunes, libellés inconnus, collisions de slug atterrissent ici."
+    },
+    {
+      "chemin": "data/regles/",
+      "type": "repertoire_json",
+      "motif": "*.json",
+      "nb_fichiers": 5,
+      "nb_enregistrements": 5,
+      "schema": null,
+      "produit_par_etape": "05, 06",
+      "autorite": "les valeurs de règles universelles et de progression de classe lues sur pathfinder-fr.org",
+      "description": "Progression de classe, modificateurs de caractéristiques, sorts bonus, types de bonus, armures. Committé : un clone frais construit la fiche de personnage sans requête réseau."
     }
   ],
   "totaux": {
