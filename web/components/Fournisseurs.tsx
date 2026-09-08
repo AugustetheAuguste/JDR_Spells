@@ -5,6 +5,7 @@ import { FournisseurPersonnageActif } from '@/lib/compte/contexte-personnages'
 import { FournisseurSession } from '@/lib/compte/session'
 import { FournisseurFavoris } from '@/lib/favoris/contexte'
 import { FournisseurFiches } from '@/lib/fiche_personnage/contexte-fiches'
+import { FournisseurSynchroFiches } from '@/lib/fiche_personnage/SynchroFiches'
 
 import type { ReactNode } from 'react'
 
@@ -43,6 +44,19 @@ import type { ReactNode } from 'react'
  * lives in `localStorage` under its own id, with no dependency on the
  * session, the active character, or favourites. Placing it innermost means a
  * sign-in or sign-out never re-mounts it.
+ *
+ * `FournisseurSynchroFiches` (step 18) sits inside `FournisseurFiches` and
+ * inside `FournisseurSession`, because it calls both `useSession()` and
+ * `useFiches()` — both throw outside their provider, exactly the trap this
+ * file's own docstring above is about. It is the same bug, one level
+ * deeper: writing `FournisseurSynchroFiches` and never mounting it here
+ * would again look like nothing broke, because `useSynchroFiches()` falls
+ * through to its inert default (`etatSynchro: 'inactive'`, empty
+ * `propositions`), and every unit test that mounts it by hand would still
+ * pass. Hence the extension of `fournisseurs.test.tsx` below, on the exact
+ * model of the favourites case: a `select` followed by an `upsert` against
+ * `fiches`, asserted on the composed `<Fournisseurs>`, never on
+ * `<FournisseurSynchroFiches>` mounted alone.
  */
 export function Fournisseurs({ children }: { readonly children: ReactNode }) {
   return (
@@ -50,7 +64,9 @@ export function Fournisseurs({ children }: { readonly children: ReactNode }) {
       <FournisseurPersonnageActif>
         <FournisseurFavoris>
           <FournisseurSynchro>
-            <FournisseurFiches>{children}</FournisseurFiches>
+            <FournisseurFiches>
+              <FournisseurSynchroFiches>{children}</FournisseurSynchroFiches>
+            </FournisseurFiches>
           </FournisseurSynchro>
         </FournisseurFavoris>
       </FournisseurPersonnageActif>

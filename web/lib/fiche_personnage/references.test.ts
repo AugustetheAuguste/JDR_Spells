@@ -161,6 +161,7 @@ describe('personnages de référence', () => {
         expect(completes.length).toBe(attendu.attaques.length)
         completes.forEach((complete, index) => {
           const attendue = attendu.attaques[index]
+          if (attendue === undefined) throw new Error('attaque attendue manquante')
           expect(complete.attaque.nom).toBe(attendue.nom)
           expect(complete.bonusParAttaque.map((r) => r.total)).toEqual(attendue.bonus)
           expect(complete.degats.total).toBe(attendue.degats)
