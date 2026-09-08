@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "roublard",
+  "personnageId": null,
+  "meta": {
+    "nomPersonnage": "Roublard de référence",
+    "nomJoueur": "référence",
+    "creeLe": "2026-09-08T00:00:00.000Z",
+    "modifieLe": "2026-09-08T00:00:00.000Z"
+  },
+  "identite": {
+    "race": {
+      "nom": "Halfelin",
+      "source": "maison",
+      "ref": null
+    },
+    "classes": [
+      {
+        "nom": "Roublard",
+        "niveau": 6,
+        "archetype": null,
+        "source": "maison",
+        "ref": null
+      }
+    ],
+    "alignement": "Neutre",
+    "divinite": "",
+    "taille": "Petit",
+    "langues": [
+      "Commun"
+    ]
+  },
+  "caracteristiques": {
+    "force": {
+      "base": 12,
+      "modificateurs": [
+        {
+          "libelle": "Malus racial halfelin",
+          "valeur": -2,
+          "type": "racial",
+          "origine": "Halfelin — -2 Force",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "dexterite": {
+      "base": 18,
+      "modificateurs": [
+        {
+          "libelle": "Bonus racial halfelin",
+          "valeur": 2,
+          "type": "racial",
+          "origine": "Halfelin — +2 Dextérité",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "constitution": {
+      "base": 12,
+      "modificateurs": []
+    },
+    "intelligence": {
+      "base": 14,
+      "modificateurs": []
+    },
+    "sagesse": {
+      "base": 10,
+      "modificateurs": []
+    },
+    "charisme": {
+      "base": 14,
+      "modificateurs": [
+        {
+          "libelle": "Bonus racial halfelin",
+          "valeur": 2,
+          "type": "racial",
+          "origine": "Halfelin — +2 Charisme",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    }
+  },
+  "combat": {
+    "bbaBase": 4,
+    "pvMax": 34,
+    "vitesseBase": 6,
+    "resistanceMagie": null
+  },
+  "defense": {
+    "armure": {
+      "nom": "Armure de cuir cloutée",
+      "bonusCA": 3,
+      "bonusDexMax": 5,
+      "malusTests": -1,
+      "categorie": "legere"
+    },
+    "bouclier": null,
+    "modificateursCA": []
+  },
+  "sauvegardes": {
+    "reflexes": {
+      "base": 5,
+      "modificateurs": []
+    },
+    "vigueur": {
+      "base": 2,
+      "modificateurs": []
+    },
+    "volonte": {
+      "base": 2,
+      "modificateurs": []
+    }
+  },
+  "attaques": [
+    {
+      "nom": "Épée courte",
+      "type": "corpsACorps",
+      "caracteristiqueAttaque": "force",
+      "caracteristiqueDegats": "force",
+      "des": "1d6",
+      "critique": {
+        "plage": "19-20",
+        "multiplicateur": 2
+      },
+      "portee": "corps à corps",
+      "modificateursAttaque": [],
+      "modificateursDegats": [],
+      "source": "maison",
+      "ref": null
+    }
+  ],
+  "competences": [],
+  "dons": [],
+  "aptitudes": [],
+  "sorts": {
+    "mode": null,
+    "caracteristiqueIncantation": null,
+    "niveauLanceur": null,
+    "emplacementsParNiveau": [],
+    "sortsConnus": [],
+    "sortsPrepares": []
+  },
+  "equipement": [],
+  "notes": "Personnage de référence, étape 12. Sourcé : https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Valeurs%20de%20combat.ashx, https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx (citées par les docstrings du moteur) ; web/public/data/regles/progression_classes.json (BBA et sauvegardes du Roublard niveau 6) ; web/public/data/regles/armures.json (Armure de cuir cloutée) ; data/races/races.json (modificateurs raciaux du Halfelin, taille P, vitesse 6 m — table sans meta propre). Aucun don Arme de prédilection (Finesse) saisi : l'attaque utilise la Force, pas la Dextérité, faute de vérification possible de cette règle (WebFetch 403). Dé de dégâts de l'Épée courte hors attendus.json, cf. rapport §Lacunes assumées."
+}

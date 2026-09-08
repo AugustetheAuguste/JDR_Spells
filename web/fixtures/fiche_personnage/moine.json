@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "moine",
+  "personnageId": null,
+  "meta": {
+    "nomPersonnage": "Moine de référence",
+    "nomJoueur": "référence",
+    "creeLe": "2026-09-08T00:00:00.000Z",
+    "modifieLe": "2026-09-08T00:00:00.000Z"
+  },
+  "identite": {
+    "race": {
+      "nom": "Humain",
+      "source": "maison",
+      "ref": null
+    },
+    "classes": [
+      {
+        "nom": "Moine",
+        "niveau": 6,
+        "archetype": null,
+        "source": "maison",
+        "ref": null
+      }
+    ],
+    "alignement": "Neutre",
+    "divinite": "",
+    "taille": "Moyen",
+    "langues": [
+      "Commun"
+    ]
+  },
+  "caracteristiques": {
+    "force": {
+      "base": 14,
+      "modificateurs": []
+    },
+    "dexterite": {
+      "base": 16,
+      "modificateurs": []
+    },
+    "constitution": {
+      "base": 14,
+      "modificateurs": []
+    },
+    "intelligence": {
+      "base": 10,
+      "modificateurs": []
+    },
+    "sagesse": {
+      "base": 18,
+      "modificateurs": [
+        {
+          "libelle": "Bonus racial humain (choix)",
+          "valeur": 2,
+          "type": "racial",
+          "origine": "Humain — +2 à une caractéristique au choix",
+          "sourceUrl": null,
+          "saisieManuelle": true
+        }
+      ]
+    },
+    "charisme": {
+      "base": 8,
+      "modificateurs": []
+    }
+  },
+  "combat": {
+    "bbaBase": null,
+    "pvMax": null,
+    "vitesseBase": 9,
+    "resistanceMagie": null
+  },
+  "defense": {
+    "armure": null,
+    "bouclier": null,
+    "modificateursCA": []
+  },
+  "sauvegardes": {
+    "reflexes": {
+      "base": null,
+      "modificateurs": []
+    },
+    "vigueur": {
+      "base": null,
+      "modificateurs": []
+    },
+    "volonte": {
+      "base": null,
+      "modificateurs": []
+    }
+  },
+  "attaques": [],
+  "competences": [],
+  "dons": [],
+  "aptitudes": [],
+  "sorts": {
+    "mode": null,
+    "caracteristiqueIncantation": null,
+    "niveauLanceur": null,
+    "emplacementsParNiveau": [],
+    "sortsConnus": [],
+    "sortsPrepares": []
+  },
+  "equipement": [],
+  "notes": "Personnage de référence, étape 12. Sourcé : https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Valeurs%20de%20combat.ashx (CA, citée par les docstrings du moteur) ; data/races/races.json (vitesse de base Humain, 9 m). Lacune assumée majeure : web/public/data/regles/progression_classes.json porte `progression: null` pour le Moine ; une tentative de vérification directe de la page https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx via WebFetch a échoué (HTTP 403) dans cet environnement. BBA, bases de sauvegarde, bonus de CA sans armure et vitesse non réduite propre au Moine restent donc introuvables plutôt qu'inventés : seuls la CA (sans armure, sans le bonus de classe non sourcé), l'initiative et la vitesse (via l'absence d'armure) sont vérifiables ici."
+}
