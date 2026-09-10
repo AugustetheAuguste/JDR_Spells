@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiche de sort — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre2">Fiche de sort — <code>/sorts/[slug]</code></p>
+    <p class="note">Ordre imposé : sur-titre, nom (lettrine minimale — première lettre en accent, pas de boîte flottante), ligne d’identité, bloc technique en deux colonnes, niveaux par classe, description (mesure 68ch), lien source au-dessus du pli. Fichiers visés : <code>components/fiche/*</code>.</p>
+  </div>
+  <div class="liens etiquette">
+    <a href="index.html">Sommaire</a>
+    <a href="liste.html">Liste</a>
+    <span style="color:var(--encre-faible)">Fiche</span>
+    <a href="comparaison.html">Comparer</a>
+    <a href="favoris.html">Favoris</a>
+    <a href="jetons.html">Jetons</a>
+  </div>
+</div>
+<div class="page" style="width:100%;max-width:var(--largeur-page);padding:0">
+    <header class="bandeau">
+      <span class="marque">Sorts · Pathfinder 1<sup style="font-size:11px">re</sup></span>
+      <nav class="etiquette">
+        <a href="liste.html" aria-current="page">Sorts</a>
+        <a href="comparaison.html">Comparer</a>
+        <a href="favoris.html">Favoris</a>
+      </nav>
+      <span class="droite">
+        <span class="aide src">source : pathfinder-fr.org</span>
+        <button class="bascule-theme" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'nuit' ? '' : 'nuit'; this.textContent = document.documentElement.dataset.theme === 'nuit' ? 'Thème jour' : 'Thème nuit';">Thème nuit</button>
+      </span>
+    </header>
+    <main class="page">
+      <article class="fiche">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px">
+          <div>
+            <p class="etiquette" style="color:var(--accent)">Fiche de sort</p>
+            <h1 class="titre1 lettrine" style="margin-top:1px">Ascension</h1>
+            <p style="margin-top:4px;display:flex;align-items:center;gap:9px"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-universel)"></span>Universelle</span> · niveau 9 pour cinq classes · résistance à la magie : oui (inoffensif)</p>
+          </div>
+          <button class="cartouche etiquette">☆ Favori</button>
+        </div>
+        <a class="lien-source" href="#">Voir sur pathfinder-fr.org</a>
+        <div class="technique">
+          <div>
+            <span class="k">Incantation</span><span>1 heure</span>
+            <span class="k">Portée</span><span>courte (7,50 m + 1,50 m/2 niveaux)</span>
+            <span class="k">Cible</span><span>une créature non-mythique/3 niveaux</span>
+          </div>
+          <div>
+            <span class="k">Composantes</span><span>V, G, F (artefact mineur), M (10 000 po)</span>
+            <span class="k">Durée</span><span>2 heures/niveau ; voir texte</span>
+            <span class="k">Sauvegarde</span><span>Volonté, annule (inoffensif)</span>
+          </div>
+        </div>
+        <div class="par-classe">
+          <span>Arcaniste/Ensorceleur/Magicien<span class="jeton fiche chiffre">9</span></span>
+          <span>Druide<span class="jeton fiche chiffre">9</span></span>
+          <span>Prêtre/Prêtre combattant/Oracle<span class="jeton fiche chiffre">9</span></span>
+          <span>Psychiste<span class="jeton fiche chiffre">9</span></span>
+          <span>Sorcière<span class="jeton fiche chiffre">9</span></span>
+        </div>
+        <section class="encart-desaccord" aria-label="Désaccord de niveau entre les sources">
+          <p class="titre">Les deux sources ne donnent pas le même niveau</p>
+          <p style="margin-top:6px"><strong>Sorcière</strong> : la liste de classe dit <span class="chiffre">8</span>, la page du sort dit <span class="chiffre">9</span>.</p>
+          <p class="aide" style="margin-top:6px">Constaté tel quel dans la source, jamais corrigé ici. La page du wiki fait foi.</p>
+        </section>
+        <p class="prose">Le personnage désigne un certain nombre de créatures et leur confère l’accès au pouvoir mythique. Chacune des créatures obtient le premier grade mythique dans la voie mythique de son choix. La durée du sort est divisée équitablement entre toutes les cibles.</p>
+      </article>
+    </main>
+</div>
+</body></html>

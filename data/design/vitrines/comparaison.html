@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comparer — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre2">Comparer — <code>/comparaison</code></p>
+    <p class="note">Mêmes primitives, aucune règle propre : jetons de niveau, pastilles d’école, tableau dense. Une colonne par classe choisie ; « — » en <code>--encre-faible</code> quand la classe ne connaît pas le sort. Fichiers visés : <code>components/comparaison/*</code>.</p>
+  </div>
+  <div class="liens etiquette">
+    <a href="index.html">Sommaire</a>
+    <a href="liste.html">Liste</a>
+    <a href="fiche.html">Fiche</a>
+    <span style="color:var(--encre-faible)">Comparer</span>
+    <a href="favoris.html">Favoris</a>
+    <a href="jetons.html">Jetons</a>
+  </div>
+</div>
+<div class="page" style="width:100%;max-width:var(--largeur-page);padding:0">
+    <header class="bandeau">
+      <span class="marque">Sorts · Pathfinder 1<sup style="font-size:11px">re</sup></span>
+      <nav class="etiquette">
+        <a href="liste.html">Sorts</a>
+        <a href="comparaison.html" aria-current="page">Comparer</a>
+        <a href="favoris.html">Favoris</a>
+      </nav>
+      <span class="droite">
+        <span class="aide src">source : pathfinder-fr.org</span>
+        <button class="bascule-theme" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'nuit' ? '' : 'nuit'; this.textContent = document.documentElement.dataset.theme === 'nuit' ? 'Thème jour' : 'Thème nuit';">Thème nuit</button>
+      </span>
+    </header>
+        <main class="page">
+      <div>
+        <h1 class="titre1">Comparer les classes</h1>
+        <p class="aide">Trois listes de sorts côte à côte — le niveau est toujours celui de la colonne.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:7px;align-items:center">
+        <span class="etiquette" style="color:var(--accent);margin-right:4px">Classes</span>
+        <span class="cartouche etiquette" style="background:var(--accent);color:var(--surface);border-color:var(--accent)">Arcaniste/Ensorceleur/Magicien ×</span>
+        <span class="cartouche etiquette" style="background:var(--accent);color:var(--surface);border-color:var(--accent)">Druide ×</span>
+        <span class="cartouche etiquette" style="background:var(--accent);color:var(--surface);border-color:var(--accent)">Prêtre/Prêtre combattant/Oracle ×</span>
+        <span class="cartouche etiquette">+ ajouter une classe</span>
+      </div>
+      <p>« <strong>318 sorts</strong> » — connus d’au moins une des trois classes</p>
+      <div class="defilement"><div class="table" style="grid-template-columns:minmax(200px,1fr) 168px 118px 118px 118px;min-width:722px">
+        <span class="th">Sort</span><span class="th">École</span>
+        <span class="th centre">Ens/Mag</span><span class="th centre">Druide</span><span class="th centre">Prêtre</span>
+        <span class="td"><a class="nom" href="fiche.html">Détection de la magie</a></span>
+        <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-divination)"></span>Divination</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td"><a class="nom" href="fiche.html">Lumière</a></span>
+        <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+        <span class="td"><a class="nom" href="fiche.html">Soins légers</a></span>
+        <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+        <span class="td centre"><span style="color:var(--encre-faible)">—</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">1</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">1</span></span>
+        <span class="td"><a class="nom" href="fiche.html">Toile d’araignée</a></span>
+        <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">2</span></span>
+        <span class="td centre"><span style="color:var(--encre-faible)">—</span></span>
+        <span class="td centre"><span style="color:var(--encre-faible)">—</span></span>
+        <span class="td"><a class="nom" href="fiche.html">Appel de la foudre</a></span>
+        <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation</span></span>
+        <span class="td centre"><span style="color:var(--encre-faible)">—</span></span>
+        <span class="td centre"><span class="jeton cellule chiffre">3</span></span>
+        <span class="td centre"><span style="color:var(--encre-faible)">—</span></span>
+        <span class="td derniere"><a class="nom" href="fiche.html">Ascension</a></span>
+        <span class="td derniere"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-universel)"></span>Universel</span></span>
+        <span class="td centre derniere"><span class="jeton cellule chiffre">9</span></span>
+        <span class="td centre derniere"><span class="jeton cellule chiffre">9</span></span>
+        <span class="td centre derniere"><span class="jeton cellule chiffre">9</span></span>
+      </div></div>
+    </main>
+</div>
+</body></html>

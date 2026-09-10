@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sommaire — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre1 lettrine">Implémentations de référence</p>
+    <p class="note">Cinq pages HTML statiques qui montrent le design system appliqué. Elles ne sont pas le produit : elles sont la référence visuelle à ouvrir à côté de <code>GRIMOIRE_DESIGN_SYSTEM.md</code>. Tous les jetons vivent dans <code>tokens.css</code> ; aucun hex n’est écrit dans les pages. Deux thèmes, jour et nuit — une permutation plate, chaque page porte sa bascule.</p>
+  </div>
+</div>
+<main class="page" style="width:100%;max-width:var(--largeur-page)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+  <a href="liste.html" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">Liste des sorts</span><span class="aide" style="font-style:normal">Grille de filtres, tableau dense à 32 px, tiroir mobile, pastilles d’école.</span></a>
+  <a href="fiche.html" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">Fiche de sort</span><span class="aide" style="font-style:normal">Bloc technique deux colonnes, niveaux par classe, marqueur de désaccord.</span></a>
+  <a href="comparaison.html" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">Comparer</span><span class="aide" style="font-style:normal">Une colonne par classe, absence marquée « — » et non par un vide.</span></a>
+  <a href="favoris.html" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">Favoris</span><span class="aide" style="font-style:normal">Tableau identique à la liste + l’état vide.</span></a>
+  <a href="jetons.html" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">Jetons</span><span class="aide" style="font-style:normal">Le banc d’essai : surfaces, écoles, échelle, états.</span></a>
+  <a href="tokens.css" style="border:1px solid var(--bord);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;color:inherit">
+      <span class="titre3" style="color:var(--accent)">tokens.css</span><span class="aide" style="font-style:normal">Le fichier de jetons lui-même — à porter dans theme.css / tokens.ts.</span></a>
+  </div>
+  <p class="aide">À donner à Claude Code avec le document : « voici le système, voici cinq écrans qui l’appliquent — porte-les sur les routes du dépôt, sans réinventer les valeurs ».</p>
+</main>
+</body></html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jetons — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre2">Jetons — banc d’essai <code>/_design</code></p>
+    <p class="note">La page de contrôle du système : surfaces et encres, les neuf écoles, l’échelle complète, les états des jetons. Deux thèmes, une permutation plate (bascule en haut à droite). Toute retouche de token se juge ici, contre <code>web/lib/design/tokens.ts</code> et <code>tokens.test.ts</code>.</p>
+  </div>
+  <div class="liens etiquette">
+    <a href="index.html">Sommaire</a>
+    <a href="liste.html">Liste</a>
+    <a href="fiche.html">Fiche</a>
+    <a href="comparaison.html">Comparer</a>
+    <a href="favoris.html">Favoris</a>
+    <span style="color:var(--encre-faible)">Jetons</span>
+  </div>
+</div>
+<div class="page" style="width:100%;max-width:var(--largeur-page);padding:0">
+    <header class="bandeau">
+      <span class="marque">Sorts · Pathfinder 1<sup style="font-size:11px">re</sup></span>
+      <nav class="etiquette">
+        <a href="liste.html" aria-current="page">Sorts</a>
+        <a href="comparaison.html">Comparer</a>
+        <a href="favoris.html">Favoris</a>
+      </nav>
+      <span class="droite">
+        <span class="aide src">source : pathfinder-fr.org</span>
+        <button class="bascule-theme" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'nuit' ? '' : 'nuit'; this.textContent = document.documentElement.dataset.theme === 'nuit' ? 'Thème jour' : 'Thème nuit';">Thème nuit</button>
+      </span>
+    </header>
+        <main class="page">
+      <h1 class="titre1">Banc d’essai</h1>
+      <section style="display:flex;flex-direction:column;gap:8px">
+        <p class="etiquette" style="color:var(--accent)">Surfaces et encres</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--base);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">base</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--surface);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">surface</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--survol);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">survol</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--encre);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">encre</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--encre-douce);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">encre-douce</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--encre-faible);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">encre-faible (plancher)</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--bord);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">bord (décoratif)</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--bord-fort);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">bord-fort (contour de contrôle, ≥3:1)</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--accent);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">accent</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--accent-voile);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">accent-voile</span></span>
+        <span style="display:flex;align-items:center;gap:8px;border:1px solid var(--bord);background:var(--surface);padding:4px 9px">
+            <span style="width:16px;height:16px;background:var(--desaccord);border:1px solid var(--bord-fort);flex:none"></span>
+            <span class="etiquette" style="color:var(--encre-douce)">désaccord</span></span>
+        </div>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:8px">
+        <p class="etiquette" style="color:var(--accent)">Neuf écoles — la couleur n’est jamais seule</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-abjuration)"></span><span>Abjuration</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-divination)"></span><span>Divination</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-enchantement)"></span><span>Enchantement</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-evocation)"></span><span>Évocation</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-illusion)"></span><span>Illusion</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-invocation)"></span><span>Invocation</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-necromancie)"></span><span>Nécromancie</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-transmutation)"></span><span>Transmutation</span></span>
+        <span style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--bord);padding:4px 9px">
+            <span class="carre-ecole" style="--c:var(--ecole-universel)"></span><span>Universel</span></span>
+        </div>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:8px">
+        <p class="etiquette" style="color:var(--accent)">Échelle typographique</p>
+        <div style="display:grid;grid-template-columns:200px 1fr;gap:6px 18px;align-items:baseline">
+        <span class="etiquette" style="color:var(--encre-douce)">Eczar 600 · 34/38</span><span class="titre1 lettrine">Les sorts</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Eczar 600 · 25/30</span><span class="titre2">Toile d’araignée</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Eczar 600 · 20/26</span><span class="titre3">Bloc technique</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Lora 500 · 11/16</span><span class="etiquette">Jet de sauvegarde</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Lora 400 italique · 17/24</span><span class="corps-grand" style="font-style:italic">Le personnage désigne un certain nombre de créatures.</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Lora 400 · 14.5/22</span><span>Toile d’araignée, invocation, moyenne</span>
+        <span class="etiquette" style="color:var(--encre-douce)">Lora 400 · 12.5/18</span><span class="aide">Les niveaux affichés sont ceux de cette classe.</span>
+        <span class="etiquette" style="color:var(--encre-douce)">IBM Plex Mono</span>
+        <span class="jetons"><span class="jeton chiffre" style="cursor:default">0</span><span class="jeton chiffre" style="cursor:default">1</span><span class="jeton chiffre" style="cursor:default">2</span><span class="jeton chiffre" style="cursor:default">5</span><span class="jeton chiffre" style="cursor:default">9</span><span class="aide" style="margin-left:8px">chiffres et tableaux uniquement</span></span>
+        </div>
+      </section>
+
+      <section style="display:flex;flex-direction:column;gap:8px">
+        <p class="etiquette" style="color:var(--accent)">États</p>
+        <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">
+          <span class="jetons"><span class="jeton chiffre">3</span><span class="etiquette" style="color:var(--encre-douce);align-self:center;margin-left:6px">libre</span></span>
+          <span class="jetons"><span class="jeton chiffre" aria-pressed="true">3</span><span class="etiquette" style="color:var(--encre-douce);align-self:center;margin-left:6px">posé</span></span>
+          <span class="cartouche etiquette">neutre</span>
+          <span class="cartouche accent etiquette">principale</span>
+          <span class="champ" style="width:220px"><span class="valeur vide">Nom du sort…</span><span class="etiquette" style="color:var(--encre-faible)">FR / EN</span></span>
+          <span class="desaccord">niveau 4 <span class="aide" style="color:inherit">— désaccord constaté, jamais corrigé</span></span>
+        </div>
+      </section>
+    </main>
+</div>
+</body></html>

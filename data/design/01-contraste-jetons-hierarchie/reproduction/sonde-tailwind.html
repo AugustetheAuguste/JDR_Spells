@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Sonde — collision de jetons Tailwind 4</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- The repo's @theme block, verbatim from web/styles/theme.css -->
+<style type="text/tailwindcss">
+@theme {
+  --color-base: #fafaf9;
+  --color-surface: #ffffff;
+  --color-bord: #e4e2de;
+  --color-bord-fort: #c9c6c0;
+  --color-encre: #1c1b19;
+  --color-encre-douce: #57544e;
+  --color-encre-faible: #736f67;
+  --color-survol: #f2f1ef;
+  --color-accent: #116b4f;
+  --color-accent-survol: #0d5741;
+  --color-accent-voile: #e8f1ed;
+  --color-desaccord: #8a3a12;
+  --color-desaccord-voile: #fbefe6;
+  --color-ecole-abjuration: #3a5a9b;
+  --color-ecole-divination: #6b4fa8;
+  --color-ecole-enchantement: #a8377f;
+  --color-ecole-evocation: #b3421f;
+  --color-ecole-illusion: #176e77;
+  --color-ecole-invocation: #2f6b2a;
+  --color-ecole-necromancie: #3d3646;
+  --color-ecole-transmutation: #8a6412;
+  --color-ecole-universel: #5f5d55;
+  --font-affichage: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-corps: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-donnees: 'IBM Plex Mono', ui-monospace, monospace;
+  --text-micro: 11px;
+  --text-micro--line-height: 16px;
+  --text-petit: 12.5px;
+  --text-petit--line-height: 18px;
+  --text-base: 14.5px;
+  --text-base--line-height: 22px;
+  --text-grand: 17px;
+  --text-grand--line-height: 24px;
+  --text-titre3: 20px;
+  --text-titre3--line-height: 26px;
+  --text-titre2: 25px;
+  --text-titre2--line-height: 30px;
+  --text-titre1: 34px;
+  --text-titre1--line-height: 38px;
+  --spacing-ligne: 32px;
+  --spacing-ligne-dense: 28px;
+  --spacing-gouttiere: 12px;
+  --radius-jeton: 4px;
+  --radius-panneau: 6px;
+}
+@layer base {
+  html { font-family: var(--font-corps); color-scheme: light; }
+  body { background-color: var(--color-base); color: var(--color-encre); font-size: var(--text-base); line-height: var(--text-base--line-height); margin: 0; }
+  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+}
+</style>
+</head>
+<body>
+<div id="probes">
+  <p id="p-text-base" class="text-base">text-base — la classe litigieuse</p>
+  <p id="p-text-petit" class="text-petit">text-petit</p>
+  <p id="p-text-micro" class="text-micro">text-micro</p>
+  <p id="p-text-grand" class="text-grand">text-grand</p>
+  <p id="p-text-titre1" class="text-titre1">text-titre1</p>
+  <p id="p-bg-base" class="bg-base">bg-base</p>
+  <p id="p-text-surface" class="text-surface">text-surface</p>
+  <p id="p-text-encre-douce" class="text-encre-douce">text-encre-douce</p>
+  <p id="p-text-encre-faible" class="text-encre-faible">text-encre-faible</p>
+  <p id="p-font-affichage" class="font-affichage">font-affichage</p>
+  <p id="p-font-donnees" class="font-donnees">font-donnees</p>
+  <div id="p-rounded" class="rounded-jeton">rounded-jeton</div>
+  <div id="p-rounded-p" class="rounded-panneau">rounded-panneau</div>
+  <div id="p-border-bord" class="border border-bord">border-bord</div>
+  <div id="p-border-bord-fort" class="border border-bord-fort">border-bord-fort</div>
+  <div id="p-border-desaccord-25" class="border border-desaccord/25">border-desaccord/25</div>
+  <div id="p-h-ligne" class="h-ligne">h-ligne</div>
+  <input id="p-accent" class="size-3.5 accent-[var(--color-accent)]" type="checkbox">
+  <a id="p-skip" href="#x" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-jeton focus:bg-accent focus:px-3 focus:py-2 focus:text-surface">Aller au contenu</a>
+
+  <!-- The real TableDense shape from web/components/primitives/TableDense.tsx -->
+  <div class="overflow-x-auto rounded-panneau border border-bord bg-surface">
+    <table id="p-table" class="w-full border-collapse text-base">
+      <thead><tr>
+        <th class="sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-petit font-semibold text-encre-douce" scope="col">Sort</th>
+        <th class="sticky top-0 z-10 border-b border-bord bg-surface px-2.5 py-1.5 text-petit font-semibold text-encre-douce" scope="col">Portée</th>
+      </tr></thead>
+      <tbody><tr class="h-ligne border-b border-bord last:border-b-0 hover:bg-survol">
+        <td id="p-cell-nom" class="px-2.5 py-1.5 align-middle">Boule de feu</td>
+        <td id="p-cell-portee" class="px-2.5 py-1.5 align-middle">longue (120 m)</td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <!-- The real BlocTechnique dd from web/components/fiche/BlocTechnique.tsx -->
+  <dl class="m-0 grid grid-cols-1 gap-x-4 gap-y-1.5 sm:grid-cols-[minmax(0,11rem)_1fr]">
+    <div class="contents">
+      <dt class="text-petit font-semibold text-encre-douce sm:text-right">Durée</dt>
+      <dd id="p-dd" class="m-0 text-base"><span id="p-dd-span">1 round/niveau</span></dd>
+    </div>
+  </dl>
+
+  <!-- The real Description body -->
+  <div id="p-desc" class="mt-2 max-w-[68ch] space-y-2.5 text-base"><p id="p-desc-p" class="m-0">Les armes affectées par ce sort brillent.</p></div>
+</div>
+</body>
+</html>

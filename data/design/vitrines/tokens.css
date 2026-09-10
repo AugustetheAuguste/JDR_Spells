@@ -1,0 +1,197 @@
+/* Jetons de design — vitrine Grimoire (jour/nuit, plat, minimal). Miroir de
+   GRIMOIRE_DESIGN_SYSTEM.md et de la Skill pf-web-design-system. Dans le dépôt,
+   ces valeurs vivent dans web/lib/design/tokens.ts puis web/styles/theme.css
+   (@theme, Tailwind 4). Deux thèmes, une seule permutation plate : `data-theme`
+   sur <html> (voir data-theme-nuit ci-dessous), pas de dégradé, pas de bascule
+   automatique sur la préférence système. */
+:root{
+  color-scheme:light dark;
+  --base:#F1E7D2; --surface:#F8F2E6; --survol:#EDE2CC;
+  --bord:#D9CBA8; --bord-fort:#927C5D;
+  --encre:#2B2013; --encre-douce:#5C4A30; --encre-faible:#776040;
+
+  --accent:#7E2537; --accent-survol:#5F1C29; --accent-voile:#F7E9EC;
+
+  --desaccord:#82451C; --desaccord-voile:#F8EEE7;
+
+  --ecole-abjuration:#3A5A9B; --ecole-divination:#6B4FA8; --ecole-enchantement:#A8377F;
+  --ecole-evocation:#A53D1D; --ecole-illusion:#176E77; --ecole-invocation:#2F6B2A;
+  --ecole-necromancie:#3D3646; --ecole-transmutation:#866213; --ecole-universel:#5F5D55;
+
+  --font-affichage:'Eczar','Iowan Old Style',Georgia,serif;
+  --font-corps:'Lora','Iowan Old Style',Georgia,serif;
+  --font-donnees:'IBM Plex Mono',ui-monospace,monospace;
+
+  --ligne:32px; --ligne-dense:28px; --gouttiere:12px; --pad-cellule:6px 10px;
+  /* Rayon 0 partout : une page de parchemin se lit comme du papier découpé, pas
+     comme un chrome d'application arrondi — l'identité Grimoire et le garde-fou
+     « minimal » tombent d'accord sur cette valeur, pour une fois sans compromis. */
+  --rayon:0px; --rayon-panneau:0px; --largeur-max-texte:68ch;
+  --largeur-page:1180px; --largeur-filtres:250px;
+}
+
+/* Nuit : permutation plate, posée par [data-theme="nuit"] sur <html> (bascule +
+   script inline avant peinture dans le produit ; ici, une classe sur <body> pour
+   la vitrine hors dépôt). Aucun dégradé, aucune bascule automatique sur
+   prefers-color-scheme : un choix explicite et mémorisé, pas une préférence
+   système qui écraserait le choix précédent du lecteur. */
+[data-theme='nuit']{
+  --base:#1E1710; --surface:#26201A; --survol:#2A2318;
+  --bord:#33291D; --bord-fort:#81735F;
+  --encre:#ECE1C9; --encre-douce:#C9BCA0; --encre-faible:#997F5C;
+
+  --accent:#D16170; --accent-survol:#D56D7B; --accent-voile:#34141A;
+
+  --desaccord:#C46C31; --desaccord-voile:#1F150F;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--base);color:var(--encre);
+  font-family:var(--font-corps);font-size:14.5px;line-height:22px;
+  padding:34px 26px 60px;display:flex;flex-direction:column;align-items:center;gap:22px}
+a{color:var(--accent);text-decoration:underline}
+a:hover{color:var(--accent-survol)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3,h4,p{margin:0}
+
+/* ——— type ——— */
+.titre1{font-family:var(--font-affichage);font-weight:600;font-size:34px;line-height:38px}
+.titre2{font-family:var(--font-affichage);font-weight:600;font-size:25px;line-height:30px}
+.titre3{font-family:var(--font-affichage);font-weight:600;font-size:20px;line-height:26px}
+.etiquette{font-size:11px;line-height:16px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--encre-douce)}
+.corps-grand{font-size:17px;line-height:24px}
+.aide{font-size:12.5px;line-height:18px;color:var(--encre-douce)}
+.chiffre{font-family:var(--font-donnees);font-size:14.5px}
+
+/* Lettrine minimale : la première lettre du nom de sort en couleur d'accent,
+   dans le même bloc — pas de boîte flottante de 44px, pas de retrait du texte
+   autour. C'est ce qui reste de la lettrine du prototype une fois parée pour le
+   minimalisme (double cadre, filet doré et glyphe ornemental ❖ retirés). */
+.lettrine::first-letter{color:var(--accent)}
+
+/* ——— page ——— */
+.page{width:100%;max-width:var(--largeur-page);display:flex;flex-direction:column;gap:14px;
+  background:var(--base);padding:20px 22px 22px}
+.colonnes{display:grid;grid-template-columns:var(--largeur-filtres) 1fr;gap:var(--gouttiere);align-items:start}
+
+/* ——— bandeau ——— */
+.bandeau{width:100%;max-width:var(--largeur-page);background:var(--surface);
+  border-bottom:1px solid var(--bord);color:var(--encre);padding:11px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:22px}
+.bandeau .marque{font-family:var(--font-affichage);font-weight:600;font-size:17px}
+.bandeau nav{display:flex;gap:24px}
+.bandeau nav a{color:var(--encre-douce);text-decoration:none;font-size:12.5px}
+.bandeau nav a[aria-current]{color:var(--accent);font-weight:600}
+.bandeau .droite{display:flex;align-items:center;gap:14px;color:var(--encre-douce);font-size:12.5px}
+.bascule-theme{border:1px solid var(--bord-fort);background:transparent;color:var(--encre);
+  padding:4px 9px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.bascule-theme:hover{color:var(--accent)}
+
+/* ——— panneaux de filtre ——— */
+.filtres{display:flex;flex-direction:column;gap:8px}
+.panneau{border:1px solid var(--bord);background:var(--surface);border-radius:var(--rayon-panneau)}
+.panneau>.titre{padding:6px 11px;border-bottom:1px solid var(--bord);color:var(--encre-douce);
+  font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;
+  overflow-wrap:anywhere;text-wrap:pretty}
+.panneau>.corps{padding:9px 11px;display:flex;flex-direction:column;gap:5px}
+
+/* ——— contrôles ——— */
+.champ{border:1px solid var(--bord-fort);background:var(--base);padding:5px 9px;border-radius:var(--rayon);
+  display:flex;justify-content:space-between;align-items:center;gap:10px;min-width:0}
+.champ .valeur{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.champ .vide{color:var(--encre-faible)}
+.cartouche{border:1px solid var(--bord-fort);background:var(--surface);padding:5px 12px;border-radius:var(--rayon);
+  color:var(--encre);display:inline-flex;align-items:center;gap:8px;cursor:pointer;white-space:nowrap;font-size:12.5px}
+.cartouche.accent{color:var(--accent)}
+.cartouche:hover{background:var(--survol)}
+
+.jetons{display:flex;flex-wrap:wrap;gap:4px}
+.jeton{width:27px;height:27px;display:flex;align-items:center;justify-content:center;border-radius:var(--rayon);
+  border:1px solid var(--bord-fort);background:var(--base);color:var(--encre);cursor:pointer;font-family:var(--font-donnees);font-size:13px}
+.jeton:hover{background:var(--survol)}
+.jeton[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.jeton.cellule{width:25px;height:25px;background:var(--survol);cursor:default}
+.jeton.fiche{width:22px;height:22px;font-size:12px;background:var(--survol);cursor:default}
+
+/* ——— écoles : carré + libellé, jamais de texte blanc sur l'aplat ——— */
+.ecole{display:flex;align-items:center;gap:9px}
+.carre-ecole{width:12px;height:12px;flex:none;border-radius:var(--rayon);background:var(--c)}
+.liste-ecoles{display:flex;flex-direction:column;padding:7px 11px}
+.liste-ecoles>*{padding:3px 11px;margin:0 -11px;cursor:pointer;border-radius:var(--rayon)}
+.liste-ecoles>*:hover{background:var(--survol)}
+.liste-ecoles>[aria-pressed="true"]{background:var(--accent-voile);font-weight:600}
+.liste-ecoles .pose{margin-left:auto;color:var(--accent);font-size:11px}
+
+/* ——— tableau ——— */
+.defilement{overflow-x:auto}
+.table{border:1px solid var(--bord-fort);border-radius:var(--rayon-panneau);background:var(--surface);display:grid;
+  grid-template-columns:minmax(200px,1fr) 74px 168px 112px 118px 118px;min-width:826px}
+.table>.th{padding:6px 10px;background:var(--survol);border-bottom:1px solid var(--bord-fort);
+  color:var(--encre-douce);font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase}
+.table>.th.centre{text-align:center}
+.table>.td{padding:5px 10px;min-height:var(--ligne);display:flex;align-items:center;
+  border-bottom:1px solid var(--bord);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.table>.td.centre{justify-content:center}
+.table>.td.derniere{border-bottom:0}
+.table .sort{display:flex;align-items:center;gap:8px}
+.table .fav{color:var(--encre-faible);font-size:13px;cursor:pointer;background:none;border:0;padding:0;font-family:inherit}
+.table .fav[aria-pressed="true"]{color:var(--accent)}
+.table .nom{color:var(--encre);text-decoration:none}
+.table .nom:hover{color:var(--accent);text-decoration:underline}
+.table>.selectionnee{background:var(--accent-voile);box-shadow:inset 2px 0 0 var(--accent)}
+
+/* ——— désaccord : marqueur informatif, pas une couleur d'alerte ——— */
+.desaccord{color:var(--desaccord);font-weight:500}
+.encart-desaccord{border-radius:var(--rayon-panneau);background:var(--desaccord-voile);
+  border:1px solid var(--desaccord);padding:10px 12px;color:var(--encre);font-size:14.5px}
+.encart-desaccord .titre{color:var(--desaccord);font-weight:600;font-size:12.5px}
+
+/* ——— fiche ——— */
+.fiche{border:1px solid var(--bord);border-radius:var(--rayon-panneau);background:var(--surface);padding:24px 28px;
+  display:flex;flex-direction:column;gap:14px}
+.technique{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+.technique>div{display:grid;grid-template-columns:132px 1fr}
+.technique span{padding:4px 0;border-bottom:1px solid var(--bord)}
+.technique span.k{font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--encre-douce)}
+.technique>div>span:nth-last-child(-n+2){border-bottom:0}
+.par-classe{display:flex;flex-wrap:wrap;gap:14px}
+.par-classe>span{display:flex;align-items:center;gap:7px}
+.prose{max-width:var(--largeur-max-texte);font-size:17px;line-height:24px}
+.lien-source{color:var(--accent);font-size:12.5px;text-decoration:underline}
+
+/* ——— barre de vitrine (hors produit) ——— */
+.vitrine{width:100%;max-width:var(--largeur-page);display:flex;align-items:baseline;
+  justify-content:space-between;gap:18px;flex-wrap:wrap}
+.vitrine .liens{display:flex;gap:14px;flex-wrap:wrap}
+.vitrine .note{color:var(--encre-douce);font-size:12.5px;max-width:66ch}
+
+/* ——— état vide ——— */
+.etat-vide{border:1px solid var(--bord);border-radius:var(--rayon-panneau);background:var(--surface);
+  padding:24px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.etat-vide .actions{display:flex;gap:8px;margin-top:4px}
+
+/* ——— mobile ——— */
+@media (max-width:640px){
+  body{padding:0}
+  .vitrine{padding:14px}
+  .bandeau{padding:9px 14px}
+  .bandeau nav,.bandeau .droite .src{display:none}
+  .page{padding:11px 14px 18px;gap:11px}
+  .colonnes{grid-template-columns:1fr;gap:11px}
+  .filtres{display:none}
+  .tiroir{display:flex;gap:7px}
+  .tiroir .cartouche{flex:1;min-height:40px;justify-content:center}
+  .compteur{width:19px;height:19px;display:flex;align-items:center;justify-content:center;border-radius:var(--rayon);
+    background:var(--accent);color:var(--surface);font-family:var(--font-donnees);font-size:11px}
+  .table{display:flex;flex-direction:column;min-width:0}
+  .table:has(.cartes)>.th{display:none}
+  .table:has(.cartes)>.td{display:none}
+  .table:not(:has(.cartes)){display:grid;min-width:826px}
+  .cartes{display:flex;flex-direction:column}
+  .carte{display:flex;gap:12px;align-items:center;padding:9px 11px;border-bottom:1px solid var(--bord);
+    min-height:40px;background:var(--surface)}
+  .carte .jeton{width:34px;height:34px;font-size:16px;flex:none}
+  .technique{grid-template-columns:1fr}
+  .fiche{padding:14px}
+}
+@media (min-width:641px){ .tiroir,.cartes{display:none} }

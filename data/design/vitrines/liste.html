@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liste des sorts — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre2">Liste des sorts — <code>/</code></p>
+    <p class="note">Implémentation de référence : jetons CSS, ligne à 32 px (28 px dense), thème jour/nuit (bascule en haut à droite), tiroir de filtres sous 640 px. Fichiers visés : <code>app/page.tsx</code>, <code>PanneauFiltres.tsx</code>, <code>TableSorts.tsx</code>, <code>TableDense.tsx</code>.</p>
+  </div>
+  <div class="liens etiquette">
+    <a href="index.html">Sommaire</a>
+    <span style="color:var(--encre-faible)">Liste</span>
+    <a href="fiche.html">Fiche</a>
+    <a href="comparaison.html">Comparer</a>
+    <a href="favoris.html">Favoris</a>
+    <a href="jetons.html">Jetons</a>
+  </div>
+</div>
+<div class="page" style="width:100%;max-width:var(--largeur-page);padding:0">
+    <header class="bandeau">
+      <span class="marque">Sorts · Pathfinder 1<sup style="font-size:11px">re</sup></span>
+      <nav class="etiquette">
+        <a href="liste.html" aria-current="page">Sorts</a>
+        <a href="comparaison.html">Comparer</a>
+        <a href="favoris.html">Favoris</a>
+      </nav>
+      <span class="droite">
+        <span class="aide src">source : pathfinder-fr.org</span>
+        <button class="bascule-theme" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'nuit' ? '' : 'nuit'; this.textContent = document.documentElement.dataset.theme === 'nuit' ? 'Thème jour' : 'Thème nuit';">Thème nuit</button>
+      </span>
+    </header>
+    <main class="page">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px">
+        <div>
+          <h1 class="titre1">Les sorts</h1>
+          <p class="aide">2 070 sorts du wiki francophone — un niveau n’existe que relativement à une classe.</p>
+        </div>
+        <span class="etiquette" style="color:var(--encre-douce)">Trié par nom ↑</span>
+      </div>
+
+      <div class="tiroir">
+        <span class="cartouche accent etiquette">Filtres <span class="compteur">3</span></span>
+        <span class="cartouche etiquette">Trier</span>
+      </div>
+
+      <div class="colonnes">
+        <aside class="filtres">
+          <section class="panneau">
+            <p class="titre etiquette">Chercher</p>
+            <div class="corps"><label class="champ"><span class="valeur vide">Nom du sort…</span><span class="etiquette" style="color:var(--encre-faible)">FR / EN</span></label></div>
+          </section>
+
+          <section class="panneau">
+            <p class="titre etiquette">Classe</p>
+            <div class="corps">
+              <span class="champ"><span class="valeur">Arcaniste/Ensorceleur/Magicien</span><span style="color:var(--encre-douce);font-size:10px">▾</span></span>
+              <p class="aide">Les niveaux affichés sont ceux de cette classe.</p>
+            </div>
+          </section>
+
+          <section class="panneau">
+            <p class="titre etiquette">Niveau — Arcaniste/Ensorceleur/Magicien</p>
+            <div class="corps"><div class="jetons"><button class="jeton chiffre" aria-pressed="false">0</button><button class="jeton chiffre" aria-pressed="true">1</button><button class="jeton chiffre" aria-pressed="true">2</button><button class="jeton chiffre" aria-pressed="false">3</button><button class="jeton chiffre" aria-pressed="false">4</button><button class="jeton chiffre" aria-pressed="false">5</button><button class="jeton chiffre" aria-pressed="false">6</button><button class="jeton chiffre" aria-pressed="false">7</button><button class="jeton chiffre" aria-pressed="false">8</button><button class="jeton chiffre" aria-pressed="false">9</button></div></div>
+          </section>
+
+          <section class="panneau">
+            <p class="titre etiquette">École</p>
+            <div class="liste-ecoles"><span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-abjuration)"></span>Abjuration</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-divination)"></span>Divination</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-enchantement)"></span>Enchantement</span>
+              <span class="ecole" aria-pressed="true"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation<span class="pose etiquette">posé</span></span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-illusion)"></span>Illusion</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-necromancie)"></span>Nécromancie</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-transmutation)"></span>Transmutation</span>
+              <span class="ecole" ><span class="carre-ecole" style="--c:var(--ecole-universel)"></span>Universel</span></div>
+          </section>
+
+          <section class="panneau">
+            <p class="titre etiquette">Tags — 7 familles, 35 tags</p>
+            <div class="corps" style="gap:10px">
+              <div><span class="etiquette" style="color:var(--accent);display:block;border-bottom:1px solid var(--bord);padding-bottom:2px;margin-bottom:3px">Cible &amp; portée</span>Plusieurs cibles · Zone d’effet · Attaque de contact · Rayon ou projectile</div>
+              <div><span class="etiquette" style="color:var(--accent);display:block;border-bottom:1px solid var(--bord);padding-bottom:2px;margin-bottom:3px">Effet · 1 posé</span><span style="background:var(--survol);border-bottom:2px solid var(--accent)">Dégâts directs</span> · Soin ou guérison · Entrave ou immobilisation · Transformation du sujet</div>
+              <p class="aide">+ 4 familles — Défense, Mental, Information, Objet</p>
+            </div>
+          </section>
+
+          <button class="cartouche accent etiquette" style="align-self:flex-start">Lever les 3 filtres</button>
+        </aside>
+
+        <div style="display:flex;flex-direction:column;gap:9px;min-width:0">
+          <p>« <strong>142 sorts</strong> » — Évocation, niveaux 1 et 2, dégâts directs</p>
+          <div class="defilement"><div class="table">
+            <span class="th">Sort</span><span class="th centre">Niveau</span><span class="th">École</span>
+            <span class="th">Comp.</span><span class="th">Portée</span><span class="th">Sauvegarde</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Détection de la magie</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">0</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-divination)"></span>Divination</span></span>
+      <span class="td">V, G</span>
+      <span class="td">autre</span>
+      <span class="td">aucun</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Armure de mage</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">1</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+      <span class="td">V, G, F</span>
+      <span class="td">contact</span>
+      <span class="td">Volonté</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Projectile magique</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">1</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation</span></span>
+      <span class="td">V, G</span>
+      <span class="td">moyenne</span>
+      <span class="td">aucun</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Agrandissement</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">1</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-transmutation)"></span>Transmutation</span></span>
+      <span class="td">V, G, M</span>
+      <span class="td">courte</span>
+      <span class="td">Vigueur</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="true" aria-label="Favori">★</button><a class="nom" href="fiche.html">Invisibilité</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">2</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-illusion)"></span>Illusion</span></span>
+      <span class="td">V, G, M/F</span>
+      <span class="td">personnelle</span>
+      <span class="td">Volonté</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Toile d’araignée</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">2</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+      <span class="td">V, G, M</span>
+      <span class="td">moyenne</span>
+      <span class="td">Réflexes</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Boule de feu</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">3</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation</span></span>
+      <span class="td">V, G, M</span>
+      <span class="td">longue</span>
+      <span class="td">Réflexes</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Vol</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">3</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-transmutation)"></span>Transmutation</span></span>
+      <span class="td">V, G, F</span>
+      <span class="td">contact</span>
+      <span class="td">aucun</span>
+      <span class="td derniere"><span class="sort"><button class="fav" aria-pressed="false" aria-label="Favori">☆</button><a class="nom" href="fiche.html">Porte dimensionnelle</a></span></span>
+      <span class="td centre derniere"><span class="jeton cellule chiffre">4</span></span>
+      <span class="td derniere"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+      <span class="td derniere">V</span>
+      <span class="td derniere">courte</span>
+      <span class="td derniere">aucun</span>
+            <div class="cartes">      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">0</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Détection de la magie</span>
+          <span class="aide">Divination · portée autre · sauvegarde aucun</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">1</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Armure de mage</span>
+          <span class="aide">Invocation · portée contact · sauvegarde Volonté</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">1</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Projectile magique</span>
+          <span class="aide">Évocation · portée moyenne · sauvegarde aucun</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">1</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Agrandissement</span>
+          <span class="aide">Transmutation · portée courte · sauvegarde Vigueur</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">2</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Invisibilité</span>
+          <span class="aide">Illusion · portée personnelle · sauvegarde Volonté</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">2</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Toile d’araignée</span>
+          <span class="aide">Invocation · portée moyenne · sauvegarde Réflexes</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">3</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Boule de feu</span>
+          <span class="aide">Évocation · portée longue · sauvegarde Réflexes</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">3</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Vol</span>
+          <span class="aide">Transmutation · portée contact · sauvegarde aucun</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">4</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Porte dimensionnelle</span>
+          <span class="aide">Invocation · portée courte · sauvegarde aucun</span>
+        </span>
+      </a></div>
+          </div></div>
+          <button class="cartouche etiquette" style="align-self:center">Afficher 200 sorts de plus</button>
+        </div>
+      </div>
+    </main>
+</div>
+</body></html>

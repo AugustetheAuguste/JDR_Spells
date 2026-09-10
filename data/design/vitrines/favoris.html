@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Favoris — vitrine Grimoire</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<!-- En production : woff2 auto-hébergés dans public/fonts/, aucun CDN. -->
+<link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+<div class="vitrine">
+  <div>
+    <p class="etiquette" style="color:var(--accent)">Vitrine — Grimoire</p>
+    <p class="titre2">Favoris — <code>/favoris</code></p>
+    <p class="note">Même tableau que la liste, plus l’état vide. L’étoile pleine est en <code>--accent</code> ; c’est le seul endroit où l’accent porte une donnée persistante. Fichiers visés : <code>components/favoris/*</code>, <code>EtatVide.tsx</code>.</p>
+  </div>
+  <div class="liens etiquette">
+    <a href="index.html">Sommaire</a>
+    <a href="liste.html">Liste</a>
+    <a href="fiche.html">Fiche</a>
+    <a href="comparaison.html">Comparer</a>
+    <span style="color:var(--encre-faible)">Favoris</span>
+    <a href="jetons.html">Jetons</a>
+  </div>
+</div>
+<div class="page" style="width:100%;max-width:var(--largeur-page);padding:0">
+    <header class="bandeau">
+      <span class="marque">Sorts · Pathfinder 1<sup style="font-size:11px">re</sup></span>
+      <nav class="etiquette">
+        <a href="liste.html">Sorts</a>
+        <a href="comparaison.html">Comparer</a>
+        <a href="favoris.html" aria-current="page">Favoris</a>
+      </nav>
+      <span class="droite">
+        <span class="aide src">source : pathfinder-fr.org</span>
+        <button class="bascule-theme" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'nuit' ? '' : 'nuit'; this.textContent = document.documentElement.dataset.theme === 'nuit' ? 'Thème jour' : 'Thème nuit';">Thème nuit</button>
+      </span>
+    </header>
+        <main class="page">
+      <div>
+        <h1 class="titre1">Favoris</h1>
+        <p class="aide">4 sorts marqués — conservés dans ce navigateur.</p>
+      </div>
+      <div class="defilement"><div class="table">
+        <span class="th">Sort</span><span class="th centre">Niveau</span><span class="th">École</span>
+        <span class="th">Comp.</span><span class="th">Portée</span><span class="th">Sauvegarde</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="true" aria-label="Favori">★</button><a class="nom" href="fiche.html">Invisibilité</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">2</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-illusion)"></span>Illusion</span></span>
+      <span class="td">V, G, M/F</span>
+      <span class="td">personnelle</span>
+      <span class="td">Volonté</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="true" aria-label="Favori">★</button><a class="nom" href="fiche.html">Boule de feu</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">3</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-evocation)"></span>Évocation</span></span>
+      <span class="td">V, G, M</span>
+      <span class="td">longue</span>
+      <span class="td">Réflexes</span>
+      <span class="td"><span class="sort"><button class="fav" aria-pressed="true" aria-label="Favori">★</button><a class="nom" href="fiche.html">Toile d’araignée</a></span></span>
+      <span class="td centre"><span class="jeton cellule chiffre">2</span></span>
+      <span class="td"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+      <span class="td">V, G, M</span>
+      <span class="td">moyenne</span>
+      <span class="td">Réflexes</span>
+      <span class="td derniere"><span class="sort"><button class="fav" aria-pressed="true" aria-label="Favori">★</button><a class="nom" href="fiche.html">Porte dimensionnelle</a></span></span>
+      <span class="td centre derniere"><span class="jeton cellule chiffre">4</span></span>
+      <span class="td derniere"><span class="ecole"><span class="carre-ecole" style="--c:var(--ecole-invocation)"></span>Invocation</span></span>
+      <span class="td derniere">V</span>
+      <span class="td derniere">courte</span>
+      <span class="td derniere">aucun</span>
+        <div class="cartes">
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">2</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Invisibilité</span>
+          <span class="aide">Illusion · portée personnelle · sauvegarde Volonté</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">3</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Boule de feu</span>
+          <span class="aide">Évocation · portée longue · sauvegarde Réflexes</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">2</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Toile d’araignée</span>
+          <span class="aide">Invocation · portée moyenne · sauvegarde Réflexes</span>
+        </span>
+      </a>
+      <a class="carte" href="fiche.html" style="border-bottom:1px solid var(--bord);color:inherit">
+        <span class="jeton chiffre" style="cursor:default">4</span>
+        <span style="display:flex;flex-direction:column;gap:1px;min-width:0">
+          <span class="nom" style="border:0">Porte dimensionnelle</span>
+          <span class="aide">Invocation · portée courte · sauvegarde aucun</span>
+        </span>
+      </a>
+        </div>
+      </div></div>
+      <div style="border:1px solid var(--bord);background:var(--surface);padding:26px;display:flex;
+                  flex-direction:column;gap:8px;align-items:center;text-align:center">
+        <p class="etiquette" style="color:var(--encre-douce)">État vide</p>
+        <p class="titre3">Aucun favori pour l’instant</p>
+        <p class="aide" style="max-width:52ch">Marque un sort avec l’étoile depuis la liste ou sa fiche ; il apparaîtra ici, et seulement dans ce navigateur.</p>
+        <a class="cartouche etiquette" href="liste.html" style="margin-top:4px">Parcourir les sorts</a>
+      </div>
+    </main>
+</div>
+</body></html>
