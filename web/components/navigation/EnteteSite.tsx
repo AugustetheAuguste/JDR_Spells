@@ -49,7 +49,7 @@ export function EnteteSite() {
 
         <NavigationMobile />
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 md:gap-3">
           {/* Hidden below `md`: the burger panel (`NavigationMobile`) carries
               its own copy in that range, and the desktop-nav breakpoint is
               the right one to switch on — this zone otherwise stays visible

@@ -186,10 +186,13 @@ export function RechercheGlobale({
           aria-controls={idListe}
           aria-expanded={ouvert}
           autoComplete="off"
-          // `text-grand` (17px), not `text-corps` (14.5px): below a 16px floor,
+          // `text-grand` (17px) stays the default because below a 16px floor,
           // Safari and Chrome on iOS/Android zoom the page on focus — the same
-          // floor `ChampRecherche.tsx`'s field already respects.
-          className="min-h-cible w-40 border border-bord-fort bg-surface px-2.5 py-1.5 pr-8 text-grand text-encre placeholder:text-encre-faible focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:w-56"
+          // floor `ChampRecherche.tsx`'s field already respects. That floor is
+          // a touch-input rule, not a typographic one, so `pointer-fine`
+          // drops the field back to `text-corps` on a mouse-driven viewport,
+          // where it has to read as the same size as the nav links beside it.
+          className="min-h-cible w-40 border border-bord-fort bg-surface px-2.5 py-1.5 pr-8 text-grand text-encre placeholder:text-encre-faible focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:w-64 lg:w-80 pointer-fine:text-corps"
           id={idChamp}
           onChange={(evenement) => {
             const valeur = evenement.target.value

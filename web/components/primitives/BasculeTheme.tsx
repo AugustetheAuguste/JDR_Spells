@@ -69,7 +69,11 @@ export function BasculeTheme() {
         {nuit ? (
           <circle cx="12" cy="12" r="5" />
         ) : (
-          <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.273c-4.492 0-8.135-3.643-8.135-8.135 0-.712.093-1.403.267-2.06a.5.5 0 0 0-.67-.588A9.94 9.94 0 0 0 3.5 12.058c0 5.523 4.477 10 10 10a9.94 9.94 0 0 0 8.918-5.51.5.5 0 0 0-.676-.503Z" />
+          /* The previous crescent closed on itself with a straight `Z` from
+             (21.74, 16.05) back to (20.74, 13.05), which cut the lower-right
+             tip clean off. This path is a single closed crescent whose every
+             extent stays inside the 24x24 box. */
+          <path d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" />
         )}
       </svg>
       <span className="sr-only">
