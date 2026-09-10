@@ -33,9 +33,67 @@
 
 import type { IndexWeb } from '@/lib/donnees/index-web'
 import { estColonneTri, type ColonneTri, type SensTri } from '@/lib/navigation/tri'
-import type { Filtres } from '@/lib/recherche/filtres'
+import { COUT_DONS_MAX, STATUTS_DONS, type Filtres, type StatutDon } from '@/lib/recherche/filtres'
 
 export const NIVEAU_MAX = 9
+
+export interface EtatUrlDons {
+  readonly effets: readonly string[]
+  readonly effetsExclus: readonly string[]
+  readonly effetsObliges: readonly string[]
+  readonly effets2: readonly string[]
+  readonly effets2Exclus: readonly string[]
+  readonly effets2Obliges: readonly string[]
+  readonly cibles: readonly string[]
+  readonly ciblesExclues: readonly string[]
+  readonly ciblesObligees: readonly string[]
+  readonly contextes: readonly string[]
+  readonly contextesExclus: readonly string[]
+  readonly contextesObliges: readonly string[]
+  readonly activations: readonly string[]
+  readonly activationsExclues: readonly string[]
+  readonly activationsObligees: readonly string[]
+  readonly polyvalences: readonly string[]
+  readonly polyvalencesExclues: readonly string[]
+  readonly polyvalencesObligees: readonly string[]
+  readonly categories: readonly string[]
+  readonly categoriesExclues: readonly string[]
+  readonly categoriesObligees: readonly string[]
+  /** `1..5`, or null when absent or out of range — never thrown on. */
+  readonly cout: number | null
+  readonly statut: readonly StatutDon[]
+  readonly q: string
+}
+
+/** The empty dons state — every list `[]`, `cout` null, `statut` `[]`, `q` `''`.
+ * No key is omitted: a scalar absent from the URL reads back as `null`, a list
+ * absent as `[]`, both explicitly present as keys on this object. */
+export const ETAT_VIDE_DONS: EtatUrlDons = {
+  effets: [],
+  effetsExclus: [],
+  effetsObliges: [],
+  effets2: [],
+  effets2Exclus: [],
+  effets2Obliges: [],
+  cibles: [],
+  ciblesExclues: [],
+  ciblesObligees: [],
+  contextes: [],
+  contextesExclus: [],
+  contextesObliges: [],
+  activations: [],
+  activationsExclues: [],
+  activationsObligees: [],
+  polyvalences: [],
+  polyvalencesExclues: [],
+  polyvalencesObligees: [],
+  categories: [],
+  categoriesExclues: [],
+  categoriesObligees: [],
+  cout: null,
+  statut: [],
+  q: '',
+}
 
 export interface EtatUrl {
   readonly classe: string | null
@@ -68,6 +126,14 @@ export interface EtatUrl {
   /** The sorted column, or null for the view's own order. */
   readonly tri: ColonneTri | null
   readonly sens: SensTri
+  /**
+   * The dons (Pathfinder feats) facet state, read/written independently by
+   * `lireEtatDons`/`ecrireEtatDons` below — see that pair's doc comment for why
+   * `lireEtat`/`ecrireEtat` themselves are left untouched. Optional so that
+   * every existing call site, and every existing test asserting on `EtatUrl`,
+   * keeps compiling and keeps passing unmodified.
+   */
+  readonly dons?: EtatUrlDons
 }
 
 export const ETAT_VIDE: EtatUrl = {
@@ -89,6 +155,11 @@ export const ETAT_VIDE: EtatUrl = {
   desaccords: false,
   tri: null,
   sens: 'asc',
+  // `dons` is intentionally left unset here: `lireEtat` never populates it
+  // (see the dons section below), so a literal default value on `ETAT_VIDE`
+  // would make `lireEtat('')` fail the existing `toEqual(ETAT_VIDE)` regression
+  // test the moment a `dons` key appeared where none was expected. Use
+  // `ETAT_VIDE_DONS` directly for the dons-only default.
 }
 
 /** The query-string keys, so a typo is a compile error and not a dead filter. */
@@ -106,6 +177,45 @@ export const CLES = {
   q: 'q',
   desaccords: 'desaccords',
   tri: 'tri',
+} as const
+
+/**
+ * Dons (Pathfinder feats) facet keys — every one prefixed `dons_`, and
+ * deliberately in a table of their own rather than folded into `CLES` above.
+ *
+ * Two reasons, one about the data and one about the code:
+ *
+ * The prefix exists because the two corpora's vocabularies are NOT disjoint:
+ * `bonus_chiffre` names a value in both the spells' tag taxonomy and the dons'
+ * `effet_principal` taxonomy. Two separate JSON indexes make that collision
+ * harmless in the data, but a bare `?effet=bonus_chiffre` in a shared query
+ * string would be ambiguous between "spell tagged bonus_chiffre" and "don whose
+ * main effect is bonus_chiffre" — the URL has only one flat namespace where the
+ * data has two. `dons_` resolves it the same way `Filtres`/`FiltresDons` stay
+ * two separate interfaces rather than one merged one.
+ *
+ * `!` and not `+` marks the AND state in every one of these keys' tri-state
+ * values, for the exact reason `tags`/`conditions` above already use `!`: a `+`
+ * in a query string decodes to a space before this module ever sees it, so the
+ * marker would be stripped silently and every "AND" selection would silently
+ * degrade to "OR".
+ *
+ * A separate table, rather than more entries on `CLES`, also keeps every
+ * existing exhaustive `switch` over `keyof typeof CLES` (`sansFiltre`,
+ * `filtreLePlusRestrictif`, `LIBELLES_FILTRES`) compiling unmodified: those
+ * three know nothing about dons and should not have to.
+ */
+export const CLES_DONS = {
+  effet: 'dons_effet',
+  effet2: 'dons_effet2',
+  cible: 'dons_cible',
+  contexte: 'dons_contexte',
+  activation: 'dons_activation',
+  polyvalence: 'dons_polyvalence',
+  categorie: 'dons_categorie',
+  cout: 'dons_cout',
+  statut: 'dons_statut',
+  q: 'dons_q',
 } as const
 
 function listeDe(valeur: string | null, connus: readonly string[]): string[] {
@@ -441,4 +551,134 @@ export const LIBELLES_FILTRES: Readonly<Record<keyof typeof CLES, string>> = {
   // Never named by `filtreLePlusRestrictif`: sorting reorders a list, it cannot
   // empty one. Present because the key exists and an unlabelled key is a hole.
   tri: 'le tri du tableau',
+}
+
+/*
+ * ---------------------------------------------------------------------------
+ * Dons (Pathfinder feats) facet state — read/written independently of the
+ * spell state above.
+ *
+ * `lireEtat`/`ecrireEtat` are NOT extended to also touch this state: both keep
+ * exactly their existing signature (`(URLSearchParams, IndexWeb)`), so every
+ * existing call site and every existing test on them compiles and passes
+ * completely unmodified. A page that shows both facet groups on one route
+ * composes the two pairs itself — `{ ...lireEtat(p, index), dons:
+ * lireEtatDons(p, vocabulaire) }` — once step 13 has a real vocabulary to feed
+ * it; this module only has to make that composition possible, not perform it.
+ * ---------------------------------------------------------------------------
+ */
+
+/** The closed vocabulary each dons facet is validated against, resolved from
+ * the real `IndexDons` by the caller — mirrors `IndexWeb.ecoles`/`tags`/etc.
+ * above. `dons_statut` needs no vocabulary of its own: `STATUTS_DONS` is a
+ * fixed, code-level constant, not something the data index can widen; `dons_cout`
+ * needs none either, being a bare integer. */
+export interface VocabulaireDons {
+  readonly effets: readonly string[]
+  readonly effets2: readonly string[]
+  readonly cibles: readonly string[]
+  readonly contextes: readonly string[]
+  readonly activations: readonly string[]
+  readonly polyvalences: readonly string[]
+  readonly categories: readonly string[]
+}
+
+/** Parse the seven `dons_*` tri-state facets, `dons_cout` and `dons_statut` and
+ * `dons_q` out of a query string, validated against `vocabulaire`. Reuses
+ * `analyserTags` rather than reimplementing the three-state cycle. */
+export function lireEtatDons(
+  parametres: URLSearchParams,
+  vocabulaire: VocabulaireDons,
+): EtatUrlDons {
+  const effet = analyserTags(parametres.get(CLES_DONS.effet), vocabulaire.effets)
+  const effet2 = analyserTags(parametres.get(CLES_DONS.effet2), vocabulaire.effets2)
+  const cible = analyserTags(parametres.get(CLES_DONS.cible), vocabulaire.cibles)
+  const contexte = analyserTags(parametres.get(CLES_DONS.contexte), vocabulaire.contextes)
+  const activation = analyserTags(parametres.get(CLES_DONS.activation), vocabulaire.activations)
+  const polyvalence = analyserTags(
+    parametres.get(CLES_DONS.polyvalence),
+    vocabulaire.polyvalences,
+  )
+  const categorie = analyserTags(parametres.get(CLES_DONS.categorie), vocabulaire.categories)
+
+  const coutBrut = parametres.get(CLES_DONS.cout)
+  const coutNombre = coutBrut === null ? Number.NaN : Number(coutBrut)
+  const cout =
+    Number.isInteger(coutNombre) && coutNombre >= 1 && coutNombre <= COUT_DONS_MAX
+      ? coutNombre
+      : null
+
+  const statutBrut = parametres.get(CLES_DONS.statut)
+  const estStatutDon = (s: string): s is StatutDon => (STATUTS_DONS as readonly string[]).includes(s)
+  const statut =
+    statutBrut === null
+      ? []
+      : [
+          ...new Set(
+            statutBrut
+              .split(',')
+              .map((s) => s.trim())
+              .filter(estStatutDon),
+          ),
+        ]
+
+  return {
+    effets: effet.tags,
+    effetsExclus: effet.tagsExclus,
+    effetsObliges: effet.tagsObliges,
+    effets2: effet2.tags,
+    effets2Exclus: effet2.tagsExclus,
+    effets2Obliges: effet2.tagsObliges,
+    cibles: cible.tags,
+    ciblesExclues: cible.tagsExclus,
+    ciblesObligees: cible.tagsObliges,
+    contextes: contexte.tags,
+    contextesExclus: contexte.tagsExclus,
+    contextesObliges: contexte.tagsObliges,
+    activations: activation.tags,
+    activationsExclues: activation.tagsExclus,
+    activationsObligees: activation.tagsObliges,
+    polyvalences: polyvalence.tags,
+    polyvalencesExclues: polyvalence.tagsExclus,
+    polyvalencesObligees: polyvalence.tagsObliges,
+    categories: categorie.tags,
+    categoriesExclues: categorie.tagsExclus,
+    categoriesObligees: categorie.tagsObliges,
+    cout,
+    statut,
+    q: parametres.get(CLES_DONS.q) ?? '',
+  }
+}
+
+/** Serialize the dons state back to a query string. Absent keys rather than
+ * empty ones, and a fixed `CLES_DONS` order, for the same round-tripping
+ * reasons as `ecrireEtat` above. */
+export function ecrireEtatDons(etat: EtatUrlDons): URLSearchParams {
+  const parametres = new URLSearchParams()
+  const poser = (
+    cle: string,
+    inclus: readonly string[],
+    exclus: readonly string[],
+    obliges: readonly string[],
+  ): void => {
+    if (inclus.length > 0 || exclus.length > 0 || obliges.length > 0) {
+      parametres.set(cle, formaterTags(inclus, exclus, obliges))
+    }
+  }
+  poser(CLES_DONS.effet, etat.effets, etat.effetsExclus, etat.effetsObliges)
+  poser(CLES_DONS.effet2, etat.effets2, etat.effets2Exclus, etat.effets2Obliges)
+  poser(CLES_DONS.cible, etat.cibles, etat.ciblesExclues, etat.ciblesObligees)
+  poser(CLES_DONS.contexte, etat.contextes, etat.contextesExclus, etat.contextesObliges)
+  poser(CLES_DONS.activation, etat.activations, etat.activationsExclues, etat.activationsObligees)
+  poser(
+    CLES_DONS.polyvalence,
+    etat.polyvalences,
+    etat.polyvalencesExclues,
+    etat.polyvalencesObligees,
+  )
+  poser(CLES_DONS.categorie, etat.categories, etat.categoriesExclues, etat.categoriesObligees)
+  if (etat.cout !== null) parametres.set(CLES_DONS.cout, String(etat.cout))
+  if (etat.statut.length > 0) parametres.set(CLES_DONS.statut, etat.statut.join(','))
+  if (etat.q !== '') parametres.set(CLES_DONS.q, etat.q)
+  return parametres
 }

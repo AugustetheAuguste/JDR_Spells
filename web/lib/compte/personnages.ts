@@ -7,7 +7,11 @@
  * this today (`VuePersonnages`), and a provider mounted at the root for one
  * consumer is a cost paid on every page for a feature most visits never touch.
  * If a second consumer appears — the picker on a favourites list, say — reaching
- * for a context then is the right move, not now.
+ * for a context then is the right move, not now. Step 16 (the UI for the feat
+ * fields added to `personnages` — race, abilities, alignment, deity, feats
+ * taken) is expected to be that second consumer; converting this hook into a
+ * context belongs to that step, not to the schema change that only widens
+ * `ChampsPersonnage`.
  *
  * Unlike favourites, `personnages` has no local-only existence: it is a plain
  * table behind Row Level Security, with no offline fallback. So this hook does
@@ -24,6 +28,7 @@ import {
   listerPersonnages,
   modifierPersonnage,
   supprimerPersonnage,
+  type ChampsPersonnage,
   type LignePersonnage,
 } from '@/lib/compte/distant'
 import { useSession, type Resultat } from '@/lib/compte/session'
@@ -38,12 +43,18 @@ export interface ValeurPersonnages {
   readonly personnages: readonly LignePersonnage[]
   readonly erreur: string | null
   readonly recharger: () => void
-  readonly creer: (nom: string, classe: string | null, niveau: number | null) => Promise<Resultat>
+  readonly creer: (
+    nom: string,
+    classe: string | null,
+    niveau: number | null,
+    champs?: ChampsPersonnage,
+  ) => Promise<Resultat>
   readonly modifier: (
     id: string,
     nom: string,
     classe: string | null,
     niveau: number | null,
+    champs?: ChampsPersonnage,
   ) => Promise<Resultat>
   readonly supprimer: (id: string) => Promise<Resultat>
 }
@@ -90,12 +101,17 @@ export function usePersonnages(): ValeurPersonnages {
   const chargement = idCompte !== null && compteCharge !== idCompte
 
   const creer = useCallback(
-    async (nom: string, classe: string | null, niveau: number | null): Promise<Resultat> => {
+    async (
+      nom: string,
+      classe: string | null,
+      niveau: number | null,
+      champs?: ChampsPersonnage,
+    ): Promise<Resultat> => {
       if (idCompte === null) return { ok: false, message: 'Aucun compte n’est connecté.' }
       try {
         const client = await obtenirClient()
         if (client === null) return { ok: false, message: 'Le service de comptes est injoignable.' }
-        await creerPersonnage(client, idCompte, nom, classe, niveau)
+        await creerPersonnage(client, idCompte, nom, classe, niveau, champs)
         recharger()
         return { ok: true, message: 'Personnage créé.' }
       } catch (echec) {
@@ -111,12 +127,13 @@ export function usePersonnages(): ValeurPersonnages {
       nom: string,
       classe: string | null,
       niveau: number | null,
+      champs?: ChampsPersonnage,
     ): Promise<Resultat> => {
       if (idCompte === null) return { ok: false, message: 'Aucun compte n’est connecté.' }
       try {
         const client = await obtenirClient()
         if (client === null) return { ok: false, message: 'Le service de comptes est injoignable.' }
-        await modifierPersonnage(client, idCompte, id, nom, classe, niveau)
+        await modifierPersonnage(client, idCompte, id, nom, classe, niveau, champs)
         recharger()
         return { ok: true, message: 'Personnage modifié.' }
       } catch (echec) {
