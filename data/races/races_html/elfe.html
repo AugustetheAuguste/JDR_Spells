@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les elfes - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="elfe, manuel des joueurs, manuel des races, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Elfe.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Elfe&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkel6XrZ7NqIed2XJc6EAr4fPysL8=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Elfe">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Elfe">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Elfe">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les elfes
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_2">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les elfes à l’espérance de vie si longue sont les enfants du
+monde naturel et ressemblent, à première vue, aux créatures féeriques, bien qu’il existe des différences cruciales. Les fées sont réellement liées à la faune et la flore qui les entourent, ce sont les gardiennes et les hérauts presque immortels de la nature, alors que les elfes ne sont que des mortels qui vivent en harmonie avec le monde qui les entoure. Les elfes cherchent à trouver un équilibre avec le monde sauvage, qu’ils comprennent mieux que la majorité des mortels. Une partie de leur compréhension revêt une dimension mystique, mais l’autre est due à leur immense espérance de vie, qui leur permet de considérer les choses sur le long terme. Les elfes vivent au même endroit pendant des siècles, c’est donc par nécessité qu’ils doivent apprendre à suivre un mode de vie viable sur la durée et ils y parviennent plus facilement en travaillant avec la nature plutôt qu’en essayant de la plier à leur volonté.<br /><br />Pourtant, les liens que les elfes entretiennent avec la nature ne découlent pas seulement de leur pragmatisme. Leur corps se modifie lentement au fil du temps, pour refléter leur état mental et spirituel, et ceux qui restent très longtemps au même endroit voient leur physique s’adapter à leur foyer, notamment en prenant une teinte qui se fond dans leur environnement. Les elfes accordent une grande importance à leur intimité et leurs traditions et, s’ils mettent très longtemps à se faire des amis, aussi bien au niveau personnel que national, une fois qu’ils reconnaissent un étranger comme camarade, leur lien peut durer des générations. Les elfes préfèrent s’allier à des races qui ont une espérance de vie égale ou supérieure à la leur et privilégient les relations avec les dragons, les extérieurs et les fées. Au contraire, les elfes qui passent trop de temps parmi les races à la durée de vie réduite développent une perception faussée de la mortalité et deviennent moroses, à force de voir leurs amis vieillir et mourir sous leurs yeux, par vagues entières.<br /><br /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>Connus pour leur grâce, leur sagesse et leur quasi-immortalité, les elfes sont tenus en haute estime par la plupart des autres races, tout spécialement pour leur maîtrise de la magie et leur savoir encyclopédique. Cependant, les membres de cette race se sentent souvent cernés de toutes parts et isolés par des races plus jeunes, plus agressives et comptant beaucoup plus d’individus qu’eux. Malgré tout, les aventuriers elfes qui ont été élevés et ont grandi dans des enclaves elfiques qui, bien souvent, incarnent la beauté et l’esprit de leur environnement, emportent avec eux la force et la gloire de la culture elfique et les répandent dans le monde, souvent par l’épée ou à l’aide de la magie.<br /><br />La vision classique des elfes en tant que protecteurs des forêts est correcte mais incomplète : les elfes s’adaptent facilement à de nombreux environnements pouvant aller des déserts les plus inhospitaliers aux profondeurs de la mer. D’autres s’intéressent aux mystères et à la magie de certains domaines que leurs frères et soeurs ignorent. Ces elfes possèdent des traits raciaux différents de ceux dont jouissent les individus élevés dans un style de vie elfique plus traditionnel.
+</div><br />
+<b>Description physique.</b> Les elfes sont généralement plus grands que les humains. Ils possèdent un physique mince et gracieux, accentué par de longues oreilles pointues. En revanche, il ne faut pas faire l’erreur de les croire faibles ou fragiles, car leurs membres élancés abritent une puissance surprenante. Ils ont de grands yeux en forme d’amande avec une immense pupille de couleur vive. Leur teinte de peau varie énormément et possède bien plus de nuances que celle des humains. En revanche, elle correspond souvent à leur environnement, de sorte que tous les elfes d’une même communauté ont la même. Les elfes qui vivent en forêt ont des reflets verts, bruns ou dorés dans leurs cheveux, leurs yeux et même leur peau.<br /><br />Leurs habits rivalisent souvent avec la beauté du monde naturel, mais les elfes qui vivent en ville s’habillent à la dernière mode. Quand les elfes des cités rencontrent d’autres individus qui vivent dans des communautés urbaines, ce sont souvent eux qui donnent le ton de la mode locale.<br /><br /><b>Société.</b> Beaucoup d’elfes ont le sentiment d’être liés à la nature et tentent de vivre en harmonie avec elle. Comme la plupart des gens, ils préfèrent les terres généreuses aux ressources abondantes, mais, quand ils sont obligés de vivre sous des climats plus rudes, ils font de leur mieux pour protéger les dons de la terre et les aider à se développer, ainsi ils apprennent à tirer le maximum du peu qu’ils récoltent. Quand ils arrivent à vivre convenablement dans les déserts ou les terres désolées, toute leur société est fière de leur réussite. Ceci en fait d’excellents guides pour les étrangers qui se sont liés d’amitié avec eux et qui doivent traverser leur domaine aride, mais, comme les elfes n’éprouvent que dédain pour les individus incapables de survivre grâce aux maigres ressources de leur région, ces amis sont très rares.<br /><br />Les elfes ont un talent inné pour l’artisanat et les oeuvres d’art, surtout quand ils travaillent le bois, l’os, l’ivoire ou le cuir. En revanche, la plupart d’entre eux détestent utiliser la terre et la pierre et préfèrent éviter la forge, la maçonnerie et la poterie. Quand une communauté a besoin de ce genre de services, il arrive que quelques individus se découvrent un penchant pour eux, mais, quel que soit leur talent, ces « artisans de la poussière » sont toujours considérés comme légèrement dérangés. Dans les communautés les plus insulaires, ils sont parfois traités comme une classe inférieure.<br /><br />Les elfes apprécient aussi les textes, la magie et les longues recherches minutieuses. Leur esprit vif, leurs sens développés et leur patience innée en font d’excellents magiciens. Ils considèrent les recherches et les réussites arcaniques à la fois comme des objectifs pratiques, à mettre sur un pied d’égalité avec le métier de soldat ou d’architecte, et comme des entreprises artistiques aussi importantes que la poésie ou la sculpture. Les magiciens elfiques sont tenus en haute estime dans la société elfique, en tant que maîtres d’un art aussi puissant qu’esthétique. Les autres lanceurs de sorts ne sont pas méprisés, mais ils ne recueillent pas les mêmes éloges que les magiciens.<br /><br /><b>Relations.</b> Les elfes ont facilement tendance à négliger les autres races qu’ils jugent trop impulsives et trop irréfléchies, mais, au niveau individuel, ce sont d’excellents juges des caractères. Il arrive souvent qu’un elfe tienne un membre d’une autre race en haute estime et qu’il le considère comme respectable, même s’il continue de mépriser le reste de sa race. Si on interroge un elfe sur cette particularité, il ne comprend souvent pas pourquoi son « ami si spécial » s’énerve quand il l’entend dire qu’il est : « tellement mieux que le reste de sa race. » Même les elfes qui sont conscients de leurs préjugés doivent se surveiller s’ils ne veulent pas que ces idées reçues reviennent obscurcir leur jugement.<br /><br />En revanche, les elfes ne sont pas assez stupides pour rejeter en bloc toutes les facettes des autres races et des autres cultures. Un elfe ne veut pas d’un voisin nain, mais il est le premier à reconnaître que ceux-ci sont d’excellents forgerons et à admirer leur ténacité face à la menace orque. Les elfes considèrent les gnomes comme des curiosités bizarres (et parfois dangereuses), mais ils accordent respect et éloges à leurs talents magiques. Ils éprouvent une certaine pitié pour les halfelins car ces petites personnes privées de foyer ancestral leur semblent perdues. Les elfes sont fascinés par les humains qui vivent, en quelques années, ce qu’eux vivent en plusieurs siècles. Beaucoup finissent par s’enticher d’un humain, comme le prouvent les demi-elfes du monde entier. En revanche, ils ont du mal à accepter les croisements et renient ces rejetons. Ils se méfient des demi-orques et partent du principe qu’ils regroupent les pires aspects de l’orque et de l’humain.<br /><br /><b>Alignement et religion.</b> Les elfes sont émotifs et capricieux, mais ils apprécient la bonté et la beauté. La plupart sont Chaotiques Bons, ils désirent que toutes les créatures soient heureuses et vivent en sécurité, mais ils refusent de sacrifier leur liberté personnelle ou leur droit de choisir pour atteindre cet objectif. Ils préfèrent les divinités qui partagent leur amour du mysticisme, comme Desna et Néthys, la première pour ses merveilles et son amour des régions sauvages et le second pour sa maîtrise de la magie. Calistria est probablement la plus connue des divinités elfiques car elle représente les idéaux de ce peuple portés à l’extrême. Les elfes acceptent qu’elle (et ses prêtres) adoptent un comportement qu’ils condamneraient chez les autres, car, pour eux, la déesse est un exemple de recherche artistique et de liberté d’expression, et non pas une créature qui cherche juste une gratification physique primaire.<br /><br /><b>Aventuriers.</b> De nombreux elfes partent à l’aventure, poussés par le désir d’explorer le monde. Ils quittent leur royaume isolé pour redécouvrir une ancienne magie elfique oubliée ou retrouver des royaumes perdus, que leurs ancêtres ont fondés il y a des millénaires. La société elfique accepte ce besoin de partir à la découverte du monde, qui fait partie du processus naturel qui permet de devenir un individu mature et expérimenté. Ces elfes rentrent normalement au bout de quelques décennies et reprennent leur vie dans leur royaume, un peu plus riches grâce aux trésors acquis et à leurs nouvelles connaissances. En revanche, la vie d’aventurier, libre et éphémère, attire naturellement les elfes qui ont été élevés par les humains et qui étouffent quand ils restent chez eux, à regarder vieillir et mourir leur famille.<br /><br />À cause de leur fragilité relative, les elfes évitent de se battre au corps à corps et préfèrent engager le combat à distance. Ils considèrent généralement les combats comme des évènements désagréables, mais indispensables, ainsi ils préfèrent s’en débarrasser aussi vite que possible, de préférence sans approcher trop près de leurs ennemis pour ne pas sentir leur odeur. Ce penchant pour le combat à distance, couplé à la précision naturelle des elfes et à leur maîtrise de la magie, les pousse souvent à opter pour les classes de magicien ou de rôdeur.<br /><br /><b>Noms masculins.</b> Caladrel, Helfalel, Lanliss, Meirdrarel, Seldlon, Talathel, Variel, Zordlon.<br />
+<b>Noms féminins.</b> Amrunelara, Dardlara, Faunra, Jathal, Mérisiel, Oprala, Soumral, Tessara, Yalandlara.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>, -2 <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>.</b> Les elfes sont agiles d’esprit comme de corps, mais ils restent fragiles.</li><li><b>Taille M.</b> Les elfes sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni malus ni bonus liés à la taille.</li><li><b>Vitesse normale.</b> Les elfes ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres.</li><li><b>Vision nocturne.</b> Les elfes <a class="pagelink" href="Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx" title="Vision nocturne (Ext)">voient deux fois plus loin</a> que les humains en cas de faible luminosité.</li><li><b>Immunités elfiques.</b> Les elfes sont immunisés contre les effets de sommeil magique et gagnent un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les sorts et effets d’<a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantement</a>.</li><li><b>Magie elfique.</b> Les elfes reçoivent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> pour vaincre la <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20la%20magie%20(capacit%c3%a9).ashx" title="Résistance à la magie (Ext)">résistance à la magie</a>. De plus, ils reçoivent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> pour identifier les propriétés des objets magiques.</li><li><b>Sens aiguisés.</b> Les elfes reçoivent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.</li><li><b>Armes familières.</b> Les elfes sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.arc%20long%20(arme).ashx" title="Arc long">arcs longs</a> (dont les <a class="pagelink" href="Pathfinder-RPG.arc%20long%20composite%20(arme).ashx" title="Arc long composite">arcs longs composites</a>), des <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20longue%20(arme).ashx" title="Épée longue">épées longues</a>, des <a class="pagelink" href="Pathfinder-RPG.rapi%c3%a8re%20(arme).ashx" title="Rapière">rapières</a> et des <a class="pagelink" href="Pathfinder-RPG.arc%20court%20(arme).ashx" title="Arc court">arcs courts</a> (y compris les <a class="pagelink" href="Pathfinder-RPG.arc%20court%20composite%20(arme).ashx" title="Arc court composite">arcs courts composites</a>). Ils considèrent toute arme qui porte la mention « elfique » dans son nom comme une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a>.</li><li><b>Langues.</b> Les elfes commencent le jeu en parlant le commun et l’elfique. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues tirées de la liste suivante : céleste, draconique, gnoll, gnome, gobelin, orque et sylvestre.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>Par leur nature, les elfes forment une race aux traits et aux caractéristiques très variés, dont beaucoup sont liés à l’environnement qu’ils habitent. Les règles suivantes représentent une partie de ces aspects. Elles sont accessibles à tous les elfes, même si elles sont basées sur un environnement ou un autre. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux elfiques standard, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « armes familières » :</i></u>
+<ul><li><b>Magicien prédestiné.</b> Certaines familles elfiques produisent des magiciens (ou d’autres lanceurs de sorts profanes) depuis si longtemps qu’elles élèvent leurs enfants en partant du principe qu’ils sont destinés à devenir de puissants mages qui n’ont pas besoin de se consacrer à des études ordinaires comme le maniement des armes. Les elfes qui possèdent ce trait racial gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> quand ils lancent des sorts profanes sur la défensive. Ce trait racial remplace armes familières.</li></ul>
+<u><i>Remplace « armes familières » et « magie elfique » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Élevé par des humains.</b> Les Délaissés (des elfes élevés hors des communautés elfiques) sont habitués à la brièveté de la vie des autres races. Bien qu'ils n'aient pas eu l'opportunité de s'entraîner aux arts traditionnels elfiques, ces elfes intègrent une partie des talents de leurs parents adoptifs. Ils gagnent <a class="pagelink" href="Pathfinder-RPG.Talent.ashx" title="Talent">Talent</a> comme don supplémentaire. Ce trait racial remplace armes familières et magie elfique.</li><li><b>Esprit des eaux.</b> Certains elfes se sont adaptés pour vivre en harmonie avec la mer ou le long des berges pleines de roseaux des lacs et des rivières. Ils gagnent un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a> et peuvent toujours <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#FAIRE10" title="Les compétences">faire 10</a> quand ils nagent. Ils peuvent choisir l'aquatique comme langue supplémentaire. Ils sont formés au maniement de la <a class="pagelink" href="Pathfinder-RPG.lance%20(arme).ashx" title="Lance">lance</a>, du <a class="pagelink" href="Pathfinder-RPG.trident%20(arme).ashx" title="Trident">trident</a> et du <a class="pagelink" href="Pathfinder-RPG.filet%20(arme).ashx" title="Filet">filet</a>. Ce trait racial remplace magie elfique et armes familières.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Magie écrasante.</b> Certains elfes sont obsédés par les fondements de la magie, s'entraînant pendant des décennies à ajouter des formules complexes à leur magie avant même de commencer à la pratiquer. Ces solides fondations rendent leur magie plus difficile à surmonter. Ces elfes gagnent <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx" title="École renforcée">École renforcée</a> comme don supplémentaire. Ce trait racial remplace armes familières et magie elfique.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Observateur désintéressé.</b> Les elfes qui interagissent souvent avec des espèces à l'espérance de vie plus courte, notamment ceux originaires de Varisie, finissent souvent par se fier à leur capacité à pondérer ces races impatientes. Ces elfes bénéficient d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d'attaque</a> et aux tests de <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx" title="Les compétences">compétence</a> effectués dans le cadre d'<a class="pagelink" href="Pathfinder-RPG.action%20pr%c3%a9par%c3%a9e.ashx" title="Action préparée">actions préparées</a> en combat. Ce trait racial remplace armes familières et magie elfique.</li></ul>
+<u><i>Remplace « armes familières » et « sens aiguisés » :</i></u>
+<ul><li><b>Pied ailé.</b> Tous les elfes sont naturellement minces et agiles, mais certains sont foncièrement plus rapides que les autres et préfèrent se jeter dans l’action plutôt que de s’inquiéter des conséquences. Les elfes qui possèdent ce trait racial reçoivent <a class="pagelink" href="Pathfinder-RPG.Course.ashx" title="Course">Course</a> comme don supplémentaire et un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a>. Ce trait remplace sens aiguisés et armes familières.</li></ul>
+<u><i>Remplace « immunités elfiques » :</i></u>
+<ul><li><b>Orateur onirique.</b> Certains elfes sont capables de puiser dans la puissance du sommeil, des songes et des rêveries prescientes. Ceux qui possèdent ce trait racial gagnent un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des jets de sauvegarde de leurs sorts de l’école de la <a class="pagelink" href="Pathfinder-RPG.divination%20(%c3%a9cole).ashx" title="L&#39;école de Divination">divination</a> et de leurs effets de sommeil. De plus, les elfes qui possèdent une valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de 15 ou plus peuvent utiliser <i><a class="pagelink" href="Pathfinder-RPG.songe.ashx" title="Songe">songe</a></i> une fois par jour, comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a> (<a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal au niveau de personnage de l’elfe). Ce trait racial remplace immunités elfiques.</li><li><b>Résistances élémentaires.</b> Il ne faut que quelques générations aux elfes qui vivent dans des environnements extrêmes, comme des plaines arctiques ou volcaniques, pour développer une résistance naturelle aux dangers de leur environnement. Ceux qui possèdent ce trait racial gagnent une <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance élémentaire</a> de 5 à l’acide, au froid, à l’électricité ou au feu. Ce choix s’effectue à la création du personnage, il est impossible d’en changer par la suite. Ce trait racial remplace immunités elfiques.</li></ul>
+<u><i>Modifie « immunités elfiques » et « langues » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Arrogance elfique.</b> Certains elfes sont tellement convaincus de la supériorité elfique, ou sont autrement si xénophobes, qu'ils ont du mal à comprendre l'intérêt de communiquer avec des races « inférieures ». Leur bonus racial aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les <a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantements</a> augmente de 1 (jusqu'à +3) contre de tels effets provenant d'<a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> non-<a class="pagelink" href="Pathfinder-RPG.sous-type%20elfe.ashx" title="Elfe (sous-type)">elfes</a>, mais ils commencent le jeu en parlant uniquement l'elfique, et une valeur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée ne leur permet d'apprendre d'autres langues que dans cette liste réduite : azlant, céleste, draconique et sylvestre (ou senzar à la place de sylvestre, s'ils sont originaire du Tian Xia).</li></ul>
+<u><i>Remplace « immunités elfiques » et « magie elfique » :</i></u>
+<ul><li><b>Porteur de lumière.</b> De nombreux elfes vénèrent le soleil, la lune et les étoiles, mais certains sont vraiment imprégnés de la puissance radieuse du ciel. Les elfes qui possèdent ce trait racial sont immunisés contre les effets de <a class="pagelink" href="Pathfinder-RPG.%c3%a9tats%20pr%c3%a9judiciables.ashx#aveuglé" title="Les états préjudiciables">cécité</a> et d’<a class="pagelink" href="Pathfinder-RPG.%c3%a9tats%20pr%c3%a9judiciables.ashx#ébloui" title="Les états préjudiciables">éblouissement</a> basés sur la lumière. Ils sont également considérés comme d’un niveau de plus dans le cadre des effets et des sorts basés sur la lumière qu'ils lancent (y compris les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20sp%c3%a9ciaux.ashx" title="Les pouvoirs spéciaux">pouvoirs magiques</a> et <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20sp%c3%a9ciaux.ashx" title="Les pouvoirs spéciaux">surnaturels</a>). Les elfes qui ont une <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de 10 ou plus peuvent aussi lancer <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re.ashx" title="Lumière">lumière</a></i> à volonté, comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a>. Ce trait racial remplace les immunités elfiques et la magie elfique.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Souvenirs au-delà de la mort.</b> Certains elfes sont nés avec une âme sensible qui absorbe les expériences des autres et des esprits des défunts. Ces elfes bénéficient d'un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets de peur. Ils peuvent également choisir deux compétences de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>, qui deviennent des compétences de classe pour eux. S'ils sélectionnent une classe qui possède l'une ou chacune de ces compétences comme compétence de classe, ils bénéficient d'un bonus racial de +1 aux tests de la ou des compétences en doublon. Ce trait racial remplace immunités elfiques et magie elfique.</li></ul>
+<u><i>Remplace « magie elfique » :</i></u>
+<ul><li><b>Chasseur silencieux.</b> Les elfes sont renommés pour leur subtilité et leurs talents. Ceux qui possèdent ce trait racial réduisent leur malus de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> de 5 quand ils se déplacent et peuvent même courir en utilisant la Discrétion avec un malus de -20 (cette valeur inclut la réduction de malus issue de ce trait racial). Ce trait remplace magie elfique.</li><li><b>Connaissance des bois.</b> Les elfes connaissent mieux les secrets de la nature que quiconque, en particulier les secrets de la forêt. Ceux qui possèdent ce trait racial gagnent un bonus racial de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a>. En terrain boisé, ces bonus passent à +2. Ce trait remplace magie elfique.</li><li><b>Coureur du désert.</b> Certains elfes s’épanouissent dans les plus profonds déserts et parcourent des terres brûlées et parcheminées. Ceux qui disposent de ce trait racial reçoivent un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> et aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> pour éviter la <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatigue</a>, l’<a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisement</a> et les effets néfastes dus à la <a class="pagelink" href="Pathfinder-RPG.D%c3%a9placements.ashx#ONGUEFOOTING" title="Les déplacements">course</a>, la <a class="pagelink" href="Pathfinder-RPG.D%c3%a9placements.ashx#MARCHEFORCEE" title="Les déplacements">marche forcée</a>, la <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#FAIMSOIF" title="Les dangers naturels">faim</a>, la <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#FAIMSOIF" title="Les dangers naturels">soif</a> et les environnements <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#CHALEUR" title="Les dangers naturels">chauds</a> ou <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#FROID" title="Les dangers naturels">froids</a>. Ce trait remplace magie elfique.</li><li><b>Envoyé.</b> Les elfes ont souvent du mal avec leurs voisins d’autres races, surtout avec ceux qui ont une espérance de vie bien plus courte que la leur. C’est pour cela que certains sont entraînés à utiliser une magie mineure particulièrement utile pour traiter avec les non-elfes. Un elfe qui possède ce trait racial et une valeur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de 11 ou plus gagne les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants, utilisables une fois par jour : <i><a class="pagelink" href="Pathfinder-RPG.compr%c3%a9hension%20des%20langages.ashx" title="Compréhension des langages">compréhension des langages</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20de%20la%20magie.ashx" title="Détection de la magie">détection de la magie</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20du%20poison.ashx" title="Détection du poison">détection du poison</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.lecture%20de%20la%20magie.ashx" title="Lecture de la magie">lecture de la magie</a></i>. Le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> de ces effets est égal au niveau de l’elfe. Ce trait racial remplace magie elfique.</li><li><b>Éternelle rancœur.</b> Certains elfes grandissent dans des communautés elfiques isolées, où les rancunes et les querelles vieilles de plusieurs générations se transforment en vendettas sanglantes et éternelles. Ceux qui possèdent ce trait racial reçoivent un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les humanoïdes de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20nain.ashx" title="Nain (sous-type)">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.sous-type%20orque.ashx" title="Orque (sous-type)">orque</a>, car ils ont reçu un entraînement spécial contre ces ennemis tant haïs. Ce trait racial remplace magie elfique.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Magie de retraite.</b> Les elfes élevés selon les traditions de ceux qui protégaient les possessions elfiques avant, pendant et peu après la Chute de la Pierre-Étoile se spécialisent dans la magie qui trompent leurs ennemis et les amènent à se méprendre sur le nombre et l'emplacement des elfes. Ces elfes bénéficient d'un bonus racial de +1 au <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> afin de déterminer la portée et la durée des sorts d'<a class="pagelink" href="Pathfinder-RPG.illusion.ashx" title="Illusion">illusion</a> et d'<a class="pagelink" href="Pathfinder-RPG.invocation.ashx" title="Invocation">invocation</a> qu'ils lancent. Ce trait racial remplace magie elfique.</li></ul>
+<u><i>Remplace « magie elfique » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Né de Sovyrian.</b> Les elfes issus de l'ancienne civilisation elfique de Sovyrian sont imprégnés d'une histoire plus vieille que la plupart des civilisations. Ils bénéficient d'un bonus racial de +2 aux tests d'<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a>, de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (histoire) et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local). Ce trait remplace magie elfique et sens aiguisés.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Patience éternelle.</b> Certaines familles elfiques ont été grandement influencées par des cultures non-elfiques qui ont su prouver leur honneur, comme les elfes Délaissés élevés dans des nations comme le Taldor ou les elfes du Jinin influencés par les voyageurs Tian-Min. Cette attitude, combinée avec la longévité elfique, produit des elfes d'une patience exceptionnelle, qui peuvent obtenir de meilleur résultat en prenant leur temps qu'ils ne le feraient sous la contrainte. Ces elfes bénéficient d'un bonus racial de +2 lorsqu'ils décident de <a class="pagelink" href="Pathfinder-RPG.faire%2020.ashx" title="faire 20">faire 20</a> aux tests de compétence. Ce trait racial remplace magie elfique et sens aiguisés.</li></ul>
+<u><i>Remplace « sens aiguisés » :</i></u>
+<ul><li><b>Urbain.</b> Les elfes qui vivent en ville depuis plus d’un siècle apprennent à connaître le flux et le reflux des situations sociales, comme leurs cousins des forêts comprennent la nature. Les elfes qui possèdent ce trait racial gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> pour rassembler des informations et aux tests de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> pour se faire une idée d’une situation sociale. Ce trait racial remplace sens aiguisés.</li></ul>
+<u><i>Remplace « vision nocturne » :</i></u>
+<ul><li><b>Vision dans le noir.</b> Certains elfes naissent avec la vision dans le noir au lieu de la vision nocturne, même si cela arrive rarement. Dans bien des cas, cette particularité est considérée comme la preuve que l’elfe possède un <a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">drow</a> parmi ses ancêtres et sa communauté se met à le persécuter. Les elfes qui possèdent ce trait gagnent la <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">vision dans le noir</a> à 18 mètres (12 <abbr title="cases">c</abbr>), mais aussi <a class="pagelink" href="Pathfinder-RPG.sensibilit%c3%a9%20%c3%a0%20la%20lumi%c3%a8re%20(capacit%c3%a9).ashx" title="Sensibilité à la lumière (Ext)">sensibilité à la lumière</a>. Ils sont <a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">éblouis</a> dans les zones de <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">lumière vive</a> ou dans le rayon d’un sort de <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20du%20jour.ashx" title="Lumière du jour">lumière du jour</a></i>. Ce trait remplace vision nocturne.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race elfique ou une variante raciale, comme suit.
+<ul><li><b>Elfe arctique.</b> Ces elfes sont nés et ont grandi dans les terres glacées de l’extrême nord ou sud et ont vécu dans les déserts gelés où les nuits durent des semaines et où des horreurs rôdent dans le froid. Ils disposent de vision dans le noir, coureur du désert et résistances élémentaires.</li><li><b>Elfe du crépuscule.</b> Certains elfes sont liés à la nuit elle-même plus qu’au terrain qui les entoure. Ils ne vénèrent pas les démons comme les drows et ne sont pas maléfiques, mais ils ont une affinité avec les concepts magiques de l’obscurité et de l’ombre. Ils ont les traits alternatifs magicien prédestiné, vision dans le noir, orateur onirique et chasseur silencieux.</li><li><b>Elfe sauvage.</b> Dans les régions où chaque jour est une lutte pour survivre et où le luxe de la civilisation se fait rare, les elfes se sont adaptés pour porter des coups rapides et développer une vigilance éternelle, afin de garder leur famille en vie. Ces elfes possèdent les traits alternatifs éternelle rancoeur et pied ailé.</li><li><b>Elfe des tours.</b> Certaines institutions de magie elfique ont des siècles et des clans entiers y vivent depuis des générations, en tant que gardiens, étudiants et instructeurs de ces écoles autosuffisantes. Ces elfes ont les traits alternatifs magicien prédestiné et urbain.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers elfes.</b> Les elfes qui choisissent de devenir aventuriers suivent généralement la voie du combattant, cherchent à maîtriser la magie profane ou optent pour une carrière qui mélangent les deux. Les elfes préfèrent la subtilité au conflit ouvert mais ils aiment démontrer leur supériorité aux autres races, quitte à employer la force si la finesse et le panache ne suffisent pas.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les elfes occultes.</b> Tout comme dans le cas des arts magiques, les elfes exploitent tout autant leur intelligence affûtée et leurs facultés d’apprentissage minutieux pour étudier la magie psychique. Les elfes explorent leur propre psyché pour mener le plus souvent des expéditions mentales après l’étude approfondie de phénomènes psychiques. Ils abordent posément le sujet de leur propre esprit et couchent sur le papier les chroniques détaillées de leurs expériences internes comme externes.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L'alchimiste ajoute la formule d’un <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extrait</a> tiré de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste de l’alchimiste</a> à son livre de formules. Cette formule doit être d’au moins un niveau de moins que la formule la plus puissante qu’il connaît.<br />
+Les elfes préfèrent les disciplines magiques classiques aux expérimentations et à la pseudo-science de l’alchimie, qu’ils dépeignent souvent comme une grossière imitation de la magie traditionnelle. Les alchimistes elfes choisissent souvent la vie d’aventuriers afin d’échapper au mépris de leurs pairs.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Augmente le nombre total de points du <a class="pagelink" href="Pathfinder-RPG.r%c3%a9servoir%20arcanique.ashx" title="réservoir arcanique">réservoir arcanique</a> de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Le barbare ajoute 30 centimètres à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a>, ce qui n’a aucun effet au niveau des options de combat tant qu’il n’a pas choisi cette option à 5 reprises (ou un autre multiple de 5). Ce bonus se cumule avec le <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#DEPLACEMENTACCELERE" title="Le barbare">déplacement accéléré</a> du barbare et s’applique dans les mêmes conditions.<br />
+Les barbares elfes vivent généralement dans les profondeurs des déserts ou des jungles sous la guidance d’anciens sages et mystiques. Lorsqu’ils quittent leur patrie, c’est souvent pour accomplir une mission pour leur peuple ou pour découvrir le monde extérieur.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde ajoute +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> pour résister à une tentative de <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESARMEMENT" title="Les manœuvres offensives">désarmement</a> ou de <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres offensives">destruction</a>.<br />
+Les elfes aiment l’art sous toutes ses formes. Les envolées de leurs arias, leurs poésies anciennes et leurs danses gracieuses sont enviées par tous les publics cultivés, tout comme leur panache au combat suscite l’envie de la plupart des guerriers.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Augmente le nombre total de points de <a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx#PANACHE" title="Le bretteur">panache</a> du bretteur de 1/4.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Ajoute 1,50 mètre à la portée d’un <a class="pagelink" href="Pathfinder-RPG.Chaman.ashx#MALEFICES" title="Le chaman">maléfice</a> choisi par le chaman. Les bonus de cette option peuvent s’appliquer à un même maléfice, pour une portée supplémentaire maximale de 9 mètres (6 <abbr title="cases">c</abbr>).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Le chasseur choisit une arme dans la liste suivante : <a class="pagelink" href="Pathfinder-RPG.arc%20long%20(arme).ashx" title="Arc long">arc long</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20longue%20(arme).ashx" title="Épée longue">épée longue</a>, <a class="pagelink" href="Pathfinder-RPG.rapi%c3%a8re%20(arme).ashx" title="Rapière">rapière</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20courte%20(arme).ashx" title="Épée courte">épée courte</a>, <a class="pagelink" href="Pathfinder-RPG.arc%20court%20(arme).ashx" title="Arc court">arc court</a> ou toute arme comportant la mention « elfique » dans son nom. Il gagne un bonus de +1/2 sur les jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec cette arme, avec un maximum de +4. Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a> et autres effets similaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> La <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#MONTURE" title="Le chevalier">monture</a> du chevalier gagne +1 point de vie. Si le chevalier est obligé de la remplacer, la nouvelle bénéficie aussi de ces pv supplémentaires.<br />
+Les chevaliers elfes sont issus d’une longue tradition au sein des anciennes maisons nobles. Ils cherchent à gagner et à défendre leur honneur avec élégance. Leurs <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#MONTURE" title="Le chevalier">montures</a> agiles sont à la fois très résistantes et très fidèles.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> Le personnage ajoute un bonus de +1/4 aux <a class="pagelink" href="Pathfinder-RPG.Valeurs%20de%20combat.ashx#DEGATS" title="Valeurs de combat">jets de dégâts</a> qui bénéficient du bonus conféré par l’aptitude de <a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx#BOUILLONNEMENTÉLÉMENTAIRE" title="Le cinétiste">bouillonnement élémentaire</a> du cinétiste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Le conjurateur met 1 round de moins que la normale à invoquer son <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a> (avec un minimum de 1 round).<br />
+Grâce à leur affinité avec les arts mystiques, les elfes possèdent une longue tradition d’alliance avec des créatures magiques. Même si les conjurateurs elfes sont moins nombreux que les ensorceleurs ou les magiciens, ils sont bien représentés au sein des armées elfiques. Leur eidolons sont souvent des créatures translucides qui paraissent beaucoup moins fortes et puissantes qu’elles ne le sont réellement.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide ajoute +1/3 à son bonus d’armure naturelle quand il utilise <a class="pagelink" href="Pathfinder-RPG.Druide.ashx#FORMEANIMALE" title="Le druide">forme animale</a>.<br />
+Les elfes possèdent un lien instinctif avec la nature et les esprits mystérieux qui l’habitent. Certains d’entre eux vont jusqu’à vénérer ces puissances en s’attachant les services des forces de la nature et vice-versa.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> Augmente le nombre total de points d’<a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx#INSPIRATION" title="L&#39;enquêteur">inspiration</a> de l’enquêteur de 1/3.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleur">lignage</a> de niveau 1 qu’il peut utiliser un nombre de fois par jour égal à 3 + Charisme. Il peut l’utiliser 1/2 fois de plus par jour.
+La magie infuse le sang des elfes, de sorte que tous les lignages d’ensorceleur apparaissent au sein de leur peuple. Les ensorceleurs elfes ne sont toutefois pas aussi respectés que les magiciens.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier ajoute +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand il résiste à une tentative de <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#DESARMEMENT" title="Les manœuvres offensives">désarmement</a> ou de <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres offensives">destruction</a>.<br />
+Les guerriers elfes sont respectés pour leur posture agile, leur précision délicate mais mortelle et leur maîtrise de traditions martiales datant de plusieurs siècles.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> Le personnage bénéficie d’un bonus de +1/2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> effectués pour se déplacer dans la zone contrôlée par un ennemi et aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> effectués pour <a class="pagelink" href="Pathfinder-RPG.Actions%20sp%c3%a9ciales.ashx#FEINTE" title="Actions spéciales">feinter</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur apprend un sort de plus tiré de sa <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx" title="Liste des sorts d&#39;inquisiteur">liste</a>. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+Même si, en tant que race, les elfes accordent une grande importance à la liberté et aux individus, ils sont également très traditionalistes et plutôt méfiants à l’égard des étrangers. Les inquisiteurs elfes ne sont pas très appréciés, mais leurs jugements et leur autorité sont respectés.<br /><br /><a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Gagne un bonus de +1/3 aux tests d'<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a>, de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> et d'<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> dans les milieurs forestiers.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Ajoute 30 centimètres à la vitesse de base du lutteur. Au combat, cet avantage se traduit par une augmentation de 1,50 mètre de sa vitesse de base, seulement lorsqu'il a bénéficié à cinq reprises de cette option.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien choisit un pouvoir d’<a class="pagelink" href="Pathfinder-RPG.%c3%a9cole%20de%20magie.ashx" title="école de magie">école de magie</a> de niveau 1 qu’il peut utiliser un nombre de fois par jour égal à 3 + <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les elfes entretiennent une ancienne tradition de savoir et de recherche magique dans tous les domaines de spécialisation possibles. Pour ceux qui possèdent un talent suffisant, la magie est l’une des voies d’accès les plus sûres vers une position prestigieuse au sein de la société elfique.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le magus apprend 1/6 d’un nouvel <a class="pagelink" href="Pathfinder-RPG.Magus.ashx#ARCANE" title="Le magus">arcane de magus</a>. <br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> Le personnage bénéficie d’un bonus de +1/3 aux <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx#TESTSDECOMPETENCES" title="Les compétences">tests de compétence</a> qui utilisent les <a class="pagelink" href="Pathfinder-RPG.extensions%20de%20comp%c3%a9tences%20occultes.ashx" title="Extensions de compétences occultes">extensions de compétences occultes</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine ajoute 30 centimètres à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a>, ce qui n’a aucun effet au niveau des options de combat tant qu’il n’a pas choisi cette option à 5 reprises (ou un autre multiple de 5). Ce bonus se cumule avec le <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DEPLACEMENTACCELERE" title="Le moine">déplacement accéléré</a> du moine et s’applique dans les mêmes conditions.<br />
+Les elfes sont contemplatifs par nature et ils apprécient ceux qui s’intéressent au calme intérieur et à la paix de l’esprit. Les <a class="pagelink" href="Pathfinder-RPG.moine.ashx" title="Le moine">moines</a> elfes se laissent souvent guider par des mantras très anciens ou des exemples naturels d’équilibre et de finesse.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> Le personnage augmente de 1/2 point son nombre total de points de <a class="pagelink" href="Pathfinder-RPG.occultiste.ashx#FOCALISATIONMENTALE" title="L&#39;occultiste">focalisation mentale</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> L’oracle ajoute +1/6 à son niveau de classe quand il détermine les effets d’une de ses <a class="pagelink" href="Pathfinder-RPG.Oracle.ashx#REVELATION" title="L&#39;oracle">révélations</a>.<br />
+Les oracles elfes sont assez répandus et très respectés en tant que gardiens des mystères de leurs ancêtres et de secrets qui datent d’avant la venue au monde des innombrables races plus jeunes.
+ 
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Le paladin ajoute +1/2 <a class="pagelink" href="Pathfinder-RPG.point%20de%20vie.ashx" title="point de vie">point de vie</a> à son <a class="pagelink" href="Pathfinder-RPG.Paladin.ashx#IMPOSITIONDESMAINS" title="Le paladin">imposition des mains</a> (qu’il l’utilise pour soigner ou pour blesser).<br />
+Les paladins elfes adoptent et font respecter les édits ancestraux de leurs <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">divinités</a>. Ils protègent leur peuple et leur contrée contre tous ceux qui voudraient profaner leurs terres sacrées.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.pistolier.ashx" title="Le pistolier">pistolier</a> ajoute +1/3 à ses jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec les <a class="pagelink" href="Pathfinder-RPG.armes%20%c3%a0%20feu.ashx" title="Caractéristiques des armes à feu">armes à feu</a> (+5 au maximum). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#DOMAINES" title="Le prêtre">domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les elfes vénèrent de nombreux <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">dieux</a>. Leur longévité amène de nombreux elfes à se considérer comme bénis des dieux. Un bon nombre d’entre eux se tournent vers des philosophies naturalistes ou d’anciens patrons divins qui incarnent les traits caractéristiques de leur peuple.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Ajoute 1/2 au nombre d’utilisations quotidiennes des <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#BENEDICTIONS" title="Le prêtre combattant">bénédictions</a> du prêtre combattant mais il doit réserver ces utilisations supplémentaires à des bénédictions <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20lair.ashx" title="Bénédiction de l&#39;air">de l’Air</a>, de <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20la%20faune.ashx" title="Bénédiction de la faune">la Faune</a>, du <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Charme.ashx" title="Bénédiction du charme">Charme</a>, de <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20la%20Magie.ashx" title="Bénédiction de la magie">la Magie</a>, de <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20la%20Flore.ashx" title="Bénédiction de la flore">la Flore</a> ou du <a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Soleil.ashx" title="Bénédiction du soleil">Soleil</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> Le personnage augmente de 1/3 point le nombre total de points que contient sa <a class="pagelink" href="Pathfinder-RPG.psychiste.ashx#RESERVEPHRENIQUE" title="Le psychiste">réserve phrénique</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le rôdeur choisit une arme de la liste suivante : a<a class="pagelink" href="Pathfinder-RPG.arc%20long%20(arme).ashx" title="Arc long">arc long</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20longue%20(arme).ashx" title="Épée longue">épée longue</a>, <a class="pagelink" href="Pathfinder-RPG.rapi%c3%a8re%20(arme).ashx" title="Rapière">rapière</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20courte%20(arme).ashx" title="Épée courte">épée courte</a>, <a class="pagelink" href="Pathfinder-RPG.arc%20court%20(arme).ashx" title="Arc court">arc court</a> ou toute arme avec l’adjectif « elfique » dans son nom. Il ajoute +1/2 aux jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec elle (+4 au maximum). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br />
+Les elfes sont des chasseurs et des éclaireurs hors pairs en harmonie avec leur environnement, attentifs à tout ce qui les entoure et toujours prêts à protéger leurs terres ou à punir les intrus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard peut utiliser un tour de magie ou un sort de niveau 1 connu grâce aux talents <a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAGIEMINEURE" title="Les talents de roublard">magie mineure</a> ou <a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAGIEMAJEURE" title="Les talents de roublard">magie majeure</a> une fois de plus par jour. Il ne peut pas choisir ce bonus plus souvent pour la magie majeure que pour la magie mineure. Pour choisir cette option, il doit posséder le <a class="pagelink" href="Pathfinder-RPG.Roublard.ashx#TALENTDEROUBLARD" title="Le roublard">talent de roublard</a> approprié.<br />
+Même si les voleurs, les brigands et autres vauriens sont rares dans la société elfe, les elfes roublards sont aussi nombreux que les éclaireurs, les espions et même les assassins.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Ajoute 30 centimètres à la <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> du sanguin. Au combat, cet avantage se traduit par une augmentation de 1,50 mètre de sa vitesse de base, seulement lorsqu'il a bénéficié à cinq reprises de cette option. Ce bonus se cumule avec le pouvoir de classe <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#DEPLACEMENTACCELERE" title="Le sanguin">déplacement accéléré</a> et s’applique dans les mêmes conditions.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Augmente le bonus conféré par l’aptitude de classe érudition de 1/4 (+8 au maximum).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx#FAMILIER" title="La sorcière">familier</a> de la sorcière gagne un sort supplémentaire issu de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx" title="Liste des sorts de sorcière">liste de la sorcière</a>. Il doit être au minimum d’un niveau de moins que le plus puissant qu’elle connaît. Si elle remplace son familier, le nouveau connaît ces sorts supplémentaires.
+En concluant des pactes avec des puissances éternelles et invisibles, les sorcières elfes combinent leur compréhension de la nature et leur maîtrise de la magie pour en tirer de puissants
+maléfices et des arcanes étranges. Nombre d’entre elles tissent des liens avec les créatures qui habitent leur région et les adoptent comment familiers]pour renforcer leur connexion avec la terre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> Le personnage ajoute 1/6 au bonus de bouclier conféré par l’aptitude de <a class="pagelink" href="Pathfinder-RPG.spirite.ashx#MANIFESTATIONINTERNEECTOPLASMIQUE" title="Le spirite">manifestation interne ectoplasmique</a> de niveau 3.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Augmente le bonus de cible étudiée aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> de 1/4. Quand le tueur obtient l’aptitude de classe traqueur, le bonus s’applique également aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.
+</td></tr></table><br />
+<h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Voici les options accessibles aux elfes, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Chanteur%20de%20la%20nature.ashx" title="Chanteur de la nature">Chanteur de la nature</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, capacité de classe <a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx" title="représentation bardique">représentation bardique</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a> ou <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfe</a></td><td>Améliore les représentations en forêt et contre les fées</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Coup%20de%20fl%c3%a8che.ashx" title="Coup de flèche">Coup de flèche</a>*</td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Tir%20rapide.ashx" title="Tir rapide">Tir rapide</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Utiliser une flèche comme arme de corps à corps pour repousser les ennemis</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Entra%c3%aenement%20guerrier%20elfique.ashx" title="Entraînement guerrier elfique">Entraînement guerrier elfique</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Bonus avec les armes elfiques traditionnelles</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Exp%c3%a9riences%20vari%c3%a9es.ashx" title="Expériences variées">Expériences variées</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>; 100 ans ou plus</td><td>+2 sur tous les tests de Connaissances ou de Profession</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Harmonie%20sauvage.ashx" title="Harmonie Sauvage">Harmonie sauvage</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Elfe</a></td><td>Régénération plus rapide dans l'environnement choisi</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Gardien%20des%20%c3%a9tendues%20sauvages.ashx" title="Gardien des étendues sauvages">Gardien des étendues sauvages</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Harmonie%20sauvage.ashx" title="Harmonie Sauvage">Harmonie sauvage</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>+2 à la CA dans l'environnement choisi</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Esprit%20des%20%c3%a9tendues%20sauvages.ashx" title="Esprit des étendues sauvages">Esprit des étendues sauvages</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Harmonie%20sauvage.ashx" title="Harmonie Sauvage">Harmonie sauvage</a>, <a class="pagelink" href="Pathfinder-RPG.Gardien%20des%20%c3%a9tendues%20sauvages.ashx" title="Gardien des étendues sauvages">Gardien des étendues sauvages</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Devient plus perceptif dans l'environnement choisi</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Mage%20des%20%c3%a9tendues%20sauvages.ashx" title="Mage des étendues sauvages">Mage des étendues sauvages</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Harmonie%20sauvage.ashx" title="Harmonie Sauvage">Harmonie sauvage</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Bonus aux tests pour incanter et analyser des propriétés magiques dans l'environnement choisi</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Pas%20l%c3%a9ger.ashx" title="Pas léger">Pas léger</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.D%c3%a9placement%20acrobatique.ashx" title="Déplacement acrobatique">Déplacement acrobatique</a>, <a class="pagelink" href="Pathfinder-RPG.Aisance.ashx" title="Aisance">Aisance</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Se déplacer de sa Vitesse de déplacement normale sur un terrain difficile</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9cision%20elfique.ashx" title="Précision elfique">Précision elfique</a>*</td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Elfe</a></td><td>Relancer le pourcentage d’échec à l’arc dû au camouflage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Regard%20perspicace.ashx" title="Regard perspicace">Regard perspicace</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Elfe</a> ou <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfe</a>, trait racial sens aiguisés</td><td>+2 aux jets de sauvegarde contre les illusions et aux tests de Linguistique pour détecter les contrefaçons</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Souvenir%20partag%c3%a9.ashx" title="Souvenir partagé">Souvenir partagé</a></td><td><sup><i>ISR</i></sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (n'importe), <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a></td><td>Bonus de +2 cumulatif (maximum +10) aux tests de Connaissances pour identifier des morts pour chaque allié avec ce don dans un rayon de 9 mètres</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Talent%20magique.ashx" title="Talent magique">Talent magique</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 10; <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfe</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Lancer un sort de niveau 0 trois par jour comme un pouvoir magique</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Tir%20concentr%c3%a9.ashx" title="Tir concentré">Tir concentré</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Tir%20%c3%a0%20bout%20portant.ashx" title="Tir à bout portant">Tir à bout portant</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, trait racial armes familières</td><td>Utilise le meilleur jet d'attaque lorsque le personnage et un allié avec ce don préparent tous deux une attaque à distance</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_2" href="#Archétypes_de_classe_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Gardien%20du%20savoir%20ancestral%20(oracle).ashx" title="Gardien du savoir ancestral">Gardien du savoir ancestral (oracle)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Danse-sort%20(magus).ashx" title="Danse-sort">Danse-sort (magus)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Lieur%20de%20sorts%20(magicien).ashx" title="Lieur de sorts">Lieur de sorts (magicien)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chanteur%20sylvestre%20(druide).ashx" title="Chanteur sylvestre">Chanteur sylvestre (druide)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche aimantée</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche croc-en-jambe</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche de brûlure tardive</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche de marquage</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche de nuée d’esquilles</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche de pluie</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche de saignement</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche durable</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche immobilisante</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a8che%20alchimique%20(objet).ashx" title="Flèche alchimique">Flèche phéromone</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Grimoire%20de%20poche%20(objet).ashx" title="Grimoire de poche">Grimoire de poche</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Laboratoire%20dartisanat%20portatif%20(objet).ashx" title="Laboratoire d&#39;artisanat portatif">Laboratoire d'artisanat portatif</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Manuel%20dexercices%20arcaniques%20familial%20(objet).ashx" title="Manuel d&#39;exercices arcaniques familial">Manuel d’exercices arcaniques familial</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sac%20anti-ours%20(objet).ashx" title="Sac anti-ours">Sac anti-ours</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tente%20suspendue%20(objet).ashx" title="Tente suspendue">Tente suspendue</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Alambic%20elfique.ashx" title="Alambic elfique">Alambic elfique</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bandeau%20de%20contr%c3%b4le%20des%20illusions.ashx" title="Bandeau de contrôle des illusions">Bandeau de contrôle des illusions</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.B%c3%a2ton%20du%20gardien%20des%20for%c3%aats.ashx" title="Bâton du gardien des forêts">Bâton du gardien des forêts</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Brassards%20de%20vengeance.ashx" title="Brassards de vengeance">Brassards de vengeance</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Chaussons au chéya</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Citrons-lanternes séchés au soleil</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.cristal%20vol-%c3%a9tincelle%20(propri%c3%a9t%c3%a9).ashx" title="cristal vol-étincelle (propriété)">Cristal vol-étincelle (propriété d'arme)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Filet de poisson-moineau au beurre</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bracelets%20des%20hauts%20elfes.ashx" title="Bracelets des hauts elfes">Bracelets des hauts elfes</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gants%20elfiques.ashx" title="Gants elfiques">Gants elfiques</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Gâteau du sauteur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Pain de route</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Panoplie%20du%20chevalier%20fi%c3%a9ranais.ashx" title="Panoplie du chevalier fiéranais">Panoplie du chevalier fiéranais</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.peine%20du%20soigneur%20(propri%c3%a9t%c3%a9).ashx" title="peine du soigneur (propriété)">Peine du soigneur (propriété d'arme)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Poivrons épicés aux baies des neiges</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.rafale%20(propri%c3%a9t%c3%a9).ashx" title="rafale (propriété)">Rafale (propriété d'arme)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx#CUISINEMYSTIQUE" title="Les potions magiques">Soupe de vie temporaire</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tranche-ombre.ashx" title="Tranche-ombre">Tranche-ombre</a> <i>(ISR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Cam%c3%a9l%c3%a9on.ashx" title="Caméléon">Caméléon</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Corruption%20consum%c3%a9e.ashx" title="Corruption consumée">Corruption consumée</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Prot%c3%a9g%c3%a9%20de%20la%20saison.ashx" title="Protégé de la saison">Protégé de la saison</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sages%20murmures.ashx" title="Sages murmures">Sages murmures</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

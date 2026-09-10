@@ -1,0 +1,767 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les ondins - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ondin (race).ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Ondin+(race)&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRk/j0i/QlUUG2/hxH1e1gWAXibfLI=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Ondin (race)">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Ondin (race)">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Ondin (race)">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les ondins
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG2" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races additionnelles<a class="headeranchor" id="Les_races_additionnelles_0" href="#Les_races_additionnelles_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESDEBASE2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESDEBASE2');" onmouseout="outButton('RACESDEBASE2');" onclick="expandMenu('RACESDEBASE2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESDEBASE" title="Les races des personnages">Races de base</a></i></b>
+    <ul ID="RACESDEBASE2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES2');" onmouseout="outButton('RACESEXTRAORDINAIRES2');" onclick="expandMenu('RACESEXTRAORDINAIRES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES2');" onmouseout="outButton('RACESMONSTRUEUSES2');" onclick="expandMenu('RACESMONSTRUEUSES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_5">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_6">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_7">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_8">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_0">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_1">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_2">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_3">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_4">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Ondin.ashx" title="Ondin">fiche de créature</a> d'un ondin standard.</i></b><br /><br />Les ondins sont des humains qui descendent des créatures du plan de l’Eau. La puissance de leur descendance se remarque au premier regard puisque leur chair imite la couleur des lacs, des mers et des océans. Qu’ils aient du sang de marids ou de méphites de l’Eau, tous les ondins se définissent par rapport à leur ascendance. Ils voient leurs différences individuelles comme des dons et explorent au maximum les aspects surnaturels de leur héritage unique. Les ondins sont une race fière, qui n’exprime guère de peur apparente. S’ils sont faciles à vivre et un brin espiègles avec les leurs, ils font preuve d’un peu plus de réserve et de sérieux en compagnie des étrangers. Ils contrôlent parfaitement leurs émotions et peuvent passer du calme à la colère pour se calmer à nouveau en quelques minutes. S’il peut arriver que certains les trouvent imprévisibles, les ondins affichent simplement un comportement un peu plus mélodramatique que la plupart des autres races. Ils ne sont pas lunatiques et ne passent pas à la colère, à l’excitation ou à un autre état émotionnel sans raison. En tant qu’amis proches certains les trouvent excessivement possessifs, mais ils sont également très protecteurs avec ceux auxquels ils tiennent.<br /><br />Les ondins s’installent souvent près de l’eau, généralement dans les climats chauds. Bien qu’ils soient des créatures terrestres, ils passent énormément de temps dans l’eau. Pour cette raison, la plupart d’entre eux ne s’habillent qu’au minimum, portant juste assez de vêtements pour se protéger des éléments, et rares sont ceux qui mettent des chaussures. Ils évitent de porter des bijoux autour du cou et gardent leurs cheveux lissés en arrière et bien attachés. C’est un moyen d’empêcher leur chevelure ou d’autres éléments de les gêner ou de les distraire pendant qu’ils nagent. De la même manière, les ondins qui prennent des classes martiales choisissent des armes qu’ils peuvent manier efficacement sur la terre ferme comme dans l’eau.<br /><br /><b>Description physique.</b> Les ondins présentent une large palette de couleurs de peau, allant du turquoise pâle au bleu foncé en passant par le vert des mers. La chevelure épaisse et raide des ondins est généralement d’une couleur similaire, quoique légèrement plus foncée, à celle de leur peau. Tous ont des yeux d’un bleu limpide. Physiquement, ils ressemblent beaucoup aux humains et présentent la même diversité en termes de taille et de corpulence. Hormis leur couleur, les traits les plus représentatifs de la race restent leurs oreilles semblables à des nageoires ainsi que leurs pieds et mains palmés.<br /><br /><b>Société.</b> Les ondins se définissent comme une race unique, capable de donner naissance à des enfants ondins. S’ils peuvent se reproduire avec les humains, ils ont tendance à rester entre eux et forment de petites communautés solitaires à proximité d’étendues d’eau ou, dans certains cas, des villages flottants. Une communauté ondine typique vit sous l’autorité d’un petit conseil accueillant des membres officiels nommés par consensus. Les positions du conseil peuvent être tenues indéfiniment, mais une communauté insatisfaite du rôle d’un membre peut demander sa démission.<br /><br />Les mariages mixtes sont courants dans les communautés ondines, et les enfants sont élevés par tous. La culture ondine est marquée par une grande diversité régionale, puisqu’elle est influencée par l’ascendance spécifique des villages indépendants. Il paraît également important de noter que dans un village donné, tous les ondins n’ont pas forcément les mêmes origines, car ils peuvent se marier à des ondins extérieurs à leur propre communauté.<br /><br /><b>Relations.</b> Les ondins n’ont aucun parti pris ni de préjugés envers quelque race que ce soit. Leurs communautés reposent essentiellement sur le commerce, ce qui leur donne largement la possibilité d’interagir avec tout un tas d’étrangers et de voyageurs. Ils ne craignent pas d’installer leurs quartiers dans les villages d’autres races, à condition qu’elles témoignent le respect dû aux ondins et à toutes les étendues d’eau situées à proximité. Même dans ces cas-là, la communauté ondine fait tout son possible pour conserver son autonomie.<br /><br />Les ondins s’entendent très bien avec les elfes et les gnomes. Ces races partagent souvent le même sens du devoir de protection envers les lacs et les cours d’eau des forêts. De la même manière, ils ont de bons rapports avec les humanoïdes aquatiques d’alignement Bon ou Neutre, partageant beaucoup d’intérêts communs. Ils marchandent plus librement avec les humains et les nains pour les ressources telles que le métal et le tissu.<br /><br /><b>Alignement et religion.</b> La plupart des ondins sont d’alignement Neutre. Leurs principaux intérêts sont le bienêtre de leur peuple et c’est ainsi que leurs préoccupations morales sont centrées sur la communauté et sur eux-mêmes. Cette vision Neutre leur permet également de communiquer avec beaucoup de races non-ondines avec lesquelles ils commercent. S’ils ne sont pas fondamentalement religieux, ils entretiennent une forte connexion spirituelle avec leurs ancêtres surnaturels et l’eau elle-même. Ceux qui suivent des voies non-séculières vénèrent presque toujours les dieux de leurs ancêtres ou ceux dont les thèmes engagent un aspect de l’eau.<br /><br /><b>Aventuriers.</b> Il arrive, à l’occasion, qu’un ondin quitte son peuple pour vivre une vie d’aventurier. À l’image de l’eau, certains se sentent simplement obligés de bouger, et l’aventure est une excuse toute trouvée pour vivre sur les routes. D’autres partent à l’aventure pour des raisons moins innocentes, et l’exil est un châtiment courant pour les crimes dans la société ondine. N’ayant guère d’autre choix, la plupart des exilés se tournent vers l’aventure dans l’espoir de trouver une nouvelle place dans le monde. Du fait de leur affinité avec l’eau, les ondins font de bons druides, tandis que les ensorceleurs ondins ont généralement un lignage aquatique.<br /><br /><b>Noms masculins.</b> Aven, Dharak, Ghiv, Jamash, Maakor, Ondir, Radid, Shiradahz.<br />
+<b>Noms féminins.</b> Afzara, Baarah, Calah, Iryani, Maarin, Nylgune, Pari, Radabeh, Urdahna.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_5" href="#Traits_raciaux_standards_5" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 en <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>, -2 en <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>.</b> Les ondins sont agiles et perceptifs, mais ont tendance à s’adapter plutôt qu’à répondre à la force par la force.</li><li><b>Extérieur natif.</b> Les ondins sont des <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20natif.ashx" title="Natif (sous-type)">natif</a>.</li><li><b>Taille M.</b> Les ondins sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les ondins ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> 9 mètres sur la terre ferme, une <a class="pagelink" href="Pathfinder-RPG.Natation.ashx#Spécial_2" title="Natation">vitesse de nage</a> de 9 mètres, ils peuvent se déplacer dans l’eau sans faire de test de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a> et traitent toujours Natation comme une compétence de classe.</li><li><b>Vision dans le noir.</b> Les ondins <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Pouvoir magique.</b> Les ondins peuvent utiliser <i><a class="pagelink" href="Pathfinder-RPG.pouss%c3%a9e%20hydraulique.ashx" title="Poussée hydraulique">poussée hydraulique</a></i> comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a> 1/jour (<a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> égal au niveau de personnage de l’ondin).</li><li><b>Résistance élémentaire.</b> Les ondins ont une <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance</a> de 5 au froid.</li><li><b>Affinité avec l’eau.</b> Les <a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleurs</a> ondins de <a class="pagelink" href="Pathfinder-RPG.Lignage%20%c3%89l%c3%a9mentaire.ashx" title="Lignage Élémentaire">lignage élémentaire (eau)</a> considèrent leur score de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> comme supérieur de 2 points pour tous les sorts et pouvoirs magiques d’ensorceleur. Les <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">prêtres</a> ondins du <a class="pagelink" href="Pathfinder-RPG.Domaine%20de%20lEau.ashx" title="Domaine de l&#39;Eau">domaine de l’Eau</a> lancent tous leurs sorts et pouvoirs de domaine à un niveau de lanceur de sorts augmenté de +1.</li><li><b>Langues.</b> Les ondins commencent le jeu en parlant le commun et l’aquatique. Ceux qui ont une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre de nouvelles langues parmi celles-ci : aérien, elfique, gnome, halfelin, igné, nain et terreux.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_6" href="#Traits_raciaux_alternatifs_6" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Voici les options ouvertes à tous les ondins de la classe appropriée. Le bonus s’applique à chaque fois que le personnage le choisit, sauf indication contraire.<br /><br /><u><i>Remplace « affinité avec l'eau » :</i></u>
+<ul><li><b>Vitalité hydratée.</b> Un ondin ayant ce trait racial gagne <a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx" title="Guérison accélérée (Ext)">guérison accélérée 2</a> pendant 1 round lorsqu’il est complètement immergé dans un corps d’eau salée, d’eau douce ou d’eau saumâtre naturelle. Les eaux stagnantes, empoisonnées ou piégées (comme celle d’une fosse artificielle ou d’un <i><a class="pagelink" href="Pathfinder-RPG.sac%20sans%20fond.ashx" title="Sac sans fond">sac sans fond</a></i>) n’activent pas cette capacité. L’ondin peut récupérer un maximum de 2 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> par niveau par jour grâce à cette capacité, après quoi elle cesse de fonctionner. Ce trait racial remplace affinité avec l’eau.</li></ul>
+<u><i>Remplace « extérieur natif » et « langues » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Presque humain.</b> Quelques ifrits, ondins, oréades, sulis et sylphes ont une apparence bien plus proche de celle de leurs ancêtres humains ; en fait, il peuvent même ne pas se rendre compte de leur véritable race. De tels descendants de génie paraissent humains, à l'exception de quelques caractéristiques mineures comme une couleur d'yeux inhabituelle, et comptent comme des <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> (<a class="pagelink" href="Pathfinder-RPG.sous-type%20humain.ashx" title="Humain (sous-type)">humain</a>) aussi bien que des <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> (<a class="pagelink" href="Pathfinder-RPG.sous-type%20natif.ashx" title="Natif (sous-type)">natif</a>) en toute circonstance (y compris pour les sorts qui affectent les humanoïdes comme <i><a class="pagelink" href="Pathfinder-RPG.charme-personne.ashx" title="Charme-personne">charme-personne</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.agrandissement.ashx" title="Agrandissement">agrandissement</a></i>). Ces descendants de génie ne savent pas automatiquement parler leur langue élémentaire associée (mais peuvent l'apprendre grâce à une valeur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée). Ce trait racial remplace le type, le sous-type et les langues des descendants de génie.</li></ul>
+<u><i>Remplace « pouvoir magique » :</i></u>
+<ul><li><b>Amphibie.</b> Certains ondins naissent avec un lien permanent avec l’eau. Ceux qui ont ce trait racial gagnent le sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20aquatique.ashx" title="Aquatique (sous-type)">aquatique</a> et la capacité spéciale <a class="pagelink" href="Pathfinder-RPG.Amphibie%20(capacit%c3%a9).ashx" title="Amphibie (Ext)">amphibie</a>. Ce trait racial remplace celui de pouvoir magique.</li><li><b>Fascination néréide.</b> Certains ondins ont des origines remontant aux néréides ainsi qu’aux extérieurs. Une fois par jour par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, l’ondin peut générer une aura de 6 mètres de rayon qui fait que tous les humanoïdes à portée de l’aura sont <a class="pagelink" href="Pathfinder-RPG.fascin%c3%a9.ashx" title="Fasciné">fascinés</a> par lui pendant un nombre de rounds égal à 1/2 le niveau de personnage de l’ondin (minimum 1). Les cibles peuvent résister avec un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> (DD 10 + 1/2 le niveau de l’ondin + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>). Il s’agit d’une <a class="pagelink" href="Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx" title="Les capacités spéciales">capacité surnaturelle</a>. Ce trait racial remplace celui de pouvoir magique.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Magie des tritons.</b> Certains ondins, le plus souvent ceux originaires de Bordemer, descendent des tritons plutôt que des génies. Les ondins avec ce trait racial peuvent utiliser <i><a class="pagelink" href="Pathfinder-RPG.convocation%20dalli%c3%a9s%20naturels%20I.ashx" title="Convocation d&#39;alliés naturels I">convocation d'alliés naturels I</a></i> comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a>, mais uniquement pour convoquer un <a class="pagelink" href="Pathfinder-RPG.dauphin.ashx" title="Dauphin">dauphin</a>. Ce trait racial remplace pouvoir magique.</li><li><b>Souffle acide.</b> Les ondins dont l’ascendance extérieure remonte à un méphite de l’Eau peuvent manier l’acide comme une arme. Ceux-ci ont une <a class="pagelink" href="Pathfinder-RPG.Souffle%20(capacit%c3%a9).ashx" title="Souffle (Sur)">arme de souffle</a> leur permettant de cracher un cône de 1,5 mètre de long d’eau acide une fois par jour. Le souffle inflige 1d8 points de dégâts d’acide par tranche de 2 niveaux du personnage (maximum de 5d8). Un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 + 1/2 le niveau de l’ondin + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>) permet de réduire les dégâts de moitié. Ce trait racial remplace celui de pouvoir magique.</li><li><b> Souffle de vase.</b> L’ascendance extérieure de certains ondins remonte aux méphites de vase. Ces ondins ont une <a class="pagelink" href="Pathfinder-RPG.Souffle%20(capacit%c3%a9).ashx" title="Souffle (Sur)">arme de souffle</a> leur permettant de cracher un cône de 1,5 mètre de long de mucus une fois par jour. Ce mucus inflige 1d4 points de dégâts d’acide par tranche de 2 niveaux du personnage (maximum de 5d4) et rend les créatures dans la zone <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreuses</a> pendant 3 rounds. Un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> réussi (DD 10 + 1/2 le niveau de l’ondin + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>) permet de réduire les dégâts de moitié et d’annuler la fièvre. Ce trait racial remplace celui de pouvoir magique.</li></ul>
+<u><i>Remplace « résistance élémentaire » :</i></u>
+<ul><li><b>Caméléon environnemental.</b> Certains ondins peuvent modifier leur couleur de peau pour se fondre dans les environnements sous-marins, mélangeant les bruns, les gris et les verts pour ressembler à du varech ou une autre plante marine naturelle. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, l’ondin ayant ce trait racial peut changer sa couleur de peau, gagnant un bonus de +4 à ses tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> dans les environnements sous-marins. Il peut reprendre sa couleur normale par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. Ce trait racial remplace résistance élémentaire.</li><li><b>Peau-caméléon.</b> Certains ondins peuvent changer la couleur de leur peau pour lui donner une couleur plus humaine. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, l’ondin ayant ce trait racial peut changer sa couleur bleue naturelle pour prendre une couleur de peau humaine normale, et peut retrouver sa couleur naturelle par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. Ceci lui accorde un bonus racial de +4 à ses tests de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> pour paraître humain. Ce trait racial remplace résistance élémentaire.</li><li><b>Perception de l’eau.</b> Les ondins ayant ce trait racial perçoivent les vibrations de l’eau, ce qui leur accorde la <a class="pagelink" href="Pathfinder-RPG.Perception%20aveugle%20(capacit%c3%a9).ashx" title="Perception aveugle (Ext)">perception aveugle</a> à 9 mètres contre les créatures en contact avec la même étendue d’eau. Ce trait racial remplace résistance élémentaire.</li></ul>
+<u><i>Remplace « vision dans le noir » :</i></u>
+<ul><li><b>Vision des profondeurs.</b> Certains ondins ont les yeux particulièrement adaptés aux profondeurs océaniques dépourvues de lumière, mais pas aux environnements remplis d’air. Ceux qui ont ce trait racial gagnent la <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">vision dans le noir</a> à 36 mètres lorsqu'ils sont sous l’eau, mais n'ont aucune vision dans le noir en dehors. Ce trait racial remplace vision dans le noir.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_7" href="#Bonus_alternatifs_de_classe_de_prédilection_7" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde rajoute un bonus de +1 à ses tests de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> lorsqu’il utilise sa <a class="pagelink" href="Pathfinder-RPG.Barde.ashx#REPRESENTATIONBARDIQUE" title="Le barde">représentation bardique</a> de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentations.ashx#CONTRE-CHANT" title="Les représentations bardiques du barde">contre-chant</a> contre les créatures de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20aquatique.ashx" title="Aquatique (sous-type)">aquatique</a> ou <a class="pagelink" href="Pathfinder-RPG.sous-type%20Eau.ashx" title="Eau (sous-type)">Eau</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Si l’<a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a> du conjurateur a une forme de base aquatique, le conjurateur rajoute +1,5 mètre à la portée de sa capacité <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#LIENVITAL" title="Le conjurateur (aussi appelé invocateur)">lien vital</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide rajoute un bonus de +1 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Druide.ashx#EMPATHIESAUVAGE" title="Le druide">empathie sauvage</a> pour influencer les <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animaux</a> et les <a class="pagelink" href="Pathfinder-RPG.type%20Cr%c3%a9ature%20magique.ashx" title="Créature magique">créatures magiques</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20aquatique.ashx" title="Aquatique (sous-type)">aquatique</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur rajoute un bonus de +1 à ses tests de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> pour lancer des sorts sous l’eau.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien rajoute à son grimoire un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de l'eau choisi dans la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx" title="Liste des sorts de druide">liste de sorts de druide</a>, <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">de magicien</a> ou <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">de prêtre</a>. Ce sort doit être inférieur d’au moins un niveau au plus haut niveau de sort qu’il peut lancer, et est considéré comme supérieur d’un niveau à moins d’apparaître également sur la liste de sorts de magicien.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine rajoute +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> lorsqu’il résiste à une <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a> et peut faire 1/3 d’<a class="pagelink" href="Pathfinder-RPG.Moine.ashx#COUPETOURDISSANT" title="Le moine">attaques étourdissantes</a> en plus par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre rajoute un bonus de +1 à ses tests de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> pour passer la <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20la%20magie%20(capacit%c3%a9).ashx" title="Résistance à la magie (Ext)">résistance à la magie</a> des créatures de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20aquatique.ashx" title="Aquatique (sous-type)">aquatique</a> ou <a class="pagelink" href="Pathfinder-RPG.sous-type%20Eau.ashx" title="Eau (sous-type)">Eau</a>.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_8" href="#Nouvelles_règles_raciales_8" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux ondins, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_0" href="#Dons_0" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Ascendance%20aquatique.ashx" title="Ascendance aquatique">Ascendance aquatique</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les ondins">Ondin</a></td><td>Gain du trait amphibien et aumgentation de la vitesse de nage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Flot%20des%20%c3%a9l%c3%a9ments.ashx" title="Flot des éléments">Flot des éléments</a></td><td><sup><i>ISR</i></sup></td><td>Capacité à lancer des sorts ; <a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">ifrit</a>, <a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">ondin</a>, <a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">oréade</a> ou <a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">sylphe</a></td><td>Modifie tous ou une partie des dégâts d'un sort pour correspondre à la race d'un allié adjacent avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frappe%20%c3%a9l%c3%a9mentaire.ashx" title="Frappe élémentaire">Frappe élémentaire</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Ifrit</a>, <a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">ondin</a>, <a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">oréade</a> ou <a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">sylphe</a></td><td>Inflige +1 dégât de l'énergie liée à la race du personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mage%20de%20vapeur.ashx" title="Mage de vapeur">Mage de vapeur</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les ondins">Ondin</a></td><td>Lance des sorts de feu sous l'eau avec de la vapeur</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Manoeuvre%20hydraulique.ashx" title="Manoeuvre hydraulique">Manœuvre hydraulique</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les ondins">Ondin</a>, pouvoir magique poussée hydraulique</td><td>Utilise la <i>poussée hydraulique</i> pour effectuer plus de manoeuvres</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Portail%20triton.ashx" title="Portail triton">Portail triton</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les ondins">Ondin</a>, pouvoir magique de poussée hydraulique, niveau 5</td><td>Convoque des alliés aquatiques avec les pouvoirs magiques raciaux</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Peau%20deau.ashx" title="Peau deau">Peau d'eau</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les ondins">Ondin</a></td><td>Éteint les feux d'un simple contact</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_1" href="#Archétypes_de_classe_1" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Adepte%20ondin%20(druide).ashx" title="Adepte ondin">Adepte ondin (druide)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chanteur%20de%20leau%20(barde).ashx" title="Chanteur de l’eau">Chanteur de l’eau (barde)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_2" href="#Équipement_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Ceintures%20de%20cha%c3%aene%20(objet).ashx" title="Ceintures de chaîne">Ceintures de chaîne</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%89ponge%20%c3%a0%20potion%20(objet).ashx" title="Éponge à potion">Éponge à potion</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Manche%20darme%20ondin%20(objet).ashx" title="Manche d&#39;arme ondin">Manche d’arme ondin</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_3" href="#Objets_magiques_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Amulette%20en%20dent%20de%20requin.ashx" title="Amulette en dent de requin">Amulette en dent de requin</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ch%c3%a2le%20de%20transfert%20vital.ashx" title="Châle de transfert vital">Châle de transfert vital</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chaussons%20du%20triton.ashx" title="Chaussons du triton">Chaussons du triton</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_4" href="#Sorts_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Appel%20des%20nixes.ashx" title="Appel des nixes">Appel des nixes</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gr%c3%a2ce%20des%20n%c3%a9r%c3%a9ides.ashx" title="Grâce des néréides">Grâce des néréides</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetrise%20des%20marids.ashx" title="Maîtrise des marids">Maîtrise des marids</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetrise%20%c3%a9l%c3%a9mentaire.ashx" title="Maîtrise élémentaire">Maîtrise élémentaire</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20des%20ondins.ashx" title="Malédiction des ondins">Malédiction des ondins</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

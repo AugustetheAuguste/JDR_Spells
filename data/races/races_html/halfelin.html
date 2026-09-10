@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les halfelins - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="halfelin, manuel des joueurs, manuel des races, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Halfelin.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Halfelin&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkFIiHDaxrrdgYUO4tNz5m/XOCUHA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Halfelin">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Halfelin">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Halfelin">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les halfelins
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classes_2">Archétypes de classes</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Optimistes et joyeux de nature, les halfelins bénéficient d’une chance insolente et sont animés par une soif de voyage inextinguible. Ils compensent leur petite taille par leur immense courage et leur insatiable curiosité. À la fois nerveux et faciles à vivre, ils sont d’humeur stable, à l’affût de la moindre opportunité et ne sont pas sujets aux mêmes éclats de violence ou aux fortes émotions que les races plus instables. Même au coeur d’une catastrophe, ils ne perdent jamais leur sens de l’humour. Grâce à cette capacité à se rire des absurdités, même dans les situations les plus désespérées, ils parviennent à prendre un peu de distance avec les dangers qui les entourent et ce détachement les aide parfois à se défendre contre la terreur qui paralyse leurs alliés.<br /><br />Les halfelins sont des opportunistes invétérés, persuadés qu’ils pourront retourner n’importe quelle situation à leur avantage, au point qu’ils se jettent parfois gaiement au coeur des ennuis, sans avoir la moindre idée de comment s’en sortir si les choses tournent mal. Bien souvent, leur physique ne leur permet pas de se défendre contre la rudesse du monde, c’est pourquoi ils ont appris quand ployer sous le vent et quand se cacher. Mais leur curiosité prend souvent le pas sur leur bon sens et les pousse à faire de mauvais choix dont ils se sortent difficilement. Les expériences les plus dures leur enseignent parfois un peu de prudence, mais il est bien rare qu’elles leur fassent perdre leur foi dans leur chance ou qu’ils cessent de croire que, bizarrement, l’univers existe uniquement pour les divertir et qu’il ne permettra pas qu’il leur arrive malheur.<br /><br />La curiosité des halfelins les pousse à chercher sans cesse de nouveaux horizons et de nouvelles expériences, mais ils sont aussi très attachés à leur foyer et ils dépensent souvent plus qu’ils ne possèdent pour améliorer leur vie quotidienne. À n’en pas douter, les halfelins aiment le luxe et le confort, mais ils ont aussi d’autres raisons de transformer leur maison en musée. Ils dépensent du temps, de l’argent et de l’énergie pour améliorer leur foyer en signe de respect pour leurs invités et en signe d’affection pour leur famille. Ils soignent la décoration de leur maison pour exprimer leurs sentiments envers ceux qu’ils accueillent chez eux, qu’il s’agisse de leur famille, d’amis proches ou d’invités d’honneur. Même les halfelins nomades ornent leurs chariots ou emportent quelques souvenirs chers à leur coeur pour décorer leur campement.<br /><br /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les halfelins, qui n’attirent guère l’attention grâce à leur taille réduite, possèdent une capacité étonnante à se fondre dans l’immensité du monde qui les entoure. Rapides, agiles et entêtés, les halfelins se mêlent aux sociétés des autres races et se rendent bien vite indispensables. Même si les préjugés des autres races les décrivent comme des roublards et des voleurs (des allégations supportées par de très nombreux exemples), les hafelins ne sont pas forcément l’un ou l’autre. La plupart d’entre eux ont plutôt un caractère facile et sociable et, même si leur curiosité leur cause parfois des problèmes, ils font face à l’adversité avec une ténacité et un courage inversement proportionnels à leur petite taille.<br /><br />Les halfelins vivent rarement au sein de communautés isolées. Cependant, ils partagent entre eux (et, dans une moindre mesure, avec les gnomes) des ressemblances culturelles liées à la connexion implicite qui unit ceux qui savent ce que c’est que d’être petits et ignorés dans un monde rempli de créatures plus grandes.
+</div><br /><b>Description physique.</b> Les halfelins atteignent péniblement les 90 centimètres de haut. Ils préfèrent marcher pieds nus, ce qui explique que la plante de leurs pieds est particulièrement calleuse. Leurs larges pieds bronzés sont recouverts d’épais poils bouclés qui les tiennent au chaud. Leur peau est d’une riche teinte cannelle et leurs cheveux présentent un éventail de châtains. Ils ont des oreilles pointues, mais dans les mêmes proportions que celles des humains.<br /><br />Les halfelins aiment les vêtements simples et modestes. Si la situation l’exige, ils sont tout à fait capables de s’habiller élégamment, mais, en général, ils préfèrent des habits discrets à cause de l’instinct racial qui les pousse à se fondre dans le décor. En revanche, les saltimbanques halfelins gagnent leur vie en attirant l’attention et privilégient les costumes voyants aux couleurs criardes.<br /><br /><b>Société.</b> Les halfelins préfèrent placer leur foi dans des vertus simples et humbles, comme la famille ou leur petite communauté, plutôt que dans les empires ou les grandes causes. Ils n’ont pas de berceau culturel et ne contrôlent pas de domaine plus grand que des unions rurales de villages indépendants. Ils vivent souvent aux pieds de leurs cousins humains, dans des villes humaines, et font de leur mieux pour gagner leur vie en récupérant les miettes des gens de grande taille. De nombreux halfelins mènent une vie épanouie à l’ombre de leurs concitoyens de grande taille, mais d’autres optent pour une vie nomade et parcourent le monde pour profiter de tout ce qu’il a à offrir.<br /><br />Les halfelins comptent sur leurs coutumes et leurs traditions pour conserver leur culture. Ils possèdent une vaste tradition orale qui inclut des contes sur les héros du peuple mettant en valeur d’importantes vertus halfelines, mais, en dehors de cela, ils ne voient aucun intérêt à étudier l’histoire en elle-même. Un halfelin qui a le choix entre apprendre une vérité inutile et une fable utile choisit presque toujours la fable. Cet aspect aide en partie à comprendre pourquoi les halfelins sont si flexibles : ils se tournent toujours vers le futur et délaissent sans mal les anciennes rancoeurs ou les vieilles obligations, qui pèsent si lourd sur les autres races.<br /><br /><b>Relations.</b> Les halfelins sont généralement fiers de leur capacité à passer inaperçus aux yeux des autres races, qui leur permet d’exceller dans l’art du vol et du mensonge. Ils savent bien que les autres ont des préjugés et beaucoup se donnent du mal pour se montrer ouverts et amicaux envers les grandes races, quand ils ne s’efforcent pas de passer inaperçus. Ils s’entendent relativement bien avec les gnomes, mais se montrent tout de même prudents avec ces créatures excentriques. Ils respectent les nains et les elfes, mais ces deux races vivent dans des régions reculées, loin du confort de la civilisation que les halfelins apprécient tant, ce qui limite leurs interactions. Les halfelins craignent seulement les demi-orques qu’ils évitent en raison de leur grande taille et de leur nature violente, un peu trop intimidante pour eux.<br /><br />Les halfelins cohabitent en bons termes avec les humains, mais, comme les sociétés humaines les plus agressives aiment en faire des esclaves, ils veillent à rester vigilants. Les halfelins tiennent beaucoup à leur liberté, surtout pour voyager et faire de nouvelles expériences, et chérissent cette autonomie. Pourtant, les halfelins réduits en esclavage font toujours preuve de la flexibilité et du sens pratique typique de leur race et combattent rarement leurs maîtres de manière directe. Souvent, ils attendent simplement une opportunité pour disparaître. Parfois, quand ils sont esclaves depuis longtemps, ils finissent par adopter leurs propriétaires et les considérer comme leur famille. Ils tirent ainsi le meilleur parti de leur vie, même s’ils rêvent encore de s’enfuir vers la liberté.<br /><br /><b>Alignement et religion.</b> Les halfelins sont loyaux envers leurs amis et leur famille, mais, comme ils vivent dans un monde dominé par des races deux fois plus grandes qu’eux, ils ont fini par accepter d’être obligés de quémander et de se contenter de restes pour survivre. Ils sont donc généralement Neutres. Ils se font un devoir de montrer qu’ils respectent les lois et approuvent les préjugés de la communauté dans laquelle ils vivent, mais ils accordent encore plus de valeur à l’individualité de chacun. Quand un halfelin désapprouve sa société dans son ensemble, il fait ce qu’il pense être le mieux. Toujours pragmatiques, les halfelins vénèrent souvent la divinité préférée de leurs puissants voisins de grande taille. Mais ils veillent aussi à la sécurité de leurs paris en rendant hommage à Desna. La plupart des halfelins sont naturellement attirés par la déesse de la chance et des voyages, ce n’est que bon sens de lui adresser une petite prière de temps à autre.<br /><br /><b>Aventuriers.</b> La chance innée et l’insatiable soif de voyage des halfelins en font des candidats idéaux au poste d’aventurier. Ils ne rechignent pas à empocher tous les objets de valeur qu’ils trouvent, mais ils accordent encore plus d’importance aux nouvelles expériences qui accompagnent la vie d’aventurier qu’aux récompenses matérielles. Ils considèrent l’argent comme un moyen de mener une vie plus facile et plus confortable, pas comme une fin en soi.<br /><br />Certains vagabonds s’associent avec eux dans l’espoir qu’une partie de leur chance mystique leur déteigne dessus. Les halfelins ne voient aucun inconvénient à encourager ce genre de croyances, non seulement chez leurs compagnons de voyage, mais aussi dans le monde entier. Beaucoup tentent de tirer parti de leur réputation de créatures chanceuses pour négocier une réduction quand ils voyagent en bateau ou avec une caravane, ou même quand ils passent une nuit dans une auberge. Ils rencontrent des succès mitigés, mais on raconte bien assez d’histoires sur la bonne fortune qui échoie à ceux qui voyagent en compagnie d’un halfelin pour faire réfléchir même les plus sceptiques. Évidemment, certaines personnes soupçonnent les halfelins de répandre délibérément ces rumeurs, juste pour obtenir des réductions.<br /><br /><b>Noms masculins.</b> Antal, Boram, Hyrgan, Jamir, Lem, Miro, Sumak, Tribin, Uldar, Vraxim.<br />
+<b>Noms féminins.</b> Anafa, Bellis, Étune, Filiu, Irlana, Marra, Pressi, Rilka, Sistra, Wyssal, Yamyra.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>, -2 <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>.</b> Les halfelins sont agiles et volontaires, mais, à cause de leur petite taille, ils sont plus faibles que les autres races.</li><li><b>Taille P.</b> Les halfelins sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20P.ashx" title="taille P">taille P</a> et gagnent un bonus de taille de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>, un malus de -1 au <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> et au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> et un bonus de taille de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.</li><li><b>Vitesse lente.</b> Les halfelins ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 6 mètres.</li><li><b>Sans peur.</b> Les halfelins ont un bonus racial de +2 à tous les <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre la terreur. Ce bonus se cumule avec celui offert par chance des halfelins.</li><li><b>Chance des halfelins.</b> Les halfelins reçoivent un bonus racial de +1 à tous les <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a>.</li><li><b>Sens aiguisés.</b> Les halfelins reçoivent un bonus racial de +2 à tous les jets de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.</li><li><b>Bon équilibre.</b> Les halfelins reçoivent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> et d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a>.</li><li><b>Armes familières.</b> Les halfelins sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.Fronde%20(arme).ashx" title="Fronde">frondes</a> et considèrent toute arme qui porte la mention « halfelin » dans son nom comme une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a>.</li><li><b>Langues.</b> Les halfelins commencent le jeu en parlant le commun et le halfelin. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues tirées de la liste suivante : elfique, gnome, gobelin et nain.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>Les halfelins bénéficient d’une chance innée et savent s’adapter à leur environnement. Les options suivantes correspondent à ces attributs et sont disponibles pour tous les personnages halfelins. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux halfelins standard, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « armes familières », « bon équilibre » et « chance des halfelins » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Gardien.</b> Les humains confient souvent la garde d'enfants et d'animaux à des familles halfelines, une tâche qui les a aidé à développer une grande perspicacité. Ces halfelins bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. De plus, lorsqu'ils obtiennent un <a class="pagelink" href="Pathfinder-RPG.Compagnons%20animaux.ashx" title="Les compagnons animaux du druide">compagnon animal</a>, une <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#MONTURE" title="Le chevalier">monture liée</a> ou un <a class="pagelink" href="Pathfinder-RPG.Prestige.ashx" title="Prestige">compagnon d'armes</a> ou un <a class="pagelink" href="Pathfinder-RPG.Familiers.ashx" title="Les familiers">familier</a>, cette créature obtient un bonus de +2 à une <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a> au choix du personnage. Ce trait racial remplace armes familières, bon équilibre et chance des halfelins.</li></ul>
+<u><i>Remplace « armes familières » et « sans peur » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Insidieux.</b> Les halfelins opprimés s'entraînent dès leur plus jeune âge à profiter des moments où leurs oppresseurs les ignorent. Ces halfelins bénéficient d'un bonus racial de +1 aux attaques contre les adversaires privés de leur bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Ce trait racial remplace armes familières et sans peur.</li></ul>
+<u><i>Remplace « bon équilibre » :</i></u>
+<ul><li><b>Cavalier éclaireur.</b> Des halfelins se spécialisent dans le combat monté. Ceux qui possèdent ce trait racial gagnent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a> et d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>. Ce trait racial remplace bon équilibre.</li><li><b>Fainéant.</b> Les halfelins sont réputés être des voleurs et des fourbes... et parfois, ils le méritent bien. Les halfelins qui possèdent ce trait ont un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>. Escamotage est toujours une compétence de classe pour eux. Ce trait racial remplace bon équilibre.</li><li><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20races.ashx#4" title="FAQ du Manuel des races">→</a> Halfelin, Guerrier à la fronde : Avec quels types de fronde cette capacité de rechargement fonctionne-t-elle ?</i></b><br/><br/>La capacité <u><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#GUERRIERALAFRONDE" title="Les halfelins">guerrier à la fronde</a></u> dit : « Ceux qui possèdent ce trait racial peuvent recharger cette arme par une action libre. » Il ne dit pas « n'importe quel type de fronde » ou « toutes les frondes », seulement « cette arme ». La capacité n'affecte que les <a class="pagelink" href="Pathfinder-RPG.Fronde%20(arme).ashx" title="Fronde">frondes</a> standards, pas le <a class="pagelink" href="Pathfinder-RPG.Fustibale%20halfelin%20(arme).ashx" title="Fustibale halfelin">fustibale halfelin</a> ou tout autre type de fronde.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div><b>Guerrier à la fronde.</b> Les halfelins sont experts dans l’art de manier la fronde. Ceux qui possèdent ce trait racial peuvent recharger une <a class="pagelink" href="Pathfinder-RPG.Fronde%20(arme).ashx" title="Fronde">fronde</a> arme par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. Ils doivent tout de même utiliser leurs deux mains et cette action provoque toujours une <a class="pagelink" href="Pathfinder-RPG.AO.ashx" title="Attaque d&#39;opportunité (redirection)">attaque d’opportunité</a>. Ce trait racial remplace bon équilibre.</li><li><b>Rapide comme les ombres.</b> Les halfelins sont extrêmement discrets, même quand ils se déplacent dans des zones obstruées. Ceux qui possèdent ce trait racial voient leur malus aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> diminuer de 5 quand ils se déplacent et celui pour le tir embusqué de 10. Ce trait racial remplace bon équilibre.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Survivant secret.</b> Les halfelins issus de communautés pauvres et désespérées, le plus souvent dans les grandes villes, doivent prendre ce dont ils ont besoin sans être vus afin de survivre. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>. Ce trait racial remplace bon équilibre.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Travailleur motivé.</b> De nombreuses familles halfelines ont développé des techniques afin d'accomplir leur travail plus vite et plus efficacement, que ce soit pour contribuer à la communauté ou pour satisfaire leurs maîtres autoritaires. Ces halfelins bénéficient d'un bonus racial de +4 aux tests d'une compétence d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a>, de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> ou de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a>. Ce trait racial remplace bon équilibre.</li></ul>
+<u><i>Remplace « bon équilibre » et « sans peur » :</i></u>
+<ul><li><b>Sens pratique.</b> Les halfelins accordent une grande importance au travail et au bon sens. Ceux qui possèdent ce trait gagnent un bonus de +2 à une compétence d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> ou de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a>, aux tests de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> et aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les <a class="pagelink" href="Pathfinder-RPG.illusion.ashx" title="Illusion">illusions</a>. Ce trait racial remplace sans peur et bon équilibre.</li></ul>
+<u><i>Remplace « bon équilibre » et « sens aiguisés » :</i></u>
+<ul><li><b>Doucereux.</b> La survie des halfelins dépend souvent des caprices des races plus grandes et plus agressives qu’eux. C’est pourquoi ils se donnent du mal pour se rendre utiles auprès des grandes gens ou au moins pour les divertir. Les halfelins qui possèdent ce trait racial gagnent un bonus de +2 aux tests compétence dans un unique type de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> de leur choix, et Représentation est toujours une compétence de classe pour eux. Ils gagnent aussi un bonus de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> et de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a>. Ce trait racial remplace sens aiguisés et bon équilibre.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Ombre des humains.</b> Les halfelins semblent apparaître partout où l'on trouve des humains, en partie parce qu'ils soutiennent et suivent activement les explorateurs, colons et voyageurs humains sans attirer l'attention sur eux. Ces halfelins peuvent utiliser la <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> pour se cacher derrière des créatures d'au moins une catégorie de taille de plus qu'eux, sans avoir besoin d'une autre source d'<a class="pagelink" href="Pathfinder-RPG.abri.ashx" title="abri">abri</a> ou de <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a>. Tant que ces halfelins sont dans un rayon de 9 mètres d'un <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a>, ils bénéficient d'un bonus racial de +2 aux tests de Discrétion et d'<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>. Ce trait racial remplace bon équilibre et sens aiguisés.</li></ul>
+<u><i>Remplace « bon équilibre » et « vitesse lente » :</i></u>
+<ul><li><b>Pieds rapides.</b> Certains halfelins sont plus rapides, mais moins prudents que les autres. Ceux qui possèdent ce trait se déplacent à une vitesse normale et ont donc une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres. Ce trait racial remplace vitesse lente et bon équilibre.</li></ul>
+<u><i>Remplace « chance des halfelins » :</i></u>
+<ul><li><b>Chance adaptable.</b> <div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHANCEADAPTABLE" href="#CHANCEADAPTABLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>Certains halfelins exercent un véritable contrôle sur leur chance innée. Ce pouvoir leur permet d’utiliser leur chance de façon plus diversifiée, mais réduit sa fréquence. Trois fois par jour, le halfelin peut s'accorder un bonus de chance de +2 à un test de <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a>, un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a>, un <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jet de sauvegarde</a> ou un test de <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx" title="Les compétences">compétence</a>. Si le halfelin utilise sa chance avant de lancer le dé, il bénéficie du bonus complet de +2, s’il l’utilise après coup, il gagne seulement un bonus de +1. Il n’a pas besoin de dépenser d’action pour utiliser sa chance. Ce trait racial remplace chance des halfelins.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Halfelin malchanceux.</b> Ces halfelins subissent un malus de -1 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> mais bénéficient d'un bonus racial de +1 au <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> et au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des jets de sauvegarde de tous leurs sorts et pouvoirs magiques de <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">malédiction</a>. De plus, ces halfelins peuvent utiliser <i><a class="pagelink" href="Pathfinder-RPG.mauvais%20pr%c3%a9sage.ashx" title="Mauvais présage">mauvais présage</a></i> comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a> une fois par jour. Ce trait racial remplace chance des halfelins.</li><li><b>Porte-poisse halfelin.</b> Le halfelin perd le trait racial chance des halfelins (et son bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a>) et gagne, à la place, la capacité d’affecter à volonté une autre créature de malchance par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Cette malédiction a une portée de 9 mètres, le halfelin doit être en mesure de voir la cible et d’avoir une <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#LIGNEDEFFET" title="Présentation des sorts">ligne d’effet</a> sur elle. La cible a droit à un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour résister à la malédiction (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 + 1/2 niveau du halfelin + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>). Si la cible réussit son jet, elle est immunisée à la capacité de malédiction de ce halfelin pendant 24 heures. Une créature maudite reçoit un malus de -1 à tous ses jets de sauvegarde. Cette malédiction dure 24 heures ou jusqu’à ce que le halfelin tente d’utiliser à nouveau sa malédiction. Les malédictions sont des <a class="pagelink" href="Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx" title="Les capacités spéciales">capacités surnaturelles</a>, n'est pas un effet mental, ignore la <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">résistance à la magie</a>, et peut affecter n’importe quel type de créature qui n’est pas immunisé aux effets de chance. Ce trait racial remplace chance des halfelins.</li><li><b>Poids plume.</b> Un halfelin doit s’entraîner dur pour combattre efficacement des adversaires plus grands que lui. Les halfelins qui possèdent ce trait gagnent un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les ennemis plus grands qu’eux et un bonus de +1 aux jets de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> pour éviter les attaques de <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a9tinement%20(capacit%c3%a9).ashx" title="Piétinement (Ext)">piétinement</a>. Ce trait racial remplace chance des halfelins.</li></ul>
+<u><i>Remplace « chance des halfelins » et « sans peur » :</i></u>
+<ul><li><b>Soif de voyages.</b> Les halfelins aiment les voyages et les cartes. Ceux qui possèdent ce trait racial reçoivent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (géographie) et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a>. Quand le halfelin lance un sort ou utilise un pouvoir qui améliore ou permet un mouvement, il considère son niveau de lanceur de sorts effectif comme d’un niveau de plus que la normale. Ce trait racial remplace sans peur et chance des halfelins.</li><li><b>Veule.</b> La plupart des halfelins ignorent la peur, mais certains sont de nature inquiète et sont à l’affût de tout. Ils gagnent un bonus de +1 aux tests d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a> et un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> quand ils prennent un ennemi <a class="pagelink" href="Pathfinder-RPG.Modificateurs%20de%20combat.ashx#PRISEENTENAILLE" title="Modificateurs de combat">en tenaille</a>, mais ils subissent un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets de terreur et ne peuvent pas bénéficier de bonus de moral à ces jets. Quand ils sont affectés par un effet de terreur, leur vitesse augmente de 3 mètres et ils gagnent un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Ce trait racial remplace sans peur et chance des halfelins.</li></ul>
+<u><i>Remplace « chance des halfelins » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Sans entraves.</b> Les anciennes anguilles libérées de l'esclavage s'entraînent pour s'assurer qu'ils ne seront plus jamais soumis à cette vie. Ils bénéficient d'un bonus racial de +4 aux tests d'<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a> ainsi que d'un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets qui imposent l'état <a class="pagelink" href="Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx" title="Enchevêtré">enchevêtré</a>, au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> contre les tentatives de <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a>, et aux tests de manœuvre offensive pour échapper à une lutte. Ce trait racial remplace chance des halfelins et sens aiguisés.</li></ul>
+<u><i>Remplace « sens aiguisés » :</i></u>
+<ul><li><b>Coup sous la ceinture.</b> Certains halfelins s’entraînent dur pour se battre contre des créatures plus grandes qu’eux. Ceux qui possèdent ce trait racial gagnent un bonus de +1 aux jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> contre les adversaires plus grands qu’eux. Ce trait racial remplace sens aiguisés.</li></ul>
+<u><i>Remplace « sens aiguisés » et « langues » :</i></u>
+<ul><li><b>Polyglotte.</b> Certains halfelins développent un véritable don pour apprendre de nouvelles langues, en particulier ceux qui voyagent beaucoup. Ils gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> et considèrent toujours cette compétence comme une compétence de classe. Les halfelins qui possèdent ce trait commencent le jeu en parlant le commun, le halfelin et une autre langue de leur choix (en dehors des langues secrètes comme celle des <a class="pagelink" href="Pathfinder-RPG.Druide.ashx#LANGUESSUPPLEMENTAIRES" title="Le druide">druides</a>), en plus des langues qu’ils connaissent grâce à leur valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Ils ont accès à la liste de langues supplémentaires habituelle des halfelins. Ce trait racial remplace sens aiguisés et modifie les langues de l'halfelin.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race halfeline ou une variante raciale, comme suit.
+<ul><li><b>Né en esclavage.</b> Ces halfelins descendent de lignées esclaves depuis des siècles. Même s’ils sont habituellement libres, le poids de ces années d’esclavagisme pèse lourd et les pousse à tout faire pour se rendre agréables et à succomber à l’intimidation et à la peur. Ils ont les traits raciaux alternatifs veule et doucereux.</li><li><b>Nomade.</b> Ces halfelins sont nés sur la route et la suivront jusqu’à la fin de leurs jours. Ils voyagent vite et léger et ne ratent jamais une occasion de faire des affaires ou de vivre une aventure. Ils ont les traits raciaux alternatifs pieds rapides, polyglotte et soif de voyages.</li><li><b>Vengeur.</b> Contrairement à la plupart des halfelins, ceux-ci cherchent volontairement les ennuis dans leur quête pour redresser les torts et laver les affronts. Que les guerriers de cette culture secrète résistent à un tyran local, à un monstre ou aux troupes d’un oppresseur, ils portent des masques pour frapper au nom de leur communauté. Ils possèdent les traits raciaux coup sous la ceinture, poids plume et guerrier à la fronde.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers halfelins.</b> Les halfelins qui décident de devenir des aventuriers préfèrent généralement les armures et les armes légères qui leur permettent de tirer parti de leur dextérité naturelle. Ils mettent l’accent sur une large gamme de talents, ce qui leur permet de pouvoir faire face à toutes les situations. Ils recherchent rarement la bagarre mais leur curiosité les incite souvent à voyager un peu partout, parfois même dans les lieux les plus dangereux.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les halfelins occultes.</b> La croyance populaire veut que les halfelins évitent les problèmes grâce à la chance qui les caractérise mais, pour certains, la « chance halfeline » est le reflet d’un véritable talent psychique. Beaucoup transforment ce talent en une pratique plus importante pour compenser leur petite taille et deviennent particulièrement doués lorsqu’il s’agit d’influencer ou de manipuler leur entourage.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste ajoute la formule d’un nouvel <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extrait</a> à son livre de formules. Elle doit être au moins d’un niveau de moins que la plus puissante qu’il connaît.<br />
+La curiosité naturelle des halfelins les pousse à expérimenter sans cesse de nouvelles choses et, parmi toutes les classes, c’est chez les alchimistes que cette tendance peut s’exprimer le plus librement, sous la forme de nouvelles découvertes explosives (au sens littéral) qui n’attendent que d’être dévoilées.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Gain de 1/6 d’une nouvelle <a class="pagelink" href="Pathfinder-RPG.Exploitations.ashx" title="Les exploitations d&#39;arcaniste">exploitation</a> d’arcaniste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Le barbare ajoute un bonus de +1/2 au <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#SENSDESPIEGES" title="Le barbare">sens des pièges</a> ou de +1/3 au bonus du pouvoir de rage <a class="pagelink" href="Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PRECISIONETONNANTE" title="Les pouvoirs de rage du barbare">précision étonnante</a>.<br />
+Même si les races plus grandes trouvent l’idée d’un barbare halfelin plutôt comique, rares sont ceux qui le lui diraient en face. Les barbares halfelins sont peut-être plus faibles que les autres barbares, mais la terrible fureur d’un halfelin en rage pourrait bien en surprendre plus d’un.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde gagne un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour transmettre un message secret, un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> pour rassembler des informations et un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> pour passer pour un enfant <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfe</a> ou <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a>.<br />
+Les halfelins aiment chanter, danser et faire la fête ; et leurs bardes sont passés maîtres dans l’art d’amuser tout un chacun. Ils se produisent parfois dans les grandes salles et les théâtres célèbres mais on les rencontre tout aussi souvent sur les chemins où ils laissent libre cours à leur amour du voyage et amènent la joie et l’hilarité chaque jour à un nouveau public.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Chaque jour, le bretteur peut utiliser <a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx#CHARMANTEVIE" title="Le bretteur">charmante vie</a> 1/4 de fois de plus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Ajout de 1/2 au niveau effectif du chaman quand il détermine l’armure naturelle, l’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> et les pouvoirs spéciaux de son <a class="pagelink" href="Pathfinder-RPG.Chaman.ashx#ESPRITANIMAL" title="Le chaman">esprit animal</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> gagne un bonus de chance de +1/4 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a>. Si le chasseur le remplace, le nouveau compagnon bénéficie aussi de ce bonus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> Le chevalier ajoute +1/2 à son niveau effectif de classe quand il détermine les dégâts qu’il inflige lors d’une <a class="pagelink" href="Pathfinder-RPG.AO.ashx" title="Attaque d&#39;opportunité (redirection)">attaque d’opportunité</a> contre un ennemi qu’il a <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">défié</a>.<br />
+Les halfelins sont peut-être trop petits pour monter des chevaux mais, juché sur un poney, un chien de selle ou une autre monture exotique, un chevalier halfelin pourrait bien surprendre des adversaires de plus grandes tailles en menant des soldats au combat sans la moindre peur tout en leur inspirant un comportement héroïque à l’aide de ses talents et de sa dévotion.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> Le personnage augmente de 1/6 point la capacité de la <a class="pagelink" href="Pathfinder-RPG.cin%c3%a9tiste.ashx#RÉSERVEINTERNE" title="Le cinétiste">réserve interne</a> du cinétiste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Le conjurateur donne un rang de <a class="pagelink" href="Pathfinder-RPG.eidolon.ashx#Les_caractéristiques_de_base_de_leidolon_13" title="L&#39;eidolon du conjurateur">compétence</a> de plus à son <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a>.<br />
+La curiosité des halfelins ne connaît pas de limite. Certains poursuivent la voie du conjurateur pour explorer les multiples formes qu’une créature magique peut prendre. Leurs eidolons sont généralement parés de couleurs vives mais peuvent adopter n’importe quelle apparence concevable par leur imagination débridée. Ils font parfois également office de montures.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide gagne un bonus de chance de +1/4 aux jets de sauvegarde de son <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a>.<br />
+Les halfelins ont plutôt tendance à apprécier les bons côtés de la civilisation mais certains druides halfelins trouvent réconfort et bonheur au sein de la nature. D’autres encore s’allient avec les animaux qui sont déjà présents dans les villes.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> L’enquêteur ajoute la formule d’un extrait issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste des formules de l'alchimiste</a> à son livre de formules. Elle doit être d’au moins un niveau de moins que la formule de plus haut niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur choisit un <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de Charisme. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les ensorceleurs halfelins gardent généralement leurs capacités magiques secrètes jusqu’à ce qu’ils en aient besoin, afin de prendre plus facilement leurs adversaires par surprise. Ils préfèrent souvent les enchantements qui améliorent leurs talents naturels de persuasion et les évocations énormes qui font paraître leur petite taille comme un trait sans importance.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier gagne un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand il résiste à un <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#CROCENJAMBE" title="Les manœuvres offensives">croc-en-jambe</a> ou une <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#LUTTE" title="Les manœuvres offensives">lutte</a>.<br />
+Les halfelins sont généralement moins bagarreurs que les autres races, mais cela ne les empêche pas de comprendre et d’apprécier l’importance des combattants entraînés capables de défendre leurs frères.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> Le personnage augmente de 1/3 le nombre d’<a class="pagelink" href="Pathfinder-RPG.hypnotiseur.ashx#INDUCTIONSDHYPNOTISEUR" title="L&#39;hypnotiseur">inductions d’hypnotiseur</a> qu’il peut utiliser chaque jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur peut changer son <a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx#DONDETRAVAILENEQUIPE" title="L&#39;inquisiteur">don de travail en équipe</a> le plus récent 1/4 de fois de plus par jour.<br />
+Grâce à leur aptitude à se fondre dans le décor et à écouter sans être remarqués, les halfelins parviennent facilement à obtenir des informations secrètes. Combiné avec leur curiosité naturelle, ce talent fait d’eux de parfaits inquisiteurs, tout spécialement lorsqu’il s’agit d’enquêter au sein des autres races.<br /><br /><a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Gagne 1/6 d'un nouveau <a class="pagelink" href="Pathfinder-RPG.Justicier.ashx#TALENTSOCIAL" title="Le justicier">talent social</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Ajoute 1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> du lutteur pour résister à une manoeuvre de <a class="pagelink" href="Pathfinder-RPG.renversement.ashx" title="renversement">renversement</a> ou de <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien ajoute +1/2 à son niveau de classe effectif quand il détermine l’armure naturelle, l’Intelligence et les capacités spéciales de son <a class="pagelink" href="Pathfinder-RPG.familier.ashx" title="familier">familier</a>.<br />
+Les magiciens halfelins cherchent souvent à percer les secrets de la magie pour deux raisons : leur curiosité naturelle et leur désir de s’élever au-dessus de leur taille physique et de forcer les autres races à les prendre en considération. C’est ainsi qu’ils ont tendance à préférer les sorts très visuels et les démonstrations de pouvoir évidentes.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le magus gagne 1/6 d’un nouvel <a class="pagelink" href="Pathfinder-RPG.Magus.ashx#ARCANE" title="Le magus">arcane de magus</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> Le personnage augmente de 1/3 point le bonus dont bénéficie le médium grâce à son <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#ESPRIT" title="Le médium">aubaine de séance médiumnique</a>, cela n'augmente pas le bonus des membre du groupe dans <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#SÉANCEMÉDIUMNIQUEDEGROUPE" title="Le médium">les séances de groupes</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine gagne un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> pour résister à une <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#LUTTE" title="Les manœuvres offensives">lutte</a> et a droit à 1/2 <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#COUPETOURDISSANT" title="Le moine">attaque étourdissante</a> de plus par jour.<br />
+De nombreux halfelins désirent la vie simple faite de dévotion et de dévouement que constitue la voie du moine. Ces individus au comportement calme, apparemment inoffensifs et toujours prêts à entreprendre de durs labeurs, se fondent facilement dans les communautés halfelins. De nombreux pillards se sont rendus compte trop tard de leur erreur après avoir attaqué un halfelin désarmé.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> Le personnage ajoute 1/2 point de <a class="pagelink" href="Pathfinder-RPG.occultiste.ashx#FOCALISATIONMENTALE" title="L&#39;occultiste">focalisation mentale</a> par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> L’oracle ajoute +1/2 à son niveau effectif quand il détermine les effets de son pouvoir de <a class="pagelink" href="Pathfinder-RPG.oracle.ashx#MALEDICTIONDELORACLE" title="L&#39;oracle">malédiction</a>.<br />
+Les oracles sont plutôt rares au sein de la plupart des races, mais on les rencontre en plus grand nombre dans les endroits où les halfelins sont opprimés ou réduits en esclavage. Ils assurent alors le rôle de centres spirituels secrets des communautés où les cultes et les rassemblements sont interdits. Les oracles halfelins vénèrent souvent les esprits de la terre, de la nature ou même les héros du passé.
+ 
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Le paladin ajoute +1/2 pv à son pouvoir d’<a class="pagelink" href="Pathfinder-RPG.Paladin.ashx#IMPOSITIONDESMAINS" title="Le paladin">imposition des mains</a> (qu’il l’utilise pour soigner ou pour blesser).<br />
+Vu la grande importance que les halfelins accordent à la communauté, au foyer et à la maison, nombre d’entre eux désirent devenir paladins. Les ennemis qui ne les prennent pas au sérieux apprennent bien vite qu’il s’agit d’une erreur lorsque ces robustes guerriers saints font s’abattre la fureur des cieux sur ceux qui nourrissent de sombres projets.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier rajoute un bonus d’esquive +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> au bonus qu’il possède déjà grâce au pouvoir <a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx#DÉROBADE" title="Le pistolier">dérobade</a> (avec un maximum de +2) ou un bonus de 1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> quand il utilise l'exploit <a class="pagelink" href="Pathfinder-RPG.exploits.ashx#ESQUIVEDUPISTOLIER" title="Les exploits du pistolier">esquive du pistolier</a>. <br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#DOMAINES" title="Le prêtre">domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de Sagesse. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les halfelins ont une foi inébranlable les uns envers les autres et cette dévotion s’étend à leurs <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">dieux</a>. Leur bonne humeur, leur curiosité et leur capacité à se fondre facilement dans de nouvelles sociétés en font d’excellents missionnaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Ajoute 1/4 au niveau effectif du prêtre combattant quand il détermine les dégâts de son <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#ARMESACREE" title="Le prêtre combattant">arme sacrée</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> Le personnage considère son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> comme supérieur d’1/3 point lorsqu’il s’agit de déterminer le nombre de rounds quotidiens pendant lesquels il peut utiliser ses <a class="pagelink" href="Pathfinder-RPG.psychiste.ashx#DISCIPLINEPSYCHIQUE" title="Le psychiste">pouvoirs de discipline</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le rôdeur gagne un bonus d’esquive de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre ses <a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx#ENNEMIJURE" title="Le rôdeur">ennemis jurés</a>.<br />
+Les halfelins n’ont peut-être pas la réputation d’être de grands chasseurs, mais c’est seulement parce que ceux qui sont incapables de se défaire de leurs préjugés n’ont jamais vraiment pris leur talent en considération. Les rôdeurs halfelins excellent dans l’art d’abattre des proies de toutes tailles, de se cacher dans les régions sauvages aussi facilement que leurs cousins se fondent dans le décor urbain et de collaborer avec leurs compagnons animaux (qui fait parfois aussi office de monture) en tirant parti de leur sens de la tactique.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard choisit une arme dans la liste qui suit : <a class="pagelink" href="Pathfinder-RPG.Dague%20(arme).ashx" title="Dague">dague</a>, <a class="pagelink" href="Pathfinder-RPG.Fronde%20(arme).ashx" title="Fronde">fronde</a> ou toute arme comportant la mention « halfelin » dans son nom. Il ajoute un bonus de +1/2 aux jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.Actions%20simples.ashx#COUPCRITIQUE" title="Actions simples">coup critique</a> avec elle (+4 au maximum). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br />
+Les roublards correspondent au stéréotype de l’aventurier halfelin qui mène une vie de joyeux conteur, de cambrioleur rusé et d’audacieux bandit de grand chemin. Avec leurs pieds légers et leurs mains agiles, les halfelins font naturellement d’excellents voleurs et pickpockets, un fait que leurs détracteurs aiment à souligner.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Gain d’un bonus d’esquive de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> lors d’une <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#RAGESANGUINE" title="Le sanguin">rage sanguine</a> contre des créatures d’au moins une catégorie de <a class="pagelink" href="Pathfinder-RPG.taille.ashx" title="taille">taille</a> de plus que le sanguin.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Le scalde choisit une arme dans la liste suivante : <a class="pagelink" href="Pathfinder-RPG.Dague%20(arme).ashx" title="Dague">dague</a>, <a class="pagelink" href="Pathfinder-RPG.Fronde%20(arme).ashx" title="Fronde">fronde</a> ou toute arme comportant la mention « halfelin » dans son nom. Il gagne un bonus de +1/2 sur les jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec cette arme, avec un maximum de +4. Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a> et autres effets similaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> La sorcière ajoute +1/4 à son niveau de lanceur de sorts effectif quand elle détermine les effets des sorts que lui accorde son <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx#SORTSDEPROTECTEUR" title="La sorcière">protecteur</a>.<br />
+Les halfelins ont la réputation d’être de grands naïfs prêts à tout gober, mais ils collectionnent aussi les secrets et, chez certains, cette tendance se développe en une vocation de sorcière. Ils deviennent alors sages-femmes, herboristes ou érudits fous en quête de savoir.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> Le personnage ajoute 1/4 au nombre de rounds pendant lesquels le <a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx#FORMEDEMANIFESTATIONCOMPLETE" title="Le fantôme du spirite">fantôme intangible</a> peut sortir de la <a class="pagelink" href="Pathfinder-RPG.Spirite.ashx#LAISSEETHEREE" title="Le spirite">ligne de mire et d’effet du spirite</a> avant qu’il ne soit renvoyé vers le plan Éthéré.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Ajout d’un bonus d’esquive de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les cibles étudiées.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux halfelins, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Acclamation%20incessante.ashx" title="Acclamation incessante">Acclamation incessante</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Halfelin</a>, traits raicuax chance des halfelins et sans peur</td><td>+1 aux jets de sauvegarde qui passe à +3 contre la peur lorsqu'adjacent à un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Adroit%20et%20rapide.ashx" title="Adroit et rapide">Adroit et rapide</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">pieds rapides</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>+2 aux tests d'Acrobaties et d'Escalade</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Alchimie%20maudite.ashx" title="Alchimie maudite">Alchimie maudite</a></td><td><sup>MR</sup></td><td>Capacité de classe <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#ALCHIMIERAPIDE" title="L&#39;alchimiste">alchimie rapide</a>, Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Empêche les créatures maudites de bénéficier des effets des potions et des objets alchimiques</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Apparence%20enfantine.ashx" title="Apparence enfantine">Apparence enfantine</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>+2 en Déguisement pour se faire passer pour un humain, faire 10 pour Bluff</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Bien%20pr%c3%a9par%c3%a9.ashx" title="Bien préparé">Bien préparé</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Halfelin</a></td><td>Le personnage possède toute une séries d’objets communs</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Combattant%20prudent.ashx" title="Combattant prudent">Combattant prudent</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Halfelin</a></td><td>Augmente le bonus à la CA du combat sur la défensive et de la défense totale</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Coup%20d%c3%a9sesp%c3%a9r%c3%a9.ashx" title="Coup désespéré">Coup désespéré</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combattant%20prudent.ashx" title="Combattant prudent">Combattant prudent</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>+4 aux jets de confirmation critique en se battant sur la défensive, effectue une attaque en défense totale 1 fois par jour</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Frappe%20surprenante.ashx" title="Frappe surprenante">Frappe surprenante</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combattant%20prudent.ashx" title="Combattant prudent">Combattant prudent</a>, <a class="pagelink" href="Pathfinder-RPG.Coup%20d%c3%a9sesp%c3%a9r%c3%a9.ashx" title="Coup désespéré">Coup désespéré</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>1 fois par jour, ignore le malus à l'attaque imposé par le combat sur la défensive ou Coup désespéré</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9fense%20instinctive.ashx" title="Défense instinctive">Défense instinctive</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combattant%20prudent.ashx" title="Combattant prudent">Combattant prudent</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +3, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Bonus aux Réflexes et au DMD en combattant sur la défensive ou en défense totale</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9fense%20maladroite.ashx" title="Défense maladroite">Défense maladroite</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combattant%20prudent.ashx" title="Combattant prudent">Combattant prudent</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Confère un bonus à la CA et au DMD des alliés en combattant sur la défensive ou en défense totale</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frappe%20chanceuse.ashx" title="Frappe chanceuse">Frappe chanceuse</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +5, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_standards_6" title="Les halfelins">chance adaptative</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Relance les dégâts des armes avec chance adaptative</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frappe%20risqu%c3%a9e.ashx" title="Frappe risquée">Frappe risquée</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Échange de la CA pour un bonus à l'attaque contre les créatures plus grandes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frondeur-fouetteur.ashx" title="Frondeur-fouetteur">Frondeur-fouetteur</a>*</td><td><sup>MR</sup></td><td>Maniement de la <a class="pagelink" href="Pathfinder-RPG.fronde%20(arme).ashx" title="Fronde">fronde</a></td><td>Le personnage menace les cases autour de lui quand il est armé d'une fronde</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frondeur%20halfelin.ashx" title="Frondeur halfelin">Frondeur halfelin</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Halfelin</a></td><td>Bonus racial de +1 à l'attaque avec les frondes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Grande%20cible.ashx" title="Grande cible">Grande cible</a>*</td><td><sup>MR</sup></td><td>Maniement de la <a class="pagelink" href="Pathfinder-RPG.fronde%20(arme).ashx" title="Fronde">fronde</a></td><td>Inflige plus de dégâts avec une fronde contre les créature plus grandes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9risseur%20chanceux.ashx" title="Guérisseur chanceux">Guérisseur chanceux</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_standards_6" title="Les halfelins">chance adaptative</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Utilise chance adaptative pour relancer les dégâts soignés par magie</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Halfelin%20porte-chance.ashx" title="Halfelin porte-chance">Halfelin porte-chance</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Halfelin</a></td><td>Permet de lancer un jet de sauvegarde pour un allié 1/jour</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Individu%20chanceux.ashx" title="Individu chanceux">Individu chanceux</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_standards_6" title="Les halfelins">chance adaptative</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Gain d'une utilisaiton supplémentaire de chance adaptative</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Chance%20adaptative.ashx" title="Chance adaptative">Chance adaptative</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Individu%20chanceux.ashx" title="Individu chanceux">Individu chanceux</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">chance adaptable</a>, personnage de niveau 10, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Augmente le bonus et le nombre d'utilisation quotidiennes de la chance adaptative</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.L%c3%a2cher%20de%20munition.ashx" title="Lâcher de munition">Lâcher de munition</a>*</td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, maniement de la <a class="pagelink" href="Pathfinder-RPG.fronde%20(arme).ashx" title="Fronde">fronde</a></td><td>Le personnage peut recharger les frondes par une action rapide</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Rechargement%20acrobatique.ashx" title="Rechargement acrobatique">Rechargement acrobatique</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.L%c3%a2cher%20de%20munition.ashx" title="Lâcher de munition">Lâcher de munition</a>, 1 rang en <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, maniement de la <a class="pagelink" href="Pathfinder-RPG.fronde%20(arme).ashx" title="Fronde">fronde</a></td><td>Le personnage peut recharger les frondes par une action libre</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20arcanique.ashx" title="Malédiction arcanique">Malédiction arcanique</a></td><td><sup>MR</sup></td><td>Lanceur de sorts profanes, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage peut sacrifier des sorts profanes pour rendre ses malédictions plus dure à éviter</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20dapathie.ashx" title="Malédiction d&#39;apathie">Malédiction d'apathie</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage applique le malus de sa malédiction aux tests d'initiative et aux jets d'attaque de sa cible</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20de%20fascination.ashx" title="Malédiction de fascination">Malédiction de fascination</a></td><td><sup>MR</sup></td><td>Capacité de classe <a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx" title="représentation bardique">représentation bardique</a>, Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage combine les effets de sa fascination avec ceux de sa malédiction</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20de%20zone.ashx" title="Malédiction de zone">Malédiction de zone</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Extension%20de%20zone%20deffet.ashx" title="Extension de zone d&#39;effet">Extension de zone d’effet</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage peut maudire plusieurs créatures à la fois</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20du%20pire.ashx" title="Malédiction du pire">Malédiction du pire</a></td><td><sup>MR</sup></td><td>5 rangs en <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères), trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>La malédiction du personnage endigue les effets bénéfiques qui ciblent sa victime</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20%c3%a9tendue.ashx" title="Malédiction étendue">Malédiction étendue</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Augmente la portée de la malédiction du personnage de 9 m</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20renforc%c3%a9e.ashx" title="Malédiction renforcée">Malédiction renforcée</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Vigueur%20surhumaine.ashx" title="Vigueur surhumaine">Vigueur surhumaine</a>, <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20de%20fer.ashx" title="Volonté de fer">Volonté de fer</a>, ou <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes%20surhumains.ashx" title="Réflexes surhumains">Réflexes surhumains</a>; trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Augmente le malus de la malédiction du personnage aux jets de sauvegarde auxquels il a un bonus</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c5%92il%20malveillant.ashx" title="Œil malveillant">Œil malveillant</a></td><td><sup>MR</sup></td><td>Maléfice <a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Mauvais oeil" title="Les maléfices de la sorcière">mauvais oeil</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage combine les effets de son mauvais œil avec ceux de sa malédiction</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Passer%20pour%20un%20humain.ashx" title="Passer pour un humain">Passer pour un humain</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a> (voir texte)</td><td>+10 aux tests de Déguisement pour ressembler à un humain</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Porte-poisse%20versatile.ashx" title="Porte-poisse versatile">Porte-poisse versatile</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20de%20fer.ashx" title="Volonté de fer">Volonté de fer</a>, Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le DD de la malédiction du personnage se base sur l'Intelligence ou la Sagesse au lieu du Charisme</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Propri%c3%a9t%c3%a9%20partag%c3%a9e.ashx" title="Propriété partagée">Propriété partagée</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Bien%20pr%c3%a9par%c3%a9.ashx" title="Bien préparé">Bien préparé</a>, 1 rang en <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Dégaine un objet possédé par un allié avec ce don par une action de mouvement tant qu'il se trouve à 9 mètres ou moins</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.R%c3%a9solution%20courageuse.ashx" title="Résolution courageuse">Résolution courageuse</a></td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_standards_6" title="Les halfelins">sans peur</a> ou <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_standards_7" title="Les halfelins">veule</a>, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a></td><td>Améliore la résistance aux effets de peur</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Science%20du%20coup%20sous%20la%20ceinture.ashx" title="Science du coup sous la ceinture">Science du coup sous la ceinture</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +4, <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">coup sous la ceinture</a></td><td>+2 aux jets de confirmation critique contre les créatures plus grandes, relance un jet de confirmation critique 1 fois par jour</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Sort%20maudit.ashx" title="Sort maudit">Sort maudit</a></td><td><sup>MR</sup></td><td>Deux <a class="pagelink" href="Pathfinder-RPG.dons.ashx#DONMETAMAGIE" title="Les dons">dons de métamagie</a>, Trait racial <a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx#Traits_raciaux_alternatifs_7" title="Les halfelins">porte-poisse halfelin</a></td><td>Le personnage combine les effets de ses sorts avec ceux de sa malédiction</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classes<a class="headeranchor" id="Archétypes_de_classes_2" href="#Archétypes_de_classes_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Gardien%20de%20la%20communaut%c3%a9%20(oracle).ashx" title="Gardien de la communauté">Gardien de la communauté (oracle)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chapardeur%20(roublard).ashx" title="Chapardeur">Chapardeur (roublard)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Champion%20des%20poids%20plume%20(moine).ashx" title="Champion des poids plume">Champion des poids plume (moine)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.B%c3%a2tons%20du%20diable%20halfelins%20(objet).ashx" title="Bâtons du diable halfelins">Bâtons du diable halfelins</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bi%c3%a8re%20Pattefolle%20(objet).ashx" title="Bière Pattefolle">Bière Pattefolle</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cape%20parachute%20(objet).ashx" title="Cape parachute">Cape parachute</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Confiture%20alchimique%20(objet).ashx" title="Confiture alchimique">Confiture alchimique</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Corde%20rugissante%20(objet).ashx" title="Corde rugissante">Corde rugissante</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.double%20fronde%20(arme).ashx" title="Double fronde">Double fronde</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.fronde%20piqu%c3%a9e%20(arme).ashx" title="Fronde piquée">Fronde piquée</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.petites%20pierres-%c3%a9toiles%20(arme).ashx" title="Petites pierres-étoiles (10)">Petites pierres-étoiles (10)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.pierres%20%c3%a0%20pointes%20(arme).ashx" title="Pierres à pointes (10)">Pierres à pointes (10)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.pierres-%c3%a9ponges%20(arme).ashx" title="Pierres-éponges (10)">Pierres-éponges (10)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.pierres-pelotes%20(arme).ashx" title="Pierres-pelotes (10)">Pierres-pelotes (10)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Punch%20de%20dragon%20au%20whisky%20(objet).ashx" title="Punch de dragon au whisky (le verre)">Punch de dragon au whisky</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tonique%20m%c3%a9dicinal%20de%20Lisken%20(objet).ashx" title="Tonique médicinal de Lisken (le verre)">Tonique médicinal de Lisken</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Bracelet%20porte-bonheur.ashx" title="Bracelet porte-bonheur">Bracelet porte-bonheur</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chemise%20de%20linsoup%c3%a7onnable.ashx" title="Chemise de l&#39;insoupçonnable">Chemise de l'insoupçonnable</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fustibale%20ing%c3%a9nieux.ashx" title="Fustibale ingénieux">Fustibale ingénieux</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gants%20des%20doigts%20rapides.ashx" title="Gants des doigts rapides">Gants des doigts rapides</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Herbe%20%c3%a0%20pipe%20de%20fum%c3%a9e%20solide.ashx" title="Herbe à pipe de fumée solide">Herbe à pipe de fumée solide</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Livre%20des%20recettes%20merveilleuses.ashx" title="Livre des recettes merveilleuses">Livre des recettes merveilleuses</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Mailles%20des%20pas%20malins.ashx" title="Mailles des pas malins">Mailles des pas malins</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Poussi%c3%a8re%20de%20fuite.ashx" title="Poussière de fuite">Poussière de fuite</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Symbole%20de%20chance.ashx" title="Symbole de chance">Symbole de chance</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20chance%20et%20de%20r%c3%a9solution.ashx" title="Bénédiction de chance et de résolution">Bénédiction de chance et de résolution</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20chance%20et%20de%20r%c3%a9solution%20de%20groupe.ashx" title="Bénédiction de chance et de résolution de groupe">Bénédiction de chance et de résolution de groupe</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Double%20terrifiant.ashx" title="Double terrifiant">Double terrifiant</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.N%c3%a9gligence.ashx" title="Négligence">Négligence</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sceau%20de%20fuite.ashx" title="Sceau de fuite">Sceau de fuite</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Village%20voil%c3%a9.ashx" title="Village voilé">Village voilé</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

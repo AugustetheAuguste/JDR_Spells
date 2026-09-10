@@ -1,0 +1,928 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les humains - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="humain, manuel des joueurs, manuel des races, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Humain.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Humain&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRksyOAQZkn/jaSwyjqHYMQL1eaeC4=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Humain">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Humain">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Humain">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les humains
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_2">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les humains possèdent un dynamisme exceptionnel et une immense capacité à survivre et à se reproduire, c’est pourquoi ils sont à présent la race dominante de Golarion. Leurs empires et leurs nations sont de vastes entités tentaculaires, où les gens se font un nom à la force de leur bras armé et de leurs sorts. Tumulte et diversité, voilà ce qui qualifie le mieux la race humaine. Les cultures humaines couvrent un vaste éventail, depuis les nobles sociétés tribales jusqu’aux familles nobles et décadentes adoratrices de diables qui vivent dans les cités les plus cosmopolites. La curiosité et l’ambition des humains triomphent souvent de leur penchant pour la vie sédentaire et beaucoup quittent leur maison pour aller explorer les recoins oubliés du monde ou pour aller conquérir leurs voisins à la tête de puissantes armées. Juste parce qu’ils en sont capables.<br /><br />La société humaine est construite sur un étrange amalgame de nostalgie et de futurisme. Les humains sont très attachés à leur gloire passée et se souviennent avec mélancolie d’un « âge d’or », mais ils sont aussi prompts à tourner le dos à leurs traditions et à leur histoire pour partir en quête de nouveaux horizons. Les humains aiment les collections (de reliques inanimées, mais aussi de créatures vivantes) et ils conservent de précieux éléments de leur passé, comme des pièces de musée qu’ils mettent en vitrine pour leur bon plaisir ou qu’ils gardent à leurs côtés comme serviteurs. Les autres races pensent que ce comportement est dû à un besoin profondément ancré dans la psyché humaine : celui de dominer et de prouver sa puissance, un besoin qui les pousse à s’approprier les créatures et les étendues sauvages, à les piller et à les domestiquer. D’autres âmes plus charitables pensent que les humains sont juste des gens qui aiment collectionner les expériences et que, s’ils prennent et gardent des choses vivantes, mortes ou inanimées, c’est juste pour avoir un souvenir des endroits où ils se sont rendus, des choses qu’ils ont vues et des exploits qu’ils ont accomplis. Leur valeur passée et présente n’est qu’un bonus, leur véritable but est de rappeler constamment l’inévitable progression de l’humanité.<br /><br />En bien des lieux, les humains sont fascinés par les races et les cultures plus anciennes qu’eux, même si les traditions ancestrales et, selon eux, démodées, les frustrent parfois et qu’il leur arrive de les mépriser. Les humains considèrent les autres races avec un étrange mélange d’exotisme et de fétichisme, mais, en général, ils ne les comprennent et ne les apprécient que très superficiellement : leur arrogance est si profondément ancrée qu’ils ont beaucoup de mal à admettre qu’ils ne sont pas forcément la société standard par défaut. Quand il s’agit de franchir le fossé social qui sépare les races, les érudits humains spécialisés dans ce genre d’études (qui devraient donc être les individus les plus ouverts et les plus au fait de la nature et de la culture des étrangers) ne valent pas mieux que le reste de leur peuple. Les humains sont une espèce grégaire, souvent amicale et désireuse d’interagir avec autrui, mais qui ne se rend pas compte qu’elle marginalise les autres races, ce qui chagrine beaucoup ces dernières.<br /><br />Évidemment, ce n’est pas seulement à cause des bonnes intentions, de l’ignorance maladroite et de la supériorité numérique des humains que les autres races se méfient d’eux. Bien trop souvent, la xénophobie et l’intolérance humaines ont débouché sur l’isolationnisme social, l’oppression, les purges sanglantes, l’inquisition, la violence urbaine et les guerres ouvertes. Les humains ne sont pas les seuls à haïr ce qui est différent, mais ils semblent posséder une capacité spéciale pour soupçonner les autres et propager la peur, qu’il s’agisse de race, de religion, de classe, de sexe ou autre. Beaucoup d’humains modérés se contentent généralement de regarder passivement leurs compatriotes plus extrémistes tenir le devant de la scène politique et culturelle, mais il en est aussi qui s’opposent à ces gens et qui incarnent l’unité malgré les différences. Ceux-là transcendent les barrières et forment des alliances et des liens durables, à grande ou à petite échelle, en dépit des couleurs, des croyances, des pays et des espèces.<br /><br /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>L’ambition et l’imagination sans fin des humains les poussent à l’adaptation et à l’expansion. Ces traits leur ont permis de se répandre à travers toute la surface du monde, de s’habituer à une large variété de contrées et de conquérir toujours plus de terrain. Les races qui pensent à plus longue échéance les considèrent souvent comme des créatures agressives et destructrices, mais la plupart des humains ne cherchent qu’à utiliser le temps limité dont ils disposent pour mener des existences aussi remplies que possible. Les peuples victimes de l’avancée inéluctable de l’humanité sont souvent assimilés par cette race très habile pour négocier et pour s’adapter ; ils deviennent alors de nouvelles ressources pour les incessantes explorations culturelles des humains.<br /><br />On trouve chez les humains une immense diversité d’apparences physiques avec des peaux allant des teintes sombres jusqu’au blanc laiteux et des cheveux recouvrant toute la gamme entre la couleur du lin et celle de l’ébène. Les lieux qu’ils habitent sont également très variés : les colons et les explorateurs ambitieux se fraient un passage jusqu’au coeur des déserts les plus arides, jusqu’aux côtes gelées des mers glaciales ou même jusque dans les profondeurs brûlantes de la terre, tous apparemment unis dans une même quête impossible et sans fin, celle de cartographier ce qui se trouve à chaque fois au-delà de l’horizon. La diversité humaine s’étend aussi aux domaines qu’ils étudient, car leur curiosité les pousse à s’efforcer de maîtriser des connaissances toujours de plus en plus vastes.
+</div><br /><b>Description physique.</b> Les caractéristiques physiques des humains sont aussi variées que les climats du monde. Des tribus à la peau sombre des continents méridionaux aux pâles pillards barbares du nord, les humains couvrent tout un éventail de couleurs de peau, de carrure et de traits. En règle générale, leur peau s’assombrit au fur et à mesure que l’on s’approche de l’équateur. En revanche, leur structure osseuse, la couleur et la texture de leurs cheveux, la couleur de leurs yeux et nombre de phénotypes faciaux et corporels changent beaucoup d’un endroit à l’autre. Les humains ont des pommettes hautes ou larges, un nez aquilin ou aplati, des lèvres minces ou charnues, la couleur de leurs yeux couvrent un large spectre et certains sont profondément enfoncés dans les orbites tandis que d’autres possèdent un épicanthus. Évidemment, leur apparence ne doit rien au hasard : les caractéristiques familiales, tribales ou nationales permettent souvent d’identifier l’origine d’un humain au premier coup d’oeil, ou du moins de la deviner. L’origine des humains transparaît aussi au niveau de leur style vestimentaire traditionnel, pas seulement au niveau des habits et des bijoux, mais aussi dans les coiffures, les piercings, les tatouages ou les scarifications.<br /><br /><b>Société.</b> La société humaine regroupe de nombreux gouvernements, attitudes et styles de vie. Les cultures humaines les plus anciennes ont des milliers d’années, mais, comparée aux sociétés naines ou elfiques, la leur semble toujours être en train de changer, alors que les empires se fragmentent et que de nouveaux royaumes conquièrent les anciens. Les humains sont connus pour leur flexibilité, leur ingénuité et leur ambition. D’autres races leur envient parfois leur adaptabilité sans limite, pas en terme de biologie, mais de volonté à aller toujours plus loin, à la découverte de tout ce qui les attend.<br /><br />En tant qu’individus, beaucoup d’humains, voire la majorité, sont ravis de rester dans leur routine confortable, mais l’espèce humaine abrite un esprit de découverte indomptable, qui la pousse à chercher sans cesse de nouvelles possibilités.<br /><br /><b>Relations.</b> Les humains sont une race féconde que les inclinaisons et le nombre font souvent entrer en contact avec d’autres races, lors de tentatives d’expansions territoriales ou de colonisations, ce qui débouche fréquemment sur des guerres et des explosions de violence. Cependant ils ne sont pas rancuniers et sont prêts à forger des alliances avec les races qui ne tentent pas d’égaler leur violence ou de la dépasser. La fierté des humains frise souvent l’arrogance et en pousse beaucoup à considérer les nains comme des ivrognes avares, les elfes comme des dandys écervelés, les halfelins comme de lâches voleurs, les gnomes comme des déments pervers et les demi-elfes et les demi-orques comme des sources d’embarras. La diversité de la race humaine aide cependant beaucoup d’humains à accepter les autres tels qu’ils sont. Il arrive qu’ils se laissent tellement absorber par leurs propres affaires qu’ils ignorent tout du langage et de la culture de leurs voisins. Certains poussent cette ignorance jusqu’à une horrible intolérance, de l’oppression et, parfois, des tentatives d’extermination des étrangers qu’ils perçoivent comme dangereux, bizarres ou « impurs ». Pour certains, ces incidents et ces attitudes entachent l’humanité tout entière, mais, heureusement, ce sont plus des exceptions que la règle.<br /><br /><b>Alignement et religion.</b> L’humanité est peut-être la race de base la plus diversifiée : les humains sont capables de se montrer incroyablement maléfiques ou de faire preuve d’une immense bienveillance. Certains se regroupent en vastes hordes barbares alors que d’autres se rassemblent dans des villes tentaculaires qui s’étendent sur des kilomètres. Dans son ensemble, l’humanité est Neutre mais ses membres tendent à se rassembler en pays et en civilisations du même alignement. Les humains vénèrent également un vaste éventail de dieux, car ils ne possèdent pas les traditions des autres races et se tournent volontiers vers tous ceux qui leur promettent gloire et protection.<br /><br /><b>Aventuriers.</b> Beaucoup d’humains se laissent uniquement guider par leur ambition et, pour nombre d’entre eux, les aventures sont un bon moyen d’arriver à leurs fins, qu’il s’agisse d’accumuler des richesses, des louanges, des connaissances magiques ou d’améliorer leur statut social. Certains embrassent la carrière d’aventurier par simple goût du risque. Les humains viennent de toutes sortes de régions et de contextes, ils sont donc susceptibles de remplir n’importe quel rôle.<br /><br /><b>Noms.</b> Contrairement aux autres races qui s’en tiennent à leurs traditions et leur histoire, l’humanité est si diverse qu’elle comprend une infinité de noms. Les sonorités des noms des barbares des tribus du nord diffèrent de celles de ceux des marins et des commerçants des pays subtropicaux. Même les humains qui parlent la même langue ont parfois des noms aussi variés que leurs croyances et leur apparence, cela dépend de la région.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste"><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20joueurs%20(Races%20et%20classes).ashx#17" title="FAQ du Manuel des joueurs, section races et classes">→</a> Humain : Pour un humain avec une Intelligence basse, le nombre minimum de rangs de compétence par niveau est de 1 ou 2 ?</i></b><br /><br />C’est 1, mais le personnage ajoute son rang bonus d’<u><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">humain</a></u> ensuite, donc il termine avec 2 rangs au total.<br />
+Par exemple, un humain guerrier 1 avec Int 6 devrait commencer avec 2 rangs, ajouter le -2 de son malus d’Int (pour un total de 0 rangs), appliquer la règle du « minimum 1 » (pour un total ajusté de 1 rang), puis ajouter 1 rang d’humain (pour un total de 2 rangs).<br /><br />Autrement dit, un humain devrait toujours terminer avec plus de rangs de compétence qu’un autre personnage équivalent d’une race différente.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div>
+<ul><li><b>+2 à une valeur de caractéristique.</b> Lors de leur création, les humains gagnent un bonus de +2 à la valeur de <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a> de leur choix, afin de représenter leur diversité.</li><li><b>Taille M.</b> Les humains sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni malus ni bonus liés à la taille.</li><li><b>Vitesse normale.</b> Les humains ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres.</li><li><b>Don supplémentaire.</b> Les humains choisissent un <a class="pagelink" href="Pathfinder-RPG.Dons.ashx" title="Les dons">don</a> supplémentaire au niveau 1.</li><li><b>Compétent.</b> Les humains gagnent un <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a> supplémentaire au niveau 1 et un de plus à chaque fois qu’ils prennent un niveau.</li><li><b>Langues.</b> Les humains commencent le jeu en parlant le commun et leur langue ethnique. Les humains dont la langue ethnique est le commun (ou le taldorien, dans les cas des cheliaxiens ou des taldoriens) ne recoivent pas de langue ethnique supplémentaire. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues de leur choix (sauf les langues secrètes comme celle des <a class="pagelink" href="Pathfinder-RPG.Druide.ashx#LANGUESSUPPLEMENTAIRES" title="Le druide">druides</a>).</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>Les humains ont des caractéristiques variées et une grande faculté d’adaptation. Les règles suivantes reflètent cette flexibilité et conviennent à n’importe quel personnage humain. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux humains standard mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « +2 à une valeur de caractéristique », « compétent » et « don supplémentaire » :</i></u>
+<ul><li><b>Double talent.</b> Certains humains possèdent un don inné pour optimiser leurs capacités naturelles. Ils choisissent deux <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristique.ashx" title="caractéristique">caractéristiques</a> et gagnent un bonus racial de +2 pour chacune. Ce trait remplace le bonus racial de +2 à une caractéristique, le don supplémentaire et le trait compétent.</li></ul>
+<u><i>Remplace « compétent » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Assidu.</b> Les humains sont connus dans la mer Intérieure pour leur dynamisme et leur éthique du travail. Les humains avec ce trait racial bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> ainsi qu'aux tests d'une compétence d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> ou de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> au choix. Ce trait racial remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Attachement social.</b> Certaines sociétés humaines fonctionnent sur des réseaux complexes de faveurs et de loyautés que leurs membres les plus rusés peuvent exploiter avec une certaine aisance. Ces humains bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> ainsi qu'à tous les tests de compétence visant à recruter des membres et des équipes pour une organisation. Ils bénéficient également d'un bonus racial de +1 à leur valeur de prestige (s'ils obtiennent le don <a class="pagelink" href="Pathfinder-RPG.Prestige.ashx" title="Prestige">Prestige</a>). Ce trait racial remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Chasseur expérimenté.</b> Les membres de certaines cultures humaines sont entraînés très jeunes à trouver et suivre les pistes du gibier tout en cachant les preuves de leur propre passage. Ces humains bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a>, qui deviennent des compétences de classe pour eux. Ce trait racial remplace compétent.</li><li><b>Cœur des bas-fonds.</b> Les humains qui survivent dans les bas-fonds des grandes villes sont vifs et rusés. Ils gagnent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> et de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>, ainsi qu'un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> en milieu urbain et souterrain. De plus, quand ils font un <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jet de sauvegarde</a> contre une <a class="pagelink" href="Pathfinder-RPG.Maladies.ashx" title="Les maladies">maladie</a>, ils lancent deux fois le dé et conservent le meilleur résultat. Ce trait racial remplace compétent.</li><li><b>Cœur des étendues sauvages.</b> Les humains nés dans la nature apprennent à la dure que seuls les forts survivent. Ils gagnent un bonus racial égal à la moitié de leur niveau de personnage aux tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> et un bonus racial de +5 aux tests de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> pour se <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#STABLE" title="Blessures et mort">stabiliser</a> quand ils sont <a class="pagelink" href="Pathfinder-RPG.mourant.ashx" title="Mourant">mourants</a>. Ils ajoutent la moitié de leur niveau à leur valeur de Constitution quand ils déterminent le montant de points de vie négatifs qui permet de les <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">tuer</a>. Ce trait racial remplace compétent.</li><li><b>Cœur des montagnes.</b> Les humains nés dans les montagnes savent gérer les hauteurs et les précipices. Ils gagnent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> ainsi qu'aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> pour se déplacer sur une surface étroite ou inégale. De plus, on considère qu’ils sont <a class="pagelink" href="Pathfinder-RPG.Aventures%20en%20ext%c3%a9rieur.ashx#ALTITUDE" title="Aventures en extérieur">acclimatés à l’altitude</a>. Ce trait racial remplace compétent.</li><li><b>Cœur de la mer.</b> La mer attire toujours les humains nés près d’elle. Ils gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (marin) et de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a> et considèrent toujours ces deux compétences comme des compétences de classe. Ils oeuvent <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#ASPHYXIE" title="Les dangers naturels">retenir leur souffle</a> deux fois plus longtemps que la normale et, s’ils sont lanceurs de sorts, bénéficient d'un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> pour lancer des sorts <a class="pagelink" href="Pathfinder-RPG.Milieu%20aquatique.ashx" title="Le milieu aquatique">sous l’eau</a>. Ce trait racial remplace compétent.</li><li><b>Cœur des neiges.</b> Les humains nés sous les climats glacés considèrent le <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#FROID" title="Les dangers naturels">froid</a> comme une catégorie moins sévère qu’en réalité. Ils gagnent un bonus racial de +2 aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> contre les effets liés au climat froid, aux tests et aux jets de sauvegarde pour éviter de glisser et de tomber, ainsi qu'au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> contre les manoeuvres de <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a>. Ce bonus s’applique aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> et d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> sur un terrain glissant. Ce trait racial remplace compétent.</li><li><b>Cœur des plaines.</b> Les humains nés dans les zones rurales sont habitués à travailler dur. Ils gagnent un bonus racial égal à la moitié de leur niveau de personnage dans une compétence d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> ou de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a>. Une fois par jour, ils peuvent ignorer un effet qui devrait les <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatiguer</a> ou les <a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuiser</a>. Ce trait racial remplace compétent.</li><li><b>Cœur des rues.</b> Les humains qui vivent dans les villes très peuplées savent utiliser la foule. Ils gagnent un bonus racial de +1 aux jets de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> et un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> quand ils sont adjacents à deux alliés ou plus. Ils ne considèrent pas la foule comme un <a class="pagelink" href="Pathfinder-RPG.terrain%20difficile.ashx" title="terrain difficile">terrain difficile</a>. Ce trait racial remplace compétent.</li><li><b>Cœur du soleil.</b> Les humains nés sous un climat tropical considèrent la <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#CHALEUR" title="Les dangers naturels">chaleur</a> comme une catégorie moins sévère qu’en réalité. Ils gagnent un bonus racial de +2 aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> contre les effets liés au climat chaud et contre les pouvoirs de <a class="pagelink" href="Pathfinder-RPG.Poison%20(capacit%c3%a9).ashx" title="Poison (Ext ou Sur)">poison</a> et de <a class="pagelink" href="Pathfinder-RPG.Distraction%20(capacit%c3%a9).ashx" title="Distraction (Ext)">distraction</a> des <a class="pagelink" href="Pathfinder-RPG.sous-type%20nu%c3%a9e.ashx" title="Nuée (sous-type)">nuées</a> et des <a class="pagelink" href="Pathfinder-RPG.type%20Vermine.ashx" title="Vermine">vermines</a>. Ce trait racial remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Éducation générale.</b> Les humains élevés par des enseignants compétents s'appuient sur les vastes connaissances acquises au cours de siècles de civilisation. Ils considèrent toutes les compétences de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> comme des compétences de classe, et bénéficient d'un bonus racial de +1 aux tests de compétence de chaque compétence de Connaissances ajoutée comme compétence de classe par leurs niveaux de classe. Ce trait racial remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Grand voyageur.</b> Les humains maintiennent les plus grandes routes commerciales entre Golarion et les civilisations les plus éloigner, ce qui leur permet d'être confrontés à énormément de cultures. Les humains avec ce trait racial bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> pour éviter de se perdre, aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local) et aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (géographie). Chaque fois que ces humains investissent un rang en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a>, ils apprennent deux langues plutôt qu'une seule. Ce trait racial remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Innovant.</b> Les humains ont façonné le visage de Golarion grâce à leur nature inventive. Les humains avec ce trait racial bénéficient d'un bonus racial de +2 aux tests d'<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) pour rechercher des sorts de façon indépendante, pour créer des objets magiques qu'ils n'ont jamais vu auparavant, et pour identifier les effets magiques uniques. Ils bénéficient également d'un bonus racial de +2 aux tests de compétence basés sur le <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> pour convaincre les autres d'adopter une nouvelle idéologie ou de faire avancer la cause du progrès et des découvertes. Ce trait racial remplace compétent.</li><li><b>Langue dorée.</b> Les humains sont doués pour manipuler les gens avec subtilité et mettre même leurs pires ennemis à l’aise. Ceux qui possèdent ce trait gagnent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>. De plus, quand ils usent de Diplomatie pour modifier l’attitude d’une créature, ils peuvent la faire évoluer de trois crans au lieu de deux. Ce trait remplace compétent.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Mémoire institutionnelle.</b> Les humains s'appuient sur leurs institutions pour se souvenir du passé lointain et pour préserver leurs propres mémoires dans un avenir lointain. Ils bénéficient d'un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> visant à répondre aux questions sur les organisations, les guildes ou les religions dont ils font partie, et ils peuvent effectuer de tels tests de compétence sans formation. Ce trait racial remplace compétent.</li></ul>
+<u><i>Remplace « don supplémentaire » :</i></u>
+<ul><li><b>À l’affût du talent.</b> Les humains ont une bonne intuition quand il s’agit de repérer un potentiel caché. Ils gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. De plus, s’ils acquièrent un <a class="pagelink" href="Pathfinder-RPG.Compagnons%20animaux.ashx" title="Les compagnons animaux du druide">compagnon animal</a>, une <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#MONTURE" title="Le chevalier">monture</a> liée, un <a class="pagelink" href="Pathfinder-RPG.Prestige.ashx" title="Prestige">compagnon d’armes</a> ou un <a class="pagelink" href="Pathfinder-RPG.familiers.ashx" title="Les familiers">familier</a>, cette créature gagne un bonus de +2 à une valeur de caractéristique choisie par le personnage. Ce trait racial remplace le don supplémentaire de niveau 1.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Destin mortel.</b> Certains humains bâtissent des nations qui nient l'importance des dieux et de la magie divine, et ceux élevés à éviter l'influence divine (principalement la population de Bachuan, du Druma, du Rahadoum ou de Touvette) développent des techniques pour contrecarrer la magie divine. Ils bénéficient d'un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les sorts et pouvoirs magiques <a class="pagelink" href="Pathfinder-RPG.Magie%20divine.ashx" title="La magie divine">divins</a>, ainsi que les sorts et pouvoirs magiques des <a class="pagelink" href="Pathfinder-RPG.A%c3%a9on.ashx" title="Les aéons">aéons</a>, des <a class="pagelink" href="Pathfinder-RPG.Psychopompes.ashx" title="Les psychopompes">psychopompes</a> et des <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> avec un sous-type d'alignement. Ce trait racial remplace le don supplémentaire des humains.</li><li><b>Études spécialisées.</b> Tous les humains sont compétents, mais certains se spécialisent plutôt que de se diversifier. Aux niveaux 1, 8 et 16, ils reçoivent <a class="pagelink" href="Pathfinder-RPG.Talent.ashx" title="Talent">Talent</a> dans une compétence de leur choix, comme don supplémentaire. Ce trait racial remplace le don supplémentaire de niveau 1.</li><li><b>Héritage mixte.</b> Souvent, il faut plusieurs caractéristiques pour définir une civilisation humaine. Un humain qui possède ce trait a droit à un deuxième trait racial « cœur de. ». Ce trait remplace le don supplémentaire de niveau 1.</li><li><b>Héroïque.</b> Certains humains sont des héros nés. Dans les campagnes qui utilisent le système de <a class="pagelink" href="Pathfinder-RPG.points%20h%c3%a9ro%c3%afques.ashx" title="Les points héroïques">points héroïques</a>, ils gagnent 2 points héroïques au lieu de 1 à chaque fois qu’ils montent d’un niveau. S’ils prennent le don <a class="pagelink" href="Pathfinder-RPG.%c3%89toffe%20des%20h%c3%a9ros.ashx" title="Étoffe des héros">Étoffe des héros</a>, ils gagnent 3 points héroïques par niveau au lieu de 2. Ce trait remplace le don supplémentaire de niveau 1.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Lucidité.</b> Les humains élevés dans des traditions monastiques ou des communautés qui encouragent la pleine conscience semblent écarter de nombreux dangers plus facilement que les autres humains. Ils bénéfciient d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> et aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a>. Ce trait racial remplace le don supplémentaire des humains.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Magie imparable.</b> Les humains issus de civilisations fondées sur une forme de magie avancée, comme le Geb ou le Nex, sont éduqués à diverses méthodes pour atteindre leurs objectifs magiques. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> pour vaincre la <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">résistance à la magie</a>. Ce trait racial remplace le don supplémentaire des humains.</li><li><b>Parents adoptifs.</b> Il arrive que des enfants humains abandonnés se fassent adopter par une autre race. Choisissez une race humanoïde qui ne soit pas de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20humain.ashx" title="Humain (sous-type)">humain</a>. Quand le personnage commence le jeu, il parle les <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">langues</a> de cette race et possède son trait racial armes familières (le cas échéant). Si la race choisie ne possède pas ce trait, le personnage gagne <a class="pagelink" href="Pathfinder-RPG.Talent.ashx" title="Talent">Talent</a> ou <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> comme don supplémentaire, en fonction de ce qui convient le mieux à la race adoptive. Ce trait racial remplace le don supplémentaire de niveau 1.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Tradition militaire.</b> Plusieurs cultures humaines élèvent leurs enfants (ou ceux d'une certaine classe sociale) à servir l'armée ou à se défendre par la force. Ils sont formés au maniement d'une à deux <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme(s) de guerre</a> ou <a class="pagelink" href="Pathfinder-RPG.arme%20exotique.ashx" title="arme exotique">exotique(s)</a> appropriée(s) à leur culture. Ce trait racial remplace le don supplémentaire des humains.</li></ul>
+<u><i>Remplace « langues » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Tribal.</b> De nombreux humains se rassemblent naturellement en cliques et en tribus, et ces humains travaillent exceptionnellement bien avec ceux qu'ils considèrent comme des membres de leur tribu. Ces humains bénéficient d'un bouns racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d'attaque</a> et aux tests de <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx" title="Les compétences">compétence</a> lorsqu'ils utilisent l'action <a class="pagelink" href="Pathfinder-RPG.aider%20qqn.ashx" title="aider qqn">aider quelqu'un</a> au profit d'un humain de la même éthnie. Les humains avec ce trait racial doivent être issus d'une éthnie qui possède sa propre langue distincte du commun, et ils commencent le jeu en ne parlant que cette langue ; une valeur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée ne leur permet d'apprendre d'autres langues que dans cette liste réduite : commun, géant, gobelin et halfelin. Ce trait racial modifie la langue de départ et les langues supplémentaires des humains.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race humaine ou une variante raciale, comme suit.
+<ul><li><b>Campagnard.</b> Ces humains sont faits pour vivre à la campagne. Ils remplacent compétent par cœur des plaines et le don supplémentaire racial par études spécialisées.</li><li><b>Cosmopolite.</b> Ces humains adeptes de la vie citadine savent se faufiler dans la foule et pourvoir aux besoins en artisans de leur communauté. Ils remplacent compétent par cœur des rues et le don supplémentaire racial par études spécialisées.</li><li><b>Humain impérial.</b> Ces humains originaires d’un empire, d’une nation émergente ou d’une puissante cité-état sont d’arrogants expansionnistes, qui absorbent les autres au sein de leur culture et de leur cause. Ils remplacent compétent par langue dorée et le don supplémentaire racial par à l’affût du talent.</li><li><b>Humain polyvalent.</b> Les humains polyvalents ne sont pas aussi bien entraînés que les autres, mais ils compensent cela par leurs talents innés. Ils remplacent le bonus de +2 à une valeur de caractéristique, le trait compétent et le don supplémentaire racial par double talent.</li><li><b>Pionnier.</b> Ces humains inventifs ont un esprit vif, une grande capacité d’adaptation et de meilleures chances de survivre dans la région qu’ils ont choisie. Ils remplacent compétent par cœur des étendues sauvages et le don supplémentaire racial par héroïque. Avec l’accord du MJ, ils peuvent opter pour cœur des montagnes, cœur des neiges, cœur de la mer ou coeur du soleil à la place de cœur des étendues sauvages, selon l’endroit où ils vivent.</li><li><b>Rat d’égout.</b> Ces citadins de seconde zone vivent dans des ghettos et des bas-fonds, ils travaillent dur pour gagner leur maigre pitance. Ils remplacent compétent par cœur des bas-fonds et le don supplémentaire racial par héritage mixte (cœur des rues).</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers humains.</b> Toutes les carrières sont représentées chez les aventuriers humains. Leur talent et leur ambition ne les incitent pas seulement à réussir mais aussi à dépasser les autres et à fonder des héritages qui perdureront bien longtemps après la fin de leur courte vie.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les humains occultes.</b> Sans véritables traditions sur lesquelles baser leur compréhension de l’occulte, les humains dotés de talents psychiques rejoignent souvent des cultes étranges pour développer leur don. D’autres se plongent seuls dans l’étude, rassemblant des écrits à la véracité discutable sur divers sujets occultes. Un grand nombre d’humains sont fascinés par le thème occulte même s’ils ne s’avèrent pas particulièrement sensibles aux phénomènes psychiques et ils peuvent rapidement respecter et suivre quiconque maîtrise même le plus simple des pouvoirs de magie psychique.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> Ajouter une formule d’<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extrait</a> issue de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste des formules d’alchimiste</a> au livre de formules du personnage. Cette formule doit être d’au moins un niveau de moins que la formule la plus puissante qu’il connaît.<br />
+Certains les considèrent parfois comme des excentriques ou des amateurs touchant à des arts dangereux, mais les aptitudes pratiques des alchimistes humains leur permettent toujours de trouver un emploi parfois à bonne distance de leur employeur.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Ajout d’un sort de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">liste de l’arcaniste</a> au grimoire de l’arcaniste. Ce sort doit être d’au moins un niveau de moins que le sort de plus haut niveau de l’arcaniste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Ajouter un bonus de +1/2 au bonus de <a class="pagelink" href="Pathfinder-RPG.barbare.ashx#SENSDESPIEGES" title="Le barbare">sens des pièges</a> et +1/3 au bonus donné par le pouvoir de rage <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20de%20rage.ashx#SUPERSTITION" title="Les pouvoirs de rage du barbare">Superstition</a>.<br />
+Des jungles torrides aux steppes désertiques, les <a class="pagelink" href="Pathfinder-RPG.barbare.ashx" title="Le barbare">barbares</a> évitent la société « civilisée » et gagnent l’estime des autres grâce à leur robustesse, leur assurance sans faille et leurs prouesses impressionnantes. Mais, même dans ces cultures brutales, l’inventivité de la race humaine fait des merveilles : elle  pousse les <a class="pagelink" href="Pathfinder-RPG.barbare.ashx" title="Le barbare">barbares</a> humains à créer et à apprendre à manipuler toute une variété d’armes et de styles de combat peut-être primitifs mais néanmoins dangereux.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde apprend un sort de <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20de%20bardes.ashx" title="Liste des sorts de barde">la liste de bardes</a> de plus. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+Les bardes humains possèdent un vaste éventail de talents artistiques qu’ils expriment de manière plutôt libre. Ils sont souvent extrêmement curieux et collectionnent les histoires et les récits afin de forger leur propre légende tout en racontant les aventures des autres.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Augmente le total des points de <a class="pagelink" href="Pathfinder-RPG.bretteur.ashx#PANACHE" title="Le bretteur">panache</a> du bretteur de 1/4.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Ajout d’un sort de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">liste de prêtre</a> ne se trouvant pas sur la liste du chaman à la liste des sorts connus de celui-ci. Ce sort doit être d’au moins un niveau de moins que le sort de plus haut niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> gagne 1 <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a>. Si le chasseur le remplace, le nouveau compagnon bénéficie aussi de ce bonus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> Ajouter +1/4 au bonus de <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#BANNIERE" title="Le chevalier">bannière</a> du chevalier.<br />
+Les humains constituent la majeure partie de la plupart des ordres de chevalerie. Ils combinent les bonnes manières de l’aristocratie avec la dévotion au service de leur seigneur et de leur idéal chevaleresque afin d’obtenir l’estime des gens du peuple et des nobles.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> Le personnage acquiert 1/6 du don <a class="pagelink" href="Pathfinder-RPG.Talent%20sauvage%20suppl%c3%a9mentaire.ashx" title="Talent sauvage supplémentaire">Talent sauvage supplémentaire</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Ajouter +1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou +1 <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a> à l’<a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a> du conjurateur.<br />
+Les conjurateurs humains façonnent la vie et dirigent d’une simple parole des créatures terrifiantes. Ils laissent libre cours aux pouvoirs de la création. Les <a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;eidolon du conjurateur">eidolons</a> qu’ils contrôlent peuvent prendre des formes très variées. Ils incarnent souvent les espoirs les plus profonds ou les cauchemars les plus sombres de leur maître.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Ajouter +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> visant à modifier l’attitude d’une créature.<br />
+De nombreux humains considèrent le druidisme comme un « culte ancien »,  aussi éternel et vaste que le monde lui-même. Certains voient les druides comme de simples ermites dégénérés qui s’opposent au progrès mais ceux-ci suscitent bien souvent un certain sentiment de respect, de méfiance et de crainte.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> L’enquêteur ajoute la formule d’un extrait issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste de l’enquêteur</a> à son livre de formules. Elle doit être d’au moins un niveau de moins que la formule de plus haut niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> Ajouter un sort connu issu de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">liste des sorts d’ensorceleur</a>. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+Grâce aux nombreux mélanges qu’on retrouve dans leurs arbres généalogiques, on trouve fréquemment des pouvoirs magiques latents chez les humains. Les ensorceleurs, qui sont considérés tantôt comme des aberrations, tantôt comme des merveilles de la nature, ne doivent bien souvent leur survie qu’à leur force de caractère.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Ajouter +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> du guerrier contre deux <a class="pagelink" href="Pathfinder-RPG.man%c5%93uvres%20offensives.ashx" title="Les manœuvres offensives">manœuvres offensives</a> choisies par le personnage.<br />
+On retrouve des guerriers humains dans toutes les professions, des voyageurs aux soldats en passant par les bretteurs et les boxeurs, mais aucun d’entre eux n’est à prendre à la légère.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> Le personnage augmente de 1/3 point son bonus d’<a class="pagelink" href="Pathfinder-RPG.hypnotiseur.ashx#EGOIMPOSANT" title="L&#39;hypnotiseur">ego imposant</a> (jusqu’à une augmentation maximale de +2).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> Ajouter un sort connu issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20dinquisiteur.ashx" title="Liste des sorts d&#39;inquisiteur">liste de sorts d’inquisiteur</a>. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+Si les humains peuvent avoir la foi et faire confiance, ils sont tout aussi susceptibles de faire preuve de paranoïa et de suspicion. Des ordres entiers d’<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteurs</a> quasiment tous humains sont devenus célèbres (pour le meilleur ou pour le pire) en réalisant des « purges » contre des créatures dangereuses ou en s’entêtant à mener des chasses aux sorcières.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Augmente de +1/2 au bonus de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> de la capacité <a class="pagelink" href="Pathfinder-RPG.Justicier.ashx#APPARENCETRANSPARENTE" title="Le justicier">apparence transparente</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Ajoute 1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> du lutteur pour résister à deux <a class="pagelink" href="Pathfinder-RPG.man%c5%93uvres%20offensives.ashx" title="Les manœuvres offensives">manœuvres offensives</a> de son choix.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Ajouter un sort issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcaniste/ensorceleur/magicien">liste des sorts de magicien</a> au <a class="pagelink" href="Pathfinder-RPG.magicien.ashx#GRIMOIRE" title="Le magicien">grimoire</a> du magicien. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+De nombreux humains désirent percer les secrets de la création et ont soif de pouvoir et de connaissances, ce qui pousse les magiciens humains à s’intéresser tant aux anciens mystères qu’aux nouvelles innovations en matière de magie. Les humains excellent tant dans l’apprentissage de chacune des écoles de sorts que dans l’étude globale de la magie.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le magus ajoute 1/4 de point à sa <a class="pagelink" href="Pathfinder-RPG.Magus.ashx#RESERVEMAGIQUE" title="Le magus">réserve magique</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> Quand il acquiert un <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#TABOU" title="Le médium">tabou</a>, le médium peut utiliser l’<a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#ACCÈSDEPUISSANCESPIRITUELLE" title="Le médium">accès de puissance spirituelle</a> sans subir d’<a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#ESPRIT" title="Le médium">influence</a> 1/4 fois de plus par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Ajouter +1/4 à la <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#RESERVEDEKI" title="Le moine">réserve de ki</a> du moine.<br />
+Les moines humains, qui recherchent la paix et la discipline parfaite, se tiennent souvent à l’écart de la société. Beaucoup les admirent mais seuls les plus dévoués possèdent assez de lucidité d’esprit et de sang froid pour maîtriser leurs techniques.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> Le personnage gagne 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.occultiste.ashx#POUVOIRSDEFOCALISATION" title="L&#39;occultiste">pouvoir de focalisation</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> L’oracle apprend un <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">sort d’oracle</a> de plus. Ce sort doit être d’au moins un niveau de moins que le plus puissant qu’il connaît.<br />
+Les oracles humains utilisent diverses méthodes religieuses pour faire connaître la nature de leur mystère et le regard qu’ils portent sur le monde. Pour accomplir leur art, ils font parfois appel à des agents choisis en fonction de vérités mystérieuses.
+ 
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Ajouter +1 à la <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance</a> aux énergies du <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a> pour un type d’énergie (maximum +10).<br />
+Les humains qui aspirent à des idéaux héroïques, ceux qui désirent défendre leurs pairs de manière noble et ceux qui sont simplement exaltés par les valeurs de l’honneur et de la justice se tournent souvent vers la classe de <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a>. Bien qu’il s’agisse d’une voie difficile, qui se termine souvent par un sacrifice de soi, les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> humains chargent toujours en première ligne lors de quasiment toutes les croisades à l’encontre des forces du mal.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier gagne 1/4 de point d’<a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx#AUDACE" title="Le pistolier">audace</a> de plus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Ajouter +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> visant à percer la <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">résistance à la magie</a> des <a class="pagelink" href="Pathfinder-RPG.type%20ext%c3%a9rieur.ashx" title="Extérieur">Extérieurs</a>.<br />
+Les humains croient facilement en des idéaux qui les dépassent et se rassemblent en des religions de toutes tailles. Ils développent souvent des connexions personnelles avec les <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">divinités</a> et incarnent les traits et les puissances qu’ils idéalisent.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Ajout de 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.Dons.ashx#DONCOMBAT" title="Les dons">don de combat</a> supplémentaire.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> Le personnage ajoute un sort de la <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx" title="Liste des sorts de psychiste">liste de sort de psychiste</a> à son répertoire de sorts connus. Ce sort doit être au minimum, d’un niveau de moins que le niveau de sort de psychiste le plus élevé qu’il est capable de lancer.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Ajouter +1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou +1 <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a> au <a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux du druide">compagnon animal</a> du rôdeur. S’il change de compagnon, le nouveau bénéficie aussi de ces points supplémentaires.<br />
+Les humains se donnent pour défi de vaincre toutes sortes de proies, ce qui conduit bon nombre d’entre eux à devenir des chasseurs expérimentés et des traqueurs de bêtes ou d’autres cibles encore plus dangereuses. Avec le temps, de nombreux <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a> humains en viennent à préférer la compagnie des animaux à celle des autres humains.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> L’humain obtient +1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.talents.ashx" title="Les talents de roublard">talent</a>.<br />
+Les roublards humains, à l’ambition souvent démesurée, viennent à bout de tous les obstacles pour obtenir ce qu’ils désirent. Qu’il s’agisse d’assassins sans scrupules ou de gentlemen cambrioleurs, rares sont ceux qui peuvent résister aux charmes et aux mensonges de ces roublards bien déterminés.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Augmente le nombre de rounds de <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#RAGESANGUINE" title="Le sanguin">rage sanguine</a> quotidiens de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Ajout d’un sort de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20bardes.ashx" title="Liste des sorts de barde">liste de scalde</a> aux sorts connus de celui-ci. Ce sort doit être d’au moins un niveau de moins que le sort de plus niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> Ajouter un sort issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20de%20sorci%c3%a8re.ashx" title="Liste des sorts de sorcière">liste des sorts de sorcière</a> au <a class="pagelink" href="Pathfinder-RPG.familiers.ashx" title="Les familiers">familier</a> de la sorcière. Ce sort ne peut pas appartenir au plus haut niveau de sorts auquel la sorcière a accès. Si la sorcière vient à remplacer son familier, le nouveau familier connaît ces sorts en bonus.<br />
+Le désir de contrôle des humains sur le monde qui les entoure peut parfois les mener sur des voies mystérieuses et potentiellement dangereuses, comme celle de la sorcière recluse.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> Le personnage octroie un <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a> ou un <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> à son <a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Le fantôme du spirite">fantôme</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Ajout de 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.Talents%20(tueur).ashx" title="Les talents de tueur">talent de tueur</a>.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux humains, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Apprentissage%20rapide.ashx" title="Apprentissage rapide">Apprentissage rapide</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a> 13, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+1 point de vie et +1 point de compétence à chaque montée de niveau dans la classe de prédilection</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Improvisation.ashx" title="Improvisation">Improvisation</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a> 13, <a class="pagelink" href="Pathfinder-RPG.Apprentissage%20rapide.ashx" title="Apprentissage rapide">Apprentissage rapide</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+2 aux tests de compétence sans rangs, les compétences qui nécessitent une formation peuvent être utilisés sans</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Science%20de%20limprovisation.ashx" title="Science de l&#39;improvisation">Science de l'improvisation</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a> 13, <a class="pagelink" href="Pathfinder-RPG.Apprentissage%20rapide.ashx" title="Apprentissage rapide">Apprentissage rapide</a>, <a class="pagelink" href="Pathfinder-RPG.Improvisation.ashx" title="Improvisation">Improvisation</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Les pénalités de non-formation sont divisées par deux, les bonus d'Improvisation passe à +4</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Barrage%20de%20styles.ashx" title="Barrage de styles">Barrage de styles</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Les alliés adjacents différents avec ce don obtiennent un bonus cumulatif de +1 (maximum +4) aux manœuvres offensives</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Chance%20insolente.ashx" title="Chance insolente">Chance insolente</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a></td><td>1 fois par jour, relance un 1 naturel</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Chance%20inexplicable.ashx" title="Chance inexplicable">Chance inexplicable</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Chance%20insolente.ashx" title="Chance insolente">Chance insolente</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>1 fois par jour, +8 avant de faire un jet ou +4 après</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Transmettre%20sa%20chance.ashx" title="Transmettre sa chance">Transmettre sa chance</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Chance%20insolente.ashx" title="Chance insolente">Chance insolente</a>, <a class="pagelink" href="Pathfinder-RPG.Chance%20inexplicable.ashx" title="Chance inexplicable">Chance inexplicable</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Gain d'une utilisation supplémentaire de Chance insolente, utilise Chance inexplicable au profit d'un allié</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Convergence%20magique%20%c3%a9lev%c3%a9e.ashx" title="Convergence magique élevée">Convergence magique élevée</a></td><td><sup><i>ISR</i></sup></td><td>N'importe quel <a class="pagelink" href="Pathfinder-RPG.Dons.ashx#DONMETAMAGIE" title="Les dons">don de métamagie</a>, 7 rangs en <a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a>, capacité à lancer des sorts de 2e niveau, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (garundi)</td><td>Applique spontanément des dons de métamagie sans dépenser d'emplacements de sorts supérieurs ou augmenter le temps d'incantation si des alliés se préparent à lancer le même sort</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Critiques%20divers.ashx" title="Critiques divers">Critiques divers</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a> de niveau 11, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>1 fois par jour, gagne un don de critique</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Curiosit%c3%a9%20intr%c3%a9pide.ashx" title="Curiosité intrépide">Curiosité intrépide</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+1 aux jets de sauvegarde contre les effets d'émotion, nouveaux jets pour réduire un effet de peur d'un cran</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Assurance%20intimidante.ashx" title="Assurance intimidante">Assurance intimidante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.Curiosit%c3%a9%20intr%c3%a9pide.ashx" title="Curiosité intrépide">Curiosité intrépide</a>, 5 rangs en <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+1 aux jets de sauvegarde contre les effets d'émotion, test d'Intimidation gratuit sur un critique confirmé</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Destin%20intr%c3%a9pide.ashx" title="Destin intrépide">Destin intrépide</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.Curiosit%c3%a9%20intr%c3%a9pide.ashx" title="Curiosité intrépide">Curiosité intrépide</a>, 10 rangs en <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+1 aux jets de sauvegarde contre les effets d'émotion, relance un 1 naturel 1 fois par jour et peut faire un test d'Intimidation gratuit si le nouveau jet est une réussite</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%89clectisme.ashx" title="Éclectisme">Éclectisme</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a></td><td>Gagne une classe de prédilection de plus</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Esprit%20unique.ashx" title="Esprit unique">Esprit unique</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Vigilance.ashx" title="Vigilance">Vigilance</a>, 3 rangs en <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (vudrain)</td><td>Évite les malus dus à l'état pris au dépourvu, aveuglé ou en combattant des ennemis invisibles si adjacent à un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Grand%20veneur.ashx" title="Grand veneur">Grand veneur</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a>; capacité de classe <a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx#COMPAGNONANIMAL" title="Le chasseur">compagnon animal</a>, <a class="pagelink" href="Pathfinder-RPG.Paladin.ashx#PACTEDIVIN" title="Le paladin">pacte divin (destrier)</a>, ou <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#MONTURE" title="Le chevalier">monture</a>; <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>+2 aux tests de Dressage et de Connaissances (nature) avec l'animal choisi, augmente le niveau de 1 pour déterminer les capacités du compagnon animal</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.H%c3%a9ritage%20racial.ashx" title="Héritage racial">Héritage racial</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a></td><td>Fonctionne comme un humain et un membre d’une autre race</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Lien%20du%20quah.ashx" title="Lien du quah">Lien du quah</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Totem%20spirituel.ashx" title="Totem spirituel">Totem spirituel</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (shoanti)</td><td>Double les avantages du don Totem spirituel lorsqu'un allié du même quah se trouve à 9 mètres ou moins</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Loyal%20jusqu%c3%a0%20la%20mort.ashx" title="Loyal jusqu&#39;à la mort">Loyal jusqu'à la mort</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a> (tianais)</td><td>Devient la cible d'une attaque dirigée vers un allié adjacent qui possède ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Opportuniste%20sans%20scrupule.ashx" title="Opportuniste sans scrupule">Opportuniste sans scrupule</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a> (chélaxien)</td><td>L'attaque d'opportunité réussie d'un allié qui possède ce don confère un bonus de +2 aux attaques contre le même ennemi pendant 1 round</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Polyvalence%20martiale.ashx" title="Polyvalence martiale">Polyvalence martiale</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a> de niveau 4, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Un unique don de combat peut être appliqué à toutes les armes du même groupe</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetrise%20martiale.ashx" title="Maîtrise martiale">Maîtrise martiale</a>*</td><td><sup>MR</sup></td><td>Polyvalence martiale, <a class="pagelink" href="Pathfinder-RPG.guerrier.ashx" title="Le guerrier">guerrier</a> de niveau 16, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Les dons de combat peuvent être appliqués à toutes les armes du même groupe</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Poursuite%20de%20la%20gloire.ashx" title="Poursuite de la gloire">Poursuite de la gloire</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a> (ulfe)</td><td>Bonus de moral de +2 aux attaques dans le cadre d'une charge en étant adjacent à un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rejeton%20de%20lempire%20perdu.ashx" title="Rejeton de l&#39;empire perdu">Rejeton de l'empire perdu</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a> (chélaxien ou taldorien)</td><td>Bonus de compétence de +2 à un jet d'attaque, un jet de sauvegarde, un test de compétence ou un test de caractéristique lorsqu'adjacent à un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rivalit%c3%a9%20amicale.ashx" title="Rivalité amicale">Rivalité amicale</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a> (taldorien)</td><td>Bonus de moral de +2 aux attaques de corps à corps lorsque le personnage est seul à menacer un ennemi et qu'un allié avec ce don est seul à en menacer un autre</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Ruse%20diplomatique.ashx" title="Ruse diplomatique">Ruse diplomatique</a></td><td><sup><i>ISR</i></sup></td><td>3 rangs en <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (kéléshite)</td><td>Effectue une action libre dans le cadre d'un test d'initiative</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Style%20juju.ashx" title="Style juju">Style juju</a></td><td><sup><i>ISR</i></sup></td><td>3 rangs en <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion), <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (mwangi)</td><td>Lance des sorts de contact à 4,5 mètres s'ils ciblent un allié mwangi avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Succ%c3%a8s%20%c3%a9clatant.ashx" title="Succès éclatant">Succès éclatant</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Humain</a></td><td>+2 sur un unique jet après avoir confirmé un coup critique ou avoir obtenu un 20 naturel sur un jet de sauvegarde</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Triangulation.ashx" title="Triangulation">Triangulation</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combat%20en%20aveugle.ashx" title="Combat en aveugle">Combat en aveugle</a>, <a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetrise%20du%20combat%20en%20aveugle.ashx" title="Maîtrise du combat en aveugle">Maîtrise du combat en aveugle</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20en%20aveugle.ashx" title="Science du combat en aveugle">Science du combat en aveugle</a>, 15 rangs en <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (kéllide)</td><td>Localise automatiquement les créatures invisibles et relancer les chances de rater dues à un camouflage lorsqu'un allié avec ce don se trouve à 9 mètres ou moins</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Troupe%20mortelle.ashx" title="Troupe mortelle">Troupe mortelle</a></td><td><sup><i>ISR</i></sup></td><td>3 rangs en <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (comédie) ou en <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (danse), <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> (varisien)</td><td>+4 sur certaines manœuvres offensives et compétences contre les adversaires menacés par un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20h%c3%a9ro%c3%afque.ashx" title="Volonté héroïque">Volonté héroïque</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20de%20fer.ashx" title="Volonté de fer">Volonté de fer</a>, bonus de base de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> +4, <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a></td><td>Nouveau jet de Volonté 1 fois par jour pour se libérer d'un effet néfaste</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_2" href="#Archétypes_de_classe_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Boucanier%20(pistolier).ashx" title="Boucanier">Boucanier (pistolier)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Enfant%20sauvage%20(druide).ashx" title="Enfant sauvage">Enfant sauvage (druide)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Vagabond%20(moine).ashx" title="Vagabond">Vagabond (moine)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Fouet%20de%20dressage%20(objet).ashx" title="Fouet de dressage">Fouet de dressage</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Harnachement%20de%20dressage%20(objet).ashx" title="Harnachement de dressage">Harnachement de dressage</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Baudrier%20de%20stabilit%c3%a9%20magique.ashx" title="Baudrier de stabilité magique">Baudrier de stabilité magique</a> (garundi) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bracelets%20aux%20runes%20bris%c3%a9es.ashx" title="Bracelets aux runes brisées">Bracelets aux runes brisées</a> (shoanti) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cape%20d%c3%a9t%c3%a9%20et%20dhiver.ashx" title="Cape d&#39;été et d&#39;hiver">Cape d'été et d'hiver</a> (triaxien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ceinture%20daction%20impossible.ashx" title="Ceinture d&#39;action impossible">Ceinture d'action impossible</a> (vudrain) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20subsistance.ashx" title="Ceinture de subsistance">Ceinture de subsistance</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Coiffe%20du%20traducteur.ashx" title="Coiffe du traducteur">Coiffe du traducteur</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Contrat%20imp%c3%a9rieux.ashx" title="Contrat impérieux">Contrat impérieux</a> (chélaxien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cotte%20sacr%c3%a9e.ashx" title="Cotte sacrée">Cotte sacrée</a> (varisien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cotte%20sacr%c3%a9e%20sup%c3%a9rieure.ashx" title="Cotte sacrée supérieure">Cotte sacrée supérieure</a> (varisien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Coupe-%c3%a9cailles.ashx" title="Coupe-écailles">Coupe-écailles</a> (azlant) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Couronne%20de%20conqu%c3%a9rant.ashx" title="Couronne de conquérant">Couronne de conquérant</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Couronne%20des%20%c3%a9p%c3%a9es.ashx" title="Couronne des épées">Couronne des épées</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Croc%20du%20r%c3%b4deur.ashx" title="Croc du rôdeur">Croc du rôdeur</a> (shoanti) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%89charpe%20des%20histoires%20glorieuses.ashx" title="Écharpe des histoires glorieuses">Écharpe des histoires glorieuses</a> (varisien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fers%20%c3%a0%20cheval%20de%20la%20fureur%20du%20d%c3%a9sert.ashx" title="Fers à cheval de la fureur du désert">Fers à cheval de la fureur du désert</a> (kéléshite) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fermoir%20dagent.ashx" title="Fermoir d&#39;agent">Fermoir d'agent</a> (taldorien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a9au%20des%20boucliers.ashx" title="Fléau des boucliers">Fléau des boucliers</a> (ulfe) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fleuret%20du%20gentleman.ashx" title="Fleuret du gentleman">Fleuret du gentleman</a> (taldorien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Foudre%20de%20Storval.ashx" title="Foudre de Storval">Foudre de Storval</a> (shoanti) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Lame%20du%20v%c3%a9ritable%20guerrier.ashx" title="Lame du véritable guerrier">Lame du véritable guerrier</a> (kellide) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Longue-vue%20dexploration.ashx" title="Longue-vue d&#39;exploration">Longue-vue d'exploration</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Mambele%20du%20chasseur.ashx" title="Mambele du chasseur">Mambele du chasseur</a> (mwangi) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Onguent%20de%20vision%20secr%c3%a8te.ashx" title="Onguent de vision secrète">Onguent de vision secrète</a> (ulfe) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20r%c3%a9solution%20in%c3%a9branlable.ashx" title="Sceptre de résolution inébranlable">Sceptre de résolution inébranlable</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tambour%20imp%c3%a9tueux.ashx" title="Tambour impétueux">Tambour impétueux</a> (kellide) <i>(ISR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Accorder%20une%20intuition.ashx" title="Accorder une intuition">Accorder une intuition</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Adaptation%20culturelle.ashx" title="Adaptation culturelle">Adaptation culturelle</a> (taldorien) <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Air%20autoritaire.ashx" title="Air autoritaire">Air autoritaire</a> (taldorien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Arc%20br%c3%bblant.ashx" title="Arc brûlant">Arc brûlant</a> (kéléshite) <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Baroud%20des%20champions.ashx" title="Baroud des champions">Baroud des champions</a> (shoanti) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20dalli%c3%a9s%20g%c3%a9ants%20I.ashx" title="Convocation d&#39;alliés géants I">Convocation d'alliés géants I</a> (kellide) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20dalli%c3%a9s%20g%c3%a9ants%20II.ashx" title="Convocation d&#39;alliés géants II">Convocation d'alliés géants II</a> (kellide) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20dalli%c3%a9s%20g%c3%a9ants%20III.ashx" title="Convocation d&#39;alliés géants III">Convocation d'alliés géants III</a> (kellide) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20de%20cr%c3%a9ature%20tot%c3%a9mique.ashx" title="Convocation de créature totémique">Convocation de créature totémique</a> (shotani) <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20de%20kamis.ashx" title="Convocation de kamis">Convocation de kamis</a> (tianais) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Damnation%20de%20la%20m%c3%a9moire.ashx" title="Damnation de la mémoire">Damnation de la mémoire</a> (garundi) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fa%c3%a7onnage%20de%20la%20neige.ashx" title="Façonnage de la neige">Façonnage de la neige</a> (ulfe) <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Lamentation%20des%20derniers%20jours%20d%c3%a9t%c3%a9.ashx" title="Lamentation des derniers jours d&#39;été">Lamentation des derniers jours d'été</a> (ulfe) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9diction%20du%20vieux%20loup%20de%20mer.ashx" title="Malédiction du vieux loup de mer">Malédiction du vieux loup de mer</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Manteau%20des%20guerriers%20magiques.ashx" title="Manteau des guerriers magiques">Manteau des guerriers magiques</a> (mwangi) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Pierre%20de%20suppression.ashx" title="Pierre de suppression">Pierre de suppression</a> (azlant) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Silence%20respectueux.ashx" title="Silence respectueux">Silence respectueux</a> (chélaxien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sph%c3%a8re%20de%20protection.ashx" title="Sphère de protection">Sphère de protection</a> (garundi) <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.T%c3%a2che%20noire.ashx" title="Tâche noire">Tâche noire</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tapisserie%20de%20fables.ashx" title="Tapisserie de fables">Tapisserie de fables</a> (varisien) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.T%c3%a9l%c3%a9kin%c3%a9sie%20martiale.ashx" title="Télékinésie martiale">Télékinésie martiale</a> (vudrain) <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.V%c3%a9locit%c3%a9%20du%20z%c3%a9phyr.ashx" title="Vélocité du zéphyr">Vélocité du zéphyr</a> (kéléshite) <i>(ISR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

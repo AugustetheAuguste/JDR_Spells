@@ -1,0 +1,781 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les hommes-rats - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="homme-rat, manuel des races" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme-rat (race).ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Homme-rat+(race)&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkAYHxTGG/vO+rU2IfWSA9PYGkCHw=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Homme-rat (race)">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Homme-rat (race)">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Homme-rat (race)">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les hommes-rats
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG2" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races additionnelles<a class="headeranchor" id="Les_races_additionnelles_0" href="#Les_races_additionnelles_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESDEBASE2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESDEBASE2');" onmouseout="outButton('RACESDEBASE2');" onclick="expandMenu('RACESDEBASE2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESDEBASE" title="Les races des personnages">Races de base</a></i></b>
+    <ul ID="RACESDEBASE2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES2');" onmouseout="outButton('RACESEXTRAORDINAIRES2');" onclick="expandMenu('RACESEXTRAORDINAIRES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES2');" onmouseout="outButton('RACESMONSTRUEUSES2');" onclick="expandMenu('RACESMONSTRUEUSES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_7">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_8">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_9">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_10">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_0">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_1">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_2">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_3">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Options_de_classe_4">Options de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Écologie_6">Écologie</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Homme-rat.ashx" title="Homme-rat">fiche de créature</a> d'un homme-rat standard.</i></b><br /><br />Les hommes-rats sont de petits humanoïdes semblables à des rongeurs ; originellement natifs des zones souterraines des déserts secs et des plaines, on les trouve désormais plus souvent dans des caravanes de commerce nomades. À l’image des groupes de rats auxquels ils ressemblent, les hommes-rats sont des bricoleurs qui adorent accumuler tout un tas de biens et, en tant que race, ils maîtrisent l’art du commerce, notamment lorsqu’il s’agit d’acquérir et de réparer des objets magiques ou mécaniques. Bien que certains soient d’habiles marchands louvoyant prudemment entre les alliances changeantes des marchés noirs et des bazars, beaucoup d’hommes-rats chérissent leurs monceaux de précieuses babioles bien plus que l’argent et préfèrent s’en procurer davantage, au lieu d’accumuler de simples pièces. Il n’est pas rare de voir une équipe prospère de marchands hommes-rats quitter la ville avec un ballot encore plus important que celui avec lequel elle est arrivée, leur pagaille soigneusement empilée sur des chariots conduits par des rats géants.<br /><br /><b>Description physique.</b> Les hommes-rats typiques mesurent en moyenne 1,2 mètre de haut et pèsent 40 kilos. Ils portent souvent des robes pour conserver une certaine fraîcheur dans le désert ou pour dissimuler leur forme en ville, puisqu’ils savent que les autres humanoïdes trouvent leurs traits de rongeurs répugnants. Ils sont très attirés par les bijoux qui brillent, notamment en cuivre, en bronze et en or, et beaucoup parent leurs oreilles et leur queue de petits anneaux taillés dans ces métaux. Ils sont connus pour dresser des rats géants (des rats sanguinaires ayant l’archétype géant) qu’ils utilisent comme bêtes de somme et comme montures.<br /><br /><b>Société.</b> Les hommes-rats sont extrêmement communautaires et vivent dans de grands terriers aux nombreux coins et recoins qui leur servent à cacher leurs trésors ou à fuir en cas de danger, conduisant dans des tunnels souterrains ou dans les logements exigus des bas-quartiers des villes. Ils entretiennent un lien très fort avec leurs grandes familles et les vastes réseaux de leurs semblables, ainsi qu’avec les rongeurs ordinaires de toutes sortes : ils vivent dans une harmonie chaotique et se battent avec acharnement pour défendre les leurs lorsqu’ils sont menacés. Ils n’hésitent pas à utiliser leurs stocks d’équipement en combat, mais préfèrent résoudre les différends et régler les disputes par le biais d’échanges mutuellement profitables.<br /><br />Lorsqu’un terrier particulier d’hommes-rats devient trop peuplé et que l’environnement alentour ne supporte plus une trop grande communauté, les jeunes hommes-rats cherchent instinctivement de nouveaux endroits où vivre. Si un groupe d’hommes-rats émigrés suffisamment grand s’installe dans une nouvelle zone fertile, il arrive qu’il crée un nouveau terrier, entretenant souvent des liens politiques forts avec sa patrie d’origine. Sinon, pris individuellement, les hommes-rats ont tendance à quitter tout simplement leur foyer pour s’installer ailleurs, ou à partir en caravanes pour des voyages durant près d’un an, allégeant ainsi la pression de leurs foyers surpeuplés.<br /><br /><b>Relations.</b> Les hommes-rats s’entendent généralement bien avec les humains et développent souvent des sociétés d’hommes-rats qui vivent dans les égouts, les ruelles et l’ombre des villes humaines. Les hommes-rats trouvent les nains trop bornés et territoriaux, et prennent souvent à tort leurs critiques anodines pour des attaques personnelles. Ils n’ont pas d’opinion réelle en ce qui concerne les gnomes et les halfelins, bien que dans les zones où ces races et les hommes-rats doivent se disputer les ressources, les guerres de clans peuvent s’étendre sur plusieurs générations. Les hommes-rats apprécient la compagnie des elfes et des demi-elfes, les voyant souvent comme les plus calmes et les plus sensées de toutes les races civilisées. Ils aiment particulièrement la musique et les arts elfiques, et beaucoup de terriers d’hommes-rats sont décorés d’objets d’art elfiques acquis au cours de générations de commerce amical.<br /><br /><b>Alignement et religion.</b> Les hommes-rats sont motivés par le désir d’acquérir des biens intéressants et par leur tendance à bricoler les objets complexes. Les liens étroits qu’entretiennent les communautés d’hommes-rats leur permettent d’apprécier les avantages qu’offre une société ordonnée, même si elles sont prêtes à faire une exception à ces règles lorsqu’il s’agit d’accomplir des objectifs individuels. La plupart des hommes-rats sont d’alignement Neutre, et ceux qui se tournent vers la religion vénèrent généralement des divinités qui représentent le commerce et la famille, y compris Abadar et Érastil.<br /><br /><b>Aventuriers.</b> Les hommes-rats sont souvent marqués par leur désir de trouver de nouvelles opportunités d’échanges, tant pour eux-mêmes que pour leur terrier. Il arrive que les aventuriers hommes-rats cherchent des marchés potentiels pour leur clan, restent à l’affût des sources de nouvelles marchandises ou flânent dans l’espoir de dénicher suffisamment de trésors pour financer des entreprises commerciales moins dangereuses. Ce sont souvent des pièges astucieux, les embuscades ou le sabotage des positions ennemies qui décident de l’issue des batailles des hommes-rats, et c’est ainsi que les jeunes héros prennent souvent des classes d’alchimiste, de pistolier et de roublard.<br /><br /><b>Noms masculins.</b> Agiz, Brihz, Djir, Ninnec, Rerdahl, Rikkan, Skivven, Tamoq.<br />
+<b>Noms féminins.</b> Bessel, Fhar, Jix, Kitch, Kubi, Nehm, Rissi, Thikka.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_7" href="#Traits_raciaux_standards_7" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 en <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>, -2 en <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>.</b> Les hommes-rats sont agiles et intelligents, mais physiquement faibles.</li><li><b>Homme-rat.</b> Les hommes-rats sont des <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20homme-rat.ashx" title="Homme-rat (sous-type)">homme-rat</a>.</li><li><b>Taille P.</b> Les hommes-rats sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20P.ashx" title="taille P">taille P</a> qui reçoivent un bonus de taille de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>, un bonus de taille de +1 à leurs <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>, un malus de -1 au <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> et au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a>, et un bonus de taille de +4 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.</li><li><b>Vitesse lente.</b> Les hommes-rats ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 6 mètres.</li><li><b>Vision dans le noir.</b> Les hommes-rats <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Empathie avec les rongeurs.</b> Les hommes-rats gagnent un bonus racial de +4 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a> pour influencer les rongeurs.</li><li><b>Regroupement.</b> Les hommes-rats sont habitués à vivre et à combattre en communauté, et sont doués quand il s’agit de se rassembler autour de leurs ennemis pour prendre l’avantage au détriment de ces derniers. Deux hommes-rats peuvent partager la même case en même temps. Si deux hommes-rats sur la même case attaquent le même ennemi, on considère qu’ils prennent cet ennemi <a class="pagelink" href="Pathfinder-RPG.prendre%20en%20tenaille.ashx" title="prendre en tenaille">en tenaille</a> comme s’ils étaient sur deux cases opposées.</li><li><b>Bricoleur.</b> Les hommes-rats gagnent un bonus racial de +2 à leurs tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie), de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> et d’<a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a>.</li><li><b>Langues.</b> Les hommes-rats commencent le jeu en parlant le commun. Ceux qui ont une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues parmi celles-ci : aklo, commun des profondeurs, draconique, gnoll, gnome, gobelin, halfelin, nain et orque.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_8" href="#Traits_raciaux_alternatifs_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux standard des hommes-rats, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « bricoleur » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Chineur.</b> Certains hommes-rats, notamment les membres du profond-marché, ont l'habitude d'exploiter leurs adversaires. Ils bénéficient d'un bouns racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, d'<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. Ce trait racial remplace bricoleur.</li><li><b>Fureteur.</b> Certains hommes-rats se fondent facilement dans leur environnement et se déplacent avec une grâce étonnante. Ils gagnent un bonus racial de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> et ne reçoivent qu’un malus de -5 à leurs tests de Discrétion pour se cacher des créatures qu’ils ont distraites avec un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> (plutôt que le malus normal de -10). Ce trait racial remplace bricoleur.</li><li><b>Odorat.</b> Certains hommes-rats ont un sens de l’odorat beaucoup plus développé que l’ouïe ou la vue. Ceux-ci ont la capacité <a class="pagelink" href="Pathfinder-RPG.Odorat%20(capacit%c3%a9).ashx" title="Odorat (Ext)">odorat</a>, mais reçoivent un malus de -2 à tous leurs tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> basés sur la vue ou l’ouïe. Ce trait racial remplace bricoleur.</li><li><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div><b>Rat de laboratoire.</b> Chaque inventeur homme-rat doué d’ingéniosité a besoin de quelqu’un pour tester ses inventions. Ceux qui survivent à différentes expériences développent parfois d’étranges bizarreries métaboliques qui les dotent d’une résilience accrue et se traduisent, à l’occasion, par des effets secondaires bénéfiques quand ils consomment des préparations magiques ou alchimiques. En conséquence, ils gagnent un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre le <a class="pagelink" href="Pathfinder-RPG.Poisons.ashx" title="Les poisons  ">poison</a>, les <a class="pagelink" href="Pathfinder-RPG.armes%20alchimiques.ashx" title="Armes alchimiques">armes alchimiques</a> et les effets néfastes des potions ou élixirs à ingérer. En outre, une fois par jour, ces hommes-rats peuvent augmenter de 1 le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> d’une potion qu’ils consomment ou doubler la durée d’un remède alchimique qu’ils ingèrent ou s’appliquent sur la peau (jusqu’à un maximum de 4 heures). Ce trait racial remplace celui de bricoleur.</li></ul>
+<u><i>Remplace « empathie avec les rongeurs » :</i></u>
+<ul><li><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div><b>Propreté.</b> Les hommes-rats s’efforcent de rester toujours parfaitement propres et de nettoyer les leurs afin d’éviter tout risque d’épidémie. Un homme-rat qui possède ce trait racial gagne un bonus de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les <a class="pagelink" href="Pathfinder-RPG.maladies.ashx" title="Les maladies">maladies</a> et, chaque fois qu’il dépasse de 5 ou plus le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du jet de sauvegarde pour récupérer d’un effet de maladie, on considère qu’il a réussi deux jets consécutifs. Ce trait racial remplace celui d’empathie avec les rongeurs.</li><li><b>Surnaturel.</b> Certains hommes-rats perturbent les animaux normaux et s’entraînent à se défendre contre les inévitables attaques de ces créatures. Ces hommes-rats subissent un malus de -4 à tous leurs tests de <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx" title="Les compétences">compétence</a> basées sur le <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> pour affecter les créatures de type <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animal</a>, et reçoivent un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les animaux. L’attitude de départ d'un animal envers l’homme-rat est d’une catégorie moins bonne que la normale. Ce trait racial remplace empathie avec les rongeurs.</li></ul>
+<u><i>Remplace « regroupement » :</i></u>
+<ul><li><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div><b>Bajoues.</b> Certains hommes-rats possèdent des bajoues extensibles particulièrement développées qui leur permettent de contenir et transporter de petits chargements d’un volume maximal de 30 dm³ et de 5 kilogrammes au maximum, comme des <a class="pagelink" href="Pathfinder-RPG.arme%20l%c3%a9g%c3%a8re.ashx" title="arme légère">armes légères</a>, des <a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx" title="Les potions magiques">potions</a>, des <a class="pagelink" href="Pathfinder-RPG.Parchemins%20magiques.ashx" title="Les parchemins magiques">parchemins</a> et autres objets similaires. Ces hommes-rats peuvent transférer un objet qu’ils tiennent en main dans leurs bajoues ou récupérer un objet de leurs bajoues par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>. Par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> qui provoque une <a class="pagelink" href="Pathfinder-RPG.AO.ashx" title="Attaque d&#39;opportunité (redirection)">attaque d’opportunité</a>, l’homme-rat peut, à la place, entasser au sol tous les objets qu’il tient dans ses bajoues, les plaçant sur la case qu’il occupe. À partir du moment où l’homme-rat a au moins un objet dans ses bajoues, il lui est difficile d’articuler et il a 20% de <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx#RISQUEECHECPROFANE" title="Caractéristiques des armures">risque d'échec des sorts</a> (pas seulement profanes) quand il lance des sorts à <a class="pagelink" href="Pathfinder-RPG.composantes.ashx" title="composantes">composante verbale</a>. Ce trait racial remplace celui de regroupement.</li><li><b>Fureur de l’acculé.</b> Les hommes-rats se battent violemment lorsqu’ils sont coupés de leurs amis et de leurs alliés. Lorsqu’un homme-rat avec ce trait racial est réduit à la moitié de ses <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> ou moins, et qu’il n’a aucun allié conscient dans un rayon de 9 mètres, il gagne un bonus racial de +2 à ses <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> de corps à corps et à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Ce trait racial remplace regroupement.</li></ul>
+<u><i>Remplace « vision dans le noir » et « vitesse lente » :</i></u>
+<ul><li><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div><b>Sprinter de surface.</b> Certains hommes-rats passent autant de temps que possible à la surface, devenant des coureurs très rapides. Cette capacité s’acquiert aux dépens de leur vision, qui perd en précision après plusieurs années à vivre au soleil. Ces hommes-rats gagnent la <a class="pagelink" href="Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx" title="Vision nocturne (Ext)">vision nocturne</a> et ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres. Ce trait racial remplace ceux de vision dans le noir et vitesse lente.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_9" href="#Bonus_alternatifs_de_classe_de_prédilection_9" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste gagne +1/6 d’une nouvelle <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Lorsqu’il est <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">enragé</a>, le barbare rajoute +1/4 au bonus de prise en tenaille de son trait regroupement aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Le conjurateur rajoute un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> de son <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a> contre les <a class="pagelink" href="Pathfinder-RPG.Poisons.ashx" title="Les poisons  ">poisons</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide rajoute un bonus de +1 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Druide.ashx#EMPATHIESAUVAGE" title="Le druide">empathie sauvage</a> pour influencer les <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animaux</a> et les <a class="pagelink" href="Pathfinder-RPG.type%20Cr%c3%a9ature%20magique.ashx" title="Créature magique">créatures magiques</a> vivant sous terre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier rajoute +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> lorsqu’il résiste à une tentative de <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a> ou de <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a>.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine rajoute +30 centimètres à sa vitesse lorsqu’il fait un test de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> sans recevoir de malus. Ceci n’a aucun effet à moins que le moine n’ait choisi ce bonus cinq fois (ou un autre multiple de 5). Ceci ne lui permet pas d’utiliser Discrétion lorsqu’il <a class="pagelink" href="Pathfinder-RPG.courir.ashx" title="courir">court</a> ou <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier rajoute un bonus de +1/2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a> lorsqu’il a au moins 1 point d’<a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx#AUDACE" title="Le pistolier">audace</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le rôdeur rajoute +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> de son <a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx#PACTEDUCHASSEUR" title="Le rôdeur">compagnon animal</a> lorsque ce dernier lui est adjacent. Si jamais il remplace son compagnon animal, le nouveau bénéficie de ce bonus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard rajoute un bonus de +1/2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> La sorcière rajoute +1,5 mètre à la portée de l’un de ses <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx#MALEFICE" title="La sorcière">maléfices</a> ayant une portée autre que « contact ».
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_10" href="#Nouvelles_règles_raciales_10" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux hommes-rats, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_0" href="#Dons_0" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Cachette%20commune.ashx" title="Cachette commune">Cachette commune</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Arme%20en%20main.ashx" title="Arme en main">Arme en main</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, 1 rang en <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx#Traits_raciaux_standards_7" title="Les hommes-rats">regroupement</a></td><td>Récupère rapidement des objets portés par les alliés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Collectionneur.ashx" title="Collectionneur">Collectionneur</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a></td><td>Possède toujours des objets aux hasard sur sa personne au besoin</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Dents%20ac%c3%a9r%c3%a9es.ashx" title="Dents acérées">Dents acérées</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a></td><td>Gain d'une attaque de morsure</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Rogneur.ashx" title="Rogneur">Rogneur</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Dents%20ac%c3%a9r%c3%a9es.ashx" title="Dents acérées">Dents acérées</a>, <a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">homme-rat</a></td><td>Ignore la solidité des objets avec une morsure puissante</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Griffe-tranchante.ashx" title="Griffe-tranchante">Griffe-tranchante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a></td><td>Le personnage obtient deux attaques de griffes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rat%20des%20tunnels.ashx" title="Rat des tunnels">Rat des tunnels</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a>, trait racial regroupement</td><td>Le personnage est plus difficile à écraser</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Dents%20de%20fouisseur.ashx" title="Dents de fouisseur">Dents de fouisseur</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les hommes-rats">Homme-rat</a>, <a class="pagelink" href="Pathfinder-RPG.griffe-tranchante.ashx" title="Griffe-tranchante">griffe-tranchante</a>, <a class="pagelink" href="Pathfinder-RPG.rat%20des%20tunnels.ashx" title="Rat des tunnels">rat des tunnels</a></td><td>Le personnage dispose d'une vitesse de creusement</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_1" href="#Archétypes_de_classe_1" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Porte-peste%20(alchimiste).ashx" title="Porte-peste">Porte-peste (alchimiste)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tireur%20des%20ravins%20(pistolier).ashx" title="Tireur des ravins">Tireur des ravins (pistolier)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_2" href="#Équipement_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Encre%20naus%c3%a9abonde%20(objet).ashx" title="Encre nauséabonde">Encre nauséabonde</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Encre%20naus%c3%a9abonde%20(objet).ashx" title="Encre nauséabonde">Encre nauséabonde magique</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.lame%20caudale%20(arme).ashx" title="Lame caudale">Lame caudale</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.P%c3%a2te%20de%20rhinarium%20(objet).ashx" title="Pâte de rhinarium">Pâte de rhinarium</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Poche%20de%20v%c3%a9role%20(objet).ashx" title="Poche de vérole">Poche de vérole</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Rat%20de%20selle%20(objet).ashx" title="Rat de selle">Rat de selle</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tonique%20infectieux%20(objet).ashx" title="Tonique infectieux">Tonique infectieux</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_3" href="#Objets_magiques_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Anneau%20des%20crocs%20du%20rat.ashx" title="Anneau des crocs du rat">Anneau des crocs du rat</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Anneau%20de%20vol%c3%a9e%20de%20coups.ashx" title="Anneau de volée de coups">Anneau de volée de coups</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cape%20dalarme%20sanglante.ashx" title="Cape d&#39;alarme sanglante">Cape d'alarme sanglante</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.catalytique%20(propri%c3%a9t%c3%a9).ashx" title="catalytique (propriété)">Catalytique (propriété d'arme)</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Couvre-chef%20de%20d%c3%a9guisement%20humano%c3%afde.ashx" title="Couvre-chef de déguisement humanoïde">Couvre-chef de déguisement humanoïde</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%bbte%20du%20gardien%20du%20terrier.ashx" title="Flûte du gardien du terrier">Flûte du gardien du terrier</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.virulente%20(propri%c3%a9t%c3%a9).ashx" title="virulente (propriété)">Virulente (propriété d'arme)</a> <i>(CM)</i></li></ul>
+<h3 class="separator">Options de classe<a class="headeranchor" id="Options_de_classe_4" href="#Options_de_classe_4" title="Lien vers cette section">&#0182;</a></h3><ul><li>Découvertes d'alchimiste<ul><li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx#BOMBEPESTIFEREESUPERIEURE" title="Les découvertes d&#39;alchimiste">Bombe pestiférée supérieure</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx#INFECTIONPROLONGEE" title="Les découvertes d&#39;alchimiste">Infection prolongée</a> <i>(MR)</i></li></ul></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Bricolage%20alchimique.ashx" title="Bricolage alchimique">Bricolage alchimique</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Frappes%20f%c3%a9briles.ashx" title="Frappes fébriles">Frappes fébriles</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Retardement%20des%20maladies.ashx" title="Retardement des maladies">Retardement des maladies</a> <i>(MR)</i></li></ul>
+</td></tr></table><br /><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Écologie<a class="headeranchor" id="Écologie_6" href="#Écologie_6" title="Lien vers cette section">&#0182;</a></h3>Vivant aux frontières de la société, les hommes-rats savent s’y faire une place grâce à leur ingéniosité pour le commerce. S’ils ne sont pas très puissants pris un à un, leur grande collectivité leur donne la force du nombre et leur apporte le soutien constant de leur famille et êtres chers. Quoique les hommes-rats puissent soumettre leurs ennemis en les submergeant en combat, la plus grande menace qu’ils représentent tient à leur inventivité et à leur collection de dangereuses babioles.<br /><br />L’homme-rat moyen se doit de résister aux émeutes de désirs conflictuels résultant de générations de vie en commun, d’intelligence affûtée et d’existences passées à s’adapter à une multitude d’environnements. Ces créatures ont une espérance de vie assez courte mais sont très nombreuses, les femelles mettant souvent au monde des jumeaux ou des triplés, ce qui fait que leurs galeries peuvent s’étendre très vite quand ils disposent d’une réserve de nourriture régulière et jouissent de bonnes opportunités économiques. Malgré les grandes populations qu’elles accueillent, les galeries des hommes-rats sont relativement étroites. Cette particularité relève davantage d’un choix délibéré que de la nécessité puisque ces créatures sont marquées par un instinct grégaire et adorent la compagnie des autres, y compris des rats et autres rongeurs (l’empathie naturelle que les hommes-rats éprouvent pour ces créatures leur permet de les dresser sans difficulté). Bien que les hommes-rats respectent le principe d’espace vital propre aux autres cultures, ils n’ont aucun problème à s’entasser les uns contre les autres lorsqu’ils sont entre eux, s’attroupant dans de petits espaces ou grimpant sur leurs parents sans crier gare.<br /><br />Les hommes-rats ont un cerveau exceptionnellement développé qui assimile, mémorise et analyse les informations avec une grande rapidité. Ils sont tout particulièrement doués d’une incroyable logique de raisonnement spatial, d’une compréhension aiguë du principe de causalité et d’une vive curiosité. Ces caractéristiques leur permettent non seulement de visualiser en quoi il sera possible de transformer un matériau ou un appareil particulier s’ils le manipulent d’une certaine manière, mais les encouragent également à expérimenter sans cesse en période de danger ou d’abondance. Même si les hommes-rats ne vivent qu’une toute petite partie de la longue existence des humains, rares sont ceux qui s’inquiètent de cette courte espérance de vie : au lieu de cela, ils profitent pleinement de leur « temps libre » pour explorer, expérimenter et profiter de ce que la vie peut leur offrir.<br /><br />Leur enthousiasme pour la découverte se manifeste aussi dans les relations qu’ils entretiennent avec leurs semblables car, même si tous accordent une grande importance à la communauté, chacun s’efforce également de se distinguer par ses propres accomplissements. L’agitation constante des communautés d’hommes-rats qui poursuivent leurs propres projets génère un environnement chaotique mais, en dépit de leurs motivations apparemment égoïstes, leurs recherches et expérimentations ont toujours pour vocation de donner lieu à des inventions qui permettront de renforcer la communauté et d’en assurer la survie. Les hommes-rats n’en saluent pas moins la réussite individuelle, mais il est généralement de bon ton, pour l’individu honoré, de reconnaître la contribution de tous ceux qui l’ont aidé à atteindre son objectif, ce qui renforce un peu plus les liens de la communauté.<br /><br />Les hommes-rats ont souvent des noms courts (une nécessité quand, au sein de ces familles nombreuses, un adulte doit appeler tout le monde). Bien qu’il soit assez courant que plusieurs hommes-rats partagent le même nom au sein d’une communauté, chacun se différencie par son surnom. Pour se distinguer encore mieux, les hommes-rats portent tous un bijou ou un vêtement unique portant une broderie spécifique. Parfois, ils s’affublent d’une pointe de parfum afin de se différencier des autres.<br /><br />À l’extérieur de leurs galeries, les hommes-rats vivent du commerce et adaptent leur comportement : leur entrain cède la place à un professionnalisme méthodique tandis que leur curiosité et leurs talents d’observation leur permettent d’étudier les individus avec lesquels ils traitent. Ils prennent soin d’observer les tabous et traditions culturelles de toutes les régions où ils vont et, parfois, vont même jusqu’à se couvrir pour ne pas décourager les clients les plus obtus. Il arrive parfois que les caravanes voyagent pendant un an ou plus avant de revenir au terrier. Partir en mission commerciale est toujours une perspective réjouissante pour les jeunes hommes-rats, qui vivent en quelque sorte cette expérience comme un rite de passage ainsi que comme une occasion d’étudier la technologie des autres races. Il n’est pas rare que de petits groupes d’hommes-rats quittent la caravane en cours de route pour se mettre en quête d’opportunités locales.<br /><br />L’agitation pratiquement incompréhensible qui caractérise les galeries d’hommes-rats repose sur la capacité de la race à opérer de manière très organisée. Toute menace extérieure mobilise très rapidement tous les hommes-rats à la défense de leur demeure. Leurs galeries sont souvent un entrelacs de tunnels étroits reliant les grands espaces de vie et permettant aux défenseurs du terrier d’abattre un grand nombre d’assaillants aux points d’étranglement stratégiques. Ayant appris à vivre les uns contre les autres depuis des années, les hommes-rats peuvent se battre en combat rapproché sans se gêner les uns les autres. D’ailleurs, les intrus ont souvent beaucoup de mal à se défendre contre les attaques imprévisibles de ces nuées de petits humanoïdes. En général, leurs tunnels sont équipés de barres de soutien faciles à enlever qui permettent aux hommes-rats d’effondrer certains points d’accès en cas d’attaque. Pendant que les adultes repoussent les attaquants, les autres dégagent les itinéraires de fuite et guident les jeunes, les malades et les faibles en sécurité.<br /><br />Malgré leur importante densité, les colonies d’hommes-rats sont étonnamment propres. Bien qu’on ignore s’ils ont d’abord compris le principe de propreté ou son intérêt scientifique, les hommes-rats alchimistes ont une compréhension très claire de la maladie et de la façon dont elle se propage, ce qui les a poussés à mettre au point des procédures sanitaires complexes pour réduire les risques d’épidémie dans leurs communautés très peuplées. Cela dit, cette méticulosité ne se ressent pas toujours dans leur organisation et un atelier à la propreté immaculée n’en accueillera pas moins tout un bric-à-brac d’outils, de projets en cours et de schémas ésotériques.<br /><br />Les hommes-rats adorent accumuler des babioles, des outils et d’autres petits trésors passionnants. Ils accordent une valeur toute particulière aux objets brillants (surtout aux parures telles que les anneaux) et aux mécanismes délicats que l’on peut démonter, étudier et rassembler. Les hommes-rats fonctionnent selon un système de propriété flexible dans lequel chacun peut emprunter les possessions d’un autre tant que l’objet est retourné à son propriétaire quand celui-ci en a besoin et que l’emprunt ne met pas le propriétaire en danger. Cette forme de détachement encourage les hommes-rats à marchander leurs possessions même les plus précieuses à partir du moment où cela leur permet de gagner quelque chose de plus précieux en échange. Leur amour de tout ce qui brille illustre également une autre contradiction : si les hommes-rats adorent l’éclat des choses, ils préfèrent vivre dans des endroits sombres. Là où une babiole scintillante fascinera à coup sûr un homme-rat, un vif éclat de lumière ou une lueur imprévue le perturbera au plus haut point.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

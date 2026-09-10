@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les nains - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="manuel des joueurs, manuel des races, nain, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Nain&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkPcvT8PTmAfyR2HhgUzuszGB9oYo=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Nain">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Nain">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Nain">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les nains
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_2">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les nains forment une race stoïque et austère, retranchée dans des villes creusées au coeur des montagnes et bien décidée à lutter contre les déprédations des races sauvages comme les orques et les gobelins. Plus que tout autre, ils sont réputés être d’excellents artisans de la terre, bien que sombres et sans humour. On peut dire que l’histoire des nains a façonné le sombre caractère de beaucoup d’entre eux, car ils vivent dans de hautes montagnes ou dans de dangereux royaumes des profondeurs et sont toujours en guerre contre les géants, les gobelins et autres horreurs.<br /><br />Les nains sont amateurs d’histoire et de traditions. Comme ils vivent très longtemps, ils sont bien moins enclins aux changements générationnels d’attitude, de style, de mode et de tendances que les races à la vie plus courte. Ils ne changent rien et ne modifient rien si ce n’est pas cassé et, si c’est le cas, ils préfèrent réparer plutôt que de remplacer. Les nains sont économes à l’excès et répugnent à jeter quoi que ce soit à moins que ce ne soit complètement irrécupérable et impossible à réparer. Le soin et la minutie presque obsessionnelle que les nains apportent à la conception du moindre objet évitent de toute manière ce genre de problèmes : leurs créations sont faites pour durer. C’est pourquoi ils utilisent encore des bâtiments, des oeuvres d’art, des outils, des ustensiles de cuisine, des habits, des armes et presque tous leurs produits bien longtemps après leur création, là où les autres races auraient déjà relégué tout cela dans un musée, sur des étagères poussiéreuses ou dans une déchèterie. Toutes ces caractéristiques donnent l’impression que les nains sont une race figée dans le temps.<br /><br />Pourtant, rien n’est plus loin de la vérité, car les nains sont un peuple réfléchi et imaginatif qui aime expérimenter et qui cherche toujours à affiner et à perfectionner ses techniques ou ses produits avant de passer aux suivants. En matière de métallurgie, d’architecture et d’ingénierie, les nains ont accompli des exploits qui dépassent toujours les avancées technologiques des autres races, même si ces dernières ont recours à la magie pour perfectionner leurs propres créations et égaler les nains grâce à des moyens mystiques. C’est aussi une race courageuse, obstinée et dévouée, bien décidée à accomplir les objectifs qu’elle s’est fixés, quels que soient les risques. C’est cette mentalité qui a poussé les nains à explorer des environnements extrêmes et à s’y installer, alors que d’autres races auraient hésité et fait demi-tour. Dans les entrailles du monde ou au sommet des pics montagneux, dans des citadelles de fer rouillées sur une côte rocheuse désolée ou dans des ziggourats trapues perdues au milieu de la jungle, les nains ont installé leurs enclaves et leurs forteresses dans le monde entier. Ils les défendent contre tous les intrus ou périssent jusqu’au dernier en essayant, ne laissant pour tout héritage que leurs monuments.<br /><br />On dit que les nains ne sont ni aventureux ni inventifs, mais il serait plus exact de dire qu’ils se concentrent sur chaque tâche entreprise et s’y consacrent pleinement. Ils examinent soigneusement le moindre changement à apporter avant de l’adopter définitivement. Quand ils se retrouvent face à une situation nouvelle ou un besoin inédit, ils essayent systématiquement d’utiliser des outils approuvés et des techniques reconnues plutôt que d’inventer une solution nouvelle. En revanche, si cela ne fonctionne pas, ils se jettent corps et âme dans la recherche d’un moyen idéal pour abattre l’obstacle qui leur barre la route. Une fois leur objectif atteint, ils consolident soigneusement chaque centimètre de terrain gagné, que ce soit en termes de territoire ou d’avancée conceptuelle. Les nains ne prennent jamais de risques, mais ne ratent pas non plus la moindre occasion d’optimiser les avantages qu’ils se créent.<br /><br /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les nains sont réputés pour être des artisans doués, des combattants féroces et des prêtres pieux, mais les membres de cette race sont tout aussi divers que les humains qui vivent à la surface du monde. Bien sûr, ceux qui s’intéressent aux arts magiques sont moins nombreux que chez les elfes, mais on trouve quand même un certain nombre de puissants clans d’ensorceleurs et de magiciens parmi leurs rangs. Certains nains se tournent même vers le vol et la ruse et assument le rôle de roublards ou même d’assassins.<br /><br />En plus de cette diversité au niveau des professions, on trouve chez les nains une diversité de modes de vie plus vaste que ce qui apparaît de prime abord. Tous les nains ne vivent pas si près de la surface qu’ils reçoivent un entraînement spécial contre les géants par exemple. De même, certains nains n’ont pas grandi en combattant des gobelins et des orques mais peut-être en affrontant d’autres ennemis tout aussi dangereux. Ces nains pourraient posséder des traits raciaux différents de ceux qui ont reçu une éducation plus traditionnelle.
+</div><br /><b>Description physique.</b> Les nains sont petits et robustes. Ils font une trentaine de centimètres de moins que les humains et possèdent un corps compact et rondelet qui leur donne une apparence trapue. Les hommes comme les femmes aiment porter les cheveux longs et les hommes ornent souvent leur barbe de fermoirs et de tresses complexes. Un nain rasé de près est forcément fou, ou pire. Personne ne fait confiance à un nain rasé s’il connaît un tant soit peu les coutumes de cette race.<br /><br /><b>Société.</b> Les citadelles montagnardes des nains sont très éloignées les unes des autres, ce qui explique les différences culturelles qui existent au sein de leur société. Malgré ces schismes, tous les nains de Golarion se caractérisent par leur amour de la pierre, leur passion pour toutes les formes d’artisanat et d’architecture basées sur les métaux ou la pierre, ainsi que par la haine féroce qu’ils vouent aux géants, aux orques et aux gobelinoïdes. Dans certaines enclaves reculées, dans les régions où ces races haïes sont rares, voire inconnues, l’obsession des nains pour la sécurité et leur pugnacité les poussent à se trouver des ennemis, ou au moins des rivaux. Leur société n’est pas vraiment militarisée, mais ils ont appris depuis bien longtemps que les gens qui ne portent pas de hache risquent bien de se faire tuer, c’est pourquoi tous les nains apprennent à manier les armes pour faire valoir leurs droits par la force si besoin. Quand leur patience est épuisée, ils abandonnent la diplomatie pour passer à ce qu’ils appellent « des négociations agressives. »<br /><br /><b>Relations.</b> Les nains et les orques ont longtemps vécu côte à côte et ils partagent une histoire violente aussi vieille que leurs deux races, c’est pourquoi les nains évitent les demiorques et s’en méfient. Ils trouvent que les elfes, les gnomes et les halfelins sont trop fragiles, trop frivoles ou trop « jolis » pour être dignes de respect. C’est donc avec les humains qu’ils se lient le plus facilement, car la nature industrieuse et les appétits de cette race se rapprochent des idéaux nains.<br /><br /><b>Alignement et religion.</b> Les nains obéissent à l’honneur et aux traditions. Dans les stéréotypes, on les considère comme des individus distants, mais ils accordent une grande importance à l’amitié et à la justice et ceux qui gagnent leur confiance découvrent que, s’ils travaillent dur, ils mettent encore plus de coeur à faire la fête, surtout quand il y a de la bonne bière. La plupart des nains sont Loyaux Bons.<br /><br /><b>Aventuriers.</b> Les aventuriers nains sont bien plus rares que leurs équivalents humains, mais on en trouve dans toutes les régions du monde. Ils quittent souvent l’enceinte de leur citadelle pour partir en quête de gloire au profit de leur clan, pour trouver des richesses pour aider leur foyer ou pour reprendre une forteresse naine tombée aux mains d’ennemis raciaux. Les guerres naines se caractérisent souvent par des combats au corps à corps dans les tunnels, c’est pourquoi la plupart des nains optent pour les classes de guerrier ou de barbare.<br /><br /><b>Noms masculins.</b> Dolgrin, Grunyar, Harsk, Kazmuk, Morgrym, Rograr.<br />
+<b>Noms féminins.</b> Agna, Bodill, Ingra, Kotri, Rusilka, Yangrit.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>, -2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>.</b> Les nains sont robustes et sages, mais un brin bougons.</li><li><b>Taille M.</b> Les nains sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni malus ni bonus liés à la taille.</li><li><b>Lentement mais sûrement.</b> Les nains ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 6 mètres, mais elle ne varie jamais, quelle que soit l’armure ou le poids qu’ils portent.</li><li><b>Vision dans le noir.</b> Les nains <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Entraînement défensif.</b> Un nain gagne un bonus d’esquive de +4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les créatures de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20g%c3%a9ant.ashx" title="Géant (sous-type)">géant</a>.</li><li><b>Avarice.</b> Les nains gagnent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> pour déterminer le prix des marchandises non magiques qui incluent des métaux précieux ou des gemmes.</li><li><b>Haine.</b> Les nains gagnent un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les créatures <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20orque.ashx" title="Orque (sous-type)">orque</a> et <a class="pagelink" href="Pathfinder-RPG.sous-type%20gobelino%c3%afde.ashx" title="Gobelinoïde (sous-type)">gobelinoïde</a>, car ils ont reçu un entraînement spécial pour lutter contre ces ennemis tant haïs.</li><li><b>Robuste.</b> Les nains gagnent un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre le <a class="pagelink" href="Pathfinder-RPG.Poisons.ashx" title="Les poisons  ">poison</a>, les sorts et les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a>.</li><li><b>Stabilité.</b> Les nains gagnent un bonus de +4 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand ils sont debout sur le sol et tentent de résister à une <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a> ou un <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a>.</li><li><b>Connaissance de la pierre.</b> Les nains gagnent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> quand il s’agit de remarquer un ouvrage de maçonnerie inhabituel, comme un piège ou une porte cachée, situé dans un mur ou un sol de pierre. Ils ont droit à un test pour remarquer ce détail quand ils passent à moins de 3 mètres, qu’ils cherchent activement quelque chose ou non.</li><li><b>Armes familières.</b> Les nains sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.hache%20darmes%20(arme).ashx" title="Hache d&#39;armes">haches d’armes</a>, des <a class="pagelink" href="Pathfinder-RPG.pic%20de%20guerre%20lourd%20(arme).ashx" title="Pic de guerre lourd">pics de guerre lourds</a> et des <a class="pagelink" href="Pathfinder-RPG.marteau%20de%20guerre%20(arme).ashx" title="Marteau de guerre">marteaux de guerre</a>. Ils considèrent toute arme qui porte la mention « nain » dans son nom comme une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a>.</li><li><b>Langues.</b> Les nains commencent le jeu en parlant le commun et le nain. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues issues de la liste suivante : commun des profondeurs, géant, gnome, gobelin, orque et terreux.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>La plupart des gens pensent que les nains forment une race assez homogène, mais de nombreux clans ont dû s’adapter au fil des ans pour survivre dans des environnements aussi rudes que variés. Les options suivantes représentent une partie de ces adaptations et sont disponibles pour tous les personnages nains. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux nains standard, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « avarice » :</i></u>
+<ul><li><b>Artisan.</b> Les nains sont connus pour leurs capacités supérieures en artisanat quand il s’agit de métallurgie et de travail de la pierre. Les nains dotés de ce trait racial reçoivent un bonus de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> ou de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> liés à la pierre ou au métal. Ce trait remplace avarice.</li><li><b>Détenteur du savoir.</b> Les nains conservent des archives très complètes sur leur histoire et celle du monde qui les entoure. Ceux qui possèdent ce trait racial reçoivent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (histoire) qui concernent leur race ou celle de leurs ennemis. Ils peuvent faire ces tests même sans formation. Ce trait remplace avarice.</li></ul>
+<u><i>Remplace « avarice », « haine » et « robuste » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Survivant de siège.</b> Les nains qui se sont installés dans les Citadelles du ciel sont entraînés à survivre aux sièges et à servir de gardes vigilants. Ils gagnent <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a> comme don supplémentaire. De plus, pendant les rounds où ils ne se sont pas déplacés, ils bénéficient d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d'attaque</a> contre les adversaires qui ne se sont également pas déplacés depuis leur dernier tour. Ce trait racial remplace avarice, haine et robuste.</li></ul>
+<u><i>Remplace « avarice » et « robuste » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Soutien spirituel.</b> Les nains accordent une grande importance à la loyauté et à la foi, et leurs divinités les récompensent en conséquence. Ils bénéficient d'un bonus racial de +1 au <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> lorsqu'ils lancent des sorts de <a class="pagelink" href="Pathfinder-RPG.branche%20gu%c3%a9rison.ashx" title="Guérison">invocation (guérison)</a> sur des alliés. Ce trait racial remplace avarice et robuste.</li></ul>
+<u><i>Remplace « connaissance de la pierre » :</i></u>
+<ul><li><b>Chantepierre.</b> L’affinité que les nains ressentent pour la pierre donne des pouvoirs supplémentaires à certains d’entre eux. Les nains qui possèdent ce trait racial sont considérés comme étant d’un niveau de plus qu’ils ne le sont quand ils lancent des sorts du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la terre ou qu’ils utilisent des pouvoirs du <a class="pagelink" href="Pathfinder-RPG.domaine%20de%20la%20Terre.ashx" title="Domaine de la Terre">domaine de la Terre</a>, des pouvoirs de lignage d’ensorceleur <a class="pagelink" href="Pathfinder-RPG.lignage%20%c3%a9l%c3%a9mentaire.ashx" title="Lignage Élémentaire">élémentaire de terre</a> ou <a class="pagelink" href="Pathfinder-RPG.lignage%20des%20profondeurs.ashx" title="Lignage des Profondeurs">des profondeurs</a> ou des révélations d’oracle du <a class="pagelink" href="Pathfinder-RPG.myst%c3%a8re%20des%20pierres.ashx" title="Mystère des pierres">mystère des pierres</a>. Ce trait ne leur donne pas accès aux pouvoirs basés sur le niveau en avance, il affecte seulement les pouvoirs qu’ils peuvent utiliser sans lui. Ce trait remplace connaissance de la pierre.</li><li><b>Enjambeur de rochers.</b> Les nains qui possèdent ce trait racial savent négocier les terrains rocheux. Ils ignorent le <a class="pagelink" href="Pathfinder-RPG.terrain%20difficile.ashx" title="terrain difficile">terrain difficile</a> lié aux décombres, à un sol accidenté ou à des escaliers abrupts quand ils font un <a class="pagelink" href="Pathfinder-RPG.pas%20de%20placement.ashx" title="Pas de placement">pas de placement</a>. Ce trait remplace connaissance de la pierre.</li></ul>
+<u><i>Remplace « connaissance de la pierre », « entraînement défensif » et « haine » :</i></u>
+<ul><li><b>Barbe salée.</b> Les nains construisent parfois des villes de fer sur des côtes accidentées et les habitants de ces cités gagnent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (marin) et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> en mer. Ils gagnent un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les créatures de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20aquatique.ashx" title="Aquatique (sous-type)">aquatique</a> ou <a class="pagelink" href="Pathfinder-RPG.sous-type%20eau.ashx" title="Eau (sous-type)">eau</a>. Leur trait racial avarice s’applique seulement aux trésors trouvés en mer ou sous les flots, mais à tous ces trésors, qu’ils contiennent des métaux et des gemmes ou non. Ce trait remplace entraînement défensif, haine et connaissance de la pierre.</li><li><b>Ennemi des dragons.</b> Les nains qui possèdent ce trait racial gagnent un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> ainsi qu'un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20sp%c3%a9ciaux.ashx" title="Les pouvoirs spéciaux">pouvoirs extraordinaires, surnaturels et magiques</a> des <a class="pagelink" href="Pathfinder-RPG.Dragon.ashx" title="Les dragons véritables">dragons</a>. Ils gagnent aussi un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) pour identifier les dragons et n’ont pas besoin d'être formé pour faire ces tests. Ce trait racial remplace entraînement défensif, haine et connaissance de la pierre.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Négociateur stoïque.</b> Certains nains, notamment ceux originaires de Portemarchande au Druma, utilisent leur obstination inébranlable pour obtenir ce qu'ils veulent lors des négociations et autres affaires. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (marchand). Ce trait racial remplace connaissance de la pierre, entraînement défensif et haine.</li><li><b>Sentinelle du ciel.</b> Comme les nains ont une grande affinité avec la terre, ils se méfient des attaques venues d’en haut. Les ennemis qui se trouvent en hauteur par rapport aux nains qui possèdent ce trait ne gagnent pas de <a class="pagelink" href="Pathfinder-RPG.modificateurs%20de%20combat.ashx" title="Modificateurs de combat">bonus</a> aux jets d’attaque, en revanche, ces nains gagnent un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>, un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> contre les créatures qui volent. Ce trait racial remplace entraînement défensif, haine et connaissance de la pierre.</li></ul>
+<u><i>Remplace « entraînement défensif » :</i></u>
+<ul><li><b>Guerrier des profondeurs.</b> Les nains qui possèdent ce trait grandissent en affrontant les abominations qui vivent loin sous la surface et reçoivent un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les créatures de type <a class="pagelink" href="Pathfinder-RPG.type%20Aberration.ashx" title="Aberration">aberration</a> ainsi qu’un bonus racial de +2 aux tests de manœuvres offensives pour initier ou maintenir une <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a> contre ces créatures. Ce trait racial remplace entraînement défensif.</li></ul>
+<u><i>Remplace « entraînement défensif » et « haine » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Destructeur de sort.</b> Les familles naines qui sont menacées par des utilisateurs de magie hostiles, notamment ceux qui doivent faire face à des ennemis <a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">duergars</a>, s'entraînent activement à contrer les lanceurs de sorts. Ils bénéficient d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d'attaque</a> contre les créatures en train de lancer des sorts ou d'utiliser des pouvoirs magiques. Ce trait racial remplace entraînement défensif et haine.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Enfant scorie.</b> Les nains issus de familles déshonorées doivent ajouter « scorie de- », « -scoriun » ou « -scoriam » à leur nom de famille pour indiquer leur statut honteux. Ces nains sont souvent bannis ou ostracisés ; ils sont contraints à vivre en marge des colonies naines ou dans de sombres régions sauvages comme les montagnes Kodar. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a>. Ce trait racial remplace entraînement défensif et haine.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Rancune tenace.</b> Les nains sont célèbres pour leur rancune particulièrement durable. Ceux qui sont à la hauteur de cette réputation bénéficient d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d'attaque</a> contre chaque créature unique qui les ont attaqué il y a un jour ou plus. Ce trait racial remplace entraînement défensif et haine.</li></ul>
+<u><i>Remplace « haine » :</i></u>
+<ul><li><b>Ancienne inimitié.</b> Cela fait bien longtemps que les nains sont en conflit avec les elfes, en particulier avec les drows tant détestés. Un nain qui choisit ce trait racial reçoit un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">Jet d’attaque</a> contre les créatures <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20elfe.ashx" title="Elfe (sous-type)">elfe</a>. Ce trait remplace haine.</li><li><b>Chasseur de géants.</b> Les nains qui possèdent ce trait racial gagnent un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20g%c3%a9ant.ashx" title="Géant (sous-type)">géant</a>. De plus, ils gagnent un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> pour trouver et suivre une piste laissée par des humanoïdes de sous-type géant. Ce trait remplace haine.</li></ul>
+<u><i>Remplace « langues » :</i></u>
+<ul><li><b>Xénophobe.</b> Les nains isolationnistes détestent les humanoïdes des autres races. Ils ne parlent que le nain et ne prennent pas de langue supplémentaire, même s’ils ont une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée. De plus, ils n’apprennent qu’une langue par tranche de 2 points en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a>. En revanche, leur nature méfiante leur donne un bonus de +1 contre les <a class="pagelink" href="Pathfinder-RPG.effet%20mental.ashx" title="effet mental">effets mentaux</a>, sauf les effets de peur. Ce trait remplace les langues du nain.</li></ul>
+<u><i>Remplace « robuste » :</i></u>
+<ul><li><b>Borné.</b> Les nains sont réputés être têtus. Ceux qui possèdent ce trait reçoivent un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> pour résister aux sorts et <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> d’<a class="pagelink" href="Pathfinder-RPG.branche%20charme.ashx" title="charme">enchantement (charme)</a> et d’<a class="pagelink" href="Pathfinder-RPG.branche%20coercition.ashx" title="Coercition">enchantement (coercition)</a>. De plus, s’ils ratent un de ces jets, ils ont le droit d’en refaire un, 1 round plus tard, pour mettre prématurément un terme à l’effet (à condition qu’il dure plus d’un round). Ce second jet a le même <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> que le premier. Si le nain dispose d’un pouvoir similaire issu d’une autre source (comme l’<a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ESPRITFUYANT" title="Les talents de roublard">esprit fuyant</a> du roublard), il ne peut en utiliser qu’un des deux par round, mais il peut se servir du second au deuxième round s’il a raté son jet avec le premier pouvoir. Ce trait remplace robuste.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Inarrêtable.</b> Certains nains s'entraînent depuis leur plus jeune âge à surpasser les orques sur le champ de bataille. Ils gagnent <a class="pagelink" href="Pathfinder-RPG.Robustesse.ashx" title="Robustesse">Robustesse</a> comme don supplémentaire et bénéficient d'un bonus racial de +1 aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a>. Ce trait racial remplace robuste.</li><li><b>Résistant à la magie.</b> Les clans nains les plus anciens ont développé une résistance particulière à la magie. Les nains qui disposent de ce trait racial gagnent une <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">résistance à la magie</a> de 5 + leur niveau de personnage. Ils peuvent la baisser pendant 1 round par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Les nains qui possèdent ce trait racial subissent un malus de -2 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> liés aux <a class="pagelink" href="Pathfinder-RPG.magie%20profane.ashx" title="La magie profane">sorts profanes</a>. Ce trait remplace robuste.</li></ul>
+<u><i>Remplace « stabilité » :</i></u>
+<ul><li><b>Implacable.</b> Les nains sont doués pour se frayer un chemin sur les champs de bataille et repousser leurs adversaires facilement. Ceux qui possèdent ce trait racial reçoivent un bonus racial de +2 aux tests de manœuvre offensive pour <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculer</a> ou <a class="pagelink" href="Pathfinder-RPG.renversement.ashx" title="renversement">renverser</a> un adversaire. Ce bonus s’applique uniquement si le nain et son adversaire se tiennent debout sur le sol. Ce trait remplace stabilité.</li><li><b>Montagnard.</b> Les nains des montagnes sont particulièrement doués pour l’escalade et pour se déplacer sur d’étroites corniches rocheuses. Ceux qui possèdent ce trait sont immunisés contre le vertige et ne perdent pas leur bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> quand ils font un test d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> ou d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> pour traverser une surface étroite ou glissante. Ce trait remplace stabilité.</li></ul>
+<u><i>Remplace « vision dans le noir » :</i></u>
+<ul><li><b>Œil du mineur.</b> Un nain doué de ce trait racial voit la portée de sa <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">vision dans le noir</a> passer à 27 mètres. En revanche, il est automatiquement <a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">ébloui</a> dans les zones de <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">lumière vive</a> et reçoit un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la lumière. Ce trait remplace vision dans le noir.</li><li><b>Survivre à la surface.</b> Certains nains sont restés si souvent à l’air libre qu’ils ont perdu leur capacité à voir dans le noir. En revanche, ils se sont habitués à un environnement extrême, ce qui leur permet de traiter le <a class="pagelink" href="Pathfinder-RPG.Vents.ashx" title="Les vents">vent</a> (pour savoir s’ils sont ralentis ou emportés) et la <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#CHALEUR" title="Les dangers naturels">chaleur</a> ou le <a class="pagelink" href="Pathfinder-RPG.Dangers%20naturels.ashx#FROID" title="Les dangers naturels">froid</a> (un des deux, au choix) comme étant d'une sévérité moindre d'un cran. Ce trait remplace vision dans le noir.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race naine ou une variante raciale, comme suit.
+<ul><li><b>Ancien des nains.</b> Les nains traditionalistes issus de lignées anciennes optent pour les traits ancienne inimitié, détenteur du savoir et résistant à la magie ou borné.</li><li><b>Mineur des profondeurs.</b> Les nains qui vivent loin sous la surface possèdent les traits oeil du mineur et guerrier des profondeurs. Les lanceurs de sorts mineurs des profondeurs peuvent échanger connaissance de la pierre contre chantepierre.</li><li><b>Nain exilé.</b> Les nains qui ont perdu leur foyer ont généralement les traits implacable et borné, et souvent ennemi des dragons.</li><li><b>Nain des montagnes.</b> Les nains qui vivent au sommet des hauts pics montagneux ont les traits montagnard et, souvent, survivre à la surface. Ils sont aussi entraînés à défendre leur foyer et peuvent les remplacer par les traits sentinelle du ciel et xénophobe.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers nains.</b> Les nains qui choisissent de devenir aventuriers sont généralement des personnages combattants pouvant aller du barbare berserker au prêtre maniant le marteau de guerre. Quelle que soit leur profession, les aventuriers nains sont toujours prêts à combattre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les nains occultes.</b> Certaines communautés naines stigmatisent tout particulièrement les pouvoirs psychiques qu’elles associent aux duergars, leurs cousins esclavagistes. Les occultistes forment une exception car ils établissent un lien avec les reliques de l’histoire naine chroniquée. Les spirites nains peuvent entrer en contact avec les esprits des membres de leur race tombés au combat et les médiums nains peuvent développer leurs talents pour entrer en contact avec les grands héros des légendes. En dehors de ces cas, un nain doté d’un potentiel psychique pourra facilement emprunter la voie du cinétiste spécialisé dans l’utilisation des talents sauvages de la terre et du métal.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> Quand l’alchimiste utilise son <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#MUTAGENE" title="L&#39;alchimiste">mutagène</a>, il gagne un bonus d’armure naturelle de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>.<br />
+Beaucoup de nains respectés pratiquent l'alchimie, mais ils sont peu nombreux à endosser véritablement le rôle d'alchimiste, si ce n'est dans le but de créer des bières magiques. Les nains considèrent les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx" title="L&#39;alchimiste">alchimistes</a> comme des gens étranges qui méritent le respect, mais qu'il vaut mieux éviter.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Ajoute 1/4 au niveau de classe effectif de l’arcaniste quand il détermine les effets des <a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx#EXPLOITATION" title="L&#39;arcaniste">exploitations</a> d’arcaniste barrière arcanique et arme arcanique.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Le barbare gagne +1 round de <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGEDUBERZERKER" title="Le barbare">rage</a> par jour.<br />
+Les barbares nains, que leurs frères appellent généralement berserkers, forment une partie importante des armées naines. Certains deviennent aventuriers et partent en solitaires, bien souvent à la recherche de plus grands défis.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Les <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx#RISQUEECHECPROFANE" title="Caractéristiques des armures">risques d’échec des sorts profanes</a> de barde en <a class="pagelink" href="Pathfinder-RPG.armure%20interm%c3%a9diaire.ashx" title="armure intermédiaire">armure intermédiaire</a> diminuent de 1 %. Quand cette réduction atteint 10 %, le barde reçoit <a class="pagelink" href="Pathfinder-RPG.Port%20des%20armures%20interm%c3%a9diaires.ashx" title="Port des armures intermédiaires">Port des armures intermédiaires</a> s’il ne l’avait pas encore.<br />
+Rien n'a plus d'importance aux yeux des nains que leur longue et glorieuse histoire. Les bardes nains en apprennent généralement beaucoup à ce sujet en récitant des histoires et des ballades qui racontent leur passé. Bien sûr, tout bon barde nain connait également une dizaine de chanson à boire.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Ajoute 1/4 au niveau effectif de classe du bretteur quand il détermine les dégâts supplémentaires de son exploit d’<a class="pagelink" href="Pathfinder-RPG.Exploits%20(bretteur).ashx#ATTAQUEPRECISE" title="Les exploits du bretteur">attaque précise</a> et qu’il manie un <a class="pagelink" href="Pathfinder-RPG.pic%20de%20guerre%20l%c3%a9ger%20(arme).ashx" title="Pic de guerre léger">pic de guerre léger</a> ou un <a class="pagelink" href="Pathfinder-RPG.pic%20de%20guerre%20lourd%20(arme).ashx" title="Pic de guerre lourd">pic de guerre lourd</a>. Si le bretteur possède le don <a class="pagelink" href="Pathfinder-RPG.Gr%c3%a2ce%20tranchante.ashx" title="Grâce tranchante">Grâce tranchante</a> ou bénéficie d’un effet similaire, il considère la <a class="pagelink" href="Pathfinder-RPG.hache%20darmes%20(arme).ashx" title="Hache d&#39;armes">hache d'armes</a> ou la <a class="pagelink" href="Pathfinder-RPG.hachette%20(arme).ashx" title="Hachette">hachette</a> comme une arme de corps à corps perforante et bénéficie de cet avantage quand il manie l’arme associée au don.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Ajoute 1/4 au bonus d’armure naturelle de l’<a class="pagelink" href="Pathfinder-RPG.Chaman.ashx#ESPRITANIMAL" title="Le chaman">esprit animal</a> du chaman.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Ajoute un bonus de +1/2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx#EMPATHIESAUVAGE" title="Le chasseur">empathie sauvage</a> que le chasseur effectue pour influencer les <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animaux</a> et les <a class="pagelink" href="Pathfinder-RPG.type%20Cr%c3%a9ature%20magique.ashx" title="Créature magique">créatures magiques</a> vivant sous terre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> Le chevalier gagne un bonus de +1/2 aux dégâts contre la cible de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">défi</a>.<br />
+Les chevaliers nains sont quasiment inexistants. Les chevaliers nains sont presque tous des habitants de la surface qui montent des poneys ou des sangliers géants. Comme on peut s'y attendre, de nombreux nains considèrent les chevaliers comme des gens étranges qui ne sont pas dignes de confiance.<br /><br /><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><u>Ce texte a été modifié suite à la FAQ suivante :</u><br /><br /><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Aventures%20occultes.ashx#1" title="FAQ d&#39;Aventures occultes">→</a> Bonus de classe de prédilection de cinétiste et bouillonnement élémentaire : Le bonus de classe de prédilection des elfes mentionne qu’il s’applique lorsque le bouillonnement élémentaire s’applique, mais celui des demi-orques et des nains ne le précisent pas. Devrait-ils aussi ne s’appliquer que quand le bouillonnement élémentaire s’applique ?</i></b><br /><br />Oui, ils devraient <u><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">tous</a></u> <u><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">deux</a></u> ne s’appliquer que lorsque le <a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx#BOUILLONNEMENTELEMENTAIRE" title="Le cinétiste">bouillonnement élémentaire</a> s’applique, comme pour le bonus de classe de prédilection des <a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">elfes</a>. Cela sera reflété dans le prochain errata.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> Le personnage inflige 1/3 point de dégâts supplémentaires aux <a class="pagelink" href="Pathfinder-RPG.Talents%20sauvages.ashx#EXPLOSIONDETERRE" title="Les talents sauvages du cinétiste">explosions de terre</a> qui infligent des dégâts et qui bénéficient du bonus conféré par l’aptitude de <a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx#BOUILLONNEMENTÉLÉMENTAIRE" title="Le cinétiste">bouillonnement élémentaire</a> du cinétiste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Le conjurateur ajoute un bonus d’armure naturelle de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de son <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a>.<br />
+La plupart des nains ne comprennent pas le lien qui unit un conjurateur et son eidolon et, de ce fait, c'est une profession plutôt rare au sein de leur race. Les eidolons des conjurateurs nains ressemblent souvent à des <a class="pagelink" href="Pathfinder-RPG.%c3%a9l%c3%a9mentaire%20de%20la%20Terre.ashx" title="Élémentaire de Terre">élémentaires de la Terre</a> ou à des <a class="pagelink" href="Pathfinder-RPG.golem%20de%20fer.ashx" title="Golem, Golem de fer">golems de fer</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide choisit un <a class="pagelink" href="Pathfinder-RPG.druide.ashx#PACTEAVECLANATURE" title="Le druide">pouvoir de domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Comme le sous-sol ne comporte quasiment pas de flore, peu de nains deviennent des druides. Ceux qui se lient avec la nature sont généralement attirés par des formes de vie souterraines ou déménagent vers la surface et adoptent les environnements qu’ils y trouvent.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> Ajoute un bonus de +1/4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> effectués sous terre et un bonus de +1/2 à l’aptitude <a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx#SENSDESPIEGES" title="L&#39;enquêteur">sens des pièges</a> vis-à-vis des pièges de pierre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur ajoute +1/2 aux dégâts des sorts et des <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de l’acide ou de la terre.<br />
+Dans la société naine, les rares individus qui tirent leurs pouvoirs de lignages nobles ou liés à des entités bienveillantes sont considérés comme précieux, mais ceux qui sont corrompus par des influences plus sombres sont mis à l’écart.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier ajoute un bonus de +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand il résiste à une <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a> ou un <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a>.<br />
+Les guerriers nains occupent une position d'autorité et jouissent d'un grand respect dans la plupart des cultures naines. Ils sont bien nécessaires dans les milieux souterrains inhospitaliers. De nombreux nains sont formés au combat dès leur plus jeune âge.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> Le personnage augmente de 1/4 point les dégâts supplémentaires infligés par son <a class="pagelink" href="Pathfinder-RPG.hypnotiseur.ashx#REGARDDOULOUREUX" title="L&#39;hypnotiseur">regard douloureux</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur rajoute +1/2 à son niveau quand il détermine les effets d’un type de <a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx#JUGEMENT" title="L&#39;inquisiteur">jugement</a>.<br />
+Il est très rare (mais pas inédit) qu'un nain trahisse son propre peuple. De ce fait, les rares nains qui deviennent inquisiteurs passent la plupart de leur temps à parcourir le monde et à protéger leur peuple contre les menaces venant de l'extérieur.<br /><br /><a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Augmente de +1/2 le bonus d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> du talent <a class="pagelink" href="Pathfinder-RPG.Talents%20sociaux.ashx#GRACESOCIALE" title="Les talents sociaux du justicier">grâce sociale</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Quand le lutteur porte une <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20mains%20nues.ashx" title="attaque à mains nues">attaque à mains nues</a> contre un objet en argile, en pierre ou en métal, sa <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> est réduite de 1 (avec un minimum de 0).
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien choisit un <a class="pagelink" href="Pathfinder-RPG.Dons.ashx#DONCREATIONDOJET" title="Les dons">don de création d’objet</a> de sa connaissance. Quand il s’en sert pour créer quelque chose, il produit 200 po de matériel de plus par période de 8 heures (50 po s’il est en pleine aventure). Ceci ne réduit pas le coût de l’objet, juste sa vitesse de fabrication.<br />
+Il n'existe pas de longue tradition de magie profane chez les nains. Ceux qui étudient la magie sont rares, même s'ils sont plus nombreux que les ensorceleurs aux pouvoir innés. Les magiciens nains doivent renoncer aux apprentissages traditionnels nains, ce qui en fait souvent des étranger au sein de leur propre peuple. Les magiciens âgés et sages sont toutefois très respectés.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le magus choisit un <a class="pagelink" href="Pathfinder-RPG.magus.ashx#ARCANE" title="Le magus">arcane</a> qu’il ne peut utiliser qu’une fois par jour. Il ajoute + 1/6 à son nombre d’utilisations quotidiennes. Il doit choisir un autre arcane une fois que le premier est disponible deux fois par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> Le personnage bénéficie d’un bonus de +1/2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> effectués contre la <a class="pagelink" href="Pathfinder-RPG.possession%20spirituelle.ashx" title="La possession">possession</a> et pour arrêter une <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#CANALISATIONDAPPARITIONS" title="Le médium">canalisation d’apparitions</a>, une <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#CANALISATIONDESSITES" title="Le médium">canalisation de sites</a> ou une <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#GRANDEÂME" title="Le médium">grande âme</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Quand le moine porte une <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20mains%20nues.ashx" title="attaque à mains nues">attaque à mains nues</a> contre un objet en argile, en pierre ou en métal, sa <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> est réduite de 1 (avec un minimum de 0).<br />
+De nombreux nains possèdent la rigueur de caractère nécessaire au rôle de moine, mais la plupart d'entre eux s'orientent vers des formes de combat plus traditionnelles qui comprennent des armures lourdes et de bonnes vieilles haches. La majorité des moines nains se rassemblent dans de petites enclaves d'individus partageant un même état d'esprit.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> Le personnage bénéficie d’un bonus de +1/3 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> et d’<a class="pagelink" href="Pathfinder-RPG.Utilisation%20dObjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a> quand des objets métalliques ou en pierre sont impliqués.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> Réduire de -1 le malus appliqué pour se servir d'un type d'arme en particulier sans formation préalable. Lorsque le malus pour un type d'arme tombe à 0 grâce à cette capacité, l'oracle fonctionne comme s'il possédait le don <a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20de%20guerre.ashx" title="Maniement d&#39;une arme de guerre">Maniement d'une arme de guerre</a>/<a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20exotique.ashx" title="Maniement d&#39;une arme exotique">exotique</a> correspondant à ce type d'arme.<br />
+La plupart des oracles nains tirent leurs pouvoirs de la terre qui les entoure ou des esprits de leurs ancêtres, ce qui en fait des membres respectés de la société naine. Ils ne bénéficient pas de la même vénération que le clergé, mais on les consulte souvent en cas de crise et on fait appel à eux en période de guerre.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Le paladin gagne un bonus de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> quand il lance des sorts de paladin.<br />
+Peu de nains aspirent à suivre la voie du <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a>. Les paladins nains, qui allient dévotion et prouesses martiales, peuvent être des croisés défendant les intérêts nains ou des gardes protégeant des places-fortes naines.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier réduit les risques de <a class="pagelink" href="Pathfinder-RPG.armes%20%c3%a0%20feu.ashx#LONGFEU" title="Caractéristiques des armes à feu">long feu</a> d’une arme de 1/4. Le pistolier ne peut pas faire passer les risques de long feu en dessous de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre choisit un <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#DOMAINES" title="Le prêtre">pouvoir de domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les nains sont fort proches des <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">dieux</a> et possède une longue tradition de prêtres puissants et influents. Ceux qui sont choisis pour une vie de dévotion sont formés dès leur plus jeune âge mais, après cet apprentissage, ils sont libres d'explorer le monde et de propager la foi.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Ajoute 1/3 au nombre d’utilisations quotidiennes de <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#BENEDICTIONS" title="Le prêtre combattant">bénédictions</a> mais le prêtre combattant doit réserver ces utilisations supplémentaires à des bénédictions affectant les armes ou les armures uniquement.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> Quand il lance des sorts psychiques d’<a class="pagelink" href="Pathfinder-RPG.abjuration.ashx" title="Abjuration">abjuration</a>, le personnage ajoute 1/2 <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau à son niveau de lanceur de sorts</a>, mais uniquement pour déterminer leur <a class="pagelink" href="Pathfinder-RPG.pr%c3%a9sentation%20des%20sorts.ashx#DUREE" title="Présentation des sorts">durée</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le rôdeur gagne un bonus de +1/2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx#EMPATHIESAUVAGE" title="Le rôdeur">empathie sauvage</a> pour influencer des animaux ou des créatures magiques qui vivent sous terre.<br />
+Les nains sont connus pour garder longtemps rancune. Ce n'est donc pas une surprise de voir qu'un bon nombre d'entre eux décident de devenir rôdeurs et de se concentrer sur la destruction des ennemis de leur peuple.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard gagne un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> quand il travaille sur un <a class="pagelink" href="Pathfinder-RPG.pi%c3%a8ges.ashx" title="Les pièges">pièges</a> de pierre et un bonus de +1/2 au <a class="pagelink" href="Pathfinder-RPG.Roublard.ashx#RECHERCHEDESPIEGES" title="Le roublard">sens des pièges</a> vis-à-vis de ces mêmes pièges de pierre.<br />
+Les nains qui s'intéressent à l'art du subterfuge s'orientent plutôt vers la manipulation des pièges et l'organisation d'attaques surprises que vers des carrières de tire-laine ou d'orateurs.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Augmente le nombre total quotidien de rounds de <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#RAGESANGUINE" title="Le sanguin">rage sanguine</a> de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Les <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx#RISQUEECHECPROFANE" title="Caractéristiques des armures">risques d’échec des sorts profanes</a> de scalde en <a class="pagelink" href="Pathfinder-RPG.armure%20lourde.ashx" title="armure lourde">armure lourde</a> diminuent de 1 %. Quand cette réduction atteint 10 %, le scalde reçoit <a class="pagelink" href="Pathfinder-RPG.Port%20des%20armures%20lourdes.ashx" title="Port des armures lourdes">Port des armures lourdes</a> s’il ne l’avait pas encore.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> La sorcière ajoute un bonus d’armure naturelle de +1/4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de son <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx#FAMILIER" title="La sorcière">familier</a>.<br />
+Les naines qui passent un pacte avec un <a class="pagelink" href="Pathfinder-RPG.familier.ashx" title="familier">familier</a> et prennent le titre de <a class="pagelink" href="Pathfinder-RPG.sorci%c3%a8re.ashx" title="La sorcière">sorcières</a> le font en secret. La société naine se méfie de ce genre d'accords et préfère plutôt faire appel aux pouvoirs de ses dieux.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> Le personnage ajoute 1/6 au bonus de bouclier conféré par la capacité <a class="pagelink" href="Pathfinder-RPG.spirite.ashx#MANIFESTATIONINTERNEECTOPLASMIQUE" title="Le spirite">manifestation interne ectoplasmique</a> de niveau 3.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Gagne un bonus de +1/3 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (exploration souterraine) et aux tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> effectués sous terre. Si le tueur a un bonus de +1 aux tests de Connaissances (exploration souterraine) grâce à cette option, on considère qu’il est formé à cette compétence.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux nains, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Acrobate%20des%20corniches.ashx" title="Acrobate des corniches">Acrobate des corniches</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Dex.ashx" title="Dex">Dex</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Nain.ashx#Traits_raciaux_alternatifs_7" title="Les nains">montagnard</a> ou <a class="pagelink" href="Pathfinder-RPG.Nain.ashx#Traits_raciaux_standards_6" title="Les nains">stabilité</a></td><td>Déplacement plus rapide sur les espaces restreints</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%82me%20dacier.ashx" title="Âme d&#39;acier">Âme d'acier</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Nain.ashx#Traits_raciaux_standards_6" title="Les nains">robuste</a></td><td>Bonus racial de +4 aux jets de sauvegarde contre les sorts et les pouvoirs magiques</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Boyaux%20dacier.ashx" title="Boyaux dacier">Boyaux d'acier</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>+2 aux Jets de sauvegarde contre les états nauséeux et fiévreux et les poisons ingérés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Brisesort.ashx" title="Brisesort">Brisesort</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Perturbateur.ashx" title="Perturbateur">Perturbateur</a>, <a class="pagelink" href="Pathfinder-RPG.Briseur%20de%20sorts.ashx" title="Briseur de sorts">Briseur de sorts</a>, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.guerrier.ashx" title="Le guerrier">guerrier</a> de niveau 10</td><td>Détruit un effet magique actif</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Chanteur%20des%20roches.ashx" title="Chanteur des roches">Chanteur des roches</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, capacité de classe <a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx" title="représentation bardique">représentation bardique</a>, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>Améliore les représentations en sous-sol et contre les créatures de la terre</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Combattre%20au-del%c3%a0%20de%20la%20mort.ashx" title="Combattre au-delà de la mort">Combattre au-delà de la mort</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Gagner des points de vie temporaires une fois réduit à 0 point de vie</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Connaissance%20sup%c3%a9rieure%20de%20la%20pierre.ashx" title="Connaissance supérieure de la pierre">Connaissance supérieure de la pierre</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Nain.ashx#Traits_raciaux_standards_6" title="Les nains">connaissance de la pierre</a></td><td>+4 aux tests de Perception pour repérer les ouvrages de pierre inhabituels</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, 3 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>La CA de l’entraînement défensif passe à +6 contre les géants</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Renversement%20de%20lenfant%20de%20la%20terre.ashx" title="Renversement de l&#39;enfant de la terre">Renversement de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx" title="Science du croc-en-jambe">Science du croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, 6 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>Le personnage peut faire un croc-en-jambe à un géant de taille TG au maximum</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Lien%20de%20lenfant%20de%20la%20terre.ashx" title="Lien de l&#39;enfant de la terre">Lien de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Renversement%20de%20lenfant%20de%20la%20terre.ashx" title="Renversement de l&#39;enfant de la terre">Renversement de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Croc-en-jambe%20sup%c3%a9rieur.ashx" title="Croc-en-jambe supérieur">Croc-en-jambe supérieur</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx" title="Science du croc-en-jambe">Science du croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, <a class="pagelink" href="Pathfinder-RPG.Coup%20%c3%a9tourdissant.ashx" title="Coup étourdissant">Coup étourdissant</a>, 9 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>Le personnage peut faire un croc-en-jambe à un géant de n’importe quelle taille. Il peut décider d’appliquer le Coup étourdissant une fois qu’il sait que l’attaque d’opportunité portée contre un géant qui se relève a touché</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%89liminer%20les%20toxines.ashx" title="Éliminer les toxines">Éliminer les toxines</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Nain.ashx#Traits_raciaux_standards_6" title="Les nains">robuste</a></td><td>Guérit des affaiblissements temporaires plus vite</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement%20%c3%a9largi.ashx" title="Enchaînement élargi">Enchaînement élargi</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +11, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>Déplacement d'1.5m entre les enchaînements pour menacer plus de créatures</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Encha%c3%aener%20les%20gobelins.ashx" title="Enchaîner les gobelins">Enchaîner les gobelins</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>Cible plus de créatures pendant un enchaînement si elles sont plus petites que le personnage, +2 à l'attaque contre ces créatures</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9biter%20les%20orques.ashx" title="Débiter les orques">Débiter les orques</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aener%20les%20gobelins.ashx" title="Enchaîner les gobelins">Enchaîner les gobelins</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>+2 à l'attaque pour utiliser Enchaînement sur un orque</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Tueur%20de%20g%c3%a9ants.ashx" title="Tueur de géants">Tueur de géants</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aener%20les%20gobelins.ashx" title="Enchaîner les gobelins">Enchaîner les gobelins</a>, <a class="pagelink" href="Pathfinder-RPG.D%c3%a9biter%20les%20orques.ashx" title="Débiter les orques">Débiter les orques</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.Riposte.ashx" title="Riposte">Riposte</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +11, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>Cible plus de créatures pendant un enchaînement si elles sont plus grandes que le personnage, +2 à l'attaque contre ces créatures</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Exp%c3%a9riences%20vari%c3%a9es.ashx" title="Expériences variées">Expériences variées</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>; 100 ans ou plus</td><td>+2 sur tous les tests de Connaissances ou de Profession</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Forteresse%20vivante.ashx" title="Forteresse vivante">Forteresse vivante</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, trait racial robuste</td><td>Les bonus raciaux aux jets de sauvegarde contre les sorts et pouvoirs magiques augmentent de 2 à proximité d'un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frappe%20de%20la%20vip%c3%a8re%20jaillissante.ashx" title="Frappe de la vipère jaillissante">Frappe de la vipère jaillissante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +4, maniement de la <a class="pagelink" href="Pathfinder-RPG.dorn-dergar%20naine%20(arme).ashx" title="Dorn-dergar naine">dorn-dergar naine</a></td><td>Alterne la fonction de la dorn-dergar par une action rapide</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Lancer%20de%20hache%20coulissante.ashx" title="Lancer de hache coulissante">Lancer de hache coulissante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Dex.ashx" title="Dex">Dex</a> 13, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1</td><td>Ignorer les boucliers et faire des croc-en-jambe avec des haches de lancer</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20brasseur.ashx" title="Maître brasseur">Maître brasseur</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie), 1 rang en <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (brasseur), <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>+2 aux tests d'Artisanat (alchimie) et Profession (brasseur), +1 aux DD des poisons d'ingestion créés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetrise%20de%20la%20dorn-dergar.ashx" title="Maîtrise de la dorn-dergar">Maîtrise de la dorn-dergar</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +4, maniement de la <a class="pagelink" href="Pathfinder-RPG.dorn-dergar%20naine%20(arme).ashx" title="Dorn-dergar naine">dorn-dergar naine</a></td><td>Manie la dorn-dergar à une main</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Marteau%20bondissant.ashx" title="Marteau bondissant">Marteau bondissant</a></td><td><sup>MR</sup></td><td>Maniement du marteau, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6</td><td>Lance un marteau et le faire rebondir pour qu’il revienne</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Position%20du%20xorn.ashx" title="Position du xorn">Position du xorn</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 15, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +3</td><td>Les créatures qui prennent le personnage en tenaille n’obtiennent aucun bonus</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Peau%20de%20fer.ashx" title="Peau de fer">Peau de fer</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Bonus d’armure naturelle de +1 à la CA</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.T%c3%aate%20dure.ashx" title="Tête dure">Tête dure</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>+1 à l'attaque, au BMO et au DMD avec les casques, +2 aux jets de sauvegarde contre les effets de chancèlement et d'étourdissement</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Casque%20bossel%c3%a9.ashx" title="Casque bosselé">Casque bosselé</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.T%c3%aate%20dure.ashx" title="Tête dure">Tête dure</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>+1 à la CA contre les confirmations critiques en portant un casque, la moitié des dégâts subits lors d'un coup critique sont infligés au casque</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Casque%20fendu.ashx" title="Casque fendu">Casque fendu</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Casque%20bossel%c3%a9.ashx" title="Casque bosselé">Casque bosselé</a>, <a class="pagelink" href="Pathfinder-RPG.T%c3%aate%20dure.ashx" title="Tête dure">Tête dure</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +11, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a></td><td>+1 à la CA contre les confirmations critiques en portant un casque, les dégâts subits lors d'un coup critique sont infligés au casque</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a> ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>, <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées</td><td>Remplace une attaque contre un géant par une tentative de désarmement, de destruction d’arme ou de croc-en-jambe</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9luge%20des%20tonnerres%20jumeaux.ashx" title="Déluge des tonnerres jumeaux">Déluge des tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif; <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20deux%20armes.ashx" title="Science du combat à deux armes">Science du combat à deux armes</a> et <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a>, ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>; <a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées; <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6</td><td>Possibilité de croc-en-jambe contre un géant de taille TG et +2 points de dégâts contre les géants</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx" title="Maître des tonnerres jumeaux">Maître des tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif; <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20deux%20armes.ashx" title="Science du combat à deux armes">Science du combat à deux armes</a> et <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a>, ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>; <a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.D%c3%a9luge%20des%20tonnerres%20jumeaux.ashx" title="Déluge des tonnerres jumeaux">Déluge des tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées; <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +9</td><td>L’adversaire frappé par les tonnerres jumeaux est secoué</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Visage%20de%20pierre.ashx" title="Visage de pierre">Visage de pierre</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a></td><td>Bonus de +4 aux tests de Bluff pour mentir ou cacher son but</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_2" href="#Archétypes_de_classe_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Exarque%20(inquisiteur).ashx" title="Exarque">Exarque (inquisiteur)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Champion%20du%20marteau%20(guerrier).ashx" title="Champion du marteau">Champion du marteau (guerrier)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20forges%20(pr%c3%aatre).ashx" title="Maître des forges">Maître des forges (prêtre)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Seigneur%20de%20pierre%20(paladin).ashx" title="Seigneur de pierre">Seigneur de pierre (paladin)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.casque%20b%c3%a9lier%20nain%20(arme).ashx" title="Casque bélier nain">Casque bélier nain</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.dorn-dergar%20naine%20(arme).ashx" title="Dorn-dergar naine">Dorn-dergar naine</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.hache%20darmes%20naine%20double%20(arme).ashx" title="Hache d&#39;armes naine double">Hache d'armes naine double</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.hache%20naine%20%c3%a0%20long%20manche%20(arme).ashx" title="Hache naine à long manche">Hache naine à long manche</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.marteau%20nain%20%c3%a0%20long%20manche%20(arme).ashx" title="Marteau nain à long manche">Marteau nain à long manche</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20de%20vision%20dans%20les%20t%c3%a9n%c3%a8bres.ashx" title="Elixir de vision dans les ténèbres">Élixir de vision dans les ténèbres</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Enclume%20du%20prospecteur%20c%c3%a9leste.ashx" title="Enclume du prospecteur céleste">Enclume du prospecteur céleste</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Heaume%20du%20commandant.ashx" title="Heaume du commandant">Heaume du commandant (inférieur)</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Heaume%20du%20commandant.ashx" title="Heaume du commandant">Heaume du commandant (supérieur)</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Heaume%20du%20commandant.ashx" title="Heaume du commandant">Heaume du commandant (suprême)</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Pic%20brise-montagnes.ashx" title="Pic brise-montagnes">Pic brise-montagnes</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20puissance%20nain.ashx" title="Sceptre de puissance nain">Sceptre de puissance nain</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Assaut%20concert%c3%a9.ashx" title="Assaut concerté">Assaut concerté</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Barbe%20de%20fer.ashx" title="Barbe de fer">Barbe de fer</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chant%20du%20labeur.ashx" title="Chant du labeur">Chant du labeur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Communion%20ancestrale.ashx" title="Communion ancestrale">Communion ancestrale</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Convocation%20de%20gardien%20ancestral.ashx" title="Convocation de gardien ancestral">Convocation de gardien ancestral</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Dispersion%20des%20si%c3%a8ges.ashx" title="Dispersion des sièges">Dispersion des sièges</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Don%20ancestral.ashx" title="Don ancestral">Don ancestral</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%89l%c3%a9vation%20du%20sol.ashx" title="Élévation du sol">Élévation du sol</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Force%20d%c3%a9cupl%c3%a9e.ashx" title="Force décuplée">Force décuplée</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Formation%20tactique.ashx" title="Formation tactique">Formation tactique</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c5%92il%20vigilant.ashx" title="Œil vigilant">Œil vigilant</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Pourparlers%20du%20Faiseur%20de%20paix.ashx" title="Pourparlers du Faiseur de paix">Pourparlers du Faiseur de paix</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Repos%20revigorant.ashx" title="Repos revigorant">Repos revigorant</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Rune%20de%20protection.ashx" title="Rune de protection">Rune de protection</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Rune%20de%20solidit%c3%a9.ashx" title="Rune de solidité">Rune de solidité</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sanglantes%20repr%c3%a9sailles.ashx" title="Sanglantes représailles">Sanglantes représailles</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Serment%20de%20justice.ashx" title="Serment de justice">Serment de justice</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Vision%20%c3%a0%20travers%20la%20pierre.ashx" title="Vision à travers la pierre">Vision à travers la pierre</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Voile%20nain.ashx" title="Voile nain">Voile nain</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

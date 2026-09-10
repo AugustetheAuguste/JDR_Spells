@@ -1,0 +1,987 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les demi-orques - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="demi-orque, manuel des joueurs, manuel des races, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Demi-orque.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Demi-orque&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkUYgY6eLYdcme6GFKHWoSnmlc6R0=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Demi-orque">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Demi-orque">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Demi-orque">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les demi-orques
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classes_2">Archétypes de classes</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les races civilisées considèrent les demi-orques comme des monstruosités résultant de la perversion et de la violence, que ce soit vrai ou non. Les demi-orques sont rarement le fruit de l’amour de leurs parents et ils sont obligés de grandir vite, à la dure, en se battant constamment pour se défendre ou se faire un nom. Ce traitement les rend rancuniers et, plutôt que de jouer les victimes, ils préfèrent riposter et confirment, à leur insu, les préjugés qui les entourent. Il arrive que des demi-orques surprennent, par leurs exploits et leur sagesse, des détracteurs qui les craignent, s’en méfient et leur crachent dessus, mais, bien souvent, ils trouvent qu’il est bien plus facile de leur briser le crâne. Certains demi-orques passent leur vie à prouver aux orques de sang pur qu’ils sont largement aussi féroces qu’eux, tandis que d’autres tentent de se fondre dans la société humaine en montrant sans cesse qu’ils ne sont pas des monstres. Ce besoin de prouver leur valeur les pousse à chercher toujours plus de puissance et de grandeur au sein de la société qui les entoure.<br /><br /><br style="clear:right" /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les demi-orques vivent généralement en marge de la société. Ces individus d’apparence bestiale et traditionnellement craints par les autres races tendent à être entêtés et à chercher sans cesse à prouver leur valeur. Certains espèrent montrer qu’ils ne ressemblent pas à leurs cousins sauvages, les orques, et s’efforcent de développer les meilleurs côtés de leur personnalité, alors que d’autres laissent libre cours à leur héritage monstrueux et à leur férocité lors des combats. Dans tous les cas, la majorité des demi-orques recherchent avant tout le respect, que celui-ci soit donné librement ou arraché par la force.<br /><br />Considérés comme des bâtards par les humains et des mauviettes par les orques, les demi-orques découvrent dès leur naissance des sentiments tels que l’amertume ou le brûlant désir de résister et de surmonter les obstacles. La taille et la force physique des demi-orques en font des créatures puissantes, une puissance qui, selon les individus, peut être mise au service du bien ou du mal.
+</div><br /><b>Description physique.</b> Les demi-orques mesurent en moyenne 1,90 mètre. Ils sont puissamment bâtis avec une peau verdâtre ou grise. Leurs canines sont généralement si longues qu’elles dépassent de leur bouche et ces « défenses, » couplées à un front bas et des oreilles légèrement pointues, leur donnent une apparence bestiale. Les demi-orques sont impressionnants mais peu de gens les qualifient de beaux. En dépit de leurs Demi-Orques traits caractéristiques des orques, ils présentent autant de diversité que les humains.<br /><br /><b>Société.</b> Contrairement aux demi-elfes qui souffrent de discrimination en partie à cause d’un sentiment de jalousie ou d’attirance, les demi-orques ont les pires défauts de leurs deux races parentes : ils sont physiquement plus faibles que les orques, mais les humains les craignent et les attaquent parfois à vue, sans faire de distinction entre les demis et les orques de sang pur. Même dans le meilleur des cas, les demi-orques qui vivent dans une société civilisée ne sont jamais vraiment acceptés, ils sont surtout tolérés pour leurs aptitudes physiques. En revanche, quelques chefs de tribus orques engendrent volontairement des demi-orques, car ces sang-mêlé compensent leur faiblesse physique par leur ruse et leur agressivité. Ainsi, ils deviennent d’excellents conseillers stratégiques et des chefs nés.<br /><br />Les demi-orques qui vivent au sein d’une tribu orque luttent sans cesse pour prouver leur valeur en se battant ou en accomplissant des tours de force. Ils affûtent souvent leurs défenses et se couvrent de tatouages tribaux. Les chefs savent généralement que les demi-orques sont plus rusés que leurs cousins au sang pur et les placent en apprentissage auprès du chaman de la tribu, pour mettre leur intelligence au service du clan. Pourtant, la vie d’un apprenti chaman est violente et généralement de courte durée, ainsi les demi-orques qui survivent deviennent des membres influents de leur tribu ou s’en font chasser.<br /><br />Les demi-orques vivent des expériences bien plus diverses dans la société humaine, où de nombreuses cultures ne les considèrent guère mieux que des monstres. Souvent, ils ne peuvent même pas obtenir un travail normal et les gens les obligent à s’enrôler dans l’armée ou les vendent comme esclaves. Dans ces cultures, les demi-orques mènent une vie discrète en tentant de cacher leur nature. Le monde de la pègre est bien souvent le plus accueillant pour ces êtres, qui finissent par servir de gros bras dans les guildes de voleurs ou d’autres organisations criminelles.<br /><br />Il arrive, rarement, que des villes humaines autorisent les demi-orques à mener une vie normale et les laissent même se regrouper en petites communautés qui se concentrent généralement autour du quartier de l’arène, de l’armée ou d’une organisation de mercenaires, là où l’on apprécie leur force brute et où l’on a plus de chances de faire fi de leur apparence. Mais la vie des demi-orques n’est jamais facile, même quand ils sont entourés des leurs. Les brimades et les affrontements sont monnaie courante chez ces gens qui ont grandi sans autres exemples de comportement ou presque. Et pourtant, pour un jeune demi-orque, ces enclaves sont le meilleur endroit où grandir à l’abri des préjugés et l’un des seuls lieux où les mariages des demi-orques sont vraiment acceptés et leurs enfants reconnus et même parfois aimés.<br /><br />Dans certaines cultures humaines encore plus rares, les demi-orques sont réellement appréciés pour leur force. Des légendes racontent qu’en certains endroits les enfants demi-orques sont considérés comme une bénédiction et les partenaires orques ou demi-orques y sont très recherchés. Là, ces derniers mènent une vie sensiblement égale à celle des humains de sang pur.<br /><br /><b>Relations.</b> Ce sont les elfes et les nains qui se montrent les moins tolérants envers les demi-orques, qui leur rappellent bien trop leurs ennemis ancestraux. Cependant les autres races ne sont guère plus compréhensives.<br /><br />D’ordinaire, les demi-orques passent leur vie à se faire persécuter et se montrent donc méfiants et irascibles, mais les gens qui parviennent à briser cette coquille féroce découvrent un noyau d’empathie caché au plus profond d’eux. Les sociétés humaines qui n’ont pas de problèmes avec les orques sont généralement les plus tolérantes vis-à-vis des demi-orques et les engagent souvent comme mercenaires ou videurs. Mais même là où les demi-orques sont tolérés, de nombreux humains les maltraitent dès qu’ils en ont l’occasion.<br /><br />Les demi-orques envient les demi-elfes qui sont modérément acceptés dans les sociétés humaines et elfiques : ils jalousent leur beauté qui contraste avec leur propre apparence bestiale. Les demi-orques évitent de se montrer ouvertement hostiles envers leurs cousins de sang-mêlé, mais ils n’hésitent pas à leur nuire dès qu’ils le peuvent.<br /><br />Les demi-orques se sentent plus proches des halfelins, qui portent fréquemment un fardeau aussi lourd que le leur. Ils respectent leur capacité à se fondre dans la masse et à disparaître et admirent leur attitude toujours positive, en dépit de leurs malheurs. Si les halfelins n’apprécient pas cette attitude à sa juste valeur, c’est qu’ils sont souvent trop occupés à éviter les demi-orques qu’ils trouvent si grands et si intimidants.<br /><br /><b>Alignement et religion.</b> Comme les demi-orques sont obligés de vivre parmi les orques brutaux ou comme parias dans les régions civilisées, la plupart d’entre eux sont amers, violents et solitaires. Ils se laissent facilement aller à la violence, mais ne sont pas maléfiques par nature, ils seraient plutôt Chaotiques Neutres, car l’expérience leur a appris qu’il est inutile de faire quoi que ce soit qui ne leur bénéficie pas directement. Les demi-orques vénèrent les dieux des humains ou des orques parmi lesquels ils vivent. Ceux qui habitent dans les régions humaines optent pour des dieux de la guerre, de la liberté ou de la destruction, ceux qui grandissent dans des tribus orques vénèrent plutôt les dieux du sang, du feu et du fer, en fonction des croyances de leur tribu plutôt que de leurs préférences personnelles. Beaucoup de demi-orques ont des réactions diamétralement opposées vis-à-vis de la religion : soit ils l’ignorent complètement, soit ils s’y impliquent corps et âme et cherchent à comprendre le sens d’une vie de haine et d’incompréhension. Même un lanceur de sorts divins demiorque peut éprouver de la colère envers sa religion.<br /><br /><b>Aventuriers.</b> Beaucoup de demi-orques, farouchement indépendants, mènent une vie d’aventurier par nécessité, pour échapper à un passé douloureux ou améliorer leur sort à la force de leurs bras. D’autres, plus optimistes ou poussés par un besoin d’acceptation désespéré, endossent le rôle de croisé pour prouver leur valeur au monde entier. Les demi-orques élevés dans les sociétés orques adoptent souvent les coutumes brutales de ceux qui les entourent et deviennent des guerriers, des barbares ou des rôdeurs. Les demi-orques qui survivent à leur entraînement de chaman ont une chance de succéder à leur maître, sinon, ils fuient leur tribu et pratiquent leur magie en tant que parias ou explorateurs.<br /><br />Les demi-orques ont autant de chances que les autres de donner naissance à des enfants doués d’un talent inné pour la sorcellerie, les lignages les plus courants étant abyssal, voué à un grand destin et élémentaire du feu. Les demiorques sont passionnés par l’alchimie et n’importe quelle tribu comprend l’utilité de cet art en voyant son pouvoir de destruction. Les alchimistes demi-orques se considèrent comme des expériences vivantes, au point d’essayer de séparer leurs moitiés orque et humaine. D’autres utilisent leurs pouvoirs pour décupler leurs aptitudes physiques et améliorer leur statut au sein des communautés orques.<br /><br />Dans les sociétés humaines, les demi-orques ont quelques options supplémentaires. Beaucoup optent pour la facilité et tirent parti de leur force en travaillant comme mercenaires ou gardes de caravane. Le crime est aussi un choix évident, car les rois de la pègre sont toujours en quête de gros bras. Les prêtres demi-orques sont rares dans les communautés humaines et les demi-orques les plus religieux se tournent souvent (quand on ne les y pousse pas...) vers les aspects martiaux de la religion et deviennent paladins ou inquisiteurs. Ils n’ont généralement ni la patience ni l’argent nécessaire pour devenir magiciens.<br /><br /><b>Noms masculins.</b> Ausk, Davor, Hakak, Kizziar, Makoa, Nesteruk, Tsadok.<br />
+<b>Noms féminins.</b> Canan, Droghéda, Goruza, Mazon, Shirish, Tévaga, Zeljka.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste"><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20joueurs%20(Races%20et%20classes).ashx#8" title="FAQ du Manuel des joueurs, section races et classes">→</a> Demi-elfe ou demi-orque : Est-ce qu’un personnage de l’une de ces deux races peut choisir les archétypes raciaux humains (comme ceux du Manuel des races) ?</i></b><br /><br />Oui. Les <u><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">demis-elfes</a></u> et les <u><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">demis-orques</a></u> peuvent choisir des options de classe de prédilection, des archétypes, des traits, etc, comme s’ils étaient des membres à part entière des deux races (un demi-elfe peut choisir les éléments de règles réservés aux <a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">elfes</a> et aux humains, un demi-orque peut choisir les éléments de règles réservés aux humains et aux <a class="pagelink" href="Pathfinder-RPG.Orque.ashx" title="Orque">orques</a>).<br /><br />Mise à jour 26/9/2013 : Ceci est une inversion d’une ancienne règle. Cela résout une divergence entre cette FAQ et les deux FAQ du Manuel des races.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div>
+<ul><li><b>+2 à une valeur de caractéristique.</b> Lors de leur création, les demi-orques gagnent un bonus de +2 à la valeur de <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a> de leur choix, afin de représenter leur diversité.</li><li><b>Taille moyenne.</b> Les demi-orques sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni malus ni bonus liés à la taille.</li><li><b>Vitesse normale.</b> Les demi-orques ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres.</li><li><b>Vision dans le noir.</b> Les demi-orques <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Intimidant.</b> Les demi-orques reçoivent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> en raison de leur nature féroce.</li><li><b>Sang orque.</b> Les demi-orques comptent comme des <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orques</a> et comme des <a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">humains</a> quand il s’agit de déterminer un effet lié à la race.</li><li><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FEROCITEORQUE" href="#FEROCITEORQUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><b>Férocité orque.</b> Une fois par jour, quand un demi-orque tombe à moins de 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">pv</a> mais ne meurt pas, il peut continuer à se battre pendant 1 round, comme s’il était <a class="pagelink" href="Pathfinder-RPG.hors%20de%20combat.ashx" title="Hors de combat">hors de combat</a>. À la fin de son prochain tour, il tombe <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> et devient <a class="pagelink" href="Pathfinder-RPG.mourant.ashx" title="Mourant">mourant</a>, à moins que ses points de vie ne repassent au-dessus de 0.</li><li><b>Armes familières.</b> Les demi-orques sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.Grande%20hache%20(arme).ashx" title="Grande hache">grandes haches</a> et des <a class="pagelink" href="Pathfinder-RPG.Cimeterre%20%c3%a0%20deux%20mains%20(arme).ashx" title="Cimeterre à deux mains">cimeterres à deux mains</a>. Ils considèrent toute arme qui porte la mention « orque » dans son nom comme une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a>.</li><li><b>Langues.</b> Les demi-orques commencent le jeu en parlant le commun et l’orque. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues tirées de la liste suivante : abyssal, draconique, géant, gnoll et gobelin.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>En termes de culture et d’environnement, les demi-orques présentent un éventail aussi varié que les <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humains</a> et les <a class="pagelink" href="Pathfinder-RPG.orque.ashx" title="Orque">orques</a>. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux demi-orques standard mais consultez d’abord votre MJ. Un demi-orque peut aussi choisir le trait racial alternatif <a class="pagelink" href="Pathfinder-RPG.orque%20(race).ashx#Traits_raciaux_alternatifs_8" title="Les orques">crasseux</a> (voir page 313) au lieu de férocité orque.<br /><br /><u><i>Remplace « armes familières » :</i></u>
+<ul><li><b>Élevé en ville.</b> Les demi-orques qui possèdent ce trait savent peu de choses sur leurs ancêtres orques, car ils ont été élevés par des humains et des demi-orques dans une grande ville. Ils sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.fouet%20(arme).ashx" title="Fouet">fouets</a> et des <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20longue%20(arme).ashx" title="Épée longue">épées longues</a> et reçoivent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances (folklore local)</a>. Ce trait remplace armes familières.</li><li><b>Maître des chaînes.</b> Certains demi-orques ont fui l’esclavage et ont reforgé les chaînes qui les emprisonnaient pour en faire des armes mortelles. Ceux qui possèdent ce trait racial sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.Fl%c3%a9au%20darmes%20l%c3%a9ger%20(arme).ashx" title="Fléau d&#39;armes léger">fléaux d’armes</a> et des <a class="pagelink" href="Pathfinder-RPG.fl%c3%a9au%20darmes%20lourd%20(arme).ashx" title="Fléau d&#39;armes lourd">fléaux d’armes lourds</a> et considèrent les <a class="pagelink" href="Pathfinder-RPG.Fl%c3%a9au%20double%20(arme).ashx" title="Fléau double">fléaux doubles</a> et les <a class="pagelink" href="Pathfinder-RPG.Cha%c3%aene%20clout%c3%a9e%20(arme).ashx" title="Chaîne cloutée">chaînes cloutées</a> comme des <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">armes de guerre</a>. Ce trait remplace armes familières.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Paria.</b> Bien que de nombreuses cultures discriminent les demi-orques, dans certaines, particulièrement les communautés <a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">naines</a>, les demi-orques sont de véritables parias. Il va sans dire que de telles cultures ne permettent pas aux demi-orques de s'entraîner avec les armes traditionnelles orques. Les rares demi-orques qui survivent jusqu'à l'âge adulte dans de tels climats sociaux sont profondément marqués par leur traitement abusif et ont du mal à exprimer et comprendre les émotions normales. Ces demi-orques bénéficient d'un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets d'<a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">émotion</a> et de <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">peur</a> mais subissent un malus de -2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. Ce trait racial remplace armes familières.</li></ul>
+<u><i>Remplace « armes familières » et « férocité orque » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Élevé par des humains.</b> Certains demi-orque élevés par des humains n'ont pas la férocité et l'entraînement martial de leurs cousins, mais intègrent une partie des talents de leurs parents humains. Ils obtiennent le trait racial <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a> compétent. Ce trait racial remplace armes familières et férocité orque.</li></ul>
+<u><i>Remplace « armes familières », « férocité orque » et « intimidant » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Génie négligé.</b> Certains demi-orques se jouent des stéréotypes brutaux de leur race, ce qui entraîne les autres à sous-estimer leur intelligence et leur sens de l'organisation. De tels demi-orques bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. Ce bonus passe à +4 contre les autres <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a>. Ils bénéficient également d'un bonus racial de +2 aux tests de Bluff pour feindre l'ignorance et aux tests de Psychologie pour intercepter les messages secrets, bonus qui se cumule à ceux décrits plus haut. Ce trait racial remplace armes familières, férocité orque et intimidant.</li></ul>
+<u><i>Remplace « férocité orque » :</i></u>
+<ul><li><b>Bestial.</b> Le sang orque de certains demi-orques se traduit par des traits orques particulièrement prononcés qui renforcent leur aspect bestial, mais améliorent leurs sens, déjà aiguisés. Ils gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>. Ce trait remplace férocité orque.</li><li><b>Enfonceur de porte.</b> Beaucoup de demi-orques adorent se livrer à des actes de destruction gratuite. Ceux qui possèdent ce trait gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> pour <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#DESTRUCTIONOBJET" title="L&#39;exploration">casser un objet</a> et aux tests de manœuvre offensive de <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres offensives">destruction</a>. Ce trait remplace férocité orque.</li><li><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20joueurs%20-%20R%c3%a8gles%20avanc%c3%a9es.ashx#24" title="FAQ du Manuel des joueurs - Règles avancées">→</a> Demi-orque, Grandes dents : Ce trait racial alternatif se cumule-t-il avec le don Crocs acérés (page 161) pour accorder deux attaques de morsure ?</i></b><br/><br/>C'est l'un des moments où nous avons essayé d'atteindre la même idée de plusieurs façons non-coordonnées. Dans <u><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">ce cas</a></u>, la réponse est non, à moins que le personnage ne réussisse à obtenir une bouche supplémentaire. En règle générale, les armes naturelles ne peuvent être utilisées qu'une seule fois par round chacune. Ceci s'applique également au pouvoir de rage du barbare <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20de%20rage.ashx#FUREURANIMALE" title="Les pouvoirs de rage du barbare">fureur animale</a> (<i>Manuel des joueurs</i>, page 33).
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div><b>Grandes dents.</b> Les défenses de certains demi-orques sont si grandes et si aiguisées qu’elles leur donnent une attaque de morsure. Il s'agit d'une <a class="pagelink" href="Pathfinder-RPG.Attaques%20naturelles%20(capacit%c3%a9).ashx" title="Attaques naturelles">attaque naturelle</a> primaire qui inflige 1d4 points de dégâts perforants. Ce trait remplace férocité orque.</li><li><b>Maître des bêtes.</b> Certains demi-orques ont une affinité spirituelle avec des bêtes fantastiques. Ils les capturent pour le sport ou vivent et chassent avec elles. Ceux qui possèdent ce trait racial considèrent les <a class="pagelink" href="Pathfinder-RPG.Fouet%20(arme).ashx" title="Fouet">fouets</a> et les <a class="pagelink" href="Pathfinder-RPG.Filet%20(arme).ashx" title="Filet">filets</a> comme des <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">armes de guerre</a> et gagnent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a>. Ce trait remplace férocité orque.</li><li><b>Tatouage sacré.</b> Beaucoup de demi-orques ornent leur corps de tatouages, de piercings et de scarifications rituelles qu’ils considèrent comme des marques sacrées. Les demi-orques qui possèdent ce trait racial gagnent un bonus de chance de +1 à tous les <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a>. Ce trait remplace férocité orque.</li><li><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20races.ashx#3" title="FAQ du Manuel des races">→</a> Demi-orque, Vision dans le noir développée : Puis-je sélectionner ce trait racial si l'un de mes traits raciaux remplace vision dans le noir ?</i></b><br/><br/><br/>Non. Le personnage doit posséder le trait racial vision dans le noir pour pouvoir sélectionner le trait racial <u><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx#VISIONDANSLENOIRDEVELOPEE" title="Les demi-orques">vision dans le noir développée</a></u>.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div><b>Vision dans le noir développée.</b> Certains demi-orques voient particulièrement bien dans le noir et leur vision s’étend à 27 mètres (18 <abbr title="cases">c</abbr>). Ce trait remplace férocité orque.</li></ul>
+<u><i>Remplace « férocité orque » et « intimidant » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Né dans la maladie.</b> Les demi-orques sont parfois forcés de vivre dans les recoins sales et nauséabonds de la société, où ils développent une certaine résistance contre toutes sortes de maladies. Les demi-orques disposant de ce trait racial gagnent un bonus racial de +2 aux jets de sauvegarde contre les <a class="pagelink" href="Pathfinder-RPG.maladies.ashx" title="Les maladies">maladies</a>, les <a class="pagelink" href="Pathfinder-RPG.Poisons.ashx" title="Les poisons  ">poisons ingérés</a> et les effets qui rendent <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a> ou <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreux</a>. Ce trait racial remplace intimidant et férocité orque.</li></ul>
+<u><i>Remplace « férocité orque », « intimidant » et « sang orque » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Atavisme orque.</b> Certains demi-orques ont un sang orque plus puissant que leur sang humain. De tels demi-orques comptent à la fois comme des demi-orques et des <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orques</a> dans le cadre des effets dépendant de la race. Ils bénéficient d'un bonus de +2 à la <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> mais subissent un malus de -2 à une caractéristique mental de leur choix. Enfin, ils obtiennent la règle de monstre universelle <a class="pagelink" href="Pathfinder-RPG.F%c3%a9rocit%c3%a9%20(capacit%c3%a9).ashx" title="Férocité (Ext)">férocité</a>. Ce trait racial remplace les modificateurs habituels des demi-orques aux caractéristiques, ainsi que les traits raciaux férocité orque, intimidant et sang orque.</li></ul>
+<u><i>Remplace « férocité orque » et « vision dans le noir » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Chef de guerre.</b> Certains orques recherchent des partenaires humains dans l'espoir de mettre au monde des chefs intelligents pour leurs interminables efforts de guerre. Lorsque la nature et la chance sourient à leur entreprise et qu'un demi-orque se montre rusé, cet enfant est élevé avec de nombreuses et pénibles opportunités d'apprendre comment diriger au mieux sur un champ de bataille. De tels demi-orques bénéficient d'un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (soldat) ainsi qu'à leur valeur de prestige (dans le cadre du don <a class="pagelink" href="Pathfinder-RPG.Prestige.ashx" title="Prestige">Prestige</a>). Les armées qu'ils contrôlent en <a class="pagelink" href="Pathfinder-RPG.combat%20de%20masse.ashx" title="Le combat de masse">combat de masse</a> bénéficient d'un bonus de +1 au Moral. Ce trait racial remplace férocité orque et vision dans le noir.</li></ul>
+<u><i>Remplace « intimidant » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Attention divisée.</b> Les demi-orques doivent apprendre à diviser leur attention entre plusieurs menaces pour rester en vie, car les humains aussi bien que les orques tentent de les remettre à leur place. Ces demi-orques bénéficient d'un bonus d'esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les adversaires qui les <a class="pagelink" href="Pathfinder-RPG.prise%20en%20tenaille.ashx" title="prise en tenaille">prennent en tenaille</a>. Ce trait racial remplace férocité orque et intimidant.</li><li><b>Apprenti du chaman.</b> Seuls les demi-orques les plus robustes survivent aux années de rude traitement qui accompagnent la formation de chaman. Ceux qui possèdent ce trait gagnent <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a> comme don supplémentaire. Ce trait remplace intimidant.</li><li><b>Créature des cavernes.</b> Certains demi-orques vivent loin sous la surface et cherchent la liberté dans le dédale des grottes. Ceux qui possèdent ce trait racial reçoivent un bonus racial de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances (exploration souterraine)</a> et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> quand ils se trouvent sous terre. Ce trait remplace intimidant.</li><li><b>Récupérateur.</b> Certains demi-orques survivent en fouillant dans les tas d’ordures et apprennent à trier les rares éléments utilisables. Les demi-orques qui possèdent ce trait gagnent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> et de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> pour trouver des objets cachés (y compris des pièges et des portes dérobées), pour déterminer si un aliment est consommable ou pour identifier une <a class="pagelink" href="Pathfinder-RPG.Potions%20magiques.ashx" title="Les potions magiques">potion</a> au goût. Ce trait remplace intimidant.</li><li><b>Varappeur.</b> Les demi-orques des régions montagneuses sont d’excellents varappeurs et il leur arrive de tendre une embuscade à leur proie en lui sautant dessus depuis une hauteur. Ceux qui possèdent ce trait gagnent un bonus racial de +1 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> et d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a>. Ce trait remplace intimidant.</li></ul>
+<u><i>Remplace « vision dans le noir » :</i></u>
+<ul><li><b>Arpenteur des forêts.</b> Ces demi-orques se sentent chez eux dans les forêts et les jungles et se sont adaptés à ce type d’environnement. Ceux qui possèdent ce trait racial ont la <a class="pagelink" href="Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx" title="Vision nocturne (Ext)">vision nocturne</a> et un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a>. Ce trait remplace vision dans le noir.</li><li><b>Compétent.</b> Les demi-orques de deuxième ou troisième génération privilégient souvent leur héritage humain plutôt qu’orque. Ceux qui possèdent ce trait gagnent 1 <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a> supplémentaire par niveau. Ce trait remplace vision dans le noir.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Pilleur des mers.</b> Dans les Terres des Rois linnormes et les Chaînes, les demi-orques embarquent souvent en tant que pirates, pilleurs et pêcheurs, où ils sont connus pour être des combattants tenaces. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (marin) et aux tests d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> pour réparer des bateaux, ainsi que d'un bonus racial de +1 aux <a class="pagelink" href="Pathfinder-RPG.Valeurs%20de%20combat.ashx#DEGATS" title="Valeurs de combat">jets de dégâts</a> contre les adversaires et les objets dans ou sur l'eau. Ce trait racial remplace vision dans le noir.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race demi-orque ou une variante raciale, comme suit.
+<ul><li><b>Clan montagnard.</b> Les demi-orques des régions montagneuses sont plus vifs et plus sensibles aux échos de leur foyer. Ils ont les traits raciaux bestial et varappeur.</li><li><b>Élevé pour les combats d’arène.</b> Beaucoup de demi-orques naissent et grandissent uniquement pour se battre dans les arènes. Ils ont souvent deux parents demi-orques ou un parent demi-orque et un parent humain. Ils perdent une partie de l’apparence bestiale de leurs ancêtres orques et semblent plus humains. Ils ont les traits raciaux alternatifs élevé en ville et compétent.</li><li><b>Mystique.</b> Les chamans orques sont des maîtres violents qui tuent ou mutilent parfois leurs élèves les plus prometteurs pour se débarrasser de rivaux potentiels. Les demi-orques qui parviennent à survivre aux années d’abus de leur maître sont profondément marqués par cette expérience dont ils gardent les cicatrices. Les apprentis chamans apprennent rapidement que la ruse et la chance représentent leurs meilleures chances de survie. Ils ont les traits raciaux apprenti du chaman et tatouage sacré.</li><li><b>Originaire des profondeurs.</b> Certains demi-orques descendent de clans restés dans les ténèbres éternelles qui règnent sous la surface. Ils sont plus petits que ceux issus d’orques de la surface et se sentent plus à l’aise sous terre. Ils ont les traits raciaux alternatifs vision dans le noir développée et créature des cavernes.</li><li><b>Sauvage.</b> Il est rare que les demi-orques abandonnés dans la nature alors qu’ils ne sont que des nouveau-nés ou de petits enfants parviennent à survivre, mais certains y arrivent. Ces enfants sauvages sont assez robustes pour survivre, mais ignorent tout de la civilisation. Les demi-orques sauvages ont les traits raciaux alternatifs arpenteur des forêts et grandes dents.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers demi-orques.</b> Grâce à leur carrure puissante, les demi-orques font d’excellents combattants, qu’il s’agisse de barbares maniant la hache, de soldats portant les cicatrices de leurs combats passés ou d’assassins au regard froid. Même ceux qui appartiennent à une classe magique savent généralement comment verser le sang.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les demi-orques occultes.</b> Les pouvoirs essentiellement créés par l’esprit peuvent paraître inadaptés dans le cas des demi-orques ; c’est du moins ce que pense la plupart des gens vis-à-vis de leurs capacités. Certains demi-orques développent pourtant certains pouvoirs psychiques qu’ils héritent le plus souvent d’un parent humain. Quand le sang orque contribue à leur talent psychique, il permet généralement le développement des aptitudes de cinétiste.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste ajoute +1/2 aux dégâts de sa <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe</a>. <br />
+Les demi-orques élevés par leurs parents monstrueux ne s’intéressent généralement guère aux études mais un nombre impressionnant d’entre eux se tournent vers l’alchimie, attirés par le potentiel destructif des bombes, des poisons et des mutagènes.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Gain d’un bonus de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> de +1 quand il subit des dégâts lors d’une incantation.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Le barbare gagne un round de <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGEDEBERSERKER" title="Le barbare">rage</a> supplémentaire par jour.<br />
+Les barbares demi-orques sont des champions légendaires, des machines de guerre imparables qui contribuent à renforcer la mauvaise réputation qu’a leur race à travers le monde (une réputation qui, selon les points de vue, tourne à leur avantage ou à leur désavantage). Leur soif de bataille et leur aptitude à puiser dans la fureur bestiale de leur héritage orque leur suffisent amplement pour mériter une place dans la plupart des groupes d’aventuriers.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde gagne un round de <a class="pagelink" href="Pathfinder-RPG.Barde.ashx#REPRESENTATIONBARDIQUE" title="Le barde">représentation bardique</a> supplémentaire par jour.<br />
+Les demi-orques qui tentent de combattre les préjugés raciaux des races civilisées utilisent parfois les représentations, la diplomatie et l’érudition pour se comporter de manière distinguée et pour améliorer la réputation des autres demi-orques au sein de leur communauté ou de la société en général.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Gain d’un bonus de +1/3 sur les jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> lors de l’<a class="pagelink" href="Pathfinder-RPG.exploits%20(bretteur).ashx" title="Les exploits du bretteur">exploit attaque précise</a>, avec un maximum de +5. Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a> et les autres effets similaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Ajout d’un sort de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">liste de prêtre</a> ne se trouvant pas sur la liste du chaman à la liste des sorts connus de celui-ci. Ce sort doit être d’au moins un niveau de moins que le sort de plus haut niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> gagne 1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a>. Si le chasseur le remplace, le nouveau compagnon bénéficie aussi de ce bonus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> La <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#MONTURE" title="Le chevalier">monture</a> du chevalier gagne 1 pv. S’il en change, la nouvelle gagne aussi ces points de vie supplémentaires.<br />
+Les demi-orques se heurtent souvent aux préjugés lorsqu’ils tentent de se faire accepter au sein des maisons nobles ou des ordres de chevalerie des humains, mais leur stature physique et leurs capacités martiales incitent parfois ceux qui voudraient les rejeter à reconsidérer leur point de vue. Dans les sociétés orques, les chevaliers font souvent fonction de porte-étendards au service de seigneurs de guerre.<br /><br /><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><u>Ce texte a été modifié suite à la FAQ suivante :</u><br /><br /><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Aventures%20occultes.ashx#1" title="FAQ d&#39;Aventures occultes">→</a> Bonus de classe de prédilection de cinétiste et bouillonnement élémentaire : Le bonus de classe de prédilection des elfes mentionne qu’il s’applique lorsque le bouillonnement élémentaire s’applique, mais celui des demi-orques et des nains ne le précisent pas. Devrait-ils aussi ne s’appliquer que quand le bouillonnement élémentaire s’applique ?</i></b><br /><br />Oui, ils devraient <u><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">tous</a></u> <u><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">deux</a></u> ne s’appliquer que lorsque le <a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx#BOUILLONNEMENTELEMENTAIRE" title="Le cinétiste">bouillonnement élémentaire</a> s’applique, comme pour le bonus de classe de prédilection des <a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">elfes</a>. Cela sera reflété dans le prochain errata.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> le personnage inflige 1/3 point de dégâts de feu supplémentaires aux <a class="pagelink" href="Pathfinder-RPG.talents%20sauvages.ashx#TALENTSSAUVAGES" title="Les talents sauvages du cinétiste">explosions de feu</a> qui infligent des dégâts de feu et qui bénéficient du bonus conféré par l’aptitude de <a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx#BOUILLONNEMENTÉLÉMENTAIRE" title="Le cinétiste">bouillonnement élémentaire</a> du cinétiste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> L’<a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;eidolon du conjurateur">eidolon</a> du conjurateur gagne 1 pv.<br />
+Les demi-orques sont souvent des exclus. Bon nombre d’entre eux se tournent vers la carrière de conjurateur dans l’espoir de façonner des êtres qui seront parfaitement loyaux et amicaux envers eux. Les demi-orques conjurateur qui habitent les territoires des orques créent plutôt des eidolons qui sont aussi grands et menaçants que possible.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Quand le druide utilise <a class="pagelink" href="Pathfinder-RPG.Druide.ashx#FORMEANIMALE" title="Le druide">forme animale</a>, il gagne +1/3 bonus à l’armure naturelle.<br />
+Les druides demi-orques considèrent souvent le monde naturel comme une source de pouvoirs primitive et sauvage. Ils utilisent le potentiel destructeur des prédateurs et des tempêtes. Nombre d’entre ont choisi le druidisme après avoir été exclus des sociétés humanoïdes et ont ainsi trouvé la paix et l’acceptation parmi les créatures de la nature.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> Gain d’un bonus de +1/3 sur les jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> lors d’un combat étudié, avec un maximum de +5. Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a> et autres effets similaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur ajoute +1/2 point de dégâts à ses sorts du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du feu.<br />
+Les magiciens sont rares dans la société orque mais la sorcellerie possède une simplicité brutale que les <a class="pagelink" href="Pathfinder-RPG.orque.ashx" title="Orque">orques</a> peuvent comprendre et apprécier. Les capacités des demi-orques ensorceleurs en font donc des individus très précieux (et très craints) dans les sociétés orques et humaines.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier gagne un bonus de +2 quand il fait un jet pour se <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#STABLE" title="Blessures et mort">stabiliser</a>.<br />
+De nombreux demi-orques sont choisis pour recevoir un entraînement martial à cause de leur taille et de leur apparence intimidantes. Parmi les autres races, beaucoup supposent que tous les combattants demi-orques chargent en hurlant à la manière d’un barbare mais, en réalité, de nombreux demi-orques préfèrent la discipline, la précision et la versatilité qui caractérisent l’art du guerrier.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> le personnage augmente de 1/2 point les dégâts supplémentaires infligés par son <a class="pagelink" href="Pathfinder-RPG.hypnotiseur.ashx#REGARDDOULOUREUX" title="L&#39;hypnotiseur">regard douloureux</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur ajoute +1/2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> pour identifier une créature.<br />
+Les demi-orques, que de nombreuses races trouvent naturellement intimidants, font d’excellents inquisiteurs. Ils agissent en tant que gardes du corps, hommes de main dans le monde criminel ou encore chasseurs de monstres (traquant même parfois leurs cousins orques).<br /><br /><a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Augmente de +1/2 le bonus au DD de la capacité <a class="pagelink" href="Pathfinder-RPG.Justicier.ashx#IMPERTURBABLE" title="Le justicier">imperturbable</a>.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Ajoute 1/4 au niveau effectif de lutteur pour déterminer les dégâts de ses attaques à mains nues.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien gagne un bonus de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Concentration.ashx" title="Concentration">Concentration</a> qu’il effectue parce qu’il a reçu des dégâts lors de l’incantation d’un sort de magicien.<br />
+Les magiciens sont extrêmement rares dans les sociétés des orques car ceux-ci n’ont qu’un accès très limité (et un intérêt tout aussi limité) aux livres et aux études magiques. On rencontre parfois dans les communautés humaines des magiciens demi-orques qui étudient avec ardeur pour maîtriser des pouvoirs qui pourraient les aider à gagner le respect et le statut qu’ils désirent si désespérément.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le magus ajoute +1/2 point de dégâts à ses sorts du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du feu. <br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> quand il acquiert un <a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#TABOU" title="Le médium">tabou</a>, le médium peut utiliser l’<a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#ACCÈSDEPUISSANCESPIRITUELLE" title="Le médium">accès de puissance spirituelle</a> sans subir d’<a class="pagelink" href="Pathfinder-RPG.m%c3%a9dium.ashx#ESPRIT" title="Le médium">influence</a> 1/4 fois de plus par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine gagne un bonus de +1 à son <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand il résiste à une <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#LUTTE" title="Les manœuvres offensives">lutte</a> et peut faire 1/2 <a class="pagelink" href="Pathfinder-RPG.moine.ashx#COUPETOURDISSANT" title="Le moine">coup étourdissant</a> de plus par jour.<br />
+La plupart des moines demi-orques ont appris leurs savoirs auprès des humains car cette discipline est rare au sein de la société orque. Certains cherchent à surmonter leur nature bestiale en atteignant un équilibre et un contrôle parfaits alors que d’autres veulent seulement écrabouiller des ennemis à mains nues.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> le personnage inflige 1/2 point de dégâts supplémentaires avec ses <a class="pagelink" href="Pathfinder-RPG.occultiste.ashx#POUVOIRSDEFOCALISATION" title="L&#39;occultiste">pouvoirs de focalisation</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> L’oracle connaît un sort de plus issu de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20de%20pr%c3%aatres.ashx" title="Liste des sorts de prêtre/prêtre combattant/oracle">liste des sorts d’oracle</a>. Ce sort doit être au maximum d’un niveau de moins que le sort le plus puissant qu’il connaît. <br />
+Les oracles demi-orques sont des individus férus de mystères et de présages. Il s’agit souvent de prophètes intimidants prédisant malheurs et destruction et tirant leurs pouvoirs des esprits des morts, des puissances de la guerre ou des éléments les plus violents tels que le feu et les tempêtes.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Le paladin ajoute 1/3 à ses jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> quand il utilise <a class="pagelink" href="Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL" title="Le paladin">châtiment du Mal</a> (bonus de +5 au maximum). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br />
+Certaines races considèrent comme ridicule l’idée d’un paladin demi-orque mais, en fait, il n’est pas rare qu’un demi-orque se dévoue à une <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">divinité</a> <a class="pagelink" href="Pathfinder-RPG.alignement.ashx#LB" title="L&#39;alignement">Loyale Bonne</a> et devienne un champion de sa cause pour tenter de redorer son image au sein de la société et prouver sa valeur.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier gagne un bonus de +1/3 aux jets d’attaque quand il fait l’exploit <a class="pagelink" href="Pathfinder-RPG.exploits.ashx#COUPDECROSSE" title="Les exploits du pistolier">coup de crosse</a>. <br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.domaine.ashx" title="domaine">domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de Sagesse. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Au sein de leur communauté, les prêtres demi-orques jouent souvent le rôle de dirigeants spirituels et de liens entre les vivants et les morts. Ils se tiennent toujours prêts tant à prendre soin des autres et à les soigner qu’à rendre la justice divine et à conquérir.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Gain d’un bonus de +2 aux jets pour se <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#STABLE" title="Blessures et mort">stabiliser</a> quand le prêtre combattant est <a class="pagelink" href="Pathfinder-RPG.mourant.ashx" title="Mourant">mourant</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> le personnage bénéficie d’un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.Lancer%20des%20sorts.ashx#TESTCONCENTRATION" title="Lancer des sorts">tests de concentration</a> effectués quand il subit des dégâts lors de l’<a class="pagelink" href="Pathfinder-RPG.Lancer%20des%20sorts.ashx" title="Lancer des sorts">incantation</a> des <a class="pagelink" href="Pathfinder-RPG.Sorts%20de%20psychiste.ashx" title="Liste des sorts de psychiste">sorts de la classe de psychiste</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Ajouter +1 point de vie au <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> du rôdeur. Si le demi-orque remplace son compagnon, le nouveau bénéficie également de ces points de vie supplémentaires.<br />
+Les demi-orques, qui sont souvent contraints de vivre en marge de la société et à se débrouiller par eux-mêmes, font d’excellents chasseurs et éclaireurs. Ils protègent parfois les communautés qui les ont rejetés dans l’espoir de se faire enfin accepter par elles.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard ajoute 1/3 à ses jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> quand il utilise <a class="pagelink" href="Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE" title="Le roublard">attaque sournoise</a> (bonus de +5 au maximum). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br />
+Les demi-orques marginalisés par la société sont souvent obligés d’user de discrétion et de voler pour survivre. Certains trouvent que ce style de vie leur convient et deviennent des bandits, des cambrioleurs, des hommes de main ou des voyous.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Augmente le nombre de rounds de <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#RAGESANGUINE" title="Le sanguin">rage sanguine</a> quotidiens de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Augmente le nombre de rounds quotidiens de <a class="pagelink" href="Pathfinder-RPG.Scalde.ashx#CHANTDERAGE" title="Le scalde">chant de rage</a> de 1.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.Familiers.ashx" title="Les familiers">familier</a> de la sorcière gagne un <a class="pagelink" href="Pathfinder-RPG.Comp%c3%a9tences.ashx#ACQUERIR" title="Les compétences">rang de compétence</a>. Si elle le remplace, le nouveau bénéficie aussi de ces rangs de compétence supplémentaires.<br />
+Les sociétés orques sont très superstitieuses, et de nombreux demi-orques héritent de cette caractéristique. Les sorcières demi-orques des communautés humaines utilisent parfois leurs traits bestiaux pour intimider les autres. Plus encore que les sorcières des autres races, elles suscitent généralement la crainte et la méfiance chez ceux qui voudraient faire appel à leurs pouvoirs. Bon nombre d’entre elles choisissent cette voie pour poursuivre leurs propres buts mystérieux.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> le personnage octroie un point de vie supplémentaire à son <a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Le fantôme du spirite">fantôme</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Gain d’un bonus de +1/3 sur les jets de confirmation de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> lors d’une <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a>, avec un maximum de +5. Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a> et autres effets similaires.
+</td></tr></table><br />
+<h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux demi-orques, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Destructeur.ashx" title="Bénédiction du destructeur">Bénédiction du Destructeur</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a></td><td>Récupère des rounds de rage et des points de vie en réussissant une manoeuvre de destruction</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Dieu%20du%20feu.ashx" title="Bénédiction du Dieu du feu">Bénédiction du Dieu du feu</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, suivant du Dieu du feu</td><td>Récupère des points de vie en infligeant des dégâts de feu à un adversaire</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Boyaux%20dacier.ashx" title="Boyaux dacier">Boyaux d'acier</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>+2 aux Jets de sauvegarde contre les états nauséeux et fiévreux et les poisons ingérés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Briseur%20dobjets.ashx" title="Briseur d&#39;objets">Briseur d'objets</a>*</td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a></td><td>Ignorer 5 points de solidité lorsqu’on brise un objet</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Brute%20r%c3%a9siliente.ashx" title="Brute résiliente">Brute résiliente</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>La moitié des dégâts subits lors d'un coup critique deviennent non-létaux</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Cavalier%20des%20b%c3%aates.ashx" title="Cavalier des bêtes">Cavalier des bêtes</a></td><td><sup>MR</sup></td><td>Capacité de classe <a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx#COMPAGNONANIMAL" title="Le chasseur">compagnon animal</a> ou <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#MONTURE" title="Le chevalier">monture</a>, personnage de niveau 7, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Obtient les services d'un compagnon monstrueux ou d'une monture</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Chanteur%20de%20guerre.ashx" title="Chanteur de guerre">Chanteur de guerre</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, capacité de classe <a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx" title="représentation bardique">représentation bardique</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Améliore les représentations sur les champs de bataille et contre les orques</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Charge%20de%20la%20horde.ashx" title="Charge de la horde">Charge de la horde</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>+2 à l'attaque et aux dégâts lors d'une charge avec un allié</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Combattre%20au-del%c3%a0%20de%20la%20mort.ashx" title="Combattre au-delà de la mort">Combattre au-delà de la mort</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Gagner des points de vie temporaires une fois réduit à 0 point de vie</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Convocations%20f%c3%a9roces.ashx" title="Convocations féroces">Convocations féroces</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Am%c3%a9lioration%20des%20cr%c3%a9atures%20convoqu%c3%a9es.ashx" title="Amélioration des créatures convoquées">Amélioration des créatures convoquées</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx" title="École renforcée">École renforcée</a> (invocation), <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Les créatures convoquées obtiennent la capacité férocité</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Crocs%20ac%c3%a9r%c3%a9s.ashx" title="Crocs acérés">Crocs acérés</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a></td><td>Gagne une attaque de morsure</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Descendance%20pure.ashx" title="Descendance pure">Descendance pure</a></td><td><sup><i>ISR</i></sup></td><td>Deux <a class="pagelink" href="Pathfinder-RPG.Types%20de%20cr%c3%a9atures.ashx" title="Les types et sous type de créatures">sous-types</a>, trait racial sang elfique ou sang orque</td><td>N'est pas considéré comme étant de ses sous-types ou de sa race dans le cadre des effets qui en dépendent</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement%20surprise.ashx" title="Enchaînement surprise">Enchaînement surprise</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, <a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a>+1</td><td>Fait perdre son bonus de Dextérité à la CA de la seconde cible pendant un enchaînement</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Science%20de%20lencha%c3%aenement%20surprise.ashx" title="Science de l&#39;enchaînement surprise">Science de l'enchaînement surprise</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, <a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20puissance.ashx" title="Attaque en puissance">Attaque en puissance</a>, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement.ashx" title="Enchaînement">Enchaînement</a>, <a class="pagelink" href="Pathfinder-RPG.Succession%20dencha%c3%aenements.ashx" title="Succession d&#39;enchaînements">Succession d'enchaînements</a>, <a class="pagelink" href="Pathfinder-RPG.Encha%c3%aenement%20surprise.ashx" title="Enchaînement surprise">Enchaînement surprise</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a>+8</td><td>Fait perdre son bonus de Dextérité à la CA de toutes les cibles pendant un enchaînement</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Fi%c3%a9lon%20sanguinaire.ashx" title="Fiélon sanguinaire">Fiélon sanguinaire</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a></td><td>Récupère des rounds de rage en confirmant ou en subissant des coups critiques</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frisson%20de%20la%20mort.ashx" title="Frisson de la mort">Frisson de la mort</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a></td><td>Récupère des rounds de rage en tuant ou en rendant inconsciente une créature</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Gang%20de%20brutes.ashx" title="Gang de brutes">Gang de brutes</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a></td><td>Les alliés avec ce dont obtiennent un +2 aux tests de BMO lorsque le personnage en rate un</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Initi%c3%a9%20du%20refus%20de%20mourir.ashx" title="Initié du refus de mourir">Initié du refus de mourir</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, <a class="pagelink" href="Pathfinder-RPG.Dur%20%c3%a0%20cuire.ashx" title="Dur à cuire">Dur à cuire</a>, <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6</td><td>Le personnage n’est pas chancelant quand il utilise Dur à cuire ; +2 aux jets de dégâts au corps à corps</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20du%20refus%20de%20mourir.ashx" title="Maître du refus de mourir">Maître du refus de mourir</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 15, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, <a class="pagelink" href="Pathfinder-RPG.Initi%c3%a9%20du%20refus%20de%20mourir.ashx" title="Initié du refus de mourir">Initié du refus de mourir</a>, <a class="pagelink" href="Pathfinder-RPG.Dur%20%c3%a0%20cuire.ashx" title="Dur à cuire">Dur à cuire</a>, <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a>, <a class="pagelink" href="Pathfinder-RPG.Peau%20de%20fer.ashx" title="Peau de fer">Peau de fer</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +9</td><td>Pas de perte de points sous Dur à cuire</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Z%c3%a9lote%20du%20refus%20de%20mourir.ashx" title="Zélote du refus de mourir">Zélote du refus de mourir</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.For.ashx" title="For">For</a> 13, <a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 15, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, <a class="pagelink" href="Pathfinder-RPG.Initi%c3%a9%20du%20refus%20de%20mourir.ashx" title="Initié du refus de mourir">Initié du refus de mourir</a>, <a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20du%20refus%20de%20mourir.ashx" title="Maître du refus de mourir">Maître du refus de mourir</a>, <a class="pagelink" href="Pathfinder-RPG.Dur%20%c3%a0%20cuire.ashx" title="Dur à cuire">Dur à cuire</a>, <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a>, <a class="pagelink" href="Pathfinder-RPG.Peau%20de%20fer.ashx" title="Peau de fer">Peau de fer</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +12</td><td>Les ennemis sont obligés de refaire les attaques de confirmation de coup critique réussies</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Intimidation%20de%20meute.ashx" title="Intimidation de meute">Intimidation de meute</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a>, trait racial intimidant</td><td>+2 aux tests d'Intimidation visant à démoraliser pour chaque allié avec ce don dans un rayon de 9 mètres</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Lutteur%20brutal.ashx" title="Lutteur brutal">Lutteur brutal</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Aide un allier à agripper une créature</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Odorat%20sup%c3%a9rieur.ashx" title="Odorat supérieur">Odorat supérieur</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Gagne la capacité spéciale d’odorat</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Perception%20de%20la%20peur.ashx" title="Perception de la peur">Perception de la peur</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Odorat%20sup%c3%a9rieur.ashx" title="Odorat supérieur">Odorat supérieur</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>+4 aux tests de Perception pour détecter les créatures effrayés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Passer%20pour%20un%20humain.ashx" title="Passer pour un humain">Passer pour un humain</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelin</a> (voir texte)</td><td>+10 aux tests de Déguisement pour ressembler à un humain</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Peau%20de%20fer.ashx" title="Peau de fer">Peau de fer</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13; <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Bonus d’armure naturelle de +1 à la CA</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rage%20amplifi%c3%a9e.ashx" title="Rage amplifiée">Rage amplifiée</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a></td><td>La rage du personnage est plus puissante lorsqu’un allié proche est en rage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rage%20du%20chef%20de%20guerre.ashx" title="Rage du chef de guerre">Rage du chef de guerre</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, alignement non-Loyal</td><td>Les alliés du personnage continuent de profiter des rages mineures obtenues par la proximité avec le personnage à 9 m de distance</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rage%20empathique.ashx" title="Rage empathique">Rage empathique</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, alignement non-Loyal</td><td>Entre dans une rage mineure lorsqu’il est près d’alliés enragés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.R%c3%a9solution%20f%c3%a9roce.ashx" title="Résolution féroce">Résolution féroce</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx#Traits_raciaux_standards_6" title="Les demi-orques">férocité orque</a></td><td>Gain de la capacité férocité</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Survivant%20tenace.ashx" title="Survivant tenace">Survivant tenace</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Con.ashx" title="La Constitution">Con</a> 13, <a class="pagelink" href="Pathfinder-RPG.Dur%20%c3%a0%20cuire.ashx" title="Dur à cuire">Dur à cuire</a>, <a class="pagelink" href="Pathfinder-RPG.Endurance.ashx" title="Endurance">Endurance</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a></td><td>Persiste pour être soigné même après la mort</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.T%c3%a9nacit%c3%a9%20f%c3%a9roce.ashx" title="Ténacité féroce">Ténacité féroce</a>*</td><td><sup>MR</sup></td><td>Trait racial <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx#Traits_raciaux_standards_6" title="Les orques">férocité</a>, <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a></td><td>Dépense des rounds de rage pour absorber des dégâts mortels</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Vengeance%20sanguinaire.ashx" title="Vengeance sanguinaire">Vengeance sanguinaire</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Demi-orque</a> ou <a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">orque</a>, alignement non-Loyal</td><td>Entre dans une rage mineure lorsqu’un allié est tué ou gravement blessé</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classes<a class="headeranchor" id="Archétypes_de_classes_2" href="#Archétypes_de_classes_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx" title="Enragé haineux">Enragé haineux (barbare)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.R%c3%a9dempteur%20(paladin).ashx" title="Rédempteur">Rédempteur (paladin)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Assassin%20secret%20(roublard).ashx" title="Assassin secret">Assassin secret (roublard)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Disciple%20du%20dieu%20sanguinaire%20(conjurateur).ashx" title="Disciple du dieu sanguinaire">Disciple du dieu sanguinaire (conjurateur)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Kit%20de%20d%c3%a9guisement%20orque%20(objet).ashx" title="Kit de déguisement orque">Kit de déguisement orque</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Purulence%20noire%20(objet).ashx" title="Purulence noire (fiole)">Purulence noire (fiole)</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Anneau%20daction%20f%c3%a9roce.ashx" title="Anneau de férocité">Anneau d'action féroce</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cache-%c5%93il%20de%20linfamie.ashx" title="Cache-œil de l&#39;infamie">Cache-œil de l'infamie</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Cape%20dapparence%20humaine.ashx" title="Cape d&#39;apparence humaine">Cape d'apparence humaine</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Corne%20du%20chef%20de%20guerre.ashx" title="Corne du chef de guerre">Corne du chef de guerre</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Grande%20hache%20de%20vitesse.ashx" title="Grande hache de vitesse">Grande hache de vitesse</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Briser%20les%20lignes%20ennemies.ashx" title="Briser les lignes ennemies">Briser les lignes ennemies</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Extraction%20du%20demi-sang.ashx" title="Extraction du demi-sang">Extraction du demi-sang</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.M%c3%a2choire%20f%c3%a9roce.ashx" title="Mâchoire féroce">Mâchoire féroce</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Terreur%20miasmatique.ashx" title="Terreur miasmatique">Terreur miasmatique</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Transe%20guerri%c3%a8re.ashx" title="Transe guerrière">Transe guerrière</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

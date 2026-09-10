@@ -1,0 +1,911 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les gnomes - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="gnome, manuel des joueurs, manuel des races, race, traits raciaux, traits raciaux alternatifs" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gnome.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Gnome&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRk451vYVpR9UQtgBw2e4/5DUixEuM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Gnome">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Gnome">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Gnome">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les gnomes
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG1" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races de base<a class="headeranchor" id="Les_races_de_base_0" href="#Les_races_de_base_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESADDITIONNELLES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESADDITIONNELLES1');" onmouseout="outButton('RACESADDITIONNELLES1');" onclick="expandMenu('RACESADDITIONNELLES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESADDITIONNELLES" title="Les races des personnages">Races additionnelles</a></i></b>
+    <ul ID="RACESADDITIONNELLES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES1');" onmouseout="outButton('RACESEXTRAORDINAIRES1');" onclick="expandMenu('RACESEXTRAORDINAIRES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES1" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES1');" onmouseout="outButton('RACESMONSTRUEUSES1');" onclick="expandMenu('RACESMONSTRUEUSES1');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES1" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+	<li onmouseover="
+document.getElementById('menuraceIMG1').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sous-types_raciaux_0">Sous-types raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_1">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_2">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_3">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_4">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les gnomes sont de lointains cousins des fées et l’histoire dit qu’à une époque, ils vivaient dans leur mystérieux royaume, un endroit où les couleurs sont plus vives, la nature plus sauvage et les émotions plus primitives. Des forces inconnues ont chassé leurs ancêtres de ce monde il y a bien longtemps et les ont obligés à chercher refuge sur Golarion mais, malgré tout, les gnomes n’ont jamais vraiment abandonné leurs racines et ne sont pas tout à fait adaptés à la culture des mortels. Ce ne sont plus vraiment des fées, mais leur héritage transparaît dans leurs pouvoirs magiques innés, leur nature capricieuse et leur vision du monde et de la vie.<br /><br />Les gnomes ont les mêmes soucis et les mêmes motivations que les individus des autres races, mais ils se laissent souvent aller à des désirs et des passions que les autres trouvent, au Gnomes mieux, excentriques, au pire complètement absurdes. Un gnome est capable de risquer sa vie pour goûter la nourriture posée sur la table d’un géant, de descendre au fond d’un puits juste parce que ce sera l’endroit le plus profond qu’il n’a jamais atteint ou d’aller raconter une blague à un dragon. Et pour lui, ce sont des objectifs aussi nobles que de chercher à créer un nouveau sort, d’amasser des richesses ou d’éradiquer des forces maléfiques. Ces actes, apparemment impulsifs et irréfléchis, ne sont pas une norme universelle chez les gnomes, mais ils sont assez courants pour que tout le monde considère leur race comme impétueuse et un peu dérangée.<br /><br />Comme les gnomes sont en plus tout petits, qu’ils ont des cheveux aux couleurs éclatantes et qu’ils se moquent de l’opinion des autres races, ces dernières les considèrent comme des êtres étranges. Et les gnomes s’étonnent aussi de l’attitude des autres races civilisées. Les gnomes sont aussi étonnés de voir que les humains et les elfes partagent de nombreux points communs que de remarquer qu’eux présentent beaucoup de différences avec ces deux races. D’ailleurs, les gnomes surprennent souvent leurs alliés en traitant tous ceux qui ne sont pas des gnomes comme une même race générique de non-gnomes.<br /><br /><div class="presentation arrondi">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a>Les gnomes sont des individus excentriques. Commettre des bêtises fait partie de leur mode de vie, ce qui leur permet d’utiliser la dérision pour déclencher l’hilarité et de désarçonner leurs adversaires suffisamment longtemps pour pouvoir leur jouer de drôles de tours. Les gnomes adorent la magie et la musique mais aussi l’artisanat, les mécanismes complexes et le fait de créer des choses de leurs propres mains. Chaque gnome, quelle que soit sa passion, s’y investit corps et âme. Un gnome obsédé et absorbé par un sujet parvient rarement à penser à autre chose, qu’il préfère vivre de nouvelles expériences chez lui ou en parcourant dans le vaste monde.<br /><br />Mus par leur héritage féerique, de nombreux gnomes aiment les endroits sauvages où leurs cousins fées se rassemblent. Cependant, de plus en plus de gnomes quittent ces lieux pour les villes où leur curiosité innée et leur amour de la création les incitent à s’intéresser au commerce, à l’artisanat et aux ateliers où ils peuvent étudier et promouvoir leurs dernières découvertes. Ces gnomes-là possèdent généralement des traits raciaux bien différents de ceux qui ont été élevés au milieu des rochers et des arbres.
+</div><br /><b>Description physique.</b> Les gnomes font partie des races communes les plus petites et ne mesurent généralement pas plus de 90 centimètres. Mais en dépit de leur petite taille, ils sont très résistants et bien moins faibles que ne le croient bon nombre de leurs ennemis. Leur stature réduite les empêche de se déplacer rapidement, mais ils s’entraînent de manière à en tirer parti quand ils affrontent des créatures bien plus grandes qu’eux.<br /><br />La pigmentation des gnomes varie tellement que beaucoup de gens pensent qu’ils utilisent des teintures et des illusions pour changer la couleur de leur peau et de leurs cheveux. Pourtant, même s’ils ne rechignent pas à faire usage des produits cosmétiques (et cherchent parfois à changer leur apparence, juste pour voir à quel point ils ont l’air différent), leurs teintes naturelles couvrent tout le spectre de l’arc-enciel. Leurs cheveux ont souvent des couleurs vives comme l’orange flamboyant des feuilles d’automne, le vert vif d’une forêt au printemps ou les rouges et violets profonds des fleurs sauvages. De même, leur peau va du brun terreux au rose floral et il existe des gnomes à la peau noire, bleu pastel ou même verte. La couleur d’un gnome ne dépend pas de son ascendance, les teintes des parents et de la famille n’ayant aucune influence sur celle du gnome.<br /><br />Les caractéristiques faciales des gnomes sont très variables et leurs proportions correspondent rarement aux normes des autres races humanoïdes. Beaucoup ont des yeux et une bouche disproportionnés, ce qui est déroutant ou époustouflant, selon les individus. D’autres ont des traits minuscules, perdus dans le vide qui constitue le reste de leur visage, et d’autres encore ont une toute petite bouche pincée et un minuscule nez retroussé surmonté d’yeux d’une largeur effarante. Les gnomes sont rarement fiers ou honteux de leur physique, mais les individus des autres races se concentrent souvent sur leur caractéristique la plus remarquable quand ils les insultent ou les flattent.<br /><br /><b>Société.</b> Contrairement à la majorité des races, les gnomes ne possèdent pas de structure sociale classique. Il est très rare de trouver une ville gnome et les royaumes gnomes sont presque inconnus. De plus, les gnomes ne se regroupent pas entre eux dans un même quartier, même quand ils sont nombreux à vivre parmi d’autres races. Il arrive que l’on promulgue des lois qui exigent la création d’un « quartier gnome » pour contrer leur impact potentiel sur la société ou que les pressions sociales poussent tous les non gnomes à déménager à l’écart d’une zone à forte concentration gnome, mais, si on les laisse faire, les gnomes se répartissent de façon homogène dans les sociétés qui le leur permettent.<br /><br />Pourtant, même si les gnomes deviennent des membres ordinaires d’une communauté, ce n’est qu’en tant que groupe, chaque individu étant toujours en mouvement. Ce sont des créatures volages qui voyagent seules ou avec des compagnons temporaires, toujours en quête de nouvelles expériences plus excitantes les unes que les autres. Ils tissent rarement des relations durables, que ce soit avec des gnomes ou avec les membres des autres races, et préfèrent s’adonner à un artisanat, une profession ou une collection avec une passion qui frise le zèle religieux. Quand un gnome s’installe dans une région ou reste longtemps avec un groupe, c’est presque toujours parce que cela lui donne un avantage dans l’exercice de sa vocation ou de son obsession.<br /><br />Même si les gnomes ont un background très varié et n’ont pas de foyer unificateur, ils possèdent certaines caractéristiques culturelles communes. Les hommes sont curieusement attirés par les chapeaux et les couvre-chefs les plus étranges et portent souvent les plus chers et les plus insolites qu’ils puissent s’offrir (et qu’ils peuvent porter sans rencontrer trop de problèmes dans l’exercice de leur métier). Les femmes se couvrent rarement la tête, mais portent fièrement des coiffures élaborées et extravagantes, qui incluent des peignes incrustés de pierreries et des tiares.<br /><br /><b>Relations.</b> Les gnomes ont du mal à interagir avec les autres races, que ce soit sur le plan émotionnel ou physique. Ce qu’ils trouvent étrange chez les autres races, c’est qu’elles les trouvent étranges, eux, ce qui les empêche de trouver un terrain d’entente sur lequel bâtir des relations et une compréhension mutuelle. Quand deux gnomes se rencontrent, ils partent généralement du principe qu’ils peuvent arriver à un accord mutuellement bénéfique, même si leurs croyances et leurs traditions sont très différentes. Et même s’ils n’y parviennent pas, ils continuent à se chercher des points communs. Comme les membres des autres races n’arrivent pas à faire le même effort vis-à-vis des gnomes ou ne veulent pas le faire, ceux-ci sont frustrés ou confus.<br /><br />Ce sont souvent les liens très étroits que les gnomes entretiennent avec un vaste éventail d’idées apparemment sans rapport entre elles qui empêchent les autres races de bâtir de bonnes relations avec eux. Par exemple, l’humour gnome se compose de blagues physiques, de surnoms qui riment, mais n’ont aucun sens et de tentatives visant à convaincre quelqu’un de la véracité d’un mensonge éhonté qui défie toute crédibilité. Les gnomes trouvent tout cela incroyablement drôle, mais les autres races estiment souvent que leurs farces sont méchantes ou dépourvues de sens, ainsi les gnomes considèrent à leur tour les autres comme des géants mornes et ennuyeux.<br /><br />Les gnomes s’entendent relativement bien avec les halfelins et les humains qui, eux au moins, ont un certain humour traditionnel qui ressemble un peu au leur. Ils pensent que les nains et les demi-orques ont besoin d’un peu de légèreté et tentent de la leur apporter avec des farces, des blagues et des histoires invraisemblables que ces races maussades ne comprennent pas. Les gnomes respectent les elfes, mais ils sont frustrés de voir à quel point cette race à la longue espérance de vie est lente à prendre une décision. Pour les gnomes, il vaut toujours mieux agir que rester passif et beaucoup emportent avec eux de quoi travailler sur des projets essentiels pour s’occuper pendant les périodes de repos.<br /><br /><b>Alignement et religion.</b> Les gnomes sont des escrocs impulsifs aux motivations parfois insondables et aux méthodes tout aussi opaques, mais ils ont généralement le coeur bon. Ce qu’un non gnome peut assimiler à un acte maléfique n’est souvent qu’un effort pour faire découvrir de nouvelles expériences à des amis, même si ces expériences sont désagréables. Les gnomes sont sujets aux émotions poignantes et trouvent la paix dans le monde naturel. Ils sont généralement Neutres Bons et préfèrent vénérer les divinités qui privilégient la nature et l’individualisme comme Cayden Cailéan, Desna, Gozreh et Shélyn.<br /><br /><b>Aventuriers.</b> L’amour que les gnomes portent aux voyages, leur immense curiosité et leur désir de maîtriser des compétences et des langues étranges ou ésotériques en font des aventuriers nés. Ils partent souvent en exploration pour découvrir de nouveaux aspects de la vie, car rien n’est plus inattendu que les innombrables dangers qui guettent les aventuriers. Beaucoup de gnomes considèrent les aventures comme le seul objectif digne d’intérêt et cherchent à entreprendre toutes sortes d’expéditions pour le simple plaisir d’y participer. D’autres veulent découvrir des connaissances ou des objets perdus en rapport avec leur vocation et ils sont persuadés qu’ils se trouvent seulement dans les trésors des dragons ou les vieilles ruines, c’est pourquoi des gnomes qui se disent boulangers ou tisserands sont parfois des aventuriers aussi chevronnés que les gens qui se présentent comme mages ou comme éclaireurs.<br /><br />Les gnomes ont une force physique bien inférieure à celle de nombreuses races. Ils considèrent cet aspect comme un simple élément qu’il leur faut prendre en compte. La plupart des aventuriers gnomes compensent par leur penchant pour la sorcellerie ou la musique des bardes, tandis que d’autres se tournent vers l’alchimie ou les armes exotiques pour gagner un léger avantage lors d’un conflit.<br /><br /><b>Noms masculins.</b> Abroshtor, Bastargre, Halungalom, Korlmnite, Poshment, Zarzuket, Zatqualmie.<br />
+<b>Noms féminins.</b> Besh, Fijit, Lini, Majet, Neji, Pai, Queck, Trig.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>, -2 <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>.</b> Les gnomes manquent de force physique, mais sont dotés d’une robustesse étonnante et possèdent une attitude naturellement agréable.</li><li><b>Taille P.</b> Les gnomes sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20P.ashx" title="taille P">taille P</a> et gagnent un bonus de taille de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>, un bonus de taille de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>, un malus de -1 au <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> et au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> et un bonus de taille de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.</li><li><b>Vitesse lente.</b> Les gnomes ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 6 mètres.</li><li><b>Vision nocturne.</b> Les gnomes <a class="pagelink" href="Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx" title="Vision nocturne (Ext)">voient deux fois plus loin</a> que les humains en cas de faible luminosité.</li><li><b>Entraînement défensif.</b> Les gnomes gagnent un bonus d’esquive de +4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les monstres de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20g%c3%a9ant.ashx" title="Géant (sous-type)">géant</a>.</li><li><b>Magie gnome.</b> Les gnomes ajoutent +1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jet de sauvegarde</a> de tous les sorts d’<a class="pagelink" href="Pathfinder-RPG.illusion.ashx" title="Illusion">illusion</a> qu’ils lancent. Les gnomes qui possèdent un <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de 11 ou plus gagnent les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants : 1/jour — <i><a class="pagelink" href="Pathfinder-RPG.communication%20avec%20les%20animaux.ashx" title="Communication avec les animaux">communication avec les animaux</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8res%20dansantes.ashx" title="Lumières dansantes">lumières dansantes</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.prestidigitation.ashx" title="Prestidigitation">prestidigitation</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.son%20imaginaire.ashx" title="Son imaginaire">son imaginaire</a></i>. Le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> de ces effets est égal au niveau de personnage du gnome. Leur DD est égal à 10 + niveau du sort + modificateur de Charisme du gnome.</li><li><b>Haine.</b> Les gnomes reçoivent un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les créatures humanoïdes de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20reptilien.ashx" title="Reptilien (sous-type)">reptilien</a> et <a class="pagelink" href="Pathfinder-RPG.sous-type%20gobelino%c3%afde.ashx" title="Gobelinoïde (sous-type)">gobelinoïde</a> en raison de l’entraînement spécial qu’ils reçoivent contre ces ennemis haïs.</li><li><b>Résistance aux illusions.</b> Les gnomes gagnent un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les sorts et effets d’<a class="pagelink" href="Pathfinder-RPG.illusion.ashx" title="Illusion">illusion</a>.</li><li><b>Sens aiguisés.</b> Les gnomes reçoivent un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.</li><li><b>Obsession.</b> Les gnomes reçoivent un bonus racial de +2 aux tests d’un type d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> ou de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> de leur choix.</li><li><b>Armes familières.</b> Les gnomes considèrent toute arme qui porte la mention « gnome » dans son nom comme une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a>.</li><li><b>Langues.</b> Les gnomes commencent le jeu en parlant le commun, le gnome et le sylvestre. Ceux qui possèdent une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues tirées de la liste suivante : draconique, elfique, géant, gobelin, nain et orque.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>Les gnomes forment une race très diversifiée et très indépendante, c’est pourquoi ils montrent une grande variété au niveau de leurs capacités, de leurs opinions et de leurs styles. Les règles suivantes représentent un échantillon des traits qu’ils manifestent, souvent sans rapport avec leur héritage ou leur entraînement. Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux gnomes standards, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « entraînement défensif » et « haine » :</i></u>
+<ul><li><b>Espoir éternel.</b> Les gnomes perdent rarement espoir et sont toujours persuadés qu’ils finiront par se tirer des situations les plus désespérées. Ceux qui possèdent ce trait racial reçoivent un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les effets de peur et de désespoir. Une fois par jour, après avoir obtenu un 1 sur un d20, le gnome peut refaire son jet et conserver le second résultat. Ce trait remplace entraînement défensif et haine.</li><li><b>Gardien du monde naturel.</b> Les gnomes doivent souvent protéger leur foyer contre des infestations surnaturelles ou pestilentielles. Grâce à leur entraînement spécial, ceux qui possèdent ce trait gagnent un bonus d’esquive à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de +2 contre les <a class="pagelink" href="Pathfinder-RPG.type%20aberration.ashx" title="Aberration">aberrations</a>, les <a class="pagelink" href="Pathfinder-RPG.type%20vase.ashx" title="Vase">vases</a> et les <a class="pagelink" href="Pathfinder-RPG.type%20vermine.ashx" title="Vermine">vermines</a>, ainsi qu'un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre ces mêmes créatures. Ce trait remplace entraînement défensif et haine.</li><li><b>Lié à la terre.</b> Certains gnomes forgent des liens étroits avec un environnement, vestige de leurs origines féeriques. Ils gagnent un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> quand ils se trouvent dans un environnement spécifique choisi dans la liste des <a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx#ENVIRONEMENTDEPREDILECTION" title="Le rôdeur">environnements de prédilection</a> du rôdeur. Il faut faire ce choix à la création du personnage et il est impossible d’en changer par la suite. Ce trait remplace entraînement défensif et haine.</li><li><b>Maître rétameur.</b> Les gnomes font des expériences avec toutes sortes d’objets mécaniques. Ceux qui possèdent ce trait racial gagnent un bonus de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (ingénierie) et de <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a>. On considère qu’ils sont formés au maniement de toutes les armes qu’ils fabriquent eux-mêmes. Ce trait remplace entraînement défensif et haine.</li><li><b>Polyglotte.</b> Les gnomes adorent les langues et ils aiment apprendre toutes celles qu’ils découvrent. Ceux qui possèdent ce trait racial gagnent un bonus de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et apprennent une langue de plus à chaque fois qu’ils investissent un rang en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a>. Ce trait remplace entraînement défensif et haine.</li></ul>
+<u><i>Remplace « entraînement défensif », « haine » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Sale fripouille.</b> Tous les gnomes aiment jouer des tours, mais certains se spécialisent dans ceux qui sont improvisés pendant un combat. Ces gnomes bénéficient d'un bonus racial de +2 aux tests de manœuvre offensive de <a class="pagelink" href="Pathfinder-RPG.sale%20coup.ashx" title="sale coup">sale coup</a>. Ils n'ont pas besoin de remplir la condition d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> pour sélectionner <a class="pagelink" href="Pathfinder-RPG.Expertise%20du%20combat.ashx" title="Expertise du combat">Expertise du combat</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20sale%20coup.ashx" title="Science du sale coup">Science du sale coup</a> ou tout autre don qui inclut Science du sale coup comme condition. Ce trait racial remplace entraînement défensif, haine et sens aiguisés.</li></ul>
+<u><i>Remplace « haine » et « obsession » :</i></u>
+<ul><li><b>Explorateur.</b> Beaucoup de gnomes sont bien plus désireux d’explorer le monde que de se perfectionner dans un talent ou de développer une vocation particulière. Ils gagnent un bonus racial de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> et aux tests avec une unique compétence de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> de leur choix. Ce trait remplace haine et obsession.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Ouvrier.</b> Certains gnomes préfèrent utiliser leur talent naturel avec les mécanismes pour conduire des machines. Ces gnomes bénéficient d'un bonus racial aux tests de <a class="pagelink" href="Pathfinder-RPG.Conduire%20des%20v%c3%a9hicules%20(v%c3%a9hicules).ashx" title="Conduire des véhicules">conduite</a> et aux tests d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> pour construire ou réparer des véhicules. Ce trait racial remplace haine et obsession.</li></ul>
+<u><i>Remplace « magie gnome » :</i></u>
+<ul><li><b>Ignoble magie.</b> Les gnomes ajoutent +1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jet de sauvegarde</a> de leurs sorts de <a class="pagelink" href="Pathfinder-RPG.n%c3%a9cromancie.ashx" title="Nécromancie">nécromancie</a>. Ceux qui possèdent une <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> de 11 ou plus gagnent aussi les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants : 1/jour – <i><a class="pagelink" href="Pathfinder-RPG.contact%20glacial.ashx" title="Contact glacial">contact glacial</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20du%20poison.ashx" title="Détection du poison">détection du poison</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.fatigue.ashx" title="Fatigue">fatigue</a></i> et <a class="pagelink" href="Pathfinder-RPG.sort%20Saignement.ashx" title="Saignement">saignement</a>. Le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> de ces effets est égal au niveau de personnage du gnome et leur DD à 10 + niveau du sort + modificateur de Sagesse du gnome. Ce trait remplace magie gnome.</li><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Magie utilitariste.</b> Certains gnomes développent une magie pratique pour les assister dans leurs projets obsessionels. Ces gnomes ajoutent 1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de tous les <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> autorisés par leurs sorts de <a class="pagelink" href="Pathfinder-RPG.transmutation.ashx" title="Transmutation">transmutation</a>. Si leur valeur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> est de 11 ou plus, ils obtiennent également les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants : 1/jour— <i><a class="pagelink" href="Pathfinder-RPG.manipulation%20%c3%a0%20distance.ashx" title="Manipulation à distance">manipulation à distance</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.ouverturefermeture.ashx" title="Ouverture/fermeture">ouverture/fermeture</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.prestidigitation.ashx" title="Prestidigitation">prestidigitation</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.serviteur%20invisible.ashx" title="Serviteur invisible">serviteur invisible</a></i>. Le DD de ces sorts est égal à 10 + le niveau du sort + le modificateur d'Intelligence du gnome. Ce trait racial remplace magie gnome.</li></ul>
+<u><i>Remplace « magie gnome » et « résistance aux illusions » :</i></u>
+<ul><li><b>Linguiste magique.</b> Les gnomes étudient les langues d’un point de vue ordinaire, mais aussi magique. Ceux qui possèdent ce trait racial gagnent un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> de leurs sorts du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du langage et de ceux qui créent des glyphes, des symboles ou d’autres écrits magiques. Ils gagnent un bonus racial de +2 aux jets de sauvegarde contre ces mêmes sorts. Les gnomes qui possèdent un <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de 11 ou plus gagnent aussi les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants : 1/jour – <i><a class="pagelink" href="Pathfinder-RPG.compr%c3%a9hension%20des%20langages.ashx" title="Compréhension des langages">compréhension des langages</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.lecture%20de%20la%20magie.ashx" title="Lecture de la magie">lecture de la magie</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.message.ashx" title="Message">message</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.signature%20magique.ashx" title="Signature magique">signature magique</a></i>. Le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> de ces effets est égal au niveau de personnage du gnome. Ce trait remplace magie gnome et résistance aux illusions.</li><li><b>Pyromane.</b> On considère que les gnomes qui possèdent ce trait sont d’un niveau de plus que la réalité quand ils lancent des sorts du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du feu, quand ils utilisent des pouvoirs du <a class="pagelink" href="Pathfinder-RPG.domaine%20du%20Feu.ashx" title="Domaine du Feu">domaine du Feu</a>, quand ils utilisent des pouvoirs du <a class="pagelink" href="Pathfinder-RPG.lignage%20%c3%a9l%c3%a9mentaire.ashx" title="Lignage Élémentaire">lignage élémentaire du Feu</a>, quand ils utilisent une révélation du <a class="pagelink" href="Pathfinder-RPG.myst%c3%a8re%20des%20flammes.ashx" title="Mystère des flammes">mystère des flammes</a> ou quand ils déterminent les dégâts d’une <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe d’alchimiste</a> qui inflige des dégâts de feu. Ce trait ne permet pas à un gnome d’accéder plus tôt que prévu à un pouvoir accordé à un niveau donné, il affecte seulement les pouvoirs dont le gnome dispose déjà sans lui. Les gnomes qui possèdent un <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de 11 ou plus gagnent aussi les <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a> suivants : 1/jour – <i><a class="pagelink" href="Pathfinder-RPG.flammes.ashx" title="Flammes">flammes</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.illumination.ashx" title="Illumination">illumination</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8res%20dansantes.ashx" title="Lumières dansantes">lumières dansantes</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.prestidigitation.ashx" title="Prestidigitation">prestidigitation</a></i>. Le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> de ces effets est égal au niveau de personnage du gnome, les <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> sont basés sur le Charisme. Ce trait remplace magie gnome et résistance aux illusions.</li></ul>
+<u><i>Remplace « magie gnome » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Vivace.</b> Certains gnomes conservent une trace de la vitalité du Premier Monde. Ces gnomes récupèrent 50 % plus de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> (minimum 1) chaque fois qu'ils récupèrent des points de vie grâce à un repos. Chaque fois que leurs points de vie sont soignés par un sort, ils sont soignés d'un montant supplémentaire égal à la moitié du <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> du sort (minimum 0). Ces soins bonus ne s'appliquent pas aux sorts qui offrent une <a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9rison%20acc%c3%a9l%c3%a9r%c3%a9e%20(capacit%c3%a9).ashx" title="Guérison accélérée (Ext)">guérison accélérée</a> ou des effets similaires. Ce trait racial remplace magie gnome et sens aiguisés.</li></ul>
+<u><i>Remplace « obsession » :</i></u>
+<ul><li><b>Académicien.</b> Certains gnomes sont plus attirés par les études académiques que les autres. Ceux qui possèdent ce trait gagnent un bonus de +2 à une unique compétence de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>. Ce trait remplace obsession.</li></ul>
+<u><i>Remplace « obsession » et « résistance aux illusions » :</i></u>
+<ul><li><b>Don pour les poisons.</b> Certains gnomes comprennent instinctivement le fonctionnement et l’usage des poisons. Ils gagnent un bonus racial de +2 aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> contre les <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a> et un bonus de +2 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie) pour en fabriquer. Le bonus aux jets de sauvegarde passe à +4 si le gnome s’empoisonne accidentellement en appliquant un poison ou en le préparant. Ce trait remplace résistance aux illusions et obsession.</li></ul>
+<u><i>Remplace « obsession » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Ingéniosité architecturale.</b> Certains gnomes démontrent un talent incroyable pour construire et ajuster des structures. Ces gnomes bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (ingénierie) et aux tests d'<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> et de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> relatifs aux structures (y compris les pièges structuraux). Ce trait racial remplace obsession et sens aiguisés.</li></ul>
+<u><i>Remplace « résistance aux illusions » et « sens aiguisés » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Colon intrépide.</b> Certains gnomes ajoutent au plaisir de vivre en s'installant dans des endroits précaires tels que les épaves de Gogpodda et les cabanes dans les arbres d'Omesta. Ces gnomes intrépides bénéficient d'un bonus racial de +2 aux <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les effets de peur ainsi qu'aux tests d'<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a>, d'<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> et de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a>. Ce trait racial remplace obsession, résistance aux illusions et sens aiguisés.</li></ul>
+<u><i>Remplace « sens aiguisés » et « vision nocturne » :</i></u>
+<ul><li><b>Vision dans le noir.</b> Certaines familles gnomes vivent dans les entrailles de la terre depuis si longtemps qu’elles ont complètement renoncé à la lumière et gagné la <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">vision dans le noir</a> à 18 mètres (12 <abbr title="cases">c</abbr>). Ce trait racial remplace vision nocturne et sens aiguisés.</li></ul>
+<h3 class="separator">Sous-types raciaux<a class="headeranchor" id="Sous-types_raciaux_0" href="#Sous-types_raciaux_0" title="Lien vers cette section">&#0182;</a></h3>Vous pouvez combiner plusieurs traits raciaux alternatifs pour créer une sous-race gnome ou une variante raciale, comme suit.
+<ul><li><b>Gnomes de lave.</b> Les gnomes de lave sont fascinés par la puissance du magma et vivent dans de grandes cavernes au coeur des volcans actifs. Même les autres gnomes les considèrent comme des gens dangereux, instables et colériques. Ils ont les traits alternatifs vision dans le noir et pyromane.</li><li><b>Gnome mécanicien.</b> Parfois, un gnome n’est pas le seul à se laisser obséder par un projet et il arrive que des familles entières se consacrent à un dessein si énorme qu’il faut plusieurs générations d’artisans pour le mener à bien. Ces projets prennent souvent la forme d’objets au mécanisme complexe ou parfois de bâtiments mécaniques entiers. Les gnomes nés dans les familles qui dédient leur vie à ces travaux sont appelés des gnomes mécaniciens. Ils ont les traits alternatifs académicien et maître rétameur.</li><li><b> Gnome sinistre</b>. Les gnomes sinistres sont plus lunatiques, moins indulgents et souvent plus cruels que les autres. Leur lignée descend de souches féeriques inquiétantes et sanguinaires. Ils ne sont pas tous maléfiques, mais ils trouvent tous drôle de voir les autres souffrir et ils se désintéressent des activités joyeuses et colorées de leurs cousins plus enjoués. Les gnomes sinistres ont ignoble magie et don pour les poisons comme traits alternatifs.</li><li><b>Gnome voyageur.</b> Ces gnomes sont nés lors d’un voyage, alors que leur famille vivait dans un chariot ou sur un bateau. Ils ont les traits alternatifs linguiste magique et soit explorateur, soit polyglotte.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les aventuriers gnomes.</b> Les gnomes tirent parti de leur intelligence et de leur force de caractère pour surmonter les obstacles. Même s’ils sont généralement d’humeur joviale et d’un naturel tolérant, ils peuvent rapidement faire preuve de férocité si on les y pousse.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Les gnomes occultes.</b> Les supercheries mentales sont pratiquées de manière naturelle par les gnomes. Leur nature même de gnome les incite à apprécier la magie psychique et ses pratiques obscures et décalées. Chaque classe occulte possède des qualités qui plaisent aux gnomes, que ce soit le don inné des cinétistes pour la magie ou la fascination des occultistes pour les colifichets.<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste ajoute +1/2 au nombre de <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> qu’il peut créer chaque jour.<br />
+L'alchimie est l'une des vocations les plus respectées pour un gnome. En mêlant leur amour pour la magie et leur pratique à la théorie appliquée, cette carrière enveloppe tout un champ d'opportunité quotidienne s'ouvrant sur le domaine de la découverte.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="L&#39;arcaniste">Arcaniste</a>.</b> Ajoute 1/6 au nombre de points que l’arcaniste obtient chaque jour dans son <a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx#RESERVOIRARCANIQUE " title="L&#39;arcaniste"> réservoir arcanique</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Barbare</a>.</b> Le barbare ajoute +1/2 à son <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#SENSDESPIEGES" title="Le barbare">sens des pièges</a>.<br />
+Les barbares gnomes sont généralement associés à ceux ayant vécu depuis longtemps parmi les tribus de fées sauvages que tout aussi bien avec les bêtes féroces du règne animal, étant pour ainsi dire l'incarnation des esprits de la nature.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Barde</a>.</b> Le barde ajoute +1 à son nombre quotidien de rounds de <a class="pagelink" href="Pathfinder-RPG.barde.ashx#REPRESENTATIONBARDIQUE" title="Le barde">représentations bardiques</a>.<br />
+De nombreux gnomes sont des collectionneurs obsessifs d'histoires, de chansons et de blagues ; faisant d'eux des bardes réputés pour leur vaste répertoire, leur énergétique prestation et ainsi que leur tissage de la magie dans leurs performances.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Le bretteur">Bretteur</a>.</b> Chaque jour, le bretteur peut utiliser <a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx#CHARMANTEVIE" title="Le bretteur">charmante vie</a> 1/4 de fois de plus.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Le chaman">Chaman</a>.</b> Gain de 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.Chaman.ashx#MALEFICES" title="Le chaman">maléfice</a> de chaman.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Le chasseur">Chasseur</a>.</b> Confère une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 1/magie au <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> du <a class="pagelink" href="Pathfinder-RPG.chasseur.ashx" title="Le chasseur">chasseur</a>. À chaque fois que le chasseur gagne un niveau, la RD augmente de 1/2 (pour un maximum de RD 10/magie). Si le chasseur remplace son compagnon animal, le nouveau bénéficie de cette RD.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> Le chevalier ajoute 30 centimètres à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> montée, ce qui n’a aucun effet au niveau des options de combat tant qu’il n’a pas choisi cette option à 5 reprises (ou un autre multiple de 5). S’il remplace sa monture, la nouvelle bénéficie aussi de ce bonus.<br />
+Bien que les chevaliers gnomes sont rares, certains d'entre eux prêtent serment sous leur honneur et peuvent ainsi maîtriser un large éventail de tactiques pour défendre le peuple et les terres qu'ils aiment.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le cinétiste">Cinétiste</a>.</b> Le personnage bénéficie d’un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> et <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> effectués contre des créatures dont le <a class="pagelink" href="Pathfinder-RPG.Types%20de%20cr%c3%a9atures.ashx" title="Les types et sous type de créatures">sous-type</a> correspond à l’<a class="pagelink" href="Pathfinder-RPG.cin%c3%a9tiste.ashx#ÉLÉMENTDEPRÉDILECTION" title="Le cinétiste">élément de prédilection</a> du cinétiste.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Conjurateur</a>.</b> Le conjurateur ajoute +1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">pv</a> à son <a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx#EIDOLON" title="Le conjurateur (aussi appelé invocateur)">eidolon</a>.<br />
+Les gnomes, ces bricoleurs invétérés à la créativité sans borne, prennent grand plaisir à concevoir et à façonner leur eidolon. Les serviteurs des conjurateurs gnomes ressemblent souvent à des constructions mécaniques ou à des créatures féeriques.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Druide</a>.</b> Le druide gagne une <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance</a> de 1 contre l’acide, le froid, l’électricité ou le feu. À chaque fois que le druide choisit cette récompense, sa résistance augmente de 1 pour le type d’énergie choisi (avec un maximum de +10 dans chaque type).<br />
+Maintes gnomes sont intimement reliés à la terre et les forêts, revêtant ainsi le manteau druidique afin de rester en étroite communion avec les animaux et les esprits de la nature.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="L&#39;enquêteur">Enquêteur</a>.</b> L’enquêteur ajoute la formule d’un extrait issu de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste de l’enquêteur</a> à son livre de formules. Elle doit être d’au moins un niveau de moins que la formule de plus haut niveau qu’il connaît.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">lignages</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+Les pouvoirs profanes du lignage féerique apparaissent dans de nombreuses familles gnomes, même si on peut également rencontrer d’autres lignages chez les gnomes. La plupart des ensorceleurs gnomes sont acceptés comme des êtres tout à fait normaux au sein de leur société mais ceux qui tirent leurs pouvoirs de sources maléfiques suscitent souvent la méfiance et le mépris.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier gagne un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> quand il résiste à un <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#SALECOUP" title="Les manœuvres offensives">sale coup</a> ou une <a class="pagelink" href="Pathfinder-RPG.Manoeuvres%20offensives.ashx#SUBTILISATION" title="Les manœuvres offensives">subtilisation</a>.<br />
+Les gnomes combattants sont extrêmement tenaces, désireux de prouver que même le plus petit combattant peut être un titan sur le champ de bataille.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="L&#39;hypnotiseur">Hypnotiseur</a>.</b> Le personnage augmente de 1/3 le nombre d'<a class="pagelink" href="Pathfinder-RPG.hypnotiseur.ashx#INDUCTIONSDHYPNOTISEUR" title="L&#39;hypnotiseur">inductions d’hypnotiseur</a> qu’il peut utiliser chaque jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur ajoute un bonus de +1 à ses tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> quand il lance un sort d’inquisiteur.<br />
+Certains gnomes font un jour ou l'autre la rencontre avec l'hostilité du monde extérieur, spécialement celle venant des races impitoyables envers eux. De ce fait, certains choisissent d'enfiler le manteau de l'inquisiteur pour défendre leur peuple et de protéger leurs terres contre les âmes insensibles.<br /><br /><a href="/Wiki/Pathfinder-RPG.LArt de lintrigue (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Ultimate Intrigue/Art de l'intrigue" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoUI.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Justicier.ashx" title="Le justicier">Justicier</a>.</b> Gain d'un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour proférer un mensonge qui serait vrai du point de vue de l'<a class="pagelink" href="Pathfinder-RPG.Justicier.ashx#DOUBLEIDENTITE" title="Le justicier">identité actuelle</a> du justicier.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Le lutteur">Lutteur</a>.</b> Augmente d’1/4 le nombre de fois où le lutteur peut, chaque jour, utiliser <a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx#FLEXIBILITEMARTIALE" title="Le lutteur">flexibilité martiale</a>.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien choisit un pouvoir d’<a class="pagelink" href="Pathfinder-RPG.Magicien.ashx#ECOLEDEMAGIE" title="Le magicien">écoles de magie</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br />
+La longue tradition magique des gnomes les amène souvent à se spécialiser dans les royaumes de l’illusion ou de la magie élémentaire. Les gnomes sont des historiens, des chercheurs et des savants respectés bien déterminés à repousser les limites des possibilités magiques et parvenant bien souvent à réaliser des avancées inédites.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Magus</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.magus.ashx" title="Le magus">magus</a> ajoute l’une des propriétés spéciales suivantes à la liste de celles qu’il peut donner à son arme en utilisant sa <a class="pagelink" href="Pathfinder-RPG.Magus.ashx#RESERVEMAGIQUE" title="Le magus">réserve magique</a> : <i><a class="pagelink" href="Pathfinder-RPG.alliance%20(propri%c3%a9t%c3%a9).ashx" title="alliance (propriété)">d’alliance</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.conductrice%20(propri%c3%a9t%c3%a9).ashx" title="conductrice (propriété)">conductrice</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.corrosive%20(propri%c3%a9t%c3%a9).ashx" title="corrosive (propriété)">corrosive</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.explosion%20corrosive%20(propri%c3%a9t%c3%a9).ashx" title="explosion corrosive (propriété)">d’explosion corrosive</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.encha%c3%aenement%20(propri%c3%a9t%c3%a9).ashx" title="enchaînement (propriété)">d’enchaînement</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.mena%c3%a7ante%20(propri%c3%a9t%c3%a9).ashx" title="menaçante (propriété)">menaçante</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.gardienne%20(propri%c3%a9t%c3%a9).ashx" title="gardienne (propriété)">gardienne</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.mis%c3%a9ricordieuse%20(propri%c3%a9t%c3%a9).ashx" title="miséricordieuse (propriété)">miséricordieuse</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.spectrale%20(propri%c3%a9t%c3%a9).ashx" title="spectrale (propriété)">spectrale</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.vicieuse%20(propri%c3%a9t%c3%a9).ashx" title="vicieuse (propriété)">vicieuse</a></i>. Impossible de changer une propriété obtenue grâce à cette récompense.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Le médium">Médium</a>.</b> Le personnage bénéficie d’un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> et <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> effectués contre les esprits, les <a class="pagelink" href="Pathfinder-RPG.type%20Mort-vivant.ashx" title="Mort-vivant">morts-vivants</a>, les <a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Le fantôme du spirite">fantômes de spirite</a> et les créatures natives du <a class="pagelink" href="Pathfinder-RPG.plans%20%c3%a9sot%c3%a9riques.ashx#PLANASTRAL" title="Plans ésotériques">plan Astral</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine gagne un bonus de +1 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> qu’il peut faire en dépensant un point de <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#RESERVEDEKI" title="Le moine">réserve de ki</a>. Le moine doit être au moins de niveau 5 avant de choisir cette récompense.<br />
+Les gnomes sont des individus hauts en couleurs, passionnés et flamboyants par nature. Ces traits de caractère transparaissent dans leur vision de la perfection physique et naturelle. Bon nombre d’entre eux utilisent donc des styles martiaux imprévisibles qui ressemblent plus à des danses improvisées qu’à des techniques maîtrisées à force de pratique.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="L&#39;occultiste">Occultiste</a>.</b> Le personnage augmente d’une minute la durée de ses <a class="pagelink" href="Pathfinder-RPG.%c3%a9coles%20instrumentales.ashx#ILLUSIONFOCALISATIONDEBASE" title="Écoles instrumentales">chimères mineures</a>. Il augmente également de 2 % les chances de rater engendrées par le <a class="pagelink" href="Pathfinder-RPG.Modificateurs%20de%20combat.ashx#CAMOUFLAGETOTAL" title="Modificateurs de combat">camouflage total</a> de son <a class="pagelink" href="Pathfinder-RPG.%c3%89coles%20instrumentales.ashx#ILLUSIONRESONANCE" title="Écoles instrumentales">pouvoir de résonance de distorsion</a>. Cette option n’augmente pas la limite maximale des chances de rater.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a>.</b> L’oracle ajoute +1/2 à son niveau quand il détermine les effets de sa <a class="pagelink" href="Pathfinder-RPG.Oracle.ashx#MALEDICTIONDELORACLE" title="L&#39;oracle">malédiction d’oracle</a>.<br />
+Les gnomes descendent d’anciens esprits féeriques, ce qui les prédispose naturellement aux dévotions oraculaires, à l’interprétation des signes venant de l’au-delà et à l’écoute des murmures des forces naturelles.
+ 
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Paladin</a>.</b> Le paladin ajoute +1/2 point de vie à son <a class="pagelink" href="Pathfinder-RPG.Paladin.ashx#IMPOSITIONDESMAINS" title="Le paladin">imposition des mains</a>, qu’il l’utilise pour soigner ou pour blesser.<br />
+Les gnomes dotés d’un zèle religieux exceptionnel ou de la passion de protéger ceux qui les entourent deviennent parfois des paladins. La plupart d’entre eux trouvent leur aptitude à parler avec les animaux très utile, à la fois pour communiquer avec leur monture et pour pourchasser les mécréants.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier met 5 minutes de moins (50 minutes de moins au maximum) pour réparer une arme à feu cassée grâce au don <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20%c3%a0%20feu.ashx" title="Création d&#39;armes à feu">Création d’armes à feu</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre ajoute +1/2 point à sa <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canalisation d’énergie</a> quand il soigne des créatures de type <a class="pagelink" href="Pathfinder-RPG.type%20animal.ashx" title="Animal">animal</a>, <a class="pagelink" href="Pathfinder-RPG.type%20f%c3%a9e.ashx" title="Fée">fée</a> ou <a class="pagelink" href="Pathfinder-RPG.type%20plante.ashx" title="Plante">plante</a>.<br />
+Les gnomes deviennent souvent les serviteurs des <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">dieux</a>, en particulier envers les divinités de l'art, de la musique, de l'exploration,  de la découverte, et de la gaieté, témoignant leur ferveur pour la création avec un véritable zèle religieux.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Le prêtre combattant">Prêtre combattant</a>.</b> Ajoute 1/2 au résultat de la <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#CANALISATIONDENERGIE" title="Le prêtre combattant">canalisation d’énergie</a> du prêtre combattant quand il soigne des créatures de type <a class="pagelink" href="Pathfinder-RPG.type%20animal.ashx" title="Animal">animal</a>, <a class="pagelink" href="Pathfinder-RPG.type%20f%c3%a9e.ashx" title="Fée">fée</a> ou <a class="pagelink" href="Pathfinder-RPG.type%20plante.ashx" title="Plante">plante</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Le psychiste">Psychiste</a>.</b> Le personnage augmente de 1/3 point le nombre total de points que contient sa <a class="pagelink" href="Pathfinder-RPG.psychiste.ashx#RESERVEPHRENIQUE" title="Le psychiste">réserve phrénique</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a> du rôdeur gagne une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 1/ magie. Cette RD augmente de +1/2 à chaque fois que le rôdeur choisit de nouveau cette récompense (avec un maximum de RD 10/magie). Si le rôdeur remplace son compagnon animal, le nouveau gagne la même RD que l’ancien.<br />
+Les gnomes qui décident de prendre les armes deviennent le plus souvent des <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a>, ce qui leur permet de tirer parti de la relation innée qui les lie à la nature et de leur capacité à communiquer avec ses créations.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard gagne un bonus de +1/2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> et d’
+<a class="pagelink" href="Pathfinder-RPG.Utilisation%20dObjets%20Magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a> liés aux glyphes, aux symboles, aux parchemins et autres écrits magiques.<br />
+Les roublards gnomes maîtrisent généralement une large variété de compétences. Ils jouent de leur personnalité charismatique dans leurs relations avec les autres et ajoutent même une touche de magie pour améliorer leurs talents lors de la création et de la manipulation de serrures et de pièges.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Le sanguin">Sanguin</a>.</b> Ajoute 1/4 au niveau de classe effectif du sanguin quand il détermine la puissance de ses pouvoirs de <a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx#LIGNAGE" title="Le sanguin">lignage</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Le scalde">Scalde</a>.</b> Bonus de +1 aux tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> pour lancer un sort de scalde.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Règles avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel des joueurs - Règles avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sorcière</a>.</b> La sorcière gagne 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx#MALEFICE" title="La sorcière">maléfice</a>.<br />
+Les gnomes n’hésitent pas à faire appel à des pouvoirs étranges et anciens, ce qui en fait des sorcières étonnamment douées. La plupart des sorcières gnomes adoptent des familiers étranges ou exotiques qui correspondent bien à leur personnalité.<br /><br /><a href="/Wiki/Pathfinder-RPG.Aventures occultes (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Le spirite">Spirite</a>.</b> Le personnage ajoute 1/6 au bonus de bouclier dont il bénéficie quand il est sous l’effet d’une <a class="pagelink" href="Pathfinder-RPG.spirite.ashx#INTERFERENCESPIRITUELLE" title="Le spirite">interférence spirituelle normale</a> ou <a class="pagelink" href="Pathfinder-RPG.spirite.ashx#INTERFERENCESPIRITUELLESUPERIEURE" title="Le spirite">supérieure</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Le tueur">Tueur</a>.</b> Gain de 1/6 d’un nouveau <a class="pagelink" href="Pathfinder-RPG.Tueur.ashx#TALENTDETUEUR" title="Le tueur">talent de tueur</a>.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux gnomes, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_1" href="#Dons_1" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection%20gnome.ashx" title="Arme de prédilection gnome">Arme de prédilection gnome</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, maniement de toutes les armes de guerre</td><td>+1 aux jets d'attaque avec les armes gnomes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Calomnies%20corrosives.ashx" title="Calomnies corrosives">Calomnies corrosives</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx#ENNEMIJURE" title="Le rôdeur">ennemi juré</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Insulte un ennemi juré pour l'énerver</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Crise%20de%20larmes.ashx" title="Crise de larmes">Crise de larmes</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Barbare.ashx#RAGE" title="Le barbare">rage de berserker</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Utilise la compétence Bluff pour feinter pendant une rage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%89chos%20du%20Premier%20Monde.ashx" title="Échos du Premier Monde">Échos du Premier Monde</a></td><td><sup><i>ISR</i></sup></td><td>2 rangs en <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature), sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20gnome.ashx" title="Gnome (sous-type)">gnome</a></td><td>Gain d'une RD 2/fer froid et est considéré comme une fée plutôt qu'un humanoïde à proximité d'alliés avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, 3 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>La CA de l’entraînement défensif passe à +6 contre les géants</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Renversement%20de%20lenfant%20de%20la%20terre.ashx" title="Renversement de l&#39;enfant de la terre">Renversement de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx" title="Science du croc-en-jambe">Science du croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, 6 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>Le personnage peut faire un croc-en-jambe à un géant de taille TG au maximum</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Lien%20de%20lenfant%20de%20la%20terre.ashx" title="Lien de l&#39;enfant de la terre">Lien de l'enfant de la terre</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a> 13, <a class="pagelink" href="Pathfinder-RPG.nain.ashx" title="Les nains">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20de%20lenfant%20de%20la%20terre.ashx" title="École de l&#39;enfant de la terre">École de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Renversement%20de%20lenfant%20de%20la%20terre.ashx" title="Renversement de l&#39;enfant de la terre">Renversement de l'enfant de la terre</a>, <a class="pagelink" href="Pathfinder-RPG.Croc-en-jambe%20sup%c3%a9rieur.ashx" title="Croc-en-jambe supérieur">Croc-en-jambe supérieur</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx" title="Science du croc-en-jambe">Science du croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a>, <a class="pagelink" href="Pathfinder-RPG.Coup%20%c3%a9tourdissant.ashx" title="Coup étourdissant">Coup étourdissant</a>, 9 rangs en <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a></td><td>Le personnage peut faire un croc-en-jambe à un géant de n’importe quelle taille. Il peut décider d’appliquer le Coup étourdissant une fois qu’il sait que l’attaque d’opportunité portée contre un géant qui se relève a touché</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Esprit%20de%20l%c3%a9cole%20de%20magie.ashx" title="Esprit de l&#39;école de magie">Esprit de l'école de magie</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Magicien.ashx#ECOLEDEMAGIE" title="Le magicien">école de magie</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Discours élogieux des sorts de l'école de magie du personnage pour qu'y résister soit plus difficile</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Exp%c3%a9riences%20vari%c3%a9es.ashx" title="Expériences variées">Expériences variées</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a>, <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>; 100 ans ou plus</td><td>+2 sur tous les tests de Connaissances ou de Profession</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Feinte%20subtile.ashx" title="Feinte subtile">Feinte subtile</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.entra%c3%aenement%20aux%20armes.ashx" title="entraînement aux armes">entraînement aux armes</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Augmente la CA au lieu de blesser la cible lors qu'une feinte</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Grande%20haine.ashx" title="Grande haine">Grande haine</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">haine</a></td><td>+1 supplémentaire à l'attaque contre les cibles de la haine du personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Illusion%20mena%c3%a7ante.ashx" title="Illusion menaçante">Illusion menaçante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx" title="École renforcée">École renforcée</a> (illusion), <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Fait croire aux adversaires que les illusions du personnage sont de vraies menaces</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Illusionniste%20amateur.ashx" title="Illusionniste amateur">Illusionniste amateur</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">magie gnome</a></td><td>Bonus aux tests de Bluff, de Déguisement, et d'Escamotage tant que le personnage a des pouvoirs magiques d'illusion inutilisés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Imitation%20des%20semblables.ashx" title="Imitation des semblables">Imitation des semblables</a></td><td><sup><i>ISR</i></sup></td><td>8 rangs en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial magie gnome</td><td>Gain d'un camouflage de 20 % lorsque le personnage est adjacent à un allié avec ce don</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Immense%20haine.ashx" title="Immense haine">Immense haine</a>*</td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">haine</a></td><td>Étend la haine du personnage à deux nouveaux types de créatures</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Invocation%20de%20linstinct%20primal.ashx" title="Invocation de l&#39;instinct primal">Invocation de l'instinct primal</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.forme%20animale.ashx" title="Forme animale">forme animale</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Imite un prédateur ou une proie, effrayant ou paraissant inoffensif pour ceux qui voient le personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Liens%20du%20sang.ashx" title="Liens du sang">Liens du sang</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">lignage d'ensorceleur</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Utilise le Bluff au lieu de la Diplomatie pour influencer des créatures proches du lignage du personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Magie%20gnome%20suppl%c3%a9mentaire.ashx" title="Magie gnome supplémentaire">Magie gnome supplémentaire</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Gain de 3 utilisations quotidiennes supplémentaires des pouvoirs innés de gnome</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20merveilles.ashx" title="Maître des merveilles">Maître des merveilles</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20de%20fer.ashx" title="Volonté de fer">Volonté de fer</a>, membre des Chercheurs de merveilles, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Deux jets pour déterminer les effets d'un sceptre merveilleux</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Prestidigitateur%20gnome.ashx" title="Prestidigitateur gnome">Prestidigitateur gnome</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">magie gnome</a></td><td>Utiliser manipulation à distance' et prestidigitation une fois par jour</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Prisonnier%20sans%20d%c3%a9fense.ashx" title="Prisonnier sans défense">Prisonnier sans défense</a></td><td><sup>MR</sup></td><td>5 rangs en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, 1 rang en <a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Bluff les goeliers pour qu'ils libèrent le personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Proche%20de%20la%20terre.ashx" title="Proche de la terre">Proche de la terre</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">magie gnome</a></td><td>Pouvoir magique permettant de parler avec les animaux fouisseurs</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Question%20d%c3%a9concertante.ashx" title="Question déconcertante">Question déconcertante</a></td><td><sup>MR</sup></td><td>1 rang en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, capacité de classe <a class="pagelink" href="Pathfinder-RPG.r%c3%a9serve%20de%20ki.ashx" title="réserve de ki">réserve de ki</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Pose une question à laquelle on ne peut répondre pour distraire les ennemis</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a9tendue.ashx" title="Résistance étendue">Résistance étendue</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a>, trait racial <a class="pagelink" href="Pathfinder-RPG.Gnome.ashx#Traits_raciaux_standards_6" title="Les gnomes">résistance aux illusions</a></td><td>La résistance aux illusions s'applique à une autre école de magie</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Supercherie%20facile.ashx" title="Supercherie facile">Supercherie facile</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Gnome</a></td><td>Maintenir la concentration des sorts d'illusion est plus facile</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Talent%20magique.ashx" title="Talent magique">Talent magique</a></td><td><sup>MJRA</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 10; <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfe</a>, <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfe</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Lancer un sort de niveau 0 trois par jour comme un pouvoir magique</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif, <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a> ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>, <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées</td><td>Remplace une attaque contre un géant par une tentative de désarmement, de destruction d’arme ou de croc-en-jambe</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9luge%20des%20tonnerres%20jumeaux.ashx" title="Déluge des tonnerres jumeaux">Déluge des tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif; <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20deux%20armes.ashx" title="Science du combat à deux armes">Science du combat à deux armes</a> et <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a>, ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>; <a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées; <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +6</td><td>Possibilité de croc-en-jambe contre un géant de taille TG et +2 points de dégâts contre les géants</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx" title="Maître des tonnerres jumeaux">Maître des tonnerres jumeaux</a>*</td><td><sup>AG</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Nain</a> ou <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a>, trait racial entraînement défensif; <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20deux%20armes.ashx" title="Science du combat à deux armes">Science du combat à deux armes</a> et <a class="pagelink" href="Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx" title="Combat à deux armes">Combat à deux armes</a>, ou capacité de classe <a class="pagelink" href="Pathfinder-RPG.Moine.ashx#DELUGEDECOUPS" title="Le moine">déluge de coups</a>; <a class="pagelink" href="Pathfinder-RPG.Tonnerres%20jumeaux.ashx" title="Tonnerres jumeaux">Tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.D%c3%a9luge%20des%20tonnerres%20jumeaux.ashx" title="Déluge des tonnerres jumeaux">Déluge des tonnerres jumeaux</a>; <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> avec les deux armes utilisées; <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +9</td><td>L’adversaire frappé par les tonnerres jumeaux est secoué</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Trafiquant%20de%20camelote.ashx" title="Trafiquant de camelote">Trafiquant de camelote</a></td><td><sup>MR</sup></td><td>5 rangs en <a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a>, 5 rangs en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnome</a></td><td>Pousse des créatures à échanger des objets précieux contre des babioles</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_2" href="#Archétypes_de_classe_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Fabricant%20de%20pistolets%20exp%c3%a9rimentaux%20(pistolier).ashx" title="Fabricant de pistolets expérimentaux">Fabricant de pistolets expérimentaux (pistolier)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Farceur%20(barde).ashx" title="Farceur">Farceur (barde)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Saboteur%20(alchimiste).ashx" title="Saboteur">Saboteur (alchimiste)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_3" href="#Équipement_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.B%c3%a2ton%20de%20lune%20(objet).ashx" title="Bâton de lune">Bâton de lune</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bouclier%20d%c3%a9sarmant%20(armure).ashx" title="Bouclier désarmant (bois/acier)">Bouclier désarmant en acier</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bouclier%20d%c3%a9sarmant%20(armure).ashx" title="Bouclier désarmant (bois/acier)">Bouclier désarmant en bois</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Carnet%20obsessionnel%20(objet).ashx" title="Carnet obsessionnel">Carnet obsessionnel</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.coutille%20%c3%a0%20scie%20circulaire%20(arme).ashx" title="Coutille à scie circulaire">Coutille à scie circulaire</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9chelle%20de%20guerre%20(arme).ashx" title="Échelle de guerre">Échelle de guerre</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Encens%20antiodeur%20(objet).ashx" title="Encens antiodeur">Encens antiodeur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.fl%c3%a9au%20long%20(arme).ashx" title="Fléau long">Fléau long</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Habits%20de%20dilettante%20(objet).ashx" title="Habits de dilettante">Habits de dilettante</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.javelot-tonnerre%20(arme).ashx" title="Javelot-tonnerre">Javelot-tonnerre</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.lance-flasque%20(arme).ashx" title="Lance-flasque">Lance-flasque</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.masse%20%c3%a0%20piston%20(arme).ashx" title="Masse à piston">Masse à piston</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Masse-yoyo%20gnome%20(arme).ashx" title="Masse-yoyo gnome">Masse-yoyo gnome</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sang%20de%20molosse%20(objet).ashx" title="Sang de molosse">Sang de molosse</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sifflet%20du%20sh%c3%a9rif%20(objet).ashx" title="Sifflet du shérif">Sifflet du shérif</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_4" href="#Objets_magiques_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Amulette%20de%20b%c3%a9n%c3%a9diction%20des%20A%c3%aen%c3%a9s.ashx" title="Amulette de bénédiction des Aînés">Amulette de bénédiction des Aînés</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Anneau%20de%20cr%c3%a9ation%20magique.ashx" title="Anneau de création magique">Anneau de création magique</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Armure%20de%20babioles%20gnome.ashx" title="Armure de babioles gnome">Armure de babioles gnome</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bottes%20d%c3%89vasion.ashx" title="Bottes d’évasion">Bottes d'évasion</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9tonnants%20outils%20dartisanat.ashx" title="Étonnants outils d&#39;artisanat">Étonnants outils d'artisanat</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gemme%20des%20fantasmes.ashx" title="Gemme des fantasmes">Gemme des fantasmes</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Pi%c3%a8ce%20de%20N%c3%a9sa.ashx" title="Pièce-mouchard">Pièce-mouchard</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Jitterbug.ashx" title="Jitterbug">Jitterbug</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.La%20mort%20venue%20den%20bas.ashx" title="La mort venue d&#39;en bas">La mort venue d'en bas</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Objet%20fantomatique%20mineur.ashx" title="Objet fantomatique mineur">Objet fantomatique mineur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Objet%20fantomatique%20majeur.ashx" title="Objet fantomatique majeur">Objet fantomatique majeur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Poison%20illusoire.ashx" title="Poison illusoire">Poison illusoire</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Rechargement%20de%20la%20magie%20inn%c3%a9e.ashx" title="Rechargement de la magie innée">Rechargement de la magie innée</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20lAffadissement.ashx" title="Résistance à l&#39;Affadissement">Résistance à l'Affadissement</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Songe%20mineur.ashx" title="Songe mineur">Songe mineur</a> <i>(MR)</i></li></ul>
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

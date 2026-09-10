@@ -1,0 +1,780 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les drows - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="drows, manuel des races, race" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drow (race).ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Drow+(race)&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkjbFVxR2MzYx64eR2Aaoxb7QkGBI=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Drow (race)">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Drow (race)">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Drow (race)">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les drows
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG2" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races additionnelles<a class="headeranchor" id="Les_races_additionnelles_0" href="#Les_races_additionnelles_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESDEBASE2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESDEBASE2');" onmouseout="outButton('RACESDEBASE2');" onclick="expandMenu('RACESDEBASE2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESDEBASE" title="Les races des personnages">Races de base</a></i></b>
+    <ul ID="RACESDEBASE2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES2');" onmouseout="outButton('RACESEXTRAORDINAIRES2');" onclick="expandMenu('RACESEXTRAORDINAIRES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES2');" onmouseout="outButton('RACESMONSTRUEUSES2');" onclick="expandMenu('RACESMONSTRUEUSES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_0">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_1">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_2">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_3">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Options_de_classe_4">Options de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_5">Sorts</a><br />&nbsp;&nbsp;&nbsp;<a href="#Écologie_10">Écologie</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Drow.ashx" title="Drow">fiche de créature</a> d'un drow standard.</i></b><br /><br />Cruels et malins, les drows sont le sombre reflet de la race des elfes. Aussi appelés les elfes noirs, ils vivent dans les profondeurs de la terre, dans des cités élaborées bâties dans la roche de grottes cyclopéennes. Les drows se manifestent rarement aux habitants de la surface : ils préfèrent rester des légendes tout en poursuivant leurs sinistres projets grâce à des intermédiaires et à des agents. Ils n’ont aucun amour pour d’autres personnes qu’eux-mêmes et sont doués pour manipuler les autres créatures. S’ils ne sont pas nés Mauvais, leur culture et leur société sont profondément empreintes de malice, et les non-conformistes ne survivent pas longtemps. Certaines histoires racontent que, lorsque toutes les conditions sont réunies, un elfe particulièrement haineux peut se transformer en drow, mais pour cela il faut que l’individu concerné éprouve une haine authentique.<br /><br /><b>Description physique.</b> Les drows sont à peu près de taille humaine, mais partagent la même carrure fine et les mêmes traits que les elfes, y compris les mêmes longues oreilles pointues. Leurs yeux n’ont pas de pupilles et sont généralement complètement rouges ou blancs. La peau des drows peut aller du noir charbon au violet foncé. Ils ont souvent les cheveux blancs ou argentés, mais il n’est pas rare de constater certaines variantes.<br /><br /><b>Société.</b> Les drows vivent traditionnellement dans une société de classes matriarcale. Les hommes endossent généralement un rôle martial et défendent leur espèce contre les menaces extérieures, tandis que les femmes assument des positions d’autorité et de commandement. Le fait qu’un drow sur vingt naisse avec des capacités exceptionnelles et soit ainsi considéré comme noble, ainsi que celui que la majorité de ces drows spéciaux soient des femmes, viennent renforcer les rôles de genre. Les maisons nobles définissent la politique drow. Chacune est gouvernée par une matriarche noble et est composée de familles inférieures, d’entreprises commerciales et de compagnies militaires. Chaque maison est également associée à un seigneur-démon protecteur. Les drows sont très motivés par leur propre intérêt et leur évolution sociale, ainsi leur société grouille d’intrigues et de complots politiques, le drow moyen luttant pour s’attirer les faveurs de la noblesse, et la noblesse s’élevant au pouvoir en recourant aux assassinats, à la séduction et à la trahison.<br /><br /><b>Relations.</b> Les drows ont un sens profond de la supériorité raciale et répartissent les non-drows en deux groupes : les esclaves et ceux qui ne le sont pas encore. Néanmoins, dans la pratique, les races qui partagent des inclinations similaires (comme les hobgobelins et les orques) et celles qui se soumettent volontairement peuvent être traitées comme des races de serviteurs et se voir accorder une certaine confiance et une position modeste dans la société drow. D’autres, comme les nains, les gnomes et les halfelins, ne sont bons que pour le fouet. Les drows manipulateurs prennent un malin plaisir à exploiter le caractère faible des humains. S’ils ne se revendiquent aucune parenté avec les fetchelins, les drows manifestent une certaine curiosité pour cette race mystérieuse, toutes deux étant le résultat Drows d’une exposition à des conditions extrêmes et dangereuses. Finalement, la haine que les drows vouent aux elfes les isole des autres races, et les elfes noirs ne souhaitent que la ruine de tout ce qui concerne leurs cousins de la surface.<br /><br /><b>Alignement et religion.</b> Les drows placent le pouvoir et la survie au premier plan, et n’ont aucun problème à assumer les choix odieux qu’ils peuvent être amenés à faire au nom de ces impératifs. Après tout, ils ne se contentent pas de survivre à l’adversité, puisqu’ils peuvent la vaincre. Ils n’ont que faire de la compassion et se montrent impitoyables avec leurs ennemis, qu’ils soient anciens ou contemporains. Les drows conservent certaines caractéristiques elfiques, comme le fait d’être enclins à éprouver de fortes passions, mais ils les canalisent à des fins négatives comme la haine, la vengeance, la soif de pouvoir et la jouissance charnelle brute. De ce fait, la plupart des drows sont d’alignement Chaotique Mauvais. Ils choisissent leurs protecteurs parmi les seigneurs-démons puisqu’ils partagent leurs inclinations pour le pouvoir et la destruction, et ils privilégient également la déesse Lamashtu.<br /><br /><b>Aventuriers.</b> Esclavagistes et conquérants, les drows cherchent à étendre leur territoire et beaucoup veulent raviver de vieilles querelles entre les nations elfes et naines concernant des terres désolées dont l’appartenance est disputée. Les hommes drows privilégient les classes spécialisées dans les pratiques martiales ou la discrétion, afin de se rapprocher de leurs ennemis et de leurs demeures, que ce soient des classes de guerriers ou d’espions. Les femmes drows choisissent généralement des classes leur permettant de commander, comme celles de barde ou de druide. Les deux genres ont un talent inné pour l’art de la magie et peuvent devenir des magiciens ou des invocateurs. Les drows font des antipaladins parfaits, mais on décourage souvent les hommes à s’engager dans cette voie puisque la noblesse féminine n’apprécie guère l’idée que des hommes à la volonté marquée se laissent aller à leur instinct pour l’indépendance et entretiennent une relation directe avec un seigneur-démon.<br /><br /><b>Noms masculins.</b> Arcavato, Drovic, Firyin, Kaëlmourn, Mirrendier, Pharnox, Syrendross, Zov.<br />
+<b>Noms féminins.</b> Belmarniss, Cylellinth, Ilvaria, Johysis, Loscivia, Tyvorhan, Ulumbralya, Volundéïl.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 en <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>, -2 en <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>.</b> Les drows sont agiles et manipulateurs.</li><li><b>Elfe.</b> Les drows sont des <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20elfe.ashx" title="Elfe (sous-type)">elfe</a>.</li><li><b>Taille M.</b> Les drows sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les drows ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres.</li><li><b>Vision dans le noir.</b> Les drows <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Immunités des drows.</b> Les drows sont immunisés aux effets magiques de sommeil et gagnent un bonus racial de +2 à leurs <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> contre les sorts et effets d’<a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantement</a>.</li><li><b>Sens aiguisés.</b> Les drows gagnent un bonus racial de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.</li><li><b>Utilisation des poisons.</b> Les drows sont doués pour l’utilisation des <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a> et ne risquent jamais de s’empoisonner par erreur.</li><li><b>Résistance à la magie.</b> Les drows ont une <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20la%20magie%20(capacit%c3%a9).ashx" title="Résistance à la magie (Ext)">résistance à la magie</a> de 6 + leur niveau de personnage.</li><li><b>Pouvoirs magiques.</b> Un drow peut lancer <i><a class="pagelink" href="Pathfinder-RPG.lueur%20f%c3%a9erique.ashx" title="Lueur féerique">lueur féerique</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8res%20dansantes.ashx" title="Lumières dansantes">lumières dansantes</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.t%c3%a9n%c3%a8bres.ashx" title="Ténèbres">ténèbres</a></i> comme des <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a>, chacun une fois par jour, en utilisant son niveau total de personnage comme <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a>.</li><li><b>Aveuglé par la lumière.</b> La soudaine exposition à une <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">lumière vive</a> aveugle les drows pendant 1 round ; lors des rounds qui suivent, ils sont <a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">éblouis</a> tant qu’ils restent dans la zone affectée.</li><li><b>Apprentissage martial.</b> Les drows sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.arbal%c3%a8te%20de%20poing%20(arme).ashx" title="Arbalète de poing">arbalètes de poing</a>, des <a class="pagelink" href="Pathfinder-RPG.%c3%a9p%c3%a9e%20courte%20(arme).ashx" title="Épée courte">épées courtes</a> et des <a class="pagelink" href="Pathfinder-RPG.rapi%c3%a8re%20(arme).ashx" title="Rapière">rapières</a>.</li><li><b>Langues.</b> Les drows commencent le jeu en parlant l’elfique et le commun des profondeurs. Ceux qui ont une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues parmi celles-ci : abyssal, aklo, aquatique, commun, draconique, gnome, gobelin ou langue signée des drows.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux drows standard mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « aveuglé par la lumière » et « vision dans le noir » :</i></u>
+<ul><li><b>Infiltré de la surface.</b> Certains drows vivent près des territoires de la surface, que ce soit parce qu’ils servent une cause drow ou parce qu’ils ont été exilés. Ceux qui ont ce trait racial gagnent la <a class="pagelink" href="Pathfinder-RPG.Vision%20nocturne%20(capacit%c3%a9).ashx" title="Vision nocturne (Ext)">vision nocturne</a>, ce qui leur permet de voir deux fois plus loin que les humains dans les zones de <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">lumière faible</a>. Ce trait racial remplace ceux de vision dans le noir et aveuglé par la lumière.</li></ul>
+<u><i>Remplace « immunités des drows » :</i></u>
+<ul><li><b>Séducteur.</b> Certains drows jouissent d’une compréhension intime des plus sombres désirs tapis dans le coeur de chacun. Ceux qui ont ce trait racial rajoutent +1 au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des <a class="pagelink" href="Pathfinder-RPG.jds.ashx" title="JDS">jets de sauvegarde</a> des sorts et pouvoirs magiques d'<a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantement</a>. En outre, les drows ayant une valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de 15 ou plus peuvent utiliser <i><a class="pagelink" href="Pathfinder-RPG.charme-personne.ashx" title="Charme-personne">charme-personne</a></i> comme un <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoir magique</a> une fois par jour (<a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> égal au niveau de personnage du drow). Ce trait racial remplace les immunités des drows.</li></ul>
+<u><i>Remplace « immunités des drows », « sens aiguisés » et « utilisation des poisons » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Entraînement défensif.</b> De nombreuses cités drows sont souvent assaillis par des attaques d'aberrations, ce qui incite les résidents à s'entraîner à se défendre contre elles. Ces drows bénéficient d'un bonus d'esquive de +4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les <a class="pagelink" href="Pathfinder-RPG.type%20Aberration.ashx" title="Aberration">aberrations</a>. Ce trait racial remplace immunités des drows, sens aiguisés et utilisation des poisons.</li></ul>
+<u><i>Remplace « pouvoirs magiques » :</i></u>
+<ul><li><b>Traqueur de l’Ombreterre.</b> Les territoires situés au-delà des cités drows, tunnels grossiers et autres grottes, sont traîtres à traverser. Les drows ayant ce trait racial peuvent parcourir ces <a class="pagelink" href="Pathfinder-RPG.terrain%20difficile.ashx" title="terrain difficile">terrains difficiles</a> sans malus lorsqu’ils sont sous terre. En outre, les drows ayant une valeur de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> de 13 ou plus recoivent <a class="pagelink" href="Pathfinder-RPG.Aisance.ashx" title="Aisance">Aisance</a> comme don supplémentaire. Ce trait racial remplace celui de pouvoirs magiques.</li></ul>
+<u><i>Remplace « sens aiguisés » :</i></u>
+<ul><li><b>Intriguant ambitieux.</b> La séduction et la trahison sont des outils nécessaires pour s’élever au sein de la société drow, même pour ceux qui ont des inclinations maritales. Les drows ayant ce trait racial peuvent ajouter <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> ou <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> à leur liste de compétences de classe, et gagnent un bonus de +2 aux tests de cette compétence. Ce trait racial remplace sens aiguisés.</li></ul>
+<u><i>Remplace « sens aiguisés » et « utilisation des poisons » :</i></u>
+<ul><li><b>Engagement blasphématoire.</b> Depuis toujours, les drows frayent avec les démons. Certains entretiennent des liens solides avec ces créatures et peuvent invoquer d’anciennes et obscènes associations pour s’attirer la coopération démoniaque. Ceux qui ont ce trait racial gagnent un bonus de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> contre les créatures libres de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20d%c3%a9mon.ashx" title="Démon (sous-type)">démon</a>. De plus, les démons conjurés au moyen de tout sort de <i>convocation</i> reçoivent +2 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> par <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">dés de vie</a>. Enfin, le coût des pots-de-vin ou offrandes faites pour tout sort d’<i><a class="pagelink" href="Pathfinder-RPG.alli%c3%a9%20majeur%20doutreplan.ashx" title="Allié majeur d&#39;outreplan">allié majeur d’outreplan</a></i> que lancent ces drows pour convoquer un démon est réduit de 20 %. Ce trait racial remplace sens aiguisés et utilisation des poisons.</li></ul>
+<u><i>Remplace « utilisation des poisons » :</i></u>
+<ul><li><b>Rancune ancestrale.</b> La profonde hostilité qui oppose les drows aux nains et aux elfes remonte à très longtemps. Les drows ayant ce trait racial gagnent un bonus de +1 à leurs <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20nain.ashx" title="Nain (sous-type)">nain</a> ou <a class="pagelink" href="Pathfinder-RPG.sous-type%20elfe.ashx" title="Elfe (sous-type)">elfe</a> (à l’exception des drows) grâce à leur formation spéciale contre ces ennemis abhorrés. Ce trait racial remplace utilisation des poisons.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste rajoute +10 minutes à la durée de ses <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#MUTAGENES" title="L&#39;alchimiste">mutagènes</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx" title="L&#39;antipaladin">Antipaladin</a>.</b> L’antipaladin peut infliger +1/4 de <a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx#CRUAUTE" title="L&#39;antipaladin">cruautés</a> supplémentaires.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ensorceleur</a>.</b> L’ensorceleur choisit un sort connu supplémentaire dans la liste de sorts de l’ensorceleur. Il doit être du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la malédiction, du Mal ou de la douleur et être inférieur d’au moins un niveau au sort de plus haut niveau qu’il peut lancer.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier choisit la manoeuvre offensive <a class="pagelink" href="Pathfinder-RPG.d%c3%a9sarmement.ashx" title="désarmement">désarmement</a> ou <a class="pagelink" href="Pathfinder-RPG.repositionnement.ashx" title="repositionnement">repositionnement</a>. Il rajoute +1/3 à son <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> lorsqu’il effectue cette manoeuvre (bonus maximum de +4).
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Magicien</a>.</b> Le magicien choisit un pouvoir de l’<a class="pagelink" href="Pathfinder-RPG.Magicien.ashx#ECOLEDEMAGIE" title="Le magicien">école de magie</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre choisit un pouvoir de <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#DOMAINES" title="Le prêtre">domaine</a> accessible au niveau 1 et utilisable 3 fois par jour + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>. Il peut l’utiliser 1/2 fois de plus par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard ajoute un bonus de +1/2 à ses tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour <a class="pagelink" href="Pathfinder-RPG.feinte.ashx" title="feinte">feinter</a> et transmettre des messages secrets.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Voici les options accessibles aux drows, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_0" href="#Dons_0" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.D%c3%a9marche%20de%20laraign%c3%a9e%20(drow).ashx" title="Démarche de l&#39;araignée (drow)">Démarche de l'araignée (drow)</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.drow%20(race).ashx" title="Les drows">Drow</a>, <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 3</td><td>le personnage peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.pattes%20daraign%c3%a9e.ashx" title="Pattes d&#39;araignée">pattes d'araignée</a></i> une fois par jour</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Frappe%20du%20fl%c3%a9au%20des%20anges.ashx" title="Frappe du fléau des anges">Frappe du fléau des anges</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Ch%c3%a2timent%20canalis%c3%a9.ashx" title="Châtiment canalisé">Châtiment canalisé</a>, lanceur de sorts divins de niveau 5, capacité de classe <a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx#CANALISATIONDENERGIENEGATIVE" title="L&#39;antipaladin">canalisation d'énergie négative</a></td><td>Améliore le châtiment sur les créatures Bonnes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Invocateur%20daraign%c3%a9es.ashx" title="Invocateur d&#39;araignées">Invocateur d'araignées</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.drow%20(race).ashx" title="Les drows">Drow</a>, capacité de lancer les sorts <i><a class="pagelink" href="Pathfinder-RPG.convocation%20de%20monstres.ashx" title="Convocation de monstres">convocation de monstres</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.convocation%20dalli%c3%a9s%20naturels.ashx" title="Convocation d&#39;alliés naturels">convocation d’alliés naturels</a></i></td><td>le lanceur peut convoquer des araignées</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Lanterne%20du%20sniper.ashx" title="Lanterne du sniper">Lanterne du sniper</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Tir%20%c3%a0%20bout%20portant.ashx" title="Tir à bout portant">Tir à bout portant</a>, pouvoir magique racial <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8res%20dansantes.ashx" title="Lumières dansantes">lumières dansantes</a></i></td><td>Améliore <i>lumières dansantes</i> pour aider les attaques à distance</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Linceul%20dombres.ashx" title="Linceul d&#39;ombres">Linceul d'ombres</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Attaques%20r%c3%a9flexes.ashx" title="Attaques réflexes">Attaques réflexes</a>, pouvoir magique racial <i><a class="pagelink" href="Pathfinder-RPG.t%c3%a9n%c3%a8bres.ashx" title="Ténèbres">ténèbres</a></i></td><td>Créé une brume de ténèbres autour du personnage qui lui confère un camouflage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mage%20t%c3%a9n%c3%a9breux.ashx" title="Mage ténébreux">Mage ténébreux</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.drow%20(race).ashx" title="Les drows">Drow</a>, niveau 1 de lanceur de sorts</td><td>Les sorts des registres <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#OMBRE" title="Créer un sort">ombre</a> et <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#TENEBRES" title="Créer un sort">ténèbres</a> durent plus longtemps</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Noblesse%20drow.ashx" title="Noblesse drow">Noblesse drow</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.drow%20(race).ashx" title="Les drows">Drow</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20de%20la%20magie.ashx" title="Détection de la magie">détection de la magie</a></i> à volonté, <i><a class="pagelink" href="Pathfinder-RPG.feuille%20morte.ashx" title="Feuille morte">feuille morte</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.l%c3%a9vitation.ashx" title="Lévitation">lévitation</a></i> une fois par jour</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Science%20de%20la%20noblesse%20drow.ashx" title="Science de la noblesse drow">Science de la noblesse drow</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Noblesse%20drow.ashx" title="Noblesse drow">Noblesse drow</a>, <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> 13</td><td><i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8res%20dansantes.ashx" title="Lumières dansantes">lumières dansantes</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.lueur%20f%c3%a9erique.ashx" title="Lueur féerique">lueur féerique</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.feuille%20morte.ashx" title="Feuille morte">feuille morte</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.l%c3%a9vitation.ashx" title="Lévitation">lévitation</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.t%c3%a9n%c3%a8bres%20profondes.ashx" title="Ténèbres profondes">ténèbres profondes</a></i> deux fois par jour,</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Noblesse%20drow%20sup%c3%a9rieure.ashx" title="Noblesse drow supérieure">Noblesse drow supérieure</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Science%20de%20la%20noblesse%20drow.ashx" title="Science de la noblesse drow">Science de la noblesse drow</a></td><td>utilisation accrue des pouvoirs magiques</td></tr><tr><td>&emsp;&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Fils%20de%20lombre.ashx" title="Fils de l&#39;ombre">Fils de l’ombre</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Noblesse%20drow%20sup%c3%a9rieure.ashx" title="Noblesse drow supérieure">Noblesse drow supérieure</a>, <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> 13</td><td>acquisition d'un pouvoir magique parmi <i><a class="pagelink" href="Pathfinder-RPG.dissipation%20de%20la%20magie.ashx" title="Dissipation de la magie">dissipation de la magie</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.faveur%20divine.ashx" title="Faveur divine">faveur divine</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.suggestion.ashx" title="Suggestion">suggestion</a></i> utilisable une fois par jour</td></tr><tr><td>&emsp;&emsp;&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Fils%20de%20lombre%20sup%c3%a9rieur.ashx" title="Fils de l&#39;ombre supérieur">Fils de l’ombre supérieur</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Fils%20de%20lombre.ashx" title="Fils de l&#39;ombre">Fils de l’ombre</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.dissipation%20de%20la%20magie.ashx" title="Dissipation de la magie">dissipation de la magie</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.faveur%20divine.ashx" title="Faveur divine">faveur divine</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.suggestion.ashx" title="Suggestion">suggestion</a></i> une fois par jour</td></tr><tr><td>&emsp;&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Noble%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Noble résistance à la magie">Noble résistance à la magie</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Noblesse%20drow%20sup%c3%a9rieure.ashx" title="Noblesse drow supérieure">Noblesse drow supérieure</a>, <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 13</td><td><a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">Résistance à la magie</a> 11+niveau du personnage</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.T%c3%a9n%c3%a8bres%20d%c3%a9goulinantes.ashx" title="Ténèbres dégoulinantes">Ténèbres dégoulinantes</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Drow</a>, pouvoir magique racial <i><a class="pagelink" href="Pathfinder-RPG.t%c3%a9n%c3%a8bres.ashx" title="Ténèbres">ténèbres</a></i></td><td>Gain d'un camouflage de 20 % lorsqu'adjacent à un allié avec ce don</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_1" href="#Archétypes_de_classe_1" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Ap%c3%b4tre%20d%c3%a9moniaque%20(pr%c3%aatre).ashx" title="Apôtre démoniaque">Apôtre démoniaque (prêtre)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tireur%20embusqu%c3%a9%20des%20cavernes%20(guerrier).ashx" title="Tireur embusqué des cavernes">Tireur embusqué des cavernes (guerrier)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_2" href="#Équipement_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Attire-araign%c3%a9e%20(objet).ashx" title="Attire-araignée">Attire-araignée</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gecko%20de%20selle%20(objet).ashx" title="Gecko de selle">Gecko</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gecko%20de%20selle%20(objet).ashx" title="Gecko de selle">Gecko formée au combat</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Graisse%20tue-lumi%c3%a8re%20(objet).ashx" title="Graisse tue-lumière">Graisse tue-lumière</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chauve-souris%20sanguinaire%20de%20selle%20(objet).ashx" title="Chauve-souris sanguinaire de selle">Chauve-souris sanguinaire</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chauve-souris%20sanguinaire%20de%20selle%20(objet).ashx" title="Chauve-souris sanguinaire de selle">Chauve-souris sanguinaire formée au combat</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Poche-araign%c3%a9e%20(objet).ashx" title="Poche-araignée">Poche-araignée</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_3" href="#Objets_magiques_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Carreau%20du%20sp%c3%a9l%c3%a9ologue.ashx" title="Carreau du spéléologue">Carreau du spéléologue</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Gants%20dextraction.ashx" title="Gants d&#39;extraction">Gants d'extraction</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Lame%20obscure.ashx" title="Lame obscure">Lame obscure</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Sceptre%20des%20ombres.ashx" title="Sceptre des ombres">Sceptre des ombres</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.V%c3%aatements%20vivants.ashx" title="Vêtements vivants">Vêtements vivants</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Options de classe<a class="headeranchor" id="Options_de_classe_4" href="#Options_de_classe_4" title="Lien vers cette section">&#0182;</a></h3><ul><li>Découvertes d'alchimiste<ul><li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx#BOMBEDELETOILENOIRE" title="Les découvertes d&#39;alchimiste">Bombe de l’étoile noire</a>* <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx#BOMBEDUNEANT" title="Les découvertes d&#39;alchimiste">Bombe du néant</a>* <i>(CM)</i></li></ul></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_5" href="#Sorts_5" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Nuage%20de%20toile.ashx" title="Nuage de toile">Nuage de toile</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Nu%c3%a9e%20distordante.ashx" title="Nuée distordante">Nuée distordante</a> <i>(ISR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Projectile%20de%20toile.ashx" title="Projectile de toile">Projectile de toile</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.R%c3%a9gression%20ancestrale.ashx" title="Régression ancestrale">Régression ancestrale</a> <i>(MR)</i></li></ul>
+</td></tr></table><br /><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div>
+<h2 class="separator">Écologie<a class="headeranchor" id="Écologie_10" href="#Écologie_10" title="Lien vers cette section">&#0182;</a></h2>Les elfes noirs font partie des créatures les plus cruelles et les plus sadiques au monde. Aucune race intelligente n’est
+uniformément bonne ou mauvaise, mais les drows codifient la violence, récompensent le vice et éliminent tous ceux qui ne
+révèrent pas le mal et le chaos comme le reste de leur espèce. Ces dogmes teintent chaque aspect de la vie des drows, leur existence étant ponctuée par les trahisons, les meurtres, les complots et les actes de destruction gratuits. En général, une culture qui obéit à de tels principes finit par se consumer dans le chaos qu’elle aime tant, mais les elfes ont forgé une société durable où la courtoisie et une hiérarchie basée sur les classes contrebalancent les machinations incessantes et les trahisons régulières.<br /><br />Les elfes noirs ressemblent à leurs cousins de la surface : ils sont minces et gracieux, avec des traits angulaires et des oreilles pointues distinctives. Pourtant, au fil des siècles, ils ont évolué différemment, au point qu’ils sont à présent tels des reflets inversés. La peau de l’elfe noir est d’un noir bleuté glacé, mat comme une nuit sans étoiles ou luisante comme du verre volcanique, ou d’un violet profond, proche de l’indigo très sombre du ciel avant l’aube. Les drows ont les yeux d’un blanc laiteux, sans pupille, adaptés à une existence sans lumière ou presque. Leurs cheveux sont typiquement blancs et fins.<br /><br />La plupart des elfes de la surface considèrent les drows comme une race entièrement différente de la leur, une race représentant tout ce que les « vrais » elfes évitent et rejettent. La vérité est bien plus dure : les elfes noirs sont apparus suite à la corruption et la transformation des elfes de la surface. Ils sont la preuve que n’importe quelle créature abrite une étincelle de mal.<br /><br />La genèse des drows est entourée de mystère. Elle a eu lieu dans les ténèbres des entrailles du monde. Un grand cataclysme a chassé les elfes de leur foyer et beaucoup se sont réfugiés sous terre, dans les tunnels. Là, dans ce monde sans lumière, ils ont dû affronter des orques, des duergars et des créatures encore plus vicieuses pour survivre et, bien souvent, ils ont été vaincus par des créatures mieux adaptées à cet environnement enténébré. Les défaites successives et le désespoir les ont obligés à s’enfuir de plus en plus loin sous terre. Jusqu’à ce que leur fuite dans les profondeurs les mène à une mystérieuse source de chaos et de malfaisance. Son influence a perverti leur corps et leur esprit, elle leur a donné une grande puissance, mais au prix de leur moralité et de leur âme. Ils avaient abandonné leur demeure en surface, de même ils abandonnaient à présent tout ce qui faisait d’eux des elfes. Au lieu de résister à l’influence maléfique, ils l’ont embrassée. Et cette tribu perdue est devenue le premier des clans drows.<br /><br />Au cours des siècles suivants, les elfes noirs se sont de mieux en mieux accoutumés aux ténèbres. Ils ont développé des pouvoirs surnaturels, perfectionné l’art d’utiliser les poisons, acquis la vision dans le noir et obtenu une certaine résistance à la magie. Ils ont fini par se lancer dans la conquête du monde souterrain, persuadés d’être supérieurs à toutes les formes de vie mortelles. Pour cela, ils ont cherché de l’aide et plus de puissance : leurs prêtres se sont tournés vers les Abysses, confiant leur personne et leur famille à divers seigneurs démons qui n’ont été que trop heureux d’accepter leur serment de loyauté. Au sein de la société drow, le meilleur moyen d’acquérir du pouvoir consistait souvent à s’attirer les faveurs d’un seigneur démon.<br /><br />Au fil des millénaires, les drows sont devenus les maîtres incontestés de leur royaume aveugle. Et alors que leur peuple s’étendait, ils ont créé de vastes cités souterraines dirigées par de capricieuses maisons nobles. L’influence démoniaque et la cruauté innée des drows ont pourtant fini par leur faire perdre leur objectif de vue et les elfes noirs ont commencé à se perdre dans un océan de traîtrises infini. Les seigneurs des Abysses sont ravis de voir leurs vassaux se déchirer ainsi et se moquent de savoir s’ils massacrent d’autres races ou les membres de leur propre espèce. Une telle société comprenant des êtres inférieurs aurait pu s’effondrer rapidement, mais celle des drows a survécu car ils ont su faire appliquer des lois et une étiquette impitoyables, freinant leurs ambitions et trahisons les plus audacieuses.<br /><br />Grâce au contrat entre les Abysses et la perverse société des elfes noirs telle que nous la connaissons aujourd’hui, un drow sur vingt naît avec des pouvoirs magiques innés dépassant de loin ceux des autres. Ces « nobles » se hissent généralement jusqu’aux plus hauts échelons de la société drow. Pour des raisons inconnues, les nobles sont presque tous des femmes. Ce déséquilibre du pouvoir a aidé à façonner le puissant et violent système matriarcal à présent enraciné dans la culture drow.
+L’échelon supérieur de n’importe quelle communauté souterraine drow, qu’il s’agisse d’un village ou d’une métropole, est toujours uniformément féminin. Dans les grandes villes, les matrones dirigent des maisons qui leur servent autant de centre
+familial que de siège du pouvoir. Ces femmes sont souvent des prêtresses ou des magiciennes, tout comme les membres de leur
+conseil. Des régiments de drows bien entraînés servent la maison et sa matrone. Les drows travaillant à l’ombre d’une grande maison montrent leur loyauté en dénonçant les complots et les ambitions des autres serviteurs, dans l’espoir d’obtenir des faveurs et d’avoir le privilège de servir des membres importants de la maisonnée. <br /><br />En dehors des maisons nobles, les drows sont des marchands, des commerçants et des négociants en informations. Pour les roturiers, la vie est un exercice d’équilibre précaire : il faut maintenir des relations lucratives avec les maisons influentes sans se laisser entraîner dans leurs querelles.<br /><br />Les esclaves forment la lie de la société drow. Les elfes noirs apprécient les captifs des autres races souterraines et les récupèrent comme butin après les combats. Ils les mettent au travail dans les mines, leur font construire des structures souterraines élaborées et les obligent à cultiver les grands champs de champignons qui nourrissent la population drow. Les esclaves ont une vie courte et horrifiante car leur maître les surexploite jusqu’à ce que mort s’en suive. Les esclaves dotés d’une formation spéciale, comme les lanceurs de sorts, les linguistes ou les sages, servent parfois dans les maisons roturières où ils accomplissent les mêmes tâches que les drows subalternes dans les maisons nobles. Cette existence est préférable à celle des travailleurs non qualifiés, mais comme les drows cherchent sans cesse à améliorer leur statut social, il est certain qu’une maison qui utilise des serviteurs issus de races « du commun » s’en débarrassera un jour car ils symbolisent son rang inférieur.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

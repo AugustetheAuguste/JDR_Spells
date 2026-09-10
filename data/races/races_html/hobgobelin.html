@@ -1,0 +1,768 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les hobgobelins - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<meta name="keywords" content="hobgobelin, manuel des races, race" /><link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hobgobelin (race).ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Hobgobelin+(race)&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkO9mrUyfJpdZwSNdcJS+1ImmkGhc=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+</div>
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Hobgobelin (race)">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Hobgobelin (race)">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Hobgobelin (race)">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les hobgobelins
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu"><table><tr style="vertical-align: top"><td width="15%"><center><img ID="menuraceIMG2" src="/wiki/public/upload/Illustrations/Autres/Head.jpg" width="120px" height="120px" style="border: 1px solid #4b3124; object-fit:cover"/></center></td><td width="100%">
+<h2 class="separator">Les races additionnelles<a class="headeranchor" id="Les_races_additionnelles_0" href="#Les_races_additionnelles_0" title="Lien vers cette section">&#0182;</a></h2><table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aasimar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aasimar%20(race).ashx" title="Les aasimars">Les aasimars</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/dhampir.jpg';"><a class="pagelink" href="Pathfinder-RPG.Dhampir%20(race).ashx" title="Les dhampirs">Les dhampirs</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/drow.jpg';"><a class="pagelink" href="Pathfinder-RPG.Drow%20(race).ashx" title="Les drows">Les drows</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-f%c3%a9lin%20(race).ashx" title="Les hommes-félins">Les hommes-félins</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-rat%20(race).ashx" title="Les hommes-rats">Les hommes-rats</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ifrit.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ifrit%20(race).ashx" title="Les ifrits">Les ifrits</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kobold.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kobold%20(race).ashx" title="Les kobolds">Les kobolds</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ondin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ondin%20(race).ashx" title="Les ondins">Les ondins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Orque%20(race).ashx" title="Les orques">Les orques</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/oréade.jpg';"><a class="pagelink" href="Pathfinder-RPG.Or%c3%a9ade%20(race).ashx" title="Les oréades">Les oréades</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/sylphe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tengu.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tengu%20(race).ashx" title="Les tengus">Les tengus</a></li>
+    <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Tieffelin%20(race).ashx" title="Les tieffelins">Les tieffelins</a></li>
+</ul>
+</td><td width="25%">
+<ul><li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESDEBASE2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESDEBASE2');" onmouseout="outButton('RACESDEBASE2');" onclick="expandMenu('RACESDEBASE2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESDEBASE" title="Les races des personnages">Races de base</a></i></b>
+    <ul ID="RACESDEBASE2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-elfe.ashx" title="Les demi-elfes">Les demi-elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Demi-orque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Demi-orque.ashx" title="Les demi-orques">Les demi-orques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Elfe.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe.ashx" title="Les elfes">Les elfes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Gnome.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gnome.ashx" title="Les gnomes">Les gnomes</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Halfelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Halfelin.ashx" title="Les halfelins">Les halfelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Humain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Humain.ashx" title="Les humains">Les humains</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/Nain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nain.ashx" title="Les nains">Les nains</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESEXTRAORDINAIRES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESEXTRAORDINAIRES2');" onmouseout="outButton('RACESEXTRAORDINAIRES2');" onclick="expandMenu('RACESEXTRAORDINAIRES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">Races extraordinaires</a></i></b>
+    <ul ID="RACESEXTRAORDINAIRES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Aquatique%20(race).ashx" title="Les aquatiques">Les aquatiques</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changelin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changelin%20(race).ashx" title="Les changelins">Les changelins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/duergar.jpg';"><a class="pagelink" href="Pathfinder-RPG.Duergar%20(race).ashx" title="Les duergars">Les duergars</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/grippli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Grippli%20(race).ashx" title="Les gripplis">Les gripplis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/homme-poisson.jpg';"><a class="pagelink" href="Pathfinder-RPG.Homme-poisson%20(race).ashx" title="Les hommes-poissons">Les hommes-poissons</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kitsune.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kitsune%20(race).ashx" title="Les kitsune">Les kitsune</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/nagaji.jpg';"><a class="pagelink" href="Pathfinder-RPG.Nagaji%20(race).ashx" title="Les nagajis">Les nagajis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/samsaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samsaran%20(race).ashx" title="Les samsarans">Les samsarans</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/strix.jpg';"><a class="pagelink" href="Pathfinder-RPG.Strix%20(race).ashx" title="Les strix">Les strix</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/suli.jpg';"><a class="pagelink" href="Pathfinder-RPG.Suli%20(race).ashx" title="Les sulis">Les sulis</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/svirfneblin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Svirfneblin%20(race).ashx" title="Les svirfneblins">Les svirfneblins</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vanara.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vanara%20(race).ashx" title="Les vanaras">Les vanaras</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/vishkanya.jpg';"><a class="pagelink" href="Pathfinder-RPG.Vishkanya%20(race).ashx" title="Les vishkanyas">Les vishkanyas</a></li>
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wayang.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wayang%20(race).ashx" title="Les wayangs">Les wayangs</a></li>
+    </ul></li>
+    <li><div style="float: right; padding: 0;">
+<IMG id="boutonRACESMONSTRUEUSES2" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black; cursor: pointer" onmouseover="overButton('RACESMONSTRUEUSES2');" onmouseout="outButton('RACESMONSTRUEUSES2');" onclick="expandMenu('RACESMONSTRUEUSES2');" />
+</div><b><i><a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESMONSTRUEUSES" title="Les races des personnages">Races monstrueuses</a></i></b>
+    <ul ID="RACESMONSTRUEUSES2" CLASS="listecachée cadrebas">
+        <li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/androïde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Andro%c3%afde%20(race).ashx" title="Les androïdes">Les androïdes</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/changepeau.jpg';"><a class="pagelink" href="Pathfinder-RPG.Changepeau%20(race).ashx" title="Les changepeaux">Les changepeaux</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/elfe_aquatique.jpg';"><a class="pagelink" href="Pathfinder-RPG.Elfe%20aquatique%20(race).ashx" title="Les elfes aquatiques">Les elfes aquatiques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gathelain.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gathelain%20(race).ashx" title="Les gathelains">Les gathelains</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/ghoran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ghoran%20(race).ashx" title="Les ghorans">Les ghorans</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/gobelin_simiesque.jpg';"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20simiesque%20(race).ashx" title="Les gobelins simiesques">Les gobelins simiesques</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/kasatha.jpg';"><a class="pagelink" href="Pathfinder-RPG.Kasatha%20(race).ashx" title="Les kasathas">Les kasathas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/lashunta.jpg';"><a class="pagelink" href="Pathfinder-RPG.Lashunta%20(race).ashx" title="Les lashuntas">Les lashuntas</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/syrinx.jpg';"><a class="pagelink" href="Pathfinder-RPG.Syrinx%20(race).ashx" title="Les syrinx">Les syrinx</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/trox.jpg';"><a class="pagelink" href="Pathfinder-RPG.Trox%20(race).ashx" title="Les trox">Les trox</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/triaxien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Triaxien%20(race).ashx" title="Les triaxiens">Les triaxiens</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/virebois.jpg';"><a class="pagelink" href="Pathfinder-RPG.Virebois%20(race).ashx" title="Les virebois">Les virebois</a></li>
+		<li onmouseover="
+document.getElementById('menuraceIMG2').src='/wiki/public/upload/Illustrations/PNJ/wivaran.jpg';"><a class="pagelink" href="Pathfinder-RPG.Wivaran%20(race).ashx" title="Les wivarans">Les wivarans</a></li>
+    </ul></li>
+</ul>
+</td></tr></table>
+</td></tr></table>
+</div><div style="background-color: #fff; float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_9">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_0">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classe_1">Archétypes de classe</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_2">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_3">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_4">Sorts</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Écologie_5">Écologie</a><br /></p></div></div></td></tr></table></div><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Hobgobelin.ashx" title="Hobgobelin">fiche de créature</a> d'un hobgobelin standard.</i></b><br /><br />Guerriers féroces, les hobgobelins survivent grâce à la conquête. Ils doivent les matières premières qui alimentent leurs machines de guerre à leurs raids, leur armement et leurs bâtiments au labeur d’esclaves qui se tuent au travail. Naturellement ambitieux et envieux, les hobgobelins cherchent à améliorer leur niveau de vie aux dépens de leurs semblables, mais, en combat, ils mettent leurs petits différends de côté et se battent en suivant une discipline qui égalent celle des meilleurs soldats. Ils n’éprouvent guère d’affection les uns pour les autres et ne se font pas confiance, encore moins en ce qui concerne les étrangers. La vie de ces brutes se résume à servir leurs supérieurs, à dominer ceux qui leur sont inférieurs et à saisir les rares opportunités de gloire et de montée en grade.<br /><br /><b>Description physique.</b> Solides et musclés, les hobgobelins sont un peu plus petits que les humains moyens, et leurs longs bras, leur torse épais et leurs jambes relativement courtes leur donnent presque une carrure de primate. Les hobgobelins ont une peau gris-vert maladive qui fonce et devient vert mousse après une longue exposition au soleil. Leurs yeux brûlent d’un orange ou d’un rouge flamboyant, et leur large tête, comme leurs oreilles très pointues, leur donne un air quelque peu félin. Les hobgobelins n’ont pas de poils faciaux et même les femmes hobgobelins sont chauves. Leur taille mise à part, les hobgobelins ressemblent énormément à leurs cousins les gobelins.<br /><br /><b>Société.</b> Les hobgobelins vivent dans des communautés militaires tyranniques, chacune d’elles étant sous l’autorité absolue d’un général hobgobelin. Chaque hobgobelin de chaque communauté reçoit un entraînement militaire, et ceux qui excellent servent dans l’armée tandis que les autres endossent des rôles plus subalternes. Ceux qui ne sont pas jugés à la hauteur pour le service militaire n’ont guère de statut social, valant à peine plus que les esclaves privilégiés. Le genre et la naissance ne sont pas un frein à l’avancement, qui est presque uniquement déterminé par le mérite personnel de chacun. Les hobgobelins évitent de trop s’attacher, même à leurs petits. L’accouplement n’est qu’une affaire d’intérêts et se limite presque toujours aux hobgobelins de même rang. Tout enfant qui en résulte est enlevé à sa mère et sevré de force au bout de trois semaines. Les petits deviennent très vite matures : il ne faut pas plus de 6 mois à la plupart d’entre eux pour apprendre à parler et à se débrouiller tout seul. L’enfance d’un hobgobelin dure à peine 14 ans, période triste remplie d’entraînements brutaux aux arts de la guerre.<br /><br /><b>Relations.</b> Les hobgobelins voient les autres races comme des outils, des instruments à asservir, à intimider et à mettre au travail. Sans esclaves, la société des hobgobelins s’effondrerait puisqu’elle dépend énormément du labeur volé. Un esclave blessé, malade ou rebelle est un outil cassé, un déchet inutile bon à jeter aux ordures. Il n’est pas étonnant que les communautés de hobgobelins ne comptent aucune autre race parmi leurs amis, et rares sont celles qui leur sont alliées. Ils vouent une hostilité toute particulière aux nains et aux elfes, qui sont diablement difficiles à réduire en esclavage, ces deux races menant une véritable vendetta contre les gobelinoïdes. Les halfelins et les demi-orques font des esclaves particulièrement prisés : les premiers pour leur agilité et pour la facilité avec laquelle il est possible de leur briser la nuque, les seconds pour le talent avec lequel ils s’épanouissent dans les conditions les plus dures. Les hobgobelins n’ont guère d’affection pour les leurs, mais ils traitent généralement les esclaves gobelinoïdes mieux que les autres races.<br /><br /><b>Alignement et religion.</b> La vie des hobgobelins est très ordonnée et hiérarchique, et ils penchent fortement vers les alignements Loyaux. S’ils ne sont pas fondamentalement Mauvais, les entraînements brutaux et inhumains qui constituent leur enfance trop courte laissent la plupart des hobgobelins désabusés et pleins de haine. Ceux d’alignement Bon sont les moins nombreux et sont presque exclusivement des individus élevés dans d’autres cultures. Plus nombreux, mais quand même rares sont les hobgobelins de tendance Chaotique, la plupart étant souvent des exilés rejetés par les despotes de leur patrie. La religion, comme la plupart des intérêts non-militaires, importe peu à la majorité des hobgobelins. La plupart font semblant d’honorer un ou plusieurs dieux et font parfois des offrandes pour s’attirer leurs faveurs ou repousser la mauvaise fortune. Les hobgobelins qui ressentent une attirance religieuse plus marquée vénèrent souvent des dieux et des diables redoutables et tyranniques.<br /><br /><b>Aventuriers.</b> Les aventuriers hobgobelins sont généralement des solitaires iconoclastes qui s’irritent de la stricte hiérarchie de la vie militaire. Les autres ont fui ou ont été exilés après être tombés en disgrâce pour avoir fait preuve de faiblesse ou de lâcheté. Certains caressent le rêve de revenir un jour dans la famille des hobgobelins avec des richesses et des histoires de grands exploits à faire rougir. Quelques-uns servent des généraux hobgobelins prévoyants qui envoient les jeunes les plus prometteurs à travers le monde afin qu’ils reviennent un jour peut-être comme de valeureux héros de la cause hobgobeline. Les hobgobelins ont tendance à choisir des classes martiales, notamment de chevalier, de guerrier, de moine et de roublard. Les arts de la magie n’inspirent aucune confiance à la société des hobgobelins et rares sont ceux qui les pratiquent, à l’exception des alchimistes qui s’attirent des louanges et une admiration réticentes pour leurs talents pyrotechniques.<br /><br /><b>Noms masculins.</b> Arak, Békri, Doruk, Fétchi, Grung, Hagla, Haluk, Kurat, Malgrim, Mévlut, Oktar, Saltuk, Turgut.<br />
+<b>Noms féminins.</b> Afet, Ceyda, Ela, Esma, Huri, Kurmu, Maral, Masal, Melda, Nisa, Nural, Sekla, Séna, Tansu, Vésile.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSSTANDARDS" href="#TRAITSSTANDARDS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<ul><li><b>+2 en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, +2 en <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>.</b> Les hobgobelins sont rapides et robustes.</li><li><b>Gobelinoïde.</b> Les hobgobelins sont des <a class="pagelink" href="Pathfinder-RPG.type%20Humano%c3%afde.ashx" title="Humanoïde">humanoïdes</a> de sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20gobelino%c3%afde.ashx" title="Gobelinoïde (sous-type)">gobelinoïde</a>.</li><li><b>Taille M.</b> Les hobgobelins sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> qui ne reçoivent ni bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les hobgobelins ont une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> de 9 mètres.</li><li><b>Vision dans le noir.</b> Les hobgobelins <a class="pagelink" href="Pathfinder-RPG.Vision%20dans%20le%20noir%20(capacit%c3%a9).ashx" title="Vision dans le noir (Ext ou Sur)">voient dans le noir</a> à 18 mètres.</li><li><b>Furtif.</b> Les hobgobelins reçoivent un bonus racial de +4 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.</li><li><b>Langues.</b> Les hobgobelins commencent le jeu en parlant le commun et le gobelin. Ceux qui ont une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée peuvent apprendre d’autres langues parmi celles-ci : draconique, géant, infernal, nain et orque.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRAITSALTERNATIFS" href="#TRAITSALTERNATIFS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a>Vous pouvez choisir les traits raciaux suivants au lieu des traits raciaux hobgobelins standards, mais consultez d’abord votre MJ.<br /><br /><u><i>Remplace « furtif » :</i></u>
+<ul><li><a href="/Wiki/Pathfinder-RPG.Races de la mer Intérieure (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Inner Sea Races/Races de la mer Intérieure" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoISR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b>Autoritaire.</b> Les hobgobelins élevés dans la nation exceptionnellement ouverte et stable du Kaoling ou parmi les esclavagistes du bois des Chants d'oiseaux en Isger développent souvent un talent pour contrôler les autres. Ils bénéficient d'un bonus racial de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et d'<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, qui deviennent des compétences de classe pour eux. Ce trait racial remplace furtif.</li><li><b>Chasseur d’esclaves.</b> Les esclavagistes hobgobelins excellent dans la traque des esclaves fugitifs et sont capables de survivre dans des conditions abominables. Ceux qui ont ce trait gagnent un bonus racial de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> et un bonus racial de +2 à leurs jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> contre les maladies. Ce trait racial remplace furtif.</li><li><b>Chasseur de mages.</b> Les hobgobelins détestent et craignent les lanceurs de sorts profanes. Le chasseur de mages gagne un bonus racial de +2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> pour identifier l'incantation d'un sort et un bonus racial de +1 à ses <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre les lanceurs de sorts profanes. Il ne bénéficie de ce bonus que contre les créatures qui utilisent des sorts, non contre celles qui utilisent seulement des <a class="pagelink" href="Pathfinder-RPG.Pouvoirs%20magiques%20(capacit%c3%a9).ashx" title="Pouvoirs magiques (Mag)">pouvoirs magiques</a>. Ce trait racial remplace furtif.</li><li><b>Chef de fosse.</b> Le sang des esclaves fait tourner la machine de guerre des hobgobelins. Les chefs de fosse extraient le dernier souffle de labeur des esclaves à l’aide de copieux coups de fouet. Ceux qui ont ce trait racial sont formés au maniement des <a class="pagelink" href="Pathfinder-RPG.fouet%20(arme).ashx" title="Fouet">fouets</a> et un bonus racial de +1 à leurs tests de manoeuvres offensives pour <a class="pagelink" href="Pathfinder-RPG.d%c3%a9sarmement.ashx" title="désarmement">désarmer</a> ou faire un <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a> avec un fouet. Ce trait racial remplace furtif.</li><li><b>Endurci au combat.</b> Les exercices incessants font de la défense une seconde nature pour certains hobgobelins. Ceux qui ont ce trait racial gagnent un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a>. Ce trait racial remplace furtif.</li><li><b>Inapte.</b> Les hobgobelins qui échouent à s’assurer une place dans l’armée ont le statut le plus bas dans la société hobgobeline, et apprennent très vite l’importance de s’attirer les faveurs de leurs supérieurs. Ceux qui ont ce trait racial gagnent le maniement d’une unique <a class="pagelink" href="Pathfinder-RPG.arme%20de%20guerre.ashx" title="arme de guerre">arme de guerre</a> et un bonus racial de +1 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>. Ce trait racial remplace furtif.</li><li><b>Ingénieur.</b> Les hobgobelins ingénieurs passent leur temps à bricoler le feu, les explosifs et les machines de guerre. Ceux qui ont ce trait racial gagnent un bonus racial de +2 à leurs tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie) et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (ingénierie). Ce trait racial remplace furtif.</li><li><b>Terrifiant.</b> Certains hobgobelins méprisent la prudence et la finesse, leur préférant l’arrogance et l’intimidation. Ceux qui ont ce trait racial gagnent un bonus racial de +4 à leurs tests d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>. Ce trait racial remplace furtif.</li></ul>
+<u><i>Remplace « vision dans le noir » :</i></u>
+<ul><li><b>Balafré.</b> Un hobgobelin peut se balafrer lui-même avec la lame et le feu pour endurcir sa peau et en faire une masse calleuse de cicatrices. Ceux qui ont ce trait racial gagnent un bonus d’armure naturelle de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Néanmoins, l’exposition répétée au feu endommage leurs yeux de façon permanente. Ce trait racial remplace celui de vision dans le noir.</li></ul>
+<u><i>Remplace « vitesse normale » :</i></u>
+<ul><li><b>Jambes arquées.</b> Ces hobgobelins ont une stature encore plus exagérée que celle des autres, avec des jambes arquées et d’énormes épaules. Ceux qui ont ce trait gagnent un bonus racial de +2 à leurs tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a> et d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a>, et un bonus racial de +2 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> contre les tentatives de <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculades</a> et de <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a> quand ils sont sur un sol solide. La <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> des hobgobelins aux jambes arquées est réduite à 6 mètres. Ce trait racial remplace vitesse normale.</li></ul><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2><a href="/Wiki/Pathfinder-RPG.Manuel des joueurs - Classes avancées (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Class Guide/Manuel des joueurs - Classes avancées" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" loop="infinite" />
+</a>Chacune de ces récompenses remplace celle que les joueurs obtenaient normalement en gagnant un niveau dans une <a class="pagelink" href="Pathfinder-RPG.Progression%20des%20personnages.ashx#CLASSEDEPREDILECTION" title="Progression des personnages">classe de prédilection</a>, à savoir 1 point de vie supplémentaire ou 1 rang de compétence supplémentaire. Contrairement à ces récompenses d’ordre générique, les récompenses alternatives se focalisent sur les spécificités de la classe et sur les tendances générales d’une race.<br /><br />Le personnage choisit son option de classe de prédilection quand il gagne un niveau. Ces avantages se cumulent toujours, sauf indication contraire.<br /><br />Enfin, à chaque fois que le personnage les choisit, nombre d’avantages alternatifs ajoutent seulement +1/2, +1/3, +1/4 ou +1/6 (au lieu de +1) à un jet ou à une aptitude de classe (comme un ajout au nombre de rages sanguines quotidiennes du sanguin ou au total de points de panache du bretteur). Quand le personnage applique cet avantage à un jet de dé, il arrondit toujours à l’inférieur (0 au minimum). Il devra donc en choisir certains à plusieurs reprises avant d’en tirer le moindre bénéfice.<br /><br />Certaines options s’accompagnent d’une limite numéraire fixe, une fois cette limite atteinte, il ne sert plus à rien de choisir l’option qui n’a pas d’effet supplémentaire. Le personnage peut toujours choisir une récompense ordinaire quand il gagne un niveau dans sa classe de prédilection (à savoir 1 point de vie ou 1 rang de compétence supplémentaire).<br /><br /><table width="100%"><tr><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">Alchimiste</a>.</b> L’alchimiste peut créer +1/2 <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe</a> par jour.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Chevalier</a>.</b> Le chevalier ajoute un bonus de +1/2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a> et d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Guerrier</a>.</b> Le guerrier ajoute un bonus de circonstances de +1/2 à ses jets de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">confirmation critique</a> qu’il porte avec l’arme de son choix (bonus maximum de +4). Ce bonus ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a>.</b> L’inquisiteur ajoute un bonus de +1 à ses tests de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> pour lancer des sorts d’inquisiteur.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Moine</a>.</b> Le moine ajoute un bonus de +1/4 à ses tests de manoeuvre offensive pour <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutter</a> ou faire un <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a>.
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124" width="1%"></td>
+</td><td width="49%">
+<a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Le pistolier">Pistolier</a>.</b> Le pistolier ajoute +1/4 à ses points d’<a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx#AUDACE" title="Le pistolier">audace</a>.<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prêtre</a>.</b> Le prêtre ajoute +1/2 aux dégâts d’énergie négative de ses sorts, y compris des sorts de « <i>blessure</i> ».<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Rôdeur</a>.</b> Le rôdeur rajoute +1/4 à son bonus contre un unique <a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx#ENNEMIJURE" title="Le rôdeur">ennemi juré</a> (bonus maximum de +1 par ennemi juré).<br /><br /><a href="/Wiki/Pathfinder-RPG.Manuel des races (Contenu).ashx" style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Advanced Race Guide, Elves of Golarion, Gnomes of Golarion, Goblins of Golarion, Halflings of Golarion, Humans of Golarion, Dwarves of Golarion, Orcs of Golarion/Manuel des races" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" loop="infinite" />
+</a><b><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Roublard</a>.</b> Le roublard réduit de 1 le malus qu’impose la non-maîtrise d’une arme. Lorsque son malus de non-maîtrise pour une arme passe à 0 grâce à cette capacité, on considère que le roublard a le don <a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20de%20guerre.ashx" title="Maniement d&#39;une arme de guerre">Maniement d'une arme de guerre</a> ou <a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20exotique.ashx" title="Maniement d&#39;une arme exotique">exotiques</a> approprié pour cette arme.
+</td></tr></table><br /><h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_9" href="#Nouvelles_règles_raciales_9" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux hobgobelins, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.<br /><br /><h3 class="separator">Dons<a class="headeranchor" id="Dons_0" href="#Dons_0" title="Lien vers cette section">&#0182;</a></h3><table CLASS="tablo centre autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">Dons</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Belliciste.ashx" title="Belliciste">Belliciste</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">hobgobelin</a></td><td>Bluff et Diplomatie deviennent des compétences de classe et bénéficient d'un bonus de +4 pour convaincre des créatures de se battre</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Commandant%20des%20gobelino%c3%afdes.ashx" title="Commandant des gobelinoïdes">Commandant des gobelinoïdes</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a> 13, <a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">hobgobelin</a></td><td>Confère un bonus lors du commandement de créatures gobelinoïdes</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Discipline%20hobgobeline.ashx" title="Discipline hobgobeline">Discipline hobgobeline</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1</td><td>En bande, le hobgobelin bénéficie d'un bonus de +1 aux jets de sauvegarde</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Coup%20de%20focalisation.ashx" title="Coup de focalisation">Coup de focalisation</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, <a class="pagelink" href="Pathfinder-RPG.Discipline%20hobgobeline.ashx" title="Discipline hobgobeline">Discipline hobgobeline</a></td><td>Subir des dégâts infligés par un autre hobgobelin permettent de se débarrasser d'un effet mental</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Coup%20de%20fouet%20d%c3%a9moralisant.ashx" title="Coup de fouet démoralisant">Coup de fouet démoralisant</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">BBA</a> +1, 1 rang en <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a></td><td>Les attaques de fouet prolongent d'un round les effets de l'Intimidation</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20op%c3%a9rations.ashx" title="Maître des opérations">Maître des opérations</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, <a class="pagelink" href="Pathfinder-RPG.Coup%20de%20fouet%20d%c3%a9moralisant.ashx" title="Coup de fouet démoralisant">Coup de fouet démoralisant</a>, 5 rangs en <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a></td><td>La présence du hobgobelin permet de donner à ses alliés plus faibles à se montrer téméraires</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.D%c3%a9monstration%20terrifiante.ashx" title="Démonstration terrifiante">Démonstration terrifiante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, <a class="pagelink" href="Pathfinder-RPG.D%c3%a9monstration.ashx" title="Démonstration">Démonstration</a>, <a class="pagelink" href="Pathfinder-RPG.Coup%20de%20fouet%20d%c3%a9moralisant.ashx" title="Coup de fouet démoralisant">Coup de fouet démoralisant</a>, <a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20op%c3%a9rations.ashx" title="Maître des opérations">Maître des opérations</a>, <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a>, 10 rangs en <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>,  maniement de l’arme choisie</td><td>La Démonstration du hobgobelin conduit ses alliés à se montrer téméraires</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Esprit%20d%c3%a9quipe.ashx" title="Esprit d&#39;équipe">Esprit d'équipe</a></td><td><sup>CM</sup></td><td>—</td><td>Duplique les bonus de moral dont bénéficient les alliés</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Explosion%20assourdissante.ashx" title="Explosion assourdissante">Explosion assourdissante</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a>, Aptitude de classe Bombe</td><td>La bombe du hobgobelin assourdit la créature touchée</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Lancer%20boomerang.ashx" title="Lancer boomerang">Lancer boomerang</a></td><td><sup><i>ISR</i></sup></td><td><a class="pagelink" href="Pathfinder-RPG.Tir%20%c3%a0%20bout%20portant.ashx" title="Tir à bout portant">Tir à bout portant</a>, <a class="pagelink" href="Pathfinder-RPG.Tir%20de%20pr%c3%a9cision.ashx" title="Tir de précision">Tir de précision</a>, 3 rangs en <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, sous-type <a class="pagelink" href="Pathfinder-RPG.sous-type%20gobelino%c3%afde.ashx" title="Gobelinoïde (sous-type)">gobelinoïde</a></td><td>Lorsqu'un allié avec ce don rate une attaque d'arme de jet, le personnage peut la rattraper au vol et attaquer la cible originale immédiatement</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Motivation%20pour%20la%20marche.ashx" title="Motivation pour la marche">Motivation pour la marche</a></td><td><sup>CM</sup></td><td>—</td><td>Réduit les dégâts subits lors du commandement d'une marche forcée</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Pedigree%20de%20commandant.ashx" title="Pedigree de commandant">Pedigree de commandant</a></td><td><sup>CM</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Hobgobelin%20(race).ashx" title="Les hobgobelins">Hobgobelin</a></td><td>Ajoute le niveau de classe aux tests de Moral pendant un combat de masse</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Succession%20de%20d%c3%a9fis.ashx" title="Succession de défis">Succession de défis</a></td><td><sup>CM</sup></td><td>Capacité de classe <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#DEFI" title="Le chevalier">défi</a>, personnage de niveau 7</td><td>Déclenche un nouveau défi immédiatement après la fin de l'ancien</td></tr></table><br /><table width="100%"><tr><td width="49%">
+<h3 class="separator">Archétypes de classe<a class="headeranchor" id="Archétypes_de_classe_1" href="#Archétypes_de_classe_1" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Cavalier%20cruel%20(chevalier).ashx" title="Cavalier cruel">Cavalier cruel (chevalier)</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Grenadier%20(alchimiste).ashx" title="Grenadier">Grenadier (alchimiste)</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Moine%20%c3%a0%20peau%20de%20fer%20(moine).ashx" title="Moine à peau de fer">Moine à peau de fer (moine)</a> <i>(MR)</i></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_2" href="#Équipement_2" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Acc%c3%a9l%c3%a9rateur%20instable%20(objet).ashx" title="Accélérateur instable">Accélérateur instable</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Bille%20de%20fronde%20alchimique%20(objet).ashx" title="Bille de fronde alchimique">Bille de fronde alchimique</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Breuvage%20de%20guerre%20hobgobelin%20(objet).ashx" title="Breuvage de guerre hobgobelin">Breuvage de guerre hobgobelin</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Chistera%20(objet).ashx" title="Chistera">Chistera</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fers%20(objet).ashx" title="Fers">Fers</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fers%20(objet).ashx" title="Fers">Fers de maître</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fus%c3%a9e%20de%20signalisation%20(objet).ashx" title="Fusée de signalisation">Fusée de signalisation</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Infusion%20de%20puanteur%20(objet).ashx" title="Infusion de puanteur">Infusion de puanteur</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Jus%20de%20ferveur%20(objet).ashx" title="Jus de ferveur">Jus de ferveur</a> <i>(CM)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Menottes%20%c3%a0%20pointes%20(objet).ashx" title="Menottes à pointes">Menottes à pointes</a> <i>(MR)</i></li></ul>
+</td><td width="1%">
+<td style="border-left:1px solid #4b3124;width=" width="1%"></td>
+</td><td width="49%">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_3" href="#Objets_magiques_3" title="Lien vers cette section">&#0182;</a></h3><ul><li><a class="pagelink" href="Pathfinder-RPG.Cataplasme%20de%20soins.ashx" title="Cataplasme de soins">Cataplasme de soins</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.cruelle%20(propri%c3%a9t%c3%a9).ashx" title="cruelle (propriété)">Cruelle (propriété d'arme)</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%89tendard%20de%20guerre%20hobgobelin.ashx" title="Étendard de guerre hobgobelin">Étendard de guerre hobgobelin</a> <i>(MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Fers%20%c3%a0%20cheval%20de%20ruade%20d%c3%a9vastatrice.ashx" title="Fers à cheval de ruade dévastatrice">Fers à cheval de ruade dévastatrice</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Menottes%20de%20domination.ashx" title="Menottes de domination">Menottes de domination</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.mortelle%20(propri%c3%a9t%c3%a9).ashx" title="mortelle (propriété)">Mortelle (propriété d'arme)</a> <i>(A&E, MR)</i></li><li><a class="pagelink" href="Pathfinder-RPG.Tison%20du%20ma%c3%aetre.ashx" title="Tison du maître">Tison du maître</a> <i>(ISR)</i></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_4" href="#Sorts_4" title="Lien vers cette section">&#0182;</a></h3><ul><li><i>'</i><a class="pagelink" href="Pathfinder-RPG.Reproche%20d%c3%a9chirant.ashx" title="Reproche déchirant">Reproche déchirant</a> <i>(MR)</i></li></ul>
+</td></tr></table><br /><div style="float:right; padding: 4px 4px 2px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Écologie<a class="headeranchor" id="Écologie_5" href="#Écologie_5" title="Lien vers cette section">&#0182;</a></h3>Les hobgobelins sont généralement considérés comme les plus civilisés des gobelinoïdes, bien que leur penchant pour la cruauté, la destruction et la tyrannie n’en fasse pas une société disposée aux bénéfices mutuels. Peu d’espèces éprouvent autant de dévotion pour le combat que les hobgobelins. Toute leur culture et leur société démontrent un côté militariste où il faut prouver sa supériorité martiale et générer des conflits.<br /><br />Les hobgobelins possèdent l’intelligence et la sophistication qui manquent à leurs cousins gobelins et compensent leur infériorité physique par rapport aux gobelours par l’efficacité dont ils font preuve en travaillant en groupe. Chaque tribu forme une petite milice qui pille villes et villages, comme une armée d’arrivistes désireuse de former une puissance bien plus redoutable et de ravager des communautés de grande envergure. La plupart de ces groupes de pillards sont chassés par des armées ou des forces de l’ordre plus puissantes qu’eux, ou bien par un groupe d’aventuriers, mais, parfois, un commandant atteint son objectif : diriger une grande armée compartimentée, faite de légions de hobgobelins venant de dizaines de tribus et partir en guerre contre des ennemis dotés de solides défenses et de formations militaires de qualité.<br /><br />En plus de propager la guerre via leurs conquêtes et leurs incursions militaires, les hobgobelins encouragent les autres races et les autres cultures à se montrer plus belliqueuses. Un hobgobelin isolé se rend souvent dans une ville cosmopolite susceptible de l’accepter et trouve un travail, généralement violent, ou occupe une position lui permettant de satisfaire sa soif de sang. Ils peuvent servir de gros bras pour un syndicat du crime, de combattants modèles dans une arène au sable sanglant ou de mercenaires pour une organisation militaire. Il arrive même qu’un hobgobelin devienne conseiller en stratégie militaire auprès d’un général ou d’un dirigeant reconnaissant que son côté impitoyable et le rude entraînement reçu depuis son enfance en font un avantage unique sur le champ de bataille. Le hobgobelin s’efforce alors de pousser son seigneur à partir en guerre, même s’il doit mentir ou le duper pour arriver à ses fins.<br /><br />Les hobgobelins ont tendance à se méfier de la magie, surtout de la magie profane (qu’ils appellent « la magie des elfes »). Ils lui préfèrent l’alchimie. Ils pratiquent une forme d’alchimie dévastatrice centrée sur les armes de jet à aspersion, un peu comme un écho de l’amour que les gobelins éprouvent pour le feu.<br /><br />Un hobgobelin ne fait que quelques centimètres de moins qu’un humain ordinaire mais il compense son manque de taille par un gain de muscles. Ces créatures ont généralement une peau grise prenant des teintes de mousse quand elle reste exposée au soleil sur de longues périodes. Elles portent les habits et armures récupérés sur les humanoïdes vaincus au combat ou réduits en esclavage et les modifient pour les adapter à leurs bras plus longs et leurs jambes plus courtes.<br /><br />Un hobgobelin naît après six mois de gestation. Il n’y a qu’un petit par naissance, bien qu’il arrive qu’une femelle donne naissance à des jumeaux. La mère s’occupe de son enfant pendant quelques semaines seulement, après quoi il est sevré de force et élevé en crèche avec d’autres. Le petit hobgobelin grandit bien plus vite qu’un humain : il marche, parle le gobelin et se débrouille tout seul dès six mois. Un jeune hobgobelin commence son entraînement martial à un an. Ces conditions de vie très rudes forment de robustes soldats, les enfants ne survivant pas étant considérés comme le prix à payer pour obtenir une armée forte et efficace.<br /><br />Il est rare qu’un hobgobelin atteigne un âge avancé car son mode de vie violent se traduit souvent par une mort prématurée sur le champ de bataille. Les individus qui survivent à leur carrière militaire quittent les rangs des combattants à l’âge mûr et adoptent souvent un rôle de dirigeant au sein de l’armée hobgobeline ou deviennent conseillers politiques auprès d’un général ou d’un seigneur de guerre. Mais même ainsi, la faiblesse qui accompagne inévitablement le grand âge apparaît immanquablement aux yeux de leurs subalternes qui tentent alors d’usurper leur position. Ces destitutions ne s’accompagnent pas forcément d’explosion de violence mais un hobgobelin définitivement écarté de la sphère militaire tombe généralement malade dans les années qui suivent et succombe alors que son corps aurait pu, sans cela, survivre encore longtemps.<br /><br />Malgré leur penchant pour la violence et la destruction, les hobgobelins forment une société basée sur le mérite, même si elle se révèle bien dangereuse pour les individus qui n’arrivent pas à démontrer leur valeur. Chaque hobgobelin, quel que soit son âge, son sexe ou son pedigree, reçoit le respect et l’autorité qu’il a gagnés grâce à ses prouesses martiales uniquement. Les hobgobelins sont des créatures ambitieuses et poussées par un irrépressible besoin de partir en guerre, mais même les individus qui n’occupent pas un rôle militaire à proprement parler (comme les forgerons, les cuisiniers, les messagers, les quartiers-maîtres, les palefreniers etc.) savent bien que leur tâche, aussi humble soit-elle, est indispensable au bon fonctionnement de l’armée dans son ensemble. Une fois qu’un hobgobelin a atteint un poste élevé et gagné de l’influence, il doit sans cesse continuer de prouver sa valeur car ses subalternes profiteront du moindre signe de faiblesse pour prendre sa place. Ainsi, l’armée et la société hobgobeline restent toujours les plus puissantes et les plus efficaces au monde.<br /><br />En tant que race, les hobgobelins sont tout à fait capables de construire des communautés durables et une culture stable, mais pour eux, il est plus facile et plus efficace d’obliger des créatures plus faibles qu’eux à pourvoir à leurs besoins. Les hobgobelins se considèrent supérieurs à toutes les autres races, y compris les autres gobelinoïdes, et réduisent les membres d’autres espèces en esclavage. Ils font montre d’une grande cruauté envers eux et leur accordent encore moins de valeur qu’à une lame tordue et rouillée. Il est rare que les combattants des autres races soient obligés de servir dans l’armée des hobgobelins car ces derniers préfèrent la loyauté de leur propre espèce. De même, il est plus facile pour eux de s’emparer des innovations culturelles qu’ils apprécient chez leurs esclaves plutôt que de créer les leurs. Pourquoi faire du neuf alors que tout est déjà là, tout prêt ?
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"06342fca28c04528ad9b9f8348e8e0d9","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>
