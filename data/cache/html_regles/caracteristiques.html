@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les caractéristiques - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+<link rel="canonical" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Caractéristiques.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Caract%u00e9ristiques&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMzUzNjgxNQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIRD2QWBgIFDw8WAh4NQW50aGVtVmlzaWJsZWhkZAIdDw8WAh4HVmlzaWJsZWhkZAInDw8WAh8CaGQWAmYPFgIeC18hSXRlbUNvdW50ZmRkdy1nXCilQ76SggI6jtH08i3XzpQ=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=637210362810598249" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+        <table id="wrapper">
+            <tr>
+                <td id="margin-l" rowspan="2"></td>
+                <td id="page">
+                    <div id="header">
+                        <div id="userpanel">
+                            <img class="UserMenuAvatar" src="/images/avatars/0t.jpg" style="width:60px;height:60px;border-width:0" />
+<ul class="menu">
+<li><a href="/Forum/login">Bienvenue, Invité !</a></li>
+<li><a href="/Forum/login">Connexion</a></li>
+<li><a href="/Forum/register">Inscription</a></li>
+</ul>
+
+                        </div>
+                        <div id="banner">
+                            <span>Pathfinder-FR</span>
+                        </div>
+                        <div id="nav">
+                            <ul>
+                                <li id="HomeTab"><a href="/" class="home"><span>Accueil</span></a></li>
+                                <li id="BlogTab"><a href="/Blog/" class="blog"><span>Blog</span></a></li>
+                                <li id="WikiTabber">
+                                    <span class="bullet"><a href="/Wiki/" class="wikis bullet"><span>Wikis</span></a></span>
+                                    <ul class="sub sub-wikis">
+                                        <li><a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg"><span>Pathfinder-RPG</span></a></li>
+                                        <li><a href="/Wiki/Pathfinder2.MainPage.ashx" class="wiki-pf2"><span>Pathfinder 2</span></a></li>
+                                        <li><a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion"><span>Golarion</span></a></li>
+                                        <li><a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations"><span>Ressources</span></a></li>
+                                        <li><a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures"><span>Aventures</span></a></li>
+                                        <li><a href="/Wiki/Starfinder.MainPage.ashx" class="wiki-starfinder"><span>Starfinder</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="ForumsTab"><span class="bullet"><a href="/Forum/" class="forum bullet"><span>Forum</span></a></span></li>
+                                <li id="MediaTab"><span class="bullet"><a href="/Media/" class="galerie"><span>Galerie</span></a></span></li>
+                                <li id="PartiesTab">
+                                    <span class="bullet"><a href="/Wiki/Parties.MainPage.ashx" class="parties"><span>Parties</span></a></span>
+                                    <ul class="sub sub-parties">
+                                        <li><a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki"><span>Wikis</span></a></li>
+                                        <li><a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum"><span>Forums</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="SearchTab"><a href="/Search/" class="search"><span>Recherche</span></a></li>
+                                <li id="ContactTab"><a href="/Blog/Contact.aspx" class="contact"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                    <div id="container">
+                        <div id="container-tl">
+                            <div id="sidebar">
+                                
+                                <h1 class="separator"> Navigation <a class="headeranchor" id="Navigation_0" href="#Navigation_0" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="MainPage.ashx" title="">Accueil du site</a></li><li><a href="https://t.co/euqukfofhL?amp=1">Serveur Discord</a> <a href="https://t.co/euqukfofhL?amp=1"><img src="/images/Pathfinder/logos/discord_icon.png" style="height:12px"/></a></li><li><a class="pagelink" href="Liens.ashx" title="">Partenaires</a></li></ul>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-JdR">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20monstres.ashx" title="Liste alphabétique des monstres">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ non officielle">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2"><h4 class="light arrow">Wiki Pathfinder 2</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Ressources pour la version 2 de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.MainPage.ashx" title="Wiki de ressources pour Pathfinder 2">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder2.AP.ashx" title="Aventures officielles pour Pathfinder 2 (campagnes)">Campagnes</a></li>
+<li><a class="pagelink" href="Pathfinder2.Publications.ashx" title="Publications pour Pathfinder 2 (livres de base)">Autres sorties</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder2.ADJ.ashx" title="Aides de jeu pour Pathfinder 2 (Règles)">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder2.PFS.ashx" title="Pathfinder Society / Campagne organisée pour Pathfinder 2">PF Society</a></li>
+<li><a class="pagelink" href="Pathfinder2.FAN.ashx" title="Créations de fans pour Pathfinder 2">Créations</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides informatiques, règles maison…</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Starfinder</h4>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.MainPage.ashx" title="wiki du Jeu de rôle Starfinder">Accueil</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Starfinder.ADJ.ashx" title="Aides de jeux pour StarFinder">Aides de jeu</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul><br /><h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="">Guide de création</a></li><li><a class="pagelink" href="Pathfinder-RPG.Temp.ashx" title="Pages temporaires - Sources des informations du site">Sources/Projets d'intégrations</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Caractéristiques">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Caractéristiques">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Caractéristiques">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Pathfinder2">Pathfinder2</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                            </div>
+                            <div id="container-tr">
+                                <div id="content">
+                                    <div id="MainHeaderDiv">
+                                         
+
+                                    </div>
+                                    <div id="PageInternalHeaderDiv">
+</div>
+                                    
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			
+			
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les caractéristiques
+			
+		</h1>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Déterminer_les_caractéristiques_7">Déterminer les caractéristiques</a><br />&nbsp;&nbsp;&nbsp;<a href="#Déterminer_les_modificateurs_8">Déterminer les modificateurs</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Caractéristiques_et_lanceurs_de_sorts_0">Caractéristiques et lanceurs de sorts</a><br />&nbsp;&nbsp;&nbsp;<a href="#Les_caractéristiques_9">Les caractéristiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#La_Force_For_1">La Force (For)</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#La_Dextérité_Dex_2">La Dextérité (Dex)</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#La_Constitution_Con_3">La Constitution (Con)</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#LIntelligence_Int_4">L'Intelligence (Int)</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#La_Sagesse_Sag_5">La Sagesse (Sag)</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Le_Charisme_Cha_6">Le Charisme (Cha)</a><br /></p></div></div></td></tr></table><br /><i>Chaque personnage possède six caractéristiques qui représentent ses qualités les plus fondamentales, son talent et ses prouesses brutes.</i><br /><br />Il est rare qu’un personnage doive faire un jet en utilisant uniquement la valeur d’une caractéristique mais ces valeurs et les modificateurs qui leur sont associés conditionnent presque toutes les compétences et toutes les capacités du personnage. La valeur d’une caractéristique se situe généralement entre 3 et 18 mais des bonus ou des malus raciaux peuvent la modifier ; 10 est considéré comme une valeur moyenne.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DETERMINER" href="#DETERMINER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Déterminer les caractéristiques <a class="headeranchor" id="Déterminer_les_caractéristiques_7" href="#Déterminer_les_caractéristiques_7" title="Lien vers cette section">&#0182;</a></h2>Il existe plusieurs méthodes pour déterminer les valeurs des caractéristiques, chacune rendant la création de personnage plus ou moins flexible ou sujette au hasard.<br /><br />Les modificateurs raciaux (les ajustements des valeurs des caractéristiques dépendant de la <a class="pagelink" href="Pathfinder-RPG.races.ashx" title="Les races des personnages">race</a> du personnage) entrent en jeu après que les valeurs des caractéristiques ont été déterminées.<br /><br /><b>Méthode standard.</b> Lancez 4d6, éliminez le résultat du dé le plus faible et additionnez les trois résultats restants. Notez ce total et recommencez jusqu’à ce que vous ayez obtenu six valeurs. Répartissez ces valeurs entre les caractéristiques comme vous le désirez. Cette méthode est moins aléatoire que la méthode classique et a tendance à créer des personnages qui possèdent des caractéristiques au-dessus de la moyenne.<br /><br /><b>Méthode classique.</b> Lancez 3d6 et additionnez les résultats des dés. Notez ce total et recommencez jusqu’à ce que vous ayez obtenu six valeurs. Répartissez ces valeurs entre les caractéristiques comme vous le désirez. Cette méthode est plutôt aléatoire et crée des personnages clairement inégaux. On peut pousser le hasard encore plus loin en utilisant les valeurs dans l’ordre dans lequel elles ont été obtenues (la première indiquant la Force, la seconde la Dextérité, et ainsi de suite). Il est plutôt difficile de faire coïncider les personnages créés par cette méthode avec un concept choisi à l’avance, car leurs caractéristiques pourraient être insuffisantes pour une classe ou une personnalité donnée. Dans ce cas, il vaut donc mieux construire le concept du personnage à partir de ses caractéristiques plutôt que l’inverse.<br /><br /><b>Méthode héroïque.</b> Lancez 2d6 et ajoutez 6 à la somme des dés. Notez le total et recommencez jusqu’à ce que vous ayez obtenu six valeurs. Répartissez ces valeurs entre les caractéristiques comme vous le désirez. Cette méthode, qui est moins aléatoire que la méthode standard, permet de créer des personnages dont la plupart des caractéristiques sont au-dessus de la moyenne.<br /><br /><b>Réserve de dés.</b> Chaque personnage possède une réserve de 24d6 à répartir entre ses caractéristiques. Avant de les lancer, le joueur choisit le nombre de dés qu’il veut utiliser pour chacune de ses caractéristiques, avec un minimum de 3d6 dans chacune d’entre elles. Une fois que tous les dés ont été répartis, le joueur les lance par groupe et additionne les résultats des trois dés les plus élevés de chaque groupe. Pour des personnages plus puissants, le MJ peut accroître le nombre total de dés à 28. Cette méthode crée des personnages globalement équivalents à ceux de la méthode standard.<br /><br /><div style="float:right; background-color: #fff; padding: 0 0 16px 16px">
+<div style="border: 1px solid #4b3124; padding: 4px">
+<center><table><tr style="vertical-align: top"><td>
+<table CLASS="tablo"><caption>Coût des caractéristiques</caption><tr CLASS="titre"><td>Valeur</td><td>Points</td><td>&emsp;</td><td CLASS="gauche">Valeur</td><td>Points</td></tr><tr CLASS="premier"><td>7</td><td>–4</td><td>&emsp;</td><td>13</td><td>3</td></tr><tr CLASS="alt"><td>8</td><td>–2</td><td>&emsp;</td><td>14</td><td>5</td></tr><tr><td>9</td><td>–1</td><td>&emsp;</td><td>15</td><td>7</td></tr><tr CLASS="alt"><td>10</td><td>0</td><td>&emsp;</td><td>16</td><td>10</td></tr><tr><td>11</td><td>1</td><td>&emsp;</td><td>17</td><td>13</td></tr><tr CLASS="alt"><td>12</td><td>2</td><td>&emsp;</td><td>18</td><td>17</td></tr></table>
+</td><td WIDTH="20px"></td><td>
+<table CLASS="tablo"><caption>Nombre de points pour acheter des caractéristiques</caption><tr CLASS="titre"><td>Type de campagne</td><td>Points</td></tr><tr CLASS="premier"><td>Réaliste</td><td>10</td></tr><tr CLASS="alt"><td>Standard</td><td>15</td></tr><tr><td>Fantastique</td><td>20</td></tr><tr CLASS="alt"><td>Épique</td><td>25</td></tr></table>
+</tr></table></center></div></div>
+<b>Achat.</b> Chaque personnage reçoit un certain nombre de points qu’il peut dépenser pour accroître ses caractéristiques de base. Avec cette méthode, toutes les valeurs des caractéristiques commencent à 10 et le personnage peut les augmenter en investissant des points. Il peut également gagner des points supplémentaires en abaissant une ou plusieurs de ses valeurs de caractéristiques (points qu’il pourra ensuite dépenser pour augmenter d’autres caractéristiques). Aucune valeur ne peut être réduite en dessous de 7 ni accrue au-delà de 18 avec cette méthode. Consultez la tableau ci-contre pour voir le coût en points de chacune des valeurs. Une fois que tous les points ont été dépensés, appliquez les éventuels modificateurs raciaux du personnage.<br /><br />Le nombre de points dont le personnage dispose pour cette méthode dépend du type de campagne. La valeur standard est de 15 points. Les personnages non-joueurs (PNJ) moyens sont généralement créés avec pas plus de 3 points. Le tableau ci-contre indique le nombre de points à accorder selon le type de campagne. Cette méthode accorde une grande importance aux choix du joueur et permet de créer des personnages équilibrés. C’est ce système qui est généralement utilisé dans les rencontres organisées comme celles de la Pathfinder Society (visitez <a class="externallink" href="http://paizo.com/pathfinderSociety" title="Paizo" target="_blank">Paizo</a> ou <a class="externallink" href="http://www.black-book-editions.fr/index.php?site_id=146" title="Black Book Editions" target="_blank">Black Book Editions</a> pour plus de détails).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DETERMINERLESMODIFICATEURS" href="#DETERMINERLESMODIFICATEURS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Déterminer les modificateurs <a class="headeranchor" id="Déterminer_les_modificateurs_8" href="#Déterminer_les_modificateurs_8" title="Lien vers cette section">&#0182;</a></h2><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20joueurs%20(Races%20et%20classes).ashx#33" title="FAQ du Manuel des joueurs, section races et classes">→</a> Sorts en bonus grâce à un score de caractéristique élevé : Puis-je en bénéficier même si mon niveau de classe de lanceur de sorts n'est pas assez élevé pour me donner accès à ces niveaux de sorts ?</i></b><br /><br />Non. Vous ne gagnez des <u><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#DETERMINER" title="Les caractéristiques">sorts en bonus</a></u> que si votre niveau de classe vous donne accès aux niveaux de sorts considérés.  Vous ne pouvez même pas les utiliser pour lancer ses sorts de niveau inférieur. Voyez le <i>Manuel des joueurs</i> page 16, section <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#CARACTERISTIQUESETLANCEURSDESORTS" title="Les caractéristiques">Caractéristiques et lanceurs de sorts</a> : « Pour pouvoir jeter des sorts d’un niveau donné, un lanceur de sorts doit posséder une valeur de caractéristique et un niveau de classe suffisamment élevés. »<br /><br />Par exemple, un magicien de niveau 1 avec une Intelligence de 18 a, d'après la table 1-3 : Modificateurs de caractéristique et sorts en bonus, un sort en bonus aux niveaux de sorts 1, 2, 3 et 4. Cependant, il ne peut bénéficier que du sort en bonus de niveau 1 parce que, en tant que magicien de niveau 1, il n'a accès qu'aux sorts de niveau 1 (d'après la table de progression du magicien, son nombre de sorts de niveau 2, 3 et 4 est "—", ce qui signifie "pas d'accès aux sorts de ce niveau"). Dès qu'il devient un magicien de niveau 3, il accède à ses emplacements de sorts de niveau 2 et peut donc utiliser l'emplacement de sort en bonus de niveau 2 obtenu grâce à sa haute Intelligence. Il pourra faire de même pour les emplacements de sorts et le sort en bonus de niveau 3 lorsqu'il deviendra un magicien de niveau 5.<br /><br />En résumé, ignorez les colonnes des sorts sur la table 1-3 : Modificateurs de caractéristique et sorts en bonus jusqu'à ce que votre niveau de classe vous donne accès à ces niveaux de sorts.
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div>Une fois que les ajustements dépendant de la <a class="pagelink" href="Pathfinder-RPG.races.ashx" title="Les races des personnages">race</a> ont été effectués, chacune des caractéristiques se voit associer un modificateur entre -5 et +5 déterminé comme indiqué dans le Tableau ci-après. Ce modificateur est le nombre que vous ajoutez ou retranchez au résultat du dé lorsque votre personnage tente d’accomplir une action liée à la caractéristique en question. Il possède également d’autres utilisations qui ne se rapportent pas à des lancers de dés. Un modificateur positif est un bonus et un modificateur négatif un malus ou une pénalité. <br /><br />Le tableau vous indique également les sorts en bonus, un élément important pour les personnages qui peuvent lancer des sorts.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABLEAUCARACTERISTIQUES" href="#TABLEAUCARACTERISTIQUES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<table CLASS="tablo centre autoalt"><caption>Modificateurs de caractéristique et sorts en bonus</caption><tr CLASS="titre"><td COLSPAN="2" CLASS="avecsoustitre">Caractéristiques</td><td COLSPAN="10" CLASS="avecsoustitre">Sorts en bonus par jour (et par niveau de sorts)</td></tr><tr CLASS="soustitre"><td>Valeur</td><td>Modificateur</td><td>0</td><td>1er</td><td>2e</td><td>3e</td><td>4e</td><td>5e</td><td>6e</td><td>7e</td><td>8e</td><td>9e</td></tr><tr CLASS="premier"><td>1</td><td>–5</td><td COLSPAN="10">impossible de lancer des sorts liés à cette caractéristique</td></tr><tr><td>2–3</td><td>–4</td><td COLSPAN="10">impossible de lancer des sorts liés à cette caractéristique</td></tr><tr><td>4–5</td><td>–3</td><td COLSPAN="10">impossible de lancer des sorts liés à cette caractéristique</td></tr><tr><td>6–7</td><td>–2</td><td COLSPAN="10">impossible de lancer des sorts liés à cette caractéristique</td></tr><tr><td>8–9</td><td>–1</td><td COLSPAN="10">impossible de lancer des sorts liés à cette caractéristique</td></tr><tr><td>10–11</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>12–13</td><td>+1</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>14–15</td><td>+2</td><td>—</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>16–17</td><td>+3</td><td>—</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>18–19</td><td>+4</td><td>—</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>20–21</td><td>+5</td><td>—</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>22–23</td><td>+6</td><td>—</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td></tr><tr><td>24–25</td><td>+7</td><td>—</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td></tr><tr><td>26–27</td><td>+8</td><td>—</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td></tr><tr><td>28–29</td><td>+9</td><td>—</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>30–31</td><td>+10</td><td>—</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td></tr><tr><td>32–33</td><td>+11</td><td>—</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td></tr><tr><td>34–35</td><td>+12</td><td>—</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td></tr><tr><td>36–37</td><td>+13</td><td>—</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>38–39</td><td>+14</td><td>—</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td></tr><tr><td>40–41</td><td>+15</td><td>—</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td></tr><tr><td>42–43</td><td>+16</td><td>—</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td>44–45</td><td>+17</td><td>—</td><td>5</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td></tr></table><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CARACTERISTIQUESETLANCEURSDESORTS" href="#CARACTERISTIQUESETLANCEURSDESORTS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Caractéristiques et lanceurs de sorts <a class="headeranchor" id="Caractéristiques_et_lanceurs_de_sorts_0" href="#Caractéristiques_et_lanceurs_de_sorts_0" title="Lien vers cette section">&#0182;</a></h3>
+La caractéristique dont dépendent les sorts varie selon les types de lanceurs de sorts : il s’agit de l’Intelligence pour les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx" title="L&#39;alchimiste">alchimistes</a>, les <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magiciens</a>, les <a class="pagelink" href="Pathfinder-RPG.magus.ashx" title="Le magus">magi</a> et les <a class="pagelink" href="Pathfinder-RPG.sorci%c3%a8re.ashx" title="La sorcière">sorcières</a> de la Sagesse pour les <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a>, les <a class="pagelink" href="Pathfinder-RPG.druide.ashx" title="Le druide">druides</a>, les <a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteurs</a> et les <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a>, et du Charisme pour les <a class="pagelink" href="Pathfinder-RPG.barde.ashx" title="Le barde">bardes</a>, les <a class="pagelink" href="Pathfinder-RPG.conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">conjurateurs</a>, les <a class="pagelink" href="Pathfinder-RPG.oracle.ashx" title="L&#39;oracle">oracles</a>, les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> et les <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleurs</a>. Pour pouvoir jeter des sorts d’un niveau donné, un lanceur de sorts doit posséder une valeur de caractéristique et un niveau de classe suffisamment élevés. Consultez les descriptions des classes pour plus de détails.<br /><br />
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="DESCRIPTION" href="#DESCRIPTION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h2 class="separator"> Les caractéristiques <a class="headeranchor" id="Les_caractéristiques_9" href="#Les_caractéristiques_9" title="Lien vers cette section">&#0182;</a></h2>Chacune des caractéristiques décrit un aspect de votre personnage et conditionne certaines de ses actions.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FORCE" href="#FORCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> La Force (For) <a class="headeranchor" id="La_Force_For_1" href="#La_Force_For_1" title="Lien vers cette section">&#0182;</a></h3><i>La Force représente la puissance musculaire et physique.</i> <br /><br />Cette caractéristique est importante pour les combattants au corps à corps comme les <a class="pagelink" href="Pathfinder-RPG.guerrier.ashx" title="Le guerrier">guerriers</a>, les <a class="pagelink" href="Pathfinder-RPG.moine.ashx" title="Le moine">moines</a>, les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> et certains <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a>. La Force indique également le <a class="pagelink" href="Pathfinder-RPG.Poids%20transportable.ashx" title="Poids transportable">poids maximal</a> que votre personnage peut porter. Un personnage avec une valeur de Force de 0 est trop faible pour se mouvoir ; il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a>. Certaines créatures ne possèdent pas de valeur de Force et n’appliquent aucun modificateur aux <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétences</a> et aux jets basés sur la Force.<br /><br />On applique le modificateur de Force
+<ul><li>aux jets d’<a class="pagelink" href="Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx" title="attaque au corps à corps">attaque au corps à corps</a>.</li><li>aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2ts.ashx" title="jet de dégâts">jets de dégâts</a> lorsque vous utilisez une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20corps%20%c3%a0%20corps.ashx" title="arme de corps à corps">arme de corps à corps</a> ou une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20jet.ashx" title="arme de jet">arme de jet</a>, y compris une fronde (avec des exceptions : les attaques portées avec la main secondaire ne bénéficient que de la moitié du bonus de Force du personnage et les attaques à deux mains reçoivent une fois et demie le bonus de Force. Les malus de Force – mais pas les bonus – s’appliquent aux jets d’attaque lorsqu’on utilise un arc qui n’est pas un arc composite).</li><li>aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> et de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a>.</li><li>aux tests de Force (pour forcer une porte par exemple).</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="DEXTERITE" href="#DEXTERITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> La Dextérité (Dex) <a class="headeranchor" id="La_Dextérité_Dex_2" href="#La_Dextérité_Dex_2" title="Lien vers cette section">&#0182;</a></h3><i>La Dextérité représente l’agilité, les réflexes et l’équilibre.</i><br /><br />Cette caractéristique est surtout importante pour les <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublards</a> mais elle est également utile pour les personnages qui ne portent que des <a class="pagelink" href="Pathfinder-RPG.armure%20l%c3%a9g%c3%a8re.ashx" title="armure légère">armures légères</a> ou <a class="pagelink" href="Pathfinder-RPG.armure%20interm%c3%a9diaire.ashx" title="armure intermédiaire">intermédiaires</a> ou aucune armure du tout. C’est une caractéristique vitale pour les personnages qui désirent exceller au combat avec des <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20distance.ashx" title="arme à distance">armes à distance</a> comme les arcs et les frondes. Un personnage avec une valeur de Dextérité de 0 est incapable de se mouvoir ; il est immobile (mais pas inconscient).<br /><br />On applique le modificateur de Dextérité
+<ul><li>aux jets d’<a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20distance.ashx" title="Attaque à distance">attaque à distance</a> ; par exemple pour les attaques à l’arbalète, à l’arc, à la hache de lancer ou encore pour de nombreux sorts d’attaque à distance comme <i><a class="pagelink" href="Pathfinder-RPG.rayon%20ardent.ashx" title="Rayon ardent">rayon ardent</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20br%c3%bblante.ashx" title="Lumière brûlante">lumière brûlante</a></i>.</li><li>à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">classe d’armure</a> (CA), pour autant que le personnage puisse réagir à l’attaque.</li><li>aux jets de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> pour éviter les <i><a class="pagelink" href="Pathfinder-RPG.boule%20de%20feu.ashx" title="Boule de feu">boules de feu</a></i> et d’autres attaques auxquelles on peut échapper en se déplaçant rapidement.</li><li>aux tests d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a>, de <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a>, de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>, d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>, d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a>, d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a> et de <a class="pagelink" href="Pathfinder-RPG.Vol.ashx" title="Vol">Vol</a>.</li></ul>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="CONSTITUTION" href="#CONSTITUTION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> La Constitution (Con) <a class="headeranchor" id="La_Constitution_Con_3" href="#La_Constitution_Con_3" title="Lien vers cette section">&#0182;</a></h3><i>La Constitution représente la santé et l’endurance de votre personnage.</i><br /><br />Le bonus lié à la Constitution augmente les <a class="pagelink" href="Pathfinder-RPG.point%20de%20vie.ashx" title="point de vie">point de vie</a> du personnage, ce qui rend cette caractéristique importante pour toutes les <a class="pagelink" href="Pathfinder-RPG.classes.ashx" title="Les classes">classes</a>. Certaines créatures, comme les <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">morts-vivants</a> et les <a class="pagelink" href="Pathfinder-RPG.type%20cr%c3%a9ature%20artificielle.ashx" title="Créature artificielle">créatures artificielles</a>, ne possèdent pas de valeur de Constitution. Leur modificateur pour tous les jets basés sur la Constitution est de +0. Un personnage avec une valeur de Constitution de 0 est <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">mort</a>.<br /><br />On applique le modificateur de Constitution
+<ul><li>à chacun des <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">dés de vie</a> (un malus ne peut jamais abaisser le résultat du dé en dessous de 1 cependant : un personnage gagne toujours au moins 1 point de vie chaque fois qu’il gagne un niveau).</li><li>aux jets de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a>, pour résister aux <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poisons</a>, aux <a class="pagelink" href="Pathfinder-RPG.maladie.ashx" title="maladie">maladies</a> et aux autres menaces du même genre.</li></ul>
+Si la valeur de Constitution d’un personnage change suffisamment pour que son modificateur de Constitution soit altéré, les <a class="pagelink" href="Pathfinder-RPG.point%20de%20vie.ashx" title="point de vie">points de vie</a> du personnage sont modifiés en conséquence (vers le haut ou vers le bas).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="INTELLIGENCE" href="#INTELLIGENCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator"> L'Intelligence (Int) <a class="headeranchor" id="LIntelligence_Int_4" href="#LIntelligence_Int_4" title="Lien vers cette section">&#0182;</a></h3><i>L’Intelligence détermine la capacité d’apprentissage et de raisonnement de votre personnage.</i><br /><br /><div style="float:right; padding-left: 6px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i><a class="pagelink" href="Pathfinder-RPG.FAQ-%20Manuel%20des%20joueurs%20(Races%20et%20classes).ashx#18" title="FAQ du Manuel des joueurs, section races et classes">→</a> Intelligence : Si mon modificateur d’Intelligence augmente, puis-je choisir une nouvelle langue supplémentaire ?</i></b><br /><br />Oui. Par exemple, si l’Int du personnage est 13, et qu’en arrivant au niveau 4 il applique son accroissement de <u><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#DESCRIPTION" title="Les caractéristiques">caractéristique</a></u> à l’Int, cela passera son bonus d’Int de +1 à +2, lui offrant une nouvelle langue supplémentaire.<br />
+Techniquement, les objets qui améliorent l’Int comme un <i><a class="pagelink" href="Pathfinder-RPG.Bandeau%20dintelligence.ashx" title="Bandeau d&#39;intelligence">bandeau d’intelligence</a></i> devrait conférer un nombre spécifique de langues (comme ils le font pour les rangs de compétence).
+</td></tr></table></td>
+<td><img style="width:50px; cursor:pointer" src="/wiki/public/upload/Illustrations/Wiki/faqbase1.png" title="Cliquez pour afficher/cacher une FAQ officielle relative à ce texte" alt="Cliquez pour afficher/cacher l'information" onclick="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = '/wiki/public/upload/Illustrations/Wiki/faqalt1.png';"
+ONMOUSEOUT="this.src = '/wiki/public/upload/Illustrations/Wiki/faqbase1.png';" />
+</td>
+</tr>
+</table>
+</div>Cette caractéristique est importante pour les <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magiciens</a> car elle influence leur aptitude à lancer des <a class="pagelink" href="Pathfinder-RPG.sort.ashx" title="sort">sorts</a> de nombreuses manières. L’instinct animal correspond à une Intelligence de 1 ou 2 ; les créatures qui peuvent comprendre un langage parlé possèdent une Intelligence d’au moins 3. Un personnage avec une valeur d’Intelligence de 0 est comateux. Certaines créatures ne possèdent pas de valeur d’Intelligence ; leur modificateur pour les compétences et les jets basés sur l’Intelligence est de +0.<br /><br />On applique le modificateur d’Intelligence
+<ul><li>au nombre de <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">langues supplémentaires</a> que le personnage connaît lorsqu’il entre en jeu. Ces langues viennent s’ajouter aux langues <a class="pagelink" href="Pathfinder-RPG.races.ashx" title="Les races des personnages">raciales</a> initiales et au langage commun que le personnage connaît automatiquement. Les créatures qui possèdent un malus d’Intelligence restent quand même capables de lire et d’écrire leurs langues raciales, pour autant qu’elles possèdent une valeur d’Intelligence d’au moins 3.</li><li>au nombre de <a class="pagelink" href="Pathfinder-RPG.rang.ashx" title="rang">rangs</a> de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a> gagnés à chaque <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> (sans toutefois abaisser celui-ci en dessous de 1).</li><li>aux tests d’<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a>, d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a>, de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>, d’<a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> et de <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a>.</li></ul>
+L’Intelligence des <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magiciens</a>, des <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx" title="L&#39;alchimiste">alchimistes</a>, des <a class="pagelink" href="Pathfinder-RPG.sorci%c3%a8re.ashx" title="La sorcière">sorcières</a> et des <a class="pagelink" href="Pathfinder-RPG.magus.ashx" title="Le magus">magus</a> détermine le nombre de sorts en bonus qu’ils obtiennent. Pour pouvoir lancer un sort donné, le <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> doit posséder une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> d’au moins 10 + le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau du sort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SAGESSE" href="#SAGESSE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator"> La Sagesse (Sag) <a class="headeranchor" id="La_Sagesse_Sag_5" href="#La_Sagesse_Sag_5" title="Lien vers cette section">&#0182;</a></h3><i>La Sagesse mesure la volonté, le bon sens, la capacité de percevoir et l’intuition du personnage.</i><br /><br />C’est une caractéristique essentielle pour les <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a> et les <a class="pagelink" href="Pathfinder-RPG.druide.ashx" title="Le druide">druides</a> et importante pour les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a>, les <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a> et les <a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteurs</a>. Placez une valeur élevée en Sagesse si vous voulez que votre personnage possède des sens aiguisés. Toutes les créatures possèdent une valeur de Sagesse. Un personnage avec une valeur de Sagesse de 0 est incapable de penser de manière rationnelle ; il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a>.<br /><br />On applique le modificateur de Sagesse
+<ul><li>aux jets de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> (pour contrer les effets de sorts tels que <i><a class="pagelink" href="Pathfinder-RPG.charme-personne.ashx" title="Charme-personne">charme-personne</a></i>).</li><li>aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>, de <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a>, de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a>, de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a>.</li></ul>
+La Sagesse des <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a>, <a class="pagelink" href="Pathfinder-RPG.druide.ashx" title="Le druide">druides</a> et <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeurs</a> détermine le nombre de sorts en bonus qu’ils obtiennent. Pour pouvoir lancer un sort donné, un <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a>, <a class="pagelink" href="Pathfinder-RPG.druide.ashx" title="Le druide">druide</a> ou <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeur</a> doit posséder une valeur de Sagesse d’au moins 10 + le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau du sort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHARISME" href="#CHARISME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator"> Le Charisme (Cha) <a class="headeranchor" id="Le_Charisme_Cha_6" href="#Le_Charisme_Cha_6" title="Lien vers cette section">&#0182;</a></h3><i>Le Charisme représente la personnalité, le magnétisme personnel, la capacité à diriger et l’apparence du personnage.</i><br /><br />C’est une caractéristique essentielle pour les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a>, les <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleurs</a> et les <a class="pagelink" href="Pathfinder-RPG.barde.ashx" title="Le barde">bardes</a>, et importante pour les <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a> (car elle conditionne leur capacité à <a class="pagelink" href="Pathfinder-RPG.canalisation%20d%c3%a9nergie.ashx" title="canalisation d&#39;énergie">canaliser de l’énergie</a>). Dans le cas des créatures <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">mortes-vivantes</a>, le Charisme représente la force vitale surnaturelle qui les anime. Toutes les créatures possèdent une valeur de Charisme. Un personnage avec une valeur de Charisme de 0 est incapable de prendre la décision de faire quoi que ce soit ; il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a>.<br /><br />On applique le modificateur de Charisme
+<ul><li>aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, de <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a>, d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> et d’<a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a>.</li><li>aux jets relatifs à des tentatives pour influencer les autres.</li><li>au DD des <a class="pagelink" href="Pathfinder-RPG.canalisation%20d%c3%a9nergie.ashx" title="canalisation d&#39;énergie">canalisations d’énergie</a> des <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a> et des <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> tentant de blesser leurs ennemis <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">morts-vivants</a>.</li></ul>
+Le Charisme des <a class="pagelink" href="Pathfinder-RPG.barde.ashx" title="Le barde">bardes</a>, <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleurs</a> et des <a class="pagelink" href="Pathfinder-RPG.conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">conjurateurs</a> détermine le nombre de sorts en bonus qu’ils obtiennent. Pour pouvoir lancer un sort donné, un barde, paladin ou ensorceleur doit posséder une valeur de Charisme d’au moins 10 + le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau du sort</a>.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                    <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="https://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="https://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                    <div id="MainFooterDiv">
+                                        <!-- Used for layout purposes only -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td id="margin-r" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td id="footer">
+                    <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                    <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                    
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
