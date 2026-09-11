@@ -1,0 +1,25 @@
+{
+  "id": "interdiction-du-fou",
+  "etiquettes": [
+    "protection_zone_personnage",
+    "confusion_ennemis",
+    "jet_volonte_obligatoire",
+    "chancel_ou_confusion",
+    "abjuration_mental",
+    "effet_persistant_sortie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:53+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "bfa1c35bcfa71d9ca58b41354225c91b4b696bc8a57070e2edbfb4b4a6a5e5ff",
+  "texte_envoye_hash": "bfa1c35bcfa71d9ca58b41354225c91b4b696bc8a57070e2edbfb4b4a6a5e5ff",
+  "texte_envoye": "nom: Interdiction du fou\necole: Abjuration\ndescripteurs: effet mental\nniveaux: Bard 6, Psy 8\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (un trousseau de clefs)\nportee: 3 m (2 c)\ncible: émanation sphérique de 3 m (2 c) de rayon centrée sur le lanceur de sorts\nduree: concentration\njet_de_sauvegarde: Volonté partiel\nresistance_magie: oui\n\nÀ force de singeries et de démonstrations, le personnage crée une zone protégée qui affecte négativement les ennemis qui tentent d'y pénétrer. Quand un adversaire entre dans cette zone, il doit immédiatement faire un jet de Volonté. S'il échoue, il est confus tant qu'il se trouve dans la zone d'effet et pendant 1 round après l'avoir quittée. S'il réussit son jet de sauvegarde, il est chancelant tant qu'il reste dans la zone et pendant 1 round après l'avoir quittée.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "protection_zone_personnage\nconfusion_ennemis\njet_volonte_obligatoire\nchancel_ou_confusion\nabjuration_mental\neffet_persistant_sortie",
+  "usage": {
+    "inputTokens": 413,
+    "outputTokens": 45
+  },
+  "arret": "end_turn"
+}

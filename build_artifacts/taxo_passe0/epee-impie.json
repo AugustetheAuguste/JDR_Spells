@@ -1,0 +1,26 @@
+{
+  "id": "epee-impie",
+  "etiquettes": [
+    "enchantement_arme",
+    "bonus_attaque_degats",
+    "degats_supplementaires_contre_bons",
+    "cercle_protection_bien",
+    "arme_impie",
+    "canalisation_mal",
+    "une_seule_active"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:41+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "6f46a48fb99320b22c09f8a26c4374d93dd38acaa18542854270587902b7a663",
+  "texte_envoye_hash": "6f46a48fb99320b22c09f8a26c4374d93dd38acaa18542854270587902b7a663",
+  "texte_envoye": "nom: Épée impie\necole: Évocation\ndescripteurs: mal\nniveaux: Apal 4\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: contact\ncible: arme de corps à corps touchée\nduree: 1 round/niveau\njet_de_sauvegarde: non\nresistance_magie: non\n\nCe sort permet au personnage de canaliser la puissance du mal dans son épée ou dans une autre arme de corps à corps de son choix. L'arme se comporte alors comme une arme impie +5 (bonus d'altération de +5 aux jets d'attaque et de dégâts, +2d6 contre les adversaires bons). Elle émet également un effet de cercle de protection contre le bien (comme le sort). Si le cercle se termine, l'épée en crée un nouveau au tour du personnage, par une action libre. Le sort s'annule automatiquement 1 round après que l'épée a quitté la main du personnage. Ce dernier ne peut avoir qu'une épée impie active à la fois.\nSi le personnage lance ce sort sur une arme magique, les pouvoirs du sort écrasent ceux de l'arme dont le bonus d'altération et les pouvoirs habituels hibernent pendant la durée du sort. Ce sort ne se cumule pas avec tout autre sort de modification d'arme et ne fonctionne pas sur les artéfacts. Le bonus d'arme de maître ne se cumule pas avec le bonus d'attaque du sort.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "enchantement_arme\nbonus_attaque_degats\ndegats_supplementaires_contre_bons\ncercle_protection_bien\narme_impie\ncanalisation_mal\nune_seule_active",
+  "usage": {
+    "inputTokens": 506,
+    "outputTokens": 54
+  },
+  "arret": "end_turn"
+}

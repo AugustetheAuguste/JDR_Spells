@@ -1,0 +1,24 @@
+{
+  "id": "dissimuler-la-magie",
+  "etiquettes": [
+    "masquage_aura_magique",
+    "dissimulation_detection_magie",
+    "manipulation_effet_sort",
+    "camouflage_enchantement",
+    "protection_contre_divination"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:38+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "5b43c8ff931c87aeb825ed1b5c4a393cb7537885c36b57586842dcfd479c0030",
+  "texte_envoye_hash": "5b43c8ff931c87aeb825ed1b5c4a393cb7537885c36b57586842dcfd479c0030",
+  "texte_envoye": "nom: Dissimuler la magie\necole: Illusion (hallucination)\nniveaux: Occ 1, Psy 1, Sor 1\ntemps_incantation: 1 action simple\ncomposantes: V,G,M (un morceau de gaze)\nportee: contact\ncible: créature ou objet touché\nduree: 1 jour/niveau (T)\njet_de_sauvegarde: aucun (voir texte)\nresistance_magie: non\n\nLe personnage masque et manipule l'aura magique d'un sort pour le rendre plus difficile à détecter. Il choisit un effet de sort actif sur une créature ou un objet. Il faut qu'il ait lancé lui même le sort ou qu'il le perçoive grâce à une méthode comme détection de la magie ou vision magique. L'effet de sort désiré et dissimuler la magie sont tous deux cachés aux détections de la magie, même si des sorts plus puissants (comme vision magique) percent le secret si le lanceur de sorts réussit un jet de Volonté. Analyse d'enchantement détecte automatiquement dissimuler la magie et les effets masqués.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "masquage_aura_magique\ndissimulation_detection_magie\nmanipulation_effet_sort\ncamouflage_enchantement\nprotection_contre_divination",
+  "usage": {
+    "inputTokens": 435,
+    "outputTokens": 43
+  },
+  "arret": "end_turn"
+}

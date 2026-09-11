@@ -1,0 +1,25 @@
+{
+  "id": "bredouillement",
+  "etiquettes": [
+    "effet_mental",
+    "incapacitation_parole",
+    "nausee",
+    "fascination_auditeurs",
+    "coercition_enchantement",
+    "debilitation_communication"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:23+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "be06653e95796194a1f80daeb427792744a54e1a2604a0b5f6e645014f4b0185",
+  "texte_envoye_hash": "be06653e95796194a1f80daeb427792744a54e1a2604a0b5f6e645014f4b0185",
+  "texte_envoye": "nom: Bredouillement\necole: Enchantement (coercition)\ndescripteurs: effet mental\nniveaux: Bard 2, Hyp 2, Ens/Mag 3, Psy 3, Sor 3\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: courte (7,50 m + 1,50 m/2 niveaux)\ncible: 1 créature ; voir texte\nduree: 1 round/niveau\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nCe sort provoque une crise de bredouillements incontrôlables chez la cible qui devient par ailleurs nauséeuse. L’effet se termine si elle réussit son jet de sauvegarde, sinon, elle continue d’être nauséeuse et de bredouiller pendant toute la durée du sort. Les créatures qui se trouvent à 9 mètres ou moins de la cible et l’entendent bredouiller doivent réussir un jet de Volonté, sans quoi elles sont fascinées tant qu’elle marmonne. Une créature qui n’est plus fascinée ne peut pas l’être à nouveau par la même incantation de bredouillement. Ce sort n’affecte pas les créatures disposant d’une Intelligence de 2 ou moins.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "effet_mental\nincapacitation_parole\nnausee\nfascination_auditeurs\ncoercition_enchantement\ndebilitation_communication",
+  "usage": {
+    "inputTokens": 474,
+    "outputTokens": 39
+  },
+  "arret": "end_turn"
+}

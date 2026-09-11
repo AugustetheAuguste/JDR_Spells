@@ -1,0 +1,26 @@
+{
+  "id": "coup-mental-iii",
+  "etiquettes": [
+    "dégâts_mentaux",
+    "effet_instantane",
+    "jet_de_sauvegarde_volonte",
+    "resistance_magie_applicable",
+    "degats_par_niveau_lanceur",
+    "portee_courte",
+    "cible_unique"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:31+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "ef60c98a1b472dfe6663ba0400be3e7a7df951ac15271ef2b43ffc09bbe9adde",
+  "texte_envoye_hash": "ef60c98a1b472dfe6663ba0400be3e7a7df951ac15271ef2b43ffc09bbe9adde",
+  "texte_envoye": "nom: Coup mental III\necole: Divination\ndescripteurs: effet mental\nniveaux: Psy 3\ntemps_incantation: 1 action simple\ncomposantes: G\nportee: courte (7,50 m + 1,50 m/2 niveaux)\ncible: 1 créature\nduree: instantanée\njet_de_sauvegarde: Volonté, 1/2 dégâts\nresistance_magie: oui\n\nCe sort fonctionne comme coup mental I mais la cible reçoit 1d8 points de dégâts par niveau de lanceur de sorts (10d8 au maximum). On peut lancer ce sort dans une version réduite.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "dégâts_mentaux\neffet_instantane\njet_de_sauvegarde_volonte\nresistance_magie_applicable\ndegats_par_niveau_lanceur\nportee_courte\ncible_unique",
+  "usage": {
+    "inputTokens": 300,
+    "outputTokens": 55
+  },
+  "arret": "end_turn"
+}

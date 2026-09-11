@@ -14,4 +14,4 @@ def repo_root() -> Path:
 
 @pytest.fixture(scope="session")
 def pages_dir(repo_root: Path) -> Path:
-    return repo_root / "pages"
+    return repo_root / "data" / "pages"

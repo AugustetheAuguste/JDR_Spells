@@ -1,0 +1,25 @@
+{
+  "id": "detection-de-la-scrutation",
+  "etiquettes": [
+    "detection_des_tentatives_de_scrutation",
+    "reperage_des_capteurs_magiques",
+    "localisation_de_l_observateur",
+    "protection_contre_la_divination",
+    "zone_mobile_autour_du_lanceur",
+    "resistance_a_l_espionnage_magique"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:36+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "f1b5430e10c12fd6c67687ace4f44e655289e25d9a7088b7d7e1e91514833c8b",
+  "texte_envoye_hash": "f1b5430e10c12fd6c67687ace4f44e655289e25d9a7088b7d7e1e91514833c8b",
+  "texte_envoye": "nom: Détection de la scrutation\necole: Divination\nniveaux: Bard 4, Cham 4, Hyp 4, Inq 4, Ens/Mag 4, Méd 3, Occ 4, Psy 4, Sor 4, Spi 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (un éclat de miroir et un cornet acoustique miniature en laiton)\nportee: 12 m (8 c)\ncible: émanation de 12 m (8 c) de rayon centrée sur le jeteur de sorts\nduree: 24 heures\njet_de_sauvegarde: aucun\nresistance_magie: non\n\nLe lanceur de sorts repère immédiatement toutes les tentatives visant à l’observer grâce à des sorts ou des effets de Divination (scrutation). La zone d’effet de la détection de la scrutation émane du personnage et se déplace avec lui. Le personnage repère l’emplacement de tous les capteurs magiques se trouvant à l’intérieur de la zone d’effet.\nSi l’origine de la tentative de scrutation se trouve à l’intérieur de la zone d’effet du sort, le personnage en connaît automatiquement l’emplacement. Si ce n’est pas le cas, il doit effectuer un test de niveau de lanceur de sorts opposé contre la créature qui l’observe (1d20 + niveau de lanceur de sorts). S’il obtient un résultat supérieur ou égal à celui de la créature qui l’épie, il reçoit une brève vison de celle-ci et sait dans quelle direction et à quelle distance elle se trouve.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "detection_des_tentatives_de_scrutation\nreperage_des_capteurs_magiques\nlocalisation_de_l_observateur\nprotection_contre_la_divination\nzone_mobile_autour_du_lanceur\nresistance_a_l_espionnage_magique",
+  "usage": {
+    "inputTokens": 565,
+    "outputTokens": 69
+  },
+  "arret": "end_turn"
+}

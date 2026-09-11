@@ -1,0 +1,25 @@
+{
+  "id": "eveiller-les-devores",
+  "etiquettes": [
+    "controle_daemon",
+    "inflige_degats",
+    "confusion_ennemi",
+    "torture_magique",
+    "affaiblissement_temporaire",
+    "invocation_ames"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:42+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "b14bac9f7ffba51cd5670281b5399d3f64ae636a28eb244f8c5c97ab95f63987",
+  "texte_envoye_hash": "b14bac9f7ffba51cd5670281b5399d3f64ae636a28eb244f8c5c97ab95f63987",
+  "texte_envoye": "nom: Éveiller les dévorés\necole: Divination\ndescripteurs: douleur\nniveaux: Cham 5, Ens/Mag 5, Inq 4, Prê 5, Psy 5, Sor 5, Spi 5\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: un daémon/4 niveaux\nduree: instantanée et 1 round/niveau\njet_de_sauvegarde: Volonté, partiel (voir texte)\nresistance_magie: oui\n\nCe sort est souvent utilisé par les invocateurs comme méthode pour tourmenter les daémons et forcer leur obéissance, car il réveille les innombrables âmes brisées et angoissées que les daémons ciblés ont consommées. Tous les daémons ciblés par éveiller les dévorés doivent être à une distance de 9 m les uns des autres. Les souvenirs fragmentés hantent et affligent les daémons, infligeant 1d8 points de dégâts par niveau de lanceur de sorts (maximum 15d8) et rendant les daémons confus pendant 1 round par niveau. Un daémon qui réussit un jet de Volonté réduit les dégâts de moitié et annule l'effet de confusion.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "controle_daemon\ninflige_degats\nconfusion_ennemi\ntorture_magique\naffaiblissement_temporaire\ninvocation_ames",
+  "usage": {
+    "inputTokens": 502,
+    "outputTokens": 39
+  },
+  "arret": "end_turn"
+}

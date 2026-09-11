@@ -1,0 +1,26 @@
+{
+  "id": "motif-scintillant",
+  "etiquettes": [
+    "illusion_visuelle",
+    "etourdissement",
+    "confusion",
+    "inconscience",
+    "effet_progressif_par_dv",
+    "zone_effet",
+    "resistance_aux_aveugles"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:00+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "8951974c53839063364139f075fb5e45d21173b50a47c7d311eb2f30c27139f2",
+  "texte_envoye_hash": "8951974c53839063364139f075fb5e45d21173b50a47c7d311eb2f30c27139f2",
+  "texte_envoye": "nom: Motif scintillant\necole: Illusion (mirage)\ndescripteurs: mental\nniveaux: Ens/Mag 8, Psy 8\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (un prisme de cristal)\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: lueurs colorées dans une étendue de 6 m (4 c) de rayon\nduree: concentration + 2 rounds\njet_de_sauvegarde: aucun\nresistance_magie: oui\n\nUn groupement de lueurs étincelantes et discordantes parcourt les airs, affectant les créatures situées dans la zone d’effet. Le sort peut affecter un nombre total de dés de vie de créatures égal au niveau de lanceur de sorts (maximum 20). Les créatures possédant le moins de DV sont les premières affectées. En cas d’égalité, les plus proches du point d’origine sont atteintes en priorité. Le sort affecte chaque sujet selon ses dés de vie :\n6 ou moins. Inconscience pendant 1d4 rounds, puis étourdissement pendant 1d4 rounds et, enfin, confusion pendant 1d4 rounds. Pour les créatures non-vivantes, considérez l’inconscience comme de l’étourdissement.\n7 à 12. Étourdissement pendant 1d4 rounds, puis confusion pendant 1d4 rounds.\n13 ou plus. Confusion pendant 1d4 rounds.\nLes créatures aveugles ne sont pas affectées par ce sort.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "illusion_visuelle\netourdissement\nconfusion\ninconscience\neffet_progressif_par_dv\nzone_effet\nresistance_aux_aveugles",
+  "usage": {
+    "inputTokens": 556,
+    "outputTokens": 42
+  },
+  "arret": "end_turn"
+}

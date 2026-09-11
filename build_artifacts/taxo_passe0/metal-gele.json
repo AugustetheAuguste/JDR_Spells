@@ -1,0 +1,26 @@
+{
+  "id": "metal-gele",
+  "etiquettes": [
+    "refroidissement_metal",
+    "dégâts_progressifs",
+    "affecte_équipement",
+    "jet_de_sauvegarde_objet",
+    "transmutation_froid",
+    "dégâts_minimes_sans_équipement",
+    "annulation_par_chaleur"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:57+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "c0a1ea54d2c158d8e31ca61e8f7375db577a38ef084483d94af32b8c3939b17d",
+  "texte_envoye_hash": "c0a1ea54d2c158d8e31ca61e8f7375db577a38ef084483d94af32b8c3939b17d",
+  "texte_envoye": "nom: Métal gelé\necole: Transmutation\ndescripteurs: froid\nniveaux: Dru 2, Occ 2, Psy 2\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: l’équipement métallique de 1 créature/2 niveaux, distantes de moins de 9 m (6 c) les unes des autres ; ou 12,5 kg de métal/niveau, contenu dans un cercle de 9 m (6 c) de rayon\nduree: 7 rounds\njet_de_sauvegarde: Volonté, annule (objet)\nresistance_magie: oui (objet)\n\nLe sort métal gelé diminue fortement la température des métaux affectés. Les objets métalliques non-magiques, non portés ni tenus, n’ont droit à aucun jet de sauvegarde, contrairement aux objets métalliques magiques. Un objet tenu ou porté utilise le jet de sauvegarde de celui qui l’a en main (à moins que le sien propre soit plus avantageux).\nUne créature dont l’équipement est suffisamment refroidi commence à subir des dégâts. Elle reçoit la totalité des dégâts si son armure, son bouclier ou son arme sont affectés, en revanche, elle subit des dégâts minimes (1 à 2 points, voir la table) si elle ne porte pas ou ne manie pas ce genre d’objet.\nAu cours du premier round, le métal affecté devient froid et désagréable au toucher, mais ne perd aucun point de vie (c’est également le cas lors du dernier round, quand il retrouve rapidement sa température initiale). Lors des deuxième et avant-dernier rounds, le froid est suffisamment intense pour infliger des dégâts, lesquels deviennent plus importants au cours des troisième, quatrième et cinquième rounds, comme indiqués ci-dessous.\nRoundMétalDégâts de froid\n1FroidAucun\n2Très froid1d4 points\n3–5Gelé2d4 points\n6Très froid1d4 points\n7FroidAucun\nToute chaleur suffisamment intense pour blesser la créature annule tout ou partie des dégâts provoqués par métal gelé, à raison de 1 point pour 1 point. Lancé sous l’eau, métal gelé n’inflige pas le moindre dégât, mais de la glace se forme instantanément autour de la victime, ce qui a tendance à la ramener vers la surface.\nMétal gelé contre et dissipe métal brûlant.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "refroidissement_metal\ndégâts_progressifs\naffecte_équipement\njet_de_sauvegarde_objet\ntransmutation_froid\ndégâts_minimes_sans_équipement\nannulation_par_chaleur",
+  "usage": {
+    "inputTokens": 861,
+    "outputTokens": 64
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "corps-enflamme",
+  "etiquettes": [
+    "immunite_feu",
+    "soin_par_feu",
+    "vol_parfait",
+    "bonus_dexterite",
+    "augmentation_degats_mains_nues",
+    "aveuglement_ennemis",
+    "penalite_eau"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:32+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "13df8eb310c185f981ff25562a338198e578b29fe8b97fc577c7cc598c119aca",
+  "texte_envoye_hash": "13df8eb310c185f981ff25562a338198e578b29fe8b97fc577c7cc598c119aca",
+  "texte_envoye": "nom: Corps enflammé\necole: Transmutation\ndescripteurs: feu\nniveaux: Ens/Mag 9\ntemps_incantation: 1 action simple\ncomposantes: V\nportee: personnelle\ncible: lanceur de sorts\nduree: 1 minute/niveau\n\nCe sort transforme le corps du lanceur de sorts en flamme vivante. Le personnage et son équipement sont alors immunisés contre les dégâts de feu. En réalité, à chaque fois que le personnage devrait subir des dégâts de feu, il est soigné pour un ratio de 1 point de soin pour 3 points de dégâts que l'attaque de feu aurait normalement dû infliger. Le personnage est immunisé contre la cécité, les coups critiques, les affaiblissements de caractéristique, la surdité, la maladie, la noyade, l'électricité, le poison, l'étourdissement et contre tous les sorts qui affectent sa physiologie ou sa respiration. Il ne subit que la moitié des dégâts d'acide ou d'électricité. Il reçoit 150% des dégâts de froid normaux.\nLe personnage gagne un bonus d'altération de +6 à la valeur de Dextérité et une vitesse de vol de 12 m (8 c) (manœuvrabilité parfaite). Les attaques à mains nues du personnage font 3d6 points de dégâts supplémentaires et on considère le personnage comme armé. Son corps brûle d'une flamme si vive que les créatures qui ne détournent pas leur regard sont éblouies. Les sorts de feu lancés par le personnage voient le DD de leurs jets de sauvegarde augmenter de +1. Si le personnage entre dans l'eau, il est entouré d'un nuage de vapeur et de bulles de 1,50 mètre (1 c) de rayon qui le camoufle (50% de chances de rater) mais il reçoit 2d6 points de dégâts à chaque round passé dans l'eau.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "immunite_feu\nsoin_par_feu\nvol_parfait\nbonus_dexterite\naugmentation_degats_mains_nues\naveuglement_ennemis\npenalite_eau",
+  "usage": {
+    "inputTokens": 667,
+    "outputTokens": 55
+  },
+  "arret": "end_turn"
+}

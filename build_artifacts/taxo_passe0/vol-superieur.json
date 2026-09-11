@@ -1,0 +1,26 @@
+{
+  "id": "vol-superieur",
+  "etiquettes": [
+    "vol_constant",
+    "vitesse_augmentee",
+    "bonus_competence_vol",
+    "vol_longue_distance",
+    "chute_progressive_fin_sort",
+    "attaque_aerienne",
+    "maneuvrabilite_bonne"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:30+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "2fd9803db50bab6e96bc5280693a9ff4e3af1a5a7c3d91b676407ea25253b803",
+  "texte_envoye_hash": "2fd9803db50bab6e96bc5280693a9ff4e3af1a5a7c3d91b676407ea25253b803",
+  "texte_envoye": "nom: Vol supérieur\necole: Transmutation\nniveaux: Alch 5, Cham 5, Con 4, ConU 5, Ens/Mag 5, Magus 5, Occ 5, Psy 5, Sor 5, Spi 5\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: personnelle\ncible: le jeteur de sorts\nduree: 1 heure/niveau\n\nLa cible du sort acquiert la capacité de voler à la vitesse de 12 m par round (9 m s’il porte une armure lourde ou intermédiaire, ou encore une charge lourde ou intermédiaire). S’il monte, sa vitesse diminue de moitié, mais elle double dès qu’il descend. Sa manœuvrabilité est bonne. Il bénéficie d’un bonus à sa compétence de Vol égal à la moitié du niveau de lanceur de sorts du personnage. Voler ne lui demande pas plus d’effort mental que marcher, ce qui signifie qu’il peut attaquer ou lancer des sorts normalement depuis les airs. Il peut charger mais pas courir, et il lui est impossible de soulever plus que sa charge maximale autorisée plus son armure. Quand le personnage utilise ce sort pour un déplacement longue distance, il peut exécuter l’équivalent d’un « footing » sans subir de dégâts non-létaux (un test de Constitution pour une marche forcée est toujours nécessaire). Cela signifie qu’il peut parcourir 96 km en huit heures de vol (ou 72 km si sa vitesse de déplacement est égale à 9 m). Le sujet gagne un bonus égal à la moitié du niveau de lanceur de sorts du personnage aux tests de compétence de Vol.\nSi le sort s’achève alors que le sujet se trouve toujours en l’air, la magie se dissipe peu à peu et le personnage perd dix-huit mètres d’altitude par round pendant 1d6 rounds. S’il atteint le sol avant la fin de ce délai, il atterrit sans souci. Dans le cas contraire, il tombe et l’impact lui inflige 1d6 points de dégâts tous les trois mètres d’altitude restants. Il chute également si vol est dissipé mais pas s’il est annulé par une zone d’antimagie.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "vol_constant\nvitesse_augmentee\nbonus_competence_vol\nvol_longue_distance\nchute_progressive_fin_sort\nattaque_aerienne\nmaneuvrabilite_bonne",
+  "usage": {
+    "inputTokens": 744,
+    "outputTokens": 51
+  },
+  "arret": "end_turn"
+}

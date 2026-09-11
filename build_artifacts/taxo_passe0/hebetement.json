@@ -1,0 +1,26 @@
+{
+  "id": "hebetement",
+  "etiquettes": [
+    "enchantement_mental",
+    "paralyse_action",
+    "cible_faible_dv",
+    "immunite_5dv_ou_plus",
+    "duree_courte",
+    "sauvegarde_volonte",
+    "immunite_repetition_1min"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:48+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "0451c72f8b1f98f9cf888f21a55ab299fb4a5722670977a82f6637df00a15143",
+  "texte_envoye_hash": "0451c72f8b1f98f9cf888f21a55ab299fb4a5722670977a82f6637df00a15143",
+  "texte_envoye": "nom: Hébétement\necole: Enchantement (coercition)\ndescripteurs: effet mental\nniveaux: Bard 0, Cham 0, Con 0, ConU 0, Hyp 0, Inq 0, Ens/Mag 0, Magus 0, Méd 0, Occ 0, Psy 0, Sor 0, Spi 0\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (un brin de laine ou une substance similaire)\nportee: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)\ncible: 1 humanoïde de 4 DV ou moins\nduree: 1 round\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nCe sort embue l’esprit d’un humanoïde possédant 4 DV ou moins, ce qui l’empêche d’entreprendre la moindre action. Les humanoïdes ayant au moins 5 DV sont immunisés aux effets d’hébétement. La victime est hébétée mais pas étourdie, de sorte que ses adversaires ne bénéficient d’aucun avantage lorsqu’ils s’en prennent à elle. Si une créature a été hébétée par ce sort, elle ne peut plus être affectée par celui-ci pendant une minute.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "enchantement_mental\nparalyse_action\ncible_faible_dv\nimmunite_5dv_ou_plus\nduree_courte\nsauvegarde_volonte\nimmunite_repetition_1min",
+  "usage": {
+    "inputTokens": 510,
+    "outputTokens": 57
+  },
+  "arret": "end_turn"
+}

@@ -1,6 +1,6 @@
 """Unit tests for the spell-page parser, pinned to the four sample pages.
 
-The four files in `pages/sorts/` are the hand-verified reference: they cover a
+The four files in `data/pages/sorts/` are the hand-verified reference: they cover a
 plain spell, the U+2019 apostrophe variant, a nested "fonctionnent comme"
 variant and a `Mythique` sub-block. Everything asserted here was read off the
 HTML by hand, so a parser regression fails loudly rather than silently changing
@@ -38,7 +38,7 @@ def schema(repo_root: Path) -> dict:
 def docs(repo_root: Path) -> dict[str, dict]:
     resultat = {}
     for sid, (fichier, nom) in ECHANTILLONS.items():
-        chemin = repo_root / "pages" / "sorts" / f"{fichier}.html"
+        chemin = repo_root / "data" / "pages" / "sorts" / f"{fichier}.html"
         doc, _ = parse_spells.parse_page(
             load_html(chemin),
             {

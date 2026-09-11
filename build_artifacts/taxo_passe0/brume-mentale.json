@@ -1,0 +1,25 @@
+{
+  "id": "brume-mentale",
+  "etiquettes": [
+    "affaiblissement_mental",
+    "malus_sagesse_et_volonte",
+    "brouillard_stationnaire",
+    "effet_persistant_apres_sortie",
+    "resistance_mentale_reduite",
+    "zone_de_controle_enchantement"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:23+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "8806b1190f94fa51a0409adb9362108ea3b5bf2f1d0fdbaa39c6f289f7a67939",
+  "texte_envoye_hash": "8806b1190f94fa51a0409adb9362108ea3b5bf2f1d0fdbaa39c6f289f7a67939",
+  "texte_envoye": "nom: Brume mentale\necole: Enchantement (coercition)\ndescripteurs: effet mental\nniveaux: Bard 5, Hyp 5, Ens/Mag 5, Occ 5, Psy 5, Sor 5, Spi 5\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: moyenne (30 m + 3 m/niveau) (20 c + 2 c/niveau)\ncible: brouillard occupant une étendue de 6 m (4 c) de rayon et de 6 m de haut\nduree: 30 minutes et 2d6 rounds (voir description)\njet_de_sauvegarde: Volonté, annule\nresistance_magie: oui\n\nCe sort génère une nappe de brouillard affaiblissant la résistance mentale de ceux qui y entrent. Les créatures prises dans la zone d’effet subissent un malus d’aptitude de -10 aux tests de Sagesse et aux jets de Volonté (si elles réussissent leur jet de sauvegarde, elles ne sont pas affectées, même si elles restent dans la brume). Les créatures sont affectées tant qu’elles restent dans la zone d’effet, et durant 2d6 rounds après en être sorties. Le brouillard est stationnaire et persiste durant trente minutes (à moins que le vent le disperse).\nUn vent modéré (au moins 15 km/h) disperse la brume en 4 rounds ; un vent important (au moins 30 km/h) la disperse en 1 round.\nCette brume est suffisamment fine pour ne pas constituer un obstacle à la vision.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "affaiblissement_mental\nmalus_sagesse_et_volonte\nbrouillard_stationnaire\neffet_persistant_apres_sortie\nresistance_mentale_reduite\nzone_de_controle_enchantement",
+  "usage": {
+    "inputTokens": 565,
+    "outputTokens": 58
+  },
+  "arret": "end_turn"
+}

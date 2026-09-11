@@ -1,0 +1,26 @@
+{
+  "id": "tranquillite-euphorique",
+  "etiquettes": [
+    "reduction_vitesse_deplacement",
+    "pacifisme_force",
+    "immunite_attaque",
+    "perception_amis",
+    "etat_euphorie",
+    "bonus_diplomatie",
+    "confusion_mentale"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:26+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "32910ef9968ea66a64af8b4202223ef3e884106add2efe291a2806402e1e1de9",
+  "texte_envoye_hash": "32910ef9968ea66a64af8b4202223ef3e884106add2efe291a2806402e1e1de9",
+  "texte_envoye": "nom: Tranquillité euphorique\necole: Enchantement (coercition)\ndescripteurs: émotion, mental\nniveaux: Bard 6, Dru 8, Hyp 6, Ens/Mag 8, Prê 8, Psy 8\ntemps_incantation: 1 action simple\ncomposantes: V, G, M/FD (un coquelicot)\nportee: contact\ncible: créature touchée\nduree: 1 round/niveau\njet_de_sauvegarde: aucun et Volonté partiel (voir plus bas)\nresistance_magie: oui\n\nUne créature sous l'effet de cet enchantement entre dans un état d'euphorie. Elle considère toutes les créatures comme des amis chers à son cœur et déteste la violence, mais elle peut se défendre si on la malmène. La vitesse de déplacement de la créature est réduite de moitié jusqu'à la fin du sort et elle ne peut pas attaquer ni lancer de sorts. Si elle est attaquée, elle a droit à un jet de Volonté. En cas de réussite, elle peut agir normalement pendant 1 round. En cas d'échec, elle s'éloigne de son attaquant à la moitié de sa vitesse de déplacement dès sa prochaine action.\nDe plus, si quelqu'un interagit avec la créature ou l'interroge alors qu'elle est sous l'effet de ce sort, elle est considérée comme serviable (voir la compétence Diplomatie). Cependant les conseils et les réponses qu'elles donnent peuvent être confus ou noyés dans un flot de pensées à cause de son état euphorique.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "reduction_vitesse_deplacement\npacifisme_force\nimmunite_attaque\nperception_amis\netat_euphorie\nbonus_diplomatie\nconfusion_mentale",
+  "usage": {
+    "inputTokens": 559,
+    "outputTokens": 43
+  },
+  "arret": "end_turn"
+}

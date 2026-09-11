@@ -1,0 +1,8 @@
+{
+  "id": "songe",
+  "raison": "schéma : categorie_principale — 'communication_ou_langage' is not one of ['attaque_directe', 'controle_de_zone', 'entrave', 'protection', 'amelioration', 'affaiblissement', 'soin', 'divination', 'deplacement', 'invocation', 'illusion', 'coercition', 'metamorphose', 'dissipation', 'utilitaire']",
+  "hash_source": "7d494ca2acf08af2a15f414a756735ea0fd03376924bb94cc07735204d961bb0",
+  "version_prompt": "p1.5",
+  "reponse_brute": "```json\n{\n  \"id\": \"songe\",\n  \"resume_court\": \"Le lanceur ou un messager transmet un message onirique à une créature endormie, sans réponse possible.\",\n  \"categorie_principale\": \"communication_ou_langage\",\n  \"tags\": [\n    \"effet_mental\",\n    \"communication_ou_langage\",\n    \"duree_prolongee\",\n    \"resistance_a_la_magie\"\n  ],\n  \"roles_tactiques\": [\n    \"utilitaire\"\n  ],\n  \"cible_typique\": \"allie\",\n  \"type_degats\": null,\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"un autre individu\"\n  },\n  \"notes_ambiguite\": \"Le sort affecte techniquement une créature vivante touchée (le messager ou le lanceur), mais sa cible effective est le destinataire du message. Classé en `allie` car le sort suppose une intention communicative bienveillante, non hostile. La catégorie `communication_ou_langage` n'existe pas dans la liste fermée ; le sort relève plutôt d'une transmission d'information sans dégâts ni condition, donc classé en `utilitaire` par défaut, avec `communication_ou_langage` en tag pour préciser le procédé.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T14:58:50+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "assistance-divine",
+  "etiquettes": [
+    "bonus_jet_attaque",
+    "bonus_jet_sauvegarde",
+    "bonus_test_competence",
+    "assistance_momentanee",
+    "choix_avant_jet",
+    "divination_mineure",
+    "buff_unique"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:20+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "9229c76d1371327ef7e5cbcf18340ffeb086ddf8e59fca0df935969eba557358",
+  "texte_envoye_hash": "9229c76d1371327ef7e5cbcf18340ffeb086ddf8e59fca0df935969eba557358",
+  "texte_envoye": "nom: Assistance divine\necole: Divination\nniveaux: Cham 0, Con 0, ConU 0, Dru 0, Inq 0, Méd 0, Occ 0, Prê 0, Sor 0, Spi 0\ntemps_incantation: 1 action simple\ncomposantes: V, G\nportee: contact\ncible: créature touchée\nduree: 1 minute ou jusqu’à utilisation\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui\n\nCe sort fournit à la créature une assistance divine momentanée, se traduisant par un bonus de compétence de +1 sur un jet d’attaque, un jet de sauvegarde ou un test de compétence. La cible doit choisir d’utiliser ou non son bonus avant de jeter le dé.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "bonus_jet_attaque\nbonus_jet_sauvegarde\nbonus_test_competence\nassistance_momentanee\nchoix_avant_jet\ndivination_mineure\nbuff_unique",
+  "usage": {
+    "inputTokens": 351,
+    "outputTokens": 48
+  },
+  "arret": "end_turn"
+}

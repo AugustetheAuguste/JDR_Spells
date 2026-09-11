@@ -1,0 +1,25 @@
+{
+  "id": "protection-contre-la-mort",
+  "etiquettes": [
+    "bonus_sauvegarde_mort",
+    "immunite_energie_negative",
+    "annule_malus_niveaux_negatifs",
+    "protection_sorts_mort",
+    "droit_sauvegarde_garanti",
+    "immunite_absorption_energie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:09+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "7d5833bde9c36afdadc58bf8bef6061b9af937f2a94c7013c2082de8eddcd6f3",
+  "texte_envoye_hash": "7d5833bde9c36afdadc58bf8bef6061b9af937f2a94c7013c2082de8eddcd6f3",
+  "texte_envoye": "nom: Protection contre la mort\necole: Nécromancie\nniveaux: Alch 4, Dru 5, Inq 4, Méd 4, Occ 4, Pal 4, Prê 4, Sor 4, Spi 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: contact\ncible: créature vivante touchée\nduree: 1 minute/niveau\njet_de_sauvegarde: Volonté, annule (inoffensif)\nresistance_magie: oui (inoffensif)\n\nLe bénéficiaire gagne un bonus de moral de +4 aux jets de sauvegarde contre les sorts et les effets magiques de mort. Il a droit à un jet de sauvegarde contre ces effets même si ce ne devrait pas être le cas. Il est immunisé contre l’absorption d’énergie et les effets d’énergie négative (même contre ceux qui découlent de la canalisation d’énergie négative).\nCe sort ne permet pas de se débarrasser des niveaux négatifs déjà acquis par le sujet, mais il annule les malus liés à ceux-ci pendant sa durée.\nCette incantation ne protège pas contre les autres sortes d’attaques, même si elles causent la mort de leurs victimes.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "bonus_sauvegarde_mort\nimmunite_energie_negative\nannule_malus_niveaux_negatifs\nprotection_sorts_mort\ndroit_sauvegarde_garanti\nimmunite_absorption_energie",
+  "usage": {
+    "inputTokens": 472,
+    "outputTokens": 56
+  },
+  "arret": "end_turn"
+}

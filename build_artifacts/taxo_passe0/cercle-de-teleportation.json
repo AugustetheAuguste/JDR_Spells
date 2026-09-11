@@ -1,0 +1,26 @@
+{
+  "id": "cercle-de-teleportation",
+  "etiquettes": [
+    "teleportation_de_groupe",
+    "destination_fixe",
+    "surface_horizontale",
+    "difficilement_detectable",
+    "desactivation_temporaire",
+    "permanence_possible",
+    "resistance_magie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:25+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "acc3e1ce4753c5507e82a716c3d14a585cc1a4300e69df319679cf3eb10f4c9e",
+  "texte_envoye_hash": "acc3e1ce4753c5507e82a716c3d14a585cc1a4300e69df319679cf3eb10f4c9e",
+  "texte_envoye": "nom: Cercle de téléportation\necole: Invocation (téléportation)\nniveaux: Con 6, Ens/Mag 9, Psy 9, Sor 9\ntemps_incantation: 10 minutes\ncomposantes: V, M (suffisamment de poudre d’ambre pour recouvrir toute la surface du cercle (1 000 po))\nportee: 0 m\ncible: cercle de 1,50 m (1 c) de rayon téléportant ceux qui l’activent\nduree: 10 minutes/niveau (T)\njet_de_sauvegarde: non\nresistance_magie: oui\n\nCe sort permet de tracer par terre (ou sur toute surface horizontale) un cercle transportant, avec l’équivalent de téléportation suprême, toute créature se trouvant en son sein. Il est impossible de modifier la destination du cercle déterminée. Le sort échoue automatiquement si la destination correspond à un objet solide, un autre plan ou un lieu inconnu du mage (une description précise suffit néanmoins dans ce cas là).\nLe cercle est quasiment indétectable. Ainsi, afin d’éviter que d’autres créatures ne l’actionnent accidentellement, il est préférable que le mage l’indique.\nIl est possible d’user de permanence sur le sort cercle de téléportation. Si le cercle est mis hors-service de quelque façon que ce soit, il reste inactif pendant dix minutes avant d’être de nouveau opérationnel.\nLes pièges magiques tels que cercle de téléportation sont extrêmement difficiles à détecter et à désamorcer. Un roublard (et lui seul) peut utiliser sa compétence de Perception pour les repérer, puis de Sabotage pour les mettre hors service. Pour chaque jet, le DD s’élève à 25 + niveau du sort, soit 34 pour cercle de téléportation.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "teleportation_de_groupe\ndestination_fixe\nsurface_horizontale\ndifficilement_detectable\ndesactivation_temporaire\npermanence_possible\nresistance_magie",
+  "usage": {
+    "inputTokens": 628,
+    "outputTokens": 44
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "boule-de-feu",
+  "etiquettes": [
+    "explosion_feu",
+    "degats_zone",
+    "jet_sauvegarde_reflexes",
+    "portee_longue",
+    "projectile_dirigeable",
+    "embrasement_combustibles",
+    "fonte_metaux"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:22+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "3da6acbf9574e413a7a45097426e037db5cf57e1f6117b3a998dd7460f6f4ce7",
+  "texte_envoye_hash": "3da6acbf9574e413a7a45097426e037db5cf57e1f6117b3a998dd7460f6f4ce7",
+  "texte_envoye": "nom: Boule de feu\necole: Évocation\ndescripteurs: feu\nniveaux: Ens/Mag 3, Magus 3, Occ 3, San 3\ntemps_incantation: 1 action simple\ncomposantes: V, G, M (de la fiente de chauve-souris et du soufre)\nportee: longue (120 m + 12 m/niveau) (80 c + 8 c/niveau)\ncible: étendue de 6 m (4 c) de rayon\nduree: instantanée\njet_de_sauvegarde: Réflexes, 1/2 dégâts\nresistance_magie: oui\n\nCe sort revêt la forme d’une boule de feu explosant dans un bruit sourd et infligeant 1d6 points de dégâts de feu par niveau de lanceur de sorts à toutes les créatures prises dans la zone d’effet (jusqu’à un maximum de 10d6). Les objets n’appartenant à personne sont également touchés. La déflagration n’engendre aucune pression.\nLe personnage désigne la cible du doigt et choisit l’endroit où il souhaite que l’explosion se produise (distance et hauteur par rapport au niveau du sol). Une bille luisante jaillit alors de son index et fuse jusqu’à cet endroit, où elle donne naissance à la boule de feu (sauf si elle rencontre un obstacle en chemin, auquel cas l’explosion se produit plus tôt que prévu). Si le mage jette cette bille par un passage très étroit, une meurtrière par exemple, il doit réussir une attaque de contact à distance, sans quoi le projectile heurte l’obstacle, provoquant la déflagration.\nLa boule de feu embrase les matériaux combustibles et endommage les objets situés dans sa zone d’effet. Elle peut faire fondre les métaux dont la température de fusion est suffisamment basse, comme c’est le cas pour le plomb, l’or, le cuivre, l’argent ou le bronze. Si les dégâts causés à un obstacle le détruisent, la boule de feu s’étend au-delà si sa zone d’effet le lui permet. Sinon, elle est arrêtée par ce dernier, comme n’importe quel autre sort.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "explosion_feu\ndegats_zone\njet_sauvegarde_reflexes\nportee_longue\nprojectile_dirigeable\nembrasement_combustibles\nfonte_metaux",
+  "usage": {
+    "inputTokens": 722,
+    "outputTokens": 46
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "empoisonnement",
+  "etiquettes": [
+    "application_poison_contact",
+    "affaiblissement_constitution",
+    "degats_sur_duree",
+    "jet_sauvegarde_chaque_round",
+    "necromancie"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:40+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "394602362244a21498b8212f5789d48fc0dd9e148f96108d3188aad2ec2d3e1f",
+  "texte_envoye_hash": "394602362244a21498b8212f5789d48fc0dd9e148f96108d3188aad2ec2d3e1f",
+  "texte_envoye": "nom: Empoisonnement\necole: Nécromancie\ndescripteurs: poison\nniveaux: Apal 4, Cham 4, Dru 3, Hyp 4, Occ 4, Prê 4, Sor 4\ntemps_incantation: 1 action simple\ncomposantes: V, G, FD\nportee: contact\ncible: créature vivante touchée\nduree: instantanée (voir description)\njet_de_sauvegarde: Vigueur, annule (voir description)\nresistance_magie: oui\n\nCe sort fait appel au pouvoir des entités venimeuses. Il permet au personnage d’empoisonner sa cible en réussissant une attaque de contact au corps à corps. Le poison inflige 1d3 points d’affaiblissement temporaire de Constitution par round pendant 6 rounds. Une créature empoisonnée a droit à un jet de Vigueur par round pour annuler les dégâts et se débarrasser du poison.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "application_poison_contact\naffaiblissement_constitution\ndegats_sur_duree\njet_sauvegarde_chaque_round\nnecromancie",
+  "usage": {
+    "inputTokens": 378,
+    "outputTokens": 40
+  },
+  "arret": "end_turn"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "fouet-de-la-riviere",
+  "raison": "schéma : preuves/type_degats — None is not of type 'string'",
+  "hash_source": "26e572bc51c60cbe26e66a2187f38f9dd1cdec415059660a93efca4574405650",
+  "version_prompt": "p1.5",
+  "reponse_brute": "```json\n{\n  \"id\": \"fouet-de-la-riviere\",\n  \"resume_court\": \"Le lanceur crée un fouet d'eau qui inflige des dégâts au contact et s'épuise après plusieurs touches.\",\n  \"categorie_principale\": \"invocation\",\n  \"tags\": [\n    \"invocation_ou_creation\",\n    \"attaque_de_contact\",\n    \"degats_directs\",\n    \"arme_ou_munition\"\n  ],\n  \"roles_tactiques\": [\n    \"combat\"\n  ],\n  \"cible_typique\": \"ennemi\",\n  \"type_degats\": \"eau\",\n  \"condition_infligee\": [],\n  \"preuves\": {\n    \"type_degats\": null,\n    \"condition_infligee\": [],\n    \"cible_typique\": \"Tout ce que touche le personnage avec le fouet\"\n  },\n  \"notes_ambiguite\": \"Le texte ne nomme pas explicitement le type de dégâts infligés par le fouet d'eau. Il mentionne « dégâts » sans préciser s'il s'agit de dégâts d'eau, de force ou d'un autre type. Les dégâts supplémentaires contre les créatures de sous-type feu sont nommés, mais pas le type de base. Faute de preuve textuelle, type_degats est null.\"\n}\n```",
+  "mis_en_quarantaine_le": "2026-07-30T14:58:23+00:00"
+}

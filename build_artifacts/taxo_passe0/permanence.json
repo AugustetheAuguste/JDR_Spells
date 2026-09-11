@@ -1,0 +1,28 @@
+{
+  "id": "permanence",
+  "etiquettes": [
+    "rendre_sort_permanent",
+    "effet_magique_persistant",
+    "duree_indefinie",
+    "cout_diamant_requis",
+    "niveau_lanceur_minimum",
+    "dissipation_limitee",
+    "sorts_personnels_seulement",
+    "sorts_objets_zones",
+    "sorts_creatures_autres"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:54:03+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "beb3332368b8aedb527d641aced529df9418721c05a94086782875560c3a28bf",
+  "texte_envoye_hash": "beb3332368b8aedb527d641aced529df9418721c05a94086782875560c3a28bf",
+  "texte_envoye": "nom: Permanence\necole: Universel\nniveaux: Ens/Mag 5, Psy 5\ntemps_incantation: 2 rounds\ncomposantes: V, G, M (voir les tables)\nportee: voir description\ncible: voir description\nduree: permanente (voir description)\njet_de_sauvegarde: aucun\nresistance_magie: non\n\nCe sort rend permanent l’effet de certains autres sorts. En fonction du sort, il faut avoir atteint un certain niveau et payer un certain nombre de po en poussière de diamant.\nLe mage peut rendre les sorts suivants permanents pour lui-même :\nSortNLS requisCoût en po\nCompréhension des langages92 500\nDétection de l'invisibilité105 000\nDétection de la magie92 500\nDon des langues117 500\nLecture de la magie92 500\nVision dans le noir105 000\nVision magique117 500\nVision des auras117 500\nOn ne peut pas rendre ces sorts permanents pour d’autres créatures. Seul un lanceur de sorts d’un niveau supérieur à celui qu’avait le mage lorsqu’il a jeté permanence peut dissiper un sort rendu permanent de cette façon.\nPermanence peut également servir à rendre les sorts suivants permanents pour le lanceur de sorts, pour une autre créature ou pour un objet (selon les cas) :\nSortNLS requisCoût en po\nAgrandissement92 500\nAnimal anthropomorphe117 500\nLien télépathique*1312 500\nMorsure magique92 500\nMorsure magique suprême117 500\nRapetissement92 500\nRésistance92 500\n(*) Lie deux créatures seulement par sort de permanence.\nEnfin, les sorts suivants peuvent aussi être rendus permanents, mais seulement sur des objets ou des zones :\nSortNLS requisCoût en po\nAlarme92 500\nAlarme d'invisibilité (MCA)92 500\nAnimation d'objets1415 000\nBouche magique105 000\nBourrasque117 500\nBrouillard dense1210 000\nCercle de téléportation1722 500\nInvisibilité105 000\nLanterne dansante92 500\nLumières dansantes92 500\nMur de feu1210 000\nMur de force1312 500\nMur prismatique1620 000\nNuage nauséabond117 500\nPiège de téléportation?7 000\nPorte de phase1517 500\nRéduction d'objet117 500\nSanctuaire secret1312 500\nSon imaginaire92 500\nSphère prismatique1722 500\nSymbole d'aliénation mentale1620 000\nSymbole d'étourdissement1517 500\nSymbole de douleur1312 500\nSymbole de faiblesse1517 500\nSymbole de fou-rire1210 000\nSymbole de guérison1010 000\nSymbole de miroir105 000\nSymbole de mort1620 000\nSymbole de persuasion1415 000\nSymbole de révélation1210 000\nSymbole de scrutation1310 000\nSymbole de sommeil1620 000\nSymbole de terreur1415 000\nSymbole de vulnérabilité1825 000\nSymbole fatal1310 000\nToile d'araignée105 000\nUn sort rendu permanent pour une autre créature, un objet ou une zone (mais pas pour le mage) se dissipe normalement. Le MJ peut autoriser les personnages à associer permanence à d’autres sorts.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "rendre_sort_permanent\neffet_magique_persistant\nduree_indefinie\ncout_diamant_requis\nniveau_lanceur_minimum\ndissipation_limitee\nsorts_personnels_seulement\nsorts_objets_zones\nsorts_creatures_autres",
+  "usage": {
+    "inputTokens": 1061,
+    "outputTokens": 67
+  },
+  "arret": "end_turn"
+}

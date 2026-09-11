@@ -1,0 +1,25 @@
+{
+  "id": "coeur-de-l-ennemi",
+  "etiquettes": [
+    "absorption_pouvoir_ennemi",
+    "coup_de_grace_requis",
+    "points_vie_temporaires",
+    "bonus_force_malfaisance",
+    "concentration_maintenue",
+    "necromancien_predateur"
+  ],
+  "modele": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "genere_le": "2026-07-29T15:53:27+00:00",
+  "passe0_version": "1.0.0",
+  "hash_source": "fb1ce7dbcc8dbd346a0a135a9d354a790df62700b894e017eda522ec0409ee3f",
+  "texte_envoye_hash": "fb1ce7dbcc8dbd346a0a135a9d354a790df62700b894e017eda522ec0409ee3f",
+  "texte_envoye": "nom: Cœur de l'ennemi\necole: Nécromancie\ndescripteurs: mort, mal\nniveaux: Apal 2, Prê 2, Sor 2\ntemps_incantation: 1 action complexe ; spécial, voir ci-dessous.\ncomposantes: V, G, M (cœur de la créature)\nportee: contact\ncible: une créature vivante touchée\nduree: concentration/1 minute/DV du sujet ; voir description\njet_de_sauvegarde: aucun\nresistance_magie: oui\n\nLe lanceur de sorts découpe le cœur de l’ennemi et le dévore, absorbant son pouvoir comme s’il était le sien. Tandis qu’il lance son sort, le personnage porte un coup de grâce avec une arme tranchante à une créature vivante sans défense et adjacente. Si la cible meurt, le lanceur dévore son cœur pour bénéficier des avantages du sort. Si la cible survit, le sort n’est pas gâché et le lanceur peut essayer à nouveau tant qu’il se concentre sur le sort. Lorsqu’il dévore le cœur, le lanceur gagne les avantages du sort mise à mort, à la seule différence qu’il gagne 1d8 points de vie temporaires +1 par DV de la cible, et le bonus de Force est un bonus de malfaisance.",
+  "consigne": "Propose 3 à 7 étiquettes courtes en français décrivant ce que fait ce sort en jeu. Uniquement du snake_case. Aucune explication. Une étiquette par ligne.",
+  "garde_source": "Le texte ci-dessous est ta SEULE source. N'utilise aucune connaissance externe de Pathfinder, ni du SRD anglais, ni d'un nom anglais de sort. Décris uniquement ce que ce texte dit.",
+  "reponse_brute": "absorption_pouvoir_ennemi\ncoup_de_grace_requis\npoints_vie_temporaires\nbonus_force_malfaisance\nconcentration_maintenue\nnecromancien_predateur",
+  "usage": {
+    "inputTokens": 492,
+    "outputTokens": 49
+  },
+  "arret": "end_turn"
+}
